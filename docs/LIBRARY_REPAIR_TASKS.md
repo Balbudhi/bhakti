@@ -2,7 +2,7 @@
 
 ## Focused resolution of the remaining 39 readers — 21 November 2026
 
-The owner requested active parallel resolution of the 39 readers open at `e0cedc4f`, then requested a saved stopping point. Work is now stopped. 11 readers are confirmed good unchanged; the remaining 28 have precise saved proposals or open questions. See [the checkpoint](research/translation-source-resolution-2026-11-21.md) and `data/translation-source-resolution-2026-11-21.json`. No reader changes from this continuation have been applied or published. The next authorized continuation should integrate supported pending corrections, resolve only the retained questions, and complete the existing release checks; do not restart unchanged finished translations.
+The owner authorized integrating and publishing only the 14 prepared readers. They are now integrated: 19 existing English definitions, 10 annotation-only definitions, and two restored Sundarakāṇḍa couplets. Jayagaḷu’s literal stick refrain is preserved. Current registry: 350 finished, 2 protected, 14 pending; those 14 pending readers are deferred at the owner’s request. See [the integration record](research/translation-source-resolution-2026-11-21.md#integration-release). Release assembly and desktop/mobile checks pass; this batch is ready for deployment and live verification. Reuse completed marks; do not reopen the deferred readers without a new request.
 
 ## Kanakadhārā and library wording repair — 21 November 2026
 

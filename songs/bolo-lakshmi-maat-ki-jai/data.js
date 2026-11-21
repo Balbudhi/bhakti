@@ -1987,7 +1987,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ratna caturdaś toko,",
-    "english": "{1:The fourteen }{0:gems }{2:belong to You, }",
+    "english": "{1:The fourteen }{0:jewels, }{2:beside You—}",
     "words": [
       {
         "roman": "Ratna",
@@ -2003,12 +2003,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "toko,",
-        "gloss": "to You, matching You (Braj/Old Hindi dative/accusative)",
+        "gloss": "You; object of the comparison completed by pātā in the next line",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Noun phrase 'Ratna caturdaś' with Old Hindi/Braj dative/accusative pronoun 'toko', repeated."
+    "grammarNote": "Read with the following line: ratna caturdaś names the fourteen ocean treasures as the comparison-set; toko is the object of pātā, used in its sense to equal or rival."
   },
   "koi-nahi-pata": {
     "source": "कोई नहीं पाता",
@@ -2034,7 +2034,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koī nahīṁ pātā",
-    "english": "{1:no }{0:one }{2:obtains them.}",
+    "english": "{0,1:not one }{2:measures up.}",
     "words": [
       {
         "roman": "Koī",
@@ -2050,12 +2050,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "pātā",
-        "gloss": "obtains, receives, reaches, equals",
+        "gloss": "equals; measures up to (here, to Lakṣmī)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Indefinite subject 'Koī' with negated imperfective verb 'nahīṁ pātā'."
+    "grammarNote": "Koī refers to any one of the fourteen jewels in the preceding line. Nahīṃ pātā denies that any can equal the goddess; toko in the preceding line supplies the object."
   },
   "ye-arati-lakshmi-ji-ki": {
     "source": "ये आरती लक्ष्मी जी की, जो कोई गाता",

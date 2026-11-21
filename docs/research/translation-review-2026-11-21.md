@@ -81,3 +81,7 @@ Public assembly and the 366-reader shuffle-profile audit pass. Release-integrity
 ## Subsequent focused checkpoint
 
 The [source-resolution follow-up](translation-source-resolution-2026-11-21.md) closes 11 of those 39 translation questions without rewriting good English. The current registry has 336 finished, 2 protected and 28 pending readers. Prepared corrections and specific remaining questions are saved separately and have not been applied or published. Work stopped at the owner’s request.
+
+## Authorized integration of the prepared readers
+
+The subsequent authorized release integrates the 14 prepared readers and preserves the other 14 pending readers. Current marks: **350 finished, 2 protected, 14 pending**. See the [integration record](translation-source-resolution-2026-11-21.md#integration-release) for exact scope, source decisions and validation limits.

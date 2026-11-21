@@ -134,7 +134,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōle",
-        "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -238,7 +238,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōle",
-        "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -332,7 +332,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōle",
-        "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -426,7 +426,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōle",
-        "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -530,7 +530,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōle",
-        "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -614,7 +614,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōle",
-        "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -660,11 +660,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kōlu",
-        "gloss": "stick; rhythmic refrain"
+        "gloss": "sung stick-song refrain; literally “stick”"
       },
       {
         "roman": "kōlē",
-        "gloss": "O stick; elongated refrain"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       },
       {
         "roman": "raṅga",
@@ -672,11 +672,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōlu",
-        "gloss": "stick; rhythmic refrain"
+        "gloss": "sung stick-song refrain; literally “stick”"
       },
       {
         "roman": "kōlē",
-        "gloss": "O stick; elongated refrain"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,
@@ -722,11 +722,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "kōlu",
-        "gloss": "stick; rhythmic refrain"
+        "gloss": "sung stick-song refrain; literally “stick”"
       },
       {
         "roman": "kōlē",
-        "gloss": "O stick; elongated refrain"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       },
       {
         "roman": "kṛṣṇa",
@@ -734,11 +734,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "kōlu",
-        "gloss": "stick; rhythmic refrain"
+        "gloss": "sung stick-song refrain; literally “stick”"
       },
       {
         "roman": "kōlē",
-        "gloss": "O stick; elongated refrain"
+        "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
       }
     ],
     "nameTable": false,

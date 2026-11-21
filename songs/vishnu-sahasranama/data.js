@@ -4962,74 +4962,73 @@ window.SONG_LINES = {
         "text": "वास्तेयमब्धिः",
         "wordIndices": [
           18,
-          19,
-          20
+          19
         ]
       },
       {
         "text": "अन्तःस्थं",
         "wordIndices": [
-          21
+          20
         ]
       },
       {
         "text": "यस्य",
         "wordIndices": [
-          22
+          21
         ]
       },
       {
         "text": "विश्वं",
         "wordIndices": [
-          23
+          22
         ]
       },
       {
         "text": "सुरनरखगगोभोगिगन्धर्वदैत्यैः",
         "wordIndices": [
-          24
+          23
         ]
       },
       {
         "text": "चित्रं",
         "wordIndices": [
-          25
+          24
         ]
       },
       {
         "text": "रंरम्यते",
         "wordIndices": [
-          26
+          25
         ]
       },
       {
         "text": "तं",
         "wordIndices": [
-          27
+          26
         ]
       },
       {
         "text": "त्रिभुवनवपुषं",
         "wordIndices": [
-          28
+          27
         ]
       },
       {
         "text": "विष्णुमीशं",
         "wordIndices": [
-          29,
-          30
+          28,
+          29
         ]
       },
       {
         "text": "नमामि",
         "wordIndices": [
-          31
+          30
         ]
       }
     ],
     "roman": "bhūḥ pādau yasya nābhirviyadasuranilaścandrasūryau ca netre |\nkarṇāvāśāḥ śiro dyaurmukhamapi dahano yasya vāsteyamabdhiḥ |\nantaḥsthaṃ yasya viśvaṃ suranarakhagagobhogigandharvadaityaiḥ |\ncitraṃ raṃramyate taṃ tribhuvanavapuṣaṃ viṣṇumīśaṃ namāmi ||",
-    "english": "{31:I bow to} {27:him}, {29:Viṣṇu}, {30:the Lord}, {28:whose body is the three worlds}: {0:earth} is {2:his} {1:two feet}; {4:the sky} {3:the navel}; {6:wind} {5:the breath}; {7:moon and sun} {8:are} {9:the two eyes}; {11:the directions} {10:the two ears}; {13:heaven} {12:the head}; {16:fire} {15:also} {14:the mouth}; {19:this} {20:ocean} is {18:in the abdomen} {17:of his}; and {23:the universe} {21:situated within} {22:him} {26:sports delightfully}, {25:wondrously}, {24:with gods, humans, birds, cattle, serpents, Gandharvas, and Daityas}.",
+    "english": "{30:I bow to} {26:him}, {28:Viṣṇu}, {29:the Lord}, {27:whose body is the three worlds}: {0:earth} is {2:his} {1:two feet}; {4:the sky} {3:the navel}; {6:wind} {5:the breath}; {7:moon and sun} {8:are} {9:the two eyes}; {11:the directions} {10:the two ears}; {13:heaven} {12:the head}; {16:fire} {15:also} {14:the mouth}; {19:the ocean} is {18:the fluid in }{17:his }{18:bladder}; and {22:the universe} {20:situated within} {21:him} {25:sports delightfully}, {24:wondrously}, {23:with gods, humans, birds, cattle, serpents, Gandharvas, and Daityas}.",
     "words": [
       {
         "roman": "bhūḥ",
@@ -5194,20 +5193,11 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vāste",
-        "citationRoman": "vāste",
-        "deva": "वास्ते",
-        "gloss": "in the abdomen",
-        "analysis": "",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "yam",
-        "citationRoman": "ayam",
-        "deva": "अयम्",
-        "gloss": "this",
-        "analysis": "",
+        "roman": "vāsteyam",
+        "citationRoman": "vāsteyam",
+        "deva": "वास्तेयम्",
+        "gloss": "the fluid in the bladder; vāsteya means situated in the bladder, with udakam (water/fluid) understood in this cosmic-body image",
+        "analysis": "Neuter singular vāsteyam, from vasti (bladder); not vāste plus ayam. Compare Chāndogya Upaniṣad 3.19.2, vāsteyam udakam.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5321,7 +5311,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": ""
+    "grammarNote": "The body of Viṣṇu is identified with the cosmos. Vāsteyam is one word, meaning situated in the bladder; water or fluid is understood, as in Chāndogya Upaniṣad 3.19.2. It is not vāste plus ayam (this). The ocean corresponds to the fluid of the cosmic body."
   },
   "meditation-mantra": {
     "source": "ॐ नमो भगवते वासुदेवाय ॥",
@@ -5707,7 +5697,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "meghaśyāmaṃ pītakauśeyavāsaṃ |\nśrīvatsāṅkaṃ kaustubhodbhāsitāṅgam |\npuṇyopetaṃ puṇḍarīkāyatākṣaṃ |\nviṣṇuṃ vande sarvalokaikanātham ||",
-    "english": "{7:I bow to} {6:Viṣṇu}, {0:dark like a cloud}, {1:wearing yellow silk}, {2:marked with Śrīvatsa}, {3:whose limbs shine with the Kaustubha}, {4:attended by the blessed}, {5:whose long eyes are like lotuses}, {8:the one Lord of all worlds}.",
+    "english": "{7:I bow to} {6:Viṣṇu}, {0:dark like a cloud}, {1:wearing yellow silk}, {2:marked with Śrīvatsa}, {3:whose limbs shine with the Kaustubha}, {4:endowed with holiness}, {5:whose long eyes are like lotuses}, {8:the one Lord of all worlds}.",
     "words": [
       {
         "roman": "meghaśyāmaṃ",
@@ -5748,8 +5738,8 @@ window.SONG_LINES = {
       {
         "roman": "puṇyopetaṃ",
         "citationRoman": "puṇya-upetam",
-        "deva": "पुण्यौपेतम्",
-        "gloss": "attended by the blessed",
+        "deva": "पुण्योपेतम्",
+        "gloss": "endowed with holiness and auspiciousness; puṇya + upeta",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false

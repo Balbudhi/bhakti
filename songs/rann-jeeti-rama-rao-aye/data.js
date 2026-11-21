@@ -960,7 +960,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sudhā sīñci kapi kṛpānagara nara",
-    "english": "{1:Sprinkling }{0:nectar }{2:on the monkeys }{3:and showing grace to the city's }{4:men}",
+    "english": "{1:Sprinkling }{0:nectar, }he revived {2:the monkeys; }{3:with grace }he looked upon {3:the city’s }{4:men}",
     "words": [
       {
         "roman": "sudhā",
@@ -982,7 +982,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛpānagara",
-        "gloss": "through grace; of the city (kṛpā + nagara, continuing with 'men and women')",
+        "gloss": "kṛpā: grace; nagara: of the city; joins the following men and women",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1019,7 +1019,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāri nihāri jiāe",
-    "english": "{0:and women }{1:with his gaze, }{2:he revived them.}",
+    "english": "{0:and women, }{1,2:and his gaze brought them to life.}",
     "words": [
       {
         "roman": "nāri",
@@ -1433,7 +1433,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "te taba aba tulasitehuṁ jinhahita",
-    "english": "{4:for the sake of }{0:those }{1:then }{2:and now, }{3:and even for Tulsidas,}",
+    "english": "{0:Those people }{1:then—and }{2:now, }{3:says Tulsi, those too }{4:who}",
     "words": [
       {
         "roman": "te",
@@ -1455,18 +1455,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "tulasitehuṁ",
-        "gloss": "even for Tulsidas; also for Tulsi",
+        "gloss": "Tulsi [says]; those too (tulasī + tehuṃ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jinhahita",
-        "gloss": "for whose sake; for whose welfare",
+        "gloss": "those who; with affection (jinha + hita)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tulasitehuṁ' combines the poet's name with the emphatic/inclusive particle '-tehuṁ' ('even/also'); 'jinhahita' combines relative pronoun 'jinha' with postposition 'hita' ('for the sake of')."
+    "grammarNote": "The previous line’s blessings applied to those people then; Tulsi adds that they apply now too to those who sing Rāma’s virtues with affection. Tulasī is the poet’s signature, while tehuṃ means those too."
   },
   "sahita-rama-guna": {
     "source": "सहिता राम गुन गाए",
@@ -1498,11 +1498,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahitā rāma guna gāe",
-    "english": "{0:with devotion, }{3:he has sung }{2:the virtues }{1:of Rāma.}",
+    "english": "{0:with} love {3:sing }{1:Rāma’s }{2:virtues} enjoy the same blessings.",
     "words": [
       {
         "roman": "sahitā",
-        "gloss": "with love; devotedly; with attentive heart",
+        "gloss": "with; together with, joining the preceding hita, affection",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1520,7 +1520,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gāe",
-        "gloss": "has sung; praises",
+        "gloss": "sang; have sung; sing",
         "concept_key": "",
         "preserve_in_english": false
       }

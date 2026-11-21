@@ -1605,17 +1605,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhūmra vilocan nainā, dhūmra vilocan nainā nisdin madmātī",
-    "english": "{0,1:Smoke-eyed} {2:in Your gaze,} {3,4:smoke-eyed} {5:in Your gaze,} {6:day and night} {7:intoxicated with fervor.}",
+    "english": "{0,1,2:Your eyes are smoky,} {3,4,5:Your eyes are smoky;} {6:day and night} {7:You are intoxicated.}",
     "words": [
       {
         "roman": "Dhūmra",
-        "gloss": "smoke-colored; with vilocan, possibly the name Dhūmralocana",
+        "gloss": "smoke-colored; smoky",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vilocan",
-        "gloss": "eyes / sight",
+        "gloss": "eyes; in dhūmra-vilocan, smoke-colored eyes",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1627,13 +1627,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhūmra",
-        "gloss": "smoke-colored; with vilocan, possibly the name Dhūmralocana",
+        "gloss": "smoke-colored; smoky",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vilocan",
-        "gloss": "eyes / sight",
+        "gloss": "eyes; in dhūmra-vilocan, smoke-colored eyes",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1651,12 +1651,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "madmātī",
-        "gloss": "intoxicated (with divine fervor / battle ecstasy)",
+        "gloss": "intoxicated; enraptured (feminine, describing the goddess)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dhūmra-vilocan can describe smoke-colored eyes, while Dhūmralocana is also a demon’s name. Nainā means eyes. The intended relation here remains uncertain. Madmātī is a feminine adjective describing the goddess as intoxicated."
+    "grammarNote": "Dhūmra-vilocan describes smoky eyes; nainā repeats the noun eyes. Madmātī is feminine and describes the goddess as intoxicated. This nainā reading differs from versions that give a verb of destruction and name the demon Dhūmralocana."
   },
   "verse-6-line-1": {
     "source": "चण्ड-मुण्ड संहारे, शोणित बीज हरे",
@@ -3249,7 +3249,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrī Mālketu meṁ rājat, Śrī Mālketu meṁ rājat koṭi ratan jyotī",
-    "english": "{0:At sacred} {1:Malketu} {2,3:shines,} {4:at sacred} {5:Malketu} {6,7:shines} {8:ten million} {9:jewels'}{10: radiance.}",
+    "english": "{8:Ten million} {9:jewels’} {10:radiance} {2,3:shines at} {0:sacred} {1:Mālketu,} {6,7:shines at} {4:sacred} {5:Mālketu.}",
     "words": [
       {
         "roman": "Śrī",

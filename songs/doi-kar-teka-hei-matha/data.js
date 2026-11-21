@@ -7467,7 +7467,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tukā kahe dīpa lekara unmanī ta śobhā",
-    "english": "{0:Tuka} {1:says:} {3:Holding} {2:the lamp} {4:of superconscious absorption,} {5,6:truly radiant is the splendor.}",
+    "english": "{0:Tukā} {1:says:} {2,3:lamp in hand}, {4,5:in absorption beyond mind}—{6:what splendour}!",
     "words": [
       {
         "roman": "Tukā",
@@ -7495,13 +7495,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "unmanī",
-        "gloss": "state of trans-mental absorption; superconscious state",
+        "gloss": "absorption beyond ordinary mental activity; with the following ending, in that state",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ta",
-        "gloss": "then; indeed; truly (Marathi emphatic particle)",
+        "gloss": "locative ending completing unmanīt: in absorption beyond ordinary mental activity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7512,7 +7512,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Tukā kahe is the standard bhaṇitā (authorial signature). Lekara is a conjunctive participle. Ta is a Marathi emphatic particle highlighting śobhā."
+    "grammarNote": "Unmanī ta is read together as the Marathi locative unmanīt, in the state beyond ordinary mental activity. The worshipper holds the lamp while in that state; the lamp is not made of absorption. Śobhā is the splendour then described as beautiful Bābā standing on the brick."
   },
   "line-80-inta-para-khada": {
     "source": "ईंट पर खड़ा हुआ है सुन्दर बाबा",
@@ -8287,7 +8287,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāgṛta karo Rukmiṇīvara ko deva haiṁ nija sura meṁ",
-    "english": "{0,1:Awaken }{2,3:the consort of Rukmini; }{4:the Lord }{5:is }{8:in }{6:his own }{7:melody.}",
+    "english": "{0,1:Awaken} {2,3:the consort of Rukmiṇī}; {4:the Lord} {5:is} {6,7,8:drowsing}.",
     "words": [
       {
         "roman": "Jāgṛta",
@@ -8327,24 +8327,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "nija",
-        "gloss": "his own; self",
+        "gloss": "first part of nijasur, the Marathi word for half-asleep; read with the following token",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sura",
-        "gloss": "melody; musical note; absorption",
+        "gloss": "completes nijasur: half-asleep; drowsy",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "meṁ",
-        "gloss": "in",
+        "gloss": "in; marks the drowsing state in this Hindi adaptation",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'Jāgṛta karo' is a conjunct verb meaning 'awaken'. 'Rukmiṇīvara' is a compound proper noun (Rukmiṇī + vara). 'Deva haiṁ nija sura meṁ' is an independent explanatory clause."
+    "grammarNote": "Nija sur is the Marathi nijasurā, half-asleep, carried into the Hindi adaptation with meṃ. It is not nija, his own, plus sur, melody. The instruction to awaken Rukmiṇī’s consort and the following protective ritual concern his drowsing state."
   },
   "line-88-najara-utaro-inaki": {
     "source": "नज़र उतारो इनकी जल्दी लोण निंबू से",

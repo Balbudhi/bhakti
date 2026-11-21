@@ -190,11 +190,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "eṇṭu",
-        "gloss": "eight; interpreted as eight forms of pride in the cited traditional commentary"
+        "gloss": "eight; interpreted here as eight forms of pride"
       },
       {
         "roman": "ēḷanu",
-        "gloss": "seven; interpreted as seven vices in the cited commentary"
+        "gloss": "seven; interpreted here as seven vices"
       },
       {
         "roman": "kaḷedudarinde",
@@ -202,7 +202,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "baṇṭaraivara",
-        "gloss": "the five attendants; interpreted as the five senses"
+        "gloss": "the five attendants; interpreted here as the five senses"
       },
       {
         "roman": "tuḷidudarinde",
@@ -250,7 +250,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "tuṇṭakanobbana",
-        "gloss": "one mischievous fellow; object of cutting down"
+        "gloss": "one mischievous fellow; interpreted here as desire (kāma)"
       },
       {
         "roman": "taridudarinde",
@@ -1060,22 +1060,22 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 216.8,
-    "end": 225.0
+    "end": 225
   },
   {
-    "start": 225.0,
-    "end": 229.0
+    "start": 225,
+    "end": 229
   },
   {
-    "start": 229.0,
+    "start": 229,
     "end": 232.9
   },
   {
     "start": 232.9,
-    "end": 241.0
+    "end": 241
   },
   {
-    "start": 241.0,
+    "start": 241,
     "end": 260.7
   },
   {
@@ -1088,14 +1088,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 285.1,
-    "end": 289.0
+    "end": 289
   },
   {
-    "start": 289.0,
-    "end": 297.0
+    "start": 289,
+    "end": 297
   },
   {
-    "start": 297.0,
+    "start": 297,
     "end": 301.1
   },
   {

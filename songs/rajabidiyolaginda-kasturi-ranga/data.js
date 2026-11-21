@@ -1138,7 +1138,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "honna hosa jānujaṅgha hoḷeva sobagina",
-    "english": "{0:Golden}, {1:fresh} {2:knees and shanks}, {4:of} {3:shining} {4:beauty}—",
+    "english": "With {1:lovely}, {0:golden} {2:knees and shanks}, {3:radiant} {4:in beauty}—",
     "words": [
       {
         "roman": "honna",
@@ -1146,7 +1146,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hosa",
-        "gloss": "fresh; new"
+        "gloss": "lovely; beautiful to the eye, here describing the knees and shanks (hosa also means new or fresh)"
       },
       {
         "roman": "jānujaṅgha",
@@ -1158,11 +1158,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "sobagina",
-        "gloss": "of beauty"
+        "gloss": "of beauty; endowed with beauty"
       }
     ],
     "nameTable": false,
-    "grammarNote": "Focused hearing resolves jānujaṅgha. The critical edition poem69 printed150 note23 explicitly preserves ಹೊಸಜಾನು ಜಂಘೆ; primary Alar jānu knee and jaṅghe shank support the literal body image. The golden/fresh limbs and shining beauty describe the procession’s splendid figure; no invented saddle, harness, gems or gilding process is substituted. Preserve the slightly unusual concrete image instead of smoothing it into generic ornaments."
+    "grammarNote": "The knees and shanks belong to the splendid figure described in these lines, Hayavadana Raṅga, who is named below riding the royal horse. Hosa is used in its attested sense beautiful or pleasing to the eye. The gold, bodily image and shining beauty are retained."
   },
   "l021": {
     "source": "ಉನ್ನಂತ ಪರಾಯಣ ಉತ್ತಮ ರಾಜಾಶ್ವವೇರಿ",
@@ -1476,10 +1476,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 58.7,
-    "end": 63.0
+    "end": 63
   },
   {
-    "start": 63.0,
+    "start": 63,
     "end": 78.2
   },
   {
@@ -1536,10 +1536,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 200.9,
-    "end": 205.0
+    "end": 205
   },
   {
-    "start": 205.0,
+    "start": 205,
     "end": 209.1
   },
   {
@@ -1576,10 +1576,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 271.7,
-    "end": 287.0
+    "end": 287
   },
   {
-    "start": 287.0,
+    "start": 287,
     "end": 316.767
   }
 ];

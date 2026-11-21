@@ -832,6 +832,238 @@ window.SONG_LINES = {
     ],
     "grammarNote": "namāmi is first-person singular present active from √nam; raghupati designates Rama as the guardian/protector of Raghu's line; vātajātam is accusative masculine singular."
   },
+  "line-012a": {
+    "source": "जामवंत के वचन सुहाए। सुनि हनुमंत हृदय अति भाए ॥",
+    "sourceLanguage": "awa",
+    "sourceWords": [
+      {
+        "text": "जामवंत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "के",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वचन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सुहाए।",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुनि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हनुमंत",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हृदय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "अति",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "भाए",
+        "wordIndices": [
+          8
+        ]
+      }
+    ],
+    "roman": "jāmavanta ke vacana suhāe। suni hanumanta hṛdaya ati bhāe ॥",
+    "english": "{0,1:Jāmbavān’s }{3:pleasing }{2:words, }{4:when heard, }{7,8:greatly delighted }{5:Hanumān’s }{6:heart.}",
+    "words": [
+      {
+        "roman": "jāmavanta",
+        "gloss": "Jāmbavān, the wise bear elder"
+      },
+      {
+        "roman": "ke",
+        "gloss": "of"
+      },
+      {
+        "roman": "vacana",
+        "gloss": "words"
+      },
+      {
+        "roman": "suhāe।",
+        "gloss": "pleasing, agreeable"
+      },
+      {
+        "roman": "suni",
+        "gloss": "having heard"
+      },
+      {
+        "roman": "hanumanta",
+        "gloss": "Hanumān, Rāma’s devoted monkey messenger; the name means “having prominent jaws”"
+      },
+      {
+        "roman": "hṛdaya",
+        "gloss": "heart"
+      },
+      {
+        "roman": "ati",
+        "gloss": "greatly, exceedingly"
+      },
+      {
+        "roman": "bhāe",
+        "gloss": "pleased, delighted"
+      }
+    ],
+    "grammarNote": "Awadhi. Jāmavanta ke is possessive; suni is having heard; bhāe expresses delight in Hanumān’s heart."
+  },
+  "line-012b": {
+    "source": "तब लगि मोहि परखेहु तुम्ह भाई। सहि दुख कंद मूल फल खाई ॥",
+    "sourceLanguage": "awa",
+    "sourceWords": [
+      {
+        "text": "तब",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "लगि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मोहि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "परखेहु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तुम्ह",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भाई।",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सहि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दुख",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कंद",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मूल",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "खाई",
+        "wordIndices": [
+          11
+        ]
+      }
+    ],
+    "roman": "taba lagi mohi parakhehu tumha bhāī। sahi dukha kanda mūla phala khāī ॥",
+    "english": "{4,5:Brothers, }{0,1,3:keep waiting }{2:for me, }{6:enduring }{7:hardship }{11:and eating }{8:bulbs, }{9:roots }{10:and fruit,}",
+    "words": [
+      {
+        "roman": "taba",
+        "gloss": "then"
+      },
+      {
+        "roman": "lagi",
+        "gloss": "until"
+      },
+      {
+        "roman": "mohi",
+        "gloss": "for me"
+      },
+      {
+        "roman": "parakhehu",
+        "gloss": "wait for, watch for; addressed to the companions"
+      },
+      {
+        "roman": "tumha",
+        "gloss": "you"
+      },
+      {
+        "roman": "bhāī।",
+        "gloss": "brothers"
+      },
+      {
+        "roman": "sahi",
+        "gloss": "enduring"
+      },
+      {
+        "roman": "dukha",
+        "gloss": "hardship"
+      },
+      {
+        "roman": "kanda",
+        "gloss": "edible bulbs or tubers"
+      },
+      {
+        "roman": "mūla",
+        "gloss": "roots"
+      },
+      {
+        "roman": "phala",
+        "gloss": "fruit"
+      },
+      {
+        "roman": "khāī",
+        "gloss": "eating"
+      }
+    ],
+    "grammarNote": "Awadhi. Parakhehu is an imperative request to the companions to wait and watch for Hanumān’s return. Taba lagi is completed by jaba lagi in the next line; sahi and khāī describe enduring and eating while they wait."
+  },
   "line-013": {
     "source": "जब लगि आवौं सीतहि देखी। होइहि काजु मोहि हरष बिसेषी ॥",
     "sourceLanguage": "awa",
@@ -898,7 +1130,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaba lagi āvauṃ sītahi dekhī। hoihi kāju mohi haraṣa biseṣī ॥",
-    "english": "{0,1:Until }{2:I return }{4:having seen }{3:Sītā, }{5,6:the task will succeed, }{9:and great }{8:joy }{7:will be mine.}",
+    "english": "{0,1:until }{2:I return }{4:having seen }{3:Sītā. }{5,6:The task will succeed; }{9:great }{8:joy }{7:is mine.}",
     "words": [
       {
         "roman": "jaba",
@@ -961,7 +1193,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Awadhi; jaba lagi introduces a subordinate temporal clause with conjunctive participle dekhī ('having seen') and 1st sg. subjunctive/future āvauṃ; hoihi is 3rd sg. future."
+    "grammarNote": "Awadhi. Jaba lagi continues Hanumān’s preceding request that his companions wait for him. Hoihi kāju begins a separate prediction that the task will succeed; mohi haraṣa biseṣī describes his present great joy. The until-clause does not govern the success prediction."
   },
   "line-014": {
     "source": "यह कहि नाइ सबन्हि कहुँ माथा। चलेउ हरषि हियँ धरि रघुनाथा ॥",
@@ -66022,6 +66254,16 @@ window.SONG_SEQUENCE = [
     "repeats": 1
   },
   {
+    "ref": "line-012a",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
+    "ref": "line-012b",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
     "ref": "line-013",
     "section": "verse",
     "repeats": 1
@@ -68704,6 +68946,14 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 283.878,
+    "end": 313.41
+  },
+  {
+    "start": 313.41,
+    "end": 323.88
+  },
+  {
+    "start": 323.88,
     "end": 334.587
   },
   {

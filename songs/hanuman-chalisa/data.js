@@ -2849,11 +2849,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "juga sahasra jojana para bhānū । līlyo tāhi madhura phala jānū ॥",
-    "english": "{9:Thinking it to be}{7: a sweet}{8: fruit,}{5: you swallowed}{4,6: the sun}{3: situated}{1: a thousand}{0: yugas}{2: of yojanas away.}",
+    "english": "{9:Thinking it to be}{7: a sweet}{8: fruit,}{5: you swallowed}{4,6: the sun},{3: far away—}{0,1:thousands upon thousands}{2: of yojanas distant.}",
     "words": [
       {
         "roman": "juga",
-        "gloss": "yuga (unit of time / measurement)",
+        "gloss": "pair; multiplicity here: with sahasra, thousands upon thousands (also an age in other contexts)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2865,7 +2865,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jojana",
-        "gloss": "yojana (measure of distance)",
+        "gloss": "yojana, a traditional measure of distance; no fixed modern conversion is implied",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2912,7 +2912,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Juga sahasra jojana functions as an adverbial phrase of distance. Līlyo is a dialectal past tense transitive verb. Jānū is an absolutive/participle form of jānanā."
+    "grammarNote": "Juga sahasra jojana is read here as poetic multiplicity: thousands upon thousands of yojanas. Juga can mean a pair or multiplicity as well as an age. The verse gives an immense distance without requiring a modern astronomical conversion."
   },
   "chaupai-19": {
     "source": "प्रभु मुद्रिका मेलि मुख माहीं । जलधि लाँघि गये अचरज नाहीं ॥",

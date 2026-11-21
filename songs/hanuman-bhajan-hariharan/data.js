@@ -1706,7 +1706,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sakala kahahi~ jaya kṛpā barūthā.",
-    "english": "{0:all}{1: proclaimed,}{2: “Victory}{4: to the host}{3: of grace!”}",
+    "english": "{0:All }{1:proclaimed, }{2:“Victory }{4:to you, storehouse }{3:of compassion!”}",
     "words": [
       {
         "roman": "sakala",
@@ -1728,13 +1728,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛpā",
-        "gloss": "of grace; of compassion",
+        "gloss": "of compassion; of grace",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "barūthā.",
-        "gloss": "the host; the embodiment; the abode",
+        "gloss": "storehouse; mass or abundance, here Rāma as the abundance of compassion",
         "concept_key": "",
         "preserve_in_english": false
       }

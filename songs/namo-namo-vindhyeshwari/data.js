@@ -1716,7 +1716,7 @@ window.SONG_LINES = {
     "grammarNote": "Wordplay (ślēṣa/yamaka) on 'durgā' (the deity) and 'durga' (difficulties/fortresses); 'sukhadātā' acts as nominative feminine epithet."
   },
   "verse-12": {
-    "source": "तू ही जाह्नवी अरु उत्रानी । हेमावती अम्बे निरवानी ॥",
+    "source": "तू ही जाह्नवी अरु रुद्राणी । हेमावती अम्बे निरवानी ॥",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -1744,7 +1744,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "उत्रानी",
+        "text": "रुद्राणी",
         "wordIndices": [
           4
         ]
@@ -1768,8 +1768,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "tū hī jāhnavī aru utrānī | hemāvatī ambe niravānī ||",
-    "english": "{0,1,2:You alone are Jahnavi }{3,4:and Indrani, }{5:Hemavati, }{6,7:O Mother who grants liberation.}",
+    "roman": "tū hī jāhnavī aru rudrāṇī | hemāvatī ambe niravānī ||",
+    "english": "{0,1,2:You alone are Jāhnavī }{3,4:and Rudrāṇī, }{5:Hemāvatī, }{6,7:O Mother who grants liberation.}",
     "words": [
       {
         "roman": "tū",
@@ -1796,8 +1796,8 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "utrānī",
-        "gloss": "Indrani; she who ferries devotees across",
+        "roman": "rudrāṇī",
+        "gloss": "Rudrāṇī, the feminine power and consort of Rudra (Śiva)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1820,7 +1820,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'utrānī' is a vernacular form of Indrāṇī (or an agentive 'she who rescues/ferries across'); 'niravānī' is tadbhava for 'nirvāṇa-rūpā/nirvāṇadātrī'."
+    "grammarNote": "The goddess is invoked through a series of names and titles. Rudrāṇī is the feminine counterpart of Rudra (Śiva). Niravānī invokes liberation."
   },
   "verse-13": {
     "source": "अष्टभुजी वाराहिनी देवी । करत विष्णु शिव जा कर सेवी ॥",

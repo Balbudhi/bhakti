@@ -1649,7 +1649,7 @@ window.SONG_LINES = {
     "grammarNote": "māṅgatā hūṁ is first person singular present indicative; devādhidevā is an expanded vocative compound (deva + adhideva)."
   },
   "line-verse-7a": {
-    "source": "इच्छित दिन चातक, निर्मल जल सानीज सुख",
+    "source": "इच्छित दीन चातक, निर्मल जल सा निज सुख",
     "sourceLanguage": "mr",
     "sourceWords": [
       {
@@ -1659,7 +1659,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दिन",
+        "text": "दीन",
         "wordIndices": [
           1
         ]
@@ -1683,30 +1683,36 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सानीज",
+        "text": "सा",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सुख",
+        "text": "निज",
         "wordIndices": [
           6
         ]
+      },
+      {
+        "text": "सुख",
+        "wordIndices": [
+          7
+        ]
       }
     ],
-    "roman": "īcchita dina cātaka, nirmala jala sānīja sukha",
-    "english": "{0:Like the yearning, }{1:humble }{2:cātaka bird }{3:seeking the pure }{4:water }{5:of true intrinsic }{6:bliss,}",
+    "roman": "icchita dīna cātaka, nirmala jala sā nija sukha",
+    "english": "{1:The humble} {2:cātaka bird} {0:longs for} {6:innate} {7:bliss}, {5:like} {3:pure} {4:water}—",
     "words": [
       {
-        "roman": "īcchita",
-        "gloss": "yearning; desiring; sought",
+        "roman": "icchita",
+        "gloss": "desires; longs for",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dina",
-        "gloss": "days; humble; wretched",
+        "roman": "dīna",
+        "gloss": "humble; poor; lowly",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1718,7 +1724,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nirmala",
-        "gloss": "pure; spotless",
+        "gloss": "pure; clear",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1729,8 +1735,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sānīja",
-        "gloss": "intrinsic; genuine; own true",
+        "roman": "sā",
+        "gloss": "like; comparable to",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nija",
+        "gloss": "own; intrinsic; here nija-sukha is innate spiritual bliss",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1741,7 +1753,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sānīja derives from Marathi/Old Hindi sva-nija (one's own true nature); cātaka functions as the metaphorical subject."
+    "grammarNote": "The Hindi adaptation has jala sā nija sukha: sā marks comparison, while nija qualifies sukha. The humble cātaka is the poet’s image for the longing devotee; the following line asks that Mādhava be given this bliss to drink. Dīna means humble or poor, not day."
   },
   "line-verse-7b": {
     "source": "पिला देवे माधव को, रखे वचनों की लाज, वचनों की लाज",

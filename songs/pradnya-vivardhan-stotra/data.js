@@ -542,7 +542,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śabdabrahmasamudraśca siddhasārasvato guhaḥ |",
-    "english": "{0:Ocean of the sacred Word, and }{1:master of perfected wisdom, }{2:Guha;}",
+    "english": "{0:Ocean of the sacred Word, and }{1:perfect in eloquence and learning, }{2:Guha;}",
     "words": [
       {
         "roman": "śabdabrahmasamudraśca",
@@ -552,7 +552,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siddhasārasvato",
-        "gloss": "one who has perfected eloquence/learning",
+        "gloss": "one whose eloquence and learning are perfected; siddha (accomplished, perfected) + sārasvata (eloquence, learning)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1188,10 +1188,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 24.225,
-    "end": 27.0
+    "end": 27
   },
   {
-    "start": 27.0,
+    "start": 27,
     "end": 33.025
   },
   {

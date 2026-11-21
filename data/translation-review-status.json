@@ -12,16 +12,12 @@
       "ownerApproval": "Owner-designated protected editorial baseline. Protection records approval and preservation, not an inferred authorship claim; older authorship is not fully recoverable."
     },
     "bolo-lakshmi-maat-ki-jai": {
-      "status": "needs_source_review",
-      "readerSha256": "c21fdd1a0e4b13ddd680497227a3437ea3b4e351ecd93bdeae91bb1e90cef6d2",
+      "status": "finished",
+      "readerSha256": "508690fd0c15cf5bbbd5601f0451318cb7cc611a3d0e44f6b8970b69dc79176f",
       "definitionCount": 34,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "koi-nahi-pata",
-        "ratna-chaturdash-toko"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "jaya-jagdisha-hare": {
       "status": "finished",
@@ -519,37 +515,28 @@
       "reviewedAt": "2026-11-21"
     },
     "hanuman-chalisa": {
-      "status": "needs_source_review",
-      "readerSha256": "221b2777e5a11893b3574bc7cca8ef9475605e61dc6ef250dd0ca2d3a3331324",
+      "status": "finished",
+      "readerSha256": "ea4815383e0c20af13347c7aad3689163b835ca2bfb106b2b26aaa58b1817b88",
       "definitionCount": 47,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "chaupai-18"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "hanuman-bhajan-hariharan": {
-      "status": "needs_source_review",
-      "readerSha256": "b192b7082fd6536750aeffbde1a0b8d5ac8cb9931c3d8d50f99c584df6ccdf08",
+      "status": "finished",
+      "readerSha256": "3685b5fd40c26e78453952db7b6ba0ebfcbd2750bfcd79239bd2ca0a34ece5a4",
       "definitionCount": 231,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "line-021"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "sampurna-sundarakanda": {
-      "status": "needs_source_review",
-      "readerSha256": "5e6099c3c0299b8139c38914f2298f7c7479816b2b5668ed3e472c7764a12a49",
-      "definitionCount": 539,
+      "status": "finished",
+      "readerSha256": "6e2d1d466c1efe63293eb976474d425b11d7f04728c8acdfad1c4156064e2abb",
+      "definitionCount": 541,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "line-013"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "mahavir-hanuman-gosain": {
       "status": "finished",
@@ -626,15 +613,12 @@
       "resolutionDisposition": "finished_unchanged"
     },
     "namo-namo-vindhyeshwari": {
-      "status": "needs_source_review",
-      "readerSha256": "59be04094257ae1a9825960e7489cfa3577ba1b5dbcaf513554cab9189877f7c",
+      "status": "finished",
+      "readerSha256": "4eaa5186913a1fce353978fdbd003dc22c370ef7533da31f25b6cf6cc9809da4",
       "definitionCount": 41,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "verse-12"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "durga-chalisa": {
       "status": "finished",
@@ -723,16 +707,12 @@
       "reviewedAt": "2026-11-21"
     },
     "jai-ambe-gauri": {
-      "status": "needs_source_review",
-      "readerSha256": "a03909f0537b7b2b19f5fa8ed43145100c170bcd198b8ab5cba70026c157f9b5",
+      "status": "finished",
+      "readerSha256": "64723bad4eb0387694d6d5617c451e5cdaf475ee83e2ac2e207d83b127fdba79",
       "definitionCount": 42,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "verse-11-line-3",
-        "verse-5-line-3"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "jaun-tore-caran-kamala": {
       "status": "finished",
@@ -849,16 +829,12 @@
       "reviewedAt": "2026-11-21"
     },
     "doi-kar-teka-hei-matha": {
-      "status": "needs_source_review",
-      "readerSha256": "a9fa8499f446278b0f4517326d9dc46e6af7013d4a3790b53f5f97d2c8b2d8d3",
+      "status": "finished",
+      "readerSha256": "f2b6cac553c036a053d1b69896f19743f4d6d84ba97df4774cd420d5033802b2",
       "definitionCount": 94,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "line-79-tuka-kahe-dipa",
-        "line-87-jagrita-karo-rukminivara"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "lalakari": {
       "status": "finished",
@@ -1101,16 +1077,12 @@
       "reviewedAt": "2026-11-21"
     },
     "vishnu-sahasranama": {
-      "status": "needs_source_review",
-      "readerSha256": "1389fbb39798c45f2d2ec3da415032cb700fe54a2e2be60913dcf170b62b82fa",
+      "status": "finished",
+      "readerSha256": "a4c1fb83d55b09b9c9a3e374b150a66ae22c6c86cdc261255107f191676f0059",
       "definitionCount": 154,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "meditation-2",
-        "meditation-4"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "patita-pavan-jai-raam": {
       "status": "finished",
@@ -1162,15 +1134,12 @@
       "reviewedAt": "2026-11-21"
     },
     "pradnya-vivardhan-stotra": {
-      "status": "needs_source_review",
-      "readerSha256": "8e24b7922a2067ce00babe24fa23c4f841a233bf3bca5ad4de6cca9a7c597c88",
+      "status": "finished",
+      "readerSha256": "3c262635925c2dd207865e403995a1f2a6cdf8245aef761413fdd9ab8e54f2f5",
       "definitionCount": 19,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "verse-3a"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "mati-re-mati-re": {
       "status": "finished",
@@ -1203,15 +1172,12 @@
       "reviewedAt": "2026-11-21"
     },
     "shree-sai-aarti": {
-      "status": "needs_source_review",
-      "readerSha256": "1da1ed6601255f554becb8a2bb3485905fbcebe403bb1e22ed21bcff946d5666",
+      "status": "finished",
+      "readerSha256": "e7e8865a811c805b3fd993dcdaf45f69de2baa788fee6c5e77fd43415d85e52a",
       "definitionCount": 27,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "line-verse-7a"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "balada-beka-re-lagila-ghanti": {
       "status": "finished",
@@ -1590,18 +1556,12 @@
       "reviewedAt": "2026-11-21"
     },
     "rann-jeeti-rama-rao-aye": {
-      "status": "needs_source_review",
-      "readerSha256": "966a0dbecf03de1cd736ea6c6cc170602738736cf5a75bdac59b9ae46aaab1d0",
+      "status": "finished",
+      "readerSha256": "1f59c65bd5c423bf840f90fafd84aa4fe50e771aaa6c30edb521809fb753f091",
       "definitionCount": 18,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "nari-nihari",
-        "sahita-rama-guna",
-        "sudha-sinchi",
-        "te-taba-aba"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "ghana-ghamand-nabh-garajat-ghora": {
       "status": "finished",
@@ -1979,16 +1939,12 @@
       "reviewedAt": "2026-11-21"
     },
     "istu-dina-ee-vaikuntha": {
-      "status": "needs_source_review",
-      "readerSha256": "bb795371b4f400a875dff51ff6d707cc6e3724f00675a2975f024b28b4f98fc9",
+      "status": "finished",
+      "readerSha256": "65f84bde92af6cda98066cce413fb91a62b226589e9a4860e94aa076aab55fa0",
       "definitionCount": 15,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l004",
-        "l005"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "daari-yavudayya-vaikunthake": {
       "status": "finished",
@@ -2063,22 +2019,12 @@
       "reviewedAt": "2026-11-21"
     },
     "jayagalu-agali": {
-      "status": "needs_source_review",
-      "readerSha256": "5c5c783b2220887b88de894c915eea18d81fcf554a5c6c59b2f6421a319f1c4d",
+      "status": "finished",
+      "readerSha256": "7a33554c36c89d21bfc9750c0f0de88ac0fbb78fc84c3f8bc432a1a802dc9f4c",
       "definitionCount": 14,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l002",
-        "l004",
-        "l006",
-        "l008",
-        "l010",
-        "l012",
-        "l013",
-        "l014"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "pavamana-jagada-prana": {
       "status": "finished",
@@ -2173,15 +2119,12 @@
       "reviewedAt": "2026-11-21"
     },
     "rajabidiyolaginda-kasturi-ranga": {
-      "status": "needs_source_review",
-      "readerSha256": "19dd8e5824ae52d9cdfbdae492d7001eb88f4e726782fdb258d81d7679d239f2",
+      "status": "finished",
+      "readerSha256": "ccad91123ae0e79ba8c0a5e6920a04ab1d5c889a43e854f37ac999a428901df0",
       "definitionCount": 22,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l020"
-      ],
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
-      "resolutionDisposition": "corrections_prepared_not_applied"
+      "resolutionDisposition": "finished_integrated"
     },
     "tolu-tolu-tolu-ranga": {
       "status": "finished",

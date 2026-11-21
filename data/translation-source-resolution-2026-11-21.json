@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-21",
-  "state": "stopped_at_owner_request",
+  "state": "prepared_corrections_integrated_remaining_fourteen_deferred",
   "scopeBaseCommit": "e0cedc4fe7e2d5c8a1cdf788471c492015580148",
   "scope": "The 39 previously open readers; not a new audit of the current 367-reader library.",
   "report": "docs/research/translation-source-resolution-2026-11-21.md",
   "counts": {
     "finished_unchanged": 11,
-    "corrections_prepared_not_applied": 14,
+    "finished_integrated": 14,
     "source_decision_pending": 5,
     "research_incomplete": 9
   },
-  "publication": "No reader, audio, timing, sequence or semantic profile changed in this continuation. Proposed changes are not applied or published.",
+  "publication": "Fourteen prepared corrections are integrated for this release. Eleven readers were previously confirmed unchanged; the other fourteen pending readers remain untouched. Deployment verification is recorded with the release checks.",
   "decisionRules": [
     "Reuse finished marks only for matching reader bytes.",
     "Prepared corrections require final integration review and publication gates.",
@@ -19,9 +19,9 @@
     "Do not infer older authorship; preserve the two owner-designated editorial baselines."
   ],
   "leadReviewNotes": {
-    "jayagalu-agali": "Peer review disputes replacing literal O stick with opaque kole. Preserve this disagreement; do not apply the proposed English substitution automatically. Gloss clarification can be considered separately.",
+    "jayagalu-agali": "Resolved by preserving literal English and applying gloss clarification only; proposed opaque refrain substitution rejected.",
     "hanuman-bahuk": "The final proposal includes the two peer-requested revisions; older peer hashes intentionally identify the version they reviewed. Line176 remains unresolved.",
-    "sampurna-sundarakanda": "Two sung couplets are confirmed missing. Proposed insertions are saved, but first-syllable onset validation and source/order/timing integration are still required.",
+    "sampurna-sundarakanda": "Two omitted sung couplets restored with independently checked starts; all existing starts and audio preserved.",
     "kanakadhara-stotram": "The recorded translation question l029 is resolved. This mark does not certify previously noted performance-order questions or a new listening audit."
   },
   "audioResearch": {
@@ -71,7 +71,7 @@
     },
     "vishnu-sahasranama": {
       "readerSha256": "1389fbb39798c45f2d2ec3da415032cb700fe54a2e2be60913dcf170b62b82fa",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "meditation-2",
         "meditation-4"
@@ -1193,11 +1193,1090 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "a4c1fb83d55b09b9c9a3e374b150a66ae22c6c86cdc261255107f191676f0059",
+      "integrationReview": {
+        "proposalSha256": "bf3b6e99eb8b486478825e91800160069a0445dc40e738558b4559f05de1b1dd",
+        "resolutionSha256s": [
+          "e6c60d23ccbbe2da56660e87b5ab6069db7b5645ddbfbc6e0c2efb6eb97bbe64",
+          "4630c0581d2d453492f6dc6109a9619f75efcef7696f6ab41c92923429025ee4"
+        ],
+        "verdict": "accept",
+        "reason": "Accept precise vāsteyam segmentation and fluid/bladder image: the explicit Chāndogya parallel and morphological formation support this, rather than importing a garment variant. Shifted token/source indices remain in range and preserve unrelated content. Puṇya-upeta as endowed with holiness is the direct quality construction; no group of blessed beings is stated.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "vishnu-sahasranama",
+          "lineId": "meditation-2",
+          "field": "english",
+          "old": "{31:I bow to} {27:him}, {29:Viṣṇu}, {30:the Lord}, {28:whose body is the three worlds}: {0:earth} is {2:his} {1:two feet}; {4:the sky} {3:the navel}; {6:wind} {5:the breath}; {7:moon and sun} {8:are} {9:the two eyes}; {11:the directions} {10:the two ears}; {13:heaven} {12:the head}; {16:fire} {15:also} {14:the mouth}; {19:this} {20:ocean} is {18:in the abdomen} {17:of his}; and {23:the universe} {21:situated within} {22:him} {26:sports delightfully}, {25:wondrously}, {24:with gods, humans, birds, cattle, serpents, Gandharvas, and Daityas}.",
+          "new": "{30:I bow to} {26:him}, {28:Viṣṇu}, {29:the Lord}, {27:whose body is the three worlds}: {0:earth} is {2:his} {1:two feet}; {4:the sky} {3:the navel}; {6:wind} {5:the breath}; {7:moon and sun} {8:are} {9:the two eyes}; {11:the directions} {10:the two ears}; {13:heaven} {12:the head}; {16:fire} {15:also} {14:the mouth}; {19:the ocean} is {18:the fluid in }{17:his }{18:bladder}; and {22:the universe} {20:situated within} {21:him} {25:sports delightfully}, {24:wondrously}, {23:with gods, humans, birds, cattle, serpents, Gandharvas, and Daityas}.",
+          "reason": "Restore fluid/bladder image, remove invented this."
+        },
+        {
+          "slug": "vishnu-sahasranama",
+          "lineId": "meditation-2",
+          "field": "words",
+          "old": [
+            {
+              "roman": "bhūḥ",
+              "citationRoman": "bhūḥ",
+              "deva": "भूः",
+              "gloss": "earth",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pādau",
+              "citationRoman": "pādau",
+              "deva": "पादौ",
+              "gloss": "two feet",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yasya",
+              "citationRoman": "yasya",
+              "deva": "यस्य",
+              "gloss": "whose",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nābhir",
+              "citationRoman": "nābhiḥ",
+              "deva": "नाभिः",
+              "gloss": "navel",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viyad",
+              "citationRoman": "viyat",
+              "deva": "वियत्",
+              "gloss": "sky",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "asur",
+              "citationRoman": "asuḥ",
+              "deva": "असुः",
+              "gloss": "breath",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "anilaś",
+              "citationRoman": "anilaḥ",
+              "deva": "अनिलः",
+              "gloss": "wind",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "candrasūryau",
+              "citationRoman": "candra-sūryau",
+              "deva": "चन्द्रसूर्यौ",
+              "gloss": "moon and sun",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ca",
+              "citationRoman": "ca",
+              "deva": "च",
+              "gloss": "and",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "netre",
+              "citationRoman": "netre",
+              "deva": "नेत्रे",
+              "gloss": "two eyes",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "karṇāv",
+              "citationRoman": "karṇau",
+              "deva": "कर्णौ",
+              "gloss": "two ears",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "āśāḥ",
+              "citationRoman": "āśāḥ",
+              "deva": "आशाः",
+              "gloss": "directions",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "śiro",
+              "citationRoman": "śiraḥ",
+              "deva": "शिरः",
+              "gloss": "head",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dyaur",
+              "citationRoman": "dyauḥ",
+              "deva": "द्यौः",
+              "gloss": "heaven",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "mukham",
+              "citationRoman": "mukham",
+              "deva": "मुखम्",
+              "gloss": "mouth",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "api",
+              "citationRoman": "api",
+              "deva": "अपि",
+              "gloss": "also",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dahano",
+              "citationRoman": "dahanaḥ",
+              "deva": "दहनः",
+              "gloss": "fire",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yasya",
+              "citationRoman": "yasya",
+              "deva": "यस्य",
+              "gloss": "whose",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vāste",
+              "citationRoman": "vāste",
+              "deva": "वास्ते",
+              "gloss": "in the abdomen",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yam",
+              "citationRoman": "ayam",
+              "deva": "अयम्",
+              "gloss": "this",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "abdhiḥ",
+              "citationRoman": "abdhiḥ",
+              "deva": "अब्धिः",
+              "gloss": "ocean",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "antaḥsthaṃ",
+              "citationRoman": "antaḥ-stham",
+              "deva": "अन्तःस्थम्",
+              "gloss": "situated within",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yasya",
+              "citationRoman": "yasya",
+              "deva": "यस्य",
+              "gloss": "whose",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viśvaṃ",
+              "citationRoman": "viśvam",
+              "deva": "विश्वम्",
+              "gloss": "universe",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "suranarakhagagobhogigandharvadaityaiḥ",
+              "citationRoman": "sura-nara-khaga-go-bhogi-gandharva-daityaiḥ",
+              "deva": "सुरनरखगगोभोगिगन्धर्वदैत्यैः",
+              "gloss": "by gods, humans, birds, cattle, serpents, Gandharvas, and Daityas",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "citraṃ",
+              "citationRoman": "citram",
+              "deva": "चित्रम्",
+              "gloss": "wondrously",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "raṃramyate",
+              "citationRoman": "raṃramyate",
+              "deva": "रंरम्यते",
+              "gloss": "sports delightfully",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "taṃ",
+              "citationRoman": "tam",
+              "deva": "तम्",
+              "gloss": "him",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tribhuvanavapuṣaṃ",
+              "citationRoman": "tri-bhuvana-vapuṣam",
+              "deva": "त्रिभुवनवपुषम्",
+              "gloss": "whose body is the three worlds",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viṣṇum",
+              "citationRoman": "viṣṇum",
+              "deva": "विष्णुम्",
+              "gloss": "Viṣṇu, the all-pervading one",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "īśaṃ",
+              "citationRoman": "īśam",
+              "deva": "ईशम्",
+              "gloss": "the Lord",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "namāmi",
+              "citationRoman": "namāmi",
+              "deva": "नमामि",
+              "gloss": "I bow to",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "bhūḥ",
+              "citationRoman": "bhūḥ",
+              "deva": "भूः",
+              "gloss": "earth",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pādau",
+              "citationRoman": "pādau",
+              "deva": "पादौ",
+              "gloss": "two feet",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yasya",
+              "citationRoman": "yasya",
+              "deva": "यस्य",
+              "gloss": "whose",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nābhir",
+              "citationRoman": "nābhiḥ",
+              "deva": "नाभिः",
+              "gloss": "navel",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viyad",
+              "citationRoman": "viyat",
+              "deva": "वियत्",
+              "gloss": "sky",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "asur",
+              "citationRoman": "asuḥ",
+              "deva": "असुः",
+              "gloss": "breath",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "anilaś",
+              "citationRoman": "anilaḥ",
+              "deva": "अनिलः",
+              "gloss": "wind",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "candrasūryau",
+              "citationRoman": "candra-sūryau",
+              "deva": "चन्द्रसूर्यौ",
+              "gloss": "moon and sun",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ca",
+              "citationRoman": "ca",
+              "deva": "च",
+              "gloss": "and",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "netre",
+              "citationRoman": "netre",
+              "deva": "नेत्रे",
+              "gloss": "two eyes",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "karṇāv",
+              "citationRoman": "karṇau",
+              "deva": "कर्णौ",
+              "gloss": "two ears",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "āśāḥ",
+              "citationRoman": "āśāḥ",
+              "deva": "आशाः",
+              "gloss": "directions",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "śiro",
+              "citationRoman": "śiraḥ",
+              "deva": "शिरः",
+              "gloss": "head",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dyaur",
+              "citationRoman": "dyauḥ",
+              "deva": "द्यौः",
+              "gloss": "heaven",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "mukham",
+              "citationRoman": "mukham",
+              "deva": "मुखम्",
+              "gloss": "mouth",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "api",
+              "citationRoman": "api",
+              "deva": "अपि",
+              "gloss": "also",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dahano",
+              "citationRoman": "dahanaḥ",
+              "deva": "दहनः",
+              "gloss": "fire",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yasya",
+              "citationRoman": "yasya",
+              "deva": "यस्य",
+              "gloss": "whose",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vāsteyam",
+              "citationRoman": "vāsteyam",
+              "deva": "वास्तेयम्",
+              "gloss": "the fluid in the bladder; vāsteya means situated in the bladder, with udakam (water/fluid) understood in this cosmic-body image",
+              "analysis": "Neuter singular vāsteyam, from vasti (bladder); not vāste plus ayam. Compare Chāndogya Upaniṣad 3.19.2, vāsteyam udakam.",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "abdhiḥ",
+              "citationRoman": "abdhiḥ",
+              "deva": "अब्धिः",
+              "gloss": "ocean",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "antaḥsthaṃ",
+              "citationRoman": "antaḥ-stham",
+              "deva": "अन्तःस्थम्",
+              "gloss": "situated within",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yasya",
+              "citationRoman": "yasya",
+              "deva": "यस्य",
+              "gloss": "whose",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viśvaṃ",
+              "citationRoman": "viśvam",
+              "deva": "विश्वम्",
+              "gloss": "universe",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "suranarakhagagobhogigandharvadaityaiḥ",
+              "citationRoman": "sura-nara-khaga-go-bhogi-gandharva-daityaiḥ",
+              "deva": "सुरनरखगगोभोगिगन्धर्वदैत्यैः",
+              "gloss": "by gods, humans, birds, cattle, serpents, Gandharvas, and Daityas",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "citraṃ",
+              "citationRoman": "citram",
+              "deva": "चित्रम्",
+              "gloss": "wondrously",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "raṃramyate",
+              "citationRoman": "raṃramyate",
+              "deva": "रंरम्यते",
+              "gloss": "sports delightfully",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "taṃ",
+              "citationRoman": "tam",
+              "deva": "तम्",
+              "gloss": "him",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tribhuvanavapuṣaṃ",
+              "citationRoman": "tri-bhuvana-vapuṣam",
+              "deva": "त्रिभुवनवपुषम्",
+              "gloss": "whose body is the three worlds",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viṣṇum",
+              "citationRoman": "viṣṇum",
+              "deva": "विष्णुम्",
+              "gloss": "Viṣṇu, the all-pervading one",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "īśaṃ",
+              "citationRoman": "īśam",
+              "deva": "ईशम्",
+              "gloss": "the Lord",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "namāmi",
+              "citationRoman": "namāmi",
+              "deva": "नमामि",
+              "gloss": "I bow to",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Merge vāste+yam into lexical vāsteyam."
+        },
+        {
+          "slug": "vishnu-sahasranama",
+          "lineId": "meditation-2",
+          "field": "sourceWords",
+          "old": [
+            {
+              "text": "भूः",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "पादौ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "यस्य",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "नाभिर्वियदसुरनिलश्चन्द्रसूर्यौ",
+              "wordIndices": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "text": "च",
+              "wordIndices": [
+                8
+              ]
+            },
+            {
+              "text": "नेत्रे",
+              "wordIndices": [
+                9
+              ]
+            },
+            {
+              "text": "कर्णावाशाः",
+              "wordIndices": [
+                10,
+                11
+              ]
+            },
+            {
+              "text": "शिरो",
+              "wordIndices": [
+                12
+              ]
+            },
+            {
+              "text": "द्यौर्मुखमपि",
+              "wordIndices": [
+                13,
+                14,
+                15
+              ]
+            },
+            {
+              "text": "दहनो",
+              "wordIndices": [
+                16
+              ]
+            },
+            {
+              "text": "यस्य",
+              "wordIndices": [
+                17
+              ]
+            },
+            {
+              "text": "वास्तेयमब्धिः",
+              "wordIndices": [
+                18,
+                19,
+                20
+              ]
+            },
+            {
+              "text": "अन्तःस्थं",
+              "wordIndices": [
+                21
+              ]
+            },
+            {
+              "text": "यस्य",
+              "wordIndices": [
+                22
+              ]
+            },
+            {
+              "text": "विश्वं",
+              "wordIndices": [
+                23
+              ]
+            },
+            {
+              "text": "सुरनरखगगोभोगिगन्धर्वदैत्यैः",
+              "wordIndices": [
+                24
+              ]
+            },
+            {
+              "text": "चित्रं",
+              "wordIndices": [
+                25
+              ]
+            },
+            {
+              "text": "रंरम्यते",
+              "wordIndices": [
+                26
+              ]
+            },
+            {
+              "text": "तं",
+              "wordIndices": [
+                27
+              ]
+            },
+            {
+              "text": "त्रिभुवनवपुषं",
+              "wordIndices": [
+                28
+              ]
+            },
+            {
+              "text": "विष्णुमीशं",
+              "wordIndices": [
+                29,
+                30
+              ]
+            },
+            {
+              "text": "नमामि",
+              "wordIndices": [
+                31
+              ]
+            }
+          ],
+          "new": [
+            {
+              "text": "भूः",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "पादौ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "यस्य",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "नाभिर्वियदसुरनिलश्चन्द्रसूर्यौ",
+              "wordIndices": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "text": "च",
+              "wordIndices": [
+                8
+              ]
+            },
+            {
+              "text": "नेत्रे",
+              "wordIndices": [
+                9
+              ]
+            },
+            {
+              "text": "कर्णावाशाः",
+              "wordIndices": [
+                10,
+                11
+              ]
+            },
+            {
+              "text": "शिरो",
+              "wordIndices": [
+                12
+              ]
+            },
+            {
+              "text": "द्यौर्मुखमपि",
+              "wordIndices": [
+                13,
+                14,
+                15
+              ]
+            },
+            {
+              "text": "दहनो",
+              "wordIndices": [
+                16
+              ]
+            },
+            {
+              "text": "यस्य",
+              "wordIndices": [
+                17
+              ]
+            },
+            {
+              "text": "वास्तेयमब्धिः",
+              "wordIndices": [
+                18,
+                19
+              ]
+            },
+            {
+              "text": "अन्तःस्थं",
+              "wordIndices": [
+                20
+              ]
+            },
+            {
+              "text": "यस्य",
+              "wordIndices": [
+                21
+              ]
+            },
+            {
+              "text": "विश्वं",
+              "wordIndices": [
+                22
+              ]
+            },
+            {
+              "text": "सुरनरखगगोभोगिगन्धर्वदैत्यैः",
+              "wordIndices": [
+                23
+              ]
+            },
+            {
+              "text": "चित्रं",
+              "wordIndices": [
+                24
+              ]
+            },
+            {
+              "text": "रंरम्यते",
+              "wordIndices": [
+                25
+              ]
+            },
+            {
+              "text": "तं",
+              "wordIndices": [
+                26
+              ]
+            },
+            {
+              "text": "त्रिभुवनवपुषं",
+              "wordIndices": [
+                27
+              ]
+            },
+            {
+              "text": "विष्णुमीशं",
+              "wordIndices": [
+                28,
+                29
+              ]
+            },
+            {
+              "text": "नमामि",
+              "wordIndices": [
+                30
+              ]
+            }
+          ],
+          "reason": "Reindex only; all source text unchanged."
+        },
+        {
+          "slug": "vishnu-sahasranama",
+          "lineId": "meditation-2",
+          "field": "grammarNote",
+          "old": "",
+          "new": "The body of Viṣṇu is identified with the cosmos. Vāsteyam is one word, meaning situated in the bladder; water or fluid is understood, as in Chāndogya Upaniṣad 3.19.2. It is not vāste plus ayam (this). The ocean corresponds to the fluid of the cosmic body.",
+          "reason": "Explain exact cosmic-body image."
+        },
+        {
+          "slug": "vishnu-sahasranama",
+          "lineId": "meditation-4",
+          "field": "english",
+          "old": "{7:I bow to} {6:Viṣṇu}, {0:dark like a cloud}, {1:wearing yellow silk}, {2:marked with Śrīvatsa}, {3:whose limbs shine with the Kaustubha}, {4:attended by the blessed}, {5:whose long eyes are like lotuses}, {8:the one Lord of all worlds}.",
+          "new": "{7:I bow to} {6:Viṣṇu}, {0:dark like a cloud}, {1:wearing yellow silk}, {2:marked with Śrīvatsa}, {3:whose limbs shine with the Kaustubha}, {4:endowed with holiness}, {5:whose long eyes are like lotuses}, {8:the one Lord of all worlds}.",
+          "reason": "Avoid unsupported attendant beings."
+        },
+        {
+          "slug": "vishnu-sahasranama",
+          "lineId": "meditation-4",
+          "field": "words",
+          "old": [
+            {
+              "roman": "meghaśyāmaṃ",
+              "citationRoman": "megha-śyāmam",
+              "deva": "मेघश्यामम्",
+              "gloss": "dark like a cloud",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pītakauśeyavāsaṃ",
+              "citationRoman": "pīta-kauśeya-vāsam",
+              "deva": "पीतकौशेयवासम्",
+              "gloss": "wearing yellow silk",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "śrīvatsāṅkaṃ",
+              "citationRoman": "śrīvatsa-aṅkam",
+              "deva": "श्रीवत्सअङ्कम्",
+              "gloss": "marked with Śrīvatsa",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kaustubhodbhāsitāṅgam",
+              "citationRoman": "kaustubha-udbhāsita-aṅgam",
+              "deva": "कौस्तुभौद्भासितअङ्गम्",
+              "gloss": "whose limbs shine with the Kaustubha",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "puṇyopetaṃ",
+              "citationRoman": "puṇya-upetam",
+              "deva": "पुण्यौपेतम्",
+              "gloss": "attended by the blessed",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "puṇḍarīkāyatākṣaṃ",
+              "citationRoman": "puṇḍarīka-āyata-akṣam",
+              "deva": "पुण्डरीकआयतअक्षम्",
+              "gloss": "whose long eyes are like lotuses",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viṣṇuṃ",
+              "citationRoman": "viṣṇum",
+              "deva": "विष्णुम्",
+              "gloss": "the all-pervading divine reality",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vande",
+              "citationRoman": "vande",
+              "deva": "वन्दे",
+              "gloss": "I bow to",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sarvalokaikanātham",
+              "citationRoman": "sarva-loka-eka-nātham",
+              "deva": "सर्वलोकएकनाथम्",
+              "gloss": "the one Lord of all worlds",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "meghaśyāmaṃ",
+              "citationRoman": "megha-śyāmam",
+              "deva": "मेघश्यामम्",
+              "gloss": "dark like a cloud",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pītakauśeyavāsaṃ",
+              "citationRoman": "pīta-kauśeya-vāsam",
+              "deva": "पीतकौशेयवासम्",
+              "gloss": "wearing yellow silk",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "śrīvatsāṅkaṃ",
+              "citationRoman": "śrīvatsa-aṅkam",
+              "deva": "श्रीवत्सअङ्कम्",
+              "gloss": "marked with Śrīvatsa",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kaustubhodbhāsitāṅgam",
+              "citationRoman": "kaustubha-udbhāsita-aṅgam",
+              "deva": "कौस्तुभौद्भासितअङ्गम्",
+              "gloss": "whose limbs shine with the Kaustubha",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "puṇyopetaṃ",
+              "citationRoman": "puṇya-upetam",
+              "deva": "पुण्योपेतम्",
+              "gloss": "endowed with holiness and auspiciousness; puṇya + upeta",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "puṇḍarīkāyatākṣaṃ",
+              "citationRoman": "puṇḍarīka-āyata-akṣam",
+              "deva": "पुण्डरीकआयतअक्षम्",
+              "gloss": "whose long eyes are like lotuses",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "viṣṇuṃ",
+              "citationRoman": "viṣṇum",
+              "deva": "विष्णुम्",
+              "gloss": "the all-pervading divine reality",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vande",
+              "citationRoman": "vande",
+              "deva": "वन्दे",
+              "gloss": "I bow to",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sarvalokaikanātham",
+              "citationRoman": "sarva-loka-eka-nātham",
+              "deva": "सर्वलोकएकनाथम्",
+              "gloss": "the one Lord of all worlds",
+              "analysis": "",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Align gloss and correct compounded Devanagari."
+        }
+      ]
     },
     "pradnya-vivardhan-stotra": {
       "readerSha256": "8e24b7922a2067ce00babe24fa23c4f841a233bf3bca5ad4de6cca9a7c597c88",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "verse-3a"
       ],
@@ -1284,7 +2363,73 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "3c262635925c2dd207865e403995a1f2a6cdf8245aef761413fdd9ab8e54f2f5",
+      "integrationReview": {
+        "proposalSha256": "31272db89c7884dbff6ad30db4f31ed0912739c684077dacc7dd02c3bfeacdcd",
+        "resolutionSha256s": [
+          "a6f0b0755d63a2de3fb070b3731decd93f8fbea3d5924bff1b1f1995b594515b"
+        ],
+        "verdict": "accept",
+        "reason": "Accept: sārasvata concerns eloquence/learning, confirmed by the hymn’s speech-gift context and both retained audio records supporting the compound. No need to manufacture separate siddhaḥ sārasvataḥ names.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "pradnya-vivardhan-stotra",
+          "lineId": "verse-3a",
+          "field": "english",
+          "old": "{0:Ocean of the sacred Word, and }{1:master of perfected wisdom, }{2:Guha;}",
+          "new": "{0:Ocean of the sacred Word, and }{1:perfect in eloquence and learning, }{2:Guha;}",
+          "reason": "Render sārasvata specifically."
+        },
+        {
+          "slug": "pradnya-vivardhan-stotra",
+          "lineId": "verse-3a",
+          "field": "words",
+          "old": [
+            {
+              "roman": "śabdabrahmasamudraśca",
+              "gloss": "ocean of the sacred Word, and; śabdabrahman is the Veda understood as Brahman (ultimate reality) expressed in sacred sound; samudra means ocean",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "siddhasārasvato",
+              "gloss": "one who has perfected eloquence/learning",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "guhaḥ",
+              "gloss": "Guha (the hidden one / cave dweller)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "śabdabrahmasamudraśca",
+              "gloss": "ocean of the sacred Word, and; śabdabrahman is the Veda understood as Brahman (ultimate reality) expressed in sacred sound; samudra means ocean",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "siddhasārasvato",
+              "gloss": "one whose eloquence and learning are perfected; siddha (accomplished, perfected) + sārasvata (eloquence, learning)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "guhaḥ",
+              "gloss": "Guha (the hidden one / cave dweller)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Align primary gloss with contextual eloquence and learning."
+        }
+      ]
     },
     "shyamala-dandakam": {
       "readerSha256": "d7e4d82aeb15d379a54b7ca3ae324053253c434936db8cab572493eb1380d67e",
@@ -1380,7 +2525,7 @@
     },
     "sampurna-sundarakanda": {
       "readerSha256": "5e6099c3c0299b8139c38914f2298f7c7479816b2b5668ed3e472c7764a12a49",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "line-013"
       ],
@@ -1721,7 +2866,412 @@
           }
         }
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "6e2d1d466c1efe63293eb976474d425b11d7f04728c8acdfad1c4156064e2abb",
+      "integrationReview": {
+        "proposalSha256": "a93070e02afa20f123cf6ac2c0ca0667388711d3844037136a00a99999f9fb4f",
+        "resolutionSha256s": [
+          "96fb8193cc6c23a6426c172cb36219e041e0bf16dd794fd274c708fd2a215b7a"
+        ],
+        "verdict": "accept_text_with_required_narrow_gloss_revision",
+        "reason": "Text and translation accepted conditional on the owned focused onset/source check. Visually inspected retained Mānas-Pīyūṣ page31: parikhehu is wait for me, jaba lagi governs return, and present joy is independent of future task success. Inserted definitions account for all source words and connect naturally into line013. Retained audio review differs from extraction in bacana/vacana and parikhehu/parakhehu; the reviewer explains those as performed variants, but the final audio adjudication should explicitly confirm them rather than claim two-pass spelling consensus.",
+        "requiredRevisions": [
+          {
+            "lineId": "line-012a",
+            "field": "words[5].gloss",
+            "old": "Hanumān",
+            "new": "Hanumān, Rāma’s devoted monkey messenger; the name means “having prominent jaws”",
+            "reason": "Carry forward the already reviewed contextual identity and name meaning used by this same reader’s existing hanumantā token; avoid a self-referential name-only gloss."
+          }
+        ],
+        "finalSourceDecision": {
+          "verdict": "accept vacana and parakhehu",
+          "evidenceArtifact": ".transcription/source-resolution-20261121/integration-timing-phonetic-partial.json",
+          "evidenceArtifactSha256": "941495ba7cb0ca79ee02b94c6371b36d68a5b1ee065aa711cc79fdd42fe039f6",
+          "reason": "The completed earlier independent review expressly distinguishes performed labiodental v from b and central a from i. The separate targeted adjudication supplies a complete vacana choice with acoustic explanation and complete parakhehu choice/uncertainty fields before its response truncation. These observed fields corroborate the earlier completed review; they are not treated as a completed third report. Both variants preserve the primary source meaning and coherent Awadhi request-to-wait grammar. This supports the narrow performed spellings without leaving an otherwise established translation incomplete.",
+          "limitation": "Third response remains incomplete_provider_response with length finish; no missing explanation or validation is inferred. This decision evaluates source spellings and translation only. Timing validation remains owned separately by the lead."
+        }
+      },
+      "integrationChanges": [
+        {
+          "slug": "sampurna-sundarakanda",
+          "lineId": "line-013",
+          "field": "english",
+          "old": "{0,1:Until }{2:I return }{4:having seen }{3:Sītā, }{5,6:the task will succeed, }{9:and great }{8:joy }{7:will be mine.}",
+          "new": "{0,1:until }{2:I return }{4:having seen }{3:Sītā. }{5,6:The task will succeed; }{9:great }{8:joy }{7:is mine.}",
+          "reason": "Separate subordinate until-clause from following independent prediction."
+        },
+        {
+          "slug": "sampurna-sundarakanda",
+          "lineId": "line-013",
+          "field": "grammarNote",
+          "old": "Awadhi; jaba lagi introduces a subordinate temporal clause with conjunctive participle dekhī ('having seen') and 1st sg. subjunctive/future āvauṃ; hoihi is 3rd sg. future.",
+          "new": "Awadhi. Jaba lagi continues Hanumān’s preceding request that his companions wait for him. Hoihi kāju begins a separate prediction that the task will succeed; mohi haraṣa biseṣī describes his present great joy. The until-clause does not govern the success prediction.",
+          "reason": "Resolve antecedent and present emotional state."
+        }
+      ],
+      "integratedAdditions": [
+        {
+          "suggestedId": "line-012a",
+          "source": "जामवंत के वचन सुहाए। सुनि हनुमंत हृदय अति भाए ॥",
+          "roman": "jāmavanta ke vacana suhāe। suni hanumanta hṛdaya ati bhāe ॥",
+          "english": "{0,1:Jāmbavān’s }{3:pleasing }{2:words, }{4:when heard, }{7,8:greatly delighted }{5:Hanumān’s }{6:heart.}",
+          "words": [
+            {
+              "roman": "jāmavanta",
+              "gloss": "Jāmbavān, the wise bear elder"
+            },
+            {
+              "roman": "ke",
+              "gloss": "of"
+            },
+            {
+              "roman": "vacana",
+              "gloss": "words"
+            },
+            {
+              "roman": "suhāe।",
+              "gloss": "pleasing, agreeable"
+            },
+            {
+              "roman": "suni",
+              "gloss": "having heard"
+            },
+            {
+              "roman": "hanumanta",
+              "gloss": "Hanumān, Rāma’s devoted monkey messenger; the name means “having prominent jaws”"
+            },
+            {
+              "roman": "hṛdaya",
+              "gloss": "heart"
+            },
+            {
+              "roman": "ati",
+              "gloss": "greatly, exceedingly"
+            },
+            {
+              "roman": "bhāe",
+              "gloss": "pleased, delighted"
+            }
+          ],
+          "startConsensus": 313.478,
+          "sourceLanguage": "awa",
+          "sourceWords": [
+            {
+              "text": "जामवंत",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "के",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "वचन",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "सुहाए।",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "सुनि",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "हनुमंत",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "हृदय",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "अति",
+              "wordIndices": [
+                7
+              ]
+            },
+            {
+              "text": "भाए",
+              "wordIndices": [
+                8
+              ]
+            }
+          ],
+          "sequenceEntry": {
+            "ref": "line-012a",
+            "section": "verse",
+            "repeats": 1
+          },
+          "timingReadings": [
+            {
+              "artifact": ".transcription/source-resolution-20261121/audio/sampurna-sundarakanda/review-0/transcription.json",
+              "clipStart": 37.6,
+              "sourceStart": 313.478
+            },
+            {
+              "artifact": ".transcription/source-resolution-20261121/audio/sampurna-sundarakanda/review-0/review.json",
+              "clipStart": 37.6,
+              "sourceStart": 313.478
+            }
+          ],
+          "grammarNote": "Awadhi. Jāmavanta ke is possessive; suni is having heard; bhāe expresses delight in Hanumān’s heart."
+        },
+        {
+          "suggestedId": "line-012b",
+          "source": "तब लगि मोहि परखेहु तुम्ह भाई। सहि दुख कंद मूल फल खाई ॥",
+          "roman": "taba lagi mohi parakhehu tumha bhāī। sahi dukha kanda mūla phala khāī ॥",
+          "english": "{4,5:Brothers, }{0,1,3:keep waiting }{2:for me, }{6:enduring }{7:hardship }{11:and eating }{8:bulbs, }{9:roots }{10:and fruit,}",
+          "words": [
+            {
+              "roman": "taba",
+              "gloss": "then"
+            },
+            {
+              "roman": "lagi",
+              "gloss": "until"
+            },
+            {
+              "roman": "mohi",
+              "gloss": "for me"
+            },
+            {
+              "roman": "parakhehu",
+              "gloss": "wait for, watch for; addressed to the companions"
+            },
+            {
+              "roman": "tumha",
+              "gloss": "you"
+            },
+            {
+              "roman": "bhāī।",
+              "gloss": "brothers"
+            },
+            {
+              "roman": "sahi",
+              "gloss": "enduring"
+            },
+            {
+              "roman": "dukha",
+              "gloss": "hardship"
+            },
+            {
+              "roman": "kanda",
+              "gloss": "edible bulbs or tubers"
+            },
+            {
+              "roman": "mūla",
+              "gloss": "roots"
+            },
+            {
+              "roman": "phala",
+              "gloss": "fruit"
+            },
+            {
+              "roman": "khāī",
+              "gloss": "eating"
+            }
+          ],
+          "startConsensus": 323.828,
+          "sourceLanguage": "awa",
+          "sourceWords": [
+            {
+              "text": "तब",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "लगि",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मोहि",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "परखेहु",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "तुम्ह",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "भाई।",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "सहि",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "दुख",
+              "wordIndices": [
+                7
+              ]
+            },
+            {
+              "text": "कंद",
+              "wordIndices": [
+                8
+              ]
+            },
+            {
+              "text": "मूल",
+              "wordIndices": [
+                9
+              ]
+            },
+            {
+              "text": "फल",
+              "wordIndices": [
+                10
+              ]
+            },
+            {
+              "text": "खाई",
+              "wordIndices": [
+                11
+              ]
+            }
+          ],
+          "sequenceEntry": {
+            "ref": "line-012b",
+            "section": "verse",
+            "repeats": 1
+          },
+          "timingReadings": [
+            {
+              "artifact": ".transcription/source-resolution-20261121/audio/sampurna-sundarakanda/review-0/transcription.json",
+              "clipStart": 47.95,
+              "sourceStart": 323.828
+            },
+            {
+              "artifact": ".transcription/source-resolution-20261121/audio/sampurna-sundarakanda/review-0/review.json",
+              "clipStart": 47.95,
+              "sourceStart": 323.828
+            }
+          ],
+          "grammarNote": "Awadhi. Parakhehu is an imperative request to the companions to wait and watch for Hanumān’s return. Taba lagi is completed by jaba lagi in the next line; sahi and khāī describe enduring and eating while they wait."
+        }
+      ],
+      "timingVerification": {
+        "state": "accepted",
+        "scope": "Only two newly recovered couplet first-syllable starts; following occurrence is a control and its public start must remain unchanged. Other original timestamps have not been freshly audited.",
+        "sourceSha256": "fee32605de1f30b421ca0eee08bf31d15636d1506bc1310bc1ee2e0e2ce5a2f1",
+        "measurements": [
+          {
+            "clipStart": 305,
+            "clipEnd": 344,
+            "uncertain_occurrence_ids": [],
+            "starts": [
+              {
+                "occurrence_id": "line-012a",
+                "start": 313.48
+              },
+              {
+                "occurrence_id": "line-012b",
+                "start": 323.88
+              },
+              {
+                "occurrence_id": "line-013",
+                "start": 334.04
+              }
+            ]
+          },
+          {
+            "clipStart": 302,
+            "clipEnd": 342,
+            "uncertain_occurrence_ids": [],
+            "starts": [
+              {
+                "occurrence_id": "line-012a",
+                "start": 313.34
+              },
+              {
+                "occurrence_id": "line-012b",
+                "start": 323.88
+              },
+              {
+                "occurrence_id": "line-013",
+                "start": 334.4
+              }
+            ]
+          }
+        ],
+        "errors": [],
+        "acceptedNewStarts": [
+          {
+            "occurrence_id": "line-012a",
+            "start": 313.41,
+            "differenceSeconds": 0.14
+          },
+          {
+            "occurrence_id": "line-012b",
+            "start": 323.88,
+            "differenceSeconds": 0.0
+          }
+        ],
+        "followingControl": {
+          "occurrence_id": "line-013",
+          "start": 334.22,
+          "differenceSeconds": 0.36
+        },
+        "sourceReadingStatus": "Separate final phonetic call hit token limit; its partial explicit final content corroborates saved review variants vacana/parakhehu, but is not a completed validated report. See integration-timing-phonetic-partial.json. Lead must make source acceptance decision.",
+        "totalPaidCalls": 3,
+        "totalReportedCostUsd": 0.0304305
+      },
+      "sourceVariantDecision": {
+        "proposalSha256": "a93070e02afa20f123cf6ac2c0ca0667388711d3844037136a00a99999f9fb4f",
+        "resolutionSha256s": [
+          "96fb8193cc6c23a6426c172cb36219e041e0bf16dd794fd274c708fd2a215b7a"
+        ],
+        "verdict": "accept_text_with_required_narrow_gloss_revision",
+        "reason": "Text and translation accepted conditional on the owned focused onset/source check. Visually inspected retained Mānas-Pīyūṣ page31: parikhehu is wait for me, jaba lagi governs return, and present joy is independent of future task success. Inserted definitions account for all source words and connect naturally into line013. Retained audio review differs from extraction in bacana/vacana and parikhehu/parakhehu; the reviewer explains those as performed variants, but the final audio adjudication should explicitly confirm them rather than claim two-pass spelling consensus.",
+        "requiredRevisions": [
+          {
+            "lineId": "line-012a",
+            "field": "words[5].gloss",
+            "old": "Hanumān",
+            "new": "Hanumān, Rāma’s devoted monkey messenger; the name means “having prominent jaws”",
+            "reason": "Carry forward the already reviewed contextual identity and name meaning used by this same reader’s existing hanumantā token; avoid a self-referential name-only gloss."
+          }
+        ],
+        "finalSourceDecision": {
+          "verdict": "accept vacana and parakhehu",
+          "evidenceArtifact": ".transcription/source-resolution-20261121/integration-timing-phonetic-partial.json",
+          "evidenceArtifactSha256": "941495ba7cb0ca79ee02b94c6371b36d68a5b1ee065aa711cc79fdd42fe039f6",
+          "reason": "The completed earlier independent review expressly distinguishes performed labiodental v from b and central a from i. The separate targeted adjudication supplies a complete vacana choice with acoustic explanation and complete parakhehu choice/uncertainty fields before its response truncation. These observed fields corroborate the earlier completed review; they are not treated as a completed third report. Both variants preserve the primary source meaning and coherent Awadhi request-to-wait grammar. This supports the narrow performed spellings without leaving an otherwise established translation incomplete.",
+          "limitation": "Third response remains incomplete_provider_response with length finish; no missing explanation or validation is inferred. This decision evaluates source spellings and translation only. Timing validation remains owned separately by the lead."
+        }
+      }
     },
     "hanuman-bahuk": {
       "readerSha256": "b0b1fcdf77eb50d48ec37719f2cf19bf7b2f341bf8ab189beb1188b7e79c7e17",
@@ -4368,7 +5918,7 @@
     },
     "rann-jeeti-rama-rao-aye": {
       "readerSha256": "966a0dbecf03de1cd736ea6c6cc170602738736cf5a75bdac59b9ae46aaab1d0",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "nari-nihari",
         "sahita-rama-guna",
@@ -4646,11 +6196,291 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "1f59c65bd5c423bf840f90fafd84aa4fe50e771aaa6c30edb521809fb753f091",
+      "integrationReview": {
+        "proposalSha256": "7bd063acdeb0d042fd0fa30b868d55119b5b75a72267da066dc8a3d7be3d5d4f",
+        "resolutionSha256s": [
+          "226ae954574c9175ec8dc9053930b6df5c746e8cc8218d3b3205e10a5b984bdc",
+          "59b97e51b849e40c9959f904e01d88c5b5f24d1291da741b4ff2fa2ca67216a2"
+        ],
+        "verdict": "accept_with_required_narrow_revisions",
+        "reason": "Meaning accepted after narrow tag corrections below. Visually inspected Gītāvalī printed328: nectar revives monkeys; grace/gaze revives city people, with shared jiāe. Printed final stanza has te tab / ab Tulsi teu jinha hita sahita, supporting then/now contrast and loving singers, not even for Tulsi. Supplied predicates must not be presented as meanings of kapi, nagara, guṇa or sahita alone.",
+        "requiredRevisions": [
+          {
+            "lineId": "sudha-sinchi",
+            "field": "english",
+            "new": "{1:Sprinkling }{0:nectar, }he revived {2:the monkeys; }{3:with grace }he looked upon {3:the city’s }{4:men}",
+            "reason": "Keep cross-line supplied verbs untagged instead of assigning them to kapi and kṛpā-nagara."
+          },
+          {
+            "lineId": "sahita-rama-guna",
+            "field": "english",
+            "new": "{0:with} love {3:sing }{1:Rāma’s }{2:virtues} enjoy the same blessings.",
+            "reason": "Love is hita in the preceding line; enjoy the same blessings is supplied from context, not a meaning of guṇa."
+          }
+        ]
+      },
+      "integrationChanges": [
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "sudha-sinchi",
+          "field": "english",
+          "old": "{1:Sprinkling }{0:nectar }{2:on the monkeys }{3:and showing grace to the city's }{4:men}",
+          "new": "{1:Sprinkling }{0:nectar, }{2:he revived the monkeys; }{3:with grace he looked upon the city’s }{4:men}",
+          "reason": "Geetavali22.3 separates kṛpā from nagara-nara-nāri. Rama revives the monkeys by nectar and the city’s men and women by his gracious gaze; the two means share jiāe."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "nari-nihari",
+          "field": "english",
+          "old": "{0:and women }{1:with his gaze, }{2:he revived them.}",
+          "new": "{0:and women, }{1,2:and his gaze brought them to life.}",
+          "reason": "Geetavali22.3 separates kṛpā from nagara-nara-nāri. Rama revives the monkeys by nectar and the city’s men and women by his gracious gaze; the two means share jiāe."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "sudha-sinchi",
+          "field": "words",
+          "old": [
+            {
+              "roman": "sudhā",
+              "gloss": "nectar; life-giving ambrosia",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sīñci",
+              "gloss": "having sprinkled; showering",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kapi",
+              "gloss": "monkeys; monkey warriors",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kṛpānagara",
+              "gloss": "through grace; of the city (kṛpā + nagara, continuing with 'men and women')",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nara",
+              "gloss": "men; human beings",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "sudhā",
+              "gloss": "nectar; life-giving ambrosia",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sīñci",
+              "gloss": "having sprinkled; showering",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kapi",
+              "gloss": "monkeys; monkey warriors",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kṛpānagara",
+              "gloss": "kṛpā: grace; nagara: of the city; joins the following men and women",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nara",
+              "gloss": "men; human beings",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Geetavali22.3 separates kṛpā from nagara-nara-nāri. Rama revives the monkeys by nectar and the city’s men and women by his gracious gaze; the two means share jiāe."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "te-taba-aba",
+          "field": "english",
+          "old": "{4:for the sake of }{0:those }{1:then }{2:and now, }{3:and even for Tulsidas,}",
+          "new": "{0:Those people }{1:then—and }{2:now, }{3:says Tulsi, those too }{4:who}",
+          "reason": "Printed text te tab, ab tulasī teu jinha hita sahita rāma guna gāye extends the blessings of Rama’s reign to present devotees. Tulasī is the poet’s signature and tehu means those too, not even for Tulsi. Hita sahita is with affection."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "sahita-rama-guna",
+          "field": "english",
+          "old": "{0:with devotion, }{3:he has sung }{2:the virtues }{1:of Rāma.}",
+          "new": "{0:with love }{3:sing }{1:Rāma’s }{2:virtues enjoy the same blessings.}",
+          "reason": "Printed text te tab, ab tulasī teu jinha hita sahita rāma guna gāye extends the blessings of Rama’s reign to present devotees. Tulasī is the poet’s signature and tehu means those too, not even for Tulsi. Hita sahita is with affection."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "te-taba-aba",
+          "field": "words",
+          "old": [
+            {
+              "roman": "te",
+              "gloss": "they; those",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "taba",
+              "gloss": "then; at that time",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "aba",
+              "gloss": "now; at present",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tulasitehuṁ",
+              "gloss": "even for Tulsidas; also for Tulsi",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jinhahita",
+              "gloss": "for whose sake; for whose welfare",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "te",
+              "gloss": "they; those",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "taba",
+              "gloss": "then; at that time",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "aba",
+              "gloss": "now; at present",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tulasitehuṁ",
+              "gloss": "Tulsi [says]; those too (tulasī + tehuṃ)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jinhahita",
+              "gloss": "those who; with affection (jinha + hita)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Printed text te tab, ab tulasī teu jinha hita sahita rāma guna gāye extends the blessings of Rama’s reign to present devotees. Tulasī is the poet’s signature and tehu means those too, not even for Tulsi. Hita sahita is with affection."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "sahita-rama-guna",
+          "field": "words",
+          "old": [
+            {
+              "roman": "sahitā",
+              "gloss": "with love; devotedly; with attentive heart",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "rāma",
+              "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "guna",
+              "gloss": "virtuous quality; noble attribute",
+              "concept_key": "guna",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "gāe",
+              "gloss": "has sung; praises",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "sahitā",
+              "gloss": "with; together with, joining the preceding hita, affection",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "rāma",
+              "gloss": "Rāma, the delightful one; Viṣṇu’s avatāra and husband of Sītā",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "guna",
+              "gloss": "virtuous quality; noble attribute",
+              "concept_key": "guna",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "gāe",
+              "gloss": "sang; have sung; sing",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Printed text te tab, ab tulasī teu jinha hita sahita rāma guna gāye extends the blessings of Rama’s reign to present devotees. Tulasī is the poet’s signature and tehu means those too, not even for Tulsi. Hita sahita is with affection."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "te-taba-aba",
+          "field": "grammarNote",
+          "old": "'tulasitehuṁ' combines the poet's name with the emphatic/inclusive particle '-tehuṁ' ('even/also'); 'jinhahita' combines relative pronoun 'jinha' with postposition 'hita' ('for the sake of').",
+          "new": "The previous line’s blessings applied to those people then; Tulsi adds that they apply now too to those who sing Rāma’s virtues with affection. Tulasī is the poet’s signature, while tehuṃ means those too.",
+          "reason": "Printed text te tab, ab tulasī teu jinha hita sahita rāma guna gāye extends the blessings of Rama’s reign to present devotees. Tulasī is the poet’s signature and tehu means those too, not even for Tulsi. Hita sahita is with affection."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "sudha-sinchi",
+          "field": "english",
+          "old": "{1:Sprinkling }{0:nectar, }{2:he revived the monkeys; }{3:with grace he looked upon the city’s }{4:men}",
+          "new": "{1:Sprinkling }{0:nectar, }he revived {2:the monkeys; }{3:with grace }he looked upon {3:the city’s }{4:men}",
+          "reason": "Keep cross-line supplied verbs untagged instead of assigning them to kapi and kṛpā-nagara."
+        },
+        {
+          "slug": "rann-jeeti-rama-rao-aye",
+          "lineId": "sahita-rama-guna",
+          "field": "english",
+          "old": "{0:with love }{3:sing }{1:Rāma’s }{2:virtues enjoy the same blessings.}",
+          "new": "{0:with} love {3:sing }{1:Rāma’s }{2:virtues} enjoy the same blessings.",
+          "reason": "Love is hita in the preceding line; enjoy the same blessings is supplied from context, not a meaning of guṇa."
+        }
+      ]
     },
     "hanuman-chalisa": {
       "readerSha256": "221b2777e5a11893b3574bc7cca8ef9475605e61dc6ef250dd0ca2d3a3331324",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "chaupai-18"
       ],
@@ -4818,11 +6648,169 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "ea4815383e0c20af13347c7aad3689163b835ca2bfb106b2b26aaa58b1817b88",
+      "integrationReview": {
+        "proposalSha256": "01779a220ee0657ba4f49a41897111969270575741d598ff387894d6f80a654f",
+        "resolutionSha256s": [
+          "814d6c103f7b2a76ec1b61bee5f0b6060207b861964326a895e3b0648dabf979"
+        ],
+        "verdict": "accept",
+        "reason": "Accept previously peer-reviewed reading. Poetic multiplicity is supported by the specific original Mahāvīrī explanation. Keep the note’s read-here qualification; do not assert modern distances or treat yuga-years times yojanas as dimensions.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "hanuman-chalisa",
+          "lineId": "chaupai-18",
+          "field": "english",
+          "old": "{9:Thinking it to be}{7: a sweet}{8: fruit,}{5: you swallowed}{4,6: the sun}{3: situated}{1: a thousand}{0: yugas}{2: of yojanas away.}",
+          "new": "{9:Thinking it to be}{7: a sweet}{8: fruit,}{5: you swallowed}{4,6: the sun},{3: far away—}{0,1:thousands upon thousands}{2: of yojanas distant.}",
+          "reason": "Juga has a pair/multiplicity reading, as explained in Rambhadracharya’s original Mahāvīrī commentary. The line conveys thousands upon thousands of yojanas, not a unit formed by multiplying historical years by distance. Translating the combined phrase avoids inventing an astronomical conversion or retaining the unintelligible yugas of yojanas."
+        },
+        {
+          "slug": "hanuman-chalisa",
+          "lineId": "chaupai-18",
+          "field": "words",
+          "old": [
+            {
+              "roman": "juga",
+              "gloss": "yuga (unit of time / measurement)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sahasra",
+              "gloss": "thousand",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jojana",
+              "gloss": "yojana (measure of distance)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "para",
+              "gloss": "situated at; across",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bhānū",
+              "gloss": "the sun",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "līlyo",
+              "gloss": "swallowed; gulped",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tāhi",
+              "gloss": "it; him",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "madhura",
+              "gloss": "sweet",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "phala",
+              "gloss": "fruit",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jānū",
+              "gloss": "considering; thinking it to be",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "juga",
+              "gloss": "pair; multiplicity here: with sahasra, thousands upon thousands (also an age in other contexts)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sahasra",
+              "gloss": "thousand",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jojana",
+              "gloss": "yojana, a traditional measure of distance; no fixed modern conversion is implied",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "para",
+              "gloss": "situated at; across",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bhānū",
+              "gloss": "the sun",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "līlyo",
+              "gloss": "swallowed; gulped",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tāhi",
+              "gloss": "it; him",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "madhura",
+              "gloss": "sweet",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "phala",
+              "gloss": "fruit",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jānū",
+              "gloss": "considering; thinking it to be",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Juga has a pair/multiplicity reading, as explained in Rambhadracharya’s original Mahāvīrī commentary. The line conveys thousands upon thousands of yojanas, not a unit formed by multiplying historical years by distance. Translating the combined phrase avoids inventing an astronomical conversion or retaining the unintelligible yugas of yojanas."
+        },
+        {
+          "slug": "hanuman-chalisa",
+          "lineId": "chaupai-18",
+          "field": "grammarNote",
+          "old": "Juga sahasra jojana functions as an adverbial phrase of distance. Līlyo is a dialectal past tense transitive verb. Jānū is an absolutive/participle form of jānanā.",
+          "new": "Juga sahasra jojana is read here as poetic multiplicity: thousands upon thousands of yojanas. Juga can mean a pair or multiplicity as well as an age. The verse gives an immense distance without requiring a modern astronomical conversion.",
+          "reason": "Juga has a pair/multiplicity reading, as explained in Rambhadracharya’s original Mahāvīrī commentary. The line conveys thousands upon thousands of yojanas, not a unit formed by multiplying historical years by distance. Translating the combined phrase avoids inventing an astronomical conversion or retaining the unintelligible yugas of yojanas."
+        }
+      ]
     },
     "hanuman-bhajan-hariharan": {
       "readerSha256": "b192b7082fd6536750aeffbde1a0b8d5ac8cb9931c3d8d50f99c584df6ccdf08",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "line-021"
       ],
@@ -4928,7 +6916,97 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "3685b5fd40c26e78453952db7b6ba0ebfcbd2750bfcd79239bd2ca0a34ece5a4",
+      "integrationReview": {
+        "proposalSha256": "fa8715151f2e5abce27409fe0936f76f0822920bdcfc61f7922d632a3a8272a5",
+        "resolutionSha256s": [
+          "266b0718b58f2601cbc988997a51e093817b0cde5c565d929ff31642b1f55237"
+        ],
+        "verdict": "accept",
+        "reason": "Accept contextual abundance/storehouse sense supported by the cited exact compound gloss and prior peer review. Personal address and compassion remain; no new army or shelter image.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "hanuman-bhajan-hariharan",
+          "lineId": "line-021",
+          "field": "english",
+          "old": "{0:all}{1: proclaimed,}{2: “Victory}{4: to the host}{3: of grace!”}",
+          "new": "{0:All }{1:proclaimed, }{2:“Victory }{4:to you, storehouse }{3:of compassion!”}",
+          "reason": "Barūtha carries a collective mass/host sense, but kṛpā-barūtha addresses Rama as compassion in abundance. The present host of grace sounds like an army. Storehouse retains the abundance image and the personal address; not a literal military host or a wall of protection."
+        },
+        {
+          "slug": "hanuman-bhajan-hariharan",
+          "lineId": "line-021",
+          "field": "words",
+          "old": [
+            {
+              "roman": "sakala",
+              "gloss": "all",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kahahi~",
+              "gloss": "say; proclaim",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jaya",
+              "gloss": "victory [to]",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kṛpā",
+              "gloss": "of grace; of compassion",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "barūthā.",
+              "gloss": "the host; the embodiment; the abode",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "sakala",
+              "gloss": "all",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kahahi~",
+              "gloss": "say; proclaim",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jaya",
+              "gloss": "victory [to]",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kṛpā",
+              "gloss": "of compassion; of grace",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "barūthā.",
+              "gloss": "storehouse; mass or abundance, here Rāma as the abundance of compassion",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Barūtha carries a collective mass/host sense, but kṛpā-barūtha addresses Rama as compassion in abundance. The present host of grace sounds like an army. Storehouse retains the abundance image and the personal address; not a literal military host or a wall of protection."
+        }
+      ]
     },
     "sankat-mochan-naam-tiharo": {
       "readerSha256": "f33d2a4972b2cf72e4ac87b09374b64fba4363ed790a296e1f716bd9663f9265",
@@ -5046,7 +7124,7 @@
     },
     "jayagalu-agali": {
       "readerSha256": "5c5c783b2220887b88de894c915eea18d81fcf554a5c6c59b2f6421a319f1c4d",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "l002",
         "l004",
@@ -5614,7 +7692,441 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "7a33554c36c89d21bfc9750c0f0de88ac0fbb78fc84c3f8bc432a1a802dc9f4c",
+      "integrationReview": {
+        "proposalSha256": "a1a61fda6bc784d8afcd3896f05f2cdff806226462f4b3379f0fa0bc30642182",
+        "resolutionSha256s": [
+          "b0c7322f06aa1a1867b6a60871e9f2fbaacbbbce8a555469a771a322ad9efc65",
+          "2402b3e77cbb6b88dfd26256232df36bf5f23e7835ea43780f5869f9503dc705",
+          "638a993d02341bbdf27997467fc235eb79ac5686129d17430c31f557c34d04e0",
+          "87d28e0b1a3da873629ca057c306040d7ed22780b95f1d5b091fef08b86b8430",
+          "2798592822384a2ff291350174d77a273fce6c578103c078f1da842ea29e2f9f",
+          "cc5b0bd8d4809610249f2f8443582c558faf9a4541a89d25e6f3b1660be6d7d1",
+          "33f71b49c22a14a616d1a64367c390626403ff1753aebca5564b31eb975af8cb",
+          "685b99e973a8a23e65ec1636fd41b2eec16807d0a6c28ecc66c0c2ae6741ee9a"
+        ],
+        "verdict": "accept_with_required_narrow_revisions",
+        "reason": "Accept gloss clarification only. Preserve every existing English string, including Stick and O stick. Refrain function does not erase lexical meaning; prior peer objection is well founded.",
+        "requiredRevisions": [
+          {
+            "action": "omit_all_english_changes",
+            "reason": "Apply words/gloss changes only; keep literal stick address."
+          }
+        ]
+      },
+      "integrationChanges": [
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l002",
+          "field": "words",
+          "old": [
+            {
+              "roman": "jayadēvi",
+              "gloss": "Jayādevī, the goddess of victory, a name of Lakṣmī"
+            },
+            {
+              "roman": "ramaṇa",
+              "gloss": "consort"
+            },
+            {
+              "roman": "oliyali",
+              "gloss": "may he be gracious"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+            }
+          ],
+          "new": [
+            {
+              "roman": "jayadēvi",
+              "gloss": "Jayādevī, the goddess of victory, a name of Lakṣmī"
+            },
+            {
+              "roman": "ramaṇa",
+              "gloss": "consort"
+            },
+            {
+              "roman": "oliyali",
+              "gloss": "may he be gracious"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l004",
+          "field": "words",
+          "old": [
+            {
+              "roman": "vijayarāyara",
+              "gloss": "of the revered teacher Vijayadāsa"
+            },
+            {
+              "roman": "kīrti",
+              "gloss": "renown; fame"
+            },
+            {
+              "roman": "mereyali",
+              "gloss": "may it shine"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+            }
+          ],
+          "new": [
+            {
+              "roman": "vijayarāyara",
+              "gloss": "of the revered teacher Vijayadāsa"
+            },
+            {
+              "roman": "kīrti",
+              "gloss": "renown; fame"
+            },
+            {
+              "roman": "mereyali",
+              "gloss": "may it shine"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l006",
+          "field": "words",
+          "old": [
+            {
+              "roman": "haridāsarembō",
+              "gloss": "called servants of Hari; hari-dāsaru plus the quotative emba; Hari is “the remover” of evil and suffering"
+            },
+            {
+              "roman": "birudina",
+              "gloss": "of the title; continues with the horn in the repeated phrase"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+            }
+          ],
+          "new": [
+            {
+              "roman": "haridāsarembō",
+              "gloss": "called servants of Hari; hari-dāsaru plus the quotative emba; Hari is “the remover” of evil and suffering"
+            },
+            {
+              "roman": "birudina",
+              "gloss": "of the title; continues with the horn in the repeated phrase"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l008",
+          "field": "words",
+          "old": [
+            {
+              "roman": "hiri",
+              "gloss": "great"
+            },
+            {
+              "roman": "bāgiloḷu",
+              "gloss": "at the gate; locative"
+            },
+            {
+              "roman": "nuḍisevu",
+              "gloss": "we shall sound or play it; object is the preceding horn"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+            }
+          ],
+          "new": [
+            {
+              "roman": "hiri",
+              "gloss": "great"
+            },
+            {
+              "roman": "bāgiloḷu",
+              "gloss": "at the gate; locative"
+            },
+            {
+              "roman": "nuḍisevu",
+              "gloss": "we shall sound or play it; object is the preceding horn"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l010",
+          "field": "words",
+          "old": [
+            {
+              "roman": "suparṇa",
+              "gloss": "Garuḍa, the great-winged bird"
+            },
+            {
+              "roman": "vāhana",
+              "gloss": "one who has him as a mount"
+            },
+            {
+              "roman": "sukhapūrṇa",
+              "gloss": "full of joy"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+            }
+          ],
+          "new": [
+            {
+              "roman": "suparṇa",
+              "gloss": "Garuḍa, the great-winged bird"
+            },
+            {
+              "roman": "vāhana",
+              "gloss": "one who has him as a mount"
+            },
+            {
+              "roman": "sukhapūrṇa",
+              "gloss": "full of joy"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l012",
+          "field": "words",
+          "old": [
+            {
+              "roman": "mōhanaviṭhala",
+              "gloss": "the enchanting Viṭṭhala; the poet’s signature-name for the Lord"
+            },
+            {
+              "roman": "karuṇisu",
+              "gloss": "show mercy"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "O stick; rhythmic refrain of the stick-song, not an extra instruction to move"
+            }
+          ],
+          "new": [
+            {
+              "roman": "mōhanaviṭhala",
+              "gloss": "the enchanting Viṭṭhala; the poet’s signature-name for the Lord"
+            },
+            {
+              "roman": "karuṇisu",
+              "gloss": "show mercy"
+            },
+            {
+              "roman": "kōle",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l013",
+          "field": "words",
+          "old": [
+            {
+              "roman": "kōlu",
+              "gloss": "stick; rhythmic refrain"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "O stick; elongated refrain"
+            },
+            {
+              "roman": "raṅga",
+              "gloss": "Raṅga, Kṛṣṇa, the divine Lord called upon in this dance refrain"
+            },
+            {
+              "roman": "kōlu",
+              "gloss": "stick; rhythmic refrain"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "O stick; elongated refrain"
+            }
+          ],
+          "new": [
+            {
+              "roman": "kōlu",
+              "gloss": "sung stick-song refrain; literally “stick”"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            },
+            {
+              "roman": "raṅga",
+              "gloss": "Raṅga, Kṛṣṇa, the divine Lord called upon in this dance refrain"
+            },
+            {
+              "roman": "kōlu",
+              "gloss": "sung stick-song refrain; literally “stick”"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l014",
+          "field": "words",
+          "old": [
+            {
+              "roman": "kōlu",
+              "gloss": "stick; rhythmic refrain"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "O stick; elongated refrain"
+            },
+            {
+              "roman": "kṛṣṇa",
+              "gloss": "the dark-hued Lord"
+            },
+            {
+              "roman": "kōlu",
+              "gloss": "stick; rhythmic refrain"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "O stick; elongated refrain"
+            }
+          ],
+          "new": [
+            {
+              "roman": "kōlu",
+              "gloss": "sung stick-song refrain; literally “stick”"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            },
+            {
+              "roman": "kṛṣṇa",
+              "gloss": "the dark-hued Lord"
+            },
+            {
+              "roman": "kōlu",
+              "gloss": "sung stick-song refrain; literally “stick”"
+            },
+            {
+              "roman": "kōlē",
+              "gloss": "sung stick-song refrain; literally “stick” (vocative “O stick”)"
+            }
+          ],
+          "reason": "Explain refrain function and literal word meaning together."
+        }
+      ],
+      "rejectedEnglishChanges": [
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l002",
+          "field": "english",
+          "old": "{2:May} {0:Jayādēvi’s} {1:consort} {2:be gracious}—{3:O stick}!",
+          "new": "{2:May} {0:Jayādēvi’s} {1:consort} {2:be gracious}—{3:kōle}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l004",
+          "field": "english",
+          "old": "{0:Vijayarāya’s} {1:renown}—{2:may it shine}, {3:O stick}!",
+          "new": "{0:Vijayarāya’s} {1:renown}—{2:may it shine}, {3:kōle}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l006",
+          "field": "english",
+          "old": "{1:The title} {0:“servants of Hari”}—{2:O stick}!",
+          "new": "{1:The title} {0:“servants of Hari”}—{2:kōle}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l008",
+          "field": "english",
+          "old": "{1:At the} {0:great} {1:gate}, {2:we shall sound it}—{3:O stick}!",
+          "new": "{1:At the} {0:great} {1:gate}, {2:we shall sound it}—{3:kōle}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l010",
+          "field": "english",
+          "old": "{0,1:You whose mount is Suparṇa}, {2:full of joy}—{3:O stick}!",
+          "new": "{0,1:You whose mount is Suparṇa}, {2:full of joy}—{3:kōle}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l012",
+          "field": "english",
+          "old": "{0:Mōhanaviṭhala}, {1:show mercy}—{2:O stick}!",
+          "new": "{0:Mōhanaviṭhala}, {1:show mercy}—{2:kōle}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l013",
+          "field": "english",
+          "old": "{0:Stick}, {1:O stick}, {2:Raṅga}—{3:stick}, {4:O stick}!",
+          "new": "{0:Kōlu}, {1:kōlē}, {2:Raṅga}—{3:kōlu}, {4:kōlē}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        },
+        {
+          "slug": "jayagalu-agali",
+          "lineId": "l014",
+          "field": "english",
+          "old": "{0:Stick}, {1:O stick}, {2:Kṛṣṇa}—{3:stick}, {4:O stick}!",
+          "new": "{0:Kōlu}, {1:kōlē}, {2:Kṛṣṇa}—{3:kōlu}, {4:kōlē}!",
+          "reason": "Preserve the recurring sung refrain, with literal meaning available in its gloss.",
+          "decision": "Keep literal English per peer review and owner preference"
+        }
+      ]
     },
     "jo-achyutananda": {
       "readerSha256": "8a62ef36090f4b0965cbe90a9f96eb33b3cf3c344987d7cda840f584838c9013",
@@ -5652,7 +8164,7 @@
     },
     "istu-dina-ee-vaikuntha": {
       "readerSha256": "bb795371b4f400a875dff51ff6d707cc6e3724f00675a2975f024b28b4f98fc9",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "l004",
         "l005"
@@ -5778,7 +8290,96 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "65f84bde92af6cda98066cce413fb91a62b226589e9a4860e94aa076aab55fa0",
+      "integrationReview": {
+        "proposalSha256": "575860b827b7b7ad22cfe9aa90e1c6f660507b9ad9dcc5bb77e48c4d8fb71316",
+        "resolutionSha256s": [
+          "9405c3200599fc31b51990785e410f719c0629721ca487d9dc6bbdae0500ec92",
+          "70d20d02efaa37c1ba8b0d115823525864d639ddebeaef4d563bd6dfa747940e"
+        ],
+        "verdict": "accept",
+        "reason": "Accept gloss-only changes. Numbers, attendants and mischief-maker remain in English. Marking symbolism as interpreted here, rather than adding it to sung words, preserves the distinction between translation and commentary.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "istu-dina-ee-vaikuntha",
+          "lineId": "l004",
+          "field": "words",
+          "old": [
+            {
+              "roman": "eṇṭu",
+              "gloss": "eight; interpreted as eight forms of pride in the cited traditional commentary"
+            },
+            {
+              "roman": "ēḷanu",
+              "gloss": "seven; interpreted as seven vices in the cited commentary"
+            },
+            {
+              "roman": "kaḷedudarinde",
+              "gloss": "because I cast off; because I got rid of"
+            },
+            {
+              "roman": "baṇṭaraivara",
+              "gloss": "the five attendants; interpreted as the five senses"
+            },
+            {
+              "roman": "tuḷidudarinde",
+              "gloss": "because I trampled down"
+            }
+          ],
+          "new": [
+            {
+              "roman": "eṇṭu",
+              "gloss": "eight; interpreted here as eight forms of pride"
+            },
+            {
+              "roman": "ēḷanu",
+              "gloss": "seven; interpreted here as seven vices"
+            },
+            {
+              "roman": "kaḷedudarinde",
+              "gloss": "because I cast off; because I got rid of"
+            },
+            {
+              "roman": "baṇṭaraivara",
+              "gloss": "the five attendants; interpreted here as the five senses"
+            },
+            {
+              "roman": "tuḷidudarinde",
+              "gloss": "because I trampled down"
+            }
+          ],
+          "reason": "Clarify the symbolic reading as interpretation while preserving literal imagery in English."
+        },
+        {
+          "slug": "istu-dina-ee-vaikuntha",
+          "lineId": "l005",
+          "field": "words",
+          "old": [
+            {
+              "roman": "tuṇṭakanobbana",
+              "gloss": "one mischievous fellow; object of cutting down"
+            },
+            {
+              "roman": "taridudarinde",
+              "gloss": "because I cut down; because I severed"
+            }
+          ],
+          "new": [
+            {
+              "roman": "tuṇṭakanobbana",
+              "gloss": "one mischievous fellow; interpreted here as desire (kāma)"
+            },
+            {
+              "roman": "taridudarinde",
+              "gloss": "because I cut down; because I severed"
+            }
+          ],
+          "reason": "Clarify the symbolic reading as interpretation while preserving literal imagery in English."
+        }
+      ]
     },
     "nagumogamutodi-o-narakesari": {
       "readerSha256": "ce76674afb7676ea8141e6eb934d2b97bde2f258e78f68ef409bc25ddcc1254e",
@@ -5821,7 +8422,7 @@
     },
     "rajabidiyolaginda-kasturi-ranga": {
       "readerSha256": "19dd8e5824ae52d9cdfbdae492d7001eb88f4e726782fdb258d81d7679d239f2",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "l020"
       ],
@@ -5924,7 +8525,85 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "ccad91123ae0e79ba8c0a5e6920a04ab1d5c889a43e854f37ac999a428901df0",
+      "integrationReview": {
+        "proposalSha256": "e6bf5e45d3f1b12b06215367dabafe89b79d2522ec7857fc3113a562a1cd750f",
+        "resolutionSha256s": [
+          "c151dcfa526fec2db30e3596d7ed9a96ba854fddc93a88b1a6af9e5e606b0bce"
+        ],
+        "verdict": "accept",
+        "reason": "Accept source-attested body terms and contextually supported beautiful sense of hosa, as checked in prior peer review. Gold, knees, shanks and radiance are preserved; no invented horse tack or jewelry replaces them.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "rajabidiyolaginda-kasturi-ranga",
+          "lineId": "l020",
+          "field": "english",
+          "old": "{0:Golden}, {1:fresh} {2:knees and shanks}, {4:of} {3:shining} {4:beauty}—",
+          "new": "With {1:lovely}, {0:golden} {2:knees and shanks}, {3:radiant} {4:in beauty}—",
+          "reason": "Use the attested visual sense of hosa and connect the descriptive fragment naturally to Raṅga in the following lines."
+        },
+        {
+          "slug": "rajabidiyolaginda-kasturi-ranga",
+          "lineId": "l020",
+          "field": "words",
+          "old": [
+            {
+              "roman": "honna",
+              "gloss": "golden; of gold"
+            },
+            {
+              "roman": "hosa",
+              "gloss": "fresh; new"
+            },
+            {
+              "roman": "jānujaṅgha",
+              "gloss": "knees and shanks"
+            },
+            {
+              "roman": "hoḷeva",
+              "gloss": "shining"
+            },
+            {
+              "roman": "sobagina",
+              "gloss": "of beauty"
+            }
+          ],
+          "new": [
+            {
+              "roman": "honna",
+              "gloss": "golden; of gold"
+            },
+            {
+              "roman": "hosa",
+              "gloss": "lovely; beautiful to the eye, here describing the knees and shanks (hosa also means new or fresh)"
+            },
+            {
+              "roman": "jānujaṅgha",
+              "gloss": "knees and shanks"
+            },
+            {
+              "roman": "hoḷeva",
+              "gloss": "shining"
+            },
+            {
+              "roman": "sobagina",
+              "gloss": "of beauty; endowed with beauty"
+            }
+          ],
+          "reason": "Align the selected hosa sense with the visual description."
+        },
+        {
+          "slug": "rajabidiyolaginda-kasturi-ranga",
+          "lineId": "l020",
+          "field": "grammarNote",
+          "old": "Focused hearing resolves jānujaṅgha. The critical edition poem69 printed150 note23 explicitly preserves ಹೊಸಜಾನು ಜಂಘೆ; primary Alar jānu knee and jaṅghe shank support the literal body image. The golden/fresh limbs and shining beauty describe the procession’s splendid figure; no invented saddle, harness, gems or gilding process is substituted. Preserve the slightly unusual concrete image instead of smoothing it into generic ornaments.",
+          "new": "The knees and shanks belong to the splendid figure described in these lines, Hayavadana Raṅga, who is named below riding the royal horse. Hosa is used in its attested sense beautiful or pleasing to the eye. The gold, bodily image and shining beauty are retained.",
+          "reason": "Align explanation with the selected visual sense of hosa, removing the superseded fresh reading."
+        }
+      ]
     },
     "maa-jag-janani-jai-jai": {
       "readerSha256": "2e83760bd820d40085617bf74c509f8125ba97c9018c230f617f31a435ca5799",
@@ -5995,7 +8674,7 @@
     },
     "namo-namo-vindhyeshwari": {
       "readerSha256": "59be04094257ae1a9825960e7489cfa3577ba1b5dbcaf513554cab9189877f7c",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "verse-12"
       ],
@@ -6275,11 +8954,267 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "4eaa5186913a1fce353978fdbd003dc22c370ef7533da31f25b6cf6cc9809da4",
+      "integrationReview": {
+        "proposalSha256": "987525754f1e9aff6aee0fb162d626553301ff35d618790d7438ca3dcbe5fa59",
+        "resolutionSha256s": [
+          "5c8106c881fbb8f5b892e48f3adc49f6337f2bf01f13ae47a7ccd0c22f4c8e0e"
+        ],
+        "verdict": "accept",
+        "reason": "Accept coordinated Rudrāṇī correction. Inspected both retained focused audio records: both give rudrāṇī with no competing name. Source, Roman, sourceWords index4, linked word and English agree. Does not normalize unrelated performed forms.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "namo-namo-vindhyeshwari",
+          "lineId": "verse-12",
+          "field": "english",
+          "old": "{0,1,2:You alone are Jahnavi }{3,4:and Indrani, }{5:Hemavati, }{6,7:O Mother who grants liberation.}",
+          "new": "{0,1,2:You alone are Jāhnavī }{3,4:and Rudrāṇī, }{5:Hemāvatī, }{6,7:O Mother who grants liberation.}",
+          "reason": "Translate the name independently heard in the retained recording."
+        },
+        {
+          "slug": "namo-namo-vindhyeshwari",
+          "lineId": "verse-12",
+          "field": "words",
+          "old": [
+            {
+              "roman": "tū",
+              "gloss": "you",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hī",
+              "gloss": "alone; indeed",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jāhnavī",
+              "gloss": "the sacred river Ganga; Jāhnavī means “daughter of Jahnu”, a name of Gaṅgā.",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "aru",
+              "gloss": "and",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "utrānī",
+              "gloss": "Indrani; she who ferries devotees across",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hemāvatī",
+              "gloss": "daughter of the snowy Himalayas",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ambe",
+              "gloss": "O Mother",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "niravānī",
+              "gloss": "embodiment and bestower of ultimate liberation (nirvana)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "tū",
+              "gloss": "you",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hī",
+              "gloss": "alone; indeed",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jāhnavī",
+              "gloss": "the sacred river Ganga; Jāhnavī means “daughter of Jahnu”, a name of Gaṅgā.",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "aru",
+              "gloss": "and",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "rudrāṇī",
+              "gloss": "Rudrāṇī, the feminine power and consort of Rudra (Śiva)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hemāvatī",
+              "gloss": "daughter of the snowy Himalayas",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ambe",
+              "gloss": "O Mother",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "niravānī",
+              "gloss": "embodiment and bestower of ultimate liberation (nirvana)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Replace unsupported Indrāṇī/ferrying gloss with the heard Rudrāṇī."
+        },
+        {
+          "slug": "namo-namo-vindhyeshwari",
+          "lineId": "verse-12",
+          "field": "grammarNote",
+          "old": "'utrānī' is a vernacular form of Indrāṇī (or an agentive 'she who rescues/ferries across'); 'niravānī' is tadbhava for 'nirvāṇa-rūpā/nirvāṇadātrī'.",
+          "new": "The goddess is invoked through a series of names and titles. Rudrāṇī is the feminine counterpart of Rudra (Śiva). Niravānī invokes liberation.",
+          "reason": "Remove unsupported sound-change and identity claims."
+        },
+        {
+          "slug": "namo-namo-vindhyeshwari",
+          "lineId": "verse-12",
+          "field": "source",
+          "old": "तू ही जाह्नवी अरु उत्रानी । हेमावती अम्बे निरवानी ॥",
+          "new": "तू ही जाह्नवी अरु रुद्राणी । हेमावती अम्बे निरवानी ॥",
+          "reason": "Exact recording transcription and independent audio review agree on this name."
+        },
+        {
+          "slug": "namo-namo-vindhyeshwari",
+          "lineId": "verse-12",
+          "field": "roman",
+          "old": "tū hī jāhnavī aru utrānī | hemāvatī ambe niravānī ||",
+          "new": "tū hī jāhnavī aru rudrāṇī | hemāvatī ambe niravānī ||",
+          "reason": "Keep IAST aligned with the confirmed recorded name."
+        },
+        {
+          "slug": "namo-namo-vindhyeshwari",
+          "lineId": "verse-12",
+          "field": "sourceWords",
+          "old": [
+            {
+              "text": "तू",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ही",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "जाह्नवी",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "अरु",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "उत्रानी",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "हेमावती",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "अम्बे",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "निरवानी",
+              "wordIndices": [
+                7
+              ]
+            }
+          ],
+          "new": [
+            {
+              "text": "तू",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ही",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "जाह्नवी",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "अरु",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "रुद्राणी",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "हेमावती",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "अम्बे",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "निरवानी",
+              "wordIndices": [
+                7
+              ]
+            }
+          ],
+          "reason": "Keep source token and index4 aligned; no occurrence/timing/order change."
+        }
+      ]
     },
     "jai-ambe-gauri": {
       "readerSha256": "a03909f0537b7b2b19f5fa8ed43145100c170bcd198b8ab5cba70026c157f9b5",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "verse-11-line-3",
         "verse-5-line-3"
@@ -6447,7 +9382,150 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "64723bad4eb0387694d6d5617c451e5cdaf475ee83e2ac2e207d83b127fdba79",
+      "integrationReview": {
+        "proposalSha256": "75dfcb90d1729a5bf5a4012cbe66a1be92079a198ae66d236844ebbf30dc7dd6",
+        "resolutionSha256s": [
+          "4d24a2edfbd8cd8eb165bf0197bcdca64a34e344b5479af161c616c703fe2515",
+          "95f26f1367f4cc43b53c498f9377b8f6551980292a0b9df17a78e7da5c06cf9b"
+        ],
+        "verdict": "accept",
+        "reason": "Accept prior peer-reviewed smoky-eyes and locative repairs. Given nainā and no killing verb, a demon-slaying reinterpretation would invent syntax. The delayed radiance subject is clarified without inventing a Mālketu location.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "jai-ambe-gauri",
+          "lineId": "verse-5-line-3",
+          "field": "english",
+          "old": "{0,1:Smoke-eyed} {2:in Your gaze,} {3,4:smoke-eyed} {5:in Your gaze,} {6:day and night} {7:intoxicated with fervor.}",
+          "new": "{0,1,2:Your eyes are smoky,} {3,4,5:Your eyes are smoky;} {6:day and night} {7:You are intoxicated.}",
+          "reason": "Translate the actual eyes reading and preserve intoxication without adding a particular fervor."
+        },
+        {
+          "slug": "jai-ambe-gauri",
+          "lineId": "verse-5-line-3",
+          "field": "words",
+          "old": [
+            {
+              "roman": "Dhūmra",
+              "gloss": "smoke-colored; with vilocan, possibly the name Dhūmralocana",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vilocan",
+              "gloss": "eyes / sight",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nainā,",
+              "gloss": "eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dhūmra",
+              "gloss": "smoke-colored; with vilocan, possibly the name Dhūmralocana",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vilocan",
+              "gloss": "eyes / sight",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nainā",
+              "gloss": "eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nisdin",
+              "gloss": "night and day; constantly",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "madmātī",
+              "gloss": "intoxicated (with divine fervor / battle ecstasy)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "Dhūmra",
+              "gloss": "smoke-colored; smoky",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vilocan",
+              "gloss": "eyes; in dhūmra-vilocan, smoke-colored eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nainā,",
+              "gloss": "eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dhūmra",
+              "gloss": "smoke-colored; smoky",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vilocan",
+              "gloss": "eyes; in dhūmra-vilocan, smoke-colored eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nainā",
+              "gloss": "eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nisdin",
+              "gloss": "night and day; constantly",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "madmātī",
+              "gloss": "intoxicated; enraptured (feminine, describing the goddess)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Constrain the glosses to the attested nainā construction."
+        },
+        {
+          "slug": "jai-ambe-gauri",
+          "lineId": "verse-5-line-3",
+          "field": "grammarNote",
+          "old": "Dhūmra-vilocan can describe smoke-colored eyes, while Dhūmralocana is also a demon’s name. Nainā means eyes. The intended relation here remains uncertain. Madmātī is a feminine adjective describing the goddess as intoxicated.",
+          "new": "Dhūmra-vilocan describes smoky eyes; nainā repeats the noun eyes. Madmātī is feminine and describes the goddess as intoxicated. This nainā reading differs from versions that give a verb of destruction and name the demon Dhūmralocana.",
+          "reason": "Separate the performed reading from an editorial variant."
+        },
+        {
+          "slug": "jai-ambe-gauri",
+          "lineId": "verse-11-line-3",
+          "field": "english",
+          "old": "{0:At sacred} {1:Malketu} {2,3:shines,} {4:at sacred} {5:Malketu} {6,7:shines} {8:ten million} {9:jewels'}{10: radiance.}",
+          "new": "{8:Ten million} {9:jewels’} {10:radiance} {2,3:shines at} {0:sacred} {1:Mālketu,} {6,7:shines at} {4:sacred} {5:Mālketu.}",
+          "reason": "Make radiance the subject of shines, preserving both locative repetitions and the unexpanded name."
+        }
+      ]
     },
     "sharada-vidyadani-dayani": {
       "readerSha256": "7de926c9647f91a2fa471f8bde0009f3fdcb63893841b657ec84d982b762f4a5",
@@ -6518,7 +9596,7 @@
     },
     "bolo-lakshmi-maat-ki-jai": {
       "readerSha256": "c21fdd1a0e4b13ddd680497227a3437ea3b4e351ecd93bdeae91bb1e90cef6d2",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "koi-nahi-pata",
         "ratna-chaturdash-toko"
@@ -6678,7 +9756,143 @@
           }
         ]
       },
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "508690fd0c15cf5bbbd5601f0451318cb7cc611a3d0e44f6b8970b69dc79176f",
+      "integrationReview": {
+        "proposalSha256": "75f2196b85b4d9865ffc8793b028f8b96a87ba71e295b13a2196c6cfc0882e80",
+        "resolutionSha256s": [
+          "6f1f732488a5b9961c96845e2f8d1b5fb4d71cee55e5609667e4c0181682edce"
+        ],
+        "verdict": "accept",
+        "reason": "Accept prior peer-reviewed comparison analysis with its recorded qualification. Toko remains the person-object, koī is distributive over the fourteen treasures, and the attested equal/rival sense of pānā fits the preceding ocean-birth image. Old ownership and obtains-them clauses changed pronoun relations.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "bolo-lakshmi-maat-ki-jai",
+          "lineId": "ratna-chaturdash-toko",
+          "field": "english",
+          "old": "{1:The fourteen }{0:gems }{2:belong to You, }",
+          "new": "{1:The fourteen }{0:jewels, }{2:beside You—}",
+          "reason": "Read toko as the object of the comparison completed in the next line, not an unsupported possessive statement."
+        },
+        {
+          "slug": "bolo-lakshmi-maat-ki-jai",
+          "lineId": "koi-nahi-pata",
+          "field": "english",
+          "old": "{1:no }{0:one }{2:obtains them.}",
+          "new": "{0,1:not one }{2:measures up.}",
+          "reason": "Use the lexically attested comparative sense in this specific pronoun construction."
+        },
+        {
+          "slug": "bolo-lakshmi-maat-ki-jai",
+          "lineId": "ratna-chaturdash-toko",
+          "field": "words",
+          "old": [
+            {
+              "roman": "Ratna",
+              "gloss": "gems, jewels, precious treasures",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "caturdaś",
+              "gloss": "fourteen",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "toko,",
+              "gloss": "to You, matching You (Braj/Old Hindi dative/accusative)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "Ratna",
+              "gloss": "gems, jewels, precious treasures",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "caturdaś",
+              "gloss": "fourteen",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "toko,",
+              "gloss": "You; object of the comparison completed by pātā in the next line",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Constrain the pronoun to the adjacent comparative verb."
+        },
+        {
+          "slug": "bolo-lakshmi-maat-ki-jai",
+          "lineId": "koi-nahi-pata",
+          "field": "words",
+          "old": [
+            {
+              "roman": "Koī",
+              "gloss": "anyone, someone",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nahīṁ",
+              "gloss": "not",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pātā",
+              "gloss": "obtains, receives, reaches, equals",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "Koī",
+              "gloss": "anyone, someone",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nahīṁ",
+              "gloss": "not",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pātā",
+              "gloss": "equals; measures up to (here, to Lakṣmī)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Select the contextual dictionary sense rather than an unranked list."
+        },
+        {
+          "slug": "bolo-lakshmi-maat-ki-jai",
+          "lineId": "ratna-chaturdash-toko",
+          "field": "grammarNote",
+          "old": "Noun phrase 'Ratna caturdaś' with Old Hindi/Braj dative/accusative pronoun 'toko', repeated.",
+          "new": "Read with the following line: ratna caturdaś names the fourteen ocean treasures as the comparison-set; toko is the object of pātā, used in its sense to equal or rival.",
+          "reason": "Explain cross-line syntax."
+        },
+        {
+          "slug": "bolo-lakshmi-maat-ki-jai",
+          "lineId": "koi-nahi-pata",
+          "field": "grammarNote",
+          "old": "Indefinite subject 'Koī' with negated imperfective verb 'nahīṁ pātā'.",
+          "new": "Koī refers to any one of the fourteen jewels in the preceding line. Nahīṃ pātā denies that any can equal the goddess; toko in the preceding line supplies the object.",
+          "reason": "Make the implicit referent and comparison explicit."
+        }
+      ]
     },
     "tero-chakar-kare-pukar": {
       "readerSha256": "141cb4c80cf403d1f20e562ca2976c645c25fb6c06cc12a40349edb2ef653ce8",
@@ -6967,7 +10181,7 @@
     },
     "doi-kar-teka-hei-matha": {
       "readerSha256": "a9fa8499f446278b0f4517326d9dc46e6af7013d4a3790b53f5f97d2c8b2d8d3",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "line-79-tuka-kahe-dipa",
         "line-87-jagrita-karo-rukminivara"
@@ -7271,11 +10485,268 @@
           ]
         }
       ],
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "f2b6cac553c036a053d1b69896f19743f4d6d84ba97df4774cd420d5033802b2",
+      "integrationReview": {
+        "proposalSha256": "e321f24c287b4a0ba58b567b7ffe9a68c5f121d2d6c5d97a48a27e4952316369",
+        "resolutionSha256s": [
+          "46f013970d28e4df61c265d7f5c2de40e4d3aefafc875b68fe35a38bdff422e2",
+          "3909ae54044315344711f69189b62c4da7eec718e6e3f0331ef009753744ad7f"
+        ],
+        "verdict": "accept",
+        "reason": "Accept both corrections. Independently viewed Sansthan source images: unmanīt is locative, and deva āhe nijasurānt occurs in a waking instruction. Retained Molesworth HTML explicitly defines nijasurā as half-asleep; both focused Hindi audio records preserve nija sura meṃ. Keeping adapted tokens while explaining the joint term avoids silently replacing Hindi with Marathi. What splendour is a defensible nominal exclamation, not a new object.",
+        "requiredRevisions": []
+      },
+      "integrationChanges": [
+        {
+          "slug": "doi-kar-teka-hei-matha",
+          "lineId": "line-79-tuka-kahe-dipa",
+          "field": "english",
+          "old": "{0:Tuka} {1:says:} {3:Holding} {2:the lamp} {4:of superconscious absorption,} {5,6:truly radiant is the splendor.}",
+          "new": "{0:Tukā} {1:says:} {2,3:lamp in hand}, {4,5:in absorption beyond mind}—{6:what splendour}!",
+          "reason": "Lamp and the contemplative state are separate; preserve the exclamatory nominal beauty image."
+        },
+        {
+          "slug": "doi-kar-teka-hei-matha",
+          "lineId": "line-79-tuka-kahe-dipa",
+          "field": "words",
+          "old": [
+            {
+              "roman": "Tukā",
+              "gloss": "Marathi poet-saint; signature-name of Tukārām",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kahe",
+              "gloss": "says; declares",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dīpa",
+              "gloss": "lamp; flame of adoration",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "lekara",
+              "gloss": "having taken; holding",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "unmanī",
+              "gloss": "state of trans-mental absorption; superconscious state",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ta",
+              "gloss": "then; indeed; truly (Marathi emphatic particle)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "śobhā",
+              "gloss": "splendor; glorious radiance; beauty",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "Tukā",
+              "gloss": "Marathi poet-saint; signature-name of Tukārām",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kahe",
+              "gloss": "says; declares",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dīpa",
+              "gloss": "lamp; flame of adoration",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "lekara",
+              "gloss": "having taken; holding",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "unmanī",
+              "gloss": "absorption beyond ordinary mental activity; with the following ending, in that state",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ta",
+              "gloss": "locative ending completing unmanīt: in absorption beyond ordinary mental activity",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "śobhā",
+              "gloss": "splendor; glorious radiance; beauty",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "The source’s split unmanī ta corresponds to unmanīt locative; neither of nor truly belongs here."
+        },
+        {
+          "slug": "doi-kar-teka-hei-matha",
+          "lineId": "line-79-tuka-kahe-dipa",
+          "field": "grammarNote",
+          "old": "Tukā kahe is the standard bhaṇitā (authorial signature). Lekara is a conjunctive participle. Ta is a Marathi emphatic particle highlighting śobhā.",
+          "new": "Unmanī ta is read together as the Marathi locative unmanīt, in the state beyond ordinary mental activity. The worshipper holds the lamp while in that state; the lamp is not made of absorption. Śobhā is the splendour then described as beautiful Bābā standing on the brick.",
+          "reason": "Derive the relation from the attested original and the sung adaptation."
+        },
+        {
+          "slug": "doi-kar-teka-hei-matha",
+          "lineId": "line-87-jagrita-karo-rukminivara",
+          "field": "english",
+          "old": "{0,1:Awaken }{2,3:the consort of Rukmini; }{4:the Lord }{5:is }{8:in }{6:his own }{7:melody.}",
+          "new": "{0,1:Awaken} {2,3:the consort of Rukmiṇī}; {4:the Lord} {5:is} {6,7,8:drowsing}.",
+          "reason": "The Hindi-adapted Marathi term describes drowsiness, not his own melody."
+        },
+        {
+          "slug": "doi-kar-teka-hei-matha",
+          "lineId": "line-87-jagrita-karo-rukminivara",
+          "field": "words",
+          "old": [
+            {
+              "roman": "Jāgṛta",
+              "gloss": "awake; awakened",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "karo",
+              "gloss": "make; do",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "Rukmiṇīvara",
+              "gloss": "consort of Rukmiṇī, the gold-adorned goddess; Kṛṣṇa/Viṭṭhala",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ko",
+              "gloss": "[accusative marker]",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "deva",
+              "gloss": "Lord; deity",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "haiṁ",
+              "gloss": "is; resides",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nija",
+              "gloss": "his own; self",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sura",
+              "gloss": "melody; musical note; absorption",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "meṁ",
+              "gloss": "in",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "Jāgṛta",
+              "gloss": "awake; awakened",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "karo",
+              "gloss": "make; do",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "Rukmiṇīvara",
+              "gloss": "consort of Rukmiṇī, the gold-adorned goddess; Kṛṣṇa/Viṭṭhala",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ko",
+              "gloss": "[accusative marker]",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "deva",
+              "gloss": "Lord; deity",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "haiṁ",
+              "gloss": "is; resides",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nija",
+              "gloss": "first part of nijasur, the Marathi word for half-asleep; read with the following token",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sura",
+              "gloss": "completes nijasur: half-asleep; drowsy",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "meṁ",
+              "gloss": "in; marks the drowsing state in this Hindi adaptation",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Treat nija sur jointly as the retained Marathi lexical item."
+        },
+        {
+          "slug": "doi-kar-teka-hei-matha",
+          "lineId": "line-87-jagrita-karo-rukminivara",
+          "field": "grammarNote",
+          "old": "'Jāgṛta karo' is a conjunct verb meaning 'awaken'. 'Rukmiṇīvara' is a compound proper noun (Rukmiṇī + vara). 'Deva haiṁ nija sura meṁ' is an independent explanatory clause.",
+          "new": "Nija sur is the Marathi nijasurā, half-asleep, carried into the Hindi adaptation with meṃ. It is not nija, his own, plus sur, melody. The instruction to awaken Rukmiṇī’s consort and the following protective ritual concern his drowsing state.",
+          "reason": "Resolve the adaptation’s lexical segmentation from the source and Marathi dictionary."
+        }
+      ]
     },
     "shree-sai-aarti": {
       "readerSha256": "1da1ed6601255f554becb8a2bb3485905fbcebe403bb1e22ed21bcff946d5666",
-      "disposition": "corrections_prepared_not_applied",
+      "disposition": "finished_integrated",
       "originalOpenDefinitions": [
         "line-verse-7a"
       ],
@@ -7535,7 +11006,258 @@
           ]
         }
       ],
-      "applied": false
+      "applied": true,
+      "reviewedReaderSha256": "e7e8865a811c805b3fd993dcdaf45f69de2baa788fee6c5e77fd43415d85e52a",
+      "integrationReview": {
+        "proposalSha256": "a10adf689a6f9c3e1bd20759fb823cc0df883c9be06c502c85cbec9039cb9282",
+        "resolutionSha256s": [
+          "e527af88d3e02110da3345dcfeee1155dcee2bdcaf6252db2c11a7db02cbb6b2"
+        ],
+        "verdict": "accept_with_required_narrow_revisions",
+        "reason": "Accept source/semantic changes after aligning words[0].roman to icchita. Both retained audio records support dīna and jala sā nija sukha; the remaining spacing question is resolved by comparison sā and attested nijasukha. Retained Molesworth definition supports innate spiritual bliss; do not replace Hindi jala/pilā deve with the Marathi original. The cātaka is a devotee image and the next line supplies Mādhava receiving the bliss to drink.",
+        "requiredRevisions": [
+          {
+            "lineId": "line-verse-7a",
+            "field": "words[0].roman",
+            "new": "icchita",
+            "reason": "Match corrected source इच्छित and corrected full Roman, eliminating inherited long-initial-vowel mismatch."
+          }
+        ]
+      },
+      "integrationChanges": [
+        {
+          "slug": "shree-sai-aarti",
+          "lineId": "line-verse-7a",
+          "field": "source",
+          "old": "इच्छित दिन चातक, निर्मल जल सानीज सुख",
+          "new": "इच्छित दीन चातक, निर्मल जल सा निज सुख",
+          "reason": "Recording review hears dīna and jala sā nija sukha; correct written vowel and word segmentation without replacing the Hindi adaptation with canonical Marathi."
+        },
+        {
+          "slug": "shree-sai-aarti",
+          "lineId": "line-verse-7a",
+          "field": "roman",
+          "old": "īcchita dina cātaka, nirmala jala sānīja sukha",
+          "new": "icchita dīna cātaka, nirmala jala sā nija sukha",
+          "reason": "Match corrected source segmentation; vowel length on icchita in singing is duration, not evidence requiring a new verb form."
+        },
+        {
+          "slug": "shree-sai-aarti",
+          "lineId": "line-verse-7a",
+          "field": "sourceWords",
+          "old": [
+            {
+              "text": "इच्छित",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "दिन",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "चातक,",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "निर्मल",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "जल",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "सानीज",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "सुख",
+              "wordIndices": [
+                6
+              ]
+            }
+          ],
+          "new": [
+            {
+              "text": "इच्छित",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "दीन",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "चातक,",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "निर्मल",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "जल",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "सा",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "निज",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "सुख",
+              "wordIndices": [
+                7
+              ]
+            }
+          ],
+          "reason": "Replay the separately meaningful sā comparison and nija qualifier."
+        },
+        {
+          "slug": "shree-sai-aarti",
+          "lineId": "line-verse-7a",
+          "field": "words",
+          "old": [
+            {
+              "roman": "īcchita",
+              "gloss": "yearning; desiring; sought",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dina",
+              "gloss": "days; humble; wretched",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "cātaka,",
+              "gloss": "bird traditionally imagined as thirsting only for rain",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nirmala",
+              "gloss": "pure; spotless",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jala",
+              "gloss": "water",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sānīja",
+              "gloss": "intrinsic; genuine; own true",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sukha",
+              "gloss": "bliss; happiness",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "new": [
+            {
+              "roman": "icchita",
+              "gloss": "desires; longs for",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dīna",
+              "gloss": "humble; poor; lowly",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "cātaka,",
+              "gloss": "bird traditionally imagined as thirsting only for rain",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nirmala",
+              "gloss": "pure; clear",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jala",
+              "gloss": "water",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sā",
+              "gloss": "like; comparable to",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nija",
+              "gloss": "own; intrinsic; here nija-sukha is innate spiritual bliss",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sukha",
+              "gloss": "bliss; happiness",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "reason": "Remove unsupported derivation sānīja from sva-nija; account separately for the comparison and innate bliss."
+        },
+        {
+          "slug": "shree-sai-aarti",
+          "lineId": "line-verse-7a",
+          "field": "english",
+          "old": "{0:Like the yearning, }{1:humble }{2:cātaka bird }{3:seeking the pure }{4:water }{5:of true intrinsic }{6:bliss,}",
+          "new": "{1:The humble} {2:cātaka bird} {0:longs for} {6:innate} {7:bliss}, {5:like} {3:pure} {4:water}—",
+          "reason": "Restore the actual comparison: innate bliss is like the water yearned for by the cātaka, with next line asking that Mādhava be given it to drink."
+        },
+        {
+          "slug": "shree-sai-aarti",
+          "lineId": "line-verse-7a",
+          "field": "grammarNote",
+          "old": "sānīja derives from Marathi/Old Hindi sva-nija (one's own true nature); cātaka functions as the metaphorical subject.",
+          "new": "The Hindi adaptation has jala sā nija sukha: sā marks comparison, while nija qualifies sukha. The humble cātaka is the poet’s image for the longing devotee; the following line asks that Mādhava be given this bliss to drink. Dīna means humble or poor, not day.",
+          "reason": "Remove fabricated sva-nija etymology and explain the connected metaphor."
+        }
+      ]
     },
     "sunta-hai": {
       "readerSha256": "7a4ac2ef07038f3d904265ff9b3622d46856e3c5b4465b28ac52059a316733e8",
@@ -8251,5 +11973,329 @@
         }
       ]
     }
+  },
+  "integrationSummary": {
+    "readers": 14,
+    "changedExistingDefinitions": 29,
+    "changedExistingEnglish": 19,
+    "addedDefinitions": 2,
+    "preserved": "All metadata/audio, existing occurrence starts and protected English. Only invocation end shortened to first restored couplet; two source corrections and one token segmentation explicitly reviewed.",
+    "changed": [
+      [
+        "vishnu-sahasranama",
+        "meditation-2"
+      ],
+      [
+        "vishnu-sahasranama",
+        "meditation-4"
+      ],
+      [
+        "pradnya-vivardhan-stotra",
+        "verse-3a"
+      ],
+      [
+        "sampurna-sundarakanda",
+        "line-013"
+      ],
+      [
+        "rann-jeeti-rama-rao-aye",
+        "sudha-sinchi"
+      ],
+      [
+        "rann-jeeti-rama-rao-aye",
+        "nari-nihari"
+      ],
+      [
+        "rann-jeeti-rama-rao-aye",
+        "te-taba-aba"
+      ],
+      [
+        "rann-jeeti-rama-rao-aye",
+        "sahita-rama-guna"
+      ],
+      [
+        "hanuman-chalisa",
+        "chaupai-18"
+      ],
+      [
+        "hanuman-bhajan-hariharan",
+        "line-021"
+      ],
+      [
+        "jayagalu-agali",
+        "l002"
+      ],
+      [
+        "jayagalu-agali",
+        "l004"
+      ],
+      [
+        "jayagalu-agali",
+        "l006"
+      ],
+      [
+        "jayagalu-agali",
+        "l008"
+      ],
+      [
+        "jayagalu-agali",
+        "l010"
+      ],
+      [
+        "jayagalu-agali",
+        "l012"
+      ],
+      [
+        "jayagalu-agali",
+        "l013"
+      ],
+      [
+        "jayagalu-agali",
+        "l014"
+      ],
+      [
+        "istu-dina-ee-vaikuntha",
+        "l004"
+      ],
+      [
+        "istu-dina-ee-vaikuntha",
+        "l005"
+      ],
+      [
+        "rajabidiyolaginda-kasturi-ranga",
+        "l020"
+      ],
+      [
+        "namo-namo-vindhyeshwari",
+        "verse-12"
+      ],
+      [
+        "jai-ambe-gauri",
+        "verse-5-line-3"
+      ],
+      [
+        "jai-ambe-gauri",
+        "verse-11-line-3"
+      ],
+      [
+        "bolo-lakshmi-maat-ki-jai",
+        "ratna-chaturdash-toko"
+      ],
+      [
+        "bolo-lakshmi-maat-ki-jai",
+        "koi-nahi-pata"
+      ],
+      [
+        "doi-kar-teka-hei-matha",
+        "line-79-tuka-kahe-dipa"
+      ],
+      [
+        "doi-kar-teka-hei-matha",
+        "line-87-jagrita-karo-rukminivara"
+      ],
+      [
+        "shree-sai-aarti",
+        "line-verse-7a"
+      ]
+    ]
+  },
+  "integrationReview": {
+    "reviewer": "integrate_review",
+    "scope": "Only the14 corrections_prepared_not_applied entries; the other14 pending readers were not reopened. No public edits, paid calls, or new broad research.",
+    "inputFile": "data/translation-source-resolution-2026-11-21.json",
+    "inputFileSha256": "e4705f66913117c0ef3b00e161fabea4642fbb8dbe7e356e36a1622d304670db",
+    "hashConvention": "SHA256 of UTF-8 JSON ensure_ascii=False, sort_keys=True, separators=(comma,colon)",
+    "checks": {
+      "allProposedOldFieldsMatchFrozenReaders": true,
+      "allEnglishAndSourceWordIndicesInRange": true,
+      "ownerProtectedEnglishTouched": false,
+      "timingsReviewed": false
+    },
+    "songs": {
+      "vishnu-sahasranama": {
+        "proposalSha256": "bf3b6e99eb8b486478825e91800160069a0445dc40e738558b4559f05de1b1dd",
+        "resolutionSha256s": [
+          "e6c60d23ccbbe2da56660e87b5ab6069db7b5645ddbfbc6e0c2efb6eb97bbe64",
+          "4630c0581d2d453492f6dc6109a9619f75efcef7696f6ab41c92923429025ee4"
+        ],
+        "verdict": "accept",
+        "reason": "Accept precise vāsteyam segmentation and fluid/bladder image: the explicit Chāndogya parallel and morphological formation support this, rather than importing a garment variant. Shifted token/source indices remain in range and preserve unrelated content. Puṇya-upeta as endowed with holiness is the direct quality construction; no group of blessed beings is stated.",
+        "requiredRevisions": []
+      },
+      "pradnya-vivardhan-stotra": {
+        "proposalSha256": "31272db89c7884dbff6ad30db4f31ed0912739c684077dacc7dd02c3bfeacdcd",
+        "resolutionSha256s": [
+          "a6f0b0755d63a2de3fb070b3731decd93f8fbea3d5924bff1b1f1995b594515b"
+        ],
+        "verdict": "accept",
+        "reason": "Accept: sārasvata concerns eloquence/learning, confirmed by the hymn’s speech-gift context and both retained audio records supporting the compound. No need to manufacture separate siddhaḥ sārasvataḥ names.",
+        "requiredRevisions": []
+      },
+      "sampurna-sundarakanda": {
+        "proposalSha256": "a93070e02afa20f123cf6ac2c0ca0667388711d3844037136a00a99999f9fb4f",
+        "resolutionSha256s": [
+          "96fb8193cc6c23a6426c172cb36219e041e0bf16dd794fd274c708fd2a215b7a"
+        ],
+        "verdict": "accept_text_with_required_narrow_gloss_revision",
+        "reason": "Text and translation accepted conditional on the owned focused onset/source check. Visually inspected retained Mānas-Pīyūṣ page31: parikhehu is wait for me, jaba lagi governs return, and present joy is independent of future task success. Inserted definitions account for all source words and connect naturally into line013. Retained audio review differs from extraction in bacana/vacana and parikhehu/parakhehu; the reviewer explains those as performed variants, but the final audio adjudication should explicitly confirm them rather than claim two-pass spelling consensus.",
+        "requiredRevisions": [
+          {
+            "lineId": "line-012a",
+            "field": "words[5].gloss",
+            "old": "Hanumān",
+            "new": "Hanumān, Rāma’s devoted monkey messenger; the name means “having prominent jaws”",
+            "reason": "Carry forward the already reviewed contextual identity and name meaning used by this same reader’s existing hanumantā token; avoid a self-referential name-only gloss."
+          }
+        ],
+        "finalSourceDecision": {
+          "verdict": "accept vacana and parakhehu",
+          "evidenceArtifact": ".transcription/source-resolution-20261121/integration-timing-phonetic-partial.json",
+          "evidenceArtifactSha256": "941495ba7cb0ca79ee02b94c6371b36d68a5b1ee065aa711cc79fdd42fe039f6",
+          "reason": "The completed earlier independent review expressly distinguishes performed labiodental v from b and central a from i. The separate targeted adjudication supplies a complete vacana choice with acoustic explanation and complete parakhehu choice/uncertainty fields before its response truncation. These observed fields corroborate the earlier completed review; they are not treated as a completed third report. Both variants preserve the primary source meaning and coherent Awadhi request-to-wait grammar. This supports the narrow performed spellings without leaving an otherwise established translation incomplete.",
+          "limitation": "Third response remains incomplete_provider_response with length finish; no missing explanation or validation is inferred. This decision evaluates source spellings and translation only. Timing validation remains owned separately by the lead."
+        }
+      },
+      "rann-jeeti-rama-rao-aye": {
+        "proposalSha256": "7bd063acdeb0d042fd0fa30b868d55119b5b75a72267da066dc8a3d7be3d5d4f",
+        "resolutionSha256s": [
+          "226ae954574c9175ec8dc9053930b6df5c746e8cc8218d3b3205e10a5b984bdc",
+          "59b97e51b849e40c9959f904e01d88c5b5f24d1291da741b4ff2fa2ca67216a2"
+        ],
+        "verdict": "accept_with_required_narrow_revisions",
+        "reason": "Meaning accepted after narrow tag corrections below. Visually inspected Gītāvalī printed328: nectar revives monkeys; grace/gaze revives city people, with shared jiāe. Printed final stanza has te tab / ab Tulsi teu jinha hita sahita, supporting then/now contrast and loving singers, not even for Tulsi. Supplied predicates must not be presented as meanings of kapi, nagara, guṇa or sahita alone.",
+        "requiredRevisions": [
+          {
+            "lineId": "sudha-sinchi",
+            "field": "english",
+            "new": "{1:Sprinkling }{0:nectar, }he revived {2:the monkeys; }{3:with grace }he looked upon {3:the city’s }{4:men}",
+            "reason": "Keep cross-line supplied verbs untagged instead of assigning them to kapi and kṛpā-nagara."
+          },
+          {
+            "lineId": "sahita-rama-guna",
+            "field": "english",
+            "new": "{0:with} love {3:sing }{1:Rāma’s }{2:virtues} enjoy the same blessings.",
+            "reason": "Love is hita in the preceding line; enjoy the same blessings is supplied from context, not a meaning of guṇa."
+          }
+        ]
+      },
+      "hanuman-chalisa": {
+        "proposalSha256": "01779a220ee0657ba4f49a41897111969270575741d598ff387894d6f80a654f",
+        "resolutionSha256s": [
+          "814d6c103f7b2a76ec1b61bee5f0b6060207b861964326a895e3b0648dabf979"
+        ],
+        "verdict": "accept",
+        "reason": "Accept previously peer-reviewed reading. Poetic multiplicity is supported by the specific original Mahāvīrī explanation. Keep the note’s read-here qualification; do not assert modern distances or treat yuga-years times yojanas as dimensions.",
+        "requiredRevisions": []
+      },
+      "hanuman-bhajan-hariharan": {
+        "proposalSha256": "fa8715151f2e5abce27409fe0936f76f0822920bdcfc61f7922d632a3a8272a5",
+        "resolutionSha256s": [
+          "266b0718b58f2601cbc988997a51e093817b0cde5c565d929ff31642b1f55237"
+        ],
+        "verdict": "accept",
+        "reason": "Accept contextual abundance/storehouse sense supported by the cited exact compound gloss and prior peer review. Personal address and compassion remain; no new army or shelter image.",
+        "requiredRevisions": []
+      },
+      "jayagalu-agali": {
+        "proposalSha256": "a1a61fda6bc784d8afcd3896f05f2cdff806226462f4b3379f0fa0bc30642182",
+        "resolutionSha256s": [
+          "b0c7322f06aa1a1867b6a60871e9f2fbaacbbbce8a555469a771a322ad9efc65",
+          "2402b3e77cbb6b88dfd26256232df36bf5f23e7835ea43780f5869f9503dc705",
+          "638a993d02341bbdf27997467fc235eb79ac5686129d17430c31f557c34d04e0",
+          "87d28e0b1a3da873629ca057c306040d7ed22780b95f1d5b091fef08b86b8430",
+          "2798592822384a2ff291350174d77a273fce6c578103c078f1da842ea29e2f9f",
+          "cc5b0bd8d4809610249f2f8443582c558faf9a4541a89d25e6f3b1660be6d7d1",
+          "33f71b49c22a14a616d1a64367c390626403ff1753aebca5564b31eb975af8cb",
+          "685b99e973a8a23e65ec1636fd41b2eec16807d0a6c28ecc66c0c2ae6741ee9a"
+        ],
+        "verdict": "accept_with_required_narrow_revisions",
+        "reason": "Accept gloss clarification only. Preserve every existing English string, including Stick and O stick. Refrain function does not erase lexical meaning; prior peer objection is well founded.",
+        "requiredRevisions": [
+          {
+            "action": "omit_all_english_changes",
+            "reason": "Apply words/gloss changes only; keep literal stick address."
+          }
+        ]
+      },
+      "istu-dina-ee-vaikuntha": {
+        "proposalSha256": "575860b827b7b7ad22cfe9aa90e1c6f660507b9ad9dcc5bb77e48c4d8fb71316",
+        "resolutionSha256s": [
+          "9405c3200599fc31b51990785e410f719c0629721ca487d9dc6bbdae0500ec92",
+          "70d20d02efaa37c1ba8b0d115823525864d639ddebeaef4d563bd6dfa747940e"
+        ],
+        "verdict": "accept",
+        "reason": "Accept gloss-only changes. Numbers, attendants and mischief-maker remain in English. Marking symbolism as interpreted here, rather than adding it to sung words, preserves the distinction between translation and commentary.",
+        "requiredRevisions": []
+      },
+      "rajabidiyolaginda-kasturi-ranga": {
+        "proposalSha256": "e6bf5e45d3f1b12b06215367dabafe89b79d2522ec7857fc3113a562a1cd750f",
+        "resolutionSha256s": [
+          "c151dcfa526fec2db30e3596d7ed9a96ba854fddc93a88b1a6af9e5e606b0bce"
+        ],
+        "verdict": "accept",
+        "reason": "Accept source-attested body terms and contextually supported beautiful sense of hosa, as checked in prior peer review. Gold, knees, shanks and radiance are preserved; no invented horse tack or jewelry replaces them.",
+        "requiredRevisions": []
+      },
+      "namo-namo-vindhyeshwari": {
+        "proposalSha256": "987525754f1e9aff6aee0fb162d626553301ff35d618790d7438ca3dcbe5fa59",
+        "resolutionSha256s": [
+          "5c8106c881fbb8f5b892e48f3adc49f6337f2bf01f13ae47a7ccd0c22f4c8e0e"
+        ],
+        "verdict": "accept",
+        "reason": "Accept coordinated Rudrāṇī correction. Inspected both retained focused audio records: both give rudrāṇī with no competing name. Source, Roman, sourceWords index4, linked word and English agree. Does not normalize unrelated performed forms.",
+        "requiredRevisions": []
+      },
+      "jai-ambe-gauri": {
+        "proposalSha256": "75dfcb90d1729a5bf5a4012cbe66a1be92079a198ae66d236844ebbf30dc7dd6",
+        "resolutionSha256s": [
+          "4d24a2edfbd8cd8eb165bf0197bcdca64a34e344b5479af161c616c703fe2515",
+          "95f26f1367f4cc43b53c498f9377b8f6551980292a0b9df17a78e7da5c06cf9b"
+        ],
+        "verdict": "accept",
+        "reason": "Accept prior peer-reviewed smoky-eyes and locative repairs. Given nainā and no killing verb, a demon-slaying reinterpretation would invent syntax. The delayed radiance subject is clarified without inventing a Mālketu location.",
+        "requiredRevisions": []
+      },
+      "bolo-lakshmi-maat-ki-jai": {
+        "proposalSha256": "75f2196b85b4d9865ffc8793b028f8b96a87ba71e295b13a2196c6cfc0882e80",
+        "resolutionSha256s": [
+          "6f1f732488a5b9961c96845e2f8d1b5fb4d71cee55e5609667e4c0181682edce"
+        ],
+        "verdict": "accept",
+        "reason": "Accept prior peer-reviewed comparison analysis with its recorded qualification. Toko remains the person-object, koī is distributive over the fourteen treasures, and the attested equal/rival sense of pānā fits the preceding ocean-birth image. Old ownership and obtains-them clauses changed pronoun relations.",
+        "requiredRevisions": []
+      },
+      "doi-kar-teka-hei-matha": {
+        "proposalSha256": "e321f24c287b4a0ba58b567b7ffe9a68c5f121d2d6c5d97a48a27e4952316369",
+        "resolutionSha256s": [
+          "46f013970d28e4df61c265d7f5c2de40e4d3aefafc875b68fe35a38bdff422e2",
+          "3909ae54044315344711f69189b62c4da7eec718e6e3f0331ef009753744ad7f"
+        ],
+        "verdict": "accept",
+        "reason": "Accept both corrections. Independently viewed Sansthan source images: unmanīt is locative, and deva āhe nijasurānt occurs in a waking instruction. Retained Molesworth HTML explicitly defines nijasurā as half-asleep; both focused Hindi audio records preserve nija sura meṃ. Keeping adapted tokens while explaining the joint term avoids silently replacing Hindi with Marathi. What splendour is a defensible nominal exclamation, not a new object.",
+        "requiredRevisions": []
+      },
+      "shree-sai-aarti": {
+        "proposalSha256": "a10adf689a6f9c3e1bd20759fb823cc0df883c9be06c502c85cbec9039cb9282",
+        "resolutionSha256s": [
+          "e527af88d3e02110da3345dcfeee1155dcee2bdcaf6252db2c11a7db02cbb6b2"
+        ],
+        "verdict": "accept_with_required_narrow_revisions",
+        "reason": "Accept source/semantic changes after aligning words[0].roman to icchita. Both retained audio records support dīna and jala sā nija sukha; the remaining spacing question is resolved by comparison sā and attested nijasukha. Retained Molesworth definition supports innate spiritual bliss; do not replace Hindi jala/pilā deve with the Marathi original. The cātaka is a devotee image and the next line supplies Mādhava receiving the bliss to drink.",
+        "requiredRevisions": [
+          {
+            "lineId": "line-verse-7a",
+            "field": "words[0].roman",
+            "new": "icchita",
+            "reason": "Match corrected source इच्छित and corrected full Roman, eliminating inherited long-initial-vowel mismatch."
+          }
+        ]
+      }
+    },
+    "evidenceInspected": [
+      "Saved proposals for all14 readers; frozen population.json and exact old fields; peer-1-3.json and peer-2.json, including objections.",
+      "Visually inspected Mānas-Pīyūṣ printed31; Gītāvalī printed327–328; Sansthan Pandharinathā and Uṭhā Uṭhā source images.",
+      "Retained Molesworth HTML entries nijasukha and nijasurā.",
+      "Both retained focused transcription/review records for Sundara, Namo, ShreeSai, Doi and Prajña. No new acoustic listening is claimed."
+    ]
   }
 }

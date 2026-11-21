@@ -37,8 +37,8 @@
         "Telugu",
         "Urdu"
       ],
-      "maxLines": 539,
-      "maxTextBytes": 794065,
+      "maxLines": 541,
+      "maxTextBytes": 796281,
       "sourceStatus": [
         "reviewed",
         "audio-reviewed"
@@ -69,6 +69,14 @@
           "maxTextBytes": 794065,
           "inputHash": "2c95b28ab473620e335b18dd62fd6b955c57c1d4151418b60ba3ca968d5c58c0",
           "recordHash": "ecf677a2e8cc56da4f536087fd537c81e3235d1edcde2dd83280c122619cfb46"
+        },
+        {
+          "path": "docs/research/shuffle-qualification-2026-11-15/restored-couplets-supplement-2026-11-21.json",
+          "sha256": "fb74267dae1082ac67683089787b253000fe6f2714f421ebcdc957780b604718",
+          "maxTextBytes": 796281,
+          "maxLines": 541,
+          "inputHash": "29659bd57e4dbd02206a6d5074867618c6502ac571eb041c238f0800672a75f5",
+          "recordHash": "9a629e355385b8524b91a43472753f081fd89f21c59598326723a9d2e941da37"
         }
       ]
     },

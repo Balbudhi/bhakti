@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "slug": "sampurna-sundarakanda",
+  "status": "qualified-targeted-extension",
+  "scope": "Exact restored-couplet reader,541lines/796281bytes; no method/model/language/projection change. Independent full-current-input extraction, review and source/receipt verification.",
+  "inputHash": "29659bd57e4dbd02206a6d5074867618c6502ac571eb041c238f0800672a75f5",
+  "recordHash": "9a629e355385b8524b91a43472753f081fd89f21c59598326723a9d2e941da37",
+  "stagedFileSha256": "6e2d1d466c1efe63293eb976474d425b11d7f04728c8acdfad1c4156064e2abb",
+  "canonicalTextBytes": 796281,
+  "lineCount": 541,
+  "independentReview": {
+    "reviewer": "integrate_review",
+    "scope": "Narrow increased-input qualification for the exact updated Sundara reader. No other reader, method, model, audio, or taxonomy qualification is implied.",
+    "verdict": "accept_narrow_input_bound_extension",
+    "inputHash": "29659bd57e4dbd02206a6d5074867618c6502ac571eb041c238f0800672a75f5",
+    "readerSha256": "6e2d1d466c1efe63293eb976474d425b11d7f04728c8acdfad1c4156064e2abb",
+    "recordHash": "9a629e355385b8524b91a43472753f081fd89f21c59598326723a9d2e941da37",
+    "projectionSha256": "0a0432d2121f6f4b865ea86e9fd0925e8a14ffb8371ed7b00324f33e7539c231",
+    "qualification": {
+      "oldMaxLines": 539,
+      "oldMaxBytes": 794065,
+      "newMaxLines": 541,
+      "newMaxBytes": 796281,
+      "methodVersion": 4,
+      "methodFingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+      "matchesPredeclaredPlan": true
+    },
+    "receiptChecks": {
+      "extraction": {
+        "semanticDispatchId": "47dfe3cecd4c4e14bd34508596ced8a8",
+        "providerLedgerId": "aa2fb513b37d4b9baf2cea66c0f24734",
+        "ledgerStatus": "parsed",
+        "httpStatus": 200,
+        "finishReason": "stop",
+        "requestSha256": "e497ec2948d732a751a04b7fe61490fac7f160073b272c863505c8f37a66f729",
+        "responseSha256": "ba04029f6c3048cb64a6a1f5de56a7dbbfe706da0b47b0e7b5b4702a1662dc4c",
+        "fullCurrentEvidencePayloadExactlyPresent": true,
+        "rawResponseMatchesRecordPacket": true
+      },
+      "review": {
+        "semanticDispatchId": "55a77e717a574edf9b1dc7a389a8b46f",
+        "providerLedgerId": "3b090bcbf1264472b18fe8b73e984774",
+        "ledgerStatus": "parsed",
+        "httpStatus": 200,
+        "finishReason": "stop",
+        "requestSha256": "e4afb57a901c29cd22836e166ad70d1751907a5c40120e7ccb6ee08af0f20131",
+        "responseSha256": "1e44009ab535d753373125d5db5e86c114396a368fa7ef1f89278747ddb71bb4",
+        "fullCurrentEvidencePayloadExactlyPresent": true,
+        "rawResponseMatchesRecordPacket": true,
+        "exactBoundProposalPresent": true
+      }
+    },
+    "coverage": {
+      "extractionLineCount": 541,
+      "reviewLineCount": 541,
+      "actualUniquePerformedLines": 541,
+      "allBoundEvidenceQuotesMatchCurrentReader": true,
+      "currentRecordHashMatchesFreshProjection": true
+    },
+    "acceptedAssertions": [
+      {
+        "assertionId": "a-001",
+        "conceptId": "subject.rama",
+        "role": "worship_focus",
+        "prominence": "central",
+        "decision": "accept",
+        "reason": "Explicit invocations and imperatives worship Rāma as lord and refuge; worship_focus is supported independently of story presence."
+      },
+      {
+        "assertionId": "a-002",
+        "conceptId": "subject.hanuman",
+        "role": "narrative_subject",
+        "prominence": "central",
+        "decision": "accept",
+        "reason": "Hanumān acts throughout the Lanka mission. New line012a explicitly supplies Hanumān as the experiencer of delight; it strengthens the already extensive narrative evidence, rather than introducing a new deity."
+      },
+      {
+        "assertionId": "a-003",
+        "conceptId": "subject.sita",
+        "role": "narrative_subject",
+        "prominence": "supporting",
+        "decision": "accept",
+        "reason": "Sītā speaks, receives the messenger and gives the token; narrative_subject fits. Her speech about longing is not misassigned to the singer."
+      },
+      {
+        "assertionId": "a-004",
+        "conceptId": "subject.shiva",
+        "role": "incidental_reference",
+        "prominence": "incidental",
+        "decision": "accept",
+        "reason": "Śambhu/Gaurīśa and the Umā-addressing narrator are evidenced, but remain incidental here and are excluded from projection. No generic Hari/Narahari name is misclassified as a new Kṛṣṇa subject."
+      },
+      {
+        "assertionId": "a-005",
+        "conceptId": "theme.refuge",
+        "role": "theme",
+        "prominence": "central",
+        "decision": "accept",
+        "reason": "Taking shelter, granting protection and the explicit vow to retain the surrendered occur repeatedly in the Vibhīṣaṇa episode."
+      },
+      {
+        "assertionId": "a-006",
+        "conceptId": "theme.grace",
+        "role": "theme",
+        "prominence": "central",
+        "decision": "accept",
+        "reason": "Kṛpā is repeatedly named as enabling success and saintly encounters."
+      },
+      {
+        "assertionId": "a-007",
+        "conceptId": "theme.longing",
+        "role": "theme",
+        "prominence": "supporting",
+        "decision": "accept",
+        "reason": "Actual separation/fire/torment passages support longing; it is not inferred from the added request that companions wait."
+      },
+      {
+        "assertionId": "a-008",
+        "conceptId": "theme.service",
+        "role": "theme",
+        "prominence": "supporting",
+        "decision": "accept",
+        "reason": "Rāma-kāju, servant and messenger passages directly support devoted service."
+      },
+      {
+        "assertionId": "a-009",
+        "conceptId": "theme.name_power",
+        "role": "theme",
+        "prominence": "supporting",
+        "decision": "accept",
+        "reason": "Passages explicitly attribute release/protection/purification to the name, beyond simple name occurrence."
+      },
+      {
+        "assertionId": "a-010",
+        "conceptId": "action.praise",
+        "role": "practice",
+        "prominence": "supporting",
+        "decision": "accept",
+        "reason": "Invocatory epithets, bowing and guṇa narration support enacted praise."
+      },
+      {
+        "assertionId": "a-011",
+        "conceptId": "action.remembrance",
+        "role": "practice",
+        "prominence": "supporting",
+        "decision": "accept",
+        "reason": "Sambhāri, sumiri, sumirana and japa explicitly describe remembered devotion before acts and during distress."
+      }
+    ],
+    "rejectedAssertions": [],
+    "projectedFeatures": {
+      "themes": [
+        {
+          "id": "theme.grace",
+          "weight": 0.3125
+        },
+        {
+          "id": "theme.longing",
+          "weight": 0.125
+        },
+        {
+          "id": "theme.name_power",
+          "weight": 0.125
+        },
+        {
+          "id": "theme.refuge",
+          "weight": 0.3125
+        },
+        {
+          "id": "theme.service",
+          "weight": 0.125
+        }
+      ],
+      "actions": [
+        {
+          "id": "action.praise",
+          "weight": 0.4
+        },
+        {
+          "id": "action.remembrance",
+          "weight": 0.4
+        }
+      ],
+      "subjects": [
+        {
+          "id": "subject.hanuman",
+          "weight": 0.4166666666666667,
+          "role": "narrative_subject"
+        },
+        {
+          "id": "subject.rama",
+          "weight": 0.4166666666666667,
+          "role": "worship_focus"
+        },
+        {
+          "id": "subject.sita",
+          "weight": 0.16666666666666669,
+          "role": "narrative_subject"
+        }
+      ]
+    },
+    "newLinesAssessment": {
+      "line-012a": "Pleasant words delight Hanumān; supports his narrative role only. Does not warrant a new emotion/performance tag.",
+      "line-012b": "Hanumān asks companions to wait, enduring hardship and eating bulbs, roots and fruit until he returns. No asceticism, food or new deity feature was invented."
+    },
+    "roleBoundary": "Hanumān worship and Rāma narrative roles are also supported by the independent reviewer, but the projection correctly keeps the intersection of proposed accepted roles. It does not manufacture additional roles from reviewer suggestions. Śiva incidental reference stays unprojected.",
+    "requiredCorrections": [],
+    "limitations": [
+      "This is a focused qualification of the observed541-line796281-byte input, not evidence for larger inputs or new languages.",
+      "Both separate full-input model stages completed; independent editorial review assessed all11 assertions and their bound source passages, not a new word-by-word audit or listening pass of all541 lines.",
+      "Accepted ranking features are conservative and not an exhaustive literary index. Physical audio profiles are outside this review."
+    ]
+  }
+}
