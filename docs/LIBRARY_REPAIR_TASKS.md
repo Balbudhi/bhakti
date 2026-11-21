@@ -1,5 +1,9 @@
 # Whole-library repair task
 
+## Focused resolution of the remaining 39 readers — 21 November 2026
+
+The owner requested active parallel resolution of the 39 readers open at `e0cedc4f`, then requested a saved stopping point. Work is now stopped. 11 readers are confirmed good unchanged; the remaining 28 have precise saved proposals or open questions. See [the checkpoint](research/translation-source-resolution-2026-11-21.md) and `data/translation-source-resolution-2026-11-21.json`. No reader changes from this continuation have been applied or published. The next authorized continuation should integrate supported pending corrections, resolve only the retained questions, and complete the existing release checks; do not restart unchanged finished translations.
+
 ## Kanakadhārā and library wording repair — 21 November 2026
 
 The owner’s screenshot prompted a complete screen of all 365 readers / 8,859 definitions at `57c3c740`. A separately published Bhor Bhaī reader was preserved and its 12 definitions checked, bringing release coverage to 366 readers/8,871 definitions. The final conservative selection improves 305 English definitions across 83 readers, with 61 glosses, eight notes and 26 concept flags aligned; two further definitions have annotation-only repairs. It rejects 163 unnecessary or weaker proposals. Source, Roman text, audio, sequence, timings and protected owner English are preserved.

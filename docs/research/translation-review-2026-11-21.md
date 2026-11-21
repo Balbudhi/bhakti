@@ -8,9 +8,9 @@ The independent `70c1ede4` publication added Bhor Bhaī while this review was ru
 
 ## Reuse completed work
 
-The owner requested durable completion marks. `data/translation-review-status.json` records 325 finished translation reviews, 2 owner-protected readers and 39 readers with open source questions, bound to exact reader bytes. Compare the file SHA-256 before reusing a mark. Do not repeat a whole-library review of unchanged finished translations. A changed file calls for inspecting its diff, and a concrete new defect can reopen its affected passage. Finished is a scope-specific editorial conclusion, not an assertion of infallibility or complete word-analysis certification.
+The owner requested durable completion marks. `data/translation-review-status.json` initially recorded 325 finished translation reviews, 2 owner-protected readers and 39 readers with open source questions, bound to exact reader bytes. Compare the file SHA-256 before reusing a mark. Do not repeat a whole-library review of unchanged finished translations. A changed file calls for inspecting its diff, and a concrete new defect can reopen its affected passage. Finished is a scope-specific editorial conclusion, not an assertion of infallibility or complete word-analysis certification.
 
-Koī Hor Nahī and Aruṇācala Akṣaramaṇamālai remain the two explicitly owner-written, protected baselines. The owner reconfirmed remembering those two; no additional authorship was guessed. Vaiṣṇav Jan To and Vaiṣṇavā Gharīṃ Sarvakāḷ remain unchanged. A read-only check of 532 original-checkout source/packet files found no additional nonempty human-translation declaration.
+Koī Hor Nahī and Aruṇācala Akṣaramaṇamālai remain the two owner-designated protected editorial baselines. The owner clarified that older authorship is not fully recoverable; protection records approval and preservation, not a claim that the owner wrote both translations. Vaiṣṇav Jan To and Vaiṣṇavā Gharīṃ Sarvakāḷ remain unchanged. A read-only check of 532 original-checkout source/packet files found no additional nonempty human-translation declaration.
 
 ## Key source decisions
 
@@ -77,3 +77,7 @@ The local audio-quality auditor probes zero listener files because audio is remo
 Semantic ranking records were refreshed for all 83 changed readers and independently checked against their final source inputs. Three unsupported feature assignments were removed through the existing reduction mechanism; every audio-profile record remains identical. Sundarakāṇḍa received a narrowly evidenced 34-byte input-bound extension, without changing the model, inference method or projection. Its supported feature subset omits some secondary roles and petitions; the supplement records that limitation. Ranking metadata does not certify a translation. The actual provider cost across settled requests was $4.607445075 within the $8 task bound.
 
 Public assembly and the 366-reader shuffle-profile audit pass. Release-integrity checks verify all 367 entrypoints and 5,136 resource revision/integrity bindings; shuffle asset adoption passes. Internal review records are excluded from the public artifact.
+
+## Subsequent focused checkpoint
+
+The [source-resolution follow-up](translation-source-resolution-2026-11-21.md) closes 11 of those 39 translation questions without rewriting good English. The current registry has 336 finished, 2 protected and 28 pending readers. Prepared corrections and specific remaining questions are saved separately and have not been applied or published. Work stopped at the owner’s request.

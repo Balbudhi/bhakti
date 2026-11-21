@@ -9,7 +9,7 @@
       "readerSha256": "6eb36e7d5795a390a717e86f64adf463277bd83ee7f278de2f9fe2465313a8bc",
       "definitionCount": 21,
       "reviewedAt": "2026-11-21",
-      "ownerAuthorship": "Owner reconfirmed the two named protected translations on 2026-11-21; exact English is locked in editorial_baselines.json."
+      "ownerApproval": "Owner-designated protected editorial baseline. Protection records approval and preservation, not an inferred authorship claim; older authorship is not fully recoverable."
     },
     "bolo-lakshmi-maat-ki-jai": {
       "status": "needs_source_review",
@@ -19,7 +19,9 @@
       "openDefinitions": [
         "koi-nahi-pata",
         "ratna-chaturdash-toko"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "jaya-jagdisha-hare": {
       "status": "finished",
@@ -173,7 +175,9 @@
       "openDefinitions": [
         "v4-2",
         "v4-3"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "source_decision_pending"
     },
     "choti-choti-gaiya-chote-chote-gwal": {
       "status": "finished",
@@ -370,7 +374,9 @@
         "verse2-line3",
         "verse2-line5",
         "verse2-line6"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "source_decision_pending"
     },
     "jai-durge-durgati-pariharini": {
       "status": "finished",
@@ -475,13 +481,12 @@
       "reviewedAt": "2026-11-21"
     },
     "sankat-mochan-naam-tiharo": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "f33d2a4972b2cf72e4ac87b09374b64fba4363ed790a296e1f716bd9663f9265",
       "definitionCount": 26,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "v4-l1"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "aarti-kijiye-hanuman-lala-ki": {
       "status": "finished",
@@ -520,7 +525,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "chaupai-18"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "hanuman-bhajan-hariharan": {
       "status": "needs_source_review",
@@ -529,7 +536,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "line-021"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "sampurna-sundarakanda": {
       "status": "needs_source_review",
@@ -538,7 +547,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "line-013"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "mahavir-hanuman-gosain": {
       "status": "finished",
@@ -607,13 +618,12 @@
       "reviewedAt": "2026-11-21"
     },
     "maa-jag-janani-jai-jai": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "2e83760bd820d40085617bf74c509f8125ba97c9018c230f617f31a435ca5799",
       "definitionCount": 43,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "v9-lead"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "namo-namo-vindhyeshwari": {
       "status": "needs_source_review",
@@ -622,16 +632,17 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "verse-12"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "durga-chalisa": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "17e250568a13bff0d4f0cb2acfba71d62e973e0d34f4497c379ee615ee4a53ec",
       "definitionCount": 13,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "verse-2"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "sawan-gagane-ghor-ghanaghata": {
       "status": "finished",
@@ -677,7 +688,9 @@
       "openDefinitions": [
         "din-bhar-re-jo",
         "din-bhar-re-jo-ajar-amar"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "mana-masta-hua": {
       "status": "finished",
@@ -717,7 +730,9 @@
       "openDefinitions": [
         "verse-11-line-3",
         "verse-5-line-3"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "jaun-tore-caran-kamala": {
       "status": "finished",
@@ -841,7 +856,9 @@
       "openDefinitions": [
         "line-79-tuka-kahe-dipa",
         "line-87-jagrita-karo-rukminivara"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "lalakari": {
       "status": "finished",
@@ -856,7 +873,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "v2-2"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "muha-fer-jidhar-dekhoon": {
       "status": "finished",
@@ -919,16 +938,17 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "line-116"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "source_decision_pending"
     },
     "madhyahna-aarti": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "a09c08082fc50a596c1a512acb25ea3f4201392e238ba85a6dbd1d516bd704d9",
       "definitionCount": 177,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "line-147"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "dhoop-aarti": {
       "status": "finished",
@@ -1025,7 +1045,7 @@
       "readerSha256": "ce52d73efde671b12bf80542384e7bd5c4e751973370b5aa6c114de1bf6cef8e",
       "definitionCount": 115,
       "reviewedAt": "2026-11-21",
-      "ownerAuthorship": "Owner reconfirmed the two named protected translations on 2026-11-21; exact English is locked in editorial_baselines.json."
+      "ownerApproval": "Owner-designated protected editorial baseline. Protection records approval and preservation, not an inferred authorship claim; older authorship is not fully recoverable."
     },
     "chhanan-chhan": {
       "status": "needs_source_review",
@@ -1034,7 +1054,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "anant-teri-sharan"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "mann-ke-pawan-mandir-main": {
       "status": "finished",
@@ -1086,7 +1108,9 @@
       "openDefinitions": [
         "meditation-2",
         "meditation-4"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "patita-pavan-jai-raam": {
       "status": "finished",
@@ -1121,7 +1145,9 @@
         "line-176",
         "line-178",
         "line-187"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "source_decision_pending"
     },
     "om-namah-shivaya-damaru-paani-shool": {
       "status": "finished",
@@ -1142,7 +1168,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "verse-3a"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "mati-re-mati-re": {
       "status": "finished",
@@ -1181,7 +1209,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "line-verse-7a"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "balada-beka-re-lagila-ghanti": {
       "status": "finished",
@@ -1340,7 +1370,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "prana-holi-amodae-1"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "guru-charana-re-karo-dhyana": {
       "status": "finished",
@@ -1373,7 +1405,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "bihuchuna-chakara"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "jhare-tumo-krupa-ghana": {
       "status": "finished",
@@ -1565,7 +1599,9 @@
         "sahita-rama-guna",
         "sudha-sinchi",
         "te-taba-aba"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "ghana-ghamand-nabh-garajat-ghora": {
       "status": "finished",
@@ -1595,7 +1631,9 @@
         "gauri-suta-ganesha-mushaka",
         "kaato-kalesha-prathama-vandana",
         "vaahana-para-saaja"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "jayati-jayati-shri-ganesh": {
       "status": "finished",
@@ -1612,7 +1650,9 @@
         "charan-kaun-charan-dhara",
         "pancha-jaane-nirankara",
         "pancha-jaane-nirankara-rep"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "rama-ho-rama": {
       "status": "finished",
@@ -1693,13 +1733,12 @@
       "reviewedAt": "2026-11-21"
     },
     "jo-achyutananda": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "8a62ef36090f4b0965cbe90a9f96eb33b3cf3c344987d7cda840f584838c9013",
       "definitionCount": 15,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "v1-3"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "venkatachala-nilayam": {
       "status": "finished",
@@ -1732,7 +1771,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "l13"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "maine-tere-hi-bharose": {
       "status": "finished",
@@ -1781,7 +1822,9 @@
         "l13",
         "l14",
         "l16"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "research_incomplete"
     },
     "ahe-nila-saila": {
       "status": "finished",
@@ -1850,25 +1893,20 @@
       "reviewedAt": "2026-11-21"
     },
     "shyamala-dandakam": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "d7e4d82aeb15d379a54b7ca3ae324053253c434936db8cab572493eb1380d67e",
       "definitionCount": 116,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l043"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "sivapuranam": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "b34983bfd57b9d1eddc8b2d0bff8a58602907359f5134b100ba9f48ffd2a7b6b",
       "definitionCount": 101,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l075",
-        "l081",
-        "l084",
-        "l089"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "bajrang-baanka": {
       "status": "finished",
@@ -1883,13 +1921,12 @@
       "reviewedAt": "2026-11-21"
     },
     "kanakadhara-stotram": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "1f01614e90edeaee48ac4cd10a51d4d9684115fe6f762374b4e072f3f29ee84b",
       "definitionCount": 80,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l029"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "deh-shiva-bar-mohe-hai": {
       "status": "finished",
@@ -1904,14 +1941,12 @@
       "reviewedAt": "2026-11-21"
     },
     "harivarasanam": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "64df240131e06f9b21a4bc0849e4936ea8ff2f9349fa34d009c1c150ff180b21",
       "definitionCount": 27,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l007",
-        "l023"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "meri-vinti-yahi-hai-maa": {
       "status": "finished",
@@ -1951,7 +1986,9 @@
       "openDefinitions": [
         "l004",
         "l005"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "daari-yavudayya-vaikunthake": {
       "status": "finished",
@@ -2039,7 +2076,9 @@
         "l012",
         "l013",
         "l014"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "pavamana-jagada-prana": {
       "status": "finished",
@@ -2066,13 +2105,12 @@
       "reviewedAt": "2026-11-21"
     },
     "nagumogamutodi-o-narakesari": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "ce76674afb7676ea8141e6eb934d2b97bde2f258e78f68ef409bc25ddcc1254e",
       "definitionCount": 11,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l010"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "modalondipe-ninage-gananatha": {
       "status": "finished",
@@ -2141,7 +2179,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "l020"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "corrections_prepared_not_applied"
     },
     "tolu-tolu-tolu-ranga": {
       "status": "finished",
@@ -2162,18 +2202,12 @@
       "reviewedAt": "2026-11-21"
     },
     "hi-shivaa": {
-      "status": "needs_source_review",
+      "status": "finished",
       "readerSha256": "7838f3d32e986d8bf8b5d959022b975b9207ed3f9a857862568875e4ea2a7bc6",
       "definitionCount": 36,
       "reviewedAt": "2026-11-21",
-      "openDefinitions": [
-        "l021",
-        "l023",
-        "l024",
-        "l026",
-        "l027",
-        "l032"
-      ]
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "finished_unchanged"
     },
     "mhalasapati-short": {
       "status": "finished",
@@ -2350,7 +2384,9 @@
       "reviewedAt": "2026-11-21",
       "openDefinitions": [
         "g007"
-      ]
+      ],
+      "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
+      "resolutionDisposition": "source_decision_pending"
     },
     "kahe-re-ban-khojan-jai": {
       "status": "finished",
@@ -2371,5 +2407,6 @@
       "reviewedAt": "2026-11-21",
       "note": "Added in independent publication70c1ede4; all12 source/English pairs read in context, retained unchanged."
     }
-  }
+  },
+  "followUpReport": "docs/research/translation-source-resolution-2026-11-21.md"
 }
