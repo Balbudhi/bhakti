@@ -473,6 +473,23 @@ example, a verified Vaiṣṇo Devī performance carries both `Śakti` and
 Public tags use reviewed IAST, while ordinary spellings such as `Vaishno Devi`
 remain searchable aliases.
 
+`Śakti` is the single umbrella label for Devī/Shakti/Sakti; `Guru` is the
+single label for Gurū/Satguru/Sadguru. Specific reviewed identities remain:
+Durgā, Kālī, Lakṣmī, Sarasvatī, Pārvatī, Sītā, Vaiṣṇo Devī, Śāradā Devī,
+Madhumatī Śyāmalā and Śyāmalā also carry `Śakti`; Śirḍī Sāī, Dattātreya,
+Rāmakṛṣṇa and Śrī Rāmakṛṣṇa also carry `Guru`. The reviewed historical identity
+Śāradā Devī carries both `Śakti` and `Guru`. The taxonomy applies these
+relationships during generation and after validated source-specific overrides.
+It does not infer a goddess from an ordinary mother word, a teacher from a
+bare guru token, or Guru status from a poet/artist credit. New contextual
+identities require review. When a reviewed removal rejects a specific identity,
+its parent must be disposed of separately if it is not otherwise evidenced;
+removing Śirḍī Sāī alone does not erase an independently supported Guru tag.
+Canonical add/remove conflicts and removals of a retained identity's required
+parent are rejected before mutation; the required parent is never silently dropped
+or reintroduced. All exact performed-source and coverage checks run before
+metadata changes.
+
 As tested on August 21, 2026, YouTube rejects GitHub-hosted runner IPs with
 `Sign in to confirm you're not a bot` before metadata or audio extraction. The
 current nightly yt-dlp, EJS solver, Node 24, and cookie-free `web_embedded`

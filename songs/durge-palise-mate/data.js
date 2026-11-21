@@ -17,7 +17,9 @@ window.SONG_META = {
   "subjectTags": [
     "Durgā",
     "Lakṣmī",
-    "Narasimha"
+    "Narasimha",
+    "Śakti",
+    "Guru"
   ],
   "searchAliases": [
     "Durga",

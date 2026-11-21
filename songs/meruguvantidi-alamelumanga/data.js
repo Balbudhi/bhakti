@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Lakṣmī",
     "Viṣṇu",
-    "Veṅkaṭeśa"
+    "Veṅkaṭeśa",
+    "Śakti"
   ],
   "searchAliases": [
     "Meruguvantidi Alamēlumanga",

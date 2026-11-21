@@ -15,7 +15,8 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Guru"
   ],
   "searchAliases": [
     "Tōlu Tōlu Tōlu Ranga",

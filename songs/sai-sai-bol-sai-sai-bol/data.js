@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Śirḍī Sāī",
     "Rāma",
-    "Śiva"
+    "Śiva",
+    "Guru"
   ],
   "searchAliases": [
     "Sai Sai Bol",

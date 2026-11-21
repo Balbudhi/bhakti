@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gurbāṇī",
-    "Nirguṇa"
+    "Nirguṇa",
+    "Guru"
   ],
   "searchAliases": [
     "Satigur Kai Bhanai Calu",

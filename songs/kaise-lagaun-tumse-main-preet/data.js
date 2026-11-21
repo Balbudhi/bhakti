@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śrī Rāmakṛṣṇa"
+    "Śrī Rāmakṛṣṇa",
+    "Guru"
   ],
   "searchAliases": [
     "Kaise Lagaũ Tumse Maĩ Prit",

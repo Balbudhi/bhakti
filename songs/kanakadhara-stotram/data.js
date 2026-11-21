@@ -9,7 +9,9 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Lakṣmī"
+    "Lakṣmī",
+    "Śakti",
+    "Guru"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=jLkDrPcfwY4",
   "searchAliases": [

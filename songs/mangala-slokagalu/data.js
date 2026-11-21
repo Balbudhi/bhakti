@@ -21,7 +21,9 @@ window.SONG_META = {
     "Hanumān",
     "Narasimha",
     "Hayagrīva",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Śakti",
+    "Guru"
   ],
   "searchAliases": [
     "Mangala Shlōkagalu",

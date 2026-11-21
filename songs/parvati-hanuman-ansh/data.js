@@ -11,7 +11,8 @@ window.SONG_META = {
   "subjectTags": [
     "Rāma",
     "Śiva",
-    "Pārvatī"
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Parvati",

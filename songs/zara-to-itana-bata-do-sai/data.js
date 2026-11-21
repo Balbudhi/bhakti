@@ -14,7 +14,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śirḍī Sāī"
+    "Śirḍī Sāī",
+    "Guru"
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",

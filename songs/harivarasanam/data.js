@@ -9,7 +9,8 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Ayyappa"
+    "Ayyappa",
+    "Guru"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=Xk3zTq4TI90",
   "searchAliases": [

@@ -6,6 +6,48 @@ import tag_taxonomy as tags
 
 
 class TagTaxonomyTests(unittest.TestCase):
+    def test_umbrella_aliases_preserve_order_and_are_idempotent(self) -> None:
+        values = [" Nirguṇa ", "Devī", "Devi", "Shakti", "Sakti", "Śakti",
+                  "Gurū", "Satguru", "Sadguru", "Guru", ""]
+        expected = ["Nirguṇa", "Śakti", "Guru"]
+        self.assertEqual(tags.normalize_subject_tags(values), expected)
+        self.assertEqual(tags.normalize_subject_tags(expected), expected)
+        self.assertEqual(values[1], "Devī")
+
+    def test_declared_goddess_identities_keep_specific_tags_and_add_parent(self) -> None:
+        identities = ["Durgā", "Kālī", "Lakṣmī", "Sarasvatī", "Pārvatī", "Sītā",
+                      "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā"]
+        for identity in identities:
+            with self.subTest(identity=identity):
+                self.assertEqual(tags.normalize_subject_tags([identity]), [identity, "Śakti"])
+        self.assertEqual(tags.normalize_subject_tags(identities), [*identities, "Śakti"])
+
+    def test_sharada_devi_has_two_ordered_parents(self) -> None:
+        expected = ["Śāradā Devī", "Śakti", "Guru"]
+        self.assertEqual(tags.normalize_subject_tags(["Śrī Śāradā Devī"]), expected)
+        self.assertEqual(tags.normalize_subject_tags(expected), expected)
+        self.assertEqual(tags.normalize_subject_tags(["Guru", "Śāradā Devī"]),
+                         ["Guru", "Śāradā Devī", "Śakti"])
+
+
+    def test_declared_teacher_identities_add_guru_without_merging_people(self) -> None:
+        for identity in ["Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa", "Śrī Rāmakṛṣṇa"]:
+            with self.subTest(identity=identity):
+                self.assertEqual(tags.normalize_subject_tags([identity]), [identity, "Guru"])
+
+    def test_closure_applies_to_inferred_names(self) -> None:
+        self.assertEqual(tags.merge_subject_tags([], [{"roman": "sarasvatī"}]),
+                         ["Sarasvatī", "Śakti"])
+        self.assertEqual(tags.merge_subject_tags([], [{"roman": "Śirḍī Sāī"}]),
+                         ["Śirḍī Sāī", "Guru"])
+
+    def test_no_general_mother_teacher_or_author_classification(self) -> None:
+        self.assertEqual(tags.merge_subject_tags([], [{"roman": "mā mātā mother guru satguru sadguru",
+            "writer": "Tukārām", "singer": "Nāmadev"}]), [])
+        self.assertEqual(tags.normalize_subject_tags(["Mother", "Tukārām", "Nāmadev"]),
+                         ["Mother", "Tukārām", "Nāmadev"])
+
+
     def test_explicit_names_add_deity_tags(self) -> None:
         lines = [
             {"roman": "rājārāma kaho jī"},
@@ -50,7 +92,7 @@ class TagTaxonomyTests(unittest.TestCase):
             ["Śrī Śāradā Devī", "Śakti"],
             [{"roman": "Śāradā Mā tum hṛdaya nivāsinī"}],
         )
-        self.assertEqual(merged, ["Śāradā Devī", "Śakti"])
+        self.assertEqual(merged, ["Śāradā Devī", "Śakti", "Guru"])
 
     def test_hanuman_names_are_recognized(self) -> None:
         inferred = tags.infer_named_subject_tags([{"roman": "pavanaputra hanumāna saṅkaṭa harana"}])
@@ -67,7 +109,7 @@ class TagTaxonomyTests(unittest.TestCase):
 
     def test_plain_vaishno_tag_normalizes_to_iast(self) -> None:
         merged = tags.merge_subject_tags(["Vaishno Devi"], [])
-        self.assertEqual(merged, ["Vaiṣṇo Devī"])
+        self.assertEqual(merged, ["Vaiṣṇo Devī", "Śakti"])
 
 
 if __name__ == "__main__":

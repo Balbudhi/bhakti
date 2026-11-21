@@ -11,9 +11,7 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [
-    "Rāmakṛṣṇa"
-  ],
+  "subjectTags": [],
   "searchAliases": [
     "Chalo Man Jayẽ Ghar Apne",
     "Ramakrshna",

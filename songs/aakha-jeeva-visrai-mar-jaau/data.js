@@ -15,7 +15,8 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru"
   ],
   "searchAliases": [
     "Akha Jiva Visarai Mari Jau",

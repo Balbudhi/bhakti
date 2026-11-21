@@ -12,7 +12,8 @@ window.SONG_META = {
   "subjectTags": [
     "Kṛṣṇa",
     "Viṣṇu",
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Śakti"
   ],
   "searchAliases": [
     "Krshna",

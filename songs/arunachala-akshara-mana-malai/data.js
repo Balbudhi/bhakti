@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Aruṇācala",
-    "Śiva"
+    "Śiva",
+    "Guru"
   ],
   "searchAliases": [
     "Arunacala Aksharamanamalai",

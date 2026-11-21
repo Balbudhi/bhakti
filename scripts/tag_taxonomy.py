@@ -49,7 +49,44 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
 SUBJECT_TAG_ALIASES = {
     "Śrī Śāradā Devī": "Śāradā Devī",
     "Vaishno Devi": "Vaiṣṇo Devī",
+    "Devī": "Śakti",
+    "Devi": "Śakti",
+    "Shakti": "Śakti",
+    "Sakti": "Śakti",
+    "Gurū": "Guru",
+    "Satguru": "Guru",
+    "Sadguru": "Guru",
 }
+
+# These are declared relationships between reviewed identities, not keywords
+# for finding a goddess or teacher in arbitrary lyric/author text.
+SUBJECT_TAG_PARENTS = {
+    **dict.fromkeys(("Durgā", "Kālī", "Lakṣmī", "Sarasvatī", "Pārvatī", "Sītā",
+                     "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā"), ("Śakti",)),
+    **dict.fromkeys(("Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa", "Śrī Rāmakṛṣṇa"), ("Guru",)),
+    "Śāradā Devī": ("Śakti", "Guru"),
+}
+
+
+def _canonical_subject_tag(value: object) -> str:
+    label = str(value).strip()
+    return SUBJECT_TAG_ALIASES.get(label, label)
+
+
+def normalize_subject_tags(explicit: Iterable[object]) -> list[str]:
+    """Canonical labels in input order, then missing declared umbrella tags.
+
+    Specific identities remain distinct. This pure closure never reads lyrics,
+    roles or author metadata; applying it twice has the same result as once.
+    """
+    values: list[str] = []
+    for value in explicit:
+        label = _canonical_subject_tag(value)
+        if label and label not in values:
+            values.append(label)
+    parents = [parent for tag in values for parent in SUBJECT_TAG_PARENTS.get(tag, ())]
+    return list(dict.fromkeys([*values, *parents]))
+
 
 SARASVATI_SHARADA_MARKERS = {
     "vidya", "vidyadani", "vani", "veena", "vina", "brahma", "brahmani", "hansa",
@@ -107,18 +144,7 @@ def infer_named_subject_tags(lines: Iterable[dict[str, Any]]) -> list[str]:
 
 
 def merge_subject_tags(explicit: Iterable[object], lines: Iterable[dict[str, Any]]) -> list[str]:
-    values = []
-    for value in explicit:
-        label = str(value).strip()
-        if not label:
-            continue
-        label = SUBJECT_TAG_ALIASES.get(label, label)
-        if label not in values:
-            values.append(label)
-    for tag in infer_named_subject_tags(lines):
-        if tag not in values:
-            values.append(tag)
-    return values
+    return normalize_subject_tags([*explicit, *infer_named_subject_tags(lines)])
 
 
 def _unique_registry_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
@@ -168,6 +194,10 @@ def apply_reviewed_subject_tags(
                 or set(additions).intersection(removals)
                 or not isinstance(evidence, list) or not evidence):
             raise ValueError(f"{song}: invalid reviewed tags or evidence")
+        canonical_additions = {_canonical_subject_tag(tag) for tag in additions}
+        canonical_removals = {_canonical_subject_tag(tag) for tag in removals}
+        if canonical_additions.intersection(canonical_removals):
+            raise ValueError(f"{song}: canonical reviewed tag additions/removals conflict")
         actions = {("add", tag) for tag in additions} | {("remove", tag) for tag in removals}
         covered = set()
         for witness in evidence:
@@ -190,6 +220,11 @@ def apply_reviewed_subject_tags(
             raise ValueError(f"{song}: invalid reviewed subtitle")
     record = registry["songs"].get(slug)
     if record is None:
+        if "subjectTags" in meta:
+            existing = meta["subjectTags"]
+            if not isinstance(existing, list) or any(not isinstance(tag, str) for tag in existing):
+                raise ValueError(f"{slug}: invalid existing subjectTags")
+            meta["subjectTags"] = normalize_subject_tags(existing)
         return
     if not isinstance(lines, Mapping) or not isinstance(sequence, list):
         raise ValueError(f"{slug}: invalid lines or sequence for reviewed tags")
@@ -212,9 +247,15 @@ def apply_reviewed_subject_tags(
     existing = meta.get("subjectTags", [])
     if not isinstance(existing, list) or any(not isinstance(tag, str) for tag in existing):
         raise ValueError(f"{slug}: invalid existing subjectTags")
-    removed = set(record.get("removeTags", []))
-    meta["subjectTags"] = list(dict.fromkeys([
-        *(tag for tag in existing if tag not in removed), *record["addTags"],
-    ]))
+    # Remove canonical aliases before parent closure. Never rerun lyric-name
+    # inference here: it could undo a source-reviewed contextual removal.
+    removed = {_canonical_subject_tag(tag) for tag in record.get("removeTags", [])}
+    canonical_existing = [_canonical_subject_tag(tag) for tag in existing]
+    updated = normalize_subject_tags([
+        *(tag for tag in canonical_existing if tag not in removed), *record["addTags"],
+    ])
+    if removed.intersection(updated):
+        raise ValueError(f"{slug}: retained identities require a reviewed removed umbrella tag")
+    meta["subjectTags"] = updated
     if "reviewedSubtitle" in record:
         meta["subtitle"] = record["reviewedSubtitle"]

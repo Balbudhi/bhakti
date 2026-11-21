@@ -15,7 +15,8 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Guru"
   ],
   "searchAliases": [
     "Vishnu",

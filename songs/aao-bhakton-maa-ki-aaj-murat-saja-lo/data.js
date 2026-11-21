@@ -6,7 +6,6 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Devī",
     "Śakti",
     "Vaiṣṇo Devī"
   ],

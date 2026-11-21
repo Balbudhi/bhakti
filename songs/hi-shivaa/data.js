@@ -18,7 +18,8 @@ window.SONG_META = {
     "Śakti",
     "Madhumatī Śyāmalā",
     "Śiva",
-    "Kālī"
+    "Kālī",
+    "Guru"
   ],
   "searchAliases": [
     "Hi Shiva",

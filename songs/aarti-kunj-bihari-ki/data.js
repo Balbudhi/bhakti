@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Kṛṣṇa",
-    "Śiva"
+    "Śiva",
+    "Śakti",
+    "Guru"
   ],
   "searchAliases": [
     "Krshna",

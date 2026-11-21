@@ -9,7 +9,8 @@ window.SONG_META = {
     "Tamil"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Guru"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=B33RVckEmvQ",
   "searchAliases": [

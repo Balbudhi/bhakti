@@ -37,6 +37,131 @@ class ReviewedSubjectTagTests(unittest.TestCase):
     def apply(self, meta: dict, slug: str = 'reviewed') -> None:
         tags.apply_reviewed_subject_tags(meta, slug, self.lines, self.sequence, root=self.root)
 
+    def test_unregistered_song_gets_canonical_parent_closure(self) -> None:
+        meta = {"subjectTags": ["Devī", "Satguru", "Sarasvatī"], "writer": "Unchanged"}
+        self.apply(meta, "other")
+        self.apply(meta, "other")
+        self.assertEqual(meta, {"subjectTags": ["Śakti", "Guru", "Sarasvatī"], "writer": "Unchanged"})
+
+    def test_reviewed_addition_gets_parent_only_after_exact_witness(self) -> None:
+        self.registry["songs"]["reviewed"] = {"addTags": ["Sarasvatī"], "evidence": [
+            {"tag": "Sarasvatī", "source": "गुरु का शब्द", "reason": "Reviewed identity fixture"}]}
+        self.save()
+        meta = {"subjectTags": ["Devī"]}
+        self.lines["new-id"]["source"] = "Changed"
+        with self.assertRaisesRegex(ValueError, "evidence changed"):
+            self.apply(meta)
+        self.assertEqual(meta, {"subjectTags": ["Devī"]})
+        self.lines["new-id"]["source"] = "गुरु का शब्द"
+        self.apply(meta)
+        self.assertEqual(meta["subjectTags"], ["Śakti", "Sarasvatī"])
+
+    def test_removed_specific_identity_is_not_reinferred_after_review(self) -> None:
+        self.registry["songs"]["reviewed"] = {"addTags": [], "removeTags": ["Śirḍī Sāī", "Guru"],
+            "evidence": [{"operation": "remove", "tag": tag, "source": "गुरु का शब्द",
+                          "reason": "Context rejects this identity"} for tag in ["Śirḍī Sāī", "Guru"]]}
+        self.save()
+        self.lines["new-id"]["roman"] = "Śirḍī Sāī"
+        meta = {"subjectTags": tags.merge_subject_tags(["Śirḍī Sāī"], [])}
+        self.apply(meta)
+        self.apply(meta)
+        self.assertEqual(meta["subjectTags"], [])
+
+    def test_reviewed_removal_matches_canonical_umbrella_alias(self) -> None:
+        self.registry["songs"]["reviewed"] = {"addTags": [], "removeTags": ["Śakti"],
+            "evidence": [{"operation": "remove", "tag": "Śakti", "source": "गुरु का शब्द",
+                          "reason": "No goddess identity in this context"}]}
+        self.save()
+        meta = {"subjectTags": ["Devi", "Nirguṇa"]}
+        self.apply(meta)
+        self.assertEqual(meta["subjectTags"], ["Nirguṇa"])
+
+
+    def test_real_audit_checks_explicit_metadata_when_no_names_are_inferred(self) -> None:
+        self.registry = {"version": 1, "songs": {}}
+        self.save()
+        meta = {"title": "Example", "credit": "", "writer": "", "singer": "", "composer": "",
+                "languages": ["Hindi"], "subjectTags": ["Lakṣmī", "Śakti"],
+                "timingStatus": "start-only-reviewed", "translationStatus": "reviewed", "sourceStatus": "reviewed"}
+        data = {"SONG_META": meta, "SONG_LINES": {"line": {
+            "source": "कृपा", "roman": "kṛpā", "english": "{0:grace}",
+            "words": [{"roman": "kṛpā", "gloss": "grace"}],
+            "sourceWords": [{"text": "कृपा", "wordIndices": [0]}]}},
+            "SONG_SEQUENCE": [{"ref": "line", "section": "verse", "repeats": 1}],
+            "SONG_TIMINGS": [{"start": 0, "end": 1}]}
+        directory = self.root / "other"
+        directory.mkdir()
+        (directory / "data.js").touch()
+        with patch.object(audit, "load_data", return_value=data), patch.object(audit, "ROOT", self.root):
+            self.assertEqual(audit.audit_song(directory)["problems"], [])
+            for invalid in (["Lakṣmī"], ["Devī"], ["Satguru"]):
+                with self.subTest(tags=invalid):
+                    meta["subjectTags"] = invalid
+                    problems = audit.audit_song(directory)["problems"]
+                    self.assertTrue(any("canonical labels and umbrella tags" in p for p in problems), problems)
+                    self.assertEqual(meta["subjectTags"], invalid)
+
+
+    def test_canonical_add_remove_conflict_fails_before_any_mutation(self) -> None:
+        for addition, removal in [("Devī", "Śakti"), (" Satguru ", "Guru")]:
+            with self.subTest(addition=addition, removal=removal):
+                self.registry = {"version": 1, "songs": {"reviewed": {
+                    "addTags": [addition], "removeTags": [removal], "reviewedSubtitle": "Changed",
+                    "evidence": [{"operation": op, "tag": tag, "source": "गुरु का शब्द",
+                                  "reason": "Conflicting fixture"}
+                                 for op, tag in [("add", addition), ("remove", removal)]]}}}
+                self.save()
+                meta = {"subjectTags": ["Devi"], "subtitle": "Original"}
+                before = copy.deepcopy(meta)
+                with self.assertRaisesRegex(ValueError, "canonical.*conflict"):
+                    self.apply(meta)
+                self.assertEqual(meta, before)
+
+    def test_removing_parent_of_retained_identity_fails_before_any_mutation(self) -> None:
+        self.registry = {"version": 1, "songs": {"reviewed": {
+            "addTags": [], "removeTags": [" Śakti "], "reviewedSubtitle": "Changed",
+            "evidence": [{"operation": "remove", "tag": " Śakti ", "source": "गुरु का शब्द",
+                          "reason": "Parent removal contradicts surviving identity"}]}}}
+        self.save()
+        meta = {"subjectTags": ["Lakṣmī", " Śakti "], "subtitle": "Original"}
+        before = copy.deepcopy(meta)
+        with self.assertRaisesRegex(ValueError, "retained.*removed"):
+            self.apply(meta)
+        self.assertEqual(meta, before)
+
+    def test_second_required_parent_cannot_be_removed(self) -> None:
+        self.registry = {"version": 1, "songs": {"reviewed": {
+            "addTags": [], "removeTags": ["Guru"], "evidence": [
+                {"operation": "remove", "tag": "Guru", "source": "गुरु का शब्द",
+                 "reason": "Conflicts with retained teacher identity"}]}}}
+        self.save()
+        meta = {"subjectTags": ["Śrī Śāradā Devī", "Śakti"]}
+        before = copy.deepcopy(meta)
+        with self.assertRaisesRegex(ValueError, "retained.*removed"):
+            self.apply(meta)
+        self.assertEqual(meta, before)
+
+
+    def test_whitespace_alias_removal_does_not_reintroduce_tag(self) -> None:
+        self.registry = {"version": 1, "songs": {"reviewed": {
+            "addTags": [], "removeTags": ["Śakti"], "evidence": [
+                {"operation": "remove", "tag": "Śakti", "source": "गुरु का शब्द",
+                 "reason": "No goddess identity"}]}}}
+        self.save()
+        meta = {"subjectTags": [" Śakti ", " Devi ", "Nirguṇa"]}
+        self.apply(meta)
+        self.assertEqual(meta["subjectTags"], ["Nirguṇa"])
+
+
+    def test_bad_registry_does_not_even_normalize_unregistered_metadata(self) -> None:
+        meta = {"subjectTags": ["Devi", "Satguru"]}
+        self.registry["version"] = 2
+        self.save()
+        with self.assertRaises(ValueError):
+            self.apply(meta, "other")
+        self.assertEqual(meta["subjectTags"], ["Devi", "Satguru"])
+
+
     def test_renumbered_lines_use_exact_performed_source_and_append_once(self) -> None:
         meta = {'subjectTags': ['Nirguṇa', 'Guru'], 'writer': 'Do not change'}
         self.apply(meta)
@@ -248,10 +373,15 @@ class ReviewedSubjectTagTests(unittest.TestCase):
             with self.subTest(subtitle=subtitle):
                 evidence = [{'operation': 'remove', 'tag': 'Śirḍī Sāī', 'source': source,
                              'reason': 'Performed address does not identify this specific saint.'}]
+                removals = ['Śirḍī Sāī']
+                if not additions:
+                    removals.append('Guru')
+                    evidence.append({'operation': 'remove', 'tag': 'Guru', 'source': source,
+                        'reason': 'Generic master address does not identify a teacher.'})
                 if additions:
                     evidence.append({'operation': 'add', 'tag': 'Guru', 'source': source, 'reason': 'Explicit teacher address.'})
                 self.registry = {'version': 1, 'songs': {'reviewed': {
-                    'addTags': additions, 'removeTags': ['Śirḍī Sāī'], 'evidence': evidence,
+                    'addTags': additions, 'removeTags': removals, 'evidence': evidence,
                     'reviewedSubtitle': subtitle,
                     'performedSourcesSha256': hashlib.sha256(json.dumps([source], ensure_ascii=False,
                         separators=(',', ':')).encode('utf-8')).hexdigest(),

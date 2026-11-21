@@ -10,7 +10,8 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Lakṣmī"
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "Bhagyada Laksmi Baramma",

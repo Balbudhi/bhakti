@@ -11,7 +11,8 @@ window.SONG_META = {
   "subjectTags": [
     "Gurbāṇī",
     "Nirguṇa",
-    "Rāma"
+    "Rāma",
+    "Guru"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=Mst75f1k9MI",
   "searchAliases": [

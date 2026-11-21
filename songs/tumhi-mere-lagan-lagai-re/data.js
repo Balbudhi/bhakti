@@ -14,7 +14,9 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Guru"
+  ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
   "timingStatus": "start-only-reviewed",

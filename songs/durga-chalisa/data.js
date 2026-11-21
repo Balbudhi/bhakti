@@ -14,7 +14,8 @@ window.SONG_META = {
     "Kālī",
     "Viṣṇu",
     "Śiva",
-    "Sarasvatī"
+    "Sarasvatī",
+    "Guru"
   ],
   "searchAliases": [
     "Shakti",

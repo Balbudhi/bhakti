@@ -172,7 +172,8 @@
     "dhoop-aarti": {
       "addTags": [
         "Guru",
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Śakti"
       ],
       "evidence": [
         {
@@ -188,6 +189,12 @@
           "lineId": "line-039",
           "source": "अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम्",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "tag": "Śakti",
+          "lineId": "line-141",
+          "source": "रुसो मन सरस्वती चपल चित्त तेही रुसो",
+          "reason": "Actual named Sarasvati passage, already specifically classified Sarasvatī; parent closure applies without replacing Sai subject."
         }
       ]
     },
@@ -718,7 +725,8 @@
     },
     "chhanan-chhan": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Guru"
       ],
       "evidence": [
         {
@@ -727,6 +735,12 @@
           "lineId": "sai-tum-mere-krishna",
           "source": "साईं तुम मेरे कृष्ण कन्हैया कण्ठनहार मेरे",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "main-to-ho-gayi",
+          "source": "मैं तो हो गई प्रेम दीवानी ओ साईं तेरी",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
         }
       ]
     },
@@ -748,10 +762,18 @@
           "lineId": "jago-he-krishna-murari-giridhari",
           "source": "जागो हे कृष्ण मुरारी गिरिधारी",
           "reason": "The complete performed song awakens Kṛṣṇa-Murāri-Giridhāri, with Yamunā, peacock crown, yellow garment and flute. No Sāī identification appears; album attribution is not a lyric subject."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "jago-he-krishna-murari-giridhari",
+          "source": "जागो हे कृष्ण मुरारी गिरिधारी",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Kṛṣṇa awakening song; sages worship Krishna rather than invoking a guru.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "aa56cd77bf30b446b8bfb5b0a532a50c337c78ac8347fb7869cfdf2b6346d399",
       "reviewedSubtitle": "Kṛṣṇa"
@@ -774,10 +796,18 @@
           "lineId": "jaago-he-krishna-murari-giridhari",
           "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
           "reason": "The complete performed song awakens Kṛṣṇa-Murāri-Giridhāri, with Yamunā, peacock crown, yellow garment and flute. No Sāī identification appears; album attribution is not a lyric subject."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "jaago-he-krishna-murari-giridhari",
+          "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Kṛṣṇa awakening song; no teacher/Sai referent.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "874811727d11a109edd775c971eaafd95feeab60d465938fc721805907fa8e0b",
       "reviewedSubtitle": "Kṛṣṇa"
@@ -800,10 +830,18 @@
           "lineId": "verse-ram-krishna-hai-ishta",
           "source": "राम कृष्ण हैं इष्ट देवता, परम पूज्य हैं हमार",
           "reason": "All performed verses explicitly praise Rāma and Kṛṣṇa as chosen deities and Viṣṇu avatars. No Sāī identification appears; source-writing determines the devotional subject."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "verse-ram-krishna-hai-ishta",
+          "source": "राम कृष्ण हैं इष्ट देवता, परम पूज्य हैं हमार",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Explicit chosen deities Rama and Krishna; no spiritual teacher subject.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "3983e098c0f7f9a60fd0ae811c66e836a0578a5945dbc5fc3fd0334d907215cf",
       "reviewedSubtitle": "Rāma · Kṛṣṇa"
@@ -868,7 +906,8 @@
     },
     "sai-tum-humse-jaldi-milo": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Guru"
       ],
       "evidence": [
         {
@@ -877,12 +916,19 @@
           "lineId": "v4-2",
           "source": "छलिया है रे तू कृष्ण कन्हैया",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "साईं तुम हमसे जल्दी मिलो",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
         }
       ]
     },
     "vishnu-sahasranama": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Guru"
       ],
       "evidence": [
         {
@@ -891,6 +937,12 @@
           "lineId": "meditation-7",
           "source": "छायायां पारिजातस्य हेमसिंहासनोपरि ।\nआसीनमम्बुदश्याममायताक्षमलंकृतम् ।\nचन्द्राननं चतुर्बाहुं श्रीवत्साङ्कितवक्षसं ।\nरुक्मिणीसत्यभामाभ्यां सहितं कृष्णमाश्रये ॥",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "stanza-23",
+          "source": "गुरुर्गुरुतमो धाम सत्यः सत्यपराक्रमः ।\nनिमिषोऽनिमिषः स्रग्वी वाचस्पतिरुदारधीः ॥",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
         }
       ]
     },
@@ -964,17 +1016,26 @@
           "lineId": "om-jai-jagdish-hare",
           "source": "ॐ जय जगदीश हरे",
           "reason": "The complete performed ārati addresses Jagadīśa-Hari, the universal Lord. No performed line identifies Sāī or Śirḍī; the Sāī collection/dedication cannot supply a lyric subject."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "parabrahma-parameshwar",
+          "source": "पारब्रह्म परमेश्वर",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Hari/Supreme Lord address. Generic saint service does not identify a Guru.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "d35437583dd59eb3d97d6687f1c47929c6c516886e2ae084c3084b5b2561ffae",
       "reviewedSubtitle": "Viṣṇu"
     },
     "sampurna-sundarakanda": {
       "addTags": [
-        "Viṣṇu"
+        "Viṣṇu",
+        "Guru"
       ],
       "evidence": [
         {
@@ -983,6 +1044,12 @@
           "lineId": "line-003",
           "source": "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं",
           "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "line-003",
+          "source": "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
         }
       ]
     },
@@ -1165,7 +1232,8 @@
         "Kārtikeya"
       ],
       "removeTags": [
-        "Sarasvatī"
+        "Sarasvatī",
+        "Śakti"
       ],
       "evidence": [
         {
@@ -1181,8 +1249,16 @@
           "lineId": "verse-3a",
           "source": "शब्दब्रह्मसमुद्रश्च सिद्धसारस्वतो गुहः ।",
           "reason": "siddhasārasvato is an epithet in Skanda’s name list, not a separate invocation of Sarasvatī. Presiding-deity line and closing identify Kārtikeya. Entire performed hymn inspected."
+        },
+        {
+          "tag": "Śakti",
+          "lineId": "viniyoga-3",
+          "source": "स्वामी कार्तिकेयो देवता",
+          "reason": "Entire19-unit performed hymn reviewed: presiding deity explicitly Kārtikeya; opening, name list and closing consistently praise Skanda. siddhasārasvato is a Skanda epithet, not Sarasvatī; Gaṅgā/Umā appear only in his parentage compounds, not independent Goddess devotion. Remove leaked Śakti parent when the already rejected Sarasvatī tag is removed; retain actual Kārtikeya classification.",
+          "operation": "remove"
         }
-      ]
+      ],
+      "performedSourcesSha256": "c5cd94472b4ae4a5af180dd2ed8cc0c8b6fba893dc798678570df96ded44d054"
     },
     "sundar-te-dhyan": {
       "addTags": [
@@ -1221,16 +1297,26 @@
           "lineId": "refrain-1",
           "source": "हे नाथ अब तो ऐसी दया हो",
           "reason": "The complete performed prayer addresses the unnamed Lord (Nātha), asking for a meaningful life, selfless love and freedom from fear. It supplies no Sāī/Śirḍī identity; do not infer one from artist or collection."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "हे नाथ अब तो ऐसी दया हो",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Generic Lord/grace prayer; no teacher identity or teaching role established in performed passage.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "12beb16d5cc0aa1515b09bd601f1dd5572cabf46107cbcf021af389c0f356918",
       "reviewedSubtitle": ""
     },
     "tumhi-mere-lagan-lagai-re": {
-      "addTags": [],
+      "addTags": [
+        "Guru"
+      ],
       "evidence": [
         {
           "operation": "remove",
@@ -1238,6 +1324,12 @@
           "lineId": "manwā_lāge_na",
           "source": "मनवा लागे न कहीं तोरे बिन सइयाँ",
           "reason": "The performed सइयाँ (saiyā̃) is the beloved, distinct from the saint-name साईं/Sāī; surrounding verses address a fakir and mystical beloved without identifying Śirḍī Sāī. Do not convert a shared roman-prefix or album association into a saint identity."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "tu_hi_more_lagan",
+          "source": "तू ही मोरे लगन लगाई रे फकीरवा",
+          "reason": "Fakir addressee kindles devotional longing and awakens speaker by holding arm: substantive spiritual-guide role without proper name."
         }
       ],
       "removeTags": [
@@ -1264,10 +1356,18 @@
           "lineId": "v2-4",
           "source": "ତେଣୁ ହେ ଶ୍ରୀହରି ମୋତେ ଆନନ୍ଦମୟ କର",
           "reason": "Direct performed address to Śrīhari; Viṣṇu name-reference classification follows the owner’s Hari convention. The whole performed source is separately guarded for the Sāī removal."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "v2-4",
+          "source": "ତେଣୁ ହେ ଶ୍ରୀହରି ମୋତେ ଆନନ୍ଦମୟ କର",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Explicit SriHari address and cosmicbliss; no Guru subject.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "8dedd9b06430f0864b421b2aa375e903a7a79a6f249ca3adcb050bedca7e9ebe",
       "reviewedSubtitle": "Viṣṇu"
@@ -1281,10 +1381,18 @@
           "lineId": "refrain-1",
           "source": "ତୁମ କୃପା ବିନା ପ୍ରଭୁ ଆମେ କି କରିବୁ",
           "reason": "The complete performed prayer addresses the unnamed Prabhu, grace, feet and liberation. No Sāī identity is sung; the generic devotional address cannot support a specific saint tag from metadata alone."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "ତୁମ କୃପା ବିନା ପ୍ରଭୁ ଆମେ କି କରିବୁ",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Generic Lord/grace/liberation prayer; request for knowledge alone does not establish teacher identity.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "90a6f7e89169a6d254a1c0d4d68e71660f50a627c7489b1fe820398779663755",
       "reviewedSubtitle": ""
@@ -1315,10 +1423,18 @@
           "lineId": "refrain-4",
           "source": "गजवदना गणपति",
           "reason": "All performed verses invoke Gajānana/Gaṇapati, Girijā-Śiva’s son, Siddhi-Vināyaka and Vighneśvara. No Sāī identity appears; retain the actual Gaṇeśa subject rather than an album association."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "refrain-2",
+          "source": "वाणी से सुमिरें गजानना",
+          "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Explicit Gaṇeśa awakening hymn, no Guru reference.",
+          "operation": "remove"
         }
       ],
       "removeTags": [
-        "Śirḍī Sāī"
+        "Śirḍī Sāī",
+        "Guru"
       ],
       "performedSourcesSha256": "cc36c7b825e1dfba5ac4478d74497eb7b28b9f1962661513fb499507d44bdafd",
       "reviewedSubtitle": "Gaṇeśa"
@@ -1477,6 +1593,1145 @@
           "reason": "Performed address to the Mother in the verified October 30, 2022 Shraddha MH ONE Vaishno Devi Bhawan broadcast (https://www.youtube.com/watch?v=TYVrxlh6glQ); shrine-specific classification is grounded in the original broadcast, not inferred from the generic address alone."
         }
       ]
+    },
+    "ma-karali-kali-ma": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "maa-karali-kali-1",
+          "source": "माँ कराली काली माँ माँ",
+          "reason": "Direct invocation of Mother Kali; existing Kālī specific tag requires Śakti parent."
+        }
+      ]
+    },
+    "bhagyada-lakshmi-baramma": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "refrain-1",
+          "source": "ಭಾಗ್ಯಾದ ಲಕ್ಷ್ಮೀ ಬಾರಮ್ಮ ನಮ್ಮಮ್ಮ ನೀ ಸೌಭಾಗ್ಯಾದ ಲಕ್ಷ್ಮೀ ಬಾರಮ್ಮ",
+          "reason": "Direct invitation to Lakshmi as our Mother; preserve Lakṣmī and add Śakti."
+        }
+      ]
+    },
+    "kanakadhara-stotram": {
+      "addTags": [
+        "Śakti",
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l019",
+          "source": "मातुस्समस्तजगतां महनीयमूर्तिः",
+          "reason": "Explicit mother of all worlds; complete hymn to Lakshmi, preserve Lakṣmī."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "l038",
+          "source": "तस्यै नमस्त्रिभुवनैकगुरोस्तरुण्यै",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "saranembe-vani": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l003",
+          "source": "ವಾಗಭಿಮಾನಿ ವರಬ್ರಹ್ಮಾಣಿ",
+          "reason": "Direct refuge in Vani/Sarasvati, presiding goddess of speech; preserve Sarasvatī."
+        }
+      ]
+    },
+    "sri-mahalakumi-deviye": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l002",
+          "source": "ಶ್ರೀ ಮಹಾಲಕುಮಿ ದೇವಿಯೇ ಕೋಮಲಾಂಗಿಯೇ ಸಾಮಗಾನಪ್ರಿಯಳೇ",
+          "reason": "Direct address to Mahalakshmi Devi, not a generic word for a human mother."
+        }
+      ]
+    },
+    "meruguvantidi-alamelumanga": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l005",
+          "source": "మెరుగువంటిది అలమేలుమంగ",
+          "reason": "Alamelumanga is the performed principal female divine subject, existing Lakṣmī tag; preserve it."
+        }
+      ]
+    },
+    "mangala-slokagalu": {
+      "addTags": [
+        "Śakti",
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l008",
+          "source": "ಶ್ರೀಮತ್ಸೌಭಾಗ್ಯಜನನೀಂ ಸ್ತೌಮಿ ಲಕ್ಷ್ಮೀಂ ಸನಾತನೀಮ್ । ಸರ್ವಕಾಮಫಲಾವಾಪ್ತಿ ಸಾಧನೈಕಸುಖಾವಹಾಮ್ ॥",
+          "reason": "Explicit praise of eternal Lakshmi, mother of good fortune, in this performed compilation."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "l012",
+          "source": "ತಂ ವಂದೇ ನೃಸಿಂಹತೀರ್ಥನಿಲಯಂ ಶ್ರೀವ್ಯಾಸರಾಟ್ ಪೂಜಿತಂ ಧ್ಯಾಯಂತಂ ಮನಸಾ ನೃಸಿಂಹಚರಣಂ ಶ್ರೀಪಾದರಾಜಂ ಗುರುಮ್",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "durge-palise-mate": {
+      "addTags": [
+        "Śakti",
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l001",
+          "source": "ದುರ್ಗೆ ಪಾಲಿಸೆ ಮಾತೆ",
+          "reason": "Direct prayer to Durga Mother for protection, with Lakshmi/Bhargavi context; preserve both specific tags."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "l020",
+          "source": "ಪರತರ ಗುರು ಗೋಪಾಲ ವಿಠ್ಠಲನ ಚರಣ ಕಮಲದಲ್ಲಿ ಸ್ಥಿರವಾದ ಭಕುತಿಯ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "parvati-hanuman-ansh": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "l05",
+          "source": "पार्वती, पार्वती",
+          "reason": "Parvati is repeatedly named as the principal divine female subject in the song narrative, not merely a consort compound."
+        }
+      ]
+    },
+    "baishi-pahacha": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "line-pahacha-10",
+          "source": "ଦଶମେ ଆଦିନୃସିଂହଙ୍କୁ ସ୍ମରିଲି ଜାଣ / ଦଶମହାବିଦ୍ୟା ବିମଳାଙ୍କୁ ଯେ ପ୍ରଣାମ",
+          "reason": "Actual homage to Bimala of the ten Mahavidyas, followed by explicit remembrance of sixteen Mother Goddesses in line-pahacha-16."
+        }
+      ]
+    },
+    "kurai-ondrum-illai": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "edhum-thara-nirkum",
+          "source": "ஏதும் தர நிற்கும் கருணைக் கடலன்னை",
+          "reason": "Read with preceding un-marbil line: Mother who dwells on Vishnu’s chest is a distinct divine Mother, not an earthly mother or merely an address to Krishna."
+        }
+      ]
+    },
+    "mahavir-hanuman-gosain": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "verse2-line-4",
+          "source": "जगजननी सीता महमाई",
+          "reason": "Sita is explicitly lauded as Mother of the universe and great Mother; supports Śakti alongside Hanuman/Rama."
+        }
+      ]
+    },
+    "shree-radhey-govinda": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "radha-shakti-shyamal-darshan",
+          "source": "राधा शक्ति बिना न कोई श्यामल दर्शन पावे",
+          "reason": "Explicit Radha-shakti and injunction to worship Radha in adjacent line; genuinely divine female devotion, not incidental name matching."
+        }
+      ]
+    },
+    "aarti-kunj-bihari-ki": {
+      "addTags": [
+        "Śakti",
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "verse2-5",
+          "source": "ललित छवि श्यामा प्यारी की, श्री गिरिधर कृष्ण मुरारी की",
+          "reason": "The arati explicitly includes praise of beloved Shyama/Radha’s lovely form, with Radhika identified nearby. Distinct divine female praise supports parent Śakti."
+        },
+        {
+          "tag": "Guru",
+          "lineId": "shloka-2",
+          "source": "देवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम्",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "hechi-dan-dega-deva": {
+      "addTags": [
+        "Śakti"
+      ],
+      "evidence": [
+        {
+          "tag": "Śakti",
+          "lineId": "g001",
+          "source": "पांडुरंग ध्यानी पांडुरंग मनी विठू रखुमाई",
+          "reason": "Explicit joint invocation Vitthu/Rakhumai; Rakhumai is the divine consort independently named in the invocation, unlike an epithet such as her husband."
+        }
+      ]
+    },
+    "kaha-dhundhu-sai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "कहाँ ढूँढूँ साईं तुमको मुझे ये बता दे",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "ab-to-mujhko-bata-mere-sai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "ab-to-mujhko-bata-mere-sai",
+          "source": "अब तो मुझको बता मेरे साईं",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "baba-tum-antaryami": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sain_tum_antaryami",
+          "source": "साईं तुम अंतर्यामी",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "he-sai-apne-charno-mein": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-main",
+          "source": "हे साईं अपने चरणों में हम सबको ज़रा सी जगह दे",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "main-murakh-main-anpad": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "v1d",
+          "source": "बस वो मेरा साईं है",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "man-ke-manjeere-se": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "man-me-khayal-leke",
+          "source": "मन में ख़याल लेके साईं को पुकार ले",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "mere-sai-ke-darbar-mein": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-sai-darbar",
+          "source": "मेरे साईं के दरबार में देखो लगा है मेला",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "o-bhagwan": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "o-bhagwan-o-bhagwan",
+          "source": "ओ भगवान, ओ भगवान, अरज सुनो मेरे साईं भगवान",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "mere-ram-tum": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "bhagawan-tum-sai-ram-tum",
+          "source": "भगवान तुम साईं राम तुम",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "durga-chalisa": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse-8",
+          "source": "जोगी सुर मुनि कहत पुकारी । योग न हो बिन शक्ति तुम्हारी ॥\nशंकर आचारज तप कीनो । काम अरु क्रोध जीति सब लीनो ॥\nनिशिदिन ध्यान धरो शंकर को । काहू काल नहिं सुमिरो तुमको ॥\nशक्ति रूप को मरम न पायो । शक्ति गई तब मन पछतायो ॥",
+          "reason": "Narrative reference to actual teacher (Bali guru / Shankaracharya); subject mention need not be praise."
+        }
+      ]
+    },
+    "leke-bhesh-fakirika": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai-pyaare-sab-se-nyaare",
+          "source": "साईं प्यारे सबसे न्यारे",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "mera-jeevan-tere": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "doha-4",
+          "source": "व्यर्थ है वो जीवन जो साईं के गुण ना गाए",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "o-shirdi-ke-sai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai-ram-sai-shyam",
+          "source": "साईं राम साईं श्याम",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "o-shirdiwale-sai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-lead-1",
+          "source": "शिर्डी वाले साईं बाबा",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "data-ek-sai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "chant-sai-baba-1",
+          "source": "साईं बाबा",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "jab-subah-ki-aarti": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "main-sai-ke-gun-gata-hoon",
+          "source": "मैं साईं के गुण गाता हूँ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "jeevan-ke-har-mode": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "ki-us-waqt-hamein",
+          "source": "कि उस वक्त हमें साईं मिलके गए",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "muha-fer-jidhar-dekhoon": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "muh-pher-jidhar-dekhoon",
+          "source": "मुँह फेर जिधर देखूँ मुझे साईं नज़र आएँ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "sai-ke-11-vachan": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "vachan-11",
+          "source": "साईं बोले वही हो गया है धन्य आया जो अनन्य शरण मेरी",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "sai-meri-raksha-karna": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse-1-line-2",
+          "source": "अब तो दर्शन दे दो बाबा ओ शिरडी के साईं",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "sai-tere-charnon-ki": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai-tere-charnon-ki",
+          "source": "साईं तेरे चरणों की",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "vyartha-gavaya-is": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai-teri-baba-teri",
+          "source": "साईं तेरी, बाबा तेरी",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "bhiksha-de-de-maai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-2",
+          "source": "तेरे द्वार पे चलकर आया शिरडी वाला साईं",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "naiya-paar-karna": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-1",
+          "source": "ओ शिरडी के साईं बाबा सुन फ़रियाद हमारी",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "raat-dhal-gayee": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-3",
+          "source": "जागो साईं प्रभु,",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "arunachala-akshara-mana-malai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-021",
+          "source": "குற்றமுற் றறுத்தெனை குணமாய்ப் பணித்தாள் குருவுரு வாய் ஒளிர் அருணாசலா",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "mann-ke-pawan-mandir-main": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "intro-sai-baba",
+          "source": "साईं बाबा...",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "sai-ba-prakash-hai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai-wahan-tumhara-prakash",
+          "source": "साईं वहाँ तुम्हारा प्रकाश है",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "sai-ram-ram-jap-le": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "siram-ram-jap-le",
+          "source": "साईं राम राम जप ले,",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "chal-der-na-ho-jaye": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai-to-bulae",
+          "source": "साईं तो बुलाए पर तू ही जा ना पाए",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "he-sai-shankar": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "he-sai-shankar-he-karunakar",
+          "source": "हे साई शंकर हे करुणाकर",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "patita-pavan-jai-raam": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "saguna-svarupa-sai-ram",
+          "source": "सगुण स्वरूप साईं राम",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "madhur-madhur-sai-naam": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "madhura-madhura",
+          "source": "मधुर मधुर हरि नाम साई नाम",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "hanuman-bahuk": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-192",
+          "source": "सीतापती साहेब सहाय हनुमान नित हित उपदेस को महेस मानो गुर कै",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "geet-jaisa-main-hun-nirashrit": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-3",
+          "source": "साईं तुम्हारे सुर बिना",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "shirdi-wale-sai-baba": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "shirdi-wale-sai-baba",
+          "source": "शिरडी वाले साईं बाबा के जो दर पे जाएगा",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "jab-dil-udaas-ho-to": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "sai_ka_naam_lena",
+          "source": "साईं का नाम लेना",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "zara-to-itana-bata-do-sai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain_1",
+          "source": "ज़रा तो इतना बता दो साईं",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "bhanga-kudia-mu-sajai-rakhichi": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "tamari-ananta-pratikshyare",
+          "source": "ତମରି ଅନନ୍ତ ପ୍ରତୀକ୍ଷାରେ ସାଈ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "deha-re-mo-lagilani": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "mote-tume-rakhya-kara-1",
+          "source": "ମୋତେ ତୁମେ ରକ୍ଷା କର କୃପାସିନ୍ଧୁ ସାଈ, କୃପାସିନ୍ଧୁ ସାଈ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "jhare-tumo-krupa-ghana": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-3",
+          "source": "କରୁଣା ବିଗ୍ରହ ସାଈ କୃପା କଳ୍ପତରୁ ଛାଈ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "luha-bohi-jae-tumo": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-prana-pulakita-hue",
+          "source": "ପ୍ରାଣ ପୁଲକିତ ହୁଏ ତୁମ ସାଈ ନାମେ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "kete-lagaichu-tu-naat-re": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse-3-line-4",
+          "source": "ଶରଣ ମାଗିଲେ ଆସିବେ ଶ୍ରୀ ସାଇଁ",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "kaise-lagaun-tumse-main-preet": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "ramakrishna-prabhu",
+          "source": "रामकृष्ण प्रभु, इस युग के नायक",
+          "reason": "Actual invocation of Ramakrishna as lord and leader of age; named spiritual teacher."
+        }
+      ]
+    },
+    "ma-tumko-kaise-batalau": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse3-sharada-maa",
+          "source": "शारदा माँ तुम हृदय निवासिनी जानती हो मेरी जीवन कहानी",
+          "reason": "Actual address to Mother Sharada, identified as Holy Mother Sarada Devi by existing subject/metadata; named spiritual teacher."
+        }
+      ]
+    },
+    "sukh-ka-dukh-ka": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "refrain-3",
+          "source": "सबकी पीड़ा दूर करेंगे साईंनाथ भगवान",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "jaake-priya-na-rama": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "verse-2-line-1",
+          "source": "बलि गुरु तज्यो कंत ब्रजबनितनि",
+          "reason": "Narrative reference to actual teacher (Bali guru / Shankaracharya); subject mention need not be praise."
+        }
+      ]
+    },
+    "saasa-haale": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l18",
+          "source": "गुरु ज्ञानी गुरु ध्यानी पावै अंतर ज्योत बतावै",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "main-banjaran-ram-ki": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l005",
+          "source": "ਗੁਰ ਪਰਸਾਦੀ ਮੇਰਾ ਸਹੁ ਮਿਲੈ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "sivapuranam": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l008",
+          "source": "கோகழி யாண்ட குருமணிதன் தாள்வாழ்க",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "re-man-aiso-kar-sanyasa": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l001",
+          "source": "ਗੁਰੂ ਗਰੀਬ ਨਿਵਾਜ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "harivarasanam": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l016",
+          "source": "त्रिनयनं प्रभुं स्वामि दिव्यदेशिकम्",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "shrdi-sai-dwarka-maai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-003",
+          "source": "शिर्डी साईं द्वारकामाई सर्वांतर्यामी साईं राम",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "sai-sai-bol-sai-sai-bol": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-001",
+          "source": "साईं राम बोल साईं श्याम बोल",
+          "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        }
+      ]
+    },
+    "satgur-kai-bhane-chal": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "line-001",
+          "source": "ਸਤਿਗੁਰ ਕੈ ਭਾਣੈ ਚਲੁ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "jayagalu-agali": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l004",
+          "source": "ವಿಜಯರಾಯರ ಕೀರ್ತಿ ಮೆರೆಯಲಿ ಕೋಲೆ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "modalondipe-ninage-gananatha": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l013",
+          "source": "ಮಂಗಳಮೂರುತಿ ಗುರು ರಂಗವಿಠ್ಠಲನ ಪಾದ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "tolu-tolu-tolu-ranga": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l019",
+          "source": "ಸ್ವಾಮಿ ಸುಖತೀರ್ಥರ ಪತಿ ಪುರಂದರವಿಠಲ ತೋಳನ್ನಾಡೆ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "hi-shivaa": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l024",
+          "source": "गुरु वंदू गुरु वंदू अमृत पूर्णेंदू योनि चिद्बिंदू मनोन्मनी कामा",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "datta-brahmachari": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "l014",
+          "source": "माणिक सद्गुरु नाथा",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "tirtha-vitthal-kshetra-vitthal": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g008",
+          "source": "गुरु विठ्ठल गुरुदेवता विठ्ठल",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "man-tu-jot-saroop-hai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g003",
+          "source": "ਮਨ ਹਰਿ ਜੀ ਤੇਰੈ ਨਾਲਿ ਹੈ ਗੁਰਮਤੀ ਰੰਗੁ ਮਾਣੁ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "mere-man-prem-lago-har-teer": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g010",
+          "source": "ਲੇ ਸਤਿਗੁਰ ਕੀ ਮਤਿ ਧੀਰ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "je-sau-chanda-ugveh": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g003",
+          "source": "ਏਤੇ ਚਾਨਣ ਹੋਦਿਆਂ ਗੁਰ ਬਿਨੁ ਘੋਰ ਅੰਧਾਰ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "prabh-ju-to-kah-laj-hamari": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g017",
+          "source": "ਵਾਹਿਗੁਰੂ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "aakha-jeeva-visrai-mar-jaau": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "closing-waheguru",
+          "source": "ਵਾਹਿਗੁਰੂ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "kahe-re-ban-khojan-jai": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g009",
+          "source": "ਇਹੁ ਗੁਰ ਗਿਆਨੁ ਬਤਾਈ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "mo-kau-tar-le-rama": {
+      "addTags": [
+        "Guru"
+      ],
+      "evidence": [
+        {
+          "tag": "Guru",
+          "lineId": "g019",
+          "source": "ਸਤਿਗੁਰ ਬੁਧਿ ਸਿਖਲਾਈ",
+          "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        }
+      ]
+    },
+    "chalo-man-jayen-ghar-apne": {
+      "addTags": [],
+      "evidence": [
+        {
+          "tag": "Rāmakṛṣṇa",
+          "lineId": "chalo-man-jaayen",
+          "source": "चलो मन जायें घर अपने",
+          "reason": "Whole performed text addresses mind returning to its own home, worldly estrangement, true love and personal path. No Ramakrishna identity or guru addressee/teaching role established; association with a teacher is not performed subject.",
+          "operation": "remove"
+        },
+        {
+          "tag": "Śrī Rāmakṛṣṇa",
+          "lineId": "chalo-man-jaayen",
+          "source": "चलो मन जायें घर अपने",
+          "reason": "Whole performed text addresses mind returning to its own home, worldly estrangement, true love and personal path. No Ramakrishna identity or guru addressee/teaching role established; association with a teacher is not performed subject.",
+          "operation": "remove"
+        },
+        {
+          "tag": "Guru",
+          "lineId": "chalo-man-jaayen",
+          "source": "चलो मन जायें घर अपने",
+          "reason": "Whole performed text addresses mind returning to its own home, worldly estrangement, true love and personal path. No Ramakrishna identity or guru addressee/teaching role established; association with a teacher is not performed subject.",
+          "operation": "remove"
+        }
+      ],
+      "removeTags": [
+        "Rāmakṛṣṇa",
+        "Śrī Rāmakṛṣṇa",
+        "Guru"
+      ],
+      "performedSourcesSha256": "d1d0b70164f973f92ba9358b8c14bf93928fc14ca8571998c9afe8ed2c7c59de"
     }
   }
 }

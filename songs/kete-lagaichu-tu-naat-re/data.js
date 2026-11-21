@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śirḍī Sāī",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Guru"
   ],
   "searchAliases": [
     "Kete Lagaichu Tu Nata Re",

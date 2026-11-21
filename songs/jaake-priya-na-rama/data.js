@@ -10,7 +10,8 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Guru"
   ],
   "searchAliases": [
     "Rama",

@@ -16,7 +16,8 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Guru"
   ],
   "searchAliases": [
     "Gurbani",

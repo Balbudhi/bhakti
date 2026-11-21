@@ -16,7 +16,8 @@ window.SONG_META = {
     "Rāma",
     "Śakti",
     "Sarasvatī",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Guru"
   ],
   "searchAliases": [
     "Hanuman",

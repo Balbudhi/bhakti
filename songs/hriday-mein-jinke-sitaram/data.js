@@ -10,7 +10,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Sītā",
-    "Rāma"
+    "Rāma",
+    "Śakti"
   ],
   "searchAliases": [
     "Hriday Mein Jinke Sitaram",

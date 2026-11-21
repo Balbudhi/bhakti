@@ -12,7 +12,8 @@ window.SONG_META = {
   "subjectTags": [
     "Hanumān",
     "Rāma",
-    "Śiva"
+    "Śiva",
+    "Śakti"
   ],
   "searchAliases": [
     "Hanuman",

@@ -15,7 +15,8 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Sarasvatī"
+    "Sarasvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Sharanembe Vani",

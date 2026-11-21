@@ -8,7 +8,9 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Guru"
+  ],
   "searchAliases": [
     "Saasa Haale",
     "Hanuman Ansh"

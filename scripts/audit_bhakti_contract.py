@@ -84,6 +84,10 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
             problems.append("SONG_META languages must be a non-empty list")
         if not isinstance(meta.get("subjectTags"), list):
             problems.append("SONG_META subjectTags must be a list")
+        elif any(not isinstance(tag, str) for tag in meta["subjectTags"]):
+            problems.append("SONG_META subjectTags must contain strings")
+        elif meta["subjectTags"] != tag_taxonomy.normalize_subject_tags(meta["subjectTags"]):
+            problems.append("SONG_META subjectTags must use canonical labels and umbrella tags")
         for role in ("writer", "singer", "composer"):
             if not isinstance(meta.get(role), str):
                 problems.append(f"SONG_META {role} must be a string")

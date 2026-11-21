@@ -15,7 +15,8 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Dattātreya"
+    "Dattātreya",
+    "Guru"
   ],
   "searchAliases": [
     "Datta Brahmacari Re Brahmacari",
