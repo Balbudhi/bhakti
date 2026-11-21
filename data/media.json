@@ -1310,6 +1310,13 @@
         "sha256": "db8fd8881cd79f4fa4f027396ec6bcd2345f8c75906bbf9fa2b6d12ea039e8b0"
       }
     ],
+    "jai-jai-durge-aad-bhavani": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-jai-durge-aad-bhavani-9a4b847524994e5a6eaee02154f9cfeb675c099e770acc3670d800f5c5d722be.m4a",
+        "type": "audio/mp4",
+        "sha256": "9a4b847524994e5a6eaee02154f9cfeb675c099e770acc3670d800f5c5d722be"
+      }
+    ],
     "jai-jai-jai-giriraj-kishori": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-jai-jai-giriraj-kishori.m4a",

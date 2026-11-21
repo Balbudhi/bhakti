@@ -41219,6 +41219,122 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "2b91dc49": {
+      "slug": "jai-jai-durge-aad-bhavani",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "09748e3db2694ed8f845332eb1f661cfe072d1c38c8dbe69ea10dd9d87215d16",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "f8d55f8669b6aff91f34880a8f4140633c06499d949a3c3ae66644a2e5b72386",
+          "extractionRequestIds": [
+            "87adf9b20bf54edea477c681e4b505a6"
+          ],
+          "reviewRequestIds": [
+            "c5a3b6925a08413190eb28d3c3c72aa1"
+          ],
+          "coveredLineCount": 52
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.beloved_relationship",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.5555555555555556
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.5
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.5
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.durga",
+              "weight": 0.7142857142857143,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.vaishno_devi",
+              "weight": 0.28571428571428575,
+              "role": "narrative_subject"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "398c7eace620a3e5ca0b65a9843bd33e1bd87419937e5920efade16e21081634",
+        "mediaSha256": "9a4b847524994e5a6eaee02154f9cfeb675c099e770acc3670d800f5c5d722be",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 654.719002
+        },
+        "receiptHash": "d2ef854961fed97cfdef0db5aa5953f2c95fc094a3adb1308dc1a3c7ad0f5f8e",
+        "physical": {
+          "whole": {
+            "integratedLufs": -17.2,
+            "truePeakDbfs": -12.8,
+            "rmsDbfs": -17.047234193216966,
+            "centroidHz": 1723.1187038749695
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -17.924309202375238,
+              "centroidHz": 1534.6504432053007
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 654.7188125,
+              "rmsDbfs": -17.047234193216966,
+              "centroidHz": 1723.1187038749695
+            },
+            "end": {
+              "startSeconds": 624.7188125,
+              "endSeconds": 654.7188125,
+              "rmsDbfs": -16.809310678281705,
+              "centroidHz": 1830.9367758491221
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

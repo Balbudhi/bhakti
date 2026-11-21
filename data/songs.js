@@ -12903,6 +12903,44 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 381
+  },
+  {
+    "slug": "jai-jai-durge-aad-bhavani",
+    "queueId": "2b91dc49",
+    "title": "Jai Jai Durge Ād Bhavānī",
+    "credit": "Jaipal Ji",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Durgā",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Jai Jai Durge Ad Bhavani",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Durga",
+      "Vishnu",
+      "Visnu",
+      "Mata Vaishno Devi"
+    ],
+    "writer": "",
+    "singer": "Jaipal Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-jai-durge-aad-bhavani-9a4b847524994e5a6eaee02154f9cfeb675c099e770acc3670d800f5c5d722be.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 382
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "064d44e8018390c95eaa69cfed1f1fe25b2ce267cdc864f856ad34de4c24f4cf";
+window.BHAKTI_SHUFFLE_REVISION = "2932098d90ac8500baf4efc787fc8fc0fb5c9f21e1b45c376ac95be8b8d1a5b8";
