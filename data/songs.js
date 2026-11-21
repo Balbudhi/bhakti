@@ -12941,6 +12941,118 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 382
+  },
+  {
+    "slug": "hamari-hai-jagdambe-maat",
+    "queueId": "932c2e5b",
+    "title": "Hamārī Hai Jagadambe Māt",
+    "credit": "Suresh Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Hamari Hai Jagadambe Mat",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Hamari Hai Jagdambe Maat Humein Kis Baat Ki Chinta",
+      "Mata Vaishno Devi",
+      "Hamari Hai Jagadambe Maat",
+      "Hamari Hai Jagdambe Mat"
+    ],
+    "writer": "",
+    "singer": "Suresh Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hamari-hai-jagdambe-maat-4341e68b1cf8987150cb250b70c1b02902a3b1a4f9f77264a8e30294bb353eb4.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 383
+  },
+  {
+    "slug": "meri-dati-daya-har-ik-te-kardi-ae",
+    "queueId": "4e7f69e6",
+    "title": "Merī Dātī Dayā Har Ik Te Kardī E",
+    "credit": "",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Kālī",
+      "Viṣṇu",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Meri Dati Daya Har Ik Te Kardi E",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Kali",
+      "Vishnu",
+      "Visnu",
+      "Shiva",
+      "Siva",
+      "Mata Vaishno Devi",
+      "Meri Daati Daya Har Ek Te Kardi Ae"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-dati-daya-har-ik-te-kardi-ae-790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 384
+  },
+  {
+    "slug": "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya",
+    "queueId": "6861dbba",
+    "title": "Mā̃ Ne Rauṇkā̃ Lagāīā̃ Kamāl Ho Giā",
+    "credit": "",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Mã Ne Raunkã Lagaiã Kamal Ho Gia",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mata Vaishno Devi",
+      "Maa Ne Raunkan Lagaiyan Kamal Ho Gia",
+      "Maa Ne Ronkan Lagaiyan Kamaal Ho Gaya"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maa-ne-raunkan-lagaiyan-kamaal-ho-gaya-d827b734f423031c94e4a0734a2fe243f69c640399a6598d210ff95b938d20ba.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 385
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "2932098d90ac8500baf4efc787fc8fc0fb5c9f21e1b45c376ac95be8b8d1a5b8";
+window.BHAKTI_SHUFFLE_REVISION = "a8c2aa93855819356563ca8d63f680a650d1bb1cdf4b822abd7a91a33f6492f9";

@@ -973,6 +973,13 @@
         "sha256": "01092cbcfd57db75982bebf1668560d04eb37bd02732dac23adac2eb774f552b"
       }
     ],
+    "hamari-hai-jagdambe-maat": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hamari-hai-jagdambe-maat-4341e68b1cf8987150cb250b70c1b02902a3b1a4f9f77264a8e30294bb353eb4.m4a",
+        "type": "audio/mp4",
+        "sha256": "4341e68b1cf8987150cb250b70c1b02902a3b1a4f9f77264a8e30294bb353eb4"
+      }
+    ],
     "hanuman": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/hanuman.m4a",
@@ -1893,6 +1900,13 @@
         "sha256": "5e4d03b40836ec9d1f46f9d19c5c844239ea303290bd97adf0f1204bda64b5c5"
       }
     ],
+    "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maa-ne-raunkan-lagaiyan-kamaal-ho-gaya-d827b734f423031c94e4a0734a2fe243f69c640399a6598d210ff95b938d20ba.m4a",
+        "type": "audio/mp4",
+        "sha256": "d827b734f423031c94e4a0734a2fe243f69c640399a6598d210ff95b938d20ba"
+      }
+    ],
     "madhur-madhur-sai-naam": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/madhur-madhur-sai-naam.mp3",
@@ -2217,6 +2231,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-to-giridhar-gopal.m4a",
         "type": "audio/mp4",
         "sha256": "871f4e826afe7bb6ed7a7bf433684ad743f80da6dc1255754ef0aefe8e51f204"
+      }
+    ],
+    "meri-dati-daya-har-ik-te-kardi-ae": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-dati-daya-har-ik-te-kardi-ae-790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e.m4a",
+        "type": "audio/mp4",
+        "sha256": "790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e"
       }
     ],
     "meri-ek-antar-abhilash": [
