@@ -40894,6 +40894,331 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "e11eb675": {
+      "slug": "russiya-tu-sade-naal-kyon-meri-maaye",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "cff6fe56415d0c9b3f9c9a5253abeff3de285de1ef2e266775b3e57982d6927d",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "8f5fea6e2227b95606b57b093fc7c53c63ee963a9afc8338e26cb484fbbe5d73",
+          "extractionRequestIds": [
+            "749d8d48e922406cb5f6f1f7d57178ae"
+          ],
+          "reviewRequestIds": [
+            "246719e0c00f42dc9c88eeebb6c69503"
+          ],
+          "coveredLineCount": 22
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.beloved_relationship",
+              "weight": 0.4
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.4
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.praise",
+              "weight": 0.4
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "8c44728b77d07a56fd2a6de4385c3229492a125a3de8b87ed2e3d9e1ba83b296",
+        "mediaSha256": "a2376916ca9dfda41c0962b1fd45eba3a173937f6dd2d3b2f9e16bd4342fad77",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 321.700998
+        },
+        "receiptHash": "b93f28064a186dcd26a2ddef978b6cb809a89c5ea23914090badea9d19ab94aa",
+        "physical": {
+          "whole": {
+            "integratedLufs": -21.3,
+            "truePeakDbfs": -13.2,
+            "rmsDbfs": -21.125565801562146,
+            "centroidHz": 1376.8150120069954
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -24.092793835564144,
+              "centroidHz": 1378.8637323152138
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 321.7009375,
+              "rmsDbfs": -21.125565801562146,
+              "centroidHz": 1376.8150120069954
+            },
+            "end": {
+              "startSeconds": 291.7009375,
+              "endSeconds": 321.7009375,
+              "rmsDbfs": -21.350713250607235,
+              "centroidHz": 1403.4023345098688
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "0ae069fc": {
+      "slug": "maiya-ji-tum-badi-dayalu-ho",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "24f45c1cd3b7e1a8a4e6a67d0b12525dfb0540321ae9375b08ce61a9a53886b1",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "f2e08ff5e6bc24bb17ce2ccef5aa60ca8ece38cc6d028c2561ecec55a76c0493",
+          "extractionRequestIds": [
+            "936e1ebac82b4ecaaf66ba0662c67302"
+          ],
+          "reviewRequestIds": [
+            "98ee86795d5f4ee19c2a08329e1fe64d"
+          ],
+          "coveredLineCount": 28
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.compassion",
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "theme.limits_of_knowing",
+              "weight": 0.16666666666666669
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.4166666666666667
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.4
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.4
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "8f4d4ad9a95080ca5754f21c19bfc80643b84456f9a3bacf3261f16ea596c6ea",
+        "mediaSha256": "c7f70e853f4ef75e2eaf738abc3607513f24224de4b7d7d72f1040eebcd31924",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 494.101
+        },
+        "receiptHash": "52f116faad4c258704d590a6160510aab2861c1c74f8a155e2b34415bc2a5aaa",
+        "physical": {
+          "whole": {
+            "integratedLufs": -18.4,
+            "truePeakDbfs": -9.4,
+            "rmsDbfs": -18.091932728148073,
+            "centroidHz": 1629.41185157785
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -20.94918835799377,
+              "centroidHz": 1457.0232468363793
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 494.0858125,
+              "rmsDbfs": -18.091932728148073,
+              "centroidHz": 1629.41185157785
+            },
+            "end": {
+              "startSeconds": 464.0858125,
+              "endSeconds": 494.0858125,
+              "rmsDbfs": -18.307503180502152,
+              "centroidHz": 1568.6966197232732
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "51dcb055": {
+      "slug": "jab-karm-ka-khata-kholegi-maa",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "d6b337842c43334a36c66ab0eada0965b36543575f3f5d37fab10864310c25b9",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "9e8e15109bdc2a11a42376d37e285f09a333905facfac0b5bb8c7503aa48cc10",
+          "extractionRequestIds": [
+            "8c7fa2fceaaf41229c2aba4c8065af86"
+          ],
+          "reviewRequestIds": [
+            "768a4965515443c6a80a782ba9dfc3e9"
+          ],
+          "coveredLineCount": 25
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.awakening",
+              "weight": 0.14285714285714288
+            },
+            {
+              "id": "theme.ethical_conduct",
+              "weight": 0.35714285714285715
+            },
+            {
+              "id": "theme.impermanence",
+              "weight": 0.35714285714285715
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.14285714285714288
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.praise",
+              "weight": 0.4
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.vaishno_devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "fd4d0df0f7c0d4bc7fe99f9107d74a6c8247d131121d7e3516ac7eba9a2c2ef7",
+        "mediaSha256": "7e86a321b57e76ce1c99fad882960e069ecd0506810029c7b42845874c2c616d",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 551.816009
+        },
+        "receiptHash": "34de188c8ba0c61bc507bf4e145e2f3bb5e14708d8f9daf0a67d2ebaabcab38f",
+        "physical": {
+          "whole": {
+            "integratedLufs": -21.0,
+            "truePeakDbfs": -13.0,
+            "rmsDbfs": -20.73488622108188,
+            "centroidHz": 1211.33186771307
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -26.54239037018213,
+              "centroidHz": 1035.7744908379323
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 551.816,
+              "rmsDbfs": -20.73488622108188,
+              "centroidHz": 1211.33186771307
+            },
+            "end": {
+              "startSeconds": 521.816,
+              "endSeconds": 551.816,
+              "rmsDbfs": -20.523257301168364,
+              "centroidHz": 1133.7761115699025
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

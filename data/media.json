@@ -1206,6 +1206,13 @@
         "sha256": "a9adf545f124f930a122c0185e33fedfee5aa6a9210a2e07a133ae61ad3659ae"
       }
     ],
+    "jab-karm-ka-khata-kholegi-maa": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-karm-ka-khata-kholegi-maa-7e86a321b57e76ce1c99fad882960e069ecd0506810029c7b42845874c2c616d.m4a",
+        "type": "audio/mp4",
+        "sha256": "7e86a321b57e76ce1c99fad882960e069ecd0506810029c7b42845874c2c616d"
+      }
+    ],
     "jab-subah-ki-aarti": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-subah-ki-aarti.mp3",

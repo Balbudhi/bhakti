@@ -12797,6 +12797,112 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 378
+  },
+  {
+    "slug": "russiya-tu-sade-naal-kyon-meri-maaye",
+    "queueId": "e11eb675",
+    "title": "Russī Ẽ Tū̃ Sāḍe Nāḷ Kiũ Merī Māe",
+    "credit": "",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Russi Ẽ Tũ Sade Nal Kiũ Meri Mae",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mata Vaishno Devi",
+      "Russi Ae Tu Sade Naal Kyon Meri Maaye",
+      "Russi En Tu Sade Nal Kyun Meri Maa"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/russiya-tu-sade-naal-kyon-meri-maaye-a2376916ca9dfda41c0962b1fd45eba3a173937f6dd2d3b2f9e16bd4342fad77.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 380
+  },
+  {
+    "slug": "maiya-ji-tum-badi-dayalu-ho",
+    "queueId": "0ae069fc",
+    "title": "Maiyā Jī Tum Baṛī Dayālu Ho",
+    "credit": "Suresh Ji",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Maiya Ji Tum Bari Dayalu Ho",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Ambe Maa Badi Dayalu Ho",
+      "Mata Vaishno Devi"
+    ],
+    "writer": "",
+    "singer": "Suresh Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-ji-tum-badi-dayalu-ho-c7f70e853f4ef75e2eaf738abc3607513f24224de4b7d7d72f1040eebcd31924.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maiya-ji-tum-badi-dayalu-ho-3d0da0d70df5ee8a678d0823d89188fdcf23a1a5533694334a2ef7d7bfb89a65.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 379
+  },
+  {
+    "slug": "jab-karm-ka-khata-kholegi-maa",
+    "queueId": "51dcb055",
+    "title": "Jab Karmõ Kā Khātā Kholegī Mā̃",
+    "credit": "",
+    "languageTags": [
+      "Hindi",
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Jab Karmõ Ka Khata Kholegi Mã",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mata Vaishno Devi",
+      "Jab Karmon Ka Khata Kholegi Maa"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-karm-ka-khata-kholegi-maa-7e86a321b57e76ce1c99fad882960e069ecd0506810029c7b42845874c2c616d.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 381
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "9536c34c67478169c281e4647b1798d13a867dce0a2ee6237c16bc4c18d41463";
+window.BHAKTI_SHUFFLE_REVISION = "064d44e8018390c95eaa69cfed1f1fe25b2ce267cdc864f856ad34de4c24f4cf";
