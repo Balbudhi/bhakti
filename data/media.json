@@ -373,6 +373,13 @@
         "sha256": "9259e3d765e06845909cf79cb18cfcc551132d05290da6f33835b39fca1362eb"
       }
     ],
+    "bhagavati-stotram": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagavati-stotram-ec186d819f24523b8638a2b5820aa3fb2feceb9d88bceafb1513adfa59b65b28.m4a",
+        "type": "audio/mp4",
+        "sha256": "ec186d819f24523b8638a2b5820aa3fb2feceb9d88bceafb1513adfa59b65b28"
+      }
+    ],
     "bhagyada-lakshmi-baramma": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagyada-lakshmi-baramma.webm",
@@ -724,6 +731,13 @@
         "sha256": "b90d4ffce5454d56c370b7a314da151a95533408bc4a78feae6d3ae205b91b45"
       }
     ],
+    "devi-kshama-prarthana": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-kshama-prarthana-379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea.m4a",
+        "type": "audio/mp4",
+        "sha256": "379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea"
+      }
+    ],
     "dhan-dhan-ramdas-guru": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhan-dhan-ramdas-guru.webm",
@@ -784,6 +798,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/duniya-se-door.m4a",
         "type": "audio/mp4",
         "sha256": "b5a8820b1725a4b8213a99537f693c4f4cc3cfeb2f848c75cdec4f3ea6d1fb97"
+      }
+    ],
+    "durga-apaduddharashtakam": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durga-apaduddharashtakam-b69aa89a22f3fc66d38c3e9dd8c1cffa484452191d0d2512ec3579ca1011c6f1.m4a",
+        "type": "audio/mp4",
+        "sha256": "b69aa89a22f3fc66d38c3e9dd8c1cffa484452191d0d2512ec3579ca1011c6f1"
       }
     ],
     "durga-chalisa": [
