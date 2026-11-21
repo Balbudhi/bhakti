@@ -382,6 +382,16 @@ an unfinished attempt or its spending/deadline history. No provider identity or
 usage is fabricated for supplied input; ordinary model-only jobs retain their
 existing path.
 
+When a complete writer preserved the locked English but quoted Roman tokens
+instead of native script, `bhakti_review_continuation` supports an explicit
+`writer-citation` declaration. It authenticates the failed attempts, raw responses,
+source, glossary and independently reviewed token map. Only exact citation-script
+changes and equivalent contiguous splits of the same cited indices are allowed.
+The derivative retains the failed provider history and cannot change English,
+fidelity judgments or meanings. A separately bounded, genuine independent review
+must still pass ordinary semantic acceptance. Unknown outcomes cannot be replayed,
+and resuming a continuation cannot renew its deadline or allowance.
+
 ## Existing-reader reconstruction
 
 `retranslate_bhakti.py` creates private comparison packets through the same

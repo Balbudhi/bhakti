@@ -85,6 +85,9 @@ def model_pricing(model: str, input_token_upper_bound: int) -> dict[str, Any]:
     if type(input_token_upper_bound) is not int or input_token_upper_bound<0:
         raise RunFatal('invalid input token upper bound')
     if model==FLASH_MODEL:return {'prompt':.75,'completion':3.75,'tier':'standard'}
+    # Explicit comparison only; default stays 3.7. USD per million tokens,
+    # verified against https://openrouter.ai/api/v1/models on 2026-11-21.
+    if model=='google/gemini-3.8-flash':return {'prompt':.825,'completion':4.125,'tier':'standard'}
     if model==PRO_MODEL:
         return ({'prompt':4.,'completion':18.,'tier':'long-context'} if input_token_upper_bound>=200000
                 else {'prompt':2.,'completion':12.,'tier':'standard'})

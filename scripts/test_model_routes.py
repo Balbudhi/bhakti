@@ -129,6 +129,17 @@ class ModelRouteTests(unittest.TestCase):
         self.assertEqual(ctx.transport_context['attempt_id'],ctx.attempt_id)
         self.assertEqual(ctx.transport_context['model'],ctx.model)
 
+    def test_explicit_flash38_comparison_preserves_default_and_bounds(self):
+        model = 'google/gemini-3.8-flash'
+        self.assertEqual(routes.FLASH_MODEL, 'google/gemini-3.7-flash')
+        for tokens in (0, 199999, 200000, 1048576):
+            self.assertEqual(routes.model_pricing(model, tokens),
+                             {'prompt': .825, 'completion': 4.125, 'tier': 'standard'})
+        result = self.run_unit(self.execute, base_model=model, pro_model=model)
+        self.assertEqual(result['model'], model)
+        self.assertEqual(len(self.calls), 1)
+        self.assertEqual(self.state()['status'], 'accepted')
+
     def test_pro_pricing_tier_switch_and_unsupported_model_fail_closed(self):
         self.assertEqual(routes.model_pricing(routes.FLASH_MODEL,250000)['prompt'],.75)
         self.assertEqual(routes.model_pricing(routes.PRO_MODEL,199999),{'prompt':2.,'completion':12.,'tier':'standard'})

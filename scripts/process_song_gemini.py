@@ -230,7 +230,7 @@ def _bounded_call(payload: dict[str, Any], api_key: str, audio: Path | None,
         raise RuntimeError('bounded API run is blocked; review saved evidence before another dispatch')
     budget = float(os.environ.get('BHAKTI_API_RUN_BUDGET_USD', '0'))
     cap = payload.get('max_tokens')
-    if (provider_name() != 'openrouter' or payload.get('model') not in {model_routes.FLASH_MODEL, model_routes.PRO_MODEL}
+    if (provider_name() != 'openrouter' or payload.get('model') not in {model_routes.FLASH_MODEL, model_routes.PRO_MODEL, 'google/gemini-3.8-flash'}
             or not math.isfinite(budget) or budget <= 0 or type(cap) is not int or not 0 < cap <= 65536
             or not math.isfinite(timeout) or timeout <= 0):
         message='bounded API requires supported OpenRouter Gemini, positive budget/deadline and explicit max_tokens <=65536'
