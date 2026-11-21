@@ -738,6 +738,13 @@
         "sha256": "379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea"
       }
     ],
+    "devimahatmya-chapter-12": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devimahatmya-chapter-12-c1dae93db39074c0997cd420fdbdc73cfbd1f4268e9dfb11935c27c0631979a0.m4a",
+        "type": "audio/mp4",
+        "sha256": "c1dae93db39074c0997cd420fdbdc73cfbd1f4268e9dfb11935c27c0631979a0"
+      }
+    ],
     "dhan-dhan-ramdas-guru": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dhan-dhan-ramdas-guru.webm",
@@ -3744,6 +3751,13 @@
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-garv-bhara-mastak.m4a",
         "type": "audio/mp4",
         "sha256": "637ac5f0778332e5f783777782e0b441e5048a86dd50d1e38c5c07eaf02c9aee"
+      }
+    ],
+    "yeh-mantra-hai-maa-chamunda-ka": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-mantra-hai-maa-chamunda-ka-65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9.m4a",
+        "type": "audio/mp4",
+        "sha256": "65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9"
       }
     ],
     "yei-ho-vitthale": [

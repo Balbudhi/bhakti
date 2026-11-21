@@ -13053,6 +13053,74 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 385
+  },
+  {
+    "slug": "yeh-mantra-hai-maa-chamunda-ka",
+    "queueId": "a6f604c9",
+    "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
+    "credit": "",
+    "languageTags": [
+      "Hindi",
+      "Punjabi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Ye Mantra Hai Mã Camunda Ka",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Yah Mantra Hai Maa Chamunda Ka"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-mantra-hai-maa-chamunda-ka-65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 386
+  },
+  {
+    "slug": "devimahatmya-chapter-12",
+    "queueId": "bea54621",
+    "title": "Devīmāhātmyam — Adhyāya 12",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Devimahatmyam — Adhyaya 12",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Durga Saptashati Chapter 12",
+      "Chandi Path",
+      "Devi Mahatmya"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devimahatmya-chapter-12-c1dae93db39074c0997cd420fdbdc73cfbd1f4268e9dfb11935c27c0631979a0.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 387
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "a8c2aa93855819356563ca8d63f680a650d1bb1cdf4b822abd7a91a33f6492f9";
+window.BHAKTI_SHUFFLE_REVISION = "d76d083e550ebbe4b0f7e38b1816b7e57b02a574db92cbf7c25be8059ebdec51";

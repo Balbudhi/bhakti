@@ -41665,6 +41665,237 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "a6f604c9": {
+      "slug": "yeh-mantra-hai-maa-chamunda-ka",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "bf4a155068b19e2ce6335342a0b1d5c08366d32cd97151888e7dbafeb772aba1",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "f34a6e63e4c28592097d32c747ac110d6023b4c9b96dc30efb4d7a4afaa934be",
+          "extractionRequestIds": [
+            "9d7a3c7e669a4bc88e2160bea70929c6"
+          ],
+          "reviewRequestIds": [
+            "48ac130626884c64bfbe371a36c8cd6b"
+          ],
+          "coveredLineCount": 7
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.name_power",
+              "weight": 0.7142857142857143
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.28571428571428575
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.praise",
+              "weight": 0.28571428571428575
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.7142857142857143
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 1.0,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "031534d43e6e7ab2d09295ceb5af6f3c82f6f0998fa550fe509e925f39fbd366",
+        "mediaSha256": "65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 259.721995
+        },
+        "receiptHash": "6e891a2a9558a9ef1661ef09f1a864f3e1504aff0e90c3ac5cae8d6f066fb1e3",
+        "physical": {
+          "whole": {
+            "integratedLufs": -17.4,
+            "truePeakDbfs": -12.3,
+            "rmsDbfs": -17.130903064491456,
+            "centroidHz": 1640.8090911213892
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -16.613085619649993,
+              "centroidHz": 1981.849759916949
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 259.7221875,
+              "rmsDbfs": -17.130903064491456,
+              "centroidHz": 1640.8090911213892
+            },
+            "end": {
+              "startSeconds": 229.72218750000002,
+              "endSeconds": 259.7221875,
+              "rmsDbfs": -17.252276929182774,
+              "centroidHz": 1596.4870990813185
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
+    },
+    "bea54621": {
+      "slug": "devimahatmya-chapter-12",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "64cc0c2901d8b7d111abd909b0b81d1960cab92d78af32ebf8ac3cc09e38aaec",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "fa0960d33630d2c86013b5c0ad7dc1a00d70020634d533886b0ba17fb8c71453",
+          "extractionRequestIds": [
+            "72d3fcdc433e43a18da5e429756be129"
+          ],
+          "reviewRequestIds": [
+            "c949dc8b7d0d43269d70f62985640367"
+          ],
+          "coveredLineCount": 44
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.creation",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.divine_presence",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.18181818181818182
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.45454545454545453
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.offering",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.5555555555555556
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.22222222222222224
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 0.7142857142857143,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.durga",
+              "weight": 0.28571428571428575,
+              "role": "worship_focus"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "d73fea91e558aa94ce2e0c93067025f40e3f9b120b72c9f0a919e6353fb9c1ba",
+        "mediaSha256": "c1dae93db39074c0997cd420fdbdc73cfbd1f4268e9dfb11935c27c0631979a0",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "9358f7da79303d946722ae879fd3006e3950d3d2ecd1ebd4dffec4e8f5ba8c12",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "aac",
+          "sampleRate": 44100,
+          "channels": 2,
+          "durationSeconds": 372.165011
+        },
+        "receiptHash": "07d3518b7d873f00002364fde60b4b2e5490412f1f74844ea097767f25b59aab",
+        "physical": {
+          "whole": {
+            "integratedLufs": -23.7,
+            "truePeakDbfs": -13.6,
+            "rmsDbfs": -23.71349321972405,
+            "centroidHz": 1420.6738303538364
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -23.386235822922764,
+              "centroidHz": 1592.4066741081542
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 372.164875,
+              "rmsDbfs": -23.71349321972405,
+              "centroidHz": 1420.6738303538364
+            },
+            "end": {
+              "startSeconds": 342.164875,
+              "endSeconds": 372.164875,
+              "rmsDbfs": -24.466758006652913,
+              "centroidHz": 1392.9849192666204
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }
