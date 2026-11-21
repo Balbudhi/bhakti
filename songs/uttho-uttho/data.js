@@ -364,7 +364,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "eka citta karate haiṁ bhaktī",
-    "english": "{0:with single }{1:mind }{2,3:they perform }{4:devotion.}",
+    "english": "{2,3:they offer }{4:devotion }{0:with a single }{1:mind.}",
     "words": [
       {
         "roman": "eka",
@@ -488,7 +488,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mokṣa kī ho prāptī",
-    "english": "{3:the attainment }{0,1:of liberation }{2:occurs.}",
+    "english": "{2:may }{0,1:liberation }{3:be attained.}",
     "words": [
       {
         "roman": "mokṣa",
@@ -504,7 +504,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ho",
-        "gloss": "occurs",
+        "gloss": "may there be; may occur",
         "concept_key": "",
         "preserve_in_english": false
       },

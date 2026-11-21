@@ -1757,7 +1757,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mere to giradhara gopāla",
-    "english": "{0:Mine} {1:alone} {2:is Girdhar} {3:Gopal,}",
+    "english": "{2:Giridhara }{3:Gopāla }{1:alone }{0:is mine,}",
     "words": [
       {
         "roman": "mere",

@@ -578,7 +578,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sabhiṅkara goṭie ghāṭa re",
-    "english": "{0:For everyone }{1:there is one single }{2:ghat, }{3:O!}",
+    "english": "{0:For everyone }{1:there is one common }{2:landing place}{3:!}",
     "words": [
       {
         "roman": "Sabhiṅkara",
@@ -939,7 +939,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kete dina karibu haṭa re",
-    "english": "{0:For how many }{1:days }{2:will you maintain }{3:obstinacy, }{4:O!}",
+    "english": "{0:How many }{1:days }{2:will you persist }{3:in stubbornness}{4:?}",
     "words": [
       {
         "roman": "Kete",

@@ -1344,7 +1344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "smaraṇa te hota moha bhaṅgā, bhaṅgā",
-    "english": "{0,1:Through remembrance }{2:occurs }{4:the shattering }{3:of delusion, }{5:shattering,}",
+    "english": "{0,1:Through remembrance, }{3:delusion }{2,4:is shattered, }{5:shattered,}",
     "words": [
       {
         "roman": "smaraṇa",

@@ -872,7 +872,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunū̃ kaise maĩ terī kathāē̃ par kānõ se baharā hū̃",
-    "english": "{1:How}{0,2: may I hear}{3,4: your stories,}{5: but}{8,9: I am deaf}{6,7: in my ears?}",
+    "english": "{1:How}{0,2: can I hear}{3,4: your stories}{5: when}{6,7: my ears}{8,9: are deaf?}",
     "words": [
       {
         "roman": "sunū̃",

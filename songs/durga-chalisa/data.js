@@ -870,7 +870,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma sansāra śakti laya kīnā | pālana hētu anna dhana dīnā ||\nannapūrṇā huī jaga pālā | tuma hī ādi sundarī bālā ||\npralayakāla saba nāśana hārī | tuma gaurī śiva śaṅkara pyārī ||\nśiva yōgī tumharē guṇa gāvēm̐ | brahmā viṣṇu tumhēṁ nita dhyāvēm̐ ||",
-    "english": "{0:By your }{2:power, }{3,4:you dissolved }{1:saṃsāra, }{6:and for the sake of }{5:sustenance }{9:gave }{7:grain }{8:and wealth. }{11:Having become }{10:Annapūrṇā, }{13:you nourished }{12:the world; }{14:you }{15:alone }{16:are the primordial }{17:beautiful }{18:maiden. }{19:At the time of cosmic dissolution }{21,22:you destroy }{20:all; }{23:you }{24:are Gaurī, }{27:beloved of }{25:Shiva }{26:Shankara. }{28:Shiva }{29:and the yogis }{32:sing }{30:your }{31:guṇas; }{33:Brahmā }{34:and Viṣṇu }{36:constantly }{37:meditate }{35:upon you.}",
+    "english": "{0:By your }{2:power, }{3,4:you dissolved }{1:saṃsāra, }{6:and for the sake of }{5:sustenance }{9:gave }{7:grain }{8:and wealth. }{11:Having become }{10:Annapūrṇā, }{13:you nourished }{12:the world; }{14:you }{15:alone }{16:are the primordial }{17:beautiful }{18:maiden. }{19:At the time of cosmic dissolution }{21,22:you destroy }{20:all; }{23:you }{24:are Gaurī, }{27:beloved of }{25:Shiva }{26:Shankara. }{28:Shiva }{29:and the yogis }{32:sing }{30:your }{31:virtues; }{33:Brahmā }{34:and Viṣṇu }{36:constantly }{37:meditate }{35:upon you.}",
     "words": [
       {
         "roman": "tuma",
@@ -1062,7 +1062,7 @@ window.SONG_LINES = {
         "roman": "guṇa",
         "gloss": "constituent quality of nature; divine virtues and attributes",
         "concept_key": "guna",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gāvēm̐",

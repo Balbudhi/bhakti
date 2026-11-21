@@ -461,13 +461,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṁsāra meṁ hī āśā karata hai",
-    "english": "{4,5:It places }{3:hope }{2:only }{1:in }{0:saṃsāra},",
+    "english": "{4,5:It places }{3:hope }{2:only }{1:in }{0:the world},",
     "words": [
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "the world; worldly existence",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "meṁ",
@@ -1072,13 +1072,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṁsāra kā bhaya raha kucha na jāye",
-    "english": "so that {5:no }{2:fear }{1:of }{0:saṃsāra }{3,6:may remain }{4:at all}.",
+    "english": "so that {5:no }{2:fear }{1:of }{0:worldly existence }{3,6:may remain }{4:at all}.",
     "words": [
       {
         "roman": "saṁsāra",
         "gloss": "cycle of conditioned birth and death",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kā",

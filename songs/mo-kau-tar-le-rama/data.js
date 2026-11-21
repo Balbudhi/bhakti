@@ -1140,7 +1140,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nar te upaj surag kau jītio",
-    "english": "{1:From }{0:human beings }{2:born, }one {5:conquers }{3,4:heaven—}",
+    "english": "{2:Born }{1:of }{0:human beings, }one {5:conquers }{3,4:heaven—}",
     "words": [
       {
         "roman": "Nar",
@@ -1644,7 +1644,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nar te upaj surag kau jītio so avakhadh mai pāī",
-    "english": "{1:From }{0:human beings }{2:born, }one {5:conquers }{3,4:heaven—}{8: I }{9:would obtain }{6:that }{7:medicine.}",
+    "english": "{2:Born }{1:of }{0:human beings, }one {5:conquers }{3,4:heaven—}{8: may I }{9:obtain }{6:that }{7:medicine.}",
     "words": [
       {
         "roman": "Nar",

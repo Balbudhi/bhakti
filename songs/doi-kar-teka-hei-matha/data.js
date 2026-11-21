@@ -420,7 +420,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaisā bhī ho bhāva tere caraṇoṁ meṁ āyā",
-    "english": "{0:With whatever }{3:devotional feeling }{1,2:there may be, }{7:I have come }{4,5,6:to your feet.}",
+    "english": "{0,1,2:Whatever }{3:my devotional feeling may be, }{7:I have come }{4,5,6:to your feet.}",
     "words": [
       {
         "roman": "Jaisā",
@@ -604,7 +604,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Akhaṇḍita rahūṁ caraṇa meṁ bhāva ye āyā",
-    "english": "{5:This }{4:aspiration }{6:arose: }{1:may I remain }{0:unbroken }{2,3:at your feet.}",
+    "english": "{5:This }{4:aspiration }{6:arose: }{1:may I remain }{0:always }{2,3:at your feet.}",
     "words": [
       {
         "roman": "Akhaṇḍita",
@@ -1928,7 +1928,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gaī choḍa kara bhava se rajanī tama ne vilaya pāyā",
-    "english": "{5:Night }{0:has departed, }{1,2:having left }{3,4:the world, }{6,7:and darkness }{9:has found }{8:dissolution.}",
+    "english": "{5:Night }{0:has gone, }{1,2:having left }{3,4:the world; }{6,7:darkness }{8,9:has dissolved.}",
     "words": [
       {
         "roman": "Gaī",
@@ -7295,7 +7295,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāī Rakhumābaī khaḍī donoṁ do bājū",
-    "english": "{0:Rai} {1:and Rakhumabai} {2:stand} {3,4,5:on both the two flanks.}",
+    "english": "{0:Rāī} {1:and Rakhumābāī} {2:stand}, {3:the two of them}, {4,5:one on either side}.",
     "words": [
       {
         "roman": "Rāī",

@@ -106,28 +106,28 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amātraścaturtho'vyavahāryaḥ prapañcopaśamaḥ śivo'dvaitaḥ",
-    "english": "{0:Partless, the fourth, beyond empirical transaction, }{1:the cessation of the phenomenal manifold, }{2:auspicious and non-dual—}",
+    "english": "{0:Without parts, the fourth, beyond the dealings of everyday life; }{1:the stilling of the world of appearances; }{2:auspicious, without a second—}",
     "words": [
       {
         "roman": "amātraścaturtho'vyavahāryaḥ",
-        "gloss": "partless, the fourth, beyond empirical transaction",
+        "gloss": "without parts; the fourth; beyond ordinary dealings and the relations of name and named object",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prapañcopaśamaḥ",
-        "gloss": "cessation of phenomenal manifold",
+        "gloss": "the stilling or cessation of the world of appearances",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śivo'dvaitaḥ",
-        "gloss": "auspicious and non-dual",
+        "gloss": "auspicious and without a second; nondual",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound sandhi of nominative masculine singular predicates: amātraḥ + caturthaḥ + avyavahāryaḥ -> amātraś-caturtho-'vyavahāryaḥ; prapañcopaśamaḥ (tatpuruṣa/bahuvrīhi compound); śivaḥ + advaitaḥ -> śivo'dvaitaḥ with avagraha."
+    "grammarNote": "The preceding verses relate the sounds A, U and M to waking, dreaming and deep sleep. The “fourth” is the Self beyond these divisions. Here śiva means “auspicious”; it does not name the deity Śiva."
   },
   "line-002": {
     "source": "एवमोङ्कारः",

@@ -823,7 +823,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "samadarasī icchā kachu nāhī~.",
-    "english": "{0:equal-visioned, }{3:having no }{1:desire }{2:whatsoever,}",
+    "english": "{0:seeing all alike, }{3:having no }{1:desire }{2:whatsoever,}",
     "words": [
       {
         "roman": "samadarasī",
@@ -3884,7 +3884,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kehi bidhi taria jaladhi gaṁbhīrā",
-    "english": "{0:by what }{1:manner }{4:the deep }{3:ocean }{2:is to be crossed,}",
+    "english": "{0,1:how }{2:can we cross }{4:this deep }{3:ocean,}",
     "words": [
       {
         "roman": "kehi",
@@ -5222,7 +5222,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisehīṁ karaba dharahu mana dhīrā",
-    "english": "{1:“We shall do }{0:just so; }{2:hold }{4:patience }{3:in your mind.”}",
+    "english": "{1:“We shall do }{0:just so; }{2:keep }{3:your mind }{4:steady.”}",
     "words": [
       {
         "roman": "aisehīṁ",
@@ -12633,7 +12633,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kī taji māna anuja iva prabhu pada paṅkaja bhṛṅga",
-    "english": "{0:Either, }{1:renouncing }{2:pride }{4:like your }{3:younger brother, }{8:a bee }{5:at the Lord’s }{7:lotus }{6:feet,}",
+    "english": "{0:Either }{1:cast off }{2:pride }{4:and, like your }{3:younger brother, }{8:be a bee }{5:at the Lord’s }{7:lotus }{6:feet,}",
     "words": [
       {
         "roman": "kī",
@@ -12746,7 +12746,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hohi ki rāma sarānala khala kula sahita pataṅga",
-    "english": "{0:become, }{1:or, }{4:O vile one, }{7:a moth }in the fire of {2:Rāma’s }{3:arrows }{6:along with }{5:your clan!”}",
+    "english": "{1:or, }{4:O wicked one, }{0:become }{7:a moth }{6:along with }{5:your clan }{3:in the fire of }{2:Rāma’s }{3:arrows!”}",
     "words": [
       {
         "roman": "hohi",
@@ -13371,7 +13371,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ati kōmala raghubīra subhāū. jadyapi akhila lōka kara rāu.",
-    "english": "{0:Exceedingly }{1:tender is }{2:the Hero of Raghu’s line’s }{3:nature, }{4:although }{8:he is king }{7:of }{5:all }{6:the worlds.}",
+    "english": "{3:The nature }{2:of the hero of Raghu’s line }{1:is }{0:exceedingly }{1:tender, }{4:although }{8:he is king }{7:of }{5:all }{6:the worlds.}",
     "words": [
       {
         "roman": "ati",
@@ -19406,7 +19406,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisa ghara sundarakāṇḍa kā",
-    "english": "{0:In whichever}{1: home}{2: the Sundarkand}{3:'s}",
+    "english": "{0:In whichever }{1:home }{2,3:the Sundarakāṇḍa}",
     "words": [
       {
         "roman": "jisa",
@@ -19459,7 +19459,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hove pāṭha hameśa",
-    "english": "{1:recitation }{2:always }{0:takes place,}",
+    "english": "{0:is }{2:always }{1:recited,}",
     "words": [
       {
         "roman": "hove",

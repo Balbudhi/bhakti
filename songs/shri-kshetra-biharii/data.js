@@ -1464,7 +1464,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saguṇa rūpare nirguṇa brahma",
-    "english": "{1:Within }{0:qualified }{1:form, }{2:the attributeless }{3:Brahman,}",
+    "english": "{2:Beyond all qualities, }{3:Brahman }{1:in a form }{0:endowed with qualities,}",
     "words": [
       {
         "roman": "Saguṇa",
@@ -2335,7 +2335,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ārttatrāṇabāhī kaḷikāḷatāraka",
-    "english": "{0:Bearer of rescue for the afflicted, }{1:Deliverer across the Kali age,}",
+    "english": "{0:Bringer of rescue to the afflicted, }{1:Deliverer across the Kali age,}",
     "words": [
       {
         "roman": "Ārttatrāṇabāhī",

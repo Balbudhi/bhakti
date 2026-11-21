@@ -146,7 +146,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "par maiṁ nā tumheṁ bisrāyā karūm̐",
-    "english": "{0:yet }{1,5:may I }{2:never }{4:habitually forget }{3:you.}",
+    "english": "{0:yet }{1,5:may I }{2:never }{4:forget }{3:you.}",
     "words": [
       {
         "roman": "par",
@@ -1281,7 +1281,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kitnā chupā le dāman, sāīm̐ ko sab patā hai",
-    "english": "{0:However much }{1,2:you hide }{3:behind the hem of your garment, }{4,5:Sai }{7,8:knows }{6:everything.}",
+    "english": "{0:However much }{1,2:you hide }{3:the hem of your garment, }{4,5:Sai }{7,8:knows }{6:everything.}",
     "words": [
       {
         "roman": "kitnā",

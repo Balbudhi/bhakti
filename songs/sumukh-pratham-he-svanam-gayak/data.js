@@ -364,7 +364,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mūṣakavāhaka suradaradāhaka",
-    "english": "{0:Rider of a mouse}, {1:burner of the gods’ fear}!",
+    "english": "{0:Rider of a mouse}, {1:you who burn away the gods’ fear}!",
     "words": [
       {
         "roman": "mūṣakavāhaka",

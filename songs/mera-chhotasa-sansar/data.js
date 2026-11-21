@@ -93,7 +93,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mērā chōṭā sā sansār, Sāī̃ ā jāō ik bār",
-    "english": "{0:My}{1,2: little }{3:world, }{4:Sai, }{5,6:come }{7,8:once}",
+    "english": "{4:Sai, }{5,6:come }{7,8:just once }to {0:my}{1,2: little }{3:world}",
     "words": [
       {
         "roman": "Mērā",
@@ -698,7 +698,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lākhō̃ kō daraś dikhāyā hai",
-    "english": "{0,1:To hundreds of thousands }{3,4:you have shown }{2:sacred vision}",
+    "english": "{3,4:You have granted }{0,1:hundreds of thousands }{2:the sight of you}",
     "words": [
       {
         "roman": "Lākhō̃",
@@ -1315,7 +1315,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ab darśan dō sākār, Bābā ā jāō ik bār",
-    "english": "{0:Now }{2:grant }{1:vision }{3:in embodied form, }{4:Baba, }{5,6:come }{7,8:once}",
+    "english": "{0:Now }{2:let me have }{1:sight of you }{3:in bodily form; }{4:Baba, }{5,6:come }{7,8:just once}",
     "words": [
       {
         "roman": "Ab",

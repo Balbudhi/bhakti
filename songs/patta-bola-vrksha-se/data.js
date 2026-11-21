@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kyā jāne phir sā̃s kā",
-    "english": "{0,1:who knows}{2: whether again}{3,4: the breath’s}",
+    "english": "{0,1:who knows}{3,4: whether the breath}{2: will again}",
     "words": [
       {
         "roman": "kyā",
@@ -742,7 +742,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āvan hoe nā hoe",
-    "english": "{0:return}{1: will happen}{2,3: or not.}",
+    "english": "{1:come}{0: back}{2,3: or not?}",
     "words": [
       {
         "roman": "āvan",

@@ -1201,7 +1201,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mērī bigaṛī banānā tērā kām hai",
-    "english": "{2:To mend }{0:my }{1:ruined plight }{5:is }{3:your }{4:task}",
+    "english": "{2:To set }{0:my }{1:ruined life }{2:right }{5:is }{3:your }{4:task}",
     "words": [
       {
         "roman": "mērī",
@@ -3948,7 +3948,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ā kē ismēṁ hē mā̃, hē mā̃",
-    "english": "{0,1:Having come }{2:into this, }{3:O }{4:Mother, }{5:O }{6:Mother,}",
+    "english": "{0,1:Come }{2:into this heart, }{3:O }{4:Mother, }{5:O }{6:Mother,}",
     "words": [
       {
         "roman": "ā",
@@ -4037,7 +4037,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ā kē ismēṁ rahā kījiē mā̃",
-    "english": "{0,1:Having come }{2:into this, }{3,4:please keep residing here, }{5:Mother}",
+    "english": "{0,1:Come }{2:into this heart }{3,4:and make your home here, }{5:Mother}",
     "words": [
       {
         "roman": "ā",

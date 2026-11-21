@@ -171,7 +171,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō",
-    "english": "{0:Fulfill}",
+    "english": "{0:Fulfill it}",
     "words": [
       {
         "roman": "Pūrō",
@@ -200,7 +200,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā",
-    "english": "{0:Fulfill, }{1:Mother}",
+    "english": "{0:Fulfill it, }{1:Mother}",
     "words": [
       {
         "roman": "Pūrō",
@@ -282,7 +282,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā bēgi āo daras dikhāo",
-    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly, }{4,5:let me see you}",
+    "english": "{0:Fulfill it, }{1:Mother, }{3:come }{2:swiftly, }{4,5:let me see you}",
     "words": [
       {
         "roman": "Pūrō",
@@ -1029,7 +1029,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō pūrō maiyā",
-    "english": "{0:Fulfill, }{1:fulfill, }{2:Mother}",
+    "english": "{0:Fulfill it, }{1:fulfill it, }{2:Mother}",
     "words": [
       {
         "roman": "Pūrō",
@@ -1106,7 +1106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā pūrō maiyā bēgi āo daras dikhāo",
-    "english": "{0:Fulfill, }{1:Mother, }{2:fulfill, }{3:Mother, }{5:come }{4:swiftly, }{6,7:let me see you}",
+    "english": "{0:Fulfill it, }{1:Mother, }{2:fulfill it, }{3:Mother, }{5:come }{4:swiftly, }{6,7:let me see you}",
     "words": [
       {
         "roman": "Pūrō",
@@ -1189,7 +1189,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā bēgi āo",
-    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly}",
+    "english": "{0:Fulfill it, }{1:Mother, }{3:come }{2:swiftly}",
     "words": [
       {
         "roman": "Pūrō",
@@ -1360,7 +1360,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrō maiyā bēgi āo daras",
-    "english": "{0:Fulfill, }{1:Mother, }{3:come }{2:swiftly, }{4:a sight of you}",
+    "english": "{0:Fulfill it, }{1:Mother, }{3:come }{2:swiftly, }{4:a sight of you}",
     "words": [
       {
         "roman": "Pūrō",

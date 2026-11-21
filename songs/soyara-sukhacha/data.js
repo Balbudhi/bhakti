@@ -524,7 +524,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "harī nirantar na visambe",
-    "english": "{0:Hari} {2:never} {3:abandons us}, {1:ever}.",
+    "english": "{0:Hari} {1,2:never} {3:abandons us}.",
     "words": [
       {
         "roman": "harī",

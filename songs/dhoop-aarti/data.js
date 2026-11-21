@@ -4187,11 +4187,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dharū sāī premā gaḷā yā ahantā",
-    "english": "{2:Through love }{1:for Sai, }{0:let us seize }{4:this }{5:ego }{3:by the throat!}",
+    "english": "{0:Let us hold fast }{2:to love }{1:for Sāī, }{3,4:so that }{5:ego }{3,4:falls away.}",
     "words": [
       {
         "roman": "dharū",
-        "gloss": "let us seize / let us catch",
+        "gloss": "let us hold; let us hold fast",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4203,19 +4203,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "premā",
-        "gloss": "in love / by love",
+        "gloss": "love; love for Sāī is what one holds to",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gaḷā",
-        "gloss": "the throat / neck",
+        "gloss": "with following yā: gaḷāyā, so that it may fall away",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yā",
-        "gloss": "of this",
+        "gloss": "completes the purpose form gaḷāyā with the preceding gaḷā; not the demonstrative this",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4226,7 +4226,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "dharū is a first-person plural imperative/hortative; ahantā is an abstract feminine noun in the genitive/accusative relation with gaḷā."
+    "grammarNote": "Marathi. Dharū is a first-person plural exhortation; sāī premā means love for Sāī. The stored gaḷā yā must be construed together as the printed gaḷāyā, expressing the purpose that ego fall away. Ahantā is the subject of falling away, not an object to seize by the throat."
   },
   "line-057": {
     "source": "धरावे करे सान अल्पज्ञ बाला",
@@ -7829,7 +7829,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anekajanmārjitapāpasaṃkṣayo bhavedbhavatpādasarojadarśanāt |",
-    "english": "{0:The complete destruction of sins accumulated across many births }{1:occurs from the vision of your lotus feet.}",
+    "english": "{1:May beholding your lotus feet }{0:destroy the sins accumulated through many births.}",
     "words": [
       {
         "roman": "anekajanmārjitapāpasaṃkṣayo",
@@ -7839,7 +7839,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhavedbhavatpādasarojadarśanāt",
-        "gloss": "occurs from the direct vision of your lotus-like feet",
+        "gloss": "may occur through beholding your lotus feet; bhavet is optative, and darśanāt expresses the cause",
         "concept_key": "",
         "preserve_in_english": false
       }

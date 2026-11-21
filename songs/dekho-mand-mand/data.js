@@ -811,7 +811,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bigaṛī sabkī banāē rē sāī̃ mērō śiraḍī mē̃",
-    "english": "{2:He mends }{1:everyone's }{0:spoiled circumstances, }{3:oh, }{5:my }{4:Sai }{7:in }{6:Shirdi!}",
+    "english": "{2:He sets right }{1:everyone’s }{0:troubled affairs, }{3:oh, }{5:my }{4:Sai }{7:in }{6:Shirdi!}",
     "words": [
       {
         "roman": "bigaṛī",

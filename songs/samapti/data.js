@@ -498,7 +498,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "premāñjalī arapaṇa karūm̐",
-    "english": "{1,2:I offer}{0: a cupped-hands offering of love,}",
+    "english": "{1,2:I offer}{0: love in cupped hands,}",
     "words": [
       {
         "roman": "premāñjalī",
@@ -563,7 +563,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "premāñjalī arapaṇa karūm̐ karo nātha svīkāra",
-    "english": "{1,2:I offer}{0: a cupped-hands offering of love;}{3,5: accept it,}{4: O Lord.}",
+    "english": "{1,2:I offer}{0: love in cupped hands;}{3,5: accept it,}{4: O Lord.}",
     "words": [
       {
         "roman": "premāñjalī",

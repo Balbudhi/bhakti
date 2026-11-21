@@ -1609,7 +1609,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Dhūmra",
-        "gloss": "smoky; Dhumralochana / smoke-hued",
+        "gloss": "smoke-colored; with vilocan, possibly the name Dhūmralocana",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1627,7 +1627,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhūmra",
-        "gloss": "smoky; Dhumralochana / smoke-hued",
+        "gloss": "smoke-colored; with vilocan, possibly the name Dhūmralocana",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1656,7 +1656,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "dhūmra vilocan combines an allusion to the demon Dhūmralocana with a description of Her smoldering gaze, reinforced by nainā. madmātī is a feminine compound adjective (mada + mātī)."
+    "grammarNote": "Dhūmra-vilocan can describe smoke-colored eyes, while Dhūmralocana is also a demon’s name. Nainā means eyes. The intended relation here remains uncertain. Madmātī is a feminine adjective describing the goddess as intoxicated."
   },
   "verse-6-line-1": {
     "source": "चण्ड-मुण्ड संहारे, शोणित बीज हरे",
@@ -2370,7 +2370,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bājat tāl mṛdaṅgā, bājat tāl mṛdaṅgā aru bājat ḍamarū",
-    "english": "{0:Resound} {1:cymbals} {2:and mridangas,} {3:resound} {4:cymbals} {5:and mridangas,} {6:and} {7:plays} {8:the damaru.}",
+    "english": "{1:Cymbals }{2:and mṛdaṅga drums }{0:resound, }{4:cymbals }{5:and mṛdaṅga drums }{3:resound, }{6:and }{8:the ḍamarū }{7:sounds.}",
     "words": [
       {
         "roman": "Bājat",
@@ -2976,7 +2976,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Manvāñchit phal pāvat, manvāñchit phal pāvat sevat nar nārī",
-    "english": "{0:Heart-desired} {1:fruit} {2:they obtain,} {3:heart-desired} {4:fruit} {5:they obtain,} {6:who serve You,} {7:men} {8:and women.}",
+    "english": "{7:Men }{8:and women }{6:who serve You }{2:receive }{1:the fruit }{0:their hearts desire, }{5:receive }{4:the fruit }{3:their hearts desire.}",
     "words": [
       {
         "roman": "Manvāñchit",
@@ -3259,7 +3259,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mālketu",
-        "gloss": "sacred mountain/shrine of the Goddess",
+        "gloss": "Mālketu, a name in the hymn whose specific referent is uncertain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3283,7 +3283,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mālketu",
-        "gloss": "sacred mountain/shrine of the Goddess",
+        "gloss": "Mālketu, a name in the hymn whose specific referent is uncertain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3318,7 +3318,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Śrī Mālketu is a sacred toponym referring to the Goddess's abode. meṁ is the locative postposition. koṭi ratan jyotī is a genitive descriptive phrase."
+    "grammarNote": "Meṁ is the locative postposition. Mālketu is retained as a name; its specific referent is uncertain. Koṭi ratan jyotī describes the radiance of ten million jewels."
   },
   "verse-12-line-1": {
     "source": "या अम्बे जी की आरती, जो कोई नर गावे",

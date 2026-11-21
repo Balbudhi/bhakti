@@ -451,7 +451,7 @@ window.SONG_LINES = {
     "source": "तुझ पर सब कुछ छोड़ चुकी हूँ",
     "sourceLanguage": "hi",
     "roman": "tujh par sab kuch choṛ cukī hū̃",
-    "english": "{4,5,6:I have left} {2,3:everything} {0,1:upon you,}",
+    "english": "{4,5,6:I have left} {2,3:everything} {0,1:to you,}",
     "words": [
       {
         "roman": "tujh",
@@ -1126,7 +1126,7 @@ window.SONG_LINES = {
     "source": "तेरे किए को हम क्या देवें",
     "sourceLanguage": "hi",
     "roman": "tere kiye ko ham kyā devẽ",
-    "english": "{0,1,2:To what you have done,} {3,4,5:what should we give—}",
+    "english": "{3,4,5:How can we give }{0,1,2:what you have done—}",
     "words": [
       {
         "roman": "tere",
@@ -1209,7 +1209,7 @@ window.SONG_LINES = {
     "source": "भले-बुरे का नाम",
     "sourceLanguage": "hi",
     "roman": "bhale-bure kā nām",
-    "english": "{2:the name} {0,1:of good and bad?}",
+    "english": "{2:the name }{0,1:of good or bad?}",
     "words": [
       {
         "roman": "bhale-bure",

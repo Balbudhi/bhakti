@@ -1142,7 +1142,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hṛdaya cīra kē rāma siyā kā hṛdaya cīra kē rāma siyā kā darśana diyā karāya",
-    "english": "{1,2:Having torn open }{0:your chest }{3:to reveal Rāma }{4,5:and Sītā—}{7,8:having torn }{6:it open—}{13,14:you granted }{12:their sacred vision}{9:}{10,11:.}",
+    "english": "{1,2:Tearing open }{0:your chest }{3,4,5:to reveal Rāma and Sītā, }{7,8:tearing open }{6:your chest }{9,10,11:to reveal Rāma and Sītā, }{13,14:you granted }{12:the sight of them.}",
     "words": [
       {
         "roman": "Hṛdaya",

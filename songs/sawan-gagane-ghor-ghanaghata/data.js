@@ -114,11 +114,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "niśīthayāminī re",
-    "english": "{1:O, }{0:midnight night!}",
+    "english": "{1:Ah, }{0:the dead of night!}",
     "words": [
       {
         "roman": "niśīthayāminī",
-        "gloss": "midnight night; deep night",
+        "gloss": "midnight; the deep of night",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -879,7 +879,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "motimahāre beśa banā de",
-    "english": "{2,3:Dress me }{1:in adornment }{0:with a necklace of pearls;}",
+    "english": "{1,2,3:Adorn me }{0:with a necklace of pearls;}",
     "words": [
       {
         "roman": "motimahāre",

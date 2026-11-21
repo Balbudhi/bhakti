@@ -984,7 +984,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṁ to hūṁ majabūra Sāīṁ hai terī kyā majabūrī",
-    "english": "{0:I }{1:indeed }{2:am }{3:helpless, }{4:Sai; }{7:what }{5:is }{6:your }{8:constraint?}",
+    "english": "{0,1:I, at least, }{2:am }{3:helpless, }{4:Sai—}{5,6,7,8:what holds you back?}",
     "words": [
       {
         "roman": "Maiṁ",
@@ -1370,7 +1370,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hālata merī dekha dekha kara haṁsane lagā zamānā",
-    "english": "{2,3,4:Seeing and seeing }{1:my }{0:condition, }{7:the world }{6:began }{5:to laugh.}",
+    "english": "{2,3,4:Again and again, seeing }{1:my }{0:plight, }{7:the world }{6:began }{5:to laugh.}",
     "words": [
       {
         "roman": "Hālata",
@@ -1690,7 +1690,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mujha sā koī pāpī tere dara pe na āyā hogā",
-    "english": "{2,7:No }{3:sinner }{0,1:like me }{9:would have }{8:come }{4:to your }{5,6:threshold,}",
+    "english": "{2,7:Surely no }{3:sinner }{0,1:like me }{9:has ever }{8:come }{4:to your }{5,6:threshold,}",
     "words": [
       {
         "roman": "Mujha",
@@ -1748,7 +1748,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hogā",
-        "gloss": "would have",
+        "gloss": "must have; likely has; conjectural perfect auxiliary",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1809,7 +1809,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aura jo āyā hogā khālī lauṭāyā na hogā",
-    "english": "{0:and }{1:whoever }{2,3:would have come }{6,7:would not have been }{5:turned back }{4:empty-handed.}",
+    "english": "{0:and }{1:whoever }{2,3:has come, }{6,7:surely has not been }{5:sent back }{4:empty-handed.}",
     "words": [
       {
         "roman": "Aura",
@@ -1831,7 +1831,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hogā",
-        "gloss": "would have",
+        "gloss": "must have; conjectural perfect auxiliary",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1855,7 +1855,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hogā",
-        "gloss": "would have been",
+        "gloss": "must have been; conjectural perfect auxiliary",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -984,7 +984,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrutvā dharmānaśeṣeṇa pāvanāni ca sarvaśaḥ |\nyudhiṣṭhiraḥ śāntanavaṃ punarevābhyabhāṣata ||",
-    "english": "{0:Having heard} {1:the dharmas} {2:without remainder} {4:and} {3:the purifying teachings} {5:in every respect}, {6:Yudhiṣṭhira} {9:indeed} {8:again} {10:addressed} {7:the son of Śantanu}.",
+    "english": "{0:Having heard} {1:the teachings on duty} {2:in full} {4:and} {3:all that purifies} {5:in every respect}, {6:Yudhiṣṭhira} {8,9:once again} {10:addressed} {7:the son of Śantanu}.",
     "words": [
       {
         "roman": "śrutvā",
@@ -999,7 +999,7 @@ window.SONG_LINES = {
         "roman": "dharmān",
         "citationRoman": "dharmān",
         "deva": "धर्मान्",
-        "gloss": "the dharmas",
+        "gloss": "duties; teachings on right conduct",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -1166,7 +1166,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kimekaṃ daivataṃ loke kiṃ vāpyekaṃ parāyaṇam |\nstuvantaḥ kaṃ kamarcantaḥ prāpnuyurmānavāḥ śubham ||",
-    "english": "{0:What} {1:one} {2:deity} is there {3:in the world}? {4:What}, {5:or} {6:also}, is the {7:one} {8:supreme refuge}? {9:Praising} {10:whom} and {12:worshipping} {11:whom} might {14:human beings} {13:attain} {15:the good}?",
+    "english": "{0,1:Who is the one} {2:deity} {3:in the world}? {5,6:And} {4:what} is the {7:one} {8:supreme refuge}? {9:Praising} {10:whom}, and {12:worshipping} {11:whom}, might {14:human beings} {13:attain} {15:blessing}?",
     "words": [
       {
         "roman": "kim",
@@ -1307,7 +1307,7 @@ window.SONG_LINES = {
         "roman": "śubham",
         "citationRoman": "śubham",
         "deva": "शुभम्",
-        "gloss": "the good",
+        "gloss": "good; well-being; blessing",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -1876,7 +1876,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anādinidhanaṃ viṣṇuṃ sarvalokamaheśvaram |\nlokādhyakṣaṃ stuvannityaṃ sarvaduḥkhātigo bhavet ||",
-    "english": "{4:praising} {1:Viṣṇu}, {0:without beginning or end}, {2:the great Lord of all worlds}, {3:the overseer of the worlds}, {5:always}, {7:would be} {6:beyond every sorrow}.",
+    "english": "{5:always} {4:praising} {1:Viṣṇu}, {0:without beginning or end}, {2:the great Lord of all worlds}, {3:the overseer of the worlds}, {7:would pass} {6:beyond every sorrow}.",
     "words": [
       {
         "roman": "anādinidhanaṃ",
@@ -2003,7 +2003,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "brahmaṇyaṃ sarvadharmajñaṃ lokānāṃ kīrtivardhanam |\nlokanāthaṃ mahadbhūtaṃ sarvabhūtabhavodbhavam ||",
-    "english": "The one {0:devoted to Brahman and the Veda}, {1:knower of every dharma}, {3:the increaser of} {2:the worlds’} {3:fame}, {4:the Lord of the worlds}, {6:the} {5:great being}, {7:the source of the becoming of all beings}.",
+    "english": "The one {0:devoted to Brahman and the Veda}, {1:knower of every duty}, {3:who increases} {2:the worlds’} {3:glory}, {4:the Lord of the worlds}, {6:the} {5:great being}, {7:the source from which all beings arise}.",
     "words": [
       {
         "roman": "brahmaṇyaṃ",
@@ -2018,7 +2018,7 @@ window.SONG_LINES = {
         "roman": "sarvadharmajñaṃ",
         "citationRoman": "sarva-dharma-jñam",
         "deva": "सर्वधर्मज्ञम्",
-        "gloss": "knower of every dharma",
+        "gloss": "knower of every duty; knower of all righteous conduct",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -2755,7 +2755,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yataḥ sarvāṇi bhūtāni bhavantyādiyugāgame |\nyasmiṃśca pralayaṃ yānti punareva yugakṣaye ||",
-    "english": "{0:From whom} {1:all} {2:beings} {3:come to be} {4:at the coming of the first age}, {6:and} {5:in whom} they {8:go} to {7:dissolution} {10:indeed} {9:again} {11:at the ending of the age}.",
+    "english": "{0:From whom} {1:all} {2:beings} {3:arise} {4:at the dawn of the first age}, {6:and} {5:into whom} they {8:pass} {7:in dissolution} {9,10:once again} {11:at the age’s end}.",
     "words": [
       {
         "roman": "yataḥ",
@@ -3077,7 +3077,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yāni nāmāni gauṇāni vikhyātāni mahātmanaḥ |\nṛṣibhiḥ parigītāni tāni vakṣyāmi bhūtaye ||",
-    "english": "{8:I shall declare} {7:those} {0:which} {1:names}, {2:based on qualities}, are {3:widely known} {4:of the great Self} and {6:sung forth} {5:by seers}, {9:for welfare}.",
+    "english": "{9:For your welfare}, {8:I shall recite} {7:those} {1:names} {4:of the great Self}, {2:expressing his qualities}, {0:which are} {3:widely known} and {6:sung} {5:by seers}.",
     "words": [
       {
         "roman": "yāni",
@@ -4722,7 +4722,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṣīrodanvatpradeśe śucimaṇivilasatsaikate mauktikānāṃ |\nmālākḷptāsanasthaḥ sphaṭikamaṇinibhairmauktikairmaṇḍitāṅgaḥ |\nśubhrairabhrairadabhrairupariviracitairmuktapīyūṣavarṣairānandī naḥ punīyādarinalinagadāśaṅkhapāṇirmukundaḥ ||",
-    "english": "{0:In the region of the ocean of milk}, {1:on the shore shining with pure gems} {2:of pearls}, {3:seated on a seat fashioned from garlands}, {6:his limbs adorned} {5:with pearls} {4:resembling crystal gems}, beneath {7:white} {8:clouds}, {9:abundant}, {10:arranged above}, {11:with showers of released nectar}, {12:blissful}, may {16:Mukunda}, {15:holding discus, lotus, mace, and conch in his hands}, {14:purify} {13:us}.",
+    "english": "May {12:blissful} {16:Mukunda}, {15:holding discus, lotus, mace, and conch}, {14:purify} {13:us}: {0:by the ocean of milk}, {1:on a shore shining with pure gems}, {3:seated on a throne of garlands} {2:of pearls}, {6:his limbs adorned} {5:with pearls} {4:clear as crystal}, beneath {9:abundant} {7:white} {8:clouds} {10:spread above him}, {11:pouring showers of nectar}.",
     "words": [
       {
         "roman": "kṣīrodanvatpradeśe",
@@ -5497,7 +5497,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ śāntākāraṃ bhujagaśayanaṃ padmanābhaṃ sureśaṃ |\nviśvādhāraṃ gaganasadṛśaṃ meghavarṇaṃ śubhāṅgam |\nlakṣmīkāntaṃ kamalanayanaṃ yogibhirdhyānagamyaṃ |\nvande viṣṇuṃ bhavabhayaharaṃ sarvalokaikanātham ||",
-    "english": "{0:Oṃ}. {12:I bow to} {13:Viṣṇu}, {1:whose form is peaceful}, {2:lying on the serpent}, {3:lotus-navelled}, {4:Lord of the gods}, {5:support of the universe}, {6:like the sky}, {7:cloud-coloured}, {8:whose limbs are auspicious}, {9:beloved of Lakṣmī}, {10:lotus-eyed}, {11:attainable in the yogis’ heart by meditation}, {14:remover of the fear of becoming}, {15:the one Lord of all worlds}.",
+    "english": "{0:Oṃ}. {12:I bow to} {13:Viṣṇu}, {1:whose form is peaceful}, {2:lying on the serpent}, {3:lotus-navelled}, {4:Lord of the gods}, {5:support of the universe}, {6:like the sky}, {7:cloud-coloured}, {8:whose limbs are auspicious}, {9:beloved of Lakṣmī}, {10:lotus-eyed}, {11:reached by yogis through meditation}, {14:remover of the fear of worldly existence}, {15:the one Lord of all worlds}.",
     "words": [
       {
         "roman": "oṃ",
@@ -5602,7 +5602,7 @@ window.SONG_LINES = {
         "roman": "yogibhirdhyānagamyaṃ",
         "citationRoman": "yogi-hṛd-dhyāna-gamyam",
         "deva": "योगिहृद्ध्यानगम्यम्",
-        "gloss": "attainable in the yogis’ heart by meditation",
+        "gloss": "reached by yogis through meditation",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -5629,7 +5629,7 @@ window.SONG_LINES = {
         "roman": "bhavabhayaharaṃ",
         "citationRoman": "bhava-bhaya-haram",
         "deva": "भवभयहरम्",
-        "gloss": "remover of the fear of becoming",
+        "gloss": "remover of fear arising from worldly existence",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -6123,7 +6123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chāyāyāṃ pārijātasya hemasiṃhāsanopari |\nāsīnamambudaśyāmamāyatākṣamalaṃkṛtam |\ncandrānanaṃ caturbāhuṃ śrīvatsāṅkitavakṣasaṃ |\nrukmiṇīsatyabhāmābhyāṃ sahitaṃ kṛṣṇamāśraye ||",
-    "english": "{13:I take refuge in} {12:Kṛṣṇa}, {3:seated} {0:in the shade} {1:of the Pārijāta}, {2:above a golden throne}, {4:dark like a raincloud}, {5:long-eyed}, {6:adorned}, {7:moon-faced}, {8:four-armed}, {9:whose chest is marked with Śrīvatsa}, {11:accompanied} {10:by Rukmiṇī and Satyabhāmā}.",
+    "english": "{13:I take refuge in} {12:Kṛṣṇa}, {3:seated} {0:in the shade} {1:of the Pārijāta}, {2:upon a golden throne}, {4:dark like a raincloud}, {5:long-eyed}, {6:adorned}, {7:moon-faced}, {8:four-armed}, {9:whose chest is marked with Śrīvatsa}, {11:accompanied} {10:by Rukmiṇī and Satyabhāmā}.",
     "words": [
       {
         "roman": "chāyāyāṃ",
@@ -6147,7 +6147,7 @@ window.SONG_LINES = {
         "roman": "hemasiṃhāsanopari",
         "citationRoman": "hema-siṃhāsana-upari",
         "deva": "हेमसिंहासनौपरि",
-        "gloss": "above a golden throne",
+        "gloss": "upon a golden throne",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false

@@ -84,7 +84,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru he mote ete para kiā̃ kala",
-    "english": "{0,1:O Guru, }{5:why }{6:did you make }{2:me }{3:so much a }{4:stranger?}",
+    "english": "{0,1:O Guru, }{5:why }{6:did you make }{2:me }{3:such a }{4:stranger?}",
     "words": [
       {
         "roman": "Guru",
@@ -285,7 +285,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mote ete para kiā̃ kala",
-    "english": "{3:Why }{4:did you make }{0:me }{1:so much a }{2:stranger?}",
+    "english": "{3:Why }{4:did you make }{0:me }{1:such a }{2:stranger?}",
     "words": [
       {
         "roman": "Mote",

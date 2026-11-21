@@ -403,11 +403,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mān Mukand Murārī",
-    "english": "{0:Mān, }{1:Mukunda, }{2:Murāri!}",
+    "english": "{0:crusher of pride, }{1:Mukunda, }{2:Murāri!}",
     "words": [
       {
         "roman": "Mān",
-        "gloss": "the ancient king Māndhātā, invoked among the divine names"
+        "gloss": "pride; here, crusher of pride, with mardan (crusher) understood from the preceding line"
       },
       {
         "roman": "Mukand",
@@ -419,7 +419,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Inherited independently reviewed contextual Mān identification; no new demon or honor/pride sense invented."
+    "grammarNote": "Mān means pride here. The destroying action of mardan continues from the preceding line: the addressed Lord crushes pride. A Punjabi commentary alternatively construes the full phrase as crusher of Madhu’s pride; neither reading identifies a king named Māndhātā."
   },
   "g009": {
     "source": "ਨਿਰਬਿਕਾਰ ਨਿਰਜੁਰ ਨਿੰਦ੍ਰਾਬਿਨੁ",

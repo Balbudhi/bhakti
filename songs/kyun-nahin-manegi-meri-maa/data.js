@@ -3047,7 +3047,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dīnabandhu mā̃ karuṇā sindhu kar degī pahacān sahī",
-    "english": "{1:Mother,}{0: friend of the humble}{3: and ocean}{2: of compassion,}{4,5: will make}{7: the true}{6: discernment.}",
+    "english": "{1:Mother,}{0: friend of the humble}{3: and ocean}{2: of compassion,}{4,5,6: will recognize}{7: what is true.}",
     "words": [
       {
         "roman": "dīnabandhu",
@@ -3154,7 +3154,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dīnabandhu mā̃ karuṇā sindhu kar degī pahacān sahī",
-    "english": "{1:Mother,}{0: friend of the humble}{3: and ocean}{2: of compassion,}{4,5: will make}{7: the true}{6: discernment.}",
+    "english": "{1:Mother,}{0: friend of the humble}{3: and ocean}{2: of compassion,}{4,5,6: will recognize}{7: what is true.}",
     "words": [
       {
         "roman": "dīnabandhu",
@@ -3619,7 +3619,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vo ā̃sū bhī kyā ā̃sū jo jag ke lie bahāe",
-    "english": "{3:What}{4: tears}{2: are even}{0: those}{1: tears}{5: which}{9: were shed}{7,8: for the sake of}{6: the world!}",
+    "english": "{3:Can}{0: those}{1: tears}{2: even}{3: be called}{4: tears,}{5: if they}{9: are shed}{7,8: for}{6: the world?}",
     "words": [
       {
         "roman": "vo",
@@ -3750,7 +3750,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vo ā̃sū bhī kyā ā̃sū jo jag ke lie bahāe",
-    "english": "{3:What}{4: tears}{2: are even}{0: those}{1: tears}{5: which}{9: were shed}{7,8: for the sake of}{6: the world!}",
+    "english": "{3:Can}{0: those}{1: tears}{2: even}{3: be called}{4: tears,}{5: if they}{9: are shed}{7,8: for}{6: the world?}",
     "words": [
       {
         "roman": "vo",

@@ -170,7 +170,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāī̃ Bābā nazar āẽ",
-    "english": "{0:Sai }{1:Baba }{3:appears }{2:to sight.}",
+    "english": "{0:Sāī }{1:Bābā }{2,3:comes into view.}",
     "words": [
       {
         "roman": "Sāī̃",
@@ -693,7 +693,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere hī karam par hū̃ Bābā tere karam par hū̃",
-    "english": "{4:I am }{3:upon }{0:your }{2:grace }{1:alone, }{5:Baba, }{8:upon }{6:your }{7:grace }{9:I am,}",
+    "english": "{4:I }{3:depend on }{0:your }{2:grace }{1:alone, }{5:Bābā—}{9:I }{8:depend on }{6:your }{7:grace,}",
     "words": [
       {
         "roman": "Tere",
@@ -877,7 +877,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mānā ki maĩ pāpī hū̃ tujhe khabar gunāhõ kī",
-    "english": "{0:Granted }{1:that }{2:I }{4:am }{3:a sinner, }{5:to you belongs }{6:knowledge }{7,8:of my sins;}",
+    "english": "{0:I admit }{1:that }{2:I }{4:am }{3:a sinner; }{5:you }{6:know }{7,8:my sins.}",
     "words": [
       {
         "roman": "Mānā",
@@ -1228,7 +1228,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aur sā̃s nikal jāe",
-    "english": "{0:and }{1:breath }{2,3:should depart.}",
+    "english": "{0:and }{2,3:let }{1:my breath }{2,3:depart.}",
     "words": [
       {
         "roman": "Aur",

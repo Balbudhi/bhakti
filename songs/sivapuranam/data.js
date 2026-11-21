@@ -139,7 +139,7 @@ window.SONG_LINES = {
   "l004": {
     "source": "இமைப்பொழுதும் என் நெஞ்சில்",
     "roman": "imaippoḻutum eṉ neñcil",
-    "english": "{0:Even for the blink of an eye}, {2:within the heart} {1:of me}—",
+    "english": "{0:Even for the blink of an eye}, {2:within} {1:my} {2:heart}—",
     "words": [
       {
         "roman": "imaippoḻutum",
@@ -399,7 +399,7 @@ window.SONG_LINES = {
   "l009": {
     "source": "ஆகம மாகிநின் றண்ணிப்பான் தாள்வாழ்க",
     "roman": "ākamamākiniṉṟaṇṇippāṉ tāḷvāḻka",
-    "english": "{1:May} the {1:feet} of {0:the one who draws near}, {0:being the revealed scriptures} and {0:abiding}, {1:flourish}!",
+    "english": "{1:May the feet} of {0:the one who abides as the revealed scriptures and draws near} {1:flourish}!",
     "words": [
       {
         "roman": "ākamamākiniṉṟaṇṇippāṉ",
@@ -1793,7 +1793,7 @@ window.SONG_LINES = {
   "l038": {
     "source": "உய்யஎன் உள்ளத்துள் ஓங்கார மாய்நின்ற",
     "roman": "uyyaeṉ uḷḷattuḷ ōṅkāramāyniṉṟa",
-    "english": "{0:So that I may be saved}, {2:you who stood} {1:within the heart} {0:of me}, {2:as the syllable Oṃ},",
+    "english": "{2:You who stood as the syllable Oṃ} {1:within} {0:my} {1:heart}, {0:so that I might be saved},",
     "words": [
       {
         "roman": "uyyaeṉ",

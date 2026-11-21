@@ -1199,7 +1199,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Cain se bhī vo so nā pāe āṅkhoṁ se nīnd curāī",
-    "english": "{2:Even }{0,1:in peace }{3:they }{5,6:cannot }{4:sleep; }{9:sleep }{10:has been stolen }{7,8:from their eyes!}",
+    "english": "{3:They }{5,6:cannot }{2:even }{4:sleep }{0,1:in peace; }{9:sleep }{10:has been stolen }{7,8:from their eyes!}",
     "words": [
       {
         "roman": "Cain",
@@ -1555,7 +1555,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pyār kare nā koī kisī se paisoṁ se hī prīt lagāī",
-    "english": "{2,3:No one }{0,1:loves }{4,5:anyone else; }{10:they have attached }{9:love }{8:only }{6,7:to money!}",
+    "english": "{2,3:No one }{0,1:loves }{4,5:anyone else; }{10:they have set }{9:their hearts }{8:only }{6,7:on money!}",
     "words": [
       {
         "roman": "Pyār",
@@ -1662,7 +1662,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Paisoṁ se hī prīt lagāī",
-    "english": "{4:They have attached }{3:love }{2:only }{0,1:to money, }",
+    "english": "{4:They have set }{3:their hearts }{2:only }{0,1:on money, }",
     "words": [
       {
         "roman": "Paisoṁ",

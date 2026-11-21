@@ -181,7 +181,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī sāīṁ bābā, jīvā sukhakārī devā",
-    "english": "{0:Wave-offering of light to }{1:Sai }{2:Baba, }{5:O divine Lord }{4:who bestows joy }{3:upon the jīva,}",
+    "english": "{0:An offering of light to }{1:Sai }{2:Baba, }{5:O divine Lord }{4:who bestows joy }{3:upon the soul,}",
     "words": [
       {
         "roman": "āratī",
@@ -205,7 +205,7 @@ window.SONG_LINES = {
         "roman": "jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sukhakārī",
@@ -282,7 +282,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caraṇa dhūlī meṁ de do viśrāma jīvā, viśrāma jīvā",
-    "english": "{2:In }{1:the dust }{0:of your feet, }{3,4:grant }{5:resting solace }{6:to the jīva, }{7:resting solace }{8:to the jīva.}",
+    "english": "{2:In }{1:the dust }{0:of your feet, }{3,4:grant }{5:rest }{6:to the soul, }{7:rest }{8:to the soul.}",
     "words": [
       {
         "roman": "caraṇa",
@@ -324,7 +324,7 @@ window.SONG_LINES = {
         "roman": "jīvā,",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "viśrāma",
@@ -336,7 +336,7 @@ window.SONG_LINES = {
         "roman": "jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Compound verb de do expresses a polite imperative petition; viśrāma jīvā is repeated for devotional emphasis."
@@ -365,7 +365,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī sāīṁ bābā",
-    "english": "{0:Wave-offering of light to }{1:Sai }{2:Baba.}",
+    "english": "{0:An offering of light to }{1:Sai }{2:Baba.}",
     "words": [
       {
         "roman": "āratī",
@@ -692,7 +692,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisake mana meṁ jaisā bhāva, use vaisā anubhava",
-    "english": "{3:Whatever }{4:devotional feeling }{0,2:is in anyone's }{1:manas, }{5:to that person }{6:comes corresponding }{7:direct experience;}",
+    "english": "{3:Whatever }{4:devotional feeling }{0,2:is in anyone's }{1:mind, }{5:to that person }{6:comes corresponding }{7:direct experience;}",
     "words": [
       {
         "roman": "jisake",
@@ -704,7 +704,7 @@ window.SONG_LINES = {
         "roman": "mana",
         "gloss": "sensory and deliberative mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "meṁ",
@@ -1013,7 +1013,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "agādha terī karaṇī, mārga dikhāte anāthā, dikhāte anāthā",
-    "english": "{0:unfathomable }{1:are your }{2:deeds; }{4:you show }{3:the path }{5:to the protectorless, }{6:you show }{7:to the protectorless.}",
+    "english": "{0:Unfathomable }{1:are your }{2:deeds; }{4:you show }{3:the path }{5:to those with no protector, }{6:you guide }{7:those with no protector.}",
     "words": [
       {
         "roman": "agādha",
@@ -2339,7 +2339,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upāsanādaivata sāyinātha stavairmayopāsaninā stutastvam | ramenmano me tava pādayugme bhṛṅgo yathā'bje makarandalubdhaḥ ||",
-    "english": "{0:O chosen deity of worship, }{1:O Sai Nath, }{3:you are praised }{2:through hymns of praise by me, Upasani; }{5:may my }{4:manas delight }{6:in your }{7:pair of feet, }{8:just as a black bee }{10:greedy for floral nectar }{9:delights in a lotus.}",
+    "english": "{0:O chosen deity of worship, }{1:O Sai Nath, }{3:you are praised }{2:through hymns of praise by me, Upasani; }{5:may my }{4:mind delight }{6:in your }{7:pair of feet, }{8:just as a black bee }{10:greedy for floral nectar }{9:delights in a lotus.}",
     "words": [
       {
         "roman": "upāsanādaivata",
@@ -2369,7 +2369,7 @@ window.SONG_LINES = {
         "roman": "ramenmano",
         "gloss": "may the sensory and deliberative mind delight",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "me",
@@ -2571,7 +2571,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrīsāyināthacaraṇāmṛtapūtacittāstatpādasevanaratāḥ satataṁ ca bhaktyā | saṁsārajanyaduritaughavinirgatāste kaivalyadhāma paramaṁ samavāpnuvanti ||",
-    "english": "{0:Those whose minds are purified by the nectar of Lord Sai Nath's feet and who are devoted to serving His feet }{1:unceasingly }{2:and }{3:with devotion, }{4:having emerged from the flood of evils born of saṃsāra, they }{7:fully attain }{6:the supreme }{5:abode of absolute liberation.}",
+    "english": "{0:Those whose minds are purified by the nectar of Lord Sai Nath's feet and who are devoted to serving His feet }{1:unceasingly }{2:and }{3:with devotion, }{4:having emerged from the flood of evils born of the cycle of birth and death, }{7:fully attain }{6:the supreme }{5:abode of absolute liberation.}",
     "words": [
       {
         "roman": "śrīsāyināthacaraṇāmṛtapūtacittāstatpādasevanaratāḥ",
@@ -2601,7 +2601,7 @@ window.SONG_LINES = {
         "roman": "saṁsārajanyaduritaughavinirgatāste",
         "gloss": "having emerged freed from the flood of evils arising from the cycle of conditioned birth and death, they",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kaivalyadhāma",
@@ -2684,7 +2684,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "stotrametat paṭhedbhaktyā yo narastanmanāḥ sadā | sadguruḥ sāyināthasya kṛpāpātraṁ bhaveddhruvam ||",
-    "english": "{2:Whatever }{3:person whose manas is absorbed in Him }{4:always }{1:recites with devotion }{0:this hymn of praise, }{8:shall surely become }{7:a vessel of grace }{5:of the True Guide, }{6:Lord Sai Nath.}",
+    "english": "{2:Whoever }{1:recites with devotion }{0:this hymn of praise, }{3:with mind }{4:always }{3:absorbed in Him, }{8:shall surely become }{7:a vessel of grace }{5:of the True Guide, }{6:Lord Sai Nath.}",
     "words": [
       {
         "roman": "stotrametat",
@@ -2708,7 +2708,7 @@ window.SONG_LINES = {
         "roman": "narastanmanāḥ",
         "gloss": "person whose sensory and deliberative mind is absorbed in Him",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sadā",
@@ -2851,7 +2851,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karacaraṇakṛtaṁ vā kāyajaṁ karmajaṁ vā śravaṇanayanajaṁ vā mānasaṁ vāparādham | vihitamavihitaṁ vā sarvametatkṣamasva jaya jaya karuṇābdhe śrīprabho sāyinātha ||",
-    "english": "{8:Whatever transgression }{0:was committed by hands or feet, }{1:or }{2:born of the body, }{4:or }{3:born of karma, }{6:or }{5:born of ears and eyes, }{10:or }{7:born of the manas, }{9:whether ordained or unordained—}{11:forgive all this completely! }{12:Victory, }{13:victory, }{14:O ocean of compassion, }{15:O holy Lord }{16:Sai Nath!}",
+    "english": "{8:Whatever transgression }{0:was committed by hands or feet, }{1:or }{2:born of the body, }{4:or }{3:born of action, }{6:or }{5:born of ears and eyes, }{10:or }{7:born of the mind, }{9:whether ordained or unordained—}{11:forgive all this completely! }{12:Victory, }{13:victory, }{14:O ocean of compassion, }{15:O holy Lord }{16:Sai Nath!}",
     "words": [
       {
         "roman": "karacaraṇakṛtaṁ",
@@ -2875,7 +2875,7 @@ window.SONG_LINES = {
         "roman": "karmajaṁ",
         "gloss": "born of action and its consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "vā",
@@ -2899,7 +2899,7 @@ window.SONG_LINES = {
         "roman": "mānasaṁ",
         "gloss": "born of the sensory and deliberative mind; mental",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "vāparādham",

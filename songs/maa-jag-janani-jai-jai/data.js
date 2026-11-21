@@ -1127,7 +1127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū vidhi vadhū ramā tū umā mahāmāyā",
-    "english": "{0:You are }{1,2:the bride of Brahmā, }{3:Ramā; }{4:you are }{5:Umā }{6:and Mahāmāyā.}",
+    "english": "{0:You are }{1,2:Brahmā’s bride }{3:and Ramā; }{4:you are }{5:Umā }{6:and Mahāmāyā.}",
     "words": [
       {
         "roman": "Tū",

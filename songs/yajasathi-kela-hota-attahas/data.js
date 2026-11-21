@@ -74,7 +74,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yācasāṭhī kelā hotā aṭṭāhās",
-    "english": "{0:For this very purpose} {1,2:I had undertaken} {3:the persistent striving}:",
+    "english": "{0:For this alone} {1,2:I had} {3:striven so hard}:",
     "words": [
       {
         "roman": "yācasāṭhī",

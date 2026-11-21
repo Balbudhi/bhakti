@@ -1260,7 +1260,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dar dar bhaṭakā maĩ āyā tērē dvārē zindagī hai mērī ab tērē hī sahārē",
-    "english": "{2:Having wandered }{0:from door }{1:to door, }{3:I }{4:came }{5:to your }{6:door; }{9:my }{7:life }{8:is }{10:now }{11,13:on your support }{12:alone}",
+    "english": "{2:Having wandered }{0:from door }{1:to door, }{3:I }{4:came }{5:to your }{6:door; }{9:my }{7:life }{8:is }{10:now }{11,13:sustained by you }{12:alone}",
     "words": [
       {
         "roman": "Dar",
@@ -1398,7 +1398,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Zindagī hai mērī ab tērē hī sahārē",
-    "english": "{2:My }{0:life }{1:is }{3:now }{4,6:on your support }{5:alone.}",
+    "english": "{2:My }{0:life }{1:is }{3:now }{4,6:sustained by you }{5:alone.}",
     "words": [
       {
         "roman": "Zindagī",
@@ -1542,7 +1542,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hō dar dar bhaṭakā maĩ āyā tērē dvārē zindagī hai mērī ab tērē hī sahārē",
-    "english": "{0:O, }{3:having wandered }{1:from door }{2:to door, }{4:I }{5:came }{6:to your }{7:door; }{10:my }{8:life }{9:is }{11:now }{12,14:on your support }{13:alone}",
+    "english": "{0:O, }{3:having wandered }{1:from door }{2:to door, }{4:I }{5:came }{6:to your }{7:door; }{10:my }{8:life }{9:is }{11:now }{12,14:sustained by you }{13:alone}",
     "words": [
       {
         "roman": "Hō",
@@ -1734,7 +1734,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Zindagī hai mērī ab tērē hī sahārē hō zindagī hai mērī ab tērē hī sahārē",
-    "english": "{2:My }{0:life }{1:is }{3:now }{4,6:on your support }{5:alone; }{7:O, }{10:my }{8:life }{9:is }{11:now }{12,14:on your support }{13:alone}",
+    "english": "{2:My }{0:life }{1:is }{3:now }{4,6:sustained by you }{5:alone; }{7:O, }{10:my }{8:life }{9:is }{11:now }{12,14:sustained by you }{13:alone}",
     "words": [
       {
         "roman": "Zindagī",

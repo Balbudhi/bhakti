@@ -5081,7 +5081,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "alakṣa unmanī gheunī nājūka duśśālā bābā nājūka duśśālā",
-    "english": "{2:Taking }{0:the imperceptible }{1:unmanī state }{3:as a delicate }{4:shawl, }{5:O Baba, }{6:a delicate }{7:shawl.}",
+    "english": "{2:Taking }{0:the imperceptible }{1:state beyond thought }{3:as a delicate }{4:shawl, }{5:O Baba, }{6:a delicate }{7:shawl.}",
     "words": [
       {
         "roman": "alakṣa",

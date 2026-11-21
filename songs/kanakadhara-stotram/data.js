@@ -40,7 +40,7 @@ window.SONG_LINES = {
   "l001": {
     "source": "अङ्गं हरेः पुलकभूषणमाश्रयन्ती",
     "roman": "aṅgaṃ hareḥ pulakabhūṣaṇamāśrayantī",
-    "english": "{2:Resting upon the thrilled, hair-raised }{0:body }{1:of Hari,}",
+    "english": "{2:Resting on }{1:Hari’s }{0:body, }{2:adorned with hairs rising in delight,}",
     "words": [
       {
         "roman": "aṅgaṃ",
@@ -52,7 +52,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pulakabhūṣaṇamāśrayantī",
-        "gloss": "resting upon the body adorned with thrills of raised hair"
+        "gloss": "resting upon [Hari’s body], adorned with hairs standing on end in delight; pulaka-bhūṣaṇam describes the body, āśrayantī describes her glance"
       }
     ],
     "sourceWords": [
@@ -75,7 +75,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "sourceLanguage": "sa"
+    "sourceLanguage": "sa",
+    "grammarNote": "The sentence continues through the next three lines. Lakṣmī’s glance is the bee; Hari’s dark body is the tamāla tree, and his hairs rising in delight are its buds."
   },
   "l002": {
     "source": "भृङ्गाङ्गनेव मुकुलाभरणं तमालम्",
@@ -120,11 +121,11 @@ window.SONG_LINES = {
   "l003": {
     "source": "अङ्गीकृताखिलविभूतिरपाङ्गलीला",
     "roman": "aṅgīkṛtākhilavibhūtirapāṅgalīlā",
-    "english": "{0:the play of sidelong glances, possessing all powers and prosperity—}",
+    "english": "{0:her playful sidelong glance holds every power and splendour.}",
     "words": [
       {
         "roman": "aṅgīkṛtākhilavibhūtirapāṅgalīlā",
-        "gloss": "the play of sidelong glances, possessing all powers and prosperity"
+        "gloss": "her playful sidelong glance, possessing every power and splendour; the subject of āśrayantī (resting) and māṅgalyadā astu (may it bring good fortune)"
       }
     ],
     "sourceWords": [
@@ -140,11 +141,11 @@ window.SONG_LINES = {
   "l004": {
     "source": "माङ्गल्यदाऽस्तु मम मङ्गलदेवतायाः",
     "roman": "māṅgalyadā'stu mama maṅgaladevatāyāḥ",
-    "english": "{0:may it confer auspiciousness }{1:upon me, }{2:the glance of the goddess of auspiciousness.}",
+    "english": "{0:May it bring }{1:me }{0:good fortune—the glance }{2:of the goddess of good fortune.}",
     "words": [
       {
         "roman": "māṅgalyadā'stu",
-        "gloss": "may it confer auspiciousness"
+        "gloss": "may it bring good fortune or auspicious well-being"
       },
       {
         "roman": "mama",
@@ -152,7 +153,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṅgaladevatāyāḥ",
-        "gloss": "of the goddess of auspiciousness"
+        "gloss": "of the goddess of good fortune, Lakṣmī"
       }
     ],
     "sourceWords": [
@@ -180,7 +181,7 @@ window.SONG_LINES = {
   "l005": {
     "source": "मुग्धा मुहुर्विदधती वदने मुरारेः",
     "roman": "mugdhā muhurvidadhatī vadane murāreḥ",
-    "english": "{0:Lovely, }{1:repeatedly making, }{2:on the face }{3:of Murāri,}",
+    "english": "{0:Lovely }{1:are her glances, returning again and again }{2:to the face }{3:of Murāri,}",
     "words": [
       {
         "roman": "mugdhā",
@@ -188,7 +189,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "muhurvidadhatī",
-        "gloss": "repeatedly making"
+        "gloss": "repeatedly making [the movements to and fro described in the next line]"
       },
       {
         "roman": "vadane",
@@ -260,7 +261,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "माला दृशोर्मधुकरीव महोत्पले या",
     "roman": "mālā dṛśormadhukarīva mahotpale yā",
-    "english": "{3:that }{0:garland }{1:of glances, like a female bee }{2:upon a great lotus—}",
+    "english": "{3:That }{0:garland }{1:of glances is like a female bee }{2:upon a great lotus.}",
     "words": [
       {
         "roman": "mālā",
@@ -310,7 +311,7 @@ window.SONG_LINES = {
   "l008": {
     "source": "सा मे श्रियं दिशतु सागरसम्भवायाः",
     "roman": "sā me śriyaṃ diśatu sāgarasambhavāyāḥ",
-    "english": "{0:may that }{3:grant }{2:prosperity }{1:to me, }{4:the glance of the ocean-born goddess.}",
+    "english": "{0:May those glances }{4:of the ocean-born goddess }{3:grant }{2:prosperity }{1:to me.}",
     "words": [
       {
         "roman": "sā",
@@ -370,7 +371,7 @@ window.SONG_LINES = {
   "l009": {
     "source": "आमीलिताक्षमधिगम्य मुदा मुकुन्दम्",
     "roman": "āmīlitākṣamadhigamya mudā mukundam",
-    "english": "{0:Having approached him whose eyes are closed, }{2:Mukunda, }{1:with joy,}",
+    "english": "{0:Having reached }{2:Mukunda, }{0:whose eyes are closed, }{1:with joy—}",
     "words": [
       {
         "roman": "āmīlitākṣamadhigamya",
@@ -410,11 +411,11 @@ window.SONG_LINES = {
   "l010": {
     "source": "आनन्दकन्दमनिमेषमनङ्गतन्त्रम्",
     "roman": "ānandakandamanimeṣamanaṅgatantram",
-    "english": "{0:the root of bliss; unblinking and governed by love—}",
+    "english": "{0:the root of bliss—her gaze is unblinking, ruled by Anaṅga, the god of love,}",
     "words": [
       {
         "roman": "ānandakandamanimeṣamanaṅgatantram",
-        "gloss": "the root of bliss; unblinking and governed by love"
+        "gloss": "the root of bliss (Mukunda); unblinking and ruled by Anaṅga, the bodiless god of love (her gaze)"
       }
     ],
     "sourceWords": [
@@ -430,11 +431,11 @@ window.SONG_LINES = {
   "l011": {
     "source": "आकेकरस्थितकनीनिकपक्ष्मनेत्रं",
     "roman": "ākekarasthitakanīnikapakṣmanetraṃ",
-    "english": "{0:the eye with pupil and lashes held half-closed—}",
+    "english": "{0:its pupil and lashes held in a sidelong, half-closed look.}",
     "words": [
       {
         "roman": "ākekarasthitakanīnikapakṣmanetraṃ",
-        "gloss": "the eye with pupil and lashes held half-closed"
+        "gloss": "the eye whose pupil and lashes are held in a sidelong, half-closed position"
       }
     ],
     "sourceWords": [
@@ -450,7 +451,7 @@ window.SONG_LINES = {
   "l012": {
     "source": "भूत्यै भवेन्मम भुजङ्गशयाङ्गनायाः",
     "roman": "bhūtyai bhavenmama bhujaṅgaśayāṅganāyāḥ",
-    "english": "{1:may it be for my }{0:prosperity, }{2:the eye of the serpent-reclining lord’s wife.}",
+    "english": "{1:May that gaze bring me }{0:prosperity—the gaze }{2:of the wife of the Lord who reclines on the serpent.}",
     "words": [
       {
         "roman": "bhūtyai",
@@ -490,7 +491,7 @@ window.SONG_LINES = {
   "l013": {
     "source": "बाह्वन्तरे मधुजितः श्रितकौस्तुभे या",
     "roman": "bāhvantare madhujitaḥ śritakaustubhe yā",
-    "english": "{3:Which, }{0:between the arms }{1:of the conqueror of Madhu, }{2:where the Kaustubha jewel rests,}",
+    "english": "{3:Her glance, }{0:on the chest }{1:of Madhu’s conqueror, }{2:where the Kaustubha jewel rests,}",
     "words": [
       {
         "roman": "bāhvantare",
@@ -580,7 +581,7 @@ window.SONG_LINES = {
   "l015": {
     "source": "कामप्रदा भगवतोऽपि कटाक्षमाला",
     "roman": "kāmapradā bhagavato'pi kaṭākṣamālā",
-    "english": "{2:the garland of sidelong glances, }{0:awakening desire }{1:even in the blessed Lord—}",
+    "english": "{2:a garland of sidelong glances, }{0:awakening desire }{1:even in the blessed Lord.}",
     "words": [
       {
         "roman": "kāmapradā",
@@ -620,7 +621,7 @@ window.SONG_LINES = {
   "l016": {
     "source": "कल्याणमावहतु मे कमलालयायाः",
     "roman": "kalyāṇamāvahatu me kamalālayāyāḥ",
-    "english": "{0:may it bring well-being }{1:to me, }{2:the glances of the lotus-dwelling goddess.}",
+    "english": "{2:May those glances of the lotus-dwelling goddess }{0:bring well-being }{1:to me.}",
     "words": [
       {
         "roman": "kalyāṇamāvahatu",
@@ -660,7 +661,7 @@ window.SONG_LINES = {
   "l017": {
     "source": "कालाम्बुदालिललितोरसि कैटभारेः",
     "roman": "kālāmbudālilalitorasi kaiṭabhāreḥ",
-    "english": "{0:On the chest lovely as a mass of dark rainclouds }{1:of the enemy of Kaiṭabha,}",
+    "english": "{0:On the chest }{1:of Kaiṭabha’s foe, }{0:lovely as a bank of dark rainclouds,}",
     "words": [
       {
         "roman": "kālāmbudālilalitorasi",
@@ -690,7 +691,7 @@ window.SONG_LINES = {
   "l018": {
     "source": "धाराधरे स्फुरति या तडिदङ्गनेव",
     "roman": "dhārādhare sphurati yā taḍidaṅganeva",
-    "english": "{2:which }{1:flashes }{3:like a woman of lightning }{0:upon a raincloud,}",
+    "english": "{2:she }{1:flashes }{3:like lightning in a woman’s form }{0:against a raincloud:}",
     "words": [
       {
         "roman": "dhārādhare",
@@ -706,7 +707,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "taḍidaṅganeva",
-        "gloss": "like a woman of lightning"
+        "gloss": "like lightning personified as a woman"
       }
     ],
     "sourceWords": [
@@ -770,7 +771,7 @@ window.SONG_LINES = {
   "l020": {
     "source": "भद्राणि मे दिशतु भार्गवनन्दनायाः",
     "roman": "bhadrāṇi me diśatu bhārgavanandanāyāḥ",
-    "english": "{2:may it grant }{0:good things }{1:to me, }{3:the form of Bhṛgu’s daughter.}",
+    "english": "{3:May that form of Bhṛgu’s daughter }{2:grant }{0:blessings }{1:to me.}",
     "words": [
       {
         "roman": "bhadrāṇi",
@@ -920,7 +921,7 @@ window.SONG_LINES = {
   "l023": {
     "source": "मय्यापतेत्तदिह मन्थरमीक्षणार्धं",
     "roman": "mayyāpatettadiha mantharamīkṣaṇārdhaṃ",
-    "english": "{0:may that fall upon me here—}{1:the slow half-glance,}",
+    "english": "{0:May that }{1:slow half-glance }{0:fall upon me here,}",
     "words": [
       {
         "roman": "mayyāpatettadiha",
@@ -950,7 +951,7 @@ window.SONG_LINES = {
   "l024": {
     "source": "मन्दालसं च मकरालयकन्यकायाः",
     "roman": "mandālasaṃ ca makarālayakanyakāyāḥ",
-    "english": "{1:and }{0:softly languid, }{2:of the daughter of the ocean, home of sea creatures.}",
+    "english": "{0:soft }{1:and }{0:languid—the glance }{2:of the daughter of the ocean, home of sea creatures.}",
     "words": [
       {
         "roman": "mandālasaṃ",
@@ -990,7 +991,7 @@ window.SONG_LINES = {
   "l025": {
     "source": "विश्वामरेन्द्रपदविभ्रमदानदक्षम्",
     "roman": "viśvāmarendrapadavibhramadānadakṣam",
-    "english": "{0:Capable of granting the splendor of the station of Indra, lord of all gods,}",
+    "english": "{0:Able to bestow the splendour of Indra’s rank as lord of all the gods,}",
     "words": [
       {
         "roman": "viśvāmarendrapadavibhramadānadakṣam",
@@ -1250,7 +1251,7 @@ window.SONG_LINES = {
   "l031": {
     "source": "दद्याद्दयानुपवनो द्रविणाम्बुधारां",
     "roman": "dadyāddayānupavano draviṇāmbudhārāṃ",
-    "english": "{0:May it give, with compassion as its following breeze, }{1:a stream of wealth-water}",
+    "english": "{0:With compassion as its following breeze, may it pour }{1:a shower of wealth}",
     "words": [
       {
         "roman": "dadyāddayānupavano",
@@ -1258,7 +1259,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "draviṇāmbudhārāṃ",
-        "gloss": "a stream of wealth-water"
+        "gloss": "a shower of wealth; wealth imagined as streaming rainwater"
       }
     ],
     "sourceWords": [
@@ -1350,7 +1351,7 @@ window.SONG_LINES = {
   "l034": {
     "source": "नारायणप्रणयिनीनयनाम्बुवाहः",
     "roman": "nārāyaṇapraṇayinīnayanāmbuvāhaḥ",
-    "english": "{0:the eye-cloud of Nārāyaṇa’s beloved.}",
+    "english": "{0:the raincloud that is the gaze of Nārāyaṇa’s beloved.}",
     "words": [
       {
         "roman": "nārāyaṇapraṇayinīnayanāmbuvāhaḥ",
@@ -1370,7 +1371,7 @@ window.SONG_LINES = {
   "l035": {
     "source": "गीर्देवतेति गरुडध्वजसुन्दरीति",
     "roman": "gīrdevateti garuḍadhvajasundarīti",
-    "english": "{0:As the goddess of speech, }{1:as the beauty of the Garuḍa-bannered lord,}",
+    "english": "{0:Known as the goddess of speech, }{1:as the beautiful consort of the Lord whose banner bears Garuḍa,}",
     "words": [
       {
         "roman": "gīrdevateti",
@@ -1378,7 +1379,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "garuḍadhvajasundarīti",
-        "gloss": "as the beauty of the Garuḍa-bannered lord"
+        "gloss": "as the beautiful consort of Viṣṇu, whose banner bears Garuḍa"
       }
     ],
     "sourceWords": [
@@ -1710,7 +1711,7 @@ window.SONG_LINES = {
   "l045": {
     "source": "नमोऽस्तु सोमामृतसोदरायै",
     "roman": "namo'stu somāmṛtasodarāyai",
-    "english": "{0:homage }{1:to the sibling of the moon and nectar;}",
+    "english": "{0:homage }{1:to the sister of the moon and the nectar of immortality;}",
     "words": [
       {
         "roman": "namo'stu",
@@ -1718,7 +1719,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "somāmṛtasodarāyai",
-        "gloss": "to the sibling of the moon and nectar"
+        "gloss": "to the sister of the moon and the nectar of immortality, all born from the ocean"
       }
     ],
     "sourceWords": [
@@ -1930,7 +1931,7 @@ window.SONG_LINES = {
   "l052": {
     "source": "नमोऽस्तु विष्णोरुरसि स्थितायै",
     "roman": "namo'stu viṣṇorurasi sthitāyai",
-    "english": "{0:homage }{2:to her stationed }{1:on Viṣṇu’s chest;}",
+    "english": "{0:homage }{2:to her who dwells }{1:on Viṣṇu’s chest;}",
     "words": [
       {
         "roman": "namo'stu",
@@ -1942,7 +1943,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sthitāyai",
-        "gloss": "to her who is stationed"
+        "gloss": "to her who abides or dwells there"
       }
     ],
     "sourceWords": [
@@ -2240,7 +2241,7 @@ window.SONG_LINES = {
   "l061": {
     "source": "त्वद्वन्दनानि दुरिताहरणोद्यतानि",
     "roman": "tvadvandanāni duritāharaṇodyatāni",
-    "english": "{0:acts of reverence to you, }{1:intent on removing misfortune—}",
+    "english": "{0:acts of reverence to you }{1:are intent on taking away misfortune.}",
     "words": [
       {
         "roman": "tvadvandanāni",
@@ -2270,7 +2271,7 @@ window.SONG_LINES = {
   "l062": {
     "source": "मामेव मातरनिशं कलयन्तु मान्ये",
     "roman": "māmeva mātaraniśaṃ kalayantu mānye",
-    "english": "{2:may they take hold of }{0:me indeed, }{1:O mother, without ceasing, }{3:O honored one.}",
+    "english": "{1:O mother, }{3:worthy of honour, }{2:may they take hold of }{0:me indeed, }{1:without ceasing.}",
     "words": [
       {
         "roman": "māmeva",
@@ -2282,7 +2283,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kalayantu",
-        "gloss": "may they take hold of; may they occupy"
+        "gloss": "may they take hold of; may they possess [me]; acts of reverence are the subject"
       },
       {
         "roman": "mānye",
@@ -2340,7 +2341,7 @@ window.SONG_LINES = {
   "l064": {
     "source": "सेवकस्य सकलार्थसम्पदः",
     "roman": "sevakasya sakalārthasampadaḥ",
-    "english": "{1:the prosperity of all desired aims }{0:for the worshipper}",
+    "english": "{0:for the worshipper, }{1:fulfilment of every aim}",
     "words": [
       {
         "roman": "sevakasya",
@@ -2348,7 +2349,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sakalārthasampadaḥ",
-        "gloss": "the prosperity of all desired aims"
+        "gloss": "the fulfilment or attainment of all aims"
       }
     ],
     "sourceWords": [
@@ -2370,7 +2371,7 @@ window.SONG_LINES = {
   "l065": {
     "source": "सन्तनोति वचनाङ्गमानसैः",
     "roman": "santanoti vacanāṅgamānasaiḥ",
-    "english": "{0:brings forth; }{1:with speech, body and mind}",
+    "english": "{0:brings forth. }{1:With speech, body and mind}",
     "words": [
       {
         "roman": "santanoti",
@@ -2440,7 +2441,7 @@ window.SONG_LINES = {
   "l067": {
     "source": "सरसिजनिलये सरोजहस्ते",
     "roman": "sarasijanilaye sarojahaste",
-    "english": "{0:O lotus-dwelling one, }{1:O lotus-handed one,}",
+    "english": "{0:O you who dwell in the lotus, }{1:who hold a lotus in your hand,}",
     "words": [
       {
         "roman": "sarasijanilaye",
@@ -2448,7 +2449,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarojahaste",
-        "gloss": "O lotus-handed one"
+        "gloss": "O you who hold a lotus in your hand; saroja-hasta describes the lotus-bearing goddess"
       }
     ],
     "sourceWords": [
@@ -2470,7 +2471,7 @@ window.SONG_LINES = {
   "l068": {
     "source": "धवलतमांशुकगन्धमाल्यशोभे",
     "roman": "dhavalatamāṃśukagandhamālyaśobhe",
-    "english": "{0:radiant with whitest cloth, fragrance and garlands,}",
+    "english": "{0:radiant in the whitest garments, with fragrance and garlands,}",
     "words": [
       {
         "roman": "dhavalatamāṃśukagandhamālyaśobhe",
@@ -2530,7 +2531,7 @@ window.SONG_LINES = {
   "l070": {
     "source": "त्रिभुवनभूतिकरि प्रसीद मह्यम्",
     "roman": "tribhuvanabhūtikari prasīda mahyam",
-    "english": "{0:maker of prosperity for the three worlds, }{1:be gracious }{2:to me.}",
+    "english": "{0:you who bring prosperity to the three worlds, }{1:be gracious }{2:to me.}",
     "words": [
       {
         "roman": "tribhuvanabhūtikari",
@@ -2750,7 +2751,7 @@ window.SONG_LINES = {
   "l076": {
     "source": "प्रथमं पात्रमकृत्रिमं दयायाः",
     "roman": "prathamaṃ pātramakṛtrimaṃ dayāyāḥ",
-    "english": "{0:the foremost }{1:genuine recipient }{2:of compassion.}",
+    "english": "{0:the foremost, }{1:true vessel }{2:for your compassion.}",
     "words": [
       {
         "roman": "prathamaṃ",
@@ -2758,7 +2759,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pātramakṛtrimaṃ",
-        "gloss": "a genuine recipient"
+        "gloss": "a true or genuine vessel, hence a worthy recipient"
       },
       {
         "roman": "dayāyāḥ",
@@ -2830,7 +2831,7 @@ window.SONG_LINES = {
   "l078": {
     "source": "त्रयीमयीं त्रिभुवनमातरं रमाम्",
     "roman": "trayīmayīṃ tribhuvanamātaraṃ ramām",
-    "english": "{2:Ramā, }{0:who consists of the three Vedas, }{1:mother of the three worlds,}",
+    "english": "{2:Ramā, }{0:embodiment of the three Vedas, }{1:mother of the three worlds—}",
     "words": [
       {
         "roman": "trayīmayīṃ",

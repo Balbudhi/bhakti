@@ -61,7 +61,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "thoṛā dhyān lagā",
-    "english": "{2:Apply} {0:a little} {1:focus}",
+    "english": "{1,2:Meditate} {0:a little}",
     "words": [
       {
         "roman": "thoṛā",
@@ -132,7 +132,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "thoṛā dhyān lagā sāīṁ dauṛe dauṛe āeṅge",
-    "english": "{2:Apply} {0:a little} {1:focus,} {3:Sai} {6:will come} {4,5:running}",
+    "english": "{1,2:Meditate} {0:a little;} {3:Sai} {6:will come} {4,5:running}",
     "words": [
       {
         "roman": "thoṛā",
@@ -612,7 +612,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "satkarm rāhoṁ pe calnā sikhāte vo",
-    "english": "{5:He} {4:teaches} {3:walking} {1,2:on the paths} {0:of virtuous deeds}",
+    "english": "{5:He} {4:teaches us} {3:to walk} {1,2:the paths} {0:of good deeds}",
     "words": [
       {
         "roman": "satkarm",

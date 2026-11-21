@@ -1271,7 +1271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jis ghar thāro vāso, tehi meṁ guṇ ātā",
-    "english": "{0:In whichever }{1:house }{2:is Your }{3:dwelling, }{5:into }{4:that }{6:virtue }{7:enters,}",
+    "english": "{6:Virtue }{7:enters }{4,5:that }{1:home }{0:where }{2,3:you dwell,}",
     "words": [
       {
         "roman": "Jis",
@@ -1360,7 +1360,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā tehi meṁ guṇ ātā",
-    "english": "{0:Mother, }{2:into }{1:that }{3:virtue }{4:enters,}",
+    "english": "{0:Mother, }{3:virtue }{4:enters }{1,2:that home,}",
     "words": [
       {
         "roman": "Maiyā",

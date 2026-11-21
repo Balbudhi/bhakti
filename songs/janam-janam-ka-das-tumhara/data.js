@@ -943,7 +943,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nisdin kartā maiṁ nām japan tērā",
-    "english": "{0:Night and day }{2:I }{1:perform }{4:the chanting of }{5:your }{3:name,}",
+    "english": "{0:Night and day }{2:I }{1,4:chant }{5:your }{3:name,}",
     "words": [
       {
         "roman": "nisdin",
@@ -1204,7 +1204,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karūṁ samarpaṇ dīn dayālu",
-    "english": "{0:I offer }{1:surrender, }{3:O one merciful }{2:to the humble.}",
+    "english": "{0,1:I surrender myself, }{3:O one merciful }{2:to the humble.}",
     "words": [
       {
         "roman": "karūṁ",
@@ -1713,7 +1713,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhūl jō kōī huī hai mujhsē",
-    "english": "{1:Whatever }{0:mistake }{2:at all }{3,4:has occurred }{5:through me,}",
+    "english": "{1,2:Whatever }{0:mistake }{5:I }{3,4:have made,}",
     "words": [
       {
         "roman": "bhūl",

@@ -4325,7 +4325,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem ke raṅg meñ aisī ḍūbī ban gayā ek hī rūp",
-    "english": "{4:So }{5:immersed }{2,3:in the color }{0,1:of love, }{6,7:it became }{8:one }{9:single }{10:form}",
+    "english": "{4:So }{5:immersed }{2,3:in the color }{0,1:of love, }{6,7:we became }{8,9:one }{10:form}",
     "words": [
       {
         "roman": "prem",
@@ -5123,7 +5123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prītam ham tum ek haiñ, jo kahan sunan meñ do",
-    "english": "{0:Beloved, }{2:you }{1:and I }{4:are }{3:one, }{5:though }{8:in }{6:speaking }{7:and hearing }{9:two}",
+    "english": "{0:Beloved, }{2:you }{1:and I }{4:are }{3:one, }{5:though }{8:in }{6:speech }{7:and hearing }{9:we are two}",
     "words": [
       {
         "roman": "prītam",
@@ -7013,7 +7013,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bana gayā ēka hī rūpa",
-    "english": "{0,1:There has become} {2,3:only a single} {4:form,}",
+    "english": "{0,1:We became }{2,3:one }{4:form,}",
     "words": [
       {
         "roman": "bana",
@@ -8813,7 +8813,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ō hai prītam, prītam, prītam, mere jīvan kā siṅgār hai prītam",
-    "english": "{0:Oh, }{1:is }{2:the Beloved, }{3:Beloved, }{4:Beloved, }{10:the Beloved }{9:is }{8:the adornment }{5,6,7:of my life}",
+    "english": "{0:Oh, }{1:it is }{2:the Beloved, }{3:the Beloved, }{4:the Beloved—}{10:the Beloved }{9:is }{8:the adornment }{5,6,7:of my life}",
     "words": [
       {
         "roman": "Ō",

@@ -1317,7 +1317,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sām̐cā sukh to vo hī pāe",
-    "english": "{0,1:True happiness}{2: indeed}{3,4: that one alone}{5: attains,}",
+    "english": "{2:Indeed, }{0,1:true happiness}{5: comes}{3,4: only to the one}",
     "words": [
       {
         "roman": "sām̐cā",
@@ -1388,7 +1388,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaraṇ prabhu kī hoe",
-    "english": "{3:who is}{0: in the refuge}{1,2: of the Lord.}",
+    "english": "{3:who takes}{0: refuge}{1,2: in the Lord.}",
     "words": [
       {
         "roman": "śaraṇ",

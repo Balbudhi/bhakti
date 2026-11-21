@@ -497,7 +497,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bāṇī dṛṣṭi sparśare madhuratā bhara",
-    "english": "{0:In speech,}{1: sight,}{2: and touch,}{4: fill}{3: sweetness,}",
+    "english": "{4:Fill }{0:speech,}{1: sight,}{2: and touch}{3: with sweetness,}",
     "words": [
       {
         "roman": "Bāṇī",
@@ -645,7 +645,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jagata kalyāṇa heu mṛtyu heu swārthara",
-    "english": "{2:Let there be}{1: welfare}{0: of the world,}{4: let there be}{3: the death}{5: of selfishness.}",
+    "english": "{2:May}{0: the world}{1: flourish,}{4: may}{5: selfishness}{3: die.}",
     "words": [
       {
         "roman": "Jagata",

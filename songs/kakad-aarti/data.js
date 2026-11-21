@@ -4052,7 +4052,7 @@ window.SONG_LINES = {
     "source": "तुझे क्या दूँ सांवरे नैवेद्य हो",
     "sourceLanguage": "hi",
     "roman": "Tujhe kyā dū̃ sā̃vare naivedya ho",
-    "english": "{1:What}{4: sacred food offering}{2: should I give}{0: to you,}{3: O dark-complexioned one,}{5: O?}",
+    "english": "{1:What}{4: sacred food offering}{2: can I give}{0: you,}{3,5: O dark-complexioned one?}",
     "words": [
       {
         "roman": "Tujhe",
@@ -4123,7 +4123,7 @@ window.SONG_LINES = {
     "source": "तुझे क्या दूँ सद्गुरु नैवेद्य हो",
     "sourceLanguage": "hi",
     "roman": "Tujhe kyā dū̃ sadguru naivedya ho",
-    "english": "{1:What}{4: sacred food offering}{2: should I give}{0: to you,}{3: O True Guru,}{5: O?}",
+    "english": "{1:What}{4: sacred food offering}{2: can I give}{0: you,}{3,5: O True Guru?}",
     "words": [
       {
         "roman": "Tujhe",
@@ -4275,7 +4275,7 @@ window.SONG_LINES = {
     "source": "उच्छिष्ट तुझे देना जरा ना ठीक हो",
     "sourceLanguage": "hi",
     "roman": "Ucchiṣṭa tujhe denā jarā nā ṭhīka ho",
-    "english": "{2:To give}{0: leftover food}{1: to you}{4,5: is not proper}{3: in the least,}{6: O.}",
+    "english": "{2:To give}{0: leftover food}{1: to you}{4,5,6: would not be right}{3: at all.}",
     "words": [
       {
         "roman": "Ucchiṣṭa",
@@ -4609,7 +4609,7 @@ window.SONG_LINES = {
     "source": "होवेगा काकड़ा मंदिर में हो",
     "sourceLanguage": "hi",
     "roman": "Hovegā kākaṛā mandira mẽ ho",
-    "english": "{1:The Kakad aarti}{0: will take place}{2,3: in the temple,}{4: O!}",
+    "english": "{1:The dawn āratī}{0,4: will take place}{2,3: in the temple!}",
     "words": [
       {
         "roman": "Hovegā",
@@ -4670,7 +4670,7 @@ window.SONG_LINES = {
     "source": "लायेंगे भक्त नैवेद्य भी नाना परि हो",
     "sourceLanguage": "hi",
     "roman": "Lāyeñge bhakta naivedya bhī nānā parī ho",
-    "english": "{1:Devotees}{0: will bring}{2: sacred food offerings}{3: also}{4,5: of manifold kinds,}{6: O!}",
+    "english": "{1:Devotees}{0: will bring}{2: sacred food offerings}{3: too—}{4,5,6: of many kinds!}",
     "words": [
       {
         "roman": "Lāyeñge",
@@ -4923,7 +4923,7 @@ window.SONG_LINES = {
     "source": "मैं पापी पतित मतिमंद हो",
     "sourceLanguage": "hi",
     "roman": "Maĩ pāpī patita matimanda ho",
-    "english": "{0:I am}{1: sinful,}{2: fallen,}{3: and dull-witted,}{4: O!}",
+    "english": "{0,4:I am}{1: sinful,}{2: fallen,}{3: and dull-witted!}",
     "words": [
       {
         "roman": "Maĩ",
@@ -5035,7 +5035,7 @@ window.SONG_LINES = {
     "source": "तारो हे मुझे गुरुनाथा तुरंत ही",
     "sourceLanguage": "hi",
     "roman": "Tāro he mujhe Gurunāthā turanta hī",
-    "english": "{0:Liberate}{2: me,}{1,3: O Guru-Lord,}{4,5: immediately indeed!}",
+    "english": "{0:Liberate}{2: me,}{1,3: O Guru-Lord,}{4,5: at this very moment!}",
     "words": [
       {
         "roman": "Tāro",
@@ -5106,7 +5106,7 @@ window.SONG_LINES = {
     "source": "तारो हे मुझे साईंनाथा तुरंत ही",
     "sourceLanguage": "hi",
     "roman": "Tāro he mujhe Sāī̃nāthā turanta hī",
-    "english": "{0:Liberate}{2: me,}{1,3: O Sai-Lord,}{4,5: immediately indeed!}",
+    "english": "{0:Liberate}{2: me,}{1,3: O Sai-Lord,}{4,5: at this very moment!}",
     "words": [
       {
         "roman": "Tāro",
@@ -5177,7 +5177,7 @@ window.SONG_LINES = {
     "source": "तू शांतिक्षमा का मेरु हो",
     "sourceLanguage": "hi",
     "roman": "Tū śānti-kṣamā kā meru ho",
-    "english": "{0:You are}{4: the Mount Meru}{1,3: of peace}{2: and forbearance,}{5: O!}",
+    "english": "{0,5:You are}{4: Mount Meru}{1,3: of peace}{2: and forbearance!}",
     "words": [
       {
         "roman": "Tū",
@@ -6181,7 +6181,7 @@ window.SONG_LINES = {
     "source": "आरती साईं बाबा जीवा सुखकारी देवा",
     "sourceLanguage": "hi",
     "roman": "Āratī Sāī̃ Bābā jīvā sukhakārī dēvā",
-    "english": "{0,1,2:Aarti to Sai Baba,}{5: O Lord}{4: who bestows bliss}{3: upon the jīva!}",
+    "english": "{0,1,2:Aarti to Sai Baba,}{5: O Lord}{4: who bestows bliss}{3: upon the living soul!}",
     "words": [
       {
         "roman": "Āratī",
@@ -6199,7 +6199,7 @@ window.SONG_LINES = {
         "roman": "jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sukhakārī",
@@ -6254,7 +6254,7 @@ window.SONG_LINES = {
     "source": "चरण धूली में दे दो विश्राम जीवा",
     "sourceLanguage": "hi",
     "roman": "Caraṇa dhūlī mē̃ dē dō viśrāma jīvā",
-    "english": "{0,1,2:In the dust of your feet,}{3,4: grant}{5: repose}{6: to the jīva!}",
+    "english": "{0,1,2:In the dust of your feet,}{3,4: grant}{5: repose}{6: to the living soul!}",
     "words": [
       {
         "roman": "Caraṇa",
@@ -6284,7 +6284,7 @@ window.SONG_LINES = {
         "roman": "jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Compound imperative dē dō governing direct object viśrāma with indirect/dative recipient jīvā and locative caraṇa dhūlī mē̃.",
@@ -6337,7 +6337,7 @@ window.SONG_LINES = {
     "source": "विश्राम जीवा आरती साईं बाबा",
     "sourceLanguage": "hi",
     "roman": "Viśrāma jīvā āratī Sāī̃ Bābā",
-    "english": "{0:Repose}{1: to the jīva;}{2: aarti}{3,4: to Sai Baba!}",
+    "english": "{0:Repose}{1: to the living soul;}{2: aarti}{3,4: to Sai Baba!}",
     "words": [
       {
         "roman": "Viśrāma",
@@ -6347,7 +6347,7 @@ window.SONG_LINES = {
         "roman": "jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "āratī",
@@ -7961,13 +7961,13 @@ window.SONG_LINES = {
     "source": "जीवा सुखकारी देवा",
     "sourceLanguage": "hi",
     "roman": "Jīvā sukhakārī dēvā",
-    "english": "{2:O Lord, }{1:bestower of bliss }{0:upon the jīva!}",
+    "english": "{2:O Lord, }{1:bestower of bliss }{0:upon the living soul!}",
     "words": [
       {
         "roman": "Jīvā",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sukhakārī",
@@ -8358,7 +8358,7 @@ window.SONG_LINES = {
     "source": "नाना रूप लीलाएं देते दर्शनी",
     "sourceLanguage": "hi",
     "roman": "nānā rūpa līlāeṁ dete darśanī",
-    "english": "{3:You grant }{4:in vision }{2:divine plays }{0:in manifold }{1:forms.}",
+    "english": "{3,4:You reveal}{2: your divine play}{0: in many}{1: forms.}",
     "words": [
       {
         "roman": "nānā",
@@ -9057,7 +9057,7 @@ window.SONG_LINES = {
     "source": "प्रेम से देखे हिन्दू यवन या कोई",
     "sourceLanguage": "hi",
     "roman": "prema se dekhe hindū yavana yā koī",
-    "english": "Whether {3:Hindu, }{4:Muslim, }{5:or }{6:anyone }{2:beholds }{0,1:with love,}",
+    "english": "{3:Whether Hindu,}{4: Muslim,}{5: or}{6: anyone else,}{2: whoever looks}{0,1: with love,}",
     "words": [
       {
         "roman": "prema",
@@ -15108,7 +15108,7 @@ window.SONG_LINES = {
     "source": "भवाम्भोधिमग्नार्दितानां जनानां",
     "sourceLanguage": "hi",
     "roman": "bhavāmbhodhi-magnārditānāṁ janānām",
-    "english": "{1:Of the people}{0: submerged and afflicted in the ocean of existence,}",
+    "english": "{1:For people}{0: submerged and suffering in the ocean of existence,}",
     "words": [
       {
         "roman": "bhavāmbhodhi-magnārditānāṁ",
@@ -15139,7 +15139,7 @@ window.SONG_LINES = {
     "source": "स्वपादाश्रितानां स्वभक्तिप्रियाणाम्",
     "sourceLanguage": "hi",
     "roman": "sva-pādāśritānāṁ sva-bhakti-priyāṇām",
-    "english": "{0:Of those taking shelter at your feet,}{1: of those dear through devotion to you,}",
+    "english": "{0:who seek shelter at his feet,}{1: dear through devotion to him,}",
     "words": [
       {
         "roman": "sva-pādāśritānāṁ",
@@ -15170,7 +15170,7 @@ window.SONG_LINES = {
     "source": "समुद्धरणार्थं कलौ संभवन्तं",
     "sourceLanguage": "hi",
     "roman": "samuddharaṇārthaṁ kalau sambhavantam",
-    "english": "{2:Manifesting}{1: in the Kali age}{0: for the purpose of complete salvation,}",
+    "english": "{2:he appears}{1: in the Kali age}{0: to lift them out.}",
     "words": [
       {
         "roman": "samuddharaṇārthaṁ",
@@ -15242,7 +15242,7 @@ window.SONG_LINES = {
     "source": "सुधास्राविणं तिक्तमप्यप्रियन्तम्",
     "sourceLanguage": "hi",
     "roman": "sudhā-srāviṇaṁ tiktam-apy-apriyantam",
-    "english": "{0:oozing nectar,}{1: though bitter and disagreeable,}",
+    "english": "{0:he made it flow with nectar,}{1: though bitter and unappealing,}",
     "words": [
       {
         "roman": "sudhā-srāviṇaṁ",
@@ -15273,7 +15273,7 @@ window.SONG_LINES = {
     "source": "तरुं कल्पवृक्षाधिकं साधयन्तं",
     "sourceLanguage": "hi",
     "roman": "taruṁ kalpa-vṛkṣādhikaṁ sādhayantam",
-    "english": "{2:rendering}{0: the tree}{1: superior to the wish-fulfilling tree,}",
+    "english": "{2:making}{0: that tree}{1: surpass the wish-fulfilling tree.}",
     "words": [
       {
         "roman": "taruṁ",
@@ -15386,7 +15386,7 @@ window.SONG_LINES = {
     "source": "नृणां कुर्वतां भुक्तिमुक्तिप्रदन्तम्",
     "sourceLanguage": "hi",
     "roman": "nṛṇāṃ kurvatāṃ bhuktimuktipradantam",
-    "english": "{0:unto people}{1: performing them,}{2: bestowing both enjoyment and liberation}",
+    "english": "{0:to those}{1: who perform them,}{2: he grants enjoyment and liberation.}",
     "words": [
       {
         "roman": "nṛṇāṃ",
@@ -15664,7 +15664,7 @@ window.SONG_LINES = {
     "source": "स्वयं संभवं राममेवावतीर्णम्",
     "sourceLanguage": "hi",
     "roman": "svayaṃ saṃbhavaṃ rāmam ēvāvatīrṇam",
-    "english": "{0:Himself}{1: self-manifesting,}{2: Lord Rama}{3: verily descended,}",
+    "english": "{0,1:Self-manifested,}{2: Rāma}{3: himself incarnate,}",
     "words": [
       {
         "roman": "svayaṃ",
@@ -15756,7 +15756,7 @@ window.SONG_LINES = {
     "source": "श्रीसायीश कृपानिधेऽखिलनृणां सर्वार्थसिद्धिप्रद",
     "sourceLanguage": "hi",
     "roman": "śrīsāyīśa kṛpānidhē 'khilanṛṇāṃ sarvārthasiddhiprada",
-    "english": "{0:O Lord Sri Sai,}{1: O ocean of grace,}{2: for all men,}{3: O bestower of the accomplishment of all goals!}",
+    "english": "{0:O Lord Śrī Sāī,}{1: ocean of grace,}{3: who grants the fulfilment of every aim}{2: to all people!}",
     "words": [
       {
         "roman": "śrīsāyīśa",
@@ -15802,7 +15802,7 @@ window.SONG_LINES = {
     "source": "युष्मत्पादरजःप्रभावमतुलं धातापि वक्ताक्षमः",
     "sourceLanguage": "hi",
     "roman": "yuṣmatpādarajaprabhāvam atulaṃ dhātāpi vaktākṣamaḥ",
-    "english": "{0:The power of the dust of Your feet,}{1: incomparable,}{2: even the Creator}{3: is incapable of expressing.}",
+    "english": "{2:Even the Creator}{3: cannot express}{1: the incomparable}{0: power of the dust of your feet.}",
     "words": [
       {
         "roman": "yuṣmatpādarajaprabhāvam",
@@ -15848,7 +15848,7 @@ window.SONG_LINES = {
     "source": "सद्भक्त्या शरणं कृताञ्जलिपुटं संप्रापितोऽस्मि प्रभो",
     "sourceLanguage": "hi",
     "roman": "sadbhaktyā śaraṇaṃ kṛtāñjalipuṭaṃ saṃprāpitō 'smi prabhō",
-    "english": "{0:With true devotion,}{1: for refuge,}{2: with folded hands,}{3: arrived}{4: I am,}{5: O Lord.}",
+    "english": "{3,4:I have come}{1: for refuge,}{0: with true devotion}{2: and folded hands,}{5: O Lord.}",
     "words": [
       {
         "roman": "sadbhaktyā",
@@ -15914,7 +15914,7 @@ window.SONG_LINES = {
     "source": "श्रीमत्सायिपरेशपादकमलान् नान्यच्छरण्यं मम",
     "sourceLanguage": "hi",
     "roman": "śrīmatsāyiparēśapādakamalān nānyac charaṇyaṃ mama",
-    "english": "{0:Other than the lotus feet of the illustrious supreme Lord Sai,}{1: no other}{2: refuge}{3: is there for me.}",
+    "english": "{3:I have}{1: no}{2: refuge}{0: but the lotus feet of the glorious supreme Lord Sāī.}",
     "words": [
       {
         "roman": "śrīmatsāyiparēśapādakamalān",
@@ -16084,7 +16084,7 @@ window.SONG_LINES = {
     "source": "शरत्सुधांशुप्रतिमं प्रकाशम्",
     "sourceLanguage": "hi",
     "roman": "śaratsudhāṃśupratimaṃ prakāśam",
-    "english": "{0:resembling the autumnal moon,}{1: radiant,}",
+    "english": "{1:Radiant}{0: as the autumn moon,}",
     "words": [
       {
         "roman": "śaratsudhāṃśupratimaṃ",
@@ -16244,7 +16244,7 @@ window.SONG_LINES = {
     "source": "स्तवैर्मयोपासनिना स्तुतस्त्वम्",
     "sourceLanguage": "hi",
     "roman": "stavair mayōpāsaninā stutas tvam",
-    "english": "{0:with hymns of praise}{1: by me, Upasani,}{2: praised}{3: are You.}",
+    "english": "{3:You are}{2: praised}{1: by me, Upāsanī,}{0: in these hymns.}",
     "words": [
       {
         "roman": "stavair",
@@ -16341,7 +16341,7 @@ window.SONG_LINES = {
     "source": "भृङ्गो यथाब्जे मकरन्दलुब्धः",
     "sourceLanguage": "hi",
     "roman": "bhṛṅgō yathābjē makarandalubdhaḥ",
-    "english": "{0:a bee}{1: just as upon a lotus,}{2: longing for nectar.}",
+    "english": "{1:as }{0:a bee }{2:eager for nectar }{1:delights in a lotus.}",
     "words": [
       {
         "roman": "bhṛṅgō",
@@ -16588,7 +16588,7 @@ window.SONG_LINES = {
     "source": "संसारजन्यदुरितौघविनिर्गतास्ते",
     "sourceLanguage": "hi",
     "roman": "saṃsārajanyaduritaughavinirgatās tē",
-    "english": "{0:freed from the stream of evils born of worldly existence,}{1: they}",
+    "english": "{0:freed from the flood of evils born of worldly existence,}{1: they}",
     "words": [
       {
         "roman": "saṃsārajanyaduritaughavinirgatās",
@@ -16614,7 +16614,7 @@ window.SONG_LINES = {
     "source": "कैवल्यधाम परमं समवाप्नुवन्ति",
     "sourceLanguage": "hi",
     "roman": "kaivalyadhāma paramaṃ samavāpnuvanti",
-    "english": "{0:the abode of liberation,}{1: supreme,}{2: they attain fully.}",
+    "english": "{2:fully attain}{1: the supreme}{0: abode of liberation.}",
     "words": [
       {
         "roman": "kaivalyadhāma",

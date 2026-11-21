@@ -902,7 +902,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā karam ye mujh par sare-ām ho rahā hai",
-    "english": "{2:This }{1:grace }{0:of yours }{3,4:upon me }{6,7,8:is taking place }{5:in plain public view.}",
+    "english": "{2:This }{1:grace }{0:of yours }{3,4:toward me }{6,7,8:unfolds }{5:for all to see.}",
     "words": [
       {
         "roman": "terā",
@@ -1146,7 +1146,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum sāth ho jo mere kis cīz kī kamī hai",
-    "english": "{3:Since }{0:you }{1,2,4:are with me, }{5:what }{8:lack }{6,7:of anything }{9:is there?}",
+    "english": "{3:Since }{0:you }{1,2,4:are with me, }{5,6,7:what }{8,9:could I lack?}",
     "words": [
       {
         "roman": "tum",
@@ -1271,7 +1271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kisī aur cīz kī ab parvāh hī nahīṁ hai",
-    "english": "{0:For any }{1:other }{2,3:thing, }{8:there is }{4:now }{5,7:no care }{6:at all.}",
+    "english": "{8:I have }{4:now }{5,7:no concern }{6:at all }{0:for any }{1:other }{2,3:thing.}",
     "words": [
       {
         "roman": "kisī",

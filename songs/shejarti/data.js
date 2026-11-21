@@ -1257,7 +1257,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ yogakṣemavahāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bearer of acquisition and preservation.}",
+    "english": "{0:Om, }{2:salutations }{1:to the one who brings what is needed and safeguards it.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2903,7 +2903,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ aśakyarahitāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one devoid of the impossible.}",
+    "english": "{0:Om, }{2:salutations }{1:to the one for whom nothing is impossible.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3655,7 +3655,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ puṇyaśravaṇakīrtanāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one whose hearing and glorification purify.}",
+    "english": "{0:Om, }{2:salutations }{1:to the one whom it is meritorious to hear of and praise.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4901,7 +4901,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ saṃsārasarvaduḥkhakṣayakarāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the causer of the destruction of all sorrows of worldly existence.}",
+    "english": "{0:Om, }{2:salutations to }{1:the one who ends all the sorrows of worldly existence.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5089,7 +5089,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ sarvābhīṣṭapradāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the bestower of all cherished desires.}",
+    "english": "{0:Om, }{2:salutations to }{1:the giver of all that is cherished.}",
     "words": [
       {
         "roman": "oṃ",

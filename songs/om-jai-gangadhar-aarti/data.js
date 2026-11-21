@@ -189,7 +189,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tvaṃ māṃ pālaya nityaṃ",
-    "english": "{0:Do You }{2:protect }{1:me }{3:always,}",
+    "english": "{0,2:Protect }{1:me }{3:always,}",
     "words": [
       {
         "roman": "tvaṃ",
@@ -1092,7 +1092,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kinnaragānaṃ kurute",
-    "english": "{1:they perform }{0:the singing of the Kinnaras,}",
+    "english": "{1:they sing }{0:the songs of the Kinnaras,}",
     "words": [
       {
         "roman": "kinnaragānaṃ",
@@ -2023,7 +2023,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svāmī jhallari nādayate",
-    "english": "{0:O Lord, }{2:one causes }{1:the cymbals }{2:to ring,}",
+    "english": "{0:O Lord, }{2:one rings }{1:the cymbals,}",
     "words": [
       {
         "roman": "svāmī",
@@ -2316,7 +2316,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṅgītameva pratidinaṃ paṭhanaṃ yaḥ kurute",
-    "english": "{3:Whoever }{4:performs }{2:the recitation of }{0:this very hymn }{1:daily,}",
+    "english": "{3:Whoever }{2,4:recites }{0:this very hymn }{1:daily,}",
     "words": [
       {
         "roman": "saṅgītameva",
@@ -2381,7 +2381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svāmī paṭhanaṃ yaḥ kurute",
-    "english": "{0:O Lord, }{2:whoever }{3:performs }{1:the recitation,}",
+    "english": "{0:O Lord, }{2:whoever }{1,3:recites it,}",
     "words": [
       {
         "roman": "svāmī",
@@ -2522,7 +2522,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karpūragauraṃ karuṇāvatāraṃ saṃsārasāraṃ bhujagendrahāram",
-    "english": "{0:Him who is pure white as camphor, }{1:the embodiment of compassion, }{2:the essence of saṃsāra, }{3:garlanded with the king of serpents,}",
+    "english": "{0:Him who is pure white as camphor, }{1:the embodiment of compassion, }{2:the essence of worldly existence, }{3:garlanded with the king of serpents,}",
     "words": [
       {
         "roman": "karpūragauraṃ",
@@ -2540,7 +2540,7 @@ window.SONG_LINES = {
         "roman": "saṃsārasāraṃ",
         "gloss": "the essential core of worldly existence",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bhujagendrahāram",

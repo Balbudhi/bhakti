@@ -568,7 +568,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhukeliyā bāḷā ati śoka karī",
-    "english": "{0:A hungry }{1:child }{4:makes }{2:great }{3:lamentation,}",
+    "english": "{0:A hungry }{1:child }{4:cries }{2:in deep }{3:distress,}",
     "words": [
       {
         "roman": "bhukeliyā",
@@ -756,7 +756,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tukā mhaṇe maja",
-    "english": "{0:Tuka }{1:says: }{2:To me,}",
+    "english": "{0:Tukā }{1:says: }{2:I}",
     "words": [
       {
         "roman": "tukā",
@@ -797,7 +797,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lāgalīse bhūka",
-    "english": "{1:hunger }{0:has taken hold;}",
+    "english": "{0:am gripped }{1:by hunger;}",
     "words": [
       {
         "roman": "lāgalīse",

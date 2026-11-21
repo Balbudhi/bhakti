@@ -83,7 +83,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dehare mo lāgilāṇi samayara ui, samayara ui",
-    "english": "{0,1:Upon my body }{2:have set }{3,4:the termites of time, }{5,6:the termites of time}",
+    "english": "{3,4:The termites of time }{2:have begun to infest }{0,1:my body—}{5,6:the termites of time}",
     "words": [
       {
         "roman": "dehare",

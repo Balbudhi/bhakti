@@ -438,7 +438,7 @@ window.SONG_LINES = {
   "l013": {
     "source": "जय लीलाशुकप्रिये",
     "roman": "jaya līlāśukapriye",
-    "english": "{0:Hail}, {1:you who cherish the play-parrot}!",
+    "english": "{0:Hail}, {1:you who cherish your pet parrot}!",
     "words": [
       {
         "roman": "jaya",
@@ -446,7 +446,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "līlāśukapriye",
-        "gloss": "O you who cherish the play-parrot"
+        "gloss": "O you who cherish the parrot kept for play; your pet parrot"
       }
     ],
     "sourceWords": [
@@ -618,11 +618,11 @@ window.SONG_LINES = {
   "l019": {
     "source": "वाक्सुधासेचने",
     "roman": "vāksudhāsecane",
-    "english": "{0:Sprinkler of the nectar of speech},",
+    "english": "{0:You who shower the nectar of speech},",
     "words": [
       {
         "roman": "vāksudhāsecane",
-        "gloss": "O sprinkler of the nectar of speech"
+        "gloss": "O you who shower the nectar of speech"
       }
     ],
     "sourceWords": [
@@ -908,7 +908,7 @@ window.SONG_LINES = {
   "l031": {
     "source": "ज्ञानमुद्राकरे सर्वसम्पत्करे",
     "roman": "jñānamudrākare sarvasampatkare",
-    "english": "{0:Whose hand forms the gesture of knowledge}, {1:maker of every prosperity},",
+    "english": "{0:Whose hand forms the gesture of knowledge}, {1:giver of every kind of prosperity},",
     "words": [
       {
         "roman": "jñānamudrākare",
@@ -916,7 +916,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sarvasampatkare",
-        "gloss": "O maker of every prosperity"
+        "gloss": "O giver of every kind of prosperity"
       }
     ],
     "sourceWords": [
@@ -1368,11 +1368,11 @@ window.SONG_LINES = {
   "l049": {
     "source": "किङ्करश्रीकरे",
     "roman": "kiṅkaraśrīkare",
-    "english": "{0:Maker of prosperity for your attendants},",
+    "english": "{0:You who grant prosperity to your attendants},",
     "words": [
       {
         "roman": "kiṅkaraśrīkare",
-        "gloss": "O maker of prosperity for your attendants"
+        "gloss": "O you who grant prosperity to your attendants"
       }
     ],
     "sourceWords": [
@@ -2156,7 +2156,7 @@ window.SONG_LINES = {
   "l079": {
     "source": "प्रीतिभाजा वसन्तेन चानन्दिते",
     "roman": "prītibhājā vasantena ca ānandite",
-    "english": "{2:And} {3:delighted} {1:by Spring}, {0:filled with affection},",
+    "english": "{2:And} {3:delighted} {1:by Spring}, {0:who is filled with affection},",
     "words": [
       {
         "roman": "prītibhājā",
@@ -2401,7 +2401,7 @@ window.SONG_LINES = {
   "l085": {
     "source": "विश्वहृद्येन वाद्येन विद्याधरैर्गीयसे",
     "roman": "viśvahṛdyena vādyena vidyādharaiḥ gīyase",
-    "english": "{3:You are sung} {2:by Vidyādharas}, {1:with instrumental music} {0:that delights the world}.",
+    "english": "{3:Your praises are sung} {2:by Vidyādharas}, {1:with instrumental music} {0:that delights the world}.",
     "words": [
       {
         "roman": "viśvahṛdyena",
@@ -2446,7 +2446,7 @@ window.SONG_LINES = {
   "l086": {
     "source": "श्रवणहरणदक्षिणक्वाणया वीणया किन्नरैर्गीयसे",
     "roman": "śravaṇaharaṇadakṣiṇakvāṇayā vīṇayā kinnaraiḥ gīyase",
-    "english": "{3:You are sung} {2:by Kinnaras}, {1:with a vīṇā} {0:whose sound is skilful in captivating the ear}.",
+    "english": "{3:Your praises are sung} {2:by Kinnaras}, {1:with a vīṇā} {0:whose sound deftly captivates the ear}.",
     "words": [
       {
         "roman": "śravaṇaharaṇadakṣiṇakvāṇayā",
@@ -2871,7 +2871,7 @@ window.SONG_LINES = {
   "l095": {
     "source": "येन वा यावकाभाकृतिर्भाव्यसे",
     "roman": "yena vā yāvakābhākṛtiḥ bhāvyase",
-    "english": "{1:Or} {0:by whoever} {3:you are contemplated} {2:with the appearance of red lac},",
+    "english": "{1:Or} {0:whoever} {3:contemplates you} {2:in a form red as lac},",
     "words": [
       {
         "roman": "yena",
@@ -3016,7 +3016,7 @@ window.SONG_LINES = {
   "l098": {
     "source": "येन वा शातकुम्भद्युतिर्भाव्यसे",
     "roman": "yena vā śātakumbhadyutiḥ bhāvyase",
-    "english": "{1:Or} {0:by whoever} {3:you are contemplated} {2:with the lustre of gold},",
+    "english": "{1:Or} {0:whoever} {3:contemplates you} {2:with the lustre of gold},",
     "words": [
       {
         "roman": "yena",
@@ -3351,7 +3351,7 @@ window.SONG_LINES = {
   "l105": {
     "source": "तस्य चाज्ञाकरी श्रीः स्वयं",
     "roman": "tasya cājñākarī śrīḥ svayaṃ",
-    "english": "{1:And} {0:for that person}, {2:Śrī} {3:herself} is {1:one who carries out commands}.",
+    "english": "{1:And} {2:Śrī} {3:herself} {1:obeys the commands} {0:of that person}.",
     "words": [
       {
         "roman": "tasya",

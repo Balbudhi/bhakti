@@ -717,7 +717,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dō dina kā jīvana prāṇī kara lē vicāra tū",
-    "english": "{3:A life }{2:of }{0:two }{1:days, }{4:O mortal—}{5,7:reflect }{6:for yourself, }{8:you!}",
+    "english": "{4:O mortal}, {3:life }{2:lasts }{0:two }{1:days—}{5,7,8:reflect }{6:for yourself!}",
     "words": [
       {
         "roman": "Dō",
@@ -806,7 +806,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kara lē vicāra tū",
-    "english": "{0,2:Reflect }{1:for yourself, }{3:you!}",
+    "english": "{0,2,3:Reflect }{1:for yourself!}",
     "words": [
       {
         "roman": "Kara",
@@ -889,7 +889,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pyārē prabhu kō apanē mana mē̃ nihāra tū",
-    "english": "{6:Behold }{0:your beloved }{1,2:Lord }{5:within }{3:your own }{4:mind, }{7:you!}",
+    "english": "{6,7:Behold }{0:your beloved }{1,2:Lord }{5:within }{3:your own }{4:mind!}",
     "words": [
       {
         "roman": "Pyārē",
@@ -972,7 +972,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana mē̃ nihāra tū",
-    "english": "{2:Behold }{1:within }{0:your mind, }{3:you!}",
+    "english": "{2,3:Look }{1:within }{0:your mind!}",
     "words": [
       {
         "roman": "Mana",

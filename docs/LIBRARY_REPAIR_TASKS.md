@@ -1,5 +1,11 @@
 # Whole-library repair task
 
+## Kanakadhārā and library wording repair — 21 November 2026
+
+The owner’s screenshot prompted a complete screen of all 365 readers / 8,859 definitions at `57c3c740`. A separately published Bhor Bhaī reader was preserved and its 12 definitions checked, bringing release coverage to 366 readers/8,871 definitions. The final conservative selection improves 305 English definitions across 83 readers, with 61 glosses, eight notes and 26 concept flags aligned; two further definitions have annotation-only repairs. It rejects 163 unnecessary or weaker proposals. Source, Roman text, audio, sequence, timings and protected owner English are preserved.
+
+[The review record](research/translation-review-2026-11-21.md) separates grounded corrections from open readings. `data/translation-review-status.json` marks completed, protected and source-dependent work against exact reader bytes; reuse those marks instead of restarting unchanged translations. The final source-bound ranking metadata is refreshed and reviewed, with audio profiles preserved. Next research work is confined to the retained source questions or newly demonstrated defects.
+
 ## Reopened poetic and divine-name repair — 17 November 2026
 
 The owner rejected the published “of the nature of light” rendering and requested

@@ -178,7 +178,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "priyā hīna ḍarapata mana morā",
-    "english": "{1:Bereft of }{0:beloved, }{4:my }{3:heart }{2:trembles in fear.}",
+    "english": "{1:Bereft of }{0:my beloved, }{4:my }{3:heart }{2:trembles in fear.}",
     "words": [
       {
         "roman": "priyā",
@@ -1190,7 +1190,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hoi acala jimi jiva hari pāī",
-    "english": "{0:becomes }{1:still, }{2:as does }{3:the jīva }{5:upon attaining }{4:Hari.}",
+    "english": "{0:becomes }{1:still, }{2:as does }{3:the soul }{5:upon attaining }{4:Hari.}",
     "words": [
       {
         "roman": "hoi",
@@ -1214,7 +1214,7 @@ window.SONG_LINES = {
         "roman": "jiva",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "hari",

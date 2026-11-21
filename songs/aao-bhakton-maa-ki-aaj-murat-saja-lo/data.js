@@ -769,7 +769,7 @@ window.SONG_LINES = {
   "l011": {
     "source": "एक बार सभी भक्त जन अपने अपने हाथ ऊपर उठा कर के सभी माँ के चरणों में अपनी अपनी हाज़री दीजिये।",
     "roman": "ek bār sabhī bhakt jan apne apne hāth ūpar uṭhā kar ke sabhī māṃ ke caraṇoṃ meṃ apnī apnī hāzrī dījiye",
-    "english": "{0,1:Once}, {2:all} {3,4:you devotees}, {9,10,11:raise} {5,6:your own} {7:hands} {8:up}, and {12:all of you}, {20:please present} {17,18:your own} {19:attendance} {16:at} {13,14:the Mother’s} {15:feet}.",
+    "english": "{2:All }{3,4:you devotees}, {9,10,11:raise }{5,6:your }{7:hands }{8:up }{0,1:once}, {12:and all of you}, {17,18,19,20:please present yourselves }{16:at }{13,14:the Mother’s }{15:feet}.",
     "words": [
       {
         "roman": "ek",

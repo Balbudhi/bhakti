@@ -1,0 +1,2375 @@
+{
+  "schemaVersion": 1,
+  "scope": "Complete source/English and adjacent-context translation screen with targeted word-map/source investigation. Finished means no identified translation defect remains in this review scope; not a fresh audio audit or independent reconstruction of every word analysis.",
+  "reuse": "If readerSha256 matches, skip another blanket translation review for finished readers. For owner_protected readers preserve English exactly. For needs_source_review focus on openDefinitions and the linked report. A changed hash requires inspecting the actual diff; unrelated metadata changes do not require rereading the poem. New concrete source evidence or an owner-reported problem can reopen only the affected passage.",
+  "report": "docs/research/translation-review-2026-11-21.md",
+  "songs": {
+    "koi-hor-nahi": {
+      "status": "owner_protected",
+      "readerSha256": "6eb36e7d5795a390a717e86f64adf463277bd83ee7f278de2f9fe2465313a8bc",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21",
+      "ownerAuthorship": "Owner reconfirmed the two named protected translations on 2026-11-21; exact English is locked in editorial_baselines.json."
+    },
+    "bolo-lakshmi-maat-ki-jai": {
+      "status": "needs_source_review",
+      "readerSha256": "c21fdd1a0e4b13ddd680497227a3437ea3b4e351ecd93bdeae91bb1e90cef6d2",
+      "definitionCount": 34,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "koi-nahi-pata",
+        "ratna-chaturdash-toko"
+      ]
+    },
+    "jaya-jagdisha-hare": {
+      "status": "finished",
+      "readerSha256": "b6a23bc254560e3206a60c2a04bf2dd8df03860c4e3434a0b029142a561d6a67",
+      "definitionCount": 36,
+      "reviewedAt": "2026-11-21"
+    },
+    "balam-aao-hamare-geh-re": {
+      "status": "finished",
+      "readerSha256": "b5653b6b73187a089f07d75bc34263877bd0ff2ca3fc920b3b6df745b719a68d",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "khel-mandiyela": {
+      "status": "finished",
+      "readerSha256": "df0eb7442e6d4effb0d0d4e0ca6f4662426999f6f007b6416b9d1eecdf246b26",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "sundar-te-dhyan": {
+      "status": "finished",
+      "readerSha256": "58d0e6b658b8ca6259ea4b5c98d95b645574f929e1969c54bab06d2ac099c08e",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "vrkshavalli-amha": {
+      "status": "finished",
+      "readerSha256": "d6767e388f3f14a5d01223878eea61c2e5f37bc538576b5b839d81b92dd057ef",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "anandache-dohi": {
+      "status": "finished",
+      "readerSha256": "2703bd75a22824d20a751ed5b069d395d24405781a51da749ebf9bae188fbc35",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-mahakali-aarti": {
+      "status": "finished",
+      "readerSha256": "f2299c2fd5776b24742e257dc407a1369a8eb207da188fe3b30f8141c545adce",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "baso-mere-nainan-me-nandalal": {
+      "status": "finished",
+      "readerSha256": "b41d49ce1d4364c95bfdf7eeed1c79c0db0956e57cc3618ddbe194b7606c795d",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "mere-to-giridhar-gopal": {
+      "status": "finished",
+      "readerSha256": "46bfae04064567a0854e4e203641cdd61c2cf52cf33f4f5563d8fd7cf89c6f48",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "chakar-rakho-ji": {
+      "status": "finished",
+      "readerSha256": "edce7a9f20d38db69ac2169a367ce343c421f0ecbf5da06d189856b561597cda",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "mhare-ghar-ao-pritam-pyara": {
+      "status": "finished",
+      "readerSha256": "86b04751ca7cdde114dff64781388c566b899251bb48fb75e56b65c719c0c838",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "prabhu-ji-tuma-candana-hama-pani": {
+      "status": "finished",
+      "readerSha256": "f7269c55914eaa10d3833ab94714ca3bd1ee924d2d1182e04a7e2c918baffe80",
+      "definitionCount": 28,
+      "reviewedAt": "2026-11-21"
+    },
+    "bhetilagi-jiva": {
+      "status": "finished",
+      "readerSha256": "63b21ee7689afb0e1a34321454d4c691f47b1e72942fef6dacefe3632ea1a05d",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "om-jai-gangadhar-aarti": {
+      "status": "finished",
+      "readerSha256": "d7c4f86817b16598cbee416d19c311a3dbea383014acf0a543e83208d0140f80",
+      "definitionCount": 59,
+      "reviewedAt": "2026-11-21"
+    },
+    "ghana-shyama-sundara": {
+      "status": "finished",
+      "readerSha256": "d1940cfa087babc063fc48e926223cc139e371da9fbbe1d4e600ff828a88c6b6",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "koi-bhaje": {
+      "status": "finished",
+      "readerSha256": "32d3af200123a05bbe35344ab7b73b5e3d64e70dc64c74fa3df1e097693ffd24",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "rom-rom-mein-basne-wale-ram": {
+      "status": "finished",
+      "readerSha256": "c51101c6fe99579ca76d30688e601bdf8c3218f33d12daa2dadad6514faef4ff",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "kaha-dhundhu-sai": {
+      "status": "finished",
+      "readerSha256": "657554b08bb6cebb452f4239b65db3f02d51d73eff5ca95fee33bbf0e8dad8ab",
+      "definitionCount": 24,
+      "reviewedAt": "2026-11-21"
+    },
+    "jehi-sumirat-siddhi-hoi": {
+      "status": "finished",
+      "readerSha256": "0aed7fc7d7ad67a7406807c9c8dc76d0ab1b9eef962e115240bbee4417cc7047",
+      "definitionCount": 9,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-ganesh-gananath-dayanidhi": {
+      "status": "finished",
+      "readerSha256": "7db9154cb2f589f8641cd53d448be1831f250174e4672f4436bc936029288ee8",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-shri-shankar-sut-ganesh": {
+      "status": "finished",
+      "readerSha256": "b5d5927d1465b0c65f26d2ae392004712c8f7696a5ceb121df871c865eaf9de9",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "ganapat-vighna-haran": {
+      "status": "finished",
+      "readerSha256": "fb3ae424e163efb4fdb0e7c1fc79bdd86db9497c5c80451e6207da8f1ef5d65f",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "main-dharu-tiharo-dhyan": {
+      "status": "finished",
+      "readerSha256": "435463f4b36582127640deddd5262f8ff8ce6b30095fd724eaa20aa0f03e59b7",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-jai-jai-giriraj-kishori": {
+      "status": "finished",
+      "readerSha256": "a5b8e914fc778d261447c3d5cdf98d5cb2de944fc0bdf7a5dafe8c2c9aceb3a8",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "tero-chakar-kare-pukar": {
+      "status": "needs_source_review",
+      "readerSha256": "141cb4c80cf403d1f20e562ca2976c645c25fb6c06cc12a40349edb2ef653ce8",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "v4-2",
+        "v4-3"
+      ]
+    },
+    "choti-choti-gaiya-chote-chote-gwal": {
+      "status": "finished",
+      "readerSha256": "86369c593f23ba3ae88f24ee454faefe0a5570f00f7fdd3a0f657c9732de9fd8",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "dhan-dhan-ramdas-guru": {
+      "status": "finished",
+      "readerSha256": "3c0afb7830f014314563292ee3e8af036d68fe35d1bd9d7a46e6bdbf5dd6c70e",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "sabh-gobind-hai": {
+      "status": "finished",
+      "readerSha256": "4e636be4bcc2dfc85c2ee3632be497c5dcacba486a644ada52bebfeaafb28ad4",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "gur-satgur-ka-jo-sikh-akhaye": {
+      "status": "finished",
+      "readerSha256": "3d67a46a1cf9b60d4fbdfdd96fa68e52977f173e3c2cd4ec0a71b7993079a49c",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "jin-prem-kiyo": {
+      "status": "finished",
+      "readerSha256": "3e6eebc48a0b7ce98ba336f6ce5b2267b0c6fb1bdb84435318b20f8c281c051b",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "koee-aan-milavai-mera-pritam-pyara": {
+      "status": "finished",
+      "readerSha256": "3bff37ec7fa513bd4fcbe5b98c1db37b49e0575fdac06e4165c9981a0bcb2f3f",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "mittar-pyare-nu": {
+      "status": "finished",
+      "readerSha256": "8b5f00339d87146dd4aa9662e121e960248f6324f52c391d0a4f5d2aba6c4723",
+      "definitionCount": 6,
+      "reviewedAt": "2026-11-21"
+    },
+    "tu-thakur-tum-peh-ardas": {
+      "status": "finished",
+      "readerSha256": "aebaf2756638b9b7693b57fab4f08d12d422afcc6e14a2ab4adb39cab6a23881",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "so-satgur-pyara-mere-naal-hai": {
+      "status": "finished",
+      "readerSha256": "56678dfbd553c213c06a86a0684cdb2c5d7afe1f20b1118d22e29909866bc0d2",
+      "definitionCount": 9,
+      "reviewedAt": "2026-11-21"
+    },
+    "tera-kiya-meetha-laage": {
+      "status": "finished",
+      "readerSha256": "f8e2ef7fe5e43c144a9b3643ec3efc70ce1e784edaa5a4ba686804a595afed0f",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "gagan-mein-thaal": {
+      "status": "finished",
+      "readerSha256": "e785dab718e381d17a9fc2b2103732acfaf5ddfabe9f27db047e48b04bacda1b",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "jo-nar-dukh-mein-dukh-nahin-jaane": {
+      "status": "finished",
+      "readerSha256": "11ca87244d6c9bbdddc799b0c9de31e6c9d97022785f865fd910fd8ef6f8c347",
+      "definitionCount": 30,
+      "reviewedAt": "2026-11-21"
+    },
+    "mera-man-lochai": {
+      "status": "finished",
+      "readerSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
+      "definitionCount": 48,
+      "reviewedAt": "2026-11-21"
+    },
+    "so-dar-keha-so-ghar-keha": {
+      "status": "finished",
+      "readerSha256": "9ffe919b43df5acf31dac9adfac25f3aa0320c2bf30fec98a345ab1995128b39",
+      "definitionCount": 41,
+      "reviewedAt": "2026-11-21"
+    },
+    "har-jiyo-kirpa-karo": {
+      "status": "finished",
+      "readerSha256": "4c31c291134b96db7c19550235cc20dbec7fa52d43be8fea7abe441c8ad25bfa",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "anuraniya-thokada": {
+      "status": "finished",
+      "readerSha256": "a5c3c0210f392f3a28da16f39aaee8cd7d6506ebca6ac4c8c8af0032e9cb09b1",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "darsan-dena-pran-piyare": {
+      "status": "finished",
+      "readerSha256": "081573a939948bc4ade73f4e344d5b052a8c42652e324552fc6a39a8678a9a60",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "beet-gaye-din-bhajan-bina-re": {
+      "status": "finished",
+      "readerSha256": "6fad54b2c1886c970bc4a32fca57d18fc284ae9f4ea55982759153b0fe8be57e",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "kaya-nahin-teri-nahin-teri": {
+      "status": "finished",
+      "readerSha256": "6024ee189ab8f5eb97ec2ea99045d2db62efde459502d29ef061dbdfd708a4b2",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "naam-japan-kyon-chhod-diya": {
+      "status": "finished",
+      "readerSha256": "722e440b656f4a323bb305e8c548a6ad5041973477bbeba0c4822481711330aa",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sab-paise-ke-bhai": {
+      "status": "finished",
+      "readerSha256": "50995c14fef1d65ecbb8f361422fbb45efc339734a89dccdcd26e7fc784ef06c",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "sangat-santan-ki-karle": {
+      "status": "finished",
+      "readerSha256": "092e4c8585d1eee76a48ae9ac11815dba843c46855e410d81e0474b82e24c524",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "sun-sun-sadho-jee": {
+      "status": "finished",
+      "readerSha256": "ef63733cec2b0ce46bdf021f0ce59443e2f5d5d78d268b14ed02d164c508e2d6",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "ye-tanu-mundna-be-mundna": {
+      "status": "finished",
+      "readerSha256": "e4a097dac4970fadbb7c28cdf43d1d051119d9a212fb47c744e820c80c8893e0",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
+      "status": "finished",
+      "readerSha256": "390595693d4cd87084d868502c03fb2e4a4fbb2add5c04e6df1ddb9a0234d9c2",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "prabhu-kar-sab-dukh-door-hamare": {
+      "status": "finished",
+      "readerSha256": "16771a2b19b0054d6048dd15ae61b11fcef151bda0b20c720eccf89917b12002",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "rama-rama-rama-bhajo": {
+      "status": "finished",
+      "readerSha256": "85bc51abe1db0becfa56e8ec731dc649a1fbc5fbc0692dc19651cdd4bf638776",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "siri-ram-kahe-samjhayi": {
+      "status": "finished",
+      "readerSha256": "2be44f16ad4907bbbfa9a3c82e7249d57068e8028ad06016e097537c76c9e68d",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "sadho-rama-anupam-bani": {
+      "status": "finished",
+      "readerSha256": "2db75f8bcd7d6d2d7557af3486bb3763af3d99b88acd4334813b0a45a9c52dd5",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "maharaj-bhavani-brahmabhuvan-ki-rani": {
+      "status": "finished",
+      "readerSha256": "5490f1b335ff32678c5e0bc4b70ddd8f84b86827d7050b701e3f0b4ebec79b7a",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-jagdishwari-mata-saraswati": {
+      "status": "finished",
+      "readerSha256": "780b8ebf7e5168580a07fbda02393c4c15dd9c5803d9604a5ecfd9307bad8fec",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "sharada-vidyadani-dayani": {
+      "status": "needs_source_review",
+      "readerSha256": "7de926c9647f91a2fa471f8bde0009f3fdcb63893841b657ec84d982b762f4a5",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "verse2-line3",
+        "verse2-line5",
+        "verse2-line6"
+      ]
+    },
+    "jai-durge-durgati-pariharini": {
+      "status": "finished",
+      "readerSha256": "9400dd495a0882b3ed5162a0cf5e71efe944d0381c3cc8a7b0d11d7555393340",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "chalo-man-jayen-ghar-apne": {
+      "status": "finished",
+      "readerSha256": "b13bee077560cbdb7696d0dc6a419d2ff55d0128dad80fc8a873f57dba9cd100",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "ab-to-mujhko-bata-mere-sai": {
+      "status": "finished",
+      "readerSha256": "e76ab82ed9febee9efd6a8a32155068af593a9fdd4925ba641b169102dd2c3c0",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "baba-tum-antaryami": {
+      "status": "finished",
+      "readerSha256": "2b829336163274b4171f1dacd89c89ccb16fd7be56968cbe2a197daa926f2475",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "hey-nath-ab-to-aisi-daya-h": {
+      "status": "finished",
+      "readerSha256": "a8596ce7e317255e94731ece0602a570be27548ccaae80f1092da24df0a13a7a",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-sai-apne-charno-mein": {
+      "status": "finished",
+      "readerSha256": "39305e01075ea3ec7a647bfdebd5c31b414a8d3a726e422db9486e1761fc5b6a",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "main-murakh-main-anpad": {
+      "status": "finished",
+      "readerSha256": "e6be4bd26ac0beade3dae24816211ebb4c54bd50c63e44ba6a0782b18f80398d",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "man-ke-manjeere-se": {
+      "status": "finished",
+      "readerSha256": "a76aa5f1eee23b17cc3784489a2f9322f3b3ec2c7817c14c2064df77d2ae5e61",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "mere-sai-ke-darbar-mein": {
+      "status": "finished",
+      "readerSha256": "40827c9b66de32e7f8e21dd2917ee3c645fe06f5db96dc91cbb7115d040cadff",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "o-bhagwan": {
+      "status": "finished",
+      "readerSha256": "4530903c68f25c7bc5cbe442c49ea6205ed0147277659bc9d45ae74fa793a96b",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "tumhi-mere-lagan-lagai-re": {
+      "status": "finished",
+      "readerSha256": "328e09a461045f187e05c9b0c4d06ac4efc37bb4095b16f83f165147ebeda511",
+      "definitionCount": 6,
+      "reviewedAt": "2026-11-21"
+    },
+    "mere-ram-tum": {
+      "status": "finished",
+      "readerSha256": "d5876691d29d0e6af4168309c2e5815e3397368c620bda4b05f19602aa810c95",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "kurai-ondrum-illai": {
+      "status": "finished",
+      "readerSha256": "4bf898c24b7f5c4d934495d681d154e1f4b876e574547bbea3086f92970159da",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "ghanshyam-sundara": {
+      "status": "finished",
+      "readerSha256": "e29c9be0c9a3a7f0a59ac1c4232bf8fbb0a91a6638e285834ec63f15619ede31",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "maili-chadar-odhe-ke": {
+      "status": "finished",
+      "readerSha256": "b11210e7244ef1323128ae047c4558afa37ad4fba0acec48ec86ad3d5e2ac2a4",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "samapti": {
+      "status": "finished",
+      "readerSha256": "9c64a35d9558a66e6aa90dfe2a799ff1bb85e90225bf7bd0e1981246ca040379",
+      "definitionCount": 7,
+      "reviewedAt": "2026-11-21"
+    },
+    "yeh-garv-bhara-mastak": {
+      "status": "finished",
+      "readerSha256": "eabbe348bf1ada88290ee5be4de1fc045e474e8c73628ec0a3a14699bd0785e3",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "sankat-mochan-naam-tiharo": {
+      "status": "needs_source_review",
+      "readerSha256": "f33d2a4972b2cf72e4ac87b09374b64fba4363ed790a296e1f716bd9663f9265",
+      "definitionCount": 26,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "v4-l1"
+      ]
+    },
+    "aarti-kijiye-hanuman-lala-ki": {
+      "status": "finished",
+      "readerSha256": "f2a420ae644b48c79bb22bc610e21bc91d69d5a4d95073f2c744590785d964a8",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "jo-kachu-sankat-hoye-hamaro": {
+      "status": "finished",
+      "readerSha256": "f0526f26552b58aca1d91eecf36d793f6232d4266a5ed8a77d8a1bffc5095d7a",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "hanuman": {
+      "status": "finished",
+      "readerSha256": "bc84346514879f8647292b828b4aa10829bdf52a6d690754ea7d125405bd499d",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-dukhbhanjan": {
+      "status": "finished",
+      "readerSha256": "fd9d32d6f521f318855e11e3821a075d29d334936e7e0b899e6614a7d5e510b4",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sampati-vandana": {
+      "status": "finished",
+      "readerSha256": "68713c36d41e684af89333ddb604534f85afdfd57b24353908d10bc82b98109f",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "hanuman-chalisa": {
+      "status": "needs_source_review",
+      "readerSha256": "221b2777e5a11893b3574bc7cca8ef9475605e61dc6ef250dd0ca2d3a3331324",
+      "definitionCount": 47,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "chaupai-18"
+      ]
+    },
+    "hanuman-bhajan-hariharan": {
+      "status": "needs_source_review",
+      "readerSha256": "b192b7082fd6536750aeffbde1a0b8d5ac8cb9931c3d8d50f99c584df6ccdf08",
+      "definitionCount": 231,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-021"
+      ]
+    },
+    "sampurna-sundarakanda": {
+      "status": "needs_source_review",
+      "readerSha256": "5e6099c3c0299b8139c38914f2298f7c7479816b2b5668ed3e472c7764a12a49",
+      "definitionCount": 539,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-013"
+      ]
+    },
+    "mahavir-hanuman-gosain": {
+      "status": "finished",
+      "readerSha256": "716f51c5028d6c8ea62cbe78c8d67f4c09aacab4557bb23f20478937140fb60e",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "shree-radhey-govinda": {
+      "status": "finished",
+      "readerSha256": "d1c3d12209922a19aa9668c079aab06a98034737c1a119ed8150fe95e389a133",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "aarti-kunj-bihari-ki": {
+      "status": "finished",
+      "readerSha256": "1915c6f3b6874d71b71b45b9b241d1b3926c68319b318b9f83731b9dfee33b4c",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "prabhu-ham-pe-kripa-karna": {
+      "status": "finished",
+      "readerSha256": "176fcadc97d674a442180655b84e19cc6356765bfb644962869a772a2cf78730",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "ram-sumir-ke-raham-kare-na": {
+      "status": "finished",
+      "readerSha256": "2241a45113ec0237d8c4df8309f7904a266146bbe871ffd3cc46339dff2cb2ff",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "daata-ek-ram": {
+      "status": "finished",
+      "readerSha256": "90013012a6d4c2644cf2dd9ea11638b785d22e191212e9c964043275e7ec5955",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "tera-ram-ji-karenge-beda-paar": {
+      "status": "finished",
+      "readerSha256": "05abe1a2d62fef75e6bef597edda65a0dfdbe06c30e69ced10568c84bc4b84ee",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "prem-sahit-sab-bolo-kirtan": {
+      "status": "finished",
+      "readerSha256": "6b83742ffee7e0c77f5015120b5f992dafd3d767f569be66e41cf7d9634080ea",
+      "definitionCount": 28,
+      "reviewedAt": "2026-11-21"
+    },
+    "man-maila-aur-tan-ko-dhoye": {
+      "status": "finished",
+      "readerSha256": "7dea19f29d6d451b2aea044a97a57d4a9c24f595656a8b78684231ac1f3c9dce",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sweekaro-mere-pranam": {
+      "status": "finished",
+      "readerSha256": "23252dd7f1fddfa9e15aea2b8f60b78dd1a5ddfed75bf50ee879efc3d607fbf2",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "aisa-pyar-baha-de-maiya": {
+      "status": "finished",
+      "readerSha256": "a37e1228f50a55cc3ce98bebad43cdd20fe5b350d19106fafca4a962d99458ba",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21"
+    },
+    "maa-jag-janani-jai-jai": {
+      "status": "needs_source_review",
+      "readerSha256": "2e83760bd820d40085617bf74c509f8125ba97c9018c230f617f31a435ca5799",
+      "definitionCount": 43,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "v9-lead"
+      ]
+    },
+    "namo-namo-vindhyeshwari": {
+      "status": "needs_source_review",
+      "readerSha256": "59be04094257ae1a9825960e7489cfa3577ba1b5dbcaf513554cab9189877f7c",
+      "definitionCount": 41,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "verse-12"
+      ]
+    },
+    "durga-chalisa": {
+      "status": "needs_source_review",
+      "readerSha256": "17e250568a13bff0d4f0cb2acfba71d62e973e0d34f4497c379ee615ee4a53ec",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "verse-2"
+      ]
+    },
+    "sawan-gagane-ghor-ghanaghata": {
+      "status": "finished",
+      "readerSha256": "c047fd23eba3d9b1d1205d9c81297abbb0a5f64e573bc0507e07df0f0409dda2",
+      "definitionCount": 24,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-bhole-nath": {
+      "status": "finished",
+      "readerSha256": "dab74a39dcc49e9c8e1099d193319f490b42b1f129271585a26bd10d411db46b",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-shankar-bhole": {
+      "status": "finished",
+      "readerSha256": "5477562bfb98c3fe3e2549889e7cbb30ec2c5ad592c588a9c99e22b8bce84b4f",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "janam-janam-ka-das-tumhara": {
+      "status": "finished",
+      "readerSha256": "0757c968760c5dbda98d098edb264b29232d18f8e84e0d0f875a087724a3a7f9",
+      "definitionCount": 26,
+      "reviewedAt": "2026-11-21"
+    },
+    "ma-karali-kali-ma": {
+      "status": "finished",
+      "readerSha256": "2bf94e860d6bff4a11f463523572f91ac5ee935ac8e95fcd1ce50a0aef1db10a",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "kya-tan-majhata": {
+      "status": "finished",
+      "readerSha256": "3efe07e97a71b30e6e3ccc8fad1810c254fbbbb2814f4265ba633328093ba126",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "sunta-hai": {
+      "status": "needs_source_review",
+      "readerSha256": "7a4ac2ef07038f3d904265ff9b3622d46856e3c5b4465b28ac52059a316733e8",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "din-bhar-re-jo",
+        "din-bhar-re-jo-ajar-amar"
+      ]
+    },
+    "mana-masta-hua": {
+      "status": "finished",
+      "readerSha256": "c6c2012d645c873780f19c95d0e01a9083a9cd946155694776dd1476799704ae",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "nirguna-galiya": {
+      "status": "finished",
+      "readerSha256": "1715397a2a807e3307081aab8b0a09e92172d6e19c0c0e3a2c746e1a3ad92964",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21"
+    },
+    "rama-rasa": {
+      "status": "finished",
+      "readerSha256": "27781d1cf580f503328aea6b7f5bba2b56f00b1df34aad88ce1ee2efae8196b0",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "tere-dvar-khara-bhagvan": {
+      "status": "finished",
+      "readerSha256": "30308f3e77a1c5d527887fd5a2b448bbf4c2d3ff91e55068252ed124c175f195",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "prabhu-more-avagun-citta-na-dharo": {
+      "status": "finished",
+      "readerSha256": "e82f8604c0e9ebb9b90c5877de79cff5653c043aed736501e3f89fac0b105cfb",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-ambe-gauri": {
+      "status": "needs_source_review",
+      "readerSha256": "a03909f0537b7b2b19f5fa8ed43145100c170bcd198b8ab5cba70026c157f9b5",
+      "definitionCount": 42,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "verse-11-line-3",
+        "verse-5-line-3"
+      ]
+    },
+    "jaun-tore-caran-kamala": {
+      "status": "finished",
+      "readerSha256": "6a1855bc4f0173b083b1f148e99f3cd369b1db3a0e04c880f83912d6ef5dd12c",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "leke-bhesh-fakirika": {
+      "status": "finished",
+      "readerSha256": "ef3ed5444fd4820c6e739e4cfda0de2514d3658cd50b98ccd2f1581cf9c091ce",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "mujhe-apni-sharan-mein-le-lo-maa": {
+      "status": "finished",
+      "readerSha256": "0f0216d5e8fcf480339759d5053ae838fc8a35eca27abff9f0c48c990a94a6de",
+      "definitionCount": 54,
+      "reviewedAt": "2026-11-21"
+    },
+    "sheronwali-kripa-kijiye": {
+      "status": "finished",
+      "readerSha256": "534a6fca8e3787c087b33a70758b7963ada3f9dc45a905d21af4d5af0923f479",
+      "definitionCount": 70,
+      "reviewedAt": "2026-11-21"
+    },
+    "jhoothe-jag-ne": {
+      "status": "finished",
+      "readerSha256": "322fd2b4b3a870a39f10e228e072376c36bda95e7d611ed108586a5147b2ad7a",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "auga-na-jauga": {
+      "status": "finished",
+      "readerSha256": "efa0fd031dc49f92301d1b8da9ff9a222e3fbb09afe5077f4e5287961ab95b65",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "mera-jeevan-tere": {
+      "status": "finished",
+      "readerSha256": "7545683c98515fbf8d4c7580dc75647992041826fcb800fa79c1949c80b0bfa5",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "namaskar-mera": {
+      "status": "finished",
+      "readerSha256": "88eb2c279f956756dfc1b928f3f8154047e9430b12875f203493dd7b9d200ab6",
+      "definitionCount": 33,
+      "reviewedAt": "2026-11-21"
+    },
+    "neelkanth-mahadev-dayalu": {
+      "status": "finished",
+      "readerSha256": "795551ced5be2226578408cb17a29400518c8bc1cfe554203c1d6610d3611eda",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "o-shirdi-ke-sai": {
+      "status": "finished",
+      "readerSha256": "70e56822897ee5d49f87b7523f7732cfc3258ee03f451563452d8fd21c9862ba",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "o-shirdiwale-sai": {
+      "status": "finished",
+      "readerSha256": "2da02a153c97cef00241482180ceb56f4837200334a43ff7935183b2cc73dd9f",
+      "definitionCount": 30,
+      "reviewedAt": "2026-11-21"
+    },
+    "om-pandit-jasraj-extended": {
+      "status": "finished",
+      "readerSha256": "5065b3fe7fd7ef89ca107778eaa27697dcc269e75bf652a264ca738d293dd1b2",
+      "definitionCount": 1,
+      "reviewedAt": "2026-11-21"
+    },
+    "om-pandit-jasraj-mandukya": {
+      "status": "finished",
+      "readerSha256": "f767a9fa7582cc8d02ce288ac042cba9e759a0f5f7ecdc1dc672280243d5a0f9",
+      "definitionCount": 6,
+      "reviewedAt": "2026-11-21"
+    },
+    "meri-ek-antar-abhilash": {
+      "status": "finished",
+      "readerSha256": "e7236d8b8806bb583bda592757444a54314bc6ac4b50820f992eb2417cdafe2b",
+      "definitionCount": 28,
+      "reviewedAt": "2026-11-21"
+    },
+    "jagadamb-jagadamb": {
+      "status": "finished",
+      "readerSha256": "95087a07be22bd7e2c2d4323add014f06d2ed4ea2c6c267defc55fceff9b1a2c",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "rama-rama-ratte-ratte": {
+      "status": "finished",
+      "readerSha256": "6407108823e61b71c1f54637f85537131c01895b744b979ed78597109c83eb19",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "data-ek-sai": {
+      "status": "finished",
+      "readerSha256": "09285ce32b439520b2ab8f04a7ed560cee0c4260e75b5ee91d5a0e5ec0f3ae18",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "jab-subah-ki-aarti": {
+      "status": "finished",
+      "readerSha256": "f57dca4d754e9816843769d7c9263c63aacd2da8404e8e3d33660cab89eb1345",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "jeevan-ke-har-mode": {
+      "status": "finished",
+      "readerSha256": "3be9b5bf82daefcc5c1d5625cc54c5826e6bcd504b078e1e2c7967b1be065e02",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "doi-kar-teka-hei-matha": {
+      "status": "needs_source_review",
+      "readerSha256": "a9fa8499f446278b0f4517326d9dc46e6af7013d4a3790b53f5f97d2c8b2d8d3",
+      "definitionCount": 94,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-79-tuka-kahe-dipa",
+        "line-87-jagrita-karo-rukminivara"
+      ]
+    },
+    "lalakari": {
+      "status": "finished",
+      "readerSha256": "1f4e4a78e9da57b877912eeef943d1f223adfd70f9e881eaaec8b049fcbed664",
+      "definitionCount": 2,
+      "reviewedAt": "2026-11-21"
+    },
+    "main-kismat-ka-mara": {
+      "status": "needs_source_review",
+      "readerSha256": "2ab39699d7054cef36158fde1806c7358506b4d1522c1b6478e9b9a101ef4900",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "v2-2"
+      ]
+    },
+    "muha-fer-jidhar-dekhoon": {
+      "status": "finished",
+      "readerSha256": "30b0a0d9404e215fd5f419c97b1bcfe64f8060559eaafe08dcb9280cdb573945",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-ke-11-vachan": {
+      "status": "finished",
+      "readerSha256": "57ab30f5ec205c2cb138ac0abd5fc9abc7db21580b7cd5fa305998ef3d959b68",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-meri-raksha-karna": {
+      "status": "finished",
+      "readerSha256": "6367907fb2cbae9faa7d372e87fb0504dca3edd84fc54b751b90684187a3df5b",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-tere-charnon-ki": {
+      "status": "finished",
+      "readerSha256": "6a1b577f11758c50a2f5df1e1f6ea437f542235478c7085a698d8d9af2e2a648",
+      "definitionCount": 29,
+      "reviewedAt": "2026-11-21"
+    },
+    "vyartha-gavaya-is": {
+      "status": "finished",
+      "readerSha256": "aac2f1a0e724028840b60f4c8028b08267559194b5eb13e1cbfacb470860e3f7",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "bhiksha-de-de-maai": {
+      "status": "finished",
+      "readerSha256": "f57d2bcc6e21761088b482358803bef7c02b6ffb5b4e9493eae6e5a5f39dc42c",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "leke-chalo-palkhi": {
+      "status": "finished",
+      "readerSha256": "c93697aa2f8d1ea1a7630d270b266ab9981b1900f792b8df8991364aa6abd755",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "thoda-dhyan-laga": {
+      "status": "finished",
+      "readerSha256": "b780fea434a77a078c8fbed16af924d21dc4ef61d173313f3a716a2d2930e1eb",
+      "definitionCount": 26,
+      "reviewedAt": "2026-11-21"
+    },
+    "shej-aarti": {
+      "status": "finished",
+      "readerSha256": "3fb6d519539c4fef9001393ae5753c47c401de5d5b9e8717c44da677f8faa937",
+      "definitionCount": 82,
+      "reviewedAt": "2026-11-21"
+    },
+    "kakad-aarti": {
+      "status": "needs_source_review",
+      "readerSha256": "3dd96ab79c87ef4ca03dcf562a2dfc5dd91cd287cd4f7693756e0a13da9f9851",
+      "definitionCount": 249,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-116"
+      ]
+    },
+    "madhyahna-aarti": {
+      "status": "needs_source_review",
+      "readerSha256": "a09c08082fc50a596c1a512acb25ea3f4201392e238ba85a6dbd1d516bd704d9",
+      "definitionCount": 177,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-147"
+      ]
+    },
+    "dhoop-aarti": {
+      "status": "finished",
+      "readerSha256": "c14cad919d6a7a27e30dda316088ae2b58eaafb69b79bb1fe9031afe7a2b0f66",
+      "definitionCount": 164,
+      "reviewedAt": "2026-11-21"
+    },
+    "naiya-paar-karna": {
+      "status": "finished",
+      "readerSha256": "a80debca7ffc4e7f8e885220fb2c4f9c5116587ef1ca4d223d4d3c25b1c39efa",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "bhagyada-lakshmi-baramma": {
+      "status": "finished",
+      "readerSha256": "7ddee40078cdb79a034fc3df811ced6158918dd988570d8ea1af60834f7a334f",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "raat-dhal-gayee": {
+      "status": "finished",
+      "readerSha256": "e98eb6f9c82ab632b435eb6ab7772766bb0f46fc27cc900ca66f70093d541134",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "gaiye-ganpati-jagvandan": {
+      "status": "finished",
+      "readerSha256": "db918659c58072fa01be49b69c497103e15ac37ed90a80dfb1aad6e2d1348bca",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "vighnaharan-gajvadan": {
+      "status": "finished",
+      "readerSha256": "e563b429b29fe2106fe89d3e6c9aea60601995f4f6596923b63b126c0223c31a",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "janani-main-na-jiyun-bin-rama": {
+      "status": "finished",
+      "readerSha256": "28e831fc7b5e3af15ed07e16647b01721395d520572b8931756de64184458678",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21"
+    },
+    "damaru-har-kar-baaje": {
+      "status": "finished",
+      "readerSha256": "86867eb4f73823462e7e28c34ddc859984a572a3b87512ad79a5cddb0be1c122",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-shiva-shankar-jai-gangadhar": {
+      "status": "finished",
+      "readerSha256": "b93348c0119488d2be485e555cf64fbb5d317f7b02fb7d3a74893ff458170cdd",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sheesh-gang-ardhang-parvati": {
+      "status": "finished",
+      "readerSha256": "5aae2bfe3bb341a159fd67f367ca774eff82e5a5ce349de77ad3084d1def9fdc",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-shivshankar-he-karunakar": {
+      "status": "finished",
+      "readerSha256": "6cbbc5d5d83460924268ea51d544a62292aa2dfec5d461fec98f8e12d479b330",
+      "definitionCount": 24,
+      "reviewedAt": "2026-11-21"
+    },
+    "mahadeva-vishambar": {
+      "status": "finished",
+      "readerSha256": "13848d5f562884d4886fa73b904192bafe470e5dce26fd324c799484927dcdc9",
+      "definitionCount": 6,
+      "reviewedAt": "2026-11-21"
+    },
+    "jaagiye-raghunath-kunwar": {
+      "status": "finished",
+      "readerSha256": "1b372a7847e0884120155d287cece04407e4dee75be5b155e0b1f8f95e48fac8",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "shri-ramachandra-kripalu-bhajman": {
+      "status": "finished",
+      "readerSha256": "069d984f3aa0054e48ba0b56cebc743b1e0df69fbd5575e6d783fc614d056019",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "benti-chaupai": {
+      "status": "finished",
+      "readerSha256": "3abe639d9b1bfc6655a1a9835e5699d6a1738a6358f1135f7e4244ed71e0b32d",
+      "definitionCount": 101,
+      "reviewedAt": "2026-11-21"
+    },
+    "arunachala-akshara-mana-malai": {
+      "status": "owner_protected",
+      "readerSha256": "ce52d73efde671b12bf80542384e7bd5c4e751973370b5aa6c114de1bf6cef8e",
+      "definitionCount": 115,
+      "reviewedAt": "2026-11-21",
+      "ownerAuthorship": "Owner reconfirmed the two named protected translations on 2026-11-21; exact English is locked in editorial_baselines.json."
+    },
+    "chhanan-chhan": {
+      "status": "needs_source_review",
+      "readerSha256": "da6efe4a572f9d70523193bf79c415bd7238a67612b9c0110ae681abffad04eb",
+      "definitionCount": 26,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "anant-teri-sharan"
+      ]
+    },
+    "mann-ke-pawan-mandir-main": {
+      "status": "finished",
+      "readerSha256": "7277b97ef9a797395739ddf8adc08afa5a8686ea94ce245fd3b63a42670142b5",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "sakatore-oi-kandiche-sakale": {
+      "status": "finished",
+      "readerSha256": "ba532da6691d935efff627045c1c0cdeddbd551f4edd5261c1501a7c134573a8",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-ba-prakash-hai": {
+      "status": "finished",
+      "readerSha256": "50a7f3f1329509920ef9163ba66948cf737ddf3d819e65da7a651c1051664128",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-ram-ram-jap-le": {
+      "status": "finished",
+      "readerSha256": "1d87dc3b58cc3bdaff13c9f40d94487a4d32c8ba9d903a7ee44191250e0dfba1",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "thanu-karagadavaralli": {
+      "status": "finished",
+      "readerSha256": "44250a536e9a19a7f91897b7cc8b3863182bdc388316e87161dc0a45066e5a0f",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "chal-der-na-ho-jaye": {
+      "status": "finished",
+      "readerSha256": "f6c82ad6e9974be56ee548b0fde62e4d22c3d4a78430a37663c25f2201f9ceaa",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-sai-shankar": {
+      "status": "finished",
+      "readerSha256": "0950a6ddfd89044cc87d44a1a67b9a632f201bd485f4d823998c0b67aaf408f6",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "vishnu-sahasranama": {
+      "status": "needs_source_review",
+      "readerSha256": "1389fbb39798c45f2d2ec3da415032cb700fe54a2e2be60913dcf170b62b82fa",
+      "definitionCount": 154,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "meditation-2",
+        "meditation-4"
+      ]
+    },
+    "patita-pavan-jai-raam": {
+      "status": "finished",
+      "readerSha256": "bbab727307f2f304977519a76144d419492e5a20c0f84976c8620ca2d60e6473",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "madhur-madhur-sai-naam": {
+      "status": "finished",
+      "readerSha256": "b861cbf61fbec055865fad5d10217cc0d1fbf43bea681d82fae22bd3ed6265e8",
+      "definitionCount": 5,
+      "reviewedAt": "2026-11-21"
+    },
+    "hanuman-bahuk": {
+      "status": "needs_source_review",
+      "readerSha256": "b0b1fcdf77eb50d48ec37719f2cf19bf7b2f341bf8ab189beb1188b7e79c7e17",
+      "definitionCount": 202,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-032",
+        "line-033",
+        "line-050",
+        "line-057",
+        "line-062",
+        "line-064",
+        "line-087",
+        "line-116",
+        "line-122",
+        "line-134",
+        "line-153",
+        "line-167",
+        "line-176",
+        "line-178",
+        "line-187"
+      ]
+    },
+    "om-namah-shivaya-damaru-paani-shool": {
+      "status": "finished",
+      "readerSha256": "e30c81d575b3bb026a0d7f15b0be124a5b22da386495cf7c05c7a57d63f1f9f6",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "shankar-ho": {
+      "status": "finished",
+      "readerSha256": "d59ab299711cd14c1d287caece8db9bd6b054bf69f5811fd4fc677147c75e65d",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "pradnya-vivardhan-stotra": {
+      "status": "needs_source_review",
+      "readerSha256": "8e24b7922a2067ce00babe24fa23c4f841a233bf3bca5ad4de6cca9a7c597c88",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "verse-3a"
+      ]
+    },
+    "mati-re-mati-re": {
+      "status": "finished",
+      "readerSha256": "8f4ebf1e86dfc5d4362efbe5158e657863e47a5d7ad07228180fd9775f250db3",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "jaise-suraj-ki-garmi-se": {
+      "status": "finished",
+      "readerSha256": "681d2c138b54e06db24d5c64bca4ec352cde53b707aace557aa420a8ab1c6890",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "shejarti": {
+      "status": "finished",
+      "readerSha256": "94a7aed8eaf0e4e1628470ecea9ba02d8579111f4b123b618c58ed171cf2b75c",
+      "definitionCount": 108,
+      "reviewedAt": "2026-11-21"
+    },
+    "geet-jaisa-main-hun-nirashrit": {
+      "status": "finished",
+      "readerSha256": "b272ea76453ce0a1f60739a98029235fe38ce26710ac2cd52db31e8d24779ea0",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "shirdi-wale-sai-baba": {
+      "status": "finished",
+      "readerSha256": "854af65b776ebd4f68db723583d8fd6e7baaea1b5dc390a3bfb3656ff479566b",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "shree-sai-aarti": {
+      "status": "needs_source_review",
+      "readerSha256": "1da1ed6601255f554becb8a2bb3485905fbcebe403bb1e22ed21bcff946d5666",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "line-verse-7a"
+      ]
+    },
+    "balada-beka-re-lagila-ghanti": {
+      "status": "finished",
+      "readerSha256": "5c74d52bcc794ea33069160550590ea89aab36123e4f677347f934e6371f10a2",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "chala-patha-ra-geeta": {
+      "status": "finished",
+      "readerSha256": "96ea6801e5636925b083b292f3a0bdcaec15847915eb13a4210cd6a4c75b82f1",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-guru-gobinda-gosain": {
+      "status": "finished",
+      "readerSha256": "828c667d62d63236ebb964a3f5eacb92af51a748d1d7d7486828196b9a880feb",
+      "definitionCount": 7,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-sadaguru-tume-mor-haatku-dhara": {
+      "status": "finished",
+      "readerSha256": "977de0dd4f26eaaf8884f49e58f3884fb7eae361f96b349ba80543232b9a9b26",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "jiba-dale-dale-jae-lo": {
+      "status": "finished",
+      "readerSha256": "7bd2fa68b6df98e1ce57377374aadac265e6c8ffb874de00e5aedb509b735183",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "jogii-re-kian-jau-dura-deshe": {
+      "status": "finished",
+      "readerSha256": "a7cb6bf1d93fd1426b97cff658d62c96214456cda445258b62610e0c9ea930cb",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "mati-re-mati-re-kete-dakuchi-re-tote": {
+      "status": "finished",
+      "readerSha256": "29c60a0a4ff0b7e3b63f22ab6dbd3bf3f8f7d6b600dc4350a49180d29b4897a3",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "shri-guru-prarthana": {
+      "status": "finished",
+      "readerSha256": "7f7a7cc4f6c9e61c8dfd3a0990856929c7d2dc00016d9762ceea328f9d07651e",
+      "definitionCount": 26,
+      "reviewedAt": "2026-11-21"
+    },
+    "bela-gadi-jae-kala-sari-jae": {
+      "status": "finished",
+      "readerSha256": "ebde1dca45314b9c7cafad7c0c8266cb0c1ad9afb4ba0d86eea21b945e7c58c5",
+      "definitionCount": 24,
+      "reviewedAt": "2026-11-21"
+    },
+    "dake-aahe-jagannath": {
+      "status": "finished",
+      "readerSha256": "ba2c281e34c72d8b0bf0cf3dcc0fb9ef249ee4a43ac798095caf9056902a4b7c",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "e-barashe-aasi-achi": {
+      "status": "finished",
+      "readerSha256": "b8fc4f51bf3ce534e29c672e47c42c454ee326089b0c07802ffc0da0ef28c168",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "jagannath-jagannath": {
+      "status": "finished",
+      "readerSha256": "31f2c0b833e360ec56a1be183be2495edabf16e399c7b405b8a52f6fa4e74fd8",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "janena-mu-kiba-debi": {
+      "status": "finished",
+      "readerSha256": "9fd6c0ea7fd96b93495de2132ddfac0396ad6622a35de99a9c2e9a9a87d45c09",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "mohodadhi-kule": {
+      "status": "finished",
+      "readerSha256": "2a06b230994ad9337e65d339bd5eb5e6d663cf5d363e7fbcdd0798c3672e39b7",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "shri-kshetra-biharii": {
+      "status": "finished",
+      "readerSha256": "fcbf081feddde4a23683eb2dd36532fe7ebb5f24c2d68bed38eb8288c8594711",
+      "definitionCount": 63,
+      "reviewedAt": "2026-11-21"
+    },
+    "baishi-pahacha": {
+      "status": "finished",
+      "readerSha256": "d4b358335314f2d22dc364c69253989a5458ded75391207ce44faa54ad006672",
+      "definitionCount": 30,
+      "reviewedAt": "2026-11-21"
+    },
+    "aao-aao-padharo-mere-guruwar": {
+      "status": "finished",
+      "readerSha256": "5b95229cd6dd2f11657888d407acb6e3de361280aff3014f43ba8bed173e47a2",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "jab-dil-udaas-ho-to": {
+      "status": "finished",
+      "readerSha256": "a7685e05d2cc3e994fba88ecc894081143cee3bd7e7fde0f4dac1b8084cdd5da",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "mero-abgun-bisra-karo": {
+      "status": "finished",
+      "readerSha256": "518c5794968add6ef20802afc9859066c5fcdf938e80d687f5052edcb3322cd7",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-tum-humse-jaldi-milo": {
+      "status": "finished",
+      "readerSha256": "e6d0df94e5a80a5ae9b8a7e34c417fa68061347241691802e209cf01e53c7b44",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "zara-to-itana-bata-do-sai": {
+      "status": "finished",
+      "readerSha256": "c07df1c9ed35983556cc82c855b663626ad768cb94c0feb48192e1a0c2bb8ea6",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "aasa-sai-pashe-mora": {
+      "status": "finished",
+      "readerSha256": "c18f7f39ff8ea3e8108942e05727b15c4f7f383d61b5bd5f6a5784a0087b586c",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "aatma-ra-antar-kone": {
+      "status": "finished",
+      "readerSha256": "93535e7dd31b18992ce7208acc5dfb780e8e410614a6195d681b5f9ecb5cccf5",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "bhanga-kudia-mu-sajai-rakhichi": {
+      "status": "finished",
+      "readerSha256": "2a8300379b4f0ae7f1f5adc2c22bad8d56414901b8ee53b91c7a234968e5aa26",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "chalo-shirdi-ku-jibare-sabhien": {
+      "status": "finished",
+      "readerSha256": "90207dd0c890e787f12299f1af3a62d0869993131bdbb45b88be74ebf77ca5cd",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "deha-re-mo-lagilani": {
+      "status": "needs_source_review",
+      "readerSha256": "668fe04494a041df510e84cc5f8d54f49069a783cd69dbc1b321c5a883660641",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "prana-holi-amodae-1"
+      ]
+    },
+    "guru-charana-re-karo-dhyana": {
+      "status": "finished",
+      "readerSha256": "1a71202a575046f9fc0712a4a4c58ca119ebaa1aa7d6e49a3f6127c312bf73c2",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "guru-he-mote-ete-para-kian-kala": {
+      "status": "finished",
+      "readerSha256": "a4b758fac09a43d58520523eac863d41362eb16279f9f89d62006ed557d49d40",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "guru-karo-aparadha-kshyama": {
+      "status": "finished",
+      "readerSha256": "69217d73dabccad0a4d7e15a6bf027ff5b989a4f9824ef42eae194b6f13b0e30",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "he-aanadamaya-prabhu": {
+      "status": "finished",
+      "readerSha256": "be14378cb80730f0dcc63db68f3b6268d3ebee4749f5b1b75542db3304c8de8a",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "janena-mu-debata-ke-janena-mu-ishwara": {
+      "status": "needs_source_review",
+      "readerSha256": "7cbc734546bb6afd7b7bf8a0ea51f4c8d8998efb13a8dfc2ed43579d6df2bbeb",
+      "definitionCount": 32,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "bihuchuna-chakara"
+      ]
+    },
+    "jhare-tumo-krupa-ghana": {
+      "status": "finished",
+      "readerSha256": "19f8eb5a9111b68f0389d3f3377f0e058f2bab9a8066fbad99bce6d62566c5d6",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "kie-se-aamaku-paliba-kuha": {
+      "status": "finished",
+      "readerSha256": "f4b9e905cde8bfc7438c99e9c662e1bc885077f4094ab8317941d82394763281",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "luha-bohi-jae-tumo": {
+      "status": "finished",
+      "readerSha256": "b03136fcbb75282f9e969e7a8894bbc82913dc438665a75a925ea8cd7bc02a77",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "thara-ku-thara-mu-adhia-paduchi": {
+      "status": "finished",
+      "readerSha256": "0692234ec45720fafc4d3d0241b8dd2a250553de5813ac30d10225f9997d3105",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "tumo-krupa-bina-prabhu": {
+      "status": "finished",
+      "readerSha256": "8448cd8a3337f0caefefb6eb93e081af59acab2da6fb6dbaa69bc33968db6824",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "ishwar-se-kuch-mangna-ho-to": {
+      "status": "finished",
+      "readerSha256": "4d64edb9eb0becc81ac37970c0211060eb9138966d9c329235880117b9df64ec",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "kete-lagaichu-tu-naat-re": {
+      "status": "finished",
+      "readerSha256": "1e138260c79477fbd29f8883c0d49070a779b358a422073e86e4c8c2d69818b3",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-ganesh-jai-ganesh-pyare": {
+      "status": "finished",
+      "readerSha256": "e82f8ab1f7d8b243e2e3008fd65fb09dab978d8049daef39a0204135608a2dd6",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "aarti-gajvadan-vinayak-ki": {
+      "status": "finished",
+      "readerSha256": "d41d1f8e34b0b108355183fea6be0457bea8245904636f161c38dadec9ac176d",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "parvati-devi-mahamayavini": {
+      "status": "finished",
+      "readerSha256": "bc01fe906f3263c442b30b0a40671edadf9ca2bb5ed2644092b3edfe678f58bc",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "aarti-kijiye-shailsuta-ki": {
+      "status": "finished",
+      "readerSha256": "89d7bddc93c81462c9c5d10ba82e1d4e77721856ca8741a6e480cac352029f4a",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "dekho-mand-mand": {
+      "status": "finished",
+      "readerSha256": "cae94655afd8d59c1b1a4a96425068a5de0713fa5e8fea3b3c4a5a742bb92930",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "duniya-se-door": {
+      "status": "finished",
+      "readerSha256": "985bf95a68dee36f594ce40120c0c7622af702dca9f1ce7aebeb6ef4d3064c21",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "mera-aap-ki-krupa-se": {
+      "status": "finished",
+      "readerSha256": "af7fc84eaa6adedc67a1fda1d6b90083a0da313f182d0994114f457de0a36ac2",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "mera-chhotasa-sansar": {
+      "status": "finished",
+      "readerSha256": "191a160fb05a44213b2fb6ca0e10bd57961a6daeefdc119d31cd2b5fb78ceade",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "patta-bola-vrksha-se": {
+      "status": "finished",
+      "readerSha256": "c064ce3ed7048be1f8925571fd79c6944c1d128aee43730e12c0adfd808f2e92",
+      "definitionCount": 29,
+      "reviewedAt": "2026-11-21"
+    },
+    "rehna-nahi-isa-desa": {
+      "status": "finished",
+      "readerSha256": "4402b5395735a6a00a962e946db04a5eb119c5e092d9b560dcfa6f8b3fc8b8c1",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "kaise-lagaun-tumse-main-preet": {
+      "status": "finished",
+      "readerSha256": "e3119a366294cd8791bde09e0d81e4a217d3d66528df7237a361a5ce8d05944e",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "ma-tumko-kaise-batalau": {
+      "status": "finished",
+      "readerSha256": "a7f39ef296c17d9e409e3d1154aaad66708c4a63b3ca81bd5b2b046dafb3c561",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "akashi-zep-ghe-re-pakhara": {
+      "status": "finished",
+      "readerSha256": "2e73baa79447ba5de2c5d98f97ed13d852727471350887b18eb64494d8174d99",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "sukh-ka-dukh-ka": {
+      "status": "finished",
+      "readerSha256": "7f0e6b9ec4a100e96e6983e02293a286917a48f50ba5fa6f3a975b14e3ba80b2",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-ki-palki": {
+      "status": "finished",
+      "readerSha256": "f0a1eaeecc3fafb1b417e8e364069bd240c6cbaaf6efe372afae108bed3c72b6",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "kyun-nahin-manegi-meri-maa": {
+      "status": "finished",
+      "readerSha256": "9907152f8f7c5ecefd4bd7799bbe20c60db62fba5b048629e4394a6f0737a627",
+      "definitionCount": 30,
+      "reviewedAt": "2026-11-21"
+    },
+    "duniya-de-dukhan": {
+      "status": "finished",
+      "readerSha256": "11ec2685f09f4f2ee0c574f355f1421af6381640dfbf76be27f37187d037d141",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "meri-maa-jagdambe-man-jaye": {
+      "status": "finished",
+      "readerSha256": "9fd6318d072f3cafed7cb2c3307ffb98b45564adc3089d8dff5e2bc53e66c51c",
+      "definitionCount": 56,
+      "reviewedAt": "2026-11-21"
+    },
+    "man-re-tu-chal-apne-niketan-me": {
+      "status": "finished",
+      "readerSha256": "6319584ff1958c187cfb7e7b5c0c40b6ea6bd5d5f75b9c113ab7596068ce0fcd",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "duhkh-me-sumiran-sab-kare": {
+      "status": "finished",
+      "readerSha256": "0aecae023e1d6627d3a4dbb107cb8a7959a3cc3325a803b101c6527e766e651c",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sadguru-mujhko-alag-na-kariyo": {
+      "status": "finished",
+      "readerSha256": "dc5deaba52c560c7c3a510d3bc2f422114321da0523a30d4e61391ed3309d55d",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "chitrakoot-ati-vichitra": {
+      "status": "finished",
+      "readerSha256": "a652f72ac6fb35c7a319449c29688e51c0844c74d627723da9fc22bb58a03c6e",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "jab-hi-raghupati-sang-siya-chali": {
+      "status": "finished",
+      "readerSha256": "0818ce48fc0789e86a4f7d2720b9e861f61a2c250ef989b8912ea62af568bc40",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "rann-jeeti-rama-rao-aye": {
+      "status": "needs_source_review",
+      "readerSha256": "966a0dbecf03de1cd736ea6c6cc170602738736cf5a75bdac59b9ae46aaab1d0",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "nari-nihari",
+        "sahita-rama-guna",
+        "sudha-sinchi",
+        "te-taba-aba"
+      ]
+    },
+    "ghana-ghamand-nabh-garajat-ghora": {
+      "status": "finished",
+      "readerSha256": "6794c8b939fb20117e86211adb4e3e10dc281cc72efadbb72906521542882b14",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "raghuvar-doori-jayi-mriga-maryo": {
+      "status": "finished",
+      "readerSha256": "bb72e5f0e9e23a5c18ccb0859faeff36ec4bcd88073e17efa83a67da2ba493fb",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "uttho-uttho": {
+      "status": "finished",
+      "readerSha256": "5f6cb09a9ddca92c529859dec1c2fb1f98df550f9941f7d7511a15b69cde5be6",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "ekdant-gajvadan": {
+      "status": "needs_source_review",
+      "readerSha256": "c9fca242e4dd415edbf015e87f76024a068831a982d21d733a9a76e392a80b86",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "gaan-se-na-teri-stuti",
+        "gauri-suta-ganesha-mushaka",
+        "kaato-kalesha-prathama-vandana",
+        "vaahana-para-saaja"
+      ]
+    },
+    "jayati-jayati-shri-ganesh": {
+      "status": "finished",
+      "readerSha256": "4f1c1744ed4f52f29071a745eb954fdcd36d2ac7c4dd5d1ba3b77bb0ec793f66",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "siddh-bhajo-omkar-avadho": {
+      "status": "needs_source_review",
+      "readerSha256": "f80fe2bf06a2922ddc22e9e4b2fa670b770b12ac4b8b95eefec2549ee80c4769",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "charan-kaun-charan-dhara",
+        "pancha-jaane-nirankara",
+        "pancha-jaane-nirankara-rep"
+      ]
+    },
+    "rama-ho-rama": {
+      "status": "finished",
+      "readerSha256": "53900ad76f63dfeb58f4ab1b34d5e700119b9cc1d06217617016950bfd367ba0",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "baithe-hain-rama-lakhan": {
+      "status": "finished",
+      "readerSha256": "616cc8f2c9551ff016800b36a71180a9424346e157260d3b32545d2ac27e1bb1",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "jaake-priya-na-rama": {
+      "status": "finished",
+      "readerSha256": "d012fb8dac44f69f286aea02fd7caa10421a868d161e585fc04c901d0873530a",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "kahan-ke-pathik-kahan": {
+      "status": "finished",
+      "readerSha256": "be97d15b6170b7406c3c0f5c5cff9694021d68dad36bf3aaa31304c040e8ccc7",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "dev-bade-data-bade": {
+      "status": "finished",
+      "readerSha256": "637a0a8a26dfd2cb914378ac4ce666eeb7b05c99514bc960e01222765148d469",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "janchiye-girijapati-kashi": {
+      "status": "finished",
+      "readerSha256": "04527e6212f12e32870b8e78f7b8ffe07fa2ff3a6629d023d4879146a0e6577d",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "shiva-shiva-hoi-prasanna": {
+      "status": "finished",
+      "readerSha256": "8f0138c81e422a5ff7a2c75fc3fa6644f8744217761bb65891addb15ae2ae5e7",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "kai-janmon-se-bula-rahi-hoon": {
+      "status": "finished",
+      "readerSha256": "0cb26432c21cae432536de66c968f7fe3d7345b8b2faccc7b6626a4668d59f55",
+      "definitionCount": 30,
+      "reviewedAt": "2026-11-21"
+    },
+    "shiv-ka-naam-japo-sansari": {
+      "status": "finished",
+      "readerSha256": "5ecc3a2223dac4457f17df611f64b9842dc0962d00eae1e1dc9bf1bf2ea6d568",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "thodudaiya-seviyan": {
+      "status": "finished",
+      "readerSha256": "072025db945bc2bf6c682dc268d74989905bf6fb3d5b73c5fb12bf4fb73fb10b",
+      "definitionCount": 7,
+      "reviewedAt": "2026-11-21"
+    },
+    "koodarai-vellum-seer-govinda": {
+      "status": "finished",
+      "readerSha256": "3511c9b3b6d89521bf1a99e65c4f65b5c13f0ac69cbcbbc12ae9cf4a92e94b81",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "margazhi-thingal-madhi-niraindha": {
+      "status": "finished",
+      "readerSha256": "50bf3462e48ee57fedce7bbbcabbc135419a820bfb1294c1d0905be225937720",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "paluke-bangaramayena": {
+      "status": "finished",
+      "readerSha256": "914877809ba65948fe2a7a6ed5c26813283cf3009c4fcfb3c0e8c05f71685770",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "jo-achyutananda": {
+      "status": "needs_source_review",
+      "readerSha256": "8a62ef36090f4b0965cbe90a9f96eb33b3cf3c344987d7cda840f584838c9013",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "v1-3"
+      ]
+    },
+    "venkatachala-nilayam": {
+      "status": "finished",
+      "readerSha256": "82e36fd601dd52e47e4b8a64e1311598feab6f8538347869fc9093937b7c548a",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "kolaru-pathigam": {
+      "status": "finished",
+      "readerSha256": "2fe2f51f247a22053ea955390190878d4bf86deaf4c9c9fc27a348043f79a919",
+      "definitionCount": 49,
+      "reviewedAt": "2026-11-21"
+    },
+    "siyavar-ramchandra-ki-jai": {
+      "status": "finished",
+      "readerSha256": "29492b63b4463997c62049d3088bd2d06a7dd8ca220c21648d3769b461087c3f",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "parvati-hanuman-ansh": {
+      "status": "finished",
+      "readerSha256": "19746658f22ad0d19a2338ae254627c1f19224974d1d52661aff70aeb9873eb4",
+      "definitionCount": 28,
+      "reviewedAt": "2026-11-21"
+    },
+    "aavagaman": {
+      "status": "needs_source_review",
+      "readerSha256": "9e3490e469f1c0c4c3e17de2004dff23f5af0a83a3778a83738d52489108b9ab",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l13"
+      ]
+    },
+    "maine-tere-hi-bharose": {
+      "status": "finished",
+      "readerSha256": "8634a1637b1de4992fa1e42b1820b129106e5bbfcf742a49a00f689ead718cb1",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "hey-kharari": {
+      "status": "finished",
+      "readerSha256": "ffc257720bd2ea6d70ee91dd7ee75b599a77d01cd7e8a47914a9333ff5997d6a",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "raam-bhajan-ki-or": {
+      "status": "finished",
+      "readerSha256": "15bb490ddb43ff1536a1c2cb72a4d93d211619a7e92caa5f454b442eff129019",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "jai-hanuman-hanuman-ansh": {
+      "status": "finished",
+      "readerSha256": "8258f16bb93d42829922755c89a8e382c4929a420bbb7b31a30d5d279f9773b5",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21"
+    },
+    "vaishnav-jan-to": {
+      "status": "finished",
+      "readerSha256": "62e0652374775b4cc43310844b061f9561779be54ecadd2adda54486f6b40b15",
+      "definitionCount": 6,
+      "reviewedAt": "2026-11-21"
+    },
+    "hriday-mein-jinke-sitaram": {
+      "status": "finished",
+      "readerSha256": "210acf0438b8157738c2effb9aa3a2d9c811fa0fc8c934cd661a5726a420f80c",
+      "definitionCount": 2,
+      "reviewedAt": "2026-11-21"
+    },
+    "saasa-haale": {
+      "status": "needs_source_review",
+      "readerSha256": "c033f5a563dff2e49c59287f21042a9fc5c5ee2767829c439dd7371f046e952f",
+      "definitionCount": 25,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l02",
+        "l07",
+        "l13",
+        "l14",
+        "l16"
+      ]
+    },
+    "ahe-nila-saila": {
+      "status": "finished",
+      "readerSha256": "3fe88c3f8d17b18870fc525090e3e5dc5c8865fdedf7811f51a324e1d13d5951",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "dasana-madiko-enna": {
+      "status": "finished",
+      "readerSha256": "e19bd815823b4a8efa21da051d8576827d48ea2994492e859c64a27ded6e8778",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "nanati-baduku": {
+      "status": "finished",
+      "readerSha256": "59a138cd1a52c2a8758aa6a1a110ef2604963ac2479e9aee3e55d7971c54c96b",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "jagadoddharana": {
+      "status": "finished",
+      "readerSha256": "81e465f68031c5b669de83993001e020e7ae520697c8f124952f6b2b4068a9b8",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "endaro-mahanubhavulu": {
+      "status": "finished",
+      "readerSha256": "023d466fd4cffc2afe92115c0dcfe5213bbf5a5a9d7095c8ad7fad9434eedc89",
+      "definitionCount": 29,
+      "reviewedAt": "2026-11-21"
+    },
+    "main-banjaran-ram-ki": {
+      "status": "finished",
+      "readerSha256": "850843ffe7f3f04f023ba6a1b26a3436ba8767b01829441886532f1f2bde4691",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "rudrashtakam-sharma-bandhu": {
+      "status": "finished",
+      "readerSha256": "f7a30c7292c86c13242d41ec8fdbde30f5e5981ee68bbf40df2136b73c89b552",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "piththa-pirai-soodi": {
+      "status": "finished",
+      "readerSha256": "7255f4e1efcfc0e61b09a220f78d6bfce2c57784f6fa68d89bbb43cbe42e2b08",
+      "definitionCount": 66,
+      "reviewedAt": "2026-11-21"
+    },
+    "uyarvara-uyar-nalam": {
+      "status": "finished",
+      "readerSha256": "0ebd6a33840db428c3529feb71d40ad16918fe246d3b675d4e6a93022366b63f",
+      "definitionCount": 49,
+      "reviewedAt": "2026-11-21"
+    },
+    "ayarpadi-maligaiyil": {
+      "status": "finished",
+      "readerSha256": "7daf29cfd0f2ef61d6f23015763969592c4cb036d0c99a0da7716e32ed1e8aa6",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "rudrashtakam-rameshbhai-oza": {
+      "status": "finished",
+      "readerSha256": "abaa29ceca7dcb917fd5f0b4f8ceb1866b30222c8791e7bace5177cd75852835",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "shyamala-dandakam": {
+      "status": "needs_source_review",
+      "readerSha256": "d7e4d82aeb15d379a54b7ca3ae324053253c434936db8cab572493eb1380d67e",
+      "definitionCount": 116,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l043"
+      ]
+    },
+    "sivapuranam": {
+      "status": "needs_source_review",
+      "readerSha256": "b34983bfd57b9d1eddc8b2d0bff8a58602907359f5134b100ba9f48ffd2a7b6b",
+      "definitionCount": 101,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l075",
+        "l081",
+        "l084",
+        "l089"
+      ]
+    },
+    "bajrang-baanka": {
+      "status": "finished",
+      "readerSha256": "a1a11b61bb3b4ff470f5c9ce9d75d6c6c35e0efaf8e0dde595eb819a5ea08ba0",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "re-man-aiso-kar-sanyasa": {
+      "status": "finished",
+      "readerSha256": "6f72fe5d667b70ca47a5e7d5b1cbb46c96722f980c99ad79361f6a11a60f7123",
+      "definitionCount": 52,
+      "reviewedAt": "2026-11-21"
+    },
+    "kanakadhara-stotram": {
+      "status": "needs_source_review",
+      "readerSha256": "1f01614e90edeaee48ac4cd10a51d4d9684115fe6f762374b4e072f3f29ee84b",
+      "definitionCount": 80,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l029"
+      ]
+    },
+    "deh-shiva-bar-mohe-hai": {
+      "status": "finished",
+      "readerSha256": "04a6be838366cb8293d3d6f88a1e4e7da2ad58d5d34303539f63171ee59c1dfd",
+      "definitionCount": 6,
+      "reviewedAt": "2026-11-21"
+    },
+    "brahmam-okkate": {
+      "status": "finished",
+      "readerSha256": "ab63e390917a0aaf806fc75d165de408a478c1e8112a9e789356db52d52b413f",
+      "definitionCount": 29,
+      "reviewedAt": "2026-11-21"
+    },
+    "harivarasanam": {
+      "status": "needs_source_review",
+      "readerSha256": "64df240131e06f9b21a4bc0849e4936ea8ff2f9349fa34d009c1c150ff180b21",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l007",
+        "l023"
+      ]
+    },
+    "meri-vinti-yahi-hai-maa": {
+      "status": "finished",
+      "readerSha256": "9275b127f343da62ca1c8c1060d4b9b2cb0f95c4e824a83fc8fc85fa0ef83bbb",
+      "definitionCount": 30,
+      "reviewedAt": "2026-11-21"
+    },
+    "shrdi-sai-dwarka-maai": {
+      "status": "finished",
+      "readerSha256": "794f07fc8fc3dd654d5b548e56ffd99a0ca2f1bfbb734a31831c808fcfa35c52",
+      "definitionCount": 23,
+      "reviewedAt": "2026-11-21"
+    },
+    "sai-sai-bol-sai-sai-bol": {
+      "status": "finished",
+      "readerSha256": "365eec2162103c3ad8bf5c0fc5a486bd1458b4311d68769cad6b78bf72d6b3b9",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sumukh-pratham-he-svanam-gayak": {
+      "status": "finished",
+      "readerSha256": "25fbb2dcfacb6f7b0ae199b8bbd1a6852ad774f5293d9d58ae4f80b0a3198b85",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "saranu-siddhi-vinayaka": {
+      "status": "finished",
+      "readerSha256": "86bbc4db83ed2f32797b269dba7f5a06e2f61cf316191130717c94764fc584de",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "istu-dina-ee-vaikuntha": {
+      "status": "needs_source_review",
+      "readerSha256": "bb795371b4f400a875dff51ff6d707cc6e3724f00675a2975f024b28b4f98fc9",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l004",
+        "l005"
+      ]
+    },
+    "daari-yavudayya-vaikunthake": {
+      "status": "finished",
+      "readerSha256": "9cf584fc7d1c53a0ffb91681538be76173e2123e65019ea099837673d716b8c0",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "biduvenenayya-hanuma": {
+      "status": "finished",
+      "readerSha256": "66cdacc90e05667280e540464dbce066887092900a793a5b7a7d7469cff9f277",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "satgur-kai-bhane-chal": {
+      "status": "finished",
+      "readerSha256": "60b7c61bc8949a0f5117003c7925fc3c19d187a50aa94917aeb5277b4d24056c",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "aane-banditamma": {
+      "status": "finished",
+      "readerSha256": "9d18b172a83f08a9e3e77eee6db386fc1b8fee3414f1aab800d4364f27b610ad",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "candracuda-sivasankara": {
+      "status": "finished",
+      "readerSha256": "ceb4d70fd7f6392daa982e083fd0f3e2d02dbda1bb652397a2c5d014e0dacd7f",
+      "definitionCount": 41,
+      "reviewedAt": "2026-11-21"
+    },
+    "aao-bhakton-maa-ki-aaj-murat-saja-lo": {
+      "status": "finished",
+      "readerSha256": "032e93856f2d1e9bb60ee4791f71f1c9c1c117e2b361d5911ee33f7dab8ddd83",
+      "definitionCount": 40,
+      "reviewedAt": "2026-11-21"
+    },
+    "saso-ki-mala-par-simaru-nisdina-pi-ka-nama": {
+      "status": "finished",
+      "readerSha256": "d0c5373bea694ba4f565865747b627681e0d2d78220e04c0ab6d28a879ab1bb7",
+      "definitionCount": 99,
+      "reviewedAt": "2026-11-21"
+    },
+    "ee-padame-kada": {
+      "status": "finished",
+      "readerSha256": "ccf5cf678be000378c037c15bcdcd44e4c6a5958265c37f721159a035b0d6754",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "bhaktikoladi-vade": {
+      "status": "finished",
+      "readerSha256": "15fc873c512f79c622033a3e1c26e5d7007f1bff0e58606d8cf49e3adc9a1225",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "kadupenta-ta-guduchu": {
+      "status": "finished",
+      "readerSha256": "872a89003740c57ae381294fcbca2f2d18fe5f49890681b8545ef9d41fb09eda",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "chi-chi-naruladeti-jivanamu": {
+      "status": "finished",
+      "readerSha256": "e6d976020b4241bba6156ff4a948e0289911528cc8131ac7f5247632eaec766c",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "chittaja-guruda-neeku": {
+      "status": "finished",
+      "readerSha256": "215fb9dbea2da25f9722efd272835c994b206af2389abd3c235798036c93c987",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "jayagalu-agali": {
+      "status": "needs_source_review",
+      "readerSha256": "5c5c783b2220887b88de894c915eea18d81fcf554a5c6c59b2f6421a319f1c4d",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l002",
+        "l004",
+        "l006",
+        "l008",
+        "l010",
+        "l012",
+        "l013",
+        "l014"
+      ]
+    },
+    "pavamana-jagada-prana": {
+      "status": "finished",
+      "readerSha256": "bcb3e4814bf2189e5609fb298c2b0a8b2e47e698dc8e9263caa65d2083e6171f",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21"
+    },
+    "samanyama": {
+      "status": "finished",
+      "readerSha256": "e4c3e98655653d0a8ed0622e6c84f668bdaacf2b00f08143098a41fcd409a49b",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "javvadi-mettinadi": {
+      "status": "finished",
+      "readerSha256": "96048985025b5809a279154b6164153e6d2bd662fd6406836be2a41e2dd6f0bb",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "vinnapalu-vinavale": {
+      "status": "finished",
+      "readerSha256": "cd28505526ccc1cd26833121c406af8faf4f87eff020faaa8a1fafdec133a48a",
+      "definitionCount": 9,
+      "reviewedAt": "2026-11-21"
+    },
+    "nagumogamutodi-o-narakesari": {
+      "status": "needs_source_review",
+      "readerSha256": "ce76674afb7676ea8141e6eb934d2b97bde2f258e78f68ef409bc25ddcc1254e",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l010"
+      ]
+    },
+    "modalondipe-ninage-gananatha": {
+      "status": "finished",
+      "readerSha256": "012dde85f8807051798fefd0b98804551e6dffda079c768542ea9624a21e6308",
+      "definitionCount": 16,
+      "reviewedAt": "2026-11-21"
+    },
+    "saranembe-vani": {
+      "status": "finished",
+      "readerSha256": "3ea0f1cef88996f2a437f8f8af1477cdd36175efb9a7a083b21a14cd0a986132",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "sanjivana-giridhara": {
+      "status": "finished",
+      "readerSha256": "cec8dbf6c7427291b88b108e60d367f1cd2c3c395f665346fc9086faf4bd27a7",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "nodire-venkataramanana": {
+      "status": "finished",
+      "readerSha256": "f2af0ef9706e1ddc161461a7f404ad31e99c35be455cb21deffb85e223d68ba6",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "barayya-ba-ba-bhakutara-priya": {
+      "status": "finished",
+      "readerSha256": "8135e7c88a1594eadf638edead8c8a5f7177cb932666cb6725ff1e446b86f5f3",
+      "definitionCount": 21,
+      "reviewedAt": "2026-11-21"
+    },
+    "namah-parvatipati": {
+      "status": "finished",
+      "readerSha256": "119975dc4da25fd31bf23ddd8788c0745ea1dbf117d7d1ea62e57f6ee6408ef1",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "ghatikachaladi-ninta-shri-hanumanta": {
+      "status": "finished",
+      "readerSha256": "6c48847e7a885d7bbd19e4c9aeee94aecf3677bebb9b426defef8210595af985",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "sri-mahalakumi-deviye": {
+      "status": "finished",
+      "readerSha256": "7e03d8e0b2645203554e3969e5b9d2b010fa6b16fd30f97b9fbac66a38e0816b",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "meruguvantidi-alamelumanga": {
+      "status": "finished",
+      "readerSha256": "8096b7ff5979791bfc86f41623f2bfb27d68c07947dc538ed420fd1465a21182",
+      "definitionCount": 9,
+      "reviewedAt": "2026-11-21"
+    },
+    "mangala-slokagalu": {
+      "status": "finished",
+      "readerSha256": "2bc96ace635b3f009e7e2cf0aa17dc7d1955b132c63cbf860664a86bece4f7e0",
+      "definitionCount": 28,
+      "reviewedAt": "2026-11-21"
+    },
+    "rajabidiyolaginda-kasturi-ranga": {
+      "status": "needs_source_review",
+      "readerSha256": "19dd8e5824ae52d9cdfbdae492d7001eb88f4e726782fdb258d81d7679d239f2",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l020"
+      ]
+    },
+    "tolu-tolu-tolu-ranga": {
+      "status": "finished",
+      "readerSha256": "c3a2e17c987361fc8d268881a68bb9d3c1d57c887c76ef8b65ea42a0a2d4dfad",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "durge-palise-mate": {
+      "status": "finished",
+      "readerSha256": "390d294aac11e76455b9ab58dbd14cc2bb0f3474b76cc0e52583d26c132dea77",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "ksirabdhisayana-sribhasya-mangala": {
+      "status": "finished",
+      "readerSha256": "6b118e177b3d67dff50bedbabac4c58394eda79c8e6b6784d837b4d96fd0529a",
+      "definitionCount": 22,
+      "reviewedAt": "2026-11-21"
+    },
+    "hi-shivaa": {
+      "status": "needs_source_review",
+      "readerSha256": "7838f3d32e986d8bf8b5d959022b975b9207ed3f9a857862568875e4ea2a7bc6",
+      "definitionCount": 36,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "l021",
+        "l023",
+        "l024",
+        "l026",
+        "l027",
+        "l032"
+      ]
+    },
+    "mhalasapati-short": {
+      "status": "finished",
+      "readerSha256": "de17405758d3475ed2c15957545880919e0d8a51a2403ab4061682da7b6737fe",
+      "definitionCount": 2,
+      "reviewedAt": "2026-11-21"
+    },
+    "mhalasapati-re": {
+      "status": "finished",
+      "readerSha256": "454bbbcb56a3ea54d9240c28d1c6894e34d4e507561570cd13eaa38cc230ada1",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "datta-brahmachari": {
+      "status": "finished",
+      "readerSha256": "f1de159de308db7fafc8de89ede5b8e43b6e64193d466d21a77e93d7f3fbf834",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "tirtha-vitthal-kshetra-vitthal": {
+      "status": "finished",
+      "readerSha256": "ee4dbfec0329b45e8abffa7b9cc773531d93a9b9a34b6e0dc3f6e7639c039c85",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21"
+    },
+    "kanya-sasuryasi-jaye": {
+      "status": "finished",
+      "readerSha256": "b91a5da7bd33e5931b0ee7d386cdc0454517c4626b95e5e3879bf12f63556828",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "aga-karunakara": {
+      "status": "finished",
+      "readerSha256": "9d25b54173705ecd9b01c3d29b616df3bd743ac266dc147f5e41dcaa0b53074f",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "soyara-sukhacha": {
+      "status": "finished",
+      "readerSha256": "7e1a757706bda2c89055b760da2838914403d963ef874fd37aa609baf4829621",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "namacha-gajar-garje-bhimatir": {
+      "status": "finished",
+      "readerSha256": "df77655f3fa6ff5202fe4c9f5418f0699a2c5c88704ac3bfcaa9923896fcb75d",
+      "definitionCount": 26,
+      "reviewedAt": "2026-11-21"
+    },
+    "pandharinivasa-sakhya-panduranga": {
+      "status": "finished",
+      "readerSha256": "a288a233e0148b59852445eaffbdc8f0f455a2e8da43fa4d176080fd1d264a3f",
+      "definitionCount": 20,
+      "reviewedAt": "2026-11-21"
+    },
+    "majha-bhav-tujhe-charani": {
+      "status": "finished",
+      "readerSha256": "49ab2997250e50225812891bd8c55ca3b844ed20c4513b5b4f8eeb636790c5dc",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "man-tu-jot-saroop-hai": {
+      "status": "finished",
+      "readerSha256": "4588c1fb6ed4966ba26e7df55794144d57f89ffb8eedf87b41097c1201f63b3f",
+      "definitionCount": 9,
+      "reviewedAt": "2026-11-21"
+    },
+    "rajas-sukumar": {
+      "status": "finished",
+      "readerSha256": "0343f4d14f13e8afd97bf6e5bab831f78e2cee62a7e6c1fe012ffd0779cac613",
+      "definitionCount": 18,
+      "reviewedAt": "2026-11-21"
+    },
+    "je-ka-ranjale-ganjale": {
+      "status": "finished",
+      "readerSha256": "27d044ff5bf715efb3418783106c873c91beb5f22490989f2ec8f7e33d931a00",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "deh-javo-athava-raho": {
+      "status": "finished",
+      "readerSha256": "3a639f51a3c67ec3d7dee30ccd5c4da77a95b5b9c3ca55d5ff657017029ad4e1",
+      "definitionCount": 9,
+      "reviewedAt": "2026-11-21"
+    },
+    "hechi-dan-dega-deva": {
+      "status": "finished",
+      "readerSha256": "d5e33a24c2214ed17100d649d018cdcb9a6f6aff2c6976e160020a02d134e87e",
+      "definitionCount": 10,
+      "reviewedAt": "2026-11-21"
+    },
+    "jethe-jato-tethe-tu-majha-sangati": {
+      "status": "finished",
+      "readerSha256": "5cad1595f3952b84c29cce3c03deb9c50702c5ee0f58c49c2c8fe8a2bf702934",
+      "definitionCount": 8,
+      "reviewedAt": "2026-11-21"
+    },
+    "savale-sundar-rup-manohar": {
+      "status": "finished",
+      "readerSha256": "1c219efdb2e7797c0432027588bf5d3d06d7d59ddf3cab1097378a626c2a3a22",
+      "definitionCount": 11,
+      "reviewedAt": "2026-11-21"
+    },
+    "pandharicha-vas-chandrabhage-snan": {
+      "status": "finished",
+      "readerSha256": "218cd54d5e4c1d8c8e945d3505066dbcaa37a60615734b435aeda39990a9c2f7",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "mere-man-prem-lago-har-teer": {
+      "status": "finished",
+      "readerSha256": "e8138616d68036c686c88a29622b9d610317a1bebefe2320afa645b8234d1476",
+      "definitionCount": 13,
+      "reviewedAt": "2026-11-21"
+    },
+    "vaishnavaghari-sarvakal": {
+      "status": "finished",
+      "readerSha256": "691bac8a5acef4d7cc7f643144648294ddb7402c11eda32c0ac66034beb64b24",
+      "definitionCount": 29,
+      "reviewedAt": "2026-11-21"
+    },
+    "yajasathi-kela-hota-attahas": {
+      "status": "finished",
+      "readerSha256": "726572de497c72512e0957bd90e7b240f57b2a22cf1a76f30dcf25b1fe761da8",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "je-sau-chanda-ugveh": {
+      "status": "finished",
+      "readerSha256": "372090ad743cba47a07672506a28d40ed16650b4943ecac4fa8180243dbed858",
+      "definitionCount": 3,
+      "reviewedAt": "2026-11-21"
+    },
+    "prabh-ju-to-kah-laj-hamari": {
+      "status": "finished",
+      "readerSha256": "448d0f0952b1ad06fa95987b1e33f36df6c13b6049b410e24ed4237aa2f0d32c",
+      "definitionCount": 17,
+      "reviewedAt": "2026-11-21"
+    },
+    "amrutahuni-god-nam-tujhe-deva": {
+      "status": "finished",
+      "readerSha256": "de9add02ebde6eb3e5fe229f26b2cf53258fbb1ac211c0df698103f7ffe3d9a9",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21"
+    },
+    "amha-ghari-dhan": {
+      "status": "finished",
+      "readerSha256": "13213faba4187f806abe3ccd5fa8c8bd68985d299b1a8b16ae717e96d0dad98b",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "yei-ho-vitthale": {
+      "status": "finished",
+      "readerSha256": "241324f7cd770cba85f458937c9708ef92f71bfcc74fef5334ffd286b674d9c4",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "tum-karo-daya-mere-sai": {
+      "status": "finished",
+      "readerSha256": "f591a0e5e9dad49f00f89fedf0d0649c47ef2fc0c4dd5009b868a5bd54c9cd9d",
+      "definitionCount": 27,
+      "reviewedAt": "2026-11-21"
+    },
+    "aakha-jeeva-visrai-mar-jaau": {
+      "status": "finished",
+      "readerSha256": "a3732a4232f413800ef54964bce6da0051e7805b388a09d88e2e7542ae29211c",
+      "definitionCount": 19,
+      "reviewedAt": "2026-11-21"
+    },
+    "vitthal-giti-gava": {
+      "status": "needs_source_review",
+      "readerSha256": "8f8bc2dfc5eb75b043d16acbd5e6042e94be333c5709fa716982232b6d0556df",
+      "definitionCount": 15,
+      "reviewedAt": "2026-11-21",
+      "openDefinitions": [
+        "g007"
+      ]
+    },
+    "kahe-re-ban-khojan-jai": {
+      "status": "finished",
+      "readerSha256": "49ed6769b715d0b6eaa8928ccbbeadd052febaf04397b67a05a3db33c9012449",
+      "definitionCount": 14,
+      "reviewedAt": "2026-11-21"
+    },
+    "mo-kau-tar-le-rama": {
+      "status": "finished",
+      "readerSha256": "11060d40a719ac4ae26bfd05986e51cea4101562237aed4d3373c19cb2103376",
+      "definitionCount": 37,
+      "reviewedAt": "2026-11-21"
+    },
+    "bhor-bhai-din-chadh-gaya": {
+      "status": "finished",
+      "readerSha256": "77f7ec40fa37639663e54887426f237da12a8584644cd5c61c9fb916a8489da7",
+      "definitionCount": 12,
+      "reviewedAt": "2026-11-21",
+      "note": "Added in independent publication70c1ede4; all12 source/English pairs read in context, retained unchanged."
+    }
+  }
+}

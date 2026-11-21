@@ -38,7 +38,7 @@
         "Urdu"
       ],
       "maxLines": 539,
-      "maxTextBytes": 794031,
+      "maxTextBytes": 794065,
       "sourceStatus": [
         "reviewed",
         "audio-reviewed"
@@ -62,6 +62,13 @@
           "maxTextBytes": 794031,
           "inputHash": "76cb4a52f261b2421f669613fca1ad95c2ada31bdcaf94b61bf9a3341f63aa0a",
           "recordHash": "5c891247cea579d4255190b3cdedf4aae2a21121e0ae879bec91982a60c10350"
+        },
+        {
+          "path": "docs/research/shuffle-qualification-2026-11-15/source-fidelity-size-supplement-2026-11-21.json",
+          "sha256": "ee12110712745b125ca657b548cf2f6c704e485fdc12ddedf6eea80b97df46cb",
+          "maxTextBytes": 794065,
+          "inputHash": "2c95b28ab473620e335b18dd62fd6b955c57c1d4151418b60ba3ca968d5c58c0",
+          "recordHash": "ecf677a2e8cc56da4f536087fd537c81e3235d1edcde2dd83280c122619cfb46"
         }
       ]
     },

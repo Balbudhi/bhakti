@@ -356,7 +356,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā rāma jī kareṅge beṛā pāra re, beṛā pāra re, beṛā pāra",
-    "english": "{1,2:Revered Rama }{3:will ferry }{0:your }{4,5:boat across, }{6:O, }{7,8:boat across, }{9:O, }{10,11:boat across}",
+    "english": "{1,2:Revered Rāma }{3:will ferry }{0:your }{4,5:boat across—}{6,7,8:your boat across, }{9,10,11:your boat across!}",
     "words": [
       {
         "roman": "terā",
@@ -629,7 +629,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udāsī mana kāhe ko kare re",
-    "english": "{1:O mind, }{2,3:why }{4:do you give way to }{0:sorrow, }{5:O?}",
+    "english": "{1,5:O mind, }{2,3:why }{4:do you give way to }{0:sorrow?}",
     "words": [
       {
         "roman": "udāsī",
@@ -718,7 +718,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāhe ko ḍare re, kāhe ko ḍare",
-    "english": "{0,1:Why }{2:do you fear, }{3:O, }{4,5:why }{6:do you fear?}",
+    "english": "{0,1,3:Oh, why }{2:do you fear, }{4,5:why }{6:do you fear?}",
     "words": [
       {
         "roman": "kāhe",
@@ -1574,7 +1574,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahaja kinārā mila jāyegā re",
-    "english": "{1:The shore }{2,3:will be found }{0:with ease, }{4:O}",
+    "english": "{2,3,4:You will find }{1:the shore }{0:with ease!}",
     "words": [
       {
         "roman": "sahaja",

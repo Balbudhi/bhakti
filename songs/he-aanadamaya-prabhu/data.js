@@ -152,7 +152,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ānanda e saṁsārare",
-    "english": "{0:Bliss }{1,2:in this }{2:saṃsāra,}",
+    "english": "{0:Bliss }{1:throughout this }{2:world—}",
     "words": [
       {
         "roman": "ānanda",
@@ -168,9 +168,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsārare",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "in this world; in worldly existence",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "'saṁsārare' carries the Odia locative case marker '-re' ('in saṁsāra'). 'e' is a proximate demonstrative adjective modifying 'saṁsārare'."
@@ -193,7 +193,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kara bitaraṇa",
-    "english": "{0,1:distribute.}",
+    "english": "{0,1:spread it abroad.}",
     "words": [
       {
         "roman": "kara",
@@ -234,7 +234,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prabhu kara bitaraṇa",
-    "english": "{0:Lord, }{1,2:distribute.}",
+    "english": "{0:Lord, }{1,2:spread it abroad.}",
     "words": [
       {
         "roman": "prabhu",

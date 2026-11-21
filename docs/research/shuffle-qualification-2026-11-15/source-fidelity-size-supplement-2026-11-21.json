@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "slug": "sampurna-sundarakanda",
+  "status": "qualified-targeted-extension",
+  "recommendedQualificationStatus": "qualified-targeted-extension",
+  "scope": "Exact Sundarakanda input only; maximum794031 to794065 bytes, still539 performed source lines. No method, projection, language or line-count expansion.",
+  "inputHash": "2c95b28ab473620e335b18dd62fd6b955c57c1d4151418b60ba3ca968d5c58c0",
+  "recordHash": "ecf677a2e8cc56da4f536087fd537c81e3235d1edcde2dd83280c122619cfb46",
+  "baseFeaturesHash": "106b973f97b1ba8f5579a7d5f464c2f93d38a9834240fdc7f9a7a7306a911c38",
+  "stagedFileSha256": "5e6099c3c0299b8139c38914f2298f7c7479816b2b5668ed3e472c7764a12a49",
+  "canonicalTextBytes": 794065,
+  "previousMaximumTextBytes": 794031,
+  "increaseBytes": 34,
+  "uniquePerformedLineCount": 539,
+  "checkedAssertionCount": 12,
+  "checkedUniqueCitedSourceLineCount": 97,
+  "checkedCitedAndAdjacentSourceLineCount": 229,
+  "method": {
+    "id": "source-grounded-semantic-review",
+    "version": 4,
+    "model": "google/gemini-3.7-flash",
+    "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+    "projectionVersion": 3,
+    "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+  },
+  "preOutputExpectationsSha256": "72bb7449498b052e2d2af8f2ce0b25a000a4267b20a1e78a8b9bd4fa87404005",
+  "note": "Accept the exact794065-byte input as a narrowly qualified conservative projection. All12 assertions and all97 unique cited assertion/role source lines, with229 unique cited/adjacent lines, were independently read. All11 projected features are source-supported; no reduction is necessary. Preserve explicit omissions/role-audit limitation; do not claim exhaustive semantic coverage.",
+  "editorialAdjustments": [],
+  "editorialReview": {
+    "kind": "independent-assistant",
+    "inputHash": "2c95b28ab473620e335b18dd62fd6b955c57c1d4151418b60ba3ca968d5c58c0",
+    "baseFeaturesHash": "106b973f97b1ba8f5579a7d5f464c2f93d38a9834240fdc7f9a7a7306a911c38",
+    "evidenceHash": "163a036c22d2dfdb9877d4617916624b9a0c69a272b3a0080652a2e25c0088db"
+  },
+  "reviewEvidence": {
+    "slug": "sampurna-sundarakanda",
+    "inputHash": "2c95b28ab473620e335b18dd62fd6b955c57c1d4151418b60ba3ca968d5c58c0",
+    "recordHash": "ecf677a2e8cc56da4f536087fd537c81e3235d1edcde2dd83280c122619cfb46",
+    "note": "Accept the exact794065-byte input as a narrowly qualified conservative projection. All12 assertions and all97 unique cited assertion/role source lines, with229 unique cited/adjacent lines, were independently read. All11 projected features are source-supported; no reduction is necessary. Preserve explicit omissions/role-audit limitation; do not claim exhaustive semantic coverage.",
+    "adjustments": [],
+    "assertionFindings": [
+      {
+        "assertionId": "asst-001",
+        "conceptId": "subject.rama",
+        "status": "accept",
+        "reason": "Keep central Rāma worship focus: direct vande, bhaktiṃ prayaccha, bhajahu Rāma, trāhi trāhi and surrender support it. Hari in this context does not introduce a Krishna focus."
+      },
+      {
+        "assertionId": "asst-002",
+        "conceptId": "subject.hanuman",
+        "status": "accept",
+        "reason": "Keep central Hanumān narrative subject: Hanumān performs the crossing, search, fight, burning and return. The opening namāmi is also worship, but the projection conservatively omits that secondary role."
+      },
+      {
+        "assertionId": "asst-003",
+        "conceptId": "subject.sita",
+        "status": "accept",
+        "reason": "Keep supporting Sītā narrative subject: discovery, captivity, speech, grief, receiving the ring and giving the crest-jewel directly support it. Mother in dialogue refers to Sītā."
+      },
+      {
+        "assertionId": "asst-004",
+        "conceptId": "theme.refuge",
+        "status": "accept",
+        "reason": "Keep central refuge: explicit sarana/saranāgata and Rāma vow dominate the Vibhīṣaṇa episode and earlier counsel to Rāvaṇa."
+      },
+      {
+        "assertionId": "asst-005",
+        "conceptId": "theme.grace",
+        "status": "accept",
+        "reason": "Keep supporting grace: kṛpā/anugraha are directly named and causally credited for success, strength and encounters with saints."
+      },
+      {
+        "assertionId": "asst-006",
+        "conceptId": "theme.service",
+        "status": "accept",
+        "reason": "Keep supporting service: Rāma kāju, sevaka and dāsa explicitly motivate Hanumān action; not merely inferred from heroic activity."
+      },
+      {
+        "assertionId": "asst-007",
+        "conceptId": "theme.longing",
+        "status": "accept",
+        "reason": "Keep supporting longing: Sītā viraha and Rāma viyoga are named and sustained through fire, water, breath and bodily images."
+      },
+      {
+        "assertionId": "asst-008",
+        "conceptId": "theme.name_power",
+        "status": "accept",
+        "reason": "Keep supporting name-power:239 explicitly says chanting his name severs worldly bonds;350 makes the name a guard,454 dispeller of threefold suffering. Ring157 alone would be weaker but is not sole support."
+      },
+      {
+        "assertionId": "asst-009",
+        "conceptId": "action.praise",
+        "status": "accept",
+        "reason": "Keep supporting praise: opening invocations praise Rāma and Hanumān;161 recounts Rāma virtues;388 and407 enact victory acclamations and song."
+      },
+      {
+        "assertionId": "asst-010",
+        "conceptId": "action.remembrance",
+        "status": "accept",
+        "reason": "Keep supporting remembrance: repeated sumiri/sambhāri/sumirana, hṛdaya and dhyāna evidence is explicit and correctly attributed."
+      },
+      {
+        "assertionId": "asst-011",
+        "conceptId": "theme.ethical_conduct",
+        "status": "accept",
+        "reason": "Keep supporting ethical conduct: nīti, protection of envoys, truthful counsel, restraint regarding another wife, and rejection of lust/anger/pride/greed extend beyond generic devotional vocabulary."
+      },
+      {
+        "assertionId": "asst-012",
+        "conceptId": "subject.shiva",
+        "status": "accept",
+        "reason": "Keep incidental Śiva assertion unprojected: Śiva narrates to Umā/Bhavānī and recollects Rāma scene at374-375; he is not the Lord granting evamastu at385. The review correctly keeps him out of worship/narrative feature output."
+      }
+    ],
+    "limitations": [
+      {
+        "kind": "conservative_omission",
+        "conceptId": "subject.hanuman",
+        "role": "worship_focus",
+        "sourceLineIds": [
+          "line-009",
+          "line-010",
+          "line-011",
+          "line-012"
+        ],
+        "finding": "The review labels the opening namāmi salutation incidental. That label understates an explicit performed bow to Hanumān. The projected central narrative role remains correct; no incidental Hanumān feature is projected. Do not treat the review role audit as exhaustive."
+      },
+      {
+        "kind": "conservative_omission",
+        "conceptId": "action.petition",
+        "sourceLineIds": [
+          "line-007",
+          "line-008",
+          "line-384",
+          "line-519"
+        ],
+        "finding": "Explicit petitions occur but petition is absent from projected actions. No feature is added through the reduction-only editorial mechanism."
+      },
+      {
+        "kind": "conservative_omission",
+        "conceptId": "subject.rama",
+        "role": "narrative_subject",
+        "sourceLineIds": [
+          "line-338",
+          "line-376",
+          "line-395",
+          "line-521"
+        ],
+        "finding": "Critical review recognizes Rāma narrative role but extraction/projection retain worship_focus only. This is a supported subset, not exhaustive annotation."
+      }
+    ],
+    "receipts": [
+      {
+        "stage": "extraction",
+        "semanticRequestId": "732eb2d7a5044746a3d17652d4c40a0b",
+        "transportRequestId": "3b1cd0226d0d4d7d97624b2459be35bf",
+        "providerResponseId": "gen-1795282719-5ugdnPAgLCxHA21wMVun",
+        "requestSha256": "b1ecce602c49fb4942c02d405f1dbeeee8f9622c3a15fe8738869a59553bfbce",
+        "responseSha256": "09fab091677c39747930cfb636358d9747a92676bade5d5e9193ce60c7430a67",
+        "exactPromptMatchesCurrentInput": true,
+        "exactResponseMatchesRecord": true,
+        "settledStatus": "parsed"
+      },
+      {
+        "stage": "review",
+        "semanticRequestId": "ea81f9a8d3b54fb3aee00a4876410da4",
+        "transportRequestId": "c04bdbef4e1f45f79b5675399e55761d",
+        "providerResponseId": "gen-1795282738-pNXZdldT7Ms1mMChb61E",
+        "requestSha256": "d0202ec24b1bd8cf842667d5cbd19aed796d2d1c4fc1963681f1de9761dcd4fb",
+        "responseSha256": "9e0040a85d2b365c574cafc0af2c2c49081e61a843a68bf843ce29b91dc67ac8",
+        "exactPromptMatchesCurrentInput": true,
+        "exactResponseMatchesRecord": true,
+        "settledStatus": "parsed"
+      }
+    ],
+    "sourceEvidenceSha256": "a784830ab8ff3be2c46669355c0ba70da65c037103856fcf6553be0b85b28de3"
+  },
+  "mechanicalChecks": [
+    "validate_semantic_record passed against actual final reader and current taxonomy",
+    "Exact input hash, source bytes,539 unique performed lines, actual data.js SHA, record hash and projected feature derivation verified",
+    "Metadata, source, roman, sourceLanguage, sourceWords, sequence and timings equal frozen baseline; only17 reviewed line records differ",
+    "Method4/model/fingerprint/projection3 fingerprint equal existing qualified supplement",
+    "Separate received semantic dispatches verified against two settled transport receipts; exact current prompts and response packets match retained request/response files",
+    "Critical review proposalHash equals exact bound extraction hash; all12 assertions have one accept decision",
+    "No invalid earlier extraction was used as qualification evidence"
+  ],
+  "baselineEvidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+  "independentReviewSha256": "432fe3d8c11ed37f3bbca1302fbd9c56eac14f3b021fbb84e9572b72328611c7",
+  "extractionRequestId": "732eb2d7a5044746a3d17652d4c40a0b",
+  "reviewRequestId": "ea81f9a8d3b54fb3aee00a4876410da4"
+}

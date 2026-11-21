@@ -878,7 +878,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghanaśyām chāye rahnā",
-    "english": "{0:O Ghanshyam, }{2:remain }{1:overcast,}",
+    "english": "{0:O Ghanshyam, }{2:remain }{1:spread overhead,}",
     "words": [
       {
         "roman": "ghanaśyām",

@@ -10617,7 +10617,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāta kabahum̐ mohi jāni anāthā. karihahiṁ kṛpā bhānukula nāthā ॥",
-    "english": "{0:“Dear friend, }{8:will the Lord }{7:of the Solar Line }{1:ever }{5:bestow }{6:grace }{2:upon me, }{3:knowing }{4:me to be guardianless?”}",
+    "english": "{0:“Dear friend, }{8:will the Lord }{7:of the Solar Line }{1:ever }{5:bestow }{6:grace }{2:upon me, }{3:knowing }{4:me to be without a protector?”}",
     "words": [
       {
         "roman": "tāta",
@@ -13254,7 +13254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bahu bidhi khala sītahi samujhāvā. sāma dāna bhaya bheda dekhāvā.",
-    "english": "{0:In many }{1:ways }{2:the villain }{4:tried to persuade }{3:Sītā; }{9:he displayed }{5:conciliation, }{6:gifts, }{7:fear, }{8:and division.}",
+    "english": "{0:In many }{1:ways }{2:the villain }{4:tried to persuade }{3:Sītā; }{9:he tried }{5:conciliation, }{6:gifts, }{7:intimidation, }{8:and sowing discord.}",
     "words": [
       {
         "roman": "bahu",
@@ -15641,7 +15641,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sītahi trāsa dekhāvahi dharahiṁ rūpa bahu maṁda",
-    "english": "{2:displayed }{1:terror }{0:to Sītā }{3:and assumed }{5:many }{6:vile }{4:forms.}",
+    "english": "{2:tried to fill }{0:Sītā }{1:with terror }{3:and assumed }{5:many }{6:vile }{4:forms.}",
     "words": [
       {
         "roman": "sītahi",
@@ -19373,7 +19373,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lāgī̃ sunaĩ śravana mana lāī. ādihu tẽ saba kathā sunāī ..",
-    "english": "{4:Applying }{2:ears }{3:and mind, }{0:she began }{1:to listen; }{9:he narrated }{7:the entire }{8:story }{6:from }{5:the very beginning.}",
+    "english": "{4:Attending with }{2:ears }{3:and mind, }{0:she began }{1:to listen; }{9:he narrated }{7:the entire }{8:story }{6:from }{5:the very beginning.}",
     "words": [
       {
         "roman": "lāgī̃",
@@ -19504,11 +19504,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śravanāmṛta jehĩ kathā suhāī. kahi so pragaṭa hoti kina bhāī ..",
-    "english": "{1,5:“He by whom }{3:this delightful }{0:ear-nectar }{2:story }{4:was spoken—}{8:why does he not }{6,7:become manifest, }{9:brother?”}",
+    "english": "{1,5:“Whoever }{4:told }{3:this delightful }{2:story, }{0:nectar to the ears—}{8:why does he not }{6,7:show himself, }{9:brother?”}",
     "words": [
       {
         "roman": "śravanāmṛta",
-        "gloss": "ear-nectar",
+        "gloss": "nectar to the ears",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20355,7 +20355,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "harijana jāni prīti ati gāṛhī. sajala nayana pulakāvali bāṛhī.",
-    "english": "{1:Recognizing him as }{0:Hari’s devotee, }{2:her love }{3:grew exceedingly }{4:deep; }{6:her eyes }{5:filled with tears, }{7:and horripilation }{8:surged.}",
+    "english": "{1:She recognized him as }{0:Hari’s devotee; }{2:her love }{3:grew exceedingly }{4:deep, }{6:her eyes }{5:filled with tears, }{7:and gooseflesh }{8:spread over her.}",
     "words": [
       {
         "roman": "harijana",
@@ -20401,7 +20401,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pulakāvali",
-        "gloss": "rows of thrilled horripilation; bristling hair",
+        "gloss": "gooseflesh; rows of hairs raised by emotion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20599,7 +20599,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aba kahu kusala jāum̐ balihārī. anuja sahita sukha bhavana kharārī.",
-    "english": "{0:“Now }{1:tell }{2:of the welfare—}{3,4:I offer myself in surrender—}{9:of the foe of Khara, }{8:the abode }{7:of joy, }{6:together with }{5:his younger brother.”}",
+    "english": "{0:“Now }{1:tell me: }{9:is the foe of Khara, }{8:the abode }{7:of joy, }{2:well, }{6:together with }{5:his younger brother? }{3,4:I offer myself in surrender.”}",
     "words": [
       {
         "roman": "aba",
@@ -21611,7 +21611,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "raghupati kara sandēsu aba sunu jananī dhari dhīra.",
-    "english": "{5:O Mother, }{6:holding }{7:fortitude, }{3:now }{4:hear }{2:the message }{1:of }{0:the guardian of Raghu's line.}",
+    "english": "{5:O Mother, }{6:take }{7:courage; }{3:now }{4:hear }{2:the message }{1:of }{0:the guardian of Raghu's line.}",
     "words": [
       {
         "roman": "raghupati",
@@ -22957,7 +22957,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaha kapi hṛdayam̐ dhīra dharu mātā. sumiru rāma sēvaka sukhadātā.",
-    "english": "{1:The monkey }{0:said: }{4:“Hold }{3:fortitude }{2:in your heart, }{5:O Mother! }{6:Contemplate }{7:Rama, }{9:the bestower of joy }{8:to his servants.}",
+    "english": "{1:The monkey }{0:said: }{4:“Keep }{3:courage }{2:in your heart, }{5:O Mother! }{6:Contemplate }{7:Rama, }{9:the bestower of joy }{8:to his servants.}",
     "words": [
       {
         "roman": "kaha",
@@ -23284,7 +23284,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jananī hṛdayam̐ dhīra dharu jare nisācara jānu.",
-    "english": "{0:O Mother, }{3:hold }{2:fortitude }{1:in your heart; }{6:consider }{5:the night-wanderers }{4:already burnt.}",
+    "english": "{0:O Mother, }{3:keep }{2:courage }{1:in your heart; }{6:consider }{5:the night-wanderers }{4:already burnt.}",
     "words": [
       {
         "roman": "jananī",
@@ -23760,7 +23760,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kachuka divasa jananī dharu dhīrā. kapinha sahita aihahiṁ raghubīrā.",
-    "english": "{0:For a few }{1:days, }{2:O Mother, }{3:hold }{4:patience; }{6:accompanied by }{5:the monkeys, }{8:the hero of Raghu's line }{7:will arrive.}",
+    "english": "{0:For a few }{1:days, }{2:O Mother, }{3:remain }{4:patient; }{6:accompanied by }{5:the monkeys, }{8:the hero of Raghu's line }{7:will arrive.}",
     "words": [
       {
         "roman": "kachuka",
@@ -25456,7 +25456,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunahu mātu mohi atisaya bhūkhā. lāgi dekhi suṁdara phala rūkhā.",
-    "english": "{0:“Listen, }{1:O Mother: }{3:an extreme }{4:hunger }{5:has struck }{2:me, }{6:seeing }{7:the beautiful }{8:fruits }{9:on the trees.”}",
+    "english": "{0:“Listen, }{1:O Mother: }{6:the sight of }{7:the beautiful }{8:fruits }{9:on the trees }{5:has brought }{3:a great }{4:hunger }{2:upon me.”}",
     "words": [
       {
         "roman": "sunahu",
@@ -39759,7 +39759,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cale haraṣi raghunāyaka pāsā. pūm̐chata kahata navala itihāsā.",
-    "english": "{1:Rejoicing, }{0:they set out }{2,3:to the presence of the leader of the Raghus, }{4:asking }{5:and narrating }{6:the fresh }{7:narrative.}",
+    "english": "{1:Rejoicing, }{0:they set out }{2,3:to the presence of the leader of the Raghus, }{4:asking questions }{5:and recounting }{6:the recent }{7:events.}",
     "words": [
       {
         "roman": "cale",
@@ -48836,7 +48836,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "calā kaṭaku ko baranaiṃ pārā. garjahi bānara bhālu apārā.",
-    "english": "{1:The army}{0: marched}{2:—who}{3,4: could describe it}? {8:Boundless}{6: monkeys}{7: and bears}{5: roar.}",
+    "english": "{1:The army}{0: marched}{2:—who}{3,4: could describe it}? {8:Countless}{6: monkeys}{7: and bears}{5: roar.}",
     "words": [
       {
         "roman": "calā",
@@ -54121,7 +54121,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "guna sāgara nāgara nara joū. alapa lobha bhala kahai na koū ॥",
-    "english": "{4:Whosoever be }{2:a cultured }{3:man }{1:and an ocean of }{0:virtues, }{5:for slight }{6:greed }{9:no }{10:one }{7,8:speaks well of him.}",
+    "english": "{4:Even if he is }{2:a cultured }{3:man }{1:and an ocean of }{0:virtues, }{5:with even a little }{6:greed }{9:no }{10:one }{7,8:speaks well of him.}",
     "words": [
       {
         "roman": "guna",
@@ -58502,7 +58502,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asa kahi calā bibhīṣanu jabahīṁ. āyūhīna bhaē saba tabahīṁ ॥",
-    "english": "{4:The very moment }{3:Vibhishana }{2:departed }{1:having spoken }{0:thus, }{8:at that very moment }{7:all }{6:became }{5:devoid of lifespan.}",
+    "english": "{4:The very moment }{3:Vibhishana }{2:departed }{1:having spoken }{0:thus, }{8:at that very moment }{7:all }{5,6:lost their remaining span of life.}",
     "words": [
       {
         "roman": "asa",
@@ -62417,7 +62417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bahuri rāma chabidhāma bilōkī. rahē'u ṭhaṭuki ēkaṭaka pala rōkī ..",
-    "english": "{0:Then, }{3:having beheld }{1:Rāma, }{2:the abode of beauty, }{4:he remained }{5:transfixed, }{8:arresting }{7:his eyelids }{6:in a fixed gaze.}",
+    "english": "{0:Then, }{3:seeing }{1:Rāma, }{2:the abode of beauty, }{4:he remained }{5:transfixed, }{6:staring }{7,8:without blinking.}",
     "words": [
       {
         "roman": "bahuri",

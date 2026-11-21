@@ -1008,7 +1008,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhūl to mujhse ho jātī hai",
-    "english": "{0:a mistake }{1:indeed }{3,4,5:happens }{2:through me,}",
+    "english": "{1:Indeed, }{2:I }{3,4,5:do make }{0:mistakes,}",
     "words": [
       {
         "roman": "Bhūl",

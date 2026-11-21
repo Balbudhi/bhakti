@@ -195,13 +195,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sansāra asāra guru hĩ ta sāra",
-    "english": "{0:Saṃsāra}{1: is substanceless;}{4: indeed,}{2: the Guru}{3: alone}{5: is the essence.}",
+    "english": "{0:Worldly existence}{1: is without substance;}{4: truly,}{2: the Guru}{3: alone}{5: is the essence.}",
     "words": [
       {
         "roman": "Sansāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "worldly existence; the cycle of birth and death",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "asāra",

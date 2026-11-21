@@ -414,7 +414,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "baṛadāṇḍe nandighoṣa jebe gaṛuthiba",
-    "english": "{2:when }{1:Nandighosha }{3:will be rolling }{0:on the Grand Road.}",
+    "english": "{2:when }{1:Nandighosha }{3:rolls }{0:on the Grand Road.}",
     "words": [
       {
         "roman": "baṛadāṇḍe",

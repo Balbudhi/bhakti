@@ -3906,7 +3906,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāpara jo kachu saṅkaṭa hoī | niścaya devihi sumirai soī ||",
-    "english": "{0:Upon whomever }{1,2:whatever }{3:crisis }{4:befalls, }{8:let that person }{7:remember }{6:the Goddess }{5:with firm faith.}",
+    "english": "{1,2:Whatever }{3:trouble }{4:befalls }{0:someone, }{8:let that person }{7:remember }{6:the Goddess }{5:with firm faith.}",
     "words": [
       {
         "roman": "jāpara",

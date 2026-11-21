@@ -521,7 +521,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "varṇābhimāna visaralī yātī",
-    "english": "{2:Jāti communities }{1:have forgotten }{0:pride in varṇa,}",
+    "english": "{2:Caste communities }{1:have forgotten }{0:pride in caste rank,}",
     "words": [
       {
         "roman": "varṇābhimāna",

@@ -240,7 +240,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Beka dauṛire paṛilā gaṇṭhi",
-    "english": "{0:In the neck-}{1:rope }{3:a knot }{2:was tied}",
+    "english": "{3:A knot }{2:was tied }{1:in the rope }{0:around its neck}",
     "words": [
       {
         "roman": "Beka",

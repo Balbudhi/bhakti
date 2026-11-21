@@ -408,7 +408,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chhā̃ḍi daī kula kī kāni",
-    "english": "{0,1:I have cast aside }{4:the propriety }{3:of }{2:family;}",
+    "english": "{0,1:I have cast aside }{4:regard }{3:for }{2:family honor;}",
     "words": [
       {
         "roman": "chhā̃ḍi",

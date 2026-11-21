@@ -393,7 +393,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nā manōmayūraṃbu nī mēghavarṇaṃbaina tirumēnu dalaṃci ānaṃdiṃcucunnayadi",
-    "english": "{0:my} {1:mind-peacock}, {5:contemplating} {2:your} {3:cloud-colored} {4:sacred body}, {6:rejoices}.",
+    "english": "{0:my }{1:mind, a peacock, }{6:rejoices }{5:as it contemplates }{2:your }{3:cloud-colored }{4:sacred body.}",
     "words": [
       {
         "roman": "nā",

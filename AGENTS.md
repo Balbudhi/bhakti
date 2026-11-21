@@ -12,6 +12,17 @@ This repository is a public static song library deployed at
 product URL. Do not expose review packets, local paths, extraction notes, or
 generic provenance filler on a song page page.
 
+## Reuse completed translation reviews
+
+Before repeating a library-wide translation audit, consult
+`data/translation-review-status.json` and its linked report. Reuse a `finished`
+mark when the reader file SHA-256 matches; if it differs, inspect the actual
+changes before deciding what needs review. Preserve `owner_protected` English
+exactly using `data/editorial_baselines.json`. Focus `needs_source_review` work
+on its recorded open definitions. A concrete new defect or source can reopen an
+affected passage; a completion mark is not evidence against the owner’s report.
+The marks cover translation review, not a new listening or exhaustive word-analysis audit.
+
 ## One-command production pipeline
 
 OpenRouter is again the default provider, with `google/gemini-3.7-flash` as the

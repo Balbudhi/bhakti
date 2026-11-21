@@ -413,13 +413,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mana vāṇī meṁ vo śakti kahāṁ jo mahimā tumharī gāna kare he",
-    "english": "{5:Where }{2:in }{0:manas }{1:and speech }{3:is that }{4:power }{6:which }{9,10:may sing }{8:your }{7:glory, }{11:O?}",
+    "english": "{11:O Lord, }{5:where }{2:in }{0:mind }{1:and speech }{3:is the }{4:power }{6:that }{9,10:could sing }{8:your }{7:glory?}",
     "words": [
       {
         "roman": "mana",
         "gloss": "sensory and deliberative mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "vāṇī",
@@ -1247,7 +1247,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caraṇa kamala kā dhyāna dharūṁ aura prāṇa kareṁ sumirana terā",
-    "english": "{4:May I fix }{3:meditation }{1,2:upon the lotus }{0:feet, }{5:and }{6,7:may the life-breath }{8:remember }{9:you.}",
+    "english": "{4:May I }{3:meditate }{2:upon }{1:your lotus }{0:feet, }{5:and }{6,7:may my life-breath }{8:remember }{9:you.}",
     "words": [
       {
         "roman": "caraṇa",
@@ -1473,7 +1473,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaraṇāgata ke śyāma hari he nātha mujhe tuma lenā thāma",
-    "english": "{2:Śyāma }{3:Hari }{0,1:of the surrendered, }{4:O }{5:Master, }{7,8:take }{9:hold of }{6:me.}",
+    "english": "{2:Śyāma }{3:Hari}, {0,1:Lord of those who seek refuge}, {4:O }{5:Master}, {7,8:take }{9:hold of }{6:me}.",
     "words": [
       {
         "roman": "śaraṇāgata",

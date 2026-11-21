@@ -585,7 +585,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "usse kyõ pardā kiye ho",
-    "english": "{1:why }{2,3,4:have you kept a veil }{0:from him?}",
+    "english": "{1:why }{2,3,4:do you veil yourself }{0:from him?}",
     "words": [
       {
         "roman": "usse",

@@ -1329,7 +1329,7 @@ window.SONG_LINES = {
   "l016": {
     "source": "और दिल में बसा इक तेरा प्यार हो",
     "roman": "aur dil mẽ basā ik terā pyār ho",
-    "english": "{0:And} {7:may} {4:only} {5:your} {6:love} be {1,2,3:dwelling in the heart}.",
+    "english": "{0:And} {7:may} {4:only} {5:your} {6:love} {3:dwell} {1,2:in my heart}.",
     "words": [
       {
         "roman": "aur",

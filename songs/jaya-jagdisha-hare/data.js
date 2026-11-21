@@ -930,7 +930,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma bina aura na dūjā",
-    "english": "{0,1:Without you }{3:there is no }{2:other }{4:second one,}",
+    "english": "{0,1:Apart from you }{3:there is no }{2,4:other,}",
     "words": [
       {
         "roman": "tuma",

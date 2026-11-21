@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhaṭkā huā merā man thā koī mil nā rahā thā sahārā",
-    "english": "{2,3:My mind }{4:was }{0,1:lost and wandering; }{5,7:no }{10:support }{6,8,9:was being found.}",
+    "english": "{2,3:My mind }{4:was }{0,1:lost and wandering; }{5,7:no }{10:support }{6,8,9:was to be found.}",
     "words": [
       {
         "roman": "Bhaṭkā",
@@ -909,7 +909,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lahroṁ se laṛtī huī nāv ko jaise mil nā rahā ho kinārā",
-    "english": "{6:Just as }{4,5:to a boat }{2,3:battling }{0,1:against the waves }{8,11:no shore }{7,9,10:could be found,}",
+    "english": "{6:just as }{4,5:a boat }{2,3:battling }{0,1:the waves }{7,9,10:could find }{8,11:no shore,}",
     "words": [
       {
         "roman": "Lahroṁ",
@@ -2158,7 +2158,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pānī ke pyāse ko taqdīr ne jaise jī bhar ke amṛt pilāyā",
-    "english": "{6:Just as }{4,5:destiny }{10,11:gave nectar to drink }{7,8,9:to the heart's content }{0,1,2,3:to one thirsty for water.}",
+    "english": "{6:just as }{4,5:destiny }{10,11:gave }{0,1,2,3:one thirsty for water }{10,11:nectar to drink }{7,8,9:to the heart’s content.}",
     "words": [
       {
         "roman": "Pānī",

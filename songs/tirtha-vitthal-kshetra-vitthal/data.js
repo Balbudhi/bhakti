@@ -528,7 +528,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāmā mhaṇe maj viṭṭhal sāpaḍlā",
-    "english": "{0:Nāmā} {1:says}, “{3:Viṭṭhal} {4:has been found} {2:by me};",
+    "english": "{0:Nāmā} {1:says}, “{2:I} {4:have found} {3:Viṭṭhal};",
     "words": [
       {
         "roman": "nāmā",

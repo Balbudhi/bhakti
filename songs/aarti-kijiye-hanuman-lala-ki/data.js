@@ -349,7 +349,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "roga doṣa jāke nikaṭa na jhām̐pai ॥",
-    "english": "{2,3:Near whom }{0:disease }{1:and affliction }{4:do not }{5:draw near,}",
+    "english": "{0:Disease }{1:and affliction }{4:do not }{5:come }{2,3:near him,}",
     "words": [
       {
         "roman": "roga",

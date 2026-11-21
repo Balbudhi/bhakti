@@ -3709,7 +3709,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Asī kīte kaul nibhāvā̃ge, asī nadīā̃ cīr ke āvā̃ge",
-    "english": "{0:We }{3:will fulfill }{1,2:our made pledges, }{4:we }{8:will come }{5,6,7:cleaving through rivers.}",
+    "english": "{0:We }{3:will fulfill }{1,2:the pledges we have made, }{4:we }{8:will come }{5,6,7:cleaving through rivers.}",
     "words": [
       {
         "roman": "Asī",
@@ -3834,7 +3834,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hāy asī kīte kaul nibhāvā̃ge, asī nadīā̃ cīr ke āvā̃ge",
-    "english": "{0:Ah, }{1:we }{4:will fulfill }{2,3:our made pledges, }{5:we }{9:will come }{6,7,8:cleaving through rivers.}",
+    "english": "{0:Ah, }{1:we }{4:will fulfill }{2,3:the pledges we have made, }{5:we }{9:will come }{6,7,8:cleaving through rivers.}",
     "words": [
       {
         "roman": "Hāy",
@@ -6021,7 +6021,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ohnā̃ kī is dunīyā tõ laiṇā, jehdā Maiyā te aitabār hove",
-    "english": "{0,1:What have they }{5:to gain }{2,3,4:from this world, }{6:whose }{9:faith }{10:is }{7,8:upon Mother?}",
+    "english": "{0,1:What have they }{5:to gain }{2,3,4:from this world, }{6:whose }{9:faith }{10:is }{7,8:in Mother?}",
     "words": [
       {
         "roman": "Ohnā̃",
@@ -6164,7 +6164,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ohnā̃ kī is dunīyā tõ laiṇā, jehdā Maiyā te aitabār hove",
-    "english": "{0,1:What have they }{5:to gain }{2,3,4:from this world, }{6:whose }{9:faith }{10:is }{7,8:upon Mother?}",
+    "english": "{0,1:What have they }{5:to gain }{2,3,4:from this world, }{6:whose }{9:faith }{10:is }{7,8:in Mother?}",
     "words": [
       {
         "roman": "Ohnā̃",
@@ -6319,7 +6319,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ohnū kise cīz dī kamī nahī̃, mā̃ de caraṇā̃ vic jehdā pyār hove",
-    "english": "{0,4,5:To him there is no lack }{1,2,3:of anything, }{10,11:whose love }{12:is }{6,7,8,9:at Mother's feet.}",
+    "english": "{10,11:One whose love }{12:is }{6,7,8,9:at Mother’s feet }{0,4,5:lacks }{1,2,3:nothing.}",
     "words": [
       {
         "roman": "Ohnū",
@@ -7303,7 +7303,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gar mil jāye Maiyā tujhko, to mujhse bhī milvā denā",
-    "english": "{0,3:If Mother }{1,2:should meet }{4:you, }{5:then }{8,9:arrange a meeting }{6:with me }{7:as well.}",
+    "english": "{0:If }{4:you }{1,2:should meet }{3:Mother, }{5:then }{8,9:bring }{6:me to meet her }{7:too.}",
     "words": [
       {
         "roman": "Gar",
@@ -7434,7 +7434,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gar mil jāye Maiyā tujhko, to mujhko bhī milvā denā",
-    "english": "{0,3:If Mother }{1,2:should meet }{4:you, }{5:then }{8,9:arrange a meeting }{6:for me }{7:as well.}",
+    "english": "{0:If }{4:you }{1,2:should meet }{3:Mother, }{5:then }{8,9:bring }{6:me to meet her }{7:too.}",
     "words": [
       {
         "roman": "Gar",
@@ -7583,7 +7583,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho terī bāt jo ho jāye mā̃ se, merī bhī bāt karā denā",
-    "english": "{0:Oh, }{1,3:if your }{2:conversation }{4,5:should happen }{6,7:with Mother, }{11,12:arrange }{8:my }{10:conversation }{9:as well.}",
+    "english": "{0:Oh, }{3:if }{1:you }{2,4,5:get to speak }{6,7:with Mother, }{11,12:arrange for }{8:me }{10:to speak with her }{9:too.}",
     "words": [
       {
         "roman": "Ho",
@@ -7744,7 +7744,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho merī bhī bāt karā denā, hā̃ merī bhī bāt karā denā",
-    "english": "{0:Oh, }{4,5:arrange }{1:my }{3:conversation }{2:as well, }{6:yes, }{10,11:arrange }{7:my }{9:conversation }{8:as well.}",
+    "english": "{0:Oh, }{4,5:arrange for }{1:me }{3:to speak with her }{2:too, }{6:yes, }{10,11:arrange for }{7:me }{9:to speak with her }{8:too.}",
     "words": [
       {
         "roman": "Ho",

@@ -542,11 +542,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śabdabrahmasamudraśca siddhasārasvato guhaḥ |",
-    "english": "{0:Ocean of sonic Brahman, and }{1:master of perfected wisdom, }{2:Guha;}",
+    "english": "{0:Ocean of the sacred Word, and }{1:master of perfected wisdom, }{2:Guha;}",
     "words": [
       {
         "roman": "śabdabrahmasamudraśca",
-        "gloss": "the ocean of sonic Brahman, and",
+        "gloss": "ocean of the sacred Word, and; śabdabrahman is the Veda understood as Brahman (ultimate reality) expressed in sacred sound; samudra means ocean",
         "concept_key": "",
         "preserve_in_english": false
       },

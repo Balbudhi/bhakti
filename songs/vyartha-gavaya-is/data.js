@@ -1661,7 +1661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "utanī hī kama hai terī praśaṁsā jitanī karatā jāūm̐",
-    "english": "{1:Just }{0:that much }{5:does praise }{4:of You }{2,3:fall short, }{6:however much }{7:I go on offering }{8:it,}",
+    "english": "{6:However much }{7:I praise }{4:You, }{8:on and on, }{0:that much }{5:praise }{1:still }{2,3:falls short,}",
     "words": [
       {
         "roman": "utanī",

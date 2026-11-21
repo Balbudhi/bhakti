@@ -568,7 +568,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Karūniyā sthira mana pāhū gambhīra he dhyāna",
-    "english": "{0:Having made }the {2:manas }{1:steady, }{3:let us behold }{5:this }{4:profound }{6:meditative form.}",
+    "english": "{0:Having made }the {2:mind }{1:steady, }{3:let us behold }{5:this }{4:profound }{6:meditative form.}",
     "words": [
       {
         "roman": "Karūniyā",
@@ -586,7 +586,7 @@ window.SONG_LINES = {
         "roman": "mana",
         "gloss": "sensory and deliberative mind",
         "concept_key": "manas",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "pāhū",
@@ -7245,7 +7245,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dise ajña lokāṃ parī jo janālā",
-    "english": "{4:who }{0:appears }{1:ignorant }{2:to people, }{3:though, }{5:to worldly folk,}",
+    "english": "{4:who }{0:appears }{5:to people }{3:like }{1:ignorant }{2:folk,}",
     "words": [
       {
         "roman": "dise",
@@ -7261,13 +7261,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "lokāṃ",
-        "gloss": "to people",
+        "gloss": "people; with parī, like people",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "parī",
-        "gloss": "though / like / yet",
+        "gloss": "like; comparative postposition attached to lokāṃ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7279,12 +7279,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "janālā",
-        "gloss": "to the worldly folk",
+        "gloss": "to people; to the public",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Marathi. dise is 3rd sg. present of disaṇe; lokāṃ and janālā are dative plural/singular forms with case postpositions/endings."
+    "grammarNote": "Marathi. Read the printed लोकांपरी as lokāṃ + comparative parī (like people), even though the stored source has a space. Ajña qualifies those people; janālā supplies the experiencer, to people. The following line contrasts this outward appearance with inward wisdom."
   },
   "line-103": {
     "source": "परी अंतरी ज्ञान कैवल्यदाता",
@@ -7511,11 +7511,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dharū sāīpremā gaḷā yā ahantā",
-    "english": "{0:let us seize }{2:the throat }{3:of this }{4:ego }{1:through love for Sai.}",
+    "english": "{0:Let us hold fast }{1:to love for Sāī, }{2,3:so that }{4:ego }{2,3:falls away.}",
     "words": [
       {
         "roman": "dharū",
-        "gloss": "let us grasp / seize",
+        "gloss": "let us hold; let us hold fast",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7527,13 +7527,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaḷā",
-        "gloss": "the throat / neck",
+        "gloss": "with following yā: gaḷāyā, so that it may fall away",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yā",
-        "gloss": "of this",
+        "gloss": "completes the purpose form gaḷāyā with the preceding gaḷā; not the demonstrative this",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7544,7 +7544,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Marathi. dharū is 1st person plural hortative verb; sāīpremā is dative/locative of sāīprema; gaḷā is direct object; ahantā is oblique/genitive governed by yā."
+    "grammarNote": "Marathi. Dharū is a first-person plural exhortation to hold to love for Sāī. The stored tokens gaḷā yā together represent the printed purpose form gaḷāyā, so that ego falls away. Ahantā is what falls away; it is not the possessor of a throat."
   },
   "line-107": {
     "source": "धरावे करे सान अल्पज्ञ बाला",

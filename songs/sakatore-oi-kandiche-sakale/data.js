@@ -178,11 +178,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kaho kāne kāne, śunāo prāṇe prāṇe maṅgalabāratā.",
-    "english": "{0:Speak }{1,2:into each ear, }{3:make heard }{4,5:in every soul }{6:the tidings of auspiciousness.}",
+    "english": "{0:Whisper }{1,2:in each ear; }{3:let }{4,5:every soul hear }{6:good tidings.}",
     "words": [
       {
         "roman": "Kaho",
-        "gloss": "speak; utter",
+        "gloss": "speak; here speak softly into the ear, whisper",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -218,7 +218,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṅgalabāratā.",
-        "gloss": "tidings of auspiciousness; message of salvation / well-being",
+        "gloss": "good tidings; news of well-being",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -807,7 +807,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kī habe gati, biśvapati, śānti kothā āche?",
-    "english": "{0:What }{1:will be }{2:our way, }{3:guardian of the universe—}{5:where }{6:is }{4:peace?}",
+    "english": "{0:What }{1:will become }{2:of us, }{3:Lord of the universe—}{5:where }{6:is }{4:peace?}",
     "words": [
       {
         "roman": "Kī",
@@ -823,7 +823,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gati,",
-        "gloss": "refuge; fate; destiny; ultimate state",
+        "gloss": "fate; destination; what becomes of someone",
         "concept_key": "",
         "preserve_in_english": false
       },

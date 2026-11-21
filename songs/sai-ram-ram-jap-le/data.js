@@ -1082,7 +1082,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mṛtyu kā kyā bharosā, ā jāe kab nigoṛī",
-    "english": "{2:What }{3:certainty }{0,1:is there of death, }{6:when }{7:that wretched one }{4,5:might arrive}",
+    "english": "{2:What }{3:certainty }{0,1:is there about death—}{6:when }{7:that wretched one }{4,5:might arrive?}",
     "words": [
       {
         "roman": "Mṛtyu",
