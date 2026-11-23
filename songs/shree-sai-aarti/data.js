@@ -34,9 +34,22 @@ window.SONG_META = {
   "translationStatus": "gloss-derived literal",
   "sectionNotices": [
     {
-      "sequenceIndex": 0,
+      "sequenceIndex": 1,
       "title": "Āratī Sāī Bābā",
-      "poet": "Mādhavrao Vāmanrao Adkar"
+      "poet": "Mādhavrao Vāmanrao Adkar",
+      "note": "Hindi rendering of the Marathi original."
+    },
+    {
+      "sequenceIndex": 27,
+      "title": "Śrī Sāīnātha Mahimna Stotram",
+      "poet": "Upāsanī Bābā Mahārāj",
+      "note": "Closing verses, beginning Śrī Sāīśa Kṛpānidhe."
+    },
+    {
+      "sequenceIndex": 34,
+      "title": "Śivāparādha-kṣamāpaṇa · Prārthanā",
+      "poet": "Ādi Śaṅkarācārya",
+      "note": "Sāī adaptation of the Śaiva forgiveness verse, replacing Śrī Mahādeva Śambho with Śrīprabho Sāīnātha."
     }
   ],
   "adaptedSequenceIndices": [],

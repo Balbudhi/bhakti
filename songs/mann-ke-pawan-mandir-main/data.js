@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Mann Ke Pawan Mandir Main",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sadhana Sargam",
+  "credit": "Shri Chandra Bhanu Satpathy · Sadhana Sargam",
   "pageCredit": "Sadhana Sargam",
-  "writer": "",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "Sadhana Sargam",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Hindi"
   ],
@@ -16,7 +16,8 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Sadhna Sargam"
+    "Sadhna Sargam",
+    "Shri Chandra Bhanu Satpathy"
   ],
   "audioSources": [
     {

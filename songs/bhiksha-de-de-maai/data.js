@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Bhikṣā De De Māī",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Mukesh Kulkarni · Pramod Medhi",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Mukesh Kulkarni",
   "singer": "Pramod Medhi",
   "composer": "",
   "languages": [
@@ -18,7 +18,8 @@ window.SONG_META = {
     "Bhiksha De De Mai",
     "Bhiksa De De Mai",
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Mukesh Kulkarni"
   ],
   "audioSources": [
     {

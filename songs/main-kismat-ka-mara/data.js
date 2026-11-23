@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Main Kismat Ka Mara",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Kishore Gagare · Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Kishore Gagare",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Kishore Gagare",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {

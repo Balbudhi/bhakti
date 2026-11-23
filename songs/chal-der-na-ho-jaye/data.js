@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Chal Der Na Ho Jaye",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sanjayraj & Pramod Medhi",
-  "pageCredit": "Sanjayraj & Pramod Medhi",
-  "writer": "",
-  "singer": "Sanjayraj & Pramod Medhi",
-  "composer": "",
+  "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
+  "pageCredit": "Pramod Medhi",
+  "writer": "Kishore Gagare & Jayshree Medhi",
+  "singer": "Pramod Medhi",
+  "composer": "Suresh–Sanjay",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,10 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Kishore Gagare & Jayshree Medhi",
+    "Pramod Medhi",
+    "Suresh–Sanjay"
   ],
   "audioSources": [
     {

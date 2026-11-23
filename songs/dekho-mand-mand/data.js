@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Dekho Mand Mand",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Shubhram Bahal & Pramod Medhi",
+  "credit": "Shubhram Bahal · Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Shubhram Bahal & Pramod Medhi",
-  "writer": "",
+  "writer": "Shubhram Bahal",
   "singer": "Shubhram Bahal & Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Shubhram Bahal",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {

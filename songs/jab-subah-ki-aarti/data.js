@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jab Subah Kī Āratī",
   "subtitle": "Sai Teri Kripa Se",
-  "credit": "Traditional · Pramod Medhi · Sudhanshu–Samir",
+  "credit": "Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Pramod Medhi",
   "composer": "Sudhanshu–Samir",
   "languages": [
@@ -17,7 +17,8 @@ window.SONG_META = {
     "Jab Subah Ki Arati",
     "Shirdi Sai",
     "Sirdi Sai",
-    "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya"
+    "Jab Subah Ki Aarti Khatam Hui Aur Baba Ne Snan Kiya",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {

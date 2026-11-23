@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Mera Jeevan Tere",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
+  "pageCredit": "Pramod Medhi",
+  "writer": "Kishore Gagare & Jayshree Medhi",
+  "singer": "Pramod Medhi",
+  "composer": "Suresh–Sanjay",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,10 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Kishore Gagare & Jayshree Medhi",
+    "Pramod Medhi",
+    "Suresh–Sanjay"
   ],
   "audioSources": [
     {
@@ -29,7 +32,28 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "writerAttribution": "Adaptation",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Jaba Hama Jahāṃ Meṃ Paidā Hue",
+      "poet": "Kabīr",
+      "note": "Opening couplet, in a performance variant."
+    },
+    {
+      "sequenceIndex": 2,
+      "title": "Jaise Karama Karoge",
+      "poet": "",
+      "note": "Additional opening couplet."
+    },
+    {
+      "sequenceIndex": 4,
+      "title": "Merā Jīvana Tere Havāle",
+      "poet": "",
+      "note": "The refrain and first two stanzas adapt the bhajan credited to Anup Jalota as composer and lyricist on the Universal recording; this performance adds a final stanza."
+    }
+  ]
 };
 
 window.SONG_LINES = {

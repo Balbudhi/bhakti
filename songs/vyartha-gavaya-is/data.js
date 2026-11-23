@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Vyartha Gavāyā Ho...",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "S. B. Dubey · Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "S. B. Dubey",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -16,7 +16,9 @@ window.SONG_META = {
   "searchAliases": [
     "Vyartha Gavaya Ho...",
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "S. B. Dubey",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
@@ -30,7 +32,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Vyartha Gavāyā Ho...",
+      "poet": "",
+      "note": "Shares its three main stanzas with the Khāṭū Śyāma bhajan of this name; Sāī Dhāma replaces Khāṭū Dhāma here."
+    }
+  ]
 };
 
 window.SONG_LINES = {

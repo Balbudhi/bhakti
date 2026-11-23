@@ -43,53 +43,61 @@ window.SONG_META = {
     {
       "sequenceIndex": 0,
       "title": "Bhūpālī · Doī Kara Jore",
-      "poet": "Sant Tukārām"
+      "poet": "Sant Tukārām",
+      "note": "Hindi rendering of a Marathi original."
     },
     {
       "sequenceIndex": 9,
       "title": "Bhūpālī · Uṭho Pāṇḍuraṅga",
-      "poet": "Sant Janābāī"
+      "poet": "Sant Janābāī",
+      "note": "Hindi rendering of a Marathi original."
     },
     {
       "sequenceIndex": 17,
       "title": "Bhūpālī · Uṭho Uṭho Śrī Sāīnātha",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Hindi rendering of a Marathi original."
     },
     {
       "sequenceIndex": 41,
       "title": "Bhūpālī · Uṭho Pāṇḍuraṅga",
-      "poet": "Sant Nāmdev"
+      "poet": "Sant Nāmdev",
+      "note": "Hindi rendering of a Marathi original."
     },
     {
       "sequenceIndex": 53,
       "title": "Pañcāratī",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Hindi rendering of a Marathi original."
     },
     {
       "sequenceIndex": 57,
       "title": "Kākaḍ Āratī",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Hindi rendering of a Marathi original."
     },
     {
       "sequenceIndex": 83,
       "title": "Āratī Utārūṁ",
       "poet": "Sant Tukārām",
-      "note": "Hindi rendering of the Marathi ārati."
+      "note": "Hindi rendering of Tukārām’s Marathi ārati."
     },
     {
       "sequenceIndex": 94,
       "title": "Uṭho Sādhu Santa",
-      "poet": "",
-      "note": "Hindi rendering of the Marathi pada Uṭhā Sādhusanta."
+      "poet": "Sant Nāmdev",
+      "note": "Hindi adaptation of Uṭhā Uṭhā Sādhusanta; Bābā and Sadguru replace Viṭṭhala and Pāṇḍuraṅga."
     },
     {
       "sequenceIndex": 106,
       "title": "Sāīnātha Guru Merī Māī",
-      "poet": ""
+      "poet": "",
+      "note": "Hindi rendering of the Marathi liturgical refrain Sāīnātha Guru Mājhe Āī."
     }
   ],
   "adaptedSequenceIndices": [],
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "writerAttribution": "Original Marathi poets"
 };
 
 window.SONG_LINES = {

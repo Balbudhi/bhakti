@@ -69,7 +69,7 @@ window.SONG_META = {
       "sequenceIndex": 87,
       "title": "Aisā Yeī Bā Sāī Digambarā",
       "poet": "",
-      "note": ""
+      "note": "Adapted from the Datta hymn Aisā Yeī Bā Datta Digambarā, replacing Datta with Sāī in the refrain."
     },
     {
       "sequenceIndex": 108,

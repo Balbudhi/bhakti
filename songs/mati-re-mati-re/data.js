@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Māṭī Re Māṭī Re",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Shankar Mahadevan",
+  "credit": "Shri Chandra Bhanu Satpathy · Shankar Mahadevan",
   "pageCredit": "Shankar Mahadevan",
-  "writer": "",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "Shankar Mahadevan",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Shri Chandra Bhanu Satpathy"
   ],
   "audioSources": [
     {

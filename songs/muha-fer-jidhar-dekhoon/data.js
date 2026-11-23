@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Muha Fer Jidhar Dekhoon",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Gurdas Maan · Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Gurdas Maan",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Gurdas Maan",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
@@ -29,7 +31,16 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "writerAttribution": "Original lyrics",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Mũha Phera Jidhara Dekhū̃",
+      "poet": "Gurdas Maan",
+      "note": "Adapted from the Mātā song Muh Pher Jidhar Dekhun; Sāī and Bābā replace Mā̃."
+    }
+  ]
 };
 
 window.SONG_LINES = {

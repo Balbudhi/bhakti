@@ -31,7 +31,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 0,
       "title": "Śrī Sāīnātha Prabhātāṣṭaka",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Hindi rendering of the Marathi original."
     },
     {
       "sequenceIndex": 37,
@@ -47,33 +48,37 @@ window.SONG_META = {
       "sequenceIndex": 77,
       "title": "Tujhe Kyā Dū̃ Sā̃vare",
       "poet": "Sant Janābāī",
-      "note": "Adapted for Sai worship; Sai-specific substitutions are marked."
+      "note": "Hindi rendering of the Marathi original. Adapted for Sai worship; Sai-specific substitutions are marked."
     },
     {
       "sequenceIndex": 89,
       "title": "Śrī Sadguru Bābā Sāī Ho",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Hindi rendering of the Marathi original."
     },
     {
       "sequenceIndex": 103,
       "title": "Pañcāratī",
       "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
-      "note": "Sai-specific response lines are marked."
+      "note": "Hindi rendering of the Marathi original. Sai-specific response lines are marked."
     },
     {
       "sequenceIndex": 113,
       "title": "Āratī Sāī Bābā",
-      "poet": "Mādhavrao Vāmanrao Adkar"
+      "poet": "Mādhavrao Vāmanrao Adkar",
+      "note": "Hindi rendering of the Marathi original."
     },
     {
       "sequenceIndex": 140,
       "title": "Jaya Deva Datta Avadhūta",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma"
+      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
+      "note": "Hindi rendering of the Marathi original."
     },
     {
       "sequenceIndex": 166,
       "title": "Śirḍī Mājhe Paṇḍharpur",
-      "poet": "Dās Gaṇū Mahārāj"
+      "poet": "Dās Gaṇū Mahārāj",
+      "note": "Hindi rendering of the Marathi original."
     },
     {
       "sequenceIndex": 174,
@@ -113,18 +118,25 @@ window.SONG_META = {
     {
       "sequenceIndex": 196,
       "title": "Anantā Tulā Te / Namaskāra Sāṣṭāṅga",
-      "poet": "Mohanirāj"
+      "poet": "Mohanirāj",
+      "note": "Hindi rendering of the Marathi original."
     },
     {
       "sequenceIndex": 227,
       "title": "Aisā Yeī Bā Sāī Digambarā",
       "poet": "",
-      "note": "The refrain directly addresses Sai as Digambara. The next verse invokes Dattātreya through the epithet “son of Anasūyā and Atri”; it does not rename the refrain as “Datta Digambara.”"
+      "note": "Hindi adaptation of the Marathi Datta hymn Aisā Yeī Bā Datta Digambarā, addressing Sāī in the refrain."
     },
     {
       "sequenceIndex": 248,
       "title": "Śrī Sāīnātha Mahimna Stotram",
       "poet": "Upāsanī Bābā Mahārāj"
+    },
+    {
+      "sequenceIndex": 308,
+      "title": "Śivāparādha-kṣamāpaṇa · Prārthanā",
+      "poet": "Ādi Śaṅkarācārya",
+      "note": "Sāī adaptation of the Śaiva forgiveness verse, replacing Śrī Mahādeva Śambho with Śrīprabho Sāīnātha."
     },
     {
       "sequenceIndex": 312,

@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Geet Jaisa Main Hun Nirashrit",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Shilpa Rao",
+  "credit": "Shri Chandra Bhanu Satpathy · Shilpa Rao",
   "pageCredit": "Shilpa Rao",
-  "writer": "",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "Shilpa Rao",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Shri Chandra Bhanu Satpathy"
   ],
   "audioSources": [
     {

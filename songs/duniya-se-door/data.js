@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Duniya Se Dil Lagakar",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir & Shubhram Bahal",
+  "credit": "Shubhram Bahal · Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Shubhram Bahal & Pramod Medhi",
-  "writer": "",
+  "writer": "Shubhram Bahal",
   "singer": "Shubhram Bahal & Pramod Medhi",
-  "composer": "Sudhanshu–Samir & Shubhram Bahal",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Shubhram Bahal",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
@@ -29,7 +31,22 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "writerAttribution": "Adaptation",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Mana Meṃ Hai Basī Basa Cāha Yahī",
+      "poet": "",
+      "note": "Opening verses drawn from this prayer."
+    },
+    {
+      "sequenceIndex": 4,
+      "title": "Duniyā Se Dila Lagākar",
+      "poet": "",
+      "note": "Sāī adaptation sharing the refrain and opening stanza with the ghazal recorded by Jagjit Singh."
+    }
+  ]
 };
 
 window.SONG_LINES = {

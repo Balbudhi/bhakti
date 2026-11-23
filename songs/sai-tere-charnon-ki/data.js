@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Sai Tere Charnon Ki",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
   "writer": "",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
@@ -29,7 +30,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Sāī Caraṇoṃ Kī Dhūli",
+      "poet": "Indra Prakash Mehta",
+      "note": "Related verses appear under his name in Śrī Sāī Līlā, May 1982; this performance varies the wording and adds verses."
+    }
+  ]
 };
 
 window.SONG_LINES = {

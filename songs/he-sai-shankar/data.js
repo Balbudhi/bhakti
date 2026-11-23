@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "He Sai Shankar",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sanjayraj & Pramod Medhi",
-  "pageCredit": "Sanjayraj & Pramod Medhi",
-  "writer": "",
-  "singer": "Sanjayraj & Pramod Medhi",
-  "composer": "",
+  "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
+  "pageCredit": "Pramod Medhi",
+  "writer": "Kishore Gagare & Jayshree Medhi",
+  "singer": "Pramod Medhi",
+  "composer": "Suresh–Sanjay",
   "languages": [
     "Hindi"
   ],
@@ -18,7 +18,10 @@ window.SONG_META = {
     "Shirdi Sai",
     "Sirdi Sai",
     "Shiva",
-    "Siva"
+    "Siva",
+    "Kishore Gagare & Jayshree Medhi",
+    "Pramod Medhi",
+    "Suresh–Sanjay"
   ],
   "audioSources": [
     {

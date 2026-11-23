@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Sai Ki Palki",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sukhwinder Singh",
+  "credit": "Shri Chandra Bhanu Satpathy · Sukhwinder Singh",
   "pageCredit": "Sukhwinder Singh",
-  "writer": "",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "Sukhwinder Singh",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Hindi"
   ],
@@ -18,7 +18,8 @@ window.SONG_META = {
     "Shirdi Sai",
     "Sirdi Sai",
     "Shiva",
-    "Siva"
+    "Siva",
+    "Shri Chandra Bhanu Satpathy"
   ],
   "audioSources": [
     {

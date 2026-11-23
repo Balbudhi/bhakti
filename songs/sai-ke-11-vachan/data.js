@@ -29,7 +29,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Sāī Bābā’s Eleven Assurances",
+      "poet": "",
+      "note": "Hindi rendering of the Marathi verses beginning Śirḍīsa Jyāce Lāgatīla Pāya."
+    }
+  ]
 };
 
 window.SONG_LINES = {

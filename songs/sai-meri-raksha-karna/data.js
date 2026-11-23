@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Sai Meri Raksha Karna",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Anand Kumar · Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Anand Kumar",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Anand Kumar",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
@@ -29,7 +31,22 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "writerAttribution": "Lyrics for this recording",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Jāko Rākhe Sāīyāṃ",
+      "poet": "Kabīr",
+      "note": "Opening couplet."
+    },
+    {
+      "sequenceIndex": 2,
+      "title": "Sāī Merī Rakṣā Karnā",
+      "poet": "Anand Kumar",
+      "note": "Lyrics credited on the Pramod Medhi recording."
+    }
+  ]
 };
 
 window.SONG_LINES = {

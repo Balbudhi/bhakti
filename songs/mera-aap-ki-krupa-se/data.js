@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Mera Aap Ki Krupa Se",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Shubhram Bahal & Pramod Medhi",
+  "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Shubhram Bahal & Pramod Medhi",
   "writer": "",
   "singer": "Shubhram Bahal & Pramod Medhi",
-  "composer": "",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
@@ -29,7 +30,15 @@ window.SONG_META = {
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "gloss-derived literal",
-  "sourceStatus": "reviewed"
+  "sourceStatus": "reviewed",
+  "sectionNotices": [
+    {
+      "sequenceIndex": 0,
+      "title": "Mera Aap Ki Krupa Se",
+      "poet": "",
+      "note": "Also sung as a Kṛṣṇa bhajan; this version addresses Bābā where the Kṛṣṇa text names Kanhaiyā."
+    }
+  ]
 };
 
 window.SONG_LINES = {

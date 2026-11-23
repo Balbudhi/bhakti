@@ -86,7 +86,7 @@ window.SONG_META = {
       "sequenceIndex": 143,
       "title": "Aisā Yeī Bā Sāī Digambarā",
       "poet": "",
-      "note": ""
+      "note": "Adapted from the Datta hymn Aisā Yeī Bā Datta Digambarā, replacing Datta with Sāī in the refrain."
     },
     {
       "sequenceIndex": 164,
@@ -96,9 +96,9 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 205,
-      "title": "Prārthanā",
-      "poet": "",
-      "note": "Closing Karacaraṇakṛtaṃ prayer and acclamations."
+      "title": "Śivāparādha-kṣamāpaṇa · Prārthanā",
+      "poet": "Ādi Śaṅkarācārya",
+      "note": "Sāī adaptation of the Śaiva forgiveness verse, replacing Śrī Mahādeva Śambho with Śrīprabho Sāīnātha; followed by acclamations."
     }
   ],
   "adaptedSequenceIndices": []

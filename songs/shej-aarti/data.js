@@ -44,7 +44,7 @@ window.SONG_META = {
       "note": "Sai-adapted form; substituted names are marked."
     },
     {
-      "sequenceIndex": 21,
+      "sequenceIndex": 19,
       "title": "Āratī Jñānarājācī",
       "poet": "Rāma Janārdanī Svāmī",
       "note": "Directed to Jñāneśvar; not relabeled as Sai."
@@ -64,8 +64,8 @@ window.SONG_META = {
     {
       "sequenceIndex": 89,
       "title": "Ātā Svāmī Sukhe",
-      "poet": "Kṛṣṇa Jogīśvara Bhīṣma",
-      "note": ""
+      "poet": "",
+      "note": "Datta śejāratī in a Sāī recension; Sāī ārati editions attribute this version to Kṛṣṇa Jogīśvara Bhīṣma."
     },
     {
       "sequenceIndex": 117,

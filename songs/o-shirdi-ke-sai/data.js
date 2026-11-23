@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "O Shirdi Ke Sai",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
+  "pageCredit": "Pramod Medhi",
+  "writer": "Kishore Gagare & Jayshree Medhi",
+  "singer": "Pramod Medhi",
+  "composer": "Suresh–Sanjay",
   "languages": [
     "Hindi"
   ],
@@ -17,7 +17,10 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Rama"
+    "Rama",
+    "Kishore Gagare & Jayshree Medhi",
+    "Pramod Medhi",
+    "Suresh–Sanjay"
   ],
   "audioSources": [
     {
