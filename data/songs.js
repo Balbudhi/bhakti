@@ -6788,40 +6788,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 311
   },
   {
-    "slug": "yeh-mantra-hai-maa-chamunda-ka",
-    "queueId": "a6f604c9",
-    "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
-    "credit": "Maninder Ji",
-    "languageTags": [
-      "Hindi",
-      "Punjabi",
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Ye Mantra Hai Mã Camunda Ka",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Yah Mantra Hai Maa Chamunda Ka"
-    ],
-    "writer": "",
-    "singer": "Maninder Ji",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-mantra-hai-maa-chamunda-ka-65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 386
-  },
-  {
     "slug": "jhoothe-jag-ne",
     "queueId": "71764ce6",
     "title": "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
@@ -10410,6 +10376,39 @@ window.BHAKTI_SONGS = [
     "queueNumber": 205
   },
   {
+    "slug": "shri-kshetra-biharii",
+    "queueId": "dbc29b39",
+    "title": "Shri Kshetra Biharii",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha",
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 206
+  },
+  {
     "slug": "e-barashe-aasi-achi",
     "queueId": "e3ce2da9",
     "title": "E Barashe Aasi Achi",
@@ -11945,39 +11944,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 35
   },
   {
-    "slug": "shri-kshetra-biharii",
-    "queueId": "dbc29b39",
-    "title": "Shri Kshetra Biharii",
-    "credit": "Shri Chandra Bhanu Satpathy · Sudha Mishra",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha",
-      "Nirguṇa"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Sudha Mishra",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 206
-  },
-  {
     "slug": "brahmam-okkate",
     "queueId": "c3b16728",
     "title": "Brahmam Okkaṭē",
@@ -13463,6 +13429,41 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 384
+  },
+  {
+    "slug": "yeh-mantra-hai-maa-chamunda-ka",
+    "queueId": "a6f604c9",
+    "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
+    "languageTags": [
+      "Hindi",
+      "Punjabi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Ye Mantra Hai Mã Camunda Ka",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Yah Mantra Hai Maa Chamunda Ka"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-mantra-hai-maa-chamunda-ka-65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
+    "subtitle": "Śakti",
+    "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "8fe3ad12360d11b1b1cce50d2709c0cc3bbcd72de18ec005a86a9d2a0ec9d835";
+window.BHAKTI_SHUFFLE_REVISION = "bf36668bfe5a3d9a8f80a909ddf86278212ca087aab602bbb4d17db10264e5f9";

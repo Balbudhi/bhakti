@@ -138,3 +138,21 @@ Open: the caption of Jab Karm signs "Bagge" (Sahil Bagga); this recording sings 
 
 Shazam found the control song and did not know the Tirupati recordings tried, the rest of the
 CD holding Sai Ram Ram Jap Le, or the Geet Sai Ke Lie songs. Single hits were often false.
+
+## Re-check of every credit that rested on voice — 23 November 2026
+
+Studio calibration: 65 songs by 15 certain singers, 1,952 pairs of different singers. None
+reached 0.85, two in two thousand passed 0.80; the closest are women of one style.
+
+| Reader | Result |
+|---|---|
+| shejarti; shree-sai-aarti | confirmed: official previews match (0.59; 0.56), Shazam five of five, Pramod Medhi |
+| barayya; nodire; saranembe | confirmed: official singles match (0.60–0.63), Raichur Sheshagiri Das |
+| jayagalu; modalondipe; sanjivana; rajabidi | kept: mean 0.70–0.78 to Sheshagiri Das, next singer at most 0.59; rajabidi is the weakest |
+| zara-to-itana | kept: mean 0.80 to eight Deepak Kumar songs, next 0.57 |
+| mohodadhi; jagannath; guru-karo | kept: 0.85–0.91 to Karunakar Sethi and 0.82–0.88 to each other |
+| bela-gadi | kept: 0.87–0.88 to the confirmed Antara Chakraborty song of the album |
+| shri-kshetra-biharii | removed: 0.85 equals the highest score between two different women |
+| yeh-mantra | removed: captions of other performances only; voice undecided |
+| jai-jai-durge; russiya; maa-ne-raunkan | kept: captions of these bheṇṭs name one singer and the shrine test agrees; not exact |
+| meri-dati | kept as Yashpal Ji: the same recording is on his channel; voice cannot separate him from Jaipal Ji |

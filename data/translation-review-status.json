@@ -1226,7 +1226,7 @@
     },
     "shri-kshetra-biharii": {
       "status": "finished",
-      "readerSha256": "e513c8d3a7d0dbb41c213d72da59dad3233564e7d8bc21f873c939eeb5d8851b",
+      "readerSha256": "07a0b65857df99418f2aa868f65107ad6e8a14a2f47df46889310001bf59f74e",
       "definitionCount": 63,
       "reviewedAt": "2026-11-21"
     },
@@ -2409,7 +2409,7 @@
     },
     "yeh-mantra-hai-maa-chamunda-ka": {
       "status": "finished",
-      "readerSha256": "6d4aff560c453f7cafe7283e13c54ab4d1c24f4a8f87815f6875b11fa4cc93b9",
+      "readerSha256": "128a083449baeac436bc8d14309a4690e1fe36ce153daa44893592902bd8cb18",
       "definitionCount": 7,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"

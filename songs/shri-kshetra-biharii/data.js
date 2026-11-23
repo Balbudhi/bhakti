@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Shri Kshetra Biharii",
   "subtitle": "Jagannātha",
-  "credit": "Shri Chandra Bhanu Satpathy · Sudha Mishra",
-  "pageCredit": "Sudha Mishra",
+  "credit": "Shri Chandra Bhanu Satpathy",
+  "pageCredit": "Shri Chandra Bhanu Satpathy",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Sudha Mishra",
+  "singer": "",
   "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Odia"
