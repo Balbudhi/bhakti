@@ -496,7 +496,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "bhetilagi-jiva",
     "queueId": "c926fd92",
-    "title": "Bhēṭīlāgī Jīvā",
+    "title": "Bheṭīlāgī Jīvā",
     "credit": "Tukārām · Anuradha Paudwal",
     "languageTags": [
       "Marathi"
@@ -5656,7 +5656,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "jaun-tore-caran-kamala",
     "queueId": "9d637ec2",
-    "title": "Jāū̃ Tōrē Caran Kamal Par Vārī",
+    "title": "Jāū̃ Tore Caran Kamal Par Vārī",
     "credit": "Vasant Dev · Lata Mangeshkar, Rajan Mishra and Sajan Mishra · Laxmikant–Pyarelal",
     "languageTags": [
       "Hindi"
@@ -7119,7 +7119,7 @@ window.BHAKTI_SONGS = [
   {
     "slug": "meri-ek-antar-abhilash",
     "queueId": "dad840d9",
-    "title": "Mērī Ēk Antar Abhilāṣ",
+    "title": "Merī Ek Antar Abhilāṣ",
     "credit": "Pandit Jasraj",
     "languageTags": [
       "Braj"
@@ -13242,4 +13242,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 329
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "d24ee5cd846a96934cbbe977fcca81c9c34cb19291e07f63b11a351fa2d80ae7";
+window.BHAKTI_SHUFFLE_REVISION = "00c6e44230011a6acef5441c1768888094e00fcbf19348b5feb0cfbbf8bcc29c";

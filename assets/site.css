@@ -274,56 +274,60 @@ main {
 #filterCount { font-variant-numeric: tabular-nums; }
 .library-empty { padding: 28px 10px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 
+/* Four one-line scrollers. Each is its own paint boundary and only ever moves
+   sideways; the buttons carry no positioned or transformed layers, so a swipe
+   has nothing to recomposite. */
 .tag-row {
   display: flex;
   align-items: center;
   min-height: 44px;
-  gap: 7px;
+  /* Room for the first pill's focus ring inside the clipped edge. */
+  margin-inline: -4px;
+  padding-inline: 4px;
   overflow-x: auto;
-  padding-bottom: 0;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  contain: layout paint style;
   scrollbar-width: none;
 }
 
 .tag-row::-webkit-scrollbar { display: none; }
 
+/* The button is the 44px target; its label is the visible pill. */
 .tag-filter {
-  position: relative;
   flex: 0 0 auto;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: transparent;
+  min-height: 44px;
+  margin: 0;
+  border: 0;
+  padding: 0 7px 0 0;
+  background: none;
   color: var(--muted);
   cursor: pointer;
   font: 500 11px/1 Inter, sans-serif;
-  padding: 8px 11px;
-  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, opacity 120ms ease, transform 120ms ease;
 }
-.tag-filter::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 100%;
-  min-height: 44px;
-  transform: translateY(-50%);
+.tag-filter > span {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 11px;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease;
 }
 
-.tag-filter[aria-pressed="true"],
-.tag-filter:focus-visible {
+.tag-filter:focus-visible { outline: none; }
+.tag-filter[aria-pressed="true"] > span,
+.tag-filter:focus-visible > span {
   background: rgba(244, 234, 208, 0.12);
   border-color: rgba(244, 234, 208, 0.52);
   color: var(--ink);
-  outline: none;
 }
 @media (hover: hover) and (pointer: fine) {
-  .tag-filter:hover {
+  .tag-filter:hover > span {
     background: rgba(244, 234, 208, 0.12);
     border-color: rgba(244, 234, 208, 0.52);
     color: var(--ink);
   }
 }
-.tag-filter:active { opacity: 0.76; transform: scale(0.97); }
+.tag-filter:active > span { background: rgba(244, 234, 208, 0.18); }
 .preface-token:active { opacity: 0.72; }
 
 .sr-only {
@@ -493,8 +497,9 @@ main {
   .song-search input { font-size: 24px; padding: 18px 24px; }
   .filter-toggle { min-height: 52px; font-size: 18px; padding-inline: 14px; }
   .tag-filters { gap: 6px; margin-bottom: 16px; }
-  .tag-row { gap: 10px; min-height: 64px; }
-  .tag-filter { font-size: 20px; padding: 16px 24px; min-height: 58px; }
+  .tag-row { min-height: 64px; }
+  .tag-filter { font-size: 20px; min-height: 64px; padding-right: 10px; }
+  .tag-filter > span { padding: 18px 24px; }
 
   .song-card { grid-template-columns: minmax(0, 1fr) 58px; }
   .song-card-link { gap: 48px; padding: 36px 20px; }
@@ -618,10 +623,11 @@ main {
 }
 
 /* Selected tags and open disclosures keep their own state; focus adds an edge. */
-.tag-filter:focus-visible,
+.tag-filter:focus-visible > span,
 .about-toggle:focus-visible,
 .about-close:focus-visible,
 .song-actions-trigger:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.tag-filter:focus-visible > span { outline-offset: 2px; }
 .song-actions-trigger[aria-expanded="true"] { opacity: 1; color: var(--ink); border-color: var(--line); }
 
 /* These controls already provide brief pressed feedback and keyboard focus. */

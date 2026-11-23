@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Mērī Ēk Antar Abhilāṣ",
+  "title": "Merī Ek Antar Abhilāṣ",
   "subtitle": "Śakti",
   "credit": "Pandit Jasraj",
   "pageCredit": "Pandit Jasraj",

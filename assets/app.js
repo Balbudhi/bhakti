@@ -523,7 +523,7 @@
   };
 
   let finishViewTransition = null;
-  const transitionTo = async (nextRoot, direction, prepare) => {
+  const transitionTo = async (nextRoot, direction, prepare, targetScroll = 0) => {
     // A rapid reversal must settle the old DOM ownership before choosing its
     // outgoing root. Old animation callbacks cannot remove the new view.
     finishViewTransition?.();
@@ -549,13 +549,20 @@
     const outgoingClass = direction === "right" ? "app-view-out-right" : "app-view-out-left";
     appStage.style.height = `${Math.max(currentRoot?.offsetHeight || 0, nextRoot.offsetHeight)}px`;
     appStage.classList.add("is-view-transitioning");
+    /* The document does not scroll until after this await, so one reading holds
+       for the whole transition. Offset the arriving view so the part it will
+       open at slides through the current viewport; at the stage's top it would
+       arrive out of sight whenever the departing view is scrolled. */
+    const scroll = Math.round(contentScrollY());
+    const incomingTop = scroll - Math.round(targetScroll);
+    appStage.style.setProperty("--app-swipe-incoming-top", `${incomingTop}px`);
     /* The song's fixed top controls are measured from <main> rather than the
        viewport for as long as <main> carries a transform, which drops them by
-       the scroll offset. The document does not scroll until after this await,
-       so one reading holds for the whole transition. */
+       their own view's scroll offset. */
     const controlHost = currentRoot?.querySelector("#songSync") ? currentRoot : nextRoot;
     const hostBox = controlHost.getBoundingClientRect();
-    appStage.style.setProperty("--app-swipe-scroll", `${Math.round(contentScrollY())}px`);
+    appStage.style.setProperty("--app-swipe-scroll",
+      `${controlHost === nextRoot ? Math.round(targetScroll) : scroll}px`);
     appStage.style.setProperty("--app-swipe-inset-left", `${Math.round(hostBox.left)}px`);
     appStage.style.setProperty("--app-swipe-inset-right",
       `${Math.round(document.documentElement.clientWidth - hostBox.right)}px`);
@@ -572,6 +579,7 @@
         currentRoot?.remove();
         nextRoot.classList.remove(incomingClass);
         appStage.classList.remove("is-view-transitioning");
+        appStage.style.removeProperty("--app-swipe-incoming-top");
         appStage.style.removeProperty("--app-swipe-scroll");
         appStage.style.removeProperty("--app-swipe-inset-left");
         appStage.style.removeProperty("--app-swipe-inset-right");
@@ -647,7 +655,7 @@
         visibleSongSlug = slug;
         cacheSongData(slug, data);
         window.BHAKTI_READER.setVisible(true);
-      });
+      }, scrollTop);
       if (request !== viewRequest) return;
       view = "song";
       visibleSongSlug = slug;

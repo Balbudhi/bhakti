@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Bhēṭīlāgī Jīvā",
+  "title": "Bheṭīlāgī Jīvā",
   "subtitle": "",
   "credit": "Tukārām · Anuradha Paudwal",
   "pageCredit": "Anuradha Paudwal",

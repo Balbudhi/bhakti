@@ -79,6 +79,20 @@ function setup({ reducedMotion = false } = {}) {
   await second;
   reverse.settled("song");
 
+  // The arriving view slides in at the part it will open at: the departing
+  // scroll (50) minus its own target, never parked out of sight at the top.
+  const positioned = setup();
+  const arriving = positioned.transition(positioned.library, "right");
+  assert.equal(positioned.stage.style["--app-swipe-incoming-top"], "50px");
+  assert.equal(positioned.stage.style["--app-swipe-scroll"], "50px", "departing song controls keep their place");
+  positioned.finishTimers(); await arriving;
+  assert.equal(positioned.stage.style["--app-swipe-incoming-top"], undefined);
+  const returning = positioned.transition(positioned.song, "left", undefined, 345);
+  assert.equal(positioned.stage.style["--app-swipe-incoming-top"], "-295px");
+  assert.equal(positioned.stage.style["--app-swipe-scroll"], "345px", "arriving song controls use its own scroll");
+  positioned.finishTimers(); await returning;
+  positioned.settled("song");
+
   const repeated = setup();
   const incoming = repeated.transition(repeated.library, "right");
   await repeated.transition(repeated.library, "right");

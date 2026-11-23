@@ -1,5 +1,32 @@
 # Library and playlist repair — 23 October 2026
 
+## Letters, tag rows and view motion — 22 November 2026
+
+Owner reports: some romanized vowels (notably `e`) carry odd marks or look much
+larger than their neighbours; swiping the filter tags in the app is slow and clunky.
+
+- **Letters.** The deployed fonts held no `ẽ` or candrabindu, and their declared
+  ranges left out the combining tilde, so `ẽ`, `ā̃` and `m̐` were drawn whole in a
+  larger system font (the source pages hid this by using Google's files). The fonts
+  are rebuilt as one complete file per face (407 KB → 290 KB), preloaded; the tilde
+  is raised clear of the macron, which EB Garamond overprinted. 64 readers stored
+  ISO `ē`/`ō` in Indo-Aryan or Sanskrit lines; the reader now displays IAST `e`/`o`
+  there and writes `a͠i`/`k͟h` as `aĩ`/`ḵẖ`. Three titles are corrected in data.
+- **Tag rows.** In the installed shell (17 November) `.app-scroll` made no stacking
+  context, so WebKit held the four rows as detached scroll-proxy nodes. `isolation:
+  isolate` puts them back inside it; rows are paint boundaries that only move
+  sideways, and each button is a 44px target without positioned or transformed
+  layers. Measured in system WebKit, installed-shell mode, 390×844: proxy nodes
+  4 → 0, layers 65 → 51, median rendered frame while swiping 3 ms → 1 ms.
+- **View motion.** A song opened from a scrolled library slid in at the stage's
+  top, out of sight, then jumped. The arriving view is offset to the place it will
+  open at (mid-slide top −6000px → 0px from a library scrolled 6,000px).
+
+Checks: `test_reader_romanization.js` covers every stored line (word links kept,
+every displayed Latin character inside the one face); view-transition and shell
+regressions; all workflow tests. The measurements are desktop WebKit, not a
+physical iPhone; the owner's phone remains the final judge of the swipe.
+
 ## iPhone PWA silent playback — 15 November 2026
 
 Outcome: the shared player must recover an unpaused but frozen media element,

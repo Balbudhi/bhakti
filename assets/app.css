@@ -99,7 +99,7 @@ body.queue-open .app-stage { transform: none; }
 .app-view-in-left,
 .app-view-in-right {
   position: absolute;
-  top: 0;
+  top: var(--app-swipe-incoming-top, 0px);
   right: 0;
   left: 0;
 }
@@ -582,11 +582,11 @@ body.queue-open .app-stage { transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .ap-btn, .song-home, #songSync, #songShare, .line-seek,
   .shuffle-visible, .about-toggle, .about-close, .filter-toggle,
-  .tag-filter, .song-card-link, .song-actions-trigger, .song-queue-choice,
+  .tag-filter > span, .song-card-link, .song-actions-trigger, .song-queue-choice,
   .preface-token, .word-link, .edition-select { transition: none; }
   .ap-btn:active, .song-home:active, #songSync:active, #songShare:active,
   .line-seek:active, .shuffle-visible:active, .about-toggle:active,
-  .about-close:active, .tag-filter:active, .song-actions-trigger:active,
+  .about-close:active, .song-actions-trigger:active,
   .queue-pill:active, .queue-action:active:not(:disabled),
   .queue-row-action:active { transform: none; }
 }
@@ -616,7 +616,11 @@ body.app-shell.has-keyboard-focus {
   min-width: 0;
   min-height: 0;
   overflow: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
+  /* Without its own stacking context WebKit parents nested scrollers (the tag
+     rows) outside this one and keeps them aligned through scroll proxies. */
+  isolation: isolate;
 }
 .app-scroll:focus-visible { outline: 1px solid var(--ink); outline-offset: -2px; }
 .app-scroll > .app-stage { min-height: 100%; }

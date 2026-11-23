@@ -36,6 +36,7 @@ jobs:
           node scripts/test_queue_render.js
           node scripts/test_queue_drag_performance.js
           node scripts/test_reader_performance.js
+          node scripts/test_reader_romanization.js
           node scripts/test_shuffle_worker.js
           node scripts/test_app_loading.js
           node scripts/test_all_line_seeks.js

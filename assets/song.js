@@ -516,6 +516,44 @@ function lineForEdition(line, lineId, meta) {
   return {...line, ...override, words};
 }
 
+// Only these languages contrast long and short e/o. Elsewhere both are always
+// long and IAST leaves them plain, though some readers store ISO ē/ō.
+const CONTRASTIVE_E_O = new Set(["ta", "te", "kn", "ml", "tcy"]);
+const CONTRASTIVE_E_O_NAMES = new Set(["Tamil", "Telugu", "Kannada", "Malayalam", "Tulu"]);
+const PLAIN_E_O = { "ē": "e", "ō": "o", "Ē": "E", "Ō": "O" };
+
+function marksMacronEO(line, meta) {
+  const code = line.sourceLanguage;
+  return code ? CONTRASTIVE_E_O.has(code)
+    : (meta?.languages || []).some(language => CONTRASTIVE_E_O_NAMES.has(language));
+}
+
+// Compose letters with their marks, and write digraph-spanning marks on each
+// letter, so one font glyph or anchor exists for everything that is displayed.
+function displayRoman(text, keepMacronEO = true) {
+  let shown = String(text ?? "").normalize("NFC")
+    .replace(/(\p{L})\u0360(\p{L})/gu, "$1$2\u0303")
+    .replace(/(\p{L})\u035f(\p{L})/gu, "$1\u0331$2\u0331");
+  if (!keepMacronEO) shown = shown.replace(/[ēōĒŌ]/g, vowel => PLAIN_E_O[vowel]);
+  return shown.normalize("NFC");
+}
+
+// The roman line and its word spans change together, so spans still match.
+function displayLine(line, lineId, meta) {
+  const edition = line && lineForEdition(line, lineId, meta);
+  if (!edition) return edition;
+  const keep = marksMacronEO(edition, meta);
+  return {
+    ...edition,
+    roman: displayRoman(edition.roman, keep),
+    words: edition.words?.map(word => ({
+      ...word,
+      roman: displayRoman(word.roman, keep),
+      ...(word.citationRoman ? { citationRoman: displayRoman(word.citationRoman, keep) } : {}),
+    })),
+  };
+}
+
 function renderSongMeta() {
   const meta = PAGE_META;
   const hero = document.querySelector(".song-hero");
@@ -577,7 +615,7 @@ function renderLineRange(context, start, end, interactive = true) {
   let html = "";
   for (let idx = start; idx < end; idx++) {
     const entry = context.seq[idx];
-    const line = lineForEdition(context.lines[entry.ref], entry.ref, PAGE_META);
+    const line = displayLine(context.lines[entry.ref], entry.ref, PAGE_META);
     if (!line) continue;
     if (context.notices.has(idx)) html += renderSourceNotice(context.notices.get(idx));
     const marker = PAGE_META?.structuralMarkers?.[entry.ref];

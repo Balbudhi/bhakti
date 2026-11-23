@@ -42,6 +42,14 @@ See `assets/site.css:49-97`, `assets/site.css:328-339`, and `assets/song.css:14-
 Rules:
 
 - Do not add another font family.
+- Each face is one file built by `scripts/build_reader_fonts.py`. Never split a
+  face by unicode-range: a letter whose mark lives in another file (or none) is
+  drawn whole in a larger system font. Any new diacritic must be in the built
+  set, with its mark stacked clear of a macron.
+- Romanization is displayed in IAST: plain `e`/`o` except in Tamil, Telugu,
+  Kannada, Malayalam and Tulu, which contrast them with `ē`/`ō`. The reader
+  applies this when rendering (`displayRoman`), so stored readers and their
+  reviewed identities do not change.
 - Use weight and opacity sparingly; large devotional text is normally weight 400–500.
 - Small UI labels may use uppercase or letter spacing, but public reading text should not.
 - Titles and lyrics lead. Interface copy must not compete with them in size or weight.

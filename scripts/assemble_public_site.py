@@ -17,6 +17,8 @@ from bhakti_boundary_timebase import (boundary_transaction, boundary_snapshot,
     require_boundary_snapshot, require_completed_boundary_transaction)
 
 ROOT = Path(__file__).resolve().parents[1]
+READING_FONTS = tuple(f'/assets/fonts/{name}.woff2' for name in
+                      ('eb-garamond-normal', 'cormorant-garamond-normal', 'inter-normal'))
 PUBLIC_ROOT_FILES = ('index.html', 'manifest.webmanifest', 'sw.js', 'robots.txt', 'sitemap.xml', 'CNAME')
 
 
@@ -69,6 +71,10 @@ def prepare_release(staged: Path) -> None:
         html = re.sub(r'<link\b[^>]*(?:https://fonts\.googleapis\.com|https://fonts\.gstatic\.com)[^>]*>\s*', '', html)
         if '/assets/fonts.css' in urls and not re.search(r'href=["\']/assets/fonts\.css', html):
             html = html.replace('</head>', '<link rel="stylesheet" href="/assets/fonts.css">\n</head>')
+        # Text should not first appear in a fallback face and then change size.
+        preloads = ''.join(f'<link rel="preload" href="{path}" as="font" type="font/woff2" crossorigin>\n'
+                           for path in READING_FONTS if path in urls)
+        html = html.replace('<link rel="stylesheet" href="/assets/fonts.css', preloads + '<link rel="stylesheet" href="/assets/fonts.css', 1)
         if '/assets/shuffle-client.js' in urls and not re.search(r'src=["\']/assets/shuffle-client\.js', html):
             html = re.sub(r'(?=<script\b[^>]*src=["\']/assets/app\.js)',
                           '<script src="/assets/shuffle-client.js"></script>\n', html, count=1)

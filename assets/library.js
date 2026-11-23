@@ -168,6 +168,8 @@
       tooltip.style.top = `${above >= margin ? above : rect.bottom + 8}px`;
     };
     const hide = () => {
+      // Every scrolled frame of every scroller arrives here.
+      if (!sticky && tooltip.hidden) return;
       sticky = null;
       preface.querySelectorAll(".preface-token.is-hi").forEach(candidate => candidate.classList.remove("is-hi"));
       tooltip.hidden = true;
@@ -250,7 +252,7 @@
     if (aboutHeading) aboutHeading.textContent = `About these ${songs.length} songs`;
 
     let visibleSongs = [];
-    const filterButton = (tag, kind, selected, label = tag) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${escapeHtml(tag)}">${escapeHtml(label)}</button>`;
+    const filterButton = (tag, kind, selected, label = tag) => `<button type="button" class="tag-filter" aria-pressed="${selected}" data-kind="${kind}" data-tag="${escapeHtml(tag)}"><span>${escapeHtml(label)}</span></button>`;
     const facets = [
       { kind: "subject", all: "all-subjects", label: "Subjects", tags: subjects, selected: selectedSubjects },
       { kind: "language", all: "all-languages", label: "Languages", tags: languages, selected: selectedLanguages },

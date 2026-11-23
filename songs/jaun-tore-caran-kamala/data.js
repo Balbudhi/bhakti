@@ -1,5 +1,5 @@
 window.SONG_META = {
-  "title": "Jāū̃ Tōrē Caran Kamal Par Vārī",
+  "title": "Jāū̃ Tore Caran Kamal Par Vārī",
   "subtitle": "Kṛṣṇa",
   "credit": "Vasant Dev · Lata Mangeshkar, Rajan Mishra and Sajan Mishra · Laxmikant–Pyarelal",
   "pageCredit": "Lata Mangeshkar, Rajan Mishra and Sajan Mishra",

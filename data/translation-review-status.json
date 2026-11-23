@@ -93,7 +93,7 @@
     },
     "bhetilagi-jiva": {
       "status": "finished",
-      "readerSha256": "63b21ee7689afb0e1a34321454d4c691f47b1e72942fef6dacefe3632ea1a05d",
+      "readerSha256": "8f2901212f60482d4b63f06b4cd4d0633a776a6e6455149035f537356f141270",
       "definitionCount": 19,
       "reviewedAt": "2026-11-21"
     },
@@ -703,7 +703,7 @@
     },
     "jaun-tore-caran-kamala": {
       "status": "finished",
-      "readerSha256": "6a1855bc4f0173b083b1f148e99f3cd369b1db3a0e04c880f83912d6ef5dd12c",
+      "readerSha256": "09f00c6b2ab13d7e6f5754e25f5a0de844432276065f512c33d716b326a8a8c1",
       "definitionCount": 17,
       "reviewedAt": "2026-11-21"
     },
@@ -781,7 +781,7 @@
     },
     "meri-ek-antar-abhilash": {
       "status": "finished",
-      "readerSha256": "e7236d8b8806bb583bda592757444a54314bc6ac4b50820f992eb2417cdafe2b",
+      "readerSha256": "ebcf559a6b43bd56fdd30935ad34d8e6f8c169a9d22d681751344c79abda10e3",
       "definitionCount": 28,
       "reviewedAt": "2026-11-21"
     },

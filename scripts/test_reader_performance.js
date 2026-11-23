@@ -77,7 +77,7 @@ for (const slug of ["sampurna-sundarakanda", "vishnu-sahasranama"]) {
             [line.words[i].deva, line.words[i].citationRoman || line.words[i].roman || "", line.words[i].gloss || ""]));
         } else {
           if (line.source) assert.equal(article.querySelector(".line-source").textContent, line.source);
-          assert.ok(article.querySelector(".line-roman").textContent.startsWith(line.roman));
+          assert.ok(article.querySelector(".line-roman").textContent.startsWith(window.eval("displayRoman")(line.roman, false)));
           assert.equal(article.querySelector(".line-english").textContent,
             line.english.replace(/\{[\d,\s]+:([^}]*)\}/g, "$1"));
         }

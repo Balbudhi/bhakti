@@ -64,6 +64,7 @@ for (const mode of [{ios:true},{ios:false,touchApp:true},{ios:false},{ios:false,
       const row=rules.find(rule=>rule.selectorText==='.app-shell .audio-player');
       assert.equal(row.style['grid-row'],'2');
       assert.equal(rules.find(rule=>rule.selectorText==='.app-scroll').style.overflow,'auto');
+      assert.equal(rules.find(rule=>rule.selectorText==='.app-scroll').style.getPropertyValue('isolation'),'isolate','nested tag rows stay inside the content scroller');
       assert.equal(rest.style['grid-template-rows'],'minmax(0, 1fr) auto');
       scroll.scrollTop=500;
       const input=d.createElement('input');scroll.append(input);input.focus();
