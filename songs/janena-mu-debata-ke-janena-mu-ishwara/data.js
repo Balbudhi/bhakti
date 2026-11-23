@@ -294,11 +294,11 @@ window.SONG_LINES = {
     "grammarNote": "Nominal subject 'mū̃' followed by 2nd person genitive 'tumara' and temporal genitive noun 'janamara' (janama + -ra) acting adjectivally."
   },
   "bihuchuna-chakara": {
-    "source": "ବିହୁଚୁଣା ଚାକର",
+    "source": "ବିଉଛୁଣା ଚାକର",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ବିହୁଚୁଣା",
+        "text": "ବିଉଛୁଣା",
         "wordIndices": [
           0
         ]
@@ -310,11 +310,11 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Bihucuṇā cākara",
+    "roman": "Biuchuṇā cākara",
     "english": "{0:hand-fan }{1:servant,}",
     "words": [
       {
-        "roman": "Bihucuṇā",
+        "roman": "Biuchuṇā",
         "gloss": "hand-fan; fanning",
         "concept_key": "",
         "preserve_in_english": false
@@ -326,7 +326,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Noun adjunct 'bihucuṇā' (Odia for hand-fan) qualifying the agent noun 'cākara'."
+    "grammarNote": "Noun adjunct 'biuchuṇā', the sung colloquial form of 'biñcaṇā' (hand-fan), qualifying the agent noun 'cākara'."
   },
   "mu-tumara-pada-chata": {
     "source": "ମୁଁ ତୁମର ପାଦ ଚଟା",

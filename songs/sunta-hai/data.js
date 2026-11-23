@@ -1181,7 +1181,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Din bhar rē jō nazar bhar dēkhē ajar amar vo niśānī ho jī vo niśānī ho jī",
-    "english": "{0:All day }{1:long, }{2:O, }{3:whoever }{6:looks }{5:with a full }{4:gaze }{9:at that }{7:unaging, }{8:immortal }{10:sign, }{11:O }{12:honored one, }{13:that }{14:sign, }{15:O }{16:honored one}",
+    "english": "{0:All day }{1:long, }{2:O, }{3:whoever }{6:looks }{5:with a full }{4:gaze—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:honored one, }{13:that }{14:sign, }{15:O }{16:honored one}",
     "words": [
       {
         "roman": "Din",
@@ -1286,7 +1286,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Relative clause 'jō ... dēkhē' governing the direct object noun phrase 'ajar amar vo niśānī'. Dvandva compound adjectives 'ajar amar' qualifying feminine noun 'niśānī'. 'ho jī' repeated as honorific refrain."
+    "grammarNote": "Correlative 'jō … vo': whoever looks with a full gaze, that sign is unaging and immortal. 'ajar amar' is the predicate of 'niśānī'. 'ho jī' is repeated as an honorific refrain."
   },
   "gagan-mein-aawaz-outro": {
     "source": "गगन में आवाज़ हो रही झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी",

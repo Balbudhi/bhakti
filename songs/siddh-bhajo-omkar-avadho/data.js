@@ -939,7 +939,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pañca jāne niraṅkārā",
-    "english": "{2:The Formless One}{1: knows}{0: the five.}",
+    "english": "{0:The five }{1:know }{2:the Formless One.}",
     "words": [
       {
         "roman": "pañca",
@@ -960,7 +960,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Subject pañca with 3rd person verb jāne and direct object niraṅkārā."
+    "grammarNote": "Subject pañca (the five) with third-person verb jāne and object niraṅkārā, following the sung word order; the source leaves the five unnamed."
   },
   "pancha-jaane-nirankara-rep": {
     "source": "पंच जाने निरंकारा निरंकारा निरंकारा",
@@ -998,7 +998,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pañca jāne niraṅkārā niraṅkārā niraṅkārā",
-    "english": "{2:The Formless One}{1: knows}{0: the five—}{3:Formless One,}{4: Formless One.}",
+    "english": "{0:The five }{1:know }{2:the Formless One—}{3:Formless One, }{4:Formless One.}",
     "words": [
       {
         "roman": "pañca",
@@ -1031,7 +1031,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Threefold repetition of the direct object niraṅkārā."
+    "grammarNote": "Subject pañca (the five) with third-person verb jāne and object niraṅkārā, following the sung word order; the source leaves the five unnamed."
   },
   "charan-kaun-charan-dhara": {
     "source": "चरण कौण चरण धारा चरण धारा",
@@ -1075,7 +1075,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caraṇa kauṇa caraṇa dhārā caraṇa dhārā",
-    "english": "{0,1:At whose feet}{2,3: were feet placed—}{4,5:feet placed?}",
+    "english": "{1:Whose }{0:feet, }{2,3:feet were held—}{4,5:feet held?}",
     "words": [
       {
         "roman": "caraṇa",

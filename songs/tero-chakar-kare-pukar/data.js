@@ -1118,7 +1118,7 @@ window.SONG_LINES = {
     "grammarNote": "Locative phrase Bhavasāgar meṃ with present participle ḍūbat modifying the implied devotee; second clause contains direct object hāth and respectful imperative pasāro with particle nā."
   },
   "v4-2": {
-    "source": "सकल दान देहि छोड़ि अम्बिका",
+    "source": "सकल दानि तेहि छोड़ि अम्बिका",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1128,13 +1128,13 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दान",
+        "text": "दानि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "देहि",
+        "text": "तेहि",
         "wordIndices": [
           2
         ]
@@ -1152,44 +1152,44 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Sakal dān dehi choṛi ambikā",
-    "english": "{3:Leaving behind }{0:all }{1:gifts }{2:and the body, }{4:O Ambika,}",
+    "roman": "sakal dāni tehi choṛi ambikā",
+    "english": "{3:apart from }{2:that }{1:giver }{0:of all, }{4:Ambika,}",
     "words": [
       {
-        "roman": "Sakal",
-        "gloss": "all / entire",
+        "roman": "sakal",
+        "gloss": "all; everything",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dān",
-        "gloss": "gifts / charity / boons",
+        "roman": "dāni",
+        "gloss": "giver; bestower",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dehi",
-        "gloss": "body / bodily existence",
+        "roman": "tehi",
+        "gloss": "that one (Braj oblique)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "choṛi",
-        "gloss": "having abandoned / leaving behind",
+        "gloss": "leaving aside; apart from",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ambikā",
-        "gloss": "Divine Mother",
+        "gloss": "Mother, the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle choṛi taking compound object Sakal dān dehi; ambikā is vocative."
+    "grammarNote": "'sakal dāni' (giver of all) describes Ambikā; 'tehi choṛi' (leaving that one aside) completes with the next line, 'there is no other support'. 'dāni tehi' is the best-supported hearing of a compressed sung phrase."
   },
   "v4-3": {
-    "source": "सकल धाम देहि छोड़ि अम्बिका",
+    "source": "सकल दानि तेहि छोड़ि अम्बिका",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1199,13 +1199,13 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "धाम",
+        "text": "दानि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "देहि",
+        "text": "तेहि",
         "wordIndices": [
           2
         ]
@@ -1223,41 +1223,41 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Sakal dhām dehi choṛi ambikā",
-    "english": "{3:Leaving behind }{0:all }{1:abodes }{2:and the body, }{4:O Ambika,}",
+    "roman": "sakal dāni tehi choṛi ambikā",
+    "english": "{3:apart from }{2:that }{1:giver }{0:of all, }{4:Ambika,}",
     "words": [
       {
-        "roman": "Sakal",
-        "gloss": "all / entire",
+        "roman": "sakal",
+        "gloss": "all; everything",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dhām",
-        "gloss": "abodes / shrines / worldly dwellings",
+        "roman": "dāni",
+        "gloss": "giver; bestower",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dehi",
-        "gloss": "body / bodily existence",
+        "roman": "tehi",
+        "gloss": "that one (Braj oblique)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "choṛi",
-        "gloss": "having abandoned / leaving behind",
+        "gloss": "leaving aside; apart from",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ambikā",
-        "gloss": "Divine Mother",
+        "gloss": "Mother, the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conjunctive participle choṛi taking object Sakal dhām dehi; ambikā is vocative."
+    "grammarNote": "'sakal dāni' (giver of all) describes Ambikā; 'tehi choṛi' (leaving that one aside) completes with the next line, 'there is no other support'. 'dāni tehi' is the best-supported hearing of a compressed sung phrase."
   },
   "v4-4": {
     "source": "और सहारो ना",

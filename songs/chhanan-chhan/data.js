@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Chhanan Chhan",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sadhana Sargam · Sandeep, Santosh & Anant Thorat",
+  "credit": "Anant Thorat · Sadhana Sargam · Sandeep & Santosh",
   "pageCredit": "Sadhana Sargam",
-  "writer": "",
+  "writer": "Anant Thorat",
   "singer": "Sadhana Sargam",
-  "composer": "Sandeep, Santosh & Anant Thorat",
+  "composer": "Sandeep & Santosh",
   "languages": [
     "Hindi"
   ],
@@ -17,7 +17,8 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Sadhna Sargam"
+    "Sadhna Sargam",
+    "Anant Thorat"
   ],
   "audioSources": [
     {
@@ -2254,11 +2255,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ananta terī śaraṇa",
-    "english": "{1:Your}{0: boundless}{2: refuge.}",
+    "english": "{0:Anant: }{1:in Your }{2:refuge.}",
     "words": [
       {
         "roman": "ananta",
-        "gloss": "infinite; boundless; eternal",
+        "gloss": "Anant, the poet’s own name as signature; also “the Infinite”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2275,7 +2276,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Nominal phrase functioning as the destination of refuge with elided verb of motion/surrender; ananta modifies śaraṇa."
+    "grammarNote": "Signature of the lyricist Anant Thorat; 'terī śaraṇa' is an adverbial phrase (in your refuge) with the verb understood."
   }
 };
 

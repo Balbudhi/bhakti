@@ -2,7 +2,7 @@
 "use strict";
 // Runs the shipped counter with real Request semantics left to the browser boundary.
 // Partitions: first/returning/already counted/day rolled over; hidden then visible;
-// rejected, malformed and offline answers; corrupt, absent and refused storage;
+// lost answer, second window, not counted; rejected, malformed and offline answers; corrupt, absent and refused storage;
 // other host; automation; overlapping events.
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
@@ -51,9 +51,13 @@ async function fixture({ stored, host = "bhakti.eeshan.xyz", webdriver = false, 
   for (const answer of [() => ({ ok: false, json: async () => ({}) }), () => { throw new TypeError("offline"); }, () => ({ ok: true, json: async () => { throw new SyntaxError("html"); } })]) {
     const f = await fixture({ stored: '{"day":"2026-11-20","until":10}', answer });
     assert.equal(f.calls.length, 1);
-    assert.equal(f.saved.get("bhakti-visit"), '{"day":"2026-11-20","until":10}', "failure keeps the previous day");
+    assert.deepEqual(JSON.parse(f.saved.get("bhakti-visit")), { day: "2026-11-20", until: 601000 }, "failure keeps the previous day");
+    await f.show();
+    assert.equal(f.calls.length, 1, "no retry storm");
+    f.state.now = 601000;
     await f.show();
     assert.equal(f.calls.length, 2, "a later view retries");
+    assert.equal(f.calls[1].body, '{"last":"2026-11-20"}');
   }
   for (const stored of ["{", "null", "[]", '{"day":"x","until":1}', '{"day":"2026-11-20"}']) {
     const f = await fixture({ stored });
@@ -65,6 +69,18 @@ async function fixture({ stored, host = "bhakti.eeshan.xyz", webdriver = false, 
   assert.equal((await fixture({ storage: { getItem: () => null, setItem: refuse } })).calls.length, 0);
   for (const host of ["localhost", "balbudhi.github.io", "owner.bhakti.eeshan.xyz"]) assert.equal((await fixture({ host })).calls.length, 0);
   assert.equal((await fixture({ webdriver: true })).calls.length, 0);
+
+  // An unanswered request (closed page) or a second window does not send again.
+  const lost = await fixture({ answer: () => new Promise(() => {}) });
+  assert.equal(lost.calls.length, 1);
+  assert.equal((await fixture({ stored: lost.saved.get("bhakti-visit") })).calls.length, 0);
+  // A device the server did not count keeps no day and waits for the next one.
+  const refused = await fixture({ answer: () => ({ ok: true, json: async () => ({ day: null, until: 5000 }) }) });
+  await refused.show();
+  assert.equal(refused.calls.length, 1);
+  refused.state.now = 5000;
+  await refused.show();
+  assert.equal(refused.calls[1].body, "{}");
 
   let release;
   const busy = await fixture({ answer: () => new Promise(resolve => { release = resolve; }) });

@@ -175,7 +175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ vakratuṇḍa mahākāya sūryakoṭisamaprabha |\nnirvighnaṃ kuru me deva sarvakāryeṣu sarvadā ||",
-    "english": "{0:Oṃ.}{1: Curved-trunked,}{2: great-bodied}{7: Gaṇeśa,}{3: radiant as ten million suns:}{9: always}{5: make}{6: my}{8: every undertaking}{4: free of obstacles.}",
+    "english": "{0:Oṃ.}{1: Curved-trunked,}{2: great-bodied}{7: god,}{3: radiant as ten million suns:}{9: always}{5: make}{6: my}{8: every undertaking}{4: free of obstacles.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1957,7 +1957,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "haṃsayuktavimānasthe brahmāṇīrūpadhāriṇi |\nkauśāmbhaḥkṣarike devi nārāyaṇi namo'stu te ||",
-    "english": "{0:Seated in a swan-drawn celestial car,}{1: taking Brahmāṇī’s form}{2,3: and sprinkling water with sacred grass—}{4:Nārāyaṇī,}{5: homage}{6: to you.}",
+    "english": "{0:Seated in a swan-drawn celestial car,}{1: taking Brahmāṇī’s form}{2: and sprinkling water with sacred grass,}{3: Goddess—}{4:Nārāyaṇī,}{5: homage}{6: to you.}",
     "words": [
       {
         "roman": "haṃsayuktavimānasthe",
@@ -2215,7 +2215,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaṅkhacakragadāśārṅgagṛhītaparamāyudhe |\nprasīda vaiṣṇavīrūpe nārāyaṇi namo'stu te ||",
-    "english": "{0:Holding conch, discus, mace and the bow Śārṅga,}{1: be gracious}{2: in your Vaiṣṇavī form.}{3: Nārāyaṇī,}{4: homage}{5: to you.}",
+    "english": "{0:Holding the supreme weapons—conch, discus, mace and the bow Śārṅga—}{1:be gracious}{2: in your Vaiṣṇavī form.}{3: Nārāyaṇī,}{4: homage}{5: to you.}",
     "words": [
       {
         "roman": "śaṅkhacakragadāśārṅgagṛhītaparamāyudhe",
@@ -3259,7 +3259,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "etatte vadanaṃ saumyaṃ locanatrayabhūṣitam |\npātu naḥ sarvabhītibhyaḥ kātyāyani namo'stu te ||",
-    "english": "{0:May your}{2: gentle}{1: face,}{3: adorned with three eyes,}{4: protect}{5: us}{6: from every fear.}{7: Kātyāyanī,}{8: homage}{9: to you.}",
+    "english": "{0:May this}{2: gentle}{1: face}{0: of yours,}{3: adorned with three eyes,}{4: protect}{5: us}{6: from every fear.}{7: Kātyāyanī,}{8: homage}{9: to you.}",
     "words": [
       {
         "roman": "etatte",
@@ -3499,7 +3499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hinasti daityatejāṃsi svanenāpūrya yā jagat |\nsā ghaṇṭā pātu no devi pāpebhyo'naḥ sutāniva ||",
-    "english": "{5,6:May the bell}{3: whose}{2: sound fills}{4: the world}{0: and destroys}{1: the demons’ might}{7: protect}{8,10: us}{10: from evils,}{9: Goddess,}{11: like children.}",
+    "english": "{5,6:May the bell}{3: whose}{2: sound fills}{4: the world}{0: and destroys}{1: the demons’ might}{7: protect}{8: us}{10: from evils,}{9: Goddess,}{10: as a mother}{11: her children.}",
     "words": [
       {
         "roman": "hinasti",
@@ -3563,7 +3563,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāpebhyo'naḥ",
-        "gloss": "from evils; us: pāpebhyaḥ + naḥ",
+        "gloss": "from evils; a mother: pāpebhyaḥ + anaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3575,7 +3575,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Relative-correlative construction makes the bell the protector; naḥ/sutān describes us as children, not our children as a separate object."
+    "grammarNote": "Relative-correlative construction makes the bell the protector; no is “us,” the object of pātu. Pāpebhyo’naḥ divides as pāpebhyaḥ + anaḥ; anaḥ, “mother,” is the subject of the comparison and sutān, “children,” its object."
   },
   "asurasrigvasapanka": {
     "source": "असुरासृग्वसापङ्कचर्चितस्ते करोज्ज्वलः।\nशुभाय खड्गो भवतु चण्डिके त्वां नता वयम्॥",
@@ -3919,7 +3919,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "etatkṛtaṃ yatkadanaṃ tvayādya dharmadviṣāṃ devi mahāsurāṇām |\nrūpairanekairbahudhā''tmamūrtiṃ kṛtvāmbike tatprakaroti kānyā ||",
-    "english": "{9:Who else}{8: could have done}{0,2: what you have done today,}{4: Goddess—}{1:slaughtering}{5: the great demons}{3: who hate righteousness,}{7: making}{6: your own form manifold?}{9: Who else,}{7: Mother?}",
+    "english": "{9:Who else}{8: can do}{0,2: what you have done today,}{4: Goddess—}{1:slaughtering}{5: the great demons}{3: who hate righteousness,}{7: making}{6: your own embodiment manifold in many forms,}{7: Mother?}",
     "words": [
       {
         "roman": "etatkṛtaṃ",
@@ -4051,7 +4051,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vidyāsu śāstreṣu vivekadīpeṣvādyeṣu vākyeṣu ca kā tvadanyā |\nmamatvagarte'timahāndhakāre vibhrāmayatyetadatīva viśvam ||",
-    "english": "{0:Even amid knowledge,}{1: teachings}{4: and}{2: primordial}{3: words}{2: that light discernment,}{5: who}{6: but you}{8: makes}{8,9: this world}{8: wander}{7: in the immense darkness of the pit of “mine”?}",
+    "english": "{0:Even amid knowledge,}{1: teachings}{4: and}{2: primordial}{3: words}{2: that light discernment,}{5: who}{6: but you}{8: makes}{8,9: this world}{8: wander greatly}{7: in the immense darkness of the pit of “mine”?}",
     "words": [
       {
         "roman": "vidyāsu",
@@ -4207,7 +4207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rakṣāṃsi yatrograviṣāśca nāgā yatrārayo dasyubalāni yatra |\ndāvānalo yatra tathābdhimadhye tatra sthitā tvaṃ paripāsi viśvam ||",
-    "english": "{0,1:Where there are demons}{1,2: and fiercely venomous serpents,}{3: enemies}{4,5: and bands of robbers,}{6,7: forest fire}{8: or the ocean’s depths—}{9:there}{11: you}{10: abide,}{12: protecting}{13: the world.}",
+    "english": "{0,1:Where there are demons}{1,2: and fiercely venomous serpents,}{3: enemies}{4,5: and bands of robbers,}{6,7: forest fire,}{8: and in the midst of the ocean—}{9:there}{11: you}{10: abide,}{12: protecting}{13: the world.}",
     "words": [
       {
         "roman": "rakṣāṃsi",
@@ -5215,7 +5215,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nandagopagṛhe jātā yaśodāgarbhasaṃbhavā |\ntatastau nāśayiṣyāmi vindhyācalanivāsinī ||",
-    "english": "{1:Born}{0: in the house of Nanda the cowherd,}{2: from Yaśodā’s womb,}{5: I shall dwell in the Vindhya mountains}{4: and destroy}{3: those two.}",
+    "english": "{1:Born}{0: in the house of Nanda the cowherd,}{2: from Yaśodā’s womb,}{5: and dwelling in the Vindhya mountains,}{4: I shall}{3: then}{4: destroy}{3: those two.}",
     "words": [
       {
         "roman": "nandagopagṛhe",
@@ -6625,7 +6625,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhrāmarīti ca māṃ lokāstadā stoṣyanti sarvataḥ |\nitthaṃ yadā yadā bādhā dānavotthā bhaviṣyati ||\ntadā tadāvatīryāhaṃ kariṣyāmyarisaṅkṣayam ||",
-    "english": "{3:Then people}{5: everywhere}{4: will praise}{2: me}{0: as Bhrāmarī, the Bee-Goddess.}{1,6,7,8: Whenever}{9: affliction}{11: arises}{10: from the Dānavas,}{12,13: I shall descend}{14: and bring the enemies to destruction.}",
+    "english": "{1:And}{3: then people}{5: everywhere}{4: will praise}{2: me}{0: as Bhrāmarī, the Bee-Goddess.}{6: Thus,}{7,8: whenever}{9: affliction}{11: arises}{10: from the Dānavas,}{12,13: I shall descend}{14: and bring the enemies to destruction.}",
     "words": [
       {
         "roman": "bhrāmarīti",

@@ -8997,7 +8997,7 @@ window.BHAKTI_SONGS = [
     "slug": "chhanan-chhan",
     "queueId": "29bccb35",
     "title": "Chhanan Chhan",
-    "credit": "Sadhana Sargam · Sandeep, Santosh & Anant Thorat",
+    "credit": "Anant Thorat · Sadhana Sargam · Sandeep & Santosh",
     "languageTags": [
       "Hindi"
     ],
@@ -9009,11 +9009,12 @@ window.BHAKTI_SONGS = [
     "searchAliases": [
       "Shirdi Sai",
       "Sirdi Sai",
-      "Sadhna Sargam"
+      "Sadhna Sargam",
+      "Anant Thorat"
     ],
-    "writer": "",
+    "writer": "Anant Thorat",
     "singer": "Sadhana Sargam",
-    "composer": "Sandeep, Santosh & Anant Thorat",
+    "composer": "Sandeep & Santosh",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chhanan-chhan.mp3",
@@ -12422,7 +12423,7 @@ window.BHAKTI_SONGS = [
     "slug": "ekdant-gajvadan",
     "queueId": "9cdf86cd",
     "title": "Ekdant Gajvadan",
-    "credit": "Various Artists",
+    "credit": "Tānsen · Various Artists",
     "languageTags": [
       "Hindi",
       "Sanskrit"
@@ -12432,9 +12433,10 @@ window.BHAKTI_SONGS = [
     ],
     "searchAliases": [
       "Ganesha",
-      "Ganesa"
+      "Ganesa",
+      "Tansen"
     ],
-    "writer": "",
+    "writer": "Tānsen",
     "singer": "Various Artists",
     "composer": "",
     "audioSources": [
@@ -13240,4 +13242,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 329
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "07cba32012994f11475bde2d28a95720610aca3e75cb7772c8840a3e6232e46e";
+window.BHAKTI_SHUFFLE_REVISION = "5d2a8d08372c3faf32c887526d49c20b4439075387adaba6474d97ee1a3e0b7a";

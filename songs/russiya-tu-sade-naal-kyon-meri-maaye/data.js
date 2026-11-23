@@ -301,7 +301,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dass hā̃ māe asā̃ kehṛe chattar curāe",
-    "english": "{0,1,2,3,4,5,6:Tell us—yes, Mother—which parasols have we stolen?}",
+    "english": "{0,1,2,3,4,5,6:Do tell us, Mother—which parasols have we stolen?}",
     "words": [
       {
         "roman": "Dass",
@@ -310,7 +310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hā̃",
-        "gloss": "yes [emphatic sung particle]",
+        "gloss": "do; just [particle urging the imperative]",
         "sourceTokenIndex": 1
       },
       {
@@ -507,7 +507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ dass hā̃ māe asā̃ kehṛe chattar curāe",
-    "english": "{0,1,2,3,4,5,6,7:Yes, tell us—yes, Mother—which parasols have we stolen?}",
+    "english": "{0,1,2,3,4,5,6,7:Yes, do tell us, Mother—which parasols have we stolen?}",
     "words": [
       {
         "roman": "Hā̃",
@@ -521,7 +521,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hā̃",
-        "gloss": "yes [emphatic sung particle]",
+        "gloss": "do; just [particle urging the imperative]",
         "sourceTokenIndex": 2
       },
       {
@@ -1007,7 +1007,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho dass hā̃ māe asā̃ kehṛe chattar curāe",
-    "english": "{0,1,2,3,4,5,6,7:O, tell us—yes, Mother—which parasols have we stolen?}",
+    "english": "{0,1,2,3,4,5,6,7:O, do tell us, Mother—which parasols have we stolen?}",
     "words": [
       {
         "roman": "Ho",
@@ -1021,7 +1021,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hā̃",
-        "gloss": "yes [emphatic sung particle]",
+        "gloss": "do; just [particle urging the imperative]",
         "sourceTokenIndex": 2
       },
       {

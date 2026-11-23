@@ -130,12 +130,18 @@ func TestVisitReceiptAndLibraryDay(t *testing.T) {
 		}
 	}
 	// Declared automation is acknowledged but adds nothing.
-	for _, agent := range []string{"", "Mozilla/5.0 (compatible; Googlebot/2.1)", "HeadlessChrome/140", "curl/8", "Bhakti-owner-deployment/1"} {
-		if w := b.visit("192.0.2.1", "{}", func(_ *httptest.ResponseRecorder, h map[string]string) { h["User-Agent"] = agent }); w.Code != 200 {
-			t.Fatal(agent, w.Code)
+	for _, agent := range []string{"", "Mozilla/5.0 (compatible; Googlebot/2.1)", "bot", "HeadlessChrome/140", "curl/8", "Bhakti-owner-deployment/1"} {
+		if got := decode(t, b.visit("192.0.2.1", "{}", func(_ *httptest.ResponseRecorder, h map[string]string) { h["User-Agent"] = agent }), 200); got["day"] != nil {
+			t.Fatal(agent, got)
 		}
 	}
-	if s := b.summary(7); s.Visitors != 1 || len(s.Daily) != 2 || s.Daily[0].Visitors != 1 || s.Daily[0].FirstTime != 1 || s.Daily[1].Visitors != 1 || s.Daily[1].FirstTime != 0 {
+	// CUBOT is a phone maker, not automation.
+	if got := decode(t, b.visit("192.0.2.1", `{"last":"2026-10-31"}`, func(_ *httptest.ResponseRecorder, h map[string]string) {
+		h["User-Agent"] = "Mozilla/5.0 (Linux; Android 14; CUBOT KINGKONG 9) Mobile"
+	}), 200); got["day"] != "2026-11-01" {
+		t.Fatal(got)
+	}
+	if s := b.summary(7); s.Visitors != 1 || len(s.Daily) != 2 || s.Daily[0].Visitors != 1 || s.Daily[0].FirstTime != 1 || s.Daily[1].Visitors != 2 || s.Daily[1].FirstTime != 0 {
 		t.Fatalf("summary %+v", s)
 	}
 }
@@ -268,6 +274,23 @@ func TestVisitLimitsAcknowledgeWithoutCounting(t *testing.T) {
 	if s := b.summary(7); s.Visitors != 2*maxNetworkVisits+1 {
 		t.Fatalf("network limit counted %d", s.Visitors)
 	}
+	// A refused device keeps its earlier day, so its next accepted visit still
+	// enters the window; it must not claim to have been counted today.
+	if got := decode(t, b.visit("192.0.2.7", "{}", nil), 200); got["day"] != nil || got["until"] == nil {
+		t.Fatalf("refused new device: %v", got)
+	}
+	if got := decode(t, b.visit("192.0.2.7", `{"last":"2026-10-20"}`, nil), 200); got["day"] != "2026-10-20" {
+		t.Fatalf("refused returning device: %v", got)
+	}
+	var limiter visitLimiter
+	if e := readPrivate(filepath.Join(b.service.Directory, visitsDirectory), limiterFile, maxVisitFile, &limiter); e != nil {
+		t.Fatal(e)
+	}
+	for key := range limiter.Networks {
+		if len(key) != 4 { // 16 bits: many addresses share each bucket.
+			t.Fatalf("limiter key %q identifies a network", key)
+		}
+	}
 	*now = now.AddDate(0, 0, 1)
 	decode(t, b.visit("192.0.2.7", `{}`, nil), 200)
 	if s := b.summary(7); s.Daily[1].Visitors != 1 {
@@ -333,13 +356,28 @@ func TestVisitRetentionAndCorruptStorage(t *testing.T) {
 	if _, e := os.Stat(limiter); e != nil {
 		t.Fatal("current limiter removed")
 	}
+	// A killed write must not strand private data past the next day or owner read.
+	stranded := filepath.Join(dir, ".state-killed")
+	if e := os.WriteFile(stranded, []byte("salt"), 0600); e != nil {
+		t.Fatal(e)
+	}
+	b.summary(7)
+	if _, e := os.Stat(stranded); !os.IsNotExist(e) {
+		t.Fatal("stranded write survived an owner read")
+	}
+	os.WriteFile(stranded, []byte("salt"), 0600)
+	*now = now.AddDate(0, 0, 1)
+	decode(t, b.visit("192.0.2.1", `{"last":"2001-01-01"}`, nil), 200)
+	if _, e := os.Stat(stranded); !os.IsNotExist(e) {
+		t.Fatal("stranded write survived a new day")
+	}
 	*now = now.AddDate(0, 0, 1)
 	b.summary(7)
 	if _, e := os.Stat(limiter); !os.IsNotExist(e) {
 		t.Fatal("stale limiter retained")
 	}
 	damaged := filepath.Join(dir, visitDay(*now)+".json")
-	for _, content := range []string{"{", `{"version":2}`, `{"version":1,"day":"2001-01-01","places":[]}`, `{"version":1,"day":"` + visitDay(*now) + `","places":[{"country":"","region":"","city":"","lat":0,"lon":0,"gaps":{"0":-5}}]}`} {
+	for _, content := range []string{"{", `{"version":2}`, `{"version":1,"day":"2001-01-01","places":[]}`, `{"version":1,"day":"` + visitDay(*now) + `","places":[{"country":"","region":"","city":"","lat":0,"lon":0,"gaps":{"0":-5}}]}`, `{"version":1,"day":"` + visitDay(*now) + `","places":[{"country":"","region":"","city":"","lat":0,"lon":0,"gaps":null}]}`} {
 		if e := os.WriteFile(damaged, []byte(content), 0600); e != nil {
 			t.Fatal(e)
 		}

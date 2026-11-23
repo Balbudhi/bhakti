@@ -641,111 +641,135 @@ window.SONG_LINES = {
     "grammarNote": "ḍakāḍaki is a reciprocal verbal noun from ḍākibā (to call). apherā is a negative adjective compound (a- + pherā, non-returning). pathare is patha + -re (locative)."
   },
   "prana-holi-amodae-1": {
-    "source": "ପ୍ରାଣହୋଲି ଆମୋଦାୟେ ଶେଷ ଠାବ ପାଇଁ, ଶେଷ ଠାବ ପାଇଁ",
+    "source": "ପ୍ରାଣ ହଳିଆ ମୋ ଧାଏଁ ଶେଷ ଠାବ ପାଇଁ, ଶେଷ ଠାବ ପାଇଁ",
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ପ୍ରାଣହୋଲି",
+        "text": "ପ୍ରାଣ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ଆମୋଦାୟେ",
+        "text": "ହଳିଆ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ଶେଷ",
+        "text": "ମୋ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ଠାବ",
+        "text": "ଧାଏଁ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ପାଇଁ,",
+        "text": "ଶେଷ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ଶେଷ",
+        "text": "ଠାବ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ଠାବ",
+        "text": "ପାଇଁ,",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ପାଇଁ",
+        "text": "ଶେଷ",
         "wordIndices": [
           7
         ]
+      },
+      {
+        "text": "ଠାବ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ପାଇଁ",
+        "wordIndices": [
+          9
+        ]
       }
     ],
-    "roman": "prāṇaholi āmodāye śeṣa ṭhāba pāī̃, śeṣa ṭhāba pāī̃",
-    "english": "{1:In the delight }{0:of life's offering }{4:to find }{2:the final }{3:shelter, }{7:to find }{5:the final }{6:shelter}",
+    "roman": "prāṇa haḷiā mo dhāẽ śeṣa ṭhāba pāī̃, śeṣa ṭhāba pāī̃",
+    "english": "{2:my }{0:life’s }{1:plowman }{3:runs }{6:toward }{4:the final }{5:resting place, }{9:toward }{7:the final }{8:resting place.}",
     "words": [
       {
-        "roman": "prāṇaholi",
-        "gloss": "life-offering; sacrifice of life",
+        "roman": "prāṇa",
+        "gloss": "life; life-breath",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "āmodāye",
-        "gloss": "for delight; in ecstasy",
+        "roman": "haḷiā",
+        "gloss": "plowman; field hand",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mo",
+        "gloss": "my",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhāẽ",
+        "gloss": "runs",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śeṣa",
-        "gloss": "final; ultimate",
+        "gloss": "final; last",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṭhāba",
-        "gloss": "shelter; resting place",
+        "gloss": "place; resting place",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pāī̃,",
-        "gloss": "to find; to attain,",
+        "gloss": "for; toward",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śeṣa",
-        "gloss": "final; ultimate",
+        "gloss": "final; last",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṭhāba",
-        "gloss": "shelter; resting place",
+        "gloss": "place; resting place",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pāī̃",
-        "gloss": "to find; to attain",
+        "gloss": "for; toward",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "prāṇaholi combines prāṇa (vital breath/life) + holi (sacrificial festival/pyre). āmodāye is derived from āmoda (delight/joy) with a dative/locative ending. pāī̃ is the purposive verbal participle/infinitive of pāibā (to obtain)."
+    "grammarNote": "'prāṇa haḷiā' pictures life as a plowman leaving the field at evening; 'mo' is the possessive; 'dhāẽ' is the third-person verb (runs); 'pāī̃' is the postposition 'for'."
   },
   "smrutira-balire-kete-1": {
     "source": "ସ୍ମୃତିର ବାଲିରେ କେତେ ପାଦଚିହ୍ନ ପଡ଼ିଛି",

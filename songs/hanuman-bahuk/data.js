@@ -4024,10 +4024,10 @@ window.SONG_LINES = {
     ]
   },
   "line-032": {
-    "source": "कमठ की पीठि जाकी गोड़नि की गाड़ैं मानो नापि के भाजन भरी जलनिधि जल भो",
+    "source": "कमठ की पीठि जाके गोड़नि की गाड़ैं मानो नाप के भाजन भरी जलनिधि जल भो",
     "sourceLanguage": "bra",
-    "roman": "kamaṭha kī pīṭhi jākī goṛani kī gāṛaiṁ māno nāpi ke bhājana bharī jalanidhi jala bho",
-    "english": "{2:Upon the shell }{0,1:of the cosmic tortoise, }{6:the deep hollows }{3:of whose }{4,5:feet }{14:became }{7:as though }{10:vessels }{11:filled }{8,9:by measuring }{12:the ocean's }{13:waters,}",
+    "roman": "kamaṭha kī pīṭhi jāke goṛani kī gāṛaiṁ māno nāpa ke bhājana bharī jalanidhi jala bho",
+    "english": "{6:The deep hollows }{3:his }{4,5:feet left }{2:in the shell }{0,1:of the cosmic tortoise }{14:became, }{7:as it were, }{8,9,10:measuring vessels }{11:to hold }{13:the waters }{12:of the ocean;}",
     "words": [
       {
         "roman": "kamaṭha",
@@ -4048,8 +4048,8 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jākī",
-        "gloss": "whose",
+        "roman": "jāke",
+        "gloss": "whose; here, Hanuman’s",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4078,14 +4078,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nāpi",
-        "gloss": "measuring",
+        "roman": "nāpa",
+        "gloss": "measure; measuring",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ke",
-        "gloss": "having",
+        "gloss": "of; for",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4097,7 +4097,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bharī",
-        "gloss": "filled; brimful",
+        "gloss": "to fill; to hold; the full amount of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4120,7 +4120,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`goṛani` is the Braj oblique plural of `goṛa` ('foot/leg'). `māno` marks utprekṣā (poetic conjecture). `nāpi ke` is a conjunctive participial phrase ('having measured').",
+    "grammarNote": "`goṛani` is the Braj oblique plural of `goṛa` ('foot/leg'). `māno` marks utprekṣā (poetic conjecture). `nāpa ke bhājana` is a genitive phrase, 'vessels of measure'; `jāke` refers to Hanumān, named at the end of the stanza.",
     "sourceWords": [
       {
         "text": "कमठ",
@@ -4141,13 +4141,13 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जाकी",
+        "text": "जाके",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "गोड़नि",
+        "text": "गोड़नि",
         "wordIndices": [
           4
         ]
@@ -4159,7 +4159,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "गाड़ैं",
+        "text": "गाड़ैं",
         "wordIndices": [
           6
         ]
@@ -4171,7 +4171,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नापि",
+        "text": "नाप",
         "wordIndices": [
           8
         ]
@@ -4218,7 +4218,7 @@ window.SONG_LINES = {
     "source": "जातुधान दावन परावन को दुर्ग भयो महामीन बास तिमि तोमनी को थल भो",
     "sourceLanguage": "bra",
     "roman": "jātudhāna dāvana parāvana ko durga bhayo mahāmīna bāsa timi tomanī ko thala bho",
-    "english": "{5:It became }{4:an impassable barrier }{1:to crush }{2,3:the flight }{0:of demons, }{7:and the dwelling }{6:of giant fish }{12:became }{11:a gathering ground }{9,10:for swarms }{8:of sea-monsters,}",
+    "english": "{5:it became }{4:a fortress }{2,3:for those fleeing }{1:the destruction }{0:of the demons, }{12:and became }{7,11:a dwelling place }{6:for giant fish }{9,10:and swarms }{8:of sea-monsters,}",
     "words": [
       {
         "roman": "jātudhāna",
@@ -4228,7 +4228,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāvana",
-        "gloss": "subduing; crushing",
+        "gloss": "destruction; subduing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4246,7 +4246,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "durga",
-        "gloss": "insurmountable obstacle; fortress",
+        "gloss": "fortress; stronghold",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4288,7 +4288,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "thala",
-        "gloss": "place; gathering ground",
+        "gloss": "place; dwelling place (with bāsa)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4299,7 +4299,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`tomanī` is the Braj oblique plural of `toma` ('multitude/swarm'). `timi` refers to the legendary giant sea-monster Timingila.",
+    "grammarNote": "`tomanī` is the Braj oblique plural of `toma` ('multitude/swarm'). `timi` is a legendary giant fish; the `timiṅgila` is the larger creature that swallows it. `jātudhāna dāvana` is 'destruction of the demons'; `parāvana ko durga` is 'a fortress for flight'.",
     "sourceWords": [
       {
         "text": "जातुधान",
@@ -6961,7 +6961,7 @@ window.SONG_LINES = {
     "source": "खल दुख दोषिबे को जन परितोषिबे को माँगिबो मलीनता को मोदक सुदान भो",
     "sourceLanguage": "bra",
     "roman": "khala dukha doṣibe ko jana paritoṣibe ko mā̃gibo malīnatā ko modaka sudāna bho",
-    "english": "{2,3:For burning }{1:the grief }{0:from villains, }{5,6:for fully satisfying }{4:the devotees, }{8,9:against the wretchedness }{7:of begging, }{12:he became }{11:a noble gift }{10:of sweets.}",
+    "english": "{12:He became }{2,3:one to bring }{1:suffering }{2:and disgrace }{0:upon the wicked, }{5,6:to satisfy fully }{4:the devotees, }{8,9:and, against the wretchedness }{7:of begging, }{11:a noble gift }{10:of sweets.}",
     "words": [
       {
         "roman": "khala",
@@ -6977,7 +6977,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "doṣibe",
-        "gloss": "for faulting; punishing; burning",
+        "gloss": "for faulting; for disgracing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7124,11 +7124,106 @@ window.SONG_LINES = {
       }
     ]
   },
+  "line-050b": {
+    "source": "आरत की आरति निवारिबे को तिहूँ पुर",
+    "sourceLanguage": "bra",
+    "roman": "ārata kī ārati nivāribe ko tihū̃ pura",
+    "english": "{3,4:For dispelling }{2:the distress }{0,1:of the afflicted }{5,6:in all three worlds,}",
+    "words": [
+      {
+        "roman": "ārata",
+        "gloss": "the afflicted; those in distress",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kī",
+        "gloss": "of",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārati",
+        "gloss": "distress; suffering",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nivāribe",
+        "gloss": "dispelling; warding off",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ko",
+        "gloss": "for",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tihū̃",
+        "gloss": "all three",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pura",
+        "gloss": "cities; worlds",
+        "concept_key": "",
+        "preserve_in_english": false
+      }
+    ],
+    "grammarNote": "Purpose phrase 'nivāribe ko' (for dispelling) parallels the preceding infinitives; 'ārati' here is distress (Sanskrit ārti), not the light offering.",
+    "sourceWords": [
+      {
+        "text": "आरत",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "की",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "आरति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निवारिबे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तिहूँ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पुर",
+        "wordIndices": [
+          6
+        ]
+      }
+    ]
+  },
   "line-051": {
     "source": "तुलसी को साहिब हठीलो हनुमान भो ॥",
     "sourceLanguage": "bra",
     "roman": "tulasī ko sāhiba haṭhīlo hanumāna bho ॥",
-    "english": "{3:Resolute }{4:Hanuman }{5:became }{2:the master }{0,1:of Tulsidas.}",
+    "english": "{3:resolute }{4:Hanuman, }{2:master }{0,1:of Tulsidas, }{5:came to be.}",
     "words": [
       {
         "roman": "tulasī",
@@ -7650,17 +7745,17 @@ window.SONG_LINES = {
     "source": "ताके जो अनरथ सो समर्थ एक आंक को ।",
     "sourceLanguage": "bra",
     "roman": "tāke jo anartha so samartha eka āṅka ko ।",
-    "english": "{1:Whatever }{2:misfortune }{0:befalls him, }{3,4:he is capable }{5,7:of settling in a single }{6:stroke.}",
+    "english": "{3,7:Who is there }{4:so powerful }{5,6:and so firm of resolve }{1:as }{0:to wish him }{2:harm?}",
     "words": [
       {
         "roman": "tāke",
-        "gloss": "his; of that one",
+        "gloss": "would seek; would intend",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jo",
-        "gloss": "whatever",
+        "gloss": "who; whoever",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7672,7 +7767,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "so",
-        "gloss": "that",
+        "gloss": "that one; such a one",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7690,18 +7785,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "āṅka",
-        "gloss": "mark; stroke; moment; count",
+        "gloss": "mark; with eka: firm resolve; certainty",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ko",
-        "gloss": "for; of",
+        "gloss": "who?",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'tāke' is genitive/dative singular. 'anartha' (misfortune/evil) and 'samartha' (capable) form internal rhyme.",
+    "grammarNote": "'tāke' (printed also 'tākai') is the verb 'to look toward, intend'; 'ko' is the interrogative 'who'; 'eka āṅka' is an idiom for fixed resolve. The line is a rhetorical question. 'anartha' and 'samartha' form internal rhyme.",
     "sourceWords": [
       {
         "text": "ताके",
@@ -8101,7 +8196,7 @@ window.SONG_LINES = {
     "source": "लोक परलोक को बिसोक सो तिलोक ताहि",
     "sourceLanguage": "bra",
     "roman": "loka paraloka ko bisoka so tiloka tāhi",
-    "english": "{4:He }{3:is free from sorrow }{0,2:regarding this world }{1:and the next, }{5:and all three worlds }{6:are for him.}",
+    "english": "{4:He }{3:is free from sorrow }{0,2:regarding this world }{1:and the next; }{5:in all three worlds, }{6:for him,}",
     "words": [
       {
         "roman": "loka",
@@ -8135,7 +8230,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tiloka",
-        "gloss": "the three worlds",
+        "gloss": "in the three worlds",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10356,7 +10451,7 @@ window.SONG_LINES = {
     "source": "दोष सुनाये ते आगेहुं को हुसियार ह्वै हौं मन तौ हिय हारो",
     "sourceLanguage": "bra",
     "roman": "doṣa sunāye te āgehuṁ ko husiyāra hvai hauṁ mana tau hiya hāro",
-    "english": "{0:If my faults }{1,2:are pointed out, }{6,7:I will become }{5:alert }{3,4:for the future as well, }{9:yet }{8:in mind }{10:the heart }{11:has lost heart.}",
+    "english": "{0:If my faults }{1,2:are pointed out, }{6,7:I will become }{5:alert }{3,4:for the future as well, }{9:though }{8:my mind }{10,11:has lost heart.}",
     "words": [
       {
         "roman": "doṣa",
@@ -10408,30 +10503,30 @@ window.SONG_LINES = {
       },
       {
         "roman": "mana",
-        "gloss": "in the mind; deliberately",
+        "gloss": "the mind; my mind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tau",
-        "gloss": "indeed; yet",
+        "gloss": "indeed; though",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hiya",
-        "gloss": "the heart",
+        "gloss": "heart; courage",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hāro",
-        "gloss": "has lost heart; conceded defeat",
+        "gloss": "has lost (with hiya: has lost heart)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Conditional participle 'sunāye te' followed by future first-person verb 'hvai hauṁ' and contrastive nominal clause 'hiya hāro'.",
+    "grammarNote": "Conditional participle 'sunāye te' followed by future first-person verb 'hvai hauṁ'. 'mana' is the subject of the idiom 'hiya hārnā', 'to lose heart'; it does not mean surrender.",
     "sourceWords": [
       {
         "text": "दोष",
@@ -15445,7 +15540,7 @@ window.SONG_LINES = {
     "source": "आई है बनाई वेष आप ही बिचारि देखु पाप जाय सब को गुनी के पाले परैगी।",
     "sourceLanguage": "bra",
     "roman": "āī hai banāī veṣa āpa hī bicāri dekhu pāpa jāya saba ko gunī ke pāle paraigī.",
-    "english": "{0,1:She has come }{2,3:assuming a disguise; }{6,7:reflect and see }{4,5:for yourself—}{8:sin, }{9:going forth, }{14,15:will fall into the clutches }{10,11,12,13:of the all-accomplished master.}",
+    "english": "{0,1:She has come }{2,3:assuming a disguise; }{6,7:reflect and see }{4,5:for yourself—}{10,11:everyone’s }{8:sin }{9:will be gone }{14,15:once she falls into the clutches }{12,13:of one skilled enough.}",
     "words": [
       {
         "roman": "āī",
@@ -15497,31 +15592,31 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāpa",
-        "gloss": "sinful being; evil embodiment",
+        "gloss": "sin; affliction",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jāya",
-        "gloss": "going",
+        "gloss": "will go; will depart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "saba",
-        "gloss": "all",
+        "gloss": "of all; everyone’s",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ko",
-        "gloss": "whose; of everyone",
+        "gloss": "of",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "gunī",
-        "gloss": "virtuous; all-accomplished master",
+        "gloss": "adept; one skilled in overcoming such an affliction",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15544,7 +15639,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'āī hai banāī veṣa' features conjunct absolutive participles. 'pāle paraigī' is an idiomatic compound verb.",
+    "grammarNote": "'āī hai banāī veṣa' features conjunct absolutive participles. 'pāpa jāya saba ko' is a separate clause, 'everyone’s sin will go'; the feminine subject of 'paraigī' is the arm-pain pictured as Pūtanā. 'pāle paraigī' is an idiomatic compound verb.",
     "sourceWords": [
       {
         "text": "आई",
@@ -17530,10 +17625,10 @@ window.SONG_LINES = {
     ]
   },
   "line-134": {
-    "source": "साम दान भेद बिधि बेदहू लभेद सिद्धि हाथ कपिनाथ ही के चोटी चोर साहु की।",
+    "source": "साम दान भेद बिधि बेदहू लबेद सिद्धि हाथ कपिनाथ ही के चोटी चोर साहु की।",
     "sourceLanguage": "bra",
-    "roman": "sāma dāna bheda bidhi bedahū labheda siddhi hātha kapinātha hī ke coṭī cora sāhu kī.",
-    "english": "{0:Through conciliation, }{1:charity, }{2:division, }{3:and statecraft, }{6:and perfections }{4,5:unattainable even to the Vedas—}{7,10:in the hand }{8,9:of the monkey-lord alone }{11:is the topknot }{12:of thief }{13,14:and honest master alike.}",
+    "roman": "sāma dāna bheda bidhi bedahū labeda siddhi hātha kapinātha hī ke coṭī cora sāhu kī.",
+    "english": "{3:The methods }{0:of conciliation, }{1:gifts, }{2:and division, }{4:and Veda }{5:and folk tradition too, }{6:prove it: }{7,10:in the hand }{8,9:of the monkey-lord alone }{11:is the topknot }{12:of thief }{13,14:and honest merchant alike.}",
     "words": [
       {
         "roman": "sāma",
@@ -17561,19 +17656,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "bedahū",
-        "gloss": "even to the Vedas",
+        "gloss": "even the Vedas; the Vedas too",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "labheda",
-        "gloss": "unattainable; inscrutable",
+        "roman": "labeda",
+        "gloss": "folk tradition; popular usage (paired with Veda)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "siddhi",
-        "gloss": "spiritual powers / ultimate success",
+        "gloss": "proof; what is established",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -17615,18 +17710,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāhu",
-        "gloss": "the honest merchant; virtuous master",
+        "gloss": "the honest merchant; upright man",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kī.",
+        "roman": "kī",
         "gloss": "of",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sāma dāna bheda' refers to the classical upāyas. 'bedahū labheda' = veda + hū (even) + alabheda/durlabha (inscrutable/unattainable).",
+    "grammarNote": "'sāma dāna bheda' names three of the classical upāyas; daṇḍa is not in the text. 'bedahū labeda' pairs Veda with popular tradition; 'siddhi' means established or proven. Holding someone’s topknot is an idiom for having him in one’s power.",
     "sourceWords": [
       {
         "text": "साम",
@@ -17659,7 +17754,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "लभेद",
+        "text": "लबेद",
         "wordIndices": [
           5
         ]
@@ -20874,7 +20969,7 @@ window.SONG_LINES = {
     "source": "तेरे बल रामराज किये सब सुरकाज सकल समाज साज साजे रघुबर के।",
     "sourceLanguage": "bra",
     "roman": "tere bala rāmarāja kiye saba surakāja sakala samāja sāja sāje raghubara ke.",
-    "english": "{0:By your }{1:might, }{2:the reign of Rama }{4:and all }{5:tasks of the gods }{3:were accomplished, }{6:and the entire }{7:assembly }{8:and regalia }{10,11:of Raghubara }{9:were arrayed.}",
+    "english": "{0:By your }{1:might, }{2:King Rama }{3:accomplished }{4:all }{5:the tasks of the gods, }{9:and you arrayed }{6:the entire }{7:assembly }{8:and regalia }{10,11:of Raghubara.}",
     "words": [
       {
         "roman": "tere",
@@ -20890,7 +20985,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmarāja",
-        "gloss": "the sovereign reign of Rama; Rāma means “pleasing” or “delightful”",
+        "gloss": "King Rama; Rāma means “pleasing” or “delightful”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20932,7 +21027,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāje",
-        "gloss": "arrayed; established",
+        "gloss": "arrayed; set in order",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -20949,7 +21044,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sakala samāja sāja sāje' shows dense s-alliteration. 'surakāja' = sura + kāja (celestial purpose).",
+    "grammarNote": "'rāmarāja' is 'King Rāma', agent of 'kiye'. 'sakala samāja sāja sāje' shows dense s-alliteration. 'surakāja' = sura + kāja (celestial purpose).",
     "sourceWords": [
       {
         "text": "तेरे",
@@ -23044,11 +23139,11 @@ window.SONG_LINES = {
     "source": "श्रीरघुबीर निवारिये पीर रहौं दरबार परो लटिलूलो॥",
     "sourceLanguage": "bra",
     "roman": "śrī-raghubīr niwāriye pīr rahauṁ darabār paro laṭilūlo.",
-    "english": "{0:For the sake of Sri Rama, }{1:please remove }{2:this pain; }{3:let me remain }{5:lying }{6:crippled and limp }{4:at your court threshold.}",
+    "english": "{0:O Sri Rama, hero of the Raghus, }{1:please remove }{2:this pain; }{3:let me remain }{5:lying, }{6:though limp and crippled, }{4:at your court threshold.}",
     "words": [
       {
         "roman": "śrī-raghubīr",
-        "gloss": "Sri Rama [hero of the Raghu lineage]",
+        "gloss": "O Sri Rama [hero of the Raghu lineage]",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -23089,7 +23184,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "niwāriye is a respectful precative/imperative. rahauṁ is 1st person optative.",
+    "grammarNote": "śrī-raghubīr is a vocative: the poet turns to address Rāma. niwāriye is a respectful precative/imperative. rahauṁ is 1st person optative.",
     "sourceWords": [
       {
         "text": "श्रीरघुबीर",
@@ -24472,10 +24567,10 @@ window.SONG_LINES = {
     ]
   },
   "line-176": {
-    "source": "बाहुक सुबाहु नीच लीचर मरीच मिली मुँहपीर केतु जातुधान है।",
+    "source": "बाहुक सुबाहु नीच लीचर मरीच मिली मुँहपीर केतुजा कुरोग जातुधान है।",
     "sourceLanguage": "bra",
-    "roman": "bāhuka subāhu nīc līcar marīc milī mum̐hpīr ketu jātudhān hai.",
-    "english": "{0:Arm-pain }{1:is Subāhu, }{2:vile }{3:clinging misery }{4:is Mārīca, }{5:joining }{6:with mouth-pain }{7:as Ketu—}{9:they are all }{8:demons.}",
+    "roman": "bāhuka subāhu nīc līcar marīc milī mum̐hpīr ketujā kurog jātudhān hai.",
+    "english": "{0:Arm-pain }{2:is vile }{1:Subāhu, }{5:joined by }{3:bodily weakness }{4:as Mārīca; }{6:mouth-pain }{7:is Tataka, }{8:and foul diseases }{10:are }{9:the demons.}",
     "words": [
       {
         "roman": "bāhuka",
@@ -24497,7 +24592,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "līcar",
-        "gloss": "clinging",
+        "gloss": "weakness; bodily debility",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24509,7 +24604,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "milī",
-        "gloss": "joining",
+        "gloss": "joined; together with",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24520,8 +24615,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ketu",
-        "gloss": "the demonic shadow planet",
+        "roman": "ketujā",
+        "gloss": "Suketu’s daughter: Tataka, the demoness slain by Rama, mother of Subāhu and Mārīca",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kurog",
+        "gloss": "foul disease; evil diseases",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24532,13 +24633,13 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hai.",
+        "roman": "hai",
         "gloss": "are",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Wordplay/pun on bāhuka (arm ailment) with subāhu (the demon Subāhu, lit. having strong arms).",
+    "grammarNote": "Wordplay/pun on bāhuka (arm ailment) with subāhu (the demon Subāhu, lit. having strong arms). ketujā ('daughter of Ketu', i.e. Suketu) is Tāḍakā; the stanza casts the poet’s ailments as the demons who attacked Viśvāmitra’s sacrifice.",
     "sourceWords": [
       {
         "text": "बाहुक",
@@ -24583,21 +24684,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "केतु",
+        "text": "केतुजा",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "जातुधान",
+        "text": "कुरोग",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "है।",
+        "text": "जातुधान",
         "wordIndices": [
           9
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          10
         ]
       }
     ]
@@ -24785,11 +24892,11 @@ window.SONG_LINES = {
     "source": "सुमिरे सहाय राम लखन आखर दोऊ जिनके समूह साके जागत जहान है।",
     "sourceLanguage": "bra",
     "roman": "sumire sahāy rām lakhan ākhar doū jinke samūh sāke jāgat jahān hai.",
-    "english": "{0:I have invoked }{1:as helpers }{5:both }{4:syllables, }{2:Rama }{3:and Lakshmana, }{6:whose }{7:host }{8:of heroic deeds }{9,11:shines }{10:throughout the world.}",
+    "english": "{0:When remembered, }{5:both }{4:syllables of that name }{1:are my helpers, }{2:as Rama }{3:and Lakshmana, }{6:whose }{7:host }{8:of heroic deeds }{9,11:shines }{10:throughout the world.}",
     "words": [
       {
         "roman": "sumire",
-        "gloss": "remembered",
+        "gloss": "when remembered; invoked",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24813,7 +24920,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ākhar",
-        "gloss": "syllables",
+        "gloss": "syllables: rā and ma of the name Rāma",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24860,7 +24967,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "sāke is plural of sākā (heroic exploit / famous historical deed).",
+    "grammarNote": "The two syllables rā and ma are personified as Rāma and Lakṣmaṇa, who guarded Viśvāmitra’s sacrifice. sāke is plural of sākā (heroic exploit / famous historical deed).",
     "sourceWords": [
       {
         "text": "सुमिरे",
@@ -28820,6 +28927,11 @@ window.SONG_SEQUENCE = [
     "repeats": 1
   },
   {
+    "ref": "line-050b",
+    "section": "verse",
+    "repeats": 1
+  },
+  {
     "ref": "line-051",
     "section": "verse",
     "repeats": 1
@@ -29784,6 +29896,10 @@ window.SONG_TIMINGS = [
   },
   {
     "start": 534.13,
+    "end": 543.89
+  },
+  {
+    "start": 543.89,
     "end": 548.72
   },
   {

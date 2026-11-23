@@ -548,7 +548,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hā̃ maiyā durge ād bhavānī",
-    "english": "{0:Yes}{1:, mother}{2: Durgā}{3:, primordial}{4: Bhavānī!}",
+    "english": "{0:Yes}{1:, Mother}{2: Durgā}{3:, primordial}{4: Bhavānī!}",
     "words": [
       {
         "roman": "hā̃",
@@ -620,7 +620,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "o maiyā durge ād bhavānī",
-    "english": "{0:O}{1:, mother}{2: Durgā}{3:, primordial}{4: Bhavānī!}",
+    "english": "{0:O}{1:, Mother}{2: Durgā}{3:, primordial}{4: Bhavānī!}",
     "words": [
       {
         "roman": "o",
@@ -4286,7 +4286,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāc karan gandharv te nāle brahmā ved sunāve",
-    "english": "{2:The gandharvas}{0,1: dance}{3:, and}{4: beside them}{5: Brahmā}{7: recites}{6: the Vedas.}",
+    "english": "{2:The gandharvas}{0,1: dance}{3:, and}{4: also}{5: Brahmā}{7: recites}{6: the Vedas.}",
     "words": [
       {
         "roman": "nāc",
@@ -4314,7 +4314,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāle",
-        "gloss": "together; alongside; also",
+        "gloss": "also; moreover (with te: and also)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4400,7 +4400,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho nāc karan gandharv te nāle brahmā ved sunāve",
-    "english": "{0:Oh}{3:, the gandharvas}{1,2: dance}{4:, and}{5: beside them}{6: Brahmā}{8: recites}{7: the Vedas.}",
+    "english": "{0:Oh}{3:, the gandharvas}{1,2: dance}{4:, and}{5: also}{6: Brahmā}{8: recites}{7: the Vedas.}",
     "words": [
       {
         "roman": "ho",
@@ -4434,7 +4434,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāle",
-        "gloss": "together; alongside; also",
+        "gloss": "also; moreover (with te: and also)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5816,7 +5816,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hāy maiyā durge ād bhavānī",
-    "english": "{0:Ah}{1:, mother}{2: Durgā}{3:, primordial}{4: Bhavānī!}",
+    "english": "{0:Ah}{1:, Mother}{2: Durgā}{3:, primordial}{4: Bhavānī!}",
     "words": [
       {
         "roman": "hāy",

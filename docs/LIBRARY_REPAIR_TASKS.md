@@ -9,6 +9,7 @@ The owner authorized integrating and publishing only the 14 prepared readers. Th
 - [x] Released researched credits and component notices for 31 readers after matching each to its completed translation review.
 - [x] Resolved kakad-aarti line-116 and main-kismat-ka-mara v2-2; corrected Śrī Sāī Āratī languages.
 - [x] Marked all 31 readers complete in `data/translation-review-status.json`. See [the record](research/translation-review-2026-11-22.md).
+- [x] Resolved the twelve remaining open readers and reviewed the nineteen newest readers; every reader now has a completion mark.
 
 ## Kanakadhārā and library wording repair — 21 November 2026
 

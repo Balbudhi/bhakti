@@ -1048,7 +1048,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh maiyā ādi kumārī, eh ho javālā Mahākālī",
-    "english": "{0,1,2,3,4,5,6,7:She is Mother, the primordial Maiden; she—oh—is Flame, Mahākālī.}",
+    "english": "{0,1,2,3,4,5,6,7:She is Mother, the primordial Maiden; she—oh—is Jvālā the Flame, Mahākālī.}",
     "words": [
       {
         "roman": "Eh",
@@ -1082,7 +1082,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "javālā",
-        "gloss": "flame; here the Goddess in her flame form",
+        "gloss": "flame; Jvālā, the Goddess in her flame form",
         "sourceTokenIndex": 6
       },
       {
@@ -1148,7 +1148,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh maiyā ādi kumārī, eh ho javālā Mahākālī",
-    "english": "{0,1,2,3,4,5,6,7:She is Mother, the primordial Maiden; she—oh—is Flame, Mahākālī.}",
+    "english": "{0,1,2,3,4,5,6,7:She is Mother, the primordial Maiden; she—oh—is Jvālā the Flame, Mahākālī.}",
     "words": [
       {
         "roman": "Eh",
@@ -1182,7 +1182,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "javālā",
-        "gloss": "flame; here the Goddess in her flame form",
+        "gloss": "flame; Jvālā, the Goddess in her flame form",
         "sourceTokenIndex": 6
       },
       {
@@ -2693,7 +2693,7 @@ window.SONG_LINES = {
     "grammarNote": "Dukhīā̃ de dukkh is the subject. Saying the acclamation is a converb; the sufferers’ sorrows cease, rather than Mother erasing the people."
   },
   "v3-lead-2": {
-    "source": "ਹੋ ਸੱਚੀਆਂ ਪੌੜਾਂ ਵਾਲੀ ਮਈਆ ਦਾ ਹੀ ਨਾਂ ਲੈ ਕੇ",
+    "source": "ਹੋ ਸੱਚ ਜਾਨੋ ਪੌਣਾਂ ਵਾਲੀ ਮਈਆ ਦਾ ਹੀ ਨਾਂ ਲੈ ਕੇ",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -2703,62 +2703,68 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ਸੱਚੀਆਂ",
+        "text": "ਸੱਚ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ਪੌੜਾਂ",
+        "text": "ਜਾਨੋ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ਵਾਲੀ",
+        "text": "ਪੌਣਾਂ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ਮਈਆ",
+        "text": "ਵਾਲੀ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ਦਾ",
+        "text": "ਮਈਆ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ਹੀ",
+        "text": "ਦਾ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ਨਾਂ",
+        "text": "ਹੀ",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ਲੈ",
+        "text": "ਨਾਂ",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "ਕੇ",
+        "text": "ਲੈ",
         "wordIndices": [
           9
         ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          10
+        ]
       }
     ],
-    "roman": "Ho sacciā̃ pauṛā̃ vālī maiyā dā hī nā̃ lai ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Oh, by invoking only the name of Mother, she of the true steps—}",
+    "roman": "Ho sacc jāno pauṇā̃ vālī maiyā dā hī nā̃ lai ke",
+    "english": "{0,1,2,3,4,5,6,7,8,9,10:Oh, know this as true: by invoking only the name of Mother, she of the winds—}",
     "words": [
       {
         "roman": "Ho",
@@ -2766,56 +2772,61 @@ window.SONG_LINES = {
         "sourceTokenIndex": 0
       },
       {
-        "roman": "sacciā̃",
-        "gloss": "true; genuine",
+        "roman": "sacc",
+        "gloss": "true; truth",
         "sourceTokenIndex": 1
       },
       {
-        "roman": "pauṛā̃",
-        "gloss": "steps; stairs",
+        "roman": "jāno",
+        "gloss": "know; understand",
         "sourceTokenIndex": 2
+      },
+      {
+        "roman": "pauṇā̃",
+        "gloss": "winds; airs",
+        "sourceTokenIndex": 3
       },
       {
         "roman": "vālī",
         "gloss": "she who has or is associated with",
-        "sourceTokenIndex": 3
+        "sourceTokenIndex": 4
       },
       {
         "roman": "maiyā",
         "gloss": "Mother; affectionate form",
-        "sourceTokenIndex": 4
+        "sourceTokenIndex": 5
       },
       {
         "roman": "dā",
         "gloss": "of; possessive linker",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 6
       },
       {
         "roman": "hī",
         "gloss": "only; just; emphatic focus",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 7
       },
       {
         "roman": "nā̃",
         "gloss": "name; here Mother’s name",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 8
       },
       {
         "roman": "lai",
         "gloss": "take; here utter or invoke",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 9
       },
       {
         "roman": "ke",
         "gloss": "having; links the preceding action to the main clause",
-        "sourceTokenIndex": 9
+        "sourceTokenIndex": 10
       }
     ],
     "nameTable": false,
-    "grammarNote": "The lāi ke/name-taking clause continues the preceding relief-from-sorrow thought. Preserve literal steps (pauṛā̃); do not replace them with promises or blessings. Hī focuses her name."
+    "grammarNote": "'sacc jāno' (know this as true) is parenthetical; the nā̃ lai ke clause continues the preceding relief-from-sorrow thought. 'pauṇā̃ vālī' (she of the winds) follows the published lyric and the closest acoustic match; the retroflex consonant is hard to hear. Hī focuses her name."
   },
   "v3-chorus-2": {
-    "source": "ਹੋ ਸੱਚੀਆਂ ਪੌੜਾਂ ਵਾਲੀ ਮਈਆ ਦਾ ਹੀ ਨਾਂ ਲੈ ਕੇ",
+    "source": "ਹੋ ਸੱਚ ਜਾਨੋ ਪੌਣਾਂ ਵਾਲੀ ਮਈਆ ਦਾ ਹੀ ਨਾਂ ਲੈ ਕੇ",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -2825,13 +2836,146 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ਸੱਚੀਆਂ",
+        "text": "ਸੱਚ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ਪੌੜਾਂ",
+        "text": "ਜਾਨੋ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ਪੌਣਾਂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ਵਾਲੀ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ਮਈਆ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ਦਾ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ਹੀ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ਨਾਂ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ਲੈ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ਕੇ",
+        "wordIndices": [
+          10
+        ]
+      }
+    ],
+    "roman": "Ho sacc jāno pauṇā̃ vālī maiyā dā hī nā̃ lai ke",
+    "english": "{0,1,2,3,4,5,6,7,8,9,10:Oh, know this as true: by invoking only the name of Mother, she of the winds—}",
+    "words": [
+      {
+        "roman": "Ho",
+        "gloss": "Oh!; sung exclamation",
+        "sourceTokenIndex": 0
+      },
+      {
+        "roman": "sacc",
+        "gloss": "true; truth",
+        "sourceTokenIndex": 1
+      },
+      {
+        "roman": "jāno",
+        "gloss": "know; understand",
+        "sourceTokenIndex": 2
+      },
+      {
+        "roman": "pauṇā̃",
+        "gloss": "winds; airs",
+        "sourceTokenIndex": 3
+      },
+      {
+        "roman": "vālī",
+        "gloss": "she who has or is associated with",
+        "sourceTokenIndex": 4
+      },
+      {
+        "roman": "maiyā",
+        "gloss": "Mother; affectionate form",
+        "sourceTokenIndex": 5
+      },
+      {
+        "roman": "dā",
+        "gloss": "of; possessive linker",
+        "sourceTokenIndex": 6
+      },
+      {
+        "roman": "hī",
+        "gloss": "only; just; emphatic focus",
+        "sourceTokenIndex": 7
+      },
+      {
+        "roman": "nā̃",
+        "gloss": "name; here Mother’s name",
+        "sourceTokenIndex": 8
+      },
+      {
+        "roman": "lai",
+        "gloss": "take; here utter or invoke",
+        "sourceTokenIndex": 9
+      },
+      {
+        "roman": "ke",
+        "gloss": "having; links the preceding action to the main clause",
+        "sourceTokenIndex": 10
+      }
+    ],
+    "nameTable": false,
+    "grammarNote": "'sacc jāno' (know this as true) is parenthetical; the nā̃ lai ke clause continues the preceding relief-from-sorrow thought. 'pauṇā̃ vālī' (she of the winds) follows the published lyric and the closest acoustic match; the retroflex consonant is hard to hear. Hī focuses her name."
+  },
+  "v3-lead-2b": {
+    "source": "ਸੱਚ ਜਾਨੋ ਪੌਣਾਂ ਵਾਲੀ ਮਈਆ ਦਾ ਹੀ ਨਾਂ ਲੈ ਕੇ",
+    "sourceLanguage": "pa",
+    "sourceWords": [
+      {
+        "text": "ਸੱਚ",
+        "wordIndices": [
+          0
+        ]
+      },
+      {
+        "text": "ਜਾਨੋ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ਪੌਣਾਂ",
         "wordIndices": [
           2
         ]
@@ -2879,22 +3023,22 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Ho sacciā̃ pauṛā̃ vālī maiyā dā hī nā̃ lai ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Oh, by invoking only the name of Mother, she of the true steps—}",
+    "roman": "Sacc jāno pauṇā̃ vālī maiyā dā hī nā̃ lai ke",
+    "english": "{0,1,2,3,4,5,6,7,8,9:Know this as true: by invoking only the name of Mother, she of the winds—}",
     "words": [
       {
-        "roman": "Ho",
-        "gloss": "Oh!; sung exclamation",
+        "roman": "Sacc",
+        "gloss": "true; truth",
         "sourceTokenIndex": 0
       },
       {
-        "roman": "sacciā̃",
-        "gloss": "true; genuine",
+        "roman": "jāno",
+        "gloss": "know; understand",
         "sourceTokenIndex": 1
       },
       {
-        "roman": "pauṛā̃",
-        "gloss": "steps; stairs",
+        "roman": "pauṇā̃",
+        "gloss": "winds; airs",
         "sourceTokenIndex": 2
       },
       {
@@ -2934,125 +3078,14 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "The lāi ke/name-taking clause continues the preceding relief-from-sorrow thought. Preserve literal steps (pauṛā̃); do not replace them with promises or blessings. Hī focuses her name."
-  },
-  "v3-lead-2b": {
-    "source": "ਸੱਚੀਆਂ ਪੌੜਾਂ ਵਾਲੀ ਮਈਆ ਦਾ ਹੀ ਨਾਂ ਲੈ ਕੇ",
-    "sourceLanguage": "pa",
-    "sourceWords": [
-      {
-        "text": "ਸੱਚੀਆਂ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ਪੌੜਾਂ",
-        "wordIndices": [
-          1
-        ]
-      },
-      {
-        "text": "ਵਾਲੀ",
-        "wordIndices": [
-          2
-        ]
-      },
-      {
-        "text": "ਮਈਆ",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "ਦਾ",
-        "wordIndices": [
-          4
-        ]
-      },
-      {
-        "text": "ਹੀ",
-        "wordIndices": [
-          5
-        ]
-      },
-      {
-        "text": "ਨਾਂ",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
-        "text": "ਲੈ",
-        "wordIndices": [
-          7
-        ]
-      },
-      {
-        "text": "ਕੇ",
-        "wordIndices": [
-          8
-        ]
-      }
-    ],
-    "roman": "Sacciā̃ pauṛā̃ vālī maiyā dā hī nā̃ lai ke",
-    "english": "{0,1,2,3,4,5,6,7,8:By invoking only the name of Mother, she of the true steps—}",
-    "words": [
-      {
-        "roman": "Sacciā̃",
-        "gloss": "true; genuine",
-        "sourceTokenIndex": 0
-      },
-      {
-        "roman": "pauṛā̃",
-        "gloss": "steps; stairs",
-        "sourceTokenIndex": 1
-      },
-      {
-        "roman": "vālī",
-        "gloss": "she who has or is associated with",
-        "sourceTokenIndex": 2
-      },
-      {
-        "roman": "maiyā",
-        "gloss": "Mother; affectionate form",
-        "sourceTokenIndex": 3
-      },
-      {
-        "roman": "dā",
-        "gloss": "of; possessive linker",
-        "sourceTokenIndex": 4
-      },
-      {
-        "roman": "hī",
-        "gloss": "only; just; emphatic focus",
-        "sourceTokenIndex": 5
-      },
-      {
-        "roman": "nā̃",
-        "gloss": "name; here Mother’s name",
-        "sourceTokenIndex": 6
-      },
-      {
-        "roman": "lai",
-        "gloss": "take; here utter or invoke",
-        "sourceTokenIndex": 7
-      },
-      {
-        "roman": "ke",
-        "gloss": "having; links the preceding action to the main clause",
-        "sourceTokenIndex": 8
-      }
-    ],
-    "nameTable": false,
-    "grammarNote": "Same continuing instrumental/converb clause without initial ho. No main verb supplied as though sung."
+    "grammarNote": "'sacc jāno' (know this as true) is parenthetical; the nā̃ lai ke clause continues the preceding relief-from-sorrow thought. 'pauṇā̃ vālī' (she of the winds) follows the published lyric and the closest acoustic match; the retroflex consonant is hard to hear. Hī focuses her name."
   },
   "v3-bridge-lead": {
-    "source": "ਨਾ ਦੁਨੀਆ, ਜੈ ਹੋ, ਨਾ ਦੁਨੀਆ, ਜੈ ਹੋ, ਨਾ ਦੁਨੀਆ ਡਰਦੀ ਏ",
+    "source": "ਹੋ ਦੁਨੀਆ, ਜੈ ਹੋ, ਹੋ ਦੁਨੀਆ, ਜੈ ਹੋ, ਹੋ ਦੁਨੀਆ ਡਰਦੀ ਏ",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
-        "text": "ਨਾ",
+        "text": "ਹੋ",
         "wordIndices": [
           0
         ]
@@ -3076,7 +3109,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ਨਾ",
+        "text": "ਹੋ",
         "wordIndices": [
           4
         ]
@@ -3100,7 +3133,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ਨਾ",
+        "text": "ਹੋ",
         "wordIndices": [
           8
         ]
@@ -3124,12 +3157,12 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "Nā dunīā, jai ho, nā dunīā, jai ho, nā dunīā ḍardī e",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:The world has no—victory! The world has no—victory! The world has no fear.}",
+    "roman": "Ho dunīā, jai ho, ho dunīā, jai ho, ho dunīā ḍardī e",
+    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:Oh, the world—victory! Oh, the world—victory! Oh, the world is in fear.}",
     "words": [
       {
-        "roman": "Nā",
-        "gloss": "not",
+        "roman": "Ho",
+        "gloss": "oh!; sung exclamation",
         "sourceTokenIndex": 0
       },
       {
@@ -3148,8 +3181,8 @@ window.SONG_LINES = {
         "sourceTokenIndex": 3
       },
       {
-        "roman": "nā",
-        "gloss": "not",
+        "roman": "ho",
+        "gloss": "oh!; sung exclamation",
         "sourceTokenIndex": 4
       },
       {
@@ -3168,8 +3201,8 @@ window.SONG_LINES = {
         "sourceTokenIndex": 7
       },
       {
-        "roman": "nā",
-        "gloss": "not",
+        "roman": "ho",
+        "gloss": "oh!; sung exclamation",
         "sourceTokenIndex": 8
       },
       {
@@ -3189,7 +3222,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Dunīā is the explicit feminine singular subject and agrees with ḍardī. Nā negates the predicate; e is the present auxiliary. The clause follows invoking Mother’s name and release from suffering. Repeated unfinished nā dunīā pickups are preserved before the complete clause; no fear-object postposition or causative is inserted."
+    "grammarNote": "Dunīā is the feminine singular subject of ḍardī e. The sung 'ho' parallels the earlier bridge 'ho rakṣā … kardī e'; it is an exclamation, not a negative. Unfinished 'ho dunīā' pickups are preserved before the complete clause; no object of fear is stated."
   },
   "v4-lead-1": {
     "source": "ਏਹ ਦੁਸ਼ਟ ਸੰਘਾਰਨ ਵਾਲੀ ਜਦ ਖੰਡੇ ਨੂੰ ਹੱਥ ਪਾਵੇ",

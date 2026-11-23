@@ -110,10 +110,12 @@ history to show. Public pages gain no visible control, cookie or identifier.
 
 **One count per device per day.** `assets/visit.js` runs on the public origin when
 a page is visible. It sends `{}` on a first visit, or `{"last":"YYYY-MM-DD"}` with
-the day it was last counted. The server answers `{day, until}`; the device stores
-only that receipt and stays quiet until `until` (epoch milliseconds, the next
-midnight in the library's `America/New_York` day). Failure stores nothing and is
-silent; a later view tries again. It never delays or breaks a page. Automated
+the day it was last counted. The server answers `{day, until}`: `day` is
+the device's last counted day (its earlier day, or null, when this visit was not
+counted) and `until` is epoch milliseconds, the next midnight in the library's
+`America/New_York` day. The device stores only that receipt and stays quiet until
+then. It saves a ten-minute wait before sending, so a lost answer, a second window
+or a failing server cannot cause an immediate repeat. Failure is silent. It never delays or breaks a page. Automated
 browsers, other hosts, and browsers without storage send nothing.
 
 **Distinct visitors without identifiers.** The server stores, per day and place,
@@ -121,7 +123,7 @@ how many visits had each gap in days since that device's previous counted day.
 Gap `0` means first visit; gaps are capped at 400. A device's first visit inside a
 window starting on day A is exactly a visit whose previous day precedes A, so the
 distinct devices in any retained window are `gap = 0 or gap > day - A`, summed.
-A replay (`last` equal to today) or a future `last` returns the receipt and counts
+A replay (`last` equal to today) or a future `last` returns today and counts
 nothing. Cleared storage, private windows and Safari's storage expiry make one
 person look new; different devices count separately. The UI says "approximate".
 
@@ -134,10 +136,12 @@ address or overfull day still counts the visit, under a less specific place.
 **Abuse limits.** Text/plain JSON bodies of at most 256 bytes. Declared bots are
 answered but not counted. One network (IPv4 address or IPv6 /64) may add 50 counts
 per day; one day holds at most 20,000 counts, 20,000 networks and 2,000 places.
-Over a limit the receipt is still returned, so refusing creates no retry loop. Networks appear
-only as truncated HMACs under a random salt in the current day's limiter file;
-the file is replaced on the next day's first visit and removed by any later owner
-read. Counts remain forgeable by a determined sender; they are not audit evidence.
+Over a limit the answer is still 200, so refusing creates no retry loop. Networks appear
+only as 16-bit buckets of an HMAC under a random salt in the current day's limiter
+file; many addresses share a bucket. The file is replaced on the next day's first
+visit and removed by any later owner read, as are files stranded by a killed write.
+The counter itself keeps no address. Apache's ordinary access log for this host is
+outside it and rotates under the hosting account's settings. Counts remain forgeable by a determined sender; they are not audit evidence.
 
 **Storage.** `visits/` inside the private directory, mode 0700, with its own lock,
 so public traffic never holds or rewrites credential, session or request state.

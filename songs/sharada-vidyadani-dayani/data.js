@@ -788,7 +788,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nārāyaṇī seta kamalāsanī",
-    "english": "{0:Narayani, }{1:white, }{2:seated on a lotus}",
+    "english": "{0:Narayani, }{2:seated on a }{1:white }{2:lotus}",
     "words": [
       {
         "roman": "nārāyaṇī",
@@ -921,7 +921,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "aśvinī",
-        "gloss": "radiant goddess",
+        "gloss": "Aśvinī, a goddess’s name",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -43,7 +43,7 @@ const (
 
 var libraryZone = mustZone("America/New_York")
 var dayFile = regexp.MustCompile(`^\d{4}-\d{2}-\d{2}\.json$`)
-var automatedAgent = regexp.MustCompile(`(?i)bot|crawl|spider|slurp|headless|lighthouse|preview|monitor|curl|wget|python|deployment`)
+var automatedAgent = regexp.MustCompile(`(?i)(?:^|[^u])bot|crawl|spider|slurp|headless|lighthouse|preview|monitor|curl|wget|python|deployment`)
 var errVisitState = errors.New("invalid visitor state")
 
 func mustZone(name string) *time.Location {
@@ -117,6 +117,9 @@ func (d *dayVisits) validate(day string) error {
 		return errVisitState
 	}
 	for _, p := range d.Places {
+		if p.Gaps == nil {
+			return errVisitState
+		}
 		for gap, count := range p.Gaps {
 			if gap < 0 || gap > retainedDays || count < 1 || count > maxDayVisits {
 				return errVisitState
@@ -212,7 +215,8 @@ func locate(directory string, address netip.Addr) place {
 	return p
 }
 
-// networkKey identifies a subscriber network only while today's salt exists.
+// networkKey is a daily-salted 16-bit bucket. Thousands of addresses share each
+// value, so even the stored salt cannot turn a key back into one address.
 func networkKey(salt []byte, address netip.Addr) string {
 	bits := 32
 	if address.Is6() {
@@ -221,21 +225,21 @@ func networkKey(salt []byte, address netip.Addr) string {
 	prefix, _ := address.Prefix(bits)
 	mac := hmac.New(sha256.New, salt)
 	mac.Write([]byte(prefix.String()))
-	return hex.EncodeToString(mac.Sum(nil)[:8])
+	return hex.EncodeToString(mac.Sum(nil)[:2])
 }
 
-// recordVisit adds at most one count. Reaching a limit is success without a count,
-// so a refused device does not retry. The limiter is written first: a crash between
+// recordVisit reports whether it added the one count. Reaching a limit is success
+// without a count, so a refused device does not retry. The limiter is written first: a crash between
 // the writes can lose one count but cannot evade a limit.
-func recordVisit(directory string, now time.Time, address netip.Addr, gap int) error {
+func recordVisit(directory string, now time.Time, address netip.Addr, gap int) (bool, error) {
 	dir := filepath.Join(directory, visitsDirectory)
 	if e := os.Mkdir(dir, 0700); e != nil && !os.IsExist(e) {
-		return e
+		return false, e
 	}
 	where := locate(directory, address)
 	unlock, e := lockDirectory(dir)
 	if e != nil {
-		return e
+		return false, e
 	}
 	defer unlock()
 	today := visitDay(now)
@@ -244,10 +248,13 @@ func recordVisit(directory string, now time.Time, address netip.Addr, gap int) e
 	if e = readPrivate(dir, limiterFile, maxVisitFile, &limiter); e != nil || limiter.Day != today || limiter.Networks == nil {
 		limiter = visitLimiter{today, make([]byte, 32), map[string]int{}}
 		if _, e = rand.Read(limiter.Salt); e != nil {
-			return e
+			return false, e
 		}
 		if e = removeExpiredDays(dir, today); e != nil {
-			return e
+			return false, e
+		}
+		if e = removeStranded(dir); e != nil {
+			return false, e
 		}
 	}
 	day, e := readDay(dir, today)
@@ -255,18 +262,33 @@ func recordVisit(directory string, now time.Time, address netip.Addr, gap int) e
 		day, e = &dayVisits{Version: 1, Day: today, Places: []placeVisits{}}, nil
 	}
 	if e != nil {
-		return e
+		return false, e
 	}
 	key := networkKey(limiter.Salt, address)
 	if limiter.Networks[key] >= maxNetworkVisits || (limiter.Networks[key] == 0 && len(limiter.Networks) >= maxDayNetworks) || day.total() >= maxDayVisits {
-		return nil
+		return false, nil
 	}
 	limiter.Networks[key]++
 	if e = writePrivate(dir, limiterFile, limiter, nil); e != nil {
-		return e
+		return false, e
 	}
 	day.add(where, gap)
-	return writePrivate(dir, today+".json", day, nil)
+	return true, writePrivate(dir, today+".json", day, nil)
+}
+
+// removeStranded deletes temporary files left by a killed write. The caller holds
+// the visitor lock, so no live write owns one.
+func removeStranded(dir string) error {
+	names, e := filepath.Glob(filepath.Join(dir, ".state-*"))
+	if e != nil {
+		return e
+	}
+	for _, name := range names {
+		if e = os.Remove(name); e != nil {
+			return e
+		}
+	}
+	return nil
 }
 func removeExpiredDays(dir, today string) error {
 	current, e := parseDay(today)
@@ -306,6 +328,9 @@ func summarizeVisits(directory string, now time.Time, window int) (*visitSummary
 		return nil, e
 	}
 	defer unlock()
+	if e = removeStranded(dir); e != nil {
+		return nil, e
+	}
 	var limiter visitLimiter
 	if e = readPrivate(dir, limiterFile, maxVisitFile, &limiter); e == nil && limiter.Day != out.To {
 		if e = os.Remove(filepath.Join(dir, limiterFile)); e != nil {
@@ -412,9 +437,15 @@ func (s *Service) visit(w http.ResponseWriter, r *http.Request) error {
 		}
 		gap = min(daysBetween(last, today), retainedDays)
 	}
-	agent := r.UserAgent()
-	counted := agent != "" && !automatedAgent.MatchString(agent) && (input.Last == "" || gap > 0)
-	if counted {
+	// The receipt names the device's last counted day: today once counted (or on a
+	// replay), otherwise the day it already had.
+	receipt := any(nil)
+	if input.Last != "" {
+		receipt = input.Last
+	}
+	if input.Last != "" && gap <= 0 {
+		receipt = day
+	} else if agent := r.UserAgent(); agent != "" && !automatedAgent.MatchString(agent) {
 		hostname, _, e := net.SplitHostPort(r.RemoteAddr)
 		if e != nil {
 			return e
@@ -423,12 +454,16 @@ func (s *Service) visit(w http.ResponseWriter, r *http.Request) error {
 		if e != nil {
 			return e
 		}
-		if e = recordVisit(s.Directory, now, address.Unmap().WithZone(""), gap); e != nil {
+		counted, e := recordVisit(s.Directory, now, address.Unmap().WithZone(""), gap)
+		if e != nil {
 			return e
+		}
+		if counted {
+			receipt = day
 		}
 	}
 	w.Header().Set("Access-Control-Allow-Origin", publicOrigin)
-	jsonResponse(w, http.StatusOK, map[string]any{"day": day, "until": nextVisitDay(now).UnixMilli()})
+	jsonResponse(w, http.StatusOK, map[string]any{"day": receipt, "until": nextVisitDay(now).UnixMilli()})
 	return nil
 }
 

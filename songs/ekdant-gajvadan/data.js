@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Ekdant Gajvadan",
   "subtitle": "Gaṇeśa",
-  "credit": "Various Artists",
+  "credit": "Tānsen · Various Artists",
   "pageCredit": "Various Artists",
-  "writer": "",
+  "writer": "Tānsen",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -20,7 +20,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Tansen"
   ],
   "audioSources": [
     {
@@ -772,7 +773,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gaurī suta gaṇeśa mūṣaka",
-    "english": "{0,1:Son of Gaurī, }{2:Gaṇeśa, }{3:the mouse-}",
+    "english": "{0,1:Son of Gaurī, }{2:Gaṇeśa, }{3:with the mouse}",
     "words": [
       {
         "roman": "gaurī",
@@ -803,7 +804,7 @@ window.SONG_LINES = {
     "grammarNote": "Appositional compound phrase: Gaurī-suta (son of Gaurī) identifying Gaṇeśa; mūṣaka functions as the genitive qualifier of vāhana in the succeeding line."
   },
   "vaahana-para-saaja": {
-    "source": "वाहन पर साजा",
+    "source": "वाहन परसधर",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -813,20 +814,14 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पर",
+        "text": "परसधर",
         "wordIndices": [
           1
         ]
-      },
-      {
-        "text": "साजा",
-        "wordIndices": [
-          2
-        ]
       }
     ],
-    "roman": "vāhana para sājā",
-    "english": "{0:mount }{2:he is splendidly seated }{1:upon}",
+    "roman": "vāhana parasadhara",
+    "english": "{0:as mount, }{1:bearer of the axe,}",
     "words": [
       {
         "roman": "vāhana",
@@ -835,20 +830,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "para",
-        "gloss": "on; upon",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "sājā",
-        "gloss": "is adorned; is splendidly seated",
+        "roman": "parasadhara",
+        "gloss": "bearer of the axe",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Postpositional locative phrase (vāhana para) modifying the intransitive perfective verb sājā (from sajhnā / sobhnā)."
+    "grammarNote": "'vāhana' completes 'mūṣaka' from the preceding line; 'parasadhara' is the vernacular form of Sanskrit paraśudhara."
   },
   "shankara-suvana-riddhi-siddhi-nava-nidhi-daayi": {
     "source": "शंकर सुवन रिद्धि सिद्धि नव निधि दाई",
@@ -947,64 +936,40 @@ window.SONG_LINES = {
     "grammarNote": "suvana is the tadbhava form of sūnu/savana (son); dāī is the agentive suffix/noun (dāyī) governing the compound direct objects Ṛddhi, Siddhi, and Nava Nidhi."
   },
   "gaan-se-na-teri-stuti": {
-    "source": "गान से न तेरी स्तुति",
+    "source": "तानसेन तेरी स्तुति",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "गान",
+        "text": "तानसेन",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "से",
+        "text": "तेरी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "न",
+        "text": "स्तुति",
         "wordIndices": [
           2
         ]
-      },
-      {
-        "text": "तेरी",
-        "wordIndices": [
-          3
-        ]
-      },
-      {
-        "text": "स्तुति",
-        "wordIndices": [
-          4
-        ]
       }
     ],
-    "roman": "gāna se na terī stuti",
-    "english": "{0,1:Through song, }{3:your }{4:praise }{2:cannot be exhausted}",
+    "roman": "tānasena terī stuti",
+    "english": "{0:Tānsen, }{2:praise }{1:to you}",
     "words": [
       {
-        "roman": "gāna",
-        "gloss": "song; singing",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "se",
-        "gloss": "by means of; through",
-        "concept_key": "",
-        "preserve_in_english": false
-      },
-      {
-        "roman": "na",
-        "gloss": "not; cannot [be exhausted]",
+        "roman": "tānasena",
+        "gloss": "Tānsen, the poet’s own name as signature",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "terī",
-        "gloss": "your [feminine singular]",
+        "gloss": "your",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1016,7 +981,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Elliptical sentence with instrumental postposition 'se' and negative particle 'na', with an elided finite verb meaning 'to be complete' or 'to suffice'."
+    "grammarNote": "Poet’s signature; 'terī stuti' is the object of 'karata' at the start of the next line."
   },
   "kaato-kalesha-prathama-vandana": {
     "source": "करत काटो कलेश प्रथम वंदना करत द्वंद्व मिट जाई",
@@ -1078,11 +1043,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karata kāṭo kaleśa prathama vandanā karata dvaṁdva miṭa jāī",
-    "english": "{0:As we pray, }{1:sever }{2:distress; }{3:upon foremost }{4:salutation, }{5:as we offer it, }{6:duality }{7,8:is wiped away}",
+    "english": "{0:offering: }{1:cut away }{2:distress. }{5:On offering }{3:the first }{4:salutation, }{6:conflict }{7,8:is wiped away}",
     "words": [
       {
         "roman": "karata",
-        "gloss": "while performing; doing",
+        "gloss": "offering; doing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1112,13 +1077,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "karata",
-        "gloss": "while doing; upon performing",
+        "gloss": "on offering; while doing",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dvaṁdva",
-        "gloss": "duality; inner conflict; doubts",
+        "gloss": "conflict; opposing pairs; doubt",
         "concept_key": "",
         "preserve_in_english": false
       },

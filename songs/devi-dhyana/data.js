@@ -92,7 +92,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "khaḍgaṁ cakragadeṣucāpaparighāñchūlaṁ bhuśuṇḍīṁ śiraḥ śaṅkhaṁ sandadhatīṁ karaistrinayanāṁ sarvāṅgabhūṣāvṛtām |",
-    "english": "{0,5,6:She bears in her hands a sword,}{1: discus, mace, arrows, bow, iron bar and trident,}{2: a weapon,}{3,4: a head and a conch;}{6,7: she is three-eyed, adorned with ornaments over every limb.}",
+    "english": "{0,5,6:She bears in her hands a sword,}{1: discus, mace, arrows, bow, iron bar and trident,}{2: a bhuśuṇḍī weapon,}{3,4: a head and a conch;}{6,7: she is three-eyed, adorned with ornaments over every limb.}",
     "words": [
       {
         "roman": "khaḍgaṁ",
