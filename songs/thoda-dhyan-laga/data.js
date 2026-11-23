@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Thoṛā Dhyān Lagā",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Jayashree Medhi · Pramod Medhi · Sudhanshu–Samir",
+  "credit": "Jayshree Medhi · Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Pramod Medhi",
-  "writer": "Jayashree Medhi",
+  "writer": "Jayshree Medhi",
   "singer": "Pramod Medhi",
   "composer": "Sudhanshu–Samir",
   "languages": [
@@ -20,8 +20,9 @@ window.SONG_META = {
     "Shirdi Sai",
     "Sirdi Sai",
     "Rama",
-    "Jayashree Medhi",
-    "Sudhanshu–Samir"
+    "Jayshree Medhi",
+    "Sudhanshu–Samir",
+    "Jayashree Medhi"
   ],
   "audioSources": [
     {

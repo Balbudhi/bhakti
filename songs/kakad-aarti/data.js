@@ -9421,92 +9421,82 @@ window.SONG_LINES = {
     ]
   },
   "line-116": {
-    "source": "पद्य श्लोक ये दो कृष्ण वस्को हैं गाते",
+    "source": "त्वद्यश दे दो कृष्ण उसको हैं गाते",
     "sourceLanguage": "hi",
-    "roman": "padya śloka ye do kṛṣṇa vasko haiṁ gāte",
-    "english": "{4:Krishna }{5:Vasko }{6,7:sings }{2:these }{3:two }{0,1:verse-stanzas.}",
+    "roman": "tvadyaśa de do kṛṣṇa usako haiṁ gāte",
+    "english": "{1,2:Grant }{0:Your glory; }{3:Krishna }{5,6:sings }{4:of it.}",
     "words": [
       {
-        "roman": "padya",
-        "gloss": "verses / metrical lines"
+        "roman": "tvadyaśa",
+        "gloss": "your glory; your praise"
       },
       {
-        "roman": "śloka",
-        "gloss": "hymns / stanzas"
-      },
-      {
-        "roman": "ye",
-        "gloss": "these"
+        "roman": "de",
+        "gloss": "give; grant"
       },
       {
         "roman": "do",
-        "gloss": "two"
+        "gloss": "please give"
       },
       {
         "roman": "kṛṣṇa",
-        "gloss": "Krishna"
+        "gloss": "Krishna, the poet’s own name as signature"
       },
       {
-        "roman": "vasko",
-        "gloss": "identity or meaning uncertain here"
+        "roman": "usako",
+        "gloss": "it; that (your glory)"
       },
       {
         "roman": "haiṁ",
-        "gloss": "are"
+        "gloss": "are (present tense)"
       },
       {
         "roman": "gāte",
-        "gloss": "singing"
+        "gloss": "singing; sing"
       }
     ],
-    "grammarNote": "Signature colophon line: 'kṛṣṇa vasko' is the subject in the present continuous/habitual 'gāte haiṁ' with direct object 'ye do padya śloka'.",
+    "grammarNote": "Signature line. 'tvad-yaśa' (your glory) is the object of the request 'de do'; 'usako' takes it up again as the object of 'gāte haiṁ'. The Marathi original reads 'deśila tari de tvadyaśa kṛṣṇāne gāve' (if you will grant, grant that Krishna may sing your glory). 'usako' is the best-supported hearing of a short syllable run between 'kṛṣṇa' and 'haiṁ'.",
     "sourceWords": [
       {
-        "text": "पद्य",
+        "text": "त्वद्यश",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्लोक",
+        "text": "दे",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ये",
+        "text": "दो",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "दो",
+        "text": "कृष्ण",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कृष्ण",
+        "text": "उसको",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "वस्को",
+        "text": "हैं",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "हैं",
-        "wordIndices": [
-          6
-        ]
-      },
-      {
         "text": "गाते",
         "wordIndices": [
-          7
+          6
         ]
       }
     ]

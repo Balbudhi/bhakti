@@ -7555,6 +7555,40 @@ window.BHAKTI_SONGS = [
     "queueNumber": 150
   },
   {
+    "slug": "naiya-paar-karna",
+    "queueId": "4ed1497a",
+    "title": "Naiya Paar Karna",
+    "credit": "Kishore Gagare · Pramod Medhi · Sudhanshu–Samir",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Guru"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Kishore Gagare",
+      "Sudhanshu–Samir"
+    ],
+    "writer": "Kishore Gagare",
+    "singer": "Pramod Medhi",
+    "composer": "Sudhanshu–Samir",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śirḍī Sāī",
+    "queueNumber": 152
+  },
+  {
     "slug": "sai-ke-11-vachan",
     "queueId": "f8cb209d",
     "title": "Sai Ke 11 Vachan",
@@ -7692,7 +7726,7 @@ window.BHAKTI_SONGS = [
     "slug": "bhiksha-de-de-maai",
     "queueId": "90e02a31",
     "title": "Bhikṣā De De Māī",
-    "credit": "Mukesh Kulkarni · Pramod Medhi",
+    "credit": "Mukesh Kulkarni · Pramod Medhi · Pandurang Dixit",
     "languageTags": [
       "Hindi",
       "Marathi"
@@ -7706,11 +7740,12 @@ window.BHAKTI_SONGS = [
       "Bhiksa De De Mai",
       "Shirdi Sai",
       "Sirdi Sai",
-      "Mukesh Kulkarni"
+      "Mukesh Kulkarni",
+      "Pandurang Dixit"
     ],
     "writer": "Mukesh Kulkarni",
     "singer": "Pramod Medhi",
-    "composer": "",
+    "composer": "Pandurang Dixit",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhiksha-de-de-maai.mp3",
@@ -7914,7 +7949,7 @@ window.BHAKTI_SONGS = [
     "slug": "thoda-dhyan-laga",
     "queueId": "dc1f449c",
     "title": "Thoṛā Dhyān Lagā",
-    "credit": "Jayashree Medhi · Pramod Medhi · Sudhanshu–Samir",
+    "credit": "Jayshree Medhi · Pramod Medhi · Sudhanshu–Samir",
     "languageTags": [
       "Hindi"
     ],
@@ -7929,10 +7964,11 @@ window.BHAKTI_SONGS = [
       "Shirdi Sai",
       "Sirdi Sai",
       "Rama",
-      "Jayashree Medhi",
-      "Sudhanshu–Samir"
+      "Jayshree Medhi",
+      "Sudhanshu–Samir",
+      "Jayashree Medhi"
     ],
-    "writer": "Jayashree Medhi",
+    "writer": "Jayshree Medhi",
     "singer": "Pramod Medhi",
     "composer": "Sudhanshu–Samir",
     "audioSources": [
@@ -8143,39 +8179,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 67
-  },
-  {
-    "slug": "naiya-paar-karna",
-    "queueId": "4ed1497a",
-    "title": "Naiya Paar Karna",
-    "credit": "Kishore Gagare · Pramod Medhi & Kishore Gagare",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Kishore Gagare"
-    ],
-    "writer": "Kishore Gagare",
-    "singer": "Pramod Medhi & Kishore Gagare",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.mp3",
-        "type": "audio/mpeg"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/naiya-paar-karna.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śirḍī Sāī",
-    "queueNumber": 152
   },
   {
     "slug": "jo-achyutananda",
@@ -13039,7 +13042,8 @@ window.BHAKTI_SONGS = [
     "title": "Āratī Sāī Bābā",
     "credit": "",
     "languageTags": [
-      "Marathi"
+      "Hindi",
+      "Sanskrit"
     ],
     "subjectTags": [
       "Śirḍī Sāī",
@@ -13236,4 +13240,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 329
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "5fcc51cf513a594b66060a7c6e1970c850562338ab4a41645926dd8c59169b63";
+window.BHAKTI_SHUFFLE_REVISION = "07cba32012994f11475bde2d28a95720610aca3e75cb7772c8840a3e6232e46e";

@@ -7,7 +7,8 @@ window.SONG_META = {
   "singer": "",
   "composer": "",
   "languages": [
-    "Marathi"
+    "Hindi",
+    "Sanskrit"
   ],
   "subjectTags": [
     "Śirḍī Sāī",
@@ -59,7 +60,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "line-jayakara-1": {
     "source": "श्री सच्चिदानन्द सद्गुरु साईंनाथ महाराज की जय",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "श्री",
@@ -154,7 +155,7 @@ window.SONG_LINES = {
   },
   "line-refrain-1": {
     "source": "आरती साईं बाबा, जीवा सुखकारी देवा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "आरती",
@@ -237,7 +238,7 @@ window.SONG_LINES = {
   },
   "line-refrain-2": {
     "source": "चरण धूली में दे दो विश्राम जीवा, विश्राम जीवा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "चरण",
@@ -356,7 +357,7 @@ window.SONG_LINES = {
   },
   "line-refrain-3": {
     "source": "आरती साईं बाबा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "आरती",
@@ -403,7 +404,7 @@ window.SONG_LINES = {
   },
   "line-verse-1a": {
     "source": "जला दिया आनंग, स्वस्वरूप में हैं दंग",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जला",
@@ -498,7 +499,7 @@ window.SONG_LINES = {
   },
   "line-verse-1b": {
     "source": "मोक्षमार्गी को दिखाते राह, दृष्टि से श्री रंग, दृष्टि से श्री रंग",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मोक्षमार्गी",
@@ -653,7 +654,7 @@ window.SONG_LINES = {
   },
   "line-verse-2a": {
     "source": "जिसके मन में जैसा भाव, उसे वैसा अनुभव",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "जिसके",
@@ -760,7 +761,7 @@ window.SONG_LINES = {
   },
   "line-verse-2b": {
     "source": "दिखलाते दयाघन, ऐसी महिमा है देव, महिमा है देव",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "दिखलाते",
@@ -879,7 +880,7 @@ window.SONG_LINES = {
   },
   "line-verse-3a": {
     "source": "नाम तुम्हारा जो ध्याता, हरते संसृति व्यथा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "नाम",
@@ -974,7 +975,7 @@ window.SONG_LINES = {
   },
   "line-verse-3b": {
     "source": "अगाध तेरी करणी, मार्ग दिखाते अनाथा, दिखाते अनाथा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "अगाध",
@@ -1081,7 +1082,7 @@ window.SONG_LINES = {
   },
   "line-verse-4a": {
     "source": "कलियुगीन अवतार, सगुण परब्रह्म साचार",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "कलियुगीन",
@@ -1152,7 +1153,7 @@ window.SONG_LINES = {
   },
   "line-verse-4b": {
     "source": "अवतीर्ण हुवे हैं, स्वामी दत्ता दिगंबर, दत्ता दिगंबर",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "अवतीर्ण",
@@ -1259,7 +1260,7 @@ window.SONG_LINES = {
   },
   "line-verse-5a": {
     "source": "अष्ट दिन गुरुवार, भक्त आते तेरे द्वार",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "अष्ट",
@@ -1354,7 +1355,7 @@ window.SONG_LINES = {
   },
   "line-verse-5b": {
     "source": "प्रभु पद दर्शन को, भव भय निवारणार्थ, भय निवारणार्थ",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "प्रभु",
@@ -1473,7 +1474,7 @@ window.SONG_LINES = {
   },
   "line-verse-6a": {
     "source": "मेरा निज द्रव्यकोश, तव चरण रज सेवा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मेरा",
@@ -1568,7 +1569,7 @@ window.SONG_LINES = {
   },
   "line-verse-6b": {
     "source": "मांगता हूँ अभय ही, तुमसे देवाधिदेवा, देवाधिदेवा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "मांगता",
@@ -1663,7 +1664,7 @@ window.SONG_LINES = {
   },
   "line-verse-7a": {
     "source": "इच्छित दीन चातक, निर्मल जल सा निज सुख",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "इच्छित",
@@ -1770,7 +1771,7 @@ window.SONG_LINES = {
   },
   "line-verse-7b": {
     "source": "पिला देवे माधव को, रखे वचनों की लाज, वचनों की लाज",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "पिला",
@@ -1913,7 +1914,7 @@ window.SONG_LINES = {
   },
   "line-shloka-1": {
     "source": "श्री साईश कृपानिधेऽखिलनृणां सर्वार्थसिद्धिप्रद युष्मत्पादरजःप्रभावमतुलं धातापि वक्ताऽक्षमः । सद्भक्त्या शरणं कृताञ्जलिपुटः सम्प्रापितोऽस्मि प्रभो श्रीमत्सायिपरीशपादकमलान्नान्यच्छरण्यं मम ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्री",
@@ -2092,7 +2093,7 @@ window.SONG_LINES = {
   },
   "line-shloka-2": {
     "source": "साईरूपधरं राघवोत्तमं भक्तकामविबुधद्रुमं प्रभुम् । माययोपह्तचित्तशुद्धये चिन्तयाम्यहमहर्निशं मुदा ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "साईरूपधरं",
@@ -2187,7 +2188,7 @@ window.SONG_LINES = {
   },
   "line-shloka-3": {
     "source": "शरत्सुधांशुप्रतिमं प्रकाशं कृपात्तपत्रं तव सायिनाथ । त्वदीयपादाब्जसमाश्रितानां स्वच्छायया तापमपाकरोतु ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "शरत्सुधांशुप्रतिमं",
@@ -2294,7 +2295,7 @@ window.SONG_LINES = {
   },
   "line-shloka-4": {
     "source": "उपासनादैवत सायिनाथ स्तवैर्मयोपासनिना स्तुतस्त्वम् । रमेन्मनो मे तव पादयुग्मे भृङ्गो यथाऽब्जे मकरन्दलुब्धः ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "उपासनादैवत",
@@ -2437,7 +2438,7 @@ window.SONG_LINES = {
   },
   "line-shloka-5": {
     "source": "अनेकजन्मार्जितपापसंक्षयो भवेद्भवत्पादसरोजदर्शनात् । क्षमस्व सर्वानपराधपुञ्जान् प्रसीद साईश गुरो दयानिधे ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अनेकजन्मार्जितपापसंक्षयो",
@@ -2544,7 +2545,7 @@ window.SONG_LINES = {
   },
   "line-shloka-6": {
     "source": "श्रीसायिनाथचरणामृतपूतचित्तास्तत्पादसेवनरताः सततं च भक्त्या । संसारजन्यदुरितौघविनिर्गतास्ते कैवल्यधाम परमं समवाप्नुवन्ति ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्रीसायिनाथचरणामृतपूतचित्तास्तत्पादसेवनरताः",
@@ -2651,7 +2652,7 @@ window.SONG_LINES = {
   },
   "line-shloka-7": {
     "source": "स्तोत्रमेतत् पठेद्भक्त्या यो नरस्तन्मनाः सदा । सद्गुरुः सायिनाथस्य कृपापात्रं भवेद्ध्रुवम् ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्तोत्रमेतत्",
@@ -2770,7 +2771,7 @@ window.SONG_LINES = {
   },
   "line-shloka-8": {
     "source": "करचरणकृतं वा कायजं कर्मजं वा श्रवणनयनजं वा मानसं वापराधम् । विहितमविहितं वा सर्वमेतत्क्षमस्व जय जय करुणाब्धे श्रीप्रभो सायिनाथ ॥",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "करचरणकृतं",
@@ -2985,7 +2986,7 @@ window.SONG_LINES = {
   },
   "line-chant-rajadhiraja": {
     "source": "राजाधिराज योगिराज परब्रह्म साईंनाथ महाराज",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "hi",
     "sourceWords": [
       {
         "text": "राजाधिराज",

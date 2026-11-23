@@ -4,6 +4,12 @@
 
 The owner authorized integrating and publishing only the 14 prepared readers. They are now integrated: 19 existing English definitions, 10 annotation-only definitions, and two restored Sundarakāṇḍa couplets. Jayagaḷu’s literal stick refrain is preserved. Current registry: 350 finished, 2 protected, 14 pending; those 14 pending readers are deferred at the owner’s request. See [the integration record](research/translation-source-resolution-2026-11-21.md#integration-release). Release assembly and desktop/mobile checks pass; this batch is ready for deployment and live verification. Reuse completed marks; do not reopen the deferred readers without a new request.
 
+## Credits release — 22 November 2026
+
+- [x] Released researched credits and component notices for 31 readers after matching each to its completed translation review.
+- [x] Resolved kakad-aarti line-116 and main-kismat-ka-mara v2-2; corrected Śrī Sāī Āratī languages.
+- [x] Marked all 31 readers complete in `data/translation-review-status.json`. See [the record](research/translation-review-2026-11-22.md).
+
 ## Kanakadhārā and library wording repair — 21 November 2026
 
 The owner’s screenshot prompted a complete screen of all 365 readers / 8,859 definitions at `57c3c740`. A separately published Bhor Bhaī reader was preserved and its 12 definitions checked, bringing release coverage to 366 readers/8,871 definitions. The final conservative selection improves 305 English definitions across 83 readers, with 61 glosses, eight notes and 26 concept flags aligned; two further definitions have annotation-only repairs. It rejects 163 unnecessary or weaker proposals. Source, Roman text, audio, sequence, timings and protected owner English are preserved.

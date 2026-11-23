@@ -465,6 +465,150 @@
           "reason": "Reviewed Punjabi grammatical forms, with Hindi announcements/final verse retained separately."
         }
       ]
+    },
+    "shree-sai-aarti": {
+      "languages": [
+        "Hindi",
+        "Sanskrit"
+      ],
+      "performedSourcesSha256": "1d4b81973cd3d1c5894fba34cd6c8fd4960234b79692ee5f86c704f295aaa742",
+      "lines": [
+        {
+          "source": "अगाध तेरी करणी, मार्ग दिखाते अनाथा, दिखाते अनाथा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "अनेकजन्मार्जितपापसंक्षयो भवेद्भवत्पादसरोजदर्शनात् । क्षमस्व सर्वानपराधपुञ्जान् प्रसीद साईश गुरो दयानिधे ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "अवतीर्ण हुवे हैं, स्वामी दत्ता दिगंबर, दत्ता दिगंबर",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "अष्ट दिन गुरुवार, भक्त आते तेरे द्वार",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "आरती साईं बाबा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "आरती साईं बाबा, जीवा सुखकारी देवा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "इच्छित दीन चातक, निर्मल जल सा निज सुख",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "उपासनादैवत सायिनाथ स्तवैर्मयोपासनिना स्तुतस्त्वम् । रमेन्मनो मे तव पादयुग्मे भृङ्गो यथाऽब्जे मकरन्दलुब्धः ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "करचरणकृतं वा कायजं कर्मजं वा श्रवणनयनजं वा मानसं वापराधम् । विहितमविहितं वा सर्वमेतत्क्षमस्व जय जय करुणाब्धे श्रीप्रभो सायिनाथ ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "कलियुगीन अवतार, सगुण परब्रह्म साचार",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "चरण धूली में दे दो विश्राम जीवा, विश्राम जीवा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "जला दिया आनंग, स्वस्वरूप में हैं दंग",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "जिसके मन में जैसा भाव, उसे वैसा अनुभव",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "दिखलाते दयाघन, ऐसी महिमा है देव, महिमा है देव",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "नाम तुम्हारा जो ध्याता, हरते संसृति व्यथा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "पिला देवे माधव को, रखे वचनों की लाज, वचनों की लाज",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "प्रभु पद दर्शन को, भव भय निवारणार्थ, भय निवारणार्थ",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "मांगता हूँ अभय ही, तुमसे देवाधिदेवा, देवाधिदेवा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "मेरा निज द्रव्यकोश, तव चरण रज सेवा",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "मोक्षमार्गी को दिखाते राह, दृष्टि से श्री रंग, दृष्टि से श्री रंग",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "राजाधिराज योगिराज परब्रह्म साईंनाथ महाराज",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "शरत्सुधांशुप्रतिमं प्रकाशं कृपात्तपत्रं तव सायिनाथ । त्वदीयपादाब्जसमाश्रितानां स्वच्छायया तापमपाकरोतु ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "श्री सच्चिदानन्द सद्गुरु साईंनाथ महाराज की जय",
+          "language": "hi",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "श्री साईश कृपानिधेऽखिलनृणां सर्वार्थसिद्धिप्रद युष्मत्पादरजःप्रभावमतुलं धातापि वक्ताऽक्षमः । सद्भक्त्या शरणं कृताञ्जलिपुटः सम्प्रापितोऽस्मि प्रभो श्रीमत्सायिपरीशपादकमलान्नान्यच्छरण्यं मम ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "श्रीसायिनाथचरणामृतपूतचित्तास्तत्पादसेवनरताः सततं च भक्त्या । संसारजन्यदुरितौघविनिर्गतास्ते कैवल्यधाम परमं समवाप्नुवन्ति ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "साईरूपधरं राघवोत्तमं भक्तकामविबुधद्रुमं प्रभुम् । माययोपह्तचित्तशुद्धये चिन्तयाम्यहमहर्निशं मुदा ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        },
+        {
+          "source": "स्तोत्रमेतत् पठेद्भक्त्या यो नरस्तन्मनाः सदा । सद्गुरुः सायिनाथस्य कृपापात्रं भवेद्ध्रुवम् ॥",
+          "language": "sa",
+          "reason": "Hindi rendering of Adkar followed by Sanskrit Mahimna and forgiveness prayers; original Marathi authorship does not determine performed language."
+        }
+      ]
     }
   }
 }

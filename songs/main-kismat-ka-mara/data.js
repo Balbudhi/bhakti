@@ -940,7 +940,7 @@ window.SONG_LINES = {
     "grammarNote": "First-person optative sunū̃; feminine plural kathāē̃; instrumental/ablative se indicating cause/locus of impairment with baharā."
   },
   "v2-2": {
-    "source": "जो कहवा का कुछ तो सुनाए आस लिए मैं बैठा हूँ",
+    "source": "जो कहा वा का कुछ तो सुनाए आस लिए मैं बैठा हूँ",
     "sourceLanguage": "hi",
     "sourceWords": [
       {
@@ -950,78 +950,90 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कहवा",
+        "text": "कहा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "का",
+        "text": "वा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कुछ",
+        "text": "का",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "तो",
+        "text": "कुछ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सुनाए",
+        "text": "तो",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "आस",
+        "text": "सुनाए",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "लिए",
+        "text": "आस",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "मैं",
+        "text": "लिए",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "बैठा",
+        "text": "मैं",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "हूँ",
+        "text": "बैठा",
         "wordIndices": [
           10
         ]
+      },
+      {
+        "text": "हूँ",
+        "wordIndices": [
+          11
+        ]
       }
     ],
-    "roman": "jo kahavā kā kuch to sunāe ās lie maĩ baiṭhā hū̃",
-    "english": "{6,7:Holding hope}{0: that someone}{5: might recite}{3,4: at least something}{1,2: of the sayings,}{8,9,10: I sit waiting.}",
+    "roman": "jo kahā vā kā kuch to sunāe ās lie maĩ baiṭhā hū̃",
+    "english": "{7,8:Holding hope}{6: that someone will let me hear}{4,5: at least something}{2,3: of}{0,1: what was said,}{9,10,11: I sit waiting.}",
     "words": [
       {
         "roman": "jo",
-        "gloss": "who; whatever; if",
+        "gloss": "what; whatever",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kahavā",
-        "gloss": "saying; discourse; utterance",
+        "roman": "kahā",
+        "gloss": "was said; has been told",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vā",
+        "gloss": "that (Braj oblique form of “that”)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1080,7 +1092,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dialectal/regional noun kahavā (discourse/speech); causative/transitive 3rd-person optative sunāe; absolutive lie functioning adverbially with stative participle baiṭhā."
+    "grammarNote": "Correlative 'jo kahā … vā kā': what was said … of that; 'vā' is the Braj oblique of 'vah'. Causative third-person optative 'sunāe' (may let me hear) with its subject left open; absolutive 'lie' functions adverbially with the stative participle 'baiṭhā'."
   },
   "v2-response": {
     "source": "आस लिए मैं बैठा हूँ",

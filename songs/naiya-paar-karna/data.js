@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Naiya Paar Karna",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Kishore Gagare · Pramod Medhi & Kishore Gagare",
-  "pageCredit": "Pramod Medhi & Kishore Gagare",
+  "credit": "Kishore Gagare · Pramod Medhi · Sudhanshu–Samir",
+  "pageCredit": "Pramod Medhi",
   "writer": "Kishore Gagare",
-  "singer": "Pramod Medhi & Kishore Gagare",
-  "composer": "",
+  "singer": "Pramod Medhi",
+  "composer": "Sudhanshu–Samir",
   "languages": [
     "Hindi"
   ],
@@ -16,7 +16,8 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Kishore Gagare"
+    "Kishore Gagare",
+    "Sudhanshu–Samir"
   ],
   "audioSources": [
     {
