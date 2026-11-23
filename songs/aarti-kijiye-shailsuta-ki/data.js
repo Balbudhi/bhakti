@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Āratī Kījai Śailasutā Kī",
   "subtitle": "Śakti",
-  "credit": "Shruti Sadolikar",
+  "credit": "Traditional · Shruti Sadolikar",
   "pageCredit": "Shruti Sadolikar",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Shruti Sadolikar",
   "composer": "",
   "languages": [
@@ -22,7 +22,8 @@ window.SONG_META = {
     "Shiva",
     "Siva",
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Shruti Sadolikar"
   ],
   "audioSources": [
     {

@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Devīmāhātmyam — Adhyāya 12",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Vyāsa",
+  "pageCredit": "Vyāsa",
+  "writer": "Vyāsa",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -26,7 +26,8 @@ window.SONG_META = {
     "Vaisno Devi",
     "Durga Saptashati Chapter 12",
     "Chandi Path",
-    "Devi Mahatmya"
+    "Devi Mahatmya",
+    "Vyasa"
   ],
   "audioSources": [
     {

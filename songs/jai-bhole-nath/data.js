@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Jai Bhole Nath",
   "subtitle": "Śiva",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Amin Sangeet · Anup Jalota",
+  "pageCredit": "Anup Jalota",
+  "writer": "Amin Sangeet",
+  "singer": "Anup Jalota",
+  "composer": "Amin Sangeet",
   "languages": [
     "Hindi"
   ],
@@ -14,7 +14,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shiva",
-    "Siva"
+    "Siva",
+    "Amin Sangeet",
+    "Anup Jalota"
   ],
   "audioSources": [
     {

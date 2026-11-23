@@ -1,7 +1,8 @@
 window.SONG_META = {
   "title": "Maiṃne Tere Hī Bharose",
-  "credit": "Suneel Lodhi",
-  "writer": "",
+  "pageCredit": "Suneel Lodhi",
+  "credit": "Traditional · Suneel Lodhi",
+  "writer": "Traditional",
   "writerAttribution": "Poet",
   "singer": "Suneel Lodhi",
   "composer": "Suneel Lodhi",
@@ -14,7 +15,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Maine Tere Hi Bharose",
-    "Hanuman Ansh"
+    "Hanuman Ansh",
+    "Suneel Lodhi"
   ],
   "timingStatus": "start-only-reviewed",
   "translationStatus": "word-gloss-reviewed",

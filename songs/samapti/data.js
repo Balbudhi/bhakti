@@ -1,16 +1,19 @@
 window.SONG_META = {
   "title": "Samapti",
   "subtitle": "",
-  "credit": "Hari Om Sharan",
+  "credit": "Hari Om Sharan · Murli Manohar Swarup",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Hari Om Sharan",
   "singer": "Hari Om Sharan",
-  "composer": "",
+  "composer": "Murli Manohar Swarup",
   "languages": [
     "Hindi"
   ],
   "subjectTags": [],
-  "searchAliases": [],
+  "searchAliases": [
+    "Hari Om Sharan",
+    "Murli Manohar Swarup"
+  ],
   "audioSources": [
     {
       "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/samapti.m4a",

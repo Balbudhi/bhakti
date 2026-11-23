@@ -1,15 +1,15 @@
 window.SONG_META = {
   "title": "Neelkanth Mahadev Dayalu",
   "subtitle": "Śiva",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Amin Sangeet · Anup Jalota",
+  "pageCredit": "Anup Jalota",
+  "writer": "Amin Sangeet",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Anup Jalota",
   "vocalist": "",
-  "composer": "",
+  "composer": "Amin Sangeet",
   "ensemble": "",
   "languages": [
     "Hindi"
@@ -19,7 +19,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shiva",
-    "Siva"
+    "Siva",
+    "Amin Sangeet",
+    "Anup Jalota"
   ],
   "audioSources": [
     {

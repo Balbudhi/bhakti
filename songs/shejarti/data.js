@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Śrī Sāī Aṣṭottaraśatanāmāvalī",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
+  "credit": "Traditional · Pramod Medhi",
+  "pageCredit": "Pramod Medhi",
+  "writer": "Traditional",
+  "singer": "Pramod Medhi",
   "composer": "",
   "languages": [
     "Sanskrit"
@@ -20,7 +20,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Pramod Medhi"
   ],
   "audioSources": [
     {

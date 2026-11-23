@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Durgā Āpaduddhārāṣṭakam",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Traditional",
+  "pageCredit": "Traditional",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

@@ -42084,7 +42084,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "af3064d1202ff74690aefe8d04d2906c3848a43c0511a1d727087afadad32914",
+        "inputHash": "61327f1d757eed0ec18ef7d0292730ac05c5b23b5d1e2cb353bf6efe5fc208e6",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -42095,12 +42095,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "1be5ccb1160fe67d8378340e61ab31c2a7d87e49e3a3c8642120b1d5f2a3b512",
+          "recordHash": "38d35a2c95ee489e33184373881617b2e7187d976ec06f1466c30bb80617b0eb",
           "extractionRequestIds": [
-            "3ca17c5a91e04f5393aff3f6247af0fb"
+            "75f5a1be1f0f4055931356c6ff5589df"
           ],
           "reviewRequestIds": [
-            "10af56385aae4760a53a599eb5d7374d"
+            "64085b0f9fcd43ca803d72715d8772df"
           ],
           "coveredLineCount": 48
         },
@@ -42122,31 +42122,22 @@
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.5555555555555556
-            },
-            {
-              "id": "action.praise",
-              "weight": 0.22222222222222224
+              "weight": 0.7142857142857143
             },
             {
               "id": "action.remembrance",
-              "weight": 0.22222222222222224
+              "weight": 0.28571428571428575
             }
           ],
           "subjects": [
             {
               "id": "subject.devi",
-              "weight": 0.5555555555555556,
-              "role": "worship_focus"
-            },
-            {
-              "id": "subject.durga",
-              "weight": 0.22222222222222224,
+              "weight": 0.7142857142857143,
               "role": "worship_focus"
             },
             {
               "id": "subject.shiva",
-              "weight": 0.22222222222222224,
+              "weight": 0.28571428571428575,
               "role": "narrative_subject"
             }
           ]
@@ -42171,7 +42162,7 @@
           "channels": 2,
           "durationSeconds": 398.941
         },
-        "receiptHash": "3a278f9a23d656a59e767a7a0ee89dcb214946986e1946d5a6fd203c5a54553e",
+        "receiptHash": "725b4d950c2fca6ac56175ac60824d6994c0661548bb2287413d0f75fd65a2f4",
         "physical": {
           "whole": {
             "integratedLufs": -12.7,

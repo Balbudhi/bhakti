@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "O Shirdiwale Sai",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Anant Thorat · Mohammed Aziz · Sandeep & Santosh",
+  "pageCredit": "Mohammed Aziz",
+  "writer": "Anant Thorat",
+  "singer": "Mohammed Aziz",
+  "composer": "Sandeep & Santosh",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,11 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Anant Thorat",
+    "Mohammed Aziz",
+    "Sandeep",
+    "Santosh"
   ],
   "audioSources": [
     {

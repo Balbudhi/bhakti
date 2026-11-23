@@ -1,12 +1,15 @@
 window.SONG_META = {
   "title": "Yeh Garv Bharā Mastak Merā",
+  "pageCredit": "Hari Om Sharan",
   "subtitle": "Prārthanā",
-  "credit": "Hari Om Sharan",
-  "writer": "",
+  "credit": "Balbir Nirdosh · Hari Om Sharan · Murli Manohar Swarup",
+  "writer": "Balbir Nirdosh",
   "singer": "Hari Om Sharan",
-  "composer": "",
+  "composer": "Murli Manohar Swarup",
   "searchAliases": [
-    "Hari Om Sharan"
+    "Hari Om Sharan",
+    "Balbir Nirdosh",
+    "Murli Manohar Swarup"
   ],
   "languages": [
     "Hindi"

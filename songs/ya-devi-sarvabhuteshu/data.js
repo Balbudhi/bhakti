@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Yā Devī Sarvabhūteṣu",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Vyāsa",
+  "pageCredit": "Vyāsa",
+  "writer": "Vyāsa",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -34,7 +34,8 @@ window.SONG_META = {
     "Kali",
     "Ya Devi Sarva Bhuteshu",
     "Tantroktam Devi Suktam",
-    "Bhadrakali"
+    "Bhadrakali",
+    "Vyasa"
   ],
   "audioSources": [
     {

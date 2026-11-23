@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Shankar Ho",
   "subtitle": "Śiva",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Amin Sangeet · Anup Jalota",
+  "pageCredit": "Anup Jalota",
+  "writer": "Amin Sangeet",
+  "singer": "Anup Jalota",
+  "composer": "Amin Sangeet",
   "languages": [
     "Hindi"
   ],
@@ -17,7 +17,9 @@ window.SONG_META = {
     "Shiva",
     "Siva",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Amin Sangeet",
+    "Anup Jalota"
   ],
   "audioSources": [
     {

@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Maa Tumko Kaise Batlaun",
   "subtitle": "Śrī Śāradā Devī",
-  "credit": "Shurjo Bhattacharya · Swami Srikantananda",
+  "credit": "Swami Srikantananda · Shurjo Bhattacharya",
   "pageCredit": "Shurjo Bhattacharya",
-  "writer": "",
+  "writer": "Swami Srikantananda",
   "singer": "Shurjo Bhattacharya",
   "composer": "Swami Srikantananda",
   "languages": [
@@ -24,7 +24,9 @@ window.SONG_META = {
     "Surjho Bhattacharya",
     "Surjoo Bhattacharya",
     "Ma Tumko Kaise Batlaun",
-    "Holy Mother"
+    "Holy Mother",
+    "Swami Srikantananda",
+    "Shurjo Bhattacharya"
   ],
   "audioSources": [
     {

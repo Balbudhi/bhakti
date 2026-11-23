@@ -5686,7 +5686,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
     people: dict[str, list[str]] = {}
-    for field, label in (("writer", str(meta.get("writerAttribution") or "Poet")),
+    for field, label in (("writer", str(meta.get("writerAttribution") or ("Lyrics" if str(meta.get("writer", "")).strip().casefold() == "traditional" else "Poet"))),
                          ("translator", str(meta.get("translatorAttribution") or "Translation")),
                          ("singer", "Singer"), ("vocalist", "Vocalist"),
                          ("composer", "Composer"), ("musicDirector", "Music direction"),
@@ -5699,10 +5699,8 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
         return " · ".join(
             role if role in ("Recital", "Music direction") or person_count == 1 else f"{role}s" for role in roles
         )
-    def single_person_credit(person: str) -> bool:
-        return len(people) == 1 and not re.search(r"\s+(?:&|and)\s+", person, flags=re.I)
     credits = "".join(
-        f'<div class="song-credit-entry"><dt{" hidden" if single_person_credit(person) else ""}>{escape(display_roles(person, roles))}</dt><dd>{escape(person)}</dd></div>'
+        f'<div class="song-credit-entry"><dt>{escape(display_roles(person, roles))}</dt><dd>{escape(person)}</dd></div>'
         for person, roles in people.items()
     )
     tags = "".join(

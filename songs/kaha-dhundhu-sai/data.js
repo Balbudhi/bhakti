@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Kaha Dhundhu Sai",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Ashok Khare · Sandeep, Santosh & Anant Thorat",
+  "credit": "Anant Thorat · Ashok Khare · Sandeep & Santosh",
   "pageCredit": "Ashok Khare",
-  "writer": "",
+  "writer": "Anant Thorat",
   "singer": "Ashok Khare",
-  "composer": "Sandeep, Santosh & Anant Thorat",
+  "composer": "Sandeep & Santosh",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,11 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Anant Thorat",
+    "Ashok Khare",
+    "Sandeep",
+    "Santosh"
   ],
   "audioSources": [
     {

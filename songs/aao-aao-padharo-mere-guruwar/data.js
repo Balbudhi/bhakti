@@ -4,7 +4,7 @@ window.SONG_META = {
   "credit": "Shri Chandra Bhanu Satpathy",
   "pageCredit": "Shri Chandra Bhanu Satpathy",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Shri Chandra Bhanu Satpathy",
+  "singer": "",
   "composer": "",
   "languages": [
     "Hindi"
@@ -16,7 +16,8 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Satpathy Baba"
+    "Satpathy Baba",
+    "Shri Chandra Bhanu Satpathy"
   ],
   "audioSources": [
     {

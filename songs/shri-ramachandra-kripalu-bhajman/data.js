@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Shri Ramachandra Kripalu Bhajman",
   "subtitle": "Rāma",
-  "credit": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
-  "pageCredit": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
-  "writer": "",
+  "credit": "Tulsīdās · Rajan Mishra & Sajan Mishra",
+  "pageCredit": "Rajan Mishra & Sajan Mishra",
+  "writer": "Tulsīdās",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
+  "singer": "Rajan Mishra & Sajan Mishra",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -20,7 +20,10 @@ window.SONG_META = {
     "Rāma"
   ],
   "searchAliases": [
-    "Rama"
+    "Rama",
+    "Tulsidas",
+    "Rajan Mishra",
+    "Sajan Mishra"
   ],
   "audioSources": [
     {

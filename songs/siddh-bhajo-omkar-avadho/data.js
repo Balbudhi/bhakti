@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Siddh Bhajo Omkar Avadho",
   "subtitle": "Gaṇeśa",
-  "credit": "Veena Sahasrabuddhe",
+  "credit": "Traditional · Veena Sahasrabuddhe",
   "pageCredit": "Veena Sahasrabuddhe",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Veena Sahasrabuddhe",
   "composer": "",
   "languages": [
@@ -14,7 +14,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Veena Sahasrabuddhe"
   ],
   "audioSources": [
     {

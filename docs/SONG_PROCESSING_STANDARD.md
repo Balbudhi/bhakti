@@ -227,7 +227,10 @@ Every published `SONG_META` stores `writer`, `singer`, and `composer` as
 separate strings. Any unverified role is the empty string and is omitted
 publicly rather than guessed, including a genuinely uncredited singer. The song page labels
 the verified roles as `Poet`, `Singer`, and `Composer`. When one person holds
-several roles, group the labels once—for example,
+several roles, group the labels once, and label a single name too: a bare name
+does not say who it is. `Traditional` is used only for an official traditional
+credit or an established traditional/liturgical text, and is labelled `Lyrics`.
+The library row reads `By POET · sung by SINGER`. For example,
 `Poet · Singer · Composer — Shri Chandra Bhanu Satpathy`. Never infer one role
 from another merely to fill the display.
 

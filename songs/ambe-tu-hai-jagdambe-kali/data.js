@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Ambe Tū Hai Jagadambe Kālī",
   "subtitle": "Śakti",
-  "credit": "Anuradha Paudwal · Arun Paudwal",
+  "credit": "Traditional · Anuradha Paudwal",
   "pageCredit": "Anuradha Paudwal",
-  "writer": "",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -25,7 +25,8 @@ window.SONG_META = {
     "Sakti",
     "Kali",
     "Durga",
-    "Ambe Aarti"
+    "Ambe Aarti",
+    "Anuradha Paudwal"
   ],
   "audioSources": [
     {

@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Rāma Rasa",
   "subtitle": "Rāma",
-  "credit": "Kabīr",
-  "pageCredit": "",
+  "credit": "Kabīr · Sounds of Isha",
+  "pageCredit": "Sounds of Isha",
   "writer": "Kabīr",
-  "singer": "",
+  "singer": "Sounds of Isha",
   "composer": "",
   "languages": [
     "Rajasthani",
@@ -21,7 +21,8 @@ window.SONG_META = {
     "Kabir Das",
     "Kabirdas",
     "Sant Kabir",
-    "Bhagat Kabir"
+    "Bhagat Kabir",
+    "Sounds of Isha"
   ],
   "audioSources": [
     {

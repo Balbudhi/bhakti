@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Maa Jag Janani Jai Jai",
   "subtitle": "Śakti",
-  "credit": "Hari Om Sharan",
+  "credit": "Traditional · Hari Om Sharan",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Hari Om Sharan",
   "composer": "",
   "languages": [
@@ -22,7 +22,8 @@ window.SONG_META = {
     "Sakti",
     "Rama",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Hari Om Sharan"
   ],
   "audioSources": [
     {

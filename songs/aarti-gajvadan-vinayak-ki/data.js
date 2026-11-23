@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Aarti Gajvadan Vinayak Ki",
   "subtitle": "Gaṇeśa",
-  "credit": "Shruti Sadolikar",
+  "credit": "Traditional · Shruti Sadolikar",
   "pageCredit": "Shruti Sadolikar",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Shruti Sadolikar",
   "composer": "",
   "languages": [
@@ -17,7 +17,8 @@ window.SONG_META = {
     "Ganesha",
     "Ganesa",
     "Shiva",
-    "Siva"
+    "Siva",
+    "Shruti Sadolikar"
   ],
   "audioSources": [
     {

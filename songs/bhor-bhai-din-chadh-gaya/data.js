@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Bhor Bhaī Din Caṛh Gayā Merī Ambe",
   "subtitle": "Śakti",
-  "credit": "Manjushree Assudani",
+  "credit": "Traditional · Manjushree Assudani",
   "pageCredit": "Manjushree Assudani",
-  "writer": "",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -29,7 +29,8 @@ window.SONG_META = {
     "Mata Vaishno Devi",
     "Bhor Bhai Din Charh Gaya Meri Ambe",
     "Manjushri Assudani",
-    "Manjushree Asudani"
+    "Manjushree Asudani",
+    "Manjushree Assudani"
   ],
   "audioSources": [
     {

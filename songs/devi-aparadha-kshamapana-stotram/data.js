@@ -535,7 +535,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vidheyāśakyatvāttava caraṇayoryā cyutirabhūt",
-    "english": "{0:through the impossibility of doing what was due, }{3:the }{4:lapse }{3:that }{5:has occurred }{2:at }{1:your }{2:feet—}",
+    "english": "{0:because what was due could not be done, }{3:the }{4:lapse }{3:that }{5:has occurred }{2:at }{1:your }{2:feet—}",
     "words": [
       {
         "roman": "vidheyāśakyatvāt",
@@ -1494,7 +1494,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "parityaktā devā vividhavidhasevākulatayā",
-    "english": "{1:The gods }{0:have been forsaken, }{2:out of confusion at services of many different kinds,}",
+    "english": "{1:The gods }{0:are forsaken, }{2:in the confusion of many different kinds of service,}",
     "words": [
       {
         "roman": "parityaktā",
@@ -1510,7 +1510,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vividhavidhasevākulatayā",
-        "gloss": "out of confusion, being overwhelmed, at services of many different kinds: vividha-vidha + sevā + ākulatayā",
+        "gloss": "in the confusion, the being overwhelmed, of many different kinds of service: vividha-vidha + sevā + ākulatayā",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1550,7 +1550,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mayā pañcāśīteradhikamapanīte tu vayasi",
-    "english": "{0:by me, }{4:indeed, }{3:now that }{1,2:more than eighty-five }{5:years of life }{3:have passed.}",
+    "english": "{0:by me, }{3:now that }{1,2:more than eighty-five }{5:years of life }{4:indeed }{3:have passed.}",
     "words": [
       {
         "roman": "mayā",
@@ -1636,7 +1636,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "idānīṃ cenmātastava yadi kṛpā nāpi bhavitā",
-    "english": "{1,4:If }{0:now, }{2:Mother, }{3:your }{5:compassion }{6:too will not }{7:come to be,}",
+    "english": "{1,4:If }{0:now, }{2:Mother, }{3:your }{5:compassion }{6:too is not }{7:to be,}",
     "words": [
       {
         "roman": "idānīṃ",
@@ -1858,7 +1858,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nirātaṅko raṅko viharati ciraṃ koṭikanakaiḥ",
-    "english": "{1:a pauper, }{0:free from dread, }{2:roams at pleasure, }{3:for long, }{4:with ten million in gold—}",
+    "english": "{1:a pauper, }{0:free from dread, }{2:roams }{3:long }{2:at his pleasure }{4:with ten million in gold—}",
     "words": [
       {
         "roman": "nirātaṅko",
@@ -2935,7 +2935,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āpatsu magnaḥ smaraṇaṃ tvadīyaṃ",
-    "english": "{1:Sunk }{0:in misfortunes, }{2:remembrance }{3:of you}",
+    "english": "{1:Sunk }{0:in misfortunes, }{2:I remember }{3:you—}",
     "words": [
       {
         "roman": "āpatsu",
@@ -2951,7 +2951,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "smaraṇaṃ",
-        "gloss": "remembrance",
+        "gloss": "remembrance; with karomi, I remember",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2989,7 +2989,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karomi durge karuṇārṇaveśi",
-    "english": "{0:I make, }{1:Durgā, }{2:sovereign of the ocean of compassion.}",
+    "english": "{0:I do, }{1:Durgā, }{2:sovereign of the ocean of compassion.}",
     "words": [
       {
         "roman": "karomi",

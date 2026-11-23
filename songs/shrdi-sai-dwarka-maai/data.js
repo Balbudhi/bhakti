@@ -1,15 +1,15 @@
 window.SONG_META = {
   "title": "Śirḍī Sāī Dvārakāmāī",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Rachana & Jayshree Medhi · Soham Chakraborty & Sunny Nair · Sudhanshu",
+  "pageCredit": "Soham Chakraborty & Sunny Nair",
+  "writer": "Rachana & Jayshree Medhi",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Soham Chakraborty & Sunny Nair",
   "vocalist": "",
-  "composer": "",
+  "composer": "Sudhanshu",
   "ensemble": "",
   "languages": [
     "Hindi"
@@ -25,7 +25,12 @@ window.SONG_META = {
     "Shirdi Sai",
     "Sirdi Sai",
     "Rama",
-    "Shirdi Sai Dwarka Maai"
+    "Shirdi Sai Dwarka Maai",
+    "Rachana",
+    "Jayshree Medhi",
+    "Soham Chakraborty",
+    "Sunny Nair",
+    "Sudhanshu"
   ],
   "audioSources": [
     {

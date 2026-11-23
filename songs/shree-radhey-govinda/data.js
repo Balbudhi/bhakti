@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Shree Radhey Govinda",
   "subtitle": "Kṛṣṇa",
-  "credit": "Hari Om Sharan",
+  "credit": "Hari Om Sharan · Murli Manohar Swarup",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Hari Om Sharan",
   "singer": "Hari Om Sharan",
-  "composer": "",
+  "composer": "Murli Manohar Swarup",
   "languages": [
     "Braj"
   ],
@@ -21,7 +21,9 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Hari Om Sharan",
+    "Murli Manohar Swarup"
   ],
   "audioSources": [
     {

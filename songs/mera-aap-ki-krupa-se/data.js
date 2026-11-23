@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Mera Aap Ki Krupa Se",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
+  "credit": "Traditional · Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Shubhram Bahal & Pramod Medhi",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Shubhram Bahal & Pramod Medhi",
   "composer": "Sudhanshu–Samir",
   "languages": [
@@ -16,7 +16,10 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Sudhanshu–Samir"
+    "Sudhanshu–Samir",
+    "Shubhram Bahal",
+    "Pramod Medhi",
+    "Sudhanshu\u2013Samir"
   ],
   "audioSources": [
     {

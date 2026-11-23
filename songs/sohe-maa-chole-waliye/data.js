@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Sūhe Mā̃ Cole Vālie",
   "subtitle": "Śakti",
-  "credit": "Rohan Kumar · Rohit Kumar Bobby",
+  "credit": "Traditional · Rohan Kumar · Rohit Kumar Bobby",
   "pageCredit": "Rohan Kumar",
-  "writer": "",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -25,7 +25,9 @@ window.SONG_META = {
     "Suhe Maa Chole Waliye",
     "Sohe Ma Chole Waliye",
     "Suhe Maa Chole Valie",
-    "Soohe Maa Chole Waliye"
+    "Soohe Maa Chole Waliye",
+    "Rohan Kumar",
+    "Rohit Kumar Bobby"
   ],
   "audioSources": [
     {

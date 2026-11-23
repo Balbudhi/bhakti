@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Śiva Kā Nāma Japo Saṁsārī",
   "subtitle": "Śiva",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Vishweshwar Shakuntal · Anup Jalota · Dhananjay",
+  "pageCredit": "Anup Jalota",
+  "writer": "Vishweshwar Shakuntal",
+  "singer": "Anup Jalota",
+  "composer": "Dhananjay",
   "languages": [
     "Hindi"
   ],
@@ -16,7 +16,10 @@ window.SONG_META = {
     "Shiva Ka Nama Japo Samsari",
     "Siva Ka Nama Japo Samsari",
     "Shiva",
-    "Siva"
+    "Siva",
+    "Vishweshwar Shakuntal",
+    "Anup Jalota",
+    "Dhananjay"
   ],
   "audioSources": [
     {

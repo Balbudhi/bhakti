@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Jayagaḷu Āgali",
   "subtitle": "Viṣṇu",
-  "credit": "Mōhanadāsa",
-  "pageCredit": "Mōhanadāsa",
+  "credit": "Mōhanadāsa · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Mōhanadāsa",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -22,7 +22,8 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Mōhanadasa",
-    "Mohanadasa"
+    "Mohanadasa",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

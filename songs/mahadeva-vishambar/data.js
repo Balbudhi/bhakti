@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Mahadeva Vishambar",
   "subtitle": "",
-  "credit": "Rajan & Sajan Mishra & Shruti Sadolikar",
-  "pageCredit": "Rajan & Sajan Mishra & Shruti Sadolikar",
+  "credit": "Shruti Sadolikar",
+  "pageCredit": "Shruti Sadolikar",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "Rajan & Sajan Mishra & Shruti Sadolikar",
+  "singer": "Shruti Sadolikar",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -17,7 +17,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śiva"
   ],
-  "searchAliases": [],
+  "searchAliases": [
+    "Shruti Sadolikar"
+  ],
   "audioSources": [
     {
       "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mahadeva-vishambar-e9b858cf727b1a432dd18092ba64fe5f616a85ebc184c17fcc18f089c0eacae3.m4a",

@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Modalondipe Ninage Gaṇanātha",
   "subtitle": "Gaṇeśa",
-  "credit": "Śrīpādarāja",
-  "pageCredit": "Śrīpādarāja",
+  "credit": "Śrīpādarāja · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Śrīpādarāja",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -26,7 +26,8 @@ window.SONG_META = {
     "Sripadaraja",
     "Vishnu",
     "Visnu",
-    "Modalu Vandipe"
+    "Modalu Vandipe",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

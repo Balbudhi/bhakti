@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Jai Mahakali Aarti",
   "subtitle": "Kālī",
-  "credit": "Anuradha Paudwal",
+  "credit": "Traditional · Anuradha Paudwal · Dhananjay Mishra",
   "pageCredit": "Anuradha Paudwal",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Anuradha Paudwal",
-  "composer": "",
+  "composer": "Dhananjay Mishra",
   "languages": [
     "Hindi"
   ],
@@ -21,7 +21,9 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Shiva",
-    "Siva"
+    "Siva",
+    "Anuradha Paudwal",
+    "Dhananjay Mishra"
   ],
   "audioSources": [
     {

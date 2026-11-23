@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Namaskar Mera",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Anant Thorat · Ashok Khare · Sandeep & Santosh",
+  "pageCredit": "Ashok Khare",
+  "writer": "Anant Thorat",
+  "singer": "Ashok Khare",
+  "composer": "Sandeep & Santosh",
   "languages": [
     "Hindi"
   ],
@@ -33,7 +33,11 @@ window.SONG_META = {
     "Shakti",
     "Sakti",
     "Vaishno Devi",
-    "Vaisno Devi"
+    "Vaisno Devi",
+    "Anant Thorat",
+    "Ashok Khare",
+    "Sandeep",
+    "Santosh"
   ],
   "audioSources": [
     {

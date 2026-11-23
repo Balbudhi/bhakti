@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Jayati, Jayati, Shri Ganesh",
   "subtitle": "Gaṇeśa",
-  "credit": "Various Artists",
-  "pageCredit": "Various Artists",
-  "writer": "",
+  "credit": "Traditional · Umakant & Ramakant Gundecha",
+  "pageCredit": "Umakant & Ramakant Gundecha",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "Various Artists",
+  "singer": "Umakant & Ramakant Gundecha",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -20,7 +20,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Umakant",
+    "Ramakant Gundecha"
   ],
   "audioSources": [
     {

@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Hanuman",
   "subtitle": "Hanumān",
-  "credit": "Hari Om Sharan",
+  "credit": "Hari Om Sharan · Murli Manohar Swarup",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Hari Om Sharan",
   "singer": "Hari Om Sharan",
-  "composer": "",
+  "composer": "Murli Manohar Swarup",
   "languages": [
     "Hindi"
   ],
@@ -14,7 +14,9 @@ window.SONG_META = {
     "Rāma"
   ],
   "searchAliases": [
-    "Rama"
+    "Rama",
+    "Hari Om Sharan",
+    "Murli Manohar Swarup"
   ],
   "audioSources": [
     {

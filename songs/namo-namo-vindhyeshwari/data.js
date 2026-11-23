@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Namo Namo Vindhyeshwari",
   "subtitle": "Śakti",
-  "credit": "Hari Om Sharan",
+  "credit": "Traditional · Hari Om Sharan",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Hari Om Sharan",
   "composer": "",
   "languages": [
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Vishnu",
     "Visnu",
     "Shiva",
-    "Siva"
+    "Siva",
+    "Hari Om Sharan"
   ],
   "audioSources": [
     {

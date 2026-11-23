@@ -1,12 +1,12 @@
 window.SONG_META = {
   "title": "Chalo Man Jāyẽ Ghar Apne",
   "subtitle": "Rāmakṛṣṇa",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
+  "credit": "Gulzar · K. J. Yesudas · Salil Chowdhury",
+  "pageCredit": "K. J. Yesudas",
+  "writer": "Gulzar",
+  "singer": "K. J. Yesudas",
   "vocalist": "",
-  "composer": "",
+  "composer": "Salil Chowdhury",
   "ensemble": "",
   "languages": [
     "Hindi"
@@ -16,7 +16,10 @@ window.SONG_META = {
     "Chalo Man Jayẽ Ghar Apne",
     "Ramakrshna",
     "Ramakrsna",
-    "Chalo Mann Jayen Ghar Apne"
+    "Chalo Mann Jayen Ghar Apne",
+    "Gulzar",
+    "K. J. Yesudas",
+    "Salil Chowdhury"
   ],
   "audioSources": [
     {

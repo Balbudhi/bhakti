@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Maiyā Jī Tum Baṛī Dayālu Ho",
   "subtitle": "Śakti",
-  "credit": "Suresh Ji",
+  "credit": "Traditional · Suresh Ji",
   "pageCredit": "Suresh Ji",
-  "writer": "",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -25,7 +25,8 @@ window.SONG_META = {
     "Vaishno Devi",
     "Vaisno Devi",
     "Ambe Maa Badi Dayalu Ho",
-    "Mata Vaishno Devi"
+    "Mata Vaishno Devi",
+    "Suresh Ji"
   ],
   "audioSources": [
     {

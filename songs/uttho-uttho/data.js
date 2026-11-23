@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Uttho Uttho",
   "subtitle": "Gaṇeśa",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Traditional · Anuradha Paudwal · Sudhanshu & Shank–Neel",
+  "pageCredit": "Anuradha Paudwal",
+  "writer": "Traditional",
+  "singer": "Anuradha Paudwal",
+  "composer": "Sudhanshu & Shank–Neel",
   "languages": [
     "Marathi"
   ],
@@ -19,7 +19,10 @@ window.SONG_META = {
     "Shiva",
     "Siva",
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Anuradha Paudwal",
+    "Sudhanshu",
+    "Shank\u2013Neel"
   ],
   "audioSources": [
     {

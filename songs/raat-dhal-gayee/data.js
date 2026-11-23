@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Raat Dhal Gayee",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Anant Thorat · Suhasini Nandgaonkar · Sandeep & Santosh",
+  "pageCredit": "Suhasini Nandgaonkar",
+  "writer": "Anant Thorat",
+  "singer": "Suhasini Nandgaonkar",
+  "composer": "Sandeep & Santosh",
   "languages": [
     "Hindi"
   ],
@@ -15,7 +15,11 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Anant Thorat",
+    "Suhasini Nandgaonkar",
+    "Sandeep",
+    "Santosh"
   ],
   "audioSources": [
     {

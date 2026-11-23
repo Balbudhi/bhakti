@@ -3,12 +3,13 @@ window.SONG_META = {
   "credit": "Shri Chandra Bhanu Satpathy",
   "pageCredit": "Shri Chandra Bhanu Satpathy",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Shri Chandra Bhanu Satpathy",
+  "singer": "",
   "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Jab Dil Udaas Ho To",
     "Satpathy Baba",
-    "Shirdi Sai"
+    "Shirdi Sai",
+    "Shri Chandra Bhanu Satpathy"
   ],
   "languages": [
     "Hindi"

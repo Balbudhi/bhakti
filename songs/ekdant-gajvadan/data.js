@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Ekdant Gajvadan",
   "subtitle": "Gaṇeśa",
-  "credit": "Tānsen · Various Artists",
-  "pageCredit": "Various Artists",
+  "credit": "Tānsen · Umakant & Ramakant Gundecha",
+  "pageCredit": "Umakant & Ramakant Gundecha",
   "writer": "Tānsen",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "Various Artists",
+  "singer": "Umakant & Ramakant Gundecha",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -21,7 +21,9 @@ window.SONG_META = {
   "searchAliases": [
     "Ganesha",
     "Ganesa",
-    "Tansen"
+    "Tansen",
+    "Umakant",
+    "Ramakant Gundecha"
   ],
   "audioSources": [
     {

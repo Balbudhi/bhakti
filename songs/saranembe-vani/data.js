@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Śaraṇembe Vāṇi",
   "subtitle": "Sarasvatī",
-  "credit": "Purandaradāsa",
-  "pageCredit": "Purandaradāsa",
+  "credit": "Purandaradāsa · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Purandaradāsa",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -22,7 +22,8 @@ window.SONG_META = {
     "Sharanembe Vani",
     "Sarasvati",
     "Purandaradasa",
-    "Purandara Dasa"
+    "Purandara Dasa",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Bārayya Bā Bā Bhakutara Priya",
   "subtitle": "Viṣṇu",
-  "credit": "Gopāladāsa",
-  "pageCredit": "Gopāladāsa",
+  "credit": "Gopāladāsa · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Gopāladāsa",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -23,7 +23,8 @@ window.SONG_META = {
     "Visnu",
     "Gopaladasa",
     "Krshna",
-    "Krsna"
+    "Krsna",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

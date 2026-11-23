@@ -71,6 +71,15 @@ function mount(catalogue = songs, geometry = {}) {
     documentEvents, windowEvents, getFocused: () => document.activeElement, api: window.BHAKTI_SEARCH };
 }
 
+test('a library row says who wrote and who sang', () => {
+  const { creditLine } = mount().api;
+  assert.equal(creditLine({writer: 'Tulsīdās', singer: 'Hari Om Sharan'}), 'By Tulsīdās · sung by Hari Om Sharan');
+  assert.equal(creditLine({writer: '', singer: 'Maninder Ji'}), 'Sung by Maninder Ji');
+  assert.equal(creditLine({writer: 'Kabīr', singer: ''}), 'By Kabīr');
+  assert.equal(creditLine({writer: 'Traditional', singer: 'X'}), 'Traditional · sung by X');
+  assert.equal(creditLine({writer: 'X', singer: 'X'}), 'Written and sung by X');
+  assert.equal(creditLine({credit: ''}), '');
+});
 const visible = app => Array.from(app.controller.getVisibleSongs(), s => s.slug).sort();
 test('compact filter toggle preserves controls and selection while closing and reopening', () => {
   const app = mount(); const rows = app.filters.rows;

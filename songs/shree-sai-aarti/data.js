@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Āratī Sāī Bābā",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Pramod Medhi",
+  "pageCredit": "Pramod Medhi",
   "writer": "",
-  "singer": "",
+  "singer": "Pramod Medhi",
   "composer": "",
   "languages": [
     "Hindi",
@@ -19,7 +19,8 @@ window.SONG_META = {
     "Shirdi Sai",
     "Sirdi Sai",
     "Krshna",
-    "Krsna"
+    "Krsna",
+    "Pramod Medhi"
   ],
   "audioSources": [
     {

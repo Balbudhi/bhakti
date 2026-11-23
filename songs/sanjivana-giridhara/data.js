@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Sañjīvana Giridhara",
   "subtitle": "Hanumān",
-  "credit": "Mōhanadāsa",
-  "pageCredit": "Mōhanadāsa",
+  "credit": "Mōhanadāsa · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Mōhanadāsa",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -21,7 +21,8 @@ window.SONG_META = {
     "Sanyjivana Giridhara",
     "Hanuman",
     "Mōhanadasa",
-    "Mohanadasa"
+    "Mohanadasa",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

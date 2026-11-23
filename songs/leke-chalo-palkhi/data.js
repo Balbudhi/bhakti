@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Leke Chalo Palkhi",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Vivek Mule · Pramod Medhi · Vidyut Goswami",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Vivek Mule",
   "singer": "Pramod Medhi",
-  "composer": "",
+  "composer": "Vidyut Goswami",
   "languages": [
     "Hindi",
     "Marathi"
@@ -16,7 +16,10 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Vivek Mule",
+    "Pramod Medhi",
+    "Vidyut Goswami"
   ],
   "audioSources": [
     {

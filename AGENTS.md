@@ -163,9 +163,9 @@ identical contiguous performances may be represented as a repeat.
 
 Use standard section kinds only: `invocation`, `refrain`, `verse`, `bridge`,
 `closing`, `spoken`, or `instrumental`. These are internal processing metadata;
-do not render section labels on the song page. Do not invent public roles. Show a
-compact single credit when one person is evidenced; label singer/writer/music
-only when a real distinction is evidenced. Omit unknown roles without calling
+do not render section labels on the song page. Do not invent public roles. Every
+shown name carries its role (Poet, Singer, Composer), even a single name; a bare name
+does not tell the reader who it is. Omit unknown roles without calling
 attention to the absence.
 
 Display reviewed Indic titles, devotional terms, historical names, and

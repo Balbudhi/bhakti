@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Rājabīdiyoḷaginda Kastūri Raṅga",
   "subtitle": "Kṛṣṇa",
-  "credit": "Vādirāja",
-  "pageCredit": "Vādirāja",
+  "credit": "Vādirāja · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Vādirāja",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Vadiraja",
     "Vishnu",
     "Visnu",
-    "Rajabidiyinda"
+    "Rajabidiyinda",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

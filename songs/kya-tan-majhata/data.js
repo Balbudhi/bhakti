@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Kyā Tan Mā̃jhatā",
   "subtitle": "",
-  "credit": "Kabīr",
-  "pageCredit": "",
+  "credit": "Kabīr · Sounds of Isha",
+  "pageCredit": "Sounds of Isha",
   "writer": "Kabīr",
-  "singer": "",
+  "singer": "Sounds of Isha",
   "composer": "",
   "languages": [
     "Hindi"
@@ -21,7 +21,8 @@ window.SONG_META = {
     "Kabir Das",
     "Kabirdas",
     "Sant Kabir",
-    "Bhagat Kabir"
+    "Bhagat Kabir",
+    "Sounds of Isha"
   ],
   "audioSources": [
     {

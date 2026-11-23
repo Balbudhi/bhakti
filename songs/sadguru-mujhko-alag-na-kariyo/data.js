@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Sadguru Mujhko Alag Na Kariyo",
   "subtitle": "Guru",
-  "credit": "Suresh Wadkar",
+  "credit": "Shri Chandra Bhanu Satpathy · Suresh Wadkar",
   "pageCredit": "Suresh Wadkar",
-  "writer": "",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "Suresh Wadkar",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Hindi"
   ],
@@ -14,7 +14,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Shri Chandra Bhanu Satpathy",
+    "Suresh Wadkar"
   ],
   "audioSources": [
     {

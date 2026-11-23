@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Sai Ke 11 Vachan",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Pramod Medhi",
+  "credit": "Traditional · Pramod Medhi",
   "pageCredit": "Pramod Medhi",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Pramod Medhi",
   "composer": "",
   "languages": [
@@ -15,7 +15,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Pramod Medhi"
   ],
   "audioSources": [
     {

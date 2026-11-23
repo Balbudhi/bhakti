@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jai Ganesh Jai Ganesh Pyare",
   "subtitle": "Gaṇeśa",
-  "credit": "Shruti Sadolikar",
+  "credit": "Tulsīdās · Shruti Sadolikar",
   "pageCredit": "Shruti Sadolikar",
-  "writer": "",
+  "writer": "Tulsīdās",
   "singer": "Shruti Sadolikar",
   "composer": "",
   "languages": [
@@ -14,7 +14,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Tulsidas",
+    "Shruti Sadolikar"
   ],
   "audioSources": [
     {

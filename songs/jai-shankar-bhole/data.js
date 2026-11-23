@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Jai Shankar Bhole",
   "subtitle": "Śiva",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Raajesh Johri · Anup Jalota",
+  "pageCredit": "Anup Jalota",
+  "writer": "Raajesh Johri",
+  "singer": "Anup Jalota",
+  "composer": "Anup Jalota",
   "languages": [
     "Hindi"
   ],
@@ -16,7 +16,9 @@ window.SONG_META = {
   "searchAliases": [
     "Shiva",
     "Siva",
-    "Rama"
+    "Rama",
+    "Raajesh Johri",
+    "Anup Jalota"
   ],
   "audioSources": [
     {

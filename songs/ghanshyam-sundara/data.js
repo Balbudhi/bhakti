@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Ghanaśyāma Sundarā",
   "subtitle": "Kṛṣṇa",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
-  "singer": "",
-  "composer": "",
+  "credit": "Traditional · Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
+  "pageCredit": "Anuradha Paudwal & Ravindra Sathe",
+  "writer": "Traditional",
+  "singer": "Anuradha Paudwal & Ravindra Sathe",
+  "composer": "Sudhanshu & Shank–Neel",
   "languages": [
     "Hindi"
   ],
@@ -16,7 +16,11 @@ window.SONG_META = {
     "Ghanashyama Sundara",
     "Ghanasyama Sundara",
     "Shirdi Sai",
-    "Sirdi Sai"
+    "Sirdi Sai",
+    "Anuradha Paudwal",
+    "Ravindra Sathe",
+    "Sudhanshu",
+    "Shank\u2013Neel"
   ],
   "audioSources": [
     {

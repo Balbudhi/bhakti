@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Prem Sahit Sab Bolo Kirtan",
   "subtitle": "Rāma",
-  "credit": "Hari Om Sharan",
+  "credit": "Sūrdās, Tulsīdās & others · Hari Om Sharan · Murli Manohar Swarup",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Sūrdās, Tulsīdās & others",
   "singer": "Hari Om Sharan",
-  "composer": "",
+  "composer": "Murli Manohar Swarup",
   "languages": [
     "Hindi",
     "Awadhi",
@@ -20,7 +20,11 @@ window.SONG_META = {
   "searchAliases": [
     "Rama",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Surdas",
+    "Tulsidas",
+    "Hari Om Sharan",
+    "Murli Manohar Swarup"
   ],
   "audioSources": [
     {

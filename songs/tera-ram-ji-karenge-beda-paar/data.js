@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Tera Ram Ji Karenge Beda Paar",
   "subtitle": "Rāma",
-  "credit": "Hari Om Sharan",
+  "credit": "Traditional · Hari Om Sharan",
   "pageCredit": "Hari Om Sharan",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Hari Om Sharan",
   "composer": "",
   "languages": [
@@ -16,7 +16,8 @@ window.SONG_META = {
   "searchAliases": [
     "Rama",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Hari Om Sharan"
   ],
   "audioSources": [
     {

@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Madhur Madhur Sai Naam",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sapna Mukherjee",
+  "credit": "Pandurang Dixit · Sapna Mukherjee",
   "pageCredit": "Sapna Mukherjee",
-  "writer": "",
+  "writer": "Pandurang Dixit",
   "singer": "Sapna Mukherjee",
-  "composer": "",
+  "composer": "Pandurang Dixit",
   "languages": [
     "Hindi"
   ],
@@ -20,7 +20,9 @@ window.SONG_META = {
     "Sirdi Sai",
     "Rama",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Pandurang Dixit",
+    "Sapna Mukherjee"
   ],
   "audioSources": [
     {

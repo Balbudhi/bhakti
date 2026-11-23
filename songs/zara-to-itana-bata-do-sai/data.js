@@ -1,14 +1,16 @@
 window.SONG_META = {
   "title": "Zarā To Itnā Batā Do Sāī",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
+  "pageCredit": "Deepak Kumar",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "Shri Chandra Bhanu Satpathy",
+  "singer": "Deepak Kumar",
   "composer": "Shri Chandra Bhanu Satpathy",
   "searchAliases": [
     "Zara To Itana Bata Do Sai",
     "Satpathy Baba",
-    "Shirdi Sai"
+    "Shirdi Sai",
+    "Shri Chandra Bhanu Satpathy",
+    "Deepak Kumar"
   ],
   "languages": [
     "Hindi"

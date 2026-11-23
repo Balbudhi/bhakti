@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Koi Bhaje Krishna",
   "subtitle": "Rāma · Kṛṣṇa",
-  "credit": "Aparna Mayekar · Sandeep, Santosh & Anant Thorat",
+  "credit": "Anant Thorat · Aparna Mayekar · Sandeep & Santosh",
   "pageCredit": "Aparna Mayekar",
-  "writer": "",
+  "writer": "Anant Thorat",
   "singer": "Aparna Mayekar",
-  "composer": "Sandeep, Santosh & Anant Thorat",
+  "composer": "Sandeep & Santosh",
   "languages": [
     "Hindi"
   ],
@@ -19,7 +19,11 @@ window.SONG_META = {
     "Sirdi Sai",
     "Rama",
     "Vishnu",
-    "Visnu"
+    "Visnu",
+    "Anant Thorat",
+    "Aparna Mayekar",
+    "Sandeep",
+    "Santosh"
   ],
   "audioSources": [
     {

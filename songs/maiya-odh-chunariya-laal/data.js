@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Maiyā Oṛh Cunariyā Lāl Hamāre Ghar Ā Jānā",
   "subtitle": "Śakti",
-  "credit": "Sheela Kalson · Pardeep Panchal",
+  "credit": "Traditional · Sheela Kalson · Pardeep Panchal",
   "pageCredit": "Sheela Kalson",
-  "writer": "",
+  "writer": "Traditional",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -23,7 +23,9 @@ window.SONG_META = {
     "Sakti",
     "Maiya Odh Chunariya Laal Humare Ghar Aa Jana",
     "Maiya Odh Chunariya Lal",
-    "Maiya Odh Chunariya Laal Hamare Ghar Aajana"
+    "Maiya Odh Chunariya Laal Hamare Ghar Aajana",
+    "Sheela Kalson",
+    "Pardeep Panchal"
   ],
   "audioSources": [
     {

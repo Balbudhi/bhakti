@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Sheesh Gang Ardhang Parvati",
   "subtitle": "Śiva",
-  "credit": "Rajan Mishra & Sajan Mishra",
+  "credit": "Traditional · Rajan Mishra & Sajan Mishra",
   "pageCredit": "Rajan Mishra & Sajan Mishra",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Rajan Mishra & Sajan Mishra",
   "composer": "",
   "languages": [
@@ -15,7 +15,9 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Shiva",
-    "Siva"
+    "Siva",
+    "Rajan Mishra",
+    "Sajan Mishra"
   ],
   "audioSources": [
     {

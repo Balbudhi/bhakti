@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Ganapat Vighna Haran",
   "subtitle": "Gaṇeśa",
-  "credit": "Ashwini Bhide",
+  "credit": "Traditional · Ashwini Bhide",
   "pageCredit": "Ashwini Bhide",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Ashwini Bhide",
   "composer": "",
   "languages": [
@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "searchAliases": [
     "Ganesha",
-    "Ganesa"
+    "Ganesa",
+    "Ashwini Bhide"
   ],
   "audioSources": [
     {

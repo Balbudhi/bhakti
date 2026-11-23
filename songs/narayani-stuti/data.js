@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Nārāyaṇī Stuti",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Vyāsa",
+  "pageCredit": "Vyāsa",
+  "writer": "Vyāsa",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -35,7 +35,8 @@ window.SONG_META = {
     "Devi Mahatmyam Chapter 11",
     "Devi Mahatmya Chapter 11",
     "Narayani Stuti Chapter 11",
-    "Devi Mahatmya Narayani Stuti"
+    "Devi Mahatmya Narayani Stuti",
+    "Vyasa"
   ],
   "audioSources": [
     {

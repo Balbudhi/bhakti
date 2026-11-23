@@ -72,6 +72,15 @@
     .map(name => name.trim())
     .filter(name => name && !/^(?:others?|other poets|traditional)$/i.test(name)) : [];
 
+  // A bare name does not say whether it is the poet or the singer.
+  const creditLine = song => {
+    const [writer, singer] = [song.writer, song.singer].map(name => String(name || "").trim());
+    if (!writer && !singer) return String(song.credit || "").trim();
+    if (writer === singer) return `Written and sung by ${writer}`;
+    return [writer && (/^traditional$/i.test(writer) ? "Traditional" : `By ${writer}`),
+      singer && `${writer ? "sung" : "Sung"} by ${singer}`].filter(Boolean).join(" · ");
+  };
+
   const filterSongs = (songs, { languages = [], subjects = [], poets = [], singers = [], query = "" } = {}) => {
     const selectedLanguages = new Set(languages);
     const selectedSubjects = new Set(subjects);
@@ -269,7 +278,7 @@
           <a class="song-card-link" href="/songs/${encodeURIComponent(song.slug)}/" aria-label="Open ${escapeHtml(song.title)}">
             <span class="song-copy">
               <span class="library-song-title">${escapeHtml(song.title)}</span>
-              ${song.singer || song.credit ? `<span class="credit">${escapeHtml(song.singer || song.credit)}</span>` : ""}
+              ${creditLine(song) ? `<span class="credit">${escapeHtml(creditLine(song))}</span>` : ""}
             </span>
             <span class="tags" aria-label="${escapeHtml([...(song.subjectTags || []), ...(song.languageTags || [])].join(", "))}">
               ${(song.subjectTags || []).map(tag => `<span class="subject-tag">${escapeHtml(tag)}</span>`).join("")}
@@ -446,7 +455,7 @@
     return controller;
   };
 
-  window.BHAKTI_SEARCH = Object.freeze({ searchForms, matchesSearch, filterSongs });
+  window.BHAKTI_SEARCH = Object.freeze({ searchForms, matchesSearch, filterSongs, creditLine });
   window.BHAKTI_LIBRARY = Object.freeze({ mount });
 
   const autoMount = () => {

@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Patita Pavan Jai Raam",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Sapna Mukherjee",
+  "credit": "Pandurang Dixit · Sapna Mukherjee",
   "pageCredit": "Sapna Mukherjee",
-  "writer": "",
+  "writer": "Pandurang Dixit",
   "singer": "Sapna Mukherjee",
-  "composer": "",
+  "composer": "Pandurang Dixit",
   "languages": [
     "Hindi"
   ],
@@ -17,7 +17,9 @@ window.SONG_META = {
   "searchAliases": [
     "Shirdi Sai",
     "Sirdi Sai",
-    "Rama"
+    "Rama",
+    "Pandurang Dixit",
+    "Sapna Mukherjee"
   ],
   "audioSources": [
     {

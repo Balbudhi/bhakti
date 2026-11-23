@@ -565,7 +565,7 @@ function renderSongMeta() {
 
   hero.querySelectorAll(".song-attrib, .song-credit").forEach(element => element.remove());
   const people = new Map();
-  [["writer", meta.writerAttribution || "Poet"], ["translator", meta.translatorAttribution || "Translation"], ["singer", "Singer"], ["vocalist", "Vocalist"], ["composer", "Composer"], ["musicDirector", "Music direction"], ["ensemble", "Recital"]].forEach(([field, role]) => {
+  [["writer", meta.writerAttribution || (/^traditional$/i.test(meta.writer || "") ? "Lyrics" : "Poet")], ["translator", meta.translatorAttribution || "Translation"], ["singer", "Singer"], ["vocalist", "Vocalist"], ["composer", "Composer"], ["musicDirector", "Music direction"], ["ensemble", "Recital"]].forEach(([field, role]) => {
     const person = String(meta[field] || "").trim();
     if (!person) return;
     people.set(person, [...(people.get(person) || []), role]);
@@ -576,7 +576,7 @@ function renderSongMeta() {
   };
   const credits = [...people].map(([person, roles]) => `
     <div class="song-credit-entry">
-      <dt${people.size === 1 && !/\s+(?:&|and)\s+/i.test(person) ? " hidden" : ""}>${escapeHtml(displayRoles(person, roles))}</dt>
+      <dt>${escapeHtml(displayRoles(person, roles))}</dt>
       <dd>${escapeHtml(person)}</dd>
     </div>`).join("");
   const tags = [

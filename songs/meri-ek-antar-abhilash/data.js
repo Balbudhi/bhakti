@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Merī Ek Antar Abhilāṣ",
   "subtitle": "Śakti",
-  "credit": "Pandit Jasraj",
+  "credit": "Traditional · Pandit Jasraj",
   "pageCredit": "Pandit Jasraj",
-  "writer": "",
+  "writer": "Traditional",
   "singer": "Pandit Jasraj",
   "composer": "",
   "languages": [
@@ -16,7 +16,8 @@ window.SONG_META = {
     "Mēri Ēk Antar Abhilash",
     "Meri Ek Antar Abhilas",
     "Shakti",
-    "Sakti"
+    "Sakti",
+    "Pandit Jasraj"
   ],
   "audioSources": [
     {

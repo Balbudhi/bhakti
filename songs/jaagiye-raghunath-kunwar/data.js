@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Jaagiye Raghunath Kunwar",
   "subtitle": "",
-  "credit": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
-  "pageCredit": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
-  "writer": "",
+  "credit": "Tulsīdās · Rajan Mishra & Sajan Mishra",
+  "pageCredit": "Rajan Mishra & Sajan Mishra",
+  "writer": "Tulsīdās",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "Rajan & Sajan Mishra, Veena Sahasrabuddhe",
+  "singer": "Rajan Mishra & Sajan Mishra",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -18,7 +18,11 @@ window.SONG_META = {
   "subjectTags": [
     "Rāma"
   ],
-  "searchAliases": [],
+  "searchAliases": [
+    "Tulsidas",
+    "Rajan Mishra",
+    "Sajan Mishra"
+  ],
   "audioSources": [
     {
       "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaagiye-raghunath-kunwar-7c53dc344ad5d7c7fed9264d8cac2e92109258a659cc4918755531413b49f38c.m4a",

@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Nōḍire Veṅkaṭaramaṇana",
   "subtitle": "Viṣṇu",
-  "credit": "Śyāmasundara Dāsa",
-  "pageCredit": "Śyāmasundara Dāsa",
+  "credit": "Śyāmasundara Dāsa · Raichur Sheshagiri Das",
+  "pageCredit": "Raichur Sheshagiri Das",
   "writer": "Śyāmasundara Dāsa",
   "writerAttribution": "Poet",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Raichur Sheshagiri Das",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -26,7 +26,8 @@ window.SONG_META = {
     "Syamasundara Dasa",
     "Vengkatesha",
     "Venkatesa",
-    "Nodide Venkataramanana"
+    "Nodide Venkataramanana",
+    "Raichur Sheshagiri Das"
   ],
   "audioSources": [
     {

@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Nirguṇa Galiyā̃",
   "subtitle": "",
-  "credit": "Kabīr",
-  "pageCredit": "",
+  "credit": "Kabīr · Sounds of Isha",
+  "pageCredit": "Sounds of Isha",
   "writer": "Kabīr",
-  "singer": "",
+  "singer": "Sounds of Isha",
   "composer": "",
   "languages": [
     "Rajasthani"
@@ -19,7 +19,8 @@ window.SONG_META = {
     "Kabir Das",
     "Kabirdas",
     "Sant Kabir",
-    "Bhagat Kabir"
+    "Bhagat Kabir",
+    "Sounds of Isha"
   ],
   "audioSources": [
     {
