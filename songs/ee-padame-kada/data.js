@@ -133,20 +133,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ఇందిరాహస్తముల",
+        "text": "ఇందిరా",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "కీతవైనది",
+        "text": "హస్తముల",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "కీత",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "వైనది",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "ī pādamē kadā indirāhastamula kītavainadi",
-    "english": "{2:Is it not} {0:this} {1:very foot} {4:that was pleasing to} {3:Indirā’s hands}?",
+    "english": "{2:Is it not} {0:this} {1:very foot} {6:that was }{5:pleasing to} {3:Indirā’s }{4:hands}?",
     "words": [
       {
         "roman": "ī",
@@ -161,12 +173,20 @@ window.SONG_LINES = {
         "gloss": "is it not? affirmative rhetorical question"
       },
       {
-        "roman": "indirāhastamula",
-        "gloss": "the hands of Indirā, the goddess Lakṣmī"
+        "roman": "indirā",
+        "gloss": "Indirā, the goddess Lakṣmī"
       },
       {
-        "roman": "kītavainadi",
-        "gloss": "that was pleasing to; dative linkage plus itavu, liking"
+        "roman": "hastamula",
+        "gloss": "of the hands"
+      },
+      {
+        "roman": "kītav",
+        "gloss": "pleasing to; dative ki + itavu, liking"
+      },
+      {
+        "roman": "ainadi",
+        "gloss": "that was, that became"
       }
     ],
     "nameTable": false,
@@ -439,14 +459,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "నీయెక్కుడైనది",
+        "text": "నీయెక్కు",
         "wordIndices": [
-          3
+          4
+        ]
+      },
+      {
+        "text": "డైనది",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "ī pādamē kadā inniṭikinīyekkuḍainadi",
-    "english": "{2:Is it not} {0:this} {1:very foot} {3:that surpassed all these}?",
+    "english": "{2:Is it not} {0:this} {1:very foot} {5:that }{4:surpassed }{3:all these}?",
     "words": [
       {
         "roman": "ī",
@@ -461,8 +487,16 @@ window.SONG_LINES = {
         "gloss": "is it not? affirmative rhetorical question"
       },
       {
-        "roman": "inniṭikinīyekkuḍainadi",
-        "gloss": "that surpassed all these; comparative phrase with linking case form"
+        "roman": "inniṭiki",
+        "gloss": "than all these: dative of comparison"
+      },
+      {
+        "roman": "nīyekkuḍ",
+        "gloss": "surpassing, greater; ekkuḍu, with the linking case ending nī"
+      },
+      {
+        "roman": "ainadi",
+        "gloss": "that was, that became"
       }
     ],
     "nameTable": false,
@@ -693,14 +727,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "బ్రహ్మాండమంటినది",
+        "text": "బ్రహ్మాండ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "మంటినది",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "ī pādamē kadā egasi brahmāṇḍamaṇṭinadi",
-    "english": "{2:Is it not} {0:this} {1:very foot} {3:that rose up} and {4:touched the cosmic egg}?",
+    "english": "{2:Is it not} {0:this} {1:very foot} {3:that rose up} and {5:touched }{4:the cosmic egg}?",
     "words": [
       {
         "roman": "ī",
@@ -719,8 +759,12 @@ window.SONG_LINES = {
         "gloss": "having risen; soaring upward"
       },
       {
-        "roman": "brahmāṇḍamaṇṭinadi",
-        "gloss": "that touched the cosmic egg; the enclosing universe"
+        "roman": "brahmāṇḍam",
+        "gloss": "the cosmic egg; the enclosing universe"
+      },
+      {
+        "roman": "aṇṭinadi",
+        "gloss": "that touched; aṇṭu, touch"
       }
     ],
     "nameTable": false,
@@ -749,14 +793,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ఇహపరములొసగెడిది",
+        "text": "ఇహ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "పరము",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "లొసగెడిది",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "ī pādamē kadā ihaparamulosageḍidi",
-    "english": "{2:Is it not} {0:this} {1:very foot} {3:that bestows this world and the next}?",
+    "english": "{2:Is it not} {0:this} {1:very foot} {5:that bestows }{3:this world }{4:and the next}?",
     "words": [
       {
         "roman": "ī",
@@ -771,8 +827,16 @@ window.SONG_LINES = {
         "gloss": "is it not? affirmative rhetorical question"
       },
       {
-        "roman": "ihaparamulosageḍidi",
-        "gloss": "that bestows this world and the world beyond"
+        "roman": "iha",
+        "gloss": "this world; here"
+      },
+      {
+        "roman": "paramul",
+        "gloss": "the world beyond; paramulu, plural object"
+      },
+      {
+        "roman": "osageḍidi",
+        "gloss": "that which bestows"
       }
     ],
     "nameTable": false,

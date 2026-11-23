@@ -507,7 +507,7 @@ window.SONG_LINES = {
   "l07": {
     "source": "हनुमान सो वीर, चरण रज माथे पर है लगाए",
     "roman": "hanumān so vīr caraṇ raj māthe par hai lagāe",
-    "english": "{2:A hero} {1:such as} {0:Hanumān} {7,8:has applied} {3,4:the dust of your feet} {5,6:on his forehead}.",
+    "english": "{2:A hero} {1:such as} {0:Hanumān} {7:has }{8:applied} {3,4:the dust of your feet} {5,6:on his forehead}.",
     "words": [
       {
         "roman": "hanumān",
@@ -607,7 +607,7 @@ window.SONG_LINES = {
   "l08": {
     "source": "बस यही राजा राम सियावर मोरे मन है भाए।",
     "roman": "bas yahī rājā rām siyāvar more man hai bhāe",
-    "english": "{0:Only} {1:this very} {2:King} {3:Rāma}, {4:Sītā’s husband}, {7,8:pleases} {5,6:my heart}.",
+    "english": "{0:Only} {1:this very} {2:King} {3:Rāma}, {4:Sītā’s husband}, {7,8:pleases} {5:my }{6:heart}.",
     "words": [
       {
         "roman": "bas",

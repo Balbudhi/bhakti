@@ -36,6 +36,11 @@ def file_hash(path: Path) -> str:
     return result.hexdigest()
 
 
+def meaning(field, value):
+    """Word-link markers are presentation; the assessment never receives them."""
+    return re.sub(r'\{[^:{}]*:([^{}]*)\}', r'\1', value) if field == 'english' and isinstance(value, str) else value
+
+
 def semantic_input_hash(reader: dict, taxonomy: dict) -> str:
     """Hash consumed meaning, not transport URLs, onset timings or presentation."""
     sequence = reader.get('SONG_SEQUENCE', [])
@@ -43,8 +48,8 @@ def semantic_input_hash(reader: dict, taxonomy: dict) -> str:
     lines = reader.get('SONG_LINES', {})
     fields = ('source', 'roman', 'sourceLanguage', 'english', 'words', 'grammarNote')
     projection = {
-        'version': 1,
-        'lines': {key: {field: lines[key].get(field) for field in fields} for key in ids},
+        'version': 2,
+        'lines': {key: {field: meaning(field, lines[key].get(field)) for field in fields} for key in ids},
         'sequence': [{key: row.get(key) for key in ('ref', 'section', 'repeats')} for row in sequence],
         'languages': reader['SONG_META'].get('languages', []),
         'subjectTags': reader['SONG_META'].get('subjectTags', []),
@@ -266,7 +271,7 @@ def _audio(part, media_hash):
 
 def semantic_text_bytes(reader):
     ids = list(dict.fromkeys(row['ref'] for row in reader['SONG_SEQUENCE']))
-    return len(json.dumps({key: {field: reader['SONG_LINES'][key].get(field)
+    return len(json.dumps({key: {field: meaning(field, reader['SONG_LINES'][key].get(field))
         for field in ('source', 'roman', 'sourceLanguage', 'english', 'words', 'grammarNote')} for key in ids},
                           ensure_ascii=False, separators=(',', ':')).encode())
 

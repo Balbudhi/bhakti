@@ -892,7 +892,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāmavanta ke vacana suhāe। suni hanumanta hṛdaya ati bhāe ॥",
-    "english": "{0,1:Jāmbavān’s }{3:pleasing }{2:words, }{4:when heard, }{7,8:greatly delighted }{5:Hanumān’s }{6:heart.}",
+    "english": "{0,1:Jāmbavān’s }{3:pleasing }{2:words, }{4:when heard, }{7:greatly }{8:delighted }{5:Hanumān’s }{6:heart.}",
     "words": [
       {
         "roman": "jāmavanta",
@@ -2308,7 +2308,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "surasā nāma ahinha kai mātā। paṭhainhi āi kahī tehiṃ bātā ॥",
-    "english": "{5:They sent }{4:the mother }{2,3:of serpents, }{1:named }{0:Surasā; }{6:coming, }{8:she }{7:spoke }{9:these words:}",
+    "english": "{5:They sent }{4:the mother }{3:of }{2:serpents, }{1:named }{0:Surasā; }{6:coming, }{8:she }{7:spoke }{9:these words:}",
     "words": [
       {
         "roman": "surasā",
@@ -2564,7 +2564,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāma kāju kari phiri maiṃ āvauṃ। sītā kai sudhi prabhuhi sunāvauṃ ॥",
-    "english": "{2:“Having accomplished }{0:Rāma’s }{1:work, }{4:I }{3,5:will return }{10:and relate }{8:tidings }{6,7:of Sītā }{9:to the Lord.}",
+    "english": "{2:“Having accomplished }{0:Rāma’s }{1:work, }{4:I }{3,5:will return }{10:and relate }{8:tidings }{7:of }{6:Sītā }{9:to the Lord.}",
     "words": [
       {
         "roman": "rāma",
@@ -4106,7 +4106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīva jantu je gagana uṛāhī~. jala biloki tinha kai parichāhī~.",
-    "english": "{2:Whatever }{0,1:living creatures }{4:flew }{3:in the sky, }{6:sighting }{7,8:their }{9:shadow }{5:in the water,}",
+    "english": "{2:Whatever }{0:living }{1:creatures }{4:flew }{3:in the sky, }{6:sighting }{7,8:their }{9:shadow }{5:in the water,}",
     "words": [
       {
         "roman": "jīva",
@@ -4380,7 +4380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "soi chala hanūmāna kaha~ kīnhā. tāsu kapaṭu kapi turatahī~ cīnhā.",
-    "english": "{4:She played }{0:that very }{1:trick }{2,3:against Hanumān; }{7:the monkey }{8:instantly }{9:recognized }{5,6:her deceit.}",
+    "english": "{4:She played }{0:that very }{1:trick }{3:against }{2:Hanumān; }{7:the monkey }{8:instantly }{9:recognized }{5:her }{6:deceit.}",
     "words": [
       {
         "roman": "soi",
@@ -6213,7 +6213,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nānā akhārenha bhirahī~ bahu bidhi eka ekanha tarjahī~.",
-    "english": "{0:in diverse}{1: arenas}{2: they grapple}{3: in many}{4: ways,}{7: and challenge}{5,6: one another.}",
+    "english": "{0:in diverse}{1: arenas}{2: they grapple}{3: in many}{4: ways,}{7: and challenge}{5: one }{6:another.}",
     "words": [
       {
         "roman": "nānā",
@@ -6582,7 +6582,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ehi lāgi tulasīdāsa inha kī kathā kachu eka hai kahī.",
-    "english": "{0:For this}{1: reason,}{2: Tulsidas}{8,9: has told}{6,7: a brief}{5: account}{3,4: of them:}",
+    "english": "{0:For this}{1: reason,}{2: Tulsidas}{8: has }{9:told}{6: a }{7:brief}{5: account}{3,4: of them:}",
     "words": [
       {
         "roman": "ehi",
@@ -9861,7 +9861,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ehi sana haṭhi karihauṁ pahicānī. sādhu te hoi na kāraja hānī ॥",
-    "english": "{2:I will resolutely }{3:make }{4:acquaintance }{0,1:with him; }{5,6:from a saint }{8:no }{10:harm }{7:comes }{9:to a task.}",
+    "english": "{2:I will resolutely }{3:make }{4:acquaintance }{1:with }{0:him; }{5,6:from a saint }{8:no }{10:harm }{7:comes }{9:to a task.}",
     "words": [
       {
         "roman": "ehi",
@@ -13736,7 +13736,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tava anucarīṁ karauṁ pana morā. eka bāra biloku mama orā.",
-    "english": "{0,1,2,3,4,5,6,7,8,9:I shall make them your handmaids—this is my vow. Just once, turn your gaze toward me.}",
+    "english": "{2:I shall make them }{0:your }{1:handmaids}—{3:this is }{4:my }{3:vow}. {5,6:Just once, }{7:turn your gaze }{8,9:toward me.}",
     "words": [
       {
         "roman": "tava",
@@ -16831,7 +16831,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāsu bacana suni te saba ḍarīṁ | janakasutā ke carananhi parīṁ ||",
-    "english": "{2:Hearing }{0,1:her words, }{3,4:they all }{5:became afraid }{9:and fell }{7,8:at the feet of }{6:Janaka's daughter.}",
+    "english": "{2:Hearing }{0:her }{1:words, }{3:they }{4:all }{5:became afraid }{9:and fell }{7,8:at the feet of }{6:Janaka's daughter.}",
     "words": [
       {
         "roman": "tāsu",
@@ -20117,7 +20117,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yaha mudrikā mātu maĩ ānī. dīnhi rāma tumha kaham̐ sahidānī ..",
-    "english": "{3:“I }{4:brought }{0:this }{1:signet ring, }{2:O Mother; }{6:Rama }{5:gave it }{9:as a token of recognition }{7,8:for you.”}",
+    "english": "{3:“I }{4:brought }{0:this }{1:signet ring, }{2:O Mother; }{6:Rama }{5:gave it }{9:as a token of recognition }{8:for }{7:you.”}",
     "words": [
       {
         "roman": "yaha",
@@ -20706,7 +20706,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "būṛata biraha jaladhi hanumānā. bhayau tāta mōṁ kahum̐ jalajānā.",
-    "english": "{0:“As I was drowning }{2:in the ocean }{1:of separation, }{3:O Hanuman, }{5:dear one, }{4:you have become }{8:a vessel }{6,7:for me.”}",
+    "english": "{0:“As I was drowning }{2:in the ocean }{1:of separation, }{3:O Hanuman, }{5:dear one, }{4:you have become }{8:a vessel }{7:for }{6:me.”}",
     "words": [
       {
         "roman": "būṛata",
@@ -22081,7 +22081,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahēu rāma biyōga tava sītā. mō kahum̐ sakala bhaē biparītā.",
-    "english": "{1:Rama }{0:said: }{4:“O Sita, }{2:in separation }{3:from you, }{7:all things }{8:have become }{9:adverse }{5,6:to me.}",
+    "english": "{1:Rama }{0:said: }{4:“O Sita, }{2:in separation }{3:from you, }{7:all things }{8:have become }{9:adverse }{6:to }{5:me.}",
     "words": [
       {
         "roman": "kahēu",
@@ -22629,7 +22629,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahēhū tēṁ kachu dukha ghaṭi hōī. kāhi kahauṁ yaha jāna na kōī.",
-    "english": "{0,1:By speaking, }{3:grief }{5:is }{2:somewhat }{4:lessened; }{6:to whom }{7:shall I speak? }{10:No }{11:one }{9:understands }{8:this.}",
+    "english": "{1:By }{0:speaking, }{3:grief }{5:is }{2:somewhat }{4:lessened; }{6:to whom }{7:shall I speak? }{10:No }{11:one }{9:understands }{8:this.}",
     "words": [
       {
         "roman": "kahēhū",
@@ -22921,7 +22921,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sō manu sadā rahata tōhi pāhīṁ. jānu prīti rasu ētēnahi māhīṁ.",
-    "english": "{0:That }{1:mind }{2:always }{3:abides }{4,5:with you; }{6:know }{8:the sweetness }{7:of love }{10:to be in }{9:this alone.”}",
+    "english": "{0:That }{1:mind }{2:always }{3:abides }{5:with }{4:you; }{6:know }{8:the sweetness }{7:of love }{10:to be in }{9:this alone.”}",
     "words": [
       {
         "roman": "sō",
@@ -24379,7 +24379,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "moreṁ hṛdaya parama saṁdehā. suni kapi pragaṭa kīnha nija dehā.",
-    "english": "{0:“In my }{1:heart }{2:is great }{3:doubt.” }{4:Hearing this, }{5:the monkey }{6,7:made manifest }{8:his own }{9:body.}",
+    "english": "{0:“In my }{1:heart }{2:is great }{3:doubt.” }{4:Hearing this, }{5:the monkey }{7:made }{6:manifest }{8:his own }{9:body.}",
     "words": [
       {
         "roman": "moreṁ",
@@ -25950,7 +25950,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tinha kara bhaya mātā mohi nāhīṁ. jauṁ tumha sukha mānahu mana māhīṁ.",
-    "english": "{4,5:“I have no }{2:fear }{0,1:of them, }{3:O Mother, }{6:if }{7:you }{9:feel }{8:ease }{11:within }{10:your mind.”}",
+    "english": "{4,5:“I have no }{2:fear }{1:of }{0:them, }{3:O Mother, }{6:if }{7:you }{9:feel }{8:ease }{11:within }{10:your mind.”}",
     "words": [
       {
         "roman": "tinha",
@@ -28473,7 +28473,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "uṭhi bahori kīnhisi bahu māyā. jīti na jāi prabhañjana jāyā.",
-    "english": "{0:Rising }{1:again, }{2:he wrought }{3:many }{4:magical deceptions, }{9:but the son }{8:of the wind-god }{6:could not }{5,7:be conquered.}",
+    "english": "{0:Rising }{1:again, }{2:he wrought }{3:many }{4:magical deceptions, }{9:but the son }{8:of the wind-god }{6:could not }{7:be }{5:conquered.}",
     "words": [
       {
         "roman": "uṭhi",
@@ -31818,7 +31818,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saba kēṁ dēha parama priya svāmī. mārahiṁ mōhi kumāraga gāmī .",
-    "english": "{0,1:To all, }{2:the body }{3:is supremely }{4:dear, }{5:O master; }{9:those who walk }{8:the evil path }{6:struck }{7:me.}",
+    "english": "{1:To }{0:all, }{2:the body }{3:is supremely }{4:dear, }{5:O master; }{9:those who walk }{8:the evil path }{6:struck }{7:me.}",
     "words": [
       {
         "roman": "saba",
@@ -31955,7 +31955,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jinha mōhi mārā tē maiṁ mārē. tēhi para bām̐dhēu tanayam̐ tumhārē .",
-    "english": "{0:Those who }{2:struck }{1:me, }{3:them }{4:I }{5:struck down; }{6,7:upon that, }{10:your }{9:son }{8:bound me.}",
+    "english": "{0:Those who }{2:struck }{1:me, }{3:them }{4:I }{5:struck down; }{7:upon }{6:that, }{10:your }{9:son }{8:bound me.}",
     "words": [
       {
         "roman": "jinha",
@@ -36866,7 +36866,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dēha bisāla parama haruāī. maṁdira tēṁ maṁdira caṛha dhāī.",
-    "english": "{0:His body }{1:was immense, }{2:with supreme }{3:lightness; }{7:he climbed }{8:and rushed }{4,5:from mansion }{6:to mansion.}",
+    "english": "{0:His body }{1:was immense, }{2:with supreme }{3:lightness; }{7:he climbed }{8:and rushed }{5:from }{4:mansion }{6:to mansion.}",
     "words": [
       {
         "roman": "dēha",
@@ -37682,7 +37682,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tā kara dūta anala jēhiṁ sirijā. jarā na sō tēhi kārana girijā.",
-    "english": "{2:He is the messenger }{0,1:of Him }{4:who }{5:created }{3:fire; }{9:for that }{10:reason, }{11:O Girija, }{8:he }{7:did not }{6:burn.}",
+    "english": "{2:He is the messenger }{1:of }{0:Him }{4:who }{5:created }{3:fire; }{9:for that }{10:reason, }{11:O Girija, }{8:he }{7:did not }{6:burn.}",
     "words": [
       {
         "roman": "tā",
@@ -38741,7 +38741,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "māsa divasa mahuṁ nāthu na āvā. tau puni mōhi jiata nahiṁ pāvā.",
-    "english": "{2:“If }{3:Rāma }{4,5:does not come }{0,1:within a month, }{6,7:He will not }{10,11:find }{8,9:me alive.”}",
+    "english": "{2:“If }{3:Rāma }{4,5:does not come }{0,1:within a month, }{6,7:He will not }{10,11:find }{8:me }{9:alive.”}",
     "words": [
       {
         "roman": "māsa",
@@ -39039,7 +39039,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tōhi dēkhi sītali bhai chātī. puni mō kahuṁ sōi dinu sō rātī.",
-    "english": "{1:Having seen }{0:you, }{4:my chest }{3:became }{2:cool; }{5:now again }{6,7:for me }{8:there will be that same }{9:day }{10:and that same }{11:night.”}",
+    "english": "{1:Having seen }{0:you, }{4:my chest }{3:became }{2:cool; }{5:now again }{7:for }{6:me }{8:there will be that same }{9:day }{10:and that same }{11:night.”}",
     "words": [
       {
         "roman": "tōhi",
@@ -39164,7 +39164,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "janakasutahi samujhā'i kari bahu bidhi dhīraju dīnha.",
-    "english": "{1,2:Having consoled }{0:Janaka’s daughter, }{5,6:he gave her courage }{3,4:in many ways.}",
+    "english": "{2:Having }{1:consoled }{0:Janaka’s daughter, }{5,6:he gave her courage }{3,4:in many ways.}",
     "words": [
       {
         "roman": "janakasutahi",
@@ -39271,7 +39271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "carana kamala siru nā'i kapi gavanu rāma pahiṁ kīnha.",
-    "english": "{2,3:Bowing his head }{1:to her lotus }{0:feet, }{4:the monkey }{5,8:set forth }{6,7:towards Rāma.}",
+    "english": "{2,3:Bowing his head }{1:to her lotus }{0:feet, }{4:the monkey }{5,8:set forth }{7:towards }{6:Rāma.}",
     "words": [
       {
         "roman": "carana",
@@ -39747,7 +39747,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mukha prasanna tana teja birājā. kīnhesi rāmacandra kara kājā.",
-    "english": "{0:His face }{1:was cheerful }{3:and splendor }{4:shone }{2:on his body; }{5:he had accomplished }{8:the task }{6,7:of Rāmacandra.}",
+    "english": "{0:His face }{1:was cheerful }{3:and splendor }{4:shone }{2:on his body; }{5:he had accomplished }{8:the task }{7:of }{6:Rāmacandra.}",
     "words": [
       {
         "roman": "mukha",
@@ -40574,7 +40574,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jauṁ na hoti sītā sudhi pā'ī. madhubana ke phala sakahiṁ ki khā'ī.",
-    "english": "{0,2:“Had }{4:news }{3:of Sītā }{1:not }{5:been obtained, }{9:could they }{10:possibly }{11:eat }{8:the fruits }{6,7:of Madhuvana?”}",
+    "english": "{0,2:“Had }{4:news }{3:of Sītā }{1:not }{5:been obtained, }{9:could they }{10:possibly }{11:eat }{8:the fruits }{7:of }{6:Madhuvana?”}",
     "words": [
       {
         "roman": "jauṁ",
@@ -42955,7 +42955,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "locana nija pada jaṃtrita jāhiṃ prāna kehiṃ bāṭa",
-    "english": "{0,1,2,3,4,5,6,7:Her eyes are locked upon her own feet; by what path could her life-breaths depart?}",
+    "english": "{0:Her eyes }{3:are locked }{1,2:upon her own feet; }{6:by what }{7:path }{4:could }{5:her life-breaths }{4:depart?}",
     "words": [
       {
         "roman": "locana",
@@ -46634,7 +46634,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "so saba tava pratāpa raghurāī. nātha na kachū mori prabhutāī ॥",
-    "english": "{0,1:All that }{2,3:is your radiant majesty}{4:, O ruler of Raghu’s line; }{5:O Master}{6:, there is no }{8,9:mastery of mine }{7:at all.}",
+    "english": "{1:All }{0:that }{2,3:is your radiant majesty}{4:, O ruler of Raghu’s line; }{5:O Master}{6:, there is no }{8,9:mastery of mine }{7:at all.}",
     "words": [
       {
         "roman": "so",
@@ -46765,7 +46765,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tā kahu~ prabhu kachu agama nahiṃ jā para tumha anukula.",
-    "english": "{2:O Lord, }{3,5:nothing }{4:is inaccessible }{0,1:to that one }{6,7:upon whom }{8,9:you are gracious.}",
+    "english": "{2:O Lord, }{3,5:nothing }{4:is inaccessible }{0,1:to that one }{7:upon }{6:whom }{8,9:you are gracious.}",
     "words": [
       {
         "roman": "tā",
@@ -50793,7 +50793,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāsu dūta bala barani na jāī. tēhi āēm̐ pura kavana bhalāī.",
-    "english": "{0:‘He whose}{1: messenger’s}{2: strength}{4: cannot}{3,5: be described—}{6:upon his}{7: arrival, }{9:what}{10: good}{8: can come to the city?’}",
+    "english": "{0:‘He whose}{1: messenger’s}{2: strength}{4: cannot}{5: be }{3:described—}{6:upon his}{7: arrival, }{9:what}{10: good}{8: can come to the city?’}",
     "words": [
       {
         "roman": "jāsu",
@@ -51186,7 +51186,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kanta karaṣa hari sana pariharahū. mōra kahā ati hita hiyam̐ dharahu.",
-    "english": "{0:‘O husband, }{4:abandon}{1: enmity}{2,3: with Hari; }{10:hold}{5: my}{6: counsel}{9: in your heart}{7: as supreme}{8: welfare.}",
+    "english": "{0:‘O husband, }{4:abandon}{1: enmity}{3: with }{2:Hari; }{10:hold}{5: my}{6: counsel}{9: in your heart}{7: as supreme}{8: welfare.}",
     "words": [
       {
         "roman": "kanta",
@@ -51954,7 +51954,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaba lagi grasata na taba lagi jatanu karahu taji ṭēka",
-    "english": "{0:As}{1: long as}{3: they have not}{2: devoured them,}{4,5: until then}{7: make}{6: an effort,}{8: abandoning}{9: stubborn obstinacy.}",
+    "english": "{0:As}{1: long as}{3: they have not}{2: devoured them,}{5: until }{4:then}{7: make}{6: an effort,}{8: abandoning}{9: stubborn obstinacy.}",
     "words": [
       {
         "roman": "jaba",
@@ -53109,7 +53109,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jitēhu surāsura taba śrama nāhīm̐. nara bānara kēhi lēkhē māhī.",
-    "english": "{0:“You conquered}{1: gods and demons,}{2: and at that time}{4: there was no}{3: strain;}{7,9: in what}{8: reckoning}{5: are mortal men}{6: and monkeys?”}",
+    "english": "{0:“You conquered}{1: gods and demons,}{2: and at that time}{4: there was no}{3: strain;}{9: in }{7:what}{8: reckoning}{5: are mortal men}{6: and monkeys?”}",
     "words": [
       {
         "roman": "jitēhu",
@@ -56567,7 +56567,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sumati kumati saba kēm̐ ura rahahīm̐. nātha purāna nigama asa kahahīm̐.",
-    "english": "{0:Wisdom }{1:and folly }{5:dwell }{4:in the heart }{2,3:of all; }{6:O lord, }{7:the Puranas }{8:and Vedas }{10:declare }{9:thus.}",
+    "english": "{0:Wisdom }{1:and folly }{5:dwell }{4:in the heart }{3:of }{2:all; }{6:O lord, }{7:the Puranas }{8:and Vedas }{10:declare }{9:thus.}",
     "words": [
       {
         "roman": "sumati",
@@ -57859,7 +57859,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mama pura basi tapasinha para prītī. saṭha milu jāi tinhahi kahu nītī.",
-    "english": "{2:Dwelling }{0:in my }{1:city, }{5:you hold affection }{4:toward }{3:the ascetics! }{8:Go, }{6:O fool, }{7,9:meet them }{10:and preach }{11:statecraft!”}",
+    "english": "{2:Dwelling }{0:in my }{1:city, }{5:you hold affection }{4:toward }{3:the ascetics! }{8:Go, }{6:O fool, }{7:meet }{9:them }{10:and preach }{11:statecraft!”}",
     "words": [
       {
         "roman": "mama",
@@ -58853,7 +58853,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sādhu avagyā turata bhavānī. kara kalyāna akhila kai hānī ॥",
-    "english": "{1:Disrespect }{0:toward a saint, }{3:O Bhavani, }{2:immediately }{4:causes }{8:the destruction }{6,7:of all }{5:welfare.}",
+    "english": "{1:Disrespect }{0:toward a saint, }{3:O Bhavani, }{2:immediately }{4:causes }{8:the destruction }{7:of }{6:all }{5:welfare.}",
     "words": [
       {
         "roman": "sādhu",
@@ -64661,7 +64661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "taba lagi kusala na jīva kahum̐ sapanēhum̐ mana biśrāma.",
-    "english": "{0,1:Until then, }{3:there is no }{2:well-being }{5:for a }{4:living being, }{8:nor rest }{7:for the mind }{6:even in a dream,}",
+    "english": "{1:Until }{0:then, }{3:there is no }{2:well-being }{5:for a }{4:living being, }{8:nor rest }{7:for the mind }{6:even in a dream,}",
     "words": [
       {
         "roman": "taba",
@@ -64923,7 +64923,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "taba lagi hṛdayam̐ basata khala nānā. lōbha mōha macchara mada mānā.",
-    "english": "{0,1:Until then, }{5:various }{4:villains }{3:dwell }{2:in the heart: }{6:greed, }{7:delusion, }{8:jealousy, }{9:arrogance, }{10:and conceit,}",
+    "english": "{1:Until }{0:then, }{5:various }{4:villains }{3:dwell }{2:in the heart: }{6:greed, }{7:delusion, }{8:jealousy, }{9:arrogance, }{10:and conceit,}",
     "words": [
       {
         "roman": "taba",

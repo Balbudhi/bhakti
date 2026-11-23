@@ -40,30 +40,54 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "वसुदेवसुतं",
+        "text": "वसुदेव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "देवं",
+        "text": "सुतं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कंसचाणूरमर्दनम्",
+        "text": "देवं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कंस",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चाणूर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मर्दनम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "vasudeva-sutaṁ devaṁ kaṁsa-cāṇūra-mardanam",
-    "english": "{0:To the son of Vasudeva, }{1:the divine Lord, }{2:the crusher of Kamsa and Chanura,}",
+    "english": "{1:To the son }{0:of Vasudeva, }{2:the divine Lord, }{5:the crusher }{3:of Kamsa }{4:and Chanura,}",
     "words": [
       {
-        "roman": "vasudeva-sutaṁ",
-        "gloss": "son of Vasudeva",
+        "roman": "vasudeva",
+        "gloss": "Vasudeva, Kṛṣṇa’s father",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sutaṁ",
+        "gloss": "son; accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -74,8 +98,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kaṁsa-cāṇūra-mardanam",
-        "gloss": "crusher of Kamsa and Chanura",
+        "roman": "kaṁsa",
+        "gloss": "Kaṁsa, the tyrant of Mathurā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cāṇūra",
+        "gloss": "Cāṇūra, Kaṁsa’s wrestler",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mardanam",
+        "gloss": "crusher; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -87,36 +123,66 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "देवकीपरमानन्दं",
+        "text": "देवकी",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कृष्णं",
+        "text": "परमा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "वन्दे",
+        "text": "नन्दं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "जगद्गुरुम्",
+        "text": "कृष्णं",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "वन्दे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "द्गुरुम्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "devakī-paramānandaṁ kṛṣṇaṁ vande jagadgurum",
-    "english": "{0:The supreme joy of Devaki, }{1:to Krishna, }{3:the universal teacher, }{2:I bow.}",
+    "english": "{2:The }{1:supreme }{2:joy }{0:of Devaki, }{3:to Krishna, }{5:the universal }{6:teacher, }{4:I bow.}",
     "words": [
       {
-        "roman": "devakī-paramānandaṁ",
-        "gloss": "supreme joy of Devaki",
+        "roman": "devakī",
+        "gloss": "Devakī, Kṛṣṇa’s mother",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "param",
+        "gloss": "supreme; parama, vowel joined to ānanda",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ānandaṁ",
+        "gloss": "joy; accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -133,8 +199,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jagadgurum",
-        "gloss": "universal teacher",
+        "roman": "jagad",
+        "gloss": "of the world, universal; jagat before g",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "gurum",
+        "gloss": "teacher; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -794,7 +866,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rādhikā camaka rahīṁ ālī, ālī",
-    "english": "{0:Radhika }{1,2:is shining, }{3:O friend, }{4:O friend,}",
+    "english": "{0:Radhika }{2:is }{1:shining, }{3:O friend, }{4:O friend,}",
     "words": [
       {
         "roman": "rādhikā",
@@ -1180,7 +1252,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jahāṁ te pragaṭa bhaī gaṅgā, gaṅgā",
-    "english": "{1:From }{0:where }{4:the Ganga }{2,3:became manifest, }{5:the Ganga,}",
+    "english": "{1:From }{0:where }{4:the Ganga }{3:became }{2:manifest, }{5:the Ganga,}",
     "words": [
       {
         "roman": "jahāṁ",
@@ -1346,7 +1418,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "smaraṇa te hota moha bhaṅgā, bhaṅgā",
-    "english": "{0,1:Through remembrance, }{3:delusion }{2,4:is shattered, }{5:shattered,}",
+    "english": "{1:Through }{0:remembrance, }{3:delusion }{2,4:is shattered, }{5:shattered,}",
     "words": [
       {
         "roman": "smaraṇa",

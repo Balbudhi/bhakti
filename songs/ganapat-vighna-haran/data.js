@@ -36,36 +36,72 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "शुक्लाम्बरधरं",
+        "text": "शुक्ला",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "विष्णुं",
+        "text": "म्बर",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "शशिवर्णं",
+        "text": "धरं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "चतुर्भुजम्",
+        "text": "विष्णुं",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "शशि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वर्णं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "चतु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "र्भुजम्",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "śuklāmbaradharaṁ viṣṇuṁ śaśivarṇaṁ caturbhujam",
-    "english": "{0:Wearing white garments, }{1:the all-pervading Lord, }{2:moon-colored, }{3:four-armed,}",
+    "english": "{2:Wearing }{0:white }{1:garments, }{3:the all-pervading Lord, }{4:moon-}{5:colored, }{6:four-}{7:armed,}",
     "words": [
       {
-        "roman": "śuklāmbaradharaṁ",
-        "gloss": "wearing white garments",
+        "roman": "śukl",
+        "gloss": "white; śukla, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āmbara",
+        "gloss": "garments; ambara",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dharaṁ",
+        "gloss": "wearing: accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -76,14 +112,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śaśivarṇaṁ",
-        "gloss": "moon-colored; having the radiance of the moon",
+        "roman": "śaśi",
+        "gloss": "moon",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "caturbhujam",
-        "gloss": "four-armed; having four arms",
+        "roman": "varṇaṁ",
+        "gloss": "having the color or radiance of: accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "catur",
+        "gloss": "four",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhujam",
+        "gloss": "armed, having arms: accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -95,30 +143,54 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "प्रसन्नवदनं",
+        "text": "प्रसन्न",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ध्यायेत्",
+        "text": "वदनं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सर्वविघ्नोपशान्तये",
+        "text": "ध्यायेत्",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विघ्नो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पशान्तये",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "prasannavadanaṁ dhyāyet sarvavighnopaśāntaye",
-    "english": "{0:of serene countenance, }{1:one should meditate upon Him }{2:for the pacification of all obstacles.}",
+    "english": "{1:of }{0:serene }{1:countenance, }{2:one should meditate upon Him }{5:for the pacification }{3:of all }{4:obstacles.}",
     "words": [
       {
-        "roman": "prasannavadanaṁ",
-        "gloss": "one with a serene countenance; cheerful-faced",
+        "roman": "prasanna",
+        "gloss": "serene, cheerful",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vadanaṁ",
+        "gloss": "one with a countenance, face: accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -129,8 +201,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvavighnopaśāntaye",
-        "gloss": "for the pacification of all obstacles",
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vighn",
+        "gloss": "obstacles; vighna, joined a + u",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "opaśāntaye",
+        "gloss": "for the pacification; upaśāntaye, dative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -142,36 +226,78 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "अभीप्सितार्थसिद्ध्यर्थं",
+        "text": "अभीप्सिता",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "पूजितो",
+        "text": "र्थ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "यः",
+        "text": "सिद्ध्य",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सुरासुरैः",
+        "text": "र्थं",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "पूजितो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "यः",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सुरा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुरैः",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "abhīpsitārthasiddhyarthaṁ pūjito yaḥ surāsuraiḥ",
-    "english": "{0:For the fulfillment of desired goals, }{2:who }{1:is worshipped }{3:by gods and demons,}",
+    "english": "{3:For }{2:the fulfillment }{0:of desired }{1:goals, }{5:who }{4:is worshipped }{6:by gods }{7:and demons,}",
     "words": [
       {
-        "roman": "abhīpsitārthasiddhyarthaṁ",
-        "gloss": "for the fulfillment of desired goals",
+        "roman": "abhīpsit",
+        "gloss": "desired; abhīpsita, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārtha",
+        "gloss": "goals; artha",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "siddhy",
+        "gloss": "fulfillment; siddhi, i changed to y before a vowel",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "arthaṁ",
+        "gloss": "for the sake of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -188,8 +314,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "surāsuraiḥ",
-        "gloss": "by gods and anti-gods",
+        "roman": "sur",
+        "gloss": "by gods; sura, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āsuraiḥ",
+        "gloss": "by anti-gods, demons; asuraiḥ, instrumental plural",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -201,36 +333,84 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "सर्वविघ्नहरस्तस्मै",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "गणाधिपतये",
+        "text": "विघ्न",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "हर",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्तस्मै",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गणा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "धिपतये",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "sarvavighnaharastasmai gaṇādhipataye namaḥ",
-    "english": "{0:the remover of all obstacles—unto that }{1:Lord of celestial hosts, }{2:salutations.}",
+    "english": "{2:the remover }{0:of all }{1:obstacles—}{3:unto that }{5:Lord }{4:of celestial hosts, }{6:salutations.}",
     "words": [
       {
-        "roman": "sarvavighnaharastasmai",
-        "gloss": "the remover of all obstacles, unto that",
+        "roman": "sarva",
+        "gloss": "all",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "gaṇādhipataye",
-        "gloss": "unto the Lord of the celestial hosts",
+        "roman": "vighna",
+        "gloss": "obstacles",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "haras",
+        "gloss": "remover; haraḥ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tasmai",
+        "gloss": "unto that one: dative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "gaṇ",
+        "gloss": "celestial hosts; gaṇa, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādhipataye",
+        "gloss": "unto the Lord; adhipataye, dative",
         "concept_key": "",
         "preserve_in_english": false
       },

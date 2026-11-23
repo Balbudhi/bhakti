@@ -71,30 +71,66 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "संसारसारं",
+        "text": "संसार",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "भुजगेन्द्रहारम्",
+        "text": "सारं",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "भुजगे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "न्द्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हारम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "saṁsārasāraṁ bhujagendrahāram",
-    "english": "{0:The quintessence of worldly existence,} {1:wearing the king of serpents as a garland,}",
+    "english": "{1:The quintessence }{0:of worldly existence,} {4:wearing }{3:the king }{2:of serpents }{4:as a garland,}",
     "words": [
       {
-        "roman": "saṁsārasāraṁ",
-        "gloss": "the quintessence of worldly existence",
+        "roman": "saṁsāra",
+        "gloss": "worldly existence",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhujagendrahāram",
-        "gloss": "wearing the serpent king as a garland",
+        "roman": "sāraṁ",
+        "gloss": "quintessence, essence; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhujag",
+        "gloss": "serpents; bhujaga joined a + i",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "endra",
+        "gloss": "king; indra",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hāram",
+        "gloss": "wearing as a garland; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -147,20 +183,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भवानीसहितं",
+        "text": "भवानी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमामि",
+        "text": "सहितं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमामि",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "bhavaṁ bhavānīsahitaṁ namāmi",
-    "english": "{2:I bow}{0: to Bhava,}{1: accompanied by Bhavānī.}",
+    "english": "{3:I bow}{0: to Bhava,}{2: accompanied }{1:by Bhavānī.}",
     "words": [
       {
         "roman": "bhavaṁ",
@@ -169,8 +211,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhavānīsahitaṁ",
-        "gloss": "accompanied by Goddess Bhavānī; Bhavānī means “Bhava’s consort”; Bhava is Śiva",
+        "roman": "bhavānī",
+        "gloss": "Goddess Bhavānī, “Bhava’s consort”; Bhava is Śiva",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sahitaṁ",
+        "gloss": "accompanied by; accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -498,7 +546,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "baiṭhe haiṁ śiva avināśī",
-    "english": "{3:Imperishable} {2:Shiva} {0,1:is seated.}",
+    "english": "{3:Imperishable} {2:Shiva} {1:is }{0:seated.}",
     "words": [
       {
         "roman": "baiṭhe",

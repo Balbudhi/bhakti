@@ -551,7 +551,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Jag meṅ ākar jag ko maiyā, ab tak na pahchān sakā",
-    "english": "{2:Having come }{0,1:into the world, }{5:Mother, }{9:I have }{7:not }{6:yet }{9:been able to }{8:recognize }{3,4:the world.}",
+    "english": "{2:Having come }{0,1:into the world, }{5:Mother, }{9:I have }{7:not }{6:yet }{9:been able to }{8:recognize }{4:the }{3:world.}",
     "words": [
       {
         "roman": "Jag",
@@ -863,7 +863,7 @@ window.SONG_LINES = {
   },
   "v1d_a": {
     "roman": "Tū hai agam agochar maiyā",
-    "english": "{0,1:You are }{2:beyond reach }and {3:beyond the senses, }{4:Mother.}",
+    "english": "{0:You }{1:are }{2:beyond reach }and {3:beyond the senses, }{4:Mother.}",
     "words": [
       {
         "roman": "Tū",
@@ -923,7 +923,7 @@ window.SONG_LINES = {
   },
   "v1d_b": {
     "roman": "Kaho kaise lakh pāūṅ main",
-    "english": "{0:Tell me: }{1:how }{3,4:may I }{2:behold }You?",
+    "english": "{0:Tell me: }{1:how }{3:may }{4:I }{2:behold }You?",
     "words": [
       {
         "roman": "Kaho",
@@ -1073,7 +1073,7 @@ window.SONG_LINES = {
   },
   "v2b": {
     "roman": "Nahīṅ ārādhan jap tap jānūṅ, main avaguṇ kī khān hūṅ",
-    "english": "{4:I know }{0:neither }{1:worship, }{2:chanting, }{0:nor }{3:austerity; }{5,9:I am }{7,8:a mine of }{6:flaws.}",
+    "english": "{4:I know }{0:neither }{1:worship, }{2:chanting, }{0:nor }{3:austerity; }{5:I }{9:am }{7,8:a mine of }{6:flaws.}",
     "words": [
       {
         "roman": "Nahīṅ",
@@ -1615,7 +1615,7 @@ window.SONG_LINES = {
   },
   "v3b": {
     "roman": "Terī kṛpā hī miṭegī, bhītar jo bhī khoṭ hai",
-    "english": "{2:Only }{0:by Your }{1:grace }{3:will }{5:whatever }{6:flaw }{4,7:is within }{3:be erased.}",
+    "english": "{2:Only }{0:by Your }{1:grace }{3:will }{5:whatever }{6:flaw }{7:is }{4:within }{3:be erased.}",
     "words": [
       {
         "roman": "Terī",
@@ -1823,7 +1823,7 @@ window.SONG_LINES = {
   },
   "v3d": {
     "roman": "Sharaṇ lagā lo mujhko maiyā, tujh par balī balī jāūṅ main",
-    "english": "{1:Take }{2:me }{0:into Your refuge, }{3:Mother; }{8:I }{6,7:offer myself again and again }{4,5:to You.}",
+    "english": "{1:Take }{2:me }{0:into Your refuge, }{3:Mother; }{8:I }{6,7:offer myself again and again }{5:to }{4:You.}",
     "words": [
       {
         "roman": "Sharaṇ",

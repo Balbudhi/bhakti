@@ -222,108 +222,126 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಜಗನ್ಮಾತೆಯು",
+        "text": "ಜಗ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಮೂಲ",
+        "text": "ನ್ಮಾತೆಯು",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಪ್ರಕೃತಿಯ",
+        "text": "ಮೂಲ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಸ್ವರೂಪಿಣಿಯು",
+        "text": "ಪ್ರಕೃತಿಯ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಧನಧಾನ್ಯ",
+        "text": "ಸ್ವರೂಪಿಣಿಯು",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಸಂಪತ್ತುಗಳನ್ನು",
+        "text": "ಧನ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ಕರುಣಿಸುವ",
+        "text": "ಧಾನ್ಯ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ಐಶ್ವರ್ಯಾದಿ",
+        "text": "ಸಂಪತ್ತುಗಳನ್ನು",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ದೇವತೆಯಾದ",
+        "text": "ಕರುಣಿಸುವ",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "ಶ್ರೀ",
+        "text": "ಐಶ್ವರ್ಯಾದಿ",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "ಮಹಾಲಕ್ಷ್ಮಿಯ",
+        "text": "ದೇವತೆಯಾದ",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "ಪೂಜೆ",
+        "text": "ಶ್ರೀ",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "ವೇದ",
+        "text": "ಮಹಾಲಕ್ಷ್ಮಿಯ",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "ಕಾಲದಿಂದಲೂ",
+        "text": "ಪೂಜೆ",
         "wordIndices": [
           13
         ]
       },
       {
-        "text": "ನಡೆದು",
+        "text": "ವೇದ",
         "wordIndices": [
           14
         ]
       },
       {
-        "text": "ಬಂದಿದೆ",
+        "text": "ಕಾಲದಿಂದಲೂ",
         "wordIndices": [
           15
+        ]
+      },
+      {
+        "text": "ನಡೆದು",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "ಬಂದಿದೆ",
+        "wordIndices": [
+          17
         ]
       }
     ],
     "roman": "Jaganmātēyu mūla prakṛtiya svarūpiṇiyu dhanadhānya sampattugaḷannu karuṇisuva aiśvaryādi dēvatēyāda śrī mahālakṣmiya pūje vēda kāladindalū naḍedu bandide",
-    "english": "{11:The worship of }{9:Sri }{10:Mahalakshmi, }{0:the Mother of the Universe, }{3:the embodiment of }{1:primordial }{2:nature, }{7,8:the deity of prosperity }{6:who bestows }{4:wealth, grain, }{5:and riches, }{14,15:has continued }{13:ever since }{12:the Vedic era.}",
+    "english": "{13:The worship }{12:of }{11:Sri }{12:Mahalakshmi, }{1:the Mother }{0:of the Universe, }{4:the embodiment }{3:of }{2:primordial }{3:nature, }{10:the deity }{9:of prosperity }{8:who bestows }{5:wealth, }{6:grain, }{7:and riches, }{16,17:has continued }{15:ever since the }{14:Vedic }{15:era.}",
     "words": [
       {
-        "roman": "Jaganmātēyu",
-        "gloss": "the Mother of the Universe and",
+        "roman": "Jagan",
+        "gloss": "of the world; jagat before m",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mātēyu",
+        "gloss": "Mother; -u linking with what follows",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -346,8 +364,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dhanadhānya",
-        "gloss": "wealth and grain",
+        "roman": "dhana",
+        "gloss": "wealth",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhānya",
+        "gloss": "grain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -538,44 +562,56 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಮೇಲೊಂದ್",
+        "text": "ಮೇ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಹೆಜ್ಜೆಯನಿಕ್ಕುತ",
+        "text": "ಲೊಂದ್",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಗೆಜ್ಜೆಯ",
+        "text": "ಹೆಜ್ಜೆಯ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಕಾಲ್ಗಳ",
+        "text": "ನಿಕ್ಕುತ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಧ್ವನಿಯ",
+        "text": "ಗೆಜ್ಜೆಯ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ತೋರುತ",
+        "text": "ಕಾಲ್ಗಳ",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "ಧ್ವನಿಯ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ತೋರುತ",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "Hejjeya mēlond hejjeyanikkuta gejjeya kālgaḷa dhvaniya tōruta",
-    "english": "{2:Placing }{0:step }{1:upon another, }{6:making heard }{5:the sound }{4:of your feet }{3:with ankle-bells,}",
+    "english": "{4:Placing }{2,3:step }{1:upon }{0:another, }{8:making heard }{7:the sound }{6:of your feet }{5:with ankle-bells,}",
     "words": [
       {
         "roman": "Hejjeya",
@@ -584,14 +620,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mēlond",
-        "gloss": "upon another",
+        "roman": "mēl",
+        "gloss": "upon; mēle, governing the preceding genitive",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "hejjeyanikkuta",
-        "gloss": "placing a step",
+        "roman": "ond",
+        "gloss": "one; ondu, with the following step",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hejjeyan",
+        "gloss": "a step; hejjeyannu, object",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ikkuta",
+        "gloss": "placing; setting down",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -651,20 +699,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಮಜ್ಜಿಗೆಯೊಳಗಿನ",
+        "text": "ಮಜ್ಜಿಗೆ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಬೆಣ್ಣೆಯಂತೆ",
+        "text": "ಯೊಳಗಿನ",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ಬೆಣ್ಣೆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ಯಂತೆ",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "Sajjana sādhu pūjeya vēḷege majjigeyoḷagina beṇṇeyante",
-    "english": "{3:at the time }{2:of worship }{0:by virtuous }{1:saints, }{5:like butter }{4:from within buttermilk,}",
+    "english": "{3:at the time }{2:of worship }{1:by }{0:virtuous }{1:saints, }{7:like }{6:butter }{5:from within }{4:buttermilk,}",
     "words": [
       {
         "roman": "Sajjana",
@@ -691,14 +751,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "majjigeyoḷagina",
-        "gloss": "from within buttermilk",
+        "roman": "majjigey",
+        "gloss": "buttermilk; majjige with glide y",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "beṇṇeyante",
-        "gloss": "like butter",
+        "roman": "oḷagina",
+        "gloss": "from within; inner",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "beṇṇey",
+        "gloss": "butter; beṇṇe with glide y",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ante",
+        "gloss": "like; as",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1244,48 +1316,60 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಕುಂಕುಮಾಂಕಿತೆ",
+        "text": "ಕುಂಕುಮಾಂ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಪಂಕಜ",
+        "text": "ಕಿತೆ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಲೋಚನೆ",
+        "text": "ಪಂಕಜ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ವೆಂಕಟರಮಣನ",
+        "text": "ಲೋಚನೆ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಬಿಂಕದ",
+        "text": "ವೆಂಕಟರಮಣನ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ರಾಣಿ",
+        "text": "ಬಿಂಕದ",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ರಾಣಿ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "Kuṅkumāṅkite paṅkaja lōcane veṅkaṭaramaṇana biṅkada rāṇi",
-    "english": "{0:O one marked with vermilion, }{1:lotus-}{2:eyed one, }{4:graceful }{5:queen }{3:of Lord Venkataramana!}",
+    "english": "{1:O one marked }{0:with vermilion, }{2:lotus-}{3:eyed one, }{5:graceful }{6:queen }{4:of Lord Venkataramana!}",
     "words": [
       {
-        "roman": "Kuṅkumāṅkite",
-        "gloss": "marked with vermilion",
+        "roman": "Kuṅkum",
+        "gloss": "vermilion; kuṅkuma, vowel joined to aṅkite",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āṅkite",
+        "gloss": "O one marked; feminine vocative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1422,48 +1506,60 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಅಕ್ಕರೆಯುಳ್ಳಳಗಿರಿ",
+        "text": "ಅಕ್ಕರೆಯುಳ್ಳ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ರಂಗನ",
+        "text": "ಳಗಿರಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಚೊಕ್ಕ",
+        "text": "ರಂಗನ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಪುರಂದರ",
+        "text": "ಚೊಕ್ಕ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ವಿಠಲನ",
+        "text": "ಪುರಂದರ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ರಾಣಿ",
+        "text": "ವಿಠಲನ",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ರಾಣಿ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "Akkareyuḷḷaḷagiri raṅgana cokka purandara viṭhalana rāṇi",
-    "english": "{5:O Queen }{0:of the loving Alagiri }{1:Ranga, }{2:the pure }{3:Purandara }{4:Vitthala!}",
+    "english": "{6:O Queen }{1:of the }{0:loving }{1:Alagiri }{2:Ranga, }{3:the pure }{4:Purandara }{5:Vitthala!}",
     "words": [
       {
-        "roman": "Akkareyuḷḷaḷagiri",
-        "gloss": "of the loving Lord of Alagiri",
+        "roman": "Akkareyuḷḷ",
+        "gloss": "loving, having affection; akkareyuḷḷa",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aḷagiri",
+        "gloss": "of Alagiri; the place-name with the following Raṅga",
         "concept_key": "",
         "preserve_in_english": false
       },

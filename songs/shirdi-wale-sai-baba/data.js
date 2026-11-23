@@ -92,7 +92,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śirḍī vāle sāīṁ bābā ke jo dar pe jāegā",
-    "english": "{5:Whoever}{8: goes}{4,6,7: to the doorstep of}{0,1,2,3: Sai Baba of Shirdi}",
+    "english": "{5:Whoever}{8: goes}{7: to}{6: the doorstep}{2,3,4: of Sai Baba}{0,1: of Shirdi}",
     "words": [
       {
         "roman": "śirḍī",
@@ -235,7 +235,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apnā tajurbā pakkā hai, apnā tajurbā pakkā hai, mũh mā̃gā phal vo pāegā",
-    "english": "{0,1,2,3:Our experience is certain, }{4,5,6,7:our experience is certain, }{11:that person}{12: will receive}{8,9,10: the asked-for fruit}",
+    "english": "{0:Our }{1:experience }{3:is }{2:certain, }{4:our }{5:experience }{7:is }{6:certain, }{11:that person}{12: will receive}{8,9,10: the asked-for fruit}",
     "words": [
       {
         "roman": "apnā",
@@ -366,7 +366,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śirḍī vāle sāīṁ bābā terī śān nirālī",
-    "english": "{0,1,2,3:Sai Baba of Shirdi, }{4:your}{5: glory}{6: is unique}",
+    "english": "{2,3:Sai Baba }{0,1:of Shirdi, }{4:your}{5: glory}{6: is unique}",
     "words": [
       {
         "roman": "śirḍī",
@@ -628,7 +628,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jag ke vālī, terā savālī, jag ke vālī, terā savālī, hardam mauj uṛāegā",
-    "english": "{0,1,2:Master of the world, }{3,4:your petitioner, }{5,6,7:Master of the world, }{8,9:your petitioner}{10: will always}{11,12: revel in joy}",
+    "english": "{0,1,2:Master of the world, }{3:your }{4:petitioner, }{5,6,7:Master of the world, }{8:your }{9:petitioner}{10: will always}{11,12: revel in joy}",
     "words": [
       {
         "roman": "jag",
@@ -884,7 +884,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere mandir pe natmastak niśidin ho sāīṁ mere",
-    "english": "{3,5:May my head be bowed}{4: day and night}{0,1,2: at your temple, }{6,7:my Sai}",
+    "english": "{3,5:May my head be bowed}{4: day and night}{2: at }{0:your }{1:temple, }{6,7:my Sai}",
     "words": [
       {
         "roman": "tere",
@@ -1039,7 +1039,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "doṣ ghanere par dar hū̃ tere, doṣ ghanere par dar hū̃ tere, tū hī pār lagāegā",
-    "english": "{0,1:Faults are manifold}{2,3,4,5: yet I am at your doorstep, }{6,7:faults are manifold}{8,9,10,11: yet I am at your doorstep, }{12,13:you alone}{14,15: will ferry me across}",
+    "english": "{0:Faults}{1: are manifold}{2: yet}{4: I am}{5: at your}{3: doorstep, }{6:faults}{7: are manifold}{8: yet}{10: I am}{11: at your}{9: doorstep, }{12:you }{13:alone}{14,15: will ferry me across}",
     "words": [
       {
         "roman": "doṣ",
@@ -1212,7 +1212,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śiv sāīṁ sat sāīṁ raṭū̃ maiṁ, nāth mujhko ye var do",
-    "english": "{4,5:May I chant}{0,1: Shiv Sai, }{2,3:Sat Sai; }{6:O Lord, }{7,10:grant me}{8,9: this boon}",
+    "english": "{4,5:May I chant}{0,1: Shiv Sai, }{2,3:Sat Sai; }{6:O Lord, }{10:grant }{7:me}{8: this }{9:boon}",
     "words": [
       {
         "roman": "śiv",

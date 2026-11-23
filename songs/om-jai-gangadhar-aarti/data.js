@@ -337,20 +337,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "गिरिशिखरे",
+        "text": "गिरि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कल्पद्रुमविपिने",
+        "text": "शिखरे",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कल्प",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "द्रुम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "विपिने",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "kailāśe giriśikhare kalpadrumavipine",
-    "english": "{0:On Mount Kailāsa, }{1:on the mountain summit, }{2:in the forest of wish-fulfilling trees,}",
+    "english": "{0:On Mount Kailāsa, }{2:on} {1:the mountain} {2:summit, }{5:in the forest} {3:of wish-fulfilling} {4:trees,}",
     "words": [
       {
         "roman": "kailāśe",
@@ -359,14 +377,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "giriśikhare",
-        "gloss": "on the mountain summit",
+        "roman": "giri",
+        "gloss": "mountain",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kalpadrumavipine",
-        "gloss": "in the forest of wish-fulfilling trees",
+        "roman": "śikhare",
+        "gloss": "on the summit; locative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kalpa",
+        "gloss": "wish-fulfilling",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "druma",
+        "gloss": "trees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vipine",
+        "gloss": "in the forest; locative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -384,14 +420,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कल्पद्रुमविपिने",
+        "text": "कल्प",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "द्रुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "विपिने",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "svāmī kalpadrumavipine",
-    "english": "{0:O Lord, }{1:in the forest of wish-fulfilling trees,}",
+    "english": "{0:O Lord, }{3:in the forest} {1:of wish-fulfilling} {2:trees,}",
     "words": [
       {
         "roman": "svāmī",
@@ -400,8 +448,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kalpadrumavipine",
-        "gloss": "in the forest of wish-fulfilling trees",
+        "roman": "kalpa",
+        "gloss": "wish-fulfilling",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "druma",
+        "gloss": "trees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vipine",
+        "gloss": "in the forest; locative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -419,14 +479,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मधुकरपुञ्जे",
+        "text": "मधुकर",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "पुञ्जे",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "guñjati madhukarapuñje",
-    "english": "{1:where the swarm of honeybees }{0:hums,}",
+    "english": "{2:where the swarm} {1:of honeybees }{0:hums,}",
     "words": [
       {
         "roman": "guñjati",
@@ -435,8 +501,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "madhukarapuñje",
-        "gloss": "in the swarm of honeybees",
+        "roman": "madhukara",
+        "gloss": "honeybees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "puñje",
+        "gloss": "in the swarm; locative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -671,30 +743,90 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "तस्मिँल्ललितसुदेशे",
+        "text": "तस्मिँ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "शालामणिरचिता",
+        "text": "ल्ललित",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "सु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "देशे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "शाला",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मणि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रचिता",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "tasmi~llalitasudeśe śālāmaṇiracitā",
-    "english": "{0:In that lovely, charming place }{1:is a pavilion fashioned of jewels,}",
+    "english": "{0:In that} {1:lovely,} {2:charming} {3:place }{4:is a pavilion} {6:fashioned} {5:of jewels,}",
     "words": [
       {
-        "roman": "tasmi~llalitasudeśe",
-        "gloss": "in that charming, lovely place",
+        "roman": "tasmi~l",
+        "gloss": "in that; tasmin, joined n + l",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "śālāmaṇiracitā",
-        "gloss": "a pavilion fashioned of jewels",
+        "roman": "lalita",
+        "gloss": "lovely",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "su",
+        "gloss": "charming; good",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "deśe",
+        "gloss": "in the place; locative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śālā",
+        "gloss": "pavilion",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "maṇi",
+        "gloss": "jewels",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "racitā",
+        "gloss": "fashioned; feminine nominative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -712,14 +844,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "शालामणिरचिता",
+        "text": "शाला",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मणि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रचिता",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "svāmī śālāmaṇiracitā",
-    "english": "{0:O Lord, }{1:a pavilion fashioned of jewels,}",
+    "english": "{0:O Lord, }{1:a pavilion} {3:fashioned} {2:of jewels,}",
     "words": [
       {
         "roman": "svāmī",
@@ -728,8 +872,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śālāmaṇiracitā",
-        "gloss": "a pavilion fashioned of jewels",
+        "roman": "śālā",
+        "gloss": "pavilion",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "maṇi",
+        "gloss": "jewels",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "racitā",
+        "gloss": "fashioned; feminine nominative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -829,14 +985,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रञ्जितनिजमीशम्",
+        "text": "रञ्जित",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मीशम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "krīḍāṃ racayati bhūṣāṃ rañjitanijamīśam",
-    "english": "{1:She performs }{0:divine play }{2:and arranges her ornaments, }{3:delighting her own Lord,}",
+    "english": "{1:She performs }{0:divine play }{2:and arranges her ornaments, }{3:delighting} {4:her own} {5:Lord,}",
     "words": [
       {
         "roman": "krīḍāṃ",
@@ -857,8 +1025,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rañjitanijamīśam",
-        "gloss": "having delighted her own Lord [Śiva]",
+        "roman": "rañjita",
+        "gloss": "having delighted",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nijam",
+        "gloss": "her own",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "īśam",
+        "gloss": "Lord [Śiva]; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -876,14 +1056,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रञ्जितनिजमीशम्",
+        "text": "रञ्जित",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मीशम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "svāmī rañjitanijamīśam",
-    "english": "{0:O Lord, }{1:delighting her own Lord,}",
+    "english": "{0:O Lord, }{1:delighting} {2:her own} {3:Lord,}",
     "words": [
       {
         "roman": "svāmī",
@@ -892,8 +1084,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rañjitanijamīśam",
-        "gloss": "having delighted her own Lord",
+        "roman": "rañjita",
+        "gloss": "having delighted",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nijam",
+        "gloss": "her own",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "īśam",
+        "gloss": "Lord [Śiva]; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -905,18 +1109,54 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "इन्द्रादिकसुरसेवित",
+        "text": "इन्द्रा",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "दिक",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सुर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सेवित",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "indrādikasurasevita",
-    "english": "{0:served by the gods headed by Indra,}",
+    "english": "{3:served by} {2:the gods} {1:headed by} {0:Indra,}",
     "words": [
       {
-        "roman": "indrādikasurasevita",
-        "gloss": "O one served by the gods headed by Indra",
+        "roman": "indr",
+        "gloss": "the god Indra; joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādika",
+        "gloss": "headed by; beginning with",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sura",
+        "gloss": "gods",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sevita",
+        "gloss": "O one served by",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1116,18 +1356,42 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "सप्तस्वरसहिता",
+        "text": "सप्त",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "स्वर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सहिता",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "saptasvarasahitā",
-    "english": "{0:endowed with the seven notes.}",
+    "english": "{2:endowed with} {0:the seven} {1:notes.}",
     "words": [
       {
-        "roman": "saptasvarasahitā",
-        "gloss": "endowed with the seven musical notes [sa, ri, ga, ma, pa, dha, ni]",
+        "roman": "sapta",
+        "gloss": "seven",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "svara",
+        "gloss": "musical notes [sa, ri, ga, ma, pa, dha, ni]",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sahitā",
+        "gloss": "endowed with; feminine nominative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1387,14 +1651,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नूपुरमुज्ज्वलिता",
+        "text": "नूपुर",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "मुज्ज्वलिता",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "ruṇa ruṇa caraṇe racayati nūpuramujjvalitā",
-    "english": "{0:Ruṇa, }{1:ruṇa—}{2:upon her feet }{4:the radiant maiden }{3:makes }{4:her ankle-bells chime,}",
+    "english": "{0:Ruṇa, }{1:ruṇa—}{2:upon her feet }{5:the radiant maiden }{3:makes }{4:her ankle-bells} {3:chime,}",
     "words": [
       {
         "roman": "ruṇa",
@@ -1421,8 +1691,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nūpuramujjvalitā",
-        "gloss": "the radiant dancer [producing the chime of] ankle-bells",
+        "roman": "nūpuram",
+        "gloss": "ankle-bells; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ujjvalitā",
+        "gloss": "the radiant dancer; feminine nominative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1440,14 +1716,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नूपुरमुज्ज्वलिता",
+        "text": "नूपुर",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मुज्ज्वलिता",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "svāmī nūpuramujjvalitā",
-    "english": "{0:O Lord, }{1:the radiant maiden with chiming ankle-bells,}",
+    "english": "{0:O Lord, }{2:the radiant maiden} {1:with chiming ankle-bells,}",
     "words": [
       {
         "roman": "svāmī",
@@ -1456,8 +1738,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nūpuramujjvalitā",
-        "gloss": "the radiant dancer [sounding] ankle-bells",
+        "roman": "nūpuram",
+        "gloss": "[sounding] ankle-bells; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ujjvalitā",
+        "gloss": "the radiant dancer; feminine nominative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1551,30 +1839,78 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "सुन्दरजटाकलापं",
+        "text": "सुन्दर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "पावकयुतभालम्",
+        "text": "जटा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "कलापं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पावक",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "युत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भालम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "sundarajaṭākalāpaṃ pāvakayutabhālam",
-    "english": "{0:Him with a beautiful crown of matted locks, }{1:whose forehead bears fire,}",
+    "english": "{2:Him with} {0:a beautiful} {2:crown} {1:of matted locks, }{5:whose forehead} {4:bears} {3:fire,}",
     "words": [
       {
-        "roman": "sundarajaṭākalāpaṃ",
-        "gloss": "[him who has] a beautiful mass of matted hair",
+        "roman": "sundara",
+        "gloss": "beautiful",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "pāvakayutabhālam",
-        "gloss": "[him who has] a forehead endowed with fire",
+        "roman": "jaṭā",
+        "gloss": "matted hair",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kalāpaṃ",
+        "gloss": "mass: [him who has] it, accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāvaka",
+        "gloss": "fire",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yuta",
+        "gloss": "endowed with",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhālam",
+        "gloss": "forehead: [him who has] it, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1592,14 +1928,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पावकयुतभालम्",
+        "text": "पावक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "युत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भालम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "svāmī pāvakayutabhālam",
-    "english": "{0:O Lord, }{1:whose forehead bears fire,}",
+    "english": "{0:O Lord, }{3:whose forehead} {2:bears} {1:fire,}",
     "words": [
       {
         "roman": "svāmī",
@@ -1608,8 +1956,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pāvakayutabhālam",
-        "gloss": "[him who has] a forehead endowed with fire",
+        "roman": "pāvaka",
+        "gloss": "fire",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yuta",
+        "gloss": "endowed with",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhālam",
+        "gloss": "forehead: [him who has] it, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1621,18 +1981,42 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "डमरुत्रिशूलपिनाकं",
+        "text": "डमरु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "त्रिशूल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पिनाकं",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "ḍamarutriśūlapinākaṃ",
-    "english": "{0:bearing the ḍamaru drum, trident, and Pināka bow,}",
+    "english": "{2:bearing} {0:the ḍamaru drum,} {1:trident,} {2:and Pināka bow,}",
     "words": [
       {
-        "roman": "ḍamarutriśūlapinākaṃ",
-        "gloss": "[him holding] the ḍamaru drum, trident, and Pināka bow",
+        "roman": "ḍamaru",
+        "gloss": "the ḍamaru drum",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "triśūla",
+        "gloss": "trident",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pinākaṃ",
+        "gloss": "the Pināka bow: [him holding] these, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1644,18 +2028,54 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "करधृतनृकपालम्",
+        "text": "कर",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "धृत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नृ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कपालम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "karadhṛtanṛkapālam",
-    "english": "{0:and holding a human skull in His hand.}",
+    "english": "{1:and holding} {2:a human} {3:skull} {0:in His hand.}",
     "words": [
       {
-        "roman": "karadhṛtanṛkapālam",
-        "gloss": "[him who has] a human skull held in his hand",
+        "roman": "kara",
+        "gloss": "hand",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhṛta",
+        "gloss": "held",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nṛ",
+        "gloss": "human",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kapālam",
+        "gloss": "skull: [him who has] it, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1685,14 +2105,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पन्नगमुपवीतम्",
+        "text": "पन्नग",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "मुपवीतम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "muṇḍai racayati mālāṃ pannagamupavītam",
-    "english": "{0:With severed heads }{1:He fashions }{2:a garland, }{3:wearing a serpent as the sacred thread,}",
+    "english": "{0:With severed heads }{1:He fashions }{2:a garland, }{3:wearing a serpent} {4:as the sacred thread,}",
     "words": [
       {
         "roman": "muṇḍai",
@@ -1713,8 +2139,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pannagamupavītam",
-        "gloss": "a serpent as the sacred thread",
+        "roman": "pannagam",
+        "gloss": "a serpent; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "upavītam",
+        "gloss": "the sacred thread; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1732,14 +2164,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पन्नगमुपवीतम्",
+        "text": "पन्नग",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मुपवीतम्",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "svāmī pannagamupavītam",
-    "english": "{0:O Lord, }{1:wearing a serpent as the sacred thread,}",
+    "english": "{0:O Lord, }{1:wearing a serpent} {2:as the sacred thread,}",
     "words": [
       {
         "roman": "svāmī",
@@ -1748,8 +2186,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pannagamupavītam",
-        "gloss": "a serpent as the sacred thread",
+        "roman": "pannagam",
+        "gloss": "a serpent; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "upavītam",
+        "gloss": "the sacred thread; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1796,18 +2240,42 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "रूपमतिललितम्",
+        "text": "रूप",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "मति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ललितम्",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "rūpamatilalitam",
-    "english": "{0:of exceedingly charming form.}",
+    "english": "{0:of} {1:exceedingly} {2:charming} {0:form.}",
     "words": [
       {
-        "roman": "rūpamatilalitam",
-        "gloss": "a form exceedingly charming; most lovely appearance",
+        "roman": "rūpam",
+        "gloss": "form; appearance",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ati",
+        "gloss": "exceedingly",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "lalitam",
+        "gloss": "charming; lovely",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1819,30 +2287,78 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "सुन्दरसकलशरीरे",
+        "text": "सुन्दर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कृतभस्माभरणम्",
+        "text": "सकल",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "शरीरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कृत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भस्मा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भरणम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "sundarasakalaśarīre kṛtabhasmābharaṇam",
-    "english": "{0:Upon His entire beautiful body }{1:He has made holy ash His ornament,}",
+    "english": "{2:Upon His} {1:entire} {0:beautiful} {2:body }{3:He has made} {4:holy ash} {5:His ornament,}",
     "words": [
       {
-        "roman": "sundarasakalaśarīre",
-        "gloss": "upon his beautiful entire body",
+        "roman": "sundara",
+        "gloss": "beautiful",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kṛtabhasmābharaṇam",
-        "gloss": "[him who has] made sacred ash his adornment",
+        "roman": "sakala",
+        "gloss": "entire",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śarīre",
+        "gloss": "upon his body; locative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṛta",
+        "gloss": "made",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhasm",
+        "gloss": "sacred ash; bhasma, joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ābharaṇam",
+        "gloss": "adornment: [him who has] it, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1860,14 +2376,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कृतभस्माभरणम्",
+        "text": "कृत",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "भस्मा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भरणम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "svāmī kṛtabhasmābharaṇam",
-    "english": "{0:O Lord, }{1:who has made holy ash His ornament,}",
+    "english": "{0:O Lord, }{1:who has made} {2:holy ash} {3:His ornament,}",
     "words": [
       {
         "roman": "svāmī",
@@ -1876,8 +2404,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kṛtabhasmābharaṇam",
-        "gloss": "[him who has] made sacred ash his adornment",
+        "roman": "kṛta",
+        "gloss": "made",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhasm",
+        "gloss": "sacred ash; bhasma, joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ābharaṇam",
+        "gloss": "adornment: [him who has] it, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1895,14 +2435,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "वृषभध्वजरूपं",
+        "text": "वृषभ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ध्वज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रूपं",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "iti vṛṣabhadhvajarūpaṃ",
-    "english": "{0:such is }{1:the form of the Bull-bannered Lord,}",
+    "english": "{0:such is }{3:the form} {1:of the Bull-}{2:bannered Lord,}",
     "words": [
       {
         "roman": "iti",
@@ -1911,8 +2463,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vṛṣabhadhvajarūpaṃ",
-        "gloss": "the form of the bull-bannered Lord [Śiva]",
+        "roman": "vṛṣabha",
+        "gloss": "bull",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhvaja",
+        "gloss": "banner: the bull-bannered Lord [Śiva]",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rūpaṃ",
+        "gloss": "form; accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1924,18 +2488,42 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "तापत्रयहरणम्",
+        "text": "ताप",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "त्रय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "हरणम्",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "tāpatrayaharaṇam",
-    "english": "{0:the remover of the threefold suffering.}",
+    "english": "{2:the remover} {1:of the threefold} {0:suffering.}",
     "words": [
       {
-        "roman": "tāpatrayaharaṇam",
-        "gloss": "the destroyer of the threefold afflictions [ādhyātmika, ādhibhautika, ādhidaivika]",
+        "roman": "tāpa",
+        "gloss": "suffering; affliction",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "traya",
+        "gloss": "threefold [ādhyātmika, ādhibhautika, ādhidaivika]",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "haraṇam",
+        "gloss": "remover; destroyer",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2123,36 +2711,84 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "अतिमृदुचरणसरोजं",
+        "text": "अति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "हृत्कमले",
+        "text": "मृदु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "धृत्वा",
+        "text": "चरण",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सरोजं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हृ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "त्कमले",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "धृत्वा",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "atimṛducaraṇasarojaṃ hṛtkamale dhṛtvā",
-    "english": "{2:Holding firmly }{0:His exceedingly tender lotus feet }{1:within the lotus of the heart,}",
+    "english": "{6:Holding firmly }{0:His exceedingly} {1:tender} {3:lotus} {2:feet }{5:within the lotus} {4:of the heart,}",
     "words": [
       {
-        "roman": "atimṛducaraṇasarojaṃ",
-        "gloss": "the exceedingly tender lotus feet",
+        "roman": "ati",
+        "gloss": "exceedingly",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "hṛtkamale",
-        "gloss": "in the lotus of the heart",
+        "roman": "mṛdu",
+        "gloss": "tender",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "caraṇa",
+        "gloss": "feet",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sarojaṃ",
+        "gloss": "lotus; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hṛt",
+        "gloss": "heart",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kamale",
+        "gloss": "in the lotus; locative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2499,54 +3135,114 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "कर्पूरगौरं",
+        "text": "कर्पूर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "करुणावतारं",
+        "text": "गौरं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "संसारसारं",
+        "text": "करुणा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "भुजगेन्द्रहारम्",
+        "text": "वतारं",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "संसार",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सारं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भुजगे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "न्द्र",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "हारम्",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "karpūragauraṃ karuṇāvatāraṃ saṃsārasāraṃ bhujagendrahāram",
-    "english": "{0:Him who is pure white as camphor, }{1:the embodiment of compassion, }{2:the essence of worldly existence, }{3:garlanded with the king of serpents,}",
+    "english": "{1:Him who is pure white} {0:as camphor, }{3:the embodiment} {2:of compassion, }{5:the essence} {4:of worldly existence, }{8:garlanded} {7:with the king} {6:of serpents,}",
     "words": [
       {
-        "roman": "karpūragauraṃ",
-        "gloss": "pure white like camphor",
+        "roman": "karpūra",
+        "gloss": "camphor",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "karuṇāvatāraṃ",
-        "gloss": "the very embodiment of compassion",
+        "roman": "gauraṃ",
+        "gloss": "pure white; accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "saṃsārasāraṃ",
-        "gloss": "the essential core of worldly existence",
-        "concept_key": "samsara",
+        "roman": "karuṇ",
+        "gloss": "compassion; karuṇā, joined ā + a",
+        "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhujagendrahāram",
-        "gloss": "[him who has] the king of serpents as his garland",
+        "roman": "āvatāraṃ",
+        "gloss": "embodiment; avatāra, accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "saṃsāra",
+        "gloss": "worldly existence",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sāraṃ",
+        "gloss": "essential core; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhujag",
+        "gloss": "serpents; bhujaga, joined a + i",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "endra",
+        "gloss": "king; indra",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hāram",
+        "gloss": "garland: [him who has] it, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2558,48 +3254,78 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "सदावसन्तं",
+        "text": "सदा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "हृदयारविन्दे",
+        "text": "वसन्तं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भवं",
+        "text": "हृदया",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "भवानीसहितं",
+        "text": "रविन्दे",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "नमामि",
+        "text": "भवं",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "भवानी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सहितं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नमामि",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "sadāvasantaṃ hṛdayāravinde bhavaṃ bhavānīsahitaṃ namāmi",
-    "english": "{0:ever dwelling }{1:in the lotus of the heart—}{2:to Lord Bhava, }{3:together with Bhavānī, }{4:I bow.}",
+    "english": "{0:ever} {1:dwelling }{3:in the lotus} {2:of the heart—}{4:to Lord Bhava, }{6:together with} {5:Bhavānī, }{7:I bow.}",
     "words": [
       {
-        "roman": "sadāvasantaṃ",
-        "gloss": "eternally dwelling; ever abiding",
+        "roman": "sadā",
+        "gloss": "ever; eternally",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "hṛdayāravinde",
-        "gloss": "in the lotus of the heart",
+        "roman": "vasantaṃ",
+        "gloss": "dwelling; accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hṛday",
+        "gloss": "heart; hṛdaya, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āravinde",
+        "gloss": "in the lotus; aravinda, locative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2610,8 +3336,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhavānīsahitaṃ",
-        "gloss": "together with Bhavānī, Pārvatī as the consort of Bhava (Śiva)",
+        "roman": "bhavānī",
+        "gloss": "Pārvatī, consort of Bhava (Śiva)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sahitaṃ",
+        "gloss": "together with; accusative",
         "concept_key": "",
         "preserve_in_english": false
       },

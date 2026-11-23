@@ -694,20 +694,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "బిరుదాంకితుడవు",
+        "text": "బిరుదాం",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "కావా",
+        "text": "కితుడవు",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "కావా",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "śaraṇāgata trāṇa birudāṅkituḍavu kāvā",
-    "english": "{3:Do you not }{2:bear the title }{1:“Protector of }{0:those who seek refuge”}?",
+    "english": "{4:Do you not }{3:bear} {2:the title }{1:“Protector of }{0:those who seek refuge”}?",
     "words": [
       {
         "roman": "śaraṇāgata",
@@ -722,8 +728,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "birudāṅkituḍavu",
-        "gloss": "you bear the title; you are marked by the title",
+        "roman": "birud",
+        "gloss": "title; biruda, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āṅkituḍavu",
+        "gloss": "you bear; you are marked by: aṅkituḍavu",
         "concept_key": "",
         "preserve_in_english": false
       },

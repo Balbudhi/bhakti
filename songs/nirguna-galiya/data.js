@@ -2503,7 +2503,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O ho anhad kā maidān mẽ mhārī helī, mhārā sāhib jī kī sej",
-    "english": "{0,1:O, }{5:in }{4:the vast expanse }{2,3:of the unstruck sound, }{6:my }{7:companion, }{12:is the bed }{8,11:of my }{9,10:Lord.}",
+    "english": "{0,1:O, }{5:in }{4:the vast expanse }{2,3:of the unstruck sound, }{6:my }{7:companion, }{12:is the bed }{11:of }{8:my }{9,10:Lord.}",
     "words": [
       {
         "roman": "O",
@@ -2664,7 +2664,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ anhad kā maidān mẽ mhārī helī, mhārā sāhib jī kī sej",
-    "english": "{0:Yes, }{4:in }{3:the vast expanse }{1,2:of the unstruck sound, }{5:my }{6:companion, }{11:is the bed }{7,10:of my }{8,9:Lord.}",
+    "english": "{0:Yes, }{4:in }{3:the vast expanse }{1,2:of the unstruck sound, }{5:my }{6:companion, }{11:is the bed }{10:of }{7:my }{8,9:Lord.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2956,7 +2956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ kahai Kabīr Dharmadās se mhārī helī, na to mare na būṛhā hoy mhārī helī o, cālo mhārā deś",
-    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion: }{7,8:one neither }{9:dies }{10:nor }{11,12:grows old, }{15:O }{13:my }{14:companion, }{16:let us go }{17:to my }{18:country.}",
+    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion: }{7,8:one neither }{9:dies }{10:nor }{12:grows }{11:old, }{15:O }{13:my }{14:companion, }{16:let us go }{17:to my }{18:country.}",
     "words": [
       {
         "roman": "Hā̃",

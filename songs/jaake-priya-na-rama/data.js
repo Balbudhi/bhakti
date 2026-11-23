@@ -411,14 +411,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मुद-मंगलकारी",
+        "text": "मुद-",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मंगल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कारी",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Bhaye muda-maṅgalakārī",
-    "english": "{0:and they became }{1:bringers of joy and auspicious blessing.}",
+    "english": "{0:and they became }{3:bringers }{1:of joy }{2:and auspicious blessing.}",
     "words": [
       {
         "roman": "Bhaye",
@@ -427,8 +439,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "muda-maṅgalakārī",
-        "gloss": "bringers of joy and auspicious welfare",
+        "roman": "muda",
+        "gloss": "joy",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "maṅgala",
+        "gloss": "auspicious welfare",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kārī",
+        "gloss": "bringers of; making",
         "concept_key": "",
         "preserve_in_english": false
       }

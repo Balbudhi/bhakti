@@ -372,14 +372,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "পথতরুলুণ্ঠিত",
+        "text": "পথ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "তরু",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "লুণ্ঠিত",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "damakata bidyuta pathataruluṇṭhita",
-    "english": "{1:lightning}{0: flashes; }{2:the roadside trees are battered,}",
+    "english": "{1:lightning}{0: flashes; }{2:the roadside }{3:trees }{4:are battered,}",
     "words": [
       {
         "roman": "damakata",
@@ -394,8 +406,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pathataruluṇṭhita",
-        "gloss": "the roadside trees are torn down (patha-taru-luṇṭhita)",
+        "roman": "patha",
+        "gloss": "roadside; road, path",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "taru",
+        "gloss": "trees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "luṇṭhita",
+        "gloss": "torn down, battered; rolled to the ground",
         "concept_key": "",
         "preserve_in_english": false
       }

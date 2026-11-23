@@ -171,6 +171,26 @@ monotonic/coverage gate after occurrence 16, leaving occurrences 17–28 invalid
 for about $0.0029 on that call. Treat Lite timing as a cost probe only, not a
 publishable start source.
 
+## Word links
+
+A click opens one word. English is linked phrase by phrase to the words it renders;
+a segment carries three indices only when those words make one short unit, and never
+four or more. A compound or sandhi string whose members English renders separately is
+divided into those members, in romanization and in native script (`sourceWords` may
+hold consecutive pieces of one native word, cut at syllable boundaries), each with its
+own meaning. Names and fixed epithets stay whole. `scripts/audit_bhakti_contract.py`
+checks coverage and order; linking must still be read, not inferred from position.
+
+## Meaning before wording
+
+The English carries what the line says and does: its image, agency, wordplay, feeling
+and argument, in natural English that reads well as it is sung. Literal means that
+nothing is lost or added, not that Sanskrit or Hindi word order and construction are
+copied. For Sanskrit, settle senses with the prakriya kit
+(`/Users/eeshan/Dev/prakriya/docs/GITA_KIT.md`) and follow the English procedure in
+vedanta-timeline `docs/gita_briefs/ENGLISH_CRAFT.md`; grammatical correctness alone is
+not approval.
+
 ## Required song data
 
 Every `songs/<slug>/data.js` supplies the same globals:

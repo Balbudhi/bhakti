@@ -305,7 +305,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhagavatī kē caraṇōṁ mēṁ bhajanōṁ kī bēlā hai. bhajanōṁ kē dvārā mā̃ bhagavatī kī stuti karēṅgē. sabhī bhajanōṁ mēṁ sāth dēṅgē. tō maiṁ nivēdan kar rahā hū̃ śrī manindar jī sē, vah apnā ēk bhajan mā̃ kē caraṇōṁ mēṁ arpit karēṅgē. śrī manindar jī.",
-    "english": "{7:It is }{6:the hour }{4,5:of hymns }{1,2,3:at the feet }{0:of Bhagavati. }{9,10:Through }{8:hymns }{14,15:we shall praise }{11:Mother }{12,13:Bhagavati. }{16:Everyone }{19,20:will join }{17,18:in the hymns. }{21:So }{22:I }{23,24,25,26:am requesting }{27:Shri }{28:Manindar }{29:Ji }{30:that }{31:he }{39,40:will offer }{33:a }{34:hymn }{32:of his own }{36,37,38:at the feet }{35:of Mother. }{41:Shri }{42:Manindar }{43:Ji.}",
+    "english": "{7:It is }{6:the hour }{5:of }{4:hymns }{1,2,3:at the feet }{0:of Bhagavati. }{9,10:Through }{8:hymns }{14,15:we shall praise }{11:Mother }{12,13:Bhagavati. }{16:Everyone }{19,20:will join }{17,18:in the hymns. }{21:So }{22:I }{26:am }{23,24,25:requesting }{27:Shri }{28:Manindar }{29:Ji }{30:that }{31:he }{39,40:will offer }{33:a }{34:hymn }{32:of his own }{36,37,38:at the feet }{35:of Mother. }{41:Shri }{42:Manindar }{43:Ji.}",
     "words": [
       {
         "roman": "bhagavatī",
@@ -3466,7 +3466,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "palkōṁ kē siṁhāsan pē maiṁnē tumkō biṭhāyā hai",
-    "english": "{3:Upon }{2:the throne }{1:of }{0:my eyelashes, }{4:I }{6,7:have seated }{5:you}",
+    "english": "{3:Upon }{2:the throne }{1:of }{0:my eyelashes, }{4:I }{7:have }{6:seated }{5:you}",
     "words": [
       {
         "roman": "palkōṁ",
@@ -3835,7 +3835,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hā̃ hā̃ palkōṁ kē siṁhāsan pē maiṁnē tumkō biṭhāyā hai",
-    "english": "{0:Yes, }{1:yes, }{5:upon }{4:the throne }{3:of }{2:my eyelashes, }{6:I }{8,9:have seated }{7:you}",
+    "english": "{0:Yes, }{1:yes, }{5:upon }{4:the throne }{3:of }{2:my eyelashes, }{6:I }{9:have }{8:seated }{7:you}",
     "words": [
       {
         "roman": "hā̃",
@@ -5487,7 +5487,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apnī bhakti kā var dījiē mā̃",
-    "english": "{4:Please grant }{3:the boon }{1,2:of devotion }{0:to you, }{5:Mother}",
+    "english": "{4:Please grant }{3:the boon }{2:of }{1:devotion }{0:to you, }{5:Mother}",
     "words": [
       {
         "roman": "apnī",
@@ -5576,7 +5576,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hō apnī bhakti kā var dījiē mā̃",
-    "english": "{0:Oh, }{5:please grant }{4:the boon }{2,3:of devotion }{1:to you, }{6:Mother}",
+    "english": "{0:Oh, }{5:please grant }{4:the boon }{3:of }{2:devotion }{1:to you, }{6:Mother}",
     "words": [
       {
         "roman": "hō",
@@ -5683,7 +5683,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ tō ik pāgal hū̃ jagtā hū̃ rātōṁ kō",
-    "english": "{0:I }{4:am }{1:merely }{2,3:a madman, }{5,6:staying awake }{8:through }{7:the nights}",
+    "english": "{0:I }{4:am }{1:merely }{2:a }{3:madman, }{5,6:staying awake }{8:through }{7:the nights}",
     "words": [
       {
         "roman": "maiṁ",
@@ -6201,7 +6201,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hō maiṁ tō ik pāgal hū̃ jagtā hū̃ rātōṁ kō",
-    "english": "{0:Oh, }{1:I }{5:am }{2:merely }{3,4:a madman, }{6,7:staying awake }{9:through }{8:the nights}",
+    "english": "{0:Oh, }{1:I }{5:am }{2:merely }{3:a }{4:madman, }{6,7:staying awake }{9:through }{8:the nights}",
     "words": [
       {
         "roman": "hō",
@@ -6332,7 +6332,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hā̃ maiṁ tō ik pāgal hū̃ jagtā hū̃ rātōṁ kō",
-    "english": "{0:Yes, }{1:I }{5:am }{2:merely }{3,4:a madman, }{6,7:staying awake }{9:through }{8:the nights}",
+    "english": "{0:Yes, }{1:I }{5:am }{2:merely }{3:a }{4:madman, }{6,7:staying awake }{9:through }{8:the nights}",
     "words": [
       {
         "roman": "hā̃",
@@ -6653,7 +6653,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ō tērī kṛpā mā̃ ham par hōnī cāhiyē",
-    "english": "{0:O }{3:Mother, }{1:your }{2:grace }{6,7:should be }{5:upon }{4:us}",
+    "english": "{0:O }{3:Mother, }{1:your }{2:grace }{7:should }{6:be }{5:upon }{4:us}",
     "words": [
       {
         "roman": "ō",
@@ -6754,7 +6754,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tērī kṛpā mā̃ ham par hōnī cāhiyē",
-    "english": "{0:Your }{1:grace, }{2:Mother, }{5,6:should be }{4:upon }{3:us}",
+    "english": "{0:Your }{1:grace, }{2:Mother, }{6:should }{5:be }{4:upon }{3:us}",
     "words": [
       {
         "roman": "tērī",
@@ -6861,7 +6861,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hā̃ hā̃ tērī kṛpā mā̃ ham par hōnī cāhiyē",
-    "english": "{0:Yes, }{1:yes, }{2:your }{3:grace, }{4:Mother, }{7,8:should be }{6:upon }{5:us}",
+    "english": "{0:Yes, }{1:yes, }{2:your }{3:grace, }{4:Mother, }{8:should }{7:be }{6:upon }{5:us}",
     "words": [
       {
         "roman": "hā̃",
@@ -7081,7 +7081,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hā̃ tērī kṛpā mā̃ ham par hōnī cāhiyē",
-    "english": "{0:Yes, }{1:your }{2:grace, }{3:Mother, }{6,7:should be }{5:upon }{4:us}",
+    "english": "{0:Yes, }{1:your }{2:grace, }{3:Mother, }{7:should }{6:be }{5:upon }{4:us}",
     "words": [
       {
         "roman": "hā̃",
@@ -7574,7 +7574,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaykārā mā̃ śērōṁvālī kā bōl saccē darabār kī jay!",
-    "english": "{0:Victory shout }{1,3:of Mother }{2:Lion-Rider, }{4:proclaim }{8:victory }{7:to the }{5:true }{6:court!}",
+    "english": "{0:Victory shout }{3:of }{1:Mother }{2:Lion-Rider, }{4:proclaim }{8:victory }{7:to the }{5:true }{6:court!}",
     "words": [
       {
         "roman": "jaykārā",

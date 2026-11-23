@@ -369,7 +369,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asī hā̃ gulām tere, tū saratāj mā̃",
-    "english": "{0,1:We are}{3: your}{2: servants;}{4: you}{5: are our crown,}{6: Mother.}",
+    "english": "{0:We }{1:are}{3: your}{2: servants;}{4: you}{5: are our crown,}{6: Mother.}",
     "words": [
       {
         "roman": "asī",
@@ -447,7 +447,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū hai saratāj mā̃,",
-    "english": "{0,1:You are}{2: our crown,}{3: Mother;}",
+    "english": "{0:You }{1:are}{2: our crown,}{3: Mother;}",
     "words": [
       {
         "roman": "tū",
@@ -987,7 +987,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "janmā̃ tõ bhukkhe asī dātī tere pyār de",
-    "english": "{0,1:For lifetimes}{3: we}{2: have hungered}{5,6,7: for your love,}{4: O Giver.}",
+    "english": "{1:For }{0:lifetimes}{3: we}{2: have hungered}{5,6,7: for your love,}{4: O Giver.}",
     "words": [
       {
         "roman": "janmā̃",
@@ -1383,7 +1383,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ik vārī kar de nigāh jitthe mehar dī",
-    "english": "{0,1:Just once,}{2,3: cast}{4: a glance}{6,7: of grace}{5:—wherever it falls,}",
+    "english": "{0,1:Just once,}{2,3: cast}{4: a glance}{7: of }{6:grace}{5:—wherever it falls,}",
     "words": [
       {
         "roman": "ik",
@@ -1551,7 +1551,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mukk jāū āpe gall caurāsiyā̃ de pher dī",
-    "english": "{3,4,5,6,7:The cycle of 8.4 million births}{0,1: will end}{2: of itself.}",
+    "english": "{3:The }{6:cycle }{7:of }{4,5:8.4 million births}{1: will }{0:end}{2: of itself.}",
     "words": [
       {
         "roman": "mukk",
@@ -1635,7 +1635,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caurāsiyā̃ de pher dī,",
-    "english": "{0,1,2,3:The cycle of 8.4 million births,}",
+    "english": "{2,3:The cycle of }{0,1:8.4 million births,}",
     "words": [
       {
         "roman": "caurāsiyā̃",

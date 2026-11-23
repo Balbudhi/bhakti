@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Mā̃ Ne Rauṇkā̃ Lagāīā̃ Kamāl Ho Giā",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Punjabi",
     "Hindi"
@@ -1121,7 +1121,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "deṇ mā̃ nū̃ vadhāīā̃ kamāl ho giā",
-    "english": "{0:To offer}{3: congratulations}{1,2: to Mother}{4,5,6:—what a marvel!}",
+    "english": "{0:To offer}{3: congratulations}{2: to }{1:Mother}{4,5,6:—what a marvel!}",
     "words": [
       {
         "roman": "deṇ",
@@ -1223,7 +1223,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āe deṇ mā̃ nū̃ vadhāīā̃ kamāl ho giā",
-    "english": "{0:They have come}{1: to offer}{4: congratulations}{2,3: to Mother}{5,6,7:—what a marvel!}",
+    "english": "{0:They have come}{1: to offer}{4: congratulations}{3: to }{2:Mother}{5,6,7:—what a marvel!}",
     "words": [
       {
         "roman": "āe",
@@ -1547,7 +1547,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "us gufā de viccõ maiyā rāṇī āī bhagto āp hai",
-    "english": "{0,1,2,3:From within that cave,}{4,5: Mother the Queen}{6,9: has come}{8: herself,}{7: O devotees.}",
+    "english": "{2,3:From within }{0:that }{1:cave,}{4: Mother }{5:the Queen}{6,9: has come}{8: herself,}{7: O devotees.}",
     "words": [
       {
         "roman": "us",
@@ -2057,7 +2057,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kañjak rūp 'c ā ke mā̃ ne sabh nū̃ darś dikhāyā",
-    "english": "{3,4:Coming}{0,1,2: in the form of a young girl,}{5,6: Mother}{10: showed}{9: her divine presence}{7,8: to everyone.}",
+    "english": "{3,4:Coming}{0,1,2: in the form of a young girl,}{5,6: Mother}{10: showed}{9: her divine presence}{8: to }{7:everyone.}",
     "words": [
       {
         "roman": "kañjak",
@@ -2195,7 +2195,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sabh nū̃ darś dikhāyā, mā̃ ne sabh nū̃ darś dikhāyā",
-    "english": "{3:She showed}{2: her divine presence}{0,1: to everyone;}{4,5: Mother}{9: showed}{8: her divine presence}{6,7: to everyone.}",
+    "english": "{3:She showed}{2: her divine presence}{1: to }{0:everyone;}{4,5: Mother}{9: showed}{8: her divine presence}{7: to }{6:everyone.}",
     "words": [
       {
         "roman": "sabh",
@@ -3161,7 +3161,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "o mā̃ de dar te",
-    "english": "{0:Oh,}{1,2,3,4: at Mother’s threshold}…",
+    "english": "{0:Oh,}{4: at }{1,2:Mother’s }{3:threshold}…",
     "words": [
       {
         "roman": "o",
@@ -3263,7 +3263,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "o mā̃ de dar te har koī nihāl ho giā",
-    "english": "{0:Oh,}{1,2,3,4: at Mother’s threshold,}{5,6: everyone}{7,8,9: has become blessed and fulfilled.}",
+    "english": "{0:Oh,}{4: at }{1,2:Mother’s }{3:threshold,}{5,6: everyone}{9: has }{8:become }{7:blessed and fulfilled.}",
     "words": [
       {
         "roman": "o",
@@ -3383,7 +3383,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃ de dar te oh nihāl ho giā",
-    "english": "{0,1,2,3:At Mother’s threshold,}{4: that person}{5,6,7: has become blessed and fulfilled.}",
+    "english": "{3:At }{0,1:Mother’s }{2:threshold,}{4: that person}{7: has }{6:become }{5:blessed and fulfilled.}",
     "words": [
       {
         "roman": "mā̃",

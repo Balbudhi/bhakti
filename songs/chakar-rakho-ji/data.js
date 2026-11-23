@@ -103,7 +103,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cākara rākho jī prabhu jī mhāne cākara rākho jī",
-    "english": "{0,1,2:Keep me as a servant, }{3,4:O Lord, }{5,6,7,8:keep me as a servant.}",
+    "english": "{1,2:Keep me }{0:as a servant, }{3,4:O Lord, }{7,8:keep }{5:me }{6:as a servant.}",
     "words": [
       {
         "roman": "cākara",
@@ -347,7 +347,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prabhu jī mhāne cākara rākho jī",
-    "english": "{0,1:O Lord, }{2,3,4,5:keep me as a servant.}",
+    "english": "{0,1:O Lord, }{4,5:keep }{2:me }{3:as a servant.}",
     "words": [
       {
         "roman": "prabhu",
@@ -566,7 +566,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bindrābana kī kuñja galina mẽ",
-    "english": "{0,1,2,3,4:In the bower-lanes of Vrindavan,}",
+    "english": "{4:In the }{2,3:bower-lanes }{1:of }{0:Vrindavan,}",
     "words": [
       {
         "roman": "bindrābana",
@@ -661,7 +661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "govinda līlā gāsū̃ prabhu jī mhāne cākara rākho jī",
-    "english": "{0,1,2:I will sing Govinda's divine play; }{3,4:O Lord, }{5,6,7,8:keep me as a servant.}",
+    "english": "{2:I will sing }{0:Govinda's }{1:divine play; }{3,4:O Lord, }{7,8:keep }{5:me }{6:as a servant.}",
     "words": [
       {
         "roman": "govinda",
@@ -833,7 +833,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mora mukuṭa",
-    "english": "{0,1:Peacock crown.}",
+    "english": "{0:Peacock }{1:crown.}",
     "words": [
       {
         "roman": "mora",
@@ -880,7 +880,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bindrābana mẽ dhenu carāve",
-    "english": "{0,1:In Vrindavan }{2,3:he pastures the cows,}",
+    "english": "{1:In }{0:Vrindavan }{2,3:he pastures the cows,}",
     "words": [
       {
         "roman": "bindrābana",
@@ -969,7 +969,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mohana muralī vālā prabhu jī mhāne cākara rākho jī",
-    "english": "{0,1,2:Mohan, the flute player; }{3,4:O Lord, }{5,6,7,8:keep me as a servant.}",
+    "english": "{0:Mohan, }{1,2:the flute player; }{3,4:O Lord, }{7,8:keep }{5:me }{6:as a servant.}",
     "words": [
       {
         "roman": "mohana",
@@ -1171,7 +1171,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hare hare nita",
-    "english": "{0,1,2:Lush green, constantly.}",
+    "english": "{1:Lush }{0:green, }{2:constantly.}",
     "words": [
       {
         "roman": "hare",
@@ -1307,7 +1307,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pahara kusumbī sārī prabhu mhāne cākara rākho jī",
-    "english": "{0,1,2:Wearing a safflower-red sari; }{3:O Lord, }{4,5,6,7:keep me as a servant.}",
+    "english": "{0:Wearing }{1:a safflower-red }{2:sari; }{3:O Lord, }{6,7:keep }{4:me }{5:as a servant.}",
     "words": [
       {
         "roman": "pahara",
@@ -1538,7 +1538,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "harī bhajana ko sādhū āyā",
-    "english": "{3,4:Sadhus have come }{0,1,2:for the worship of Hari,}",
+    "english": "{3:Sadhus }{4:have come }{2:for }{1:the worship }{0:of Hari,}",
     "words": [
       {
         "roman": "harī",
@@ -1740,7 +1740,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mīrā ke prabhu gahira gambhīrā sadā raho jī dhīrā",
-    "english": "{0,1,2:Mira's Lord }{3,4:is deep and profound; }{5,6,7,8:always remain patient.}",
+    "english": "{0,1:Mira's }{2:Lord }{3:is deep }{4:and profound; }{5:always }{6,7:remain }{8:patient.}",
     "words": [
       {
         "roman": "mīrā",
@@ -1977,7 +1977,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prema nadī ke tīrā prabhu mhāne cākara rākho jī",
-    "english": "{0,1,2,3:On the bank of the river of love; }{4:O Lord, }{5,6,7,8:keep me as a servant.}",
+    "english": "{3:On the bank }{1,2:of the river }{0:of love; }{4:O Lord, }{7,8:keep }{5:me }{6:as a servant.}",
     "words": [
       {
         "roman": "prema",

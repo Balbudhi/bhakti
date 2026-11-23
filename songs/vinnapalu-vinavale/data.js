@@ -319,14 +319,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "మేలుకొనవేలయ్యా",
+        "text": "మేలుకొనవే",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ల",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "య్యా",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "mellamellane vicci mēlukonavēlayyā",
-    "english": "{0:very gently} {1:open them} {2:and awaken, Lord}.",
+    "english": "{0:very gently} {1:open them} {2:and awaken, }{3:Lord}.",
     "words": [
       {
         "roman": "mellamellane",
@@ -337,8 +350,12 @@ window.SONG_LINES = {
         "gloss": "opening"
       },
       {
-        "roman": "mēlukonavēlayyā",
-        "gloss": "please awaken, Lord"
+        "roman": "mēlukonavēl",
+        "gloss": "please awaken (mēlukonavēla)"
+      },
+      {
+        "roman": "ayyā",
+        "gloss": "Lord"
       }
     ],
     "nameTable": false,
@@ -401,36 +418,63 @@ window.SONG_LINES = {
     "sourceLanguage": "te",
     "sourceWords": [
       {
-        "text": "పంకజభవాదులు",
+        "text": "పంకజ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "నీ",
+        "text": "భ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "పాదాలు",
+        "text": "వా",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "దులు",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "చేరి",
+        "text": "నీ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "పాదాలు",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "చేరి",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "paṅkajabhavādulu nī pādālu cēri",
-    "english": "{0:Brahmā, born from the lotus, and the others}, {3:having approached} {1:your} {2:feet},",
+    "english": "{1:Brahmā, born }{0:from the lotus, }{2:and the others}, {5:having approached} {3:your} {4:feet},",
     "words": [
       {
-        "roman": "paṅkajabhavādulu",
-        "gloss": "the lotus-born Brahmā and the others"
+        "roman": "paṅkaja",
+        "gloss": "the lotus"
+      },
+      {
+        "roman": "bhav",
+        "gloss": "born from; with “lotus”, Brahmā (bhava)"
+      },
+      {
+        "roman": "ādulu",
+        "gloss": "and the others"
       },
       {
         "roman": "nī",
@@ -453,60 +497,77 @@ window.SONG_LINES = {
     "sourceLanguage": "te",
     "sourceWords": [
       {
-        "text": "అంకలనున్నారు",
+        "text": "అంకల",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "లేచి",
+        "text": "ను",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "న్నారు",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "అలమేలుమంగను",
+        "text": "లేచి",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "వేంకటేశుడ",
+        "text": "అలమేలుమంగను",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "రెప్పలు",
+        "text": "వేంకటేశుడ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "విచ్చి",
+        "text": "రెప్పలు",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "చూచి",
+        "text": "విచ్చి",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "లేవయ్యా",
+        "text": "చూచి",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "లేవయ్యా",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "aṅkalanunnāru lēci alamēlumaṅganu vēṅkaṭēśuḍa reppalu vicci cūci lēvayyā",
-    "english": "{0:They are close by}. {3:O Vēṅkaṭeśa}, {1:rise}, {5:open} {4:your eyelids}, {6:look at} {2:Alamēlumaṅga}, {7:and arise}.",
+    "english": "{1:They are }{0:close by}. {4:O Vēṅkaṭeśa}, {2:rise}, {6:open} {5:your eyelids}, {7:look at} {3:Alamēlumaṅga}, {8:and arise}.",
     "words": [
       {
-        "roman": "aṅkalanunnāru",
-        "gloss": "are close by"
+        "roman": "aṅkalan",
+        "gloss": "close by"
+      },
+      {
+        "roman": "unnāru",
+        "gloss": "they are"
       },
       {
         "roman": "lēci",

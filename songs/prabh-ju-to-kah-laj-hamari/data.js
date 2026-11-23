@@ -75,7 +75,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "To kai lāj hamārī",
-    "english": "{3:My }{2:honor }rests {0,1:with you.}",
+    "english": "{3:My }{2:honor }rests {1:with }{0:you.}",
     "words": [
       {
         "roman": "To",
@@ -745,7 +745,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kar gahi lehu ubārī",
-    "english": "{1:take }{0:my hand }and {2,3:rescue me.}",
+    "english": "{1:take }{0:my hand }and {3:rescue }{2:me.}",
     "words": [
       {
         "roman": "Kar",

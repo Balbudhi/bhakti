@@ -186,20 +186,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "పరితాపకరమైన",
+        "text": "పరితాప",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "బ్రతుకేలా",
+        "text": "కరమైన",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "బ్రతు",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "కేలా",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "parula manasunaku āpadalu kalugagajēya paritāpakaramaina bratukēlā",
-    "english": "{5:What use is a life} {4:that brings anguish}, {3:causing} {2:distress} {1:in the hearts} {0:of others}?",
+    "english": "{7:What use is }{6:a life} {5:that brings }{4:anguish}, {3:causing} {2:distress} {1:in the hearts} {0:of others}?",
     "words": [
       {
         "roman": "parula",
@@ -218,12 +230,20 @@ window.SONG_LINES = {
         "gloss": "causing to arise"
       },
       {
-        "roman": "paritāpakaramaina",
-        "gloss": "causing anguish; tormenting"
+        "roman": "paritāpa",
+        "gloss": "anguish, torment"
       },
       {
-        "roman": "bratukēlā",
-        "gloss": "what use is such a life"
+        "roman": "karamaina",
+        "gloss": "causing, that brings"
+      },
+      {
+        "roman": "bratuk",
+        "gloss": "life; bratuku"
+      },
+      {
+        "roman": "ēlā",
+        "gloss": "why, what use"
       }
     ],
     "nameTable": false,
@@ -546,44 +566,56 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "సేవారతికి",
+        "text": "సేవా",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "గాక",
+        "text": "రతికి",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "జీవన",
+        "text": "గాక",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "భ్రాంతి",
+        "text": "జీవన",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "బడు",
+        "text": "భ్రాంతి",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "సిరులేలా",
+        "text": "బడు",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "సిరు",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "లేలా",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "śrī vēṃkaṭēśvaruni sēvāratiki gāka jīvana bhrāṃti baḍu sirulēlā",
-    "english": "{7:What use are riches} {4:for a life} {6:caught} {5:in delusion}, {3:rather than} {2:for delight in serving} {0,1:Śrī Veṅkaṭeśvara}?",
+    "english": "{9:What use are }{8:riches} {5:for a life} {7:caught} {6:in delusion}, {4:rather than} {3:for delight }{2:in serving} {0:Śrī }{1:Veṅkaṭeśvara}?",
     "words": [
       {
         "roman": "śrī",
@@ -594,8 +626,12 @@ window.SONG_LINES = {
         "gloss": "of Veṅkaṭeśvara, Lord of Veṅkaṭa"
       },
       {
-        "roman": "sēvāratiki",
-        "gloss": "for delight in service; sevā plus rati, dative"
+        "roman": "sēvā",
+        "gloss": "service, serving"
+      },
+      {
+        "roman": "ratiki",
+        "gloss": "for delight: dative"
       },
       {
         "roman": "gāka",
@@ -614,8 +650,12 @@ window.SONG_LINES = {
         "gloss": "falling into; becoming caught in"
       },
       {
-        "roman": "sirulēlā",
-        "gloss": "what use are riches"
+        "roman": "sirul",
+        "gloss": "riches; sirulu"
+      },
+      {
+        "roman": "ēlā",
+        "gloss": "why, what use"
       }
     ],
     "nameTable": false,

@@ -556,7 +556,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aba to darśana de do Bābā o Śiraḍī ke Sāīṁ",
-    "english": "{0,1:Now at least }{3,4:grant me }{2:a sacred vision of you, }{5:Baba—}{6:O }{9:Sai }{7,8:of Shirdi.}",
+    "english": "{0,1:Now at least }{3,4:grant me }{2:a sacred vision of you, }{5:Baba—}{6:O }{9:Sai }{8:of }{7:Shirdi.}",
     "words": [
       {
         "roman": "Aba",
@@ -651,7 +651,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O Śiraḍī ke Sāīṁ",
-    "english": "{0:O }{3:Sai }{1,2:of Shirdi.}",
+    "english": "{0:O }{3:Sai }{2:of }{1:Shirdi.}",
     "words": [
       {
         "roman": "O",
@@ -740,7 +740,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Baccoṁ kī kara dekhabhāla Sāīṁ baccoṁ kā kara dhyāna",
-    "english": "{2,3:Take care }{0,1:of the children, }{4:Sai; }{7,8:pay heed }{5,6:to the children.}",
+    "english": "{2,3:Take care }{0,1:of the children, }{4:Sai; }{7:pay }{8:heed }{5,6:to the children.}",
     "words": [
       {
         "roman": "Baccoṁ",
@@ -1001,7 +1001,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṁ to hūṁ majabūra Sāīṁ hai terī kyā majabūrī",
-    "english": "{0,1:I, at least, }{2:am }{3:helpless, }{4:Sai—}{5,6,7,8:what holds you back?}",
+    "english": "{0,1:I, at least, }{2:am }{3:helpless, }{4:Sai—}{7:what }{5,8:holds }{6:you }{8:back?}",
     "words": [
       {
         "roman": "Maiṁ",
@@ -1132,7 +1132,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hātha pakaḍa lo śaraṇa meṁ le lo kara do āśā pūrī",
-    "english": "{0,1,2:Take hold of my hand, }{3,4,5,6:take me into refuge, }{7,8,9,10:fulfill my hope.}",
+    "english": "{2:Take }{1:hold }{0:of my hand, }{5,6:take me }{4:into }{3:refuge, }{7,8,10:fulfill }{9:my hope.}",
     "words": [
       {
         "roman": "Hātha",
@@ -1707,7 +1707,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mujha sā koī pāpī tere dara pe na āyā hogā",
-    "english": "{2,7:Surely no }{3:sinner }{0,1:like me }{9:has ever }{8:come }{4:to your }{5,6:threshold,}",
+    "english": "{2,7:Surely no }{3:sinner }{1:like }{0:me }{9:has ever }{8:come }{4:to your }{5,6:threshold,}",
     "words": [
       {
         "roman": "Mujha",

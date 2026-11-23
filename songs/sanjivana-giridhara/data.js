@@ -177,58 +177,118 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಚಕ್ರತೀರ್ಥವಾಸ",
+        "text": "ಚಕ್ರತೀರ್ಥ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಶಕ್ರಾದ್ಯಮರಾಧೀಶ",
+        "text": "ವಾಸ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ವಕ್ರಾನನ",
+        "text": "ಶಕ್ರಾ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಮಾರುತಿ",
+        "text": "ದ್ಯ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಪಾಹಿಮಾಂ",
+        "text": "ಮರಾ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ಧೀಶ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ವಕ್ರಾ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ನನ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಮಾರುತಿ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ಪಾಹಿ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ಮಾಂ",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "cakratīrthavāsa śakrādyamarādhīśa vakrānana māruti pāhimāṃ",
-    "english": "{0:Dweller at Cakratīrtha}, {1:lord of the immortals headed by Indra}, {2:curved-faced} {3:Māruti}, {4:protect me}.",
+    "english": "{1:Dweller }{0:at Cakratīrtha}, {5:lord }{4:of the immortals }{3:headed by }{2:Indra}, {6:curved-}{7:faced} {8:Māruti}, {9:protect }{10:me}.",
     "words": [
       {
-        "roman": "cakratīrthavāsa",
-        "gloss": "dweller at the sacred river-site Cakratīrtha, beside the Tungabhadrā at Hampi"
+        "roman": "cakratīrtha",
+        "gloss": "Cakratīrtha, the sacred river-site beside the Tungabhadrā at Hampi"
       },
       {
-        "roman": "śakrādyamarādhīśa",
-        "gloss": "lord of the immortals beginning with Śakra, the god Indra"
+        "roman": "vāsa",
+        "gloss": "dweller"
       },
       {
-        "roman": "vakrānana",
-        "gloss": "having a bent or curved face"
+        "roman": "śakr",
+        "gloss": "Śakra, the god Indra; joined a + ā"
+      },
+      {
+        "roman": "ādy",
+        "gloss": "headed by; ādi, “beginning with”, before a vowel"
+      },
+      {
+        "roman": "amar",
+        "gloss": "immortals, gods; amara joined a + a"
+      },
+      {
+        "roman": "ādhīśa",
+        "gloss": "lord; adhīśa"
+      },
+      {
+        "roman": "vakr",
+        "gloss": "curved, bent; vakra joined a + ā"
+      },
+      {
+        "roman": "ānana",
+        "gloss": "faced; having a face"
       },
       {
         "roman": "māruti",
         "gloss": "son of the wind god, a name of Hanumān"
       },
       {
-        "roman": "pāhimāṃ",
-        "gloss": "protect me"
+        "roman": "pāhi",
+        "gloss": "protect; imperative"
+      },
+      {
+        "roman": "māṃ",
+        "gloss": "me"
       }
     ],
     "nameTable": false,
@@ -239,46 +299,82 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಮಂತ್ರಮೂಲಸ್ಥಿತ",
+        "text": "ಮಂತ್ರ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಕಂತುಪಿತನ",
+        "text": "ಮೂಲ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ದೂತ",
+        "text": "ಸ್ಥಿತ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಯಂತ್ರೋದ್ಧಾರಕ",
+        "text": "ಕಂತು",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಪಾಹಿಮಾಂ",
+        "text": "ಪಿತನ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ದೂತ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ಯಂತ್ರೋದ್ಧಾರಕ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ಪಾಹಿ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಮಾಂ",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "mantramūlasthita kantupitana dūta yantrōddhāraka pāhimāṃ",
-    "english": "{0:You who abide at the root of sacred utterance}, {2:messenger} {1:of the father of Kāma}, {3:Yantroddhāraka}, {4:protect me}.",
+    "english": "{2:You who abide }{1:at the root }{0:of sacred utterance}, {5:messenger} {4:of the father }{3:of Kāma}, {6:Yantroddhāraka}, {7:protect }{8:me}.",
     "words": [
       {
-        "roman": "mantramūlasthita",
-        "gloss": "abiding at the root of sacred utterance"
+        "roman": "mantra",
+        "gloss": "sacred utterance"
       },
       {
-        "roman": "kantupitana",
-        "gloss": "of Kāma’s father, Viṣṇu; Kāma is the god of love"
+        "roman": "mūla",
+        "gloss": "root"
+      },
+      {
+        "roman": "sthita",
+        "gloss": "abiding, standing at"
+      },
+      {
+        "roman": "kantu",
+        "gloss": "Kāma, the god of love"
+      },
+      {
+        "roman": "pitana",
+        "gloss": "of the father, Viṣṇu; genitive"
       },
       {
         "roman": "dūta",
@@ -289,8 +385,12 @@ window.SONG_LINES = {
         "gloss": "Hanumān’s form enshrined within a sacred diagram at Cakratīrtha"
       },
       {
-        "roman": "pāhimāṃ",
-        "gloss": "protect me"
+        "roman": "pāhi",
+        "gloss": "protect; imperative"
+      },
+      {
+        "roman": "māṃ",
+        "gloss": "me"
       }
     ],
     "nameTable": false,
@@ -344,7 +444,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mōhana viṭhaladāsa pōṣaka māyā mōhaka bhañjana pāhimāṃ",
-    "english": "{2:Nourisher of the} {1:servants of} {0,1:Mōhana Viṭhala}, {5:destroyer of} {3:deception} {4:and delusion}, {6:protect me}.",
+    "english": "{2:Nourisher of the} {1:servants of} {0:Mōhana }{1:Viṭhala}, {5:destroyer of} {3:deception} {4:and delusion}, {6:protect me}.",
     "words": [
       {
         "roman": "mōhana",
@@ -402,7 +502,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mōhana viṭhaladāsa pōṣaka",
-    "english": "{2:Nourisher of the} {1:servants of} {0,1:Mōhana Viṭhala}…",
+    "english": "{2:Nourisher of the} {1:servants of} {0:Mōhana }{1:Viṭhala}…",
     "words": [
       {
         "roman": "mōhana",

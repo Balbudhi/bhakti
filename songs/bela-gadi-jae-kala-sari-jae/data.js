@@ -975,7 +975,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāpa sāthē jāe",
-    "english": "{0:Sin }{1,2:goes along}",
+    "english": "{0:Sin }{2:goes }{1:along}",
     "words": [
       {
         "roman": "pāpa",
@@ -1022,7 +1022,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "puṇya sāthē jāe",
-    "english": "{0:Merit }{1,2:goes along}",
+    "english": "{0:Merit }{2:goes }{1:along}",
     "words": [
       {
         "roman": "puṇya",

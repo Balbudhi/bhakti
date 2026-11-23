@@ -89,7 +89,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ō śirḍī kē sāīṁ bābā sun fariyād hamārī",
-    "english": "{0:O }{3,4:Sai Baba }{1,2:of Shirdi, }{5:hear }{6,7:our plea}",
+    "english": "{0:O }{3,4:Sai Baba }{1,2:of Shirdi, }{5:hear }{7:our }{6:plea}",
     "words": [
       {
         "roman": "ō",
@@ -208,7 +208,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jab tak dam mēṁ hai mērē dam sēvā karūm̐ tumhārī",
-    "english": "{0,1:As long as }{2,3,4,5,6:life remains in me, }{7,8,9:I will serve you.}",
+    "english": "{0,1:As long as }{2,6:life }{4:remains }{3,5:in me, }{8:I will }{7:serve }{9:you.}",
     "words": [
       {
         "roman": "jab",
@@ -523,7 +523,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahtē haiṁ tērī caukhaṭ sē kōī gayā na khālī",
-    "english": "{0,1:They say }{2,3,4:from your threshold }{5,7:no one }{6:went }{8:empty-handed}",
+    "english": "{0,1:They say }{4:from }{2:your }{3:threshold }{5,7:no one }{6:went }{8:empty-handed}",
     "words": [
       {
         "roman": "kahtē",
@@ -642,7 +642,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sab camanōṁ mēṁ phūl bahārēṁ mērī bagiyā hai khālī",
-    "english": "{0,1,2:In all gardens }{3,4:are flowers and spring blooms; }{5,6:my little garden }{7:is }{8:empty}",
+    "english": "{2:In }{0:all }{1:gardens }{3,4:are flowers and spring blooms; }{5,6:my little garden }{7:is }{8:empty}",
     "words": [
       {
         "roman": "sab",
@@ -761,7 +761,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kar dō ēk upkār mujh par karz rahēgā bāqī",
-    "english": "{0,1:Do }{2,3:one act of kindness }{4,5:upon me; }{6:the debt }{7:will remain }{8:outstanding}",
+    "english": "{0,1:Do }{2,3:one act of kindness }{5:upon }{4:me; }{6:the debt }{7:will remain }{8:outstanding}",
     "words": [
       {
         "roman": "kar",
@@ -886,7 +886,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "khil jāē mērā bhī āṅgan bas ēk phūl hai kāfī",
-    "english": "{1:May }{2,4:my courtyard }{3:also }{0:blossom; }{5,6,7:just one flower }{8:is }{9:enough}",
+    "english": "{1:May }{2:my }{4:courtyard }{3:also }{0:blossom; }{5:just }{6:one }{7:flower }{8:is }{9:enough}",
     "words": [
       {
         "roman": "khil",
@@ -1380,7 +1380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jō bhī hai ab tērē bas mēṁ tū tārē yā mārē",
-    "english": "{0,1,2:Whatever is, }{3:is now }{4,5,6:in your power: }{7:you may }{8:save }{9:or }{10:slay}",
+    "english": "{0,1,2:Whatever is, }{3:is now }{6:in }{4:your }{5:power: }{7:you may }{8:save }{9:or }{10:slay}",
     "words": [
       {
         "roman": "jō",
@@ -1618,7 +1618,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āp kā sēvak hūm̐ maiṁ bābā bām̐hēṁ āgē baṛhāō",
-    "english": "{3,4:I am }{0,1,2:your servant, }{5:Baba; }{8:extend }{6:your arms }{7:forward}",
+    "english": "{4:I }{3:am }{0,1,2:your servant, }{5:Baba; }{8:extend }{6:your arms }{7:forward}",
     "words": [
       {
         "roman": "āp",
@@ -1731,7 +1731,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "raham karō ō mērē sāīṁ jāgē bhāg hamārē",
-    "english": "{0,1:Show mercy, }{2,3,4:O my Sai, }{6,7:so that our fortune }{5:may awaken}",
+    "english": "{1:Show }{0:mercy, }{2,3,4:O my Sai, }{6,7:so that our fortune }{5:may awaken}",
     "words": [
       {
         "roman": "raham",
@@ -1850,7 +1850,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aur kisī kē āgē maiṁ bhī phir kyōṁ hāth pasārē",
-    "english": "{7:Why }{6:then }{4:would I }{5:also }{8,9:stretch out my hands }{0,1,2,3:before anyone else?}",
+    "english": "{7:Why }{6:then }{4:would I }{5:also }{8,9:stretch out my hands }{3:before }{0,1,2:anyone else?}",
     "words": [
       {
         "roman": "aur",

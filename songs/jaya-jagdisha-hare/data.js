@@ -1254,7 +1254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma karuṇā kē sāgara, tuma pālanakartā",
-    "english": "{0:You are }{3:an ocean }{1,2:of compassion, }{4:you are }{5:the sustainer;}",
+    "english": "{0:You are }{3:an ocean }{2:of }{1:compassion, }{4:you are }{5:the sustainer;}",
     "words": [
       {
         "roman": "tuma",

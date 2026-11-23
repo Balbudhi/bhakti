@@ -572,7 +572,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma ādi deva anādi ho tuma antahīna ananta ho",
-    "english": "{0,4:You are }{1,2:the primal God, }{3:beginningless; }{5,8:you are }{6:endless }{7:and infinite.}",
+    "english": "{0:You }{4:are }{1,2:the primal God, }{3:beginningless; }{5:you }{8:are }{6:endless }{7:and infinite.}",
     "words": [
       {
         "roman": "tuma",
@@ -1095,7 +1095,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śiva śakti hai śiva bhakti hai śiva mukti kā ādhāra hai",
-    "english": "{0,1,2:Shiva is power, }{3,4,5:Shiva is devotion, }{6,7,8,9,10:Shiva is the foundation of liberation.}",
+    "english": "{0,1,2:Shiva is power, }{3,4,5:Shiva is devotion, }{6:Shiva }{10:is }{9:the foundation }{8:of }{7:liberation.}",
     "words": [
       {
         "roman": "śiva",

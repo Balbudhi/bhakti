@@ -249,7 +249,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāhi soṃ trāsa bhayo jaga ko yaha saṃkaṭa kāhu soṃ jāta na ṭāro ||",
-    "english": "{0,1:From that}, {2:dread }{3:arose }{4,5:to the world}; {6:this }{7:calamity }{10,11:could not }{12:be warded off }{8,9:by anyone.}",
+    "english": "{1:From }{0:that}, {2:dread }{3:arose }{4,5:to the world}; {6:this }{7:calamity }{10,11:could not }{12:be warded off }{9:by }{8:anyone.}",
     "words": [
       {
         "roman": "tāhi",

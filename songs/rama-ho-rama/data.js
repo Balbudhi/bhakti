@@ -80,7 +80,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā ho Rāmā",
-    "english": "{0,1:O Rama, }{2:O Rama}",
+    "english": "{1:O }{0:Rama, }{2:O Rama}",
     "words": [
       {
         "roman": "Rāmā",
@@ -127,7 +127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā ho Rāmā,",
-    "english": "{0,1:O Rama, }{2:O Rama, }",
+    "english": "{1:O }{0:Rama, }{2:O Rama, }",
     "words": [
       {
         "roman": "Rāmā",
@@ -222,7 +222,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chaita Ayodhyā, Chaita Ayodhyā Rāma jī janamile ho Rāmā ho Rāmā",
-    "english": "{0,1:In Chaitra in Ayodhya, }{2,3:in Chaitra in Ayodhya, }{4,5:Lord Rama }{6:was born, }{7,8:O Rama, }{9,10:O Rama}",
+    "english": "{0,1:In Chaitra in Ayodhya, }{2,3:in Chaitra in Ayodhya, }{4,5:Lord Rama }{6:was born, }{7:O }{8:Rama, }{9:O }{10:Rama}",
     "words": [
       {
         "roman": "Chaita",
@@ -341,7 +341,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāma jī janamile ho Rāmā ho Rāmā",
-    "english": "{0,1:Lord Rama }{2:was born, }{3,4:O Rama, }{5,6:O Rama}",
+    "english": "{0,1:Lord Rama }{2:was born, }{3:O }{4:Rama, }{5:O }{6:Rama}",
     "words": [
       {
         "roman": "Rāma",
@@ -430,7 +430,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ghara-ghara bajailā re badhaiyā ho Rāmā",
-    "english": "{0:In every house }{1:resound }{2,3:celebratory songs, }{4,5:O Rama}",
+    "english": "{0:In every house }{1:resound }{2,3:celebratory songs, }{4:O }{5:Rama}",
     "words": [
       {
         "roman": "Ghara-ghara",
@@ -549,7 +549,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā ho Rāmā, sone kī chavakiyā Rāma nihavāve ho Rāmā ho Rāmā",
-    "english": "{0,1:O Rama, }{2:O Rama, }{3,4,5:upon a golden stool }{7:they bathe }{6:Rama, }{8,9:O Rama, }{10,11:O Rama}",
+    "english": "{1:O }{0:Rama, }{2:O Rama, }{3,4,5:upon a golden stool }{7:they bathe }{6:Rama, }{8:O }{9:Rama, }{10:O }{11:Rama}",
     "words": [
       {
         "roman": "Rāmā",
@@ -674,7 +674,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sakhī saba ḍalelī ho nichhāva ho Rāmā",
-    "english": "{0,1:All the companions }{2:shower }{3,4:auspicious offerings, }{5,6:O Rama}",
+    "english": "{0,1:All the companions }{2:shower }{3,4:auspicious offerings, }{5:O }{6:Rama}",
     "words": [
       {
         "roman": "Sakhī",
@@ -769,7 +769,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā ho Rāmā ko sakhī ḍalelī ho",
-    "english": "{0,1:O Rama, }{2:O Rama, }{3,4:one companion }{5,6:offers—}",
+    "english": "{1:O }{0:Rama, }{2:O Rama, }{3:one }{4:companion }{5,6:offers—}",
     "words": [
       {
         "roman": "Rāmā",
@@ -858,7 +858,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aṅgūṭhī muñdariyā ho Rāmā ho Rāmā",
-    "english": "{0,1:finger-rings and ornamental bands, }{2,3:O Rama, }{4,5:O Rama}",
+    "english": "{0,1:finger-rings and ornamental bands, }{2:O }{3:Rama, }{4:O }{5:Rama}",
     "words": [
       {
         "roman": "Aṅgūṭhī",
@@ -941,7 +941,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koī sakhī ḍalelī ho ratana padāratha",
-    "english": "{0,1:Another companion }{2:offers, }{3:O, }{4,5:jewels and precious treasures}",
+    "english": "{0:Another }{1:companion }{2:offers, }{3:O, }{4,5:jewels and precious treasures}",
     "words": [
       {
         "roman": "Koī",
@@ -1024,7 +1024,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā ho Rāmā Kaikayī jī ḍalelī",
-    "english": "{0,1:O Rama, }{2:O Rama, }{3,4:Queen Kaikeyi }{5:offers}",
+    "english": "{1:O }{0:Rama, }{2:O Rama, }{3,4:Queen Kaikeyi }{5:offers}",
     "words": [
       {
         "roman": "Rāmā",
@@ -1256,7 +1256,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chaita Ayodhyā, Chaita Ayodhyā Rāma jī janamile ho Rāmā ho Rāmā, ghara-ghara bajailā re badhaiyā ho Rāmā",
-    "english": "{0,1:In Chaitra in Ayodhya, }{2,3:in Chaitra in Ayodhya, }{4,5:Lord Rama }{6:was born, }{7,8:O Rama, }{9,10:O Rama, }{11:in every house }{12:resound }{13,14:celebratory songs, }{15,16:O Rama}",
+    "english": "{0,1:In Chaitra in Ayodhya, }{2,3:in Chaitra in Ayodhya, }{4,5:Lord Rama }{6:was born, }{7:O }{8:Rama, }{9:O }{10:Rama, }{11:in every house }{12:resound }{13,14:celebratory songs, }{15:O }{16:Rama}",
     "words": [
       {
         "roman": "Chaita",

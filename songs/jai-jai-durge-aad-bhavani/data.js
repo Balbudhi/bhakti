@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jai Jai Durge Ād Bhavānī",
   "subtitle": "Śakti",
-  "credit": "Jaipal Ji",
+  "credit": "Caman & Madan Dās · Jaipal Ji",
   "pageCredit": "Jaipal Ji",
-  "writer": "",
+  "writer": "Caman & Madan Dās",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -30,7 +30,8 @@ window.SONG_META = {
     "Durga",
     "Vishnu",
     "Visnu",
-    "Mata Vaishno Devi"
+    "Mata Vaishno Devi",
+    "Chaman"
   ],
   "audioSources": [
     {
@@ -1484,7 +1485,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lagātār sabhī hāth khol kar ke, ḍhīlī tālī nahī̃, tālī kī āvāz mā̃ ke darbār tak pahũce, ek bār sabhī bhaktajan apne-apne hāth ūpar uṭhā kar ke sabhī mā̃ ke caraṇõ mẽ apnī-apnī hāzirī dījie, hāth sabhī ūpar, mā̃ bhagavatī āp bhaktõ kī hāzirī svīkār karẽ, āpkī jholiyā̃ bharẽ, āpkī murādẽ pūrī karẽ, āpkā jīvan khuśiyõ se bhar de.",
-    "english": "{0:Keep it going}{1:, everyone}{2,3,4,5:, with your hands open}{8:—no}{6: weak}{7: clapping}{11:; let the sound}{9,10: of your clapping}{15,16: reach}{12,13: Mother’s}{14: court}{19,20:. All you devotees}{23,24,25,26:, raise}{21: your own}{22: hands}{17,18: once}{27:; all of you}{32,33,34:, present yourselves}{31: at}{28,29: Mother’s}{30: feet}{36:. Everyone’s}{35: hands}{37: up}{38:. May Mother}{39: Bhagavatī}{44,45: accept}{42,43: the presence}{40,41: of you devotees}{48:, fill}{46: your}{47: outstretched laps}{51,52:, fulfill}{49: your}{50: wishes}{57,58:, and fill}{53: your}{54: life}{56: with}{55: joy.}",
+    "english": "{0:Keep it going}{1:, everyone}{2:, with your hands }{3,4,5:open}{8:—no}{6: weak}{7: clapping}{11:; let the sound}{9,10: of your clapping}{15,16: reach}{12,13: Mother’s}{14: court}{19,20:. All you devotees}{24,25,26:, raise}{21: your own}{22,23: hands}{17,18: once}{27:; all of you}{33,34:, present }{32:yourselves}{31: at}{28,29: Mother’s}{30: feet}{36:. Everyone’s}{35: hands}{37: up}{38:. May Mother}{39: Bhagavatī}{44,45: accept}{42,43: the presence}{40,41: of you devotees}{48:, fill}{46: your}{47: outstretched laps}{51,52:, fulfill}{49: your}{50: wishes}{57,58:, and fill}{53: your}{54: life}{56: with}{55: joy.}",
     "words": [
       {
         "roman": "lagātār",
@@ -3506,7 +3507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "baṛe baṛe ahaṅkāriyā̃ nū̃ maiyā tū carṇī lāyā",
-    "english": "{4:Mother}{5:, you}{7: brought}{0,1,2,3: even the proudest}{6: to your feet.}",
+    "english": "{4:Mother}{5:, you}{7: brought}{0,1: even the }{2,3:proudest}{6: to your feet.}",
     "words": [
       {
         "roman": "baṛe",
@@ -3620,7 +3621,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho baṛe baṛe ahaṅkāriyā̃ nū̃ maiyā tū carṇī lāyā",
-    "english": "{0:Oh}{5:, Mother}{6:, you}{8: brought}{1,2,3,4: even the proudest}{7: to your feet.}",
+    "english": "{0:Oh}{5:, Mother}{6:, you}{8: brought}{1,2: even the }{3,4:proudest}{7: to your feet.}",
     "words": [
       {
         "roman": "ho",

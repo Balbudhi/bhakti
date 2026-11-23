@@ -147,15 +147,23 @@ window.SONG_LINES = {
   "l005": {
     "source": "అందచందమును హృదయారవిందమున జూచి",
     "roman": "andacandamunu hṛdayāravindamuna jūci",
-    "english": "{2:beholding} {0:his beauty and grace} {1:in the lotus of the heart},",
+    "english": "{4:beholding} {0:his beauty }{1:and grace} {3:in the lotus }{2:of the heart},",
     "words": [
       {
-        "roman": "andacandamunu",
-        "gloss": "beauty and grace"
+        "roman": "anda",
+        "gloss": "beauty"
       },
       {
-        "roman": "hṛdayāravindamuna",
-        "gloss": "in the lotus of the heart"
+        "roman": "candamunu",
+        "gloss": "grace: object"
+      },
+      {
+        "roman": "hṛday",
+        "gloss": "heart; hṛdaya, joined a + a"
+      },
+      {
+        "roman": "āravindamuna",
+        "gloss": "in the lotus; aravinda, locative"
       },
       {
         "roman": "jūci",
@@ -164,21 +172,33 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "అందచందమును",
+        "text": "అంద",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "హృదయారవిందమున",
+        "text": "చందమును",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "జూచి",
+        "text": "హృదయా",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "రవిందమున",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "జూచి",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -187,15 +207,27 @@ window.SONG_LINES = {
   "l006": {
     "source": "బ్రహ్మానందమనుభవించు వారెందరో మహానుభావులు",
     "roman": "brahmānandamanubhaviñcu vārendarō mahānubhāvulu",
-    "english": "{1:so many are those who} {0:experience the bliss of ultimate reality}—{2:great souls}!",
+    "english": "{4:so many }{3:are those who} {2:experience }{1:the bliss }{0:of ultimate reality}—{5:great souls}!",
     "words": [
       {
-        "roman": "brahmānandamanubhaviñcu",
-        "gloss": "experience the bliss of ultimate reality"
+        "roman": "brahm",
+        "gloss": "ultimate reality; brahma, joined a + ā"
       },
       {
-        "roman": "vārendarō",
-        "gloss": "how many are those who"
+        "roman": "ānandam",
+        "gloss": "bliss"
+      },
+      {
+        "roman": "anubhaviñcu",
+        "gloss": "experiencing, who experience"
+      },
+      {
+        "roman": "vār",
+        "gloss": "those who; vāru"
+      },
+      {
+        "roman": "endarō",
+        "gloss": "how many"
       },
       {
         "roman": "mahānubhāvulu",
@@ -204,21 +236,39 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "బ్రహ్మానందమనుభవించు",
+        "text": "బ్రహ్మా",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "వారెందరో",
+        "text": "నంద",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "మనుభవించు",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "వా",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "రెందరో",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -227,7 +277,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "చందురు వర్ణుని అందచందమును హృదయారవిందమున జూచి",
     "roman": "canduru varṇuni andacandamunu hṛdayāravindamuna jūci",
-    "english": "{4:Beholding} {2:the beauty and grace} {1:of the one radiant} {0:as the moon}, {3:in the lotus of the heart},",
+    "english": "{6:Beholding} {2:the beauty }{3:and grace} {1:of the one radiant} {0:as the moon}, {5:in the lotus }{4:of the heart},",
     "words": [
       {
         "roman": "canduru",
@@ -238,12 +288,20 @@ window.SONG_LINES = {
         "gloss": "of the one whose radiance or appearance"
       },
       {
-        "roman": "andacandamunu",
-        "gloss": "beauty and grace"
+        "roman": "anda",
+        "gloss": "beauty"
       },
       {
-        "roman": "hṛdayāravindamuna",
-        "gloss": "in the lotus of the heart"
+        "roman": "candamunu",
+        "gloss": "grace: object"
+      },
+      {
+        "roman": "hṛday",
+        "gloss": "heart; hṛdaya, joined a + a"
+      },
+      {
+        "roman": "āravindamuna",
+        "gloss": "in the lotus; aravinda, locative"
       },
       {
         "roman": "jūci",
@@ -264,21 +322,33 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "అందచందమును",
+        "text": "అంద",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "హృదయారవిందమున",
+        "text": "చందమును",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "జూచి",
+        "text": "హృదయా",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "రవిందమున",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "జూచి",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -287,11 +357,19 @@ window.SONG_LINES = {
   "l008": {
     "source": "సామగానలోల మనసిజ లావణ్య ధన్యమూర్ధన్యులెందరో మహానుభావులు",
     "roman": "sāmagānalōla manasija lāvaṇya dhanyamūrdhanyulendarō mahānubhāvulu",
-    "english": "{0:O lover of Sāma chanting}, {2:beautiful as} {1:Kāmadeva}—{3:so many foremost blessed ones}, {4:great souls}!",
+    "english": "{2:O lover }{0:of Sāma }{1:chanting}, {4:beautiful as} {3:Kāmadeva}—{7:so many }{6:foremost }{5:blessed ones}, {8:great souls}!",
     "words": [
       {
-        "roman": "sāmagānalōla",
-        "gloss": "O lover of the chanting of the Sāma Veda"
+        "roman": "sāma",
+        "gloss": "the Sāma Veda"
+      },
+      {
+        "roman": "gāna",
+        "gloss": "chanting, song"
+      },
+      {
+        "roman": "lōla",
+        "gloss": "O lover of"
       },
       {
         "roman": "manasija",
@@ -302,8 +380,16 @@ window.SONG_LINES = {
         "gloss": "beauty; lovely appearance"
       },
       {
-        "roman": "dhanyamūrdhanyulendarō",
-        "gloss": "how many foremost blessed ones"
+        "roman": "dhanya",
+        "gloss": "blessed"
+      },
+      {
+        "roman": "mūrdhanyul",
+        "gloss": "foremost ones; mūrdhanyulu"
+      },
+      {
+        "roman": "endarō",
+        "gloss": "how many"
       },
       {
         "roman": "mahānubhāvulu",
@@ -312,33 +398,57 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "సామగానలోల",
+        "text": "సామ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "మనసిజ",
+        "text": "గాన",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "లావణ్య",
+        "text": "లోల",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ధన్యమూర్ధన్యులెందరో",
+        "text": "మనసిజ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "లావణ్య",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ధన్య",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "మూర్ధన్యు",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "లెందరో",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          8
         ]
       }
     ],
@@ -347,11 +457,19 @@ window.SONG_LINES = {
   "l009": {
     "source": "మానసవనచర వరసంచారము నిలిపి మూర్తి బాగుగ పొడగనేవారెందరో మహానుభావులు",
     "roman": "mānasavanacara varasañcāramu nilipi mūrti bāguga poḍaganēvārendarō mahānubhāvulu",
-    "english": "{2:Stilling} {1:the wandering} {0:forest animal of the mind}, {5:so many behold} {3:the divine form} {4:clearly}—{6:great souls}!",
+    "english": "{4:Stilling} {3:the wandering} {1:forest }{2:animal }{0:of the mind}, {8:so many }{7:behold} {5:the divine form} {6:clearly}—{9:great souls}!",
     "words": [
       {
-        "roman": "mānasavanacara",
-        "gloss": "the mind as a forest-roaming animal"
+        "roman": "mānasa",
+        "gloss": "of the mind"
+      },
+      {
+        "roman": "vana",
+        "gloss": "forest"
+      },
+      {
+        "roman": "cara",
+        "gloss": "roamer; roaming animal"
       },
       {
         "roman": "varasañcāramu",
@@ -370,8 +488,12 @@ window.SONG_LINES = {
         "gloss": "clearly; well"
       },
       {
-        "roman": "poḍaganēvārendarō",
-        "gloss": "how many are those who behold"
+        "roman": "poḍaganē",
+        "gloss": "beholding, who behold"
+      },
+      {
+        "roman": "vārendarō",
+        "gloss": "how many are those; vāru + endarō"
       },
       {
         "roman": "mahānubhāvulu",
@@ -380,45 +502,63 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "మానసవనచర",
+        "text": "మానస",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "వరసంచారము",
+        "text": "వన",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "నిలిపి",
+        "text": "చర",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "మూర్తి",
+        "text": "వరసంచారము",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "బాగుగ",
+        "text": "నిలిపి",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "పొడగనేవారెందరో",
+        "text": "మూర్తి",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "బాగుగ",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "పొడగనే",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -507,27 +647,51 @@ window.SONG_LINES = {
   "l011": {
     "source": "పతితపావనుడనే పరాత్పరుని గురించి పరమార్థమగు నిజమార్గముతోను పాడుచును",
     "roman": "patitapāvanuḍanē parātparuni guriñci paramārthamagu nijamārgamutōnu pāḍucunu",
-    "english": "{5:Singing} {2:of} {1:the one beyond the highest}, {0:called the purifier of the fallen}, {4:in the true way} {3:that expresses the highest truth},",
+    "english": "{11:Singing} {5:of} {4:the one beyond }{3:the highest}, {2:called }{1:the purifier }{0:of the fallen}, {10:in }{9:the true }{10:way} {8:that expresses }{6:the highest }{7:truth},",
     "words": [
       {
-        "roman": "patitapāvanuḍanē",
-        "gloss": "called the purifier of the fallen"
+        "roman": "patita",
+        "gloss": "the fallen"
       },
       {
-        "roman": "parātparuni",
-        "gloss": "the one beyond the highest"
+        "roman": "pāvanuḍ",
+        "gloss": "purifier; pāvanuḍu"
+      },
+      {
+        "roman": "anē",
+        "gloss": "called"
+      },
+      {
+        "roman": "parāt",
+        "gloss": "than the highest: ablative"
+      },
+      {
+        "roman": "paruni",
+        "gloss": "the one beyond, the supreme one"
       },
       {
         "roman": "guriñci",
         "gloss": "concerning; about"
       },
       {
-        "roman": "paramārthamagu",
-        "gloss": "expressing the highest truth"
+        "roman": "param",
+        "gloss": "highest; parama, joined a + a"
       },
       {
-        "roman": "nijamārgamutōnu",
-        "gloss": "with the true path or way"
+        "roman": "ārtham",
+        "gloss": "truth, meaning; artham"
+      },
+      {
+        "roman": "agu",
+        "gloss": "being, expressing"
+      },
+      {
+        "roman": "nija",
+        "gloss": "true"
+      },
+      {
+        "roman": "mārgamutōnu",
+        "gloss": "with the path or way"
       },
       {
         "roman": "pāḍucunu",
@@ -536,39 +700,75 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "పతితపావనుడనే",
+        "text": "పతిత",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "పరాత్పరుని",
+        "text": "పావను",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "గురించి",
+        "text": "డనే",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "పరమార్థమగు",
+        "text": "పరా",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "నిజమార్గముతోను",
+        "text": "త్పరుని",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "పాడుచును",
+        "text": "గురించి",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "పరమా",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ర్థ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "మగు",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "నిజ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "మార్గముతోను",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "పాడుచును",
+        "wordIndices": [
+          11
         ]
       }
     ],
@@ -577,23 +777,35 @@ window.SONG_LINES = {
   "l012": {
     "source": "సల్లాపముతో స్వరలయాది రాగములను దెలియువారెందరో మహానుభావులు",
     "roman": "sallāpamutō svaralayādi rāgamulanu deliyuvārendarō mahānubhāvulu",
-    "english": "{0:in affectionate discourse}, {3:so many understand} {1:notes, rhythm and the rest}, {2:and the melodic modes}—{4:great souls}!",
+    "english": "{0:in affectionate discourse}, {6:so many }{5:understand} {1:notes, }{2:rhythm }{3:and the rest}, {4:and the melodic modes}—{7:great souls}!",
     "words": [
       {
         "roman": "sallāpamutō",
         "gloss": "with affectionate conversation or discourse"
       },
       {
-        "roman": "svaralayādi",
-        "gloss": "notes, rhythm and the other musical elements"
+        "roman": "svara",
+        "gloss": "notes"
+      },
+      {
+        "roman": "lay",
+        "gloss": "rhythm; laya, joined a + ā"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and the rest, the other musical elements"
       },
       {
         "roman": "rāgamulanu",
         "gloss": "melodic modes"
       },
       {
-        "roman": "deliyuvārendarō",
-        "gloss": "how many are those who understand"
+        "roman": "deliyu",
+        "gloss": "understanding, who understand"
+      },
+      {
+        "roman": "vārendarō",
+        "gloss": "how many are those; vāru + endarō"
       },
       {
         "roman": "mahānubhāvulu",
@@ -608,27 +820,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "స్వరలయాది",
+        "text": "స్వర",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "రాగములను",
+        "text": "లయా",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "దెలియువారెందరో",
+        "text": "ది",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "రాగములను",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "దెలియు",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          7
         ]
       }
     ],
@@ -637,15 +867,23 @@ window.SONG_LINES = {
   "l013": {
     "source": "హరి గుణమణిమయ సరములు గళమున శోభిల్లు భక్తకోటులిలలో",
     "roman": "hari guṇamaṇimaya saramulu gaḷamuna śōbhillu bhaktakōṭulilalō",
-    "english": "{5:Hosts of devotees in this world}, {4:resplendent} with {2:necklaces} {3:around their necks}, {1:made from the jewels of} {0:Hari’s} {1:virtues},",
+    "english": "{8:Hosts }{7:of devotees }{9:in this world}, {6:resplendent} with {4:necklaces} {5:around their necks}, {3:made from }{2:the jewels of} {0:Hari’s} {1:virtues},",
     "words": [
       {
         "roman": "hari",
         "gloss": "Hari, the sustaining Lord Viṣṇu, remover of evil and sin"
       },
       {
-        "roman": "guṇamaṇimaya",
-        "gloss": "made of jewels that are his virtues"
+        "roman": "guṇa",
+        "gloss": "virtues"
+      },
+      {
+        "roman": "maṇi",
+        "gloss": "jewels"
+      },
+      {
+        "roman": "maya",
+        "gloss": "made of"
       },
       {
         "roman": "saramulu",
@@ -660,8 +898,16 @@ window.SONG_LINES = {
         "gloss": "shining; resplendent"
       },
       {
-        "roman": "bhaktakōṭulilalō",
-        "gloss": "hosts of devotees here in the world"
+        "roman": "bhakta",
+        "gloss": "devotees"
+      },
+      {
+        "roman": "kōṭul",
+        "gloss": "hosts, crores; kōṭulu"
+      },
+      {
+        "roman": "ilalō",
+        "gloss": "here in the world: locative"
       }
     ],
     "sourceWords": [
@@ -672,33 +918,57 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "గుణమణిమయ",
+        "text": "గుణ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "సరములు",
+        "text": "మణి",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "గళమున",
+        "text": "మయ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "శోభిల్లు",
+        "text": "సరములు",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "భక్తకోటులిలలో",
+        "text": "గళమున",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "శోభిల్లు",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "భక్త",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "కోటు",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "లిలలో",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -707,7 +977,7 @@ window.SONG_LINES = {
   "l014": {
     "source": "తెలివితో చెలిమితో కరుణగల్గి జగమెల్లను సుధాదృష్టిచే బ్రోచువారెందరో మహానుభావులు",
     "roman": "telivitō celimitō karuṇagalgi jagamellanu sudhādṛṣṭicē brōcuvārendarō mahānubhāvulu",
-    "english": "{0:with understanding}, {1:friendship} {2:and compassion}—{5:so many protect} {3:the whole world} {4:with a nectar-like gaze}, {6:great souls}!",
+    "english": "{0:with understanding}, {1:friendship} {2:and compassion}—{8:so many }{7:protect} {4:the whole }{3:world} {6:with a }{5:nectar-like }{6:gaze}, {9:great souls}!",
     "words": [
       {
         "roman": "telivitō",
@@ -722,16 +992,28 @@ window.SONG_LINES = {
         "gloss": "possessing compassion"
       },
       {
-        "roman": "jagamellanu",
-        "gloss": "the entire world"
+        "roman": "jagam",
+        "gloss": "the world"
       },
       {
-        "roman": "sudhādṛṣṭicē",
-        "gloss": "with a nectar-like gaze"
+        "roman": "ellanu",
+        "gloss": "entire, all: object"
       },
       {
-        "roman": "brōcuvārendarō",
-        "gloss": "how many are those who protect"
+        "roman": "sudhā",
+        "gloss": "nectar; nectar-like"
+      },
+      {
+        "roman": "dṛṣṭicē",
+        "gloss": "with a gaze: instrumental"
+      },
+      {
+        "roman": "brōcu",
+        "gloss": "protecting, who protect"
+      },
+      {
+        "roman": "vārendarō",
+        "gloss": "how many are those; vāru + endarō"
       },
       {
         "roman": "mahānubhāvulu",
@@ -758,27 +1040,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "జగమెల్లను",
+        "text": "జగ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "సుధాదృష్టిచే",
+        "text": "మెల్లను",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "బ్రోచువారెందరో",
+        "text": "సుధా",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "దృష్టిచే",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "బ్రోచు",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -857,11 +1157,15 @@ window.SONG_LINES = {
   "l016": {
     "source": "పులకశరీరులై ఆనంద పయోధి నిమగ్నులై ముదంబునను యశముగలవారెందరో మహానుభావులు",
     "roman": "pulakaśarīrulai ānanda payōdhi nimagnulai mudambunanu yaśamugalavārendarō mahānubhāvulu",
-    "english": "{0:their bodies thrilled}, {3:immersed in} {2:an ocean} {1:of bliss}, {4:in gladness}—{5:so many are renowned}, {6:great souls}!",
+    "english": "{1:their bodies }{0:thrilled}, {4:immersed in} {3:an ocean} {2:of bliss}, {5:in gladness}—{8:so many }{7:are }{6:renowned}, {9:great souls}!",
     "words": [
       {
-        "roman": "pulakaśarīrulai",
-        "gloss": "with their bodies thrilled and hairs standing on end"
+        "roman": "pulaka",
+        "gloss": "thrilled, with hairs standing on end"
+      },
+      {
+        "roman": "śarīrulai",
+        "gloss": "with bodies; being … -bodied"
       },
       {
         "roman": "ānanda",
@@ -880,8 +1184,16 @@ window.SONG_LINES = {
         "gloss": "in gladness"
       },
       {
-        "roman": "yaśamugalavārendarō",
-        "gloss": "how many have such renown"
+        "roman": "yaśamu",
+        "gloss": "renown"
+      },
+      {
+        "roman": "gala",
+        "gloss": "having, possessing"
+      },
+      {
+        "roman": "vārendarō",
+        "gloss": "how many are those; vāru + endarō"
       },
       {
         "roman": "mahānubhāvulu",
@@ -890,45 +1202,63 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "పులకశరీరులై",
+        "text": "పులక",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ఆనంద",
+        "text": "శరీరులై",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "పయోధి",
+        "text": "ఆనంద",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "నిమగ్నులై",
+        "text": "పయోధి",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ముదంబునను",
+        "text": "నిమగ్నులై",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "యశముగలవారెందరో",
+        "text": "ముదంబునను",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "యశము",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "గల",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -1127,7 +1457,7 @@ window.SONG_LINES = {
   "l019": {
     "source": "కల్ల జేసినట్టి నీమది నెఱింగి సంతతంబునను గుణభజనానంద కీర్తనము సేయువారెందరో మహానుభావులు",
     "roman": "kalla jēsinaṭṭi nīmadi neṟiṅgi santatambunanu guṇabhajanānanda kīrtanamu sēyuvārendarō mahānubhāvulu",
-    "english": "{3:knowing} {2:your purpose} {1:in showing them} {0:false}, {7:so many} {4:unceasingly} {7:sing} {6:songs} {5:with the joy of praising your virtues}—{8:great souls}!",
+    "english": "{4:knowing} {2:your }{3:purpose} {1:in showing them} {0:false}, {11:so many} {5:unceasingly} {10:sing} {9:songs} {8:with the joy }{7:of praising }{6:your virtues}—{12:great souls}!",
     "words": [
       {
         "roman": "kalla",
@@ -1138,8 +1468,12 @@ window.SONG_LINES = {
         "gloss": "having made; having shown to be"
       },
       {
-        "roman": "nīmadi",
-        "gloss": "your mind or purpose"
+        "roman": "nī",
+        "gloss": "your"
+      },
+      {
+        "roman": "madi",
+        "gloss": "mind, purpose"
       },
       {
         "roman": "neṟiṅgi",
@@ -1150,16 +1484,28 @@ window.SONG_LINES = {
         "gloss": "constantly; without interruption"
       },
       {
-        "roman": "guṇabhajanānanda",
-        "gloss": "joy in praising your virtues"
+        "roman": "guṇa",
+        "gloss": "virtues"
+      },
+      {
+        "roman": "bhajan",
+        "gloss": "praising; bhajana, joined a + ā"
+      },
+      {
+        "roman": "ānanda",
+        "gloss": "joy"
       },
       {
         "roman": "kīrtanamu",
         "gloss": "song of praise"
       },
       {
-        "roman": "sēyuvārendarō",
-        "gloss": "how many are those who sing"
+        "roman": "sēyu",
+        "gloss": "doing, who sing [praise]"
+      },
+      {
+        "roman": "vārendarō",
+        "gloss": "how many are those; vāru + endarō"
       },
       {
         "roman": "mahānubhāvulu",
@@ -1180,45 +1526,69 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "నీమది",
+        "text": "నీ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "నెఱింగి",
+        "text": "మది",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "సంతతంబునను",
+        "text": "నెఱింగి",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "గుణభజనానంద",
+        "text": "సంతతంబునను",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "కీర్తనము",
+        "text": "గుణ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "సేయువారెందరో",
+        "text": "భజనా",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "నంద",
         "wordIndices": [
           8
+        ]
+      },
+      {
+        "text": "కీర్తనము",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "సేయు",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          12
         ]
       }
     ],
@@ -1227,15 +1597,23 @@ window.SONG_LINES = {
   "l020": {
     "source": "పరమభాగవత మౌనివర శశి విభాకర సనక సనందన దిగీశ సుర కింపురుష కనకకశిపు సుత",
     "roman": "paramabhāgavata maunivara śaśi vibhākara sanaka sanandana digīśa sura kimpuruṣa kanakakaśipu suta",
-    "english": "{0:The foremost devotees}, {1:great sages}, {2:the moon}, {3:the sun}, {4:Sanaka}, {5:Sanandana}, {6:guardians of the directions}, {7:gods}, {8:humanlike celestials}, {9:Kanakakaśipu’s} {10:son},",
+    "english": "{0:The foremost }{1:devotees}, {3:great }{2:sages}, {4:the moon}, {5:the sun}, {6:Sanaka}, {7:Sanandana}, {9:guardians }{8:of the directions}, {10:gods}, {11:humanlike celestials}, {12:Kanakakaśipu’s} {13:son},",
     "words": [
       {
-        "roman": "paramabhāgavata",
-        "gloss": "supreme devotees of the Lord"
+        "roman": "parama",
+        "gloss": "supreme, foremost"
       },
       {
-        "roman": "maunivara",
-        "gloss": "foremost sages"
+        "roman": "bhāgavata",
+        "gloss": "devotees of the Lord"
+      },
+      {
+        "roman": "mauni",
+        "gloss": "sages"
+      },
+      {
+        "roman": "vara",
+        "gloss": "foremost, best"
       },
       {
         "roman": "śaśi",
@@ -1254,8 +1632,12 @@ window.SONG_LINES = {
         "gloss": "one of the primordial sage brothers"
       },
       {
-        "roman": "digīśa",
-        "gloss": "guardians of the directions"
+        "roman": "dig",
+        "gloss": "the directions; diś"
+      },
+      {
+        "roman": "īśa",
+        "gloss": "lords, guardians"
       },
       {
         "roman": "sura",
@@ -1276,69 +1658,87 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "పరమభాగవత",
+        "text": "పరమ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "మౌనివర",
+        "text": "భాగవత",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "శశి",
+        "text": "మౌని",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "విభాకర",
+        "text": "వర",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "సనక",
+        "text": "శశి",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "సనందన",
+        "text": "విభాకర",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "దిగీశ",
+        "text": "సనక",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "సుర",
+        "text": "సనందన",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "కింపురుష",
+        "text": "ది",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "కనకకశిపు",
+        "text": "గీశ",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "సుత",
+        "text": "సుర",
         "wordIndices": [
           10
+        ]
+      },
+      {
+        "text": "కింపురుష",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "కనకకశిపు",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "సుత",
+        "wordIndices": [
+          13
         ]
       }
     ],
@@ -1347,7 +1747,7 @@ window.SONG_LINES = {
   "l021": {
     "source": "నారద తుంబురు పవనసూను అర్ధచంద్రధర శుక సరోజభవ భూసురవరులు",
     "roman": "nārada tumburu pavanasūnu ardhacandradhara śuka sarōjabhava bhūsuravarulu",
-    "english": "{0:Nārada}, {1:Tumburu}, {2:the wind god’s son}, {3:the half-moon bearer}, {4:Śuka}, {5:the lotus-born creator}, {6:and foremost Brahmins},",
+    "english": "{0:Nārada}, {1:Tumburu}, {2:the wind god’s }{3:son}, {4:the half-}{5:moon }{6:bearer}, {7:Śuka}, {8:the lotus-}{9:born creator}, {11:and foremost }{10:Brahmins},",
     "words": [
       {
         "roman": "nārada",
@@ -1358,24 +1758,44 @@ window.SONG_LINES = {
         "gloss": "the celestial musician among the gandharvas"
       },
       {
-        "roman": "pavanasūnu",
-        "gloss": "son of the wind god; Hanumān"
+        "roman": "pavana",
+        "gloss": "the wind god"
       },
       {
-        "roman": "ardhacandradhara",
-        "gloss": "bearer of the half-moon; an epithet of Śiva"
+        "roman": "sūnu",
+        "gloss": "son; with pavana, Hanumān"
+      },
+      {
+        "roman": "ardha",
+        "gloss": "half"
+      },
+      {
+        "roman": "candra",
+        "gloss": "moon"
+      },
+      {
+        "roman": "dhara",
+        "gloss": "bearer; the whole is an epithet of Śiva"
       },
       {
         "roman": "śuka",
         "gloss": "the sage who narrates the Bhāgavata"
       },
       {
-        "roman": "sarōjabhava",
-        "gloss": "born from the lotus; Brahmā"
+        "roman": "sarōja",
+        "gloss": "lotus; lake-born"
       },
       {
-        "roman": "bhūsuravarulu",
-        "gloss": "foremost Brahmins; literally gods on earth"
+        "roman": "bhava",
+        "gloss": "born from; with sarōja, Brahmā"
+      },
+      {
+        "roman": "bhūsura",
+        "gloss": "Brahmins; literally gods on earth"
+      },
+      {
+        "roman": "varulu",
+        "gloss": "foremost ones"
       }
     ],
     "sourceWords": [
@@ -1392,33 +1812,63 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "పవనసూను",
+        "text": "పవన",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "అర్ధచంద్రధర",
+        "text": "సూను",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "శుక",
+        "text": "అర్ధ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "సరోజభవ",
+        "text": "చంద్ర",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "భూసురవరులు",
+        "text": "ధర",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "శుక",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "సరోజ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "భవ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "భూసుర",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "వరులు",
+        "wordIndices": [
+          11
         ]
       }
     ],
@@ -1427,11 +1877,15 @@ window.SONG_LINES = {
   "l022": {
     "source": "పరమపావనులు ఘనులు శాశ్వతులు కమలభవ సుఖము సదానుభవులు గాక యెందరో మహానుభావులు",
     "roman": "paramapāvanulu ghanulu śāśvatulu kamalabhava sukhamu sadānubhavulu gāka yendarō mahānubhāvulu",
-    "english": "{0:the supremely pure}, {1:eminent}, {2:eternal ones}, {5:ever enjoying} {4:the bliss of} {3:the lotus-born Brahmā}—{6:besides these}, {7:how many more} {8:great souls}!",
+    "english": "{0:the supremely }{1:pure}, {2:eminent}, {3:eternal ones}, {7:ever }{8:enjoying} {6:the bliss of} {4:the lotus-}{5:born Brahmā}—{9:besides these}, {10:how many more} {11:great souls}!",
     "words": [
       {
-        "roman": "paramapāvanulu",
-        "gloss": "supremely pure ones"
+        "roman": "parama",
+        "gloss": "supremely"
+      },
+      {
+        "roman": "pāvanulu",
+        "gloss": "pure ones"
       },
       {
         "roman": "ghanulu",
@@ -1442,16 +1896,24 @@ window.SONG_LINES = {
         "gloss": "enduring or eternal ones"
       },
       {
-        "roman": "kamalabhava",
-        "gloss": "the lotus-born Brahmā"
+        "roman": "kamala",
+        "gloss": "lotus"
+      },
+      {
+        "roman": "bhava",
+        "gloss": "born; with kamala, Brahmā"
       },
       {
         "roman": "sukhamu",
         "gloss": "happiness; bliss"
       },
       {
-        "roman": "sadānubhavulu",
-        "gloss": "those who always experience"
+        "roman": "sad",
+        "gloss": "always; sadā, joined ā + a"
+      },
+      {
+        "roman": "ānubhavulu",
+        "gloss": "those who experience; anubhavulu"
       },
       {
         "roman": "gāka",
@@ -1468,57 +1930,75 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "పరమపావనులు",
+        "text": "పరమ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ఘనులు",
+        "text": "పావనులు",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "శాశ్వతులు",
+        "text": "ఘనులు",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "కమలభవ",
+        "text": "శాశ్వతులు",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "సుఖము",
+        "text": "కమల",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "సదానుభవులు",
+        "text": "భవ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "గాక",
+        "text": "సుఖము",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "యెందరో",
+        "text": "సదా",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "నుభవులు",
         "wordIndices": [
           8
+        ]
+      },
+      {
+        "text": "గాక",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "యెందరో",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          11
         ]
       }
     ],
@@ -1637,58 +2117,108 @@ window.SONG_LINES = {
   "l025": {
     "source": "శివాది షణ్మతముల గూఢములన్ ముప్పదిముక్కోటి సురాంతరంగముల",
     "roman": "śivādi ṣaṇmatamula gūḍhamulan muppadimukkōṭi surāntaraṅgamula",
-    "english": "{2:the mysteries} {1:of the six systems}, {0:beginning with worship of Śiva}, {4:the hearts of the gods}, {3:thirty-three crores in number},",
+    "english": "{4:the mysteries} {3:of the }{2:six }{3:systems}, {1:beginning }{0:with worship of Śiva}, {9:the hearts }{8:of the gods}, {5:thirty-}{6:three }{7:crores in number},",
     "words": [
       {
-        "roman": "śivādi",
-        "gloss": "worship of Śiva, the auspicious one, and the other systems"
+        "roman": "śiv",
+        "gloss": "worship of Śiva, the auspicious one; śiva, joined a + ā"
       },
       {
-        "roman": "ṣaṇmatamula",
-        "gloss": "of the six devotional systems"
+        "roman": "ādi",
+        "gloss": "beginning with; and the other systems"
+      },
+      {
+        "roman": "ṣaṇ",
+        "gloss": "six; ṣaṭ, ṭ changed to ṇ before m"
+      },
+      {
+        "roman": "matamula",
+        "gloss": "of the devotional systems"
       },
       {
         "roman": "gūḍhamulan",
         "gloss": "mysteries; hidden teachings"
       },
       {
-        "roman": "muppadimukkōṭi",
-        "gloss": "thirty-three crores; 330 million"
+        "roman": "muppadi",
+        "gloss": "thirty"
       },
       {
-        "roman": "surāntaraṅgamula",
-        "gloss": "of the gods’ inner hearts"
+        "roman": "mu",
+        "gloss": "three; mū"
+      },
+      {
+        "roman": "kkōṭi",
+        "gloss": "crore, ten million; kōṭi"
+      },
+      {
+        "roman": "sur",
+        "gloss": "gods; sura, joined a + a"
+      },
+      {
+        "roman": "āntaraṅgamula",
+        "gloss": "of the inner hearts; antaraṅga"
       }
     ],
     "sourceWords": [
       {
-        "text": "శివాది",
+        "text": "శివా",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "షణ్మతముల",
+        "text": "ది",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "గూఢములన్",
+        "text": "ష",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ముప్పదిముక్కోటి",
+        "text": "ణ్మతముల",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "సురాంతరంగముల",
+        "text": "గూఢములన్",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ముప్పది",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ము",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "క్కోటి",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "సురాం",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "తరంగముల",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -1777,19 +2307,27 @@ window.SONG_LINES = {
   "l027": {
     "source": "నిరవధి సుఖాత్ములై త్యాగరాజాప్తులైన వారెందరో మహానుభావులు",
     "roman": "niravadhi sukhātmulai tyāgarājāptulaina vārendarō mahānubhāvulu",
-    "english": "{4:Great souls}, {3:so many}, {1:blissful within} {0:without limit}, {2:dear to Tyāgarāja}!",
+    "english": "{6:Great souls}, {5:so many}, {1:blissful }{2:within} {0:without limit}, {4:dear }{3:to Tyāgarāja}!",
     "words": [
       {
         "roman": "niravadhi",
         "gloss": "without limit; unbounded"
       },
       {
-        "roman": "sukhātmulai",
-        "gloss": "being blissful in themselves"
+        "roman": "sukh",
+        "gloss": "bliss; sukha, joined a + ā"
       },
       {
-        "roman": "tyāgarājāptulaina",
-        "gloss": "who are dear companions of the poet"
+        "roman": "ātmulai",
+        "gloss": "being … in themselves; ātma, self"
+      },
+      {
+        "roman": "tyāgarāj",
+        "gloss": "Tyāgarāja, the poet; joined a + ā"
+      },
+      {
+        "roman": "āptulaina",
+        "gloss": "who are dear companions"
       },
       {
         "roman": "vārendarō",
@@ -1808,27 +2346,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "సుఖాత్ములై",
+        "text": "సుఖా",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "త్యాగరాజాప్తులైన",
+        "text": "త్ములై",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "వారెందరో",
+        "text": "త్యాగరాజా",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "ప్తులైన",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -1897,19 +2447,35 @@ window.SONG_LINES = {
   "l029": {
     "source": "రామభక్తుడైన త్యాగరాజనుతుని నిజదాసులైనవారెందరో మహానుభావులు",
     "roman": "rāmabhaktuḍaina tyāgarājanutuni nijadāsulainavārendarō mahānubhāvulu",
-    "english": "{2:so many true servants of} {1:the Lord praised by Tyāgarāja}, {0:Rāma’s devotee}—{3:great souls}!",
+    "english": "{6:so many }{4:true }{5:servants of} {3:the Lord praised }{2:by Tyāgarāja}, {0:Rāma’s }{1:devotee}—{7:great souls}!",
     "words": [
       {
-        "roman": "rāmabhaktuḍaina",
-        "gloss": "who is a devotee of Rāma, the delightful lord; describes the poet"
+        "roman": "rāma",
+        "gloss": "Rāma, the delightful lord"
       },
       {
-        "roman": "tyāgarājanutuni",
-        "gloss": "of the Lord praised by Tyāgarāja"
+        "roman": "bhaktuḍaina",
+        "gloss": "who is a devotee; describes the poet"
       },
       {
-        "roman": "nijadāsulainavārendarō",
-        "gloss": "how many are his true servants"
+        "roman": "tyāgarāja",
+        "gloss": "Tyāgarāja, the poet"
+      },
+      {
+        "roman": "nutuni",
+        "gloss": "of the one praised"
+      },
+      {
+        "roman": "nija",
+        "gloss": "true"
+      },
+      {
+        "roman": "dāsulaina",
+        "gloss": "who are servants"
+      },
+      {
+        "roman": "vārendarō",
+        "gloss": "how many are those; vāru + endarō"
       },
       {
         "roman": "mahānubhāvulu",
@@ -1918,27 +2484,51 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "రామభక్తుడైన",
+        "text": "రామ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "త్యాగరాజనుతుని",
+        "text": "భక్తుడైన",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "నిజదాసులైనవారెందరో",
+        "text": "త్యాగరాజ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "మహానుభావులు",
+        "text": "నుతుని",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "నిజ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "దాసులైన",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "వారెందరో",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "మహానుభావులు",
+        "wordIndices": [
+          7
         ]
       }
     ],

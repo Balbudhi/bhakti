@@ -182,8 +182,20 @@ def validate_source_words(source: str, words: list[dict[str, Any]], mapped: Any)
         observed_surfaces.append(item["text"])
         covered.update(indices)
     errors = []
-    if observed_surfaces != expected_surfaces:
+    # A native word may be mapped in consecutive pieces, so that the members of
+    # a compound or sandhi string can be opened one at a time.
+    position = 0
+    rebuilt = []
+    for expected in expected_surfaces:
+        piece = ""
+        while position < len(observed_surfaces) and len(piece) < len(expected):
+            piece += observed_surfaces[position]
+            position += 1
+        rebuilt.append(piece)
+    if rebuilt != expected_surfaces or position != len(observed_surfaces):
         errors.append("sourceWords does not preserve source-script token order")
+    if any(unicodedata.category(surface[0]).startswith("M") for surface in observed_surfaces if surface):
+        errors.append("sourceWords piece starts inside a syllable")
     if covered != set(range(len(words))):
         errors.append("sourceWords does not cover every public word index")
     return errors

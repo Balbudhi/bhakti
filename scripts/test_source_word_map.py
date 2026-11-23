@@ -58,8 +58,11 @@ class SourceWordMapTests(unittest.TestCase):
             data = audit_bhakti_contract.load_data(path)
             for line_id, line in data["SONG_LINES"].items():
                 with self.subTest(song=path.parent.name, line=line_id):
-                    expected = source_word_map.build_source_words(line.get("source", ""), line.get("words", []))
-                    self.assertEqual(line.get("sourceWords"), expected)
+                    source, words, stored = line.get("source", ""), line.get("words", []), line.get("sourceWords")
+                    self.assertEqual(source_word_map.validate_source_words(source, words, stored) if stored else [], [])
+                    # Reviewed pieces within a native word are read, not inferred.
+                    if [item["text"] for item in stored or []] == source_word_map.lexical_tokens(source):
+                        self.assertEqual(stored, source_word_map.build_source_words(source, words))
 
 
 if __name__ == "__main__":

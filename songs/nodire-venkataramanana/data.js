@@ -136,30 +136,40 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪಾದಾಸರಿಗೆ",
+        "text": "ಪಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ನಿಡಲು",
+        "text": "ದಾಸರಿಗೆ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ದರುಶನ",
+        "text": "ನಿಡಲು",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ದರುಶನ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "rūḍhipādāsarige niḍalu daruśana",
-    "english": "{1:To grant} {0:kings and devotees} {2:a sight of himself}—",
+    "english": "{2:To grant} {0:kings} {1:and devotees} {3:a sight of himself}—",
     "words": [
       {
-        "roman": "rūḍhipādāsarige",
-        "gloss": "to kings and devotees"
+        "roman": "rūḍhipā",
+        "gloss": "kings; rūḍhipa, lord of the earth"
+      },
+      {
+        "roman": "dāsarige",
+        "gloss": "to devotees; dative"
       },
       {
         "roman": "niḍalu",
@@ -226,22 +236,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ವೈಕುಂಠನಾಥನು",
+        "text": "ವೈಕುಂಠ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ನಾಥನು",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "ītane vaikuṇṭhanāthanu",
-    "english": "{0:This very one is} {1:the Lord of Vaikuṇṭha},",
+    "english": "{0:This very one is} {2:the Lord} {1:of Vaikuṇṭha},",
     "words": [
       {
         "roman": "ītane",
         "gloss": "this very one"
       },
       {
-        "roman": "vaikuṇṭhanāthanu",
-        "gloss": "the Lord of Vaikuṇṭha, Viṣṇu’s heavenly abode"
+        "roman": "vaikuṇṭha",
+        "gloss": "Viṣṇu’s heavenly abode"
+      },
+      {
+        "roman": "nāthanu",
+        "gloss": "Lord; nominative"
       }
     ],
     "nameTable": false,
@@ -258,28 +278,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಶಾತಕುಂಭೋದರ",
+        "text": "ಶಾತಕುಂಭೋ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ತಾತನು",
+        "text": "ದರ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ತಾತನು",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "nija śātakumbhōdara tātanu",
-    "english": "{0:truly} {2:the father of} {1:the golden-wombed Brahmā},",
+    "english": "{0:truly} {3:the father of} {1:the golden-}{2:wombed Brahmā},",
     "words": [
       {
         "roman": "nija",
         "gloss": "truly; verily"
       },
       {
-        "roman": "śātakumbhōdara",
-        "gloss": "the golden-wombed Brahmā"
+        "roman": "śātakumbh",
+        "gloss": "golden; śātakumbha, gold, joined a + u"
+      },
+      {
+        "roman": "ōdara",
+        "gloss": "wombed; udara, belly: Brahmā"
       },
       {
         "roman": "tātanu",
@@ -294,18 +324,38 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಮಾತಂಗವರದಾತ",
+        "text": "ಮಾತಂಗ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ವರ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ದಾತ",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "mātaṅgavaradāta",
-    "english": "{0:the elephant’s boon-giver},",
+    "english": "{0:the elephant’s} {1:boon-}{2:giver},",
     "words": [
       {
-        "roman": "mātaṅgavaradāta",
-        "gloss": "the giver of a boon to the elephant, referring to Gajendra"
+        "roman": "mātaṅga",
+        "gloss": "the elephant, Gajendra"
+      },
+      {
+        "roman": "vara",
+        "gloss": "boon"
+      },
+      {
+        "roman": "dāta",
+        "gloss": "giver"
       }
     ],
     "nameTable": false,
@@ -316,18 +366,38 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಶ್ವೇತವಾಹನಸೂತ",
+        "text": "ಶ್ವೇತ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ವಾಹನ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ಸೂತ",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "śvētavāhanasūta",
-    "english": "{0:the charioteer of white-horsed Arjuna},",
+    "english": "{2:the charioteer of} {0:white-}{1:horsed Arjuna},",
     "words": [
       {
-        "roman": "śvētavāhanasūta",
-        "gloss": "the charioteer of white-horsed Arjuna"
+        "roman": "śvēta",
+        "gloss": "white"
+      },
+      {
+        "roman": "vāhana",
+        "gloss": "horses, mount: Arjuna, whose horses are white"
+      },
+      {
+        "roman": "sūta",
+        "gloss": "charioteer"
       }
     ],
     "nameTable": false,
@@ -380,18 +450,38 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ತೊಂಡಮಾನಗೊಲಿದಾತನ",
+        "text": "ತೊಂಡಮಾನ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ಗೊಲಿ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ದಾತನ",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "toṇḍamānagolidātana",
-    "english": "{0:The one who was gracious to Toṇḍamān},",
+    "english": "{2:The one who} {1:was gracious} {0:to Toṇḍamān},",
     "words": [
       {
-        "roman": "toṇḍamānagolidātana",
-        "gloss": "the one who was gracious to the devotee king Toṇḍamān"
+        "roman": "toṇḍamānag",
+        "gloss": "to the devotee king Toṇḍamān; toṇḍamānage, dative"
+      },
+      {
+        "roman": "olid",
+        "gloss": "was gracious; olida"
+      },
+      {
+        "roman": "ātana",
+        "gloss": "the one who; ātana"
       }
     ],
     "nameTable": false,
@@ -444,18 +534,38 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಅಂಡಜಾತಪ್ರಕಾಂಡವಾರೂಢ",
+        "text": "ಅಂಡಜಾತ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ಪ್ರಕಾಂಡ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ವಾರೂಢ",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "aṇḍajātaprakāṇḍavārūḍha",
-    "english": "{0:mounted upon Garuḍa, foremost of birds},",
+    "english": "{2:mounted upon} {0,1:Garuḍa}, {1:foremost} {0:of birds},",
     "words": [
       {
-        "roman": "aṇḍajātaprakāṇḍavārūḍha",
-        "gloss": "mounted upon the foremost of egg-born birds, Garuḍa"
+        "roman": "aṇḍajāta",
+        "gloss": "egg-born; birds"
+      },
+      {
+        "roman": "prakāṇḍav",
+        "gloss": "foremost, here Garuḍa; v joins it to ārūḍha"
+      },
+      {
+        "roman": "ārūḍha",
+        "gloss": "mounted upon"
       }
     ],
     "nameTable": false,
@@ -466,28 +576,58 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಬ್ರಹ್ಮಾಂಡನಾಯಕನಾದ",
+        "text": "ಬ್ರಹ್ಮಾಂಡ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಪಾಂಡವಪಕ್ಷನ",
+        "text": "ನಾಯಕ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ನಾದ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ಪಾಂಡವ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಪಕ್ಷನ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "brahmāṇḍanāyakanāda pāṇḍavapakṣana",
-    "english": "{0:Lord of the universe} {1:and ally of the Pāṇḍavas}.",
+    "english": "{1,2:Lord} {0:of the universe} {4:and ally} {3:of the Pāṇḍavas}.",
     "words": [
       {
-        "roman": "brahmāṇḍanāyakanāda",
-        "gloss": "who is the Lord of the universe"
+        "roman": "brahmāṇḍa",
+        "gloss": "the universe"
       },
       {
-        "roman": "pāṇḍavapakṣana",
-        "gloss": "the ally of the Pāṇḍavas"
+        "roman": "nāyakan",
+        "gloss": "Lord"
+      },
+      {
+        "roman": "āda",
+        "gloss": "who is"
+      },
+      {
+        "roman": "pāṇḍava",
+        "gloss": "the Pāṇḍavas, sons of Pāṇḍu"
+      },
+      {
+        "roman": "pakṣana",
+        "gloss": "the ally"
       }
     ],
     "nameTable": false,
@@ -498,18 +638,48 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಇಂದುಧರಾಮರವಂದ್ಯನ",
+        "text": "ಇಂದು",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ಧರಾ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ಮರ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ವಂದ್ಯನ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "indudharāmaravandyana",
-    "english": "{0:Revered by Śiva, the moon-bearer, and the gods},",
+    "english": "{3:Revered by} {0,1:Śiva}, {0:the moon-}{1:bearer}, {2:and the gods},",
     "words": [
       {
-        "roman": "indudharāmaravandyana",
-        "gloss": "revered by the moon-bearer Śiva and the gods"
+        "roman": "indu",
+        "gloss": "moon"
+      },
+      {
+        "roman": "dhar",
+        "gloss": "bearer; dhara: the moon-bearer Śiva, joined a + a"
+      },
+      {
+        "roman": "āmara",
+        "gloss": "the gods; amara"
+      },
+      {
+        "roman": "vandyana",
+        "gloss": "revered by"
       }
     ],
     "nameTable": false,

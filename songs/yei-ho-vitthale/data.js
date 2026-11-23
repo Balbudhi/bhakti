@@ -56,24 +56,38 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "भक्तजन",
+        "text": "भक्त",
         "wordIndices": [
           0
         ]
       },
       {
+        "text": "जन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
         "text": "वत्सल",
         "wordIndices": [
-          0
+          2
         ]
       }
     ],
     "roman": "bhaktajanavatsal",
-    "english": "{0:Loving toward your devotees}.",
+    "english": "{2:Loving }{0,1:toward your devotees}.",
     "words": [
       {
-        "roman": "bhaktajanavatsal",
-        "gloss": "loving toward the community of devotees"
+        "roman": "bhakta",
+        "gloss": "devotees"
+      },
+      {
+        "roman": "jana",
+        "gloss": "people, community"
+      },
+      {
+        "roman": "vatsal",
+        "gloss": "loving toward, tender"
       }
     ],
     "nameTable": false,

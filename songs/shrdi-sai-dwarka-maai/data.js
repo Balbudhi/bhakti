@@ -236,7 +236,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śirḍī meṁ vo āyā dekho ban kar ek faqīr",
-    "english": "{4:Look, }{2:he }{3:came }{0,1:into Śirḍī, }{5,6:having become }{7,8:a mendicant.}",
+    "english": "{4:Look, }{2:he }{3:came }{0,1:into Śirḍī, }{5,6:having become }{7:a }{8:mendicant.}",
     "words": [
       {
         "roman": "śirḍī",
@@ -434,7 +434,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ rām rādhe śyām megh śyām sundar nām",
-    "english": "{0,1:Sāī Rām, }{2,3:Rādhe Śyām, }{4,5:cloud-dark, }{6,7:beautiful name.}",
+    "english": "{0,1:Sāī Rām, }{2,3:Rādhe Śyām, }{4,5:cloud-dark, }{6:beautiful }{7:name.}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -542,7 +542,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "allāh īśvar sāīṁ rām śirḍīpurī ke he bhagvān",
-    "english": "{0:Allāh, }{1:Lord, }{2,3:Sāī Rām, }{6,7:O Lord }{4,5:of the town of Śirḍī!}",
+    "english": "{0:Allāh, }{1:Lord, }{2,3:Sāī Rām, }{6:O }{7:Lord }{4,5:of the town of Śirḍī!}",
     "words": [
       {
         "roman": "allāh",
@@ -656,7 +656,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dayā karo kṛpā karo kṣamā karo he sāīṁ rām",
-    "english": "{0,1:Bestow mercy, }{2,3:grant grace, }{4,5:grant forgiveness, }{6,7,8:O Sāī Rām!}",
+    "english": "{0,1:Bestow mercy, }{3:grant }{2:grace, }{5:grant }{4:forgiveness, }{6,7,8:O Sāī Rām!}",
     "words": [
       {
         "roman": "dayā",
@@ -1022,7 +1022,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śirḍīpurī ke he bhagvān",
-    "english": "{2,3:O Lord }{0,1:of the town of Śirḍī,}",
+    "english": "{2:O }{3:Lord }{0,1:of the town of Śirḍī,}",
     "words": [
       {
         "roman": "śirḍīpurī",
@@ -1082,7 +1082,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dayā karo kṛpā karo",
-    "english": "{0,1:Bestow mercy, }{2,3:grant grace,}",
+    "english": "{0,1:Bestow mercy, }{3:grant }{2:grace,}",
     "words": [
       {
         "roman": "dayā",
@@ -1148,7 +1148,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṣamā karo he sāī rām",
-    "english": "{0,1:grant forgiveness, }{2,3,4:O Sāī Rām!}",
+    "english": "{1:grant }{0:forgiveness, }{2,3,4:O Sāī Rām!}",
     "words": [
       {
         "roman": "kṣamā",
@@ -1274,7 +1274,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "megh śyām sundar nām",
-    "english": "{0,1:cloud-dark, }{2,3:beautiful name.}",
+    "english": "{0,1:cloud-dark, }{2:beautiful }{3:name.}",
     "words": [
       {
         "roman": "megh",
@@ -1712,7 +1712,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "meghśyām sundar nām",
-    "english": "{0:cloud-dark, }{1,2:beautiful name.}",
+    "english": "{0:cloud-dark, }{1:beautiful }{2:name.}",
     "words": [
       {
         "roman": "meghśyām",

@@ -4,6 +4,22 @@
 
 The owner authorized integrating and publishing only the 14 prepared readers. They are now integrated: 19 existing English definitions, 10 annotation-only definitions, and two restored Sundarakāṇḍa couplets. Jayagaḷu’s literal stick refrain is preserved. Current registry: 350 finished, 2 protected, 14 pending; those 14 pending readers are deferred at the owner’s request. See [the integration record](research/translation-source-resolution-2026-11-21.md#integration-release). Release assembly and desktop/mobile checks pass; this batch is ready for deployment and live verification. Reuse completed marks; do not reopen the deferred readers without a new request.
 
+## Word-sized popups and meaning-first English — 23 November 2026
+
+- [x] 256 lines linked as whole sentences and 871 lines with long compounds were
+  relinked word by word (1,094 stored lines, 144 songs); 797 further two-word links
+  were split where each gloss names its English word. Visible text is unchanged except
+  three spelling slips (यथाब्जे, saṃpunītaḥ, अपहत). Owner-protected readers untouched.
+- [x] Devī Aparādha Kṣamāpana retranslated for meaning with the prakriya kit; every
+  compound opens member by member.
+- [x] Shrine credits: Narendra Chanchal, Caman, Madan Dās, Jaipal Ji; recitations and
+  unidentified singers carry the Bhawan.
+- [ ] Doubtful readings noted by the relinking pass, unchanged pending review:
+  durga-apaduddharashtakam ākhilākrodhanā; harivarasanam l007 nartanālasam;
+  endaro l009/l017; rajabidiyolaginda l011/l018; pavamana l017; pradnya 4b;
+  narayani stavyaparā, saṅkhyeya; mangala l026/l027; shyamala l024/l026/l071;
+  madhyahna 034/089/137/143/153/160–163; kakad 198/201/216; devimahatmya v011.
+
 ## Credits release — 22 November 2026
 
 - [x] Released researched credits and component notices for 31 readers after matching each to its completed translation review.

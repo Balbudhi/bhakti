@@ -47,30 +47,50 @@ window.SONG_LINES = {
     "sourceLanguage": "te",
     "sourceWords": [
       {
-        "text": "నగుమొగముతోడి",
+        "text": "నగు",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ఓ",
+        "text": "మొగము",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "నరకేసరీ",
+        "text": "తోడి",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ఓ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "నరకేసరీ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "nagumogamutōḍi ō narakēsarī",
-    "english": "{1:O} {2:Narakēsarī}, {0:with a smiling face}!",
+    "english": "{3:O} {4:Narakēsarī}, {2:with} {0:a smiling} {1:face}!",
     "words": [
       {
-        "roman": "nagumogamutōḍi",
-        "gloss": "with a smiling face"
+        "roman": "nagu",
+        "gloss": "smiling"
+      },
+      {
+        "roman": "mogamu",
+        "gloss": "face"
+      },
+      {
+        "roman": "tōḍi",
+        "gloss": "with; having"
       },
       {
         "roman": "ō",
@@ -153,28 +173,58 @@ window.SONG_LINES = {
     "sourceLanguage": "te",
     "sourceWords": [
       {
-        "text": "అమితదానవహరణ",
+        "text": "అమిత",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ఆదినరకేసరీ",
+        "text": "దానవ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "హరణ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ఆది",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "నరకేసరీ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "amitadānavaharaṇa ādinarakēsarī",
-    "english": "{0:Destroyer of countless demons}, {1:primordial Narakēsarī}!",
+    "english": "{2:Destroyer of} {0:countless} {1:demons}, {3:primordial} {4:Narakēsarī}!",
     "words": [
       {
-        "roman": "amitadānavaharaṇa",
-        "gloss": "destroyer of countless demons"
+        "roman": "amita",
+        "gloss": "countless"
       },
       {
-        "roman": "ādinarakēsarī",
-        "gloss": "the primordial man-lion form of Viṣṇu"
+        "roman": "dānava",
+        "gloss": "demons"
+      },
+      {
+        "roman": "haraṇa",
+        "gloss": "destroyer"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "primordial"
+      },
+      {
+        "roman": "narakēsarī",
+        "gloss": "the man-lion form of Viṣṇu"
       }
     ],
     "nameTable": false,
@@ -237,36 +287,60 @@ window.SONG_LINES = {
     "sourceLanguage": "te",
     "sourceWords": [
       {
-        "text": "కమలాగ్ర",
+        "text": "కమలా",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "వామాంక",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "కనక",
+        "text": "గ్ర",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "నరకేసరీ",
+        "text": "వామాం",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "క",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "కనక",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "నరకేసరీ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "kamalāgravāmāṅka kanaka narakēsarī",
-    "english": "{1:Golden} {2:Narakēsarī}, {0:with Kamalā at the front of your left lap}!",
+    "english": "{4:Golden} {5:Narakēsarī}, {0:with Kamalā} {1:at the front} {2:of your left} {3:lap}!",
     "words": [
       {
-        "roman": "kamalāgravāmāṅka",
-        "gloss": "with the goddess Lakṣmī, called Kamalā, at the front of your left lap; Kamalā means “the lotus goddess”, a name of Lakṣmī"
+        "roman": "kamalā",
+        "gloss": "with the goddess Lakṣmī; Kamalā, “the lotus goddess”"
+      },
+      {
+        "roman": "gra",
+        "gloss": "front; agra, joined ā + a"
+      },
+      {
+        "roman": "vām",
+        "gloss": "left; vāma, joined a + a"
+      },
+      {
+        "roman": "āṅka",
+        "gloss": "lap; aṅka"
       },
       {
         "roman": "kanaka",

@@ -1065,7 +1065,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dātai dāti rakhī hathi apaṇai jisu bhāvai tisu deī",
-    "english": "{0:The Giver }{2:has kept }{1:the gift }{3:in }{4:His own }{3:hand; }{8:He gives it }{5,7:to whomever }{6:He chooses.}",
+    "english": "{0:The Giver }{2:has kept }{1:the gift }{3:in }{4:His own }{3:hand; }{8:He gives it }{7:to }{5:whomever }{6:He chooses.}",
     "words": [
       {
         "roman": "dātai",

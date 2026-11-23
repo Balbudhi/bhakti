@@ -1365,7 +1365,7 @@ window.SONG_LINES = {
   "l17": {
     "source": "बाहर दृष्टि न जावै अवधू अंतर ही सब पावै",
     "roman": "bāhar dṛṣṭi na jāvai avadhū antar hī sab pāvai",
-    "english": "{1:The gaze} {2,3:does not go} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {5,6:within alone}.",
+    "english": "{1:The gaze} {2,3:does not go} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {5:within }{6:alone}.",
     "words": [
       {
         "roman": "bāhar",

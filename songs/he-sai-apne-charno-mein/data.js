@@ -215,7 +215,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhulā de ki ham kaun ha͠i,",
-    "english": "{0,1:Make us forget }{2,4:who }{3,5:we are, }",
+    "english": "{0,1:Make us forget }{2,4:who }{3:we }{5:are, }",
     "words": [
       {
         "roman": "Bhulā",
@@ -304,7 +304,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bas tere hī caraṇõ mẽ rahne de,",
-    "english": "{0:Just }{5,6:let us remain }{1,2,3,4:at your feet alone, }",
+    "english": "{0:Just }{6:let us }{5:remain }{4:at }{1:your }{3:feet }{2:alone, }",
     "words": [
       {
         "roman": "Bas",
@@ -524,7 +524,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ik rāt ke lie hī sahī,",
-    "english": "{5:Even if }{4:only }{0,1,2,3:for a single night, }",
+    "english": "{5:Even if }{4:only }{3,2:for }{0:a single }{1:night, }",
     "words": [
       {
         "roman": "Ik",
@@ -601,7 +601,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere caraṇõ mẽ khilne de",
-    "english": "{3,4:Let us bloom }{0,1,2:at your feet.}",
+    "english": "{3,4:Let us bloom }{2:at }{0:your }{1:feet.}",
     "words": [
       {
         "roman": "Tere",
@@ -714,7 +714,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ham gāte rahẽ guṇ tere sadā, ham ha͠ste rahẽ terī śaraṇ mẽ",
-    "english": "{0:May we }{5:always }{1,2:keep singing }{3,4:your praises, }{6:may we }{7,8:keep smiling }{9,10,11:in your refuge}",
+    "english": "{0:May we }{5:always }{2:keep }{1:singing }{4:your }{3:praises, }{6:may we }{8:keep }{7:smiling }{11:in }{9:your }{10:refuge}",
     "words": [
       {
         "roman": "Ham",
@@ -1017,7 +1017,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ham pāp-puṇya ko kyā jānẽ, bacā de hamẽ is uljhan se",
-    "english": "{0,3:What do we }{4:know }{1,2:of sin and merit? }{5,6,7:Save us }{8,9,10:from this entanglement}",
+    "english": "{0,3:What do we }{4:know }{1,2:of sin and merit? }{5,6,7:Save us }{10:from }{8:this }{9:entanglement}",
     "words": [
       {
         "roman": "Ham",
@@ -1124,7 +1124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ham tere gīt sadā gāẽ,",
-    "english": "{0:May we }{3:always }{4:sing }{1,2:your songs, }",
+    "english": "{0:May we }{3:always }{4:sing }{1:your }{2:songs, }",
     "words": [
       {
         "roman": "Ham",
@@ -1207,7 +1207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamẽ terī hī yādõ mẽ khone de,",
-    "english": "{0,5,6:Let us lose ourselves }{1,2,3,4:in remembrance of you alone, }",
+    "english": "{6:Let }{0:us }{5:lose ourselves }{4:in }{3:remembrance }{1:of you }{2:alone, }",
     "words": [
       {
         "roman": "Hamẽ",

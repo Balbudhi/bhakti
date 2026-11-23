@@ -151,7 +151,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O Śiraḍī ke Sāīṁ tūne kaisī duniyā banāī",
-    "english": "{0:O }{3:Sai }{1,2:of Shirdi, }{5:what a }{6:world }{4,7:you have made!}",
+    "english": "{0:O }{3:Sai }{2:of }{1:Shirdi, }{5:what a }{6:world }{4,7:you have made!}",
     "words": [
       {
         "roman": "O",
@@ -1202,7 +1202,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Cain se bhī vo so nā pāe āṅkhoṁ se nīnd curāī",
-    "english": "{3:They }{5,6:cannot }{2:even }{4:sleep }{0,1:in peace; }{9:sleep }{10:has been stolen }{7,8:from their eyes!}",
+    "english": "{3:They }{5,6:cannot }{2:even }{4:sleep }{1:in }{0:peace; }{9:sleep }{10:has been stolen }{7,8:from their eyes!}",
     "words": [
       {
         "roman": "Cain",

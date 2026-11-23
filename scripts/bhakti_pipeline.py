@@ -5816,9 +5816,10 @@ def catalogue_entry(song_dir: Path, meta: dict[str, Any]) -> dict[str, Any]:
         "composer": str(meta.get("composer") or ""),
         "audioSources": list(meta.get("audioSources") or [{"src": "audio.m4a", "type": "audio/mp4"}]),
     }
-    music_director = str(meta.get("musicDirector") or "").strip()
-    if music_director:
-        entry["musicDirector"] = music_director
+    for field in ("musicDirector", "ensemble"):
+        value = str(meta.get(field) or "").strip()
+        if value:
+            entry[field] = value
     subtitle = str(meta.get("subtitle") or "").strip()
     if subtitle:
         entry["subtitle"] = subtitle

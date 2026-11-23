@@ -123,7 +123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "is sansār mēṁ hī nahīṁ, tīnōṁ lōkōṁ mēṁ bhagvān śiv kī pūjā hōtī hai.",
-    "english": "{3,4:Not only }{2:in }{0:this }{1:world, }{7:in }{5:all three }{6:worlds }{10,11:worship of }{8:Lord }{9:Shiva }{12,13:takes place.}",
+    "english": "{4:Not }{3:only }{2:in }{0:this }{1:world, }{7:in }{5:all three }{6:worlds }{11:worship }{10:of }{8:Lord }{9:Shiva }{12,13:takes place.}",
     "words": [
       {
         "roman": "is",
@@ -654,7 +654,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vāstav mēṁ sārē dēvī-dēvtāōṁ kī kṛpā prāpt karnē kā ēk saral upāy hai: bhagvān śiv kī ārādhanā.",
-    "english": "{1:In }{0:reality, }{9:one }{10:simple }{11:means }{6,7,8:to attain }{5:the grace }{4:of }{2:all }{3:deities }{12:is: }{15,16:worship of }{13:Lord }{14:Shiva.}",
+    "english": "{1:In }{0:reality, }{9:one }{10:simple }{11:means }{6,7,8:to attain }{5:the grace }{4:of }{2:all }{3:deities }{12:is: }{16:worship }{15:of }{13:Lord }{14:Shiva.}",
     "words": [
       {
         "roman": "vāstav",

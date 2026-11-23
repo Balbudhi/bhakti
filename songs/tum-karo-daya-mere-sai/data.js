@@ -1258,7 +1258,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo prabh kai man bhāī",
-    "english": "{0:which }{4:pleases }{1,2:the Lord’s }{3:heart.}",
+    "english": "{0:which }{4:pleases }{1:the }{2:Lord’s }{3:heart.}",
     "words": [
       {
         "roman": "jo",

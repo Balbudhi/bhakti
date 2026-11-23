@@ -233,7 +233,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mērī samādhi kī caṛhē jō sīṛhī duḥkh har lū̃gā usakē sabhī",
-    "english": "{4:Whoever}{3: climbs}{5: the steps}{0,2: of my}{1: tomb}, {7,8:I will take away}{10: all}{9: their}{6: sorrows.}",
+    "english": "{4:Whoever}{3: climbs}{5: the steps}{2: of }{0:my}{1: tomb}, {7,8:I will take away}{10: all}{9: their}{6: sorrows.}",
     "words": [
       {
         "roman": "mērī",
@@ -394,7 +394,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yadi gayā maĩ yah dēh taj kē tō bhī dauṛū̃gā bhakt kē hit mē̃",
-    "english": "{0:Even if}{2: I}{1: depart}{5,6: having cast off}{3: this}{4: body}, {7,8:even then}{9: I will run}{12,13: for the welfare}{10,11: of the devotee.}",
+    "english": "{0:Even if}{2: I}{1: depart}{5,6: having cast off}{3: this}{4: body}, {8:even }{7:then}{9: I will run}{12,13: for the welfare}{10,11: of the devotee.}",
     "words": [
       {
         "roman": "yadi",
@@ -979,7 +979,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mujh kō bhajē jō jis bhāvanā sē vaisā hī pahuñcū̃ maĩ pās usakē",
-    "english": "{3:Whoever}{2: worships}{0,1: me}{4,6: with whatever}{5: devotional feeling}{7,8:, in that very way}{10: I}{9: reach}{11,12: near to them.}",
+    "english": "{3:Whoever}{2: worships}{0,1: me}{6: with }{4:whatever}{5: devotional feeling}{7,8:, in that very way}{10: I}{9: reach}{11,12: near to them.}",
     "words": [
       {
         "roman": "mujh",
@@ -1134,7 +1134,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadā uṭhāū̃gā bhār maĩ tumhārā nahī̃ hai mithyā mērā vacan yah",
-    "english": "{3:I}{0: will always}{1: bear}{4: your}{2: burden;}{10: this}{9: promise}{8: of mine}{5,6: is not}{7: false.}",
+    "english": "{3:I}{0: will always}{1: bear}{4: your}{2: burden;}{10: this}{9: promise}{8: of mine}{6: is }{5:not}{7: false.}",
     "words": [
       {
         "roman": "sadā",
@@ -1289,7 +1289,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yahā̃ milatī hai madad sabhī kō mā̃gē jō jō vahī milatā hai usakō",
-    "english": "{0:Here}{3: help}{1,2: is received}{4,5: by everyone;}{7,8: whatever}{6: one asks for,}{9: that very thing}{10,11: is received}{12: by them.}",
+    "english": "{0:Here}{3: help}{2: is }{1:received}{4,5: by everyone;}{7,8: whatever}{6: one asks for,}{9: that very thing}{11: is }{10:received}{12: by them.}",
     "words": [
       {
         "roman": "yahā̃",
@@ -1462,7 +1462,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mērā jō huā hai kāyā vācā man sē usakā ṛṇī maĩ sadā sarvadā hī",
-    "english": "{1:Whoever}{2,3: has become}{0: mine}{4,7: through body,}{5: speech,}{6: and mind,}{8: to them}{10: I}{9: am indebted}{11: always}{12: and forever}{13: indeed.}",
+    "english": "{1:Whoever}{3: has }{2:become}{0: mine}{7: through }{4:body,}{5: speech,}{6: and mind,}{8: to them}{10: I}{9: am indebted}{11: always}{12: and forever}{13: indeed.}",
     "words": [
       {
         "roman": "mērā",

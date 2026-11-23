@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Russī Ẽ Tū̃ Sāḍe Nāḷ Kiũ Merī Māe",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Jaipal Ji",
+  "pageCredit": "Jaipal Ji",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Jaipal Ji",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -65,7 +65,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaikārā śerā̃vālī dā",
-    "english": "{0,1,2:Raise a victory cry for the lion-riding Mother!}",
+    "english": "{0:Raise a victory cry }{2:for }{1:the lion-riding Mother!}",
     "words": [
       {
         "roman": "Jaikārā",
@@ -122,7 +122,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bol sāce darabār kī jai",
-    "english": "{0,1,2,3,4:Call out: victory to the true court!}",
+    "english": "{0:Call out: }{3,4:victory to }{1,2:the true court!}",
     "words": [
       {
         "roman": "Bol",
@@ -207,7 +207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Russī ẽ tū̃ sāḍe nāḷ kiũ merī māe",
-    "english": "{0,1,2,3,4,5,6,7:Why are you angry with us, my Mother?}",
+    "english": "{5:Why }{1:are }{2:you }{0:angry }{4:with }{3:us, }{6:my }{7:Mother?}",
     "words": [
       {
         "roman": "Russī",
@@ -301,7 +301,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dass hā̃ māe asā̃ kehṛe chattar curāe",
-    "english": "{0,1,2,3,4,5,6:Do tell us, Mother—which parasols have we stolen?}",
+    "english": "{1:Do }{0:tell us, }{2:Mother}—{4:which }{5:parasols }{3,6:have we stolen?}",
     "words": [
       {
         "roman": "Dass",
@@ -402,7 +402,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ russī ẽ tū̃ sāḍe nāḷ kiũ merī māe",
-    "english": "{0,1,2,3,4,5,6,7,8:Yes, why are you angry with us, my Mother?}",
+    "english": "{0:Yes, }{6:why }{2:are }{3:you }{1:angry }{5:with }{4:us, }{7:my }{8:Mother?}",
     "words": [
       {
         "roman": "Hā̃",
@@ -507,7 +507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ dass hā̃ māe asā̃ kehṛe chattar curāe",
-    "english": "{0,1,2,3,4,5,6,7:Yes, do tell us, Mother—which parasols have we stolen?}",
+    "english": "{0:Yes, }{2:do }{1:tell us, }{3:Mother}—{5:which }{6:parasols }{4,7:have we stolen?}",
     "words": [
       {
         "roman": "Hā̃",
@@ -607,7 +607,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Horā̃ nū̃ tā̃ vaṇḍẽ maiyā sukkhā̃ de khazāne",
-    "english": "{0,1,2,3,4,5,6,7:To others, Mother, you hand out treasures of happiness.}",
+    "english": "{0,1,2:To others, }{4:Mother, }{3:you hand out }{7:treasures }{6:of }{5:happiness.}",
     "words": [
       {
         "roman": "Horā̃",
@@ -701,7 +701,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dunīā̃ de sāre dukkh merī jholī pāe",
-    "english": "{0,1,2,3,4,5,6:You have placed all the world’s sorrows in my lap.}",
+    "english": "{6:You have placed }{2:all }{0,1:the world’s }{3:sorrows }{4,5:in my lap.}",
     "words": [
       {
         "roman": "Dunīā̃",
@@ -796,7 +796,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho dunīā̃ de sāre dukkh merī jholī pāe",
-    "english": "{0,1,2,3,4,5,6,7:O, you have placed all the world’s sorrows in my lap.}",
+    "english": "{0:O, }{7:you have placed }{3:all }{1,2:the world’s }{4:sorrows }{5,6:in my lap.}",
     "words": [
       {
         "roman": "Ho",
@@ -902,7 +902,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho russī ẽ tū̃ sāḍe nāḷ kiũ merī māe",
-    "english": "{0,1,2,3,4,5,6,7,8:O, why are you angry with us, my Mother?}",
+    "english": "{0:O, }{6:why }{2:are }{3:you }{1:angry }{5:with }{4:us, }{7:my }{8:Mother?}",
     "words": [
       {
         "roman": "Ho",
@@ -1007,7 +1007,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho dass hā̃ māe asā̃ kehṛe chattar curāe",
-    "english": "{0,1,2,3,4,5,6,7:O, do tell us, Mother—which parasols have we stolen?}",
+    "english": "{0:O, }{2:do }{1:tell us, }{3:Mother}—{5:which }{6:parasols }{4,7:have we stolen?}",
     "words": [
       {
         "roman": "Ho",
@@ -1107,7 +1107,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terā dar chaḍḍ ke maĩ kehṛe dar jāvā̃",
-    "english": "{0,1,2,3,4,5,6,7:If I leave your door, to which door should I go?}",
+    "english": "{3,4:If I }{2:leave }{0:your }{1:door, }{5:to which }{6:door }{7:should I go?}",
     "words": [
       {
         "roman": "Terā",
@@ -1142,7 +1142,7 @@ window.SONG_LINES = {
       {
         "roman": "dar",
         "gloss": "door; threshold [here of the Mother’s shrine]",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 1
       },
       {
         "roman": "jāvā̃",
@@ -1213,7 +1213,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho terā dar chaḍḍ ke maĩ kehṛe dar jāvā̃",
-    "english": "{0,1,2,3,4,5,6,7,8:O, if I leave your door, to which door should I go?}",
+    "english": "{0:O, }{4,5:if I }{3:leave }{1:your }{2:door, }{6:to which }{7:door }{8:should I go?}",
     "words": [
       {
         "roman": "Ho",
@@ -1253,7 +1253,7 @@ window.SONG_LINES = {
       {
         "roman": "dar",
         "gloss": "door; threshold [here of the Mother’s shrine]",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 2
       },
       {
         "roman": "jāvā̃",
@@ -1312,7 +1312,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dukkhā̃ vāḷā hāḷ maiyā kis nū̃ suṇāvā̃",
-    "english": "{0,1,2,3,4,5,6:Mother, to whom should I tell my sorrowful plight?}",
+    "english": "{3:Mother, }{5:to }{4:whom }{6:should I tell }{0,1:my sorrowful }{2:plight?}",
     "words": [
       {
         "roman": "Dukkhā̃",
@@ -1389,7 +1389,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chaḍḍ ke... kehṛe dar jāvā̃",
-    "english": "{0,1,2,3,4:Leaving it… to which door should I go?}",
+    "english": "{0,1:Leaving it… }{2:to which }{3:door }{4:should I go?}",
     "words": [
       {
         "roman": "Chaḍḍ",
@@ -1474,7 +1474,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ dukkhā̃ vāḷā hāḷ maiyā kis nū̃ suṇāvā̃",
-    "english": "{0,1,2,3,4,5,6,7:Yes, Mother, to whom should I tell my sorrowful plight?}",
+    "english": "{0:Yes, }{4:Mother, }{6:to }{5:whom }{7:should I tell }{1,2:my sorrowful }{3:plight?}",
     "words": [
       {
         "roman": "Hā̃",
@@ -1574,7 +1574,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho dukkhā̃ vāḷā hāḷ maiyā kis nū̃ suṇāvā̃",
-    "english": "{0,1,2,3,4,5,6,7:O Mother, to whom should I tell my sorrowful plight?}",
+    "english": "{0:O }{4:Mother, }{6:to }{5:whom }{7:should I tell }{1,2:my sorrowful }{3:plight?}",
     "words": [
       {
         "roman": "Ho",
@@ -1680,7 +1680,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ro ro ke maĩ tā̃ maiyā tere kolõ pucchṇā",
-    "english": "{0,1,2,3,4,5,6,7,8:Weeping, weeping, Mother, I will ask you this:}",
+    "english": "{0:Weeping, }{1,2:weeping, }{5:Mother, }{3,4:I }{8:will ask }{6,7:you this:}",
     "words": [
       {
         "roman": "Ro",
@@ -1797,7 +1797,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ro ro ke maĩ tā̃ maĩ tā̃ tere kolõ pucchṇā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Weeping, weeping, I—yes, I—will ask you this:}",
+    "english": "{0:Weeping, }{1,2:weeping, }{3:I}—{4:yes, }{5:I}—{6,9:will ask }{7,8:you this:}",
     "words": [
       {
         "roman": "Ro",
@@ -1827,12 +1827,12 @@ window.SONG_LINES = {
       {
         "roman": "maĩ",
         "gloss": "I",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 3
       },
       {
         "roman": "tā̃",
         "gloss": "indeed; as for [contrastive or emphatic particle]",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 4
       },
       {
         "roman": "tere",
@@ -1901,7 +1901,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dunīā̃ de vicc mande bhāg kiũ baṇāe",
-    "english": "{0,1,2,3,4,5,6:Why did you create ill fortune in the world?}",
+    "english": "{5:Why }{6:did you create }{3:ill }{4:fortune }{0,1,2:in the world?}",
     "words": [
       {
         "roman": "Dunīā̃",
@@ -2008,7 +2008,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ ro ro ke maĩ tā̃ maiyā tere kolõ pucchṇā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Yes, weeping, weeping, Mother, I will ask you this:}",
+    "english": "{0:Yes, }{1:weeping, }{2,3:weeping, }{6:Mother, }{4,5:I }{9:will ask }{7,8:you this:}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2023,7 +2023,7 @@ window.SONG_LINES = {
       {
         "roman": "ro",
         "gloss": "weep; weeping [repetition conveys ongoing weeping]",
-        "sourceTokenIndex": 2
+        "sourceTokenIndex": 1
       },
       {
         "roman": "ke",
@@ -2136,7 +2136,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ ro ro ke maĩ tā̃ maĩ tā̃ tere kolõ pucchṇā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:Yes, weeping, weeping, I—yes, I—will ask you this:}",
+    "english": "{0:Yes, }{1:weeping, }{2,3:weeping, }{4:I}—{5:yes, }{6:I}—{7,10:will ask }{8,9:you this:}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2151,7 +2151,7 @@ window.SONG_LINES = {
       {
         "roman": "ro",
         "gloss": "weep; weeping [repetition conveys ongoing weeping]",
-        "sourceTokenIndex": 2
+        "sourceTokenIndex": 1
       },
       {
         "roman": "ke",
@@ -2171,12 +2171,12 @@ window.SONG_LINES = {
       {
         "roman": "maĩ",
         "gloss": "I",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 4
       },
       {
         "roman": "tā̃",
         "gloss": "indeed; as for [contrastive or emphatic particle]",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 5
       },
       {
         "roman": "tere",

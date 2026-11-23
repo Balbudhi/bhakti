@@ -482,32 +482,62 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "శ్రీవేంకటేశ",
+        "text": "శ్రీ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ఘనసంపదతోడి",
+        "text": "వేంకటేశ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ఘన",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "సంపద",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "తోడి",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "garima śrīvēṃkaṭēśa ghanasaṃpadatōḍi",
-    "english": "{0:Majestic} {1:Śrī Veṅkaṭeśa}, {2:with abundant wealth},",
+    "english": "{0:Majestic} {1:Śrī} {2:Veṅkaṭeśa}, {5:with} {3:abundant} {4:wealth},",
     "words": [
       {
         "roman": "garima",
         "gloss": "in greatness; in majesty"
       },
       {
-        "roman": "śrīvēṃkaṭēśa",
-        "gloss": "the Lord of Veṅkaṭa, respectfully addressed"
+        "roman": "śrī",
+        "gloss": "revered, auspicious"
       },
       {
-        "roman": "ghanasaṃpadatōḍi",
-        "gloss": "with abundant wealth and splendor"
+        "roman": "vēṃkaṭēśa",
+        "gloss": "the Lord of Veṅkaṭa; vēṃkaṭa + īśa"
+      },
+      {
+        "roman": "ghana",
+        "gloss": "abundant; great"
+      },
+      {
+        "roman": "saṃpada",
+        "gloss": "wealth; splendor"
+      },
+      {
+        "roman": "tōḍi",
+        "gloss": "with; together with"
       }
     ],
     "nameTable": false,

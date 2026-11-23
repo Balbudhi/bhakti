@@ -60,18 +60,38 @@ window.SONG_LINES = {
   "l002": {
     "source": "పరబ్రహ్మమొక్కటే",
     "roman": "parabrahmamokkaṭē",
-    "english": "{0:Supreme reality is one alone}.",
+    "english": "{0:Supreme} {1:reality} {2:is one alone}.",
     "words": [
       {
-        "roman": "parabrahmamokkaṭē",
-        "gloss": "the supreme ultimate reality is one alone"
+        "roman": "para",
+        "gloss": "supreme"
+      },
+      {
+        "roman": "brahmam",
+        "gloss": "ultimate reality; brahmamu"
+      },
+      {
+        "roman": "okkaṭē",
+        "gloss": "is one alone; okkaṭi with emphatic ē"
       }
     ],
     "sourceWords": [
       {
-        "text": "పరబ్రహ్మమొక్కటే",
+        "text": "పర",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "బ్రహ్మ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "మొక్కటే",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -80,28 +100,58 @@ window.SONG_LINES = {
   "l003": {
     "source": "బ్రహ్మమొక్కటే పరబ్రహ్మమొక్కటే",
     "roman": "brahmamokkaṭē parabrahmamokkaṭē",
-    "english": "{0:Ultimate reality is one alone}; {1:supreme reality is one alone}.",
+    "english": "{0:Ultimate reality} {1:is one alone}; {2:supreme} {3:reality} {4:is one alone}.",
     "words": [
       {
-        "roman": "brahmamokkaṭē",
-        "gloss": "ultimate reality is one alone"
+        "roman": "brahmam",
+        "gloss": "ultimate reality; brahmamu"
       },
       {
-        "roman": "parabrahmamokkaṭē",
-        "gloss": "the supreme ultimate reality is one alone"
+        "roman": "okkaṭē",
+        "gloss": "is one alone; okkaṭi with emphatic ē"
+      },
+      {
+        "roman": "para",
+        "gloss": "supreme"
+      },
+      {
+        "roman": "brahmam",
+        "gloss": "ultimate reality; brahmamu"
+      },
+      {
+        "roman": "okkaṭē",
+        "gloss": "is one alone; okkaṭi with emphatic ē"
       }
     ],
     "sourceWords": [
       {
-        "text": "బ్రహ్మమొక్కటే",
+        "text": "బ్రహ్మ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "పరబ్రహ్మమొక్కటే",
+        "text": "మొక్కటే",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "పర",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "బ్రహ్మ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "మొక్కటే",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -330,15 +380,23 @@ window.SONG_LINES = {
   "l008": {
     "source": "కందువగు హీనాధికము లిందు లేవు",
     "roman": "kanduvagu hīnādhikamulindu lēvu",
-    "english": "{0:Imagined} {1:distinctions of low and high} {2:do not exist} {1:here}.",
+    "english": "{0:Imagined} {2:distinctions} {1:of low} {2:and high} {4:do not exist} {3:here}.",
     "words": [
       {
         "roman": "kanduvagu",
         "gloss": "fictitious; imagined distinctions; kanduva + agu"
       },
       {
-        "roman": "hīnādhikamulindu",
-        "gloss": "distinctions of low and high here; hīnādhikamulu + indu"
+        "roman": "hīn",
+        "gloss": "low; hīna, vowel joined to adhika"
+      },
+      {
+        "roman": "ādhikamul",
+        "gloss": "and high, as distinctions; adhikamulu, plural"
+      },
+      {
+        "roman": "indu",
+        "gloss": "here; in this"
       },
       {
         "roman": "lēvu",
@@ -353,21 +411,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "హీనాధికము",
+        "text": "హీనా",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ధికము",
+        "wordIndices": [
+          2
         ]
       },
       {
         "text": "లిందు",
         "wordIndices": [
-          1
+          3
         ]
       },
       {
         "text": "లేవు",
         "wordIndices": [
-          2
+          4
         ]
       }
     ],
@@ -737,15 +801,23 @@ window.SONG_LINES = {
   "l017": {
     "source": "చండాలుడుండేటి సరిభూమి యొకటే",
     "roman": "caṇḍāluḍuṇḍēṭi saribhūmi yokaṭē",
-    "english": "{1:The level ground} {0:where the outcaste lives} {2:is the same}.",
+    "english": "{2:The level} {3:ground} {1:where} {0:the outcaste} {1:lives} {4:is the same}.",
     "words": [
       {
-        "roman": "caṇḍāluḍuṇḍēṭi",
-        "gloss": "where the person treated as outcaste lives"
+        "roman": "caṇḍāluḍ",
+        "gloss": "the person treated as outcaste; caṇḍāluḍu"
       },
       {
-        "roman": "saribhūmi",
-        "gloss": "the level ground"
+        "roman": "uṇḍēṭi",
+        "gloss": "where … lives; habitual participle of being"
+      },
+      {
+        "roman": "sari",
+        "gloss": "level; equal"
+      },
+      {
+        "roman": "bhūmi",
+        "gloss": "ground; earth"
       },
       {
         "roman": "yokaṭē",
@@ -754,21 +826,33 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "చండాలుడుండేటి",
+        "text": "చండాలు",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "సరిభూమి",
+        "text": "డుండేటి",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "యొకటే",
+        "text": "సరి",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "భూమి",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "యొకటే",
+        "wordIndices": [
+          4
         ]
       }
     ],

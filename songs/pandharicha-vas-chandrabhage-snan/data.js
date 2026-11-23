@@ -188,14 +188,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जन्मजन्मांतरी",
+        "text": "जन्म",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "जन्मांतरी",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "heci ghaḍo maj janmajanmāntarī",
-    "english": "{1:may} {0:this alone} {1:come} {2:to me} {3:in birth after birth}.",
+    "english": "{1:may} {0:this alone} {1:come} {2:to me} {4:in} {3:birth} {4:after birth}.",
     "words": [
       {
         "roman": "heci",
@@ -210,8 +216,12 @@ window.SONG_LINES = {
         "gloss": "to me"
       },
       {
-        "roman": "janmajanmāntarī",
-        "gloss": "in birth after birth"
+        "roman": "janma",
+        "gloss": "birth"
+      },
+      {
+        "roman": "janmāntarī",
+        "gloss": "in other births after it; janmāntara, locative"
       }
     ],
     "nameTable": false,

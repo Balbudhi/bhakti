@@ -352,7 +352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Suno patte mere bhāī",
-    "english": "{0:“Listen,}{1: O leaf,}{2,3: my brother,}",
+    "english": "{0:“Listen,}{1: O leaf,}{2: my }{3:brother,}",
     "words": [
       {
         "roman": "Suno",
@@ -482,7 +482,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ika āye ika jāya",
-    "english": "{0,1:one comes,}{2,3: one goes.”}",
+    "english": "{0:one }{1:comes,}{2: one }{3:goes.”}",
     "words": [
       {
         "roman": "Ika",
@@ -547,7 +547,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sām̐sa sām̐sa mem̐ nāma le",
-    "english": "{0,1,2:With every single breath}{3,4: take the Name,}",
+    "english": "{2:With }{0,1:every single breath}{3,4: take the Name,}",
     "words": [
       {
         "roman": "Sām̐sa",
@@ -612,7 +612,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bace sām̐sa nā koī",
-    "english": "{2:let not}{1,3: any breath}{0: escape;}",
+    "english": "{2:let not}{3: any }{1:breath}{0: escape;}",
     "words": [
       {
         "roman": "Bace",
@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kyā jāne phir sā̃s kā",
-    "english": "{0,1:who knows}{3,4: whether the breath}{2: will again}",
+    "english": "{0:who }{1:knows}{3,4: whether the breath}{2: will again}",
     "words": [
       {
         "roman": "kyā",

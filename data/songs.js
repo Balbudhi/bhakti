@@ -3954,7 +3954,7 @@ window.BHAKTI_SONGS = [
     "slug": "devi-dhyana",
     "queueId": "8ec8b956",
     "title": "Devī Dhyāna",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit"
     ],
@@ -3979,6 +3979,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 389
   },
@@ -3986,7 +3987,7 @@ window.BHAKTI_SONGS = [
     "slug": "devi-kshama-prarthana",
     "queueId": "1caf44ad",
     "title": "Devī Kṣamā Prārthanā",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit",
       "Hindi",
@@ -4014,6 +4015,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 373
   },
@@ -4223,7 +4225,7 @@ window.BHAKTI_SONGS = [
     "slug": "durga-apaduddharashtakam",
     "queueId": "8fb8a4f3",
     "title": "Durgā Āpaduddhārāṣṭakam",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit"
     ],
@@ -4250,6 +4252,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 374
   },
@@ -5260,7 +5263,7 @@ window.BHAKTI_SONGS = [
     "slug": "jab-karm-ka-khata-kholegi-maa",
     "queueId": "51dcb055",
     "title": "Jab Karmõ Kā Khātā Kholegī Mā̃",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Hindi",
       "Punjabi"
@@ -5287,6 +5290,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 381
   },
@@ -5330,10 +5334,45 @@ window.BHAKTI_SONGS = [
     "queueNumber": 355
   },
   {
+    "slug": "russiya-tu-sade-naal-kyon-meri-maaye",
+    "queueId": "e11eb675",
+    "title": "Russī Ẽ Tū̃ Sāḍe Nāḷ Kiũ Merī Māe",
+    "credit": "Jaipal Ji",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Russi Ẽ Tũ Sade Nal Kiũ Meri Mae",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mata Vaishno Devi",
+      "Russi Ae Tu Sade Naal Kyon Meri Maaye",
+      "Russi En Tu Sade Nal Kyun Meri Maa"
+    ],
+    "writer": "",
+    "singer": "Jaipal Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/russiya-tu-sade-naal-kyon-meri-maaye-a2376916ca9dfda41c0962b1fd45eba3a173937f6dd2d3b2f9e16bd4342fad77.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 380
+  },
+  {
     "slug": "jai-jai-durge-aad-bhavani",
     "queueId": "2b91dc49",
     "title": "Jai Jai Durge Ād Bhavānī",
-    "credit": "Jaipal Ji",
+    "credit": "Caman & Madan Dās · Jaipal Ji",
     "languageTags": [
       "Punjabi",
       "Hindi"
@@ -5353,9 +5392,10 @@ window.BHAKTI_SONGS = [
       "Durga",
       "Vishnu",
       "Visnu",
-      "Mata Vaishno Devi"
+      "Mata Vaishno Devi",
+      "Chaman"
     ],
-    "writer": "",
+    "writer": "Caman & Madan Dās",
     "singer": "Jaipal Ji",
     "composer": "",
     "audioSources": [
@@ -5366,6 +5406,49 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 382
+  },
+  {
+    "slug": "meri-dati-daya-har-ik-te-kardi-ae",
+    "queueId": "4e7f69e6",
+    "title": "Merī Dātī Dayā Har Ik Te Kardī E",
+    "credit": "Caman · Jaipal Ji",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Kālī",
+      "Viṣṇu",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Meri Dati Daya Har Ik Te Kardi E",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Kali",
+      "Vishnu",
+      "Visnu",
+      "Shiva",
+      "Siva",
+      "Mata Vaishno Devi",
+      "Meri Daati Daya Har Ek Te Kardi Ae",
+      "Chaman"
+    ],
+    "writer": "Caman",
+    "singer": "Jaipal Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-dati-daya-har-ik-te-kardi-ae-790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 384
   },
   {
     "slug": "ma-karali-kali-ma",
@@ -6445,7 +6528,7 @@ window.BHAKTI_SONGS = [
     "slug": "mujhe-apni-sharan-mein-le-lo-maa",
     "queueId": "5cd271ac",
     "title": "Mujhe Apni Sharan Mein Le Lo Maa",
-    "credit": "Maninder Ji",
+    "credit": "Narendra Chanchal · Maninder Ji",
     "languageTags": [
       "Hindi"
     ],
@@ -6459,9 +6542,10 @@ window.BHAKTI_SONGS = [
       "Shakti",
       "Sakti",
       "Mujhe Apni Sharan Mein Lelo Maa",
-      "Mujhe Apni Sharan Mein Le Lo Maa Maninder Ji"
+      "Mujhe Apni Sharan Mein Le Lo Maa Maninder Ji",
+      "Narendra Chanchal"
     ],
-    "writer": "",
+    "writer": "Narendra Chanchal",
     "singer": "Maninder Ji",
     "composer": "",
     "audioSources": [
@@ -6778,48 +6862,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 336
   },
   {
-    "slug": "meri-dati-daya-har-ik-te-kardi-ae",
-    "queueId": "4e7f69e6",
-    "title": "Merī Dātī Dayā Har Ik Te Kardī E",
-    "credit": "",
-    "languageTags": [
-      "Punjabi",
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī",
-      "Kālī",
-      "Viṣṇu",
-      "Śiva"
-    ],
-    "searchAliases": [
-      "Meri Dati Daya Har Ik Te Kardi E",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Kali",
-      "Vishnu",
-      "Visnu",
-      "Shiva",
-      "Siva",
-      "Mata Vaishno Devi",
-      "Meri Daati Daya Har Ek Te Kardi Ae"
-    ],
-    "writer": "",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-dati-daya-har-ik-te-kardi-ae-790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 384
-  },
-  {
     "slug": "o-shirdiwale-sai",
     "queueId": "f169b949",
     "title": "O Shirdiwale Sai",
@@ -6859,7 +6901,7 @@ window.BHAKTI_SONGS = [
     "slug": "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya",
     "queueId": "6861dbba",
     "title": "Mā̃ Ne Rauṇkā̃ Lagāīā̃ Kamāl Ho Giā",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Punjabi",
       "Hindi"
@@ -6887,6 +6929,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 385
   },
@@ -9032,41 +9075,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 378
-  },
-  {
-    "slug": "russiya-tu-sade-naal-kyon-meri-maaye",
-    "queueId": "e11eb675",
-    "title": "Russī Ẽ Tū̃ Sāḍe Nāḷ Kiũ Merī Māe",
-    "credit": "",
-    "languageTags": [
-      "Punjabi",
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Russi Ẽ Tũ Sade Nal Kiũ Meri Mae",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Mata Vaishno Devi",
-      "Russi Ae Tu Sade Naal Kyon Meri Maaye",
-      "Russi En Tu Sade Nal Kyun Meri Maa"
-    ],
-    "writer": "",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/russiya-tu-sade-naal-kyon-meri-maaye-a2376916ca9dfda41c0962b1fd45eba3a173937f6dd2d3b2f9e16bd4342fad77.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 380
   },
   {
     "slug": "ayarpadi-maligaiyil",
@@ -11651,7 +11659,7 @@ window.BHAKTI_SONGS = [
     "slug": "siddha-kunjika-stotram",
     "queueId": "b096d731",
     "title": "Siddhakuñjikā Stotram",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit"
     ],
@@ -11684,6 +11692,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 377
   },
@@ -13229,7 +13238,7 @@ window.BHAKTI_SONGS = [
     "slug": "devimahatmya-chapter-12",
     "queueId": "bea54621",
     "title": "Devīmāhātmyam — Adhyāya 12",
-    "credit": "Vyāsa",
+    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit"
     ],
@@ -13257,6 +13266,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 387
   },
@@ -13264,7 +13274,7 @@ window.BHAKTI_SONGS = [
     "slug": "bhagavati-stotram",
     "queueId": "75bbc561",
     "title": "Śrībhagavatīstotram",
-    "credit": "Vyāsa",
+    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit"
     ],
@@ -13291,6 +13301,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 372
   },
@@ -13298,7 +13309,7 @@ window.BHAKTI_SONGS = [
     "slug": "narayani-stuti",
     "queueId": "8f6ef7f0",
     "title": "Nārāyaṇī Stuti",
-    "credit": "Vyāsa",
+    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit"
     ],
@@ -13335,6 +13346,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 376
   },
@@ -13342,7 +13354,7 @@ window.BHAKTI_SONGS = [
     "slug": "ya-devi-sarvabhuteshu",
     "queueId": "648ba980",
     "title": "Yā Devī Sarvabhūteṣu",
-    "credit": "Vyāsa",
+    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Sanskrit",
       "Hindi"
@@ -13378,6 +13390,7 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 388
   },
@@ -13418,7 +13431,7 @@ window.BHAKTI_SONGS = [
     "slug": "yeh-mantra-hai-maa-chamunda-ka",
     "queueId": "a6f604c9",
     "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
-    "credit": "",
+    "credit": "Shri Mata Vaishno Devi Bhawan",
     "languageTags": [
       "Hindi",
       "Punjabi",
@@ -13445,8 +13458,9 @@ window.BHAKTI_SONGS = [
         "type": "audio/mp4"
       }
     ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "0735af394f5f06c22643fc7caffeda3656d29293e68aa3906cf88e440481ac3d";
+window.BHAKTI_SHUFFLE_REVISION = "35ef06e3239903be0546ca0b39aeef021964493ec17e2ebbdf15029fe1d54783";

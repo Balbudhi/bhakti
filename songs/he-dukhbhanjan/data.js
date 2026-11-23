@@ -587,7 +587,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum par rījhe avadh bihārī",
-    "english": "{3,4:the dweller of Ayodhya }{2:was delighted }{0,1:with you.}",
+    "english": "{3,4:the dweller of Ayodhya }{2:was delighted }{1:with }{0:you.}",
     "words": [
       {
         "roman": "tum",

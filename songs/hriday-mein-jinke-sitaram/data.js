@@ -37,7 +37,7 @@ window.SONG_LINES = {
   "l01": {
     "source": "हृदय में जिनके सीताराम",
     "roman": "Hṛday meṃ jinke Sītārām",
-    "english": "{0,1,2:In whose heart dwell }{3:Sītā and Rāma}…",
+    "english": "{1:In }{2:whose }{0:heart dwell }{3:Sītā }{4:and Rāma}…",
     "words": [
       {
         "roman": "Hṛday",
@@ -52,8 +52,12 @@ window.SONG_LINES = {
         "gloss": "whose; possessive relative pronoun"
       },
       {
-        "roman": "Sītārām",
-        "gloss": "Sītā and Rāma, the divine couple: the furrow-born goddess and the delightful lord"
+        "roman": "Sītā",
+        "gloss": "Sītā, Rāma's consort"
+      },
+      {
+        "roman": "rām",
+        "gloss": "Rāma; Sītā-Rām, the divine couple"
       }
     ],
     "sourceWords": [
@@ -76,9 +80,15 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सीताराम",
+        "text": "सीता",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          4
         ]
       }
     ],

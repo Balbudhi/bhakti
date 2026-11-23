@@ -339,7 +339,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Suna līje arajī hamārī Paṇḍharīnāthā",
-    "english": "{0,1:Please hear }{3:our }{2:petition, }{4:O Lord of Pandhari!}",
+    "english": "{1:Please }{0:hear }{3:our }{2:petition, }{4:O Lord of Pandhari!}",
     "words": [
       {
         "roman": "Suna",
@@ -428,7 +428,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaisā bhī ho bhāva tere caraṇoṁ meṁ āyā",
-    "english": "{0,1,2:Whatever }{3:my devotional feeling may be, }{7:I have come }{4,5,6:to your feet.}",
+    "english": "{0,1,2:Whatever }{3:my devotional feeling may be, }{7:I have come }{6:to }{4:your }{5:feet.}",
     "words": [
       {
         "roman": "Jaisā",
@@ -713,7 +713,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dayā karo de do bābā kṛpā kī chāyā",
-    "english": "{0,1:Show mercy }{2,3:and grant, }{4:O Baba, }{7:the shade }{5,6:of your grace.}",
+    "english": "{1:Show }{0:mercy }{2,3:and grant, }{4:O Baba, }{7:the shade }{5,6:of your grace.}",
     "words": [
       {
         "roman": "Dayā",
@@ -1075,7 +1075,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vaiṣṇavoṁ kā melā Garuḍa Pāra ā gayā",
-    "english": "{2:The gathering }{0,1:of Vaishnavas }{5,6:has reached }{3:the Garuda }{4:platform.}",
+    "english": "{2:The gathering }{1:of }{0:Vaishnavas }{5,6:has reached }{3:the Garuda }{4:platform.}",
     "words": [
       {
         "roman": "Vaiṣṇavoṁ",
@@ -2061,7 +2061,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Phira bhī ajñāna sī chāī hai tumharī yoga māyā",
-    "english": "{0,1:Even so, }{6:Your }{7:yoga} - {8:māyā }{4,5:is spread }{2,3:like ignorance,}",
+    "english": "{0,1:Even so, }{6:Your }{7:yoga} - {8:māyā }{5:is }{4:spread }{3:like }{2:ignorance,}",
     "words": [
       {
         "roman": "Phira",
@@ -2333,32 +2333,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "साईंनाथ",
+        "text": "साईं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "महाराज",
+        "text": "नाथ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "भवतिमिरनाशक",
+        "text": "महाराज",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "रवि",
+        "text": "भव",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "तिमिर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नाशक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रवि",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "Bho Sāīnātha Mahārāja bhavatimiranāśaka ravi",
-    "english": "{0:O }{1:Lord Sai }{2:Maharaj, }{4:sun }{3:destroying the darkness of worldly existence!}",
+    "english": "{0:O }{2:Lord }{1:Sai }{3:Maharaj, }{7:sun }{6:destroying }{5:the darkness }{4:of worldly existence!}",
     "words": [
       {
         "roman": "Bho",
@@ -2367,8 +2385,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "Sāīnātha",
-        "gloss": "Lord Sai",
+        "roman": "Sāī",
+        "gloss": "Sai, the revered spiritual teacher",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nātha",
+        "gloss": "lord, protector",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2379,8 +2403,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhavatimiranāśaka",
-        "gloss": "destroyer of the darkness of worldly existence",
+        "roman": "bhava",
+        "gloss": "worldly existence",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "timira",
+        "gloss": "darkness",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nāśaka",
+        "gloss": "destroyer of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2992,48 +3028,72 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "त्वद्वचनामृत",
+        "text": "त्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्राशन",
+        "text": "द्वचना",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "करने",
+        "text": "मृत",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "आतुर",
+        "text": "प्राशन",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "हो",
+        "text": "करने",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "जाते",
+        "text": "आतुर",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "हो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जाते",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "Tvadvacanāmṛta prāśana karane ātura ho jāte",
-    "english": "{4,5:they become }{3:eager }{1,2:to drink }{0:the nectar of Your words.}",
+    "english": "{6,7:they become }{5:eager }{4:to }{3:drink }{2:the nectar }{0:of Your }{1:words.}",
     "words": [
       {
-        "roman": "Tvadvacanāmṛta",
-        "gloss": "the nectar of Your words",
+        "roman": "Tvad",
+        "gloss": "Your",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vacan",
+        "gloss": "words; vacana, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āmṛta",
+        "gloss": "nectar; amṛta",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4406,7 +4466,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Svarga ke suravara lekara āye phariyāda",
-    "english": "{2:The foremost gods }{0,1:of heaven }{4:have come }{3:bringing }{5:their petitions.}",
+    "english": "{2:The foremost gods }{1:of }{0:heaven }{4:have come }{3:bringing }{5:their petitions.}",
     "words": [
       {
         "roman": "Svarga",
@@ -5314,7 +5374,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vairāgya ke ghṛta se usako snehana diyā",
-    "english": "{3:With }{2:the ghee }{0,1:of dispassion, }{5,6:I anointed }{4:it.}",
+    "english": "{3:With }{2:the ghee }{1:of }{0:dispassion, }{5,6:I anointed }{4:it.}",
     "words": [
       {
         "roman": "Vairāgya",
@@ -5605,7 +5665,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dvaita kā tama miṭa jāye ho tad-rūpa devā",
-    "english": "{2:May the darkness }{0,1:of duality }{3,4:vanish, }{5:and may I become }{6:one with That, }{7:O Lord!}",
+    "english": "{2:May the darkness }{1:of }{0:duality }{3,4:vanish, }{5:and may I become }{6:one with That, }{7:O Lord!}",
     "words": [
       {
         "roman": "Dvaita",
@@ -6217,7 +6277,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tvad-yaśa dundubhi se sārā ambara gūñja rahā",
-    "english": "{1,2:With the kettledrum} {0:of your renown,} {3:the entire} {4:sky} {5,6:is resounding.}",
+    "english": "{1,2:With the kettledrum} {0:of your renown,} {3:the entire} {4:sky} {6:is }{5:resounding.}",
     "words": [
       {
         "roman": "Tvad-yaśa",
@@ -6376,54 +6436,84 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "त्वद्वचनामृत",
+        "text": "त्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्राशन",
+        "text": "द्वचना",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कर",
+        "text": "मृत",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "के",
+        "text": "प्राशन",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "देहभान",
+        "text": "कर",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "खो",
+        "text": "के",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "रहा",
+        "text": "देह",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "भान",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "खो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रहा",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "Tvadvacanāmṛta prāśana kara ke dehabhāna kho rahā",
-    "english": "{1,2,3:Drinking} {0:the nectar of your words,} {5,6:one is losing} {4:bodily consciousness.}",
+    "english": "{3,4,5:Drinking} {2:the nectar }{0:of your }{1:words,} {8,9:one is losing} {6:bodily }{7:consciousness.}",
     "words": [
       {
-        "roman": "Tvadvacanāmṛta",
-        "gloss": "the nectar of your words (tvad = your, vacana = words, amṛta = nectar)",
+        "roman": "Tvad",
+        "gloss": "your",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vacan",
+        "gloss": "words; vacana, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āmṛta",
+        "gloss": "nectar; amṛta",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6446,8 +6536,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dehabhāna",
-        "gloss": "bodily consciousness; physical self-awareness",
+        "roman": "deha",
+        "gloss": "body; bodily",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhāna",
+        "gloss": "consciousness, awareness",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6621,7 +6717,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kṛpā karo ye dāsa le lo āñcala meṁ devā",
-    "english": "{0,1:Bestow grace,} {8:O Lord,} {4,5:and take} {2,3:this servant} {6,7:under the hem of your garment.}",
+    "english": "{1:Bestow }{0:grace,} {8:O Lord,} {4,5:and take} {2:this }{3:servant} {6,7:under the hem of your garment.}",
     "words": [
       {
         "roman": "Kṛpā",
@@ -6728,7 +6824,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhakti ke udara meṁ bodha kākaḍā jyoti",
-    "english": "{2,3:Within the womb} {0,1:of devotion} {6:is the flame} {5:of the morning torch} {4:of spiritual awakening.}",
+    "english": "{2,3:Within the womb} {1:of }{0:devotion} {6:is the flame} {5:of the morning torch} {4:of spiritual awakening.}",
     "words": [
       {
         "roman": "Bhakti",
@@ -7214,7 +7310,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koṭi brahma hatyā naṣṭa hotī darśana se",
-    "english": "{0:Ten million} {1,2:sins of slaying a Brahmin} {3,4:are destroyed} {5,6:through your sacred vision.}",
+    "english": "{0:Ten million} {1,2:sins of slaying a Brahmin} {4:are }{3:destroyed} {5,6:through your sacred vision.}",
     "words": [
       {
         "roman": "Koṭi",

@@ -368,11 +368,15 @@ window.SONG_LINES = {
   "l007": {
     "source": "ಅಕಟಕಟೆನ್ನದೆ ಕೊಂದಾನೆ",
     "roman": "akaṭakaṭennade kondāne",
-    "english": "{1:He killed him} {0:without so much as an “alas”}.",
+    "english": "{2:He killed him} {1:without so much as an} {0:“alas”}.",
     "words": [
       {
-        "roman": "akaṭakaṭennade",
-        "gloss": "without saying alas; without a cry of pity"
+        "roman": "akaṭakaṭ",
+        "gloss": "alas, alas; a cry of pity (akaṭakaṭa)"
+      },
+      {
+        "roman": "ennade",
+        "gloss": "without saying; negative participle"
       },
       {
         "roman": "kondāne",
@@ -381,15 +385,28 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ಅಕಟಕಟೆನ್ನದೆ",
+        "text": "ಅಕಟಕ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಕೊಂದಾನೆ",
+        "text": "ಟೆ",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ನ್ನದೆ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಕೊಂದಾನೆ",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -638,11 +655,15 @@ window.SONG_LINES = {
   "l013": {
     "source": "ಭೀಮಾರ್ಜುನರನು ಗೆಲಿಸ್ಯಾನೆ ಪರಮ ಭಾಗವತರ ಪ್ರಿಯಾನೆ",
     "roman": "bhīmārjunaranu gelisyāne parama bhāgavatara priyāne",
-    "english": "{1:He made} {0:Bhīma and Arjuna} {1:victorious}; {4:he is beloved} {2,3:of the foremost devotees}.",
+    "english": "{2:He made} {0:Bhīma} {1:and Arjuna} {2:victorious}; {5:he is beloved} {4:of the} {3:foremost} {4:devotees}.",
     "words": [
       {
-        "roman": "bhīmārjunaranu",
-        "gloss": "the two Pāṇḍava heroes, Bhīma and Arjuna; objects of making victorious"
+        "roman": "bhīm",
+        "gloss": "Bhīma, the mighty Pāṇḍava; bhīma, vowel joined to arjuna"
+      },
+      {
+        "roman": "ārjunaranu",
+        "gloss": "and Arjuna; arjunaranu, objects of making victorious"
       },
       {
         "roman": "gelisyāne",
@@ -663,33 +684,39 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ಭೀಮಾರ್ಜುನರನು",
+        "text": "ಭೀಮಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಗೆಲಿಸ್ಯಾನೆ",
+        "text": "ರ್ಜುನರನು",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಪರಮ",
+        "text": "ಗೆಲಿಸ್ಯಾನೆ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಭಾಗವತರ",
+        "text": "ಪರಮ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಪ್ರಿಯಾನೆ",
+        "text": "ಭಾಗವತರ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ಪ್ರಿಯಾನೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -738,15 +765,27 @@ window.SONG_LINES = {
   "l015": {
     "source": "ಮದಮುಖದ ಸುರರ ದಿಗಿಲಿಟ್ಟು ಕೊಂದ",
     "roman": "madamukhadasurara digiliṭṭu konda",
-    "english": "{2:Who killed} {0:the pride-faced demons}, {1:striking terror into them}.",
+    "english": "{5:Who killed} {2:the} {0:pride}-{1:faced} {2:demons}, {4:striking} {3:terror} {4:into them}.",
     "words": [
       {
-        "roman": "madamukhadasurara",
-        "gloss": "the pride-faced demons; continuous sandhi span across source spacing"
+        "roman": "mada",
+        "gloss": "pride; intoxication"
       },
       {
-        "roman": "digiliṭṭu",
-        "gloss": "having struck terror into"
+        "roman": "mukhad",
+        "gloss": "-faced; mukhada, having such a face"
+      },
+      {
+        "roman": "asurara",
+        "gloss": "demons; objects of killing"
+      },
+      {
+        "roman": "digil",
+        "gloss": "terror; digilu"
+      },
+      {
+        "roman": "iṭṭu",
+        "gloss": "having put or struck into; participle"
       },
       {
         "roman": "konda",
@@ -755,27 +794,46 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ಮದಮುಖದ",
+        "text": "ಮದ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಸುರರ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ದಿಗಿಲಿಟ್ಟು",
+        "text": "ಮುಖ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಕೊಂದ",
+        "text": "ದ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ಸುರರ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ದಿಗಿ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಲಿಟ್ಟು",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಕೊಂದ",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -784,15 +842,23 @@ window.SONG_LINES = {
   "l016": {
     "source": "ಪುರಂದರ ವಿಠಲನೆಂಬಾನೆ",
     "roman": "purandara viṭhalanembāne",
-    "english": "{1:The elephant called} {0:Purandara} {1:Viṭṭhala}.",
+    "english": "{3:The elephant} {2:called} {0:Purandara} {1:Viṭṭhala}.",
     "words": [
       {
         "roman": "purandara",
         "gloss": "first member of the poet’s signature deity-name; Purandara means “destroyer of strongholds”"
       },
       {
-        "roman": "viṭhalanembāne",
-        "gloss": "the elephant called Viṭṭhala; name and sustained elephant wordplay"
+        "roman": "viṭhalan",
+        "gloss": "Viṭṭhala, the Lord; second member of the signature name"
+      },
+      {
+        "roman": "emb",
+        "gloss": "called; emba"
+      },
+      {
+        "roman": "āne",
+        "gloss": "elephant; the song’s sustained wordplay"
       }
     ],
     "sourceWords": [
@@ -803,9 +869,21 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ವಿಠಲನೆಂಬಾನೆ",
+        "text": "ವಿಠಲ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ನೆಂ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ಬಾನೆ",
+        "wordIndices": [
+          3
         ]
       }
     ],

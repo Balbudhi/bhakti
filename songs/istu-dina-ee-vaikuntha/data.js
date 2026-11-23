@@ -246,28 +246,48 @@ window.SONG_LINES = {
   "l005": {
     "source": "ತುಂಟಕನೊಬ್ಬನ ತರಿದುದರಿಂದೆ",
     "roman": "tuṇṭakanobbana taridudarinde",
-    "english": "{1:Because I cut down} {0:one mischievous fellow}.",
+    "english": "{3:Because }{2:I cut down} {1:one }{0:mischievous fellow}.",
     "words": [
       {
-        "roman": "tuṇṭakanobbana",
-        "gloss": "one mischievous fellow; interpreted here as desire (kāma)"
+        "roman": "tuṇṭakan",
+        "gloss": "mischievous fellow; interpreted here as desire (kāma)"
       },
       {
-        "roman": "taridudarinde",
-        "gloss": "because I cut down; because I severed"
+        "roman": "obbana",
+        "gloss": "one [person]: accusative"
+      },
+      {
+        "roman": "taridudar",
+        "gloss": "my cutting down; having severed"
+      },
+      {
+        "roman": "inde",
+        "gloss": "because of; from: instrumental"
       }
     ],
     "sourceWords": [
       {
-        "text": "ತುಂಟಕನೊಬ್ಬನ",
+        "text": "ತುಂಟಕ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ತರಿದುದರಿಂದೆ",
+        "text": "ನೊಬ್ಬನ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ತರಿದುದ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ರಿಂದೆ",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -446,11 +466,15 @@ window.SONG_LINES = {
   "l009": {
     "source": "ದುರ್ಜನಾಂತಕನೆ ಶ್ರೀರಂಗಶಾಯಿ",
     "roman": "durjanāntakane śrīraṅgaśāyi",
-    "english": "{0:O destroyer of the wicked}, {1:Śrīraṅgaśāyi}!",
+    "english": "{1:O destroyer }{0:of the wicked}, {2:Śrīraṅgaśāyi}!",
     "words": [
       {
-        "roman": "durjanāntakane",
-        "gloss": "O destroyer of the wicked"
+        "roman": "durjan",
+        "gloss": "the wicked; durjana, joined a + a"
+      },
+      {
+        "roman": "āntakane",
+        "gloss": "O destroyer; antaka, one who ends: vocative"
       },
       {
         "roman": "śrīraṅgaśāyi",
@@ -459,15 +483,21 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ದುರ್ಜನಾಂತಕನೆ",
+        "text": "ದುರ್ಜನಾಂ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಶ್ರೀರಂಗಶಾಯಿ",
+        "text": "ತಕನೆ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಶ್ರೀರಂಗಶಾಯಿ",
+        "wordIndices": [
+          2
         ]
       }
     ],

@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Śrībhagavatīstotram",
   "subtitle": "Śakti",
-  "credit": "Vyāsa",
-  "pageCredit": "Vyāsa",
+  "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "Vyāsa",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Sanskrit"
   ],
@@ -45,18 +45,42 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "श्रीभगवतीस्तोत्रम्",
+        "text": "श्री",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "भगवती",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "स्तोत्रम्",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "śrībhagavatīstotram",
-    "english": "{0:Hymn to revered Bhagavatī.}",
+    "english": "{2:Hymn }{1:to }{0:revered }{1:Bhagavatī.}",
     "words": [
       {
-        "roman": "śrībhagavatīstotram",
-        "gloss": "hymn to revered Bhagavatī (the blessed Goddess)",
+        "roman": "śrī",
+        "gloss": "revered; blessed",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhagavatī",
+        "gloss": "Bhagavatī, the Goddess",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "stotram",
+        "gloss": "hymn of praise",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -195,14 +219,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "शुम्भनिशुम्भकपालधरे",
+        "text": "शुम्भ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "निशुम्भ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कपाल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धरे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya śumbhaniśumbhakapāladhare",
-    "english": "{0:Hail, }{1:bearer of the skulls of Śumbha and Niśumbha.}",
+    "english": "{0:Hail, }{4:bearer }{3:of the skulls }{1:of Śumbha }{2:and Niśumbha.}",
     "words": [
       {
         "roman": "jaya",
@@ -211,8 +253,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śumbhaniśumbhakapāladhare",
-        "gloss": "O bearer of the skulls of the demon brothers Śumbha and Niśumbha",
+        "roman": "śumbha",
+        "gloss": "Śumbha, a demon brother",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "niśumbha",
+        "gloss": "Niśumbha, the other demon brother",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kapāla",
+        "gloss": "skull",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhare",
+        "gloss": "O bearer; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -291,14 +351,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "चन्द्रदिवाकरनेत्रधरे",
+        "text": "चन्द्र",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दिवाकर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नेत्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धरे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya candradivākaranetradhare",
-    "english": "{0:Hail, }{1:you whose eyes are the moon and sun.}",
+    "english": "{0:Hail, }{4:you whose }{3:eyes are }{1:the moon }{2:and sun.}",
     "words": [
       {
         "roman": "jaya",
@@ -307,8 +385,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "candradivākaranetradhare",
-        "gloss": "O bearer of the moon and sun as eyes",
+        "roman": "candra",
+        "gloss": "moon",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "divākara",
+        "gloss": "sun, “day-maker”",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "netra",
+        "gloss": "eyes",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhare",
+        "gloss": "O bearer; you who have; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -327,14 +423,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पावकभूषितवक्त्रवरे",
+        "text": "पावक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "भूषित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वक्त्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वरे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya pāvakabhūṣitavaktravare",
-    "english": "{0:Hail, }{1:you whose splendid face is adorned with fire.}",
+    "english": "{0:Hail, }{4:you whose splendid }{3:face }{2:is adorned }{1:with fire.}",
     "words": [
       {
         "roman": "jaya",
@@ -343,8 +457,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pāvakabhūṣitavaktravare",
-        "gloss": "O you whose splendid face is adorned with fire",
+        "roman": "pāvaka",
+        "gloss": "fire, “purifier”",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhūṣita",
+        "gloss": "adorned",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vaktra",
+        "gloss": "face",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vare",
+        "gloss": "O splendid, excellent one; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -363,14 +495,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भैरवदेहनिलीनपरे",
+        "text": "भैरव",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "देह",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "निलीन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "परे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya bhairavadehanilīnapare",
-    "english": "{0:Hail, }{1:supreme one dwelling hidden within Bhairava’s body.}",
+    "english": "{0:Hail, }{4:supreme one }{3:dwelling hidden }{2:within }{1:Bhairava’s }{2:body.}",
     "words": [
       {
         "roman": "jaya",
@@ -379,8 +529,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhairavadehanilīnapare",
-        "gloss": "O supreme one dwelling hidden within the body of Bhairava, the formidable form of Śiva",
+        "roman": "bhairava",
+        "gloss": "Bhairava, the formidable form of Śiva",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "deha",
+        "gloss": "body",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nilīna",
+        "gloss": "dwelling hidden within",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pare",
+        "gloss": "O supreme one; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -399,14 +567,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अन्धकदैत्यविशोषकरे",
+        "text": "अन्धक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दैत्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "विशोष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya andhakadaityaviśoṣakare",
-    "english": "{0:Hail, }{1:you who make the demon Andhaka wither away.}",
+    "english": "{0:Hail, }{4:you who make }{2:the demon }{1:Andhaka }{3:wither away.}",
     "words": [
       {
         "roman": "jaya",
@@ -415,8 +601,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "andhakadaityaviśoṣakare",
-        "gloss": "O you who cause the demon Andhaka (the blind one) to wither away",
+        "roman": "andhaka",
+        "gloss": "Andhaka, “the blind one”",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "daitya",
+        "gloss": "demon, descendant of Diti",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "viśoṣa",
+        "gloss": "withering; drying up",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you who make; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -435,20 +639,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "महिषविमर्दिनि",
+        "text": "महिष",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "शूलकरे",
+        "text": "विमर्दिनि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "शूल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya mahiṣavimardini śūlakare",
-    "english": "{0:Hail, }{1:crusher of Mahiṣa, }{2:trident in hand.}",
+    "english": "{0:Hail, }{2:crusher }{1:of Mahiṣa, }{3:trident }{4:in hand.}",
     "words": [
       {
         "roman": "jaya",
@@ -457,14 +673,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mahiṣavimardini",
-        "gloss": "O crusher of the buffalo demon Mahiṣa",
+        "roman": "mahiṣa",
+        "gloss": "Mahiṣa, the buffalo demon",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "śūlakare",
-        "gloss": "O you with a trident in hand",
+        "roman": "vimardini",
+        "gloss": "O crusher; vocative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śūla",
+        "gloss": "trident",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you with … in hand; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -483,14 +711,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "लोकसमस्तकपापहरे",
+        "text": "लोक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "समस्तक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हरे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya lokasamastakapāpahare",
-    "english": "{0:Hail,}{1: remover of the whole world’s wrongdoing.}",
+    "english": "{0:Hail,}{4: remover}{3: of}{2: the whole}{1: world’s}{3: wrongdoing.}",
     "words": [
       {
         "roman": "jaya",
@@ -499,8 +745,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "lokasamastakapāpahare",
-        "gloss": "O remover of the whole world’s wrongdoing",
+        "roman": "loka",
+        "gloss": "world",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "samastaka",
+        "gloss": "whole, entire",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāpa",
+        "gloss": "wrongdoing; sin",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hare",
+        "gloss": "O remover; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -525,14 +789,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पितामहविष्णुनुते",
+        "text": "पितामह",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "विष्णु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नुते",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya devi pitāmahaviṣṇunute",
-    "english": "{0:Hail,}{1: Goddess,}{2: praised by Pitāmaha and Viṣṇu.}",
+    "english": "{0:Hail,}{1: Goddess,}{4: praised}{2: by Pitāmaha}{3: and Viṣṇu.}",
     "words": [
       {
         "roman": "jaya",
@@ -547,8 +823,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pitāmahaviṣṇunute",
-        "gloss": "O you praised by Pitāmaha (Forefather, here Brahmā) and Viṣṇu, the pervading deity",
+        "roman": "pitāmaha",
+        "gloss": "Pitāmaha, “Forefather”, here Brahmā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "viṣṇu",
+        "gloss": "Viṣṇu, the pervading deity",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nute",
+        "gloss": "O praised one; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -567,14 +855,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भास्करशक्रशिरोनमते",
+        "text": "भास्कर",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "शक्र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "शिरो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमते",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya bhāskaraśakraśironamate",
-    "english": "{0:Hail,}{1: you before whom Bhāskara and Śakra bow their heads.}",
+    "english": "{0:Hail,}{4: you before whom}{1: Bhāskara}{2: and Śakra}{4: bow}{3: their heads.}",
     "words": [
       {
         "roman": "jaya",
@@ -583,8 +889,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhāskaraśakraśironamate",
-        "gloss": "O you before whom Bhāskara (Light-maker, the sun) and Śakra (Mighty One, Indra) bow their heads",
+        "roman": "bhāskara",
+        "gloss": "Bhāskara, “Light-maker”, the sun",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śakra",
+        "gloss": "Śakra, “Mighty One”, Indra",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śiro",
+        "gloss": "head; śiras before n",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "namate",
+        "gloss": "O you to whom they bow; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -603,15 +927,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "षण्मुखसायुधईशनुते",
+        "text": "षण्मुख",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "सायुध",
+        "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ईश",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नुते",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya ṣaṇmukhasāyudha īśanute",
-    "english": "{0:Hail,}{2: praised by}{1: six-faced Skanda and the armed}{2: Lord Śiva.}",
+    "english": "{0:Hail,}{4: praised by}{1: six-faced Skanda}{2: and the armed}{3: Lord Śiva.}",
     "words": [
       {
         "roman": "jaya",
@@ -620,14 +961,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ṣaṇmukhasāyudha",
-        "gloss": "six-faced Skanda; sāyudha means bearing weapons and here modifies following Īśa",
+        "roman": "ṣaṇmukha",
+        "gloss": "six-faced Skanda; ṣaṭ + mukha",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "īśanute",
-        "gloss": "O you praised by Īśa (Lord, here Śiva); the compound also includes six-faced Skanda",
+        "roman": "sāyudha",
+        "gloss": "armed, bearing weapons; modifies the following Īśa",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "īśa",
+        "gloss": "the Lord, here Śiva",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nute",
+        "gloss": "O you praised by them; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -694,14 +1047,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दुःखदरिद्रविनाशकरे",
+        "text": "दुःख",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दरिद्र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "विनाशकरे",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "jaya duḥkhadaridravināśakare",
-    "english": "{0:Hail,}{1: destroyer of suffering and poverty.}",
+    "english": "{0:Hail,}{3: destroyer}{1: of suffering}{2: and poverty.}",
     "words": [
       {
         "roman": "jaya",
@@ -710,8 +1075,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "duḥkhadaridravināśakare",
-        "gloss": "O destroyer of suffering and poverty",
+        "roman": "duḥkha",
+        "gloss": "suffering",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "daridra",
+        "gloss": "poverty",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vināśakare",
+        "gloss": "O destroyer; vināśa + kara, vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -730,14 +1107,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पुत्रकलत्रविवृद्धिकरे",
+        "text": "पुत्र",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "कलत्र",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "विवृद्धि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya putrakalatravivṛddhikare",
-    "english": "{0:Hail,}{1: you who bring prosperity to sons and wives.}",
+    "english": "{0:Hail,}{4: you who bring}{3: prosperity}{1: to sons}{2: and wives.}",
     "words": [
       {
         "roman": "jaya",
@@ -746,8 +1141,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "putrakalatravivṛddhikare",
-        "gloss": "O you who bring increase and prosperity to sons and wives",
+        "roman": "putra",
+        "gloss": "son",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kalatra",
+        "gloss": "wife",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vivṛddhi",
+        "gloss": "increase; prosperity",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you who bring about; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -772,14 +1185,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "समस्तशरीरधरे",
+        "text": "समस्त",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "शरीर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धरे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya devi samastaśarīradhare",
-    "english": "{0:Hail,}{1: Goddess,}{2: bearer of every body.}",
+    "english": "{0:Hail,}{1: Goddess,}{4: bearer}{3: of}{2: every}{3: body.}",
     "words": [
       {
         "roman": "jaya",
@@ -794,8 +1219,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "samastaśarīradhare",
-        "gloss": "O bearer of every body",
+        "roman": "samasta",
+        "gloss": "every, all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śarīra",
+        "gloss": "body",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhare",
+        "gloss": "O bearer; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -862,20 +1299,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "व्याधिविनाशिनि",
+        "text": "व्याधि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मोक्षकरे",
+        "text": "विनाशिनि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मोक्ष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya vyādhivināśini mokṣakare",
-    "english": "{0:Hail,}{1: destroyer of illness,}{2: giver of liberation.}",
+    "english": "{0:Hail,}{2: destroyer}{1: of illness,}{4: giver}{3: of liberation.}",
     "words": [
       {
         "roman": "jaya",
@@ -884,14 +1333,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vyādhivināśini",
-        "gloss": "O destroyer of illness",
+        "roman": "vyādhi",
+        "gloss": "illness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mokṣakare",
-        "gloss": "O giver of liberation",
+        "roman": "vināśini",
+        "gloss": "O destroyer; vocative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mokṣa",
+        "gloss": "liberation",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kare",
+        "gloss": "O giver, you who bring about; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -910,20 +1371,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "वाञ्छितदायिनि",
+        "text": "वाञ्छित",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सिद्धिकरे",
+        "text": "दायिनि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सिद्धि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "jaya vāñchitadāyini siddhikare",
-    "english": "{0:Hail, }{1:giver of what is desired, }{2:giver of accomplishment.}",
+    "english": "{0:Hail, }{2:giver }{1:of what is desired, }{4:giver }{3:of accomplishment.}",
     "words": [
       {
         "roman": "jaya",
@@ -932,14 +1405,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vāñchitadāyini",
-        "gloss": "O giver of what is desired",
+        "roman": "vāñchita",
+        "gloss": "what is desired",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "siddhikare",
-        "gloss": "O giver of accomplishment",
+        "roman": "dāyini",
+        "gloss": "O giver; vocative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "siddhi",
+        "gloss": "accomplishment",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kare",
+        "gloss": "O giver, you who bring about; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }

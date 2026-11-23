@@ -98,7 +98,7 @@ window.SONG_LINES = {
   "l02": {
     "source": "सबका करते हो शुभ मंगल",
     "roman": "Sabkā karte ho śubh maṅgal",
-    "english": "{1,2:You bring about }{3,4:good fortune }{0:for everyone.}",
+    "english": "{1,2:You bring about }{3:good }{4:fortune }{0:for everyone.}",
     "words": [
       {
         "roman": "Sabkā",
@@ -988,7 +988,7 @@ window.SONG_LINES = {
   "l17": {
     "source": "सौ योजन के सागर को",
     "roman": "Sau yojan ke sāgar ko",
-    "english": "{3,4:The ocean }{0:a hundred }{1:yojanas }{2:across,}",
+    "english": "{4:The }{3:ocean }{0:a hundred }{1:yojanas }{2:across,}",
     "words": [
       {
         "roman": "Sau",
@@ -1188,7 +1188,7 @@ window.SONG_LINES = {
   "l21": {
     "source": "आए हैं हम शरण तुम्हारे",
     "roman": "Āe haiṃ ham śaraṇ tumhāre",
-    "english": "{2:We }{0,1:have come }{3:for refuge }{4:with you.}",
+    "english": "{2:We }{1:have }{0:come }{3:for refuge }{4:with you.}",
     "words": [
       {
         "roman": "Āe",

@@ -267,7 +267,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sac kahtā hū̃ bas apnī",
-    "english": "{0,1,2:I tell the truth, }{3:simply }{4:my}",
+    "english": "{2:I }{1:tell }{0:the truth, }{3:simply }{4:my}",
     "words": [
       {
         "roman": "Sac",
@@ -414,7 +414,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sunte haĩ terī rahmat",
-    "english": "{0,1:We hear }that {2:your }{3:mercy}",
+    "english": "{1:We }{0:hear }that {2:your }{3:mercy}",
     "words": [
       {
         "roman": "Sunte",
@@ -1294,7 +1294,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Merā dam hī nikal jāe",
-    "english": "{0:And my }{2:very }{1:breath }{3,4:should depart.}",
+    "english": "{0:And my }{2:very }{1:breath }{4:should }{3:depart.}",
     "words": [
       {
         "roman": "Merā",

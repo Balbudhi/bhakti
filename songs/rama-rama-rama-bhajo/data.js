@@ -449,7 +449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bālakapana duḥkha aneka bhogata hī bitāī",
-    "english": "{5:You spent }{0:childhood }{3,4:constantly enduring }{2:manifold }{1:sorrows}",
+    "english": "{5:You spent }{0:childhood }{4:constantly }{3:enduring }{2:manifold }{1:sorrows}",
     "words": [
       {
         "roman": "bālakapana",

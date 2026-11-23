@@ -143,7 +143,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cākar hū̃ terā janam janam kā",
-    "english": "{1:I am }{2:your }{0:servant }{3,5:of birth }{4:after birth,}",
+    "english": "{1:I am }{2:your }{0:servant }{5:of }{3:birth }{4:after birth,}",
     "words": [
       {
         "roman": "cākar",
@@ -587,7 +587,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "usse kyõ pardā kiye ho",
-    "english": "{1:why }{2,3,4:do you veil yourself }{0:from him?}",
+    "english": "{1:why }{4:do you }{2,3:veil yourself }{0:from him?}",
     "words": [
       {
         "roman": "usse",
@@ -865,7 +865,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem kā amṛt jharaiyo",
-    "english": "{3:and shower }{2:the nectar }{0,1:of love.}",
+    "english": "{3:and shower }{2:the nectar }{1:of }{0:love.}",
     "words": [
       {
         "roman": "prem",
@@ -1107,7 +1107,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dūje kā caraṇ na pakaṛū̃",
-    "english": "{3,4:I shall not grasp }{2:the feet }{0,1:of another.}",
+    "english": "{3,4:I shall not grasp }{2:the feet }{1:of }{0:another.}",
     "words": [
       {
         "roman": "dūje",

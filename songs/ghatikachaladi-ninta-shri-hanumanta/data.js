@@ -312,42 +312,64 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಚತುರಯುಗದಿ",
+        "text": "ಚತುರ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ತಾನು",
+        "text": "ಯುಗದಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಅತಿ",
+        "text": "ತಾನು",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಬಲವಂತನು",
+        "text": "ಅತಿ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಚತುರ್ಮುಖನಯ್ಯನ",
+        "text": "ಬಲವಂತನು",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ಚತು",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ರ್ಮುಖ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ನಯ್ಯನ",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "caturayugadi tānu ati balavaṃtanu caturmukhanayyana",
-    "english": "{1:He is} {2:exceedingly} {3:mighty} {0:in the four ages}. {4:The father of four-faced Brahmā’s}",
+    "english": "{2:He is} {3:exceedingly} {4:mighty} {1:in the }{0:four }{1:ages}. {7:The father }{5:of four-}{6:faced Brahmā}{7:’s}",
     "words": [
       {
-        "roman": "caturayugadi",
-        "gloss": "in the four ages of the world"
+        "roman": "catura",
+        "gloss": "four"
+      },
+      {
+        "roman": "yugadi",
+        "gloss": "in the ages of the world: locative"
       },
       {
         "roman": "tānu",
@@ -362,8 +384,16 @@ window.SONG_LINES = {
         "gloss": "mighty; strong"
       },
       {
-        "roman": "caturmukhanayyana",
-        "gloss": "of the father of the four-faced Brahmā; of Viṣṇu"
+        "roman": "catur",
+        "gloss": "four"
+      },
+      {
+        "roman": "mukhan",
+        "gloss": "faced; with catur, Brahmā"
+      },
+      {
+        "roman": "ayyana",
+        "gloss": "of the father; here Viṣṇu"
       }
     ],
     "nameTable": false,
@@ -426,36 +456,56 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಚತುರ್ಮುಖನಾಗಿ",
+        "text": "ಚತು",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಚತುರ್ವಿಧ",
+        "text": "ರ್ಮುಖ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಫಲ",
+        "text": "ನಾಗಿ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಕೊಡುತ",
+        "text": "ಚತುರ್ವಿಧ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಫಲ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಕೊಡುತ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "caturmukhanāgi caturvidha phala koḍuta",
-    "english": "{0:becoming four-faced Brahmā}, {3:granting} {1:the fourfold} {2:fruit}.",
+    "english": "{2:becoming }{0:four-}{1:faced Brahmā}, {5:granting} {3:the fourfold} {4:fruit}.",
     "words": [
       {
-        "roman": "caturmukhanāgi",
-        "gloss": "becoming four-faced Brahmā"
+        "roman": "catur",
+        "gloss": "four"
+      },
+      {
+        "roman": "mukhan",
+        "gloss": "faced; with catur, Brahmā"
+      },
+      {
+        "roman": "āgi",
+        "gloss": "becoming"
       },
       {
         "roman": "caturvidha",
@@ -550,38 +600,58 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಮೆರೆವಾಚಲದಿ",
+        "text": "ಮೆರೆವಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ನಿತ್ಯ",
+        "text": "ಚಲದಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ನರಹರಿಗೆದುರಾಗಿ",
+        "text": "ನಿತ್ಯ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ನರಹರಿಗೆ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ದುರಾಗಿ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "merevācaladi nitya naraharigedurāgi",
-    "english": "{0:on the hill where it shines}, {1:always} {2:facing Narahari},",
+    "english": "{1:on the hill }{0:where it shines}, {2:always} {4:facing }{3:Narahari},",
     "words": [
       {
-        "roman": "merevācaladi",
-        "gloss": "on the hill where it shines; the preceding pool is the subject of mereva"
+        "roman": "merev",
+        "gloss": "where it shines; mereva, the preceding pool is its subject"
+      },
+      {
+        "roman": "ācaladi",
+        "gloss": "on the hill; acala, locative"
       },
       {
         "roman": "nitya",
         "gloss": "always; continually"
       },
       {
-        "roman": "naraharigedurāgi",
-        "gloss": "facing Narahari, Viṣṇu as the man-lion"
+        "roman": "naraharig",
+        "gloss": "to Narahari, Viṣṇu as the man-lion; dative -ge, joined e + e"
+      },
+      {
+        "roman": "edurāgi",
+        "gloss": "facing, being opposite"
       }
     ],
     "nameTable": false,
@@ -726,28 +796,58 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಪಂಕಜನಾಭ",
+        "text": "ಪಂಕಜ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಶ್ರೀಪುರಂದರವಿಠಲನ",
+        "text": "ನಾಭ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಶ್ರೀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ಪುರಂದರ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ವಿಠಲನ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "paṃkajanābha śrīpuraṃdaraviṭhalana",
-    "english": "{0:lotus-naveled} {1:Śrī Purandara Viṭṭhala’s}",
+    "english": "{0:lotus-}{1:naveled} {2:Śrī }{3:Purandara }{4:Viṭṭhala’s}",
     "words": [
       {
-        "roman": "paṃkajanābha",
-        "gloss": "lotus-naveled; an epithet of Viṣṇu"
+        "roman": "paṃkaja",
+        "gloss": "lotus; mud-born"
       },
       {
-        "roman": "śrīpuraṃdaraviṭhalana",
-        "gloss": "of Śrī Purandara Viṭṭhala, Viṣṇu worshipped under the poet’s signature; Purandara means “destroyer of strongholds”"
+        "roman": "nābha",
+        "gloss": "naveled; the whole is an epithet of Viṣṇu"
+      },
+      {
+        "roman": "śrī",
+        "gloss": "auspicious; honorific"
+      },
+      {
+        "roman": "puraṃdara",
+        "gloss": "Purandara, “destroyer of strongholds”; part of the poet’s signature"
+      },
+      {
+        "roman": "viṭhalana",
+        "gloss": "of Viṭṭhala, Viṣṇu worshipped under the poet’s signature"
       }
     ],
     "nameTable": false,

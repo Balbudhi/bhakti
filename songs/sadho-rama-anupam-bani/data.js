@@ -195,7 +195,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Miṭa gaī khaiñcātānī",
-    "english": "{2:the tug-of-war }{0,1:completely dissolved.}",
+    "english": "{2:the tug-of-war }{1:completely }{0:dissolved.}",
     "words": [
       {
         "roman": "Miṭa",

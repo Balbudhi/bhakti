@@ -3380,7 +3380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yā Ambe jī kī āratī, jo koī nar gāve",
-    "english": "{0:This} {4:arati} {2,3:of revered} {1:Mother Amba,} {5,6,7:whosoever} {8:sings,}",
+    "english": "{0:This} {4:arati} {3:of }{2:revered} {1:Mother Amba,} {5,6,7:whosoever} {8:sings,}",
     "words": [
       {
         "roman": "Yā",

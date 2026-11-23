@@ -98,7 +98,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śiva śiva hoi prasanna karunāyā",
-    "english": "{0,1:Shiva, Shiva,}{2,3: be pleased,}{4: O compassionate one!}",
+    "english": "{0,1:Shiva, Shiva,}{2: be }{3:pleased,}{4: O compassionate one!}",
     "words": [
       {
         "roman": "śiva",
@@ -528,30 +528,66 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "अहिभूषन",
+        "text": "अहि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "दूषनरिपुसेवक",
+        "text": "भूषन",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दूषन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रिपु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सेवक",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "ahibhūṣana dūṣanaripusevaka",
-    "english": "{0:Adorned with serpents,}{1: servant to the foe of Dūṣaṇa,}",
+    "english": "{1:Adorned }{0:with serpents,}{4: servant }{3:to the foe }{2:of Dūṣaṇa,}",
     "words": [
       {
-        "roman": "ahibhūṣana",
-        "gloss": "serpent-adorned; wearing snakes as ornaments",
+        "roman": "ahi",
+        "gloss": "serpents",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dūṣanaripusevaka",
-        "gloss": "servant and devotee of the enemy of Dushana (Rama)",
+        "roman": "bhūṣana",
+        "gloss": "adorned with; ornament",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dūṣana",
+        "gloss": "Dushana, the demon",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ripu",
+        "gloss": "foe; here Rama",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sevaka",
+        "gloss": "servant, devotee",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -757,14 +793,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "समसाननिवासी",
+        "text": "समसान",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "निवासी",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "kāsī samasānanivāsī",
-    "english": "{1:dweller in}{0: Kāśī}{1: and the cremation grounds,}",
+    "english": "{2:dweller in}{0: Kāśī}{1: and the cremation grounds,}",
     "words": [
       {
         "roman": "kāsī",
@@ -773,8 +815,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "samasānanivāsī",
-        "gloss": "dweller in cremation grounds",
+        "roman": "samasāna",
+        "gloss": "cremation grounds",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nivāsī",
+        "gloss": "dweller in",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -798,14 +846,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "चरनकमलवर",
+        "text": "चरन",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कमल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वर",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "tulasīdāsa hari caranakamalavara",
-    "english": "{0:to Tulsidas,}{1: at Hari's}{2: noble lotus feet,}",
+    "english": "{0:to Tulsidas,}{1: at Hari's}{4: noble }{3:lotus }{2:feet,}",
     "words": [
       {
         "roman": "tulasīdāsa",
@@ -820,8 +880,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "caranakamalavara",
-        "gloss": "noble lotus feet; exalted blossom-like feet",
+        "roman": "carana",
+        "gloss": "feet",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kamala",
+        "gloss": "lotus",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vara",
+        "gloss": "noble, exalted",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -98,7 +98,7 @@ window.SONG_LINES = {
     "source": "श्री जानकीवल्लभो विजयते",
     "sourceLanguage": "bra",
     "roman": "śrī jānakīvallabho vijayate",
-    "english": "{0:The glorious }{1:Beloved of Janaki }{2:reigns victorious.}",
+    "english": "{0:The glorious }{2:Beloved }{1:of Janaki }{3:reigns victorious.}",
     "words": [
       {
         "roman": "śrī",
@@ -107,8 +107,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jānakīvallabho",
-        "gloss": "the beloved of Janaki (Sita), i.e., Lord Rama",
+        "roman": "jānakī",
+        "gloss": "Janaki (Sita)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vallabho",
+        "gloss": "the beloved, i.e., Lord Rama; vallabhaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -128,15 +134,21 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जानकीवल्लभो",
+        "text": "जानकी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "विजयते",
+        "text": "वल्लभो",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "विजयते",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -145,17 +157,29 @@ window.SONG_LINES = {
     "source": "श्रीमद्गोस्वामी तुलसीदासकृत",
     "sourceLanguage": "bra",
     "roman": "śrīmadgosvāmī tulasīdāsakṛta",
-    "english": "{1:Composed by }{0:the venerable Gosvami }{1:Tulsidas.}",
+    "english": "{3:Composed by }{0:the venerable }{1:Gosvami }{2:Tulsidas.}",
     "words": [
       {
-        "roman": "śrīmadgosvāmī",
-        "gloss": "the venerable spiritual master Gosvami",
+        "roman": "śrīmad",
+        "gloss": "venerable",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tulasīdāsakṛta",
-        "gloss": "composed by Tulsidas",
+        "roman": "gosvāmī",
+        "gloss": "Gosvami, spiritual master",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tulasīdāsa",
+        "gloss": "Tulsidas, the poet",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṛta",
+        "gloss": "composed by",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -163,15 +187,27 @@ window.SONG_LINES = {
     "grammarNote": "Compound title/heading: honorific śrīmat + gosvāmī in apposition to the past passive participial compound tulasīdāsa-kṛta ('done/composed by Tulsidas').",
     "sourceWords": [
       {
-        "text": "श्रीमद्गोस्वामी",
+        "text": "श्रीम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तुलसीदासकृत",
+        "text": "द्गोस्वामी",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "तुलसीदास",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कृत",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -1368,7 +1404,7 @@ window.SONG_LINES = {
     "source": "संताप पाप तेहि पुरुष पहिं सपनेहुँ नहिं आवत निकट",
     "sourceLanguage": "bra",
     "roman": "santāpa pāpa tehi puruṣa pahiṁ sapanehuṁ nahiṁ āvata nikaṭa",
-    "english": "{0:Torments }{1:and sins }{6:never }{7:come }{8:near }{2,4:unto that }{3:person, }{5:even in a dream.}",
+    "english": "{0:Torments }{1:and sins }{6:never }{7:come }{8:near }{4:unto }{2:that }{3:person, }{5:even in a dream.}",
     "words": [
       {
         "roman": "santāpa",
@@ -3013,7 +3049,7 @@ window.SONG_LINES = {
     "source": "बानर सुभाय बालकेलि भूमि भानु लागि फलंग फलांग हूँ ते घाटि नभतल भो",
     "sourceLanguage": "bra",
     "roman": "bānara subhāya bālakeli bhūmi bhānu lāgi phalaṅga phalāṅga hūṁ te ghāṭi nabhatala bho",
-    "english": "{0:By monkey }{1:nature }{2:and in child's play, }{6:leaping }{3:from earth }{4,5:unto the sun, }{11:the vault of the sky }{12:became }{10:less }{8,9:than even }{7:a single bound,}",
+    "english": "{0:By monkey }{1:nature }{2:and in child's play, }{6:leaping }{3:from earth }{4,5:unto the sun, }{11:the vault of the sky }{12:became }{10:less }{9:than }{8:even }{7:a single bound,}",
     "words": [
       {
         "roman": "bānara",
@@ -3848,7 +3884,7 @@ window.SONG_LINES = {
     "source": "साहसी समत्थ तुलसी को नाह जाकी बाँह लोकपाल पालन को फिर थिर थल भो",
     "sourceLanguage": "bra",
     "roman": "sāhasī samattha tulasī ko nāha jākī bā̃ha lokapāla pālana ko phira thira thala bho",
-    "english": "{0:The courageous }{1:and almighty }{4:master }{2,3:of Tulsi, }{5:whose }{6:arm }{10:once again }{13:became }{11:a steadfast }{12:refuge }{8,9:for sustaining }{7:the world-guardians.}",
+    "english": "{0:The courageous }{1:and almighty }{4:master }{3:of }{2:Tulsi, }{5:whose }{6:arm }{10:once again }{13:became }{11:a steadfast }{12:refuge }{9:for }{8:sustaining }{7:the world-guardians.}",
     "words": [
       {
         "roman": "sāhasī",
@@ -4671,7 +4707,7 @@ window.SONG_LINES = {
     "source": "दूत रामराय को सपूत पूत पौन को तू अंजनी को नंदन प्रताप भूरि भानु सो",
     "sourceLanguage": "bra",
     "roman": "dūta rāmarāya ko sapūta pūta pauna ko tū añjanī ko nandana pratāpa bhūri bhānu so",
-    "english": "{7:You are }{0:the envoy }{1,2:of King Rama, }{3,4:the noble son }{5,6:of the Wind, }{10:the delighter }{8,9:of Anjana, }{11:with majesty }{14:like }{12:the boundless }{13:sun,}",
+    "english": "{7:You are }{0:the envoy }{1,2:of King Rama, }{3,4:the noble son }{5,6:of the Wind, }{10:the delighter }{9:of }{8:Anjana, }{11:with majesty }{14:like }{12:the boundless }{13:sun,}",
     "words": [
       {
         "roman": "dūta",
@@ -5828,7 +5864,7 @@ window.SONG_LINES = {
     "source": "राम को दुलारो दास बामदेव को निवास नाम कलि कामतरु केसरी किसोर को",
     "sourceLanguage": "bra",
     "roman": "rāma ko dulāro dāsa bāmadeva ko nivāsa nāma kali kāmataru kesarī kisora ko",
-    "english": "{2:The beloved }{3:servant }{0,1:of Rama, }{6:the dwelling }{4,5:of Vāmadeva, }{7:the name }{10:of Kesari's }{11,12:son }{9:is a wish-fulfilling tree }{8:in the Kali age.}",
+    "english": "{2:The beloved }{3:servant }{0,1:of Rama, }{6:the dwelling }{5:of }{4:Vāmadeva, }{7:the name }{10:of Kesari's }{11,12:son }{9:is a wish-fulfilling tree }{8:in the Kali age.}",
     "words": [
       {
         "roman": "rāma",
@@ -6603,7 +6639,7 @@ window.SONG_LINES = {
     "source": "रचिबे को बिधि जैसे पालिबे को हरिहर मीच मारिबे को जियाइबे को सुधापान भो",
     "sourceLanguage": "bra",
     "roman": "racibe ko bidhi jaise pālibe ko harihara mīca māribe ko jiyāibe ko sudhāpāna bho",
-    "english": "{0,1:For creating, }{3:he is like }{2:Brahmā; }{4,5:for sustaining, }{6:Hari; }{8,9:for slaying, }{6:Hara }{7:and Death; }{10,11:for reviving, }{13:he has become }{12:a draught of nectar.}",
+    "english": "{1:For }{0:creating, }{3:he is like }{2:Brahmā; }{5:for }{4:sustaining, }{6:Hari; }{9:for }{8:slaying, }{6:Hara }{7:and Death; }{11:for }{10:reviving, }{13:he has become }{12:a draught of nectar.}",
     "words": [
       {
         "roman": "racibe",
@@ -6782,7 +6818,7 @@ window.SONG_LINES = {
     "source": "धरिबे को धरनि तरनि तम दलिबे को सोखिबे कृसानु पोषिबे को हिम भानु भो",
     "sourceLanguage": "bra",
     "roman": "dharibe ko dharani tarani tama dalibe ko sokhibe kṛsānu poṣibe ko hima bhānu bho",
-    "english": "{0,1:For supporting, }{2:the earth, }{5,6:for dispelling }{4:darkness, }{3:the sun, }{7:for drying up, }{8:fire, }{9,10:and for nourishing, }{13:he became }{11,12:the cool-rayed moon.}",
+    "english": "{1:For }{0:supporting, }{2:the earth, }{6:for }{5:dispelling }{4:darkness, }{3:the sun, }{7:for drying up, }{8:fire, }{9,10:and for nourishing, }{13:he became }{11,12:the cool-rayed moon.}",
     "words": [
       {
         "roman": "dharibe",
@@ -7128,7 +7164,7 @@ window.SONG_LINES = {
     "source": "आरत की आरति निवारिबे को तिहूँ पुर",
     "sourceLanguage": "bra",
     "roman": "ārata kī ārati nivāribe ko tihū̃ pura",
-    "english": "{3,4:For dispelling }{2:the distress }{0,1:of the afflicted }{5,6:in all three worlds,}",
+    "english": "{4:For }{3:dispelling }{2:the distress }{0,1:of the afflicted }{5,6:in all three worlds,}",
     "words": [
       {
         "roman": "ārata",
@@ -7223,7 +7259,7 @@ window.SONG_LINES = {
     "source": "तुलसी को साहिब हठीलो हनुमान भो ॥",
     "sourceLanguage": "bra",
     "roman": "tulasī ko sāhiba haṭhīlo hanumāna bho ॥",
-    "english": "{3:resolute }{4:Hanuman, }{2:master }{0,1:of Tulsidas, }{5:came to be.}",
+    "english": "{3:resolute }{4:Hanuman, }{2:master }{1:of }{0:Tulsidas, }{5:came to be.}",
     "words": [
       {
         "roman": "tulasī",
@@ -7389,7 +7425,7 @@ window.SONG_LINES = {
     "source": "सानुकूल सूलपानी नवै नाथ नाक को ।",
     "sourceLanguage": "bra",
     "roman": "sānukūla sūlapānī navai nātha nāka ko ।",
-    "english": "{0:Favorably disposed }{1:is the trident-wielder, }{3:and the lord }{4,5:of heaven }{2:bows down.}",
+    "english": "{0:Favorably disposed }{1:is the trident-wielder, }{3:and the lord }{5:of }{4:heaven }{2:bows down.}",
     "words": [
       {
         "roman": "sānukūla",
@@ -8611,7 +8647,7 @@ window.SONG_LINES = {
     "source": "जाके हिये हुलसति हाक हनुमान की ॥",
     "sourceLanguage": "bra",
     "roman": "jāke hiye hulasati hāka hanumāna kī ॥",
-    "english": "{0:in whose }{1:heart }{2:thrills }{3:the roar }{4,5:of Hanuman.}",
+    "english": "{0:in whose }{1:heart }{2:thrills }{3:the roar }{5:of }{4:Hanuman.}",
     "words": [
       {
         "roman": "jāke",
@@ -9097,11 +9133,23 @@ window.SONG_LINES = {
     "source": "लोक-बेद-बिधिके बिदूष हनुमान हौ ।",
     "sourceLanguage": "bra",
     "roman": "loka-beda-bidhike bidūṣa hanumāna hau ।",
-    "english": "{3:you are }{2:Hanuman, }{1:the learned knower }{0:of worldly ways and Vedic injunctions.}",
+    "english": "{5:you are }{4:Hanuman, }{3:the learned knower }{0:of worldly }{2:ways }{1:and Vedic }{2:injunctions.}",
     "words": [
       {
-        "roman": "loka-beda-bidhike",
-        "gloss": "of the ways of the world and Vedic ordinances",
+        "roman": "loka",
+        "gloss": "the world; worldly",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "beda",
+        "gloss": "the Vedas; Vedic",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bidhike",
+        "gloss": "of the ways, ordinances; bidhi + ke, of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9127,27 +9175,39 @@ window.SONG_LINES = {
     "grammarNote": "'bidūṣa' is Tadbhava for Sanskrit 'vidvas' / 'viduṣa' (learned scholar). 'loka-beda-bidhike' is an inflected genitive compound.",
     "sourceWords": [
       {
-        "text": "लोक-बेद-बिधिके",
+        "text": "लोक-",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "बिदूष",
+        "text": "बेद-",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "हनुमान",
+        "text": "बिधिके",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "हौ",
+        "text": "बिदूष",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "हनुमान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हौ",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -9156,7 +9216,7 @@ window.SONG_LINES = {
     "source": "मन की बचन की करम की तिहूँ प्रकार",
     "sourceLanguage": "bra",
     "roman": "mana kī bacana kī karama kī tihū̃ prakāra",
-    "english": "{0,1:In mind, }{2,3:in speech, }{4,5:in deed, }{6:in all three }{7:ways,}",
+    "english": "{1:In }{0:mind, }{3:in }{2:speech, }{5:in }{4:deed, }{6:in all three }{7:ways,}",
     "words": [
       {
         "roman": "mana",
@@ -9939,7 +9999,7 @@ window.SONG_LINES = {
     "source": "जैसे होत आये हनुमान के निवाजे हैं ॥",
     "sourceLanguage": "bra",
     "roman": "jaise hota āye hanumāna ke nivāje haĩ ॥",
-    "english": "{0:as }{1,2,6:you have always done for }{5:those favored }{3,4:by Hanumān.}",
+    "english": "{0:as }{1,2,6:you have always done for }{5:those favored }{4:by }{3:Hanumān.}",
     "words": [
       {
         "roman": "jaise",
@@ -11999,7 +12059,7 @@ window.SONG_LINES = {
     "source": "पाप ते सापतें ताप तिहूं ते सदा तुलसी कहं सो रखवारो",
     "sourceLanguage": "bra",
     "roman": "pāpa te sāpateṁ tāpa tihūṁ te sadā tulasī kahaṁ so rakhavāro",
-    "english": "{9:That very one }{6:is always }{10:the guardian }{7,8:for Tulsi }{0,1:from sin, }{2:from curses, }{4,5:and from the threefold }{3:torments.}",
+    "english": "{9:That very one }{6:is always }{10:the guardian }{7,8:for Tulsi }{1:from }{0:sin, }{2:from curses, }{4,5:and from the threefold }{3:torments.}",
     "words": [
       {
         "roman": "pāpa",
@@ -14312,7 +14372,7 @@ window.SONG_LINES = {
     "source": "कूदिये कृपाल तुलसी सुप्रेम पब्बत तें सूथल सुबेल भालू बैठि के विचारिये",
     "sourceLanguage": "bra",
     "roman": "kūdiye kṛpāla tulasī suprema pabbata teṁ sūthala subela bhālū baiṭhi ke vicāriye",
-    "english": "{0:Leap forth, }{1:O merciful one, }{4,5:from the mountain }{2:of Tulsi's }{3:pure love, }{9,10:and sitting }{6:upon the fair ground }{7:of Mount Subela }{8:with the bear, }{11:deliberate!}",
+    "english": "{0:Leap forth, }{1:O merciful one, }{4,5:from the mountain }{2:of Tulsi's }{3:pure love, }{10:and }{9:sitting }{6:upon the fair ground }{7:of Mount Subela }{8:with the bear, }{11:deliberate!}",
     "words": [
       {
         "roman": "kūdiye",
@@ -15886,7 +15946,7 @@ window.SONG_LINES = {
     "source": "भाल की कि काल की कि रोष की त्रिदोष की है बेदन बिषम पाप ताप छल छाँह की।",
     "sourceLanguage": "bra",
     "roman": "bhāla kī ki kāla kī ki roṣa kī tridoṣa kī hai bedana biṣama pāpa tāpa chala chām̐ha kī.",
-    "english": "{10:Is this }{12:dread }{11:agony }{0,1:born of fate, }{2:or }{3,4:of death, }{5:or }{6,7:of wrath, }{8,9:or of the three humors, }{13:of sin, }{14:burning torment, }{16,17:or the shadow }{15:of sorcery?}",
+    "english": "{10:Is this }{12:dread }{11:agony }{0,1:born of fate, }{2:or }{4:of }{3:death, }{5:or }{6,7:of wrath, }{8,9:or of the three humors, }{13:of sin, }{14:burning torment, }{16,17:or the shadow }{15:of sorcery?}",
     "words": [
       {
         "roman": "bhāla",
@@ -16650,7 +16710,7 @@ window.SONG_LINES = {
     "source": "सिंहिका सँहारी बल सुरसा सुधारी छल लंकिनी पछारी मारि बाटिका उजारी है।",
     "sourceLanguage": "bra",
     "roman": "siṁhikā sam̐hārī bala surasā sudhārī chala laṅkinī pachārī māri bāṭikā ujārī hai.",
-    "english": "{1:He destroyed }{0:Simhika }{2:by might, }{4:outwitted }{3:Surasa }{5:by stratagem, }{7,8:struck down }{6:Lankini, }{10,11:and has laid waste }{9:to the garden grove.}",
+    "english": "{1:He destroyed }{0:Simhika }{2:by might, }{4:outwitted }{3:Surasa }{5:by stratagem, }{8:struck }{7:down }{6:Lankini, }{10,11:and has laid waste }{9:to the garden grove.}",
     "words": [
       {
         "roman": "siṁhikā",
@@ -16805,7 +16865,7 @@ window.SONG_LINES = {
     "source": "लंक परजारी मकरी बिदारी बार-बार जातुधान धारी धूरिधानी करि डारी है।",
     "sourceLanguage": "bra",
     "roman": "laṅka parajārī makarī bidārī bāra-bāra jātudhāna dhārī dhūridhānī kari ḍārī hai.",
-    "english": "{1:He burned }{0:Lanka, }{3:tore apart }{2:the crocodile-demoness, }{4:and repeatedly }{7,8,9,10:pulverized }{5:the demon }{6:hordes into dust.}",
+    "english": "{1:He burned }{0:Lanka, }{3:tore apart }{2:the crocodile-demoness, }{4:and repeatedly }{8,9,10:pulverized }{5:the demon }{6:hordes }{7:into dust.}",
     "words": [
       {
         "roman": "laṅka",
@@ -18666,7 +18726,7 @@ window.SONG_LINES = {
     "source": "आपने ही पाप तें त्रिताप तें कि सापतें बढ़ी है बाहबेदन कही न सही जाती है।",
     "sourceLanguage": "bra",
     "roman": "āpane hī pāpa teṁ tritāpa teṁ ki sāpa-teṁ baṛhī hai bāhabedana kahī na sahī jātī hai.",
-    "english": "{3:Whether from }{0:one's own }{1,2:sin alone, }{5:from }{4:the threefold suffering, }{6:or }{7:from a curse, }{10:the arm-agony }{8,9:has increased; }{11,12,14,15:it can neither be told }{13:nor borne.}",
+    "english": "{3:Whether from }{0:one's own }{2:sin }{1:alone, }{6:from }{4:the threefold }{5:suffering, }{7:or }{9:from }{8:a curse, }{12:the arm-}{13:agony }{11:has }{10:increased; }{17,18:it can }{15:neither }{14:be told }{16:nor borne.}",
     "words": [
       {
         "roman": "āpane",
@@ -18693,8 +18753,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tritāpa",
-        "gloss": "the threefold suffering",
+        "roman": "tri",
+        "gloss": "three; threefold (tri)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tāpa",
+        "gloss": "suffering; burning pain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18711,8 +18777,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sāpa-teṁ",
-        "gloss": "from a curse",
+        "roman": "sāpa-",
+        "gloss": "curse (śāpa)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "teṁ",
+        "gloss": "from; through",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18729,8 +18801,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bāhabedana",
-        "gloss": "arm-agony",
+        "roman": "bāha",
+        "gloss": "arm (bāhu)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bedana",
+        "gloss": "pain; agony (vedanā)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -18792,75 +18870,93 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "त्रिताप",
+        "text": "त्रि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "तें",
+        "text": "ताप",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कि",
+        "text": "तें",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "सापतें",
+        "text": "कि",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "बढ़ी",
+        "text": "साप",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "है",
+        "text": "तें",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "बाहबेदन",
+        "text": "बढ़ी",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "कही",
+        "text": "है",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "न",
+        "text": "बाह",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "सही",
+        "text": "बेदन",
         "wordIndices": [
           13
         ]
       },
       {
-        "text": "जाती",
+        "text": "कही",
         "wordIndices": [
           14
         ]
       },
       {
-        "text": "है।",
+        "text": "न",
         "wordIndices": [
           15
+        ]
+      },
+      {
+        "text": "सही",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "जाती",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "है।",
+        "wordIndices": [
+          18
         ]
       }
     ]
@@ -19895,7 +19991,7 @@ window.SONG_LINES = {
     "source": "थोरी बाँह पीर की बड़ी गलानि तुलसी को कौन पाप कोप लोप प्रगट प्रभाय को॥",
     "sourceLanguage": "bra",
     "roman": "thorī bām̐ha pīra kī baṛī galāni tulasī ko kauna pāpa kopa lopa pragaṭa prabhāya ko.",
-    "english": "{1:The arm }{2,3:pain }{0:is slight, }{4:yet great }{5:is the mortification }{6,7:to Tulsidas; }{8:what }{9:sin }{10:or wrath }{11:could cause the eclipse }{12:of your manifest }{13,14:glory?}",
+    "english": "{1:The arm }{2,3:pain }{0:is slight, }{4:yet great }{5:is the mortification }{7:to }{6:Tulsidas; }{8:what }{9:sin }{10:or wrath }{11:could cause the eclipse }{12:of your manifest }{13,14:glory?}",
     "words": [
       {
         "roman": "thorī",
@@ -20587,7 +20683,7 @@ window.SONG_LINES = {
     "source": "क्रोध कीजे कर्म को प्रबोध कीजे तुलसी को सोध कीजे तिनको जो दोष दुख देत हैं॥",
     "sourceLanguage": "bra",
     "roman": "krodha kīje karma ko prabodha kīje tulasī ko sodha kīje tinako jo doṣa dukha deta haiṁ.",
-    "english": "{0,1:Direct wrath }{3:upon }{2:karma, }{4,5:impart awakening }{6,7:to Tulsidas, }{8,9:and punish }{10:those }{11:who }{14,15:inflict }{12:malice }{13:and suffering!}",
+    "english": "{1:Direct }{0:wrath }{3:upon }{2:karma, }{5:impart }{4:awakening }{7:to }{6:Tulsidas, }{8,9:and punish }{10:those }{11:who }{14,15:inflict }{12:malice }{13:and suffering!}",
     "words": [
       {
         "roman": "krodha",
@@ -21255,7 +21351,7 @@ window.SONG_LINES = {
     "source": "तुलसी के माथे पर हाथ फेरो कीसनाथ देखिए न दास दुखी तोसे कनिगर के॥",
     "sourceLanguage": "bra",
     "roman": "tulasī ke māthe par hāth phero kīsanāth dekhie na dās dukhī tose kanigar ke.",
-    "english": "{5:Stroke your }{4:hand }{2,3:over the forehead }{0,1:of Tulsidas, }{6:O lord of monkeys! }{9:A servant }{12,13:of an appreciative master }{11:like you }{7,8:should not be seen }{10:in suffering.}",
+    "english": "{5:Stroke your }{4:hand }{2,3:over the forehead }{1:of }{0:Tulsidas, }{6:O lord of monkeys! }{9:A servant }{12,13:of an appreciative master }{11:like you }{7,8:should not be seen }{10:in suffering.}",
     "words": [
       {
         "roman": "tulasī",
@@ -21625,7 +21721,7 @@ window.SONG_LINES = {
     "source": "भोरानाथ भोर ही सरोष होत थोरे दोष पोषि तोषि थापी आपनो न अवडेरिये।",
     "sourceLanguage": "bra",
     "roman": "bhorānāth bhore hī saroṣ hot thore doṣ poṣi toṣi thāpī āpano na avḍeriye.",
-    "english": "{0:O simple-hearted master, }{1,2:who readily }{3,4:becomes indignant }{5:over a slight }{6:fault, }{7:having nourished, }{8:gladdened, }{9:and established }{10:your own servant, }{11,12:do not cast him down!}",
+    "english": "{0:O simple-hearted master, }{1,2:who readily }{4:becomes }{3:indignant }{5:over a slight }{6:fault, }{7:having nourished, }{8:gladdened, }{9:and established }{10:your own servant, }{11,12:do not cast him down!}",
     "words": [
       {
         "roman": "bhorānāth",
@@ -21983,7 +22079,7 @@ window.SONG_LINES = {
     "source": "बालक बिकल जानि पाहि प्रेम पहिचानी तुलसी की बाँह पर लामी लूम फेरिये॥",
     "sourceLanguage": "bra",
     "roman": "bālak bikal jāni pāhi prem pahicānī tulasī kī bām̐h par lāmī lūm pheriye.",
-    "english": "{2:Knowing }{0:the child }{1:is distressed, }{3:protect him, }{5:acknowledging }{4:devotional love; }{12:pass }{10:your long }{11:tail }{8,9:over the arm }{6,7:of Tulsidas!}",
+    "english": "{2:Knowing }{0:the child }{1:is distressed, }{3:protect him, }{5:acknowledging }{4:devotional love; }{12:pass }{10:your long }{11:tail }{8,9:over the arm }{7:of }{6:Tulsidas!}",
     "words": [
       {
         "roman": "bālak",
@@ -23234,7 +23330,7 @@ window.SONG_LINES = {
     "source": "काल की करालता करम कठिनाई कीधौं पाप के प्रभाव की सुभायँ बायँ बावरे।",
     "sourceLanguage": "bra",
     "roman": "kāl kī karālatā karam kaṭhināī kīdhauṁ pāp ke prabhāv kī subhāyaṁ bāyaṁ bāware.",
-    "english": "{2:Is it from the terror }{0,1:of Time, }{4:the severity }{3:of karma, }{5:or }{8:the power }{6,7:of sin, }{9:or }{11:has the bodily wind }{12:gone mad }{10:by its own nature?}",
+    "english": "{2:Is it from the terror }{1:of }{0:Time, }{4:the severity }{3:of karma, }{5:or }{8:the power }{7:of }{6:sin, }{9:or }{11:has the bodily wind }{12:gone mad }{10:by its own nature?}",
     "words": [
       {
         "roman": "kāl",
@@ -23747,7 +23843,7 @@ window.SONG_LINES = {
     "source": "भूतनी की आपनी पराई की कृपानिधान जानियत सबही की रीति राम रावरे॥",
     "sourceLanguage": "bra",
     "roman": "bhūtanī kī āpanī parāī kī kṛpānidhān jāniyat sabahī kī rīti rām rāware.",
-    "english": "{0,1:Whether of an evil spirit, }{2:of one's own people, }{3,4:or of strangers, }{10:O Rama, }{5:treasure of mercy, }{9:the ways }{7,8:of everyone }{6:are known }{11:to you.}",
+    "english": "{0,1:Whether of an evil spirit, }{2:of one's own people, }{3,4:or of strangers, }{10:O Rama, }{5:treasure of mercy, }{9:the ways }{8:of }{7:everyone }{6:are known }{11:to you.}",
     "words": [
       {
         "roman": "bhūtanī",
@@ -24021,7 +24117,7 @@ window.SONG_LINES = {
     "source": "देव भूत पितर करम खल काल ग्रह मोहि पर दवरि दमान कसी दई है।",
     "sourceLanguage": "bra",
     "roman": "dev bhūt pitar karam khal kāl grah mohi par dawari damān kasī daī hai.",
-    "english": "{0:Gods, }{1:spirits, }{2:ancestors, }{3:karma, }{4:villains, }{5:Time, }{6:and planets }{9:have charged }{7,8:upon me }{10,11,12,13:and trained their cannons tight.}",
+    "english": "{0:Gods, }{1:spirits, }{2:ancestors, }{3:karma, }{4:villains, }{5:Time, }{6:and planets }{9:have charged }{8:upon }{7:me }{11,12,13:and trained }{10:their cannons }{11:tight.}",
     "words": [
       {
         "roman": "dev",
@@ -25202,7 +25298,7 @@ window.SONG_LINES = {
     "source": "बालपने सुधि मन राम सनमुख भयो रामनाम लेत माँगी खात टूकटाक हौं।",
     "sourceLanguage": "bra",
     "roman": "bālpane sudhi man rām sanmukh bhayo rāmanām let mām̐gī khāt ṭūkṭāk hauṁ.",
-    "english": "{0:In childhood, }{1,2,3,4,5:the awareness of my mind turned toward Rama; }{6,7:taking Rama's name, }{8,9,10,11:I ate begged scraps.}",
+    "english": "{0:In childhood, }{1:the awareness }{2:of my mind }{5:turned }{4:toward }{3:Rama; }{8:taking }{6:Rama's }{7:name, }{12:I }{10:ate }{9:begged }{11:scraps.}",
     "words": [
       {
         "roman": "bālpane",
@@ -25241,8 +25337,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rāmanām",
-        "gloss": "Rama's name; Rāma means “pleasing” or “delightful”",
+        "roman": "rāma",
+        "gloss": "Rāma (rāma-, of Rāma)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nām",
+        "gloss": "name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -25316,39 +25418,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रामनाम",
+        "text": "राम",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "लेत",
+        "text": "नाम",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "माँगी",
+        "text": "लेत",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "खात",
+        "text": "माँगी",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "टूकटाक",
+        "text": "खात",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "हौं।",
+        "text": "टूकटाक",
         "wordIndices": [
           11
+        ]
+      },
+      {
+        "text": "हौं।",
+        "wordIndices": [
+          12
         ]
       }
     ]
@@ -25500,7 +25608,7 @@ window.SONG_LINES = {
     "source": "खोटे खोटे आचरन आचरत अपनायो अंजनीकुमार सोध्यो रामपानिपाक हौं।",
     "sourceLanguage": "bra",
     "roman": "khoṭe khoṭe ācaran ācarat apanāyo añjanīkumār sodhyo rāmapānipāk hauṁ.",
-    "english": "{0,1,2,3:While I was practicing vile, vile conduct, }{4,5:the son of Añjanī claimed }{8:me as his own, }{6,7:and purified me through the touch of Rāma's hand.}",
+    "english": "{3:While I was practicing }{0,1:vile, vile }{2:conduct, }{6:the son }{5:of Añjanī }{4:claimed }{11:me as his own, }{7:and purified }{11:me }{10:through the touch }{8,9:of Rāma's hand.}",
     "words": [
       {
         "roman": "khoṭe",
@@ -25533,8 +25641,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "añjanīkumār",
-        "gloss": "the son of Anjani [Hanuman]",
+        "roman": "añjanī",
+        "gloss": "Añjanī, Hanuman's mother (añjanī-, of Añjanī)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kumār",
+        "gloss": "son; prince (kumāra)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -25545,8 +25659,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rāmapānipāk",
-        "gloss": "by Rama's hand-touch; Rāma means “pleasing” or “delightful”",
+        "roman": "rāma",
+        "gloss": "Rāma (rāma-, of Rāma)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāni",
+        "gloss": "hand (pāṇi)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāk",
+        "gloss": "touch; contact (pāka, here by the touch)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -25590,27 +25716,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अंजनीकुमार",
+        "text": "अंजनी",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सोध्यो",
+        "text": "कुमार",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "रामपानिपाक",
+        "text": "सोध्यो",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "हौं।",
+        "text": "राम",
         "wordIndices": [
           8
+        ]
+      },
+      {
+        "text": "पानि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "पाक",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "हौं।",
+        "wordIndices": [
+          11
         ]
       }
     ]
@@ -25619,7 +25763,7 @@ window.SONG_LINES = {
     "source": "तुलसी गोसाँई भयो भोंड़े दिन भूली गयो ताको फल पावत निदान परिपाक हौं॥",
     "sourceLanguage": "bra",
     "roman": "tulasī gosām̐ī bhayo bhoṁṛe din bhūlī gayo tāko phal pāwat nidān paripāk hauṁ.",
-    "english": "{0:Tulsi }{1,2:became a Goswami }{3,4,5,6:and forgot his wretched days; }{7,10:of that, in the end, }{8,9,11,12:I am receiving the fully ripened fruit.}",
+    "english": "{0:Tulsi }{2:became }{1:a Goswami }{5,6:and forgot }{3,4:his wretched days; }{7:of that, }{10:in the end, }{12:I }{9:am receiving }{11:the fully ripened }{8:fruit.}",
     "words": [
       {
         "roman": "tulasī",
@@ -26096,7 +26240,7 @@ window.SONG_LINES = {
     "source": "नीच यहि बीच पति पाइ भरुहाई को बिहाई प्रभुभजन बचन मन काय को",
     "sourceLanguage": "bra",
     "roman": "nīca yahi bīca pati pāi bharuhāī ko bihāi prabhubhajana bacana mana kāya ko",
-    "english": "{1,2:In the interim, }{0:this vile wretch, }{3,4,5,6:having gained the prestige of flattery, }{7:abandoned }{8,12:the worship of the Lord }{9,10,11:in word, mind, and body.}",
+    "english": "{1,2:In the interim, }{0:this vile wretch, }{4:having gained }{3:the prestige }{5,6:of flattery, }{7:abandoned }{9,13:the worship }{8:of the Lord }{10:in word, }{11:mind, }{12:and body.}",
     "words": [
       {
         "roman": "nīca",
@@ -26147,8 +26291,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "prabhubhajana",
-        "gloss": "worship of the Lord",
+        "roman": "prabhu",
+        "gloss": "Lord; master (prabhu-, of the Lord)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhajana",
+        "gloss": "worship; devotion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -26228,33 +26378,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "प्रभुभजन",
+        "text": "प्रभु",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "बचन",
+        "text": "भजन",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "मन",
+        "text": "बचन",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "काय",
+        "text": "मन",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "को",
+        "text": "काय",
         "wordIndices": [
           12
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          13
         ]
       }
     ]
@@ -26573,7 +26729,7 @@ window.SONG_LINES = {
     "source": "तुलसी के दुहू हाथ मोदक हैं ऐसे ठाउँ जाके जिए मुए सोच करिहै न लरी को",
     "sourceLanguage": "bra",
     "roman": "tulasī ke duhū hātha modaka haiṃ aise ṭhāuṃ jāke jie mue soca karihai na larī ko",
-    "english": "{0,1,2,3:In both hands of Tulsi }{4,5:are sweetmeats }{6,7:in such a state, }{8,9,10:where in living or dying }{12,13:one will not have }{11,14,15:even a strand of sorrow.}",
+    "english": "{2:In both }{3:hands }{0,1:of Tulsi }{5:are }{4:sweetmeats }{6,7:in such a state, }{8:where }{9:in living }{10:or dying }{12,13:one will not have }{14:even a strand }{15:of }{11:sorrow.}",
     "words": [
       {
         "roman": "tulasī",
@@ -26776,7 +26932,7 @@ window.SONG_LINES = {
     "source": "मोको झूठो साँचो लोग राम को कहत सब मेरे मन मान है न हर को न हरी को",
     "sourceLanguage": "bra",
     "roman": "moko jhūṭho sāñco loga rāma ko kahata saba mere mana māna hai na hara ko na harī ko",
-    "english": "{3,7:All people }{0,6:call me }{4,5:Rama's own, }{1,2:falsely or truly; }{8,9:in my mind }{10,11:there is allegiance }{12,13,14:neither to Hara }{15,16,17:nor to Hari.}",
+    "english": "{7:All }{3:people }{6:call }{0:me }{4,5:Rama's own, }{1,2:falsely or truly; }{8,9:in my mind }{10,11:there is allegiance }{12:neither }{14:to }{13:Hara }{15:nor }{17:to }{16:Hari.}",
     "words": [
       {
         "roman": "moko",
@@ -27003,7 +27159,7 @@ window.SONG_LINES = {
     "source": "भारी पीर दुसह सरीर तें बिहाल होत सोउ रघुबीर बिनु सकै दूरि करी को",
     "sourceLanguage": "bra",
     "roman": "bhārī pīra dusaha sarīra teṃ bihāla hota sou raghubīra binu sakai dūri karī ko",
-    "english": "{0,1,2,4:Severe, unbearable pain }{3,5,6:overwhelms the body; }{10,11,12,13:who can drive }{7:even that away }{8,9:but Rāma, the hero of Raghu’s line?}",
+    "english": "{0:Severe, }{2:unbearable }{1:pain }{5,6:overwhelms }{3,4:the body; }{14:who }{11:can }{13:drive }{7:even that }{12:away }{10:but }{9:Rāma, the hero }{8:of Raghu’s line?}",
     "words": [
       {
         "roman": "bhārī",
@@ -27054,8 +27210,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "raghubīra",
-        "gloss": "Sri Rama [hero of Raghu]",
+        "roman": "raghu",
+        "gloss": "Raghu (raghu-, of Raghu’s line)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bīra",
+        "gloss": "hero (vīra)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27141,39 +27303,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रघुबीर",
+        "text": "रघु",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "बिनु",
+        "text": "बीर",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "सकै",
+        "text": "बिनु",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "दूरि",
+        "text": "सकै",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "करी",
+        "text": "दूरि",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "को",
+        "text": "करी",
         "wordIndices": [
           13
+        ]
+      },
+      {
+        "text": "को",
+        "wordIndices": [
+          14
         ]
       }
     ]
@@ -27516,7 +27684,7 @@ window.SONG_LINES = {
     "source": "ब्याधि भूतजनित उपाधि काहू खल की समाधि कीजै तुलसी को जानि जन फुर कै",
     "sourceLanguage": "bra",
     "roman": "byādhi bhūtajanita upādhi kāhū khala kī samādhi kījai tulasī ko jāni jana phura kai",
-    "english": "{0,1:Whether disease caused by spirits }{2,3,4,5:or harassment of some villain, }{6,7:bring it to an end, }{8,9,10:knowing Tulasī }{11,12,13:as a true servant.}",
+    "english": "{0:Whether disease }{2:caused by }{1:spirits }{3:or harassment }{6:of }{4:some }{5:villain, }{7,8:bring it to an end, }{11:knowing }{9,10:Tulasī }{14:as }{13:a true }{12:servant.}",
     "words": [
       {
         "roman": "byādhi",
@@ -27525,8 +27693,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhūtajanita",
-        "gloss": "caused by spirits",
+        "roman": "bhūta",
+        "gloss": "spirit; ghost (bhūta-)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "janita",
+        "gloss": "caused by; born of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27612,81 +27786,87 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भूतजनित",
+        "text": "भूत",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "उपाधि",
+        "text": "जनित",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "काहू",
+        "text": "उपाधि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "खल",
+        "text": "काहू",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "की",
+        "text": "खल",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "समाधि",
+        "text": "की",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "कीजै",
+        "text": "समाधि",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "तुलसी",
+        "text": "कीजै",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "को",
+        "text": "तुलसी",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "जानि",
+        "text": "को",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "जन",
+        "text": "जानि",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "फुर",
+        "text": "जन",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "कै",
+        "text": "फुर",
         "wordIndices": [
           13
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          14
         ]
       }
     ]
@@ -27695,7 +27875,7 @@ window.SONG_LINES = {
     "source": "कपिनाथ रघुनाथ भोलानाथ भूतनाथ रोगसिंधु क्यों न डारियत गायखुर कै",
     "sourceLanguage": "bra",
     "roman": "kapinātha raghunātha bholānātha bhūtanātha rogasindhu kyoṃ na ḍāriyata gāyakhura kai",
-    "english": "{0,1,2,3:O Lord of Monkeys, Lord of Raghus, Innocent Lord, Lord of Spirits! }{5,6,7:Why do You not reduce }{4:the ocean of disease }{8,9:to a cow's hoofprint?}",
+    "english": "{0:O Lord of Monkeys, }{1:Lord of Raghus, }{2:Innocent Lord, }{3:Lord of Spirits! }{6:Why }{8:do You }{7:not }{8:reduce }{5:the ocean }{4:of disease }{11:to }{9:a cow's }{10:hoofprint?}",
     "words": [
       {
         "roman": "kapinātha",
@@ -27722,8 +27902,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rogasindhu",
-        "gloss": "ocean of disease",
+        "roman": "roga",
+        "gloss": "disease (roga-, of disease)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sindhu",
+        "gloss": "ocean; sea",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27746,8 +27932,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "gāyakhura",
-        "gloss": "cow's hoofprint",
+        "roman": "gāya",
+        "gloss": "cow (gāya, of the cow)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "khura",
+        "gloss": "hoof; hoofprint",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -27785,39 +27977,51 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रोगसिंधु",
+        "text": "रोग",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "क्यों",
+        "text": "सिंधु",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "न",
+        "text": "क्यों",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "डारियत",
+        "text": "न",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "गायखुर",
+        "text": "डारियत",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "कै",
+        "text": "गाय",
         "wordIndices": [
           9
+        ]
+      },
+      {
+        "text": "खुर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "कै",
+        "wordIndices": [
+          11
         ]
       }
     ]
@@ -28303,7 +28507,7 @@ window.SONG_LINES = {
     "source": "तुम्ह तें कहा न होय हाहा सो बुझैये मोहि हौं हूँ रहों मौन ही बयो सो जानि लूनिए",
     "sourceLanguage": "bra",
     "roman": "tumha teṃ kahā na hoya hāhā so bujhaiye mohi hauṃ hūṃ rahoṃ mauna hī bayo so jāni lūnie",
-    "english": "{0,1,2,3,4:What is not possible by You? }{5,6,7,8:Alas, please explain that to me, }{9,10,11,12,13:and I too shall remain silent indeed, }{14,15,16,17:knowing that what is sown must be reaped.}",
+    "english": "{2:What }{3,4:is not possible }{1:by }{0:You? }{5:Alas, }{7:please explain }{6:that }{8:to me, }{9,10:and I too }{11:shall remain }{12:silent }{13:indeed, }{16:knowing }{15:that }{14:what is sown }{17:must be reaped.}",
     "words": [
       {
         "roman": "tumha",

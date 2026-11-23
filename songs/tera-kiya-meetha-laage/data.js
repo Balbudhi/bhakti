@@ -412,7 +412,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru merai saṅgi sadā hai nāle ॥",
-    "english": "{0:The Guru }{4:is }{3:always }{1,2:with me, }{5:by my side.}",
+    "english": "{0:The Guru }{4:is }{3:always }{2:with }{1:me, }{5:by my side.}",
     "words": [
       {
         "roman": "Guru",

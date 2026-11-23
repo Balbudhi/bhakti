@@ -108,7 +108,7 @@ window.SONG_LINES = {
   "l04": {
     "source": "जब ज़िद पे आ गईं पार्वती",
     "roman": "jab zid pe ā gaīṃ pārvatī",
-    "english": "{0:When} {5:Pārvatī} {1,2,3,4:became adamant}—",
+    "english": "{0:When} {5:Pārvatī} {3,4:became }{1,2:adamant}—",
     "words": [
       {
         "roman": "jab",
@@ -508,7 +508,7 @@ window.SONG_LINES = {
   "l11": {
     "source": "जाके सीस पे गंगा और गले में डारे फिर रहे साँप",
     "roman": "jāke sīs pe gaṅgā aur gale meṃ ḍāre phir rahe sāṃp",
-    "english": "{0,1,2:On whose head} is {3:Gaṅgā}, {4:and} {5,6:around his neck}— {8,9:he goes about} {7:wearing} {10:snakes}.",
+    "english": "{2:On }{0:whose }{1:head} is {3:Gaṅgā}, {4:and} {5,6:around his neck}— {8,9:he goes about} {7:wearing} {10:snakes}.",
     "words": [
       {
         "roman": "jāke",
@@ -808,7 +808,7 @@ window.SONG_LINES = {
   "l14": {
     "source": "का खावे खों धरो वहाँ बस रोवत रहत लड़ैया",
     "roman": "kā khāve khoṃ dharo vahāṃ bas rovat rahat laṛaiyā",
-    "english": "{0:What} {3:is available} {4:there} {1,2:to eat}? {5:Only} {8:jackals} {6,7:keep howling}.",
+    "english": "{0:What} {3:is available} {4:there} {1,2:to eat}? {5:Only} {8:jackals} {7:keep }{6:howling}.",
     "words": [
       {
         "roman": "kā",

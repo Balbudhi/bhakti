@@ -90,7 +90,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mere Sāī̃ ke darbār mẽ dekho lagā hai melā",
-    "english": "{0,1,2,3,4:In the court of my Sai, }{5:look, }{8:a fair }{6,7:has gathered}",
+    "english": "{4:In }{3:the court }{0,1,2:of my Sai, }{5:look, }{8:a fair }{6,7:has gathered}",
     "words": [
       {
         "roman": "Mere",
@@ -209,7 +209,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mere Bābā ke darbār mẽ dekho lagā hai melā",
-    "english": "{0,1,2,3,4:In the court of my Baba, }{5:look, }{8:a fair }{6,7:has gathered}",
+    "english": "{4:In }{3:the court }{0,1,2:of my Baba, }{5:look, }{8:a fair }{6,7:has gathered}",
     "words": [
       {
         "roman": "Mere",
@@ -441,7 +441,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koī āyā charaṇ chhūne koī āyā pūjā karne",
-    "english": "{0,1:Someone came }{2,3:to touch his feet, }{4,5:someone came }{6,7:to perform worship}",
+    "english": "{0:Someone }{1:came }{2,3:to touch his feet, }{4:someone }{5:came }{6,7:to perform worship}",
     "words": [
       {
         "roman": "Koī",
@@ -530,7 +530,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āyā hai koī dīn dukhī",
-    "english": "{2:Someone }{3:destitute }{4:and suffering }{0,1:has come}",
+    "english": "{2:Someone }{3:destitute }{4:and suffering }{1:has }{0:come}",
     "words": [
       {
         "roman": "Āyā",
@@ -625,7 +625,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O... āyā hai koī dīn dukhī apne dukh sunāne",
-    "english": "{0:Oh... }{3:someone }{4:destitute }{5:and suffering }{1,2:has come }{8:to recount }{6,7:their sorrows}",
+    "english": "{0:Oh... }{3:someone }{4:destitute }{5:and suffering }{2:has }{1:come }{8:to recount }{6,7:their sorrows}",
     "words": [
       {
         "roman": "O...",
@@ -744,7 +744,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rājā āye raṅk bhī āye āye re sādhū faqīr",
-    "english": "{0,1:Kings came, }{2,3,4:paupers too came; }{6,7:ascetics }{8:and mendicants }{5:came}",
+    "english": "{0:Kings }{1:came, }{2,3,4:paupers too came; }{6,7:ascetics }{8:and mendicants }{5:came}",
     "words": [
       {
         "roman": "Rājā",
@@ -833,7 +833,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Paṇḍit āye jogī āye",
-    "english": "{0,1:Scholars came, }{2,3:yogis came}",
+    "english": "{0:Scholars }{1:came, }{2:yogis }{3:came}",
     "words": [
       {
         "roman": "Paṇḍit",
@@ -916,7 +916,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O... paṇḍit āye jogī āye oṛh ke mrigchhālā",
-    "english": "{0:Oh... }{1,2:scholars came, }{3,4:yogis came }{5,6:draped in }{7:deerskin}",
+    "english": "{0:Oh... }{1:scholars }{2:came, }{3:yogis }{4:came }{5,6:draped in }{7:deerskin}",
     "words": [
       {
         "roman": "O...",
@@ -1035,7 +1035,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bābā kī god mẽ khelẽ re bachche charaṇõ mẽ dukhiyāre",
-    "english": "{0,1,2,3:In Baba's lap }{4,5,6:children play, }{7,8:at his feet }{9:are the afflicted}",
+    "english": "{3:In }{0,1:Baba's }{2:lap }{6:children }{4,5:play, }{8:at }{7:his feet }{9:are the afflicted}",
     "words": [
       {
         "roman": "Bābā",

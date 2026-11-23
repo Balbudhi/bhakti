@@ -1236,7 +1236,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rolī kumkum aur phūlõ se man kā thāl sajāyā hai",
-    "english": "{4:With }{0:ritual red powder, }{1:kumkum, }{2:and }{3:flowers, }{7:the platter }{5,6:of the heart }{8,9:is adorned.}",
+    "english": "{4:With }{0:ritual red powder, }{1:kumkum, }{2:and }{3:flowers, }{7:the platter }{5,6:of the heart }{9:is }{8:adorned.}",
     "words": [
       {
         "roman": "Rolī",

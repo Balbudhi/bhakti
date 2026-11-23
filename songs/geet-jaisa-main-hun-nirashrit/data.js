@@ -89,7 +89,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gīt jaisā maiṁ hūm̐ nirāśrit",
-    "english": "{0,1:Like a song, }{2,3:I am }{4:shelterless}",
+    "english": "{0,1:Like a song, }{2:I }{3:am }{4:shelterless}",
     "words": [
       {
         "roman": "Gīt",
@@ -266,7 +266,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prīt jaisā maiṁ hūm̐ akelā",
-    "english": "{0,1:Like love, }{2,3:I am }{4:alone}",
+    "english": "{1:Like }{0:love, }{2:I }{3:am }{4:alone}",
     "words": [
       {
         "roman": "Prīt",
@@ -466,7 +466,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man jaisā maiṁ hūm̐ khāmoś",
-    "english": "{0,1:Like the mind, }{2,3:I am }{4:silent}",
+    "english": "{0,1:Like the mind, }{2:I }{3:am }{4:silent}",
     "words": [
       {
         "roman": "Man",
@@ -643,7 +643,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhūle jaisā maiṁ hūm̐ diśāhīn",
-    "english": "{0,1:Like one who is lost, }{2,3:I am }{4:directionless}",
+    "english": "{0,1:Like one who is lost, }{2:I }{3:am }{4:directionless}",
     "words": [
       {
         "roman": "Bhūle",
@@ -820,7 +820,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Samay jaisā vyarth hai jīvan",
-    "english": "{0,1:Like time, }{4:life }{3:is }{2:futile}",
+    "english": "{1:Like }{0:time, }{4:life }{3:is }{2:futile}",
     "words": [
       {
         "roman": "Samay",

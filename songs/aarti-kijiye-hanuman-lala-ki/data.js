@@ -100,7 +100,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī kījai hanumāna lalā kī । duṣṭa dalana raghunātha kalā kī ॥",
-    "english": "{0,1:Perform the aarti}{3,4: of beloved }{2:Hanuman, }{5,6:crusher of the wicked and }{8:radiant manifestation }{7,9:of Raghunath.}",
+    "english": "{0,1:Perform the aarti}{4: of }{3:beloved }{2:Hanuman, }{5,6:crusher of the wicked and }{8:radiant manifestation }{7,9:of Raghunath.}",
     "words": [
       {
         "roman": "āratī",
@@ -201,7 +201,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī kījai hanumāna lalā kī ॥",
-    "english": "{0,1:Perform the aarti}{3,4: of beloved }{2:Hanuman.}",
+    "english": "{0,1:Perform the aarti}{4: of }{3:beloved }{2:Hanuman.}",
     "words": [
       {
         "roman": "āratī",
@@ -272,7 +272,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāke bala se girivara kām̐pai ।",
-    "english": "{0,2:By whose }{1:might }{3:the greatest of mountains }{4:tremble,}",
+    "english": "{2:By }{0:whose }{1:might }{3:the greatest of mountains }{4:tremble,}",
     "words": [
       {
         "roman": "jāke",

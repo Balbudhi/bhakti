@@ -1076,7 +1076,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caraṇa kauṇa caraṇa dhārā caraṇa dhārā",
-    "english": "{0,1:At whose feet}{2,3: were feet placed—}{4,5:feet placed?}",
+    "english": "{0,1:At whose feet}{2,3: were feet placed—}{4:feet }{5:placed?}",
     "words": [
       {
         "roman": "caraṇa",
@@ -1153,7 +1153,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mana auguna ko eka dvārā",
-    "english": "{0:The mind}{3: is one}{4: gateway}{1,2: of vice;}",
+    "english": "{0:The mind}{3: is one}{4: gateway}{2: of }{1:vice;}",
     "words": [
       {
         "roman": "mana",
@@ -1295,7 +1295,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mana auguna ko eka dvārā",
-    "english": "{0:The mind}{3: is one}{4: gateway}{1,2: of vice.}",
+    "english": "{0:The mind}{3: is one}{4: gateway}{2: of }{1:vice.}",
     "words": [
       {
         "roman": "mana",
@@ -1408,7 +1408,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "haṁsā re haṁsā piyo re pānī triveṇī ke ghāṭa jī ghāṭa jī",
-    "english": "{0,1:O swan,}{2: swan—}{3,4:drink}{5: the water}{6,7: at Triveni’s}{8,9: revered ghat}{10,11:—the revered ghat.}",
+    "english": "{1:O }{0:swan,}{2: swan—}{3,4:drink}{5: the water}{6,7: at Triveni’s}{8,9: revered ghat}{10,11:—the revered ghat.}",
     "words": [
       {
         "roman": "haṁsā",

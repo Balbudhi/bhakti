@@ -221,7 +221,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum to sabase pāvan ho sāī̃, tum karuṇā ke sāvan ho",
-    "english": "{0:You }{1:indeed }{4:are }{2,3:the purest of all, }{5:O Sai, }{6:you }{10:are }{9:the monsoon }{7,8:of compassion}",
+    "english": "{0:You }{1:indeed }{4:are }{2,3:the purest of all, }{5:O Sai, }{6:you }{10:are }{9:the monsoon }{8:of }{7:compassion}",
     "words": [
       {
         "roman": "tum",
@@ -334,7 +334,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum dayā ke ākāś ho sāī̃,",
-    "english": "{0:You }{4:are }{3:the sky }{1,2:of mercy, }{5:O Sai, }",
+    "english": "{0:You }{4:are }{3:the sky }{2:of }{1:mercy, }{5:O Sai, }",
     "words": [
       {
         "roman": "tum",
@@ -506,7 +506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tīrath sāre tum mẽ haĩ sāī̃, tum mantrõ ke prakāś ho",
-    "english": "{1:All }{0:pilgrimage places }{4:are }{2,3:in you, }{5:O Sai, }{6:you }{10:are }{9:the light }{7,8:of mantras}",
+    "english": "{1:All }{0:pilgrimage places }{4:are }{3:in }{2:you, }{5:O Sai, }{6:you }{10:are }{9:the light }{8:of }{7:mantras}",
     "words": [
       {
         "roman": "tīrath",
@@ -625,7 +625,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sab dharmõ ke sār ho tum sāī̃,",
-    "english": "{5:You }{4:are }{3:the essence }{0,2:of all }{1:religions, }{6:O Sai, }",
+    "english": "{5:You }{4:are }{3:the essence }{2:of }{0:all }{1:religions, }{6:O Sai, }",
     "words": [
       {
         "roman": "sab",

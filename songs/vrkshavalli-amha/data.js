@@ -458,30 +458,42 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "कंथाकमंडलु",
+        "text": "कंथा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "देह",
+        "text": "कमंडलु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "उपचारा",
+        "text": "देह",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "उपचारा",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Kanthākamaṇḍalu dēha upacārā",
-    "english": "{0:a patched cloak and water-pot }{2:for the care }{1:of the body,}",
+    "english": "{0:a patched cloak }{1:and water-pot }{3:for the care }{2:of the body,}",
     "words": [
       {
-        "roman": "Kanthākamaṇḍalu",
-        "gloss": "patched cloak and water-pot",
+        "roman": "Kanthā",
+        "gloss": "patched cloak",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kamaṇḍalu",
+        "gloss": "water-pot",
         "concept_key": "",
         "preserve_in_english": false
       },

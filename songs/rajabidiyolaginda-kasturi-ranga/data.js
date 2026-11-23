@@ -44,48 +44,74 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ರಾಜಬೀದಿಯೊಳಗಿಂದ",
+        "text": "ರಾಜ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಕಸ್ತೂರಿ",
+        "text": "ಬೀದಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ರಂಗ",
+        "text": "ಯೊಳಗಿಂದ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ತೇಜನೇರಿ",
+        "text": "ಕಸ್ತೂರಿ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಮೆರೆದು",
+        "text": "ರಂಗ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಬಂದ",
+        "text": "ತೇಜ",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ನೇರಿ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ಮೆರೆದು",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಬಂದ",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "rājabīdiyoḷaginda kastūri raṅga tejanēri meredu banda",
-    "english": "{1:Musk-adorned} {2:Raṅga} {5:came} {4:in splendour} {0:from the royal street}, {3:mounted on a horse}.",
+    "english": "{3:Musk-adorned} {4:Raṅga} {8:came} {7:in splendour} {2:from }{0:the royal }{1:street}, {6:mounted }{5:on a horse}.",
     "words": [
       {
-        "roman": "rājabīdiyoḷaginda",
-        "gloss": "from within the royal street"
+        "roman": "rāja",
+        "gloss": "royal; of the king"
+      },
+      {
+        "roman": "bīdiy",
+        "gloss": "street; bīdi with glide y"
+      },
+      {
+        "roman": "oḷaginda",
+        "gloss": "from within"
       },
       {
         "roman": "kastūri",
@@ -96,8 +122,12 @@ window.SONG_LINES = {
         "gloss": "Raṅga, Viṣṇu as Raṅganātha, celebrated here in procession"
       },
       {
-        "roman": "tejanēri",
-        "gloss": "having mounted a horse; teji plus ēri with sung vowel contraction"
+        "roman": "tejan",
+        "gloss": "horse; teji, with sung vowel contraction"
+      },
+      {
+        "roman": "ēri",
+        "gloss": "having mounted"
       },
       {
         "roman": "meredu",
@@ -484,34 +514,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪಂಚಕಗಳೆಲ್ಲ",
+        "text": "ಪಂಚಕಗ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಹೊಗಳಿ",
+        "text": "ಳೆಲ್ಲ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಹೊಗಳಲು",
+        "text": "ಹೊಗಳಿ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಹೊಗಳಲು",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "mēlu pañcakagaḷella hogaḷi hogaḷalu",
-    "english": "{0:the fine} {1:fivefold ensembles all} {2,3:praising again and again}—",
+    "english": "{0:the fine} {1:fivefold ensembles }{2:all} {3:praising }{4:again and again}—",
     "words": [
       {
         "roman": "mēlu",
         "gloss": "excellent"
       },
       {
-        "roman": "pañcakagaḷella",
-        "gloss": "all the fivefold instrumental ensembles"
+        "roman": "pañcakagaḷ",
+        "gloss": "fivefold instrumental ensembles; pañcakagaḷu, plural"
+      },
+      {
+        "roman": "ella",
+        "gloss": "all"
       },
       {
         "roman": "hogaḷi",
@@ -530,44 +570,64 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಗಾಳಿಗೋಪುರದ",
+        "text": "ಗಾಳಿ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಮುಂದೆ",
+        "text": "ಗೋಪುರದ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಧಾಳಿಯಾಡುವಂತೆ",
+        "text": "ಮುಂದೆ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಸುತ್ತ",
+        "text": "ಧಾಳಿಯಾಡು",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ವಂತೆ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಸುತ್ತ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "gāḷigōpurada munde dhāḷiyāḍuvante sutta",
-    "english": "{3:around} {1:in front} {0:of the airy gateway tower}, {2:as if charging},",
+    "english": "{5:around} {2:in front} {1:of the }{0:airy }{1:gateway tower}, {4:as if }{3:charging},",
     "words": [
       {
-        "roman": "gāḷigōpurada",
-        "gloss": "of the airy temple gateway tower"
+        "roman": "gāḷi",
+        "gloss": "airy; air, wind"
+      },
+      {
+        "roman": "gōpurada",
+        "gloss": "of the temple gateway tower; genitive"
       },
       {
         "roman": "munde",
         "gloss": "in front"
       },
       {
-        "roman": "dhāḷiyāḍuvante",
-        "gloss": "as if making a charge"
+        "roman": "dhāḷiyāḍuv",
+        "gloss": "charging; dhāḷi āḍu, make a charge"
+      },
+      {
+        "roman": "ante",
+        "gloss": "as if; like"
       },
       {
         "roman": "sutta",
@@ -582,34 +642,54 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಧೂಳಿಯನ್ನೆಬ್ಬಿಸಿ",
+        "text": "ಧೂಳಿಯ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ವಯ್ಯಾಳಿಯನಿಕ್ಕುತ",
+        "text": "ನ್ನೆಬ್ಬಿಸಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಜಾಣ",
+        "text": "ವಯ್ಯಾಳಿಯ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ನಿಕ್ಕುತ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಜಾಣ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "dhūḷiyannebbisi vayyāḷiyanikkuta jāṇa",
-    "english": "{2:the skilful one} {0:raised the dust}, {1:displaying his horsemanship}.",
+    "english": "{4:the skilful one} {1:raised }{0:the dust}, {3:displaying }{2:his horsemanship}.",
     "words": [
       {
-        "roman": "dhūḷiyannebbisi",
-        "gloss": "raising the dust"
+        "roman": "dhūḷiyann",
+        "gloss": "dust; dhūḷiyannu, object"
       },
       {
-        "roman": "vayyāḷiyanikkuta",
-        "gloss": "performing a horse-ride or equestrian display"
+        "roman": "ebbisi",
+        "gloss": "raising; having stirred up"
+      },
+      {
+        "roman": "vayyāḷiyan",
+        "gloss": "horse-ride, equestrian display; object"
+      },
+      {
+        "roman": "ikkuta",
+        "gloss": "performing, displaying"
       },
       {
         "roman": "jāṇa",
@@ -636,20 +716,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಸುರರ",
+        "text": "ಸುರ",
         "wordIndices": [
           2
         ]
       },
       {
+        "text": "ರ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
         "text": "ಮಣಿಯರು",
         "wordIndices": [
-          2
+          3
         ]
       }
     ],
     "roman": "rambhe modalāda suraramaṇiyaru",
-    "english": "{0:Rambhā} {1:and the other} {2:celestial women},",
+    "english": "{0:Rambhā} {1:and the other} {2:celestial }{3:women},",
     "words": [
       {
         "roman": "rambhe",
@@ -660,8 +746,12 @@ window.SONG_LINES = {
         "gloss": "and the others beginning with her"
       },
       {
-        "roman": "suraramaṇiyaru",
-        "gloss": "the celestial women; women of the gods"
+        "roman": "sura",
+        "gloss": "celestial; of the gods"
+      },
+      {
+        "roman": "ramaṇiyaru",
+        "gloss": "women; plural"
       }
     ],
     "nameTable": false,
@@ -672,36 +762,46 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಕುಂಭದಾರತಿಯ",
+        "text": "ಕುಂಭ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಪಿಡಿದು",
+        "text": "ದಾರತಿಯ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಕೂಡಿ",
+        "text": "ಪಿಡಿದು",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಪಾಡಲು",
+        "text": "ಕೂಡಿ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಪಾಡಲು",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "kumbhadāratiya piḍidu kūḍi pāḍalu",
-    "english": "{1:holding} {0:the pot-light offering}, {3:sang} {2:together},",
+    "english": "{2:holding} {0:the pot-}{1:light offering}, {4:sang} {3:together},",
     "words": [
       {
-        "roman": "kumbhadāratiya",
-        "gloss": "the auspicious pot-light offering"
+        "roman": "kumbhad",
+        "gloss": "of the auspicious pot; kumbhada, genitive"
+      },
+      {
+        "roman": "āratiya",
+        "gloss": "light offering (ārati); object"
       },
       {
         "roman": "piḍidu",
@@ -776,36 +876,46 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಅಂಬುಜಭವಾದಿಗಳ",
+        "text": "ಅಂಬುಜಭವಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಆಳಿದ",
+        "text": "ದಿಗಳ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಶ್ರೀ",
+        "text": "ಆಳಿದ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ರಂಗನಾಥ",
+        "text": "ಶ್ರೀ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ರಂಗನಾಥ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "ambujabhavādigaḷa āḷida śrī raṅganātha",
-    "english": "{2:Śrī} {3:Raṅganātha}, {1:ruler of} {0:Brahmā and the other gods}.",
+    "english": "{3:Śrī} {4:Raṅganātha}, {2:ruler of} {0:Brahmā }{1:and the other gods}.",
     "words": [
       {
-        "roman": "ambujabhavādigaḷa",
-        "gloss": "Brahmā, the lotus-born, and the others"
+        "roman": "ambujabhav",
+        "gloss": "Brahmā, the lotus-born; ambuja + bhava"
+      },
+      {
+        "roman": "ādigaḷa",
+        "gloss": "and the others; those beginning with him"
       },
       {
         "roman": "āḷida",
@@ -1010,38 +1120,68 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಇಷ್ಟಾರ್ಥವಿತ್ತು",
+        "text": "ಇಷ್ಟಾರ್ಥ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಅಮೃತನವನಿಕ್ಕುತ",
+        "text": "ವಿತ್ತು",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಜಾಣ",
+        "text": "ಅಮೃತ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ನವ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ನಿಕ್ಕುತ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ಜಾಣ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "ādaradi iṣṭārthavittu amṛtanavanikkuta jāṇa",
-    "english": "{3:The skilful one}, {0:with affection}, {1:granted their wishes} {2:and dispensed nectar-like food}.",
+    "english": "{6:The skilful one}, {0:with affection}, {2:granted }{1:their wishes} {5:and dispensed }{3:nectar-like }{4:food}.",
     "words": [
       {
         "roman": "ādaradi",
         "gloss": "with affection and regard"
       },
       {
-        "roman": "iṣṭārthavittu",
-        "gloss": "granting their desired aims; wishes"
+        "roman": "iṣṭārthav",
+        "gloss": "desired aims, wishes; iṣṭa + artha, object"
       },
       {
-        "roman": "amṛtanavanikkuta",
-        "gloss": "dispensing nectar-like food"
+        "roman": "ittu",
+        "gloss": "granting; having given"
+      },
+      {
+        "roman": "amṛta",
+        "gloss": "nectar; nectar-like"
+      },
+      {
+        "roman": "navan",
+        "gloss": "food; annavan, object, in its sung form"
+      },
+      {
+        "roman": "ikkuta",
+        "gloss": "dispensing, serving"
       },
       {
         "roman": "jāṇa",

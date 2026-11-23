@@ -105,7 +105,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "merā āpakī kṛpā se sab kām ho rahā hai",
-    "english": "{1,2,3:Through your grace, }{4:all }{0:my }{5:work }{6,7,8:gets done,}",
+    "english": "{3:Through }{1:your }{2:grace, }{4:all }{0:my }{5:work }{6,7,8:gets done,}",
     "words": [
       {
         "roman": "merā",
@@ -230,7 +230,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karate to tum ho bābā merā nām ho rahā hai",
-    "english": "{1,2:You indeed }{0,3:are doing it, }{4:Baba, }{5:yet my }{6:name }{7,8,9:is becoming renowned.}",
+    "english": "{2:You }{1:indeed }{0,3:are doing it, }{4:Baba, }{5:yet my }{6:name }{7,8,9:is becoming renowned.}",
     "words": [
       {
         "roman": "karate",
@@ -1033,7 +1033,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "merā āpakī dayā se sab kām ho rahā hai",
-    "english": "{1,2,3:Through your mercy, }{4:all }{0:my }{5:work }{6,7,8:gets done,}",
+    "english": "{3:Through }{1:your }{2:mercy, }{4:all }{0:my }{5:work }{6,7,8:gets done,}",
     "words": [
       {
         "roman": "merā",
@@ -1158,7 +1158,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum sāth ho jo mere kis cīz kī kamī hai",
-    "english": "{3:Since }{0:you }{1,2,4:are with me, }{5,6,7:what }{8,9:could I lack?}",
+    "english": "{3:Since }{0:you }{2:are }{1:with }{4:me, }{5,6,7:what }{8,9:could I lack?}",
     "words": [
       {
         "roman": "tum",
@@ -1402,7 +1402,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere sāth se gulām ab gulfām ho rahā hai",
-    "english": "{0,1,2:Through your company, }{3:the servant }{4:is now }{6,7,8:becoming }{5:rose-like.}",
+    "english": "{2:Through }{0:your }{1:company, }{3:the servant }{4:is now }{6,7,8:becoming }{5:rose-like.}",
     "words": [
       {
         "roman": "tere",

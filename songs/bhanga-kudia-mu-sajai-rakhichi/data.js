@@ -513,7 +513,7 @@ window.SONG_LINES = {
     "source": "କରୁଣା ହେବ କି ବାରେ",
     "sourceLanguage": "",
     "roman": "Karuṇā heba ki bāre",
-    "english": "{0,2:Will compassion }{1:be shown }{3:at least once?}",
+    "english": "{2:Will }{0:compassion }{1:be shown }{3:at least once?}",
     "words": [
       {
         "roman": "Karuṇā",
@@ -797,7 +797,7 @@ window.SONG_LINES = {
     "source": "ଲୋଡ଼େନା କିଛି ମୁଁ ତୁମ ଛଡ଼ା ସାଈ ଧନ ବା ଦରବ ସିଦ୍ଧି ବା ମୁକତି",
     "sourceLanguage": "",
     "roman": "Loṛenā kichi mũ tuma chaṛā sāī dhana bā daraba siddhi bā mukati",
-    "english": "{2:I }{0,1:seek nothing }{3,4:besides you, }{5:O Sai—}{6:wealth }{7:or }{8:possessions, }{9:spiritual powers }{10:or }{11:liberation.}",
+    "english": "{2:I }{0:seek }{1:nothing }{3,4:besides you, }{5:O Sai—}{6:wealth }{7:or }{8:possessions, }{9:spiritual powers }{10:or }{11:liberation.}",
     "words": [
       {
         "roman": "Loṛenā",

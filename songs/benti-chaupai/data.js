@@ -1086,7 +1086,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jō bar cahō̃ su tum tē pāū̃.",
-    "english": "{0:whatever }{1:boon }{2:I desire, }{3:that }{6:may I obtain }{4,5:from You.}",
+    "english": "{0:whatever }{1:boon }{2:I desire, }{3:that }{6:may I obtain }{5:from }{4:You.}",
     "words": [
       {
         "roman": "Jō",
@@ -1689,7 +1689,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dīn bandhu dushtan kē hantā.",
-    "english": "{0,1:Friend of the humble, }{2,3,4:Slayer of the wicked,}",
+    "english": "{1:Friend }{0:of the humble, }{4:Slayer }{2,3:of the wicked,}",
     "words": [
       {
         "roman": "Dīn",
@@ -1973,7 +1973,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāl pāi kar bisan prakāsā.",
-    "english": "{0,1,2:Under the sway of Time, }{3:Viṣṇu }{4:was manifested.}",
+    "english": "{1,2:Under the sway }{0:of Time, }{3:Viṣṇu }{4:was manifested.}",
     "words": [
       {
         "roman": "Kāl",
@@ -2322,7 +2322,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Namaskār hai tāhi hamārā.",
-    "english": "{3:my }{0,1:salutation is }{2:to That One.}",
+    "english": "{3:my }{0:salutation }{1:is }{2:to That One.}",
     "words": [
       {
         "roman": "Namaskār",
@@ -3150,7 +3150,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sabh par kripā drishṭ kar phūlā.",
-    "english": "{4:looking }{0,1:upon all }{2,3:with mercy, }{5:He blossoms with joy.}",
+    "english": "{4:looking }{1:upon }{0:all }{2,3:with mercy, }{5:He blossoms with joy.}",
     "words": [
       {
         "roman": "Sabh",
@@ -3369,7 +3369,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ēk ēk kī pīr pachānai.",
-    "english": "{4:He recognizes }{3:the pain }{0,1,2:of each and every one;}",
+    "english": "{4:He recognizes }{3:the pain }{2:of }{0,1:each and every one;}",
     "words": [
       {
         "roman": "Ēk",
@@ -3742,7 +3742,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tum mai milat dēh dhar sabhhū̃.",
-    "english": "{5:all }{3,4:embodied beings }{2:merge }{0,1:into You.}",
+    "english": "{5:all }{3,4:embodied beings }{2:merge }{1:into }{0:You.}",
     "words": [
       {
         "roman": "Tum",
@@ -3949,7 +3949,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tum sabhhī tē rahat nirālam.",
-    "english": "Yet {0:You }{3:remain }{4:detached }{1,2:from all,}",
+    "english": "Yet {0:You }{3:remain }{4:detached }{2:from }{1:all,}",
     "words": [
       {
         "roman": "Tum",
@@ -7055,7 +7055,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sarab ṭhaur mō hōhu sahāī.",
-    "english": "{3:Be} {4:my helper} {0,1,2:in all places,}",
+    "english": "{3:Be} {4:my helper} {2:in }{0:all }{1:places,}",
     "words": [
       {
         "roman": "Sarab",

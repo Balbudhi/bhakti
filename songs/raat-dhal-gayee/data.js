@@ -202,7 +202,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāgō Sāīṁ prabhu,",
-    "english": "{0:Awake, }{1,2:Lord Sai, }",
+    "english": "{0:Awake, }{2:Lord }{1:Sai, }",
     "words": [
       {
         "roman": "Jāgō",
@@ -261,7 +261,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhaktōṁ kō darśan dēnē kō",
-    "english": "{3,4:to give }{2:darshan }{0,1:to the devotees}",
+    "english": "{4:to }{3:give }{2:darshan }{0,1:to the devotees}",
     "words": [
       {
         "roman": "Bhaktōṁ",
@@ -344,7 +344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāgō jāgō Sāīnāth prabhu darśan dēnē kō",
-    "english": "{0:Awake, }{1:awake, }{2,3:Lord Sainath, }{5,6:to give }{4:darshan}",
+    "english": "{0:Awake, }{1:awake, }{2,3:Lord Sainath, }{6:to }{5:give }{4:darshan}",
     "words": [
       {
         "roman": "Jāgō",
@@ -1122,7 +1122,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gāy bachṛē śōr macāē, cahak rahē haiṁ pañchī",
-    "english": "{0:Cows }{1:and calves }{2,3:raise clamor, }{7:the birds }{4,5,6:are chirping}",
+    "english": "{0:Cows }{1:and calves }{3:raise }{2:clamor, }{7:the birds }{4,5,6:are chirping}",
     "words": [
       {
         "roman": "Gāy",
@@ -1449,7 +1449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hār puṣp hāthōṁ mēṁ lēkar, bhakt khaṛē haiṁ sārē",
-    "english": "{4:Holding }{0:garlands }{1:and flowers }{2,3:in their hands, }{8:all }{5:the devotees }{6,7:are standing}",
+    "english": "{4:Holding }{0:garlands }{1:and flowers }{2,3:in their hands, }{8:all }{5:the devotees }{7:are }{6:standing}",
     "words": [
       {
         "roman": "Hār",

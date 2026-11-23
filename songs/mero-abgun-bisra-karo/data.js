@@ -926,7 +926,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jīvan ke is lambe safar mẽ",
-    "english": "{5:in }{2:this }{3:long }{4:journey }{0,1:of life,}",
+    "english": "{5:in }{2:this }{3:long }{4:journey }{1:of }{0:life,}",
     "words": [
       {
         "roman": "Jīvan",
@@ -1080,7 +1080,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tum hī uddhār karo",
-    "english": "{0:you }{1:alone }{2,3:grant deliverance.}",
+    "english": "{0:you }{1:alone }{3:grant }{2:deliverance.}",
     "words": [
       {
         "roman": "Tum",

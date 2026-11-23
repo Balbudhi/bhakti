@@ -554,14 +554,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಸುಖಪೂರ್ಣವಾದ",
+        "text": "ಸುಖ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಪೂರ್ಣವಾದ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "suparṇa vāhana sukhapūrṇavāda",
-    "english": "{0,1:You whose mount is Suparṇa}, {2:who are full of joy}…",
+    "english": "{1:You whose mount is }{0:Suparṇa}, {3:who are full }{2:of joy}…",
     "words": [
       {
         "roman": "suparṇa",
@@ -572,8 +578,12 @@ window.SONG_LINES = {
         "gloss": "one who has him as a mount"
       },
       {
-        "roman": "sukhapūrṇavāda",
-        "gloss": "who is full of joy; adjectival continuation to the following name"
+        "roman": "sukha",
+        "gloss": "joy"
+      },
+      {
+        "roman": "pūrṇavāda",
+        "gloss": "who is full; adjectival continuation to the following name"
       }
     ],
     "nameTable": false,

@@ -193,170 +193,182 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "विषपान",
+        "text": "विष",
         "wordIndices": [
           26
         ]
       },
       {
-        "text": "करके",
+        "text": "पान",
         "wordIndices": [
           27
         ]
       },
       {
-        "text": "सब",
+        "text": "करके",
         "wordIndices": [
           28
         ]
       },
       {
-        "text": "को",
+        "text": "सब",
         "wordIndices": [
           29
         ]
       },
       {
-        "text": "चिंतामुक्त",
+        "text": "को",
         "wordIndices": [
           30
         ]
       },
       {
-        "text": "कर",
+        "text": "चिंता",
         "wordIndices": [
           31
         ]
       },
       {
-        "text": "दिया",
+        "text": "मुक्त",
         "wordIndices": [
           32
         ]
       },
       {
-        "text": "था।",
+        "text": "कर",
         "wordIndices": [
           33
         ]
       },
       {
-        "text": "भगवान",
+        "text": "दिया",
         "wordIndices": [
           34
         ]
       },
       {
-        "text": "श्री",
+        "text": "था।",
         "wordIndices": [
           35
         ]
       },
       {
-        "text": "राम",
+        "text": "भगवान",
         "wordIndices": [
           36
         ]
       },
       {
-        "text": "ने",
+        "text": "श्री",
         "wordIndices": [
           37
         ]
       },
       {
-        "text": "भी",
+        "text": "राम",
         "wordIndices": [
           38
         ]
       },
       {
-        "text": "सागर",
+        "text": "ने",
         "wordIndices": [
           39
         ]
       },
       {
-        "text": "तट",
+        "text": "भी",
         "wordIndices": [
           40
         ]
       },
       {
-        "text": "पर",
+        "text": "सागर",
         "wordIndices": [
           41
         ]
       },
       {
-        "text": "जिनकी",
+        "text": "तट",
         "wordIndices": [
           42
         ]
       },
       {
-        "text": "पूजा",
+        "text": "पर",
         "wordIndices": [
           43
         ]
       },
       {
-        "text": "अर्चना",
+        "text": "जिनकी",
         "wordIndices": [
           44
         ]
       },
       {
-        "text": "की,",
+        "text": "पूजा",
         "wordIndices": [
           45
         ]
       },
       {
-        "text": "वो",
+        "text": "अर्चना",
         "wordIndices": [
           46
         ]
       },
       {
-        "text": "नीलकंठ",
+        "text": "की,",
         "wordIndices": [
           47
         ]
       },
       {
-        "text": "भगवान",
+        "text": "वो",
         "wordIndices": [
           48
         ]
       },
       {
-        "text": "शिव",
+        "text": "नीलकंठ",
         "wordIndices": [
           49
         ]
       },
       {
-        "text": "ही",
+        "text": "भगवान",
         "wordIndices": [
           50
         ]
       },
       {
-        "text": "तो",
+        "text": "शिव",
         "wordIndices": [
           51
         ]
       },
       {
-        "text": "हैं।",
+        "text": "ही",
         "wordIndices": [
           52
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          53
+        ]
+      },
+      {
+        "text": "हैं।",
+        "wordIndices": [
+          54
         ]
       }
     ],
     "roman": "bhagavāna śiva śaṅkara sāre devõ mẽ nirāle ha͠i. sāgara manthana mẽ jaba viṣa nikalā, to sabhī deva aura dānava ghabarā gae the. parantu bholenātha ne svayaṁ viṣapāna karake saba ko cintāmukta kara diyā thā. bhagavāna śrī rāma ne bhī sāgara taṭa para jinakī pūjā arcanā kī, vo nīlakaṇṭha bhagavān śiva hī to ha͠i.",
-    "english": "{0,1,2:Lord Shiva Shankara}{6,7: is peerless}{3,4,5: among all the gods.}{8,9,10: In the ocean's churning,}{11,12,13: when poison emerged,}{14,15,16,17,18: then all the gods and demons}{19,20,21: were panic-stricken.}{22,23,24: But Bholenath,}{25,26,27: Himself drinking the poison,}{28,29,30,31,32,33: freed everyone from anxiety.}{42,43,44: The One whose worship and adoration}{34,35,36,37,38,45: even Lord Shri Rama performed}{39,40,41: upon the ocean shore,}{46,47,48,49,50,51,52: He is indeed that Blue-throated Lord Shiva.}",
+    "english": "{0:Lord }{1:Shiva }{2:Shankara}{7: is }{6:peerless}{5: among }{3:all }{4:the gods.}{10: In }{8:the ocean's }{9:churning,}{11: when }{12:poison }{13:emerged,}{14: then }{15:all }{16:the gods }{17:and }{18:demons}{21: were }{19,20:panic-stricken.}{22: But }{23,24:Bholenath,}{25: Himself }{27,28:drinking }{26:the poison, }{33,34,35:freed }{29,30:everyone }{32:from }{31:anxiety.}{44: The One whose }{45:worship }{46:and adoration}{40: even }{36:Lord }{37:Shri }{38,39:Rama }{47:performed }{43:upon }{41:the ocean }{42:shore, }{48:He }{54:is }{52,53:indeed }{48:that }{49:Blue-throated }{50:Lord }{51:Shiva.}",
     "words": [
       {
         "roman": "bhagavāna",
@@ -515,8 +527,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "viṣapāna",
-        "gloss": "drinking of poison",
+        "roman": "viṣa",
+        "gloss": "poison (viṣa-, the poison)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāna",
+        "gloss": "drinking (pāna)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -539,8 +557,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "cintāmukta",
-        "gloss": "free from anxiety / fear-free",
+        "roman": "cintā",
+        "gloss": "anxiety; worry (cintā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mukta",
+        "gloss": "free; freed from (mukta)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -863,7 +887,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaya śiva śaṅkara jaya śiva śaṅkara jaya śaṅkara bhole\nsaba devõ mẽ deva nirāle jaya bama bama bhole",
-    "english": "{0,1,2:Victory to Shiva Shankara, }{3,4,5:victory to Shiva Shankara, }{6,7,8:victory to Shankara, O innocent One!\n}{9,10,11,12,13: Peerless God among all gods, }{14,15,16,17:victory, Bam Bam Bhole!}",
+    "english": "{0:Victory to }{1:Shiva }{2:Shankara, }{3:victory to }{4:Shiva }{5:Shankara, }{6:victory to }{7:Shankara, }{8:O innocent One!\n}{13: Peerless }{12:God }{11:among }{9:all }{10:gods, }{14:victory, }{15:Bam }{16:Bam }{17:Bhole!}",
     "words": [
       {
         "roman": "jaya",
@@ -1113,7 +1137,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mahādeva tūne hī to saba devõ kā saṁtāpa harā\nsāgara manthana mẽ nikalā viṣa tūne apane kaṇṭha dharā",
-    "english": "{0:O Mahadeva, }{1,2,3,8:You alone dispelled }{4,5,6,7:the anguish of all the gods;\n}{12,13: The poison that emerged }{9,10,11:in the churning of the ocean, }{14,15,16,17:You held in Your own throat.}",
+    "english": "{0:O Mahadeva, }{1:You }{2,3:alone }{8:dispelled }{7:the anguish }{6:of }{4:all }{5:the gods;\n}{13: The poison }{12:that emerged }{11:in }{10:the churning }{9:of the ocean, }{14:You }{17:held }{15:in Your own }{16:throat.}",
     "words": [
       {
         "roman": "mahādeva",
@@ -1322,7 +1346,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "isīlie hara prāṇī tujhako nīlakaṇṭha bole\nsaba devõ mẽ deva nirāle jaya bama bama bhole",
-    "english": "{0:That is why }{1,2:every living being }{3,4,5:calls You Nilakantha;\n}{6,7,8,9,10: Peerless God among all gods, }{11,12,13,14:victory, Bam Bam Bhole!}",
+    "english": "{0:That is why }{1:every }{2:living being }{5:calls }{3:You }{4:Nilakantha;\n}{10: Peerless }{9:God }{8:among }{6:all }{7:gods, }{11:victory, }{12:Bam }{13:Bam }{14:Bhole!}",
     "words": [
       {
         "roman": "isīlie",
@@ -1507,7 +1531,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere nāma anekõ bābā terī mahimā nyārī\ntere bheda anokhe sabase kyā jāne saṁsārī",
-    "english": "{0,1,2,3:Your names are countless, O Baba, }{4,5,6:Your glory is singular;\n}{7,8,9,10: Your mysteries are unique beyond all—}{11,12,13:how could a worldly person know them?}",
+    "english": "{0:Your }{1:names }{2:are countless, }{3:O Baba, }{4:Your }{5:glory }{6:is singular;\n }{7:Your }{8:mysteries }{9:are unique }{10:beyond all—}{11:how }{12:could }{13:a worldly person }{12:know them?}",
     "words": [
       {
         "roman": "tere",
@@ -1710,7 +1734,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū hī hai kailāśa pati tū parvata para dole\nsaba devõ mẽ deva nirāle jaya bama bama bhole",
-    "english": "{0,1,2,3,4:You alone are guardian of Kailāśa, }{5,6,7,8:You roam upon the mountain;\n}{9,10,11,12,13: Peerless God among all gods, }{14,15,16,17:victory, Bam Bam Bhole!}",
+    "english": "{0:You }{1:alone }{2:are }{4:guardian }{3:of Kailāśa, }{5:You }{8:roam }{7:upon }{6:the mountain;\n}{13: Peerless }{12:God }{11:among }{9:all }{10:gods, }{14:victory, }{15:Bam }{16:Bam }{17:Bhole!}",
     "words": [
       {
         "roman": "tū",
@@ -1852,80 +1876,86 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "चन्द्रशिखर",
+        "text": "चन्द्र",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "पे",
+        "text": "शिखर",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "सोहे",
+        "text": "पे",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "तन",
+        "text": "सोहे",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "पे",
+        "text": "तन",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "सर्प",
+        "text": "पे",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "विचरते",
+        "text": "सर्प",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "रहते",
+        "text": "विचरते",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "भक्तों",
+        "text": "रहते",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "के",
+        "text": "भक्तों",
         "wordIndices": [
           13
         ]
       },
       {
-        "text": "मन",
+        "text": "के",
         "wordIndices": [
           14
         ]
       },
       {
-        "text": "मोहे",
+        "text": "मन",
         "wordIndices": [
           15
+        ]
+      },
+      {
+        "text": "मोहे",
+        "wordIndices": [
+          16
         ]
       }
     ],
     "roman": "śīśa tumhāre gaṅgā maiyā candraśikhara pe sohe\ntana pe sarpa vicarate rahate bhaktõ ke mana mohe",
-    "english": "{0,1,2,3:Upon Your head Mother Ganga }{4,5,6:shines gracefully on Your crescent-moon crest;\n}{7,8,9,10,11: Serpents keep slithering upon Your body, }{12,13,14,15:captivating the hearts of devotees.}",
+    "english": "{1:Upon Your }{0:head }{3:Mother }{2:Ganga }{7:shines gracefully }{6:on Your }{4:crescent-moon }{5:crest;\n}{10: Serpents }{12:keep }{11:slithering }{9:upon }{8:Your body, }{16:captivating }{15:the hearts }{14:of }{13:devotees.}",
     "words": [
       {
         "roman": "śīśa",
@@ -1952,8 +1982,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "candraśikhara",
-        "gloss": "moon-crested head / crest bearing the crescent moon",
+        "roman": "candra",
+        "gloss": "moon; crescent (candra)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śikhara",
+        "gloss": "crest; peak (śikhara)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2140,7 +2176,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "usako kaisā kaṣṭa jagata mẽ nāma terā jo le\nsaba devõ mẽ deva nirāle jaya bama bama bhole",
-    "english": "{0,1,2:What distress could there be }{3,4:in the world }{5,6,7,8:for whoever chants Your name?\n}{9,10,11,12,13: Peerless God among all gods, }{14,15,16,17:victory, Bam Bam Bhole!}",
+    "english": "{1:What }{2:distress }{1:could there be }{4:in }{3:the world }{0:for }{7:whoever }{8:chants }{6:Your }{5:name?\n}{13: Peerless }{12:God }{11:among }{9:all }{10:gods, }{14:victory, }{15:Bam }{16:Bam }{17:Bhole!}",
     "words": [
       {
         "roman": "usako",
@@ -2395,182 +2431,194 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "धन-धान्य,",
+        "text": "धन-",
         "wordIndices": [
           13
         ]
       },
       {
-        "text": "यश-वैभव",
+        "text": "धान्य,",
         "wordIndices": [
           14
         ]
       },
       {
-        "text": "सब",
+        "text": "यश-",
         "wordIndices": [
           15
         ]
       },
       {
-        "text": "कुछ",
+        "text": "वैभव",
         "wordIndices": [
           16
         ]
       },
       {
-        "text": "प्रदान",
+        "text": "सब",
         "wordIndices": [
           17
         ]
       },
       {
-        "text": "करके",
+        "text": "कुछ",
         "wordIndices": [
           18
         ]
       },
       {
-        "text": "भी,",
+        "text": "प्रदान",
         "wordIndices": [
           19
         ]
       },
       {
-        "text": "स्वयं",
+        "text": "करके",
         "wordIndices": [
           20
         ]
       },
       {
-        "text": "जंगलों,",
+        "text": "भी,",
         "wordIndices": [
           21
         ]
       },
       {
-        "text": "पर्वतों",
+        "text": "स्वयं",
         "wordIndices": [
           22
         ]
       },
       {
-        "text": "और",
+        "text": "जंगलों,",
         "wordIndices": [
           23
         ]
       },
       {
-        "text": "वीरान",
+        "text": "पर्वतों",
         "wordIndices": [
           24
         ]
       },
       {
-        "text": "श्मशानों",
+        "text": "और",
         "wordIndices": [
           25
         ]
       },
       {
-        "text": "में",
+        "text": "वीरान",
         "wordIndices": [
           26
         ]
       },
       {
-        "text": "विचरता",
+        "text": "श्मशानों",
         "wordIndices": [
           27
         ]
       },
       {
-        "text": "रहे।",
+        "text": "में",
         "wordIndices": [
           28
         ]
       },
       {
-        "text": "ऐसे",
+        "text": "विचरता",
         "wordIndices": [
           29
         ]
       },
       {
-        "text": "देव",
+        "text": "रहे।",
         "wordIndices": [
           30
         ]
       },
       {
-        "text": "तो",
+        "text": "ऐसे",
         "wordIndices": [
           31
         ]
       },
       {
-        "text": "एक",
+        "text": "देव",
         "wordIndices": [
           32
         ]
       },
       {
-        "text": "ही",
+        "text": "तो",
         "wordIndices": [
           33
         ]
       },
       {
-        "text": "हैं,",
+        "text": "एक",
         "wordIndices": [
           34
         ]
       },
       {
-        "text": "देवों",
+        "text": "ही",
         "wordIndices": [
           35
         ]
       },
       {
-        "text": "में",
+        "text": "हैं,",
         "wordIndices": [
           36
         ]
       },
       {
-        "text": "देव",
+        "text": "देवों",
         "wordIndices": [
           37
         ]
       },
       {
-        "text": "महादेव,",
+        "text": "में",
         "wordIndices": [
           38
         ]
       },
       {
-        "text": "भगवान",
+        "text": "देव",
         "wordIndices": [
           39
         ]
       },
       {
-        "text": "शिव",
+        "text": "महादेव,",
         "wordIndices": [
           40
         ]
       },
       {
-        "text": "शंकर।",
+        "text": "भगवान",
         "wordIndices": [
           41
+        ]
+      },
+      {
+        "text": "शिव",
+        "wordIndices": [
+          42
+        ]
+      },
+      {
+        "text": "शंकर।",
+        "wordIndices": [
+          43
         ]
       }
     ],
     "roman": "aisā deva kahā̃ hai tīnõ lokõ mẽ, jo apane bhaktõ ko sukha, samṛddhi, dhana-dhānya, yaśa-vaibhava saba kucha pradāna karake bhī, svayaṁ jaṅgalõ, parvatõ aura vīrāna śamaśānõ mẽ vicaratā rahe. aise deva to eka hī ha͠i, devõ mẽ deva mahādeva, bhagavāna śiva śaṅkara.",
-    "english": "{0,1,2,3,4,5,6:Where in the three worlds is there such a god }{7,17,18,19:who, even after bestowing }{11,12,13,14:happiness, prosperity, wealth and grain, fame and splendour—}{8,9,10,15,16:everything—upon His devotees, }{20,27,28:Himself continues to wander }{21,22,23,24,25,26:in forests, mountains, and desolate cremation grounds? }{29,30,31,32,33,34:There is truly only one such god: }{35,36,37,38:the God of gods, Mahadeva, }{39,40,41:Lord Shiva Shankara.}",
+    "english": "{2:Where }{6:in }{4:the three }{5:worlds }{3:is there }{0:such a }{1:god }{7:who, }{21:even }{20:after }{19:bestowing }{11:happiness, }{12:prosperity, }{13:wealth }{14:and grain, }{15:fame }{16:and splendour—}{17,18:everything—}{10:upon }{8:His }{9:devotees, }{22:Himself }{30:continues to }{29:wander }{28:in }{23:forests, }{24:mountains, }{25:and }{26:desolate }{27:cremation grounds? }{36:There is }{33:truly }{35:only }{34:one }{31:such }{32:god: }{39:the God }{38:of }{37:gods, }{40:Mahadeva, }{41:Lord }{42:Shiva }{43:Shankara.}",
     "words": [
       {
         "roman": "aisā",
@@ -2651,14 +2699,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dhana-dhānya,",
-        "gloss": "wealth and grain / material abundance,",
+        "roman": "dhana-",
+        "gloss": "wealth (dhana)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yaśa-vaibhava",
-        "gloss": "renown and splendour / fame and glory",
+        "roman": "dhānya,",
+        "gloss": "grain; grain-wealth (dhānya)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yaśa-",
+        "gloss": "renown; fame (yaśas)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vaibhava",
+        "gloss": "splendour; glory",
         "concept_key": "",
         "preserve_in_english": false
       },

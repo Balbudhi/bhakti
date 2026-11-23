@@ -2175,7 +2175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kēhari vāhana sōha bhavānī | lāṅgura vīra calata agavānī ||\nkara mēṁ khappara khaḍga virājai | jākō dēkha kāla ḍara bhājai ||\nsōhai astra aura triśūlā | jātē uṭhata śatru hiya śūlā ||\nnagarakōṭi mēṁ tumhīṁ virājata | tihūm̐ lōka mēṁ ḍaṅkā bājata ||",
-    "english": "{0:On your lion }{1:mount, }{3:Bhavānī, }{2:you look splendid, }{5:while the hero }{4:Lāṅgura }{6:marches }{7:in the vanguard. }{8,9:In your hand }{12:shine }{10:the skull-bowl }{11:and sword, }{13,14:beholding which }{15:Death }{17:flees }{16:in fear. }{19:Weapons }{20:and }{21:the trident }{18:adorn you, }{22:from which }{26:piercing pain }{23:rises }{24:in the enemy’s }{25:heart. }{28:In }{27:Nagarkot }{29:you alone }{30:are enthroned, }{33:and in }{31:the three }{32:worlds }{34:your victory drum }{35:resounds.}",
+    "english": "{0:On your lion }{1:mount, }{3:Bhavānī, }{2:you look splendid, }{5:while the hero }{4:Lāṅgura }{6:marches }{7:in the vanguard. }{8,9:In your hand }{12:shine }{10:the skull-bowl }{11:and sword, }{14:beholding }{13:which }{15:Death }{17:flees }{16:in fear. }{19:Weapons }{20:and }{21:the trident }{18:adorn you, }{22:from which }{26:piercing pain }{23:rises }{24:in the enemy’s }{25:heart. }{28:In }{27:Nagarkot }{29:you alone }{30:are enthroned, }{33:and in }{31:the three }{32:worlds }{34:your victory drum }{35:resounds.}",
     "words": [
       {
         "roman": "kēhari",

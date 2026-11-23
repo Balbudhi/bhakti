@@ -1367,7 +1367,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Milnā nahīṁ thā tō kisnē kahā thā tumhēṁ",
-    "english": "If {2:you were }{1:not }{0:to meet, }{3:then }{4:who }{5,6:had told }{7:you}",
+    "english": "If {2:you were }{1:not }{0:to meet, }{3:then }{4:who }{6:had }{5:told }{7:you}",
     "words": [
       {
         "roman": "Milnā",

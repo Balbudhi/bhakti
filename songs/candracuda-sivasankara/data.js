@@ -353,14 +353,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಗಜಚರ್ಮಾಂಬರಧರ",
+        "text": "ಗಜ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಚರ್ಮಾಂ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಬರ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಧರ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "gaṅgā śira gajacarmāmbaradhara",
-    "english": "{0,1:Gaṅgā upon your head}, {2:wearing elephant skin as your garment}.",
+    "english": "{0:Gaṅgā} {1:upon your head}, {5:wearing} {2:elephant} {3:skin} {4:as your garment}.",
     "words": [
       {
         "roman": "gaṅgā",
@@ -371,8 +389,20 @@ window.SONG_LINES = {
         "gloss": "head; the head bearing the preceding river"
       },
       {
-        "roman": "gajacarmāmbaradhara",
-        "gloss": "wearer of elephant skin as a garment"
+        "roman": "gaja",
+        "gloss": "elephant"
+      },
+      {
+        "roman": "carm",
+        "gloss": "skin, hide; carma, vowel joined to ambara"
+      },
+      {
+        "roman": "āmbara",
+        "gloss": "garment; ambara"
+      },
+      {
+        "roman": "dhara",
+        "gloss": "wearer"
       }
     ],
     "nameTable": false,
@@ -1767,20 +1797,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಕುಂಭಪುರವಾಸನು",
+        "text": "ಕುಂಭಪುರ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ನೀನೆ",
+        "text": "ವಾಸನು",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ನೀನೆ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "dharege dakṣiṇa kāvēri tīra kumbhapuravāsanu nīne",
-    "english": "{0:On earth}, {1:in the south}, {2,3:on Kāvēri’s bank}, {5:you alone} are {4:the dweller of Kumbhapura}.",
+    "english": "{0:On earth}, {1:in the south}, {3:on} {2:Kāvēri’s} {3:bank}, {6:you alone} are {5:the dweller} {4:of Kumbhapura}.",
     "words": [
       {
         "roman": "dharege",
@@ -1799,8 +1835,12 @@ window.SONG_LINES = {
         "gloss": "bank"
       },
       {
-        "roman": "kumbhapuravāsanu",
-        "gloss": "the dweller of Kumbhapura, identified with Kumbhakoṇam"
+        "roman": "kumbhapura",
+        "gloss": "Kumbhapura, identified with Kumbhakoṇam"
+      },
+      {
+        "roman": "vāsanu",
+        "gloss": "the dweller; nominative"
       },
       {
         "roman": "nīne",
@@ -2053,42 +2093,58 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಗರುಡಗಮನ",
+        "text": "ಗರುಡ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಶ್ರೀ",
+        "text": "ಗಮನ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಪುರಂದರವಿಠಲಗೆ",
+        "text": "ಶ್ರೀ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಪ್ರಾಣಪ್ರಿಯನು",
+        "text": "ಪುರಂದರವಿಠಲಗೆ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ನೀನೆ",
+        "text": "ಪ್ರಾಣ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ಪ್ರಿಯನು",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ನೀನೆ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "garuḍagamana śrī purandaraviṭhalage prāṇapriyanu nīne",
-    "english": "{4:You alone} are {3:dear as life itself} {1,2:to Śrī Purandara Viṭṭhala}, {0:who rides Garuḍa}.",
+    "english": "{6:You alone} are {5:dear} {4:as life itself} {3:to} {2:Śrī} {3:Purandara Viṭṭhala}, {1:who rides} {0:Garuḍa}.",
     "words": [
       {
-        "roman": "garuḍagamana",
-        "gloss": "one who travels on Garuḍa; describes Viṣṇu"
+        "roman": "garuḍa",
+        "gloss": "Garuḍa, the divine eagle"
+      },
+      {
+        "roman": "gamana",
+        "gloss": "one who travels on; describes Viṣṇu"
       },
       {
         "roman": "śrī",
@@ -2099,8 +2155,12 @@ window.SONG_LINES = {
         "gloss": "to Purandara Viṭṭhala, the poet’s signature deity-name; Purandara means “destroyer of strongholds”; here it belongs to the name Purandara Viṭṭhala."
       },
       {
-        "roman": "prāṇapriyanu",
-        "gloss": "dear as life itself"
+        "roman": "prāṇa",
+        "gloss": "life; life-breath"
+      },
+      {
+        "roman": "priyanu",
+        "gloss": "dear one; nominative"
       },
       {
         "roman": "nīne",
@@ -2121,60 +2181,98 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಮೃಗಧರ",
+        "text": "ಮೃಗ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಪಿನಾಕ",
+        "text": "ಧರ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಧನುಕರ",
+        "text": "ಪಿನಾಕ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಗಂಗಾ",
+        "text": "ಧನು",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಶಿರ",
+        "text": "ಕರ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ಗಜಚರ್ಮಾಂಬರಧರ",
+        "text": "ಗಂಗಾ",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "ಶಿರ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಗಜ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ಚರ್ಮಾಂ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ಬರ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ಧರ",
+        "wordIndices": [
+          11
         ]
       }
     ],
     "roman": "sundara mṛgadhara pināka dhanukara gaṅgā śira gajacarmāmbaradhara",
-    "english": "{0:Beautiful one}, {1:bearing a deer}, {2,3:with the bow Pināka in hand}. {4,5:Gaṅgā upon your head}, {6:wearing elephant skin as your garment}.",
+    "english": "{0:Beautiful one}, {2:bearing} {1:a deer}, {4:with the bow} {3:Pināka} {5:in hand}. {6:Gaṅgā} {7:upon your head}, {11:wearing} {8:elephant} {9:skin} {10:as your garment}.",
     "words": [
       {
         "roman": "sundara",
         "gloss": "beautiful"
       },
       {
-        "roman": "mṛgadhara",
-        "gloss": "bearer of a deer"
+        "roman": "mṛga",
+        "gloss": "deer"
+      },
+      {
+        "roman": "dhara",
+        "gloss": "bearer"
       },
       {
         "roman": "pināka",
         "gloss": "the name of Śiva’s bow"
       },
       {
-        "roman": "dhanukara",
-        "gloss": "having the bow in hand"
+        "roman": "dhanu",
+        "gloss": "bow"
+      },
+      {
+        "roman": "kara",
+        "gloss": "hand; having … in hand"
       },
       {
         "roman": "gaṅgā",
@@ -2185,8 +2283,20 @@ window.SONG_LINES = {
         "gloss": "head; the head bearing the preceding river"
       },
       {
-        "roman": "gajacarmāmbaradhara",
-        "gloss": "wearer of elephant skin as a garment"
+        "roman": "gaja",
+        "gloss": "elephant"
+      },
+      {
+        "roman": "carm",
+        "gloss": "skin, hide; carma, vowel joined to ambara"
+      },
+      {
+        "roman": "āmbara",
+        "gloss": "garment; ambara"
+      },
+      {
+        "roman": "dhara",
+        "gloss": "wearer"
       }
     ],
     "nameTable": false,

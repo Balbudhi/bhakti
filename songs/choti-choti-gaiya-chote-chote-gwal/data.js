@@ -153,7 +153,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chhoṭo so mero madana gopāl",
-    "english": "{2:My }{0,1:dear little }{3,4:Madan Gopal}",
+    "english": "{2:My }{1:dear }{0:little }{3,4:Madan Gopal}",
     "words": [
       {
         "roman": "chhoṭo",
@@ -307,7 +307,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chhoṭo so mero madana gopāl",
-    "english": "{2:My }{0,1:dear little }{3,4:Madan Gopal}",
+    "english": "{2:My }{1:dear }{0:little }{3,4:Madan Gopal}",
     "words": [
       {
         "roman": "chhoṭo",
@@ -556,7 +556,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chhoṭo so, chhoṭo so, chhoṭo so mero madana gopāl",
-    "english": "{0,1:Dear little, }{2,3:dear little, }{4,5:dear little }{6:is my }{7,8:Madan Gopal}",
+    "english": "{1:Dear }{0:little, }{3:dear }{2:little, }{5:dear }{4:little }{6:is my }{7,8:Madan Gopal}",
     "words": [
       {
         "roman": "chhoṭo",
@@ -829,7 +829,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chhoṭo so, chhoṭo so, chhoṭo so mero madana gopāl",
-    "english": "{0,1:Dear little, }{2,3:dear little, }{4,5:dear little }{6:is my }{7,8:Madan Gopal}",
+    "english": "{1:Dear }{0:little, }{3:dear }{2:little, }{5:dear }{4:little }{6:is my }{7,8:Madan Gopal}",
     "words": [
       {
         "roman": "chhoṭo",
@@ -930,7 +930,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "chhoṭī chhoṭī lakuṭī, chhoṭe chhoṭe hāth",
-    "english": "{0,1,2:A tiny little staff, }{3,4,5:tiny little hands}",
+    "english": "{0,1,2:A tiny little staff, }{4:tiny }{3:little }{5:hands}",
     "words": [
       {
         "roman": "chhoṭī",
@@ -1380,7 +1380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "are chhoṭo so mero madana gopāl",
-    "english": "{0:Oh, }{3:my }{1,2:dear little }{4,5:Madan Gopal}",
+    "english": "{0:Oh, }{3:my }{2:dear }{1:little }{4,5:Madan Gopal}",
     "words": [
       {
         "roman": "are",
@@ -1463,7 +1463,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "are chhoṭo so mero madana gopāl",
-    "english": "{0:Oh, }{3:my }{1,2:dear little }{4,5:Madan Gopal}",
+    "english": "{0:Oh, }{3:my }{2:dear }{1:little }{4,5:Madan Gopal}",
     "words": [
       {
         "roman": "are",

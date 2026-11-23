@@ -163,7 +163,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "par maiṁ nā tumheṁ bisrāyā karūm̐",
-    "english": "{0:yet }{1,5:may I }{2:never }{4:forget }{3:you.}",
+    "english": "{0:yet }{5:may }{1:I }{2:never }{4:forget }{3:you.}",
     "words": [
       {
         "roman": "par",

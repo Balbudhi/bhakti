@@ -35,7 +35,7 @@ window.SONG_LINES = {
     "source": "आकाशी झेप घे रे पाखरा",
     "sourceLanguage": "mr",
     "roman": "ākāśī jhepa ghe re pākharā",
-    "english": "{1,2:Fly}{0: into the sky,}{3,4: O bird,}",
+    "english": "{1,2:Fly}{0: into the sky,}{3: O }{4:bird,}",
     "words": [
       {
         "roman": "ākāśī",

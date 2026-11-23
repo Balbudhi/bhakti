@@ -963,7 +963,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhaktoṁ ke tuma prāṇa prabhu isa jīvana ke rakhavāre ho",
-    "english": "{2:You }{3,9:are the life-breath }{0,1:of devotees, }{4:O Lord, }{8:the protector }{5,7:of this }{6:life.}",
+    "english": "{2:You }{3,9:are the life-breath }{1:of }{0:devotees, }{4:O Lord, }{8:the protector }{7:of }{5:this }{6:life.}",
     "words": [
       {
         "roman": "bhaktoṁ",
@@ -1106,7 +1106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma meṁ jiyeṁ janameṁ tuma meṁ aura aṁta kareṁ tuma meṁ viśrāma",
-    "english": "{2:May we live }{0,1:in you, }{3:be born }{4,5:in you, }{6:and }{7:in the end }{8:take }{11:rest }{9,10:in you.}",
+    "english": "{2:May we live }{1:in }{0:you, }{3:be born }{5:in }{4:you, }{6:and }{7:in the end }{8:take }{11:rest }{10:in }{9:you.}",
     "words": [
       {
         "roman": "tuma",

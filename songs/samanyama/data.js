@@ -413,26 +413,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "యురముపై",
+        "text": "యురము",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "తెగికట్టిరెవ్వరో",
+        "text": "పై",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "దేవుండవనగా",
+        "text": "తెగి",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "కట్టి",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "రెవ్వరో",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "దేవుండ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "వనగా",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "maguḍa mārukumāru maguva nī yuramupai tegikaṭṭirevvarō dēvuṇḍavanagā",
-    "english": "{0:In return}, {1:repaying deed for deed}, {5:someone boldly bound} {2:a woman} {4:upon} {3:your} {4:chest}, {6:even when you are called God}.",
+    "english": "{0:In return}, {1:repaying deed for deed}, {8:someone }{6:boldly }{7:bound} {2:a woman} {5:upon} {3:your} {4:chest}, {10:even when you are called }{9:God}.",
     "words": [
       {
         "roman": "maguḍa",
@@ -451,16 +475,32 @@ window.SONG_LINES = {
         "gloss": "your"
       },
       {
-        "roman": "yuramupai",
-        "gloss": "upon the chest"
+        "roman": "yuramu",
+        "gloss": "chest; uramu with glide y"
       },
       {
-        "roman": "tegikaṭṭirevvarō",
-        "gloss": "someone boldly bound; tegi kaṭṭiri evvarō"
+        "roman": "pai",
+        "gloss": "upon; on"
       },
       {
-        "roman": "dēvuṇḍavanagā",
-        "gloss": "when you are called God; here even when you are called God"
+        "roman": "tegi",
+        "gloss": "boldly; having dared"
+      },
+      {
+        "roman": "kaṭṭir",
+        "gloss": "bound, tied; kaṭṭiri"
+      },
+      {
+        "roman": "evvarō",
+        "gloss": "someone; who it may be"
+      },
+      {
+        "roman": "dēvuṇḍav",
+        "gloss": "God; dēvuṇḍavu, “you are God”"
+      },
+      {
+        "roman": "anagā",
+        "gloss": "when you are called; here even when called"
       }
     ],
     "nameTable": false,
@@ -471,54 +511,76 @@ window.SONG_LINES = {
     "sourceLanguage": "te",
     "sourceWords": [
       {
-        "text": "ఉండనీయక",
+        "text": "ఉండ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "జీవనోపాయమున",
+        "text": "నీయక",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "మమ్ము",
+        "text": "జీవనోపాయమున",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "కొండలను",
+        "text": "మమ్ము",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "గొబలతతిగొని",
+        "text": "కొండలను",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "త్రిప్పు",
+        "text": "గొబల",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ఫలము",
+        "text": "తతి",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "గొని",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "త్రిప్పు",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ఫలము",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "uṇḍanīyaka jīvanōpāyamuna mammu koṇḍalanu gobalatatigoni trippu phalamu",
-    "english": "{6:The fruit} {5:of making} {2:us} {5:roam} {1:for a livelihood}, {4:taking us through} {3:mountains} {4:and clusters of caves} {0:without letting us stay}…",
+    "english": "{9:The fruit} {8:of making} {3:us} {8:roam} {2:for a livelihood}, {7:taking us through} {4:mountains} {6:and clusters }{5:of caves} {1:without letting us }{0:stay}…",
     "words": [
       {
-        "roman": "uṇḍanīyaka",
-        "gloss": "without letting remain"
+        "roman": "uṇḍan",
+        "gloss": "to stay, remain"
+      },
+      {
+        "roman": "īyaka",
+        "gloss": "without letting"
       },
       {
         "roman": "jīvanōpāyamuna",
@@ -533,8 +595,16 @@ window.SONG_LINES = {
         "gloss": "mountains"
       },
       {
-        "roman": "gobalatatigoni",
-        "gloss": "taking through clusters of caves; gobala tati goni"
+        "roman": "gobala",
+        "gloss": "of caves"
+      },
+      {
+        "roman": "tati",
+        "gloss": "clusters; rows"
+      },
+      {
+        "roman": "goni",
+        "gloss": "taking along, taking through"
       },
       {
         "roman": "trippu",

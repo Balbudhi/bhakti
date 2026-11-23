@@ -39,7 +39,7 @@ window.SONG_LINES = {
     "source": "बीत गये दिन भजन बिना रे",
     "sourceLanguage": "hi",
     "roman": "Bīt gaye din bhajan binā re",
-    "english": "{5:O friend, }{2:the days }{0,1:have passed }{4:without }{3:devotion.}",
+    "english": "{5:O friend, }{2:the days }{1:have }{0:passed }{4:without }{3:devotion.}",
     "words": [
       {
         "roman": "Bīt",

@@ -679,7 +679,7 @@ window.SONG_LINES = {
   "l010": {
     "source": "तालियों की आवाज़ माँ के दरबार तक पहुंचे।",
     "roman": "tāliyoṃ kī āvāz māṃ ke darbār tak pahuṃce",
-    "english": "{7:May} {2:the sound} {0,1:of clapping} {7:reach} {6:all the way to} {3,4:the Mother’s} {5:court}.",
+    "english": "{7:May} {2:the sound} {1:of }{0:clapping} {7:reach} {6:all the way to} {3,4:the Mother’s} {5:court}.",
     "words": [
       {
         "roman": "tāliyoṃ",
@@ -769,7 +769,7 @@ window.SONG_LINES = {
   "l011": {
     "source": "एक बार सभी भक्त जन अपने अपने हाथ ऊपर उठा कर के सभी माँ के चरणों में अपनी अपनी हाज़री दीजिये।",
     "roman": "ek bār sabhī bhakt jan apne apne hāth ūpar uṭhā kar ke sabhī māṃ ke caraṇoṃ meṃ apnī apnī hāzrī dījiye",
-    "english": "{2:All }{3,4:you devotees}, {9,10,11:raise }{5,6:your }{7:hands }{8:up }{0,1:once}, {12:and all of you}, {17,18,19,20:please present yourselves }{16:at }{13,14:the Mother’s }{15:feet}.",
+    "english": "{2:All }{3,4:you devotees}, {9,10,11:raise }{5,6:your }{7:hands }{8:up }{0,1:once}, {12:and all of you}, {19,20:please present }{17,18:yourselves }{16:at }{13,14:the Mother’s }{15:feet}.",
     "words": [
       {
         "roman": "ek",
@@ -989,7 +989,7 @@ window.SONG_LINES = {
   "l012": {
     "source": "आज शुभ अवसर माँ भगवती आप भक्तो की हाज़री स्वीकार करें।",
     "roman": "āj śubh avsar māṃ bhagvatī āp bhakto kī hāzrī svīkār kareṃ",
-    "english": "{0:Today}, {1,2:on this auspicious occasion}, {3,4:the blessed Mother Goddess} {9,10:may accept} {8:the attendance} {5,6,7:of you devotees}.",
+    "english": "{0:Today}, {1,2:on this auspicious occasion}, {3,4:the blessed Mother Goddess} {10:may }{9:accept} {8:the attendance} {7:of }{5:you }{6:devotees}.",
     "words": [
       {
         "roman": "āj",
@@ -1299,7 +1299,7 @@ window.SONG_LINES = {
   "l016": {
     "source": "हो सपनों की माया का संसार झूठा",
     "roman": "ho sapnoṃ kī māyā kā saṃsār jhūṭhā",
-    "english": "{0:Oh}, {5:the} {3,4:illusory} {5:world} {1,2:of dreams} {6:is false}.",
+    "english": "{0:Oh}, {5:the} {3,4:illusory} {5:world} {2:of }{1:dreams} {6:is false}.",
     "words": [
       {
         "roman": "ho",
@@ -1379,7 +1379,7 @@ window.SONG_LINES = {
   "l017": {
     "source": "सपनों की माया का संसार झूठा",
     "roman": "sapnoṃ kī māyā kā saṃsār jhūṭhā",
-    "english": "{4:The} {2,3:illusory} {4:world} {0,1:of dreams} {5:is false}.",
+    "english": "{4:The} {2,3:illusory} {4:world} {1:of }{0:dreams} {5:is false}.",
     "words": [
       {
         "roman": "sapnoṃ",
@@ -1449,7 +1449,7 @@ window.SONG_LINES = {
   "l018": {
     "source": "माँ का है बच्चों से रिश्ता अनूठा",
     "roman": "māṃ kā hai baccoṃ se riśtā anūṭhā",
-    "english": "{0,1:The Mother’s} {5:bond} {4:with} {3:children} {2:is} {6:unique}.",
+    "english": "{0:The }{1:Mother’s} {5:bond} {4:with} {3:children} {2:is} {6:unique}.",
     "words": [
       {
         "roman": "māṃ",
@@ -2389,7 +2389,7 @@ window.SONG_LINES = {
   "l030": {
     "source": "हो छट जाएँगे दुःख के बादल घनेरे",
     "roman": "ho chaṭ jāeṃge duḥkh ke bādal ghanere",
-    "english": "{0:Oh}, {6:the dense} {5:clouds} {3,4:of sorrow} {1,2:will disperse}.",
+    "english": "{0:Oh}, {6:the dense} {5:clouds} {4:of }{3:sorrow} {2:will }{1:disperse}.",
     "words": [
       {
         "roman": "ho",
@@ -2469,7 +2469,7 @@ window.SONG_LINES = {
   "l031": {
     "source": "छट जाएँगे दुःख के बादल घनेरे",
     "roman": "chaṭ jāeṃge duḥkh ke bādal ghanere",
-    "english": "{5:The dense} {4:clouds} {2,3:of sorrow} {0,1:will disperse}.",
+    "english": "{5:The dense} {4:clouds} {3:of }{2:sorrow} {1:will }{0:disperse}.",
     "words": [
       {
         "roman": "chaṭ",
@@ -2609,7 +2609,7 @@ window.SONG_LINES = {
   "l033": {
     "source": "इक प्यार से जोत तुम भी जगा लो",
     "roman": "ik pyār se jot tum bhī jagā lo",
-    "english": "{4:You} {5:too}, {6,7:kindle} {0:a} {3:flame} {1,2:with love}.",
+    "english": "{4:You} {5:too}, {6,7:kindle} {0:a} {3:flame} {2:with }{1:love}.",
     "words": [
       {
         "roman": "ik",

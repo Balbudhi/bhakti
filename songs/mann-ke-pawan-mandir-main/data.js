@@ -214,7 +214,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man ke pāvan mandir mẽ prāṇõ ke thirakate spandan mẽ",
-    "english": "{0,1,2,3,4:In the sacred temple of the mind, }{5,6,7,8,9:in the dancing pulsation of the vital breaths,}",
+    "english": "{4:In }{2:the sacred }{3:temple }{0,1:of the mind, }{9:in }{7:the dancing }{8:pulsation }{5,6:of the vital breaths,}",
     "words": [
       {
         "roman": "man",
@@ -315,7 +315,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāī̃ bābā tum ā jāo,",
-    "english": "{0,1,2,3,4:Sai Baba, come, }",
+    "english": "{0,1:Sai Baba, }{2,3,4:come, }",
     "words": [
       {
         "roman": "sāī̃",
@@ -386,7 +386,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man ke pāvan mandir mẽ",
-    "english": "{0,1,2,3,4:In the sacred temple of the mind}",
+    "english": "{4:In }{2:the sacred }{3:temple }{0,1:of the mind}",
     "words": [
       {
         "roman": "man",
@@ -487,7 +487,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum to sabase pāvan ho, tum karuṇā ke sāvan ho",
-    "english": "{0,1,2,3,4:You indeed are the purest of all, }{5,6,7,8,9:you are the monsoon of compassion,}",
+    "english": "{0:You }{1:indeed }{4:are }{2,3:the purest of all, }{5:you }{9:are }{8:the monsoon }{7:of }{6:compassion,}",
     "words": [
       {
         "roman": "tum",
@@ -612,7 +612,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum dayā ke ākāś ho, tum bhagavān sākār ho",
-    "english": "{0,1,2,3,4:You are the sky of mercy, }{5,6,7,8:you are God embodied}",
+    "english": "{0:You }{4:are }{3:the sky }{2:of }{1:mercy, }{5:you }{8:are }{6:God }{7:embodied}",
     "words": [
       {
         "roman": "tum",
@@ -701,7 +701,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum bhagavān sākār ho",
-    "english": "{0,1,2,3:You are God embodied}",
+    "english": "{0:You }{3:are }{1:God }{2:embodied}",
     "words": [
       {
         "roman": "tum",
@@ -796,7 +796,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tīrath sāre tum mẽ haĩ, tum mantrõ ke prakāś ho",
-    "english": "{0,1,2,3,4:All pilgrimage places are within you, }{5,6,7,8,9:you are the light of mantras,}",
+    "english": "{1:All }{0:pilgrimage places }{4:are }{2,3:within you, }{5:you }{9:are }{8:the light }{7:of }{6:mantras,}",
     "words": [
       {
         "roman": "tīrath",
@@ -933,7 +933,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sab dharmõ ke sār ho tum, viśva ke ādhār ho tum",
-    "english": "{0,2,3,4,5:You are the essence of all }{1:religious traditions}{6,7,8,9,10:, you are the foundation of the universe,}",
+    "english": "{5:You }{4:are }{3:the essence }{2:of }{0,1:all religious traditions}, {10:you }{9:are }{8:the foundation }{6,7:of the universe,}",
     "words": [
       {
         "roman": "sab",
@@ -1040,7 +1040,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "viśva ke ādhār ho tum",
-    "english": "{0,1,2,3,4:You are the foundation of the universe}",
+    "english": "{4:You }{3:are }{2:the foundation }{0,1:of the universe}",
     "words": [
       {
         "roman": "viśva",
@@ -1147,7 +1147,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum pūjā phir arpaṇ tum, jag māyā ke ant ho tum",
-    "english": "{0,1,2,3,4,5,7,8,9,10:You are worship, then you are the offering; you are the end of worldly }{6:māyā},",
+    "english": "{0:You are }{1:worship, }{2:then }{4:you are }{3:the offering; }{10:you }{9:are }{8:the end }{7:of }{5:worldly }{6:māyā},",
     "words": [
       {
         "roman": "tum",
@@ -1296,7 +1296,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāre jagat kī śakti ho tum, sabake hṛday kī bhakti ho tum",
-    "english": "{0,1,2,3,4,5:You are the power of the whole world, }{6,7,8,9,10,11:you are the devotion in every heart,}",
+    "english": "{5:You }{4:are }{3:the power }{2:of }{0,1:the whole world, }{11:you }{10:are }{9:the devotion }{8:in }{6,7:every heart,}",
     "words": [
       {
         "roman": "sāre",
@@ -1415,7 +1415,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sabake hṛday kī bhakti ho tum",
-    "english": "{0,1,2,3,4,5:You are the devotion in every heart}",
+    "english": "{5:You }{4:are }{3:the devotion }{2:in }{0,1:every heart}",
     "words": [
       {
         "roman": "sabake",

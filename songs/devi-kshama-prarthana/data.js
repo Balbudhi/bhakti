@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Devī Kṣamā Prārthanā",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Sanskrit",
     "Hindi",
@@ -94,36 +94,72 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अपराधसहस्राणि",
+        "text": "अपराध",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "क्रियन्तेऽहर्निशं",
+        "text": "सहस्राणि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मया",
+        "text": "क्रियन्ते",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ऽह",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "र्निशं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मया",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "aparādhasahasrāṇi kriyante'harniśaṃ mayā |",
-    "english": "{1:Day and night,}{2: I}{1: commit}{0: thousands of offences.}",
+    "english": "{3:Day}{4: and night,}{5: I}{2: commit}{1: thousands}{0: of offences.}",
     "words": [
       {
-        "roman": "aparādhasahasrāṇi",
-        "gloss": "thousands of offences",
+        "roman": "aparādha",
+        "gloss": "offence",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kriyante'harniśaṃ",
-        "gloss": "are committed, day and night",
+        "roman": "sahasrāṇi",
+        "gloss": "thousands",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kriyante",
+        "gloss": "are committed; passive present",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "'har",
+        "gloss": "day; ahar, its a elided after e",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "niśaṃ",
+        "gloss": "and night; niśā, adverbial",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -742,42 +778,78 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "इदानीमनुकम्प्योऽहं",
+        "text": "इदानी",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "यथेच्छसि",
+        "text": "मनुकम्प्यो",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "तथा",
+        "text": "ऽहं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कुरु",
+        "text": "यथे",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "च्छसि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तथा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कुरु",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "idānīmanukampyo'haṃ yathecchasi tathā kuru ||",
-    "english": "{0:Now I am in need of your compassion. }{2,3:Do }{1,2:as}{1: you wish.}",
+    "english": "{0:Now}{2: I am}{1: in need of your compassion. }{6:Do }{3,5:as}{4: you wish.}",
     "words": [
       {
-        "roman": "idānīmanukampyo'haṃ",
-        "gloss": "now I am to be shown compassion",
+        "roman": "idānīm",
+        "gloss": "now",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yathecchasi",
-        "gloss": "as you wish",
+        "roman": "anukampyo",
+        "gloss": "to be shown compassion; anukampyaḥ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "'haṃ",
+        "gloss": "I; aham, its a elided after o",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yath",
+        "gloss": "as; yathā, vowel joined to icchasi",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ecchasi",
+        "gloss": "you wish; icchasi",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -802,36 +874,84 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अज्ञानाद्विस्मृतेर्भ्रान्त्या",
+        "text": "अज्ञाना",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "यन्न्यूनमधिकं",
+        "text": "द्विस्मृते",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कृतम्",
+        "text": "र्भ्रान्त्या",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "य",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "न्न्यून",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मधिकं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कृतम्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "ajñānādvismṛterbhrāntyā yannyūnamadhikaṃ kṛtam |",
-    "english": "{1:Whatever }{2:I have done }{1:too little or too much, }{0:through ignorance, forgetfulness or confusion—}",
+    "english": "{3:Whatever }{6:I have done }{4:too little }{5:or too much, }{0:through ignorance, }{1:forgetfulness }{2:or confusion—}",
     "words": [
       {
-        "roman": "ajñānādvismṛterbhrāntyā",
-        "gloss": "from ignorance, from forgetfulness, through confusion",
+        "roman": "ajñānād",
+        "gloss": "through ignorance; ajñānāt, ablative",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "yannyūnamadhikaṃ",
-        "gloss": "whatever is too little or too much",
+        "roman": "vismṛter",
+        "gloss": "through forgetfulness; vismṛteḥ, ablative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhrāntyā",
+        "gloss": "through confusion; instrumental",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yan",
+        "gloss": "whatever; yat before n",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nyūnam",
+        "gloss": "too little; deficient",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "adhikaṃ",
+        "gloss": "too much; excessive",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -928,20 +1048,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जगन्मातः",
+        "text": "जग",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सच्चिदानन्दविग्रहे",
+        "text": "न्मातः",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "च्चि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दानन्द",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "विग्रहे",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "kāmeśvari jaganmātaḥ saccidānandavigrahe |",
-    "english": "{0:Kāmeśvarī, }{1:Mother of the world, }{2:whose form is being, consciousness and bliss—}",
+    "english": "{0:Kāmeśvarī, }{2:Mother }{1:of the world, }{6:whose form is }{3:being, }{4:consciousness }{5:and bliss—}",
     "words": [
       {
         "roman": "kāmeśvari",
@@ -950,14 +1094,38 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jaganmātaḥ",
-        "gloss": "O Mother of the world",
+        "roman": "jagan",
+        "gloss": "of the world; jagat before m",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "saccidānandavigrahe",
-        "gloss": "O you whose form is being, consciousness and bliss",
+        "roman": "mātaḥ",
+        "gloss": "O Mother; vocative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sac",
+        "gloss": "being; sat before c",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cid",
+        "gloss": "consciousness; cit before a vowel",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ānanda",
+        "gloss": "bliss",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vigrahe",
+        "gloss": "O you whose form is; vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -970,36 +1138,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "गृहाणार्चामिमां",
+        "text": "गृहाणा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रीत्या",
+        "text": "र्चा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्रसीद",
+        "text": "मिमां",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "परमेश्वरि",
+        "text": "प्रीत्या",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "प्रसीद",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "परमे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "श्वरि",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "gṛhāṇārcāmimāṃ prītyā prasīda parameśvari ||",
-    "english": "{0:accept }{0:this worship }{1:with affection; }{2:be gracious, }{3:supreme sovereign.}",
+    "english": "{0:accept }{2:this }{1:worship }{3:with affection; }{4:be gracious, }{5:supreme }{6:sovereign.}",
     "words": [
       {
-        "roman": "gṛhāṇārcāmimāṃ",
-        "gloss": "accept this worship",
+        "roman": "gṛhāṇ",
+        "gloss": "accept; gṛhāṇa, imperative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārcām",
+        "gloss": "worship; arcām, accusative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "imāṃ",
+        "gloss": "this; accusative feminine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1016,8 +1214,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "parameśvari",
-        "gloss": "O supreme sovereign",
+        "roman": "param",
+        "gloss": "supreme; parama, vowel joined to īśvarī",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "eśvari",
+        "gloss": "O sovereign; īśvari, vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1030,36 +1234,72 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "गुह्यातिगुह्यगोप्त्री",
+        "text": "गुह्या",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "त्वं",
+        "text": "तिगुह्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "गृहाणास्मत्कृतं",
+        "text": "गोप्त्री",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "जपम्",
+        "text": "त्वं",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "गृहाणा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्म",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "त्कृतं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जपम्",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "guhyātiguhyagoptrī tvaṃ gṛhāṇāsmatkṛtaṃ japam |",
-    "english": "{1:You }{0:guard the deepest mysteries. }{2:Accept }{3:the sacred recitation }{2:we have offered.}",
+    "english": "{3:You }{2:guard }{1:the deepest }{0:mysteries. }{4:Accept }{7:the sacred recitation }{5:we }{6:have offered.}",
     "words": [
       {
-        "roman": "guhyātiguhyagoptrī",
-        "gloss": "guardian of the deepest mysteries",
+        "roman": "guhy",
+        "gloss": "mystery, secret; guhya, vowel joined to ati",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ātiguhya",
+        "gloss": "deepest, more than secret; ati + guhya",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "goptrī",
+        "gloss": "guardian; feminine",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1070,8 +1310,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "gṛhāṇāsmatkṛtaṃ",
-        "gloss": "accept what we have performed",
+        "roman": "gṛhāṇ",
+        "gloss": "accept; gṛhāṇa, imperative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āsmat",
+        "gloss": "by us, our; asmat",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṛtaṃ",
+        "gloss": "performed, offered",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1090,36 +1342,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "सिद्धिर्भवतु",
+        "text": "सिद्धि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मे",
+        "text": "र्भवतु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "देवि",
+        "text": "मे",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "त्वत्प्रसादात्सुरेश्वरि",
+        "text": "देवि",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "त्व",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "त्प्रसादा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "त्सुरे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "श्वरि",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "siddhirbhavatu me devi tvatprasādātsureśvari ||",
-    "english": "{0:May fulfillment come }{1:to me }{3:through your grace, }{2:Goddess, }{3:sovereign of the gods.}",
+    "english": "{1:May }{0:fulfillment }{1:come }{2:to me }{5:through }{4:your }{5:grace, }{3:Goddess, }{7:sovereign }{6:of the gods.}",
     "words": [
       {
-        "roman": "siddhirbhavatu",
-        "gloss": "may fulfillment come",
+        "roman": "siddhir",
+        "gloss": "fulfillment; siddhiḥ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhavatu",
+        "gloss": "may it come, may it be; imperative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1136,8 +1418,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tvatprasādātsureśvari",
-        "gloss": "through your grace, O sovereign of the gods",
+        "roman": "tvat",
+        "gloss": "your; of you",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "prasādāt",
+        "gloss": "through grace; ablative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sur",
+        "gloss": "god; sura, vowel joined to īśvarī",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "eśvari",
+        "gloss": "O sovereign; īśvari, vocative",
         "concept_key": "",
         "preserve_in_english": false
       }

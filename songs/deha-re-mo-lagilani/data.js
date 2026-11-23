@@ -83,7 +83,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dehare mo lāgilāṇi samayara ui, samayara ui",
-    "english": "{3,4:The termites of time }{2:have begun to infest }{0,1:my body—}{5,6:the termites of time}",
+    "english": "{3,4:The termites of time }{2:have begun to infest }{1:my }{0:body—}{5,6:the termites of time}",
     "words": [
       {
         "roman": "dehare",
@@ -534,7 +534,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hāta dharādhari hoi sabhiẽ galeṇi",
-    "english": "{0,1,2:Holding hands with one another, }{3:everyone }{4:has departed}",
+    "english": "{1,2:Holding }{0:hands }{1:with one another, }{3:everyone }{4:has departed}",
     "words": [
       {
         "roman": "hāta",

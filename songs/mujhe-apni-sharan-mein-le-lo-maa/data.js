@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Mujhe Apni Sharan Mein Le Lo Maa",
   "subtitle": "Vaiṣṇo Devī",
-  "credit": "Maninder Ji",
+  "credit": "Narendra Chanchal · Maninder Ji",
   "pageCredit": "Maninder Ji",
-  "writer": "",
+  "writer": "Narendra Chanchal",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
@@ -24,7 +24,8 @@ window.SONG_META = {
     "Shakti",
     "Sakti",
     "Mujhe Apni Sharan Mein Lelo Maa",
-    "Mujhe Apni Sharan Mein Le Lo Maa Maninder Ji"
+    "Mujhe Apni Sharan Mein Le Lo Maa Maninder Ji",
+    "Narendra Chanchal"
   ],
   "audioSources": [
     {
@@ -5058,7 +5059,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hō maĩ tō khaṛā hū̃ tērē dar pē maiyā bhakti kā mujhē var dō maiyā",
-    "english": "{0:O, }{1:I }{2:indeed }{3,4:stand }{5,7:at your }{6:door, }{8:Mother; }{13:grant }{11:me }{12:the boon }{10:of }{9:devotion, }{14:Mother}",
+    "english": "{0:O, }{1:I }{2:indeed }{3,4:stand }{7:at }{5:your }{6:door, }{8:Mother; }{13:grant }{11:me }{12:the boon }{10:of }{9:devotion, }{14:Mother}",
     "words": [
       {
         "roman": "Hō",
@@ -5400,7 +5401,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hō mā̃ maĩ tō khaṛā hū̃ tērē dar pē maiyā bhakti kā mujhē var dō maiyā",
-    "english": "{0:O }{1:Mother, }{2:I }{3:indeed }{4,5:stand }{6,8:at your }{7:door, }{9:Mother; }{14:grant }{12:me }{13:the boon }{11:of }{10:devotion, }{15:Mother}",
+    "english": "{0:O }{1:Mother, }{2:I }{3:indeed }{4,5:stand }{8:at }{6:your }{7:door, }{9:Mother; }{14:grant }{12:me }{13:the boon }{11:of }{10:devotion, }{15:Mother}",
     "words": [
       {
         "roman": "Hō",
@@ -5634,7 +5635,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hō tērē nām kī caṛhē khumārī mā̃",
-    "english": "{0:O, }{5:may the intoxication }{1,3:of your }{2:name }{4:rise, }{6:Mother}",
+    "english": "{0:O, }{5:may the intoxication }{3:of }{1:your }{2:name }{4:rise, }{6:Mother}",
     "words": [
       {
         "roman": "Hō",
@@ -5724,7 +5725,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tērē nām kī caṛhē khumārī mā̃",
-    "english": "{4:May the intoxication }{0,2:of your }{1:name }{3:rise, }{5:Mother}",
+    "english": "{4:May the intoxication }{2:of }{0:your }{1:name }{3:rise, }{5:Mother}",
     "words": [
       {
         "roman": "Tērē",

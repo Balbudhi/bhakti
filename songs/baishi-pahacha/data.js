@@ -2490,7 +2490,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "puṇi chiṛā heli pañcadaśa pāhācare / nīḷamādhabāṅku dhyāyī bigraha rūpare",
-    "english": "{0:Then}{1,2: I stood}{3: on the fifteenth}{4: step,}{6: meditating upon}{5: Nilamadhaba}{8: in the form}{7: of the sacred icon.}",
+    "english": "{0:Then}{1,2: I stood}{4: on the}{3: fifteenth}{4: step,}{6: meditating upon}{5: Nilamadhaba}{8: in the form}{7: of the sacred icon.}",
     "words": [
       {
         "roman": "puṇi",
@@ -2721,26 +2721,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "କଳାନିବୃତ୍ତିଙ୍କୁ",
+        "text": "କଳା",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ଧ୍ୟାୟୀ",
+        "text": "ନିବୃତ୍ତିଙ୍କୁ",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ମନରେ",
+        "text": "ଧ୍ୟାୟୀ",
         "wordIndices": [
           8
+        ]
+      },
+      {
+        "text": "ମନରେ",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "kramaśaḥ caṛhili muṁ satara sopānare / satara kaḷānibṛttiṅku dhyāyī manare",
-    "english": "{0:Step by step}{2: I}{1: climbed}{3: onto the seventeenth}{4: stair,}{7: meditating}{8: in my mind}{5: on the seventeen}{6: kalas and their withdrawal.}",
+    "english": "{0:Step by step}{2: I}{1: climbed}{4: onto the}{3: seventeenth}{4: stair,}{8: meditating}{9: in my mind}{7: on the}{5: seventeen}{6: kalas}{7: and their withdrawal.}",
     "words": [
       {
         "roman": "kramaśaḥ",
@@ -2779,8 +2785,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kaḷānibṛttiṅku",
-        "gloss": "to the arts/phases (kalās) and withdrawal (nivṛtti)",
+        "roman": "kaḷā",
+        "gloss": "arts or phases (kalās)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nibṛttiṅku",
+        "gloss": "on the withdrawal; nivṛtti with the objective ending",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2840,26 +2852,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "କଳାନିବୃତ୍ତିଙ୍କୁ",
+        "text": "କଳା",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ଧ୍ୟାୟୀ",
+        "text": "ନିବୃତ୍ତିଙ୍କୁ",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ମନେ",
+        "text": "ଧ୍ୟାୟୀ",
         "wordIndices": [
           8
+        ]
+      },
+      {
+        "text": "ମନେ",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "kramaśaḥ caṛhili muṁ sataraha sopāne / sataraha kaḷānibṛttiṅku dhyāyī mane",
-    "english": "{0:Step by step}{2: I}{1: climbed}{3: onto the seventeenth}{4: stair,}{7: meditating}{8: in mind}{5: on the seventeen}{6: kalas and their withdrawal.}",
+    "english": "{0:Step by step}{2: I}{1: climbed}{4: onto the}{3: seventeenth}{4: stair,}{8: meditating}{9: in mind}{7: on the}{5: seventeen}{6: kalas}{7: and their withdrawal.}",
     "words": [
       {
         "roman": "kramaśaḥ",
@@ -2898,8 +2916,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kaḷānibṛttiṅku",
-        "gloss": "to the arts/phases (kalās) and withdrawal (nivṛtti)",
+        "roman": "kaḷā",
+        "gloss": "arts or phases (kalās)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nibṛttiṅku",
+        "gloss": "on the withdrawal; nivṛtti with the objective ending",
         "concept_key": "",
         "preserve_in_english": false
       },

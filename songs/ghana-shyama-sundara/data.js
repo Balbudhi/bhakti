@@ -845,7 +845,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhora bhaī saba pañchī jāge yamunā kī jāgī hai lahara",
-    "english": "{0:Dawn }{1:has broken, }{2:all }{3:the birds }{4:have awakened, }and {9:the wave }{6:of }{5:the Yamuna }{7,8:has stirred.}",
+    "english": "{0:Dawn }{1:has broken, }{2:all }{3:the birds }{4:have awakened, }and {9:the wave }{6:of }{5:the Yamuna }{8:has }{7:stirred.}",
     "words": [
       {
         "roman": "Bhora",

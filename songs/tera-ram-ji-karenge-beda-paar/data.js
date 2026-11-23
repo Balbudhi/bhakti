@@ -191,7 +191,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghaṭa ghaṭa meṁ jo rama rahā",
-    "english": "{3:who }{4,5:is dwelling }{0,1,2:in each and every vessel,}",
+    "english": "{3:who }{5:is }{4:dwelling }{0,1,2:in each and every vessel,}",
     "words": [
       {
         "roman": "ghaṭa",
@@ -357,7 +357,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā rāma jī kareṅge beṛā pāra re, beṛā pāra re, beṛā pāra",
-    "english": "{1,2:Revered Rāma }{3:will ferry }{0:your }{4,5:boat across—}{6,7,8:your boat across, }{9,10,11:your boat across!}",
+    "english": "{2:Revered }{1:Rāma }{3:will ferry }{0:your }{4:boat }{5:across—}{6,7,8:your boat across, }{9,10,11:your boat across!}",
     "words": [
       {
         "roman": "terā",
@@ -476,7 +476,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā rāma jī kareṅge beṛā pāra",
-    "english": "{1,2:Revered Rama }{3:will ferry }{0:your }{4,5:boat across}",
+    "english": "{1,2:Revered Rama }{3:will ferry }{0:your }{4:boat }{5:across}",
     "words": [
       {
         "roman": "terā",
@@ -630,7 +630,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udāsī mana kāhe ko kare re",
-    "english": "{1,5:O mind, }{2,3:why }{4:do you give way to }{0:sorrow?}",
+    "english": "{5:O }{1:mind, }{2,3:why }{4:do you give way to }{0:sorrow?}",
     "words": [
       {
         "roman": "udāsī",

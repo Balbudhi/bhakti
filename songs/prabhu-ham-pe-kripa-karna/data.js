@@ -89,7 +89,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prabhu ham pe kṛpā karnā dayā karnā kṛpā karnā",
-    "english": "{0:Lord, }{3,4:bestow grace }{1,2:upon us, }{5,6:show compassion, }{7,8:bestow grace.}",
+    "english": "{0:Lord, }{4:bestow }{3:grace }{2:upon }{1:us, }{5,6:show compassion, }{8:bestow }{7:grace.}",
     "words": [
       {
         "roman": "prabhu",
@@ -184,7 +184,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prabhu ham pe kṛpā karnā",
-    "english": "{0:Lord, }{3,4:bestow grace }{1,2:upon us,}",
+    "english": "{0:Lord, }{4:bestow }{3:grace }{2:upon }{1:us,}",
     "words": [
       {
         "roman": "prabhu",
@@ -255,7 +255,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prabhu ham pe dayā karnā",
-    "english": "{0:Lord, }{3,4:show compassion }{1,2:upon us,}",
+    "english": "{0:Lord, }{3,4:show compassion }{2:upon }{1:us,}",
     "words": [
       {
         "roman": "prabhu",
@@ -656,7 +656,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "har rāginī kī dhun par",
-    "english": "{3,4:To the tune }{0,2:of every }{1:ragini,}",
+    "english": "{3,4:To the tune }{2:of }{0:every }{1:ragini,}",
     "words": [
       {
         "roman": "har",
@@ -992,7 +992,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛt kī dhār bankar",
-    "english": "{3:becoming }{2:a stream }{0,1:of nectar,}",
+    "english": "{3:becoming }{2:a stream }{1:of }{0:nectar,}",
     "words": [
       {
         "roman": "amṛt",
@@ -1051,7 +1051,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pyāsoṁ pe dayā karnā",
-    "english": "{2,3:show compassion }{1:upon }{0:the thirsty ones.}",
+    "english": "{3:show }{2:compassion }{1:upon }{0:the thirsty ones.}",
     "words": [
       {
         "roman": "pyāsoṁ",
@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere viyog meṁ ham",
-    "english": "{1,2:In separation }{0:from you, }{3:we}",
+    "english": "{2:In }{1:separation }{0:from you, }{3:we}",
     "words": [
       {
         "roman": "tere",

@@ -247,7 +247,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pair maiyā ke pāyal sohe",
-    "english": "{3,4:Anklets adorn}{1,2: Mother’s}{0: feet.}",
+    "english": "{3:Anklets }{4:adorn}{1,2: Mother’s}{0: feet.}",
     "words": [
       {
         "roman": "Pair",
@@ -739,7 +739,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hāth maiyā ke kaṅganā sohe",
-    "english": "{3,4:Bracelets adorn}{1,2: Mother’s}{0: hands.}",
+    "english": "{3:Bracelets }{4:adorn}{1,2: Mother’s}{0: hands.}",
     "words": [
       {
         "roman": "Hāth",
@@ -811,7 +811,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hāth maiyā ke cūṛī sohe",
-    "english": "{3,4:Bangles adorn}{1,2: Mother’s}{0: hands.}",
+    "english": "{3:Bangles }{4:adorn}{1,2: Mother’s}{0: hands.}",
     "words": [
       {
         "roman": "Hāth",
@@ -1243,7 +1243,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kān maiyā ke kuṇḍal sohe",
-    "english": "{3,4:Earrings adorn}{1,2: Mother’s}{0: ears.}",
+    "english": "{3:Earrings }{4:adorn}{1,2: Mother’s}{0: ears.}",
     "words": [
       {
         "roman": "Kān",

@@ -1,13 +1,13 @@
 window.SONG_META = {
   "title": "Merī Dātī Dayā Har Ik Te Kardī E",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Caman · Jaipal Ji",
+  "pageCredit": "Jaipal Ji",
+  "writer": "Caman",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Jaipal Ji",
   "vocalist": "",
   "composer": "",
   "ensemble": "",
@@ -34,7 +34,8 @@ window.SONG_META = {
     "Shiva",
     "Siva",
     "Mata Vaishno Devi",
-    "Meri Daati Daya Har Ek Te Kardi Ae"
+    "Meri Daati Daya Har Ek Te Kardi Ae",
+    "Chaman"
   ],
   "audioSources": [
     {
@@ -72,7 +73,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaikārā Śerā̃vālī dā",
-    "english": "{0,1,2:A cry of victory to the Lion-riding Mother!}",
+    "english": "{0:A cry of victory }{2:to }{1:the Lion-riding Mother!}",
     "words": [
       {
         "roman": "Jaikārā",
@@ -129,7 +130,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bol sāce darbār kī jai",
-    "english": "{0,1,2,3,4:Call out: victory to the true court!}",
+    "english": "{0:Call out: }{3,4:victory to }{1,2:the true court!}",
     "words": [
       {
         "roman": "Bol",
@@ -214,7 +215,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Merī dātī dayā har ik te kardī e",
-    "english": "{0,1,2,3,4,5,6,7:My Giver shows compassion to everyone.}",
+    "english": "{0:My }{1:Giver }{6,7:shows }{2:compassion }{3,4,5:to everyone.}",
     "words": [
       {
         "roman": "Merī",
@@ -314,7 +315,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Merī dātī dayā har ik te kardī e",
-    "english": "{0,1,2,3,4,5,6,7:My Giver shows compassion to everyone.}",
+    "english": "{0:My }{1:Giver }{6,7:shows }{2:compassion }{3,4,5:to everyone.}",
     "words": [
       {
         "roman": "Merī",
@@ -402,7 +403,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhagtā̃ de bhaṇḍār Bhavānī bhardī e",
-    "english": "{0,1,2,3,4,5:Bhavānī fills the devotees’ storehouses.}",
+    "english": "{3:Bhavānī }{4,5:fills }{0,1:the devotees’ }{2:storehouses.}",
     "words": [
       {
         "roman": "Bhagtā̃",
@@ -498,7 +499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho merī dātī dayā har ik te kardī e",
-    "english": "{0,1,2,3,4,5,6,7,8:Oh, my Giver shows compassion to everyone.}",
+    "english": "{0:Oh, }{1:my }{2:Giver }{7,8:shows }{3:compassion }{4,5,6:to everyone.}",
     "words": [
       {
         "roman": "Ho",
@@ -591,7 +592,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhagtā̃ de bhaṇḍār Bhavānī bhardī e",
-    "english": "{0,1,2,3,4,5:Bhavānī fills the devotees’ storehouses.}",
+    "english": "{3:Bhavānī }{4,5:fills }{0,1:the devotees’ }{2:storehouses.}",
     "words": [
       {
         "roman": "Bhagtā̃",
@@ -687,7 +688,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho merī dātī dayā har ik te kardī e",
-    "english": "{0,1,2,3,4,5,6,7,8:Oh, my Giver shows compassion to everyone.}",
+    "english": "{0:Oh, }{1:my }{2:Giver }{7,8:shows }{3:compassion }{4,5,6:to everyone.}",
     "words": [
       {
         "roman": "Ho",
@@ -780,7 +781,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhagtā̃ de bhaṇḍār Bhavānī bhardī e",
-    "english": "{0,1,2,3,4,5:Bhavānī fills the devotees’ storehouses.}",
+    "english": "{3:Bhavānī }{4,5:fills }{0,1:the devotees’ }{2:storehouses.}",
     "words": [
       {
         "roman": "Bhagtā̃",
@@ -864,7 +865,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh aṣṭabhujā mā̃ Ambe ucciā̃ mandrā̃ vālī",
-    "english": "{0,1,2,3,4,5,6:She is the eight-armed Mother Ambā, she of the lofty temples.}",
+    "english": "{0:She is }{1:the eight-armed }{2:Mother }{3:Ambā, }{6:she of }{4:the lofty }{5:temples.}",
     "words": [
       {
         "roman": "Eh",
@@ -953,7 +954,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh aṣṭabhujā mā̃ Ambe ucciā̃ mandrā̃ vālī",
-    "english": "{0,1,2,3,4,5,6:She is the eight-armed Mother Ambā, she of the lofty temples.}",
+    "english": "{0:She is }{1:the eight-armed }{2:Mother }{3:Ambā, }{6:she of }{4:the lofty }{5:temples.}",
     "words": [
       {
         "roman": "Eh",
@@ -1048,7 +1049,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh maiyā ādi kumārī, eh ho javālā Mahākālī",
-    "english": "{0,1,2,3,4,5,6,7:She is Mother, the primordial Maiden; she—oh—is Flame, Mahākālī.}",
+    "english": "{0:She is }{1:Mother, }{2:the primordial }{3:Maiden; }{4:she}—{5:oh}—{6:is Flame, }{7:Mahākālī.}",
     "words": [
       {
         "roman": "Eh",
@@ -1148,7 +1149,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh maiyā ādi kumārī, eh ho javālā Mahākālī",
-    "english": "{0,1,2,3,4,5,6,7:She is Mother, the primordial Maiden; she—oh—is Flame, Mahākālī.}",
+    "english": "{0:She is }{1:Mother, }{2:the primordial }{3:Maiden; }{4:she}—{5:oh}—{6:is Flame, }{7:Mahākālī.}",
     "words": [
       {
         "roman": "Eh",
@@ -1242,7 +1243,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh aṣṭabhujī mā̃ Ambe ucciā̃ mandrā̃ vālī",
-    "english": "{0,1,2,3,4,5,6:She is the eight-armed Mother Ambā, she of the lofty temples.}",
+    "english": "{0:She is }{1:the eight-armed }{2:Mother }{3:Ambā, }{6:she of }{4:the lofty }{5:temples.}",
     "words": [
       {
         "roman": "Eh",
@@ -1331,7 +1332,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh aṣṭabhujī mā̃ Ambe ucciā̃ mandrā̃ vālī",
-    "english": "{0,1,2,3,4,5,6:She is the eight-armed Mother Ambā, she of the lofty temples.}",
+    "english": "{0:She is }{1:the eight-armed }{2:Mother }{3:Ambā, }{6:she of }{4:the lofty }{5:temples.}",
     "words": [
       {
         "roman": "Eh",
@@ -1450,7 +1451,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rūp kaī, jai ho, rūp kaī, jai ho, rūp kaī dhardī e",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:Many forms—victory! Many forms—victory! Many forms she assumes.}",
+    "english": "{1:Many }{0:forms}—{2,3:victory!} {5:Many }{4:forms}—{6,7:victory!} {9:Many }{8:forms }{10,11:she assumes.}",
     "words": [
       {
         "roman": "Rūp",
@@ -1480,22 +1481,22 @@ window.SONG_LINES = {
       {
         "roman": "kaī,",
         "gloss": "many; several",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 1
       },
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 2
       },
       {
         "roman": "ho,",
         "gloss": "may there be; optative in jai ho, victory be!",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 3
       },
       {
         "roman": "rūp",
         "gloss": "form; forms",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 4
       },
       {
         "roman": "kaī",
@@ -1576,7 +1577,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aise dī mahimā gā gā Brahmā ne ved baṇāe",
-    "english": "{0,1,2,3,4,5,6,7,8:Singing again and again the glory of such a one, Brahmā made the Vedas.}",
+    "english": "{3,4:Singing again and again }{2:the glory }{0,1:of such a one, }{5,6:Brahmā }{8:made }{7:the Vedas.}",
     "words": [
       {
         "roman": "Aise",
@@ -1601,7 +1602,7 @@ window.SONG_LINES = {
       {
         "roman": "gā",
         "gloss": "sing; repeated gā gā means singing again and again",
-        "sourceTokenIndex": 4
+        "sourceTokenIndex": 3
       },
       {
         "roman": "Brahmā",
@@ -1687,7 +1688,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aise dī mahimā gā gā Brahmā ne ved baṇāe",
-    "english": "{0,1,2,3,4,5,6,7,8:Singing again and again the glory of such a one, Brahmā made the Vedas.}",
+    "english": "{3,4:Singing again and again }{2:the glory }{0,1:of such a one, }{5,6:Brahmā }{8:made }{7:the Vedas.}",
     "words": [
       {
         "roman": "Aise",
@@ -1712,7 +1713,7 @@ window.SONG_LINES = {
       {
         "roman": "gā",
         "gloss": "sing; repeated gā gā means singing again and again",
-        "sourceTokenIndex": 4
+        "sourceTokenIndex": 3
       },
       {
         "roman": "Brahmā",
@@ -1792,7 +1793,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śiv Śaṅkar Indar Viśnū̃ sabh aise ne upjāe",
-    "english": "{0,1,2,3,4,5,6,7:Śiva Śaṅkara, Indra, Viṣṇu—such a one brought them all forth.}",
+    "english": "{0:Śiva }{1:Śaṅkara, }{2:Indra, }{3:Viṣṇu}—{5,6:such a one }{7:brought }{4:them all }{7:forth.}",
     "words": [
       {
         "roman": "Śiv",
@@ -1898,7 +1899,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho Śiv Śaṅkar Indar Viśnū̃ sabh aise ne upjāe",
-    "english": "{0,1,2,3,4,5,6,7,8:Oh, Śiva Śaṅkara, Indra, Viṣṇu—such a one brought them all forth.}",
+    "english": "{0:Oh, }{1:Śiva }{2:Śaṅkara, }{3:Indra, }{4:Viṣṇu}—{6,7:such a one }{8:brought }{5:them all }{8:forth.}",
     "words": [
       {
         "roman": "Ho",
@@ -2015,7 +2016,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho aise dī mahimā gā gā Brahmā ne ved baṇāe",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Oh, singing again and again the glory of such a one, Brahmā made the Vedas.}",
+    "english": "{0:Oh, }{4,5:singing again and again }{3:the glory }{1,2:of such a one, }{6,7:Brahmā }{9:made }{8:the Vedas.}",
     "words": [
       {
         "roman": "Ho",
@@ -2045,7 +2046,7 @@ window.SONG_LINES = {
       {
         "roman": "gā",
         "gloss": "sing; repeated gā gā means singing again and again",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 4
       },
       {
         "roman": "Brahmā",
@@ -2149,7 +2150,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho rakṣā, jai ho, ho rakṣā, jai ho, ho rakṣā kardī e",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:Oh, protection—victory! Oh, protection—victory! Oh, she gives protection.}",
+    "english": "{0:Oh, }{1:protection}—{2,3:victory!} {4:Oh, }{5:protection}—{6,7:victory!} {8:Oh, }{10,11:she gives }{9:protection.}",
     "words": [
       {
         "roman": "Ho",
@@ -2179,22 +2180,22 @@ window.SONG_LINES = {
       {
         "roman": "rakṣā,",
         "gloss": "protection",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 1
       },
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 2
       },
       {
         "roman": "ho,",
         "gloss": "may there be; optative in jai ho, victory be!",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 3
       },
       {
         "roman": "ho",
         "gloss": "Oh!; sung exclamation",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 4
       },
       {
         "roman": "rakṣā",
@@ -2269,7 +2270,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Merī dātī dayā har ik te kardī e",
-    "english": "{0,1,2,3,4,5,6,7:My Giver shows compassion to everyone.}",
+    "english": "{0:My }{1:Giver }{6,7:shows }{2:compassion }{3,4,5:to everyone.}",
     "words": [
       {
         "roman": "Merī",
@@ -2375,7 +2376,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ā merī dātī dayā har ik te kardī e",
-    "english": "{0,1,2,3,4,5,6,7,8:Ah, my Giver shows compassion to everyone.}",
+    "english": "{0:Ah, }{1:my }{2:Giver }{7,8:shows }{3:compassion }{4,5,6:to everyone.}",
     "words": [
       {
         "roman": "Ā",
@@ -2498,7 +2499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dukhīā̃ de dukkh miṭ jā̃de jai jai mātā dī kahi ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:The sorrows of the suffering pass away on saying, “Victory, victory to Mother!”}",
+    "english": "{2:The sorrows }{0,1:of the suffering }{3,4:pass away }{9,10:on saying, }“{5:Victory, }{6:victory }{7,8:to Mother!}”",
     "words": [
       {
         "roman": "Dukhīā̃",
@@ -2533,7 +2534,7 @@ window.SONG_LINES = {
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 5
       },
       {
         "roman": "mātā",
@@ -2631,7 +2632,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dukhīā̃ de dukkh miṭ jā̃de jai jai mātā dī kahi ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:The sorrows of the suffering pass away on saying, “Victory, victory to Mother!”}",
+    "english": "{2:The sorrows }{0,1:of the suffering }{3,4:pass away }{9,10:on saying, }“{5:Victory, }{6:victory }{7,8:to Mother!}”",
     "words": [
       {
         "roman": "Dukhīā̃",
@@ -2666,7 +2667,7 @@ window.SONG_LINES = {
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 5
       },
       {
         "roman": "mātā",
@@ -2764,7 +2765,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho sacc jāno pauṛā̃ vālī maiyā dā hī nā̃ lai ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:Oh, know this as true: by invoking only the name of Mother, she of the steps—}",
+    "english": "{0:Oh, }{2:know this }{1:as true: }{9,10:by invoking }{7:only }{8:the name }{6:of }{5:Mother, }{4:she of }{3:the steps}—",
     "words": [
       {
         "roman": "Ho",
@@ -2897,7 +2898,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho sacc jāno pauṛā̃ vālī maiyā dā hī nā̃ lai ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:Oh, know this as true: by invoking only the name of Mother, she of the steps—}",
+    "english": "{0:Oh, }{2:know this }{1:as true: }{9,10:by invoking }{7:only }{8:the name }{6:of }{5:Mother, }{4:she of }{3:the steps}—",
     "words": [
       {
         "roman": "Ho",
@@ -3024,7 +3025,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sacc jāno pauṛā̃ vālī maiyā dā hī nā̃ lai ke",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Know this as true: by invoking only the name of Mother, she of the steps—}",
+    "english": "{1:Know this }{0:as true: }{8,9:by invoking }{6:only }{7:the name }{5:of }{4:Mother, }{3:she of }{2:the steps}—",
     "words": [
       {
         "roman": "Sacc",
@@ -3158,7 +3159,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nā dunīā, jai ho, nā dunīā, jai ho, nā dunīā ḍardī e",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:The world has no—victory! The world has no—victory! The world has no fear.}",
+    "english": "{1:The world }{0:has no}—{2,3:victory!} {5:The world }{4:has no}—{6,7:victory!} {9:The world }{8,11:has no }{10:fear.}",
     "words": [
       {
         "roman": "Nā",
@@ -3188,22 +3189,22 @@ window.SONG_LINES = {
       {
         "roman": "dunīā,",
         "gloss": "the world; people in the world",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 1
       },
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 2
       },
       {
         "roman": "ho,",
         "gloss": "may there be; optative in jai ho, victory be!",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 3
       },
       {
         "roman": "nā",
         "gloss": "not",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 4
       },
       {
         "roman": "dunīā",
@@ -3284,7 +3285,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh duṣṭ saṅghāran vālī jad khaṇḍe nū̃ hatth pāve",
-    "english": "{0,1,2,3,4,5,6,7,8:When this slayer of the wicked lays her hand on the double-edged sword—}",
+    "english": "{4:When }{0:this }{2,3:slayer }{1:of the wicked }{8:lays }{7:her hand }{5,6:on the double-edged sword}—",
     "words": [
       {
         "roman": "Eh",
@@ -3395,7 +3396,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh duṣṭ saṅghāran vālī jad khaṇḍe nū̃ hatth pāve",
-    "english": "{0,1,2,3,4,5,6,7,8:When this slayer of the wicked lays her hand on the double-edged sword—}",
+    "english": "{4:When }{0:this }{2,3:slayer }{1:of the wicked }{8:lays }{7:her hand }{5,6:on the double-edged sword}—",
     "words": [
       {
         "roman": "Eh",
@@ -3506,7 +3507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh prithvī thar-thar kambe tad parlai hī ho jāve",
-    "english": "{0,1,2,3,4,5,6,7,8:This earth trembles and trembles; then cosmic dissolution itself comes about.}",
+    "english": "{0:This }{1:earth }{2,3:trembles and trembles; }{4:then }{5:cosmic dissolution }{6:itself }{7,8:comes about.}",
     "words": [
       {
         "roman": "Eh",
@@ -3617,7 +3618,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh prithvī thar-thar kambe tad parlai hī ho jāve",
-    "english": "{0,1,2,3,4,5,6,7,8:This earth trembles and trembles; then cosmic dissolution itself comes about.}",
+    "english": "{0:This }{1:earth }{2,3:trembles and trembles; }{4:then }{5:cosmic dissolution }{6:itself }{7,8:comes about.}",
     "words": [
       {
         "roman": "Eh",
@@ -3746,7 +3747,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jadõ ih, jai ho, jadõ ih, jai ho, jadõ ih laṛdī e",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:When she—victory! When she—victory! When she fights.}",
+    "english": "{0:When }{1:she}—{2,3:victory!} {4:When }{5:she}—{6,7:victory!} {8:When }{9:she }{10,11:fights.}",
     "words": [
       {
         "roman": "Jadõ",
@@ -3776,22 +3777,22 @@ window.SONG_LINES = {
       {
         "roman": "ih,",
         "gloss": "this one; she, referring to Mother",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 1
       },
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 2
       },
       {
         "roman": "ho,",
         "gloss": "may there be; optative in jai ho, victory be!",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 3
       },
       {
         "roman": "jadõ",
         "gloss": "when",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 4
       },
       {
         "roman": "ih",
@@ -3872,7 +3873,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh śastar dhār ke Ambe jad śer savārī kardī",
-    "english": "{0,1,2,3,4,5,6,7,8:When Mother Ambā takes up weapons and rides the lion—}",
+    "english": "{5:When }{0:Mother }{4:Ambā }{2,3:takes up }{1:weapons }{7,8:and rides }{6:the lion}—",
     "words": [
       {
         "roman": "Eh",
@@ -3983,7 +3984,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh śastar dhār ke Ambe jad śer savārī kardī",
-    "english": "{0,1,2,3,4,5,6,7,8:When Mother Ambā takes up weapons and rides the lion—}",
+    "english": "{5:When }{0:Mother }{4:Ambā }{2,3:takes up }{1:weapons }{7,8:and rides }{6:the lion}—",
     "words": [
       {
         "roman": "Eh",
@@ -4100,7 +4101,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho tribhavan rūp jag jananī rakṣā kardī ghar ghar dī",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Oh, the Mother of the world, whose form is the three worlds, protects every home.}",
+    "english": "{0:Oh, }{3,4:the Mother of the world, }{2:whose form is }{1:the three worlds, }{5,6:protects }{7,8,9:every home.}",
     "words": [
       {
         "roman": "Ho",
@@ -4145,7 +4146,7 @@ window.SONG_LINES = {
       {
         "roman": "ghar",
         "gloss": "house; home, repeated distributively as every home",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 7
       },
       {
         "roman": "dī",
@@ -4222,7 +4223,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho tribhavan rūp jag jananī rakṣā kardī ghar ghar dī",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Oh, the Mother of the world, whose form is the three worlds, protects every home.}",
+    "english": "{0:Oh, }{3,4:the Mother of the world, }{2:whose form is }{1:the three worlds, }{5,6:protects }{7,8,9:every home.}",
     "words": [
       {
         "roman": "Ho",
@@ -4267,7 +4268,7 @@ window.SONG_LINES = {
       {
         "roman": "ghar",
         "gloss": "house; home, repeated distributively as every home",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 7
       },
       {
         "roman": "dī",
@@ -4356,7 +4357,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Caman nā, jai ho, Caman nā, jai ho, Caman nā ḍardī e",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:Caman, no—victory! Caman, no—victory! Caman, she has no fear.}",
+    "english": "{0:Caman, }{1:no}—{2,3:victory!} {4:Caman, }{5:no}—{6,7:victory!} {8:Caman, }{11:she has }{9:no }{10:fear.}",
     "words": [
       {
         "roman": "Caman",
@@ -4381,27 +4382,27 @@ window.SONG_LINES = {
       {
         "roman": "Caman",
         "gloss": "a name used in address here; the name literally means garden",
-        "sourceTokenIndex": 4
+        "sourceTokenIndex": 0
       },
       {
         "roman": "nā,",
         "gloss": "not",
-        "sourceTokenIndex": 5
+        "sourceTokenIndex": 1
       },
       {
         "roman": "jai",
         "gloss": "victory; hail!",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 2
       },
       {
         "roman": "ho,",
         "gloss": "may there be; optative in jai ho, victory be!",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 3
       },
       {
         "roman": "Caman",
         "gloss": "a name used in address here; the name literally means garden",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 0
       },
       {
         "roman": "nā",
@@ -4464,7 +4465,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhagtā̃ de bhaṇḍār Bhavānī bhardī e",
-    "english": "{0,1,2,3,4,5:Bhavānī fills the devotees’ storehouses.}",
+    "english": "{3:Bhavānī }{4,5:fills }{0,1:the devotees’ }{2:storehouses.}",
     "words": [
       {
         "roman": "Bhagtā̃",
@@ -4548,7 +4549,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho bhagtā̃ de bhaṇḍār Bhavānī bhardī e",
-    "english": "{0,1,2,3,4,5,6:Oh, Bhavānī fills the devotees’ storehouses.}",
+    "english": "{0:Oh, }{4:Bhavānī }{5,6:fills }{1,2:the devotees’ }{3:storehouses.}",
     "words": [
       {
         "roman": "Ho",

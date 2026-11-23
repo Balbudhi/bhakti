@@ -168,7 +168,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṅkaṭa se rakṣā karo",
-    "english": "{2,3:Protect me }{0,1:from distress}",
+    "english": "{2,3:Protect me }{1:from }{0:distress}",
     "words": [
       {
         "roman": "saṅkaṭa",
@@ -280,7 +280,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "durgama kāja banāye ke kīnheṁ bhakta nihāla",
-    "english": "{2,3:Having accomplished }{0,1:difficult tasks, }{4:you brought }{6:joy }{5:to devotees}",
+    "english": "{3:Having }{2:accomplished }{0:difficult }{1:tasks, }{4:you brought }{6:joy }{5:to devotees}",
     "words": [
       {
         "roman": "durgama",
@@ -570,7 +570,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaṣṭoṁ se rakṣā karo",
-    "english": "{2,3:Protect me }{0,1:from afflictions}",
+    "english": "{2,3:Protect me }{1:from }{0:afflictions}",
     "words": [
       {
         "roman": "kaṣṭoṁ",

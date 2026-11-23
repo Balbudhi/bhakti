@@ -107,7 +107,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sā̃sō̃ kī mālā pe simrū̃ maĩ pī kā nām",
-    "english": "{2,3:Upon the rosary }{0,1:of breaths, }{5:I }{4:remember }{8:the name }{6,7:of the Beloved}",
+    "english": "{2,3:Upon the rosary }{1:of }{0:breaths, }{5:I }{4:remember }{8:the name }{6,7:of the Beloved}",
     "words": [
       {
         "roman": "Sā̃sō̃",
@@ -395,7 +395,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sā̃sō̃ kī mālā pe simrū̃ maĩ, simrū̃ maĩ, simrū̃ maĩ pī kā nām",
-    "english": "{2,3:Upon the rosary }{0,1:of breaths, }{4,5:I remember, }{6,7:I remember, }{8,9:I remember }{12:the name }{10,11:of the Beloved}",
+    "english": "{2,3:Upon the rosary }{1:of }{0:breaths, }{5:I }{4:remember, }{7:I }{6:remember, }{9:I }{8:remember }{12:the name }{10,11:of the Beloved}",
     "words": [
       {
         "roman": "Sā̃sō̃",
@@ -941,7 +941,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sā̃sō̃, sā̃sō̃ kī mālā pe simrū̃ maĩ pī kā nām",
-    "english": "{0:Breaths, }{3,4:upon the rosary }{1,2:of breaths, }{6:I }{5:remember }{9:the name }{7,8:of the Beloved}",
+    "english": "{0:Breaths, }{3,4:upon the rosary }{2:of }{1:breaths, }{6:I }{5:remember }{9:the name }{7,8:of the Beloved}",
     "words": [
       {
         "roman": "Sā̃sō̃,",
@@ -2105,7 +2105,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāṅsoṅ kī mālā pe simrūṅ maiṅ pī kā nām",
-    "english": "{2,3:Upon the rosary }{0,1:of breaths, }{5:I }{4:remember }{8:the name }{6,7:of the Beloved}",
+    "english": "{2,3:Upon the rosary }{1:of }{0:breaths, }{5:I }{4:remember }{8:the name }{6,7:of the Beloved}",
     "words": [
       {
         "roman": "Sāṅsoṅ",
@@ -2447,7 +2447,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṅ pī kī mūrat ko pūjūṅ",
-    "english": "{0,5:I worship }{3,4:the sacred image }{1,2:of the beloved,}",
+    "english": "{0:I }{5:worship }{3,4:the sacred image }{1,2:of the beloved,}",
     "words": [
       {
         "roman": "Maiṅ",
@@ -2537,7 +2537,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṅ pī kī sūrat ko pūjūṅ hardam",
-    "english": "{0,5:I worship }{3,4:the countenance }{1,2:of the beloved }{6:with every breath.}",
+    "english": "{0:I }{5:worship }{3,4:the countenance }{1,2:of the beloved }{6:with every breath.}",
     "words": [
       {
         "roman": "Maiṅ",
@@ -2633,7 +2633,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pī ke nām kā hūṅ maiṅ pujārī",
-    "english": "{4,5:I am }{6:a worshipper }{0,1:of the beloved’s }{2,3:name,}",
+    "english": "{5:I }{4:am }{6:a worshipper }{0,1:of the beloved’s }{2,3:name,}",
     "words": [
       {
         "roman": "Pī",
@@ -3365,7 +3365,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har ko har-har ḍhūṅḍh phirī",
-    "english": "{3:Searching }{0,1:for Har }{2:everywhere }{4:I wandered,}",
+    "english": "{3:Searching }{1:for }{0:Har }{2:everywhere }{4:I wandered,}",
     "words": [
       {
         "roman": "Har",
@@ -3437,7 +3437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aur Har hai more pās",
-    "english": "{0:and }{1:Har }{2:is }{3,4:near me.}",
+    "english": "{0:and }{1:Har }{2:is }{4:near }{3:me.}",
     "words": [
       {
         "roman": "Aur",
@@ -3509,7 +3509,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāṅsoṅ kī mālā pe simrūṅ",
-    "english": "{3:Upon }{2:the rosary }{0,1:of breaths, }{4:I }{4:recite}",
+    "english": "{3:Upon }{2:the rosary }{1:of }{0:breaths, }{4:I }{4:recite}",
     "words": [
       {
         "roman": "sāṅsoṅ",
@@ -3593,7 +3593,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dīn dharam sab choṛ ke maiṅ to",
-    "english": "{3,4:Having abandoned }{2:all }{0:religion }and {1:religious observance}, {5,6:I indeed}",
+    "english": "{3,4:Having abandoned }{2:all }{0:religion }and {1:religious observance}, {5:I }{6:indeed}",
     "words": [
       {
         "roman": "Dīn",
@@ -4211,7 +4211,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem ke raṅg meñ aisī ḍūbī",
-    "english": "{4:So }{5:immersed }{2,3:in the color }{0,1:of love}",
+    "english": "{4:So }{5:immersed }{2,3:in the color }{1:of }{0:love}",
     "words": [
       {
         "roman": "prem",
@@ -4325,7 +4325,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem ke raṅg meñ aisī ḍūbī ban gayā ek hī rūp",
-    "english": "{4:So }{5:immersed }{2,3:in the color }{0,1:of love, }{6,7:we became }{8,9:one }{10:form}",
+    "english": "{4:So }{5:immersed }{2,3:in the color }{1:of }{0:love, }{6,7:we became }{8,9:one }{10:form}",
     "words": [
       {
         "roman": "prem",
@@ -4457,7 +4457,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem kī mālā japte japte āp banī maiñ shyām",
-    "english": "{3,4:Chanting and chanting }{2:the rosary }{0,1:of love, }{7:I }{5:myself }{6:became }{8:Śyāma}",
+    "english": "{3,4:Chanting and chanting }{2:the rosary }{1:of }{0:love, }{7:I }{5:myself }{6:became }{8:Śyāma}",
     "words": [
       {
         "roman": "prem",
@@ -4583,7 +4583,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hē prem kī mālā japte japte āp banī maiñ shyām",
-    "english": "{0:O, }{4,5:Chanting and chanting }{3:the rosary }{1,2:of love, }{8:I }{6:myself }{7:became }{9:Śyāma}",
+    "english": "{0:O, }{4,5:Chanting and chanting }{3:the rosary }{2:of }{1:love, }{8:I }{6:myself }{7:became }{9:Śyāma}",
     "words": [
       {
         "roman": "hē",
@@ -4679,7 +4679,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prēma kē raṅga mēṁ",
-    "english": "{3:In} {2:the color} {0,1:of love.}",
+    "english": "{3:In} {2:the color} {1:of }{0:love.}",
     "words": [
       {
         "roman": "prēma",
@@ -4751,7 +4751,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisī ḍūbī prem ke raṅg meñ",
-    "english": "{0:So }{1:immersed }{4,5:in the color }{2,3:of love}",
+    "english": "{0:So }{1:immersed }{4,5:in the color }{3:of }{2:love}",
     "words": [
       {
         "roman": "aisī",
@@ -5441,7 +5441,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prītam tumre saṅg hai apnā rāj suhāg",
-    "english": "{0:Beloved, }{1,2:with you }{3:is }{4:my }{5:kingdom }{6:and bridal fortune}",
+    "english": "{0:Beloved, }{2:with }{1:you }{3:is }{4:my }{5:kingdom }{6:and bridal fortune}",
     "words": [
       {
         "roman": "prītam",
@@ -5681,7 +5681,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phokaṭ pūjā pāṭh taje aur lagā prem kā rog",
-    "english": "{0:Futile }{1:ritual worship }{2:and recitation }{3:were abandoned, }{4:and }{8:the affliction }{6,7:of love }{5:took hold}",
+    "english": "{0:Futile }{1:ritual worship }{2:and recitation }{3:were abandoned, }{4:and }{8:the affliction }{7:of }{6:love }{5:took hold}",
     "words": [
       {
         "roman": "phokaṭ",
@@ -6911,7 +6911,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tana mana una para vārūm̐ pī kī jōganiyā kahalā'ūm̐ rī",
-    "english": "{4:I shall surrender} {0:body} {1:and mind} {2,3:unto Him,} {8:and be called} {5,6:the Beloved's} {7:woman ascetic,} {9:O companion!}",
+    "english": "{4:I shall surrender} {0:body} {1:and mind} {3:unto }{2:Him,} {8:and be called} {5,6:the Beloved's} {7:woman ascetic,} {9:O companion!}",
     "words": [
       {
         "roman": "tana",
@@ -8051,7 +8051,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Angāroñ pe neend ā jāye, kāñṭoñ pe ārām",
-    "english": "{0,1:Upon burning embers }{2,3,4:sleep comes, }{5,6:upon thorns, }{7:rest}",
+    "english": "{0,1:Upon burning embers }{2,3,4:sleep comes, }{6:upon }{5:thorns, }{7:rest}",
     "words": [
       {
         "roman": "Angāroñ",
@@ -8177,7 +8177,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Simrūñ maiñ pī kā nām, pī kā nām, pī kā nām",
-    "english": "{0,1:I chant }{2,3,4:the Beloved's name, }{5,6,7:the Beloved's name, }{8,9,10:the Beloved's name}",
+    "english": "{1:I }{0:chant }{2,3,4:the Beloved's name, }{5,6,7:the Beloved's name, }{8,9,10:the Beloved's name}",
     "words": [
       {
         "roman": "Simrūñ",
@@ -8357,7 +8357,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāñsoñ kī mālā pe simrūñ maiñ, simrūñ maiñ, simrūñ maiñ pī kā, pī kā, pī kā nām",
-    "english": "{0,1,2,3:Upon the rosary of breaths }{4,5:I chant, }{6,7:I chant, }{8,9:I chant }{10,11:the Beloved's, }{12,13:the Beloved's, }{14,15,16:the Beloved's name}",
+    "english": "{3:Upon }{2:the rosary }{1:of }{0:breaths }{5:I }{4:chant, }{7:I }{6:chant, }{9:I }{8:chant }{10,11:the Beloved's, }{12,13:the Beloved's, }{14,15:the Beloved's }{16:name}",
     "words": [
       {
         "roman": "Sāñsoñ",
@@ -8501,7 +8501,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jīvan kā siṅgār hai prītam",
-    "english": "{4:The Beloved }{3:is }{2:the adornment }{0,1:of life}",
+    "english": "{4:The Beloved }{3:is }{2:the adornment }{1:of }{0:life}",
     "words": [
       {
         "roman": "Jīvan",
@@ -8567,7 +8567,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvan kā siṅgār hai",
-    "english": "{3:[He] is }{2:the adornment }{0,1:of life}",
+    "english": "{3:[He] is }{2:the adornment }{1:of }{0:life}",
     "words": [
       {
         "roman": "jīvan",
@@ -8651,7 +8651,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mōre hai prītam, jīvan kā siṅgār hai prītam",
-    "english": "{0:Mine }{1:is }{2:the Beloved, }{7:the Beloved }{6:is }{5:the adornment }{3,4:of life}",
+    "english": "{0:Mine }{1:is }{2:the Beloved, }{7:the Beloved }{6:is }{5:the adornment }{4:of }{3:life}",
     "words": [
       {
         "roman": "Mōre",
@@ -8723,7 +8723,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvan kā",
-    "english": "{0,1:of life}",
+    "english": "{1:of }{0:life}",
     "words": [
       {
         "roman": "jīvan",
@@ -8813,7 +8813,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ō hai prītam, prītam, prītam, mere jīvan kā siṅgār hai prītam",
-    "english": "{0:Oh, }{1:it is }{2:the Beloved, }{3:the Beloved, }{4:the Beloved—}{10:the Beloved }{9:is }{8:the adornment }{5,6,7:of my life}",
+    "english": "{0:Oh, }{1:it is }{2:the Beloved, }{3:the Beloved, }{4:the Beloved—}{10:the Beloved }{9:is }{8:the adornment }{7:of }{5:my }{6:life}",
     "words": [
       {
         "roman": "Ō",
@@ -8909,7 +8909,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "o jīvan kā",
-    "english": "{0:oh, }{1,2:of life}",
+    "english": "{0:oh, }{2:of }{1:life}",
     "words": [
       {
         "roman": "o",
@@ -8999,7 +8999,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prītam, prītam, prītam, morā prītam, jīvan kā siṅgār hai prītam",
-    "english": "{0:Beloved, }{1:Beloved, }{2:Beloved, }{3,4:my Beloved, }{9:the Beloved }{8:is }{7:the adornment }{5,6:of life}",
+    "english": "{0:Beloved, }{1:Beloved, }{2:Beloved, }{3:my }{4:Beloved, }{9:the Beloved }{8:is }{7:the adornment }{6:of }{5:life}",
     "words": [
       {
         "roman": "Prītam,",
@@ -9107,7 +9107,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hāṅ jīvan kā singār hai prītam",
-    "english": "{0:Yes, }{5:the beloved }{4:is }{3:the adornment }{1,2:of life}",
+    "english": "{0:Yes, }{5:the beloved }{4:is }{3:the adornment }{2:of }{1:life}",
     "words": [
       {
         "roman": "hāṅ",
@@ -9209,7 +9209,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvan kā singār hai prītam māṅg kā hai sindūr",
-    "english": "{4:The beloved }{3:is }{2:the adornment }{0,1:of life, }{7:is }{8:the vermilion }{5,6:of the hair-parting}",
+    "english": "{4:The beloved }{3:is }{2:the adornment }{1:of }{0:life, }{7:is }{8:the vermilion }{5,6:of the hair-parting}",
     "words": [
       {
         "roman": "jīvan",
@@ -9617,7 +9617,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāṅsoṅ kī mālā pe simrūṅ maiṅ pī kā nām pī kā nām pī kā nām",
-    "english": "{3:Upon }{2:the rosary }{0,1:of breaths, }{5:I }{4:recite }{6,7,8:the beloved's name, }{9,10,11:the beloved's name, }{12,13,14:the beloved's name}",
+    "english": "{3:Upon }{2:the rosary }{1:of }{0:breaths, }{5:I }{4:recite }{6,7,8:the beloved's name, }{9,10,11:the beloved's name, }{12,13,14:the beloved's name}",
     "words": [
       {
         "roman": "sāṅsoṅ",
@@ -9755,7 +9755,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāṅsoṅ kī mālā pe simrūṅ maiṅ",
-    "english": "{3:Upon }{2:the rosary }{0,1:of breaths, }{5:I }{4:recite}",
+    "english": "{3:Upon }{2:the rosary }{1:of }{0:breaths, }{5:I }{4:recite}",
     "words": [
       {
         "roman": "sāṅsoṅ",
@@ -9875,7 +9875,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāṅsoṅ kī mālā pe",
-    "english": "{3:Upon }{2:the rosary }{0,1:of breaths}",
+    "english": "{3:Upon }{2:the rosary }{1:of }{0:breaths}",
     "words": [
       {
         "roman": "sāṅsoṅ",
@@ -9959,7 +9959,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāṅsoṅ kī mālā pe simrūṅ maiṅ pī kā...",
-    "english": "{3:Upon }{2:the rosary }{0,1:of breaths, }{5:I }{4:recite }{6,7:the beloved's...}",
+    "english": "{3:Upon }{2:the rosary }{1:of }{0:breaths, }{5:I }{4:recite }{6,7:the beloved's...}",
     "words": [
       {
         "roman": "sāṅsoṅ",

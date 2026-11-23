@@ -368,7 +368,7 @@ window.SONG_LINES = {
     "source": "आस का बंधन तोड़ चुकी हूँ",
     "sourceLanguage": "hi",
     "roman": "ās kā bandhan toṛ cukī hū̃",
-    "english": "{3,4,5:I have broken} {2:the bond} {0,1:of hope,}",
+    "english": "{3,4,5:I have broken} {2:the bond} {1:of }{0:hope,}",
     "words": [
       {
         "roman": "ās",
@@ -546,7 +546,7 @@ window.SONG_LINES = {
     "source": "नाथ मेरे मैं क्यों कुछ सोचूँ",
     "sourceLanguage": "hi",
     "roman": "nāth mere maĩ kyõ kuch socū̃",
-    "english": "{0,1:My Lord,} {3:why} {2,5:should I think} {4:of anything?}",
+    "english": "{1:My }{0:Lord,} {3:why} {2,5:should I think} {4:of anything?}",
     "words": [
       {
         "roman": "nāth",
@@ -629,7 +629,7 @@ window.SONG_LINES = {
     "source": "तू जाने तेरा काम",
     "sourceLanguage": "hi",
     "roman": "tū jāne terā kām",
-    "english": "{0:You} {1:know} {2,3:your work.}",
+    "english": "{0:You} {1:know} {2:your }{3:work.}",
     "words": [
       {
         "roman": "tū",
@@ -688,7 +688,7 @@ window.SONG_LINES = {
     "source": "तेरे चरण की धूल जो पाए",
     "sourceLanguage": "hi",
     "roman": "tere caraṇ kī dhūl jo pāe",
-    "english": "{4:Whoever} {5:receives} {3:the dust} {0,1,2:of your feet,}",
+    "english": "{4:Whoever} {5:receives} {3:the dust} {2:of }{0:your }{1:feet,}",
     "words": [
       {
         "roman": "tere",
@@ -771,7 +771,7 @@ window.SONG_LINES = {
     "source": "वो कंकर हीरा हो जाए",
     "sourceLanguage": "hi",
     "roman": "vo kaṅkar hīrā ho jāe",
-    "english": "{0,1:that pebble} {3,4:becomes} {2:a diamond.}",
+    "english": "{0:that }{1:pebble} {3,4:becomes} {2:a diamond.}",
     "words": [
       {
         "roman": "vo",
@@ -913,7 +913,7 @@ window.SONG_LINES = {
     "source": "इन चरणों में धाम",
     "sourceLanguage": "hi",
     "roman": "in caraṇõ mẽ dhām",
-    "english": "{3:an abode} {0,1,2:at these feet.}",
+    "english": "{3:an abode} {2:at }{0:these }{1:feet.}",
     "words": [
       {
         "roman": "in",
@@ -972,7 +972,7 @@ window.SONG_LINES = {
     "source": "भेद तेरा कोई क्या पहचाने",
     "sourceLanguage": "hi",
     "roman": "bhed terā koī kyā pahcāne",
-    "english": "{3:How could} {2:anyone} {4:fathom} {0,1:your mystery?}",
+    "english": "{3:How could} {2:anyone} {4:fathom} {1:your }{0:mystery?}",
     "words": [
       {
         "roman": "bhed",

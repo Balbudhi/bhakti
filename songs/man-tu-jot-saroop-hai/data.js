@@ -180,7 +180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man har jī terai nāl hai",
-    "english": "{0:O mind, }{1,2:dear Har }{5:is }{3,4:with you.}",
+    "english": "{0:O mind, }{1,2:dear Har }{5:is }{4:with }{3:you.}",
     "words": [
       {
         "roman": "Man",
@@ -270,7 +270,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man har jī terai nāl hai gurmatī raṅg māṇ",
-    "english": "{0:O mind, }{1,2:dear Har }{5:is }{3,4:with you; }{6:through the Guru’s teaching, }{8:savour }{7:the joy.}",
+    "english": "{0:O mind, }{1,2:dear Har }{5:is }{4:with }{3:you; }{6:through the Guru’s teaching, }{8:savour }{7:the joy.}",
     "words": [
       {
         "roman": "Man",

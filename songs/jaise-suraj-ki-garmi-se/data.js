@@ -146,7 +146,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaise sūraj kī garmī se jalte hue tan ko mil jāe taruvar kī chāyā",
-    "english": "{0:Just as }{11,12,13:the shade of a noble tree }{8,9,10:comes to }{5,6,7:a body burning }{1,2,3,4:from the heat of the sun,}",
+    "english": "{0:Just as }{13:the shade }{12:of }{11:a noble tree }{9,10:comes }{8:to }{7:a body }{5,6:burning }{4:from }{3:the heat }{1,2:of the sun,}",
     "words": [
       {
         "roman": "Jaise",
@@ -319,7 +319,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sūraj kī garmī se jalte hue tan ko mil jāe taruvar kī chāyā",
-    "english": "{10,11,12:The shade of a noble tree }{7,8,9:comes to }{4,5,6:a body burning }{0,1,2,3:from the heat of the sun,}",
+    "english": "{12:The shade }{11:of }{10:a noble tree }{8,9:comes }{7:to }{6:a body }{4,5:burning }{3:from }{2:the heat }{0,1:of the sun,}",
     "words": [
       {
         "roman": "Sūraj",
@@ -504,7 +504,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aisā hī sukh mere man ko milā hai maiṁ jab se śaraṇ terī āyā, mere rām",
-    "english": "{0,1:Just such }{2:peace }{3,4:has my mind }{5,6,7:received }{9,10:ever since }{8:I }{13:came to }{11,12:your refuge, }{14,15:my Rama.}",
+    "english": "{1:Just }{0:such }{2:peace }{3,4:has my mind }{5,6,7:received }{9,10:ever since }{8:I }{13:came to }{12:your }{11:refuge, }{14,15:my Rama.}",
     "words": [
       {
         "roman": "Aisā",
@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhaṭkā huā merā man thā koī mil nā rahā thā sahārā",
-    "english": "{2,3:My mind }{4:was }{0,1:lost and wandering; }{5,7:no }{10:support }{6,8,9:was to be found.}",
+    "english": "{2:My }{3:mind }{4:was }{0,1:lost and wandering; }{5,7:no }{10:support }{6,8,9:was to be found.}",
     "words": [
       {
         "roman": "Bhaṭkā",
@@ -1123,7 +1123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Us laṛkhaṛātī huī nāv ko jyoṁ kisī ne kinārā dikhāyā",
-    "english": "{5:Just as }{6,7:someone }{8,9:showed the shore }{0,4:to that }{1,2,3:faltering boat,}",
+    "english": "{5:Just as }{6,7:someone }{8,9:showed the shore }{4:to }{0:that }{1,2,3:faltering boat,}",
     "words": [
       {
         "roman": "Us",
@@ -1468,7 +1468,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ujiyālī pūnam kī ho jāeṁ rāteṁ jo thīṁ amāvas andherī",
-    "english": "{5:Nights }{6,7:that were }{8,9:dark as the new moon }{3,4:turn }{0,1,2:bright like the full moon,}",
+    "english": "{5:Nights }{6:that }{7:were }{8,9:dark as the new moon }{3,4:turn }{0,1,2:bright like the full moon,}",
     "words": [
       {
         "roman": "Ujiyālī",
@@ -1563,7 +1563,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jo thīṁ amāvas andherī",
-    "english": "{0,1:That were }{2,3:dark as the new moon,}",
+    "english": "{0:That }{1:were }{2,3:dark as the new moon,}",
     "words": [
       {
         "roman": "Jo",
@@ -1801,7 +1801,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jis rāh kī manzil terā milan ho us par qadam maiṁ baṛhāūṁ",
-    "english": "{10:May I }{9,11:step forward }{1,7,8:upon that path }{0,2:whose }{3:destination }{4,5,6:is union with you,}",
+    "english": "{10:May I }{9:step }{11:forward }{8:upon }{7:that }{1:path }{0,2:whose }{3:destination }{4,5,6:is union with you,}",
     "words": [
       {
         "roman": "Jis",
@@ -1950,7 +1950,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Phūloṁ meṁ khāroṁ meṁ patjhaṛ bahāroṁ meṁ maiṁ nā kabhī ḍagmagāūṁ",
-    "english": "{0,1:Amid flowers, }{2,3:amid thorns, }{4,5,6:in autumn and spring, }{7:may I }{8,9:never }{10:falter,}",
+    "english": "{1:Amid }{0:flowers, }{3:amid }{2:thorns, }{4,5,6:in autumn and spring, }{7:may I }{8,9:never }{10:falter,}",
     "words": [
       {
         "roman": "Phūloṁ",
@@ -2158,7 +2158,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pānī ke pyāse ko taqdīr ne jaise jī bhar ke amṛt pilāyā",
-    "english": "{6:just as }{4,5:destiny }{10,11:gave }{0,1,2,3:one thirsty for water }{10,11:nectar to drink }{7,8,9:to the heart’s content.}",
+    "english": "{6:just as }{4,5:destiny }{11:gave }{2,3:one thirsty }{0,1:for water }{10:nectar }{11:to drink }{9:to }{7:the heart’s }{8:content.}",
     "words": [
       {
         "roman": "Pānī",

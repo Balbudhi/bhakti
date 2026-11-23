@@ -1879,7 +1879,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhīma rūpa dhari asura saṁhāre । rāmacandra ke kāja saṁvāre ॥",
-    "english": "{2:Assuming}{0: a colossal}{1: form}{4: you slaughtered}{3: the demons}{8: and accomplished}{7: the tasks}{5,6: of Ramachandra.}",
+    "english": "{2:Assuming}{0: a colossal}{1: form}{4: you slaughtered}{3: the demons}{8: and accomplished}{7: the tasks}{6: of }{5:Ramachandra.}",
     "words": [
       {
         "roman": "bhīma",
@@ -3724,7 +3724,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāsai roga harai saba pīrā । japata nirantara hanumata bīrā ॥",
-    "english": "{0,1:Diseases vanish}{3: and all}{4: pain}{2: is dispelled}{6: while continuously}{5: chanting}{8: the name of the heroic}{7: Hanumat.}",
+    "english": "{1:Diseases }{0:vanish}{3: and all}{4: pain}{2: is dispelled}{6: while continuously}{5: chanting}{8: the name of the heroic}{7: Hanumat.}",
     "words": [
       {
         "roman": "nāsai",

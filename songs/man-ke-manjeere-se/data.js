@@ -84,7 +84,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man ke mañjīre se sā̃sõ kī tāl pe",
-    "english": "{2,3:With the cymbals }{0,1:of the mind, }{6,7:to the beat }{4,5:of breaths,}",
+    "english": "{2,3:With the cymbals }{0,1:of the mind, }{6,7:to the beat }{5:of }{4:breaths,}",
     "words": [
       {
         "roman": "man",
@@ -191,7 +191,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man mẽ khayāl leke sāī̃ ko pukār le",
-    "english": "{2,3:Holding contemplation }{0,1:in the mind, }{6,7:call upon }{4,5:Sai.}",
+    "english": "{3:Holding }{2:contemplation }{0,1:in the mind, }{6,7:call upon }{4,5:Sai.}",
     "words": [
       {
         "roman": "man",
@@ -411,7 +411,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ā̃khõ mẽ pyār se bharke sāī̃ ko nihār le",
-    "english": "{4:Filling }{0,1:your eyes }{2,3:with love, }{7,8:gaze upon }{5,6:Sai.}",
+    "english": "{4:Filling }{0,1:your eyes }{3:with }{2:love, }{7,8:gaze upon }{5,6:Sai.}",
     "words": [
       {
         "roman": "ā̃khõ",
@@ -637,7 +637,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bandhan kā prem dhāgā pār lagāe nā",
-    "english": "{2,3:The love-thread }{0,1:of bondage }{6:will not }{4,5:ferry you across,}",
+    "english": "{2,3:The love-thread }{1:of }{0:bondage }{6:will not }{4,5:ferry you across,}",
     "words": [
       {
         "roman": "bandhan",
@@ -744,7 +744,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvan kī rīt ko tū thoṛā sā sudhār le",
-    "english": "{4,7,8:Reform }{0,1,2,3:the way of life }{5,6:a little bit,}",
+    "english": "{4,7,8:Reform }{2,3:the way }{1:of }{0:life }{5,6:a little bit,}",
     "words": [
       {
         "roman": "jīvan",
@@ -1047,7 +1047,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāī̃ se prīt karke lok vo sudhār le",
-    "english": "{2,3:By loving }{0,1:Sai, }{6,7:redeem }{4,5:that world.}",
+    "english": "{2,3:By loving }{0,1:Sai, }{6,7:redeem }{5:that }{4:world.}",
     "words": [
       {
         "roman": "sāī̃",

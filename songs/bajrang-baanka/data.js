@@ -190,7 +190,7 @@ window.SONG_LINES = {
   "l006": {
     "source": "राम नाम की खूंटी से टांग दे उल्टे काम",
     "roman": "rām nām kī khūṃṭī se ṭāṃg de ulṭe kām",
-    "english": "{4:From }{3:the peg }{2:of }{0:Rāma’s }{1:name,} {5,6:hang up }{7:wrong }{8:deeds.}",
+    "english": "{4:From }{3:the peg }{2:of }{0:Rāma’s }{1:name,} {5:hang }{6:up }{7:wrong }{8:deeds.}",
     "words": [
       {
         "roman": "rām",

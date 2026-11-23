@@ -385,24 +385,36 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "अहिल्योद्धारक",
+        "text": "अहिल्यो",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "राम",
+        "text": "द्धारक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "राम",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "Ahilyoddhāraka rāma",
-    "english": "{0:Liberator of Ahalya, }{1:Rama!}",
+    "english": "{1:Liberator} {0:of Ahalya, }{2:Rama!}",
     "words": [
       {
-        "roman": "Ahilyoddhāraka",
-        "gloss": "liberator of Ahalya; one who delivered Ahalya",
+        "roman": "Ahily",
+        "gloss": "of Ahalya; ahilyā, joined ā + u",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "oddhāraka",
+        "gloss": "liberator; uddhāraka",
         "concept_key": "",
         "preserve_in_english": false
       },

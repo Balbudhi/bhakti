@@ -85,7 +85,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dukh mẽ sumiran sab kare",
-    "english": "{0,1:In sorrow, }{3:everyone }{2,4:remembers,}",
+    "english": "{1:In }{0:sorrow, }{3:everyone }{2,4:remembers,}",
     "words": [
       {
         "roman": "dukh",
@@ -156,7 +156,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh mẽ kare na koy",
-    "english": "{0,1:in joy, }{3,4:no one }{2:does.}",
+    "english": "{1:in }{0:joy, }{3,4:no one }{2:does.}",
     "words": [
       {
         "roman": "sukh",
@@ -227,7 +227,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo sukh mẽ sumiran kare",
-    "english": "{0:If one }{3,4:remembers }{1,2:in joy,}",
+    "english": "{0:If one }{3,4:remembers }{2:in }{1:joy,}",
     "words": [
       {
         "roman": "jo",

@@ -106,42 +106,62 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ರಮಾರಮಣನಲಮಲ",
+        "text": "ರಮಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಭಕುತಿ",
+        "text": "ರಮಣನ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಕೊಡು",
+        "text": "ಲಮಲ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ನಮೋ",
+        "text": "ಭಕುತಿ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ವಿಶಾಲಾಕ್ಷ",
+        "text": "ಕೊಡು",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ನಮೋ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ವಿಶಾಲಾಕ್ಷ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "ramāramaṇanalamala bhakuti koḍu namō viśālākṣa",
-    "english": "{2:Grant} {0:pure} {1:devotion} {0:to Ramā’s beloved}; {3:homage}, {4:Viśālākṣa}.",
+    "english": "{4:Grant} {2:pure} {3:devotion} {1:to} {0:Ramā’s} {1:beloved}; {5:homage}, {6:Viśālākṣa}.",
     "words": [
       {
-        "roman": "ramāramaṇanalamala",
-        "gloss": "in the beloved of Ramā, Lakṣmī; pure, from ramaṇanalli plus amala"
+        "roman": "ramā",
+        "gloss": "of Ramā, Lakṣmī"
+      },
+      {
+        "roman": "ramaṇanal",
+        "gloss": "in the beloved; ramaṇanalli, its ending elided"
+      },
+      {
+        "roman": "amala",
+        "gloss": "pure"
       },
       {
         "roman": "bhakuti",
@@ -402,48 +422,68 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಲಕುಮೀಶನ",
+        "text": "ಲಕುಮೀ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ವೊಲೈಸುವ",
+        "text": "ಶನ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಭಕ್ತಾವಳಿಗಳ",
+        "text": "ವೊಲೈಸುವ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಪಕ್ಷ",
+        "text": "ಭಕ್ತಾ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ವಳಿಗಳ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ಪಕ್ಷ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "śrī lakumīśana volaisuva bhaktāvaḷigaḷa pakṣa",
-    "english": "{4:ally} {3:of the companies of devotees} {2:who please} {0:the revered} {1:Lord of Lakṣmī}.",
+    "english": "{6:ally} {5:of the companies} {4:of devotees} {3:who please} {0:the revered} {2:Lord} {1:of Lakṣmī}.",
     "words": [
       {
         "roman": "śrī",
         "gloss": "revered; auspicious honorific"
       },
       {
-        "roman": "lakumīśana",
-        "gloss": "the Lord of Lakṣmī, Viṣṇu; object of pleasing"
+        "roman": "lakumī",
+        "gloss": "of Lakṣmī"
+      },
+      {
+        "roman": "śana",
+        "gloss": "the Lord, Viṣṇu; īśana, object of pleasing"
       },
       {
         "roman": "volaisuva",
         "gloss": "who please; who win the favor of"
       },
       {
-        "roman": "bhaktāvaḷigaḷa",
-        "gloss": "of the companies of devotees"
+        "roman": "bhakt",
+        "gloss": "devotees; bhakta, joined a + ā"
+      },
+      {
+        "roman": "āvaḷigaḷa",
+        "gloss": "of the companies; āvaḷi, genitive plural"
       },
       {
         "roman": "pakṣa",

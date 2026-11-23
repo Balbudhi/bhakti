@@ -355,7 +355,7 @@ window.SONG_LINES = {
   "l06": {
     "source": "વૈષ્ણવ જન તો",
     "roman": "Vaiṣṇav jan to",
-    "english": "{0,1,2:A devotee of Viṣṇu}",
+    "english": "{1,2:A }{0:devotee of Viṣṇu}",
     "words": [
       {
         "roman": "Vaiṣṇav",

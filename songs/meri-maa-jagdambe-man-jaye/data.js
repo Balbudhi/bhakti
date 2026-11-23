@@ -174,7 +174,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mā̃ Vaiṣṇo Devī ke bhajan sunne ke lie hamārā chainal MH ONE Śraddhā sabskrāib karẽ aur bel āikan dabākar pāẽ sabhī noṭiphikeśan.",
-    "english": "{5,6,7:To listen to }{3,4:the hymns of }{0,1,2:Mother Vaishno Devi, }{13,14:subscribe to }{8,9:our channel }{10,11,12:MH ONE Shraddha }{15:and }{16,17,18:by pressing the bell icon }{19:receive }{20,21:all notifications.}",
+    "english": "{5,6,7:To listen to }{3,4:the hymns of }{0,1,2:Mother Vaishno Devi, }{13,14:subscribe to }{8:our }{9:channel }{10,11,12:MH ONE Shraddha }{15:and }{16,17,18:by pressing the bell icon }{19:receive }{20:all }{21:notifications.}",
     "words": [
       {
         "roman": "Mā̃",
@@ -383,7 +383,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaikārā merī Śerā̃vālī Maiyā jī dā, bol sacce darabār kī jay!",
-    "english": "{0:Call of victory }{1,5:to my }{2,3,4:Lion-Riding Mother, }{6:proclaim }{7,8,9,10:victory to the true court!}",
+    "english": "{0:Call of victory }{1,5:to my }{2,3,4:Lion-Riding Mother, }{6:proclaim }{9,10:victory to }{7,8:the true court!}",
     "words": [
       {
         "roman": "Jaikārā",
@@ -866,7 +866,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O mere man vic Maiyā vas jāye, asā̃ jag nū vasā ke kī laiṇā",
-    "english": "{0:O, }{4:if Mother }{5,6:comes to dwell }{1,2,3:in my heart, }{7,12,13:what have we to gain }{10,11:by settling }{8,9:the world?}",
+    "english": "{0:O, }{4:if Mother }{5,6:comes to dwell }{3:in }{1:my }{2:heart, }{7,12,13:what have we to gain }{10,11:by settling }{8,9:the world?}",
     "words": [
       {
         "roman": "O",
@@ -1039,7 +1039,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mere man vic Maiyā vas jāye, asā̃ jag nū vasā ke kī laiṇā",
-    "english": "{3:If Mother }{4,5:comes to dwell }{0,1,2:in my heart, }{6,11,12:what have we to gain }{9,10:by settling }{7,8:the world?}",
+    "english": "{3:If Mother }{4,5:comes to dwell }{2:in }{0:my }{1:heart, }{6,11,12:what have we to gain }{9,10:by settling }{7,8:the world?}",
     "words": [
       {
         "roman": "Mere",
@@ -1254,7 +1254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tālī kī āvāj dhīmī hai, sabhī apne hāth ūpar uṭhā kar mā̃ ke caraṇõ mẽ hāzirī dẽge aur ū̃cā bolẽge, milkar.",
-    "english": "{2:The sound }{0,1:of clapping }{3,4:is faint; }{5:everyone, }{6,7,8,9,10:raising your hands up, }{15,16:will mark presence }{11,12,13,14:at Mother's feet }{17:and }{18,19:will speak loudly, }{20:together.}",
+    "english": "{2:The sound }{1:of }{0:clapping }{4:is }{3:faint; }{5:everyone, }{9,10:raising }{6,7:your hands }{8:up, }{15,16:will mark presence }{14:at }{11,12:Mother's }{13:feet }{17:and }{18,19:will speak loudly, }{20:together.}",
     "words": [
       {
         "roman": "Tālī",
@@ -1636,7 +1636,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ode ġam miṭ jānde ne sāre, o jag vic sab kuch pā jāndā",
-    "english": "{0,1,5:All his sorrows }{2,3,4:are erased, }{6:and he }{9,10,11,12:obtains everything }{7,8:in the world.}",
+    "english": "{5:All }{0:his }{1:sorrows }{4:are }{2,3:erased, }{6:and he }{11,12:obtains }{9,10:everything }{7,8:in the world.}",
     "words": [
       {
         "roman": "Ode",
@@ -1767,7 +1767,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O jag vic sab kuch pā jāndā",
-    "english": "{0:He }{3,4,5,6:obtains everything }{1,2:in the world.}",
+    "english": "{0:He }{5,6:obtains }{3,4:everything }{1,2:in the world.}",
     "words": [
       {
         "roman": "O",
@@ -1898,7 +1898,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jehṛā dil 'ca vasā ke Maiyā nū ode prem dī jot jagā laindā",
-    "english": "{0:Whoever, }{3,4:enshrining }{5,6:Mother }{1,2:in the heart, }{11,12:kindles }{10:the flame }{7,8,9:of Her love,}",
+    "english": "{0:Whoever, }{3,4:enshrining }{5,6:Mother }{1,2:in the heart, }{11,12:kindles }{10:the flame }{9:of }{7:Her }{8:love,}",
     "words": [
       {
         "roman": "Jehṛā",
@@ -2506,7 +2506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dunīyā de nazāre ik pāse, merī mā̃ dā nazārā ik pāse",
-    "english": "{2:The sights }{0,1:of the world }{3,4:on one side, }{8:the sight }{5,6,7:of my Mother }{9,10:on the other.}",
+    "english": "{2:The sights }{0,1:of the world }{3,4:on one side, }{8:the sight }{7:of }{5:my }{6:Mother }{9,10:on the other.}",
     "words": [
       {
         "roman": "Dunīyā",
@@ -2661,7 +2661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O merī mā̃ dā nazārā ik pāse, merī mā̃ dā nazārā ik pāse",
-    "english": "{0:Oh, }{4:the sight }{1,2,3:of my Mother }{5,6:stands apart, }{10:the sight }{7,8,9:of my Mother }{11,12:stands apart.}",
+    "english": "{0:Oh, }{4:the sight }{3:of }{1:my }{2:Mother }{5,6:stands apart, }{10:the sight }{9:of }{7:my }{8:Mother }{11,12:stands apart.}",
     "words": [
       {
         "roman": "O",
@@ -3114,7 +3114,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O eh ghor gahir samundar ik pāse, mere dil dā kinārā ik pāse",
-    "english": "{0:Oh, }{1,2,3,4:this formidable deep ocean }{5,6:on one side, }{7,8,9:my heart's }{10:shore }{11,12:on the other side.}",
+    "english": "{0:Oh, }{1:this }{2:formidable }{3:deep }{4:ocean }{5,6:on one side, }{7,8,9:my heart's }{10:shore }{11,12:on the other side.}",
     "words": [
       {
         "roman": "O",
@@ -3364,7 +3364,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh sir hai amānat Maiyā dī, thā̃-thā̃ te jhukāyā nahī̃ jāndā",
-    "english": "{0,1:This head }{2,4,5:is Mother's }{3:sacred trust; }{8,9,10:it cannot be bowed }{6,7:at every place.}",
+    "english": "{0:This }{1:head }{2,4,5:is Mother's }{3:sacred trust; }{8,9,10:it cannot be bowed }{6,7:at every place.}",
     "words": [
       {
         "roman": "Eh",
@@ -3507,7 +3507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh dil hai amānat Maiyā dī, thā̃-thā̃ te lagāyā nahī̃ jāndā",
-    "english": "{0,1:This heart }{2,4,5:is Mother's }{3:sacred trust; }{8,9,10:it cannot be attached }{6,7:at every place.}",
+    "english": "{0:This }{1:heart }{2,4,5:is Mother's }{3:sacred trust; }{8,9,10:it cannot be attached }{6,7:at every place.}",
     "words": [
       {
         "roman": "Eh",
@@ -3614,7 +3614,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Thā̃-thā̃ te lagāyā nahī̃ jāndā,",
-    "english": "{2,3,4:It cannot be attached }{0,1:at every place, }",
+    "english": "{3,4:It cannot be }{2:attached }{0,1:at every place, }",
     "words": [
       {
         "roman": "Thā̃-thā̃",
@@ -4185,7 +4185,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū jag rusdā e tā̃ rusdā rave, asā̃ mā̃ nū apnā banānā e",
-    "english": "{0:Even if }{1:the world }{2,3:is sulking, }{4:then }{5,6:let it keep sulking; }{7:we }{11,12:must make }{8,9:Mother }{10:our own.}",
+    "english": "{0:Even if }{1:the world }{3:is }{2:sulking, }{4:then }{5,6:let it keep sulking; }{7:we }{11,12:must make }{8,9:Mother }{10:our own.}",
     "words": [
       {
         "roman": "Tū",
@@ -4346,7 +4346,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jag rusdā e te rusdā rave, asā̃ mā̃ nū apnā banānā e",
-    "english": "{0:The world }{1,2:is sulking }{3:and }{4,5:let it keep sulking; }{6:we }{10,11:must make }{7,8:Mother }{9:our own.}",
+    "english": "{0:The world }{2:is }{1:sulking }{3:and }{4,5:let it keep sulking; }{6:we }{10,11:must make }{7,8:Mother }{9:our own.}",
     "words": [
       {
         "roman": "Jag",
@@ -4829,7 +4829,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho tere nā̃ vic rah ke mast sadā, tere nā̃ vic nacnā-gānā e",
-    "english": "{0:Oh, }{4,5:remaining }{6,7:ever ecstatic }{1,2,3:in Your Name, }{11,12:one must dance and sing }{8,9,10:in Your Name.}",
+    "english": "{0:Oh, }{4,5:remaining }{6,7:ever ecstatic }{3:in }{1:Your }{2:Name, }{11,12:one must dance and sing }{10:in }{8:Your }{9:Name.}",
     "words": [
       {
         "roman": "Ho",
@@ -4996,7 +4996,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere nā̃ vic rah ke mast sadā, mā̃ tere nā̃ vic gānā e",
-    "english": "{3,4:Remaining }{5,6:ever ecstatic }{0,1,2:in Your Name, }{7:Mother, }{11,12:one must sing }{8,9,10:in Your Name.}",
+    "english": "{3,4:Remaining }{5,6:ever ecstatic }{2:in }{0:Your }{1:Name, }{7:Mother, }{11,12:one must sing }{10:in }{8:Your }{9:Name.}",
     "words": [
       {
         "roman": "Tere",
@@ -5175,7 +5175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Is dunīyā nū asā̃ dil tõ bhulā ke, is dil vic mā̃ nū vasānā e",
-    "english": "{6,7:Having forgotten }{0,1,2:this world }{4,5:from the heart, }{3:we }{13,14:must enshrine }{11,12:Mother }{8,9,10:in this heart.}",
+    "english": "{6,7:Having forgotten }{0,1,2:this world }{4,5:from the heart, }{3:we }{13,14:must enshrine }{11,12:Mother }{10:in }{8:this }{9:heart.}",
     "words": [
       {
         "roman": "Is",
@@ -5324,7 +5324,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho is dil vic mā̃ nū vasānā e,",
-    "english": "{0:Oh, }{6,7:one must enshrine }{4,5:Mother }{1,2,3:in this heart, }",
+    "english": "{0:Oh, }{6,7:one must enshrine }{4,5:Mother }{3:in }{1:this }{2:heart, }",
     "words": [
       {
         "roman": "Ho",
@@ -6021,7 +6021,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ohnā̃ kī is dunīyā tõ laiṇā, jehdā Maiyā te aitabār hove",
-    "english": "{0,1:What have they }{5:to gain }{2,3,4:from this world, }{6:whose }{9:faith }{10:is }{7,8:in Mother?}",
+    "english": "{0,1:What have they }{5:to gain }{4:from }{2:this }{3:world, }{6:whose }{9:faith }{10:is }{7,8:in Mother?}",
     "words": [
       {
         "roman": "Ohnā̃",
@@ -6164,7 +6164,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ohnā̃ kī is dunīyā tõ laiṇā, jehdā Maiyā te aitabār hove",
-    "english": "{0,1:What have they }{5:to gain }{2,3,4:from this world, }{6:whose }{9:faith }{10:is }{7,8:in Mother?}",
+    "english": "{0,1:What have they }{5:to gain }{4:from }{2:this }{3:world, }{6:whose }{9:faith }{10:is }{7,8:in Mother?}",
     "words": [
       {
         "roman": "Ohnā̃",
@@ -6319,7 +6319,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ohnū kise cīz dī kamī nahī̃, mā̃ de caraṇā̃ vic jehdā pyār hove",
-    "english": "{10,11:One whose love }{12:is }{6,7,8,9:at Mother’s feet }{0,4,5:lacks }{1,2,3:nothing.}",
+    "english": "{10,11:One whose love }{12:is }{9:at }{6,7:Mother’s }{8:feet }{0,4,5:lacks }{1,2,3:nothing.}",
     "words": [
       {
         "roman": "Ohnū",
@@ -6498,7 +6498,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho mā̃ de caraṇā̃ vic jehdā pyār hove, mā̃ de caraṇā̃ vic jehdā pyār hove",
-    "english": "{0:Oh, }{5,6:whose love }{7:is }{1,2,3,4:at Mother's feet, }{12,13:whose love }{14:is }{8,9,10,11:at Mother's feet.}",
+    "english": "{0:Oh, }{5:whose }{6:love }{7:is }{4:at }{1,2:Mother's }{3:feet, }{12:whose }{13:love }{14:is }{11:at }{8,9:Mother's }{10:feet.}",
     "words": [
       {
         "roman": "Ho",
@@ -6677,7 +6677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ik mā̃ ko hī apnā mīt banā, merī mā̃ jo śerõ vālī hai",
-    "english": "{6:Make }{0,1,2,3:Mother alone }{4,5:your friend, }{7,8:my Mother }{9:who }{12:is }{10,11:the rider of lions.}",
+    "english": "{6:Make }{1,2:Mother }{0,3:alone }{4:your }{5:friend, }{7:my }{8:Mother }{9:who }{12:is }{10,11:the rider of lions.}",
     "words": [
       {
         "roman": "Ik",
@@ -6844,7 +6844,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ik mā̃ ko hī apnā mīt banā, merī mā̃ jo śerõ vālī hai",
-    "english": "{6:Make }{0,1,2,3:Mother alone }{4,5:your friend, }{7,8:my Mother }{9:who }{12:is }{10,11:the rider of lions.}",
+    "english": "{6:Make }{1,2:Mother }{0,3:alone }{4:your }{5:friend, }{7:my }{8:Mother }{9:who }{12:is }{10,11:the rider of lions.}",
     "words": [
       {
         "roman": "Ik",
@@ -6999,7 +6999,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū apnā-āp usī pe luṭā, merī mā̃ kī chaṭā nirālī hai",
-    "english": "{4:Surrender }{0,1:your very self }{2,3:upon Her alone; }{5,6,7:my Mother's }{8:radiance }{9,10:is wondrous.}",
+    "english": "{4:Surrender }{0,1:your very self }{2,3:upon Her alone; }{5,6,7:my Mother's }{8:radiance }{10:is }{9:wondrous.}",
     "words": [
       {
         "roman": "Tū",
@@ -7154,7 +7154,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Merī mā̃ kī chaṭā nirālī hai, hā̃ merī mā̃ kī chaṭā nirālī hai",
-    "english": "{0,1,2:My Mother's }{3:radiance }{4,5:is wondrous, }{6:yes, }{7,8,9:my Mother's }{10:radiance }{11,12:is wondrous.}",
+    "english": "{0,1,2:My Mother's }{3:radiance }{5:is }{4:wondrous, }{6:yes, }{7,8,9:my Mother's }{10:radiance }{12:is }{11:wondrous.}",
     "words": [
       {
         "roman": "Merī",
@@ -7303,7 +7303,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gar mil jāye Maiyā tujhko, to mujhse bhī milvā denā",
-    "english": "{0:If }{4:you }{1,2:should meet }{3:Mother, }{5:then }{8,9:bring }{6:me to meet her }{7:too.}",
+    "english": "{0:If }{4:you }{2:should }{1:meet }{3:Mother, }{5:then }{8,9:bring }{6:me to meet her }{7:too.}",
     "words": [
       {
         "roman": "Gar",
@@ -7434,7 +7434,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gar mil jāye Maiyā tujhko, to mujhko bhī milvā denā",
-    "english": "{0:If }{4:you }{1,2:should meet }{3:Mother, }{5:then }{8,9:bring }{6:me to meet her }{7:too.}",
+    "english": "{0:If }{4:you }{2:should }{1:meet }{3:Mother, }{5:then }{8,9:bring }{6:me to meet her }{7:too.}",
     "words": [
       {
         "roman": "Gar",
@@ -7583,7 +7583,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho terī bāt jo ho jāye mā̃ se, merī bhī bāt karā denā",
-    "english": "{0:Oh, }{3:if }{1:you }{2,4,5:get to speak }{6,7:with Mother, }{11,12:arrange for }{8:me }{10:to speak with her }{9:too.}",
+    "english": "{0:Oh, }{3:if }{1:you }{2,4,5:get to speak }{7:with }{6:Mother, }{11,12:arrange for }{8:me }{10:to speak with her }{9:too.}",
     "words": [
       {
         "roman": "Ho",
@@ -8417,7 +8417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jaikārā merī Śerā̃vālī Maiyā jī dā, bol sacce darabār kī jay!",
-    "english": "{0:Call of victory }{1,5:to my }{2,3,4:Lion-Riding Mother, }{6:proclaim }{7,8,9,10:victory to the true court!}",
+    "english": "{0:Call of victory }{1,5:to my }{2,3,4:Lion-Riding Mother, }{6:proclaim }{9,10:victory to }{7,8:the true court!}",
     "words": [
       {
         "roman": "Jaikārā",

@@ -117,20 +117,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "लक्ष्मीनारायणाय",
+        "text": "लक्ष्मी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "नारायणाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ lakṣmīnārāyaṇāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to }{1:Lakshmi-Narayana.}",
+    "english": "{0:Om, }{3:salutations }{2:to }{1:Lakshmi-}{2:Narayana.}",
     "words": [
       {
         "roman": "oṃ",
@@ -139,8 +145,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "lakṣmīnārāyaṇāya",
-        "gloss": "to Lakṣmīnārāyaṇa (Vishnu together with Lakshmi); Lakṣmī means “fortune” or “prosperity”; Nārāyaṇa is “he whose resting place is the waters”.",
+        "roman": "lakṣmī",
+        "gloss": "the goddess Lakṣmī, Vishnu’s consort; “fortune” or “prosperity”",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nārāyaṇāya",
+        "gloss": "to Nārāyaṇa, Vishnu; “he whose resting place is the waters”, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -164,20 +176,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कृष्णरामशिवमारुत्यादिरूपाय",
+        "text": "कृष्ण",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "राम",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "शिव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मारुत्या",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रूपाय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "oṃ kṛṣṇarāmaśivamārutyādirūpāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one having the forms of Krishna, Rama, Shiva, Maruti, and others.}",
+    "english": "{0:Om, }{7:salutations }{6:to the one having the forms }{1:of Krishna, }{2:Rama, }{3:Shiva, }{4:Maruti, }{5:and others.}",
     "words": [
       {
         "roman": "oṃ",
@@ -186,8 +228,38 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kṛṣṇarāmaśivamārutyādirūpāya",
-        "gloss": "to the one having the forms of Krishna, Rama, Shiva, Maruti, and others; The names evoke the dark one (Kṛṣṇa), delightful one (Rāma), auspicious one (Śiva), and son of the Wind (Māruti).",
+        "roman": "kṛṣṇa",
+        "gloss": "Krishna, the dark one",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rāma",
+        "gloss": "Rama, the delightful one",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śiva",
+        "gloss": "Shiva, the auspicious one",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "māruty",
+        "gloss": "Maruti, son of the Wind; māruti before a vowel",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and others; beginning with these",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rūpāya",
+        "gloss": "to the one having the forms; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -258,20 +330,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "गोदावरीतटशिरडीवासिने",
+        "text": "गोदावरी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "तट",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "शिरडी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वासिने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ godāvarītaṭaśiraḍīvāsine namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the dweller of Shirdi on the bank of the Godavari.}",
+    "english": "{0:Om, }{5:salutations }{4:to the dweller }{3:of Shirdi }{2:on the bank }{1:of the Godavari.}",
     "words": [
       {
         "roman": "oṃ",
@@ -280,8 +370,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "godāvarītaṭaśiraḍīvāsine",
-        "gloss": "to the dweller of Shirdi on the bank of the Godavari",
+        "roman": "godāvarī",
+        "gloss": "the river Godavari",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "taṭa",
+        "gloss": "bank, shore",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śiraḍī",
+        "gloss": "Shirdi, the village",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vāsine",
+        "gloss": "to the dweller; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -305,20 +413,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तहृदालयाय",
+        "text": "भक्त",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "हृदा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "लयाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bhaktahṛdālayāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one whose temple is the devotee's heart.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one whose temple is }{1:the devotee's }{2:heart.}",
     "words": [
       {
         "roman": "oṃ",
@@ -327,8 +447,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktahṛdālayāya",
-        "gloss": "to the one whose temple/abode is the devotee's heart",
+        "roman": "bhakta",
+        "gloss": "devotee",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hṛd",
+        "gloss": "heart",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ālayāya",
+        "gloss": "to the one whose abode, temple is; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -352,20 +484,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वहृन्निलयाय",
+        "text": "सर्व",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "हृ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "न्निलयाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvahṛnnilayāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the indweller of all hearts.}",
+    "english": "{0:Om, }{4:salutations }{3:to the indweller }{1:of all }{2:hearts.}",
     "words": [
       {
         "roman": "oṃ",
@@ -374,8 +518,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvahṛnnilayāya",
-        "gloss": "to the indweller of all hearts",
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hṛn",
+        "gloss": "heart; hṛd before n",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nilayāya",
+        "gloss": "to the indweller; nilaya, abode, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -446,20 +602,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भूतभविष्यद्भाववर्जिताय",
+        "text": "भूत",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "भविष्य",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "द्भाव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वर्जिताय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ bhūtabhaviṣyadbhāvavarjitāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one devoid of past and future states of becoming.}",
+    "english": "{0:Om, }{5:salutations }{4:to the one devoid }{1:of past }{2:and future }{3:states of becoming.}",
     "words": [
       {
         "roman": "oṃ",
@@ -468,8 +642,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhūtabhaviṣyadbhāvavarjitāya",
-        "gloss": "to the one devoid of past and future states of becoming",
+        "roman": "bhūta",
+        "gloss": "past",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhaviṣyad",
+        "gloss": "future; bhaviṣyat before bh",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhāva",
+        "gloss": "state of becoming",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "varjitāya",
+        "gloss": "to the one devoid of; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -634,20 +826,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कालदर्पदमनाय",
+        "text": "काल",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "दर्प",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दमनाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ kāladarpadamanāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the subduer of the pride of Death.}",
+    "english": "{0:Om, }{4:salutations }{3:to the subduer }{2:of the pride }{1:of Death.}",
     "words": [
       {
         "roman": "oṃ",
@@ -656,8 +860,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kāladarpadamanāya",
-        "gloss": "to the subduer of the pride of Time/Death",
+        "roman": "kāla",
+        "gloss": "Death; Time",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "darpa",
+        "gloss": "pride",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "damanāya",
+        "gloss": "to the subduer; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -775,20 +991,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मर्त्याभयप्रदाय",
+        "text": "म",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "र्त्या",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "भय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रदाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ martyābhayapradāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of fearlessness upon mortals.}",
+    "english": "{0:Om, }{4:salutations }{3:to the bestower }{2:of fearlessness }{1:upon mortals.}",
     "words": [
       {
         "roman": "oṃ",
@@ -797,8 +1032,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "martyābhayapradāya",
-        "gloss": "to the bestower of fearlessness upon mortals",
+        "roman": "marty",
+        "gloss": "mortals; martya joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ābhaya",
+        "gloss": "fearlessness; abhaya",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradāya",
+        "gloss": "to the bestower; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -916,20 +1163,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तावनसमर्थाय",
+        "text": "भ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "क्ता",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "वन",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "समर्थाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bhaktāvanasamarthāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one capable of protecting devotees.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one capable }{2:of protecting }{1:devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -938,8 +1204,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktāvanasamarthāya",
-        "gloss": "to the one capable of protecting devotees",
+        "roman": "bhakt",
+        "gloss": "devotees; bhakta joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āvana",
+        "gloss": "protecting; avana",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "samarthāya",
+        "gloss": "to the one capable; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -963,20 +1241,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तावनप्रतिज्ञाय",
+        "text": "भ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "क्ता",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "वन",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रतिज्ञाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bhaktāvanapratijñāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one vowed to protect devotees.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one vowed }{2:to protect }{1:devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -985,8 +1282,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktāvanapratijñāya",
-        "gloss": "to the one pledged/vowed to protect devotees",
+        "roman": "bhakt",
+        "gloss": "devotees; bhakta joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āvana",
+        "gloss": "protecting; avana",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pratijñāya",
+        "gloss": "to the one pledged, vowed; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1010,20 +1319,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अन्नवस्त्रदाय",
+        "text": "अन्न",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "वस्त्र",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ annavastradāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the giver of food and clothing.}",
+    "english": "{0:Om, }{4:salutations }{3:to the giver }{1:of food }{2:and clothing.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1032,8 +1353,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "annavastradāya",
-        "gloss": "to the giver of food and clothing",
+        "roman": "anna",
+        "gloss": "food",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vastra",
+        "gloss": "clothing",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the giver; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1057,20 +1390,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "आरोग्यक्षेमदाय",
+        "text": "आरोग्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "क्षेम",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ ārogyakṣemadāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of health and well-being.}",
+    "english": "{0:Om, }{4:salutations }{3:to the bestower }{1:of health }{2:and well-being.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1079,8 +1424,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ārogyakṣemadāya",
-        "gloss": "to the bestower of health and security",
+        "roman": "ārogya",
+        "gloss": "health",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṣema",
+        "gloss": "well-being, security",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the bestower; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1104,20 +1461,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "धनमाङ्गल्यप्रदाय",
+        "text": "धन",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "माङ्गल्य",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रदाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ dhanamāṅgalyapradāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of wealth and auspiciousness.}",
+    "english": "{0:Om, }{4:salutations }{3:to the bestower }{1:of wealth }{2:and auspiciousness.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1126,8 +1495,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dhanamāṅgalyapradāya",
-        "gloss": "to the bestower of wealth and auspicious fortune",
+        "roman": "dhana",
+        "gloss": "wealth",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "māṅgalya",
+        "gloss": "auspiciousness, auspicious fortune",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradāya",
+        "gloss": "to the bestower; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1151,20 +1532,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ऋद्धिसिद्धिदाय",
+        "text": "ऋद्धि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सिद्धि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ ṛddhisiddhidāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the giver of prosperity and accomplishment.}",
+    "english": "{0:Om, }{4:salutations }{3:to the giver }{1:of prosperity }{2:and accomplishment.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1173,8 +1566,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ṛddhisiddhidāya",
-        "gloss": "to the giver of flourishing prosperity and accomplishment",
+        "roman": "ṛddhi",
+        "gloss": "prosperity",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "siddhi",
+        "gloss": "accomplishment",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the giver; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1198,20 +1603,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पुत्रमित्रकलत्रबन्धुदाय",
+        "text": "पुत्र",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "मित्र",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कलत्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बन्धु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "oṃ putramitrakalatrabandhudāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of children, friends, spouse, and kinsfolk.}",
+    "english": "{0:Om, }{6:salutations }{5:to the bestower }{1:of children, }{2:friends, }{3:spouse, }{4:and kinsfolk.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1220,8 +1649,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "putramitrakalatrabandhudāya",
-        "gloss": "to the bestower of children, friends, spouse, and kinsfolk",
+        "roman": "putra",
+        "gloss": "children; sons",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mitra",
+        "gloss": "friends",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kalatra",
+        "gloss": "spouse; wife",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bandhu",
+        "gloss": "kinsfolk",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the bestower; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1245,20 +1698,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "योगक्षेमवहाय",
+        "text": "योग",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "क्षेम",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "वहाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ yogakṣemavahāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one who brings what is needed and safeguards it.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one who brings }{1:what is needed }{2:and safeguards it.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1267,8 +1732,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "yogakṣemavahāya",
-        "gloss": "to the bearer of supply and security",
+        "roman": "yoga",
+        "gloss": "supply; gaining what is needed",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṣema",
+        "gloss": "security; safeguarding what is gained",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vahāya",
+        "gloss": "to the bearer, the one who brings; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1292,20 +1769,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "आपद्बान्धवाय",
+        "text": "आप",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "द्बान्धवाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ āpadbāndhavāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the kinsman in times of distress.}",
+    "english": "{0:Om, }{3:salutations }{2:to the kinsman }{1:in times of distress.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1314,8 +1797,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "āpadbāndhavāya",
-        "gloss": "to the kinsman in times of distress",
+        "roman": "āpad",
+        "gloss": "distress, calamity",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bāndhavāya",
+        "gloss": "to the kinsman; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1386,20 +1875,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भुक्तिमुक्तिस्वर्गापवर्गदाय",
+        "text": "भुक्ति",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "मुक्ति",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्वर्गा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पवर्ग",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "oṃ bhuktimuktisvargāpavargadāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the giver of enjoyment, liberation, heaven, and supreme beatitude.}",
+    "english": "{0:Om, }{6:salutations }{5:to the giver }{1:of enjoyment, }{2:liberation, }{3:heaven, }{4:and supreme beatitude.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1408,8 +1921,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhuktimuktisvargāpavargadāya",
-        "gloss": "to the giver of enjoyment, liberation, heaven, and supreme beatitude",
+        "roman": "bhukti",
+        "gloss": "enjoyment",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mukti",
+        "gloss": "liberation",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "svarg",
+        "gloss": "heaven; svarga joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āpavarga",
+        "gloss": "supreme beatitude, final release; apavarga",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the giver; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1480,20 +2017,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "प्रीतिवर्धनाय",
+        "text": "प्रीति",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "वर्धनाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ prītivardhanāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the increaser of loving affection.}",
+    "english": "{0:Om, }{3:salutations }{2:to the increaser }{1:of loving affection.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1502,8 +2045,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "prītivardhanāya",
-        "gloss": "to the increaser of loving affection",
+        "roman": "prīti",
+        "gloss": "loving affection",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vardhanāya",
+        "gloss": "to the increaser; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1668,20 +2217,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "परमसुखदाय",
+        "text": "परम",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सुख",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ paramasukhadāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the giver of supreme happiness.}",
+    "english": "{0:Om, }{4:salutations }{3:to the giver }{1:of supreme }{2:happiness.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1690,8 +2251,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "paramasukhadāya",
-        "gloss": "to the giver of supreme happiness",
+        "roman": "parama",
+        "gloss": "supreme",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sukha",
+        "gloss": "happiness",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the giver; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1856,20 +2429,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ज्ञानस्वरूपिणे",
+        "text": "ज्ञान",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "स्वरूपिणे",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ jñānasvarūpiṇe namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the embodiment of knowledge.}",
+    "english": "{0:Om, }{3:salutations }{2:to the embodiment }{1:of knowledge.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1878,8 +2457,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jñānasvarūpiṇe",
-        "gloss": "to the embodiment of knowledge",
+        "roman": "jñāna",
+        "gloss": "knowledge",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "svarūpiṇe",
+        "gloss": "to the embodiment; “whose own form is”, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1956,20 +2541,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मातृधातृपितामहाय",
+        "text": "मातृ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "नमः",
+        "text": "धातृ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "पितामहाय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ bhaktānāṃ mātṛdhātṛpitāmahāya namaḥ",
-    "english": "{0:Om, }{3:salutations }{2:to the mother, sustainer, and grandfather }{1:of devotees.}",
+    "english": "{0:Om, }{5:salutations }{2:to the mother, }{3:sustainer, }{4:and grandfather }{1:of devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -1984,8 +2581,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mātṛdhātṛpitāmahāya",
-        "gloss": "to the mother, sustainer, and grandfather",
+        "roman": "mātṛ",
+        "gloss": "mother",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhātṛ",
+        "gloss": "sustainer",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pitāmahāya",
+        "gloss": "to the grandfather; dative for all three members",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2009,20 +2618,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्ताभयप्रदाय",
+        "text": "भ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "क्ता",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "भय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रदाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bhaktābhayapradāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of fearlessness upon devotees.}",
+    "english": "{0:Om, }{4:salutations }{3:to the bestower }{2:of fearlessness }{1:upon devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2031,8 +2659,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktābhayapradāya",
-        "gloss": "to the bestower of fearlessness upon devotees",
+        "roman": "bhakt",
+        "gloss": "devotees; bhakta joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ābhaya",
+        "gloss": "fearlessness; abhaya",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradāya",
+        "gloss": "to the bestower; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2056,20 +2696,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तपराधीनाय",
+        "text": "भक्त",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "पराधीनाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ bhaktaparādhīnāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one subject to his devotees.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one subject }{1:to his devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2078,8 +2724,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktaparādhīnāya",
-        "gloss": "to the one subject to his devotees",
+        "roman": "bhakta",
+        "gloss": "devotees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "parādhīnāya",
+        "gloss": "to the one subject, dependent; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2103,20 +2755,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तानुग्रहकातराय",
+        "text": "भक्ता",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "नुग्रह",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कातराय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bhaktānugrahakātarāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one eager to shower grace on devotees.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one eager }{2:to shower grace }{1:on devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2125,8 +2789,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktānugrahakātarāya",
-        "gloss": "to the one eager to shower grace on devotees",
+        "roman": "bhakt",
+        "gloss": "devotees; bhakta joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ānugraha",
+        "gloss": "grace; anugraha",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kātarāya",
+        "gloss": "to the one eager; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2150,20 +2826,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "शरणागतवत्सलाय",
+        "text": "शरणा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "गत",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "वत्सलाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ śaraṇāgatavatsalāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one affectionate toward those seeking refuge.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one affectionate }{2:toward those seeking }{1:refuge.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2172,8 +2860,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śaraṇāgatavatsalāya",
-        "gloss": "to the one affectionate toward those seeking refuge",
+        "roman": "śaraṇ",
+        "gloss": "refuge; śaraṇa joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āgata",
+        "gloss": "those who have come to, seeking",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vatsalāya",
+        "gloss": "to the one affectionate; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2197,20 +2897,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तिशक्तिप्रदाय",
+        "text": "भक्ति",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "शक्ति",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रदाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bhaktiśaktipradāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of devotion and spiritual strength.}",
+    "english": "{0:Om, }{4:salutations }{3:to the bestower }{1:of devotion }{2:and spiritual strength.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2219,8 +2931,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktiśaktipradāya",
-        "gloss": "to the bestower of devotion and spiritual strength",
+        "roman": "bhakti",
+        "gloss": "devotion",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śakti",
+        "gloss": "spiritual strength",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradāya",
+        "gloss": "to the bestower; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2244,20 +2968,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ज्ञानवैराग्यदाय",
+        "text": "ज्ञान",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "वैराग्य",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ jñānavairāgyadāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the giver of knowledge and dispassion.}",
+    "english": "{0:Om, }{4:salutations }{3:to the giver }{1:of knowledge }{2:and dispassion.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2266,8 +3002,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jñānavairāgyadāya",
-        "gloss": "to the giver of knowledge and dispassion",
+        "roman": "jñāna",
+        "gloss": "knowledge",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vairāgya",
+        "gloss": "dispassion",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāya",
+        "gloss": "to the giver; da, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2350,26 +3098,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पापकर्म",
+        "text": "पाप",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "वासनाक्षयकराय",
+        "text": "कर्म",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "नमः",
+        "text": "वासना",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "क्षय",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "कराय",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "oṃ saṃśaya hṛdayadaurbalya pāpakarma vāsanākṣayakarāya namaḥ",
-    "english": "{0:Om, }{5:salutations }{4:to the cause of destruction of }{1:doubt, }{2:faintheartedness, }{3:sinful action, }{4:and latent impressions.}",
+    "english": "{0:Om, }{8:salutations }{7:to the cause }{6:of destruction of }{1:doubt, }{2:faintheartedness, }{3:sinful }{4:action, }{5:and latent impressions.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2390,14 +3156,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pāpakarma",
-        "gloss": "sinful action",
+        "roman": "pāpa",
+        "gloss": "sinful; sin",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vāsanākṣayakarāya",
-        "gloss": "to the cause of destruction of latent impressions",
+        "roman": "karma",
+        "gloss": "action",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vāsanā",
+        "gloss": "latent impressions",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṣaya",
+        "gloss": "destruction",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "karāya",
+        "gloss": "to the cause, the maker; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2421,20 +3205,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "हृदयग्रन्थिभेदकाय",
+        "text": "हृदय",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "ग्रन्थि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "भेदकाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ hṛdayagranthibhedakāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the piercer of the knots of the heart.}",
+    "english": "{0:Om, }{4:salutations }{3:to the piercer }{2:of the knots }{1:of the heart.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2443,8 +3239,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "hṛdayagranthibhedakāya",
-        "gloss": "to the piercer of the knots of the heart",
+        "roman": "hṛdaya",
+        "gloss": "heart",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "granthi",
+        "gloss": "knot",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhedakāya",
+        "gloss": "to the piercer; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2468,20 +3276,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कर्मध्वंसिने",
+        "text": "कर्म",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "ध्वंसिने",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ karmadhvaṃsine namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the destroyer of karmic bondage.}",
+    "english": "{0:Om, }{3:salutations }{2:to the destroyer }{1:of karmic bondage.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2490,8 +3304,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karmadhvaṃsine",
-        "gloss": "to the destroyer of karmic bondage",
+        "roman": "karma",
+        "gloss": "karmic bondage; action and its results",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhvaṃsine",
+        "gloss": "to the destroyer; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2515,20 +3335,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "शुद्धसत्त्वस्थिताय",
+        "text": "शुद्ध",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सत्त्व",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्थिताय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ śuddhasattvasthitāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one established in pure being.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one established }{1:in pure }{2:being.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2537,8 +3369,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śuddhasattvasthitāya",
-        "gloss": "to the one established in pure being",
+        "roman": "śuddha",
+        "gloss": "pure",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sattva",
+        "gloss": "being; the quality of purity",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sthitāya",
+        "gloss": "to the one established in; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2562,20 +3406,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "गुणातीतगुणात्मने",
+        "text": "गुणा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "तीत",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "गुणा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "त्मने",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ guṇātītaguṇātmane namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one beyond the qualities yet the soul of all qualities.}",
+    "english": "{0:Om, }{5:salutations }{2:to the one beyond }{1:the qualities }{4:yet the soul }{3:of all qualities.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2584,8 +3446,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "guṇātītaguṇātmane",
-        "gloss": "to the one beyond the qualities yet the soul of all qualities",
+        "roman": "guṇ",
+        "gloss": "the qualities; guṇa joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ātīta",
+        "gloss": "beyond; atīta",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "guṇ",
+        "gloss": "qualities; guṇa joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ātmane",
+        "gloss": "to the soul of; ātman, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2609,20 +3489,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अनन्तकल्याणगुणाय",
+        "text": "अनन्त",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "कल्याण",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "गुणाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ anantakalyāṇaguṇāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one endowed with infinite auspicious qualities.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one endowed with }{1:infinite }{2:auspicious }{3:qualities.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2631,8 +3523,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "anantakalyāṇaguṇāya",
-        "gloss": "to the one endowed with infinite auspicious qualities",
+        "roman": "ananta",
+        "gloss": "infinite",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kalyāṇa",
+        "gloss": "auspicious",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "guṇāya",
+        "gloss": "to the one endowed with qualities; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2656,20 +3560,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अमितपराक्रमाय",
+        "text": "अमित",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "पराक्रमाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ amitaparākramāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one of immeasurable prowess.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one of }{1:immeasurable }{2:prowess.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2678,8 +3588,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "amitaparākramāya",
-        "gloss": "to the one of immeasurable prowess",
+        "roman": "amita",
+        "gloss": "immeasurable",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "parākramāya",
+        "gloss": "to the one of prowess; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2750,20 +3666,33 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दुर्धर्षाक्षोभ्याय",
+        "text": "दुर्ध",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "र्षा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "क्षोभ्याय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ durdharṣākṣobhyāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the unassailable and imperturbable one.}",
+    "english": "{0:Om, }{3:salutations }{2:to the }{1:unassailable }{2:and imperturbable one.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2772,8 +3701,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "durdharṣākṣobhyāya",
-        "gloss": "to the unassailable and imperturbable one",
+        "roman": "durdharṣ",
+        "gloss": "unassailable; durdharṣa joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ākṣobhyāya",
+        "gloss": "to the imperturbable one; akṣobhya, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2844,20 +3779,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "त्रिलोकेष्वविघातगतये",
+        "text": "त्रि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "लोके",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ष्व",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "विघात",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "गतये",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ trilokeṣvavighātagataye namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one whose course is unobstructed in the three worlds.}",
+    "english": "{0:Om, }{5:salutations }{4:to the one whose course }{3:is unobstructed }{2:in the }{1:three }{2:worlds.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2866,8 +3826,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "trilokeṣvavighātagataye",
-        "gloss": "to the one whose course is unobstructed in the three worlds",
+        "roman": "tri",
+        "gloss": "three",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "lokeṣv",
+        "gloss": "in the worlds; lokeṣu, locative, before a vowel",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "avighāta",
+        "gloss": "unobstructed",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "gataye",
+        "gloss": "to the one whose course is; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2891,20 +3869,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अशक्यरहिताय",
+        "text": "अशक्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "रहिताय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ aśakyarahitāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one for whom nothing is impossible.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one for whom nothing }{1:is impossible.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2913,8 +3897,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "aśakyarahitāya",
-        "gloss": "to the one devoid of the impossible",
+        "roman": "aśakya",
+        "gloss": "the impossible; what cannot be done",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rahitāya",
+        "gloss": "to the one devoid of; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2938,20 +3928,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वशक्तिमूर्तये",
+        "text": "सर्व",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "शक्ति",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मूर्तये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvaśaktimūrtaye namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the embodiment of all powers.}",
+    "english": "{0:Om, }{4:salutations }{3:to the embodiment }{1:of all }{2:powers.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2960,8 +3962,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvaśaktimūrtaye",
-        "gloss": "to the embodiment of all powers",
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śakti",
+        "gloss": "powers",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mūrtaye",
+        "gloss": "to the embodiment; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2985,20 +3999,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सुरूपसुन्दराय",
+        "text": "सुरूप",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सुन्दराय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ surūpasundarāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one of beautiful form and exquisite charm.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one }{1:of beautiful form }{2:and exquisite charm.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3007,8 +4027,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "surūpasundarāya",
-        "gloss": "to the one of beautiful form and exquisite charm",
+        "roman": "surūpa",
+        "gloss": "of beautiful form",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sundarāya",
+        "gloss": "to the one of exquisite charm; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3079,20 +4105,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "बहुरूपविश्वमूर्तये",
+        "text": "बहुरूप",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "विश्व",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मूर्तये",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ bahurūpaviśvamūrtaye namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the multiform one whose body is the universe.}",
+    "english": "{0:Om, }{4:salutations }{3:to the }{1:multiform one }{3:whose body is }{2:the universe.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3101,8 +4139,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bahurūpaviśvamūrtaye",
-        "gloss": "to the multiform one whose body is the universe",
+        "roman": "bahurūpa",
+        "gloss": "multiform; having many forms",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "viśva",
+        "gloss": "the universe",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mūrtaye",
+        "gloss": "to the one whose body is; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3267,20 +4317,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वान्तर्यामिने",
+        "text": "सर्वा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "न्त",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "र्यामिने",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvāntaryāmine namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the inner ruler of all.}",
+    "english": "{0:Om, }{4:salutations }{3:to the }{2:inner }{3:ruler }{1:of all.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3289,8 +4351,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvāntaryāmine",
-        "gloss": "to the inner ruler of all",
+        "roman": "sarv",
+        "gloss": "all; sarva joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āntar",
+        "gloss": "inner, within; antar",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yāmine",
+        "gloss": "to the ruler, controller; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3314,20 +4388,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मनोवागतीताय",
+        "text": "मनो",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "वा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "गतीताय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ manovāgatītāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one beyond mind and speech.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one beyond }{1:mind }{2:and speech.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3336,8 +4422,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "manovāgatītāya",
-        "gloss": "to the one beyond mind and speech",
+        "roman": "mano",
+        "gloss": "mind; manas in compound",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vāg",
+        "gloss": "speech; vāc before a vowel",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "atītāya",
+        "gloss": "to the one beyond; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3408,20 +4506,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सुलभदुर्लभाय",
+        "text": "सुलभ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "दुर्लभाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ sulabhadurlabhāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one easily attained yet hard to attain.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one }{1:easily attained }{2:yet hard to attain.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3430,8 +4534,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sulabhadurlabhāya",
-        "gloss": "to the one easily attained yet hard to attain",
+        "roman": "sulabha",
+        "gloss": "easily attained",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "durlabhāya",
+        "gloss": "to the one hard to attain; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3455,20 +4565,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "असहायसहायाय",
+        "text": "असहाय",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सहायाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ asahāyasahāyāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the helper of the helpless.}",
+    "english": "{0:Om, }{3:salutations }{2:to the helper }{1:of the helpless.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3477,8 +4593,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "asahāyasahāyāya",
-        "gloss": "to the helper of the helpless",
+        "roman": "asahāya",
+        "gloss": "the helpless",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sahāyāya",
+        "gloss": "to the helper; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3502,20 +4624,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अनाथनाथदीनबन्धवे",
+        "text": "अनाथ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "नाथ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दीन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बन्धवे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ anāthanāthadīnabandhave namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the protector of the shelterless and friend of the afflicted.}",
+    "english": "{0:Om, }{5:salutations }{2:to the protector }{1:of the shelterless }{4:and friend }{3:of the afflicted.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3524,8 +4664,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "anāthanāthadīnabandhave",
-        "gloss": "to the protector of the shelterless and friend of the afflicted",
+        "roman": "anātha",
+        "gloss": "the shelterless; without a protector",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nātha",
+        "gloss": "protector, lord",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dīna",
+        "gloss": "the afflicted",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bandhave",
+        "gloss": "to the friend; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3549,20 +4707,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वभारभृते",
+        "text": "सर्व",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "भार",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "भृते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvabhārabhṛte namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bearer of all burdens.}",
+    "english": "{0:Om, }{4:salutations }{3:to the bearer }{1:of all }{2:burdens.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3571,8 +4741,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvabhārabhṛte",
-        "gloss": "to the bearer of all burdens",
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhāra",
+        "gloss": "burdens",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhṛte",
+        "gloss": "to the bearer; bhṛt, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3596,20 +4778,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अकर्मानेककर्मसुकर्मिणे",
+        "text": "अक",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "र्मा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "नेक",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कर्म",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुकर्मिणे",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ akarmānekakarmasukarmiṇe namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the actionless one who performs manifold noble deeds.}",
+    "english": "{0:Om, }{5:salutations }{4:to the }{1:actionless one }{4:who performs }{2:manifold }{4:noble }{3:deeds.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3618,8 +4825,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "akarmānekakarmasukarmiṇe",
-        "gloss": "to the actionless one who performs manifold noble deeds",
+        "roman": "akarm",
+        "gloss": "actionless; akarman joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āneka",
+        "gloss": "manifold; aneka",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "karma",
+        "gloss": "deeds",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sukarmiṇe",
+        "gloss": "to the one who performs noble deeds; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3643,20 +4868,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पुण्यश्रवणकीर्तनाय",
+        "text": "पुण्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "श्रवण",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कीर्तनाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ puṇyaśravaṇakīrtanāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one whom it is meritorious to hear of and praise.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one whom }{1:it is meritorious }{2:to hear of }{3:and praise.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3665,8 +4902,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "puṇyaśravaṇakīrtanāya",
-        "gloss": "to the one whose hearing and glorification purify",
+        "roman": "puṇya",
+        "gloss": "meritorious, purifying",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śravaṇa",
+        "gloss": "hearing",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kīrtanāya",
+        "gloss": "to the one whose praise, glorification is; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4019,20 +5268,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भास्करप्रभाय",
+        "text": "भास्कर",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "प्रभाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ bhāskaraprabhāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one with the brilliance of the sun.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one with the brilliance }{1:of the sun.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4041,8 +5296,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhāskaraprabhāya",
-        "gloss": "to the one possessing the brilliance of the sun",
+        "roman": "bhāskara",
+        "gloss": "sun; “light-maker”",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "prabhāya",
+        "gloss": "to the one with the brilliance; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4066,20 +5327,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ब्रह्मचर्यतपश्चर्यादिसुव्रताय",
+        "text": "ब्रह्मचर्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "तपश्चर्या",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुव्रताय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ brahmacaryatapaścaryādisuvratāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one of noble vows such as celibacy and ascetic practice.}",
+    "english": "{0:Om, }{5:salutations }{4:to the one of noble vows }{3:such as }{1:celibacy }{2:and ascetic practice.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4088,8 +5367,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "brahmacaryatapaścaryādisuvratāya",
-        "gloss": "to the one of excellent vows such as celibacy and ascetic practice",
+        "roman": "brahmacarya",
+        "gloss": "celibacy",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tapaścary",
+        "gloss": "ascetic practice; tapaścaryā joined ā + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādi",
+        "gloss": "such as; beginning with",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "suvratāya",
+        "gloss": "to the one of noble vows; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4113,20 +5410,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सत्यधर्मपरायणाय",
+        "text": "सत्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "धर्म",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "परायणाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ satyadharmaparāyaṇāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one wholly dedicated to truth and righteousness.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one wholly dedicated }{1:to truth }{2:and righteousness.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4135,8 +5444,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "satyadharmaparāyaṇāya",
-        "gloss": "to the one devoted to truth and righteousness",
+        "roman": "satya",
+        "gloss": "truth",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dharma",
+        "gloss": "righteousness",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "parāyaṇāya",
+        "gloss": "to the one wholly devoted; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4207,20 +5528,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सिद्धसङ्कल्पाय",
+        "text": "सिद्ध",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सङ्कल्पाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ siddhasaṅkalpāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one whose resolve is ever fulfilled.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one whose resolve }{1:is ever fulfilled.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4229,8 +5556,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "siddhasaṅkalpāya",
-        "gloss": "to the one whose intentions and resolve are ever-fulfilled",
+        "roman": "siddha",
+        "gloss": "ever fulfilled, accomplished",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "saṅkalpāya",
+        "gloss": "to the one whose resolve is; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4348,20 +5681,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भक्तवत्सलाय",
+        "text": "भक्त",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "वत्सलाय",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "oṃ bhaktavatsalāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one tenderly affectionate toward devotees.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one tenderly affectionate }{1:toward devotees.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4370,8 +5709,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktavatsalāya",
-        "gloss": "to the one affectionately tender toward devotees",
+        "roman": "bhakta",
+        "gloss": "devotees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vatsalāya",
+        "gloss": "to the one tenderly affectionate; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4489,20 +5834,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सत्यतत्त्वबोधकाय",
+        "text": "सत्य",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "तत्त्व",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "बोधकाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ satyatattvabodhakāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the awakener to true reality.}",
+    "english": "{0:Om, }{4:salutations }{3:to the awakener }{1:to true }{2:reality.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4511,8 +5868,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "satyatattvabodhakāya",
-        "gloss": "to the teacher and awakener of the true reality",
+        "roman": "satya",
+        "gloss": "true",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tattva",
+        "gloss": "reality",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bodhakāya",
+        "gloss": "to the awakener, teacher; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4536,20 +5905,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कामादिषड्वैरिध्वंसिने",
+        "text": "कामा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "दि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ड्वैरि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ध्वंसिने",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "oṃ kāmādiṣaḍvairidhvaṃsine namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the destroyer of the six enemies beginning with desire.}",
+    "english": "{0:Om, }{6:salutations }{5:to the destroyer }{3:of the six }{4:enemies }{2:beginning with }{1:desire.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4558,8 +5951,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kāmādiṣaḍvairidhvaṃsine",
-        "gloss": "to the destroyer of the six inner enemies beginning with lust and desire",
+        "roman": "kām",
+        "gloss": "desire, lust; kāma joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādi",
+        "gloss": "beginning with",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ṣaḍ",
+        "gloss": "six; ṣaṣ before v",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vairi",
+        "gloss": "enemies, here inner ones; vairin",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhvaṃsine",
+        "gloss": "to the destroyer; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4583,20 +6000,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अभेदानन्दानुभवप्रदाय",
+        "text": "अभेदा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "नन्दा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नुभव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रदाय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ abhedānandānubhavapradāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the bestower of the direct experience of non-dual bliss.}",
+    "english": "{0:Om, }{5:salutations }{4:to the bestower }{3:of the direct experience }{1:of non-dual }{2:bliss.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4605,8 +6040,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "abhedānandānubhavapradāya",
-        "gloss": "to the bestower of the direct experience of non-dual bliss",
+        "roman": "abhed",
+        "gloss": "non-dual, without difference; abheda joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ānand",
+        "gloss": "bliss; ānanda joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ānubhava",
+        "gloss": "direct experience; anubhava",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradāya",
+        "gloss": "to the bestower; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4630,20 +6083,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "समसर्वसम्मताय",
+        "text": "सम",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सर्व",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सम्मताय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ samasarvasammatāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the equanimous one revered by all.}",
+    "english": "{0:Om, }{4:salutations }{3:to the }{1:equanimous one }{3:revered }{2:by all.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4652,8 +6117,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "samasarvasammatāya",
-        "gloss": "to the equanimous one unanimously revered and accepted by all",
+        "roman": "sama",
+        "gloss": "equanimous, even",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sammatāya",
+        "gloss": "to the one revered, accepted by; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4742,20 +6219,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "वेङ्कटेशारमणाय",
+        "text": "वेङ्कटेशा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "नमः",
+        "text": "रमणाय",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ śrī veṅkaṭeśāramaṇāya namaḥ",
-    "english": "{0:Om, }{3:salutations }{1:to the holy, }{2:beloved Lord Venkatesha.}",
+    "english": "{0:Om, }{4:salutations }{1:to the holy, }{3:beloved }{2:Lord Venkatesha.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4770,8 +6253,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "veṅkaṭeśāramaṇāya",
-        "gloss": "to the beloved Lord Venkatesha; to the one delighting as Lord of Venkata",
+        "roman": "veṅkaṭeśā",
+        "gloss": "Lord Venkatesha, Lord of Venkata",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ramaṇāya",
+        "gloss": "to the beloved, the delighting one; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4795,20 +6284,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अद्भुतानन्दचर्याय",
+        "text": "अद्भुता",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "नन्द",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "चर्याय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ adbhutānandacaryāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the one of wondrous and blissful conduct.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one of }{1:wondrous }{2:and blissful }{3:conduct.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4817,8 +6318,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "adbhutānandacaryāya",
-        "gloss": "to the one whose life-conduct and deeds are wondrous and blissful",
+        "roman": "adbhut",
+        "gloss": "wondrous; adbhuta joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ānanda",
+        "gloss": "bliss; blissful",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "caryāya",
+        "gloss": "to the one whose conduct is; dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4842,20 +6355,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "प्रपन्नार्तिहराय",
+        "text": "प्रपन्ना",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "र्ति",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "हराय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ prapannārtiharāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the remover of the distress of those who seek refuge.}",
+    "english": "{0:Om, }{4:salutations }{3:to the remover }{2:of the distress }{1:of those who seek refuge.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4864,8 +6389,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "prapannārtiharāya",
-        "gloss": "to the remover of the affliction of those who take refuge; prapanna (surrendered / sought refuge) + ārti (distress / pain) + hara (remover / destroyer) + dative -āya",
+        "roman": "prapann",
+        "gloss": "those who seek refuge, the surrendered; prapanna joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārti",
+        "gloss": "distress, pain",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "harāya",
+        "gloss": "to the remover; hara, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4889,20 +6426,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "संसारसर्वदुःखक्षयकराय",
+        "text": "संसार",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "सर्व",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दुःख",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "क्षय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कराय",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "oṃ saṃsārasarvaduḥkhakṣayakarāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the one who ends all the sorrows of worldly existence.}",
+    "english": "{0:Om, }{6:salutations }{5:to the one who }{4:ends }{2:all }{3:the sorrows }{1:of worldly existence.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4911,8 +6472,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "saṃsārasarvaduḥkhakṣayakarāya",
-        "gloss": "to the causer of the cessation of all sorrows of worldly existence; saṃsāra (cycle of conditioned birth and death) + sarva (all) + duḥkha (sorrow / suffering) + kṣaya (destruction / end) + kara (maker / causer) + dative -āya",
+        "roman": "saṃsāra",
+        "gloss": "worldly existence; the cycle of conditioned birth and death",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "duḥkha",
+        "gloss": "sorrow, suffering",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṣaya",
+        "gloss": "end, destruction",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "karāya",
+        "gloss": "to the one who causes; kara, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4936,20 +6521,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्ववित्सर्वतोमुखाय",
+        "text": "सर्ववि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "त्सर्वतो",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मुखाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvavitsarvatomukhāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the all-knowing one who faces in all directions.}",
+    "english": "{0:Om, }{4:salutations }{3:to the }{1:all-knowing one }{3:who faces }{2:in all directions.}",
     "words": [
       {
         "roman": "oṃ",
@@ -4958,8 +6555,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvavitsarvatomukhāya",
-        "gloss": "to the all-knowing one who faces in all directions; sarvavid (all-knowing / omniscient) + sarvatomukha (facing everywhere / omnipresent) + dative -āya",
+        "roman": "sarvavit",
+        "gloss": "all-knowing, omniscient; sarvavid",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sarvato",
+        "gloss": "in all directions, everywhere; sarvatas",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mukhāya",
+        "gloss": "to the one who faces; mukha, face, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4983,20 +6592,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वान्तर्बहिःस्थिताय",
+        "text": "सर्वा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "न्त",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "र्बहिः",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्थिताय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ sarvāntarbahiḥsthitāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the one residing inside and outside of all.}",
+    "english": "{0:Om, }{5:salutations }{4:to the one residing }{2:inside }{3:and outside }{1:of all.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5005,8 +6632,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvāntarbahiḥsthitāya",
-        "gloss": "to the one residing inside and outside of all; sarva (all) + antar (inside) + bahis (outside) + sthita (abiding / situated) + dative -āya",
+        "roman": "sarv",
+        "gloss": "all; sarva joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āntar",
+        "gloss": "inside; antar",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bahiḥ",
+        "gloss": "outside; bahis",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sthitāya",
+        "gloss": "to the one residing; sthita, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5030,20 +6675,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वमङ्गलकराय",
+        "text": "सर्व",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "मङ्गल",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कराय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvamaṅgalakarāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the creator of all auspiciousness.}",
+    "english": "{0:Om, }{4:salutations }{3:to the creator }{1:of all }{2:auspiciousness.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5052,8 +6709,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvamaṅgalakarāya",
-        "gloss": "to the creator of all auspiciousness; sarva (all) + maṅgala (auspiciousness / well-being) + kara (maker / causer) + dative -āya",
+        "roman": "sarva",
+        "gloss": "all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "maṅgala",
+        "gloss": "auspiciousness, well-being",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "karāya",
+        "gloss": "to the creator; kara, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5077,20 +6746,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वाभीष्टप्रदाय",
+        "text": "सर्वा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "भीष्ट",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रदाय",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "oṃ sarvābhīṣṭapradāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the giver of all that is cherished.}",
+    "english": "{0:Om, }{4:salutations }{3:to the giver }{1:of all }{2:that is cherished.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5099,8 +6780,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sarvābhīṣṭapradāya",
-        "gloss": "to the bestower of all cherished desires; sarva (all) + abhīṣṭa (desired / longed-for) + prada (giver / granter) + dative -āya",
+        "roman": "sarv",
+        "gloss": "all; sarva joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ābhīṣṭa",
+        "gloss": "cherished, longed-for; abhīṣṭa",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradāya",
+        "gloss": "to the giver; prada, dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5124,20 +6817,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "समरससन्मार्गस्थापनाय",
+        "text": "समरस",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमः",
+        "text": "स",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "न्मार्ग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्थापनाय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नमः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "oṃ samarasasanmārgasthāpanāya namaḥ",
-    "english": "{0:Om, }{2:salutations to }{1:the establisher of the true path of harmonious oneness.}",
+    "english": "{0:Om, }{5:salutations }{4:to the establisher }{2:of the true }{3:path }{1:of harmonious oneness.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5146,8 +6857,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "samarasasanmārgasthāpanāya",
-        "gloss": "to the establisher of the true path of harmonious equanimity; samarasa (equal feeling / oneness) + sat (noble / true) + mārga (path) + sthāpana (establisher / foundation) + dative -āya",
+        "roman": "samarasa",
+        "gloss": "harmonious oneness; equal feeling",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "san",
+        "gloss": "true, noble; sat before m",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mārga",
+        "gloss": "path",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sthāpanāya",
+        "gloss": "to the establisher; sthāpana, dative",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -90,18 +90,54 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "सीतासमारोपितवामभागम्",
+        "text": "सीता",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "समारोपित",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वाम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भागम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Sītāsamāropitavāmabhāgam",
-    "english": "{0:his left side is graced by Sītā;}",
+    "english": "{3:his }{2:left }{3:side }{1:is graced }{0:by Sītā;}",
     "words": [
       {
-        "roman": "Sītāsamāropitavāmabhāgam",
-        "gloss": "one whose left side is graced by Sītā [sītā-samāropita-vāma-bhāgam]; Rāma’s wife; Sītā means “furrow”",
+        "roman": "Sītā",
+        "gloss": "Rāma’s wife; Sītā means “furrow”",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "samāropita",
+        "gloss": "seated upon, gracing",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vāma",
+        "gloss": "left",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhāgam",
+        "gloss": "one whose side: accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -120,14 +156,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "महासायकचारुचापम्",
+        "text": "महा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "सायक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चारु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चापम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Pāṇau mahāsāyakacārucāpam",
-    "english": "{1:he holds a great arrow and a lovely bow }{0:in hand.}",
+    "english": "{4:he holds }{1:a great }{2:arrow }{3:and a lovely }{4:bow }{0:in hand.}",
     "words": [
       {
         "roman": "Pāṇau",
@@ -136,8 +190,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mahāsāyakacārucāpam",
-        "gloss": "holding a great arrow and a lovely bow [mahā-sāyaka-cāru-cāpam]",
+        "roman": "mahā",
+        "gloss": "great",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sāyaka",
+        "gloss": "arrow",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cāru",
+        "gloss": "lovely",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cāpam",
+        "gloss": "one who holds a bow: cāpa, accusative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -162,14 +234,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रघुवंशनाथम्",
+        "text": "रघु",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "वंश",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नाथम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Namāmi rāmaṁ raghuvaṁśanātham",
-    "english": "{0:I bow to }{1:Rāma, }{2:lord of the Raghu dynasty.}",
+    "english": "{0:I bow to }{1:Rāma, }{4:lord }{2:of the Raghu }{3:dynasty.}",
     "words": [
       {
         "roman": "Namāmi",
@@ -184,8 +268,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "raghuvaṁśanātham",
-        "gloss": "the protector and sovereign of Raghu's dynasty [raghu-vaṁśa-nātham]",
+        "roman": "raghu",
+        "gloss": "the ancestor-king Raghu",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vaṁśa",
+        "gloss": "dynasty",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nātham",
+        "gloss": "the protector and sovereign: accusative",
         "concept_key": "",
         "preserve_in_english": false
       }

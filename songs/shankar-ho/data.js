@@ -333,7 +333,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo bhī prāṇī bhagavān śiv kī bhakti sacce man se kartā hai, uskī sārī icchāeṁ pūrī ho jātī haiṁ. vo manvāñchit phal pātā hai. brahmā aur viṣṇu bhī jinkā dhyān lagāte haiṁ, vo mahātapasvī bhav-bhañjan svayaṁ bhav-sāgar pār karāeṅge. vo baṛe bhole haiṁ, baṛe dayālu haiṁ, baṛe kṛpālu haiṁ.",
-    "english": "{0,1,2:Whoever}{6,10,11: worships}{3,4,5: Lord Śiva}{7,8,9: with a sincere heart}{12,13,14: has every wish}{15,16,17,18: fulfilled.}{19,22,23: They receive}{20,21: the fruit their heart desires.}{28: He is the one on whom}{24,25,26,27: even Brahmā and Viṣṇu}{29,30,31: meditate;}{32,33: that great ascetic,}{34: destroyer of worldly bondage,}{35: will himself}{37,38: ferry them across}{36: the ocean of worldly existence.}{39,40,41,42: He is utterly simple-hearted,}{43,44,45: deeply compassionate,}{46,47,48: and abundantly gracious.}",
+    "english": "{0,1,2:Whoever}{6,10,11: worships}{3,4,5: Lord Śiva}{9: with}{7: a sincere}{8: heart}{12,18: has}{13: every}{14: wish}{15,16,17: fulfilled.}{19,22,23: They receive}{20,21: the fruit their heart desires.}{28: He is the one on whom}{27: even}{24,25,26: Brahmā and Viṣṇu}{29,30,31: meditate;}{32,33: that great ascetic,}{34: destroyer of worldly bondage,}{35: will himself}{37,38: ferry them across}{36: the ocean of worldly existence.}{39: He }{42:is}{40: utterly}{41: simple-hearted,}{43: deeply}{44,45: compassionate,}{46: and abundantly}{47,48: gracious.}",
     "words": [
       {
         "roman": "jo",
@@ -1135,7 +1135,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum hī gagan ho tum hī agan ho",
-    "english": "{0,1:You alone}{2,3: are the sky,}{4,5: you alone}{6,7: are the fire,}",
+    "english": "{0:You }{1:alone}{2,3: are the sky,}{4: you }{5:alone}{6,7: are the fire,}",
     "words": [
       {
         "roman": "tum",
@@ -1419,7 +1419,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum ho kartā tum ho hartā",
-    "english": "{0,1:You are}{2: the creator,}{3,4: you are}{5: the destroyer,}",
+    "english": "{0:You }{1:are}{2: the creator,}{3: you }{4:are}{5: the destroyer,}",
     "words": [
       {
         "roman": "tum",
@@ -1691,7 +1691,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum bhav-bhañjan śubhkārī ho",
-    "english": "{0,3:You are}{1: the destroyer of worldly bondage,}{2: the bringer of auspiciousness,}",
+    "english": "{0:You }{3:are}{1: the destroyer of worldly bondage,}{2: the bringer of auspiciousness,}",
     "words": [
       {
         "roman": "tum",
@@ -1821,7 +1821,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāśī meṁ kailāś meṁ ho tum",
-    "english": "{4,5:You are}{0,1: in Kashi}{2,3: and Kailash,}",
+    "english": "{5:You }{4:are}{0,1: in Kashi}{2,3: and Kailash,}",
     "words": [
       {
         "roman": "kāśī",
@@ -1898,7 +1898,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sakal jagat ke hitkārī ho",
-    "english": "{4:you are}{3: the benefactor}{0,1,2: of the entire universe.}",
+    "english": "{4:you are}{3: the benefactor}{2: of}{0: the entire}{1: universe.}",
     "words": [
       {
         "roman": "sakal",

@@ -160,14 +160,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ನಿರ್ಗಮಗೈಸುಹೆ",
+        "text": "ನಿರ್ಗಮ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಗೈಸು",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಹೆ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "durgama bhavadinda nirgamagaisuhe",
-    "english": "{2:Lead me out} {1:of worldly existence}, {0:so hard to cross}, {2:O}…",
+    "english": "{3:Lead me }{2:out} {1:of worldly existence}, {0:so hard to cross}, {4:O}…",
     "words": [
       {
         "roman": "durgama",
@@ -178,8 +190,16 @@ window.SONG_LINES = {
         "gloss": "from worldly existence and rebirth"
       },
       {
-        "roman": "nirgamagaisuhe",
-        "gloss": "lead me out, O; nirgam-agaisu plus the address he"
+        "roman": "nirgama",
+        "gloss": "going out, exit"
+      },
+      {
+        "roman": "gaisu",
+        "gloss": "make, cause [me] to do; lead"
+      },
+      {
+        "roman": "he",
+        "gloss": "O: particle of address"
       }
     ],
     "nameTable": false,
@@ -274,34 +294,85 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಅಷ್ಟಾಯುಧಾದಿ",
+        "text": "ಅಷ್ಟಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ವ್ಯಾಂಬರಧಾರಿ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ಅಸುರಾರಿ",
+        "text": "ಯುಧಾ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ದಿ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ವ್ಯಾಂ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ಬರ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಧಾರಿ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಅಸುರಾ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ರಿ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "aṣṭāyudhādivyāmbaradhāri asurāri",
-    "english": "{0:Bearing eight weapons and divine garments}, {1:enemy of demons}.",
+    "english": "{4:Bearing }{0:eight }{1:weapons }{2:and divine }{3:garments}, {6:enemy }{5:of demons}.",
     "words": [
       {
-        "roman": "aṣṭāyudhādivyāmbaradhāri",
-        "gloss": "bearing eight weapons and divine garments; aṣṭāyudha + divyāmbara-dhāri"
+        "roman": "aṣṭ",
+        "gloss": "eight; aṣṭa, joined a + ā"
       },
       {
-        "roman": "asurāri",
-        "gloss": "enemy of the demons"
+        "roman": "āyudhā",
+        "gloss": "weapons; āyudha"
+      },
+      {
+        "roman": "divy",
+        "gloss": "divine; divya, joined a + a"
+      },
+      {
+        "roman": "āmbara",
+        "gloss": "garments; ambara"
+      },
+      {
+        "roman": "dhāri",
+        "gloss": "bearing, wearing"
+      },
+      {
+        "roman": "asur",
+        "gloss": "demons; asura, joined a + a"
+      },
+      {
+        "roman": "āri",
+        "gloss": "enemy; ari"
       }
     ],
     "nameTable": false,
@@ -324,14 +395,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪಾದಾಂಬುಜಯನ್ನ",
+        "text": "ಪಾದಾಂ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಬುಜ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಯನ್ನ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "nambide ninna pādāmbujayanna",
-    "english": "{0:I trust} {1:your} {2:lotus feet}. {2:My}…",
+    "english": "{0:I trust} {1:your} {3:lotus }{2:feet}. {4:My}…",
     "words": [
       {
         "roman": "nambide",
@@ -342,8 +425,16 @@ window.SONG_LINES = {
         "gloss": "your"
       },
       {
-        "roman": "pādāmbujayanna",
-        "gloss": "lotus feet; my, beginning the following heart image"
+        "roman": "pād",
+        "gloss": "feet; pāda, joined a + a"
+      },
+      {
+        "roman": "āmbuja",
+        "gloss": "lotus; ambuja, water-born"
+      },
+      {
+        "roman": "yanna",
+        "gloss": "my, beginning the following heart image"
       }
     ],
     "nameTable": false,
@@ -354,38 +445,68 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಹೃದಂಬರದಲ್ಲಿಹ",
+        "text": "ಹೃ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಬಿಂಬನ",
+        "text": "ದಂಬರದ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ತೋರಿಸುಯೆಂಬೆ",
+        "text": "ಲ್ಲಿಹ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಬಿಂಬನ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ತೋರಿಸು",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಯೆಂಬೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "hṛdambaradalliha bimbana tōrisuyembe",
-    "english": "{0:heart’s sky}—{2:show me, I ask}, {1:the divine form} {0:within it}.",
+    "english": "{0:heart’s }{1:sky}—{4:show me, }{5:I ask}, {3:the divine form} {2:within it}.",
     "words": [
       {
-        "roman": "hṛdambaradalliha",
-        "gloss": "within the sky of the heart; the heart-sky image continues the preceding my"
+        "roman": "hṛd",
+        "gloss": "heart; the heart-sky image continues the preceding my"
+      },
+      {
+        "roman": "ambarada",
+        "gloss": "of the sky; ambara"
+      },
+      {
+        "roman": "lliha",
+        "gloss": "being within; alli, in + iha, being"
       },
       {
         "roman": "bimbana",
         "gloss": "the indwelling divine form"
       },
       {
-        "roman": "tōrisuyembe",
-        "gloss": "show me, I ask"
+        "roman": "tōrisu",
+        "gloss": "show [me]: imperative"
+      },
+      {
+        "roman": "yembe",
+        "gloss": "I ask, I say; embe, with linking y"
       }
     ],
     "nameTable": false,

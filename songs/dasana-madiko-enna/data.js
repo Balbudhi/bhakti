@@ -171,11 +171,19 @@ window.SONG_LINES = {
   "l004": {
     "source": "ದುರುಬುದ್ಧಿಗಳನೆಲ್ಲ ಬಿಡಿಸೊ",
     "roman": "durubuddhigaḷanella biḍiso",
-    "english": "{1:Free me from} {0:all my corrupt thoughts}.",
+    "english": "{3:Free me from} {2:all my} {0:corrupt} {1:thoughts}.",
     "words": [
       {
-        "roman": "durubuddhigaḷanella",
-        "gloss": "all corrupt thoughts or dispositions"
+        "roman": "duru",
+        "gloss": "corrupt; bad"
+      },
+      {
+        "roman": "buddhigaḷan",
+        "gloss": "thoughts, dispositions; buddhigaḷannu, object"
+      },
+      {
+        "roman": "ella",
+        "gloss": "all"
       },
       {
         "roman": "biḍiso",
@@ -184,15 +192,27 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ದುರುಬುದ್ಧಿಗಳನೆಲ್ಲ",
+        "text": "ದುರು",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಬಿಡಿಸೊ",
+        "text": "ಬುದ್ಧಿಗಳ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ನೆಲ್ಲ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ಬಿಡಿಸೊ",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -201,15 +221,23 @@ window.SONG_LINES = {
   "l005": {
     "source": "ನಿನ್ನ ಕರುಣಕವಚವೆನ್ನ ಹರಣಕೆ ತೊಡಿಸೊ",
     "roman": "ninna karuṇakavacavenna haraṇake toḍiso",
-    "english": "{3:Clothe} {2:my soul} {3:in} {0:your} {1:armour of compassion}.",
+    "english": "{5:Clothe} {3:my} {4:soul} {5:in} {0:your} {2:armour} {1:of compassion}.",
     "words": [
       {
         "roman": "ninna",
         "gloss": "your"
       },
       {
-        "roman": "karuṇakavacavenna",
-        "gloss": "the armour of compassion upon my; karuṇa + kavaca + enna"
+        "roman": "karuṇa",
+        "gloss": "compassion"
+      },
+      {
+        "roman": "kavacav",
+        "gloss": "armour; kavacavannu, object"
+      },
+      {
+        "roman": "enna",
+        "gloss": "my; belongs with the following soul"
       },
       {
         "roman": "haraṇake",
@@ -228,21 +256,33 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಕರುಣಕವಚವೆನ್ನ",
+        "text": "ಕರುಣ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಹರಣಕೆ",
+        "text": "ಕವಚ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ತೊಡಿಸೊ",
+        "text": "ವೆನ್ನ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಹರಣಕೆ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ತೊಡಿಸೊ",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -391,15 +431,23 @@ window.SONG_LINES = {
   "l009": {
     "source": "ನಾ ಅಡಿಗೆರಗುವೆನಯ್ಯ ಅನುದಿನ ಪಾಡಿ",
     "roman": "nā aḍigeraguvenayya anudina pāḍi",
-    "english": "{0:I} {1:will bow at your feet, Lord}, {3:singing} {2:every day}.",
+    "english": "{0:I} {2:will bow} {1:at your feet}, {3:Lord}, {5:singing} {4:every day}.",
     "words": [
       {
         "roman": "nā",
         "gloss": "I"
       },
       {
-        "roman": "aḍigeraguvenayya",
-        "gloss": "will bow at your feet, O Lord"
+        "roman": "aḍig",
+        "gloss": "at your feet; aḍige, dative"
+      },
+      {
+        "roman": "eraguven",
+        "gloss": "will bow; eraguvenu, first person"
+      },
+      {
+        "roman": "ayya",
+        "gloss": "O Lord; respectful address"
       },
       {
         "roman": "anudina",
@@ -418,21 +466,33 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಅಡಿಗೆರಗುವೆನಯ್ಯ",
+        "text": "ಅಡಿಗೆ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಅನುದಿನ",
+        "text": "ರಗುವೆ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಪಾಡಿ",
+        "text": "ನಯ್ಯ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಅನುದಿನ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಪಾಡಿ",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -651,11 +711,15 @@ window.SONG_LINES = {
   "l014": {
     "source": "ದುರಿತಗಳೆಲ್ಲವ ತರಿದು",
     "roman": "duritagaḷellava taridu",
-    "english": "{1:Cut away} {0:all my afflictions},",
+    "english": "{2:Cut away} {1:all my} {0:afflictions},",
     "words": [
       {
-        "roman": "duritagaḷellava",
-        "gloss": "all evils or afflictions"
+        "roman": "duritagaḷ",
+        "gloss": "evils, afflictions; plural"
+      },
+      {
+        "roman": "ellava",
+        "gloss": "all; object form"
       },
       {
         "roman": "taridu",
@@ -664,15 +728,21 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ದುರಿತಗಳೆಲ್ಲವ",
+        "text": "ದುರಿತಗ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ತರಿದು",
+        "text": "ಳೆಲ್ಲವ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ತರಿದು",
+        "wordIndices": [
+          2
         ]
       }
     ],

@@ -835,7 +835,7 @@ window.SONG_LINES = {
     "source": "बह गई भावना बदले की",
     "sourceLanguage": "hi",
     "roman": "bah gaī bhāvanā badalē kī",
-    "english": "{2:The feeling }{3,4:of revenge }{0,1:was washed away,}",
+    "english": "{2:The feeling }{4:of }{3:revenge }{0,1:was washed away,}",
     "words": [
       {
         "roman": "bah",
@@ -1642,7 +1642,7 @@ window.SONG_LINES = {
     "source": "जब चारों ओर से बाबा पर फूलों की वर्षा होने लगी",
     "sourceLanguage": "hi",
     "roman": "jab cārōṁ ōr sē bābā par phūlōṁ kī varṣā hōnē lagī",
-    "english": "{0:When }{1,2,3:from all four directions }{8:a shower }{6,7:of flowers }{9,10:began to fall }{4,5:upon Baba,}",
+    "english": "{0:When }{1,2,3:from all four directions }{8:a shower }{7:of }{6:flowers }{9,10:began to fall }{4,5:upon Baba,}",
     "words": [
       {
         "roman": "jab",
@@ -1785,7 +1785,7 @@ window.SONG_LINES = {
     "source": "जाने क्यों मेरी आँखों से असुवन की बरखा होने लगी",
     "sourceLanguage": "hi",
     "roman": "jānē kyōṁ mērī āṅkhōṁ sē asuvan kī barakhā hōnē lagī",
-    "english": "{0,1:Who knows why, }{2:from my }{3,4:eyes }{7:a downpour }{5,6:of tears }{8,9:began to fall.}",
+    "english": "{0,1:Who knows why, }{2:from my }{3,4:eyes }{7:a downpour }{6:of }{5:tears }{8,9:began to fall.}",
     "words": [
       {
         "roman": "jānē",
@@ -2106,7 +2106,7 @@ window.SONG_LINES = {
     "source": "मैं क्या-क्या मांगने आया था बिन मांगे क्या-क्या पा बैठा",
     "sourceLanguage": "hi",
     "roman": "maiṁ kyā-kyā māṅgnē āyā thā bin māṅgē kyā-kyā pā baiṭhā",
-    "english": "{1:What all }{0,4:had I }{2,3:come to ask for, }and {5,6:without asking, }{7:what all }{8,9:did I end up receiving!}",
+    "english": "{1:What all }{4:had }{0:I }{2,3:come to ask for, }and {5:without }{6:asking, }{7:what all }{8,9:did I end up receiving!}",
     "words": [
       {
         "roman": "maiṁ",
@@ -2237,7 +2237,7 @@ window.SONG_LINES = {
     "source": "बिन मांगे क्या-क्या पा बैठा",
     "sourceLanguage": "hi",
     "roman": "bin māṅgē kyā-kyā pā baiṭhā",
-    "english": "{0,1:Without asking, }{2:what all }{3,4:did I end up receiving!}",
+    "english": "{0:Without }{1:asking, }{2:what all }{3,4:did I end up receiving!}",
     "words": [
       {
         "roman": "bin",

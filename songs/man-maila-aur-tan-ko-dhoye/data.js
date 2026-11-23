@@ -369,7 +369,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kare dikhāvā bhagatī kā tū ujalī oṛhe cādariyā",
-    "english": "{4:You}{0: make}{1: a show}{2,3: of devotion,}{6: wearing}{5: a bright}{7: shawl,}",
+    "english": "{4:You}{0: make}{1: a show}{3: of }{2:devotion,}{6: wearing}{5: a bright}{7: shawl,}",
     "words": [
       {
         "roman": "kare",
@@ -737,7 +737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kabhī na man mandir mem̐ tūne prem kī jyot jalāī",
-    "english": "{0,1:Never}{3,4: in the temple}{2: of the mind}{5: did you}{9: kindle}{8: the flame}{6,7: of love;}",
+    "english": "{0,1:Never}{3,4: in the temple}{2: of the mind}{5: did you}{9: kindle}{8: the flame}{7: of }{6:love;}",
     "words": [
       {
         "roman": "kabhī",
@@ -957,7 +957,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ab bhī nām sumir le hari kā",
-    "english": "{0,1:Even now,}{3,4: chant}{2: the Name}{5,6: of Hari;}",
+    "english": "{1:Even }{0:now,}{3,4: chant}{2: the Name}{6: of }{5:Hari;}",
     "words": [
       {
         "roman": "ab",
@@ -1111,7 +1111,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śvāsom̐ kā anamol khazānā din-din luṭatā jāe",
-    "english": "{2:The priceless}{3: treasure}{0,1: of breaths}{4: day by day}{5,6: continues to be plundered;}",
+    "english": "{2:The priceless}{3: treasure}{1: of }{0:breaths}{4: day by day}{5,6: continues to be plundered;}",
     "words": [
       {
         "roman": "śvāsom̐",
@@ -1319,7 +1319,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sām̐cā sukh to vo hī pāe",
-    "english": "{2:Indeed, }{0,1:true happiness}{5: comes}{3,4: only to the one}",
+    "english": "{2:Indeed, }{0:true }{1:happiness}{5: comes}{3,4: only to the one}",
     "words": [
       {
         "roman": "sām̐cā",

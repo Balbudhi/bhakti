@@ -333,7 +333,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mōtiyana kī kaṇṭha māla mōtiyana kī kaṇṭha māla nainā ratanārē",
-    "english": "{0,1,2,3:A necklace of pearls around the neck, }{4,5,6,7:a necklace of pearls around the neck, }{8:his eyes }{9:radiant and red.}",
+    "english": "{3:A necklace }{1:of }{0:pearls }{2:around the neck, }{7:a necklace }{5:of }{4:pearls }{6:around the neck, }{8:his eyes }{9:radiant and red.}",
     "words": [
       {
         "roman": "Mōtiyana",
@@ -452,7 +452,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kēśara kō tilaka bhāla kuṇḍala dōu lāla lāla",
-    "english": "{0,1,2:A mark of saffron }{3:on the forehead, }{5:both }{4:ear-pendants }{6,7:vivid red,}",
+    "english": "{0,1,2:A mark of saffron }{3:on the forehead, }{5:both }{4:ear-pendants }{7:vivid }{6:red,}",
     "words": [
       {
         "roman": "Kēśara",
@@ -577,7 +577,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ratna jaṛita kaṅkaṇa kara ratna jaṛita kaṅkaṇa kara sōhata haiṁ nyārē",
-    "english": "{0,1,2,3:Gem-studded bangles on his hands, }{4,5,6,7:gem-studded bangles on his hands }{8,9,10:look uniquely splendid.}",
+    "english": "{0,1:Gem-studded }{2:bangles }{3:on his hands, }{4,5:gem-studded }{6:bangles }{7:on his hands }{8,9:look }{10:uniquely }{8:splendid.}",
     "words": [
       {
         "roman": "Ratna",
@@ -821,7 +821,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Duṣṭana kō karata nāśa duṣṭana kō karata nāśa bhaktana rakhavārē",
-    "english": "{0,1,2,3:Destroying the wicked, }{4,5,6,7:destroying the wicked, }{9:protector }{8:of devotees.}",
+    "english": "{2,3:Destroying }{0,1:the wicked, }{6,7:destroying }{4,5:the wicked, }{9:protector }{8:of devotees.}",
     "words": [
       {
         "roman": "Duṣṭana",

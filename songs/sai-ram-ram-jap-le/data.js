@@ -435,7 +435,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har sā̃s pe raṭe jā,",
-    "english": "{3,4:Keep repeating }{2:with }{0:every }{1:breath, }",
+    "english": "{4:Keep }{3:repeating }{2:with }{0:every }{1:breath, }",
     "words": [
       {
         "roman": "Har",
@@ -975,7 +975,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jīvan kī avadhi thoṛī, prīti na Sāīṁ joṛī",
-    "english": "{2:The span }{0,1:of life }{3:is short; }{5:you have not }{7:formed a bond }{4:of love }{6:with Sāī.}",
+    "english": "{2:The span }{1:of }{0:life }{3:is short; }{5:you have not }{7:formed a bond }{4:of love }{6:with Sāī.}",
     "words": [
       {
         "roman": "Jīvan",

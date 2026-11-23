@@ -123,7 +123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaba hama jahāṁ mēṁ paidā huē jaga haṁsē hama rōē",
-    "english": "{0:When }{1:we }{4,5:were born }{2,3:in the world, }{6:the world }{7:laughed, }{8:we }{9:wept.}",
+    "english": "{0:When }{1:we }{5:were }{4:born }{2,3:in the world, }{6:the world }{7:laughed, }{8:we }{9:wept.}",
     "words": [
       {
         "roman": "jaba",
@@ -361,7 +361,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaisē karama karōgē tuma vaisā hī phala pāēṁ",
-    "english": "{0:Whatever }{1:deeds }{3:you }{2:do, }{7:you will receive }{4,5:precisely such }{6:fruit.}",
+    "english": "{0:Whatever }{1:deeds }{3:you }{2:do, }{7:you will receive }{5:precisely }{4:such }{6:fruit.}",
     "words": [
       {
         "roman": "jaisē",
@@ -1255,7 +1255,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mōha māyā kē bandhana khōlō hē sāīṁ apanī śaraṇa mēṁ lē lō",
-    "english": "{4:Untie }{3:the bonds }{0,2:of delusion }{1:and māyā; }{5:O }{6:Sai, }{10,11:take me }{7,9:into your own }{8:refuge.}",
+    "english": "{4:Untie }{3:the bonds }{2:of }{0:delusion }{1:and māyā; }{5:O }{6:Sai, }{10,11:take me }{7,9:into your own }{8:refuge.}",
     "words": [
       {
         "roman": "mōha",

@@ -79,44 +79,62 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "प्रलयहुतभवा",
+        "text": "प्रलय",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "अचलवैभवा",
+        "text": "हुत",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "चंडिका",
+        "text": "भवा",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "धूमा",
+        "text": "अचल",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "चंडिका",
+        "text": "वैभवा",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "धूमा",
+        "text": "चंडिका",
         "wordIndices": [
           9
+        ]
+      },
+      {
+        "text": "धूमा",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "चंडिका",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "धूमा",
+        "wordIndices": [
+          12
         ]
       }
     ],
     "roman": "hī śivā hī śivā pralayahutabhavā acalavaibhavā caṃḍikā dhūmā caṃḍikā dhūmā",
-    "english": "{0,1:She is Śivā}, {2,3:she is Śivā}, {4:born from the sacrificial offering at cosmic dissolution}, {5:of unshaken majesty}—{6:Caṇḍikā}, {7:Dhūmā}, {8:Caṇḍikā}, {9:Dhūmā}.",
+    "english": "{0:She is }{1:Śivā}, {2:she is }{3:Śivā}, {6:born }{5:from the sacrificial offering }{4:at cosmic dissolution}, {8:of }{7:unshaken }{8:majesty}—{9:Caṇḍikā}, {10:Dhūmā}, {11:Caṇḍikā}, {12:Dhūmā}.",
     "words": [
       {
         "roman": "hī",
@@ -135,12 +153,24 @@ window.SONG_LINES = {
         "gloss": "the auspicious goddess, the feminine divine power"
       },
       {
-        "roman": "pralayahutabhavā",
-        "gloss": "born from the sacrificial offering at cosmic dissolution"
+        "roman": "pralaya",
+        "gloss": "cosmic dissolution"
       },
       {
-        "roman": "acalavaibhavā",
-        "gloss": "whose majesty is unmoving; of unshaken splendor"
+        "roman": "huta",
+        "gloss": "sacrificial offering"
+      },
+      {
+        "roman": "bhavā",
+        "gloss": "born from: feminine"
+      },
+      {
+        "roman": "acala",
+        "gloss": "unmoving, unshaken"
+      },
+      {
+        "roman": "vaibhavā",
+        "gloss": "whose majesty, splendor is: feminine"
       },
       {
         "roman": "caṃḍikā",
@@ -257,26 +287,56 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सुरचकित",
+        "text": "सुर",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कुलाकुलनमित",
+        "text": "चकित",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "विश्वप्रलयांबा",
+        "text": "कुला",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "कुल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "नमित",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "विश्व",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "प्रलयां",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "बा",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "dhagadhagit dhagadhagit gātra suracakit kulākulanamit viśvapralayāṃbā",
-    "english": "{2:Her body} {0:blazes}, {1:blazes}, {3:astonishing the gods}; {4:reverenced by Kula and Akula}, {5:Mother at the world’s dissolution}.",
+    "english": "{2:Her body} {0:blazes}, {1:blazes}, {4:astonishing }{3:the gods}; {7:reverenced }{5:by Kula }{6:and Akula}, {10:Mother }{9:at }{8:the world’s }{9:dissolution}.",
     "words": [
       {
         "roman": "dhagadhagit",
@@ -291,16 +351,36 @@ window.SONG_LINES = {
         "gloss": "body; limbs"
       },
       {
-        "roman": "suracakit",
-        "gloss": "astonishing the gods"
+        "roman": "sura",
+        "gloss": "the gods"
       },
       {
-        "roman": "kulākulanamit",
-        "gloss": "reverenced by Kula and Akula, Śakti and Śiva"
+        "roman": "cakit",
+        "gloss": "astonishing, astonished"
       },
       {
-        "roman": "viśvapralayāṃbā",
-        "gloss": "mother at the dissolution of the universe"
+        "roman": "kul",
+        "gloss": "Kula, Śakti; joined a + a"
+      },
+      {
+        "roman": "ākula",
+        "gloss": "Akula, Śiva; joined a + a"
+      },
+      {
+        "roman": "namit",
+        "gloss": "reverenced by"
+      },
+      {
+        "roman": "viśva",
+        "gloss": "the universe, world"
+      },
+      {
+        "roman": "pralay",
+        "gloss": "dissolution; pralaya, joined a + a"
+      },
+      {
+        "roman": "āṃbā",
+        "gloss": "mother; ambā"
       }
     ],
     "nameTable": false,
@@ -311,18 +391,38 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "विश्वप्रलयांबा",
+        "text": "विश्व",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "प्रलयां",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "बा",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "viśvapralayāṃbā",
-    "english": "{0:Mother at the world’s dissolution}.",
+    "english": "{2:Mother }{1:at }{0:the world’s }{1:dissolution}.",
     "words": [
       {
-        "roman": "viśvapralayāṃbā",
-        "gloss": "mother at the dissolution of the universe"
+        "roman": "viśva",
+        "gloss": "the universe, world"
+      },
+      {
+        "roman": "pralay",
+        "gloss": "dissolution; pralaya, joined a + a"
+      },
+      {
+        "roman": "āṃbā",
+        "gloss": "mother; ambā"
       }
     ],
     "nameTable": false,
@@ -713,18 +813,38 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "जगतत्रयवासी",
+        "text": "जगत",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "त्रय",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वासी",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "jagatatrayavāsī",
-    "english": "{0:Dwelling in the three worlds}.",
+    "english": "{2:Dwelling }{1:in the three }{0:worlds}.",
     "words": [
       {
-        "roman": "jagatatrayavāsī",
-        "gloss": "dwelling in the three worlds"
+        "roman": "jagata",
+        "gloss": "world"
+      },
+      {
+        "roman": "traya",
+        "gloss": "triad, three"
+      },
+      {
+        "roman": "vāsī",
+        "gloss": "dwelling in"
       }
     ],
     "nameTable": false,
@@ -1835,26 +1955,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "त्रिकुटगिरिवासिनी",
+        "text": "त्रिकुट",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ही",
+        "text": "गिरि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "शिवा",
+        "text": "वासिनी",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "शिवा",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "mahākālī mahākālī trikuṭagirivāsinī hī śivā",
-    "english": "{0:Mahākālī}, {1:Mahākālī}, {2:dwelling on Mount Trikuṭa}—{3,4:she is Śivā}.",
+    "english": "{0:Mahākālī}, {1:Mahākālī}, {4:dwelling }{3:on Mount }{2:Trikuṭa}—{5:she is }{6:Śivā}.",
     "words": [
       {
         "roman": "mahākālī",
@@ -1865,8 +1997,16 @@ window.SONG_LINES = {
         "gloss": "the great dark goddess, the power of time"
       },
       {
-        "roman": "trikuṭagirivāsinī",
-        "gloss": "she who dwells on Mount Trikuṭa"
+        "roman": "trikuṭa",
+        "gloss": "Trikuṭa, “three-peaked,” the mountain's name"
+      },
+      {
+        "roman": "giri",
+        "gloss": "mount, mountain"
+      },
+      {
+        "roman": "vāsinī",
+        "gloss": "she who dwells on"
       },
       {
         "roman": "hī",
@@ -1917,30 +2057,60 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "उच्छिष्टसुधागमदायिनी",
+        "text": "उच्छिष्ट",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ही",
+        "text": "सुधा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "शिवा",
+        "text": "गम",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दायिनी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ही",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "शिवा",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "ucchiṣṭasudhāgamadāyinī hī śivā",
-    "english": "{0:She who grants the flow of remnant-nectar}—{1,2:she is Śivā}.",
+    "english": "{3:She who grants }{2:the flow }{0:of remnant-}{1:nectar}—{4:she is }{5:Śivā}.",
     "words": [
       {
-        "roman": "ucchiṣṭasudhāgamadāyinī",
-        "gloss": "she who grants the flow of remnant-nectar"
+        "roman": "ucchiṣṭa",
+        "gloss": "remnant, left after offering"
+      },
+      {
+        "roman": "sudh",
+        "gloss": "nectar; sudhā, joined ā + ā"
+      },
+      {
+        "roman": "āgama",
+        "gloss": "flow, coming"
+      },
+      {
+        "roman": "dāyinī",
+        "gloss": "she who grants"
       },
       {
         "roman": "hī",
@@ -2011,64 +2181,102 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "श्रीस्तवन",
+        "text": "श्री",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्रीस्तवन",
+        "text": "स्तवन",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "धूप",
+        "text": "श्री",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "जप",
+        "text": "स्तवन",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "मनन",
+        "text": "धूप",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "परांबा",
+        "text": "जप",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "शरण",
+        "text": "मनन",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "चिज्ज्वलज्ज्वाला",
+        "text": "परां",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "बा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "शरण",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "चि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ज्ज्वल",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "ज्ज्वाला",
+        "wordIndices": [
+          12
         ]
       }
     ],
     "roman": "śrīstavan śrīstavan dhūp jap manan parāṃbā śaraṇ cijjvalajjvālā",
-    "english": "{0:Praise of the goddess}, {1:praise of the goddess}, {2:incense}, {3:sacred repetition}, {4:contemplation}; {6:refuge in} {5:the supreme Mother}, {7:the flame blazing with consciousness}.",
+    "english": "{1:Praise }{0:of the goddess}, {3:praise }{2:of the goddess}, {4:incense}, {5:sacred repetition}, {6:contemplation}; {9:refuge in} {7:the supreme }{8:Mother}, {12:the flame }{11:blazing }{10:with consciousness}.",
     "words": [
       {
-        "roman": "śrīstavan",
-        "gloss": "praise of the auspicious goddess"
+        "roman": "śrī",
+        "gloss": "the auspicious goddess"
       },
       {
-        "roman": "śrīstavan",
-        "gloss": "praise of the auspicious goddess"
+        "roman": "stavan",
+        "gloss": "praise of"
+      },
+      {
+        "roman": "śrī",
+        "gloss": "the auspicious goddess"
+      },
+      {
+        "roman": "stavan",
+        "gloss": "praise of"
       },
       {
         "roman": "dhūp",
@@ -2083,16 +2291,28 @@ window.SONG_LINES = {
         "gloss": "contemplation"
       },
       {
-        "roman": "parāṃbā",
-        "gloss": "the supreme Mother"
+        "roman": "par",
+        "gloss": "supreme; parā, joined ā + a"
+      },
+      {
+        "roman": "āṃbā",
+        "gloss": "Mother; ambā"
       },
       {
         "roman": "śaraṇ",
         "gloss": "refuge; taking refuge"
       },
       {
-        "roman": "cijjvalajjvālā",
-        "gloss": "the flame blazing with consciousness"
+        "roman": "cij",
+        "gloss": "consciousness; cit, t changed to j before j"
+      },
+      {
+        "roman": "jvalaj",
+        "gloss": "blazing; jvalat, t changed to j before j"
+      },
+      {
+        "roman": "jvālā",
+        "gloss": "flame"
       }
     ],
     "nameTable": false,
@@ -2103,18 +2323,38 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "चिज्ज्वलज्ज्वाला",
+        "text": "चि",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ज्ज्वल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ज्ज्वाला",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "cijjvalajjvālā",
-    "english": "{0:The flame blazing with consciousness}.",
+    "english": "{2:The flame }{1:blazing }{0:with consciousness}.",
     "words": [
       {
-        "roman": "cijjvalajjvālā",
-        "gloss": "the flame blazing with consciousness"
+        "roman": "cij",
+        "gloss": "consciousness; cit, t changed to j before j"
+      },
+      {
+        "roman": "jvalaj",
+        "gloss": "blazing; jvalat, t changed to j before j"
+      },
+      {
+        "roman": "jvālā",
+        "gloss": "flame"
       }
     ],
     "nameTable": false,

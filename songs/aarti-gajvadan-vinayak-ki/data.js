@@ -237,36 +237,48 @@ window.SONG_LINES = {
     "sourceLanguage": "hi",
     "sourceWords": [
       {
-        "text": "विघ्नविनाशक",
+        "text": "विघ्न",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "शुभ",
+        "text": "विनाशक",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "गुण",
+        "text": "शुभ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कानन",
+        "text": "गुण",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "कानन",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Vighnavināśaka śubha guṇa kānana",
-    "english": "{0:Destroyer of obstacles, }{3:a forest }{1:of auspicious }{2:virtues,}",
+    "english": "{1:Destroyer }{0:of obstacles, }{4:a forest }{2:of auspicious }{3:virtues,}",
     "words": [
       {
-        "roman": "Vighnavināśaka",
-        "gloss": "destroyer of obstacles",
+        "roman": "Vighna",
+        "gloss": "obstacle",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vināśaka",
+        "gloss": "destroyer",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -428,7 +428,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mērā tum bin kaun sahārā hai",
-    "english": "{1,2:Without you, }{3:who }{5:is }{0:my }{4:support?}",
+    "english": "{2:Without }{1:you, }{3:who }{5:is }{0:my }{4:support?}",
     "words": [
       {
         "roman": "Mērā",
@@ -956,7 +956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī kahtī hai ā̃suō̃ kī dhār, Bābā ā jāō ik bār",
-    "english": "{0:This very thing }{5:the stream }{3,4:of tears }{1,2:says: }{6:Baba, }{7,8:come }{9,10:once}",
+    "english": "{0:This very thing }{5:the stream }{4:of }{3:tears }{1,2:says: }{6:Baba, }{7,8:come }{9,10:once}",
     "words": [
       {
         "roman": "Yahī",

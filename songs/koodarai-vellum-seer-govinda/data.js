@@ -598,7 +598,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āḍai uḍuppōm adhaṉ piṉṉē pāṟcōṟu",
-    "english": "{1:We will wear }{0:garments;} {2,3:after that,} {4:over rice cooked in milk,}",
+    "english": "{1:We will wear }{0:garments;} {3:after }{2:that,} {4:over rice cooked in milk,}",
     "words": [
       {
         "roman": "Āḍai",

@@ -601,7 +601,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jō jana tumarī śaraṇa mēṁ āē duḥkha darada hara līnā",
-    "english": "{0,1:Whoever }{4,5:comes into }{2:your }{3:refuge, }{6:their sorrow }{7:and pain }{8,9:you take away.}",
+    "english": "{0,1:Whoever }{5:comes }{4:into }{2:your }{3:refuge, }{6:their sorrow }{7:and pain }{8,9:you take away.}",
     "words": [
       {
         "roman": "Jō",
@@ -797,7 +797,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mahāvīra prabhu hama dukhiyana kē tuma hō garība nivāja",
-    "english": "{0:O Mahavira, }{1:Lord, }{2,4:for us }{3:suffering ones }{5:you }{6:are }{7,8:the cherisher of the poor.}",
+    "english": "{0:O Mahavira, }{1:Lord, }{4:for }{2:us }{3:suffering ones }{5:you }{6:are }{7,8:the cherisher of the poor.}",
     "words": [
       {
         "roman": "Mahāvīra",
@@ -993,7 +993,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāma lakhana vaidēhī tuma para sadā rahē haraṣāē",
-    "english": "{0:Rama, }{1:Lakshmana, }{2:and Vaidehi }{5:always }{6:remain }{7:delighted }{3,4:with you.}",
+    "english": "{0:Rama, }{1:Lakshmana, }{2:and Vaidehi }{5:always }{6:remain }{7:delighted }{4:with }{3:you.}",
     "words": [
       {
         "roman": "Rāma",

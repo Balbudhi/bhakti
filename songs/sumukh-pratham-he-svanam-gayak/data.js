@@ -61,32 +61,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "स्वनामगायक",
+        "text": "स्व",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "नाम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गायक",
+        "wordIndices": [
+          5
         ]
       },
       {
         "text": "पालक",
         "wordIndices": [
-          3
+          6
         ]
       },
       {
         "text": "सेवक",
         "wordIndices": [
-          4
+          7
         ]
       },
       {
-        "text": "मङ्गलकारक",
+        "text": "मङ्गल",
         "wordIndices": [
-          4
+          8
+        ]
+      },
+      {
+        "text": "कारक",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "sumukha prathama he svanāmagāyakapālaka sevakamaṅgalakāraka",
-    "english": "{2:O} {0:beautiful-faced one}, {1:foremost one}, {3:protector of those who sing your own name}, {4:maker of auspiciousness for your servants}!",
+    "english": "{2:O} {0:beautiful-faced one}, {1:foremost one}, {6:protector }{5:of those who sing }{3:your own }{4:name}, {9:maker }{8:of auspiciousness }{7:for your servants}!",
     "words": [
       {
         "roman": "sumukha",
@@ -101,12 +119,32 @@ window.SONG_LINES = {
         "gloss": "O; vocative address"
       },
       {
-        "roman": "svanāmagāyakapālaka",
-        "gloss": "protector of those who sing your own name"
+        "roman": "sva",
+        "gloss": "your own"
       },
       {
-        "roman": "sevakamaṅgalakāraka",
-        "gloss": "maker of auspiciousness for your servants"
+        "roman": "nāma",
+        "gloss": "name"
+      },
+      {
+        "roman": "gāyaka",
+        "gloss": "those who sing, singers"
+      },
+      {
+        "roman": "pālaka",
+        "gloss": "protector: vocative"
+      },
+      {
+        "roman": "sevaka",
+        "gloss": "servants"
+      },
+      {
+        "roman": "maṅgala",
+        "gloss": "auspiciousness"
+      },
+      {
+        "roman": "kāraka",
+        "gloss": "maker: vocative"
       }
     ],
     "nameTable": false,
@@ -191,28 +229,48 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "सिन्दुरलेपक",
+        "text": "सिन्दुर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मोदकभक्षक",
+        "text": "लेपक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मोदक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्षक",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "sinduralepaka modakabhakṣaka",
-    "english": "{0:One coated with vermilion}, {1:eater of sweet dumplings}!",
+    "english": "{1:One coated }{0:with vermilion}, {3:eater }{2:of sweet dumplings}!",
     "words": [
       {
-        "roman": "sinduralepaka",
-        "gloss": "one with a coating of vermilion"
+        "roman": "sindura",
+        "gloss": "vermilion"
       },
       {
-        "roman": "modakabhakṣaka",
-        "gloss": "eater of sweet dumplings"
+        "roman": "lepaka",
+        "gloss": "one with a coating of"
+      },
+      {
+        "roman": "modaka",
+        "gloss": "sweet dumplings"
+      },
+      {
+        "roman": "bhakṣaka",
+        "gloss": "eater"
       }
     ],
     "nameTable": false,
@@ -223,28 +281,58 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "दुर्जनशिक्षक",
+        "text": "दुर्जन",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "निजजनवीक्षक",
+        "text": "शिक्षक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "निज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "जन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वीक्षक",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "durjanaśikṣaka nijajanavīkṣaka",
-    "english": "{0:Instructor of the wicked}, {1:watcher over your own people}!",
+    "english": "{1:Instructor }{0:of the wicked}, {4:watcher over }{2:your own }{3:people}!",
     "words": [
       {
-        "roman": "durjanaśikṣaka",
-        "gloss": "instructor of wicked people; one who teaches them"
+        "roman": "durjana",
+        "gloss": "wicked people"
       },
       {
-        "roman": "nijajanavīkṣaka",
-        "gloss": "one who watches over your own people"
+        "roman": "śikṣaka",
+        "gloss": "instructor; one who teaches them"
+      },
+      {
+        "roman": "nija",
+        "gloss": "your own"
+      },
+      {
+        "roman": "jana",
+        "gloss": "people"
+      },
+      {
+        "roman": "vīkṣaka",
+        "gloss": "one who watches over"
       }
     ],
     "nameTable": false,
@@ -255,28 +343,55 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अङ्कुशधारक",
+        "text": "अङ्कुश",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जगदुद्धारक",
+        "text": "धारक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दु",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "द्धारक",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "aṅkuśadhāraka jagaduddhāraka",
-    "english": "{0:Bearer of the elephant goad}, {1:uplifter of the world}!",
+    "english": "{1:Bearer }{0:of the elephant goad}, {3:uplifter }{2:of the world}!",
     "words": [
       {
-        "roman": "aṅkuśadhāraka",
-        "gloss": "bearer of the elephant goad"
+        "roman": "aṅkuśa",
+        "gloss": "the elephant goad"
       },
       {
-        "roman": "jagaduddhāraka",
-        "gloss": "uplifter of the world; one who raises it out of distress"
+        "roman": "dhāraka",
+        "gloss": "bearer"
+      },
+      {
+        "roman": "jagad",
+        "gloss": "the world (jagat)"
+      },
+      {
+        "roman": "uddhāraka",
+        "gloss": "uplifter; one who raises it out of distress"
       }
     ],
     "nameTable": false,
@@ -319,28 +434,48 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अशेषकारक",
+        "text": "अशेष",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "शक्तिविधारक",
+        "text": "कारक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "शक्ति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "विधारक",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "aśeṣakāraka śaktividhāraka",
-    "english": "{0:Maker of all}, {1:bearer of power}!",
+    "english": "{1:Maker }{0:of all}, {3:bearer }{2:of power}!",
     "words": [
       {
-        "roman": "aśeṣakāraka",
-        "gloss": "maker of all; creator without remainder"
+        "roman": "aśeṣa",
+        "gloss": "all, without remainder"
       },
       {
-        "roman": "śaktividhāraka",
-        "gloss": "bearer of power; holder of effective strength"
+        "roman": "kāraka",
+        "gloss": "maker; creator"
+      },
+      {
+        "roman": "śakti",
+        "gloss": "power; effective strength"
+      },
+      {
+        "roman": "vidhāraka",
+        "gloss": "bearer; holder"
       }
     ],
     "nameTable": false,
@@ -351,28 +486,58 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "मूषकवाहक",
+        "text": "मूषक",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सुरदरदाहक",
+        "text": "वाहक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "सुर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दाहक",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "mūṣakavāhaka suradaradāhaka",
-    "english": "{0:Rider of a mouse}, {1:you who burn away the gods’ fear}!",
+    "english": "{1:Rider }{0:of a mouse}, {4:you who burn away }{2:the gods’ }{3:fear}!",
     "words": [
       {
-        "roman": "mūṣakavāhaka",
-        "gloss": "rider of a mouse; one whose conveyance is the mouse"
+        "roman": "mūṣaka",
+        "gloss": "mouse"
       },
       {
-        "roman": "suradaradāhaka",
-        "gloss": "burner of the gods’ fear"
+        "roman": "vāhaka",
+        "gloss": "rider; one whose conveyance it is"
+      },
+      {
+        "roman": "sura",
+        "gloss": "the gods"
+      },
+      {
+        "roman": "dara",
+        "gloss": "fear"
+      },
+      {
+        "roman": "dāhaka",
+        "gloss": "burner"
       }
     ],
     "nameTable": false,
@@ -457,14 +622,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "अखिलप्रहारक",
+        "text": "अखिल",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रहारक",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "pālaya sevakam akhilaprahāraka",
-    "english": "{0:Protect} {1:the servant}, {2:O striker of all}!",
+    "english": "{0:Protect} {1:the servant}, {3:O striker }{2:of all}!",
     "words": [
       {
         "roman": "pālaya",
@@ -475,8 +646,12 @@ window.SONG_LINES = {
         "gloss": "the servant; singular accusative, object of protect"
       },
       {
-        "roman": "akhilaprahāraka",
-        "gloss": "striker of all; vocative agent compound akhila+prahāraka"
+        "roman": "akhila",
+        "gloss": "all"
+      },
+      {
+        "roman": "prahāraka",
+        "gloss": "striker: vocative agent noun"
       }
     ],
     "nameTable": false,
@@ -549,36 +724,74 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "सर्वदेवार्चितत्वाच्च",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "गणेशः",
+        "text": "दे",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्रथमः",
+        "text": "वा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "र्चितत्वा",
         "wordIndices": [
           2
         ]
       },
       {
+        "text": "च्च",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "गणेशः",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रथमः",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
         "text": "स्मृतः",
         "wordIndices": [
-          3
+          6
         ]
       }
     ],
     "roman": "sarvadevārcitatvācca gaṇeśaḥ prathamaḥ smṛtaḥ",
-    "english": "{0:And because he is worshipped by all the gods}, {1:Gaṇeśa} {3:is remembered as} {2:foremost}.",
+    "english": "{3:And }{2:because he is worshipped }{0:by all }{1:the gods}, {4:Gaṇeśa} {6:is remembered as} {5:foremost}.",
     "words": [
       {
-        "roman": "sarvadevārcitatvācca",
-        "gloss": "and because of being worshipped by all the gods; ablative causal noun plus ca"
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "dev",
+        "gloss": "gods (deva)"
+      },
+      {
+        "roman": "ārcitatvāc",
+        "gloss": "because of being worshipped: arcitatvāt, ablative of cause"
+      },
+      {
+        "roman": "ca",
+        "gloss": "and"
       },
       {
         "roman": "gaṇeśaḥ",
@@ -751,48 +964,88 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "श्रीवासुदेवानन्दसरस्वतीविरचितं",
+        "text": "श्री",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "गीतिपूर्वं",
+        "text": "वासुदेवानन्दसरस्वती",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "गणपतिस्तोत्रं",
+        "text": "विरचितं",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सम्पूर्णम्",
+        "text": "गीति",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "पूर्वं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "गणपति",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "स्तोत्रं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सम्पूर्णम्",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "iti śrīvāsudevānandasarasvatīviracitaṃ gītipūrvaṃ gaṇapatistotraṃ sampūrṇam",
-    "english": "{0:Thus} {3:the hymn to Gaṇapati}, {2:preceded by a song}, {1:composed by the revered Vāsudevānanda Sarasvatī}, {4:is complete}.",
+    "english": "{0:Thus} {7:the hymn }{6:to Gaṇapati}, {5:preceded }{4:by a song}, {3:composed }{1:by the revered }{2:Vāsudevānanda Sarasvatī}, {8:is complete}.",
     "words": [
       {
         "roman": "iti",
         "gloss": "thus; closing the work"
       },
       {
-        "roman": "śrīvāsudevānandasarasvatīviracitaṃ",
-        "gloss": "composed by the revered Vāsudevānanda Sarasvatī; the named poet"
+        "roman": "śrī",
+        "gloss": "revered"
       },
       {
-        "roman": "gītipūrvaṃ",
-        "gloss": "preceded by a song; the opening sung section accompanies the hymn"
+        "roman": "vāsudevānandasarasvatī",
+        "gloss": "Vāsudevānanda Sarasvatī; the named poet"
       },
       {
-        "roman": "gaṇapatistotraṃ",
-        "gloss": "hymn of praise to Gaṇapati, the lord of the divine hosts"
+        "roman": "viracitaṃ",
+        "gloss": "composed"
+      },
+      {
+        "roman": "gīti",
+        "gloss": "song; the opening sung section accompanies the hymn"
+      },
+      {
+        "roman": "pūrvaṃ",
+        "gloss": "preceded by"
+      },
+      {
+        "roman": "gaṇapati",
+        "gloss": "Gaṇapati, the lord of the divine hosts"
+      },
+      {
+        "roman": "stotraṃ",
+        "gloss": "hymn of praise"
       },
       {
         "roman": "sampūrṇam",

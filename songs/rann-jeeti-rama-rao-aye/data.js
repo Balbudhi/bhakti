@@ -759,7 +759,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dharani dhenu mahideva sādhu saba ke saba soca nasāe",
-    "english": "{0:of the earth, }{1:the cows, }{2:the Brahmins, }{3:and the ascetics, }{4,7:all anxieties }{5,6:without exception }{8:he dispelled.}",
+    "english": "{0:of the earth, }{1:the cows, }{2:the Brahmins, }{3:and the ascetics, }{4:all }{7:anxieties }{5,6:without exception }{8:he dispelled.}",
     "words": [
       {
         "roman": "dharani",

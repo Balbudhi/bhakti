@@ -2730,7 +2730,7 @@ window.SONG_LINES = {
   "l049": {
     "source": "ਤਬ ਹੀ ਆਤਮ ਤਤ ਕੋ ਦਰਸੈ",
     "roman": "Tab hī ātam tat ko darasai",
-    "english": "{0,1:Only then }does one {5:behold }{4:the }{3:true nature }of the {2:self.}",
+    "english": "{1:Only }{0:then }does one {5:behold }{4:the }{3:true nature }of the {2:self.}",
     "words": [
       {
         "roman": "Tab",

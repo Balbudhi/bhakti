@@ -198,38 +198,99 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಹುಲಿಯುಗುರರಳಲೆ",
+        "text": "ಹುಲಿ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಮಾಕಾಯಿಗಳನಿಟ್ಟ",
+        "text": "ಯುಗು",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ರ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ರಳಲೆ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಮಾಕಾಯಿಗಳ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ನಿ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ಟ್ಟ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ತೋಳ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "huliyuguraraḷale mākāyigaḷaniṭṭa tōḷannāḍe",
-    "english": "{1:Wearing} {0:tiger-claw and peepal-leaf ornaments} {1:and mango-shaped ornaments}, {2:move your arms}!",
+    "english": "{4:Wearing} {0:tiger-}{1:claw }{2:and peepal-leaf ornaments} {3:and mango-shaped ornaments}, {6:move }{5:your arms}!",
     "words": [
       {
-        "roman": "huliyuguraraḷale",
-        "gloss": "tiger-claw and peepal-leaf ornaments"
+        "roman": "huli",
+        "gloss": "tiger"
       },
       {
-        "roman": "mākāyigaḷaniṭṭa",
-        "gloss": "wearing mango-shaped ornaments"
+        "roman": "yugur",
+        "gloss": "claw (uguru)"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "araḷale",
+        "gloss": "peepal-leaf ornament"
+      },
+      {
+        "roman": "mākāyigaḷan",
+        "gloss": "mango-shaped ornaments: accusative plural"
+      },
+      {
+        "roman": "iṭṭa",
+        "gloss": "wearing"
+      },
+      {
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,
@@ -246,40 +307,81 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಘಲಿರೆಂಬಂದುಗೆ",
+        "text": "ಘಲಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಗೆಜ್ಜೆಲಿ",
+        "text": "ರೆಂ",
         "wordIndices": [
+          1,
           2
         ]
       },
       {
-        "text": "ನಲಿಯುತ",
+        "text": "ಬಂ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ದುಗೆ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ಗೆಜ್ಜೆಲಿ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ನಲಿಯುತ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ತೋಳ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "svāmi ghalirembanduge gejjeli naliyuta tōḷannāḍe",
-    "english": "{0:Lord}, {3:dancing joyfully} {1:with jingling anklets} {2:and little bells}, {4:move your arms}!",
+    "english": "{0:Lord}, {5:dancing joyfully} {1,2:with jingling }{3:anklets} {4:and little bells}, {7:move }{6:your arms}!",
     "words": [
       {
         "roman": "svāmi",
         "gloss": "Lord"
       },
       {
-        "roman": "ghalirembanduge",
-        "gloss": "anklets that ring ghalir, a jingling sound"
+        "roman": "ghalir",
+        "gloss": "ghalir, a jingling sound"
+      },
+      {
+        "roman": "emb",
+        "gloss": "that say, that ring (emba)"
+      },
+      {
+        "roman": "anduge",
+        "gloss": "anklets"
       },
       {
         "roman": "gejjeli",
@@ -290,8 +392,12 @@ window.SONG_LINES = {
         "gloss": "dancing or playing joyfully; here dancing with the bells"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,
@@ -436,44 +542,82 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಪೂತನಿಯೆಂಬುವಳ",
+        "text": "ಪೂತನಿ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಸುವನೆ",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "ಹೀರಿದ",
+        "text": "ಯೆಂಬುವ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ಳ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ಸುವನೆ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಹೀರಿದ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ತೋಳ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "pūtaniyembuvaḷasuvane hīrida tōḷannāḍe",
-    "english": "{1:You who sucked out} {0:the very life of the woman named Pūtanī}, {2:move your arms}!",
+    "english": "{3:You who sucked out} {2:the very life }{1:of the woman named }{0:Pūtanī}, {5:move }{4:your arms}!",
     "words": [
       {
-        "roman": "pūtaniyembuvaḷasuvane",
-        "gloss": "the very life of the woman named Pūtanī"
+        "roman": "pūtani",
+        "gloss": "the demoness sent to kill the infant Kṛṣṇa"
+      },
+      {
+        "roman": "yembuvaḷ",
+        "gloss": "of the woman named (embuvaḷa)"
+      },
+      {
+        "roman": "asuvane",
+        "gloss": "the very life: accusative"
       },
       {
         "roman": "hīrida",
         "gloss": "you who sucked out"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,
@@ -504,24 +648,37 @@ window.SONG_LINES = {
       {
         "text": "ನಾಣುಗನ",
         "wordIndices": [
-          2
+          3
         ]
       },
       {
         "text": "ಮಡುಹಿದ",
         "wordIndices": [
-          3
+          4
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ತೋಳ",
         "wordIndices": [
-          4
+          5
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "svāmi māteya pitananāṇugana maḍuhida tōḷannāḍe",
-    "english": "{0:Lord}, {3:you who slew} {2:the son of} {1:your mother’s} {2:father}, {4:move your arms}!",
+    "english": "{0:Lord}, {4:you who slew} {3:the son of} {1:your mother’s} {2:father}, {6:move }{5:your arms}!",
     "words": [
       {
         "roman": "svāmi",
@@ -532,16 +689,24 @@ window.SONG_LINES = {
         "gloss": "of your mother"
       },
       {
-        "roman": "pitananāṇugana",
-        "gloss": "the father’s son; the continuous boundary represents pitana aṇugana"
+        "roman": "pitana",
+        "gloss": "of the father"
+      },
+      {
+        "roman": "nāṇugana",
+        "gloss": "the son (aṇugana, accusative; the joined text represents pitana aṇugana)"
       },
       {
         "roman": "maḍuhida",
         "gloss": "you who slew"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,
@@ -940,42 +1105,76 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಹಿರಣ್ಯಕನುದರವ",
+        "text": "ಹಿರಣ್ಯಕ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಸೀಳಿದ",
+        "text": "ನು",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ದರವ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ಸೀಳಿದ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ತೋಳ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "nakhadinda hiraṇyakanudarava sīḷida tōḷannāḍe",
-    "english": "{2:You who tore open} {1:Hiraṇyaka’s belly} {0:with your claws}, {3:move your arms}!",
+    "english": "{3:You who tore open} {1:Hiraṇyaka’s }{2:belly} {0:with your claws}, {5:move }{4:your arms}!",
     "words": [
       {
         "roman": "nakhadinda",
         "gloss": "with your claws"
       },
       {
-        "roman": "hiraṇyakanudarava",
-        "gloss": "the belly of Hiraṇyaka, the demon Hiraṇyakaśipu"
+        "roman": "hiraṇyakan",
+        "gloss": "of Hiraṇyaka, the demon Hiraṇyakaśipu"
+      },
+      {
+        "roman": "udarava",
+        "gloss": "the belly: accusative"
       },
       {
         "roman": "sīḷida",
         "gloss": "you who tore open"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,
@@ -1054,32 +1253,59 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಗೋಪಸ್ತ್ರೀಯರ",
+        "text": "ಗೋಪ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ಸ್ತ್ರೀಯರ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ತೋಳ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "vikaḷitageḍisida gōpastrīyara tōḷannāḍe",
-    "english": "{0:You who bewildered} {1:the cowherd women}, {2:move your arms}!",
+    "english": "{0:You who bewildered} {1:the cowherd }{2:women}, {4:move }{3:your arms}!",
     "words": [
       {
         "roman": "vikaḷitageḍisida",
         "gloss": "you who bewildered or unsettled"
       },
       {
-        "roman": "gōpastrīyara",
-        "gloss": "the cowherd women"
+        "roman": "gōpa",
+        "gloss": "cowherd"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "strīyara",
+        "gloss": "the women"
+      },
+      {
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,
@@ -1114,14 +1340,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ತೋಳನ್ನಾಡೆ",
+        "text": "ತೋಳ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ನ್ನಾ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ಡೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "svāmi sukhatīrthara pati purandaraviṭhala tōḷannāḍe",
-    "english": "{0:Lord}, {2:master} {1:of Sukhatīrtha}, {3:Purandara Viṭṭhala}, {4:move your arms}!",
+    "english": "{0:Lord}, {2:master} {1:of Sukhatīrtha}, {3:Purandara Viṭṭhala}, {5:move }{4:your arms}!",
     "words": [
       {
         "roman": "svāmi",
@@ -1140,8 +1379,12 @@ window.SONG_LINES = {
         "gloss": "Purandara Viṭṭhala, the deity addressed in Purandaradāsa’s signature; Purandara is destroyer of strongholds"
       },
       {
-        "roman": "tōḷannāḍe",
-        "gloss": "move your arms"
+        "roman": "tōḷann",
+        "gloss": "your arms (tōḷannu, accusative)"
+      },
+      {
+        "roman": "āḍe",
+        "gloss": "move, set moving"
       }
     ],
     "nameTable": false,

@@ -188,7 +188,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kiye dūr dukh sabanī ke",
-    "english": "{0,1:He removed}{2: the sorrows}{3,4: of all,}",
+    "english": "{0,1:He removed}{2: the sorrows}{4: of }{3:all,}",
     "words": [
       {
         "roman": "Kiye",

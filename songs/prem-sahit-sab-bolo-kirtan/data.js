@@ -80,7 +80,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prema sahita saba mila ke bolo",
-    "english": "{0,1:With love}, {2:all} {3,4:join together} {5:and chant!}",
+    "english": "{1:With }{0:love}, {2:all} {3,4:join together} {5:and chant!}",
     "words": [
       {
         "roman": "prema",
@@ -1678,7 +1678,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aba to bela phaila gaī sundara phala hoī",
-    "english": "{0:Now} {1:indeed} {2:the vine} {3,4:has spread}, {5:and beautiful} {6:fruit} {7:appears;}",
+    "english": "{0:Now} {1:indeed} {2:the vine} {4:has }{3:spread}, {5:and beautiful} {6:fruit} {7:appears;}",
     "words": [
       {
         "roman": "aba",

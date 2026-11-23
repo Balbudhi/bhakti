@@ -398,14 +398,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "संतांसमागमें",
+        "text": "संतां",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "समागमें",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "viṭṭhal jyā santāṃsamāgameṃ",
-    "english": "{0:Viṭṭhal}—{2:in }{1:whatever }{2:company of saints}.",
+    "english": "{0:Viṭṭhal}—{3:in }{1:whatever }{3:company }{2:of saints}.",
     "words": [
       {
         "roman": "viṭṭhal",
@@ -416,8 +422,12 @@ window.SONG_LINES = {
         "gloss": "whatever; oblique relative specifying the company"
       },
       {
-        "roman": "santāṃsamāgameṃ",
-        "gloss": "in the company of saints"
+        "roman": "santāṃ",
+        "gloss": "of saints"
+      },
+      {
+        "roman": "samāgameṃ",
+        "gloss": "in the company"
       }
     ],
     "nameTable": false,

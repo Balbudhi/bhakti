@@ -315,7 +315,7 @@ window.SONG_LINES = {
   "l006": {
     "source": "ਵਾਰਿ ਵਾਰਿ ਹਉ ਜਾਉ ਜੀਉ",
     "roman": "vār vār hau jāuṃ jīu",
-    "english": "{2:I }{0,1,3:give myself as an offering, again and again, }{4:dear one.}",
+    "english": "{2:I }{3:give myself }{0:as an offering, }{1:again and again, }{4:dear one.}",
     "words": [
       {
         "roman": "vār",

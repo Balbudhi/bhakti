@@ -56,7 +56,9 @@ def _rebuild(directory: Path) -> tuple[bool, bool]:
             words = cleaned
             changed = True
         source_words = source_word_map.build_source_words(str(line.get("source") or ""), words)
-        if source_words != line.get("sourceWords"):
+        # Keep reviewed finer pieces; rebuild only a missing or invalid map.
+        if source_words != line.get("sourceWords") and source_word_map.validate_source_words(
+                str(line.get("source") or ""), words, line.get("sourceWords")):
             line["sourceWords"] = source_words
             changed = True
     if changed:

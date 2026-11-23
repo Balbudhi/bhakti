@@ -72,7 +72,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ab to mujhko batā mere sāī̃",
-    "english": "{0,1:Now }{2,3:tell me, }{4:my }{5:Sai,}",
+    "english": "{0,1:Now }{3:tell }{2:me, }{4:my }{5:Sai,}",
     "words": [
       {
         "roman": "ab",
@@ -463,7 +463,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jin caraṇõ mẽ tīrath base haĩ",
-    "english": "{0,2:In which }{1:feet }{3:sacred pilgrimage shrines }{4,5:dwell,}",
+    "english": "{2:In }{0:which }{1:feet }{3:sacred pilgrimage shrines }{4,5:dwell,}",
     "words": [
       {
         "roman": "jin",
@@ -635,7 +635,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jin caraṇõ mẽ merā jīvan basā hai",
-    "english": "{0,2:in which }{1:feet }{3:my }{4:life }{5,6:has its abode,}",
+    "english": "{2:in }{0:which }{1:feet }{3:my }{4:life }{5,6:has its abode,}",
     "words": [
       {
         "roman": "jin",
@@ -1074,7 +1074,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tumhāre caraṇ kabhī nā choṛūṅgā",
-    "english": "{2,3,4:I will never leave }{0:your }{1:feet.}",
+    "english": "{4:I will }{2,3:never }{4:leave }{0:your }{1:feet.}",
     "words": [
       {
         "roman": "tumhāre",

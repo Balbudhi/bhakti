@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Siddhakuñjikā Stotram",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Sanskrit"
   ],
@@ -57,14 +57,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सिद्धकुञ्जिकास्तोत्रम्",
+        "text": "सिद्ध",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "कुञ्जिका",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्तोत्रम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "atha siddhakuñjikāstotram",
-    "english": "{0:Now,}{1: the Hymn of the Accomplished Key.}",
+    "english": "{0:Now,}{3: the Hymn}{1: of the Accomplished}{2: Key.}",
     "words": [
       {
         "roman": "atha",
@@ -73,8 +85,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "siddhakuñjikāstotram",
-        "gloss": "hymn of Siddhakuñjikā: siddha, accomplished/effective; kuñjikā, little key; stotram, hymn",
+        "roman": "siddha",
+        "gloss": "accomplished, effective",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kuñjikā",
+        "gloss": "little key",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "stotram",
+        "gloss": "hymn",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -141,14 +165,33 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कुञ्जिकास्तोत्रमुत्तमम्",
+        "text": "कुञ्जिका",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "स्तोत्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मु",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्तमम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "śṛṇu devi pravakṣyāmi kuñjikāstotramuttamam",
-    "english": "{0:Listen,}{1: Goddess:}{2: I shall declare}{3: the supreme Hymn of the Little Key.}",
+    "english": "{0:Listen,}{1: Goddess:}{2: I shall declare}{5: the supreme}{4: Hymn}{3: of the Little Key.}",
     "words": [
       {
         "roman": "śṛṇu",
@@ -169,8 +212,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kuñjikāstotramuttamam",
-        "gloss": "the supreme hymn of the little key: kuñjikā-stotram + uttamam",
+        "roman": "kuñjikā",
+        "gloss": "little key",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "stotram",
+        "gloss": "hymn",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "uttamam",
+        "gloss": "supreme",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -189,32 +244,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मन्त्रप्रभावेण",
+        "text": "मन्त्र",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "चण्डीजापः",
+        "text": "प्रभावेण",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "शुभो",
+        "text": "चण्डी",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "भवेत्",
+        "text": "जापः",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "शुभो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भवेत्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "yena mantraprabhāveṇa caṇḍījāpaḥ śubho bhavet",
-    "english": "{0,1:Through its mantric power,}{2: the recitation of Caṇḍī}{4: may bear}{3: auspicious fruit.}",
+    "english": "{2:Through}{0: its}{1: mantric}{2: power,}{4: the recitation}{3: of Caṇḍī}{6: may bear}{5: auspicious fruit.}",
     "words": [
       {
         "roman": "yena",
@@ -223,14 +290,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mantraprabhāveṇa",
-        "gloss": "by the power of the mantra",
+        "roman": "mantra",
+        "gloss": "sacred formula, mantra",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "caṇḍījāpaḥ",
-        "gloss": "recitation of Caṇḍī, the fierce Goddess",
+        "roman": "prabhāveṇa",
+        "gloss": "by the power: instrumental",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "caṇḍī",
+        "gloss": "Caṇḍī, the fierce Goddess",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "jāpaḥ",
+        "gloss": "recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -267,32 +346,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नार्गलास्तोत्रं",
+        "text": "ना",
         "wordIndices": [
-          2
+          2,
+          3
         ]
       },
       {
-        "text": "कीलकं",
+        "text": "र्गला",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "न",
+        "text": "स्तोत्रं",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "रहस्यकम्",
+        "text": "कीलकं",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रहस्यकम्",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "na kavacaṁ nārgalāstotraṁ kīlakaṁ na rahasyakam",
-    "english": "{0,1:Neither the Protective Armour hymn,}{2: nor the Bolt,}{3: the Pin,}{4,5: or the Secret teaching—}",
+    "english": "{0:Neither}{1: the Protective Armour hymn,}{2: nor}{3,4: the Bolt,}{5: the Pin,}{6: or}{7: the Secret teaching—}",
     "words": [
       {
         "roman": "na",
@@ -307,8 +399,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nārgalāstotraṁ",
-        "gloss": "nor the Bolt hymn: na + argalā-stotram",
+        "roman": "n",
+        "gloss": "nor (na)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārgalā",
+        "gloss": "the Bolt (argalā; na + argalā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "stotraṁ",
+        "gloss": "hymn",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -471,36 +575,84 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "कुञ्जिकापाठमात्रेण",
+        "text": "कुञ्जिका",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "दुर्गापाठफलं",
+        "text": "पाठ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "लभेत्",
+        "text": "मात्रेण",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दुर्गा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पाठ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "फलं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लभेत्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "kuñjikāpāṭhamātreṇa durgāpāṭhaphalaṁ labhet",
-    "english": "{0:By reciting the Little Key alone,}{2: one may obtain}{1: the fruit of reciting the Durgā text.}",
+    "english": "{1:By reciting}{0: the Little Key}{2: alone,}{6: one may obtain}{5: the fruit}{4: of reciting}{3: the Durgā text.}",
     "words": [
       {
-        "roman": "kuñjikāpāṭhamātreṇa",
-        "gloss": "by recitation of the Little Key alone; Kuñjikā is the title of this hymn",
+        "roman": "kuñjikā",
+        "gloss": "the Little Key; Kuñjikā is the title of this hymn",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "durgāpāṭhaphalaṁ",
-        "gloss": "the fruit of reciting the Durgā text",
+        "roman": "pāṭha",
+        "gloss": "recitation",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mātreṇa",
+        "gloss": "by it alone: instrumental",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "durgā",
+        "gloss": "the Durgā text",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāṭha",
+        "gloss": "reciting",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "phalaṁ",
+        "gloss": "the fruit: accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -657,14 +809,40 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "स्तम्भनोच्चाटनादिकम्",
+        "text": "स्तम्भ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "नो",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "च्चाट",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "दिकम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "māraṇaṁ mohanaṁ vaśyaṁ stambhanoccāṭanādikam",
-    "english": "{0:Killing,}{1: enchantment,}{2: subjugation,}{3: paralysis, expulsion and the like}",
+    "english": "{0:Killing,}{1: enchantment,}{2: subjugation,}{3: paralysis,}{4: expulsion}{5: and the like}",
     "words": [
       {
         "roman": "māraṇaṁ",
@@ -685,8 +863,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "stambhanoccāṭanādikam",
-        "gloss": "paralysis, expulsion and the like: stambhana + uccāṭana + ādikam",
+        "roman": "stambhan",
+        "gloss": "paralysis (stambhana)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "occāṭan",
+        "gloss": "expulsion (uccāṭana)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādikam",
+        "gloss": "and the like",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -699,30 +889,61 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "पाठमात्रेण",
+        "text": "पाठ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "संसिद्ध्येत्",
+        "text": "मात्रेण",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कुञ्जिकास्तोत्रमुत्तमम्",
+        "text": "संसिद्ध्येत्",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कुञ्जिका",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्तोत्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मु",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्तमम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "pāṭhamātreṇa saṁsiddhyet kuñjikāstotramuttamam",
-    "english": "{1:may be accomplished}{0: by recitation alone—}{2:through this supreme Hymn of the Little Key.}",
+    "english": "{2:may be accomplished}{0: by recitation}{1: alone—}{5:through this supreme}{4: Hymn}{3: of the Little Key.}",
     "words": [
       {
-        "roman": "pāṭhamātreṇa",
-        "gloss": "through recitation alone",
+        "roman": "pāṭha",
+        "gloss": "recitation",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mātreṇa",
+        "gloss": "through it alone: instrumental",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -733,8 +954,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kuñjikāstotramuttamam",
-        "gloss": "the supreme Hymn of the Little Key",
+        "roman": "kuñjikā",
+        "gloss": "the Little Key",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "stotram",
+        "gloss": "hymn",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "uttamam",
+        "gloss": "supreme",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1257,26 +1490,52 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कैटभहारिण्यै",
+        "text": "कैटभ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नमस्ते",
+        "text": "हारिण्यै",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "महिषार्दिनि",
+        "text": "नम",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "स्ते",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "महि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "षा",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "र्दिनि",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "namaḥ kaiṭabhahāriṇyai namaste mahiṣārdini",
-    "english": "{0:Homage}{1: to the destroyer of Kaiṭabha;}{2: homage to you,}{3: slayer of the buffalo demon.}",
+    "english": "{0:Homage}{2: to the destroyer}{1: of Kaiṭabha;}{3: homage}{4: to you,}{6: slayer}{5: of the buffalo demon.}",
     "words": [
       {
         "roman": "namaḥ",
@@ -1285,20 +1544,38 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kaiṭabhahāriṇyai",
-        "gloss": "to her who takes away/destroys Kaiṭabha, the named demon",
+        "roman": "kaiṭabha",
+        "gloss": "Kaiṭabha, the named demon",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "namaste",
-        "gloss": "homage to you",
+        "roman": "hāriṇyai",
+        "gloss": "to her who takes away, destroys: dative",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mahiṣārdini",
-        "gloss": "O tormentor/slayer of Mahiṣa, the buffalo demon",
+        "roman": "namas",
+        "gloss": "homage (namaḥ)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "te",
+        "gloss": "to you",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mahiṣ",
+        "gloss": "Mahiṣa, the buffalo demon",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārdini",
+        "gloss": "O tormentor, slayer: ardinī, vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1311,42 +1588,86 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "नमस्ते",
+        "text": "नम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "शुम्भहन्त्र्यै",
+        "text": "स्ते",
         "wordIndices": [
+          0,
           1
         ]
       },
       {
-        "text": "च",
+        "text": "शुम्भ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "निशुम्भासुरघातिनि",
+        "text": "हन्त्र्यै",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "च",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निशु",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "म्भा",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "सुर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "घातिनि",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "namaste śumbhahantryai ca niśumbhāsuraghātini",
-    "english": "{0:Homage to you,}{1: slayer of Śumbha}{2: and}{3: of the demon Niśumbha.}",
+    "english": "{0:Homage}{1: to you,}{3,7: slayer}{2: of Śumbha}{4: and}{6: of the demon}{5: Niśumbha.}",
     "words": [
       {
-        "roman": "namaste",
-        "gloss": "homage to you",
+        "roman": "namas",
+        "gloss": "homage (namaḥ)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "śumbhahantryai",
-        "gloss": "to the slayer of the demon Śumbha",
+        "roman": "te",
+        "gloss": "to you",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śumbha",
+        "gloss": "the demon Śumbha",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hantryai",
+        "gloss": "to the slayer: dative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1357,8 +1678,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "niśumbhāsuraghātini",
-        "gloss": "O slayer of the demon Niśumbha",
+        "roman": "niśumbh",
+        "gloss": "Niśumbha",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āsura",
+        "gloss": "demon (asura)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ghātini",
+        "gloss": "O slayer: vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2043,14 +2376,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "हुङ्काररूपिण्यै",
+        "text": "हुङ्कार",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "रूपिण्यै",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "huṁ huṁ huṅkārarūpiṇyai",
-    "english": "{0:Huṃ}{1: huṃ—}{2:to her whose form is the sound huṃ.}",
+    "english": "{0:Huṃ}{1: huṃ—}{3:to her whose form}{2: is the sound huṃ.}",
     "words": [
       {
         "roman": "huṁ",
@@ -2065,8 +2404,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "huṅkārarūpiṇyai",
-        "gloss": "to her whose form is the utterance huṃ",
+        "roman": "huṅkāra",
+        "gloss": "the sound, utterance huṃ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rūpiṇyai",
+        "gloss": "to her whose form is: dative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2859,20 +3204,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कुञ्जिकास्तोत्रं",
+        "text": "कुञ्जिका",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "मन्त्रजागर्तिहेतवे",
+        "text": "स्तोत्रं",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "मन्त्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जागर्ति",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हेतवे",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "idaṁ tu kuñjikāstotraṁ mantrajāgartihetave",
-    "english": "{0,1:This}{2: Hymn of the Little Key}{3: is for awakening the mantra.}",
+    "english": "{0,1:This}{3: Hymn}{2: of the Little Key}{6: is for}{5: awakening}{4: the mantra.}",
     "words": [
       {
         "roman": "idaṁ",
@@ -2887,14 +3250,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kuñjikāstotraṁ",
-        "gloss": "Hymn of the Little Key",
+        "roman": "kuñjikā",
+        "gloss": "the Little Key",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mantrajāgartihetave",
-        "gloss": "for the awakening of the mantra: mantra-jāgarti-hetave",
+        "roman": "stotraṁ",
+        "gloss": "hymn",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mantra",
+        "gloss": "the sacred formula, mantra",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "jāgarti",
+        "gloss": "awakening",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hetave",
+        "gloss": "for the purpose of: dative",
         "concept_key": "",
         "preserve_in_english": false
       }

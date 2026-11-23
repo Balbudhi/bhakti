@@ -236,7 +236,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ kī pālakī cale, sāīṁ kī pālakī cale, śirḍī kī galiyoṁ meṁ, śirḍī kī galiyoṁ meṁ bājā baje tālī baje re",
-    "english": "{0,1,2:Sai's palanquin }{3:moves, }{4,5,6:Sai's palanquin }{7:moves, }{8,9,10,11:in the streets of Shirdi, }{12,13,14,15:in the streets of Shirdi }{16,17:instruments play, }{18,19:hands clap, }{20:O!}",
+    "english": "{0,1:Sai's }{2:palanquin }{3:moves, }{4,5:Sai's }{6:palanquin }{7:moves, }{11:in }{10:the streets }{8,9:of Shirdi, }{15:in }{14:the streets }{12,13:of Shirdi }{16,17:instruments play, }{18,19:hands clap, }{20:O!}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -499,7 +499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ kī pālakī cale, sāīṁ kī pālakī cale, śirḍī kī galiyoṁ meṁ, śirḍī kī galiyoṁ meṁ bājā baje tālī baje re",
-    "english": "{0,1,2:Sai's palanquin }{3:moves, }{4,5,6:Sai's palanquin }{7:moves, }{8,9,10,11:in the streets of Shirdi, }{12,13,14,15:in the streets of Shirdi }{16,17:instruments play, }{18,19:hands clap, }{20:O!}",
+    "english": "{0,1:Sai's }{2:palanquin }{3:moves, }{4,5:Sai's }{6:palanquin }{7:moves, }{11:in }{10:the streets }{8,9:of Shirdi, }{15:in }{14:the streets }{12,13:of Shirdi }{16,17:instruments play, }{18,19:hands clap, }{20:O!}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -1370,7 +1370,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ kī pālakī cale, sāīṁ kī pālakī cale, śirḍī kī galiyoṁ meṁ bājā baje tālī baje re",
-    "english": "{0,1,2:Sai's palanquin }{3:moves, }{4,5,6:Sai's palanquin }{7:moves, }{8,9,10,11:in the streets of Shirdi }{12,13:instruments play, }{14,15:hands clap, }{16:O!}",
+    "english": "{0,1:Sai's }{2:palanquin }{3:moves, }{4,5:Sai's }{6:palanquin }{7:moves, }{11:in }{10:the streets }{8,9:of Shirdi }{12,13:instruments play, }{14,15:hands clap, }{16:O!}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -1579,7 +1579,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī utāre āratī, koī utāre āratī, śrī guru ke caraṇoṁ meṁ koī haṁse koī roe re",
-    "english": "{0:Someone }{1:performs }{2:arati, }{3:someone }{4:performs }{5:arati, }{6,7,8,9,10:at the holy Guru's feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O!}",
+    "english": "{0:Someone }{1:performs }{2:arati, }{3:someone }{4:performs }{5:arati, }{10:at }{6:the holy }{7,8:Guru's }{9:feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O!}",
     "words": [
       {
         "roman": "koī",
@@ -1812,7 +1812,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī utāre āratī, koī utāre āratī, śrī guru ke caraṇoṁ meṁ koī haṁse koī roe re, koī haṁse koī roe re",
-    "english": "{0:Someone }{1:performs }{2:arati, }{3:someone }{4:performs }{5:arati, }{6,7,8,9,10:at the holy Guru's feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O, }{16:someone }{17:laughs, }{18:someone }{19:weeps, }{20:O!}",
+    "english": "{0:Someone }{1:performs }{2:arati, }{3:someone }{4:performs }{5:arati, }{10:at }{6:the holy }{7,8:Guru's }{9:feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O, }{16:someone }{17:laughs, }{18:someone }{19:weeps, }{20:O!}",
     "words": [
       {
         "roman": "koī",
@@ -3036,7 +3036,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ kī pālakī cale, sāīṁ kī pālakī cale, śirḍī kī galiyoṁ meṁ bājā baje tālī baje re, bājā baje tālī baje re, bājā baje tālī baje re, jaya ho sāīṁ",
-    "english": "{0,1,2:Sai's palanquin }{3:moves, }{4,5,6:Sai's palanquin }{7:moves, }{8,9,10,11:in the streets of Shirdi }{12,13:instruments play, }{14,15:hands clap, }{16:O, }{17,18:instruments play, }{19,20:hands clap, }{21:O, }{22,23:instruments play, }{24,25:hands clap, }{26:O, }{27:victory }{28:to }{29:Sai!}",
+    "english": "{0,1:Sai's }{2:palanquin }{3:moves, }{4,5:Sai's }{6:palanquin }{7:moves, }{11:in }{10:the streets }{8,9:of Shirdi }{12,13:instruments play, }{14,15:hands clap, }{16:O, }{17,18:instruments play, }{19,20:hands clap, }{21:O, }{22,23:instruments play, }{24,25:hands clap, }{26:O, }{27:victory }{28:to }{29:Sai!}",
     "words": [
       {
         "roman": "sāīṁ",

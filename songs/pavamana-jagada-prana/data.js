@@ -108,34 +108,54 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಭವಭಯಾರಣ್ಯ",
+        "text": "ಭವ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ದಹನ",
+        "text": "ಭಯಾ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಪವನ",
+        "text": "ರಣ್ಯ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ದಹನ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಪವನ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "saṃkaruṣaṇa bhavabhayāraṇya dahana pavana",
-    "english": "{0:Saṃkaruṣaṇa}, {2:burner of} {1:the forest of fear of worldly existence}, {3:O Wind}!",
+    "english": "{0:Saṃkaruṣaṇa}, {4:burner of} {3:the forest} {2:of fear} {1:of worldly existence}, {5:O Wind}!",
     "words": [
       {
         "roman": "saṃkaruṣaṇa",
         "gloss": "an epithet in this address to the wind-deity"
       },
       {
-        "roman": "bhavabhayāraṇya",
-        "gloss": "the forest of fear of worldly existence; bhava-bhaya-araṇya"
+        "roman": "bhava",
+        "gloss": "worldly existence"
+      },
+      {
+        "roman": "bhay",
+        "gloss": "fear; bhaya, joined a + a"
+      },
+      {
+        "roman": "āraṇya",
+        "gloss": "forest; araṇya, last member of the compound"
       },
       {
         "roman": "dahana",
@@ -468,14 +488,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ನಿನ್ನಾರಾಧಿಪುದಕೆ",
+        "text": "ನಿನ್ನಾ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ರಾಧಿಪುದಕೆ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "yāma yāmake ninnārādhipudake",
-    "english": "{0,1:Watch after watch}, {2:to worship you}—",
+    "english": "{0:Watch} {1:after watch}, {3:to worship} {2:you}—",
     "words": [
       {
         "roman": "yāma",
@@ -486,8 +512,12 @@ window.SONG_LINES = {
         "gloss": "at each watch; at each successive period"
       },
       {
-        "roman": "ninnārādhipudake",
-        "gloss": "to worship you; ninna plus ārādhipudake"
+        "roman": "ninn",
+        "gloss": "you; ninna, object of worship"
+      },
+      {
+        "roman": "ārādhipudake",
+        "gloss": "to worship; verbal noun, dative"
       }
     ],
     "nameTable": false,
@@ -852,60 +882,120 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಅರ್ಜುನಗೊಲಿದಂದು",
+        "text": "ಅರ್ಜುನ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಧ್ವಜವಾನಿಸಿ",
+        "text": "ಗೊಲಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ನಿಂದು",
+        "text": "ದಂದು",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಮೂರ್ಜಗವರಿಯುವಂತೆ",
+        "text": "ಧ್ವಜ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಗರ್ಜನೆ",
+        "text": "ವಾನಿಸಿ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಮಾಡಿದೆ",
+        "text": "ನಿಂದು",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ಮೂ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ರ್ಜಗ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ವರಿಯು",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ವಂತೆ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ಗರ್ಜನೆ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ಮಾಡಿದೆ",
+        "wordIndices": [
+          11
         ]
       }
     ],
     "roman": "arjunagolidandu dhvajavānisi nindu mūrjagavariyuvaṃte garjane māḍide",
-    "english": "{0:When you favored Arjuna}, {1:taking your place upon his banner} {2:and standing there}, {5:you uttered} {4:a roar} {3:for the three worlds to know}.",
+    "english": "{2:When} {1:you favored} {0:Arjuna}, {4:taking your place} {3:upon his banner} {5:and standing there}, {11:you uttered} {10:a roar} {9:for} {6:the three} {7:worlds} {8:to know}.",
     "words": [
       {
-        "roman": "arjunagolidandu",
-        "gloss": "when you favored Arjuna; arjunage plus olida plus andu"
+        "roman": "arjunag",
+        "gloss": "Arjuna; arjunage, dative with “favored”"
       },
       {
-        "roman": "dhvajavānisi",
-        "gloss": "having become the banner; standing as its emblem"
+        "roman": "olid",
+        "gloss": "you favored; olida, past participle"
+      },
+      {
+        "roman": "andu",
+        "gloss": "when; on that day"
+      },
+      {
+        "roman": "dhvajav",
+        "gloss": "banner; dhvaja with glide v"
+      },
+      {
+        "roman": "ānisi",
+        "gloss": "taking one’s place upon; resting on"
       },
       {
         "roman": "nindu",
         "gloss": "standing; remaining"
       },
       {
-        "roman": "mūrjagavariyuvaṃte",
-        "gloss": "so that the three worlds would know"
+        "roman": "mūr",
+        "gloss": "three; mūru"
+      },
+      {
+        "roman": "jagav",
+        "gloss": "worlds; jagavu"
+      },
+      {
+        "roman": "ariyuv",
+        "gloss": "know; ariyuva"
+      },
+      {
+        "roman": "aṃte",
+        "gloss": "so that; in such a way that"
       },
       {
         "roman": "garjane",
@@ -1002,22 +1092,42 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಭವವರ್ಜಿತನೆನಿಸೋ",
+        "text": "ಭವ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ವರ್ಜಿತ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ನೆನಿಸೋ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "majjanadali bhavavarjitanenisō",
-    "english": "{0:through bathing in it}, {1:make me free of worldly existence}.",
+    "english": "{0:through bathing in it}, {3:make me} {2:free} {1:of worldly existence}.",
     "words": [
       {
         "roman": "majjanadali",
         "gloss": "through bathing; in immersion"
       },
       {
-        "roman": "bhavavarjitanenisō",
-        "gloss": "make me one free of worldly existence; bhava-varjita plus enisu"
+        "roman": "bhava",
+        "gloss": "worldly existence"
+      },
+      {
+        "roman": "varjitan",
+        "gloss": "one free of; varjita, devoid of"
+      },
+      {
+        "roman": "enisō",
+        "gloss": "make me be; cause me to be called, enisu"
       }
     ],
     "nameTable": false,
@@ -1128,32 +1238,62 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಶರ್ವಾದಿ",
+        "text": "ಶರ್ವಾ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಗೀರ್ವಾಣಾದ್ಯಮರರಿಗೆ",
+        "text": "ದಿ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ಗೀರ್ವಾಣಾ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ದ್ಯ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಮರರಿಗೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "nīne śarvādi gīrvāṇādyamararige",
-    "english": "{0:You alone}, {2:to the heavenly gods} {1:beginning with Śarva},",
+    "english": "{0:You alone}, {5:to} {4:the }{3:heavenly} {5:gods} {2:beginning with} {1:Śarva},",
     "words": [
       {
         "roman": "nīne",
         "gloss": "you alone; you indeed"
       },
       {
-        "roman": "śarvādi",
-        "gloss": "Śarva and the rest; Śarva is Śiva"
+        "roman": "śarv",
+        "gloss": "Śarva, who is Śiva"
       },
       {
-        "roman": "gīrvāṇādyamararige",
-        "gloss": "to the heavenly immortals; to the gods"
+        "roman": "ādi",
+        "gloss": "beginning with; and the rest"
+      },
+      {
+        "roman": "gīrvāṇ",
+        "gloss": "heavenly beings, gods; gīrvāṇa"
+      },
+      {
+        "roman": "ādy",
+        "gloss": "and the rest; ādi before a vowel"
+      },
+      {
+        "roman": "amararige",
+        "gloss": "to the immortals, the gods; dative plural"
       }
     ],
     "nameTable": false,
@@ -1228,32 +1368,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಏನೇನೆಸಗಿದ",
+        "text": "ಏನೇ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಮಾನಸಾದಿ",
+        "text": "ನೆಸಗಿದ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಕರ್ಮ",
+        "text": "ಮಾನಸಾ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ನಿನಗೊಪ್ಪಿಸಿದೆನೋ",
+        "text": "ದಿ",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ಕರ್ಮ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ನಿನ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಗೊಪ್ಪಿಸಿದೆನೋ",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "nānu nirutadalli ēnēnesagida mānasādi karma ninagoppisidenō",
-    "english": "{0:I} {5:have entrusted to you} {4:all the actions} {3:of mind and the rest} {2:that I have done}, {1:at all times}.",
+    "english": "{0:I} {8:have entrusted} {7:to you} {6:all the actions} {4:of mind} {5:and the rest} {2:that} {3:I have done}, {1:at all times}.",
     "words": [
       {
         "roman": "nānu",
@@ -1264,20 +1422,32 @@ window.SONG_LINES = {
         "gloss": "continually; at all times"
       },
       {
-        "roman": "ēnēnesagida",
-        "gloss": "whatever I have done; ēnēnu plus esagida"
+        "roman": "ēnēn",
+        "gloss": "whatever; ēnēnu, doubled “what”"
       },
       {
-        "roman": "mānasādi",
-        "gloss": "beginning with mental action; of mind and the rest"
+        "roman": "esagida",
+        "gloss": "that I have done; past participle"
+      },
+      {
+        "roman": "mānas",
+        "gloss": "of the mind; mānasa, mental"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and the rest; beginning with"
       },
       {
         "roman": "karma",
         "gloss": "actions; deeds"
       },
       {
-        "roman": "ninagoppisidenō",
-        "gloss": "I have entrusted to you; ninage plus oppisidenu"
+        "roman": "ninag",
+        "gloss": "to you; ninage, dative"
+      },
+      {
+        "roman": "oppisidenō",
+        "gloss": "I have entrusted; oppisidenu with final ō"
       }
     ],
     "nameTable": false,
@@ -1288,30 +1458,40 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಪ್ರಾಣನಾಥ",
+        "text": "ಪ್ರಾಣ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಸಿರಿ",
+        "text": "ನಾಥ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ವಿಜಯವಿಠ್ಠಲನ",
+        "text": "ಸಿರಿ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ವಿಜಯವಿಠ್ಠಲನ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "prāṇanātha siri vijayaviṭhṭhalana",
-    "english": "{0:O Lord of life-breath}, {1,2:Śrī Vijayaviṭhṭhala}—",
+    "english": "{1:O Lord} {0:of life-breath}, {2:Śrī} {3:Vijayaviṭhṭhala}—",
     "words": [
       {
-        "roman": "prāṇanātha",
-        "gloss": "lord of life-breath; addressed to Vāyu"
+        "roman": "prāṇa",
+        "gloss": "life-breath"
+      },
+      {
+        "roman": "nātha",
+        "gloss": "lord; vocative, addressed to Vāyu"
       },
       {
         "roman": "siri",

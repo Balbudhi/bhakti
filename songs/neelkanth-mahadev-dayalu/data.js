@@ -287,7 +287,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dukhiyõ par kṛpā karne vāle bholenāth ke nām ke sumiran se hī sārā vātāvaraṇ sugandhit ho jātā hai. sundartā ke apār sāgar ha͠i bhagvān śaṅkar, sṛṣṭi ke pālanhār ha͠i bhagvān śaṅkar, siddh tapasvī aur mahān yogī ha͠i nīlkaṇṭh mahādev bhagvān śaṅkar.",
-    "english": "{9,10,11:By the mere remembrance}{7,8: of the name}{5,6: of Bholenath,}{2,3,4: who extends grace}{0,1: upon the suffering,}{12,13: the entire atmosphere}{14,15,16,17: becomes fragrant.}{23,24: Lord Shankar}{20,21,22: is a boundless ocean}{18,19: of beauty,}{29,30: Lord Shankar}{27,28: is the sustainer}{25,26: of creation,}{37,38,39,40: Neelkanth Mahadev Lord Shankar}{31,32,36: is a perfected ascetic}{33,34,35: and great yogi.}",
+    "english": "{10:By}{11: the mere}{9: remembrance}{7,8: of the name}{5,6: of Bholenath,}{2,3,4: who extends grace}{0,1: upon the suffering,}{12,13: the entire atmosphere}{15,16,17: becomes}{14: fragrant.}{23,24: Lord Shankar}{22: is}{20: a boundless}{21: ocean}{19: of }{18:beauty,}{29,30: Lord Shankar}{27,28: is the sustainer}{26: of }{25:creation,}{37: Neelkanth}{38: Mahadev}{39,40: Lord Shankar}{36: is}{31: a perfected}{32: ascetic}{33,34,35: and great yogi.}",
     "words": [
       {
         "roman": "dukhiyõ",
@@ -1139,7 +1139,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sundartā ke tum sāgar ho",
-    "english": "{2:You }{4:are }{3:an ocean }{0,1:of beauty,}",
+    "english": "{2:You }{4:are }{3:an ocean }{1:of }{0:beauty,}",
     "words": [
       {
         "roman": "sundartā",
@@ -1457,7 +1457,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sṛṣṭi kā kāraṇ bhī tum ho",
-    "english": "{4:You }{5:are }{3:also }{2:the cause }{0,1:of creation,}",
+    "english": "{4:You }{5:are }{3:also }{2:the cause }{1:of }{0:creation,}",
     "words": [
       {
         "roman": "sṛṣṭi",

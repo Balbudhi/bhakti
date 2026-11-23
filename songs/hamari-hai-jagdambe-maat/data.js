@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ kiyā karate ho tum din rāt bin bāt kī cintā",
-    "english": "{0:Yes}{4:, you}{1,2,3,10: worry}{5: day}{6: and night}{7,8,9: for no reason.}",
+    "english": "{0:Yes}{3,4:, you}{1,2,10: worry}{5: day}{6: and night}{7,8,9: for no reason.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -815,7 +815,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terī maiyā ko rahatī hai terī har bāt kī cintā",
-    "english": "{0:Your}{1: Mother}{2,3,4,9: cares}{6,7,8: about everything}{5: that concerns you.}",
+    "english": "{0:Your}{1,2: Mother}{3,4,9: cares}{6,7,8: about everything}{5: that concerns you.}",
     "words": [
       {
         "roman": "Terī",
@@ -1109,7 +1109,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rahe har śvās mẽ bas māt ke priya nām kī cintā",
-    "english": "{1,2,3:With every breath}{0:, let our}{4: only}{0,10: care be}{5,6: Mother’s}{7: beloved}{8,9: name.}",
+    "english": "{1,2,3:With every breath}{0:, let our}{4: only}{10: care }{0:be}{5,6: Mother’s}{7: beloved}{8,9: name.}",
     "words": [
       {
         "roman": "Rahe",

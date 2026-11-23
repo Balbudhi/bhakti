@@ -883,30 +883,55 @@ window.SONG_LINES = {
     "sourceLanguage": "ta",
     "sourceWords": [
       {
-        "text": "கலிநாளுக்கிரங்கி",
+        "text": "கலி",
         "wordIndices": [
           0
         ]
       },
       {
+        "text": "நாளுக்கி",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ரங்கி",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
         "text": "கல்லிலே",
         "wordIndices": [
-          1
+          3
         ]
       },
       {
         "text": "இறங்கி",
         "wordIndices": [
-          2
+          4
         ]
       }
     ],
     "roman": "kalināḷukkiraṅgi kallilē iṟaṅgi",
-    "english": "{0:Taking pity on the Kali age,}{2: descending}{1: into the very stone,}",
+    "english": "{2:Taking pity}{1: on the}{0: Kali}{1: age,}{4: descending}{3: into the very stone,}",
     "words": [
       {
-        "roman": "kalināḷukkiraṅgi",
-        "gloss": "taking compassion on the Kali age",
+        "roman": "kali",
+        "gloss": "of Kali, the age of discord",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nāḷukk",
+        "gloss": "on the age, “day” (nāḷukku, dative)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "iraṅgi",
+        "gloss": "taking compassion, having pitied",
         "concept_key": "",
         "preserve_in_english": false
       },

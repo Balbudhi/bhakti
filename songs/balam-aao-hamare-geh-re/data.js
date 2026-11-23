@@ -948,7 +948,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ab to behāl Kabīr bhayo hai",
-    "english": "{0:Now }{1:indeed, }{3:Kabīr }{4,5:has become }{2:distraught;}",
+    "english": "{0:Now }{1:indeed, }{3:Kabīr }{5:has }{4:become }{2:distraught;}",
     "words": [
       {
         "roman": "Ab",

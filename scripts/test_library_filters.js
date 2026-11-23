@@ -77,6 +77,8 @@ test('a library row says who wrote and who sang', () => {
   assert.equal(creditLine({writer: '', singer: 'Maninder Ji'}), 'Sung by Maninder Ji');
   assert.equal(creditLine({writer: 'Kabīr', singer: ''}), 'By Kabīr');
   assert.equal(creditLine({writer: 'X', singer: 'X'}), 'Written and sung by X');
+  assert.equal(creditLine({writer: 'Vyāsa', ensemble: 'Bhawan'}), 'By Vyāsa · sung at Bhawan');
+  assert.equal(creditLine({ensemble: 'Bhawan'}), 'Sung at Bhawan');
   assert.equal(creditLine({credit: ''}), '');
 });
 const visible = app => Array.from(app.controller.getVisibleSongs(), s => s.slug).sort();

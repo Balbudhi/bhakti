@@ -68,15 +68,19 @@ window.SONG_LINES = {
   "l002": {
     "source": "ಶರಣು ವಿದ್ಯಾಪ್ರದಾಯಕ",
     "roman": "śaraṇu vidyāpradāyaka",
-    "english": "{0:I seek refuge}, {1:giver of knowledge}.",
+    "english": "{0:I seek refuge}, {2:giver }{1:of knowledge}.",
     "words": [
       {
         "roman": "śaraṇu",
         "gloss": "I seek refuge; submissive salutation"
       },
       {
-        "roman": "vidyāpradāyaka",
-        "gloss": "giver of knowledge; one who bestows learning"
+        "roman": "vidyā",
+        "gloss": "knowledge, learning"
+      },
+      {
+        "roman": "pradāyaka",
+        "gloss": "giver, bestower"
       }
     ],
     "sourceWords": [
@@ -87,9 +91,15 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ವಿದ್ಯಾಪ್ರದಾಯಕ",
+        "text": "ವಿದ್ಯಾ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಪ್ರದಾಯಕ",
+        "wordIndices": [
+          2
         ]
       }
     ],

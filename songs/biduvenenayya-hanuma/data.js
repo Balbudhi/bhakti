@@ -196,15 +196,19 @@ window.SONG_LINES = {
   "l006": {
     "source": "ಒಡೆಯನಲ್ಲಿ ಜ್ಞಾನಭಕುತಿಯ",
     "roman": "oḍeyanalli jñānabhakutiya",
-    "english": "{1:Knowledge and devotion} {0:toward the Lord}…",
+    "english": "{1:Knowledge} {2:and devotion} {0:toward the Lord}…",
     "words": [
       {
         "roman": "oḍeyanalli",
         "gloss": "in the Lord; directed toward Hari"
       },
       {
-        "roman": "jñānabhakutiya",
-        "gloss": "knowledge and devotion; objects of granting"
+        "roman": "jñāna",
+        "gloss": "knowledge"
+      },
+      {
+        "roman": "bhakutiya",
+        "gloss": "devotion; bhakti, object of granting"
       }
     ],
     "sourceWords": [
@@ -215,9 +219,15 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಜ್ಞಾನಭಕುತಿಯ",
+        "text": "ಜ್ಞಾನ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಭಕುತಿಯ",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -506,11 +516,15 @@ window.SONG_LINES = {
   "l014": {
     "source": "ಫುಲ್ಲನಾಭನಲ್ಲಿ ಎನ್ನ",
     "roman": "phullanābhanalli enna",
-    "english": "{1:My}… {0:in the lotus-naveled Lord}…",
+    "english": "{2:My}… {1:in the} {0:lotus}-{1:naveled Lord}…",
     "words": [
       {
-        "roman": "phullanābhanalli",
-        "gloss": "in the one with the blossoming lotus at his navel; Viṣṇu"
+        "roman": "phulla",
+        "gloss": "blossoming; here the blossoming lotus"
+      },
+      {
+        "roman": "nābhanalli",
+        "gloss": "in the -naveled one, Viṣṇu; nābha, locative"
       },
       {
         "roman": "enna",
@@ -519,15 +533,21 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ಫುಲ್ಲನಾಭನಲ್ಲಿ",
+        "text": "ಫುಲ್ಲ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಎನ್ನ",
+        "text": "ನಾಭನಲ್ಲಿ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಎನ್ನ",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -706,7 +726,7 @@ window.SONG_LINES = {
   "l019": {
     "source": "ಪುರಂದರ ವಿಠಲನ ತೋರುವ ತನಕ",
     "roman": "purandara viṭhalana tōruva tanaka",
-    "english": "{3:Until} {2:you show me} {0,1:Purandara Viṭṭhala}…",
+    "english": "{3:Until} {2:you show me} {0:Purandara }{1:Viṭṭhala}…",
     "words": [
       {
         "roman": "purandara",

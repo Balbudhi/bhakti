@@ -112,7 +112,7 @@ window.SONG_LINES = {
   "ham_to_sowat": {
     "source": "हम तो सोवत रहली ओढ़ के चदरवा",
     "roman": "Ham to sowat rahlī oṛh ke chadarwā",
-    "english": "{0,1:I}{2,3: was sleeping,}{4,5: wrapped in}{6: a sheet.}",
+    "english": "{0,1:I}{3: was }{2:sleeping,}{4,5: wrapped in}{6: a sheet.}",
     "words": [
       {
         "roman": "Ham",

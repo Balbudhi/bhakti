@@ -214,7 +214,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār le Rāmā tār le",
-    "english": "{0,1,2,3:Carry me across!} {4:Rāma!} {5,6:Carry me across!}",
+    "english": "{2,3:Carry }{0,1:me }{2:across!} {4:Rāma!} {5,6:Carry me across!}",
     "words": [
       {
         "roman": "Mo",
@@ -278,7 +278,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār le",
-    "english": "{0,1,2,3:Carry me across!}",
+    "english": "{2,3:Carry }{0,1:me }{2:across!}",
     "words": [
       {
         "roman": "Mo",
@@ -378,7 +378,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār le Rāmā",
-    "english": "{0,1,2,3:Carry me across!} {4:Rāma!}",
+    "english": "{2,3:Carry }{0,1:me }{2:across!} {4:Rāma!}",
     "words": [
       {
         "roman": "Mo",
@@ -708,7 +708,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār Mo kau tār Mo kau tār le Rāmā tār le",
-    "english": "{0,1,2:Carry me across—}{3,4,5: Carry me across—}{6,7,8,9: Carry me across!} {10:Rāma!} {11,12:Carry me across!}",
+    "english": "{0,1,2:Carry me across—}{3,4,5: Carry me across—}{8,9: Carry }{6,7:me }{8:across!} {10:Rāma!} {11,12:Carry me across!}",
     "words": [
       {
         "roman": "Mo",
@@ -896,7 +896,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār Mo kau tār Mo kau tār le",
-    "english": "{0,1,2:Carry me across—}{3,4,5: Carry me across—}{6,7,8,9: Carry me across!}",
+    "english": "{0,1,2:Carry me across—}{3,4,5: Carry me across—}{8,9: Carry }{6,7:me }{8:across!}",
     "words": [
       {
         "roman": "Mo",
@@ -1392,7 +1392,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār le Rāmā tār le Mai ajān jan taribā na jānau bāp Bīṭhulā bāh de",
-    "english": "{0,1,2,3:Carry me across!} {4:Rāma!} {5,6:Carry me across!} {7:I, }{8:an ignorant }{9:servant, }{11,12:do not know how }{10:to swim;} {13:Father }{14:Viṭṭhala, }{16:extend }{15:your arm!}",
+    "english": "{2,3:Carry }{0,1:me }{2:across!} {4:Rāma!} {5,6:Carry me across!} {7:I, }{8:an ignorant }{9:servant, }{11,12:do not know how }{10:to swim;} {13:Father }{14:Viṭṭhala, }{16:extend }{15:your arm!}",
     "words": [
       {
         "roman": "Mo",
@@ -1792,7 +1792,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāmā Mo kau tār le Mai ajān jan taribā na jānau bāp Bīṭhulā bāh de Rāmā",
-    "english": "{0:Rāma!} {1,2,3,4:Carry me across!} {5:I, }{6:an ignorant }{7:servant, }{9,10:do not know how }{8:to swim;} {11:Father }{12:Viṭṭhala, }{14:extend }{13:your arm!} {15:Rāma!}",
+    "english": "{0:Rāma!} {3,4:Carry }{1,2:me }{3:across!} {5:I, }{6:an ignorant }{7:servant, }{9,10:do not know how }{8:to swim;} {11:Father }{12:Viṭṭhala, }{14:extend }{13:your arm!} {15:Rāma!}",
     "words": [
       {
         "roman": "Rāmā",
@@ -2846,7 +2846,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo kau tār Mo kau tār Mo kau tār Mo kau tār le",
-    "english": "{0,1,2:Carry me across—}{3,4,5: Carry me across—}{6,7,8: Carry me across—}{9,10,11,12: Carry me across!}",
+    "english": "{0,1,2:Carry me across—}{3,4,5: Carry me across—}{6,7,8: Carry me across—}{11,12: Carry }{9,10:me }{11:across!}",
     "words": [
       {
         "roman": "Mo",

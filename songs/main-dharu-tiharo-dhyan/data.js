@@ -36,30 +36,78 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "स्फटिकरचितपीठे",
+        "text": "स्फटिक",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "रम्यकैलासशृङ्गे",
+        "text": "रचित",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "पीठे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रम्य",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कैलास",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "शृङ्गे",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "Sphaṭika-racita-pīṭhe ramya-kailāsa-śṛṅge",
-    "english": "{0:On a seat fashioned from crystal, }{1:on the charming peak of Kailāsa,}",
+    "english": "{2:On a seat }{1:fashioned }{0:from crystal, }{5:on }{3:the charming }{5:peak }{4:of Kailāsa,}",
     "words": [
       {
-        "roman": "Sphaṭika-racita-pīṭhe",
-        "gloss": "on a seat fashioned from crystal",
+        "roman": "Sphaṭika",
+        "gloss": "crystal",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "ramya-kailāsa-śṛṅge",
-        "gloss": "on the charming summit of Mount Kailāsa",
+        "roman": "racita",
+        "gloss": "fashioned from",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pīṭhe",
+        "gloss": "on a seat (locative)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ramya",
+        "gloss": "charming",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kailāsa",
+        "gloss": "of Mount Kailāsa",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śṛṅge",
+        "gloss": "on the summit (locative)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -71,24 +119,60 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "विकचकमलपत्रैरर्चयन्तीं",
+        "text": "विकच",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "महेशम्",
+        "text": "कमल",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "पत्रै",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रर्चयन्तीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "महेशम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Vikaca-kamala-patrair-arcayantīṃ maheśam",
-    "english": "{0:worshipping }{1:the Great Lord }{0:with the petals of fully blossomed lotuses,}",
+    "english": "{3:worshipping }{4:the Great Lord }{2:with the petals }{0:of fully blossomed }{1:lotuses,}",
     "words": [
       {
-        "roman": "Vikaca-kamala-patrair-arcayantīṃ",
-        "gloss": "worshipping [him] with the petals of fully blossomed lotuses",
+        "roman": "Vikaca",
+        "gloss": "fully blossomed",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kamala",
+        "gloss": "lotuses",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "patrair",
+        "gloss": "with the petals (patraiḥ, instrumental plural)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "arcayantīṃ",
+        "gloss": "worshipping [him] (accusative feminine)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -106,18 +190,54 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "करधृतघनवाद्या",
+        "text": "कर",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "धृत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "घन",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वाद्या",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Kara-dhṛta-ghana-vādyā",
-    "english": "{0:holding solid rhythm instruments in her hands,}",
+    "english": "{1:holding }{2:solid }{3:rhythm instruments }{0:in her hands,}",
     "words": [
       {
-        "roman": "Kara-dhṛta-ghana-vādyā",
-        "gloss": "holding solid cymbal-instruments in her hands",
+        "roman": "Kara",
+        "gloss": "in her hands",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhṛta",
+        "gloss": "holding, held",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ghana",
+        "gloss": "solid, the cymbal class of instrument",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vādyā",
+        "gloss": "she whose instruments are",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -129,18 +249,54 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "पीतवर्णाऽयताक्षी",
+        "text": "पीत",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "वर्णा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ऽयता",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "क्षी",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Pīta-varṇāyatākṣī",
-    "english": "{0:golden-complexioned with wide, elongated eyes,}",
+    "english": "{0:golden-}{1:complexioned }{2:with wide, elongated }{3:eyes,}",
     "words": [
       {
-        "roman": "Pīta-varṇāyatākṣī",
-        "gloss": "golden-complexioned and having wide elongated eyes",
+        "roman": "Pīta",
+        "gloss": "golden, yellow",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "varṇ",
+        "gloss": "complexioned (varṇā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āyat",
+        "gloss": "wide, elongated (āyata)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ākṣī",
+        "gloss": "having eyes (akṣi)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -152,18 +308,54 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "सुकविभिरियमुक्ता",
+        "text": "सु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "कविभि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रिय",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मुक्ता",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Sukavibhir-iyam-uktā",
-    "english": "{0:by noble poets is she declared,}",
+    "english": "{1:by }{0:noble }{1:poets }{3:is }{2:she }{3:declared,}",
     "words": [
       {
-        "roman": "Sukavibhir-iyam-uktā",
-        "gloss": "by noble poets this [goddess] is declared",
+        "roman": "Su",
+        "gloss": "noble, good",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kavibhir",
+        "gloss": "by poets (kavibhiḥ, instrumental plural)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "iyam",
+        "gloss": "this [goddess]",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "uktā",
+        "gloss": "is declared",
         "concept_key": "",
         "preserve_in_english": false
       }

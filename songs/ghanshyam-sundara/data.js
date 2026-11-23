@@ -412,7 +412,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Leke munivara hātha meṁ mālā",
-    "english": "{0:Taking} {4:prayer beads} {2,3:in hand,} {1:the exalted sages}",
+    "english": "{0:Taking} {4:prayer beads} {3:in }{2:hand,} {1:the exalted sages}",
     "words": [
       {
         "roman": "Leke",
@@ -1093,7 +1093,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Madhura rasīlī muralī kī dhuna kī sudhā barasāo hama para",
-    "english": "{7:Shower} {8,9:upon us} {5,6:the nectar of} {0:the sweet,} {1:melodious} {2,3:flute's} {4:tune,}",
+    "english": "{7:Shower} {9:upon }{8:us} {5,6:the nectar of} {0:the sweet,} {1:melodious} {2,3:flute's} {4:tune,}",
     "words": [
       {
         "roman": "Madhura",

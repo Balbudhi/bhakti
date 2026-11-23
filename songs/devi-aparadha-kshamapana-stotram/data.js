@@ -77,39 +77,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "तदपि",
+        "text": "त",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "च",
+        "text": "दपि",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "न",
+        "text": "च",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "जाने",
+        "text": "न",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "स्तुतिमहो",
+        "text": "जाने",
         "wordIndices": [
-          8,
+          8
+        ]
+      },
+      {
+        "text": "स्तुति",
+        "wordIndices": [
           9
+        ]
+      },
+      {
+        "text": "महो",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "na mantraṃ no yantraṃ tadapi ca na jāne stutimaho",
-    "english": "{7:I know }{0:no }{1:mantra, }{2:no }{3:yantra; }{5,6:nor, }{9:alas, }{7:do I know }{4:even }{8:praise;}",
+    "english": "{8:I know }{0:no }{1:mantra, }{2:no }{3:yantra; }{6:and }{9:praise—}{10:alas, }{8:I do }{7:not }{8:know }{5:even }{4:that;}",
     "words": [
       {
         "roman": "na",
@@ -136,8 +147,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tadapi",
-        "gloss": "even that (tat + api)",
+        "roman": "tad",
+        "gloss": "that (tat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "api",
+        "gloss": "even; also",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -155,7 +172,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāne",
-        "gloss": "I know",
+        "gloss": "I know (root jñā)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -173,7 +190,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Jāne (first person singular, middle, of jñā) governs the accusatives mantram, yantram and stutim. Stutimaho joins stutim and the exclamation aho."
+    "grammarNote": "Mantram, yantram and stutim are the objects of jāne, first person singular. Tad api: even that."
   },
   "v1-b": {
     "source": "न चाह्वानं ध्यानं तदपि च न जाने स्तुतिकथाः ।",
@@ -198,38 +215,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "तदपि",
+        "text": "त",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "च",
+        "text": "दपि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "न",
+        "text": "च",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "जाने",
+        "text": "न",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "स्तुतिकथाः",
+        "text": "जाने",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "स्तुति",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कथाः",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "na cāhvānaṃ dhyānaṃ tadapi ca na jāne stutikathāḥ",
-    "english": "{0,1:nor invocation, }{2:nor meditation; }{4,5:nor }{6:do I know }{3:even }{7:the stories told in praise.}",
+    "english": "{0:nor }{1:how to call you near, }{2:nor how to meditate; }{5:and }{9:the tales }{8:told in your praise—}{7:I do }{6:not }{7:know }{4:even }{3:that.}",
     "words": [
       {
         "roman": "na",
@@ -239,19 +268,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "cāhvānaṃ",
-        "gloss": "and invocation, calling the deity to be present (ca + āhvānam)",
+        "gloss": "and calling, inviting the deity to be present (ca + āhvānam)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "dhyānaṃ",
-        "gloss": "meditation; contemplation of the deity",
+        "gloss": "meditation; holding the deity in the mind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tadapi",
-        "gloss": "even that (tat + api)",
+        "roman": "tad",
+        "gloss": "that (tat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "api",
+        "gloss": "even; also",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -274,14 +309,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "stutikathāḥ",
-        "gloss": "stories told in praise: stuti, praise + kathāḥ, stories",
+        "roman": "stuti",
+        "gloss": "praise",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kathāḥ",
+        "gloss": "stories, tellings: accusative plural",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Āhvānam, dhyānam and stuti-kathāḥ (accusative plural) are all objects of jāne."
+    "grammarNote": "Āhvānam, dhyānam and stuti-kathāḥ are further objects of jāne."
   },
   "v1-c": {
     "source": "न जाने मुद्रास्ते तदपि च न जाने विलपनं",
@@ -300,45 +341,56 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मुद्रास्ते",
+        "text": "मुद्रा",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "स्ते",
+        "wordIndices": [
           3
         ]
       },
       {
-        "text": "तदपि",
+        "text": "त",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "च",
+        "text": "दपि",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "न",
+        "text": "च",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "जाने",
+        "text": "न",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "विलपनं",
+        "text": "जाने",
         "wordIndices": [
           8
+        ]
+      },
+      {
+        "text": "विलपनं",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "na jāne mudrāste tadapi ca na jāne vilapanaṃ",
-    "english": "{0,1:I do not know }{3:your }{2:sacred gestures; }{5,6:nor }{7:do I know }{4:even }{8:how to lament;}",
+    "english": "{1:I do }{0:not }{1:know }{3:your }{2:gestures of worship; }{6:and }{9:to cry out in grief—}{8:I do }{7:not }{8:know }{5:even }{4:that.}",
     "words": [
       {
         "roman": "na",
@@ -354,7 +406,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mudrās",
-        "gloss": "sacred hand gestures of worship",
+        "gloss": "sacred gestures of the hands in worship",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -365,8 +417,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tadapi",
-        "gloss": "even that (tat + api)",
+        "roman": "tad",
+        "gloss": "that (tat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "api",
+        "gloss": "even; also",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -390,13 +448,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "vilapanaṃ",
-        "gloss": "lamenting; weeping aloud",
+        "gloss": "lamenting; crying aloud",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Mudrās te: the gestures belonging to your worship. Vilapanam, an action noun, is the object of the second jāne."
+    "grammarNote": "Vilapana, lamenting aloud, is the last of the things the speaker does not know how to do before her."
   },
   "v1-d": {
     "source": "परं जाने मातस्त्वदनुसरणं क्लेशहरणम् ॥",
@@ -415,21 +473,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मातस्त्वदनुसरणं",
+        "text": "मात",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "स्त्वद",
+        "wordIndices": [
           3
         ]
       },
       {
-        "text": "क्लेशहरणम्",
+        "text": "नुसरणं",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "क्लेश",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "हरणम्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "paraṃ jāne mātastvadanusaraṇaṃ kleśaharaṇam",
-    "english": "{0:but }{1:I know, }{2:Mother, }{3:that following you }{4:takes away affliction.}",
+    "english": "{0:But }{1:this I know, }{2:Mother: }{4:following after }{3:you }{6:takes }{5:sorrow }{6:away.}",
     "words": [
       {
         "roman": "paraṃ",
@@ -450,57 +525,98 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tvadanusaraṇaṃ",
-        "gloss": "following you: tvat, you + anusaraṇa, going after",
+        "roman": "tvad",
+        "gloss": "you",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kleśaharaṇam",
-        "gloss": "taking away affliction: kleśa, affliction + haraṇa, removing",
+        "roman": "anusaraṇaṃ",
+        "gloss": "following after; going behind",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kleśa",
+        "gloss": "suffering; affliction",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "haraṇam",
+        "gloss": "taking away",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Jāne takes tvad-anusaraṇam as its object with kleśa-haraṇam predicated of it: I know following you to be the removal of affliction."
+    "grammarNote": "Jāne takes tvad-anusaraṇam as its object with kleśa-haraṇam said of it."
   },
   "v2-a": {
     "source": "विधेरज्ञानेन द्रविणविरहेणालसतया",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "विधेरज्ञानेन",
+        "text": "विधे",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "रज्ञानेन",
+        "wordIndices": [
           1
         ]
       },
       {
-        "text": "द्रविणविरहेणालसतया",
+        "text": "द्रविण",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "विरहे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "णालसतया",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "vidherajñānena draviṇaviraheṇālasatayā",
-    "english": "{1:Through ignorance }{0:of the prescribed rite, }{2:through lack of wealth, through sloth,}",
+    "english": "{1:Through not knowing }{0:the rites, }{3:through want }{2:of means, }{4:through sloth,}",
     "words": [
       {
         "roman": "vidher",
-        "gloss": "of the prescribed rite; of the rule",
+        "gloss": "of the rite laid down; of the rule",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ajñānena",
-        "gloss": "through ignorance",
+        "gloss": "through not knowing",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "draviṇaviraheṇālasatayā",
-        "gloss": "through lack of wealth and through sloth: draviṇa-viraheṇa + alasatayā",
+        "roman": "draviṇa",
+        "gloss": "wealth; means",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "viraheṇ",
+        "gloss": "through the lack of (viraheṇa)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ālasatayā",
+        "gloss": "through sloth (alasatayā, joined a + a)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -513,33 +629,60 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "विधेयाशक्यत्वात्तव",
+        "text": "विधेया",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "शक्यत्वा",
+        "wordIndices": [
           1
         ]
       },
       {
-        "text": "चरणयोर्या",
+        "text": "त्तव",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "चरणयो",
+        "wordIndices": [
           3
         ]
       },
       {
-        "text": "च्युतिरभूत्",
+        "text": "र्या",
         "wordIndices": [
-          4,
+          4
+        ]
+      },
+      {
+        "text": "च्युति",
+        "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "रभूत्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "vidheyāśakyatvāttava caraṇayoryā cyutirabhūt",
-    "english": "{0:because what was due could not be done, }{3:the }{4:lapse }{3:that }{5:has occurred }{2:at }{1:your }{2:feet—}",
+    "english": "{1:and because I could not do }{0:what I ought, }{4:whatever }{5:failing }{6:there has been }{3:at }{2:your }{3:feet—}",
     "words": [
       {
-        "roman": "vidheyāśakyatvāt",
-        "gloss": "because what was to be done could not be done: vidheya + aśakyatvāt",
+        "roman": "vidhey",
+        "gloss": "what ought to be done (vidheya)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āśakyatvāt",
+        "gloss": "because it could not be done (aśakyatvāt, ablative of cause)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -557,34 +700,39 @@ window.SONG_LINES = {
       },
       {
         "roman": "yā",
-        "gloss": "which; the … that",
+        "gloss": "which; whatever",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "cyutir",
-        "gloss": "lapse; falling away",
+        "gloss": "falling away; lapse",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "abhūt",
-        "gloss": "occurred; came to be",
+        "gloss": "came to be",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Aśakyatvāt is an ablative of cause. Yā cyutir abhūt is a relative clause answered by tad etat in the next line; caraṇayoḥ is dual."
+    "grammarNote": "Yā cyutir abhūt is a relative clause answered by tad etat in the next line; caraṇayoḥ is dual."
   },
   "v2-c": {
     "source": "तदेतत् क्षन्तव्यं जननि सकलोद्धारिणि शिवे",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "तदेतत्",
+        "text": "त",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "देतत्",
+        "wordIndices": [
           1
         ]
       },
@@ -601,20 +749,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सकलोद्धारिणि",
+        "text": "सकलो",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "शिवे",
+        "text": "द्धारिणि",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "शिवे",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "tadetat kṣantavyaṃ janani sakaloddhāriṇi śive",
-    "english": "{0,1:this }{2:is to be forgiven, }{3:Mother, }{4:rescuer of all, }{5:auspicious one;}",
+    "english": "{0,1:this }{2:is yours to forgive, }{3:Mother, }{5:you who lift up }{4:all, }{6:gracious one:}",
     "words": [
       {
         "roman": "tad",
@@ -624,7 +778,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "etat",
-        "gloss": "this",
+        "gloss": "this; with tad, that very thing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -641,20 +795,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "sakaloddhāriṇi",
-        "gloss": "O rescuer of all: sakala, all + uddhāriṇī, she who lifts out",
+        "roman": "sakal",
+        "gloss": "all (sakala)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "oddhāriṇi",
+        "gloss": "O you who lift up and rescue (uddhāriṇī, joined a + u)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śive",
-        "gloss": "O auspicious one; Śivā, the Goddess",
+        "gloss": "O gracious, auspicious one; Śivā, the Goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Kṣantavyam is a gerundive: to be forgiven. Janani, sakaloddhāriṇi and śive are feminine vocatives."
+    "grammarNote": "Kṣantavyam is a gerundive: to be forgiven. The vocatives name why the appeal is made to her."
   },
   "v2-d": {
     "source": "कुपुत्रो जायेत क्वचिदपि कुमाता न भवति ॥",
@@ -673,9 +833,14 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "क्वचिदपि",
+        "text": "क्वचि",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "दपि",
+        "wordIndices": [
           3
         ]
       },
@@ -699,7 +864,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuputro jāyeta kvacidapi kumātā na bhavati",
-    "english": "{0:a bad son }{1:may be born; }{2,3,5:nowhere at all }{6:is there }{4:a bad mother.}",
+    "english": "{0:a bad son }{1:may be born; }{2,5:nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
     "words": [
       {
         "roman": "kuputro",
@@ -721,7 +886,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "api",
-        "gloss": "even; with kvacid and na, nowhere at all",
+        "gloss": "even; with na, anywhere at all",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -733,7 +898,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "na",
-        "gloss": "not",
+        "gloss": "not; never",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -745,7 +910,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Jāyeta is an optative of possibility; bhavati, indicative, states a fact. Kvacid api … na: nowhere at all."
+    "grammarNote": "Jāyeta is an optative of possibility; bhavati states a fact. Kvacid api … na: nowhere at all."
   },
   "v3-a": {
     "source": "पृथिव्यां पुत्रास्ते जननि बहवः सन्ति सरलाः",
@@ -758,9 +923,14 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पुत्रास्ते",
+        "text": "पुत्रा",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "स्ते",
+        "wordIndices": [
           2
         ]
       },
@@ -790,7 +960,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pṛthivyāṃ putrāste janani bahavaḥ santi saralāḥ",
-    "english": "{0:On the earth, }{3:Mother, }{5:there are }{4:many }{6:upright }{1:sons }{2:of yours;}",
+    "english": "{0:On this earth, }{3:Mother, }{2:you }{5:have }{4:many }{1:sons }{6:who are straight and true;}",
     "words": [
       {
         "roman": "pṛthivyāṃ",
@@ -830,13 +1000,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "saralāḥ",
-        "gloss": "straightforward; upright",
+        "gloss": "straight; artless, honest",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Saralāḥ, straight or upright, is set against tarala, unsteady, in the next line."
+    "grammarNote": "Saralāḥ, straight, is set against tarala, wavering, in the next line."
   },
   "v3-b": {
     "source": "परं तेषां मध्ये विरलतरलोऽहं तव सुतः ।",
@@ -861,26 +1031,38 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "विरलतरलोऽहं",
+        "text": "विरल",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "तव",
+        "text": "तरलो",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "सुतः",
+        "text": "ऽहं",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "तव",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुतः",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "paraṃ teṣāṃ madhye viralataralo'haṃ tava sutaḥ",
-    "english": "{0:but }{2:among }{1:them }{3:I am }{4:a }{5:son }{4:of yours, }{3:rare and unsteady.}",
+    "english": "{0:but }{2:among }{1:them }{5:I am }{3:the rare one }{4:who wavers, }{6:your }{7:son.}",
     "words": [
       {
         "roman": "paraṃ",
@@ -896,13 +1078,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "madhye",
-        "gloss": "in the midst; among",
+        "gloss": "in the midst",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "viralataralo'haṃ",
-        "gloss": "I, rare and unsteady: virala, rare + tarala, unsteady + aham, I",
+        "roman": "virala",
+        "gloss": "rare; one in many",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "taralo",
+        "gloss": "wavering; unsteady",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "'haṃ",
+        "gloss": "I (aham)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -920,68 +1114,85 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Virala-taralaḥ … sutaḥ is the predicate of aham: I am your son, rare and unsteady, two adjectives compounded."
+    "grammarNote": "Virala-taralaḥ … sutaḥ is the predicate of aham: I am your son, rare and wavering."
   },
   "v3-c": {
     "source": "मदीयोऽयं त्यागः समुचितमिदं नो तव शिवे",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "मदीयोऽयं",
+        "text": "मदीयो",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "त्यागः",
+        "text": "ऽयं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "समुचितमिदं",
+        "text": "त्यागः",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "समुचित",
+        "wordIndices": [
           3
         ]
       },
       {
-        "text": "नो",
+        "text": "मिदं",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "तव",
+        "text": "नो",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "शिवे",
+        "text": "तव",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "शिवे",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "madīyo'yaṃ tyāgaḥ samucitamidaṃ no tava śive",
-    "english": "{0:This }{1:abandoning }{0:of me—}{3:it }{4:is not }{2:fitting }{5:for you, }{6:auspicious one;}",
+    "english": "{2:To cast }{0:me }{2:off }{1:like this—}{4:that }{5:is not }{3:worthy }{6:of you, }{7:gracious one:}",
     "words": [
       {
-        "roman": "madīyo'yaṃ",
-        "gloss": "this … of me (madīyaḥ + ayam)",
+        "roman": "madīyo",
+        "gloss": "of me (madīyaḥ)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "'yaṃ",
+        "gloss": "this (ayam)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tyāgaḥ",
-        "gloss": "abandoning",
+        "gloss": "abandoning; casting off",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "samucitam",
-        "gloss": "fitting; proper",
+        "gloss": "fitting; right",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -999,19 +1210,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "tava",
-        "gloss": "of you; for you",
+        "gloss": "for you; of you",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "śive",
-        "gloss": "O auspicious one",
+        "gloss": "O gracious one",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Madīyaḥ tyāgaḥ: the abandoning of which I am the object. Idam resumes it as the subject of samucitam."
+    "grammarNote": "Madīyaḥ tyāgaḥ: the abandoning of which I am the object. Idam resumes it."
   },
   "v3-d": {
     "source": "कुपुत्रो जायेत क्वचिदपि कुमाता न भवति ॥",
@@ -1030,9 +1241,14 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "क्वचिदपि",
+        "text": "क्वचि",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "दपि",
+        "wordIndices": [
           3
         ]
       },
@@ -1056,7 +1272,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuputro jāyeta kvacidapi kumātā na bhavati",
-    "english": "{0:a bad son }{1:may be born; }{2,3,5:nowhere at all }{6:is there }{4:a bad mother.}",
+    "english": "{0:a bad son }{1:may be born; }{2,5:nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
     "words": [
       {
         "roman": "kuputro",
@@ -1078,7 +1294,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "api",
-        "gloss": "even; with kvacid and na, nowhere at all",
+        "gloss": "even; with na, anywhere at all",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1090,7 +1306,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "na",
-        "gloss": "not",
+        "gloss": "not; never",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1102,45 +1318,73 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Jāyeta is an optative of possibility; bhavati, indicative, states a fact. Kvacid api … na: nowhere at all."
+    "grammarNote": "Jāyeta is an optative of possibility; bhavati states a fact. Kvacid api … na: nowhere at all."
   },
   "v4-a": {
     "source": "जगन्मातर्मातस्तव चरणसेवा न रचिता",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "जगन्मातर्मातस्तव",
+        "text": "जग",
         "wordIndices": [
-          0,
-          1,
+          0
+        ]
+      },
+      {
+        "text": "न्मात",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "र्मात",
+        "wordIndices": [
           2
         ]
       },
       {
-        "text": "चरणसेवा",
+        "text": "स्तव",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "न",
+        "text": "चरण",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "रचिता",
+        "text": "सेवा",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रचिता",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "jaganmātarmātastava caraṇasevā na racitā",
-    "english": "{0:Mother of the world, }{1:Mother, }{3:service at }{2:your }{3:feet }{4:has not }{5:been performed,}",
+    "english": "{1:Mother }{0:of the world, }{2:Mother, }{7:I have done }{6:no }{5:service }{4:at }{3:your }{4:feet,}",
     "words": [
       {
-        "roman": "jaganmātar",
-        "gloss": "O Mother of the world",
+        "roman": "jagan",
+        "gloss": "of the world (jagat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mātar",
+        "gloss": "O Mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1157,8 +1401,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "caraṇasevā",
-        "gloss": "service at the feet",
+        "roman": "caraṇa",
+        "gloss": "feet",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sevā",
+        "gloss": "service",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1170,13 +1420,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "racitā",
-        "gloss": "performed; arranged",
+        "gloss": "performed",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Caraṇasevā (feminine nominative) with the past passive participle racitā; the agent mayā, by me, comes in the next line."
+    "grammarNote": "Caraṇa-sevā with the past participle racitā; the agent mayā, by me, comes in the next line."
   },
   "v4-b": {
     "source": "न वा दत्तं देवि द्रविणमपि भूयस्तव मया ।",
@@ -1207,16 +1457,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "द्रविणमपि",
+        "text": "द्रविण",
         "wordIndices": [
-          4,
+          4
+        ]
+      },
+      {
+        "text": "मपि",
+        "wordIndices": [
           5
         ]
       },
       {
-        "text": "भूयस्तव",
+        "text": "भूय",
         "wordIndices": [
-          6,
+          6
+        ]
+      },
+      {
+        "text": "स्तव",
+        "wordIndices": [
           7
         ]
       },
@@ -1228,7 +1488,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na vā dattaṃ devi draviṇamapi bhūyastava mayā",
-    "english": "{0,1:nor, }{3:Goddess, }{2:has }{5:even }{4:wealth }{2:been given }{7:to you }{6:in abundance }{8:by me.}",
+    "english": "{0,1:nor, }{3:Goddess, }{8:have I }{2:given }{7:you }{5:even }{4:riches }{6:in plenty.}",
     "words": [
       {
         "roman": "na",
@@ -1238,7 +1498,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vā",
-        "gloss": "or",
+        "gloss": "or; nor",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1262,13 +1522,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "api",
-        "gloss": "also; even",
+        "gloss": "even",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhūyas",
-        "gloss": "in abundance",
+        "gloss": "in plenty",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1286,56 +1546,73 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Dattam agrees with draviṇam; mayā is the agent of both racitā and dattam. Tava is a genitive used for the recipient."
+    "grammarNote": "Dattam agrees with draviṇam; mayā is the agent of both racitā and dattam."
   },
   "v4-c": {
     "source": "तथापि त्वं स्नेहं मयि निरुपमं यत्प्रकुरुषे",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "तथापि",
+        "text": "तथा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "त्वं",
+        "text": "पि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "स्नेहं",
+        "text": "त्वं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "मयि",
+        "text": "स्नेहं",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "निरुपमं",
+        "text": "मयि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "यत्प्रकुरुषे",
+        "text": "निरुपमं",
         "wordIndices": [
-          5,
+          5
+        ]
+      },
+      {
+        "text": "य",
+        "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "त्प्रकुरुषे",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "tathāpi tvaṃ snehaṃ mayi nirupamaṃ yatprakuruṣe",
-    "english": "{0:Even so, }{5:that }{1:you }{6:show }{3:me }{4:matchless }{2:affection—}",
+    "english": "{1:Even }{0:so, }{3:the tenderness }{6:that }{2:you }{7:show }{4:me }{5:is beyond compare:}",
     "words": [
       {
-        "roman": "tathāpi",
-        "gloss": "even so",
+        "roman": "tathā",
+        "gloss": "so",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pi",
+        "gloss": "even (api); with tathā, even so",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1347,7 +1624,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "snehaṃ",
-        "gloss": "affection",
+        "gloss": "tenderness; love",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1359,13 +1636,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nirupamaṃ",
-        "gloss": "matchless",
+        "gloss": "beyond compare",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yat",
-        "gloss": "that; in that",
+        "gloss": "that",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1377,7 +1654,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Yat introduces the fact that the refrain explains. Prakuruṣe is second person singular, middle."
+    "grammarNote": "Yat introduces the fact that the refrain explains."
   },
   "v4-d": {
     "source": "कुपुत्रो जायेत क्वचिदपि कुमाता न भवति ॥",
@@ -1396,9 +1673,14 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "क्वचिदपि",
+        "text": "क्वचि",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "दपि",
+        "wordIndices": [
           3
         ]
       },
@@ -1422,7 +1704,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuputro jāyeta kvacidapi kumātā na bhavati",
-    "english": "{0:a bad son }{1:may be born; }{2,3,5:nowhere at all }{6:is there }{4:a bad mother.}",
+    "english": "{0:a bad son }{1:may be born; }{2,5:nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
     "words": [
       {
         "roman": "kuputro",
@@ -1444,7 +1726,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "api",
-        "gloss": "even; with kvacid and na, nowhere at all",
+        "gloss": "even; with na, anywhere at all",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1456,7 +1738,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "na",
-        "gloss": "not",
+        "gloss": "not; never",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1468,7 +1750,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Jāyeta is an optative of possibility; bhavati, indicative, states a fact. Kvacid api … na: nowhere at all."
+    "grammarNote": "Jāyeta is an optative of possibility; bhavati states a fact. Kvacid api … na: nowhere at all."
   },
   "v5-a": {
     "source": "परित्यक्ता देवा विविधविधसेवाकुलतया",
@@ -1487,18 +1769,36 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "विविधविधसेवाकुलतया",
+        "text": "विविध",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "विध",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सेवा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कुलतया",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "parityaktā devā vividhavidhasevākulatayā",
-    "english": "{1:The gods }{0:are forsaken, }{2:in the confusion of many different kinds of service,}",
+    "english": "{0:I have forsaken }{1:the gods, }{5:bewildered }{4:by their service }{2:of so many }{3:kinds,}",
     "words": [
       {
         "roman": "parityaktā",
-        "gloss": "forsaken",
+        "gloss": "forsaken; left wholly",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1509,8 +1809,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vividhavidhasevākulatayā",
-        "gloss": "in the confusion, the being overwhelmed, of many different kinds of service: vividha-vidha + sevā + ākulatayā",
+        "roman": "vividha",
+        "gloss": "various",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vidha",
+        "gloss": "of kinds",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sev",
+        "gloss": "service (sevā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ākulatayā",
+        "gloss": "from being overwhelmed, bewildered (by it)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1529,10 +1847,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "पञ्चाशीतेरधिकमपनीते",
+        "text": "पञ्चाशीते",
         "wordIndices": [
-          1,
-          2,
+          1
+        ]
+      },
+      {
+        "text": "रधिक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मपनीते",
+        "wordIndices": [
           3
         ]
       },
@@ -1550,7 +1878,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mayā pañcāśīteradhikamapanīte tu vayasi",
-    "english": "{0:by me, }{3:now that }{1,2:more than eighty-five }{5:years of life }{4:indeed }{3:have passed.}",
+    "english": "{4:and }{0:I have let }{2:more than }{1:eighty-five }{5:years of life }{3:go by.}",
     "words": [
       {
         "roman": "mayā",
@@ -1572,25 +1900,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "apanīte",
-        "gloss": "taken away; passed",
+        "gloss": "led away; gone",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "tu",
-        "gloss": "indeed; but",
+        "gloss": "and now; indeed",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vayasi",
-        "gloss": "years of life; age",
+        "gloss": "the years of life",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Apanīte vayasi is a locative absolute: my age having passed. Adhikam takes the ablative pañcāśīteḥ."
+    "grammarNote": "Apanīte vayasi is a locative absolute; adhikam takes the ablative pañcāśīteḥ. Mayā is also the agent of parityaktāḥ."
   },
   "v5-c": {
     "source": "इदानीं चेन्मातस्तव यदि कृपा नापि भविता",
@@ -1603,10 +1931,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "चेन्मातस्तव",
+        "text": "चे",
         "wordIndices": [
-          1,
-          2,
+          1
+        ]
+      },
+      {
+        "text": "न्मात",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्तव",
+        "wordIndices": [
           3
         ]
       },
@@ -1623,20 +1961,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नापि",
+        "text": "ना",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "भविता",
+        "text": "पि",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "भविता",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "idānīṃ cenmātastava yadi kṛpā nāpi bhavitā",
-    "english": "{1,4:If }{0:now, }{2:Mother, }{3:your }{5:compassion }{6:too is not }{7:to be,}",
+    "english": "{1,4:If }{0:now, }{2:Mother, }{6:not }{7:even }{3:your }{5:compassion }{8:is to come,}",
     "words": [
       {
         "roman": "idānīṃ",
@@ -1675,8 +2019,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nāpi",
-        "gloss": "not … either; too … not (na + api)",
+        "roman": "nā",
+        "gloss": "not (na)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pi",
+        "gloss": "too; even (api)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1695,60 +2045,84 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "निरालम्बो",
+        "text": "नि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "लम्बोदरजननि",
+        "text": "रालम्बो",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कं",
+        "text": "लम्बोदर",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "यामि",
+        "text": "जननि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "शरणम्",
+        "text": "कं",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "यामि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "शरणम्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "nirālambo lambodarajanani kaṃ yāmi śaraṇam",
-    "english": "{0:without support, }{1:mother of Lambodara, }{2:to whom }{3:do I go }{4:for refuge?}",
+    "english": "{0:with nothing }{1:to hang on to, }{3:mother }{2:of Lambodara, }{4:to whom }{5:shall I go }{6:for refuge?}",
     "words": [
       {
-        "roman": "nirālambo",
-        "gloss": "without support",
+        "roman": "nir",
+        "gloss": "without",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "lambodarajanani",
-        "gloss": "O mother of Lambodara, Gaṇeśa of the hanging belly",
+        "roman": "ālambo",
+        "gloss": "support; something to hold (ālamba)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "lambodara",
+        "gloss": "of Lambodara, Gaṇeśa of the hanging belly",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "janani",
+        "gloss": "O mother",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kaṃ",
-        "gloss": "whom",
+        "gloss": "to whom",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "yāmi",
-        "gloss": "do I go to",
+        "gloss": "do I go",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1760,49 +2134,79 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Yāmi with the double accusative kam … śaraṇam: to whom do I go as refuge. Nirālambo plays on Lambodara."
+    "grammarNote": "Yāmi with the double accusative kam … śaraṇam. Nirālambo plays on Lambodara."
   },
   "v6-a": {
     "source": "श्वपाको जल्पाको भवति मधुपाकोपमगिरा",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "श्वपाको",
+        "text": "श्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जल्पाको",
+        "text": "पाको",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भवति",
+        "text": "जल्पाको",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "मधुपाकोपमगिरा",
+        "text": "भवति",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "मधु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पाको",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पम",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गिरा",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "śvapāko jalpāko bhavati madhupākopamagirā",
-    "english": "{0:One who cooks dogs }{2:becomes }{1:a fluent speaker, }{3:with words like honeyed sweets;}",
+    "english": "{1:An outcast who cooks }{0:dogs }{3:becomes }{2:a ready talker, }{7:his speech }{6:like }{5:sweets cooked }{4:in honey;}",
     "words": [
       {
-        "roman": "śvapāko",
-        "gloss": "one who cooks dogs; an outcaste",
+        "roman": "śva",
+        "gloss": "dog",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāko",
+        "gloss": "cooker: with śva, an outcaste",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jalpāko",
-        "gloss": "a fluent talker",
+        "gloss": "a ready talker",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1813,56 +2217,92 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "madhupākopamagirā",
-        "gloss": "with speech like a honeyed sweet: madhu-pāka, honey confection + upama, like + girā, with speech",
+        "roman": "madhu",
+        "gloss": "honey",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāk",
+        "gloss": "sweet confection, something cooked (pāka)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "opama",
+        "gloss": "like (upama, joined a + u)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "girā",
+        "gloss": "with speech",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Śvapākaḥ is the subject and jalpākaḥ the predicate; girā is the instrumental of gir, speech."
+    "grammarNote": "Śvapākaḥ is the subject and jalpākaḥ, a ready talker, the predicate; girā is the instrumental of gir, speech."
   },
   "v6-b": {
     "source": "निरातङ्को रङ्को विहरति चिरं कोटिकनकैः ।",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "निरातङ्को",
+        "text": "नि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "रङ्को",
+        "text": "रातङ्को",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "विहरति",
+        "text": "रङ्को",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "चिरं",
+        "text": "विहरति",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कोटिकनकैः",
+        "text": "चिरं",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "कोटि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कनकैः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "nirātaṅko raṅko viharati ciraṃ koṭikanakaiḥ",
-    "english": "{1:a pauper, }{0:free from dread, }{2:roams }{3:long }{2:at his pleasure }{4:with ten million in gold—}",
+    "english": "{2:a pauper, }{0:free of }{1:dread, }{3:roams }{4:long }{3:at his ease }{6:amid gold }{5:by the ten million—}",
     "words": [
       {
-        "roman": "nirātaṅko",
-        "gloss": "free from dread",
+        "roman": "nir",
+        "gloss": "without",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ātaṅko",
+        "gloss": "dread; affliction",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1874,7 +2314,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "viharati",
-        "gloss": "roams at pleasure",
+        "gloss": "takes his pleasure; moves at ease",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1885,57 +2325,86 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "koṭikanakaiḥ",
-        "gloss": "with ten million pieces of gold",
+        "roman": "koṭi",
+        "gloss": "ten million",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kanakaiḥ",
+        "gloss": "with gold pieces",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Viharati: moves about at ease. Koṭi is ten million; kanakaiḥ is instrumental plural."
+    "grammarNote": "Viharati: moves about at ease. Kanakaiḥ is an instrumental plural."
   },
   "v6-c": {
     "source": "तवापर्णे कर्णे विशति मनुवर्णे फलमिदं",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "तवापर्णे",
+        "text": "तवा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कर्णे",
+        "text": "पर्णे",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "विशति",
+        "text": "कर्णे",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "मनुवर्णे",
+        "text": "विशति",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "फलमिदं",
+        "text": "मनु",
         "wordIndices": [
-          4,
+          4
+        ]
+      },
+      {
+        "text": "वर्णे",
+        "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "मिदं",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "tavāparṇe karṇe viśati manuvarṇe phalamidaṃ",
-    "english": "{0:Aparṇā, }{3:when a syllable of }{0:your }{3:mantra }{2:enters }{1:the ear, }{5:this }{4:is the fruit.}",
+    "english": "{1:Aparṇā, }{7:this }{6:is the fruit }{3:when }{5:one syllable }{0:of your }{4:mantra }{3:enters }{2:the ear—}",
     "words": [
       {
-        "roman": "tavāparṇe",
-        "gloss": "your, O Aparṇā (tava + aparṇe); Aparṇā, she who in her austerity took not even a leaf",
+        "roman": "tav",
+        "gloss": "your (tava)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āparṇe",
+        "gloss": "O Aparṇā, who in her austerity took not even a leaf",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1947,13 +2416,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "viśati",
-        "gloss": "entering",
+        "gloss": "when … enters",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "manuvarṇe",
-        "gloss": "a syllable of the mantra: manu, mantra + varṇa, syllable",
+        "roman": "manu",
+        "gloss": "mantra",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "varṇe",
+        "gloss": "one syllable",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1971,7 +2446,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Manuvarṇe viśati is a locative absolute, viśati being the participle; karṇe is the place entered. The rhyme aparṇe, karṇe, varṇe runs through the line."
+    "grammarNote": "Manu-varṇe viśati is a locative absolute: when a syllable of the mantra enters. Aparṇe, karṇe and varṇe rhyme."
   },
   "v6-d": {
     "source": "जनः को जानीते जननि जपनीयं जपविधौ ॥",
@@ -2008,14 +2483,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जपविधौ",
+        "text": "जप",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "विधौ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "janaḥ ko jānīte janani japanīyaṃ japavidhau",
-    "english": "{1:What }{0:person }{2:knows, }{3:Mother, }{4:what is to be repeated }{5:in the rite of repetition?}",
+    "english": "{0,1:who, }{3:Mother, }{2:can know }{4:what it is to chant it }{5:as chanting }{6:should be done?}",
     "words": [
       {
         "roman": "janaḥ",
@@ -2025,7 +2506,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ko",
-        "gloss": "what; which",
+        "gloss": "who; what",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2043,50 +2524,97 @@ window.SONG_LINES = {
       },
       {
         "roman": "japanīyaṃ",
-        "gloss": "what is to be repeated",
+        "gloss": "the repeating to be done",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "japavidhau",
-        "gloss": "in the rite of sacred repetition",
+        "roman": "japa",
+        "gloss": "sacred repetition",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vidhau",
+        "gloss": "in the rite, done by rule",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Japanīyam is a gerundive used as a noun; japa-vidhau is locative."
+    "grammarNote": "If a syllable heard bears this fruit, who can know what its proper repetition is. Japanīyam is a gerundive used as a noun."
   },
   "v7-a": {
     "source": "चिताभस्मालेपो गरलमशनं दिक्पटधरो",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "चिताभस्मालेपो",
+        "text": "चिता",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "गरलमशनं",
+        "text": "भस्मा",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "लेपो",
+        "wordIndices": [
           2
         ]
       },
       {
-        "text": "दिक्पटधरो",
+        "text": "गरल",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "मशनं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "क्पट",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "धरो",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "citābhasmālepo garalamaśanaṃ dikpaṭadharo",
-    "english": "{0:Smeared with the ash of pyres, }{1:poison }{2:his food, }{3:clothed in the directions,}",
+    "english": "{2:Smeared }{1:with the ash }{0:of pyres, }{3:poison }{4:his food, }{7:wearing }{5:the quarters of the sky }{6:for his clothes,}",
     "words": [
       {
-        "roman": "citābhasmālepo",
-        "gloss": "smeared with the ash of funeral pyres",
+        "roman": "citā",
+        "gloss": "funeral pyre",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhasm",
+        "gloss": "ash (bhasma)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ālepo",
+        "gloss": "smeared with (ālepaḥ)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2103,8 +2631,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dikpaṭadharo",
-        "gloss": "wearing the directions as clothing",
+        "roman": "dik",
+        "gloss": "the directions of space",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "paṭa",
+        "gloss": "cloth, garment",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dharo",
+        "gloss": "wearing",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2117,36 +2657,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "जटाधारी",
+        "text": "जटा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कण्ठे",
+        "text": "धारी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भुजगपतिहारी",
+        "text": "कण्ठे",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "पशुपतिः",
+        "text": "भुजग",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "पति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हारी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पशु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पतिः",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "jaṭādhārī kaṇṭhe bhujagapatihārī paśupatiḥ",
-    "english": "{0:with matted locks, }{1:on his neck }{2:the lord of serpents for a garland, }{3:Paśupati,}",
+    "english": "{1:bearing }{0:matted locks, }{2:at his neck }{4:the lord }{3:of serpents }{5:for a garland, }{7:lord }{6:of beasts,}",
     "words": [
       {
-        "roman": "jaṭādhārī",
-        "gloss": "wearing matted locks",
+        "roman": "jaṭā",
+        "gloss": "matted locks",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dhārī",
+        "gloss": "wearing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2157,20 +2727,38 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhujagapatihārī",
-        "gloss": "wearing the lord of serpents as a garland",
+        "roman": "bhujaga",
+        "gloss": "serpent",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "paśupatiḥ",
-        "gloss": "Paśupati, Śiva as lord of creatures",
+        "roman": "pati",
+        "gloss": "lord",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hārī",
+        "gloss": "having as a garland",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "paśu",
+        "gloss": "creatures; beasts",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "patiḥ",
+        "gloss": "lord; with paśu, Paśupati, Śiva",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Hārī, having a garland, is formed from hāra; bhujaga-pati is the garland."
+    "grammarNote": "Hārī, having a garland, is formed from hāra. Paśupati is a name of Śiva; its plain meaning belongs to this list."
   },
   "v7-c": {
     "source": "कपाली भूतेशो भजति जगदीशैकपदवीं",
@@ -2183,48 +2771,96 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भूतेशो",
+        "text": "भू",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भजति",
+        "text": "तेशो",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "जगदीशैकपदवीं",
+        "text": "भजति",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "जग",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दी",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "शैक",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पदवीं",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "kapālī bhūteśo bhajati jagadīśaikapadavīṃ",
-    "english": "{0:skull-bearer, }{1:lord of spirits, }{2:attains }{3:the sole rank of lord of the world:}",
+    "english": "{0:carrying a skull, }{2:lord }{1:of ghosts—}{6:he alone }{3:holds }{7:the rank }{5:of Lord }{4:of the world:}",
     "words": [
       {
         "roman": "kapālī",
-        "gloss": "bearer of the skull",
+        "gloss": "carrying a skull",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhūteśo",
-        "gloss": "lord of spirits and beings",
+        "roman": "bhūt",
+        "gloss": "ghosts; beings (bhūta)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "eśo",
+        "gloss": "lord (īśa, joined a + ī)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhajati",
-        "gloss": "attains; enjoys",
+        "gloss": "comes to enjoy; holds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "jagadīśaikapadavīṃ",
-        "gloss": "the sole rank of lord of the world: jagad-īśa + eka + padavī",
+        "roman": "jagad",
+        "gloss": "world",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "īś",
+        "gloss": "lord (īśa)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aika",
+        "gloss": "one, sole (eka)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "padavīṃ",
+        "gloss": "rank; station",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2243,15 +2879,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "त्वत्पाणिग्रहणपरिपाटीफलमिदम्",
+        "text": "त्व",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "त्पाणि",
+        "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ग्रहण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "परिपाटी",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "फल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "मिदम्",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "bhavāni tvatpāṇigrahaṇaparipāṭīphalamidam",
-    "english": "{0:Bhavānī, }{2:this is }{1:the fruit of the rite of taking your hand in marriage.}",
+    "english": "{0:Bhavānī, }{6:this }{5:is the fruit }{3:of his taking }{1:your }{2:hand }{4:in the rite of marriage.}",
     "words": [
       {
         "roman": "bhavāni",
@@ -2260,8 +2925,32 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tvatpāṇigrahaṇaparipāṭīphalam",
-        "gloss": "the fruit of the rite of taking your hand in marriage: tvat + pāṇi-grahaṇa + paripāṭī + phalam",
+        "roman": "tvat",
+        "gloss": "your",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāṇi",
+        "gloss": "hand",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "grahaṇa",
+        "gloss": "taking; with pāṇi, marriage",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "paripāṭī",
+        "gloss": "the ordered rite",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "phalam",
+        "gloss": "fruit",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2273,7 +2962,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Pāṇigrahaṇa, taking the hand, is the marriage rite; paripāṭī is its ordered performance."
+    "grammarNote": "Pāṇi-grahaṇa, taking the hand, is the marriage rite; paripāṭī is its ordered performance."
   },
   "v8-a": {
     "source": "न मोक्षस्याकाङ्क्षा भवविभववाञ्छापि च न मे",
@@ -2286,38 +2975,62 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मोक्षस्याकाङ्क्षा",
+        "text": "मोक्षस्या",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भवविभववाञ्छापि",
+        "text": "काङ्क्षा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "च",
+        "text": "भव",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "न",
+        "text": "विभव",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "मे",
+        "text": "वाञ्छा",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "पि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "च",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "मे",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "na mokṣasyākāṅkṣā bhavavibhavavāñchāpi ca na me",
-    "english": "{0,5:I have no }{1:longing for liberation, }{3,4:nor }{2:even desire for worldly splendour;}",
+    "english": "{9:I have }{0:no }{2:longing }{1:for liberation, }{7:and }{8:no }{5:desire }{6:either }{3:for the world }{4:and its wealth;}",
     "words": [
       {
         "roman": "na",
@@ -2326,14 +3039,38 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mokṣasyākāṅkṣā",
-        "gloss": "longing for liberation (mokṣasya + ākāṅkṣā)",
+        "roman": "mokṣasy",
+        "gloss": "of liberation (mokṣasya)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhavavibhavavāñchāpi",
-        "gloss": "even desire for worldly splendour: bhava + vibhava + vāñchā + api",
+        "roman": "ākāṅkṣā",
+        "gloss": "longing",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhava",
+        "gloss": "the world; worldly life",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vibhava",
+        "gloss": "wealth, splendour",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vāñch",
+        "gloss": "desire (vāñchā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āpi",
+        "gloss": "even; also (api)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2351,13 +3088,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "me",
-        "gloss": "mine",
+        "gloss": "mine; I have",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Me, of me, expresses possession with ākāṅkṣā and vāñchā. Bhava and vibhava play on each other."
+    "grammarNote": "Me, of me, expresses possession. Bhava and vibhava play on each other."
   },
   "v8-b": {
     "source": "न विज्ञानापेक्षा शशिमुखि सुखेच्छापि न पुनः ।",
@@ -2370,38 +3107,62 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "विज्ञानापेक्षा",
+        "text": "विज्ञाना",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "शशिमुखि",
+        "text": "पेक्षा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सुखेच्छापि",
+        "text": "शशि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "न",
+        "text": "मुखि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "पुनः",
+        "text": "सुखे",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "च्छा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "पुनः",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "na vijñānāpekṣā śaśimukhi sukhecchāpi na punaḥ",
-    "english": "{0:no }{1:need of discerning knowledge, }{2:moon-faced one, }{4,5:nor again }{3:even the wish for happiness.}",
+    "english": "{0:no }{2:need }{1:of knowledge, }{3:moon}{4:-faced one, }{8:nor }{9:any more }{7:even }{6:the wish }{5:for happiness.}",
     "words": [
       {
         "roman": "na",
@@ -2410,20 +3171,44 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "vijñānāpekṣā",
-        "gloss": "need of discerning knowledge: vijñāna + apekṣā, need or expectation",
+        "roman": "vijñān",
+        "gloss": "discerning knowledge (vijñāna)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "śaśimukhi",
-        "gloss": "O moon-faced one",
+        "roman": "āpekṣā",
+        "gloss": "need; looking toward (apekṣā)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sukhecchāpi",
-        "gloss": "even the wish for happiness (sukha-icchā + api)",
+        "roman": "śaśi",
+        "gloss": "moon",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mukhi",
+        "gloss": "O you whose face is",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sukh",
+        "gloss": "happiness (sukha)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ecch",
+        "gloss": "wish (icchā, joined a + i)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āpi",
+        "gloss": "even (api)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2448,9 +3233,14 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अतस्त्वां",
+        "text": "अत",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "स्त्वां",
+        "wordIndices": [
           1
         ]
       },
@@ -2492,7 +3282,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "atastvāṃ saṃyāce janani jananaṃ yātu mama vai",
-    "english": "{0:So }{2:I beg }{1:you, }{3:Mother: }{5:may }{6:my }{4:lifetime }{7:indeed }{5:pass}",
+    "english": "{0:So }{2:I beg }{1:you, }{3:Mother who bore me: }{5:may }{4:this birth }{6:of mine }{7:truly }{5:be spent}",
     "words": [
       {
         "roman": "atas",
@@ -2520,7 +3310,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jananaṃ",
-        "gloss": "lifetime; literally birth",
+        "gloss": "this lifetime; literally birth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2544,7 +3334,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "Yātu is third person imperative, a prayer. Janani and jananam come from the same root, giving birth."
+    "grammarNote": "Yātu is a third person imperative, a prayer. Janani and jananam come from the same root, giving birth."
   },
   "v8-d": {
     "source": "मृडानी रुद्राणी शिव शिव भवानीति जपतः ॥",
@@ -2575,20 +3365,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भवानीति",
+        "text": "भवानी",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "जपतः",
+        "text": "ति",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "जपतः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "mṛḍānī rudrāṇī śiva śiva bhavānīti japataḥ",
-    "english": "{5:as I repeat }{0:“Mṛḍānī, }{1:Rudrāṇī, }{2:Śiva, }{3:Śiva, }{4:Bhavānī.”}",
+    "english": "{6:as I murmur, over and over, }{0:“Mṛḍānī, }{1:Rudrāṇī, }{2:Śiva, }{3:Śiva, }{4,5:Bhavānī.”}",
     "words": [
       {
         "roman": "mṛḍānī",
@@ -2615,62 +3411,104 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhavānīti",
-        "gloss": "“Bhavānī,” wife of Bhava, Śiva (bhavānī + iti, closing the quoted names)",
+        "roman": "bhavānī",
+        "gloss": "Bhavānī, wife of Bhava, Śiva",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ti",
+        "gloss": "thus (iti), closing the quoted names",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "japataḥ",
-        "gloss": "of me as I repeat",
+        "gloss": "of me as I repeat under the breath",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Japataḥ is a genitive present participle agreeing with mama. The feminine names are nominative and śiva śiva is vocative; iti closes the names being repeated."
+    "grammarNote": "Japataḥ is a genitive present participle agreeing with mama. Iti closes the names being repeated; śiva śiva calls on him directly."
   },
   "v9-a": {
     "source": "नाराधितासि विधिना विविधोपचारैः",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "नाराधितासि",
+        "text": "ना",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "विधिना",
+        "text": "राधिता",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "विविधोपचारैः",
+        "text": "सि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "विधिना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विविधो",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "पचारैः",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "nārādhitāsi vidhinā vividhopacāraiḥ",
-    "english": "{0:You have not been worshipped }{1:by the rule }{2:with varied offerings;}",
+    "english": "{0:I have not }{1:worshipped }{2:you }{3:by rule, }{5:with offerings }{4:of every kind;}",
     "words": [
       {
-        "roman": "nārādhitāsi",
-        "gloss": "you have not been worshipped (na + ārādhitā + asi)",
+        "roman": "nā",
+        "gloss": "not (na)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rādhit",
+        "gloss": "worshipped (ārādhitā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āsi",
+        "gloss": "you are, have been (asi)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "vidhinā",
-        "gloss": "according to rule",
+        "gloss": "by rule",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vividhopacāraiḥ",
-        "gloss": "with various offerings of worship",
+        "roman": "vividh",
+        "gloss": "various (vividha)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "opacāraiḥ",
+        "gloss": "with offerings of worship (upacāraiḥ)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2689,27 +3527,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रूक्षचिन्तनपरैर्न",
+        "text": "रूक्ष",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "चिन्तन",
+        "wordIndices": [
           2
         ]
       },
       {
-        "text": "कृतं",
+        "text": "परै",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "वचोभिः",
+        "text": "र्न",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "कृतं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "वचोभिः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "kiṃ rūkṣacintanaparairna kṛtaṃ vacobhiḥ",
-    "english": "{0:what }{2:has not }{3:been done }{4:by words }{1:bent on harsh thoughts?}",
+    "english": "{0:what }{6:have my words }{4:not }{5:done, }{3:bent on }{1:harsh }{2:thoughts?}",
     "words": [
       {
         "roman": "kiṃ",
@@ -2718,8 +3573,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "rūkṣacintanaparair",
-        "gloss": "bent on harsh thinking",
+        "roman": "rūkṣa",
+        "gloss": "harsh; rough",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cintana",
+        "gloss": "thinking",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "parair",
+        "gloss": "given over to",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2756,9 +3623,14 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "त्वमेव",
+        "text": "त्व",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "मेव",
+        "wordIndices": [
           2
         ]
       },
@@ -2775,15 +3647,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मय्यनाथे",
+        "text": "मय्य",
         "wordIndices": [
-          5,
+          5
+        ]
+      },
+      {
+        "text": "नाथे",
+        "wordIndices": [
           6
         ]
       }
     ],
     "roman": "śyāme tvameva yadi kiñcana mayyanāthe",
-    "english": "{0:Dark one, }{3:if }{1:you }{2:yourself, }{4:in any measure, }{5:toward me }{6:who have no protector}",
+    "english": "{0:Dark one, }{3:if }{1:you }{2:yourself, }{4:however little, }{5:toward me, }{6:an orphan,}",
     "words": [
       {
         "roman": "śyāme",
@@ -2799,7 +3676,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "eva",
-        "gloss": "alone; yourself",
+        "gloss": "yourself; alone",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2811,7 +3688,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kiñcana",
-        "gloss": "in some measure; any",
+        "gloss": "any at all",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2823,13 +3700,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "anāthe",
-        "gloss": "without a protector",
+        "gloss": "an orphan; one with no protector",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Mayi anāthe is locative: toward me, who am without a protector. The verb dhatse follows in the next line."
+    "grammarNote": "Anātha, without a protector, is also the word for an orphan. The verb dhatse follows in the next line."
   },
   "v9-d": {
     "source": "धत्से कृपामुचितमम्ब परं तवैव ॥",
@@ -2842,10 +3719,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कृपामुचितमम्ब",
+        "text": "कृपा",
         "wordIndices": [
-          1,
-          2,
+          1
+        ]
+      },
+      {
+        "text": "मुचित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मम्ब",
+        "wordIndices": [
           3
         ]
       },
@@ -2856,18 +3743,24 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "तवैव",
+        "text": "त",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "वैव",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "dhatse kṛpāmucitamamba paraṃ tavaiva",
-    "english": "{0:hold }{1:compassion, }{3:Mother, }{2:it is fitting }{4:above all }{5:for you alone.}",
+    "english": "{0:bear }{1:compassion, }{3:Mother—}{2:it befits }{5:you }{4:above all, }{6:you alone.}",
     "words": [
       {
         "roman": "dhatse",
-        "gloss": "you hold; you bestow",
+        "gloss": "you hold; you bear",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2879,7 +3772,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ucitam",
-        "gloss": "fitting",
+        "gloss": "fitting; right",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2896,8 +3789,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "tavaiva",
-        "gloss": "for you alone (tava + eva)",
+        "roman": "tav",
+        "gloss": "of you (tava)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aiva",
+        "gloss": "alone (eva)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2935,7 +3834,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āpatsu magnaḥ smaraṇaṃ tvadīyaṃ",
-    "english": "{1:Sunk }{0:in misfortunes, }{2:I remember }{3:you—}",
+    "english": "{1:Sunk }{0:in misfortunes, }{2:I remember }{3:you;}",
     "words": [
       {
         "roman": "āpatsu",
@@ -2945,7 +3844,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "magnaḥ",
-        "gloss": "sunk",
+        "gloss": "sunk; drowned",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2957,7 +3856,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tvadīyaṃ",
-        "gloss": "of you; your",
+        "gloss": "of you",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2982,18 +3881,30 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "करुणार्णवेशि",
+        "text": "करुणा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "र्णवे",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "शि",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "karomi durge karuṇārṇaveśi",
-    "english": "{0:I do, }{1:Durgā, }{2:sovereign of the ocean of compassion.}",
+    "english": "{0:this I do, }{1:Durgā, }{4:sovereign }{3:of the ocean }{2:of compassion.}",
     "words": [
       {
         "roman": "karomi",
-        "gloss": "I make; I do",
+        "gloss": "I do; I make",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3004,8 +3915,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "karuṇārṇaveśi",
-        "gloss": "O sovereign of the ocean of compassion: karuṇā-arṇava + īśī",
+        "roman": "karuṇ",
+        "gloss": "compassion (karuṇā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārṇav",
+        "gloss": "ocean (arṇava)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "eśi",
+        "gloss": "O sovereign (īśī, joined a + ī)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3018,37 +3941,54 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "नैतच्छठत्वं",
+        "text": "नै",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "त",
+        "wordIndices": [
           1
         ]
       },
       {
-        "text": "मम",
+        "text": "च्छठत्वं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "भावयेथाः",
+        "text": "मम",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "भावयेथाः",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "naitacchaṭhatvaṃ mama bhāvayethāḥ",
-    "english": "{0:Do not }{3:think }{0:this }{2:my }{1:deceit:}",
+    "english": "{0:Do not }{4:think }{1:it }{2:falseness }{3:in me:}",
     "words": [
       {
-        "roman": "naitac",
-        "gloss": "not … this (na + etat)",
+        "roman": "nai",
+        "gloss": "not (na, joined to etat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tac",
+        "gloss": "this (etat)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "chaṭhatvaṃ",
-        "gloss": "deceit (śaṭhatvam, with ś becoming ch after t)",
+        "gloss": "falseness; deceit (śaṭhatvam, ś becoming ch)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3060,49 +4000,73 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhāvayethāḥ",
-        "gloss": "you should think; consider",
+        "gloss": "you should think",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Bhāvayethāḥ is a second person optative, middle, making a polite request with na."
+    "grammarNote": "Bhāvayethāḥ is a second person optative, middle, making a request with na."
   },
   "v10-d": {
     "source": "क्षुधातृषार्ता जननीं स्मरन्ति ॥",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "क्षुधातृषार्ता",
+        "text": "क्षुधा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जननीं",
+        "text": "तृषा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "स्मरन्ति",
+        "text": "र्ता",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "जननीं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्मरन्ति",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "kṣudhātṛṣārtā jananīṃ smaranti",
-    "english": "{0:those stricken by hunger and thirst }{2:remember }{1:their mother.}",
+    "english": "{0:the hungry }{1:and thirsty, }{2:in their distress, }{4:remember }{3:their mother.}",
     "words": [
       {
-        "roman": "kṣudhātṛṣārtā",
-        "gloss": "those afflicted by hunger and thirst",
+        "roman": "kṣudhā",
+        "gloss": "hunger",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tṛṣ",
+        "gloss": "thirst (tṛṣā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ārtā",
+        "gloss": "those in distress from",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jananīṃ",
-        "gloss": "mother",
+        "gloss": "their mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3121,31 +4085,48 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "जगदम्ब",
+        "text": "जग",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "विचित्रमत्र",
+        "text": "दम्ब",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "विचित्र",
+        "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मत्र",
+        "wordIndices": [
+          3
         ]
       },
       {
         "text": "किं",
         "wordIndices": [
-          3
+          4
         ]
       }
     ],
     "roman": "jagadamba vicitramatra kiṃ",
-    "english": "{0:Mother of the world, }{3:what }{1:is strange }{2:in this,}",
+    "english": "{1:Mother }{0:of the world, }{4:what }{2:wonder is there }{3:in this,}",
     "words": [
       {
-        "roman": "jagadamba",
-        "gloss": "O Mother of the world",
+        "roman": "jagad",
+        "gloss": "of the world (jagat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "amba",
+        "gloss": "O Mother",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3157,7 +4138,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "atra",
-        "gloss": "in this; here",
+        "gloss": "in this",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3169,7 +4150,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "A rhetorical question whose ground is given by the conditional that follows."
+    "grammarNote": "A rhetorical question whose ground is given by the condition that follows."
   },
   "v11-b": {
     "source": "परिपूर्णा करुणास्ति चेन्मयि ।",
@@ -3182,31 +4163,48 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "करुणास्ति",
+        "text": "करुणा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "चेन्मयि",
+        "text": "स्ति",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "चे",
+        "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "न्मयि",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "paripūrṇā karuṇāsti cenmayi",
-    "english": "{2:if }{1:there is }{0:full }{1:compassion }{3:for me?}",
+    "english": "{3:if }{1:your compassion }{4:for me }{2:is }{0:full to the brim?}",
     "words": [
       {
         "roman": "paripūrṇā",
-        "gloss": "full",
+        "gloss": "completely full",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "karuṇāsti",
-        "gloss": "there is compassion (karuṇā + asti)",
+        "roman": "karuṇ",
+        "gloss": "compassion (karuṇā)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āsti",
+        "gloss": "there is (asti)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3231,18 +4229,42 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अपराधपरम्परापरं",
+        "text": "अपराध",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "परम्परा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "परं",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "aparādhaparamparāparaṃ",
-    "english": "{0:One given over to offence upon offence—}",
+    "english": "{2:From one given over }{0:to offence }{1:upon offence,}",
     "words": [
       {
-        "roman": "aparādhaparamparāparaṃ",
-        "gloss": "given over to one offence after another: aparādha-paramparā, succession of offences + para, intent on",
+        "roman": "aparādha",
+        "gloss": "offence",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "paramparā",
+        "gloss": "one after another; an unbroken succession",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "paraṃ",
+        "gloss": "given over to",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3286,7 +4308,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na hi mātā samupekṣate sutam",
-    "english": "{2:a mother }{1:surely }{0:does not }{3:disregard }{4:such a son.}",
+    "english": "{4:her own son, }{2:a mother }{1:surely }{0:does not }{3:look away.}",
     "words": [
       {
         "roman": "na",
@@ -3296,7 +4318,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hi",
-        "gloss": "for; surely",
+        "gloss": "surely; for",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3308,13 +4330,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "samupekṣate",
-        "gloss": "disregards",
+        "gloss": "looks away from; neglects",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sutam",
-        "gloss": "son",
+        "gloss": "a son",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3327,30 +4349,48 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "मत्समः",
+        "text": "म",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "पातकी",
+        "text": "त्समः",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नास्ति",
+        "text": "पातकी",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्ति",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "matsamaḥ pātakī nāsti",
-    "english": "{2:There is no }{1:sinner }{0:equal to me,}",
+    "english": "{4:There is }{3:no }{2:sinner }{1:to equal }{0:me,}",
     "words": [
       {
-        "roman": "matsamaḥ",
-        "gloss": "equal to me",
+        "roman": "mat",
+        "gloss": "me",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "samaḥ",
+        "gloss": "equal to",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3361,56 +4401,86 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nāsti",
-        "gloss": "there is not (na + asti)",
+        "roman": "nā",
+        "gloss": "not (na)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sti",
+        "gloss": "there is (asti)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "Matsamaḥ qualifies pātakī."
+    "grammarNote": "Mat-samaḥ qualifies pātakī."
   },
   "v12-b": {
     "source": "पापघ्नी त्वत्समा न हि ।",
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "पापघ्नी",
+        "text": "पाप",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "त्वत्समा",
+        "text": "घ्नी",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "न",
+        "text": "त्व",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "हि",
+        "text": "त्समा",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हि",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "pāpaghnī tvatsamā na hi",
-    "english": "{2:no }{0:destroyer of sin }{3:indeed }{1:equal to you.}",
+    "english": "{4:no }{1:destroyer }{0:of sin, }{5:truly, }{3:to equal }{2:you.}",
     "words": [
       {
-        "roman": "pāpaghnī",
-        "gloss": "destroyer of sin",
+        "roman": "pāpa",
+        "gloss": "sin",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tvatsamā",
-        "gloss": "equal to you",
+        "roman": "ghnī",
+        "gloss": "she who destroys",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tvat",
+        "gloss": "you",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "samā",
+        "gloss": "equal to",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3447,14 +4517,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "महादेवि",
+        "text": "महा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "देवि",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "evaṃ jñātvā mahādevi",
-    "english": "{1:Knowing }{0:this to be so, }{2:great Goddess,}",
+    "english": "{1:Knowing }{0:this, }{2:great }{3:Goddess,}",
     "words": [
       {
         "roman": "evaṃ",
@@ -3469,8 +4545,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mahādevi",
-        "gloss": "O great Goddess",
+        "roman": "mahā",
+        "gloss": "great",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "devi",
+        "gloss": "O Goddess",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3483,30 +4565,42 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "यथायोग्यं",
+        "text": "यथा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तथा",
+        "text": "योग्यं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कुरु",
+        "text": "तथा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कुरु",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "yathāyogyaṃ tathā kuru",
-    "english": "{2:act }{1:in the way }{0:that is fitting.}",
+    "english": "{3:do, }{2:then, }{0:as }{1:is fitting.}",
     "words": [
       {
-        "roman": "yathāyogyaṃ",
-        "gloss": "as is fitting",
+        "roman": "yathā",
+        "gloss": "as",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yogyaṃ",
+        "gloss": "is fitting",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3518,7 +4612,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kuru",
-        "gloss": "do; act",
+        "gloss": "do",
         "concept_key": "",
         "preserve_in_english": false
       }

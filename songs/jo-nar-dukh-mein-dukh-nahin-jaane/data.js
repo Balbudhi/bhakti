@@ -275,7 +275,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh sanehu aru bhai nahī jā kai",
-    "english": "{5,6:In whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
+    "english": "{6:In }{5:whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
     "words": [
       {
         "roman": "sukh",
@@ -413,7 +413,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nah nindiā nah ustati jā kai",
-    "english": "{4,5:In whom }{0:there is neither }{1:slander }{2:nor }{3:flattery,}",
+    "english": "{5:In }{4:whom }{0:there is neither }{1:slander }{2:nor }{3:flattery,}",
     "words": [
       {
         "roman": "nah",
@@ -1091,7 +1091,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh sanehu ar bhai nahī jā kai",
-    "english": "{5,6:In whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
+    "english": "{6:In }{5:whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
     "words": [
       {
         "roman": "sukh",
@@ -1229,7 +1229,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gur kirpā jih nar kau kīnī",
-    "english": "{3:The person }{2,4:upon whom }{0:the Guru }{5:has bestowed }{1:grace,}",
+    "english": "{3:The person }{4:upon }{2:whom }{0:the Guru }{5:has bestowed }{1:grace,}",
     "words": [
       {
         "roman": "gur",
@@ -1787,7 +1787,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukha sanehu aru bhai nahī jā kai",
-    "english": "{5,6:In whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
+    "english": "{6:In }{5:whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
     "words": [
       {
         "roman": "sukha",
@@ -1925,7 +1925,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nah nindiā nah usatati jā kai",
-    "english": "{4,5:In whom }{0:there is neither }{1:slander }{2:nor }{3:flattery,}",
+    "english": "{5:In }{4:whom }{0:there is neither }{1:slander }{2:nor }{3:flattery,}",
     "words": [
       {
         "roman": "nah",

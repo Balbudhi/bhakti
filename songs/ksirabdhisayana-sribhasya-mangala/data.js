@@ -220,22 +220,42 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "చంద్రోదయంబపేక్షించినట్టు",
+        "text": "చంద్రోదయం",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "బపేక్షించి",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "నట్టు",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "kumudaṃbulu caṃdrōdayaṃbapēkṣiṃcinaṭṭu",
-    "english": "{1:As} {0:the water lilies} {1:await moonrise},",
+    "english": "{3:As} {0:the water lilies} {2:await} {1:moonrise},",
     "words": [
       {
         "roman": "kumudaṃbulu",
         "gloss": "night-blooming water lilies"
       },
       {
-        "roman": "caṃdrōdayaṃbapēkṣiṃcinaṭṭu",
-        "gloss": "as they awaited moonrise; candrōdayambu plus apēkṣiñcinaṭṭu"
+        "roman": "caṃdrōdayaṃb",
+        "gloss": "moonrise (candrōdayambu)"
+      },
+      {
+        "roman": "apēkṣiṃci",
+        "gloss": "awaited (apēkṣiñci)"
+      },
+      {
+        "roman": "naṭṭu",
+        "gloss": "as, just as (-inaṭṭu)"
       }
     ],
     "nameTable": false,
@@ -252,52 +272,82 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "కన్నుంగలువలు",
+        "text": "కన్నుం",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "భవదీయ",
+        "text": "గలువలు",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ముఖచంద్ర",
+        "text": "భవదీయ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "దర్శనంబపేక్షించుచున్నవి",
+        "text": "ముఖ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "చంద్ర",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "దర్శనం",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "బపేక్షించుచున్నవి",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "nā kannuṃgaluvalu bhavadīya mukhacaṃdra darśanaṃbapēkṣiṃcucunnavi",
-    "english": "{0:my} {1:eye-lilies} {4:await the sight} {2:of your} {3:face-moon}.",
+    "english": "{0:my} {1:eye-}{2:lilies} {7:await} {6:the sight} {3:of your} {4:face-}{5:moon}.",
     "words": [
       {
         "roman": "nā",
         "gloss": "my"
       },
       {
-        "roman": "kannuṃgaluvalu",
-        "gloss": "eye-lilies; my eyes figured as water lilies"
+        "roman": "kannuṃ",
+        "gloss": "eyes, my eyes figured as flowers (kannu)"
+      },
+      {
+        "roman": "galuvalu",
+        "gloss": "water lilies (kaluvalu)"
       },
       {
         "roman": "bhavadīya",
         "gloss": "your; belonging to you"
       },
       {
-        "roman": "mukhacaṃdra",
-        "gloss": "moon of the face; moonlike face"
+        "roman": "mukha",
+        "gloss": "face"
       },
       {
-        "roman": "darśanaṃbapēkṣiṃcucunnavi",
-        "gloss": "are awaiting the sight; darśanambu plus apēkṣiñcucunnavi"
+        "roman": "caṃdra",
+        "gloss": "moon; the moonlike face"
+      },
+      {
+        "roman": "darśanaṃb",
+        "gloss": "the sight (darśanambu)"
+      },
+      {
+        "roman": "apēkṣiṃcucunnavi",
+        "gloss": "are awaiting (apēkṣiñcucunnavi)"
       }
     ],
     "nameTable": false,
@@ -314,32 +364,52 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "మేఘాగమనంబునకు",
+        "text": "మేఘా",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "చెలంగినట్టు",
+        "text": "గమనంబునకు",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "చెలంగి",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "నట్టు",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "mayūraṃbulu mēghāgamanaṃbunaku celaṃginaṭṭu",
-    "english": "{2:As} {0:peacocks} {2:rejoice} {1:at the coming of clouds},",
+    "english": "{4:As} {0:peacocks} {3:rejoice} {2:at the coming} {1:of clouds},",
     "words": [
       {
         "roman": "mayūraṃbulu",
         "gloss": "peacocks"
       },
       {
-        "roman": "mēghāgamanaṃbunaku",
-        "gloss": "at the coming of clouds"
+        "roman": "mēgh",
+        "gloss": "of clouds (mēgha)"
       },
       {
-        "roman": "celaṃginaṭṭu",
-        "gloss": "as they rejoiced; became animated with delight"
+        "roman": "āgamanaṃbunaku",
+        "gloss": "at the coming (āgamanambu, dative)"
+      },
+      {
+        "roman": "celaṃgi",
+        "gloss": "rejoiced, became animated with delight"
+      },
+      {
+        "roman": "naṭṭu",
+        "gloss": "as, just as (-inaṭṭu)"
       }
     ],
     "nameTable": false,
@@ -356,60 +426,80 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "మనోమయూరంబు",
+        "text": "మనో",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "నీ",
+        "text": "మయూరంబు",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "మేఘవర్ణంబైన",
+        "text": "నీ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "తిరుమేను",
+        "text": "మేఘ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "దలంచి",
+        "text": "వర్ణంబైన",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ఆనందించుచున్నయది",
+        "text": "తిరుమేను",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "దలంచి",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ఆనందించుచున్నయది",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "nā manōmayūraṃbu nī mēghavarṇaṃbaina tirumēnu dalaṃci ānaṃdiṃcucunnayadi",
-    "english": "{0:my }{1:mind, a peacock, }{6:rejoices }{5:as it contemplates }{2:your }{3:cloud-colored }{4:sacred body.}",
+    "english": "{0:my }{1:mind, }{2:a peacock, }{8:rejoices }{7:as it contemplates }{3:your }{4:cloud-}{5:colored }{6:sacred body.}",
     "words": [
       {
         "roman": "nā",
         "gloss": "my"
       },
       {
-        "roman": "manōmayūraṃbu",
-        "gloss": "mind-peacock; mind figured as a peacock"
+        "roman": "manō",
+        "gloss": "mind (manas)"
+      },
+      {
+        "roman": "mayūraṃbu",
+        "gloss": "peacock; the mind figured as one"
       },
       {
         "roman": "nī",
         "gloss": "your"
       },
       {
-        "roman": "mēghavarṇaṃbaina",
-        "gloss": "cloud-colored; having the color of a cloud"
+        "roman": "mēgha",
+        "gloss": "cloud"
+      },
+      {
+        "roman": "varṇaṃbaina",
+        "gloss": "colored, having the color of"
       },
       {
         "roman": "tirumēnu",
@@ -528,26 +618,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "శ్రీపాద",
+        "text": "శ్రీ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "జలంబులకు",
+        "text": "పాద",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "వికసించుచున్నది",
+        "text": "జలంబులకు",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "వికసించుచున్నది",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "nā vadana śukti nī śrīpāda jalaṃbulaku vikasiṃcucunnadi",
-    "english": "{0:my} {1:mouth}, {2:an oyster shell}, {6:opens} {5:for the waters} {3:of your} {4:sacred feet}.",
+    "english": "{0:my} {1:mouth}, {2:an oyster shell}, {7:opens} {6:for the waters} {3:of your} {4:sacred} {5:feet}.",
     "words": [
       {
         "roman": "nā",
@@ -566,8 +662,12 @@ window.SONG_LINES = {
         "gloss": "your"
       },
       {
-        "roman": "śrīpāda",
-        "gloss": "sacred feet"
+        "roman": "śrī",
+        "gloss": "sacred, revered"
+      },
+      {
+        "roman": "pāda",
+        "gloss": "feet"
       },
       {
         "roman": "jalaṃbulaku",
@@ -990,18 +1090,78 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "అఖిలభువనజన్మస్థేమభంగాదిలీలే",
+        "text": "అఖిల",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "భువన",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "జన్మ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "స్థేమ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "భంగా",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ది",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "లీలే",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "akhilabhuvanajanmasthemabhaṃgādilīle",
-    "english": "{0:In the One whose play is the birth, continuance and dissolution of all worlds and the rest},",
+    "english": "{6:In the One whose play is} {2:the birth,} {3:continuance} {4:and dissolution} {0:of all} {1:worlds} {5:and the rest},",
     "words": [
       {
-        "roman": "akhilabhuvanajanmasthemabhaṃgādilīle",
-        "gloss": "in the One whose play is the birth, continuance and dissolution of all worlds and the rest"
+        "roman": "akhila",
+        "gloss": "all"
+      },
+      {
+        "roman": "bhuvana",
+        "gloss": "worlds"
+      },
+      {
+        "roman": "janma",
+        "gloss": "birth"
+      },
+      {
+        "roman": "sthema",
+        "gloss": "continuance"
+      },
+      {
+        "roman": "bhaṃg",
+        "gloss": "dissolution (bhaṅga)"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and the rest"
+      },
+      {
+        "roman": "līle",
+        "gloss": "in the One whose play is (locative)"
       }
     ],
     "nameTable": false,
@@ -1012,18 +1172,79 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "వినతవివిధభూతవ్రాతరక్షైకదీక్షే",
+        "text": "వినత",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "వివిధ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "భూత",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "వ్రాత",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "రక్షై",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "క",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "దీక్షే",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "vinatavividhabhūtavrātarakṣaikadīkṣe",
-    "english": "{0:whose sole consecrated vow is to protect the hosts of varied beings who bow before him},",
+    "english": "{6:whose} {5:sole} {6:consecrated vow is} {4:to protect} {3:the hosts} {1:of varied} {2:beings} {0:who bow before him},",
     "words": [
       {
-        "roman": "vinatavividhabhūtavrātarakṣaikadīkṣe",
-        "gloss": "whose sole consecrated vow is to protect the hosts of varied beings who bow before him; locative singular"
+        "roman": "vinata",
+        "gloss": "who bow down"
+      },
+      {
+        "roman": "vividha",
+        "gloss": "varied"
+      },
+      {
+        "roman": "bhūta",
+        "gloss": "beings"
+      },
+      {
+        "roman": "vrāta",
+        "gloss": "hosts"
+      },
+      {
+        "roman": "rakṣ",
+        "gloss": "protecting (rakṣā)"
+      },
+      {
+        "roman": "aika",
+        "gloss": "sole, one (eka; ā + e = ai)"
+      },
+      {
+        "roman": "dīkṣe",
+        "gloss": "whose consecrated vow is (dīkṣā, locative singular)"
       }
     ],
     "nameTable": false,

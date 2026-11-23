@@ -273,11 +273,19 @@ window.SONG_LINES = {
   "l007": {
     "source": "కట్టకడపటిది కైవల్యము",
     "roman": "kaṭṭakaḍapaṭidi kaivalyamu",
-    "english": "{0:What lies at the very end} {1:is liberation}.",
+    "english": "{2:What lies} {1:at the} {0:very} {1:end} {3:is liberation}.",
     "words": [
       {
-        "roman": "kaṭṭakaḍapaṭidi",
-        "gloss": "that which is at the very end"
+        "roman": "kaṭṭa",
+        "gloss": "very; intensifies end"
+      },
+      {
+        "roman": "kaḍapaṭi",
+        "gloss": "at the end; final"
+      },
+      {
+        "roman": "di",
+        "gloss": "that which is"
       },
       {
         "roman": "kaivalyamu",
@@ -286,15 +294,27 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "కట్టకడపటిది",
+        "text": "కట్ట",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "కైవల్యము",
+        "text": "కడపటి",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ది",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "కైవల్యము",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -393,15 +413,23 @@ window.SONG_LINES = {
   "l010": {
     "source": "యెగువనే శ్రీవేంకటేశ్వరుడేలిక",
     "roman": "yeguvanē śrīvēṅkaṭēśvaruḍēlika",
-    "english": "{0:High above}, {1:Śrī Veṅkaṭēśvara is the ruler}.",
+    "english": "{0:High above}, {1:Śrī} {2:Veṅkaṭēśvara} {3:is the ruler}.",
     "words": [
       {
         "roman": "yeguvanē",
         "gloss": "high above indeed"
       },
       {
-        "roman": "śrīvēṅkaṭēśvaruḍēlika",
-        "gloss": "the blessed Lord of Veṅkaṭa hill is the ruler; final ēlika is ruler"
+        "roman": "śrī",
+        "gloss": "blessed; honorific"
+      },
+      {
+        "roman": "vēṅkaṭēśvaruḍ",
+        "gloss": "the Lord of Veṅkaṭa hill"
+      },
+      {
+        "roman": "ēlika",
+        "gloss": "ruler"
       }
     ],
     "sourceWords": [
@@ -412,9 +440,21 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "శ్రీవేంకటేశ్వరుడేలిక",
+        "text": "శ్రీ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "వేంకటేశ్వరు",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "డేలిక",
+        "wordIndices": [
+          3
         ]
       }
     ],

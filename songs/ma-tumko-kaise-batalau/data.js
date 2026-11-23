@@ -130,7 +130,7 @@ window.SONG_LINES = {
     "source": "माँ तुमको कैसे बतलाऊँ मेरे हृदय की अंतर्वाणी",
     "sourceLanguage": "hi",
     "roman": "mā̃ tumako kaise batalāū̃ mere hṛdaya kī antarvāṇī",
-    "english": "{0:Mother, }{2:how }{3:can I express }{1:to you }{7:the inner voice }{4,5,6:of my heart?}",
+    "english": "{0:Mother, }{2:how }{3:can I express }{1:to you }{7:the inner voice }{6:of }{4:my }{5:heart?}",
     "words": [
       {
         "roman": "mā̃",
@@ -367,7 +367,7 @@ window.SONG_LINES = {
     "source": "जब कहने को मन ललचाता हृदय प्रेम से गदगद होता",
     "sourceLanguage": "hi",
     "roman": "jaba kahane ko mana lalacātā hṛdaya prema se gadagada hotā",
-    "english": "{0:When }{3:the mind }{4:longs }{1,2:to speak, }{5:the heart }{8,9:chokes }{6,7:with love,}",
+    "english": "{0:When }{3:the mind }{4:longs }{2:to }{1:speak, }{5:the heart }{8,9:chokes }{7:with }{6:love,}",
     "words": [
       {
         "roman": "jaba",
@@ -866,7 +866,7 @@ window.SONG_LINES = {
     "source": "संतान को गोद उठाओ भवानी",
     "sourceLanguage": "hi",
     "roman": "santāna ko goda uṭhāo bhavānī",
-    "english": "{3:lift }{0,1:your child }{2:into your lap, }{4:O Bhavani.}",
+    "english": "{3:lift }{1:your }{0:child }{2:into your lap, }{4:O Bhavani.}",
     "words": [
       {
         "roman": "santāna",

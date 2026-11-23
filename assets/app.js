@@ -704,6 +704,9 @@
     button.title = label;
   };
 
+  // A name in the playlist or on the lock screen says what it is.
+  const creditFor = item => globalThis.BHAKTI_SEARCH?.creditLine?.(bySlug.get(item.slug) || item) || item.credit || "";
+
   // Occurrence IDs own retained rows; reordering never recreates their controls.
   const queueRows = new Map();
   const visibleQueueRows = new Set();
@@ -734,7 +737,7 @@
         ${current || played
           ? `<span class="queue-position" aria-hidden="true">${index + 1}</span>`
           : `<button class="queue-drag-handle" type="button" data-queue-drag="${escapeHtml(item.entryId)}" aria-label="Reorder ${escapeHtml(item.title)}; drag or use arrow keys" title="Drag or use arrow keys to reorder"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8 7h.01M16 7h.01M8 12h.01M16 12h.01M8 17h.01M16 17h.01"/></svg></button>`}
-        <div class="queue-copy"><div class="queue-song-title">${escapeHtml(item.title)}</div>${item.credit ? `<div class="queue-credit">${escapeHtml(item.credit)}</div>` : ""}</div>
+        <div class="queue-copy"><div class="queue-song-title">${escapeHtml(item.title)}</div>${creditFor(item) ? `<div class="queue-credit">${escapeHtml(creditFor(item))}</div>` : ""}</div>
         ${current
           ? ''
           : `<div class="queue-row-actions"><button class="queue-row-action" type="button" data-queue-action="${played ? "history" : "play"}" aria-label="Play ${escapeHtml(item.title)} ${played ? "again" : "now"}" title="${played ? "Play again" : "Play now"}">${playIcon}</button><button class="queue-row-action queue-row-remove" type="button" data-queue-action="remove" aria-label="Remove ${escapeHtml(item.title)} from playlist" title="Remove from playlist"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button></div>`}
@@ -1313,7 +1316,7 @@
       systemMedia = attach({
         audio,
         playback,
-        getSong: () => currentSong,
+        getSong: () => currentSong && { ...currentSong, credit: bySlug.get(currentSong.slug)?.singer || creditFor(currentSong) },
         canPrevious: () => Boolean(queueState && queueState.currentIndex > 0),
         canNext: () => Boolean(queueState && (queueState.repeat === "all"
           || queueState.currentIndex + 1 < queueState.items.length)),

@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Yā Devī Sarvabhūteṣu",
   "subtitle": "Śakti",
-  "credit": "Vyāsa",
-  "pageCredit": "Vyāsa",
+  "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "Vyāsa",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Sanskrit",
     "Hindi"

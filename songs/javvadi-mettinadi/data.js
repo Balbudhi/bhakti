@@ -179,34 +179,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "చెక్కుటద్దముల",
+        "text": "చెక్కు",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "కాంతి",
+        "text": "టద్దముల",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "నలరినది",
+        "text": "కాంతి",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "నలరినది",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "adi cekkuṭaddamula kānti nalarinadi",
-    "english": "{0:She} {3:has bloomed in} {2:the radiance} {1:of her mirror-like cheeks}.",
+    "english": "{0:She} {4:has bloomed in} {3:the radiance} {1:of her }{2:mirror-like }{1:cheeks}.",
     "words": [
       {
         "roman": "adi",
         "gloss": "she; that woman"
       },
       {
-        "roman": "cekkuṭaddamula",
-        "gloss": "of the mirror-like cheeks"
+        "roman": "cekku",
+        "gloss": "cheek"
+      },
+      {
+        "roman": "ṭaddamula",
+        "gloss": "of the mirrors; addamu, mirror, with linking ṭ"
       },
       {
         "roman": "kānti",

@@ -128,24 +128,36 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "शरणागत",
+        "text": "शरणा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रतिपालनहारी",
+        "text": "गत",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "प्रतिपालनहारी",
+        "wordIndices": [
+          2
         ]
       }
     ],
     "roman": "Śaraṇāgata pratipālanahārī",
-    "english": "{1:Protector of }{0:those who seek refuge!}",
+    "english": "{2:Protector of }{1:those who seek }{0:refuge!}",
     "words": [
       {
-        "roman": "Śaraṇāgata",
-        "gloss": "one who has sought refuge / the surrendered (śaraṇa + āgata)",
+        "roman": "Śaraṇ",
+        "gloss": "refuge; śaraṇa, joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āgata",
+        "gloss": "one who has come to, sought",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -880,7 +880,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ āj terā mehamān kar le re mujhase zarā pahacān, bhagat bhar de re jholī",
-    "english": "{0:I am }{1,2,3:your guest today—}{4,5,8:take a moment to }{9:know }{7:me, }{6:O; }{10:devotee, }{11,12:fill }{14:the alms bag, }{13:O}",
+    "english": "{0:I am }{2:your }{3:guest }{1:today—}{4,5,8:take a moment to }{9:know }{7:me, }{6:O; }{10:devotee, }{11,12:fill }{14:the alms bag, }{13:O}",
     "words": [
       {
         "roman": "maiṁ",
@@ -1041,7 +1041,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āj luṭā de re sarabas apanā mān le kahanā merā",
-    "english": "{0:Today }{1,2:give away }{4,5:all your own possessions, }{3:O; }{6,7:heed }{9:my }{8:bidding}",
+    "english": "{0:Today }{2:give }{1:away }{4,5:all your own possessions, }{3:O; }{6,7:heed }{9:my }{8:bidding}",
     "words": [
       {
         "roman": "āj",

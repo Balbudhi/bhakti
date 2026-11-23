@@ -818,7 +818,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ga re pa ga dha pa dha pa ga re ga pa dha re, re ga ga re sā dha pa ga re ga pa dha sā re, sā sā dha pa dha dha pa ga pa pa ga re ga ga re sā, re ga re ga pa ga pa dha sā dha pa ga re sā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11,12,13:Ga re pa ga dha pa dha pa ga re ga pa dha re, }{14,15,16,17,18,19,20,21,22,23,24,25,26,27:re ga ga re sā dha pa ga re ga pa dha sā re, }{28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43:sā sā dha pa dha dha pa ga pa pa ga re ga ga re sā, }{44,45,46,47,48,49,50,51,52,53,54,55,56,57:re ga re ga pa ga pa dha sā dha pa ga re sā}",
+    "english": "{0:Ga }{1:re }{2:pa }{3:ga }{4:dha }{5:pa }{6:dha }{7:pa }{8:ga }{9:re }{10:ga }{11:pa }{12:dha }{13:re, }{14:re }{15:ga }{16:ga }{17:re }{18:sā }{19:dha }{20:pa }{21:ga }{22:re }{23:ga }{24:pa }{25:dha }{26:sā }{27:re, }{28:sā }{29:sā }{30:dha }{31:pa }{32:dha }{33:dha }{34:pa }{35:ga }{36:pa }{37:pa }{38:ga }{39:re }{40:ga }{41:ga }{42:re }{43:sā, }{44:re }{45:ga }{46:re }{47:ga }{48:pa }{49:ga }{50:pa }{51:dha }{52:sā }{53:dha }{54:pa }{55:ga }{56:re }{57:sā}",
     "words": [
       {
         "roman": "Ga",
@@ -1396,7 +1396,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ṭūṭ rahā sā̃sō̃ kā tār",
-    "english": "{4:The thread }{2,3:of breaths }{0,1:is breaking}",
+    "english": "{4:The thread }{3:of }{2:breaths }{1:is }{0:breaking}",
     "words": [
       {
         "roman": "Ṭūṭ",
@@ -1662,7 +1662,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Har lē man kī pīr apār",
-    "english": "{0,1:Take away }{5:the boundless }{4:pain }{2,3:of the heart}",
+    "english": "{1:Take }{0:away }{5:the boundless }{4:pain }{2,3:of the heart}",
     "words": [
       {
         "roman": "Har",
@@ -1811,7 +1811,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sā re sā ga sā pa sā dha sā sā dha pa ga re sā dha sā",
-    "english": "{0,1,2,3:Sā re sā ga }{4,5,6,7:sā pa sā dha }{8,9,10,11:sā sā dha pa }{12,13,14,15,16:ga re sā dha sā}",
+    "english": "{0:Sā }{1:re }{2:sā }{3:ga }{4:sā }{5:pa }{6:sā }{7:dha }{8:sā }{9:sā }{10:dha }{11:pa }{12:ga }{13:re }{14:sā }{15:dha }{16:sā}",
     "words": [
       {
         "roman": "Sā",

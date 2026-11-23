@@ -62,7 +62,7 @@ window.SONG_LINES = {
   },
   "refrain": {
     "roman": "Jhūṭhe jag ne leā menū luṭṭ mā, māye merī bānh phaṛ lai",
-    "english": "{0:The false}{1,2: world}{3,5: has robbed}{4: me,}{6: O Mother}{7: — O Mother,}{10,11: take hold}{8: of my}{9: arm.}",
+    "english": "{0:The false}{1,2: world}{3: has }{5:robbed}{4: me,}{6: O Mother}{7: — O Mother,}{11: take }{10:hold}{8: of my}{9: arm.}",
     "words": [
       {
         "roman": "Jhūṭhe",
@@ -192,7 +192,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Geā andaroṅ hī andaroṅ ṭuṭṭ mā, māye merī bānh phaṛ lai",
-    "english": "{0:I have been}{4: broken}{1,2,3: from the inside,}{5: O Mother}{6: — O Mother,}{9,10: take hold}{7: of my}{8: arm.}",
+    "english": "{0:I have been}{4: broken}{1,2,3: from the inside,}{5: O Mother}{6: — O Mother,}{10: take }{9:hold}{7: of my}{8: arm.}",
     "words": [
       {
         "roman": "Geā",
@@ -462,7 +462,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Hanjū akhiyāṅ de rahe nahī ruk mā, māye merī bānh phaṛ lai",
-    "english": "{0:The tears}{1,2: of my eyes}{3,4: are not}{5: stopping,}{6: O Mother}{7: — O Mother,}{10,11: take hold}{8: of my}{9: arm.}",
+    "english": "{0:The tears}{1,2: of my eyes}{3: are }{4:not}{5: stopping,}{6: O Mother}{7: — O Mother,}{11: take }{10:hold}{8: of my}{9: arm.}",
     "words": [
       {
         "roman": "Hanjū",
@@ -592,7 +592,7 @@ window.SONG_LINES = {
   },
   "v2a": {
     "roman": "Baccheyāṅ toṅ pīṛā huṇ jāndiyāṅ nā jhall mā",
-    "english": "{0,1:The children }{3,4,5,6:can no longer bear }{2:the pain, }{7:O Mother.}",
+    "english": "{0,1:The children }{4:can }{5:no }{3:longer }{6:bear }{2:the pain, }{7:O Mother.}",
     "words": [
       {
         "roman": "Baccheyāṅ",
@@ -1292,7 +1292,7 @@ window.SONG_LINES = {
   },
   "v4c": {
     "roman": "Miṭā de jhanḍewālī janmāṅ dī bhukh mā, māye merī bānh phaṛ lai",
-    "english": "{0,1:Erase, }{2:O Jhandewali, }{5:the hunger }{3,4:of lifetimes, }{6:O Mother — }{7:O Mother, }{10,11:take hold of }{8,9:my arm.}",
+    "english": "{0,1:Erase, }{2:O Jhandewali, }{5:the hunger }{4:of }{3:lifetimes, }{6:O Mother — }{7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
     "words": [
       {
         "roman": "Miṭā",

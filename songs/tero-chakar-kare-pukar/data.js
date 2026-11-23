@@ -105,7 +105,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tero cākar kare pukār bhavānī beg padhāro nā",
-    "english": "{0,1:Your servant }{2,3:calls out, }{4:Bhavani, }{7:please }{6:arrive }{5:swiftly.}",
+    "english": "{0:Your }{1:servant }{2,3:calls out, }{4:Bhavani, }{7:please }{6:arrive }{5:swiftly.}",
     "words": [
       {
         "roman": "Tero",
@@ -1360,7 +1360,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tero cākar kahe ardās kṛpālī beg padhāro nā",
-    "english": "{0,1:Your servant }{2,3:offers this prayer, }{4:O Compassionate One: }{7:please }{6:arrive }{5:swiftly.}",
+    "english": "{0:Your }{1:servant }{2,3:offers this prayer, }{4:O Compassionate One: }{7:please }{6:arrive }{5:swiftly.}",
     "words": [
       {
         "roman": "Tero",

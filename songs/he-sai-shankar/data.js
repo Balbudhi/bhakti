@@ -559,7 +559,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tuma hī bane ho tāna prāṇa kī",
-    "english": "{0:You }{1:alone }{2,3:have become }{4:the tune }{5,6:of life's breath;}",
+    "english": "{0:You }{1:alone }{3:have }{2:become }{4:the tune }{5,6:of life's breath;}",
     "words": [
       {
         "roman": "Tuma",

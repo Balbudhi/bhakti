@@ -193,7 +193,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caranana śīśa jhukāūm̐ maiṁ karo kṛpā bhagavāna",
-    "english": "{2,3:I bow}{1: my head}{0: at the feet;}{4: bestow}{5: grace,}{6: O Lord.}",
+    "english": "{3:I }{2:bow}{1: my head}{0: at the feet;}{4: bestow}{5: grace,}{6: O Lord.}",
     "words": [
       {
         "roman": "caranana",

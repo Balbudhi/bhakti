@@ -158,7 +158,7 @@ window.SONG_LINES = {
   },
   "refrain_c": {
     "roman": "Ahaṅkār-vikār bhare man ko",
-    "english": "{3,4:This mind, }{2:filled with }{0:ego }{1:and distorting passions…}",
+    "english": "{4:This }{3:mind, }{2:filled with }{0:ego }{1:and distorting passions…}",
     "words": [
       {
         "roman": "ahaṅkār",

@@ -345,30 +345,48 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ଜଗବଲ୍ଲଭ",
+        "text": "ଜଗ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ହେ",
+        "text": "ବଲ୍ଲଭ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ଲକ୍ଷ୍ମୀବଲ୍ଲଭ",
+        "text": "ହେ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ଲକ୍ଷ୍ମୀ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ବଲ୍ଲଭ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Jagaballabha he Lakṣmīballabha",
-    "english": "{0:Beloved of the world, }{1:O }{2:beloved of Lakshmi,}",
+    "english": "{1:Beloved }{0:of the world, }{2:O }{4:beloved }{3:of Lakshmi,}",
     "words": [
       {
-        "roman": "Jagaballabha",
-        "gloss": "beloved of the world",
+        "roman": "Jaga",
+        "gloss": "the world (jagat)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ballabha",
+        "gloss": "beloved",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -379,8 +397,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "Lakṣmīballabha",
-        "gloss": "beloved Lord of Lakshmi",
+        "roman": "Lakṣmī",
+        "gloss": "the Goddess of fortune, Viṣṇu’s consort",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ballabha",
+        "gloss": "beloved Lord",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -392,30 +416,66 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ସିନ୍ଧୁସୁତାପ୍ରିୟ",
+        "text": "ସିନ୍ଧୁ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ଭକ୍ତବାନ୍ଧବ",
+        "text": "ସୁତା",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ପ୍ରିୟ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଭକ୍ତ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ବାନ୍ଧବ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Sindhusutāpriya bhaktabāndhaba",
-    "english": "{0:Beloved of the ocean's daughter, }{1:Friend of devotees,}",
+    "english": "{2:Beloved }{0:of the ocean's }{1:daughter, }{4:Friend }{3:of devotees,}",
     "words": [
       {
-        "roman": "Sindhusutāpriya",
-        "gloss": "beloved of the ocean's daughter (Lakshmi)",
+        "roman": "Sindhu",
+        "gloss": "the ocean",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktabāndhaba",
-        "gloss": "kinsman/friend of devotees",
+        "roman": "sutā",
+        "gloss": "daughter (Lakshmi)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "priya",
+        "gloss": "beloved",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhakta",
+        "gloss": "devotees",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bāndhaba",
+        "gloss": "kinsman, friend",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -545,30 +605,73 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ପୁରୀକ୍ଷେତ୍ରାଧୀଶ",
+        "text": "ପୁରୀ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ଶ୍ରୀକ୍ଷେତ୍ରମଣି",
+        "text": "କ୍ଷେ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ତ୍ରା",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ଧୀଶ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ଶ୍ରୀକ୍ଷେତ୍ର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ମଣି",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Purīkṣetrādhīśa Śrīkṣetramaṇi",
-    "english": "{0:Sovereign of Puri's holy realm, }{1:Jewel of Sriksetra,}",
+    "english": "{2:Sovereign }{0:of Puri's }{1:holy realm, }{4:Jewel }{3:of Sriksetra,}",
     "words": [
       {
-        "roman": "Purīkṣetrādhīśa",
-        "gloss": "Sovereign of the sacred realm of Puri",
+        "roman": "Purī",
+        "gloss": "the holy city of Jagannātha",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "Śrīkṣetramaṇi",
-        "gloss": "jewel of Sriksetra",
+        "roman": "kṣetr",
+        "gloss": "sacred realm (kṣetra)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādhīśa",
+        "gloss": "sovereign (adhīśa)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "Śrīkṣetra",
+        "gloss": "Sriksetra, the holy realm of Puri",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "maṇi",
+        "gloss": "jewel",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -839,30 +942,54 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ଶଙ୍ଖକ୍ଷେତ୍ରପତି",
+        "text": "ଶଙ୍ଖ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ଶ୍ରୀକ୍ଷେତ୍ର",
+        "text": "କ୍ଷେତ୍ର",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ଈଶ",
+        "text": "ପତି",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ଶ୍ରୀକ୍ଷେତ୍ର",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଈଶ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Śaṅkhakṣetrapati Śrīkṣetra īśa",
-    "english": "{0:Guardian of the Conch Realm, }{2:Sovereign }{1:of Sriksetra,}",
+    "english": "{2:Guardian }{0:of the Conch }{1:Realm, }{4:Sovereign }{3:of Sriksetra,}",
     "words": [
       {
-        "roman": "Śaṅkhakṣetrapati",
-        "gloss": "guardian of the conch-shaped holy realm; Puri",
+        "roman": "Śaṅkha",
+        "gloss": "conch",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kṣetra",
+        "gloss": "holy realm; the conch-shaped realm of Puri",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pati",
+        "gloss": "guardian, lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1498,30 +1625,54 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ବ୍ରହ୍ମଦାରୁରୂପୀ",
+        "text": "ବ୍ରହ୍ମ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ଆଦି",
+        "text": "ଦାରୁ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ଚୈତନ୍ୟ",
+        "text": "ରୂପୀ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ଆଦି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ଚୈତନ୍ୟ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Brahmadārurūpī ādi caitanya",
-    "english": "{0:Embodied as the wooden Brahman, }{1:primordial }{2:Consciousness,}",
+    "english": "{2:Embodied }{1:as the wooden }{0:Brahman, }{3:primordial }{4:Consciousness,}",
     "words": [
       {
-        "roman": "Brahmadārurūpī",
-        "gloss": "manifested in the form of sacred wooden Brahman",
+        "roman": "Brahma",
+        "gloss": "Brahman",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dāru",
+        "gloss": "sacred wood",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rūpī",
+        "gloss": "manifested in the form of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2075,30 +2226,60 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ବାଞ୍ଛାକଳ୍ପତରୁ",
+        "text": "ବାଞ୍ଛା",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ହେ",
+        "text": "କଳ୍ପ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ମହାମେରୁ",
+        "text": "ତରୁ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ହେ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ମହା",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ମେରୁ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "Bāñchākaḷpataru he mahāmeru",
-    "english": "{0:Wish-fulfilling tree of desires, }{1:O }{2:great Mount Meru,}",
+    "english": "{1:Wish-fulfilling }{2:tree }{0:of desires, }{3:O }{4:great }{5:Mount Meru,}",
     "words": [
       {
-        "roman": "Bāñchākaḷpataru",
-        "gloss": "wish-fulfilling tree of desires",
+        "roman": "Bāñchā",
+        "gloss": "desires",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kaḷpa",
+        "gloss": "wish-fulfilling (kalpa)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "taru",
+        "gloss": "tree",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2109,8 +2290,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mahāmeru",
-        "gloss": "great Mount Meru / pillar of stability",
+        "roman": "mahā",
+        "gloss": "great",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "meru",
+        "gloss": "Mount Meru; pillar of stability",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2122,30 +2309,42 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ଭାବସ୍ପର୍ଶମଣି",
+        "text": "ଭାବ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ବିଗ୍ରହ",
+        "text": "ସ୍ପର୍ଶମଣି",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ଦାରୁ",
+        "text": "ବିଗ୍ରହ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ଦାରୁ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "Bhābasparśamaṇi bigraha dāru",
-    "english": "{0:Touchstone of devotion, }{2:wooden }{1:embodied form,}",
+    "english": "{1:Touchstone }{0:of devotion, }{3:wooden }{2:embodied form,}",
     "words": [
       {
-        "roman": "Bhābasparśamaṇi",
-        "gloss": "touchstone of devotional feeling",
+        "roman": "Bhāba",
+        "gloss": "devotional feeling (bhāva)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sparśamaṇi",
+        "gloss": "touchstone",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2322,30 +2521,78 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ଆର୍ତ୍ତତ୍ରାଣବାହୀ",
+        "text": "ଆର୍ତ୍ତ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "କଳିକାଳତାରକ",
+        "text": "ତ୍ରାଣ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ବାହୀ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "କଳି",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "କାଳ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ତାରକ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "Ārttatrāṇabāhī kaḷikāḷatāraka",
-    "english": "{0:Bringer of rescue to the afflicted, }{1:Deliverer across the Kali age,}",
+    "english": "{2:Bringer }{1:of rescue }{0:to the afflicted, }{5:Deliverer across }{3:the Kali }{4:age,}",
     "words": [
       {
-        "roman": "Ārttatrāṇabāhī",
-        "gloss": "bearer/bringer of rescue for the afflicted",
+        "roman": "Ārtta",
+        "gloss": "the afflicted",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "kaḷikāḷatāraka",
-        "gloss": "deliverer across the Kali age",
+        "roman": "trāṇa",
+        "gloss": "rescue",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bāhī",
+        "gloss": "bearer, bringer",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kaḷi",
+        "gloss": "the age of strife, last of the four ages",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "kāḷa",
+        "gloss": "age",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "tāraka",
+        "gloss": "deliverer, one who carries across",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2392,30 +2639,54 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "ଆନନ୍ଦମୟ",
+        "text": "ଆନନ୍ଦ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ହେ",
+        "text": "ମୟ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ଭକ୍ତହୃଦଚନ୍ଦନ",
+        "text": "ହେ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ଭକ୍ତ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ହୃଦ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ଚନ୍ଦନ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "Ānandamaya he bhaktahṛdacandana",
-    "english": "{0:Embodiment of bliss, }{1:O }{2:sandalwood paste for the devotee's heart,}",
+    "english": "{1:Embodiment }{0:of bliss, }{2:O }{5:sandalwood paste }{3:for the devotee's }{4:heart,}",
     "words": [
       {
-        "roman": "Ānandamaya",
-        "gloss": "permeated with supreme bliss",
+        "roman": "Ānanda",
+        "gloss": "supreme bliss",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "maya",
+        "gloss": "permeated with, made of",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2426,8 +2697,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bhaktahṛdacandana",
-        "gloss": "cooling sandalwood paste for the devotee's heart",
+        "roman": "bhakta",
+        "gloss": "the devotee",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hṛda",
+        "gloss": "heart",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "candana",
+        "gloss": "cooling sandalwood paste",
         "concept_key": "",
         "preserve_in_english": false
       }

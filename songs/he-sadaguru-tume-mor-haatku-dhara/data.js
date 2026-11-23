@@ -35,7 +35,7 @@ window.SONG_LINES = {
     "source": "ଭକ୍ତର ଗୁରୁଙ୍କ ପ୍ରତି ସମର୍ପଣ ଭାବ ଏବଂ ଗୁରୁଙ୍କର ଶରଣ ପ୍ରଦାନ ଗୁରୁଭକ୍ତି ପରମ୍ପରାର ଏକ ଶ୍ରେଷ୍ଠ ପରିଣତି। ଜାଗତିକ ଦୁନିଆରେ ଯେତେ ପ୍ରଭାବଶାଳୀ ହେଲେ ମଧ୍ୟ ଗୁରୁପ୍ରତି ଭାବସିକ୍ତ ଭକ୍ତଟିଏ ଏକ ଅବୋଧ ଏବଂ ଅସହାୟ ବାଳକ ପରି ଗୁରୁଙ୍କର ଶରଣ ଏବଂ ନିବିଡ଼ ସାନ୍ନିଧ୍ୟ ପାଇଁ ଅନ୍ତର୍ମନରେ ଅହରହ ପ୍ରାର୍ଥନା କରୁଥାଏ। ସେ ସର୍ବଦା ଚାହେଁ ଯେ ଜୀବନର ସୁଖ, ଦୁଃଖ ଏବଂ ପାପପୁଣ୍ୟର ପ୍ରତ୍ୟେକ କ୍ଷଣରେ ଗୁରୁ ତାର ହାତକୁ ଧରି ତାର ଚଲାପଥକୁ ସହଜ ଓ ପାବନ କରିଦିଅନ୍ତୁ। ଶ୍ରୀଗୁରୁଭାଗବତର ଦ୍ଵିତୀୟ ଖଣ୍ଡରେ ଏହି ଭାବଟିକୁ ସ୍ପଷ୍ଟ କରି କୁହାଯାଇଛି: ଗୁରୁଙ୍କୁ ମଣି ଭଗବାନ ଭକତ କଲେ ସମର୍ପଣ, ଜୀବନ ଦେଲେ ଗୁରୁ ହାତେ ଭକତ ଚାଲେ ଶୁଦ୍ଧ ପଥେ।",
     "sourceLanguage": "",
     "roman": "Bhaktara guruṅka prati samarpaṇa bhāba ebaṁ guruṅkara śaraṇa pradāna gurubhakti paramparāra eka śreṣṭha pariṇati. Jāgatika duniyāre jete prabhābaśāḷī hele madhya guruprati bhābasikta bhaktaṭie eka abodha ebaṁ asahāya bāḷaka pari guruṅkara śaraṇa ebaṁ nibiḍa sānnidhya pāiṁ antarmanare aharaha prārthanā karuthāe. Se sarbadā cāheṁ je jībanara sukha, duḥkha ebaṁ pāpapuṇyara pratyeka kṣaṇare guru tāra hātaku dhari tāra calāpathaku sahaja o pābana karidiantu. Śrīgurubhāgabatara dbitīya khaṇḍare ehi bhābaṭiku spaṣṭa kari kuhājāichi: Guruṅku maṇi bhagabāna bhakata kale samarpaṇa, jībana dele guru hāte bhakata cāle śuddha pathe.",
-    "english": "{0:The devotee's }{1,2,3,4:sentiment of surrender towards the Guru }{5:and }{6,7,8:the Guru's granting of refuge }{11,12,13:is a supreme culmination }{9,10:of the tradition of Guru-devotion. }{16,17,18,19:However influential one may be }{14,15:in the worldly sphere, }{20,21,22:a devotee drenched in feeling toward the Guru }{36,37,38:ceaselessly prays }{35:in the inner heart }{34:for }{29,30:the Guru's refuge }{31:and }{32,33:intimate closeness, }{23,24,28:like an innocent }{25:and }{26,27:helpless child. }{39:He }{40:always }{41:wishes }{42:that }{48,49:in every moment }{43:of life's }{44:happiness, }{45:sorrow, }{46:and }{47:sin and virtue, }{50:the Guru, }{53:holding }{51,52:his hand, }{59:may make }{54,55:his path }{56:easy }{57:and }{58:pure. }{61,62:In the second canto }{60:of Sri Guru Bhagavata, }{63,64,65,66:making this sentiment clear, }{67:it has been said: }{68,69:Deeming the Guru }{70:as the Supreme Lord, }{71,72,73:the devotee made surrender; }{74,75:placing life }{76,77:in the Guru's hands, }{78,79:the devotee walks }{80,81:upon the pure path.}",
+    "english": "{0:The devotee's }{4:sentiment }{3:of surrender }{2:towards }{1:the Guru }{5:and }{6:the Guru's }{8:granting }{7:of refuge }{12:is a }{13:supreme }{14:culmination }{11:of the tradition }{9:of Guru-}{10:devotion. }{17:However }{18:influential }{19,20:one may be }{16:in the }{15:worldly }{16:sphere, }{25:a devotee }{24:drenched }{23:in feeling }{22:toward }{21:the Guru }{40:ceaselessly }{41,42:prays }{39:in the }{38:inner }{39:heart }{37:for }{32:the Guru's }{33:refuge }{34:and }{35:intimate }{36:closeness, }{31:like }{26:an }{27:innocent }{28:and }{29:helpless }{30:child. }{43:He }{44:always }{45:wishes }{46:that }{54:in }{53:every }{54:moment }{47:of life's }{48:happiness, }{49:sorrow, }{50:and }{51:sin }{52:and virtue, }{55:the Guru, }{58:holding }{56:his }{57:hand, }{64:may make }{59:his }{60:path }{61:easy }{62:and }{63:pure. }{67:In the }{66:second }{67:canto }{65:of Sri Guru Bhagavata, }{71:making }{68:this }{69:sentiment }{70:clear, }{72:it has been said: }{74:Deeming }{73:the Guru }{75:as the Supreme Lord, }{76:the devotee }{77:made }{78:surrender; }{80:placing }{79:life }{82:in }{81:the Guru's }{82:hands, }{83:the devotee }{84:walks }{86:upon the }{85:pure }{86:path.}",
     "words": [
       {
         "roman": "Bhaktara",
@@ -92,8 +92,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "gurubhakti",
-        "gloss": "Guru-devotion",
+        "roman": "guru",
+        "gloss": "the spiritual teacher",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhakti",
+        "gloss": "devotion",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -158,14 +164,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "guruprati",
-        "gloss": "towards the Guru",
+        "roman": "guru",
+        "gloss": "the spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhābasikta",
-        "gloss": "emotion-drenched",
+        "roman": "prati",
+        "gloss": "towards",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bhāba",
+        "gloss": "feeling, emotion",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sikta",
+        "gloss": "drenched",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -248,8 +266,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "antarmanare",
-        "gloss": "in the inner heart",
+        "roman": "antar",
+        "gloss": "inner",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "manare",
+        "gloss": "in the heart, mind: locative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -320,8 +344,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "pāpapuṇyara",
-        "gloss": "of sin and virtue",
+        "roman": "pāpa",
+        "gloss": "sin",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "puṇyara",
+        "gloss": "of virtue: genitive for the pair",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -587,441 +617,471 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ଗୁରୁଭକ୍ତି",
+        "text": "ଗୁରୁ",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "ପରମ୍ପରାର",
+        "text": "ଭକ୍ତି",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "ଏକ",
+        "text": "ପରମ୍ପରାର",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "ଶ୍ରେଷ୍ଠ",
+        "text": "ଏକ",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "ପରିଣତି।",
+        "text": "ଶ୍ରେଷ୍ଠ",
         "wordIndices": [
           13
         ]
       },
       {
-        "text": "ଜାଗତିକ",
+        "text": "ପରିଣତି।",
         "wordIndices": [
           14
         ]
       },
       {
-        "text": "ଦୁନିଆରେ",
+        "text": "ଜାଗତିକ",
         "wordIndices": [
           15
         ]
       },
       {
-        "text": "ଯେତେ",
+        "text": "ଦୁନିଆରେ",
         "wordIndices": [
           16
         ]
       },
       {
-        "text": "ପ୍ରଭାବଶାଳୀ",
+        "text": "ଯେତେ",
         "wordIndices": [
           17
         ]
       },
       {
-        "text": "ହେଲେ",
+        "text": "ପ୍ରଭାବଶାଳୀ",
         "wordIndices": [
           18
         ]
       },
       {
-        "text": "ମଧ୍ୟ",
+        "text": "ହେଲେ",
         "wordIndices": [
           19
         ]
       },
       {
-        "text": "ଗୁରୁପ୍ରତି",
+        "text": "ମଧ୍ୟ",
         "wordIndices": [
           20
         ]
       },
       {
-        "text": "ଭାବସିକ୍ତ",
+        "text": "ଗୁରୁ",
         "wordIndices": [
           21
         ]
       },
       {
-        "text": "ଭକ୍ତଟିଏ",
+        "text": "ପ୍ରତି",
         "wordIndices": [
           22
         ]
       },
       {
-        "text": "ଏକ",
+        "text": "ଭାବ",
         "wordIndices": [
           23
         ]
       },
       {
-        "text": "ଅବୋଧ",
+        "text": "ସିକ୍ତ",
         "wordIndices": [
           24
         ]
       },
       {
-        "text": "ଏବଂ",
+        "text": "ଭକ୍ତଟିଏ",
         "wordIndices": [
           25
         ]
       },
       {
-        "text": "ଅସହାୟ",
+        "text": "ଏକ",
         "wordIndices": [
           26
         ]
       },
       {
-        "text": "ବାଳକ",
+        "text": "ଅବୋଧ",
         "wordIndices": [
           27
         ]
       },
       {
-        "text": "ପରି",
+        "text": "ଏବଂ",
         "wordIndices": [
           28
         ]
       },
       {
-        "text": "ଗୁରୁଙ୍କର",
+        "text": "ଅସହାୟ",
         "wordIndices": [
           29
         ]
       },
       {
-        "text": "ଶରଣ",
+        "text": "ବାଳକ",
         "wordIndices": [
           30
         ]
       },
       {
-        "text": "ଏବଂ",
+        "text": "ପରି",
         "wordIndices": [
           31
         ]
       },
       {
-        "text": "ନିବିଡ଼",
+        "text": "ଗୁରୁଙ୍କର",
         "wordIndices": [
           32
         ]
       },
       {
-        "text": "ସାନ୍ନିଧ୍ୟ",
+        "text": "ଶରଣ",
         "wordIndices": [
           33
         ]
       },
       {
-        "text": "ପାଇଁ",
+        "text": "ଏବଂ",
         "wordIndices": [
           34
         ]
       },
       {
-        "text": "ଅନ୍ତର୍ମନରେ",
+        "text": "ନିବିଡ଼",
         "wordIndices": [
           35
         ]
       },
       {
-        "text": "ଅହରହ",
+        "text": "ସାନ୍ନିଧ୍ୟ",
         "wordIndices": [
           36
         ]
       },
       {
-        "text": "ପ୍ରାର୍ଥନା",
+        "text": "ପାଇଁ",
         "wordIndices": [
           37
         ]
       },
       {
-        "text": "କରୁଥାଏ।",
+        "text": "ଅନ୍ତ",
         "wordIndices": [
           38
         ]
       },
       {
-        "text": "ସେ",
+        "text": "ର୍ମନରେ",
         "wordIndices": [
           39
         ]
       },
       {
-        "text": "ସର୍ବଦା",
+        "text": "ଅହରହ",
         "wordIndices": [
           40
         ]
       },
       {
-        "text": "ଚାହେଁ",
+        "text": "ପ୍ରାର୍ଥନା",
         "wordIndices": [
           41
         ]
       },
       {
-        "text": "ଯେ",
+        "text": "କରୁଥାଏ।",
         "wordIndices": [
           42
         ]
       },
       {
-        "text": "ଜୀବନର",
+        "text": "ସେ",
         "wordIndices": [
           43
         ]
       },
       {
-        "text": "ସୁଖ,",
+        "text": "ସର୍ବଦା",
         "wordIndices": [
           44
         ]
       },
       {
-        "text": "ଦୁଃଖ",
+        "text": "ଚାହେଁ",
         "wordIndices": [
           45
         ]
       },
       {
-        "text": "ଏବଂ",
+        "text": "ଯେ",
         "wordIndices": [
           46
         ]
       },
       {
-        "text": "ପାପପୁଣ୍ୟର",
+        "text": "ଜୀବନର",
         "wordIndices": [
           47
         ]
       },
       {
-        "text": "ପ୍ରତ୍ୟେକ",
+        "text": "ସୁଖ,",
         "wordIndices": [
           48
         ]
       },
       {
-        "text": "କ୍ଷଣରେ",
+        "text": "ଦୁଃଖ",
         "wordIndices": [
           49
         ]
       },
       {
-        "text": "ଗୁରୁ",
+        "text": "ଏବଂ",
         "wordIndices": [
           50
         ]
       },
       {
-        "text": "ତାର",
+        "text": "ପାପ",
         "wordIndices": [
           51
         ]
       },
       {
-        "text": "ହାତକୁ",
+        "text": "ପୁଣ୍ୟର",
         "wordIndices": [
           52
         ]
       },
       {
-        "text": "ଧରି",
+        "text": "ପ୍ରତ୍ୟେକ",
         "wordIndices": [
           53
         ]
       },
       {
-        "text": "ତାର",
+        "text": "କ୍ଷଣରେ",
         "wordIndices": [
           54
         ]
       },
       {
-        "text": "ଚଲାପଥକୁ",
+        "text": "ଗୁରୁ",
         "wordIndices": [
           55
         ]
       },
       {
-        "text": "ସହଜ",
+        "text": "ତାର",
         "wordIndices": [
           56
         ]
       },
       {
-        "text": "ଓ",
+        "text": "ହାତକୁ",
         "wordIndices": [
           57
         ]
       },
       {
-        "text": "ପାବନ",
+        "text": "ଧରି",
         "wordIndices": [
           58
         ]
       },
       {
-        "text": "କରିଦିଅନ୍ତୁ।",
+        "text": "ତାର",
         "wordIndices": [
           59
         ]
       },
       {
-        "text": "ଶ୍ରୀଗୁରୁଭାଗବତର",
+        "text": "ଚଲାପଥକୁ",
         "wordIndices": [
           60
         ]
       },
       {
-        "text": "ଦ୍ଵିତୀୟ",
+        "text": "ସହଜ",
         "wordIndices": [
           61
         ]
       },
       {
-        "text": "ଖଣ୍ଡରେ",
+        "text": "ଓ",
         "wordIndices": [
           62
         ]
       },
       {
-        "text": "ଏହି",
+        "text": "ପାବନ",
         "wordIndices": [
           63
         ]
       },
       {
-        "text": "ଭାବଟିକୁ",
+        "text": "କରିଦିଅନ୍ତୁ।",
         "wordIndices": [
           64
         ]
       },
       {
-        "text": "ସ୍ପଷ୍ଟ",
+        "text": "ଶ୍ରୀଗୁରୁଭାଗବତର",
         "wordIndices": [
           65
         ]
       },
       {
-        "text": "କରି",
+        "text": "ଦ୍ଵିତୀୟ",
         "wordIndices": [
           66
         ]
       },
       {
-        "text": "କୁହାଯାଇଛି:",
+        "text": "ଖଣ୍ଡରେ",
         "wordIndices": [
           67
         ]
       },
       {
-        "text": "ଗୁରୁଙ୍କୁ",
+        "text": "ଏହି",
         "wordIndices": [
           68
         ]
       },
       {
-        "text": "ମଣି",
+        "text": "ଭାବଟିକୁ",
         "wordIndices": [
           69
         ]
       },
       {
-        "text": "ଭଗବାନ",
+        "text": "ସ୍ପଷ୍ଟ",
         "wordIndices": [
           70
         ]
       },
       {
-        "text": "ଭକତ",
+        "text": "କରି",
         "wordIndices": [
           71
         ]
       },
       {
-        "text": "କଲେ",
+        "text": "କୁହାଯାଇଛି:",
         "wordIndices": [
           72
         ]
       },
       {
-        "text": "ସମର୍ପଣ,",
+        "text": "ଗୁରୁଙ୍କୁ",
         "wordIndices": [
           73
         ]
       },
       {
-        "text": "ଜୀବନ",
+        "text": "ମଣି",
         "wordIndices": [
           74
         ]
       },
       {
-        "text": "ଦେଲେ",
+        "text": "ଭଗବାନ",
         "wordIndices": [
           75
         ]
       },
       {
-        "text": "ଗୁରୁ",
+        "text": "ଭକତ",
         "wordIndices": [
           76
         ]
       },
       {
-        "text": "ହାତେ",
+        "text": "କଲେ",
         "wordIndices": [
           77
         ]
       },
       {
-        "text": "ଭକତ",
+        "text": "ସମର୍ପଣ,",
         "wordIndices": [
           78
         ]
       },
       {
-        "text": "ଚାଲେ",
+        "text": "ଜୀବନ",
         "wordIndices": [
           79
         ]
       },
       {
-        "text": "ଶୁଦ୍ଧ",
+        "text": "ଦେଲେ",
         "wordIndices": [
           80
         ]
       },
       {
-        "text": "ପଥେ।",
+        "text": "ଗୁରୁ",
         "wordIndices": [
           81
+        ]
+      },
+      {
+        "text": "ହାତେ",
+        "wordIndices": [
+          82
+        ]
+      },
+      {
+        "text": "ଭକତ",
+        "wordIndices": [
+          83
+        ]
+      },
+      {
+        "text": "ଚାଲେ",
+        "wordIndices": [
+          84
+        ]
+      },
+      {
+        "text": "ଶୁଦ୍ଧ",
+        "wordIndices": [
+          85
+        ]
+      },
+      {
+        "text": "ପଥେ।",
+        "wordIndices": [
+          86
         ]
       }
     ]
@@ -1755,7 +1815,7 @@ window.SONG_LINES = {
     "source": "ତୁମେ ହିଁ ତ ମୋର ସବୁକିଛି ଗୁରୁ",
     "sourceLanguage": "",
     "roman": "Tume hiṁ ta mora sabukichi guru",
-    "english": "{0,1:You alone }{2:are indeed }{3:my }{4:everything, }{5:O Guru}",
+    "english": "{0:You }{1:alone }{2:are indeed }{3:my }{4:everything, }{5:O Guru}",
     "words": [
       {
         "roman": "Tume",

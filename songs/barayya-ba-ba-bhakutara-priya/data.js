@@ -43,48 +43,108 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ವಾರಿಜಾಲಯಪತೆ",
+        "text": "ವಾರಿಜಾ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ವಾರಿಜನಾಭನೆ",
+        "text": "ಲಯ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ವಾರಿಜಭವಪಿತ",
+        "text": "ಪತೆ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ವಾರಿಜನೇತ್ರನೆ",
+        "text": "ವಾರಿಜ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ನಾಭನೆ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ವಾರಿಜ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ಭವ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ಪಿತ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ವಾರಿಜ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ನೇತ್ರನೆ",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "vārijālayapate vārijanābhane vārijabhavapita vārijanētrane",
-    "english": "{0:Husband of the lotus-dwelling lady}, {1:lotus-naveled Lord}, {2:father of lotus-born Brahmā}, {3:lotus-eyed Lord},",
+    "english": "{2:Husband} {1:of the} {0:lotus}-{1:dwelling lady}, {3:lotus}-{4:naveled Lord}, {7:father} {6:of} {5:lotus}-{6:born Brahmā}, {8:lotus}-{9:eyed Lord},",
     "words": [
       {
-        "roman": "vārijālayapate",
-        "gloss": "husband of the lotus-dwelling Lakṣmī"
+        "roman": "vārij",
+        "gloss": "lotus, “water-born”; vārija, vowel joined to ālaya"
       },
       {
-        "roman": "vārijanābhane",
-        "gloss": "lotus-naveled Lord"
+        "roman": "ālaya",
+        "gloss": "dwelling; with lotus, Lakṣmī who dwells in it"
       },
       {
-        "roman": "vārijabhavapita",
-        "gloss": "father of the lotus-born Brahmā"
+        "roman": "pate",
+        "gloss": "O husband; vocative"
       },
       {
-        "roman": "vārijanētrane",
-        "gloss": "lotus-eyed Lord"
+        "roman": "vārija",
+        "gloss": "lotus, “water-born”"
+      },
+      {
+        "roman": "nābhane",
+        "gloss": "-naveled one; O Lord whose navel bears it"
+      },
+      {
+        "roman": "vārija",
+        "gloss": "lotus, “water-born”"
+      },
+      {
+        "roman": "bhava",
+        "gloss": "born from; with lotus, Brahmā"
+      },
+      {
+        "roman": "pita",
+        "gloss": "father"
+      },
+      {
+        "roman": "vārija",
+        "gloss": "lotus, “water-born”"
+      },
+      {
+        "roman": "nētrane",
+        "gloss": "-eyed one; O Lord with such eyes"
       }
     ],
     "nameTable": false,
@@ -701,54 +761,84 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಜಗಜ್ಜನ್ಮಾದಿಕರ್ತ",
+        "text": "ಜಗ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಗೋವಿಂದ",
+        "text": "ಜ್ಜನ್ಮಾ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಉದರದಿ",
+        "text": "ದಿ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಲೋಕ",
+        "text": "ಕರ್ತ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಲಘುವಾಗಿ",
+        "text": "ಗೋವಿಂದ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಧರಿಸಿದ",
+        "text": "ಉದರದಿ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ಮುಕುಂದ",
+        "text": "ಲೋಕ",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "ಲಘುವಾಗಿ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಧರಿಸಿದ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ಮುಕುಂದ",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "jagajjanmādikarta gōviṃda udaradi lōka laghuvāgi dharisida mukuṃda",
-    "english": "{1:Govinda}, {0:maker of the world’s birth and all that follows}, {6:Mukunda}, {5:who held} {3:the world} {4:lightly} {2:in your belly},",
+    "english": "{4:Govinda}, {3:maker} {1:of} {0:the world’s} {1:birth} {2:and all that follows}, {9:Mukunda}, {8:who held} {6:the world} {7:lightly} {5:in your belly},",
     "words": [
       {
-        "roman": "jagajjanmādikarta",
-        "gloss": "maker of the world’s birth and the rest of its course"
+        "roman": "jagaj",
+        "gloss": "of the world; jagat before j"
+      },
+      {
+        "roman": "janm",
+        "gloss": "birth; janma, vowel joined to ādi"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and the rest; what follows from it"
+      },
+      {
+        "roman": "karta",
+        "gloss": "maker"
       },
       {
         "roman": "gōviṃda",
@@ -801,20 +891,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪೊಳೆವಾನಂದ",
+        "text": "ಪೊಳೆವಾ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ನಿಗಮಾವಳಿಯಿಂದ",
+        "text": "ನಂದ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ನಿಗಮಾ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ವಳಿಯಿಂದ",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "bhaktara manake jhagajhagisuta poḷevānaṃda nigamāvaḷiyiṃda",
-    "english": "{3:bliss that shines}, {2:sparkling} {1:in the hearts} {0:of devotees}; {4:with rows of Vedic hymns},",
+    "english": "{4:bliss} {3:that shines}, {2:sparkling} {1:in the hearts} {0:of devotees}; {6:with rows} {5:of Vedic hymns},",
     "words": [
       {
         "roman": "bhaktara",
@@ -829,12 +931,20 @@ window.SONG_LINES = {
         "gloss": "flashing brilliantly; sparkling"
       },
       {
-        "roman": "poḷevānaṃda",
-        "gloss": "bliss that shines; poḷeva plus ānanda"
+        "roman": "poḷev",
+        "gloss": "that shines; poḷeva"
       },
       {
-        "roman": "nigamāvaḷiyiṃda",
-        "gloss": "with rows of Vedic hymns; by the Vedic collections"
+        "roman": "ānaṃda",
+        "gloss": "bliss"
+      },
+      {
+        "roman": "nigam",
+        "gloss": "Vedic hymns; nigama, the Veda"
+      },
+      {
+        "roman": "āvaḷiyiṃda",
+        "gloss": "with rows or collections; āvaḷi, instrumental"
       }
     ],
     "nameTable": false,
@@ -851,76 +961,98 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಮುನಿಗಣ",
+        "text": "ಮುನಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ನಗ",
+        "text": "ಗಣ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಖಗ",
+        "text": "ನಗ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಮೃಗ",
+        "text": "ಖಗ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಶಶಿ",
+        "text": "ಮೃಗ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ಗಗನಮಣ್ಯಾದ್ಯರು",
+        "text": "ಶಶಿ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ಸೊಗಸಾಗಿ",
+        "text": "ಗಗನ",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ಬಗೆಬಗೆ",
+        "text": "ಮಣ್ಯಾ",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "ಪೊಗಳುತಲೀ",
+        "text": "ದ್ಯರು",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "ಬೇಗ",
+        "text": "ಸೊಗಸಾಗಿ",
         "wordIndices": [
           10
+        ]
+      },
+      {
+        "text": "ಬಗೆಬಗೆ",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "ಪೊಗಳುತಲೀ",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ಬೇಗ",
+        "wordIndices": [
+          13
         ]
       }
     ],
     "roman": "agaṇita munigaṇa naga khaga mṛga śaśi gaganamaṇyādyaru sogasāgi bagebage pogaḷutalī bēga",
-    "english": "{0:countless} {1:companies of sages}, {2:mountains}, {3:birds}, {4:beasts}, {5:the moon}, {6:the sky’s jewel and others}, {7:beautifully} {9:praising you} {8:in varied ways}, {10:eagerly},",
+    "english": "{0:countless} {2:companies} {1:of sages}, {3:mountains}, {4:birds}, {5:beasts}, {6:the moon}, {7:the sky’s} {8:jewel} {9:and others}, {10:beautifully} {12:praising you} {11:in varied ways}, {13:eagerly},",
     "words": [
       {
         "roman": "agaṇita",
         "gloss": "countless; unnumbered"
       },
       {
-        "roman": "munigaṇa",
-        "gloss": "companies of sages"
+        "roman": "muni",
+        "gloss": "sage"
+      },
+      {
+        "roman": "gaṇa",
+        "gloss": "companies; multitude"
       },
       {
         "roman": "naga",
@@ -939,8 +1071,16 @@ window.SONG_LINES = {
         "gloss": "the moon"
       },
       {
-        "roman": "gaganamaṇyādyaru",
-        "gloss": "the jewel of the sky, the sun, and others"
+        "roman": "gagana",
+        "gloss": "sky"
+      },
+      {
+        "roman": "maṇy",
+        "gloss": "jewel; maṇi, with sky the sun"
+      },
+      {
+        "roman": "ādyaru",
+        "gloss": "and others; those beginning with it"
       },
       {
         "roman": "sogasāgi",
@@ -967,38 +1107,88 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಚಿಗಿಚಿಗಿದಾಡಲು",
+        "text": "ಚಿಗಿಚಿಗಿ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಮುಗುಳುನಗೆಯ",
+        "text": "ದಾಡಲು",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಮಹೋರಗಗಿರಿವಾಸ",
+        "text": "ಮುಗುಳು",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ನಗೆಯ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ಮಹೋ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ರಗ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ಗಿರಿ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ವಾಸ",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "cigicigidāḍalu muguḷunageya mahōragagirivāsa",
-    "english": "{0:as they leap and dance}, {1:smiling gently}, {2:dweller on the great-serpent hill}.",
+    "english": "{1:as they} {0:leap} {1:and dance}, {3:smiling} {2:gently}, {7:dweller} {6:on the} {4:great}-{5:serpent} {6:hill}.",
     "words": [
       {
-        "roman": "cigicigidāḍalu",
-        "gloss": "as they spring and dance repeatedly"
+        "roman": "cigicigid",
+        "gloss": "springing or leaping again and again; cigicigidu"
       },
       {
-        "roman": "muguḷunageya",
-        "gloss": "with a gentle smile"
+        "roman": "āḍalu",
+        "gloss": "as they dance or play"
       },
       {
-        "roman": "mahōragagirivāsa",
-        "gloss": "dweller on the great-serpent hill; Śeṣādri"
+        "roman": "muguḷu",
+        "gloss": "gentle, half-opened; literally bud"
+      },
+      {
+        "roman": "nageya",
+        "gloss": "with a smile; nage, smile"
+      },
+      {
+        "roman": "mah",
+        "gloss": "great; mahā, vowel joined to uraga"
+      },
+      {
+        "roman": "ōraga",
+        "gloss": "serpent; uraga, here Śeṣa"
+      },
+      {
+        "roman": "giri",
+        "gloss": "hill"
+      },
+      {
+        "roman": "vāsa",
+        "gloss": "dweller"
       }
     ],
     "nameTable": false,
@@ -1009,48 +1199,86 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ತಡಮಾಡಬೇಡವೊ",
+        "text": "ತಡ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಹೇ",
+        "text": "ಮಾಡ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ನಲ್ಲ",
+        "text": "ಬೇಡವೊ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ವಾಕುಲಾಲಿಸೆನ್ನೊಡೆಯ",
+        "text": "ಹೇ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಶ್ರೀ",
+        "text": "ನಲ್ಲ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಗೋಪಾಲವಿಠ್ಠಲ",
+        "text": "ವಾಕು",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ಲಾಲಿಸೆ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ನ್ನೊ",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಡೆಯ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ಶ್ರೀ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ಗೋಪಾಲವಿಠ್ಠಲ",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "taḍamāḍabēḍavo hē nalla vākulālisennoḍeya śrī gōpālaviṭhṭhala",
-    "english": "{0:Do not delay}, {1:O} {2:beloved}; {3:heed my words, my Lord}, {4:Śrī} {5:Gopāla Viṭṭhala}.",
+    "english": "{2:Do not} {0,1:delay}, {3:O} {4:beloved}; {6:heed} {5:my words}, {7:my} {8:Lord}, {9:Śrī} {10:Gopāla Viṭṭhala}.",
     "words": [
       {
-        "roman": "taḍamāḍabēḍavo",
-        "gloss": "do not delay"
+        "roman": "taḍa",
+        "gloss": "delay"
+      },
+      {
+        "roman": "māḍa",
+        "gloss": "make, do; with “delay”, to tarry"
+      },
+      {
+        "roman": "bēḍavo",
+        "gloss": "do not; prohibition with vocative ending"
       },
       {
         "roman": "hē",
@@ -1061,8 +1289,20 @@ window.SONG_LINES = {
         "gloss": "beloved one"
       },
       {
-        "roman": "vākulālisennoḍeya",
-        "gloss": "heed my words, my Lord; vāku plus lālisu plus enna oḍeya"
+        "roman": "vāku",
+        "gloss": "words; speech"
+      },
+      {
+        "roman": "lālis",
+        "gloss": "heed; lālisu, listen kindly to"
+      },
+      {
+        "roman": "enn",
+        "gloss": "my; enna"
+      },
+      {
+        "roman": "oḍeya",
+        "gloss": "Lord, master"
       },
       {
         "roman": "śrī",
@@ -1175,68 +1415,74 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಮೊರೆಯಿಡಲಾಕ್ಷಣ",
+        "text": "ಮೊರೆಯಿಡ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಮಡದಿಗೆ",
+        "text": "ಲಾಕ್ಷಣ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಹೇಳದೆ",
+        "text": "ಮಡದಿಗೆ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ದುಡುದುಡನೆ",
+        "text": "ಹೇಳದೆ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ಬಂದು",
+        "text": "ದುಡುದುಡನೆ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ಹಿಡಿದು",
+        "text": "ಬಂದು",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ನಕ್ರನ",
+        "text": "ಹಿಡಿದು",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "ಬಾಯಿ",
+        "text": "ನಕ್ರನ",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "ಕಡಿದು",
+        "text": "ಬಾಯಿ",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "ಬಿಡಿಸಿದನೆ",
+        "text": "ಕಡಿದು",
         "wordIndices": [
           11
+        ]
+      },
+      {
+        "text": "ಬಿಡಿಸಿದನೆ",
+        "wordIndices": [
+          12
         ]
       }
     ],
     "roman": "maḍuvinoḷage gaja moreyiḍalākṣaṇa maḍadige hēḷade duḍuduḍane baṃdu hiḍidu nakrana bāyi kaḍidu biḍisidane",
-    "english": "{2:The moment} {1:the elephant} {2:cried for help} {0:in the pool}, {5:headlong} {6:you came}, {4:without telling} {3:your wife}; {7:seizing}, {10:cutting} {8:the crocodile’s} {9:jaws}, {11:you freed him}.",
+    "english": "{3:The moment} {1:the elephant} {2:cried for help} {0:in the pool}, {6:headlong} {7:you came}, {5:without telling} {4:your wife}; {8:seizing}, {11:cutting} {9:the crocodile’s} {10:jaws}, {12:you freed him}.",
     "words": [
       {
         "roman": "maḍuvinoḷage",
@@ -1247,8 +1493,12 @@ window.SONG_LINES = {
         "gloss": "the elephant"
       },
       {
-        "roman": "moreyiḍalākṣaṇa",
-        "gloss": "the moment he cried for help"
+        "roman": "moreyiḍal",
+        "gloss": "crying for help; more + iḍalu"
+      },
+      {
+        "roman": "ākṣaṇa",
+        "gloss": "that moment; ā + kṣaṇa"
       },
       {
         "roman": "maḍadige",

@@ -660,7 +660,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sā se sāīṁ kā sura jo lagāye",
-    "english": "{5:Whoever }{6:sounds }{4:the note }{2,3:of Sai }{0,1:with Sa}",
+    "english": "{5:Whoever }{6:sounds }{4:the note }{2,3:of Sai }{1:with }{0:Sa}",
     "words": [
       {
         "roman": "sā",
@@ -755,7 +755,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nī se nikaṭa vo sāīṁ ko pāye",
-    "english": "{0,1:through Ni, }{3:he }{6:finds }{4,5:Sai }{2:near}",
+    "english": "{1:through }{0:Ni, }{3:he }{6:finds }{4,5:Sai }{2:near}",
     "words": [
       {
         "roman": "nī",

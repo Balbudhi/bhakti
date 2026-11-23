@@ -217,7 +217,7 @@ window.SONG_LINES = {
     "source": "मेरे भीतर तुम गाते हो",
     "sourceLanguage": "hi",
     "roman": "mere bhītara tuma gāte ho",
-    "english": "{0,1:Inside me, }{2,3,4:you are singing;}",
+    "english": "{0,1:Inside me, }{2:you }{4:are }{3:singing;}",
     "words": [
       {
         "roman": "mere",
@@ -288,7 +288,7 @@ window.SONG_LINES = {
     "source": "सुन लो तुम अपना ये स्वर",
     "sourceLanguage": "hi",
     "roman": "suna lo tuma apanā ye svara",
-    "english": "{0,1:hear }{4,5:this voice }{2,3:of your own.}",
+    "english": "{0,1:hear }{4:this }{5:voice }{2,3:of your own.}",
     "words": [
       {
         "roman": "suna",
@@ -371,7 +371,7 @@ window.SONG_LINES = {
     "source": "मौन गान का ध्यान जमाया",
     "sourceLanguage": "hi",
     "roman": "mauna gāna kā dhyāna jamāyā",
-    "english": "{4:I fixed }{3:my meditation }{0,1,2:on the silent song,}",
+    "english": "{4:I fixed }{3:my meditation }{2:on the }{0:silent }{1:song,}",
     "words": [
       {
         "roman": "mauna",
@@ -513,7 +513,7 @@ window.SONG_LINES = {
     "source": "तुम्हीं बने हो तान प्राण की",
     "sourceLanguage": "hi",
     "roman": "tumhīñ bane ho tāna prāṇa kī",
-    "english": "{0:You alone }{1,2:have become }{3:the melodic strain }{4,5:of my life-breath,}",
+    "english": "{0:You alone }{2:have }{1:become }{3:the melodic strain }{4,5:of my life-breath,}",
     "words": [
       {
         "roman": "tumhīñ",
@@ -596,7 +596,7 @@ window.SONG_LINES = {
     "source": "मेरे तन-मन को पावन कर",
     "sourceLanguage": "hi",
     "roman": "mere tana-mana ko pāvana kara",
-    "english": "{3,4:purifying }{0,1,2:my body and mind.}",
+    "english": "{2,3,4:purifying }{0:my }{1:body and mind.}",
     "words": [
       {
         "roman": "mere",
@@ -714,7 +714,7 @@ window.SONG_LINES = {
     "source": "क्षुद्र जनों से रही अनसुनी",
     "sourceLanguage": "hi",
     "roman": "kṣudra janoñ se rahī anasunī",
-    "english": "{3:remained }{4:unheard }{0,1,2:by petty mortals.}",
+    "english": "{3:remained }{4:unheard }{2:by }{0:petty }{1:mortals.}",
     "words": [
       {
         "roman": "kṣudra",
@@ -785,7 +785,7 @@ window.SONG_LINES = {
     "source": "धन्य तुम्हीं हो जागो सुरेश्वर",
     "sourceLanguage": "hi",
     "roman": "dhanya tumhīñ ho jāgo sureśvara",
-    "english": "{0,2:Blessed are }{1:you alone; }{3:awaken, }{4:O Lord of Gods,}",
+    "english": "{0:Blessed }{2:are }{1:you alone; }{3:awaken, }{4:O Lord of Gods,}",
     "words": [
       {
         "roman": "dhanya",
@@ -1022,7 +1022,7 @@ window.SONG_LINES = {
     "source": "अधरों की मुस्कान तुम्हारी चम-चम चमके",
     "sourceLanguage": "hi",
     "roman": "adharoñ kī muskāna tumhārī cama-cama camake",
-    "english": "{2:The smile }{0,1,3:on your lips }{4,5:shines brilliantly,}",
+    "english": "{2:The smile }{0,1,3:on your lips }{5:shines }{4:brilliantly,}",
     "words": [
       {
         "roman": "adharoñ",
@@ -1105,7 +1105,7 @@ window.SONG_LINES = {
     "source": "आ... घिर-घिर आए मेघ भयंकर गरज-गरजते",
     "sourceLanguage": "hi",
     "roman": "ā... ghira-ghira āe megha bhayaṅkara garaja-garajate",
-    "english": "{0:Ah... }{3,4:fearsome clouds }{1,2:came gathering densely, }{5:thundering repeatedly;}",
+    "english": "{0:Ah... }{4:fearsome }{3:clouds }{2:came }{1:gathering densely, }{5:thundering repeatedly;}",
     "words": [
       {
         "roman": "ā...",
@@ -1188,7 +1188,7 @@ window.SONG_LINES = {
     "source": "गूँजा नूपुर-नाद तुम्हारा थिरक-थिरकते",
     "sourceLanguage": "hi",
     "roman": "gūñjā nūpura-nāda tumhārā thiraka-thirakate",
-    "english": "{1,2:the chime of your ankle-bells }{0:resounded }{3:as you stepped in rhythmic dance.}",
+    "english": "{2:the chime }{3:of your }{1:ankle-bells }{0:resounded }{4:as you stepped in rhythmic dance.}",
     "words": [
       {
         "roman": "gūñjā",
@@ -1197,8 +1197,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "nūpura-nāda",
-        "gloss": "anklet-sound / chime of ankle-bells",
+        "roman": "nūpura",
+        "gloss": "anklets, ankle-bells",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "nāda",
+        "gloss": "sound, chime",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1224,21 +1230,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नूपुर-नाद",
+        "text": "नूपुर-",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "तुम्हारा",
+        "text": "नाद",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "थिरक-थिरकते",
+        "text": "तुम्हारा",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "थिरक-थिरकते",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -1247,7 +1259,7 @@ window.SONG_LINES = {
     "source": "झुक गया माथा कि तुमने हाँ कहा जिस पल उमापति",
     "sourceLanguage": "hi",
     "roman": "jhuka gayā māthā ki tumane hāñ kahā jisa pala umāpati",
-    "english": "{2:My head }{0,1:bowed }{3,7,8:the very moment }{4,5,6:you said yes, }{9:O cherisher of Umā,}",
+    "english": "{2:My head }{0,1:bowed }{3,7,8:the very moment }{4:you }{6:said }{5:yes, }{9:O cherisher of Umā,}",
     "words": [
       {
         "roman": "jhuka",
@@ -1652,7 +1664,7 @@ window.SONG_LINES = {
     "source": "गीत की हर लहर पर तुम झूम कर नाचो नटेश्वर",
     "sourceLanguage": "hi",
     "roman": "gīta kī hara lahara para tuma jhūma kara nāco naṭeśvara",
-    "english": "{2,3,4:Upon every wave }{0,1:of the song, }{5,6,7,8:sway and dance, }{9:O Lord of the Dance,}",
+    "english": "{4:Upon }{2:every }{3:wave }{0,1:of the song, }{6,7:sway }{5,8:and dance, }{9:O Lord of the Dance,}",
     "words": [
       {
         "roman": "gīta",
@@ -1783,7 +1795,7 @@ window.SONG_LINES = {
     "source": "आज इस आनंद वर्षा में नहावो तुम महेश्वर",
     "sourceLanguage": "hi",
     "roman": "āja isa ānanda varṣā meñ nahāvo tuma maheśvara",
-    "english": "{0:today, }{5,6:bathe }{1,2,3,4:in this downpour of bliss, }{7:O Great Lord.}",
+    "english": "{0:today, }{5,6:bathe }{4:in }{1:this }{3:downpour }{2:of bliss, }{7:O Great Lord.}",
     "words": [
       {
         "roman": "āja",

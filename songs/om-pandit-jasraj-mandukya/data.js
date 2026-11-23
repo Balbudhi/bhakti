@@ -87,42 +87,90 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "अमात्रश्चतुर्थोऽव्यवहार्यः",
+        "text": "अमात्र",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रपञ्चोपशमः",
+        "text": "श्चतुर्थो",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "शिवोऽद्वैतः",
+        "text": "ऽव्यवहार्यः",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्रपञ्चो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पशमः",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "शिवो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ऽद्वैतः",
+        "wordIndices": [
+          6
         ]
       }
     ],
     "roman": "amātraścaturtho'vyavahāryaḥ prapañcopaśamaḥ śivo'dvaitaḥ",
-    "english": "{0:Without parts, the fourth, beyond the dealings of everyday life; }{1:the stilling of the world of appearances; }{2:auspicious, without a second—}",
+    "english": "{0:Without parts,} {1:the fourth,} {2:beyond the dealings of everyday life; }{4:the stilling} {3:of the world of appearances; }{5:auspicious,} {6:without a second—}",
     "words": [
       {
-        "roman": "amātraścaturtho'vyavahāryaḥ",
-        "gloss": "without parts; the fourth; beyond ordinary dealings and the relations of name and named object",
+        "roman": "amātraś",
+        "gloss": "without parts; amātraḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "prapañcopaśamaḥ",
-        "gloss": "the stilling or cessation of the world of appearances",
+        "roman": "caturtho",
+        "gloss": "the fourth; caturthaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "śivo'dvaitaḥ",
-        "gloss": "auspicious and without a second; nondual",
+        "roman": "'vyavahāryaḥ",
+        "gloss": "beyond ordinary dealings and the relations of name and named object; avyavahāryaḥ, its a elided",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "prapañc",
+        "gloss": "the world of appearances; prapañca, joined a + u",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "opaśamaḥ",
+        "gloss": "stilling or cessation; upaśamaḥ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śivo",
+        "gloss": "auspicious; śivaḥ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "'dvaitaḥ",
+        "gloss": "without a second; nondual: advaitaḥ, its a elided",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -157,30 +205,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "आत्मैव",
+        "text": "आत्मै",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "संविशत्यात्मनाऽऽत्मानम्",
+        "text": "व",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "संविश",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्यात्मना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ऽऽत्मानम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "ātmaiva saṃviśatyātmanā''tmānam",
-    "english": "{0:the Self alone. }{1:One enters the Self through oneself,}",
+    "english": "{0:the Self} {1:alone. }{2:One enters} {4:the Self} {3:through oneself,}",
     "words": [
       {
-        "roman": "ātmaiva",
-        "gloss": "the Self indeed; the Self alone",
+        "roman": "ātm",
+        "gloss": "the Self; ātmā, joined ā + e",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "saṃviśatyātmanā''tmānam",
-        "gloss": "one enters the Self through oneself; the following who knows thus identifies the subject",
+        "roman": "aiva",
+        "gloss": "alone; indeed: eva",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "saṃviśaty",
+        "gloss": "one enters; saṃviśati, the following who knows thus identifies the subject",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ātmanā",
+        "gloss": "through oneself; instrumental",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "''tmānam",
+        "gloss": "the Self; ātmānam, accusative, joined ā + ā",
         "concept_key": "",
         "preserve_in_english": false
       }

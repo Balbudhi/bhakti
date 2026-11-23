@@ -21,14 +21,14 @@
     },
     "jaya-jagdisha-hare": {
       "status": "finished",
-      "readerSha256": "b6a23bc254560e3206a60c2a04bf2dd8df03860c4e3434a0b029142a561d6a67",
-      "definitionCount": 36,
+      "readerSha256": "82ee5facb4c64748c0e1899a336be121dd70f2ae1a23620b30d082aed37e1475",
+      "definitionCount": 168,
       "reviewedAt": "2026-11-21"
     },
     "balam-aao-hamare-geh-re": {
       "status": "finished",
-      "readerSha256": "b5653b6b73187a089f07d75bc34263877bd0ff2ca3fc920b3b6df745b719a68d",
-      "definitionCount": 14,
+      "readerSha256": "4d8406a9fb4ad0333b93e190da392e7f6a7cfb34587530fbaa3e31b3c39ad616",
+      "definitionCount": 71,
       "reviewedAt": "2026-11-21"
     },
     "khel-mandiyela": {
@@ -45,8 +45,8 @@
     },
     "vrkshavalli-amha": {
       "status": "finished",
-      "readerSha256": "d6767e388f3f14a5d01223878eea61c2e5f37bc538576b5b839d81b92dd057ef",
-      "definitionCount": 14,
+      "readerSha256": "daf239192b5ac22182574bcc0762e6789e3f1c23a2c8097a1a28ad1b346f5c63",
+      "definitionCount": 52,
       "reviewedAt": "2026-11-21"
     },
     "anandache-dohi": {
@@ -57,8 +57,8 @@
     },
     "jai-mahakali-aarti": {
       "status": "finished",
-      "readerSha256": "8dccf945d6af5c8fee55bf7a0fea862371fde6e37476bc16082a347f3e317b92",
-      "definitionCount": 11,
+      "readerSha256": "0aed62436e6c609914eb17505b86df083a501e74a7a81c3139b0be6c23b7f700",
+      "definitionCount": 109,
       "reviewedAt": "2026-11-21"
     },
     "baso-mere-nainan-me-nandalal": {
@@ -75,8 +75,8 @@
     },
     "chakar-rakho-ji": {
       "status": "finished",
-      "readerSha256": "edce7a9f20d38db69ac2169a367ce343c421f0ecbf5da06d189856b561597cda",
-      "definitionCount": 23,
+      "readerSha256": "a9899a55c889afc7baa3219781ae2ba4e5b554a5dcb696cf90b16190f0fb8d05",
+      "definitionCount": 145,
       "reviewedAt": "2026-11-21"
     },
     "mhare-ghar-ao-pritam-pyara": {
@@ -99,32 +99,32 @@
     },
     "om-jai-gangadhar-aarti": {
       "status": "finished",
-      "readerSha256": "848c2e5088c230fd1d22edfeb5f9b3670492e5d69c54355d9a0e7762cdd9729e",
-      "definitionCount": 59,
+      "readerSha256": "c5f5dda0f231181c91c499c09393b0b2955a26753417d747ea3ed783c54506d4",
+      "definitionCount": 223,
       "reviewedAt": "2026-11-21"
     },
     "ghana-shyama-sundara": {
       "status": "finished",
-      "readerSha256": "cd6831241152538ad1ec28a8c3f13f956ebf0626654533c1583e179fcca482b8",
-      "definitionCount": 18,
+      "readerSha256": "31b776eddec6a3b906a86e6e4f7cf83c420e1fa97c3bfee829980db13c9fc0a0",
+      "definitionCount": 101,
       "reviewedAt": "2026-11-21"
     },
     "koi-bhaje": {
       "status": "finished",
-      "readerSha256": "1d0f17e5b78997ae572751b6fded60224eff980e5dc6cc09b20020842d9ebee6",
-      "definitionCount": 12,
+      "readerSha256": "74f104f9a3ac45a6c654dea9484c989e6ee9b5ed02f808ea08e3095bd359f1ea",
+      "definitionCount": 90,
       "reviewedAt": "2026-11-21"
     },
     "rom-rom-mein-basne-wale-ram": {
       "status": "finished",
-      "readerSha256": "c51101c6fe99579ca76d30688e601bdf8c3218f33d12daa2dadad6514faef4ff",
-      "definitionCount": 17,
+      "readerSha256": "3cc10a179cc9c4854b69e84295fbf62e3785e49236b543ff99d3e2afbb673a05",
+      "definitionCount": 86,
       "reviewedAt": "2026-11-21"
     },
     "kaha-dhundhu-sai": {
       "status": "finished",
-      "readerSha256": "aa28c2aea9733cff336560781cf54013cf0025a20c25024d09de8fb64a68c6c7",
-      "definitionCount": 24,
+      "readerSha256": "a4d1209c286325fb7233428a0a78c2d1d3cdde8ef58f477a70248d180a5f1d17",
+      "definitionCount": 146,
       "reviewedAt": "2026-11-21"
     },
     "jehi-sumirat-siddhi-hoi": {
@@ -147,14 +147,14 @@
     },
     "ganapat-vighna-haran": {
       "status": "finished",
-      "readerSha256": "a68b8f9c0e0e5250adce4cd1a497bd19392512185650558dedb67ce2ed777500",
-      "definitionCount": 13,
+      "readerSha256": "1a89c8ba9b26a9d5e73d88d6c912fd02dab4ab9b0f44556c6a5565d8ee0e7ad3",
+      "definitionCount": 60,
       "reviewedAt": "2026-11-21"
     },
     "main-dharu-tiharo-dhyan": {
       "status": "finished",
-      "readerSha256": "435463f4b36582127640deddd5262f8ff8ce6b30095fd724eaa20aa0f03e59b7",
-      "definitionCount": 19,
+      "readerSha256": "7207e07f3478bf04acfa9e23a423d08724c484a3d4eb7754eff6adea5be36f46",
+      "definitionCount": 96,
       "reviewedAt": "2026-11-21"
     },
     "jai-jai-jai-giriraj-kishori": {
@@ -165,16 +165,16 @@
     },
     "tero-chakar-kare-pukar": {
       "status": "finished",
-      "readerSha256": "fb2c82118a4a6fa5a775b18978b92c06a04bf9e75fa3128c69cc582eecd24aa4",
-      "definitionCount": 19,
+      "readerSha256": "d600db3e5cf3d0557eff2bb9c247385ff0444afda97456df3f178140aecda74e",
+      "definitionCount": 98,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_integrated"
     },
     "choti-choti-gaiya-chote-chote-gwal": {
       "status": "finished",
-      "readerSha256": "14d63bb4f11fe5d172c09d095cc3fafefc7874df34fa7d2a904559d89a3cb0d2",
-      "definitionCount": 18,
+      "readerSha256": "848581838b1d251ea278512be0cc90934a90ef404765a6f760b2498beecfe598",
+      "definitionCount": 106,
       "reviewedAt": "2026-11-21"
     },
     "dhan-dhan-ramdas-guru": {
@@ -227,8 +227,8 @@
     },
     "tera-kiya-meetha-laage": {
       "status": "finished",
-      "readerSha256": "f8e2ef7fe5e43c144a9b3643ec3efc70ce1e784edaa5a4ba686804a595afed0f",
-      "definitionCount": 8,
+      "readerSha256": "c475ddc2450fa795336fcccdf7f874adba5833b4ffcd8329a27dbb6e03e444e1",
+      "definitionCount": 34,
       "reviewedAt": "2026-11-21"
     },
     "gagan-mein-thaal": {
@@ -239,8 +239,8 @@
     },
     "jo-nar-dukh-mein-dukh-nahin-jaane": {
       "status": "finished",
-      "readerSha256": "11ca87244d6c9bbdddc799b0c9de31e6c9d97022785f865fd910fd8ef6f8c347",
-      "definitionCount": 30,
+      "readerSha256": "f52c46e2e4adcf4ac6568fc3cdea318c92c341d2fe658cf18adbefc98c32f1b0",
+      "definitionCount": 139,
       "reviewedAt": "2026-11-21"
     },
     "mera-man-lochai": {
@@ -257,8 +257,8 @@
     },
     "har-jiyo-kirpa-karo": {
       "status": "finished",
-      "readerSha256": "4c31c291134b96db7c19550235cc20dbec7fa52d43be8fea7abe441c8ad25bfa",
-      "definitionCount": 12,
+      "readerSha256": "bc90a02e0c4206863c1ad601b7a41d6a99c5cee089732c704f05be44281802fa",
+      "definitionCount": 86,
       "reviewedAt": "2026-11-21"
     },
     "anuraniya-thokada": {
@@ -275,8 +275,8 @@
     },
     "beet-gaye-din-bhajan-bina-re": {
       "status": "finished",
-      "readerSha256": "6fad54b2c1886c970bc4a32fca57d18fc284ae9f4ea55982759153b0fe8be57e",
-      "definitionCount": 8,
+      "readerSha256": "3e737a9e2910f17e4a679a7e087d15ebd9f4b2ab8342543f1e59aadc4f8b3fba",
+      "definitionCount": 41,
       "reviewedAt": "2026-11-21"
     },
     "kaya-nahin-teri-nahin-teri": {
@@ -287,8 +287,8 @@
     },
     "naam-japan-kyon-chhod-diya": {
       "status": "finished",
-      "readerSha256": "722e440b656f4a323bb305e8c548a6ad5041973477bbeba0c4822481711330aa",
-      "definitionCount": 15,
+      "readerSha256": "9626b7f1c87ce9e5921f6cfe769d7300f385619b7351b3c076e33603db6f571d",
+      "definitionCount": 84,
       "reviewedAt": "2026-11-21"
     },
     "sab-paise-ke-bhai": {
@@ -305,20 +305,20 @@
     },
     "sun-sun-sadho-jee": {
       "status": "finished",
-      "readerSha256": "ef63733cec2b0ce46bdf021f0ce59443e2f5d5d78d268b14ed02d164c508e2d6",
-      "definitionCount": 21,
+      "readerSha256": "1e9a31aedb76c498ba89a07300045c5b71019b13189cdbdefb283ed63eb38867",
+      "definitionCount": 94,
       "reviewedAt": "2026-11-21"
     },
     "ye-tanu-mundna-be-mundna": {
       "status": "finished",
-      "readerSha256": "e4a097dac4970fadbb7c28cdf43d1d051119d9a212fb47c744e820c80c8893e0",
-      "definitionCount": 17,
+      "readerSha256": "9fcb4bc7624da5efc77a522f6a2e45c0bec6a0630f87e291e9a2f5ff2a3a9010",
+      "definitionCount": 69,
       "reviewedAt": "2026-11-21"
     },
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
       "status": "finished",
-      "readerSha256": "390595693d4cd87084d868502c03fb2e4a4fbb2add5c04e6df1ddb9a0234d9c2",
-      "definitionCount": 12,
+      "readerSha256": "51248b53b59200e701435e3a2bee06ac33523a39647675b998859c01bce19449",
+      "definitionCount": 51,
       "reviewedAt": "2026-11-21"
     },
     "prabhu-kar-sab-dukh-door-hamare": {
@@ -329,8 +329,8 @@
     },
     "rama-rama-rama-bhajo": {
       "status": "finished",
-      "readerSha256": "85bc51abe1db0becfa56e8ec731dc649a1fbc5fbc0692dc19651cdd4bf638776",
-      "definitionCount": 14,
+      "readerSha256": "856d0f4209fd2e95b846c2f5568592fa672b45246ed4f0b03371008c17f0c7fb",
+      "definitionCount": 77,
       "reviewedAt": "2026-11-21"
     },
     "siri-ram-kahe-samjhayi": {
@@ -341,8 +341,8 @@
     },
     "sadho-rama-anupam-bani": {
       "status": "finished",
-      "readerSha256": "2db75f8bcd7d6d2d7557af3486bb3763af3d99b88acd4334813b0a45a9c52dd5",
-      "definitionCount": 16,
+      "readerSha256": "190f7dc7d0b635c094a2b0dcb526793e13705cf7c986a0bdc678a141fdbc9096",
+      "definitionCount": 69,
       "reviewedAt": "2026-11-21"
     },
     "maharaj-bhavani-brahmabhuvan-ki-rani": {
@@ -353,8 +353,8 @@
     },
     "jai-jagdishwari-mata-saraswati": {
       "status": "finished",
-      "readerSha256": "780b8ebf7e5168580a07fbda02393c4c15dd9c5803d9604a5ecfd9307bad8fec",
-      "definitionCount": 11,
+      "readerSha256": "4d8420d0033fcc0d822148b8f326a348834b6fc700df7d3b0ac2dfbed975de85",
+      "definitionCount": 46,
       "reviewedAt": "2026-11-21"
     },
     "sharada-vidyadani-dayani": {
@@ -379,8 +379,8 @@
     },
     "ab-to-mujhko-bata-mere-sai": {
       "status": "finished",
-      "readerSha256": "e76ab82ed9febee9efd6a8a32155068af593a9fdd4925ba641b169102dd2c3c0",
-      "definitionCount": 13,
+      "readerSha256": "4ec75d345f822e813c458476f3c4608914ab6d4b5e3e51f6d852f198085b3dd8",
+      "definitionCount": 78,
       "reviewedAt": "2026-11-21"
     },
     "baba-tum-antaryami": {
@@ -391,44 +391,44 @@
     },
     "hey-nath-ab-to-aisi-daya-h": {
       "status": "finished",
-      "readerSha256": "a8596ce7e317255e94731ece0602a570be27548ccaae80f1092da24df0a13a7a",
-      "definitionCount": 13,
+      "readerSha256": "89ec286ae6efb9a33aecd30053f7501a0e26fe0a3c720260947f919cbc69f4f5",
+      "definitionCount": 78,
       "reviewedAt": "2026-11-21"
     },
     "he-sai-apne-charno-mein": {
       "status": "finished",
-      "readerSha256": "39305e01075ea3ec7a647bfdebd5c31b414a8d3a726e422db9486e1761fc5b6a",
-      "definitionCount": 13,
+      "readerSha256": "67721e01e44918f82be21f648e4c130fd84835e76f910e3e3a40f67bdfdf4156",
+      "definitionCount": 97,
       "reviewedAt": "2026-11-21"
     },
     "main-murakh-main-anpad": {
       "status": "finished",
-      "readerSha256": "e6be4bd26ac0beade3dae24816211ebb4c54bd50c63e44ba6a0782b18f80398d",
-      "definitionCount": 22,
+      "readerSha256": "a2f669cf6b67a5d16370128d3946c96db5fbcd1a2a2ead08c4257c9ee3f76954",
+      "definitionCount": 112,
       "reviewedAt": "2026-11-21"
     },
     "man-ke-manjeere-se": {
       "status": "finished",
-      "readerSha256": "a76aa5f1eee23b17cc3784489a2f9322f3b3ec2c7817c14c2064df77d2ae5e61",
-      "definitionCount": 10,
+      "readerSha256": "02990a6818dce2de55297a0f29a083868be77dd2998d87d3ab7564a01d94ac20",
+      "definitionCount": 80,
       "reviewedAt": "2026-11-21"
     },
     "mere-sai-ke-darbar-mein": {
       "status": "finished",
-      "readerSha256": "40827c9b66de32e7f8e21dd2917ee3c645fe06f5db96dc91cbb7115d040cadff",
-      "definitionCount": 12,
+      "readerSha256": "976cc60ce5172dccaaaab0162712cb7068dc8c9acf15924a698f15f41f715f85",
+      "definitionCount": 94,
       "reviewedAt": "2026-11-21"
     },
     "o-bhagwan": {
       "status": "finished",
-      "readerSha256": "4530903c68f25c7bc5cbe442c49ea6205ed0147277659bc9d45ae74fa793a96b",
-      "definitionCount": 11,
+      "readerSha256": "8ed0ee004538098c64a3d5870dab1e51c28dcb7a8260d4a937ab35f9bacafb96",
+      "definitionCount": 81,
       "reviewedAt": "2026-11-21"
     },
     "tumhi-mere-lagan-lagai-re": {
       "status": "finished",
-      "readerSha256": "328e09a461045f187e05c9b0c4d06ac4efc37bb4095b16f83f165147ebeda511",
-      "definitionCount": 6,
+      "readerSha256": "d234efe4eb16f6ec6adbccea2b6604b77fae9d0b3f4df05440d22981a0e379f3",
+      "definitionCount": 42,
       "reviewedAt": "2026-11-21"
     },
     "mere-ram-tum": {
@@ -439,14 +439,14 @@
     },
     "kurai-ondrum-illai": {
       "status": "finished",
-      "readerSha256": "4bf898c24b7f5c4d934495d681d154e1f4b876e574547bbea3086f92970159da",
-      "definitionCount": 22,
+      "readerSha256": "67ecbdb37b079dd2c08b62a9f8fe7e1f82a11812226b478d2cab3b8888aac07c",
+      "definitionCount": 93,
       "reviewedAt": "2026-11-21"
     },
     "ghanshyam-sundara": {
       "status": "finished",
-      "readerSha256": "09416380a9189c31247b8fe5e211dd912abdcb93fa0b8bdbc7319bcdf0dc1b4c",
-      "definitionCount": 20,
+      "readerSha256": "3f4e25f7835ba6ca70a1fd1ccd4b9622b46d8dc0d7da8788d91b7b9cb11c36b6",
+      "definitionCount": 97,
       "reviewedAt": "2026-11-21"
     },
     "maili-chadar-odhe-ke": {
@@ -457,34 +457,34 @@
     },
     "samapti": {
       "status": "finished",
-      "readerSha256": "e63b04dd4abb266a5116f6916aec16f1d561c12f8e67f101e69961d67979b78b",
-      "definitionCount": 7,
+      "readerSha256": "9e60c624d9cbd8fae28d8a3c1f443386ce2c9b2037782fd69fdbdd1348a02103",
+      "definitionCount": 42,
       "reviewedAt": "2026-11-21"
     },
     "yeh-garv-bhara-mastak": {
       "status": "finished",
-      "readerSha256": "f82751fc043b728430b8c3d748e4ce90bf6c868ac2357cdee1d10e7bcea99b85",
-      "definitionCount": 18,
+      "readerSha256": "99d2b65081e81a27d04286d6a9890374d7df8b7ef5564c3a50e96f3cbe466e54",
+      "definitionCount": 100,
       "reviewedAt": "2026-11-21"
     },
     "sankat-mochan-naam-tiharo": {
       "status": "finished",
-      "readerSha256": "f33d2a4972b2cf72e4ac87b09374b64fba4363ed790a296e1f716bd9663f9265",
-      "definitionCount": 26,
+      "readerSha256": "5fec50f07e3b982641220bb99028e48980a18b63021485adcb3ae3ab21948573",
+      "definitionCount": 256,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "aarti-kijiye-hanuman-lala-ki": {
       "status": "finished",
-      "readerSha256": "f2a420ae644b48c79bb22bc610e21bc91d69d5a4d95073f2c744590785d964a8",
-      "definitionCount": 19,
+      "readerSha256": "eee1ca8b257ef857fef02cc1185f985e493d4b8cc1d1d803faf86ae2d7e47dab",
+      "definitionCount": 116,
       "reviewedAt": "2026-11-21"
     },
     "jo-kachu-sankat-hoye-hamaro": {
       "status": "finished",
-      "readerSha256": "f0526f26552b58aca1d91eecf36d793f6232d4266a5ed8a77d8a1bffc5095d7a",
-      "definitionCount": 14,
+      "readerSha256": "27136e759ebdf285fd3b9cfb540b858a0c1a1e94cf1c36490a7c18c56d1f8edf",
+      "definitionCount": 115,
       "reviewedAt": "2026-11-21"
     },
     "hanuman": {
@@ -495,36 +495,36 @@
     },
     "he-dukhbhanjan": {
       "status": "finished",
-      "readerSha256": "78ff82cc31eb1b16abef7cac7f68d09bacff7d78d09c4e68a119d6332fce0cdb",
-      "definitionCount": 15,
+      "readerSha256": "a4f9400f75cf9a7edff4656659ab1e923439d4483da1e7e1e6afd973ec730e96",
+      "definitionCount": 69,
       "reviewedAt": "2026-11-21"
     },
     "sampati-vandana": {
       "status": "finished",
-      "readerSha256": "861d6a6194310395cddfb153d8b8e7b81a9c024cd7dbce63f00a3987c3115878",
-      "definitionCount": 11,
+      "readerSha256": "74537b93089f1babf7a92e5ee70e273513cf53c0c58cd42a200034b82a1ad395",
+      "definitionCount": 49,
       "reviewedAt": "2026-11-21"
     },
     "hanuman-chalisa": {
       "status": "finished",
-      "readerSha256": "ea4815383e0c20af13347c7aad3689163b835ca2bfb106b2b26aaa58b1817b88",
-      "definitionCount": 47,
+      "readerSha256": "bbf7445c539b8c793422260dc469390451ceebde2574da238c749faa88548a98",
+      "definitionCount": 431,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "hanuman-bhajan-hariharan": {
       "status": "finished",
-      "readerSha256": "3685b5fd40c26e78453952db7b6ba0ebfcbd2750bfcd79239bd2ca0a34ece5a4",
-      "definitionCount": 231,
+      "readerSha256": "00bbc45240990fa2ac3a3be80b6bfed8a62a7efc801b0105e7b33d1a61990dc7",
+      "definitionCount": 1454,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "sampurna-sundarakanda": {
       "status": "finished",
-      "readerSha256": "6e2d1d466c1efe63293eb976474d425b11d7f04728c8acdfad1c4156064e2abb",
-      "definitionCount": 541,
+      "readerSha256": "468dfff15d81216a0e28d5a2017535d5e9e4e2df1fc658ca959184652f12770f",
+      "definitionCount": 5015,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
@@ -543,20 +543,20 @@
     },
     "aarti-kunj-bihari-ki": {
       "status": "finished",
-      "readerSha256": "aff7401ae7d6675a344fb4532029dc3dfcb616f3a5614e8a7456c29b2220ee6c",
-      "definitionCount": 18,
+      "readerSha256": "68fc26701bd582e90648a53784f4ddfa76909ac3c4b69fa089fda3c50486f70c",
+      "definitionCount": 123,
       "reviewedAt": "2026-11-21"
     },
     "prabhu-ham-pe-kripa-karna": {
       "status": "finished",
-      "readerSha256": "d8cca79aaeb380bc7bbb48417e7101dff5a825666746aa8060403370e407924a",
-      "definitionCount": 23,
+      "readerSha256": "4fd4d2e88d889b20f0be73fc3b2101b9a5b2eb7e3c1576542b874e122d522c99",
+      "definitionCount": 98,
       "reviewedAt": "2026-11-21"
     },
     "ram-sumir-ke-raham-kare-na": {
       "status": "finished",
-      "readerSha256": "8fa2da5a25703ec955ae3cdc60022059edc3db7bbb16bab5692db76d16014163",
-      "definitionCount": 20,
+      "readerSha256": "484498dfad86d6cac7a6b691c9f9eb0d5554b0894701ed99da436bf10a830886",
+      "definitionCount": 160,
       "reviewedAt": "2026-11-21"
     },
     "daata-ek-ram": {
@@ -567,80 +567,80 @@
     },
     "tera-ram-ji-karenge-beda-paar": {
       "status": "finished",
-      "readerSha256": "e86a31659e6104104d449fb003469c629a7407824deb44b9336fa8ee166a7a21",
-      "definitionCount": 20,
+      "readerSha256": "df0434206ae35d0a61bf2f94690e53b11387adf99cf3c78484e518894c3624a3",
+      "definitionCount": 139,
       "reviewedAt": "2026-11-21"
     },
     "prem-sahit-sab-bolo-kirtan": {
       "status": "finished",
-      "readerSha256": "99e05f6b0c752b77e6331d965da369593313d704688962463791847d2c4dfeea",
-      "definitionCount": 28,
+      "readerSha256": "6ecf2cb7dc0828102de3a066cdcd197435ee4f2589ceaf2d63230443d37e7013",
+      "definitionCount": 140,
       "reviewedAt": "2026-11-21"
     },
     "man-maila-aur-tan-ko-dhoye": {
       "status": "finished",
-      "readerSha256": "21a24e0cf1907b1d31757d3a52e059f004c4dc8cb27ee9865f432b8a888fea18",
-      "definitionCount": 15,
+      "readerSha256": "14dbb66f893fb5ebc67a05fb5938fb8ddf83ed2e426bda6260f84c4ef9687fbe",
+      "definitionCount": 102,
       "reviewedAt": "2026-11-21"
     },
     "sweekaro-mere-pranam": {
       "status": "finished",
-      "readerSha256": "f4fca2caa9396f6eeca7a426e6e257e6b3f9db335169537c8924feae0a75fd8b",
-      "definitionCount": 14,
+      "readerSha256": "ffe2abd9639222478e2c8cec4f662149b42096ea8b19ec7fe4a1c3210ca71853",
+      "definitionCount": 113,
       "reviewedAt": "2026-11-21"
     },
     "aisa-pyar-baha-de-maiya": {
       "status": "finished",
-      "readerSha256": "a37e1228f50a55cc3ce98bebad43cdd20fe5b350d19106fafca4a962d99458ba",
-      "definitionCount": 27,
+      "readerSha256": "3bc956b42a8ca3f9c98f8de521f7c0806933174ac358d09fe46e516cc1cea701",
+      "definitionCount": 157,
       "reviewedAt": "2026-11-21"
     },
     "maa-jag-janani-jai-jai": {
       "status": "finished",
-      "readerSha256": "38798a59264ea7626acb2a77e1adc1343b7432866df01cfbd2e4f60cf1038bea",
-      "definitionCount": 43,
+      "readerSha256": "1709721a691a7f1dc1c9e13de31414fbd0b0ffd9f945022eca4d613a3e52acdc",
+      "definitionCount": 275,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "namo-namo-vindhyeshwari": {
       "status": "finished",
-      "readerSha256": "9081c01a5d2603e786c84943786f5eb535bb0f997647644f4098d31d240546fe",
-      "definitionCount": 41,
+      "readerSha256": "eab0363b58b66eee5aa952dcc81570f8d1c7ccb4017511483c0390c508467321",
+      "definitionCount": 373,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "durga-chalisa": {
       "status": "finished",
-      "readerSha256": "17e250568a13bff0d4f0cb2acfba71d62e973e0d34f4497c379ee615ee4a53ec",
-      "definitionCount": 13,
+      "readerSha256": "32543fc2e8dfcf15cac43291c5a10e4d5b7a9d9caeb5bc66848bb275a23fc7bd",
+      "definitionCount": 409,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "sawan-gagane-ghor-ghanaghata": {
       "status": "finished",
-      "readerSha256": "c047fd23eba3d9b1d1205d9c81297abbb0a5f64e573bc0507e07df0f0409dda2",
-      "definitionCount": 24,
+      "readerSha256": "6118a5e5cbce228a25de7ababe504d75b74bdfb54a9ca0cb2d87cafd3ec33426",
+      "definitionCount": 88,
       "reviewedAt": "2026-11-21"
     },
     "jai-bhole-nath": {
       "status": "finished",
-      "readerSha256": "b5e1aa556bb9208ef48fe2febf5b48383c82818968b523b0156c0885860927f2",
-      "definitionCount": 20,
+      "readerSha256": "3376033875f8417db78433682f186beaae6b47040fa4bc1b3ae85838643008da",
+      "definitionCount": 143,
       "reviewedAt": "2026-11-21"
     },
     "jai-shankar-bhole": {
       "status": "finished",
-      "readerSha256": "1ddcba41e45c0b90eca54b376ad4042ea8db94ac5e34c5bd08588a9feff71d88",
-      "definitionCount": 13,
+      "readerSha256": "52fa087c5e9b9b8e07ae4a43d75a42947935377caf1864fca3cc653274125aa5",
+      "definitionCount": 226,
       "reviewedAt": "2026-11-21"
     },
     "janam-janam-ka-das-tumhara": {
       "status": "finished",
-      "readerSha256": "f449d36bd8d8c58aef29a78542bf4f153da4f7677a4961dd854a3b021c7dbd42",
-      "definitionCount": 26,
+      "readerSha256": "64c45aa5cae6c97be00cab06d38f25563102498bd24ce67e5720f0e4e24c6d87",
+      "definitionCount": 177,
       "reviewedAt": "2026-11-21"
     },
     "ma-karali-kali-ma": {
@@ -665,46 +665,46 @@
     },
     "mana-masta-hua": {
       "status": "finished",
-      "readerSha256": "3f7e57f719df16c35f4fde14c160db0db19ae5125f99cb8d28dd9119b1f80245",
-      "definitionCount": 15,
+      "readerSha256": "851eed910b4203772e34f35f2da5d9e1ad18f95d1016b3733efe08d790ab56c5",
+      "definitionCount": 83,
       "reviewedAt": "2026-11-21"
     },
     "nirguna-galiya": {
       "status": "finished",
-      "readerSha256": "736ac9e8aeb1e203978d822a607dd4733709f888cd700ce52efe0d54c1cdfbbd",
-      "definitionCount": 27,
+      "readerSha256": "5d14282089c112c7f7f292defed6cfe6b184779c3fda05dca365330081c38e40",
+      "definitionCount": 265,
       "reviewedAt": "2026-11-21"
     },
     "rama-rasa": {
       "status": "finished",
-      "readerSha256": "766ba57192178510290e093fd64c4f8d7bef6e3bbd50157128723a6709129fb3",
-      "definitionCount": 12,
+      "readerSha256": "f0851fcabbe491fdb72d420b796e754e3b62c08296408827b71caad9c00c9603",
+      "definitionCount": 100,
       "reviewedAt": "2026-11-21"
     },
     "tere-dvar-khara-bhagvan": {
       "status": "finished",
-      "readerSha256": "30308f3e77a1c5d527887fd5a2b448bbf4c2d3ff91e55068252ed124c175f195",
-      "definitionCount": 10,
+      "readerSha256": "eaa113599aeba956a8b5330f484dc30d155a68432bca82cf30b0f9b723485d62",
+      "definitionCount": 110,
       "reviewedAt": "2026-11-21"
     },
     "prabhu-more-avagun-citta-na-dharo": {
       "status": "finished",
-      "readerSha256": "e82f8604c0e9ebb9b90c5877de79cff5653c043aed736501e3f89fac0b105cfb",
-      "definitionCount": 10,
+      "readerSha256": "975a19f2cae735fc3f84e9ab53f23aab17c6bc13ec730e2e078fd87d32b48c92",
+      "definitionCount": 46,
       "reviewedAt": "2026-11-21"
     },
     "jai-ambe-gauri": {
       "status": "finished",
-      "readerSha256": "64723bad4eb0387694d6d5617c451e5cdaf475ee83e2ac2e207d83b127fdba79",
-      "definitionCount": 42,
+      "readerSha256": "8727536f60804a30f03cba392d6d75046f614a391bfce129c3de5effcd095679",
+      "definitionCount": 270,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "jaun-tore-caran-kamala": {
       "status": "finished",
-      "readerSha256": "09f00c6b2ab13d7e6f5754e25f5a0de844432276065f512c33d716b326a8a8c1",
-      "definitionCount": 17,
+      "readerSha256": "8cd1cffc052394e2b26bca17cb3f32a3b68aed484c7ef09176b41dffcebe55a5",
+      "definitionCount": 141,
       "reviewedAt": "2026-11-21"
     },
     "leke-bhesh-fakirika": {
@@ -715,32 +715,32 @@
     },
     "mujhe-apni-sharan-mein-le-lo-maa": {
       "status": "finished",
-      "readerSha256": "0f0216d5e8fcf480339759d5053ae838fc8a35eca27abff9f0c48c990a94a6de",
-      "definitionCount": 54,
+      "readerSha256": "2e4dae904d005f916088a07d66bdc83cacc28968c9adabeadcaac32242f2bdd0",
+      "definitionCount": 490,
       "reviewedAt": "2026-11-21"
     },
     "sheronwali-kripa-kijiye": {
       "status": "finished",
-      "readerSha256": "534a6fca8e3787c087b33a70758b7963ada3f9dc45a905d21af4d5af0923f479",
-      "definitionCount": 70,
+      "readerSha256": "29d7ea1341476f127203e1eb632584ec14986bd6dcdae729f665846f291c5902",
+      "definitionCount": 569,
       "reviewedAt": "2026-11-21"
     },
     "jhoothe-jag-ne": {
       "status": "finished",
-      "readerSha256": "322fd2b4b3a870a39f10e228e072376c36bda95e7d611ed108586a5147b2ad7a",
-      "definitionCount": 16,
+      "readerSha256": "ec3b2bd62e170188e95e99834623320561d719dbf1bf09a925074ac390014a7b",
+      "definitionCount": 129,
       "reviewedAt": "2026-11-21"
     },
     "auga-na-jauga": {
       "status": "finished",
-      "readerSha256": "efa0fd031dc49f92301d1b8da9ff9a222e3fbb09afe5077f4e5287961ab95b65",
-      "definitionCount": 23,
+      "readerSha256": "045b962d4b9cd51383e1245364990109c1e5f92570942bb9ccf59b8afc31eed7",
+      "definitionCount": 202,
       "reviewedAt": "2026-11-21"
     },
     "mera-jeevan-tere": {
       "status": "finished",
-      "readerSha256": "e0678faec3e36033ac4a0a7fcbc56458af6e206270230ac9676676dd1d503aca",
-      "definitionCount": 12,
+      "readerSha256": "2c0ce54bd163a842cba8d3c62a0368309e1c3717b076bf6bcad4fb868a92fd4d",
+      "definitionCount": 144,
       "reviewedAt": "2026-11-22"
     },
     "namaskar-mera": {
@@ -751,20 +751,20 @@
     },
     "neelkanth-mahadev-dayalu": {
       "status": "finished",
-      "readerSha256": "0d1397c45db027e90cf609164daf6e03c6e2a5629bcbaf498b71e793488d6e3c",
-      "definitionCount": 20,
+      "readerSha256": "1a88f46ce8b6538344c99bcc74405487afac372846ad007db469fee4df8a435c",
+      "definitionCount": 132,
       "reviewedAt": "2026-11-21"
     },
     "o-shirdi-ke-sai": {
       "status": "finished",
-      "readerSha256": "8806cec8e795ae473de9c4d662beeeae5504e1426137f87291f2c99c980ad323",
-      "definitionCount": 22,
+      "readerSha256": "addcf12a1d90824224b52401f91925ecb27bd274bff074a09a464b0711050de5",
+      "definitionCount": 148,
       "reviewedAt": "2026-11-22"
     },
     "o-shirdiwale-sai": {
       "status": "finished",
-      "readerSha256": "e6475132a7902f7e5ea3bcedf753476cee97e4bb88cf99af0ab729a62538dbea",
-      "definitionCount": 30,
+      "readerSha256": "dd657eede725439a016a1e8f9734812a99fb597db67741fec79bba16f9eb6d06",
+      "definitionCount": 198,
       "reviewedAt": "2026-11-21"
     },
     "om-pandit-jasraj-extended": {
@@ -775,8 +775,8 @@
     },
     "om-pandit-jasraj-mandukya": {
       "status": "finished",
-      "readerSha256": "f767a9fa7582cc8d02ce288ac042cba9e759a0f5f7ecdc1dc672280243d5a0f9",
-      "definitionCount": 6,
+      "readerSha256": "fc45197a289128fba15d56c35f4c1024cee9614a9a2ddd73dd18827f272ca9d9",
+      "definitionCount": 18,
       "reviewedAt": "2026-11-21"
     },
     "meri-ek-antar-abhilash": {
@@ -793,32 +793,32 @@
     },
     "rama-rama-ratte-ratte": {
       "status": "finished",
-      "readerSha256": "6407108823e61b71c1f54637f85537131c01895b744b979ed78597109c83eb19",
-      "definitionCount": 16,
+      "readerSha256": "8e1cfb0ce5d706f8f7597d56975f8e3a3238e06e37f971d159f06355454a2086",
+      "definitionCount": 103,
       "reviewedAt": "2026-11-21"
     },
     "data-ek-sai": {
       "status": "finished",
-      "readerSha256": "09285ce32b439520b2ab8f04a7ed560cee0c4260e75b5ee91d5a0e5ec0f3ae18",
-      "definitionCount": 23,
+      "readerSha256": "8e5d72b2810ec69e98efd63888592a2ba0f664fab17a303cd9b81103e2d1c5b8",
+      "definitionCount": 117,
       "reviewedAt": "2026-11-21"
     },
     "jab-subah-ki-aarti": {
       "status": "finished",
-      "readerSha256": "608dbb92d910c89e4cb924f1b15fe77ae16f7144a0889df99af44118414f8813",
-      "definitionCount": 25,
+      "readerSha256": "66471cce295e28020830e854c2eb791780e46fb377c1a9b5080efc83c0886a25",
+      "definitionCount": 168,
       "reviewedAt": "2026-11-22"
     },
     "jeevan-ke-har-mode": {
       "status": "finished",
-      "readerSha256": "3be9b5bf82daefcc5c1d5625cc54c5826e6bcd504b078e1e2c7967b1be065e02",
-      "definitionCount": 25,
+      "readerSha256": "b88e8b80528636d55fdd69d4a62e82b935cf1859a0c0e87161c3f1b5ebe64bfe",
+      "definitionCount": 159,
       "reviewedAt": "2026-11-21"
     },
     "doi-kar-teka-hei-matha": {
       "status": "finished",
-      "readerSha256": "04f9540f7da8aa992bbe25e3b7c3dfbacb67542a85070edef7dbcc23a41bac53",
-      "definitionCount": 94,
+      "readerSha256": "2044921da6c3c0efbc59dc04ccd46f54f2b924087b60ed42d6ee913874bcd401",
+      "definitionCount": 671,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
@@ -831,110 +831,110 @@
     },
     "main-kismat-ka-mara": {
       "status": "finished",
-      "readerSha256": "175b8f7525f4148943f71606018621ec791ae8e1d1decd19d541e3f94b493af9",
-      "definitionCount": 20,
+      "readerSha256": "e429fbf3c32f30e8c8adc53623b68ca64dc38c6cc7074191b146fa259ca3dcde",
+      "definitionCount": 160,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_integrated"
     },
     "muha-fer-jidhar-dekhoon": {
       "status": "finished",
-      "readerSha256": "f48b645a5d1fa5e56eff42989cc20045e04d97df64acf9655b5431aede38cc2d",
-      "definitionCount": 17,
+      "readerSha256": "2248f6002d2d5de583b9ad1b33a14795e81f2c567713113f13a6972425b3d47b",
+      "definitionCount": 121,
       "reviewedAt": "2026-11-22"
     },
     "sai-ke-11-vachan": {
       "status": "finished",
-      "readerSha256": "2759a94fb09dc67fa037c524fbc6ea8fa8d58a61926ade0b648258ec69630e56",
-      "definitionCount": 11,
+      "readerSha256": "6f16fd5c4551e44e78a3fc89c01597884227862a1f1843f952ca518de6250407",
+      "definitionCount": 129,
       "reviewedAt": "2026-11-22"
     },
     "sai-meri-raksha-karna": {
       "status": "finished",
-      "readerSha256": "c1a1658d685b7a2c8db033b28871817d7b0c6c880e7ee10d03325f61e647e983",
-      "definitionCount": 23,
+      "readerSha256": "a6efc4e56ab2fe2ae9228d6c42f6122a63056832ee3c2ad57cee59492ce05d33",
+      "definitionCount": 151,
       "reviewedAt": "2026-11-22"
     },
     "sai-tere-charnon-ki": {
       "status": "finished",
-      "readerSha256": "57a717fce997ebd9746ee2727499daa3fa08cd30a4e0555af81865ae9958117a",
-      "definitionCount": 29,
+      "readerSha256": "603ae819dd12081d88d6024b9445dfeee37cc135005308ed66c5be5dc9e5f28d",
+      "definitionCount": 120,
       "reviewedAt": "2026-11-22"
     },
     "vyartha-gavaya-is": {
       "status": "finished",
-      "readerSha256": "fe4af5d084577d076d4dabc06d2aa614fa8a456b31ae71e3169cbe36b15ba675",
-      "definitionCount": 25,
+      "readerSha256": "7fc1bfe3dbb67c81806966a3ea05a4c33422ca07e70ad805b223c7b1c65bf3d1",
+      "definitionCount": 176,
       "reviewedAt": "2026-11-22"
     },
     "bhiksha-de-de-maai": {
       "status": "finished",
-      "readerSha256": "22c3519440489cab93f38b52376b5583dc20307840550171228d53e8c1135391",
-      "definitionCount": 14,
+      "readerSha256": "ed22efe5a608a4211c1ecee9af68674e5dc3db73be1c96b7c14ef58cff94c17c",
+      "definitionCount": 82,
       "reviewedAt": "2026-11-22"
     },
     "leke-chalo-palkhi": {
       "status": "finished",
-      "readerSha256": "53c14b568d7053b9c5d8477708fabbd25298054b1ced58d6993694b9c2401929",
-      "definitionCount": 15,
+      "readerSha256": "310f8aba6e95eb27b271009254de8b95cc2e1387b3d5d745ffc0a58e7eb02145",
+      "definitionCount": 112,
       "reviewedAt": "2026-11-21"
     },
     "thoda-dhyan-laga": {
       "status": "finished",
-      "readerSha256": "1836504e63fb5f110f22f503bff49f2c1263c92b0c7582a1ab0c7824458c8082",
-      "definitionCount": 26,
+      "readerSha256": "c863a80660ea9042aaaba2e740ba20a3cbb594dfe8a6cd7158d4f0df988c2509",
+      "definitionCount": 133,
       "reviewedAt": "2026-11-22"
     },
     "shej-aarti": {
       "status": "finished",
-      "readerSha256": "57f98286a27c3a132665ca9e67030bb90d3b8d22803c5cc8aea1e447667b224b",
-      "definitionCount": 82,
+      "readerSha256": "4cc97a4b418096093d3dcc0e7a0955e7220dfa6e737c7ee1f6ab0d4147439c4c",
+      "definitionCount": 453,
       "reviewedAt": "2026-11-22"
     },
     "kakad-aarti": {
       "status": "finished",
-      "readerSha256": "cc136e8b2cc3c8b67761a232b4140e9d187e1c2e8c9ce0ddf0f7790af44e1f96",
-      "definitionCount": 249,
+      "readerSha256": "572ccfd66ad82b118b3b7f7ff803ef4e42be9e865124033c4b3aed66ffa0b9b8",
+      "definitionCount": 1581,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_integrated"
     },
     "madhyahna-aarti": {
       "status": "finished",
-      "readerSha256": "38d670f79abee8510e77e00f14304b140dc5925561f8791be9ab7d057adf7aed",
-      "definitionCount": 177,
+      "readerSha256": "e336611ba2aa6c943d1451296bd9a4aeb5ac67aea30580700625ecf2357dc7fd",
+      "definitionCount": 1020,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "dhoop-aarti": {
       "status": "finished",
-      "readerSha256": "23f42155c0296bd75b7dd1f65adc72a3d6896e558c7d9e426ab0740529f40f98",
-      "definitionCount": 164,
+      "readerSha256": "581e60ed7cc6e83b3e39f23698c1d5dfdd521099b82cf6ba7f008aa4ac235f91",
+      "definitionCount": 1117,
       "reviewedAt": "2026-11-22"
     },
     "naiya-paar-karna": {
       "status": "finished",
-      "readerSha256": "e9819d5328a0a047bb4649c02c2c7fc1adbf49211502ac2d327209793972daf2",
-      "definitionCount": 16,
+      "readerSha256": "4a3a498eea36fbaa1dcb2361cee9ec8a2a2629e972c8eb0446c17c58ec6267f2",
+      "definitionCount": 142,
       "reviewedAt": "2026-11-22"
     },
     "bhagyada-lakshmi-baramma": {
       "status": "finished",
-      "readerSha256": "7ddee40078cdb79a034fc3df811ced6158918dd988570d8ea1af60834f7a334f",
-      "definitionCount": 14,
+      "readerSha256": "667f0da0fa76b111a6607b35fbb8f2d45c5250c236694c5abd5fdde617c6fa21",
+      "definitionCount": 117,
       "reviewedAt": "2026-11-21"
     },
     "raat-dhal-gayee": {
       "status": "finished",
-      "readerSha256": "051f722d24a052aab0a0f14540e1e761bd2f632a7ecc710114f9b5b18e785150",
-      "definitionCount": 20,
+      "readerSha256": "94cb7f702ad0a331335429c9a3f3ba96795e81c81c97798d1b3fdd34b3661aa2",
+      "definitionCount": 124,
       "reviewedAt": "2026-11-21"
     },
     "gaiye-ganpati-jagvandan": {
       "status": "finished",
-      "readerSha256": "db918659c58072fa01be49b69c497103e15ac37ed90a80dfb1aad6e2d1348bca",
-      "definitionCount": 14,
+      "readerSha256": "b2c4bb9ace3dc7f113a714313aea4e014eaf3a5999a77f485ca80d204c783b68",
+      "definitionCount": 48,
       "reviewedAt": "2026-11-21"
     },
     "vighnaharan-gajvadan": {
@@ -951,8 +951,8 @@
     },
     "damaru-har-kar-baaje": {
       "status": "finished",
-      "readerSha256": "86867eb4f73823462e7e28c34ddc859984a572a3b87512ad79a5cddb0be1c122",
-      "definitionCount": 16,
+      "readerSha256": "45db8e6790ad09239c77c4767d1a1fe824deb3211d1a02b1be963f779040c3fa",
+      "definitionCount": 119,
       "reviewedAt": "2026-11-21"
     },
     "jai-shiva-shankar-jai-gangadhar": {
@@ -963,14 +963,14 @@
     },
     "sheesh-gang-ardhang-parvati": {
       "status": "finished",
-      "readerSha256": "0c774e15cc5598b5bf7ea1a04a938ff6d9de9f58697ad725d9b264a4d6c8a24f",
-      "definitionCount": 18,
+      "readerSha256": "28953b5262e3539ba82126004073fc3af89483566e37f1bc9f330921ac6470c1",
+      "definitionCount": 89,
       "reviewedAt": "2026-11-21"
     },
     "he-shivshankar-he-karunakar": {
       "status": "finished",
-      "readerSha256": "6cbbc5d5d83460924268ea51d544a62292aa2dfec5d461fec98f8e12d479b330",
-      "definitionCount": 24,
+      "readerSha256": "bb39026ad6f8022a46b5a726b24dbd7a6b65a0372792ccc2c4944041fcf43d17",
+      "definitionCount": 139,
       "reviewedAt": "2026-11-21"
     },
     "mahadeva-vishambar": {
@@ -987,14 +987,14 @@
     },
     "shri-ramachandra-kripalu-bhajman": {
       "status": "finished",
-      "readerSha256": "837b6d0f86614faf55c67e0d5a28571a770659d1a2743bdccb42c90587ebe1b1",
-      "definitionCount": 16,
+      "readerSha256": "4ae29c9c1f7a9c4b21dd817ccae252d356e21cfec9a7f3ac97d06fc8414b8f47",
+      "definitionCount": 104,
       "reviewedAt": "2026-11-21"
     },
     "benti-chaupai": {
       "status": "finished",
-      "readerSha256": "3abe639d9b1bfc6655a1a9835e5699d6a1738a6358f1135f7e4244ed71e0b32d",
-      "definitionCount": 101,
+      "readerSha256": "678db02b4568fa3ad49f2f0b16444baa1612b3e2114ec71cd5a442daa64fdbaa",
+      "definitionCount": 499,
       "reviewedAt": "2026-11-21"
     },
     "arunachala-akshara-mana-malai": {
@@ -1014,8 +1014,8 @@
     },
     "mann-ke-pawan-mandir-main": {
       "status": "finished",
-      "readerSha256": "00ae97c772878d093597852eb7df39958da5fc14dbbde960cf77b4be1080181d",
-      "definitionCount": 17,
+      "readerSha256": "153fc023e0f209619d8aee0b99ea2a89578fcf440d60c52f30192bd0d3d521c2",
+      "definitionCount": 109,
       "reviewedAt": "2026-11-22"
     },
     "sakatore-oi-kandiche-sakale": {
@@ -1032,8 +1032,8 @@
     },
     "sai-ram-ram-jap-le": {
       "status": "finished",
-      "readerSha256": "1d87dc3b58cc3bdaff13c9f40d94487a4d32c8ba9d903a7ee44191250e0dfba1",
-      "definitionCount": 18,
+      "readerSha256": "b8f0a35e8153d0d74f2842a39be893c4770ed0fd823e48f69b4d8b72a8fd3bd9",
+      "definitionCount": 112,
       "reviewedAt": "2026-11-21"
     },
     "thanu-karagadavaralli": {
@@ -1044,14 +1044,14 @@
     },
     "chal-der-na-ho-jaye": {
       "status": "finished",
-      "readerSha256": "ae14faf59d46110333d6e4af8ad0a1783c2035dd70989d44c79bafccb67813a5",
-      "definitionCount": 18,
+      "readerSha256": "698871f0a71c6ad232102489c62a54e6a2a5d5a0fcc7a4ebad17d8dd1bd3ac26",
+      "definitionCount": 142,
       "reviewedAt": "2026-11-22"
     },
     "he-sai-shankar": {
       "status": "finished",
-      "readerSha256": "b06b52044ccc2f51331235f41d91eec1f060eac67a74baa9ce6fab5a352942e1",
-      "definitionCount": 18,
+      "readerSha256": "fcc6b67872390d243f2c4ef371cae1fde9cf47c154a54222b28e77355770b1c6",
+      "definitionCount": 82,
       "reviewedAt": "2026-11-22"
     },
     "vishnu-sahasranama": {
@@ -1064,8 +1064,8 @@
     },
     "patita-pavan-jai-raam": {
       "status": "finished",
-      "readerSha256": "48f0c0bc6e5fbf7ee16872d92c2ae52035d93d969a616a72c5354bbce65a0054",
-      "definitionCount": 8,
+      "readerSha256": "4267af96493729d331b1837cd874069909d4f7465f266da77d8a3a56f2f5d9df",
+      "definitionCount": 32,
       "reviewedAt": "2026-11-21"
     },
     "madhur-madhur-sai-naam": {
@@ -1076,66 +1076,66 @@
     },
     "hanuman-bahuk": {
       "status": "finished",
-      "readerSha256": "c93f8f57d42008b5b85a6a16e76cac203833dd5616bb9dc0ac926e9f84fc68e0",
-      "definitionCount": 203,
+      "readerSha256": "2d5313f4137951119e18f34960346a42c9caa511530c3af49c207f7f9bbc0acd",
+      "definitionCount": 2216,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_integrated"
     },
     "om-namah-shivaya-damaru-paani-shool": {
       "status": "finished",
-      "readerSha256": "e30c81d575b3bb026a0d7f15b0be124a5b22da386495cf7c05c7a57d63f1f9f6",
-      "definitionCount": 17,
+      "readerSha256": "92aded98a96b4b4cc027f378cd9c7687385f06d69287e90e22dad4be0ce9dabe",
+      "definitionCount": 116,
       "reviewedAt": "2026-11-21"
     },
     "shankar-ho": {
       "status": "finished",
-      "readerSha256": "323971ec2fa704139076fd1b287c78d6d3b38a9cfd937769fa489ec4de247925",
-      "definitionCount": 20,
+      "readerSha256": "3a0d6244731e1cfab884d78e0b91a1d6d555bacf587f7da8aa7d7ec6a7bf2ceb",
+      "definitionCount": 140,
       "reviewedAt": "2026-11-21"
     },
     "pradnya-vivardhan-stotra": {
       "status": "finished",
-      "readerSha256": "a5f1318cbcaa16416623cc7838d8e5ffeb90f84b6dc56d4308ac126e0a734e06",
-      "definitionCount": 19,
+      "readerSha256": "c06affa1c116c5ae6f440801454b0c4ded178d7976a2e99d9d0f5ff0ccb35420",
+      "definitionCount": 115,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "mati-re-mati-re": {
       "status": "finished",
-      "readerSha256": "8164841b0c3bd2e182a97b54db50df59f620169e57e6d8f742f85b9b06ad171a",
-      "definitionCount": 25,
+      "readerSha256": "9b0afc756f5bc83dd3290383af57f36f6910b524cf139eab2f1373d7e325ef6d",
+      "definitionCount": 89,
       "reviewedAt": "2026-11-22"
     },
     "jaise-suraj-ki-garmi-se": {
       "status": "finished",
-      "readerSha256": "681d2c138b54e06db24d5c64bca4ec352cde53b707aace557aa420a8ab1c6890",
-      "definitionCount": 18,
+      "readerSha256": "8975e09ff21ed00ec8a27390bbea83adbdb7c6e511b6bae039dbe05660d2bbe6",
+      "definitionCount": 167,
       "reviewedAt": "2026-11-21"
     },
     "shejarti": {
       "status": "finished",
-      "readerSha256": "5baf0af2e9204ccb1970f74a444242849d460a2c3c100492f91d9600c85239c9",
-      "definitionCount": 108,
+      "readerSha256": "1599a07fc7c9e6aa0923a6806b664c7ea9ce666614bfaf0bfec5d4dbe3416172",
+      "definitionCount": 474,
       "reviewedAt": "2026-11-21"
     },
     "geet-jaisa-main-hun-nirashrit": {
       "status": "finished",
-      "readerSha256": "890015e7ed92ee51270c34ebcbf1cdc55fd67721eea50de516ad409ba4a94678",
-      "definitionCount": 22,
+      "readerSha256": "0d80b8e17c38866d794653421cfd099394229d4c715367a93a0ff3487fec43d0",
+      "definitionCount": 83,
       "reviewedAt": "2026-11-22"
     },
     "shirdi-wale-sai-baba": {
       "status": "finished",
-      "readerSha256": "854af65b776ebd4f68db723583d8fd6e7baaea1b5dc390a3bfb3656ff479566b",
-      "definitionCount": 11,
+      "readerSha256": "3477f8579ca14313334b04dd51c8e5b3782f371b54abdc24bd4cf3ac18ebcb2d",
+      "definitionCount": 122,
       "reviewedAt": "2026-11-21"
     },
     "shree-sai-aarti": {
       "status": "finished",
-      "readerSha256": "de0807c206516942aa93558b147f76e499384fa689a3b9dc1b950c3e6021bdbf",
-      "definitionCount": 27,
+      "readerSha256": "e8d874a424516bfb7355aa4f280dcdae6920a2b4234810e4e90eadcfccb2e510",
+      "definitionCount": 314,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
@@ -1148,8 +1148,8 @@
     },
     "chala-patha-ra-geeta": {
       "status": "finished",
-      "readerSha256": "96ea6801e5636925b083b292f3a0bdcaec15847915eb13a4210cd6a4c75b82f1",
-      "definitionCount": 10,
+      "readerSha256": "e176c78fc788e66d6068119a9d0fe9601cbf445f1acdc1b4d054883bc72c4f28",
+      "definitionCount": 90,
       "reviewedAt": "2026-11-21"
     },
     "he-guru-gobinda-gosain": {
@@ -1160,14 +1160,14 @@
     },
     "he-sadaguru-tume-mor-haatku-dhara": {
       "status": "finished",
-      "readerSha256": "977de0dd4f26eaaf8884f49e58f3884fb7eae361f96b349ba80543232b9a9b26",
-      "definitionCount": 13,
+      "readerSha256": "535147dacd685727fbf08d0a76adfb993a54e5fe9ae0e26ae1eca8c6a953b686",
+      "definitionCount": 171,
       "reviewedAt": "2026-11-21"
     },
     "jiba-dale-dale-jae-lo": {
       "status": "finished",
-      "readerSha256": "7bd2fa68b6df98e1ce57377374aadac265e6c8ffb874de00e5aedb509b735183",
-      "definitionCount": 15,
+      "readerSha256": "9512a9eb27cdeb611ec06daad17f3fd1b058ac7c66f4ad968f719390c61f3c8e",
+      "definitionCount": 173,
       "reviewedAt": "2026-11-21"
     },
     "jogii-re-kian-jau-dura-deshe": {
@@ -1190,8 +1190,8 @@
     },
     "bela-gadi-jae-kala-sari-jae": {
       "status": "finished",
-      "readerSha256": "ebde1dca45314b9c7cafad7c0c8266cb0c1ad9afb4ba0d86eea21b945e7c58c5",
-      "definitionCount": 24,
+      "readerSha256": "5e43ff6f5b249dbb5bc073ec8476c2e6161c9c9eef783779909909b1226786c5",
+      "definitionCount": 76,
       "reviewedAt": "2026-11-21"
     },
     "dake-aahe-jagannath": {
@@ -1226,20 +1226,20 @@
     },
     "shri-kshetra-biharii": {
       "status": "finished",
-      "readerSha256": "fcbf081feddde4a23683eb2dd36532fe7ebb5f24c2d68bed38eb8288c8594711",
-      "definitionCount": 63,
+      "readerSha256": "07a0b65857df99418f2aa868f65107ad6e8a14a2f47df46889310001bf59f74e",
+      "definitionCount": 228,
       "reviewedAt": "2026-11-21"
     },
     "baishi-pahacha": {
       "status": "finished",
-      "readerSha256": "d4b358335314f2d22dc364c69253989a5458ded75391207ce44faa54ad006672",
-      "definitionCount": 30,
+      "readerSha256": "c505fa45956617ce59e6452b7a52a11d3b1827a5d7e4d3c18aa3f782a97ded3b",
+      "definitionCount": 284,
       "reviewedAt": "2026-11-21"
     },
     "aao-aao-padharo-mere-guruwar": {
       "status": "finished",
-      "readerSha256": "1ffe872a690986823603f51dc2563614589338517c81ac3d6dfca3421fa2dfc3",
-      "definitionCount": 15,
+      "readerSha256": "428d9bce098e239555ead327cf78a985cd4ddec5e010cdf90c827381cb3e2bcf",
+      "definitionCount": 116,
       "reviewedAt": "2026-11-21"
     },
     "jab-dil-udaas-ho-to": {
@@ -1250,14 +1250,14 @@
     },
     "mero-abgun-bisra-karo": {
       "status": "finished",
-      "readerSha256": "76f3dab390e9aba696c6ebc38a96dc6cc6cd9c5ca0b70f4caaba04d8afc5b6f7",
-      "definitionCount": 15,
+      "readerSha256": "8af82595a9a2db1b5ef63338750807a463bfba85254d769d61cc41a50ef05ce6",
+      "definitionCount": 76,
       "reviewedAt": "2026-11-21"
     },
     "sai-tum-humse-jaldi-milo": {
       "status": "finished",
-      "readerSha256": "729e94d3dc1425b02fa3e5fffc4d9695c0656923de0fcdf1277d04c9a6b5bf65",
-      "definitionCount": 21,
+      "readerSha256": "0e195019642978b7075be569810bb632571e61e7096bcbb6746079fa00f1142c",
+      "definitionCount": 132,
       "reviewedAt": "2026-11-21"
     },
     "zara-to-itana-bata-do-sai": {
@@ -1280,8 +1280,8 @@
     },
     "bhanga-kudia-mu-sajai-rakhichi": {
       "status": "finished",
-      "readerSha256": "2a8300379b4f0ae7f1f5adc2c22bad8d56414901b8ee53b91c7a234968e5aa26",
-      "definitionCount": 13,
+      "readerSha256": "a3252e45d25650c682085e484717c7fbc546e4bc62db196f9bf7f539ad749ee3",
+      "definitionCount": 80,
       "reviewedAt": "2026-11-21"
     },
     "chalo-shirdi-ku-jibare-sabhien": {
@@ -1292,8 +1292,8 @@
     },
     "deha-re-mo-lagilani": {
       "status": "finished",
-      "readerSha256": "ba003bde720d24e364b1aac9a16238e51eeb426a4be4bcb0ade3095b996e7594",
-      "definitionCount": 13,
+      "readerSha256": "d5b3da73f403898b6b1ab8df1f0429ec0e7a6759beb8eee22dcd7156144c9c95",
+      "definitionCount": 79,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_integrated"
@@ -1344,14 +1344,14 @@
     },
     "luha-bohi-jae-tumo": {
       "status": "finished",
-      "readerSha256": "b03136fcbb75282f9e969e7a8894bbc82913dc438665a75a925ea8cd7bc02a77",
-      "definitionCount": 12,
+      "readerSha256": "530cb4e837e7ab37c0f2f9ed13cd32dc4570c4f9b4e3675af52eeb9572f425dc",
+      "definitionCount": 73,
       "reviewedAt": "2026-11-21"
     },
     "thara-ku-thara-mu-adhia-paduchi": {
       "status": "finished",
-      "readerSha256": "0692234ec45720fafc4d3d0241b8dd2a250553de5813ac30d10225f9997d3105",
-      "definitionCount": 15,
+      "readerSha256": "85654051ac699dff56cbb5de6df11f87534b94bc100575881aab80e59455ce3a",
+      "definitionCount": 122,
       "reviewedAt": "2026-11-21"
     },
     "tumo-krupa-bina-prabhu": {
@@ -1362,8 +1362,8 @@
     },
     "ishwar-se-kuch-mangna-ho-to": {
       "status": "finished",
-      "readerSha256": "3c7cc4806beda39dbab1be14ae43ae2794051f26efc7f747814f686de8d4d23c",
-      "definitionCount": 11,
+      "readerSha256": "c76688ff04f188608130639c0327c1759ce7227e8126079b8753ad70bb47bb18",
+      "definitionCount": 90,
       "reviewedAt": "2026-11-21"
     },
     "kete-lagaichu-tu-naat-re": {
@@ -1374,14 +1374,14 @@
     },
     "jai-ganesh-jai-ganesh-pyare": {
       "status": "finished",
-      "readerSha256": "97afc12d53c1004deee8e9d2c9f86280726e0d5b623e3f69060e29f0d7fd693b",
-      "definitionCount": 12,
+      "readerSha256": "33b9fe141cdcfdf5c2549b2d01763c4c4b9f8f8c8d1f303b46f6981d47839d85",
+      "definitionCount": 92,
       "reviewedAt": "2026-11-21"
     },
     "aarti-gajvadan-vinayak-ki": {
       "status": "finished",
-      "readerSha256": "0fde7fa458d4e501e3f7b329fad33013f041ea5f33cb638dbded2f4fc5271c3e",
-      "definitionCount": 15,
+      "readerSha256": "26f642d7afad6f95b87fa793e4f4546a2ae0dd816e7725f1ca37e756032f17fa",
+      "definitionCount": 66,
       "reviewedAt": "2026-11-21"
     },
     "parvati-devi-mahamayavini": {
@@ -1392,8 +1392,8 @@
     },
     "aarti-kijiye-shailsuta-ki": {
       "status": "finished",
-      "readerSha256": "358f6779e6f8eb42a44a4b84b51ce70b6ef0ab638968be3c0cdc73ae4b391da1",
-      "definitionCount": 19,
+      "readerSha256": "ab8204324f39020548336b7b5195287dee1a0fd1a2fd852301431d602d548461",
+      "definitionCount": 77,
       "reviewedAt": "2026-11-21"
     },
     "dekho-mand-mand": {
@@ -1404,32 +1404,32 @@
     },
     "duniya-se-door": {
       "status": "finished",
-      "readerSha256": "d4699d005c4a2be261c5aff3d3cc342475f5348b0513a5aba7447e7a2a1b19f5",
-      "definitionCount": 16,
+      "readerSha256": "526afd4551280ab9a33a49813537d3be4f8218a622fa29418b38338ecaedf85a",
+      "definitionCount": 120,
       "reviewedAt": "2026-11-22"
     },
     "mera-aap-ki-krupa-se": {
       "status": "finished",
-      "readerSha256": "819e7b2cb4db1f84e7166ff68850dcceded1b782c506bf34995522dfd2d48f79",
-      "definitionCount": 13,
+      "readerSha256": "29a6b71f79bddf99e39b017aa3d0b0a859daac1a747d7063603682fe86b6ce37",
+      "definitionCount": 112,
       "reviewedAt": "2026-11-22"
     },
     "mera-chhotasa-sansar": {
       "status": "finished",
-      "readerSha256": "a61789c0ecd4afa0386d24ea8a27f9df8e1fb96ffd49d5a2a28928d0c68a0e2d",
-      "definitionCount": 16,
+      "readerSha256": "747a4692e24191374419217d7a39ff835d76cbab990a63dd2b34d2db51edb3a3",
+      "definitionCount": 103,
       "reviewedAt": "2026-11-22"
     },
     "patta-bola-vrksha-se": {
       "status": "finished",
-      "readerSha256": "c064ce3ed7048be1f8925571fd79c6944c1d128aee43730e12c0adfd808f2e92",
-      "definitionCount": 29,
+      "readerSha256": "e1589fd2b0514882e5d82b2a76159b965ecd501b618838b71cb4ba366900d1f2",
+      "definitionCount": 122,
       "reviewedAt": "2026-11-21"
     },
     "rehna-nahi-isa-desa": {
       "status": "finished",
-      "readerSha256": "4402b5395735a6a00a962e946db04a5eb119c5e092d9b560dcfa6f8b3fc8b8c1",
-      "definitionCount": 11,
+      "readerSha256": "2fbf12fef4622965016ac0b7640619698ea0726f4309c3d0ba05c1ab73895537",
+      "definitionCount": 54,
       "reviewedAt": "2026-11-21"
     },
     "kaise-lagaun-tumse-main-preet": {
@@ -1440,44 +1440,44 @@
     },
     "ma-tumko-kaise-batalau": {
       "status": "finished",
-      "readerSha256": "e792442c662dc3c172e75b78644f3dc5fdc839be8d0aabf75fe2411fc376a0b5",
-      "definitionCount": 11,
+      "readerSha256": "8322d071fb448108c9848c7f25c04fcccb2e1efb1574ab1ab32cc69b698d678c",
+      "definitionCount": 64,
       "reviewedAt": "2026-11-21"
     },
     "akashi-zep-ghe-re-pakhara": {
       "status": "finished",
-      "readerSha256": "2e73baa79447ba5de2c5d98f97ed13d852727471350887b18eb64494d8174d99",
-      "definitionCount": 22,
+      "readerSha256": "08c7f84bb542d746214f7795708bc24a236a557cdd53c596517f5fb2db3783cc",
+      "definitionCount": 86,
       "reviewedAt": "2026-11-21"
     },
     "sukh-ka-dukh-ka": {
       "status": "finished",
-      "readerSha256": "06c801ffb54e4d3585d8a41ef54234920083796cf99ffa83b30e06a04137b652",
-      "definitionCount": 17,
+      "readerSha256": "d51586c590bd976f3ab742a92f897af481350a4b27b04306a7ddad462dc2bb7b",
+      "definitionCount": 126,
       "reviewedAt": "2026-11-22"
     },
     "sai-ki-palki": {
       "status": "finished",
-      "readerSha256": "f88fa6bc9d5fc25ddce149253f8278965aaf2247656155699abcfd1d25a94836",
-      "definitionCount": 16,
+      "readerSha256": "29fc08cafdfbfcd2ff6fab8a5614e2800e5f5f3e9ff75735f01faa1bacdac6ee",
+      "definitionCount": 251,
       "reviewedAt": "2026-11-22"
     },
     "kyun-nahin-manegi-meri-maa": {
       "status": "finished",
-      "readerSha256": "9907152f8f7c5ecefd4bd7799bbe20c60db62fba5b048629e4394a6f0737a627",
-      "definitionCount": 30,
+      "readerSha256": "210a6442db2514257f479d69daeaa46c5ad2b36e32442396391532cac3f98222",
+      "definitionCount": 370,
       "reviewedAt": "2026-11-21"
     },
     "duniya-de-dukhan": {
       "status": "finished",
-      "readerSha256": "11ec2685f09f4f2ee0c574f355f1421af6381640dfbf76be27f37187d037d141",
-      "definitionCount": 16,
+      "readerSha256": "cb299e0857bea1e1cec4c16e8f6304163f3593315d2ec68b4a8d646db536522b",
+      "definitionCount": 130,
       "reviewedAt": "2026-11-21"
     },
     "meri-maa-jagdambe-man-jaye": {
       "status": "finished",
-      "readerSha256": "9fd6318d072f3cafed7cb2c3307ffb98b45564adc3089d8dff5e2bc53e66c51c",
-      "definitionCount": 56,
+      "readerSha256": "b8f863766b8cf8e3a8d9593b5516363e8a1b1accfe9ccd4c34b885f0c19a3369",
+      "definitionCount": 653,
       "reviewedAt": "2026-11-21"
     },
     "man-re-tu-chal-apne-niketan-me": {
@@ -1488,14 +1488,14 @@
     },
     "duhkh-me-sumiran-sab-kare": {
       "status": "finished",
-      "readerSha256": "0aecae023e1d6627d3a4dbb107cb8a7959a3cc3325a803b101c6527e766e651c",
-      "definitionCount": 15,
+      "readerSha256": "693c2d1a77180934e6ab637ccda2127c3c645b52da7a63de0b6f49df7cd64ff2",
+      "definitionCount": 86,
       "reviewedAt": "2026-11-21"
     },
     "sadguru-mujhko-alag-na-kariyo": {
       "status": "finished",
-      "readerSha256": "75d94e4e64df3d32fa247c7302e67fd9cd072c8c49871d967354798579bba1d9",
-      "definitionCount": 16,
+      "readerSha256": "e6dfe3d906d40bb892581d30aad09af0f0d3ae484c31810aed61c6e9cfd83852",
+      "definitionCount": 78,
       "reviewedAt": "2026-11-21"
     },
     "chitrakoot-ati-vichitra": {
@@ -1512,8 +1512,8 @@
     },
     "rann-jeeti-rama-rao-aye": {
       "status": "finished",
-      "readerSha256": "1f59c65bd5c423bf840f90fafd84aa4fe50e771aaa6c30edb521809fb753f091",
-      "definitionCount": 18,
+      "readerSha256": "8a95b393caf8bbe17f3a5c74e557ea2bc3c0eaab65ffd8385a576fc85c186a89",
+      "definitionCount": 108,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
@@ -1532,8 +1532,8 @@
     },
     "uttho-uttho": {
       "status": "finished",
-      "readerSha256": "25ea252b2d79112ad50d90c1712f3b1b5ed91073e9347664893bc030bed06c7a",
-      "definitionCount": 16,
+      "readerSha256": "d3866aa0dd3ca148b36e30b3ca1aa7a4ca8b71fc5614d69969a515f3f67d5a3f",
+      "definitionCount": 65,
       "reviewedAt": "2026-11-21"
     },
     "ekdant-gajvadan": {
@@ -1552,16 +1552,16 @@
     },
     "siddh-bhajo-omkar-avadho": {
       "status": "finished",
-      "readerSha256": "cc7b2089adad3d7d33b395a2eb5c0b012f69cd571e6f557b976e7931b92e1982",
-      "definitionCount": 20,
+      "readerSha256": "509c642b632fbc12e925023247b736cf878dd85f1b113cec4b5397d2975e3b0b",
+      "definitionCount": 103,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_integrated"
     },
     "rama-ho-rama": {
       "status": "finished",
-      "readerSha256": "53900ad76f63dfeb58f4ab1b34d5e700119b9cc1d06217617016950bfd367ba0",
-      "definitionCount": 14,
+      "readerSha256": "19de778c1b0fa3dd83ed351e80abdeb60f18d19bb7247b478c23049ace622455",
+      "definitionCount": 98,
       "reviewedAt": "2026-11-21"
     },
     "baithe-hain-rama-lakhan": {
@@ -1572,20 +1572,20 @@
     },
     "jaake-priya-na-rama": {
       "status": "finished",
-      "readerSha256": "d012fb8dac44f69f286aea02fd7caa10421a868d161e585fc04c901d0873530a",
-      "definitionCount": 15,
+      "readerSha256": "f14d6035142a1e9ef69b5c986b70d887b384f604f30d65858c9b9f28cdd1292c",
+      "definitionCount": 64,
       "reviewedAt": "2026-11-21"
     },
     "kahan-ke-pathik-kahan": {
       "status": "finished",
-      "readerSha256": "be97d15b6170b7406c3c0f5c5cff9694021d68dad36bf3aaa31304c040e8ccc7",
-      "definitionCount": 15,
+      "readerSha256": "1f25d54d67f9fdbbcdaccfe1c05abd770fe5239ba43771b36f093a0420a51a7a",
+      "definitionCount": 71,
       "reviewedAt": "2026-11-21"
     },
     "dev-bade-data-bade": {
       "status": "finished",
-      "readerSha256": "637a0a8a26dfd2cb914378ac4ce666eeb7b05c99514bc960e01222765148d469",
-      "definitionCount": 17,
+      "readerSha256": "dc40d9db5265887e7e389be18200320c4ac43e82970066ba58991ea11f5258c3",
+      "definitionCount": 62,
       "reviewedAt": "2026-11-21"
     },
     "janchiye-girijapati-kashi": {
@@ -1596,14 +1596,14 @@
     },
     "shiva-shiva-hoi-prasanna": {
       "status": "finished",
-      "readerSha256": "8f0138c81e422a5ff7a2c75fc3fa6644f8744217761bb65891addb15ae2ae5e7",
-      "definitionCount": 16,
+      "readerSha256": "79b9fae766a5a185a063681f4580d1f05bea1696a1fa222a227137e565e51802",
+      "definitionCount": 61,
       "reviewedAt": "2026-11-21"
     },
     "kai-janmon-se-bula-rahi-hoon": {
       "status": "finished",
-      "readerSha256": "0cb26432c21cae432536de66c968f7fe3d7345b8b2faccc7b6626a4668d59f55",
-      "definitionCount": 30,
+      "readerSha256": "5c3cea34d60a29f8b9418849adda544b7063ccfad54b599560368b0df5a1a642",
+      "definitionCount": 315,
       "reviewedAt": "2026-11-21"
     },
     "shiv-ka-naam-japo-sansari": {
@@ -1620,8 +1620,8 @@
     },
     "koodarai-vellum-seer-govinda": {
       "status": "finished",
-      "readerSha256": "3511c9b3b6d89521bf1a99e65c4f65b5c13f0ac69cbcbbc12ae9cf4a92e94b81",
-      "definitionCount": 11,
+      "readerSha256": "d693dd574ad6e2e234a89081956db2f4e8d45510aa311d6be70b0e3403d65f5a",
+      "definitionCount": 49,
       "reviewedAt": "2026-11-21"
     },
     "margazhi-thingal-madhi-niraindha": {
@@ -1632,14 +1632,14 @@
     },
     "paluke-bangaramayena": {
       "status": "finished",
-      "readerSha256": "914877809ba65948fe2a7a6ed5c26813283cf3009c4fcfb3c0e8c05f71685770",
-      "definitionCount": 11,
+      "readerSha256": "54b34bf10b1cbd39725cb157b8452538d2ea7aefd7a15f67aab10a64bb08e40e",
+      "definitionCount": 56,
       "reviewedAt": "2026-11-21"
     },
     "jo-achyutananda": {
       "status": "finished",
-      "readerSha256": "8a62ef36090f4b0965cbe90a9f96eb33b3cf3c344987d7cda840f584838c9013",
-      "definitionCount": 15,
+      "readerSha256": "878e225db021ce125f1e0e59604279806f27c191aba7438f4fc424123cae6463",
+      "definitionCount": 59,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
@@ -1652,20 +1652,20 @@
     },
     "kolaru-pathigam": {
       "status": "finished",
-      "readerSha256": "2fe2f51f247a22053ea955390190878d4bf86deaf4c9c9fc27a348043f79a919",
-      "definitionCount": 49,
+      "readerSha256": "7c248f0d6663da16ae5fc9a1f6a97d45976cb8c612c4e878eebd3cadbe714b7a",
+      "definitionCount": 389,
       "reviewedAt": "2026-11-21"
     },
     "siyavar-ramchandra-ki-jai": {
       "status": "finished",
-      "readerSha256": "29492b63b4463997c62049d3088bd2d06a7dd8ca220c21648d3769b461087c3f",
-      "definitionCount": 13,
+      "readerSha256": "01801a41d5ff2ed83048945c6e3cc30cd072f783d9f1fc42ccdac61557252e17",
+      "definitionCount": 81,
       "reviewedAt": "2026-11-21"
     },
     "parvati-hanuman-ansh": {
       "status": "finished",
-      "readerSha256": "19746658f22ad0d19a2338ae254627c1f19224974d1d52661aff70aeb9873eb4",
-      "definitionCount": 28,
+      "readerSha256": "b0907ba69405896d75fcd02863e4118ddcca9e72a608467622e4fab64682a81a",
+      "definitionCount": 165,
       "reviewedAt": "2026-11-21"
     },
     "aavagaman": {
@@ -1684,8 +1684,8 @@
     },
     "hey-kharari": {
       "status": "finished",
-      "readerSha256": "ffc257720bd2ea6d70ee91dd7ee75b599a77d01cd7e8a47914a9333ff5997d6a",
-      "definitionCount": 12,
+      "readerSha256": "5a80dc74d24b7baca2a45e66c9ccd136bec81ae4e0f26eff535fcb1c4ab46828",
+      "definitionCount": 88,
       "reviewedAt": "2026-11-21"
     },
     "raam-bhajan-ki-or": {
@@ -1696,70 +1696,70 @@
     },
     "jai-hanuman-hanuman-ansh": {
       "status": "finished",
-      "readerSha256": "8258f16bb93d42829922755c89a8e382c4929a420bbb7b31a30d5d279f9773b5",
-      "definitionCount": 25,
+      "readerSha256": "dc71e788035db1e49172da0dfcfedccc198026a318af4aff8c40c68d76bcd45a",
+      "definitionCount": 117,
       "reviewedAt": "2026-11-21"
     },
     "vaishnav-jan-to": {
       "status": "finished",
-      "readerSha256": "62e0652374775b4cc43310844b061f9561779be54ecadd2adda54486f6b40b15",
-      "definitionCount": 6,
+      "readerSha256": "403084051c48f8905f787847d263509857c2ba62c75e675ab85a676ce885e643",
+      "definitionCount": 30,
       "reviewedAt": "2026-11-21"
     },
     "hriday-mein-jinke-sitaram": {
       "status": "finished",
-      "readerSha256": "210acf0438b8157738c2effb9aa3a2d9c811fa0fc8c934cd661a5726a420f80c",
-      "definitionCount": 2,
+      "readerSha256": "31362c456738551eef0f5de617381aaacb4786497a49bd27686fc2a81bb1565a",
+      "definitionCount": 8,
       "reviewedAt": "2026-11-21"
     },
     "saasa-haale": {
       "status": "finished",
-      "readerSha256": "c033f5a563dff2e49c59287f21042a9fc5c5ee2767829c439dd7371f046e952f",
-      "definitionCount": 25,
+      "readerSha256": "e913889be25d5aa202c4ef2997c21448de7445032d23c31d770fbdb697da678c",
+      "definitionCount": 184,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_unchanged"
     },
     "ahe-nila-saila": {
       "status": "finished",
-      "readerSha256": "3fe88c3f8d17b18870fc525090e3e5dc5c8865fdedf7811f51a324e1d13d5951",
-      "definitionCount": 12,
+      "readerSha256": "f4b0993fa98fcb35bcc154ba48c85826fac44fab23ca3cb679a333363455a91b",
+      "definitionCount": 61,
       "reviewedAt": "2026-11-21"
     },
     "dasana-madiko-enna": {
       "status": "finished",
-      "readerSha256": "e19bd815823b4a8efa21da051d8576827d48ea2994492e859c64a27ded6e8778",
-      "definitionCount": 15,
+      "readerSha256": "13275f35d8e280e298677949ecc76b8d48adf01e3ea3a04df31d447e3c9eae1a",
+      "definitionCount": 61,
       "reviewedAt": "2026-11-21"
     },
     "nanati-baduku": {
       "status": "finished",
-      "readerSha256": "59a138cd1a52c2a8758aa6a1a110ef2604963ac2479e9aee3e55d7971c54c96b",
-      "definitionCount": 11,
+      "readerSha256": "99702a3373c2c40bdd8c2c470848e8f7d216daac62beae93f8bb3e28f8d77546",
+      "definitionCount": 35,
       "reviewedAt": "2026-11-21"
     },
     "jagadoddharana": {
       "status": "finished",
-      "readerSha256": "81e465f68031c5b669de83993001e020e7ae520697c8f124952f6b2b4068a9b8",
-      "definitionCount": 8,
+      "readerSha256": "5ad5f13d5ef28a1ad5518e2733392565fb1bc1a76617f67af72d9d505170b25b",
+      "definitionCount": 24,
       "reviewedAt": "2026-11-21"
     },
     "endaro-mahanubhavulu": {
       "status": "finished",
-      "readerSha256": "023d466fd4cffc2afe92115c0dcfe5213bbf5a5a9d7095c8ad7fad9434eedc89",
-      "definitionCount": 29,
+      "readerSha256": "7027d8818aac6370ede962eae7bb46b33aa52abd0eb0b29dada3edbf3c1ebe51",
+      "definitionCount": 221,
       "reviewedAt": "2026-11-21"
     },
     "main-banjaran-ram-ki": {
       "status": "finished",
-      "readerSha256": "850843ffe7f3f04f023ba6a1b26a3436ba8767b01829441886532f1f2bde4691",
-      "definitionCount": 20,
+      "readerSha256": "a2316d685822463d307773c62a3ebd029ea8542bc079201f31667970838bb1b1",
+      "definitionCount": 78,
       "reviewedAt": "2026-11-21"
     },
     "rudrashtakam-sharma-bandhu": {
       "status": "finished",
-      "readerSha256": "f7a30c7292c86c13242d41ec8fdbde30f5e5981ee68bbf40df2136b73c89b552",
-      "definitionCount": 19,
+      "readerSha256": "d9c2aa17425c18c778d6b43b972a8184de42375f93c65536f21a78eca3d4673f",
+      "definitionCount": 185,
       "reviewedAt": "2026-11-21"
     },
     "piththa-pirai-soodi": {
@@ -1782,42 +1782,42 @@
     },
     "rudrashtakam-rameshbhai-oza": {
       "status": "finished",
-      "readerSha256": "abaa29ceca7dcb917fd5f0b4f8ceb1866b30222c8791e7bace5177cd75852835",
-      "definitionCount": 21,
+      "readerSha256": "b395561afa8b556878a03848c0959240c4b7784ae3f6795a1c505209803027f7",
+      "definitionCount": 199,
       "reviewedAt": "2026-11-21"
     },
     "shyamala-dandakam": {
       "status": "finished",
-      "readerSha256": "d7e4d82aeb15d379a54b7ca3ae324053253c434936db8cab572493eb1380d67e",
-      "definitionCount": 116,
+      "readerSha256": "f324a7c0343eae5a6daef9657d523cba2fcb9d5108819602302db7c3ca35f250",
+      "definitionCount": 751,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "sivapuranam": {
       "status": "finished",
-      "readerSha256": "b34983bfd57b9d1eddc8b2d0bff8a58602907359f5134b100ba9f48ffd2a7b6b",
-      "definitionCount": 101,
+      "readerSha256": "aa3733258c2b082572ede9c42f3e78c4d5135767494ab4b9f328e52e8a3a29c0",
+      "definitionCount": 424,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "bajrang-baanka": {
       "status": "finished",
-      "readerSha256": "a1a11b61bb3b4ff470f5c9ce9d75d6c6c35e0efaf8e0dde595eb819a5ea08ba0",
-      "definitionCount": 19,
+      "readerSha256": "e42e654fb427fa16b1bad057c511230ab91d72e90a65e9287453bc9f409ff8d5",
+      "definitionCount": 87,
       "reviewedAt": "2026-11-21"
     },
     "re-man-aiso-kar-sanyasa": {
       "status": "finished",
-      "readerSha256": "6f72fe5d667b70ca47a5e7d5b1cbb46c96722f980c99ad79361f6a11a60f7123",
-      "definitionCount": 52,
+      "readerSha256": "8c58772b92503a23cc514304e709e6fa4eaff9ccb1f4f8175f3fc3511720007d",
+      "definitionCount": 234,
       "reviewedAt": "2026-11-21"
     },
     "kanakadhara-stotram": {
       "status": "finished",
-      "readerSha256": "1f01614e90edeaee48ac4cd10a51d4d9684115fe6f762374b4e072f3f29ee84b",
-      "definitionCount": 80,
+      "readerSha256": "873150b72dda27ae64ddfa5fb506041c1bcf7d6725c627312bc89a9595ac87c8",
+      "definitionCount": 427,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
@@ -1830,28 +1830,28 @@
     },
     "brahmam-okkate": {
       "status": "finished",
-      "readerSha256": "ab63e390917a0aaf806fc75d165de408a478c1e8112a9e789356db52d52b413f",
-      "definitionCount": 29,
+      "readerSha256": "9a557aea33c2c5b270eb53d39dbcbe28aeb86d9888f6fafdf260a853b5e03790",
+      "definitionCount": 102,
       "reviewedAt": "2026-11-21"
     },
     "harivarasanam": {
       "status": "finished",
-      "readerSha256": "64df240131e06f9b21a4bc0849e4936ea8ff2f9349fa34d009c1c150ff180b21",
-      "definitionCount": 27,
+      "readerSha256": "8b24e1ae2047225ae31ab6f990a960d33064f21e852fcbe34b48fb54125ea62c",
+      "definitionCount": 125,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "meri-vinti-yahi-hai-maa": {
       "status": "finished",
-      "readerSha256": "9275b127f343da62ca1c8c1060d4b9b2cb0f95c4e824a83fc8fc85fa0ef83bbb",
-      "definitionCount": 30,
+      "readerSha256": "7bfccbb53ee714e7625362b1a11ca1c89b2ee08dcf6ac6cf5f67ceefd98055c0",
+      "definitionCount": 238,
       "reviewedAt": "2026-11-21"
     },
     "shrdi-sai-dwarka-maai": {
       "status": "finished",
-      "readerSha256": "8aeb534cb96ffc3fd41f25aa3227cccdc0cfba0202d103b59a3ba9af0f123441",
-      "definitionCount": 23,
+      "readerSha256": "75fdb524646e58432510410c5cf7c08047bc1ca782fafed87cc1ccaeab0c4763",
+      "definitionCount": 118,
       "reviewedAt": "2026-11-21"
     },
     "sai-sai-bol-sai-sai-bol": {
@@ -1862,34 +1862,34 @@
     },
     "sumukh-pratham-he-svanam-gayak": {
       "status": "finished",
-      "readerSha256": "25fbb2dcfacb6f7b0ae199b8bbd1a6852ad774f5293d9d58ae4f80b0a3198b85",
-      "definitionCount": 16,
+      "readerSha256": "37aac93e2f28a64fb3b989ed0a2991bfd2668f9467590a3f0fb4db9f69f8dd2f",
+      "definitionCount": 81,
       "reviewedAt": "2026-11-21"
     },
     "saranu-siddhi-vinayaka": {
       "status": "finished",
-      "readerSha256": "86bbc4db83ed2f32797b269dba7f5a06e2f61cf316191130717c94764fc584de",
-      "definitionCount": 12,
+      "readerSha256": "956357a1d9fd78e52f85b6850b2cf9266106b3c10e3b2401d98a6492eefeb7ce",
+      "definitionCount": 26,
       "reviewedAt": "2026-11-21"
     },
     "istu-dina-ee-vaikuntha": {
       "status": "finished",
-      "readerSha256": "65f84bde92af6cda98066cce413fb91a62b226589e9a4860e94aa076aab55fa0",
-      "definitionCount": 15,
+      "readerSha256": "3550bf18b73f4b915279d698d1024a2df5f4fda43dafa775ad298e5030f08c70",
+      "definitionCount": 65,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "daari-yavudayya-vaikunthake": {
       "status": "finished",
-      "readerSha256": "9cf584fc7d1c53a0ffb91681538be76173e2123e65019ea099837673d716b8c0",
-      "definitionCount": 13,
+      "readerSha256": "0c21ba5931f1fbc272967f247afaccccd3425eee0ffbc9c19608d61deba71d22",
+      "definitionCount": 58,
       "reviewedAt": "2026-11-21"
     },
     "biduvenenayya-hanuma": {
       "status": "finished",
-      "readerSha256": "66cdacc90e05667280e540464dbce066887092900a793a5b7a7d7469cff9f277",
-      "definitionCount": 19,
+      "readerSha256": "1fb7c3d83ad09635800db0b134983949223272368df82c3dc48ba68d1b567599",
+      "definitionCount": 55,
       "reviewedAt": "2026-11-21"
     },
     "satgur-kai-bhane-chal": {
@@ -1900,32 +1900,32 @@
     },
     "aane-banditamma": {
       "status": "finished",
-      "readerSha256": "9d18b172a83f08a9e3e77eee6db386fc1b8fee3414f1aab800d4364f27b610ad",
-      "definitionCount": 16,
+      "readerSha256": "59e00307c95e95ea77e5cee803210159bdd0bc8e4f0b1639d9b36ecf43283085",
+      "definitionCount": 68,
       "reviewedAt": "2026-11-21"
     },
     "candracuda-sivasankara": {
       "status": "finished",
-      "readerSha256": "ceb4d70fd7f6392daa982e083fd0f3e2d02dbda1bb652397a2c5d014e0dacd7f",
-      "definitionCount": 41,
+      "readerSha256": "e9fbb3a24f5b564ecd7e6b95c583691232e5bd33aff22ef9a842d39cddfe9b94",
+      "definitionCount": 189,
       "reviewedAt": "2026-11-21"
     },
     "aao-bhakton-maa-ki-aaj-murat-saja-lo": {
       "status": "finished",
-      "readerSha256": "032e93856f2d1e9bb60ee4791f71f1c9c1c117e2b361d5911ee33f7dab8ddd83",
-      "definitionCount": 40,
+      "readerSha256": "71ea504ab9915bc702d5764b8555ff65e9c9298d918878c3e2e19fe2c26fe41b",
+      "definitionCount": 289,
       "reviewedAt": "2026-11-21"
     },
     "saso-ki-mala-par-simaru-nisdina-pi-ka-nama": {
       "status": "finished",
-      "readerSha256": "d0c5373bea694ba4f565865747b627681e0d2d78220e04c0ab6d28a879ab1bb7",
-      "definitionCount": 99,
+      "readerSha256": "fa7e1c8c47ac6035f9c62ca9df95280c6c6bcf3385edeb26998ba6f804806c7d",
+      "definitionCount": 736,
       "reviewedAt": "2026-11-21"
     },
     "ee-padame-kada": {
       "status": "finished",
-      "readerSha256": "ccf5cf678be000378c037c15bcdcd44e4c6a5958265c37f721159a035b0d6754",
-      "definitionCount": 15,
+      "readerSha256": "8596fd45a76ecc478701da93f9d6e87260db4931083b0b2f5a0ea7e03a1205ae",
+      "definitionCount": 82,
       "reviewedAt": "2026-11-21"
     },
     "bhaktikoladi-vade": {
@@ -1936,8 +1936,8 @@
     },
     "kadupenta-ta-guduchu": {
       "status": "finished",
-      "readerSha256": "872a89003740c57ae381294fcbca2f2d18fe5f49890681b8545ef9d41fb09eda",
-      "definitionCount": 12,
+      "readerSha256": "620899ebacac4fabfb6eabf876e2d81ba9de4a7f44a74deb7f81c8451d04f4fc",
+      "definitionCount": 61,
       "reviewedAt": "2026-11-21"
     },
     "chi-chi-naruladeti-jivanamu": {
@@ -1948,96 +1948,96 @@
     },
     "chittaja-guruda-neeku": {
       "status": "finished",
-      "readerSha256": "215fb9dbea2da25f9722efd272835c994b206af2389abd3c235798036c93c987",
-      "definitionCount": 11,
+      "readerSha256": "1c52421d91eb90236fbd3fa90a15d6f84cb01654738d55d1acb4fb47fff56c96",
+      "definitionCount": 44,
       "reviewedAt": "2026-11-21"
     },
     "jayagalu-agali": {
       "status": "finished",
-      "readerSha256": "9e04ba16ade650aaa95913342d9bf699ca25a9ebfca676b2198b620ec386040f",
-      "definitionCount": 14,
+      "readerSha256": "c94a32ee156c1a7813c898b9a0191b2ad91b5078cc1386cd843938c98786d651",
+      "definitionCount": 55,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "pavamana-jagada-prana": {
       "status": "finished",
-      "readerSha256": "bcb3e4814bf2189e5609fb298c2b0a8b2e47e698dc8e9263caa65d2083e6171f",
-      "definitionCount": 27,
+      "readerSha256": "e39178cf7936a2a1fab7c19c96268dedd6fabb39c3253662c1c9957fda999f68",
+      "definitionCount": 121,
       "reviewedAt": "2026-11-21"
     },
     "samanyama": {
       "status": "finished",
-      "readerSha256": "e4c3e98655653d0a8ed0622e6c84f668bdaacf2b00f08143098a41fcd409a49b",
-      "definitionCount": 10,
+      "readerSha256": "63d514d0c64d0da81ebe9541e5a0a5b2a63ea1e86b77c3391d2941c8ecd95347",
+      "definitionCount": 59,
       "reviewedAt": "2026-11-21"
     },
     "javvadi-mettinadi": {
       "status": "finished",
-      "readerSha256": "96048985025b5809a279154b6164153e6d2bd662fd6406836be2a41e2dd6f0bb",
-      "definitionCount": 10,
+      "readerSha256": "48848c1fbe61177576e790ebe3c22ffb17024cab66a0c6e0facfdc25a96c285a",
+      "definitionCount": 36,
       "reviewedAt": "2026-11-21"
     },
     "vinnapalu-vinavale": {
       "status": "finished",
-      "readerSha256": "cd28505526ccc1cd26833121c406af8faf4f87eff020faaa8a1fafdec133a48a",
-      "definitionCount": 9,
+      "readerSha256": "ed3e574463f7512ad6682de1f54b4452973d0eee6c1031165887544177b32b31",
+      "definitionCount": 43,
       "reviewedAt": "2026-11-21"
     },
     "nagumogamutodi-o-narakesari": {
       "status": "finished",
-      "readerSha256": "ce76674afb7676ea8141e6eb934d2b97bde2f258e78f68ef409bc25ddcc1254e",
-      "definitionCount": 11,
+      "readerSha256": "83fd61fc3bc3c1c37b242ff7c8c88661776e954a94253b34052c1ffad982885d",
+      "definitionCount": 45,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
     },
     "modalondipe-ninage-gananatha": {
       "status": "finished",
-      "readerSha256": "4e5c1a17ceeca94656dffab4176575757373554980e8e3488de6194d79500ad3",
-      "definitionCount": 16,
+      "readerSha256": "010cdccff0cf75b1cae3cb42d38639ff37d8f761b2203d0818601e39ba7b0e60",
+      "definitionCount": 57,
       "reviewedAt": "2026-11-21"
     },
     "saranembe-vani": {
       "status": "finished",
-      "readerSha256": "7a2758b715f745e527b6035d2489d39031127de935fa3ef08ab2547c6dd7dd4b",
-      "definitionCount": 8,
+      "readerSha256": "c82298cf77764b0511e75dbcf5af6c7a0fb6e401c800261fa626ff583c215154",
+      "definitionCount": 23,
       "reviewedAt": "2026-11-21"
     },
     "sanjivana-giridhara": {
       "status": "finished",
-      "readerSha256": "5a12eeedf0502f2b10609ee0c7b9095943928b3108ac48f8e72c2c63e34dda00",
-      "definitionCount": 8,
+      "readerSha256": "2abdcf555c20497a4740defaf1bd67f0881ddb83f991afad55b381b1950aa010",
+      "definitionCount": 42,
       "reviewedAt": "2026-11-21"
     },
     "nodire-venkataramanana": {
       "status": "finished",
-      "readerSha256": "edd42f86ab83707cb510a3e751884d98953426a21823d785a33a1b223150decf",
-      "definitionCount": 18,
+      "readerSha256": "a501d693d78cc9d2362b92074a4488cc91bdf7198fc7ab41452f055e74b5a463",
+      "definitionCount": 60,
       "reviewedAt": "2026-11-21"
     },
     "barayya-ba-ba-bhakutara-priya": {
       "status": "finished",
-      "readerSha256": "5bec9808c624cc01e2725856334eca5798ea92ce1e09658ca3441ac30daa7478",
-      "definitionCount": 21,
+      "readerSha256": "b5808a456857d8144b5d4b4b6a1d0a66579dc4f09dbe89eea42092267c92e3f8",
+      "definitionCount": 152,
       "reviewedAt": "2026-11-21"
     },
     "namah-parvatipati": {
       "status": "finished",
-      "readerSha256": "119975dc4da25fd31bf23ddd8788c0745ea1dbf117d7d1ea62e57f6ee6408ef1",
-      "definitionCount": 17,
+      "readerSha256": "89e1a9968d1a602138b38d3cdaf12ea3f4a3829bfe6fd9157acf025393738ef5",
+      "definitionCount": 83,
       "reviewedAt": "2026-11-21"
     },
     "ghatikachaladi-ninta-shri-hanumanta": {
       "status": "finished",
-      "readerSha256": "6c48847e7a885d7bbd19e4c9aeee94aecf3677bebb9b426defef8210595af985",
-      "definitionCount": 15,
+      "readerSha256": "dc65b85c608755fae8c18d8e5aae238e59b697839d0d0128d93cf59bf9e30364",
+      "definitionCount": 72,
       "reviewedAt": "2026-11-21"
     },
     "sri-mahalakumi-deviye": {
       "status": "finished",
-      "readerSha256": "7e03d8e0b2645203554e3969e5b9d2b010fa6b16fd30f97b9fbac66a38e0816b",
-      "definitionCount": 15,
+      "readerSha256": "aea1b46f87e966d05d037243ae6eec9dea9c151df674f5f8fb958478b7308d55",
+      "definitionCount": 119,
       "reviewedAt": "2026-11-21"
     },
     "meruguvantidi-alamelumanga": {
@@ -2048,40 +2048,40 @@
     },
     "mangala-slokagalu": {
       "status": "finished",
-      "readerSha256": "2bc96ace635b3f009e7e2cf0aa17dc7d1955b132c63cbf860664a86bece4f7e0",
-      "definitionCount": 28,
+      "readerSha256": "04ef3999f9166289e62cdf9365edc1d7608a566734193f215d6c85d3f1f319da",
+      "definitionCount": 252,
       "reviewedAt": "2026-11-21"
     },
     "rajabidiyolaginda-kasturi-ranga": {
       "status": "finished",
-      "readerSha256": "2b766d42dc636569bbda8e01444d06745f4f1e24754f008cf9fbd936b24897d6",
-      "definitionCount": 22,
+      "readerSha256": "dca3a0c406000f93c5ba6654452a924e2e1cfa21d5e3882342af13140e40c33c",
+      "definitionCount": 112,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_integrated"
     },
     "tolu-tolu-tolu-ranga": {
       "status": "finished",
-      "readerSha256": "c3a2e17c987361fc8d268881a68bb9d3c1d57c887c76ef8b65ea42a0a2d4dfad",
-      "definitionCount": 19,
+      "readerSha256": "b5f832766bb5a7f29a48f4ac0694129429074e43e4f97011710b4e45eacd6f26",
+      "definitionCount": 104,
       "reviewedAt": "2026-11-21"
     },
     "durge-palise-mate": {
       "status": "finished",
-      "readerSha256": "390d294aac11e76455b9ab58dbd14cc2bb0f3474b76cc0e52583d26c132dea77",
-      "definitionCount": 18,
+      "readerSha256": "8144e2d24f3f0d686dc91807771e0195caac1e01f57c4252052e2de01e5ad66f",
+      "definitionCount": 82,
       "reviewedAt": "2026-11-21"
     },
     "ksirabdhisayana-sribhasya-mangala": {
       "status": "finished",
-      "readerSha256": "6b118e177b3d67dff50bedbabac4c58394eda79c8e6b6784d837b4d96fd0529a",
-      "definitionCount": 22,
+      "readerSha256": "6c76e63f59b176e9bf4551ccb9a3abb1349ab06affdecc6133224570648cce31",
+      "definitionCount": 108,
       "reviewedAt": "2026-11-21"
     },
     "hi-shivaa": {
       "status": "finished",
-      "readerSha256": "7838f3d32e986d8bf8b5d959022b975b9207ed3f9a857862568875e4ea2a7bc6",
-      "definitionCount": 36,
+      "readerSha256": "36fd96826f175447f354e5bd985c933475fe8fcbc8a27fb4a43520d71ce2e947",
+      "definitionCount": 194,
       "reviewedAt": "2026-11-21",
       "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
       "resolutionDisposition": "finished_unchanged"
@@ -2136,8 +2136,8 @@
     },
     "pandharinivasa-sakhya-panduranga": {
       "status": "finished",
-      "readerSha256": "a288a233e0148b59852445eaffbdc8f0f455a2e8da43fa4d176080fd1d264a3f",
-      "definitionCount": 20,
+      "readerSha256": "dda92aba346860ffcb40eb60b102d99ea2d8c1d3cbeaf87e83fb1ada21e0ba4b",
+      "definitionCount": 64,
       "reviewedAt": "2026-11-21"
     },
     "majha-bhav-tujhe-charani": {
@@ -2148,8 +2148,8 @@
     },
     "man-tu-jot-saroop-hai": {
       "status": "finished",
-      "readerSha256": "4588c1fb6ed4966ba26e7df55794144d57f89ffb8eedf87b41097c1201f63b3f",
-      "definitionCount": 9,
+      "readerSha256": "ffa69b08e25892ed6ddcc62261c689bc21d5762ac1d8b280da4419b1b66438b2",
+      "definitionCount": 74,
       "reviewedAt": "2026-11-21"
     },
     "rajas-sukumar": {
@@ -2172,8 +2172,8 @@
     },
     "hechi-dan-dega-deva": {
       "status": "finished",
-      "readerSha256": "d5e33a24c2214ed17100d649d018cdcb9a6f6aff2c6976e160020a02d134e87e",
-      "definitionCount": 10,
+      "readerSha256": "8b8bc4d2adc4b95c821a18b415b9bcf18f3e4cd1b58a0910ac13a7fb79a01fb9",
+      "definitionCount": 37,
       "reviewedAt": "2026-11-21"
     },
     "jethe-jato-tethe-tu-majha-sangati": {
@@ -2190,8 +2190,8 @@
     },
     "pandharicha-vas-chandrabhage-snan": {
       "status": "finished",
-      "readerSha256": "218cd54d5e4c1d8c8e945d3505066dbcaa37a60615734b435aeda39990a9c2f7",
-      "definitionCount": 14,
+      "readerSha256": "87fdc03fc77d6095b63483b08148195b4612943095eb417209540e163199c336",
+      "definitionCount": 59,
       "reviewedAt": "2026-11-21"
     },
     "mere-man-prem-lago-har-teer": {
@@ -2220,8 +2220,8 @@
     },
     "prabh-ju-to-kah-laj-hamari": {
       "status": "finished",
-      "readerSha256": "448d0f0952b1ad06fa95987b1e33f36df6c13b6049b410e24ed4237aa2f0d32c",
-      "definitionCount": 17,
+      "readerSha256": "c417032a7f3ee5bd1b5bde796af33702ddb50540ed37b2376c83ecb8c4eec97b",
+      "definitionCount": 54,
       "reviewedAt": "2026-11-21"
     },
     "amrutahuni-god-nam-tujhe-deva": {
@@ -2238,26 +2238,26 @@
     },
     "yei-ho-vitthale": {
       "status": "finished",
-      "readerSha256": "241324f7cd770cba85f458937c9708ef92f71bfcc74fef5334ffd286b674d9c4",
-      "definitionCount": 14,
+      "readerSha256": "b70c8578f27136b39aa865fb634562a289400dd506ce86e6676d83e23695bc18",
+      "definitionCount": 29,
       "reviewedAt": "2026-11-21"
     },
     "tum-karo-daya-mere-sai": {
       "status": "finished",
-      "readerSha256": "f591a0e5e9dad49f00f89fedf0d0649c47ef2fc0c4dd5009b868a5bd54c9cd9d",
-      "definitionCount": 27,
+      "readerSha256": "38e5cfcaedcfd2ad69c7c3c3eb690e4333742829d6c222451776da7a1b60bbce",
+      "definitionCount": 108,
       "reviewedAt": "2026-11-21"
     },
     "aakha-jeeva-visrai-mar-jaau": {
       "status": "finished",
-      "readerSha256": "a3732a4232f413800ef54964bce6da0051e7805b388a09d88e2e7542ae29211c",
-      "definitionCount": 19,
+      "readerSha256": "ca07178c48b391a29772cf591dc8d55599d87f4da93d39e7c79fedb1e02adb80",
+      "definitionCount": 92,
       "reviewedAt": "2026-11-21"
     },
     "vitthal-giti-gava": {
       "status": "finished",
-      "readerSha256": "8f8bc2dfc5eb75b043d16acbd5e6042e94be333c5709fa716982232b6d0556df",
-      "definitionCount": 15,
+      "readerSha256": "ab05adeb0e810bfa0f723e702ca39a84035f6378391aa8a1c67780391861fd35",
+      "definitionCount": 56,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
       "resolutionDisposition": "finished_unchanged"
@@ -2270,8 +2270,8 @@
     },
     "mo-kau-tar-le-rama": {
       "status": "finished",
-      "readerSha256": "11060d40a719ac4ae26bfd05986e51cea4101562237aed4d3373c19cb2103376",
-      "definitionCount": 37,
+      "readerSha256": "1b72b80127406bc65ac4d12fdd744164e15770981f335c303ecb0f8e675653f6",
+      "definitionCount": 241,
       "reviewedAt": "2026-11-21"
     },
     "bhor-bhai-din-chadh-gaya": {
@@ -2283,141 +2283,141 @@
     },
     "ambe-tu-hai-jagdambe-kali": {
       "status": "finished",
-      "readerSha256": "e3d185f4c715de30ed4ee556d12493f2d5cf9304c1e4a195871fc7bbfa685dc1",
-      "definitionCount": 20,
+      "readerSha256": "089717053a36077c75bb7767c95c58af481bd887a3512e06b19b3fc4e6fce77e",
+      "definitionCount": 134,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "bhagavati-stotram": {
       "status": "finished",
-      "readerSha256": "f51cf8dd549928bfcd34ef74a5ce14ef7167a134815fe3613f2f98e259cd3a2e",
-      "definitionCount": 21,
+      "readerSha256": "7a3869c3ace36e0f48e03fc7529bdcd81dd9b4a723f2aa2ed2af80a56f16e87c",
+      "definitionCount": 95,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "devi-dhyana": {
       "status": "finished",
-      "readerSha256": "c6ec5b10a0bead4e0989d993e8a33ea2f1a07fa7e562f78cef11233f168c3b5a",
-      "definitionCount": 6,
+      "readerSha256": "ef5528b8acd4141550cc413393f32ea7bd9d0a50b7afa34a7244188680737f70",
+      "definitionCount": 100,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "devi-kshama-prarthana": {
       "status": "finished",
-      "readerSha256": "33c2ced50bcb729fa16d3266895d9777710437348d05037cb357dc1ada159709",
-      "definitionCount": 23,
+      "readerSha256": "026d63ec297c93c2253309f1dc877033a4c7190b94d6942ae0ef6a7426c7f00e",
+      "definitionCount": 125,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "devimahatmya-chapter-12": {
       "status": "finished",
-      "readerSha256": "a77e51fe580f385b8ed2896cea06af28d1063a2fef0fd0b9ba85d0816e572e4f",
-      "definitionCount": 44,
+      "readerSha256": "113ed5227e91204aaf61c48b8fe38b0c9df51de6fa4f078e74a78ee4b9c92069",
+      "definitionCount": 546,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "durga-apaduddharashtakam": {
       "status": "finished",
-      "readerSha256": "b92721b9ad9c96a5fb29a8567499295079a1d62204b5c3be7f3c7bbff42ba594",
-      "definitionCount": 30,
+      "readerSha256": "03d786a64e2ac2d631685c9576a71ccd976645f41affd8ab34d6fd0308893916",
+      "definitionCount": 129,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "hamari-hai-jagdambe-maat": {
       "status": "finished",
-      "readerSha256": "3708291adaa7ccef86e04fb6434b5486b250024cb60b1ae2a0946b6d77bcd82d",
-      "definitionCount": 15,
+      "readerSha256": "e8a9aae6888f53133941391e74f99ea8be592c46be602affaadcd1ee851d6c16",
+      "definitionCount": 140,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "jab-karm-ka-khata-kholegi-maa": {
       "status": "finished",
-      "readerSha256": "8a0c93bdc54ef3a045300d4c581db3b2a09dd72094997600752c7aec1fdcd5ff",
-      "definitionCount": 25,
+      "readerSha256": "32bc5248e88959603dd869071eee278a887c749798543da74eb188550c13da90",
+      "definitionCount": 226,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "jai-jai-durge-aad-bhavani": {
       "status": "finished",
-      "readerSha256": "65bd8871af008d469f53912dae171fbfd9110316234786cdeb0a81acdb4d7282",
-      "definitionCount": 52,
+      "readerSha256": "29ffce5c850eaec3e2d26b4ed68b4b11a7a05526fccfc14dc296b2a7d7bb4db3",
+      "definitionCount": 432,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya": {
       "status": "finished",
-      "readerSha256": "fc5ddc8a6fa5e2af13373ba3705b6cabfdb81ace1664e3023c2a81943f2ae55c",
-      "definitionCount": 39,
+      "readerSha256": "1bef7d2d9544b206af4ab092b87522ef97b7905df029163d52927b05c2e8b98f",
+      "definitionCount": 261,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "maiya-ji-tum-badi-dayalu-ho": {
       "status": "finished",
-      "readerSha256": "61d7d4c1256a0687078bc1de5a060dc7e4bc956f1919382b548060fa6cfcc6a2",
-      "definitionCount": 28,
+      "readerSha256": "075e8257ce90be13e1430f16ac55cab8d4dc59d22e2dafbd30a074ac792498e5",
+      "definitionCount": 153,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "maiya-odh-chunariya-laal": {
       "status": "finished",
-      "readerSha256": "d39f0ad2fc108382f1f14bf8b01c3818aa2e45e283eb2f95aa758acaac05aba4",
-      "definitionCount": 17,
+      "readerSha256": "08f73f637dd542520899b33f2b7f1ceb487f2d490f94ad1e30c8d11992885af1",
+      "definitionCount": 101,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "meri-dati-daya-har-ik-te-kardi-ae": {
       "status": "finished",
-      "readerSha256": "a4e7585e91aff27045337b67c638280c4cbf08faa1c396418e9978831322c93a",
-      "definitionCount": 42,
+      "readerSha256": "99bc45b69679973fd33dff4b0db26fd66109287c14cf6aa308e6e1d5a8a3fd41",
+      "definitionCount": 367,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "narayani-stuti": {
       "status": "finished",
-      "readerSha256": "bd7e24dc90577d2a7ef4a6c5f9b2d941830c7d5c49e01a22da961b02de8b3a6f",
-      "definitionCount": 60,
+      "readerSha256": "5dda7bd1a51b94c06b32a91fa4d0375d4b11104654b95b2360774e82a61dc46f",
+      "definitionCount": 762,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "russiya-tu-sade-naal-kyon-meri-maaye": {
       "status": "finished",
-      "readerSha256": "7315c9f219e359242125ed2553170cfcfd903b45a288a6ca86a578c31f60217c",
-      "definitionCount": 22,
+      "readerSha256": "11d826687843cfe20429a6dd5409585a327cb32c270a3ac2a67cf643b3b62b9f",
+      "definitionCount": 172,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "siddha-kunjika-stotram": {
       "status": "finished",
-      "readerSha256": "1676092008bf752b7e78ce6b51ff7ea8e549eb5a3932fac118690e63c3838fa5",
-      "definitionCount": 47,
+      "readerSha256": "85d6ec9fad397f05d476e2f79f670e9ee2e7c40ab643a343f67676b64b9c75f3",
+      "definitionCount": 242,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "sohe-maa-chole-waliye": {
       "status": "finished",
-      "readerSha256": "505462498951256a8f22d01e3ec6c6debe4335282a37f59b9800c85e09a7ab45",
-      "definitionCount": 20,
+      "readerSha256": "6765f5d1c525f475544a27d263d7f1900a7200228f82272770f6e7ed38e81ec6",
+      "definitionCount": 124,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "ya-devi-sarvabhuteshu": {
       "status": "finished",
-      "readerSha256": "811a27d5351478b6c00c9d77211a0a82c5f46dfa8ca7788dd1da9146fab464c0",
-      "definitionCount": 15,
+      "readerSha256": "30933648d7c67fd0b3dd0ad570df6f390492e1345f03b9cdd777adfc3d48d9dc",
+      "definitionCount": 44,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "yeh-mantra-hai-maa-chamunda-ka": {
       "status": "finished",
-      "readerSha256": "8074404b92bbf9e29f166227078fb97ff24348a67b8f168ce4cb6ef901e89d57",
-      "definitionCount": 7,
+      "readerSha256": "128a083449baeac436bc8d14309a4690e1fe36ce153daa44893592902bd8cb18",
+      "definitionCount": 54,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "devi-aparadha-kshamapana-stotram": {
       "status": "finished",
-      "readerSha256": "b17424153bab36ded5fb45e19d9bcac769d1cb9162a509be7eca7c887a072152",
-      "definitionCount": 256,
+      "readerSha256": "c1fdbf71b276e36347d2dbf039721207b205f8b51b47ec453d7efe92195c6881",
+      "definitionCount": 333,
       "reviewedAt": "2026-11-22"
     }
   },

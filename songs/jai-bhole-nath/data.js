@@ -312,7 +312,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pārvatī jī ne ghor tapasyā karake jin trilocanī bhagavān śiv ko pāyā, sāre gaṇ, yakṣ, bhūt, pret jinake iśāroṁ par nācate haiṁ, vo triśūl aur ḍamarūdhārī bhagavān śiv apanī jaṭāoṁ meṁ gaṅgā ko dhāraṇ kie hue haiṁ aur apane bhaktoṁ par sadā amṛt barasāte rahate haiṁ.",
-    "english": "{7:The three-eyed }{8,9,10:Lord Shiva }{6:whom }{0,1,2:Parvati Ji }{11:attained }{5:having performed }{3,4:severe penance, }{17,19:at whose }{18:gestures }{12:all }{13:the ganas, }{14:yakshas, }{15:spirits, }{16:and phantoms }{20,21:dance, }{22:that }{23:trident- }{24:and }{25:damaru-bearing }{26,27:Lord Shiva }{33,34,35,36:holds }{31,32:the Ganga }{30:in }{28,29:his matted locks }{37:and }{41:perpetually }{43,44,45:showers }{42:nectar }{40:upon }{38,39:his devotees.}",
+    "english": "{7:The three-eyed }{8,9,10:Lord Shiva }{6:whom }{0,1,2:Parvati Ji }{11:attained }{5:having performed }{3:severe }{4:penance, }{19:at }{17:whose }{18:gestures }{12:all }{13:the ganas, }{14:yakshas, }{15:spirits, }{16:and phantoms }{20,21:dance, }{22:that }{23:trident- }{24:and }{25:damaru-bearing }{26,27:Lord Shiva }{33,34,35:holds }{31,32,36:the Ganga }{30:in }{28,29:his matted locks }{37:and }{41,44:perpetually }{43,45:showers }{42:nectar }{40:upon }{38:his }{39:devotees.}",
     "words": [
       {
         "roman": "pārvatī",
@@ -1127,7 +1127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ban ke triśūl maiṁ rahūṁ",
-    "english": "{0,1:Having become }{2:the trident, }{3:may I }{4:remain}",
+    "english": "{1:Having }{0:become }{2:the trident, }{3:may I }{4:remain}",
     "words": [
       {
         "roman": "ban",

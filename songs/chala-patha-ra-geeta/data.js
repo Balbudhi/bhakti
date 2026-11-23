@@ -288,7 +288,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Puṇyātmā, pāpātmā, rājā, raṅka, jōgī, bhōgī, sabhiē̃ nijara sīmita jībanayātrāku samāpta kari mahākāḷara ataḷagarbharē bilīna hōiyānti.",
-    "english": "{0:The virtuous, }{1:the sinful, }{2:the king, }{3:the pauper, }{4:the ascetic, }{5:the pleasure-seeker—}{6:all, }{10,11:having completed }{7:their own }{8:finite }{9:journey of life, }{14,15:dissolve }{13:into the bottomless womb }{12:of Mahākāla.}",
+    "english": "{0:The virtuous, }{1:the sinful, }{2:the king, }{3:the pauper, }{4:the ascetic, }{5:the pleasure-seeker—}{6:all, }{11:having }{10:completed }{7:their own }{8:finite }{9:journey of life, }{14,15:dissolve }{13:into the bottomless womb }{12:of Mahākāla.}",
     "words": [
       {
         "roman": "Puṇyātmā,",
@@ -604,7 +604,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nija pāī̃, saṁsāra pāī̃, samāja pāī̃ ēbaṁ guruṅka pāī̃.",
-    "english": "{0,1:For oneself, }{2,3:for saṃsāra, }{4,5:for society, }{6:and }{7,8:for the Guru.}",
+    "english": "{1:For }{0:oneself, }{2,3:for saṃsāra, }{5:for }{4:society, }{6:and }{7,8:for the Guru.}",
     "words": [
       {
         "roman": "Nija",
@@ -895,50 +895,56 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ସ୍ୱରଲିପି",
+        "text": "ସ୍ୱର",
         "wordIndices": [
           7
         ]
       },
       {
-        "text": "ମାତ୍ର,",
+        "text": "ଲିପି",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "ଯାହା",
+        "text": "ମାତ୍ର,",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "ଶାଶ୍ୱତ",
+        "text": "ଯାହା",
         "wordIndices": [
           10
         ]
       },
       {
-        "text": "ଏବଂ",
+        "text": "ଶାଶ୍ୱତ",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "ସର୍ବତ୍ର",
+        "text": "ଏବଂ",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "ଗୁଞ୍ଜରିତ।",
+        "text": "ସର୍ବତ୍ର",
         "wordIndices": [
           13
+        ]
+      },
+      {
+        "text": "ଗୁଞ୍ଜରିତ।",
+        "wordIndices": [
+          14
         ]
       }
     ],
     "roman": "Ēi calāpathara gīta sēi jībanara durlabha muhūrttaguḍikara svaralipi mātra, jāhā śāśvata ēbaṁ sarbatra guñjarita.",
-    "english": "{0:This }{2:song }{1:of the pathway }{8:is merely }{7:the musical notation }{3:of those }{5:rare }{6:moments }{4:of life, }{9:which }{10:are eternal }{11:and }{13:resounding }{12:everywhere.}",
+    "english": "{0:This }{2:song }{1:of the pathway }{9:is merely }{7:the musical }{8:notation }{6:of }{3:those }{5:rare }{6:moments }{4:of life, }{10:which }{11:are eternal }{12:and }{14:resounding }{13:everywhere.}",
     "words": [
       {
         "roman": "Ēi",
@@ -983,8 +989,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "svaralipi",
-        "gloss": "musical notation / musical score",
+        "roman": "svara",
+        "gloss": "musical note",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "lipi",
+        "gloss": "script; notation",
         "concept_key": "",
         "preserve_in_english": false
       },

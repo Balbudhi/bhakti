@@ -173,7 +173,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃ vaiṣṇo devī ke bhajan sunne ke lie hamārā cainal MH One śraddhā sabskrāib karẽ aur bel āikan dabākar pāẽ sabhī noṭīphikeśan.",
-    "english": "{5,6,7:To hear}{4: the devotional songs}{0,3: of Mother}{1: Vaishno}{2: Devi,}{13,14: subscribe}{8: to our}{9: channel}{10,11,12: MH One Shraddha}{15: and,}{18: pressing}{16: the bell}{17: icon,}{19: receive}{20: all}{21: notifications.}",
+    "english": "{5,6,7:To hear}{4: the devotional songs}{3: of }{0:Mother}{1: Vaishno}{2: Devi,}{13,14: subscribe}{8: to our}{9: channel}{10,11,12: MH One Shraddha}{15: and,}{18: pressing}{16: the bell}{17: icon,}{19: receive}{20: all}{21: notifications.}",
     "words": [
       {
         "roman": "mā̃",
@@ -382,7 +382,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaykārā merī śerā̃vālī maiyā jī kā, bol sacce darabār kī jay!",
-    "english": "{0:A victory proclamation}{1,5: of my}{4: revered}{2: lion-riding}{3: Mother—}{6:call out,}{10: victory}{7,9: to the true}{8: court!}",
+    "english": "{0:A victory proclamation}{5: of }{1:my}{4: revered}{2: lion-riding}{3: Mother—}{6:call out,}{10: victory}{7,9: to the true}{8: court!}",
     "words": [
       {
         "roman": "jaykārā",
@@ -1182,7 +1182,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tālī kī āvāj dhīmī hai, sabhī bhakt hāth ūpar uṭhākar apanī hājirī dẽge aur ū̃cā bolẽge mil kar, jay mātā dī!",
-    "english": "{2:The sound}{0,1: of clapping}{4: is}{3: faint;}{5: all}{6: devotees}{9: will raise}{7: hands}{8: up}{12: and mark}{10: their}{11: presence,}{13: and}{15: will call out}{14: loudly}{16,17: together,}{18: Victory}{19,20: to the Mother!}",
+    "english": "{2:The sound}{1: of }{0:clapping}{4: is}{3: faint;}{5: all}{6: devotees}{9: will raise}{7: hands}{8: up}{12: and mark}{10: their}{11: presence,}{13: and}{15: will call out}{14: loudly}{16,17: together,}{18: Victory}{19,20: to the Mother!}",
     "words": [
       {
         "roman": "tālī",
@@ -1909,7 +1909,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phir ambe mā̃ kā darśan hogā, āhõ kā inām\nkyõ nahī̃ rījhegī merī mā̃, kyõ nahī̃ mānegī merī mā̃",
-    "english": "{0:Then}{4: the sacred vision}{2,3: of Mother}{1: Amba}{5: will take place,}{7,8: the reward}{6: for sighs;}{9: why}{12: will my}{13: Mother}{10: not}{11: be pleased,}{14: why}{17: will my}{18: Mother}{15: not}{16: relent?}",
+    "english": "{0:Then}{4: the sacred vision}{3: of }{2:Mother}{1: Amba}{5: will take place,}{7: the }{8:reward}{6: for sighs;}{9: why}{12: will my}{13: Mother}{10: not}{11: be pleased,}{14: why}{17: will my}{18: Mother}{15: not}{16: relent?}",
     "words": [
       {
         "roman": "phir",
@@ -2797,7 +2797,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rone pe jag hãsatā hai par ro denā āsān nahī̃",
-    "english": "{2:The world}{3,4: laughs}{1: at}{0: weeping,}{5: but}{6,7: to weep}{9: is not}{8: easy.}",
+    "english": "{2:The world}{3,4: laughs}{1: at}{0: weeping,}{5: but}{7: to }{6:weep}{9: is not}{8: easy.}",
     "words": [
       {
         "roman": "rone",
@@ -2928,7 +2928,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rone se jag hãsatā hai par ro denā āsān nahī̃",
-    "english": "{2:The world}{3,4: laughs}{1: on account of}{0: weeping,}{5: but}{6,7: to weep}{9: is not}{8: easy.}",
+    "english": "{2:The world}{3,4: laughs}{1: on account of}{0: weeping,}{5: but}{7: to }{6:weep}{9: is not}{8: easy.}",
     "words": [
       {
         "roman": "rone",
@@ -3273,7 +3273,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rone pe jag hãsatā hai par ro denā āsān nahī̃",
-    "english": "{2:The world}{3,4: laughs}{1: at}{0: weeping,}{5: but}{6,7: to weep}{9: is not}{8: easy.}",
+    "english": "{2:The world}{3,4: laughs}{1: at}{0: weeping,}{5: but}{7: to }{6:weep}{9: is not}{8: easy.}",
     "words": [
       {
         "roman": "rone",
@@ -3881,7 +3881,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃ kī yād mẽ bahẽ jo ā̃sū vo ā̃sū kahalāe",
-    "english": "{6:The tears}{5: that}{4: flow}{2,3: in remembrance}{0,1: of Mother,}{7: those}{9: are called}{8: tears.}",
+    "english": "{6:The tears}{5: that}{4: flow}{3: in }{2:remembrance}{0,1: of Mother,}{7: those}{9: are called}{8: tears.}",
     "words": [
       {
         "roman": "mā̃",
@@ -4012,7 +4012,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃ kī yād mẽ bahẽ jo ā̃sū vo ā̃sū kahalāe",
-    "english": "{6:The tears}{5: that}{4: flow}{2,3: in remembrance}{0,1: of Mother,}{7: those}{9: are called}{8: tears.}",
+    "english": "{6:The tears}{5: that}{4: flow}{3: in }{2:remembrance}{0,1: of Mother,}{7: those}{9: are called}{8: tears.}",
     "words": [
       {
         "roman": "mā̃",
@@ -4734,7 +4734,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaykārā merī śerā̃vālī maiyā jī dā, bol sacce darabār kī jay!",
-    "english": "{0:A victory proclamation}{1,5: of my}{4: revered}{2: lion-riding}{3: Mother—}{6:call out,}{10: victory}{7,9: to the true}{8: court!}",
+    "english": "{0:A victory proclamation}{5: of }{1:my}{4: revered}{2: lion-riding}{3: Mother—}{6:call out,}{10: victory}{7,9: to the true}{8: court!}",
     "words": [
       {
         "roman": "jaykārā",

@@ -42,18 +42,28 @@ window.SONG_LINES = {
   "l001": {
     "source": "ಜಗದೋದ್ಧಾರನ",
     "roman": "jagadōddhārana",
-    "english": "{0:The uplifter of the world}—",
+    "english": "{1:The uplifter }{0:of the world}—",
     "words": [
       {
-        "roman": "jagadōddhārana",
-        "gloss": "the uplifter of the world; object of the next verb"
+        "roman": "jagad",
+        "gloss": "the world; jagat"
+      },
+      {
+        "roman": "ōddhārana",
+        "gloss": "the uplifter; uddhāra, object of the next verb"
       }
     ],
     "sourceWords": [
       {
-        "text": "ಜಗದೋದ್ಧಾರನ",
+        "text": "ಜಗ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ದೋದ್ಧಾರನ",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -82,15 +92,23 @@ window.SONG_LINES = {
   "l003": {
     "source": "ಜಗದೋದ್ಧಾರನ ಮಗನೆಂದು ತಿಳಿಯುತ",
     "roman": "jagadōddhārana maganendu tiḷiyuta",
-    "english": "{2:Thinking of} {0:the uplifter of the world} {1:as her son}—",
+    "english": "{4:Thinking of} {1:the uplifter }{0:of the world} {3:as }{2:her son}—",
     "words": [
       {
-        "roman": "jagadōddhārana",
-        "gloss": "the uplifter of the world"
+        "roman": "jagad",
+        "gloss": "the world; jagat"
       },
       {
-        "roman": "maganendu",
-        "gloss": "as her son; maganu + endu"
+        "roman": "ōddhārana",
+        "gloss": "the uplifter; uddhāra"
+      },
+      {
+        "roman": "magan",
+        "gloss": "[her] son; maganu"
+      },
+      {
+        "roman": "endu",
+        "gloss": "as; so thinking"
       },
       {
         "roman": "tiḷiyuta",
@@ -99,21 +117,33 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "ಜಗದೋದ್ಧಾರನ",
+        "text": "ಜಗ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಮಗನೆಂದು",
+        "text": "ದೋದ್ಧಾರನ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ತಿಳಿಯುತ",
+        "text": "ಮಗ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ನೆಂದು",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ತಿಳಿಯುತ",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -162,28 +192,48 @@ window.SONG_LINES = {
   "l005": {
     "source": "ಅಣೋರಣೀಯನ ಮಹತೋಮಹೀಯನ",
     "roman": "aṇōraṇīyana mahatōmahīyana",
-    "english": "{0:The one smaller than the small}, {1:greater than the great}—",
+    "english": "{1:The one smaller }{0:than the small}, {3:greater }{2:than the great}—",
     "words": [
       {
-        "roman": "aṇōraṇīyana",
-        "gloss": "the one smaller than the small"
+        "roman": "aṇōr",
+        "gloss": "than the small; aṇoḥ"
       },
       {
-        "roman": "mahatōmahīyana",
-        "gloss": "the one greater than the great"
+        "roman": "aṇīyana",
+        "gloss": "the one smaller; aṇīyas, comparative"
+      },
+      {
+        "roman": "mahatō",
+        "gloss": "than the great; mahataḥ"
+      },
+      {
+        "roman": "mahīyana",
+        "gloss": "the one greater; mahīyas, comparative"
       }
     ],
     "sourceWords": [
       {
-        "text": "ಅಣೋರಣೀಯನ",
+        "text": "ಅಣೋ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಮಹತೋಮಹೀಯನ",
+        "text": "ರಣೀಯನ",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ಮಹತೋ",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ಮಹೀಯನ",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -222,7 +272,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "ಪರಮ ಪುರುಷನ ಪರವಾಸುದೇವನ",
     "roman": "parama puruṣana paravāsudēvana",
-    "english": "{0:The supreme} {1:person}, {2:the transcendent Vāsudēva}—",
+    "english": "{0:The supreme} {1:person}, {2:the transcendent }{3:Vāsudēva}—",
     "words": [
       {
         "roman": "parama",
@@ -233,8 +283,12 @@ window.SONG_LINES = {
         "gloss": "person; object referring to the child"
       },
       {
-        "roman": "paravāsudēvana",
-        "gloss": "the transcendent Vāsudēva, Kṛṣṇa as the son of Vasudeva"
+        "roman": "para",
+        "gloss": "transcendent, supreme"
+      },
+      {
+        "roman": "vāsudēvana",
+        "gloss": "Vāsudēva, Kṛṣṇa as the son of Vasudeva: object"
       }
     ],
     "sourceWords": [
@@ -251,9 +305,15 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪರವಾಸುದೇವನ",
+        "text": "ಪರ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ವಾಸುದೇವನ",
+        "wordIndices": [
+          3
         ]
       }
     ],

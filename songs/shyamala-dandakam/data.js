@@ -38,18 +38,45 @@ window.SONG_LINES = {
   "l001": {
     "source": "माणिक्यवीणामुपलालयन्तीं",
     "roman": "māṇikyavīṇāmupalālayantīṃ",
-    "english": "{0:Gently playing a ruby vīṇā},",
+    "english": "{2:Gently playing }{0:a ruby }{1:vīṇā},",
     "words": [
       {
-        "roman": "māṇikyavīṇāmupalālayantīṃ",
-        "gloss": "gently playing a ruby vīṇā"
+        "roman": "māṇikya",
+        "gloss": "ruby"
+      },
+      {
+        "roman": "vīṇām",
+        "gloss": "vīṇā: accusative"
+      },
+      {
+        "roman": "upalālayantīṃ",
+        "gloss": "gently playing, caressing: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "माणिक्यवीणामुपलालयन्तीं",
+        "text": "माणिक्य",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "वीणा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मु",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "पलालयन्तीं",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -58,28 +85,72 @@ window.SONG_LINES = {
   "l002": {
     "source": "मदालसां मञ्जुलवाग्विलासाम्",
     "roman": "madālasāṃ mañjulavāgvilāsām",
-    "english": "{0:Languid with intoxication}, {1:whose play of speech is lovely},",
+    "english": "{1:Languid }{0:with intoxication}, {4:whose play }{3:of speech }{2:is lovely},",
     "words": [
       {
-        "roman": "madālasāṃ",
-        "gloss": "languid with intoxication"
+        "roman": "mad",
+        "gloss": "intoxication (mada)"
       },
       {
-        "roman": "mañjulavāgvilāsām",
-        "gloss": "whose play of speech is lovely"
+        "roman": "ālasāṃ",
+        "gloss": "languid: alasā, accusative"
+      },
+      {
+        "roman": "mañjula",
+        "gloss": "lovely"
+      },
+      {
+        "roman": "vāg",
+        "gloss": "speech (vāc)"
+      },
+      {
+        "roman": "vilāsām",
+        "gloss": "whose play is: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "मदालसां",
+        "text": "म",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मञ्जुलवाग्विलासाम्",
+        "text": "दा",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "लसां",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मञ्जुल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ग्वि",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "लासाम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -88,18 +159,55 @@ window.SONG_LINES = {
   "l003": {
     "source": "महेन्द्रनीलद्युतिकोमलाङ्गीं",
     "roman": "mahendranīladyutikomalāṅgīṃ",
-    "english": "{0:Whose tender limbs have the lustre of sapphire},",
+    "english": "{3:Whose }{2:tender }{3:limbs }{1:have the lustre }{0:of sapphire},",
     "words": [
       {
-        "roman": "mahendranīladyutikomalāṅgīṃ",
-        "gloss": "whose tender limbs have the lustre of sapphire"
+        "roman": "mahendranīla",
+        "gloss": "sapphire"
+      },
+      {
+        "roman": "dyuti",
+        "gloss": "lustre"
+      },
+      {
+        "roman": "komal",
+        "gloss": "tender (komala)"
+      },
+      {
+        "roman": "āṅgīṃ",
+        "gloss": "whose limbs are: aṅgī, accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "महेन्द्रनीलद्युतिकोमलाङ्गीं",
+        "text": "महेन्द्रनील",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "द्युति",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कोम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ङ्गीं",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -148,15 +256,19 @@ window.SONG_LINES = {
   "l005": {
     "source": "चतुर्भुजे चन्द्रकलावतंसे",
     "roman": "caturbhuje candrakalāvataṃse",
-    "english": "{0:O four-armed one}, {1:wearer of the crescent moon as a crest ornament},",
+    "english": "{0:O four-armed one}, {2:wearer }{1:of the crescent moon }{2:as a crest ornament},",
     "words": [
       {
         "roman": "caturbhuje",
         "gloss": "O four-armed one"
       },
       {
-        "roman": "candrakalāvataṃse",
-        "gloss": "O wearer of the crescent moon as a crest ornament"
+        "roman": "candrakal",
+        "gloss": "the crescent moon (candrakalā)"
+      },
+      {
+        "roman": "āvataṃse",
+        "gloss": "O you with a crest ornament: avataṃsa, vocative"
       }
     ],
     "sourceWords": [
@@ -167,9 +279,22 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "चन्द्रकलावतंसे",
+        "text": "चन्द्रक",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "वतंसे",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -178,28 +303,65 @@ window.SONG_LINES = {
   "l006": {
     "source": "कुचोन्नते कुङ्कुमरागशोणे",
     "roman": "kuconnate kuṅkumarāgaśoṇe",
-    "english": "{0:With high breasts}, {1:red with the colour of saffron},",
+    "english": "{1:With high }{0:breasts}, {4:red }{3:with the colour }{2:of saffron},",
     "words": [
       {
-        "roman": "kuconnate",
-        "gloss": "O you with high breasts"
+        "roman": "kuc",
+        "gloss": "breasts (kuca)"
       },
       {
-        "roman": "kuṅkumarāgaśoṇe",
-        "gloss": "O you red with the colour of saffron"
+        "roman": "onnate",
+        "gloss": "O you with high: unnatā, vocative; kuca + unnate"
+      },
+      {
+        "roman": "kuṅkuma",
+        "gloss": "saffron"
+      },
+      {
+        "roman": "rāga",
+        "gloss": "colour"
+      },
+      {
+        "roman": "śoṇe",
+        "gloss": "O red one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "कुचोन्नते",
+        "text": "कु",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कुङ्कुमरागशोणे",
+        "text": "चो",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "न्नते",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "कुङ्कुम",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "राग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "शोणे",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -208,18 +370,75 @@ window.SONG_LINES = {
   "l007": {
     "source": "पुण्ड्रेक्षुपाशाङ्कुशपुष्पबाणहस्ते",
     "roman": "puṇḍrekṣupāśāṅkuśapuṣpabāṇahaste",
-    "english": "{0:Whose hands hold a sugarcane bow, noose, goad and flower arrows},",
+    "english": "{5:Whose hands hold }{0:a sugarcane bow, }{1:noose, }{2:goad }{3:and flower }{4:arrows},",
     "words": [
       {
-        "roman": "puṇḍrekṣupāśāṅkuśapuṣpabāṇahaste",
-        "gloss": "O you whose hands hold a sugarcane bow, noose, goad and flower arrows"
+        "roman": "puṇḍrekṣu",
+        "gloss": "sugarcane; here the sugarcane bow"
+      },
+      {
+        "roman": "pāś",
+        "gloss": "noose (pāśa)"
+      },
+      {
+        "roman": "āṅkuśa",
+        "gloss": "goad (aṅkuśa)"
+      },
+      {
+        "roman": "puṣpa",
+        "gloss": "flower"
+      },
+      {
+        "roman": "bāṇa",
+        "gloss": "arrows"
+      },
+      {
+        "roman": "haste",
+        "gloss": "O you whose hands hold: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "पुण्ड्रेक्षुपाशाङ्कुशपुष्पबाणहस्ते",
+        "text": "पुण्ड्रेक्षु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "पा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "शा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ङ्कुश",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पुष्प",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "बाण",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हस्ते",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -258,23 +477,31 @@ window.SONG_LINES = {
   "l009": {
     "source": "माता मरकतश्यामा मातङ्गी मदशालिनी कुर्यात् कटाक्षं कल्याणी कदम्बवनवासिनी",
     "roman": "mātā marakataśyāmā mātaṅgī madaśālinī kuryāt kaṭākṣaṃ kalyāṇī kadambavanavāsinī",
-    "english": "May the {0:mother}, {1:dark green like emerald}, {2:Mātaṅgī}, {3:full of intoxication}, the {6:auspicious one}, {7:dweller in the kadamba forest}, {4:cast} {5:a sidelong glance}.",
+    "english": "{6:May }{0:the mother}, {2:dark green }{1:like emerald}, {3:Mātaṅgī}, {5:full }{4:of intoxication}, {8:the auspicious one}, {11:dweller in }{9:the kadamba }{10:forest}, {6:cast} {7:a sidelong glance}.",
     "words": [
       {
         "roman": "mātā",
         "gloss": "mother"
       },
       {
-        "roman": "marakataśyāmā",
-        "gloss": "dark green like emerald"
+        "roman": "marakata",
+        "gloss": "emerald"
+      },
+      {
+        "roman": "śyāmā",
+        "gloss": "dark green"
       },
       {
         "roman": "mātaṅgī",
         "gloss": "Mataṅga’s daughter, the goddess"
       },
       {
-        "roman": "madaśālinī",
-        "gloss": "full of intoxication"
+        "roman": "mada",
+        "gloss": "intoxication"
+      },
+      {
+        "roman": "śālinī",
+        "gloss": "full of"
       },
       {
         "roman": "kuryāt",
@@ -289,8 +516,16 @@ window.SONG_LINES = {
         "gloss": "the auspicious one"
       },
       {
-        "roman": "kadambavanavāsinī",
-        "gloss": "dweller in the kadamba forest"
+        "roman": "kadamba",
+        "gloss": "the kadamba tree"
+      },
+      {
+        "roman": "vana",
+        "gloss": "forest"
+      },
+      {
+        "roman": "vāsinī",
+        "gloss": "dweller in"
       }
     ],
     "sourceWords": [
@@ -301,45 +536,69 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मरकतश्यामा",
+        "text": "मरकत",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मातङ्गी",
+        "text": "श्यामा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "मदशालिनी",
+        "text": "मातङ्गी",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कुर्यात्",
+        "text": "मद",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "कटाक्षं",
+        "text": "शालिनी",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कल्याणी",
+        "text": "कुर्यात्",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "कदम्बवनवासिनी",
+        "text": "कटाक्षं",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "कल्याणी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कदम्ब",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "वन",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "वासिनी",
+        "wordIndices": [
+          11
         ]
       }
     ],
@@ -378,15 +637,23 @@ window.SONG_LINES = {
   "l011": {
     "source": "जय नीलोत्पलद्युते",
     "roman": "jaya nīlotpaladyute",
-    "english": "{0:Hail}, {1:you with the lustre of a blue water-lily}!",
+    "english": "{0:Hail}, {3:you with the lustre }{1:of a blue }{2:water-lily}!",
     "words": [
       {
         "roman": "jaya",
         "gloss": "hail"
       },
       {
-        "roman": "nīlotpaladyute",
-        "gloss": "O you with the lustre of a blue water-lily"
+        "roman": "nīl",
+        "gloss": "blue (nīla)"
+      },
+      {
+        "roman": "otpala",
+        "gloss": "water-lily (utpala; nīla + utpala)"
+      },
+      {
+        "roman": "dyute",
+        "gloss": "O you with the lustre: vocative"
       }
     ],
     "sourceWords": [
@@ -397,9 +664,28 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "नीलोत्पलद्युते",
+        "text": "नी",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्पल",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "द्युते",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -468,7 +754,7 @@ window.SONG_LINES = {
   "l014": {
     "source": "जय जननि सुधासमुद्रान्तरुद्यन्मणिद्वीपसंरूढबिल्वाटवीमध्यकल्पद्रुमाकल्पकादम्बकान्तारवासप्रिये कृत्तिवासःप्रिये सर्वलोकप्रिये",
     "roman": "jaya janani sudhāsamudrāntarudyanmaṇidvīpasaṃrūḍhabilvāṭavīmadhyakalpadrumākalpakādambakāntāravāsapriye kṛttivāsaḥpriye sarvalokapriye",
-    "english": "{0:Hail, }{1:O mother, }{2:who love dwelling in a kadamba forest adorned with wish-granting trees, within a bilva grove flourishing on the jewel-island rising in the nectar ocean, }{3:beloved of the skin-clad Śiva, }{4:beloved of all the worlds.}",
+    "english": "{0:Hail, }{1:O mother, }{17:who love }{16:dwelling }{14:in a kadamba }{15:forest }{13:adorned }{12:with wish-granting trees, }{11:within }{9:a bilva }{10:grove }{8:flourishing }{6:on the jewel-}{7:island }{5:rising }{4:in }{2:the nectar }{3:ocean, }{19:beloved }{18:of the skin-clad Śiva, }{22:beloved }{20:of all }{21:the worlds.}",
     "words": [
       {
         "roman": "jaya",
@@ -479,16 +765,88 @@ window.SONG_LINES = {
         "gloss": "O mother"
       },
       {
-        "roman": "sudhāsamudrāntarudyanmaṇidvīpasaṃrūḍhabilvāṭavīmadhyakalpadrumākalpakādambakāntāravāsapriye",
-        "gloss": "O you who love dwelling in a kadamba forest adorned with wish-granting trees, within a bilva grove flourishing on the jewel-island rising in the nectar ocean"
+        "roman": "sudhā",
+        "gloss": "nectar"
       },
       {
-        "roman": "kṛttivāsaḥpriye",
-        "gloss": "O beloved of the skin-clad Śiva"
+        "roman": "samudr",
+        "gloss": "ocean (samudra)"
       },
       {
-        "roman": "sarvalokapriye",
-        "gloss": "O beloved of all the worlds"
+        "roman": "āntar",
+        "gloss": "within (antar)"
+      },
+      {
+        "roman": "udyan",
+        "gloss": "rising (udyat)"
+      },
+      {
+        "roman": "maṇi",
+        "gloss": "jewel"
+      },
+      {
+        "roman": "dvīpa",
+        "gloss": "island"
+      },
+      {
+        "roman": "saṃrūḍha",
+        "gloss": "flourishing, grown up"
+      },
+      {
+        "roman": "bilv",
+        "gloss": "bilva trees (bilva)"
+      },
+      {
+        "roman": "āṭavī",
+        "gloss": "grove, forest (aṭavī)"
+      },
+      {
+        "roman": "madhya",
+        "gloss": "within, the middle"
+      },
+      {
+        "roman": "kalpadrum",
+        "gloss": "wish-granting trees (kalpadruma)"
+      },
+      {
+        "roman": "ākalpa",
+        "gloss": "adornment"
+      },
+      {
+        "roman": "kādamba",
+        "gloss": "of kadamba trees"
+      },
+      {
+        "roman": "kāntāra",
+        "gloss": "forest"
+      },
+      {
+        "roman": "vāsa",
+        "gloss": "dwelling"
+      },
+      {
+        "roman": "priye",
+        "gloss": "O you who love: vocative"
+      },
+      {
+        "roman": "kṛttivāsaḥ",
+        "gloss": "the skin-clad Śiva"
+      },
+      {
+        "roman": "priye",
+        "gloss": "O beloved: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "loka",
+        "gloss": "the worlds"
+      },
+      {
+        "roman": "priye",
+        "gloss": "O beloved: vocative"
       }
     ],
     "sourceWords": [
@@ -505,21 +863,164 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सुधासमुद्रान्तरुद्यन्मणिद्वीपसंरूढबिल्वाटवीमध्यकल्पद्रुमाकल्पकादम्बकान्तारवासप्रिये",
+        "text": "सुधा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कृत्तिवासःप्रिये",
+        "text": "समु",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सर्वलोकप्रिये",
+        "text": "द्रा",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "न्त",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "रु",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "द्य",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "न्म",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "णि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "द्वीप",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "संरूढ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "बि",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ल्वा",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "टवी",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "मध्य",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "कल्पद्रु",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "मा",
+        "wordIndices": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "कल्प",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "कादम्ब",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "कान्तार",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "वास",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "प्रिये",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "कृत्तिवासः",
+        "wordIndices": [
+          18
+        ]
+      },
+      {
+        "text": "प्रिये",
+        "wordIndices": [
+          19
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          20
+        ]
+      },
+      {
+        "text": "लोक",
+        "wordIndices": [
+          21
+        ]
+      },
+      {
+        "text": "प्रिये",
+        "wordIndices": [
+          22
         ]
       }
     ],
@@ -528,28 +1029,176 @@ window.SONG_LINES = {
   "l015": {
     "source": "सादरारब्धसङ्गीतसम्भावनासम्भ्रमालोलनीपस्रगाबद्धचूलीसनाथत्रिके सानुमत्पुत्रिके",
     "roman": "sādarārabdhasaṅgītasambhāvanāsambhramālolanīpasragābaddhacūlīsanāthatrike sānumatputrike",
-    "english": "{0:Whose back is graced by a hair-knot bound with a kadamba garland swaying with the excitement of a respectfully begun musical offering}, {1:daughter of the mountain},",
+    "english": "{11:Whose back }{10:is graced }{9:by a hair-knot }{8:bound }{6:with a kadamba }{7:garland }{5:swaying }{4:with the excitement }{0:of a respectfully }{1:begun }{2:musical }{3:offering}, {13:daughter }{12:of the mountain},",
     "words": [
       {
-        "roman": "sādarārabdhasaṅgītasambhāvanāsambhramālolanīpasragābaddhacūlīsanāthatrike",
-        "gloss": "O you whose back is graced by a hair-knot bound with a kadamba garland swaying with the excitement of a respectfully begun musical offering"
+        "roman": "sādar",
+        "gloss": "respectfully (sādara)"
       },
       {
-        "roman": "sānumatputrike",
-        "gloss": "O daughter of the mountain"
+        "roman": "ārabdha",
+        "gloss": "begun"
+      },
+      {
+        "roman": "saṅgīta",
+        "gloss": "music"
+      },
+      {
+        "roman": "sambhāvanā",
+        "gloss": "honouring; an offering of respect"
+      },
+      {
+        "roman": "sambhram",
+        "gloss": "excitement (sambhrama)"
+      },
+      {
+        "roman": "ālola",
+        "gloss": "swaying"
+      },
+      {
+        "roman": "nīpa",
+        "gloss": "the kadamba tree"
+      },
+      {
+        "roman": "srag",
+        "gloss": "garland (sraj)"
+      },
+      {
+        "roman": "ābaddha",
+        "gloss": "bound"
+      },
+      {
+        "roman": "cūlī",
+        "gloss": "hair-knot"
+      },
+      {
+        "roman": "sanātha",
+        "gloss": "graced by, furnished with"
+      },
+      {
+        "roman": "trike",
+        "gloss": "O you whose back: vocative"
+      },
+      {
+        "roman": "sānumat",
+        "gloss": "the mountain, “having peaks”"
+      },
+      {
+        "roman": "putrike",
+        "gloss": "O daughter: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सादरारब्धसङ्गीतसम्भावनासम्भ्रमालोलनीपस्रगाबद्धचूलीसनाथत्रिके",
+        "text": "साद",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सानुमत्पुत्रिके",
+        "text": "रा",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "रब्ध",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "सङ्गीत",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सम्भावना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सम्भ्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "लोल",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "नीप",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "स्र",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "गा",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "बद्ध",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "चूली",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "सनाथ",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "त्रिके",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सानुम",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "त्पु",
+        "wordIndices": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "त्रिके",
+        "wordIndices": [
+          13
         ]
       }
     ],
@@ -558,18 +1207,142 @@ window.SONG_LINES = {
   "l016": {
     "source": "शेखरीभूतशीतांशुरेखामयूखावलीबद्धसुस्निग्धनीलालकश्रेणिशृङ्गारिते",
     "roman": "śekharībhūtaśītāṃśurekhāmayūkhāvalībaddhasusnigdhanīlālakaśreṇiśṛṅgārite",
-    "english": "{0:Adorned with rows of glossy dark curls bound by the rays of the crescent moon made your crest},",
+    "english": "{11:Adorned }{10:with rows }{7:of glossy }{8:dark }{9:curls }{6:bound }{4,5:by the rays }{2,3:of the crescent moon }{1:made }{0:your crest},",
     "words": [
       {
-        "roman": "śekharībhūtaśītāṃśurekhāmayūkhāvalībaddhasusnigdhanīlālakaśreṇiśṛṅgārite",
-        "gloss": "O you adorned with rows of glossy dark curls bound by the rays of the crescent moon made your crest"
+        "roman": "śekharī",
+        "gloss": "into a crest (śekhara)"
+      },
+      {
+        "roman": "bhūta",
+        "gloss": "become, made"
+      },
+      {
+        "roman": "śītāṃśu",
+        "gloss": "the cool-rayed moon"
+      },
+      {
+        "roman": "rekhā",
+        "gloss": "streak; with “moon”, the crescent"
+      },
+      {
+        "roman": "mayūkh",
+        "gloss": "rays (mayūkha)"
+      },
+      {
+        "roman": "āvalī",
+        "gloss": "row, stream"
+      },
+      {
+        "roman": "baddha",
+        "gloss": "bound"
+      },
+      {
+        "roman": "susnigdha",
+        "gloss": "very glossy"
+      },
+      {
+        "roman": "nīl",
+        "gloss": "dark (nīla)"
+      },
+      {
+        "roman": "ālaka",
+        "gloss": "curls (alaka)"
+      },
+      {
+        "roman": "śreṇi",
+        "gloss": "rows"
+      },
+      {
+        "roman": "śṛṅgārite",
+        "gloss": "O adorned one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "शेखरीभूतशीतांशुरेखामयूखावलीबद्धसुस्निग्धनीलालकश्रेणिशृङ्गारिते",
+        "text": "शेखरी",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "भूत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "शीतांशु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रेखा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मयू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "खा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "वली",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "बद्ध",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सुस्निग्ध",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "नी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "लक",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "श्रेणि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "शृङ्गारिते",
+        "wordIndices": [
+          11
         ]
       }
     ],
@@ -578,18 +1351,28 @@ window.SONG_LINES = {
   "l017": {
     "source": "लोकसम्भाविते",
     "roman": "lokasambhāvite",
-    "english": "{0:Honoured by the world},",
+    "english": "{1:Honoured }{0:by the world},",
     "words": [
       {
-        "roman": "lokasambhāvite",
-        "gloss": "O you honoured by the world"
+        "roman": "loka",
+        "gloss": "the world"
+      },
+      {
+        "roman": "sambhāvite",
+        "gloss": "O honoured one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "लोकसम्भाविते",
+        "text": "लोक",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "सम्भाविते",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -598,18 +1381,125 @@ window.SONG_LINES = {
   "l018": {
     "source": "कामलीलाधनुःसन्निभभ्रूलतापुष्पसन्दोहसन्देहकृल्लोचने",
     "roman": "kāmalīlādhanuḥsannibhabhrūlatāpuṣpasandohasandehakṛllocane",
-    "english": "{0:Whose eyes seem to be a cluster of flowers on the creepers of your brows, which resemble Love’s playful bow},",
+    "english": "{10:Whose eyes }{8,9:seem to be }{7:a cluster }{6:of flowers }{5:on the creepers }{4:of your brows, }{3:which resemble }{0:Love’s }{1:playful }{2:bow},",
     "words": [
       {
-        "roman": "kāmalīlādhanuḥsannibhabhrūlatāpuṣpasandohasandehakṛllocane",
-        "gloss": "O you whose eyes seem to be a cluster of flowers on the creepers of your brows, which resemble Love’s playful bow"
+        "roman": "kāma",
+        "gloss": "Love, the god Kāma"
+      },
+      {
+        "roman": "līlā",
+        "gloss": "play; playful"
+      },
+      {
+        "roman": "dhanuḥ",
+        "gloss": "bow (dhanus)"
+      },
+      {
+        "roman": "sannibha",
+        "gloss": "resembling"
+      },
+      {
+        "roman": "bhrū",
+        "gloss": "brows"
+      },
+      {
+        "roman": "latā",
+        "gloss": "creepers"
+      },
+      {
+        "roman": "puṣpa",
+        "gloss": "flowers"
+      },
+      {
+        "roman": "sandoha",
+        "gloss": "cluster, mass"
+      },
+      {
+        "roman": "sandeha",
+        "gloss": "doubt; the impression of being"
+      },
+      {
+        "roman": "kṛl",
+        "gloss": "causing (kṛt)"
+      },
+      {
+        "roman": "locane",
+        "gloss": "O you whose eyes: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "कामलीलाधनुःसन्निभभ्रूलतापुष्पसन्दोहसन्देहकृल्लोचने",
+        "text": "काम",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "लीला",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "धनुः",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सन्निभ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भ्रू",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लता",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पुष्प",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सन्दोह",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सन्देह",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कृ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ल्लो",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "चने",
+        "wordIndices": [
+          10
         ]
       }
     ],
@@ -618,18 +1508,45 @@ window.SONG_LINES = {
   "l019": {
     "source": "वाक्सुधासेचने",
     "roman": "vāksudhāsecane",
-    "english": "{0:You who shower the nectar of speech},",
+    "english": "{2:You who shower }{1:the nectar }{0:of speech},",
     "words": [
       {
-        "roman": "vāksudhāsecane",
-        "gloss": "O you who shower the nectar of speech"
+        "roman": "vāk",
+        "gloss": "speech (vāc)"
+      },
+      {
+        "roman": "sudhā",
+        "gloss": "nectar"
+      },
+      {
+        "roman": "secane",
+        "gloss": "O you who shower: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "वाक्सुधासेचने",
+        "text": "वा",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "क्सु",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "धा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सेचने",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -638,18 +1555,75 @@ window.SONG_LINES = {
   "l020": {
     "source": "चारुगोरोचनापङ्ककेलीललामाभिरामे",
     "roman": "cārugorocanāpaṅkakelīlalāmābhirāme",
-    "english": "{0:Lovely with a playfully drawn forehead mark of beautiful yellow gorocanā paste},",
+    "english": "{5:Lovely with }{3:a playfully drawn }{4:forehead mark }{0:of beautiful }{1:yellow gorocanā }{2:paste},",
     "words": [
       {
-        "roman": "cārugorocanāpaṅkakelīlalāmābhirāme",
-        "gloss": "O you lovely with a playfully drawn forehead mark of beautiful yellow gorocanā paste"
+        "roman": "cāru",
+        "gloss": "beautiful"
+      },
+      {
+        "roman": "gorocanā",
+        "gloss": "gorocanā, a yellow pigment"
+      },
+      {
+        "roman": "paṅka",
+        "gloss": "paste"
+      },
+      {
+        "roman": "kelī",
+        "gloss": "play; playfully drawn"
+      },
+      {
+        "roman": "lalām",
+        "gloss": "forehead mark (lalāma)"
+      },
+      {
+        "roman": "ābhirāme",
+        "gloss": "O lovely one: abhirāmā, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "चारुगोरोचनापङ्ककेलीललामाभिरामे",
+        "text": "चारु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "गोरोचना",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "पङ्क",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "केली",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लला",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "भिरामे",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -688,18 +1662,266 @@ window.SONG_LINES = {
   "l022": {
     "source": "प्रोल्लसद्वालिकामौक्तिकश्रेणिकाचन्द्रिकामण्डलोद्भासिगण्डस्थलन्यस्तकस्तूरिकापत्ररेखासमुद्भूतसौरभ्यसम्भ्रान्तभृङ्गाङ्गनागीतसान्द्रीभवन्मन्द्रतन्त्रीस्वरे",
     "roman": "prollasadvālikāmauktikaśreṇikācandrikāmaṇḍalodbhāsigaṇḍasthalanyastakastūrikāpatrarekhāsamudbhūtasaurabhyasambhrāntabhṛṅgāṅganāgītasāndrībhavanmandratantrīsvare",
-    "english": "{0:Whose low vīṇā-string note grows fuller with the songs of female bees excited by the scent from musk-leaf designs on your cheeks, luminous in the moonlight of strings of pearls in your shining earrings},",
+    "english": "{22:Whose }{20:low }{21:vīṇā-string }{22:note }{19:grows }{18:fuller }{17:with the songs }{16:of female }{15:bees }{14:excited }{13:by the scent }{12:from }{9:musk-}{10:leaf }{11:designs }{8:on }{7:your cheeks, }{6:luminous }{4,5:in the moonlight }{3:of strings }{2:of pearls }{0:in your shining }{1:earrings},",
     "words": [
       {
-        "roman": "prollasadvālikāmauktikaśreṇikācandrikāmaṇḍalodbhāsigaṇḍasthalanyastakastūrikāpatrarekhāsamudbhūtasaurabhyasambhrāntabhṛṅgāṅganāgītasāndrībhavanmandratantrīsvare",
-        "gloss": "O you whose low vīṇā-string note grows fuller with the songs of female bees excited by the scent from musk-leaf designs on your cheeks, luminous in the moonlight of strings of pearls in your shining earrings"
+        "roman": "prollasad",
+        "gloss": "shining (prollasat)"
+      },
+      {
+        "roman": "vālikā",
+        "gloss": "earrings"
+      },
+      {
+        "roman": "mauktika",
+        "gloss": "pearls"
+      },
+      {
+        "roman": "śreṇikā",
+        "gloss": "strings, rows"
+      },
+      {
+        "roman": "candrikā",
+        "gloss": "moonlight"
+      },
+      {
+        "roman": "maṇḍal",
+        "gloss": "circle, orb (maṇḍala)"
+      },
+      {
+        "roman": "odbhāsi",
+        "gloss": "luminous, shining forth (udbhāsin)"
+      },
+      {
+        "roman": "gaṇḍasthala",
+        "gloss": "cheeks"
+      },
+      {
+        "roman": "nyasta",
+        "gloss": "placed on"
+      },
+      {
+        "roman": "kastūrikā",
+        "gloss": "musk"
+      },
+      {
+        "roman": "patra",
+        "gloss": "leaf"
+      },
+      {
+        "roman": "rekhā",
+        "gloss": "lines, designs"
+      },
+      {
+        "roman": "samudbhūta",
+        "gloss": "arisen from"
+      },
+      {
+        "roman": "saurabhya",
+        "gloss": "scent"
+      },
+      {
+        "roman": "sambhrānta",
+        "gloss": "excited"
+      },
+      {
+        "roman": "bhṛṅg",
+        "gloss": "bees (bhṛṅga)"
+      },
+      {
+        "roman": "āṅganā",
+        "gloss": "females, women (aṅganā)"
+      },
+      {
+        "roman": "gīta",
+        "gloss": "songs"
+      },
+      {
+        "roman": "sāndrī",
+        "gloss": "full, dense (sāndra)"
+      },
+      {
+        "roman": "bhavan",
+        "gloss": "becoming (bhavat)"
+      },
+      {
+        "roman": "mandra",
+        "gloss": "low in pitch"
+      },
+      {
+        "roman": "tantrī",
+        "gloss": "vīṇā-string"
+      },
+      {
+        "roman": "svare",
+        "gloss": "O you whose note: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "प्रोल्लसद्वालिकामौक्तिकश्रेणिकाचन्द्रिकामण्डलोद्भासिगण्डस्थलन्यस्तकस्तूरिकापत्ररेखासमुद्भूतसौरभ्यसम्भ्रान्तभृङ्गाङ्गनागीतसान्द्रीभवन्मन्द्रतन्त्रीस्वरे",
+        "text": "प्रोल्लस",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "द्वा",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "लिका",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मौक्तिक",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "श्रेणिका",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चन्द्रिका",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "मण्ड",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "द्भासि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "गण्डस्थल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "न्यस्त",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "कस्तूरिका",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "पत्र",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रेखा",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "समुद्भूत",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "सौरभ्य",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "सम्भ्रान्त",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "भृ",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "ङ्गा",
+        "wordIndices": [
+          15,
+          16
+        ]
+      },
+      {
+        "text": "ङ्गना",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "गीत",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "सान्द्री",
+        "wordIndices": [
+          18
+        ]
+      },
+      {
+        "text": "भव",
+        "wordIndices": [
+          19
+        ]
+      },
+      {
+        "text": "न्म",
+        "wordIndices": [
+          19,
+          20
+        ]
+      },
+      {
+        "text": "न्द्र",
+        "wordIndices": [
+          20
+        ]
+      },
+      {
+        "text": "तन्त्री",
+        "wordIndices": [
+          21
+        ]
+      },
+      {
+        "text": "स्वरे",
+        "wordIndices": [
+          22
         ]
       }
     ],
@@ -738,18 +1960,132 @@ window.SONG_LINES = {
   "l024": {
     "source": "वल्लकीवादनप्रक्रियालोलतालीदलाबद्धताटङ्कभूषाविशेषान्विते",
     "roman": "vallakīvādanaprakriyālolatālīdalābaddhatāṭaṅkabhūṣāviśeṣānvite",
-    "english": "{0:Adorned with distinctive earrings fastened with palm leaves that sway as you play the vīṇā},",
+    "english": "{10:Adorned with }{9:distinctive }{7,8:earrings }{6:fastened }{4:with palm }{5:leaves }{3:that sway }{2:as you }{1:play }{0:the vīṇā},",
     "words": [
       {
-        "roman": "vallakīvādanaprakriyālolatālīdalābaddhatāṭaṅkabhūṣāviśeṣānvite",
-        "gloss": "O you adorned with distinctive earrings fastened with palm leaves that sway as you play the vīṇā"
+        "roman": "vallakī",
+        "gloss": "the vīṇā"
+      },
+      {
+        "roman": "vādana",
+        "gloss": "playing"
+      },
+      {
+        "roman": "prakriyā",
+        "gloss": "the process, manner"
+      },
+      {
+        "roman": "lola",
+        "gloss": "swaying"
+      },
+      {
+        "roman": "tālī",
+        "gloss": "palm"
+      },
+      {
+        "roman": "dal",
+        "gloss": "leaves (dala)"
+      },
+      {
+        "roman": "ābaddha",
+        "gloss": "fastened"
+      },
+      {
+        "roman": "tāṭaṅka",
+        "gloss": "earrings"
+      },
+      {
+        "roman": "bhūṣā",
+        "gloss": "ornament"
+      },
+      {
+        "roman": "viśeṣ",
+        "gloss": "distinctive, special (viśeṣa)"
+      },
+      {
+        "roman": "ānvite",
+        "gloss": "O you endowed with: anvitā, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "वल्लकीवादनप्रक्रियालोलतालीदलाबद्धताटङ्कभूषाविशेषान्विते",
+        "text": "वल्लकी",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "वादन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "प्रक्रिया",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लोल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ताली",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "द",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "बद्ध",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ताटङ्क",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "भूषा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "विशे",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "षा",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "न्विते",
+        "wordIndices": [
+          10
         ]
       }
     ],
@@ -758,18 +2094,28 @@ window.SONG_LINES = {
   "l025": {
     "source": "सिद्धसम्मानिते",
     "roman": "siddhasammānite",
-    "english": "{0:Honoured by perfected beings},",
+    "english": "{1:Honoured }{0:by perfected beings},",
     "words": [
       {
-        "roman": "siddhasammānite",
-        "gloss": "O you honoured by perfected beings"
+        "roman": "siddha",
+        "gloss": "perfected beings"
+      },
+      {
+        "roman": "sammānite",
+        "gloss": "O honoured one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सिद्धसम्मानिते",
+        "text": "सिद्ध",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "सम्मानिते",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -778,11 +2124,63 @@ window.SONG_LINES = {
   "l026": {
     "source": "दिव्याहालामदोद्वेलहेलालसच्चक्षुरान्दोलनश्रीसमाक्षिप्तकर्णैकनीलोत्पले श्यामले",
     "roman": "divyāhālāmadodvelahelālasaccakṣurāndolanaśrīsamākṣiptakarṇaikanīlotpale śyāmale",
-    "english": "{0:Whose blue water-lily at one ear is outshone by the beauty of eyes moving languidly with the unrestrained playfulness of intoxication from divine wine}, {1:Śyāmalā},",
+    "english": "{13:Whose }{12:blue }{13:water-lily }{11:at one }{10:ear }{9:is outshone }{8:by the beauty }{6:of eyes }{7:moving }{5:languidly }{3:with the unrestrained }{4:playfulness }{2:of intoxication }{0:from divine }{1:wine}, {14:Śyāmalā},",
     "words": [
       {
-        "roman": "divyāhālāmadodvelahelālasaccakṣurāndolanaśrīsamākṣiptakarṇaikanīlotpale",
-        "gloss": "O you whose blue water-lily at one ear is outshone by the beauty of eyes moving languidly with the unrestrained playfulness of intoxication from divine wine"
+        "roman": "divyā",
+        "gloss": "divine"
+      },
+      {
+        "roman": "hālā",
+        "gloss": "wine"
+      },
+      {
+        "roman": "mad",
+        "gloss": "intoxication (mada)"
+      },
+      {
+        "roman": "odvela",
+        "gloss": "unrestrained, overflowing (udvela)"
+      },
+      {
+        "roman": "helā",
+        "gloss": "playfulness"
+      },
+      {
+        "roman": "lasac",
+        "gloss": "playing, moving with languid charm (lasat)"
+      },
+      {
+        "roman": "cakṣur",
+        "gloss": "eyes (cakṣus)"
+      },
+      {
+        "roman": "āndolana",
+        "gloss": "swaying, moving"
+      },
+      {
+        "roman": "śrī",
+        "gloss": "beauty"
+      },
+      {
+        "roman": "samākṣipta",
+        "gloss": "outshone, cast aside"
+      },
+      {
+        "roman": "karṇ",
+        "gloss": "ear (karṇa)"
+      },
+      {
+        "roman": "aika",
+        "gloss": "one (eka; karṇa + eka)"
+      },
+      {
+        "roman": "nīl",
+        "gloss": "blue (nīla)"
+      },
+      {
+        "roman": "otpale",
+        "gloss": "O you whose water-lily: utpala, vocative"
       },
       {
         "roman": "śyāmale",
@@ -791,15 +2189,128 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "दिव्याहालामदोद्वेलहेलालसच्चक्षुरान्दोलनश्रीसमाक्षिप्तकर्णैकनीलोत्पले",
+        "text": "दिव्या",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्यामले",
+        "text": "हाला",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "म",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "द्वेल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हेला",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "च्च",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "क्षु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "न्दोलन",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "समाक्षिप्त",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "क",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "र्णै",
+        "wordIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "क",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "नी",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "त्पले",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "श्यामले",
+        "wordIndices": [
+          14
         ]
       }
     ],
@@ -808,28 +2319,92 @@ window.SONG_LINES = {
   "l027": {
     "source": "पूरिताशेषलोकाभिवाञ्छाफले श्रीफले",
     "roman": "pūritāśeṣalokābhivāñchāphale śrīphale",
-    "english": "{0:Fulfiller of the desires of every world}, {1:whose fruit is prosperity},",
+    "english": "{0,4:Fulfiller }{3:of the desires }{1:of every }{2:world}, {6:whose fruit }{5:is prosperity},",
     "words": [
       {
-        "roman": "pūritāśeṣalokābhivāñchāphale",
-        "gloss": "O fulfiller of the desires of every world"
+        "roman": "pūrit",
+        "gloss": "fulfilled (pūrita)"
       },
       {
-        "roman": "śrīphale",
-        "gloss": "O you whose fruit is prosperity"
+        "roman": "āśeṣa",
+        "gloss": "every, without remainder (aśeṣa)"
+      },
+      {
+        "roman": "lok",
+        "gloss": "world (loka)"
+      },
+      {
+        "roman": "ābhivāñchā",
+        "gloss": "desires (abhivāñchā)"
+      },
+      {
+        "roman": "phale",
+        "gloss": "O you who give the fruit: vocative"
+      },
+      {
+        "roman": "śrī",
+        "gloss": "prosperity"
+      },
+      {
+        "roman": "phale",
+        "gloss": "O you whose fruit: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "पूरिताशेषलोकाभिवाञ्छाफले",
+        "text": "पूरि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्रीफले",
+        "text": "ता",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "शेष",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "भिवाञ्छा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "फले",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "फले",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -838,18 +2413,139 @@ window.SONG_LINES = {
   "l028": {
     "source": "स्वेदबिन्दूल्लसत्फाललावण्यनिःष्यन्दसन्दोहसन्देहकृन्नासिकामौक्तिके",
     "roman": "svedabindūllasatphālalāvaṇyaniḥṣyandasandohasandehakṛnnāsikāmauktike",
-    "english": "{0:Whose nose-pearl seems a gathered drop of beauty flowing from your forehead shining with beads of sweat},",
+    "english": "{10:Whose }{9:nose-}{10:pearl }{7,8:seems }{6:a gathered drop }{4:of beauty }{5:flowing }{3:from your forehead }{2:shining }{1:with beads }{0:of sweat},",
     "words": [
       {
-        "roman": "svedabindūllasatphālalāvaṇyaniḥṣyandasandohasandehakṛnnāsikāmauktike",
-        "gloss": "O you whose nose-pearl seems a gathered drop of beauty flowing from your forehead shining with beads of sweat"
+        "roman": "sveda",
+        "gloss": "sweat"
+      },
+      {
+        "roman": "bind",
+        "gloss": "beads, drops (bindu)"
+      },
+      {
+        "roman": "ūllasat",
+        "gloss": "shining (ullasat; bindu + ullasat)"
+      },
+      {
+        "roman": "phāla",
+        "gloss": "forehead"
+      },
+      {
+        "roman": "lāvaṇya",
+        "gloss": "beauty"
+      },
+      {
+        "roman": "niḥṣyanda",
+        "gloss": "flow"
+      },
+      {
+        "roman": "sandoha",
+        "gloss": "gathered mass"
+      },
+      {
+        "roman": "sandeha",
+        "gloss": "doubt; the impression of being"
+      },
+      {
+        "roman": "kṛn",
+        "gloss": "causing (kṛt)"
+      },
+      {
+        "roman": "nāsikā",
+        "gloss": "nose"
+      },
+      {
+        "roman": "mauktike",
+        "gloss": "O you whose pearl: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "स्वेदबिन्दूल्लसत्फाललावण्यनिःष्यन्दसन्दोहसन्देहकृन्नासिकामौक्तिके",
+        "text": "स्वेद",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "बि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न्दू",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ल्लस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्फा",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लावण्य",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "निःष्यन्द",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सन्दोह",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सन्देह",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कृ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "न्ना",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "सिका",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मौक्तिके",
+        "wordIndices": [
+          10
         ]
       }
     ],
@@ -858,11 +2554,19 @@ window.SONG_LINES = {
   "l029": {
     "source": "सर्वमन्त्रात्मिके कालिके",
     "roman": "sarvamantrātmike kālike",
-    "english": "{0:Embodiment of all sacred formulas}, {1:Kālī},",
+    "english": "{2:Embodiment }{0:of all }{1:sacred formulas}, {3:Kālī},",
     "words": [
       {
-        "roman": "sarvamantrātmike",
-        "gloss": "O embodiment of all sacred formulas"
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "mantr",
+        "gloss": "sacred formulas (mantra)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       },
       {
         "roman": "kālike",
@@ -871,15 +2575,34 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सर्वमन्त्रात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कालिके",
+        "text": "म",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "न्त्रा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कालिके",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -888,18 +2611,139 @@ window.SONG_LINES = {
   "l030": {
     "source": "मुग्धमन्दस्मितोदारवक्त्रस्फुरत्पूगताम्बूलकर्पूरखण्डोत्करे",
     "roman": "mugdhamandasmitodāravaktrasphuratpūgatāmbūlakarpūrakhaṇḍotkare",
-    "english": "{0:Whose face, lovely with a charming gentle smile, shines with heaps of areca, betel and pieces of camphor},",
+    "english": "{4:Whose face, }{3:lovely }{0:with a charming }{1:gentle }{2:smile, }{5:shines }{10:with heaps }{6:of areca, }{7:betel }{9:and pieces }{8:of camphor},",
     "words": [
       {
-        "roman": "mugdhamandasmitodāravaktrasphuratpūgatāmbūlakarpūrakhaṇḍotkare",
-        "gloss": "O you whose face, lovely with a charming gentle smile, shines with heaps of areca, betel and pieces of camphor"
+        "roman": "mugdha",
+        "gloss": "charming"
+      },
+      {
+        "roman": "manda",
+        "gloss": "gentle"
+      },
+      {
+        "roman": "smit",
+        "gloss": "smile (smita)"
+      },
+      {
+        "roman": "odāra",
+        "gloss": "lovely, noble (udāra)"
+      },
+      {
+        "roman": "vaktra",
+        "gloss": "face"
+      },
+      {
+        "roman": "sphurat",
+        "gloss": "shining"
+      },
+      {
+        "roman": "pūga",
+        "gloss": "areca nut"
+      },
+      {
+        "roman": "tāmbūla",
+        "gloss": "betel"
+      },
+      {
+        "roman": "karpūra",
+        "gloss": "camphor"
+      },
+      {
+        "roman": "khaṇḍ",
+        "gloss": "pieces (khaṇḍa)"
+      },
+      {
+        "roman": "otkare",
+        "gloss": "O you with heaps: utkara, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "मुग्धमन्दस्मितोदारवक्त्रस्फुरत्पूगताम्बूलकर्पूरखण्डोत्करे",
+        "text": "मुग्ध",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "मन्द",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "स्मि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "तो",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "दार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वक्त्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्फुर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "त्पू",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ग",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ताम्बूल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कर्पूर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ख",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ण्डो",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "त्करे",
+        "wordIndices": [
+          10
         ]
       }
     ],
@@ -908,28 +2752,75 @@ window.SONG_LINES = {
   "l031": {
     "source": "ज्ञानमुद्राकरे सर्वसम्पत्करे",
     "roman": "jñānamudrākare sarvasampatkare",
-    "english": "{0:Whose hand forms the gesture of knowledge}, {1:giver of every kind of prosperity},",
+    "english": "{2:Whose hand forms }{1:the gesture }{0:of knowledge}, {5:giver }{3:of every kind }{4:of prosperity},",
     "words": [
       {
-        "roman": "jñānamudrākare",
-        "gloss": "O you whose hand forms the gesture of knowledge"
+        "roman": "jñāna",
+        "gloss": "knowledge"
       },
       {
-        "roman": "sarvasampatkare",
-        "gloss": "O giver of every kind of prosperity"
+        "roman": "mudrā",
+        "gloss": "gesture"
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you whose hand forms: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "every"
+      },
+      {
+        "roman": "sampat",
+        "gloss": "prosperity"
+      },
+      {
+        "roman": "kare",
+        "gloss": "O giver, maker: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "ज्ञानमुद्राकरे",
+        "text": "ज्ञान",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वसम्पत्करे",
+        "text": "मुद्रा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सम्प",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -938,28 +2829,65 @@ window.SONG_LINES = {
   "l032": {
     "source": "पद्मभास्वत्करे श्रीकरे",
     "roman": "padmabhāsvatkare śrīkare",
-    "english": "{0:Whose hands shine like lotuses}, {1:bestower of prosperity},",
+    "english": "{2:Whose hands }{1:shine }{0:like lotuses}, {4:bestower }{3:of prosperity},",
     "words": [
       {
-        "roman": "padmabhāsvatkare",
-        "gloss": "O you whose hands shine like lotuses"
+        "roman": "padma",
+        "gloss": "lotus"
       },
       {
-        "roman": "śrīkare",
-        "gloss": "O bestower of prosperity"
+        "roman": "bhāsvat",
+        "gloss": "shining"
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you whose hands: vocative"
+      },
+      {
+        "roman": "śrī",
+        "gloss": "prosperity"
+      },
+      {
+        "roman": "kare",
+        "gloss": "O bestower, maker: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "पद्मभास्वत्करे",
+        "text": "पद्म",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्रीकरे",
+        "text": "भास्व",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -968,18 +2896,159 @@ window.SONG_LINES = {
   "l033": {
     "source": "कुन्दपुष्पद्युतिस्निग्धदन्तावलीनिर्मलालोलकल्लोलसम्मेलनस्मेरशोणाधरे",
     "roman": "kundapuṣpadyutisnigdhadantāvalīnirmalālolakallolasammelanasmeraśoṇādhare",
-    "english": "{0:Whose smiling red lower lip meets the moving clear waves of the lustre of your smooth row of teeth, bright as jasmine flowers},",
+    "english": "{12:Whose }{10:smiling }{11:red }{12:lower lip }{9:meets }{7:the moving }{6:clear }{8:waves }{2:of the lustre }{3:of your smooth }{5:row }{4:of teeth, }{2:bright as }{0:jasmine }{1:flowers},",
     "words": [
       {
-        "roman": "kundapuṣpadyutisnigdhadantāvalīnirmalālolakallolasammelanasmeraśoṇādhare",
-        "gloss": "O you whose smiling red lower lip meets the moving clear waves of the lustre of your smooth row of teeth, bright as jasmine flowers"
+        "roman": "kunda",
+        "gloss": "jasmine"
+      },
+      {
+        "roman": "puṣpa",
+        "gloss": "flower"
+      },
+      {
+        "roman": "dyuti",
+        "gloss": "lustre, brightness"
+      },
+      {
+        "roman": "snigdha",
+        "gloss": "smooth, glossy"
+      },
+      {
+        "roman": "dant",
+        "gloss": "teeth (danta)"
+      },
+      {
+        "roman": "āvalī",
+        "gloss": "row"
+      },
+      {
+        "roman": "nirmal",
+        "gloss": "clear, pure (nirmala)"
+      },
+      {
+        "roman": "ālola",
+        "gloss": "moving"
+      },
+      {
+        "roman": "kallola",
+        "gloss": "waves"
+      },
+      {
+        "roman": "sammelana",
+        "gloss": "meeting"
+      },
+      {
+        "roman": "smera",
+        "gloss": "smiling"
+      },
+      {
+        "roman": "śoṇ",
+        "gloss": "red (śoṇa)"
+      },
+      {
+        "roman": "ādhare",
+        "gloss": "O you whose lower lip: adhara, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "कुन्दपुष्पद्युतिस्निग्धदन्तावलीनिर्मलालोलकल्लोलसम्मेलनस्मेरशोणाधरे",
+        "text": "कुन्द",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "पुष्प",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "द्युति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्निग्ध",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "द",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "न्ता",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "वली",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "निर्म",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "लोल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कल्लोल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "सम्मेलन",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "स्मेर",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "शो",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "णा",
+        "wordIndices": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "धरे",
+        "wordIndices": [
+          12
         ]
       }
     ],
@@ -1008,18 +3077,45 @@ window.SONG_LINES = {
   "l035": {
     "source": "पक्वबिम्बाधरे",
     "roman": "pakvabimbādhare",
-    "english": "{0:Whose lower lip is like a ripe bimba fruit},",
+    "english": "{2:Whose lower lip }{0:is like a ripe }{1:bimba fruit},",
     "words": [
       {
-        "roman": "pakvabimbādhare",
-        "gloss": "O you whose lower lip is like a ripe bimba fruit"
+        "roman": "pakva",
+        "gloss": "ripe"
+      },
+      {
+        "roman": "bimb",
+        "gloss": "bimba fruit (bimba)"
+      },
+      {
+        "roman": "ādhare",
+        "gloss": "O you whose lower lip: adhara, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "पक्वबिम्बाधरे",
+        "text": "पक्व",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "बि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "म्बा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "धरे",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -1028,15 +3124,79 @@ window.SONG_LINES = {
   "l036": {
     "source": "सुललितनवयौवनारम्भचन्द्रोदयोद्वेललावण्यदुग्धार्णवाविर्भवत्कम्बुबिब्बोकभृत्कन्धरे सत्कलामन्दिरे मन्थरे",
     "roman": "sulalitanavayauvanārambhacandrodayodvelalāvaṇyadugdhārṇavāvirbhavatkambubibbokabhṛtkandhare satkalāmandire manthare",
-    "english": "{0:Whose neck bears the proud grace of a conch rising from the milk-ocean of beauty, swelling at the moonrise of the beginning of lovely fresh youth}, {1:abode of fine arts}, {2:languid one},",
+    "english": "{14:Whose neck }{13:bears }{12:the proud grace }{11:of a conch }{10:rising }{8:from the milk-}{9:ocean }{7:of beauty, }{6:swelling }{4,5:at the moonrise }{3:of the beginning }{0:of lovely }{1:fresh }{2:youth}, {17:abode }{15:of fine }{16:arts}, {18:languid one},",
     "words": [
       {
-        "roman": "sulalitanavayauvanārambhacandrodayodvelalāvaṇyadugdhārṇavāvirbhavatkambubibbokabhṛtkandhare",
-        "gloss": "O you whose neck bears the proud grace of a conch rising from the milk-ocean of beauty, swelling at the moonrise of the beginning of lovely fresh youth"
+        "roman": "sulalita",
+        "gloss": "lovely"
       },
       {
-        "roman": "satkalāmandire",
-        "gloss": "O abode of fine arts"
+        "roman": "nava",
+        "gloss": "fresh, new"
+      },
+      {
+        "roman": "yauvan",
+        "gloss": "youth (yauvana)"
+      },
+      {
+        "roman": "ārambha",
+        "gloss": "beginning"
+      },
+      {
+        "roman": "candr",
+        "gloss": "moon (candra)"
+      },
+      {
+        "roman": "oday",
+        "gloss": "rise (udaya)"
+      },
+      {
+        "roman": "odvela",
+        "gloss": "swelling over its shore (udvela)"
+      },
+      {
+        "roman": "lāvaṇya",
+        "gloss": "beauty"
+      },
+      {
+        "roman": "dugdh",
+        "gloss": "milk (dugdha)"
+      },
+      {
+        "roman": "ārṇav",
+        "gloss": "ocean (arṇava)"
+      },
+      {
+        "roman": "āvirbhavat",
+        "gloss": "rising, appearing"
+      },
+      {
+        "roman": "kambu",
+        "gloss": "conch"
+      },
+      {
+        "roman": "bibboka",
+        "gloss": "proud grace"
+      },
+      {
+        "roman": "bhṛt",
+        "gloss": "bearing"
+      },
+      {
+        "roman": "kandhare",
+        "gloss": "O you whose neck: vocative"
+      },
+      {
+        "roman": "sat",
+        "gloss": "fine, good"
+      },
+      {
+        "roman": "kalā",
+        "gloss": "arts"
+      },
+      {
+        "roman": "mandire",
+        "gloss": "O abode: vocative"
       },
       {
         "roman": "manthare",
@@ -1045,21 +3205,173 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सुललितनवयौवनारम्भचन्द्रोदयोद्वेललावण्यदुग्धार्णवाविर्भवत्कम्बुबिब्बोकभृत्कन्धरे",
+        "text": "सुललित",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सत्कलामन्दिरे",
+        "text": "नव",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मन्थरे",
+        "text": "यौव",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "रम्भ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "च",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "न्द्रो",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "द",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "यो",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "द्वेल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "लावण्य",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "दु",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ग्धा",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "र्ण",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "विर्भव",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "म्बु",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "बिब्बोक",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "भृ",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          13,
+          14
+        ]
+      },
+      {
+        "text": "न्धरे",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "स",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          15,
+          16
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "मन्दिरे",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "मन्थरे",
+        "wordIndices": [
+          18
         ]
       }
     ],
@@ -1068,11 +3380,55 @@ window.SONG_LINES = {
   "l037": {
     "source": "दिव्यरत्नप्रभाबन्धुरच्छन्नहारादिभूषासमुद्द्योतमानानवद्यांशुशोभे शुभे",
     "roman": "divyaratnaprabhābandhuracchannahārādibhūṣāsamuddyotamānānavadyāṃśuśobhe śubhe",
-    "english": "{0:Whose beauty of flawless rays gleams with necklaces and other ornaments covered in the lovely radiance of divine gems}, {1:auspicious one},",
+    "english": "{11:Whose beauty }{9:of flawless }{10:rays }{8:gleams }{5:with necklaces }{6:and other }{7:ornaments }{4:covered }{3:in the lovely }{2:radiance }{0:of divine }{1:gems}, {12:auspicious one},",
     "words": [
       {
-        "roman": "divyaratnaprabhābandhuracchannahārādibhūṣāsamuddyotamānānavadyāṃśuśobhe",
-        "gloss": "O you whose beauty of flawless rays gleams with necklaces and other ornaments covered in the lovely radiance of divine gems"
+        "roman": "divya",
+        "gloss": "divine"
+      },
+      {
+        "roman": "ratna",
+        "gloss": "gems"
+      },
+      {
+        "roman": "prabhā",
+        "gloss": "radiance"
+      },
+      {
+        "roman": "bandhura",
+        "gloss": "lovely"
+      },
+      {
+        "roman": "cchanna",
+        "gloss": "covered (channa)"
+      },
+      {
+        "roman": "hār",
+        "gloss": "necklaces (hāra)"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and other, beginning with"
+      },
+      {
+        "roman": "bhūṣā",
+        "gloss": "ornaments"
+      },
+      {
+        "roman": "samuddyotamān",
+        "gloss": "gleaming (samuddyotamāna)"
+      },
+      {
+        "roman": "ānavady",
+        "gloss": "flawless (anavadya)"
+      },
+      {
+        "roman": "āṃśu",
+        "gloss": "rays (aṃśu)"
+      },
+      {
+        "roman": "śobhe",
+        "gloss": "O you whose beauty: vocative"
       },
       {
         "roman": "śubhe",
@@ -1081,15 +3437,102 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "दिव्यरत्नप्रभाबन्धुरच्छन्नहारादिभूषासमुद्द्योतमानानवद्यांशुशोभे",
+        "text": "दिव्य",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "शुभे",
+        "text": "रत्न",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "प्रभा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "बन्धुर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "च्छन्न",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "दि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भूषा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "समुद्द्योतमा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "नव",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "द्यां",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "शु",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "शोभे",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "शुभे",
+        "wordIndices": [
+          12
         ]
       }
     ],
@@ -1098,18 +3541,106 @@ window.SONG_LINES = {
   "l038": {
     "source": "रत्नकेयूररश्मिच्छटापल्लवप्रोल्लसद्दोर्लताराजिते",
     "roman": "ratnakeyūraraśmicchaṭāpallavaprollasaddorlatārājite",
-    "english": "{0:Radiant with arm-creepers on which shoots of rays from jeweled armlets shine forth},",
+    "english": "{8:Radiant }{6:with arm-}{7:creepers }{5:on which }{4:shoots }{2,3:of rays }{0:from jeweled }{1:armlets }{5:shine forth},",
     "words": [
       {
-        "roman": "ratnakeyūraraśmicchaṭāpallavaprollasaddorlatārājite",
-        "gloss": "O you radiant with arm-creepers on which shoots of rays from jeweled armlets shine forth"
+        "roman": "ratna",
+        "gloss": "jewel"
+      },
+      {
+        "roman": "keyūra",
+        "gloss": "armlets"
+      },
+      {
+        "roman": "raśmi",
+        "gloss": "rays"
+      },
+      {
+        "roman": "cchaṭā",
+        "gloss": "mass, stream (chaṭā)"
+      },
+      {
+        "roman": "pallava",
+        "gloss": "shoots"
+      },
+      {
+        "roman": "prollasad",
+        "gloss": "shining forth (prollasat)"
+      },
+      {
+        "roman": "dor",
+        "gloss": "arm (dos)"
+      },
+      {
+        "roman": "latā",
+        "gloss": "creepers"
+      },
+      {
+        "roman": "rājite",
+        "gloss": "O radiant one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "रत्नकेयूररश्मिच्छटापल्लवप्रोल्लसद्दोर्लताराजिते",
+        "text": "रत्न",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "केयूर",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "रश्मि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "च्छटा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पल्लव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रोल्लस",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "द्दो",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "र्ल",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "ता",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "राजिते",
+        "wordIndices": [
+          8
         ]
       }
     ],
@@ -1148,15 +3679,51 @@ window.SONG_LINES = {
   "l040": {
     "source": "विश्वदिङ्मण्डलव्याप्तमाणिक्यतेजःस्फुरत्कङ्कणालङ्कृते विभ्रमालङ्कृते साधुभिः सत्कृते",
     "roman": "viśvadiṅmaṇḍalavyāptamāṇikyatejaḥsphuratkaṅkaṇālaṅkṛte vibhramālaṅkṛte sādhubhiḥ satkṛte",
-    "english": "{0:Adorned with bracelets whose ruby radiance flashes throughout the circle of all directions}, {1:adorned with graceful play}, {3:honoured} {2:by the good},",
+    "english": "{8:Adorned }{7:with bracelets }{4:whose ruby }{5:radiance }{6:flashes }{3:throughout }{2:the circle }{0:of all }{1:directions}, {10:adorned }{9:with graceful play}, {12:honoured} {11:by the good},",
     "words": [
       {
-        "roman": "viśvadiṅmaṇḍalavyāptamāṇikyatejaḥsphuratkaṅkaṇālaṅkṛte",
-        "gloss": "O you adorned with bracelets whose ruby radiance flashes throughout the circle of all directions"
+        "roman": "viśva",
+        "gloss": "all"
       },
       {
-        "roman": "vibhramālaṅkṛte",
-        "gloss": "O you adorned with graceful play"
+        "roman": "diṅ",
+        "gloss": "directions (diś)"
+      },
+      {
+        "roman": "maṇḍala",
+        "gloss": "circle"
+      },
+      {
+        "roman": "vyāpta",
+        "gloss": "spread throughout"
+      },
+      {
+        "roman": "māṇikya",
+        "gloss": "ruby"
+      },
+      {
+        "roman": "tejaḥ",
+        "gloss": "radiance (tejas)"
+      },
+      {
+        "roman": "sphurat",
+        "gloss": "flashing"
+      },
+      {
+        "roman": "kaṅkaṇ",
+        "gloss": "bracelets (kaṅkaṇa)"
+      },
+      {
+        "roman": "ālaṅkṛte",
+        "gloss": "O adorned one: alaṅkṛtā, vocative"
+      },
+      {
+        "roman": "vibhram",
+        "gloss": "graceful play (vibhrama)"
+      },
+      {
+        "roman": "ālaṅkṛte",
+        "gloss": "O adorned one: alaṅkṛtā, vocative"
       },
       {
         "roman": "sādhubhiḥ",
@@ -1169,27 +3736,109 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "विश्वदिङ्मण्डलव्याप्तमाणिक्यतेजःस्फुरत्कङ्कणालङ्कृते",
+        "text": "विश्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "विभ्रमालङ्कृते",
+        "text": "दि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "साधुभिः",
+        "text": "ङ्म",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ण्डल",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सत्कृते",
+        "text": "व्याप्त",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "माणिक्य",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "तेजः",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "स्फुर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "ङ्क",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "णा",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "लङ्कृते",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "विभ्र",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "मा",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "लङ्कृते",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "साधुभिः",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सत्कृते",
+        "wordIndices": [
+          12
         ]
       }
     ],
@@ -1198,18 +3847,102 @@ window.SONG_LINES = {
   "l041": {
     "source": "वासरारम्भवेलासमुज्जृम्भमाणारविन्दप्रतिद्वन्द्विपाणिद्वये",
     "roman": "vāsarārambhavelāsamujjṛmbhamāṇāravindapratidvandvipāṇidvaye",
-    "english": "{0:Whose two hands rival lotuses opening wide at the start of day},",
+    "english": "{7:Whose two }{6:hands }{5:rival }{4:lotuses }{3:opening wide }{2:at }{1:the start }{0:of day},",
     "words": [
       {
-        "roman": "vāsarārambhavelāsamujjṛmbhamāṇāravindapratidvandvipāṇidvaye",
-        "gloss": "O you whose two hands rival lotuses opening wide at the start of day"
+        "roman": "vāsar",
+        "gloss": "day (vāsara)"
+      },
+      {
+        "roman": "ārambha",
+        "gloss": "start"
+      },
+      {
+        "roman": "velā",
+        "gloss": "time, hour"
+      },
+      {
+        "roman": "samujjṛmbhamāṇ",
+        "gloss": "opening wide (samujjṛmbhamāṇa)"
+      },
+      {
+        "roman": "āravinda",
+        "gloss": "lotuses (aravinda)"
+      },
+      {
+        "roman": "pratidvandvi",
+        "gloss": "rivalling"
+      },
+      {
+        "roman": "pāṇi",
+        "gloss": "hands"
+      },
+      {
+        "roman": "dvaye",
+        "gloss": "O you whose pair: dvaya, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "वासरारम्भवेलासमुज्जृम्भमाणारविन्दप्रतिद्वन्द्विपाणिद्वये",
+        "text": "वास",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "रम्भ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "वेला",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समुज्जृम्भमा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "णा",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "रविन्द",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रतिद्वन्द्वि",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पाणि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "द्वये",
+        "wordIndices": [
+          7
         ]
       }
     ],
@@ -1218,11 +3951,19 @@ window.SONG_LINES = {
   "l042": {
     "source": "सन्ततोद्यद्दये अद्वये",
     "roman": "santatodyaddaye advaye",
-    "english": "{0:Whose compassion rises continually}, {1:without a second},",
+    "english": "{2:Whose compassion }{1:rises }{0:continually}, {3:without a second},",
     "words": [
       {
-        "roman": "santatodyaddaye",
-        "gloss": "O you whose compassion rises continually"
+        "roman": "santat",
+        "gloss": "continually (santata)"
+      },
+      {
+        "roman": "odyad",
+        "gloss": "rising (udyat)"
+      },
+      {
+        "roman": "daye",
+        "gloss": "O you whose compassion: dayā, vocative"
       },
       {
         "roman": "advaye",
@@ -1231,15 +3972,41 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सन्ततोद्यद्दये",
+        "text": "सन्त",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "अद्वये",
+        "text": "तो",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "द्य",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "द्द",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ये",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "अद्वये",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -1248,18 +4015,167 @@ window.SONG_LINES = {
   "l043": {
     "source": "दिव्यरत्नोर्मिकादीधितिस्तोमसन्ध्यायमानाङ्गुलीपल्लवोद्यन्नखेन्दुप्रभामण्डले",
     "roman": "divyaratnormikādīdhitistomasandhyāyamānāṅgulīpallavodyannakhenduprabhāmaṇḍale",
-    "english": "{0:With a circle of radiance from moonlike nails rising on finger-shoots made twilight-red by masses of rays from divine jeweled rings},",
+    "english": "{12:With a circle }{11:of radiance }{10:from moonlike }{9:nails }{8:rising }{6:on finger-}{7:shoots }{5:made twilight-red }{4:by masses }{3:of rays }{0:from divine }{1:jeweled }{2:rings},",
     "words": [
       {
-        "roman": "divyaratnormikādīdhitistomasandhyāyamānāṅgulīpallavodyannakhenduprabhāmaṇḍale",
-        "gloss": "O you with a circle of radiance from moonlike nails rising on finger-shoots made twilight-red by masses of rays from divine jeweled rings"
+        "roman": "divya",
+        "gloss": "divine"
+      },
+      {
+        "roman": "ratn",
+        "gloss": "jewel (ratna)"
+      },
+      {
+        "roman": "ormikā",
+        "gloss": "rings (ūrmikā; ratna + ūrmikā)"
+      },
+      {
+        "roman": "dīdhiti",
+        "gloss": "rays"
+      },
+      {
+        "roman": "stoma",
+        "gloss": "masses"
+      },
+      {
+        "roman": "sandhyāyamān",
+        "gloss": "becoming like twilight (sandhyāyamāna)"
+      },
+      {
+        "roman": "āṅgulī",
+        "gloss": "fingers (aṅgulī)"
+      },
+      {
+        "roman": "pallav",
+        "gloss": "shoots (pallava)"
+      },
+      {
+        "roman": "odyan",
+        "gloss": "rising (udyat)"
+      },
+      {
+        "roman": "nakh",
+        "gloss": "nails (nakha)"
+      },
+      {
+        "roman": "endu",
+        "gloss": "moon (indu; nakha + indu)"
+      },
+      {
+        "roman": "prabhā",
+        "gloss": "radiance"
+      },
+      {
+        "roman": "maṇḍale",
+        "gloss": "O you with a circle: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "दिव्यरत्नोर्मिकादीधितिस्तोमसन्ध्यायमानाङ्गुलीपल्लवोद्यन्नखेन्दुप्रभामण्डले",
+        "text": "दिव्य",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "र",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "त्नो",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "र्मिका",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दीधिति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्तोम",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सन्ध्यायमा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ङ्गुली",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पल्ल",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "वो",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "द्य",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "न्न",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "खे",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "न्दु",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "प्रभा",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "मण्डले",
+        "wordIndices": [
+          12
         ]
       }
     ],
@@ -1268,18 +4184,35 @@ window.SONG_LINES = {
   "l044": {
     "source": "सन्नुताखण्डले",
     "roman": "sannutākhaṇḍale",
-    "english": "{0:Praised by Indra},",
+    "english": "{0:Praised }{1:by Indra},",
     "words": [
       {
-        "roman": "sannutākhaṇḍale",
-        "gloss": "O you praised by Indra"
+        "roman": "sannut",
+        "gloss": "praised (sannuta)"
+      },
+      {
+        "roman": "ākhaṇḍale",
+        "gloss": "O you by whom Indra: ākhaṇḍala, “the breaker”, vocative compound"
       }
     ],
     "sourceWords": [
       {
-        "text": "सन्नुताखण्डले",
+        "text": "सन्नु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ता",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "खण्डले",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -1288,18 +4221,45 @@ window.SONG_LINES = {
   "l045": {
     "source": "चित्प्रभामण्डले",
     "roman": "citprabhāmaṇḍale",
-    "english": "{0:Circle of the radiance of awareness},",
+    "english": "{2:Circle }{1:of the radiance }{0:of awareness},",
     "words": [
       {
-        "roman": "citprabhāmaṇḍale",
-        "gloss": "O circle of the radiance of awareness"
+        "roman": "cit",
+        "gloss": "awareness"
+      },
+      {
+        "roman": "prabhā",
+        "gloss": "radiance"
+      },
+      {
+        "roman": "maṇḍale",
+        "gloss": "O circle: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "चित्प्रभामण्डले",
+        "text": "चि",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "त्प्र",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "भा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "मण्डले",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -1308,18 +4268,35 @@ window.SONG_LINES = {
   "l046": {
     "source": "प्रोल्लसत्कुण्डले",
     "roman": "prollasatkuṇḍale",
-    "english": "{0:Whose earrings shine forth},",
+    "english": "{1:Whose earrings }{0:shine forth},",
     "words": [
       {
-        "roman": "prollasatkuṇḍale",
-        "gloss": "O you whose earrings shine forth"
+        "roman": "prollasat",
+        "gloss": "shining forth"
+      },
+      {
+        "roman": "kuṇḍale",
+        "gloss": "O you whose earrings: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "प्रोल्लसत्कुण्डले",
+        "text": "प्रोल्लस",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "त्कु",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ण्डले",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -1328,18 +4305,270 @@ window.SONG_LINES = {
   "l047": {
     "source": "तारकाराजिनीकाशहारावलिस्मेरचारुस्तनाभोगभारानमन्मध्यवल्लीवलिच्छेदवीचीसमुद्यत्समुल्लाससन्दर्शिताकारसौन्दर्यरत्नाकरे",
     "roman": "tārakārājinīkāśahārāvalismeracārustanābhogabhārānamanmadhyavallīvalicchedavīcīsamudyatsamullāsasandarśitākārasaundaryaratnākare",
-    "english": "{0:Ocean of bodily beauty revealed in the shining waves of folds in your creeperlike waist bending beneath the weight of lovely full breasts brightened by necklaces resembling rows of stars},",
+    "english": "{21:Ocean }{19:of bodily }{20:beauty }{18:revealed }{16,17:in the shining }{15:waves }{13,14:of folds }{12:in your creeperlike }{11:waist }{10:bending }{9:beneath the weight }{6:of lovely }{8:full }{7:breasts }{5:brightened }{3,4:by necklaces }{2:resembling }{1:rows }{0:of stars},",
     "words": [
       {
-        "roman": "tārakārājinīkāśahārāvalismeracārustanābhogabhārānamanmadhyavallīvalicchedavīcīsamudyatsamullāsasandarśitākārasaundaryaratnākare",
-        "gloss": "O ocean of bodily beauty revealed in the shining waves of folds in your creeperlike waist bending beneath the weight of lovely full breasts brightened by necklaces resembling rows of stars"
+        "roman": "tārakā",
+        "gloss": "stars"
+      },
+      {
+        "roman": "rāji",
+        "gloss": "row"
+      },
+      {
+        "roman": "nīkāśa",
+        "gloss": "resembling"
+      },
+      {
+        "roman": "hār",
+        "gloss": "necklaces (hāra)"
+      },
+      {
+        "roman": "āvali",
+        "gloss": "string, row"
+      },
+      {
+        "roman": "smera",
+        "gloss": "brightened, smiling"
+      },
+      {
+        "roman": "cāru",
+        "gloss": "lovely"
+      },
+      {
+        "roman": "stan",
+        "gloss": "breasts (stana)"
+      },
+      {
+        "roman": "ābhoga",
+        "gloss": "fullness"
+      },
+      {
+        "roman": "bhār",
+        "gloss": "weight (bhāra)"
+      },
+      {
+        "roman": "ānaman",
+        "gloss": "bending (ānamat)"
+      },
+      {
+        "roman": "madhya",
+        "gloss": "waist, middle"
+      },
+      {
+        "roman": "vallī",
+        "gloss": "creeper"
+      },
+      {
+        "roman": "vali",
+        "gloss": "folds"
+      },
+      {
+        "roman": "ccheda",
+        "gloss": "section, division (cheda)"
+      },
+      {
+        "roman": "vīcī",
+        "gloss": "waves"
+      },
+      {
+        "roman": "samudyat",
+        "gloss": "rising up"
+      },
+      {
+        "roman": "samullāsa",
+        "gloss": "shining forth"
+      },
+      {
+        "roman": "sandarśit",
+        "gloss": "revealed (sandarśita)"
+      },
+      {
+        "roman": "ākāra",
+        "gloss": "bodily form"
+      },
+      {
+        "roman": "saundarya",
+        "gloss": "beauty"
+      },
+      {
+        "roman": "ratnākare",
+        "gloss": "O ocean, “mine of jewels”: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "तारकाराजिनीकाशहारावलिस्मेरचारुस्तनाभोगभारानमन्मध्यवल्लीवलिच्छेदवीचीसमुद्यत्समुल्लाससन्दर्शिताकारसौन्दर्यरत्नाकरे",
+        "text": "तारका",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "राजि",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नीकाश",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "हा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "वलि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्मेर",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "चारु",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "स्त",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "भोग",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "नम",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "न्म",
+        "wordIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "ध्य",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "वल्ली",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "वलि",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "च्छेद",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "वीची",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "समुद्य",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "त्स",
+        "wordIndices": [
+          16,
+          17
+        ]
+      },
+      {
+        "text": "मुल्लास",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "सन्दर्शि",
+        "wordIndices": [
+          18
+        ]
+      },
+      {
+        "text": "ता",
+        "wordIndices": [
+          18,
+          19
+        ]
+      },
+      {
+        "text": "कार",
+        "wordIndices": [
+          19
+        ]
+      },
+      {
+        "text": "सौन्दर्य",
+        "wordIndices": [
+          20
+        ]
+      },
+      {
+        "text": "रत्नाकरे",
+        "wordIndices": [
+          21
         ]
       }
     ],
@@ -1348,18 +4577,45 @@ window.SONG_LINES = {
   "l048": {
     "source": "वल्लकीभृत्करे",
     "roman": "vallakībhṛtkare",
-    "english": "{0:Whose hand bears a vīṇā},",
+    "english": "{2:Whose hand }{1:bears }{0:a vīṇā},",
     "words": [
       {
-        "roman": "vallakībhṛtkare",
-        "gloss": "O you whose hand bears a vīṇā"
+        "roman": "vallakī",
+        "gloss": "a vīṇā"
+      },
+      {
+        "roman": "bhṛt",
+        "gloss": "bearing"
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you whose hand: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "वल्लकीभृत्करे",
+        "text": "वल्लकी",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "भृ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "रे",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -1368,18 +4624,38 @@ window.SONG_LINES = {
   "l049": {
     "source": "किङ्करश्रीकरे",
     "roman": "kiṅkaraśrīkare",
-    "english": "{0:You who grant prosperity to your attendants},",
+    "english": "{2:You who grant }{1:prosperity }{0:to your attendants},",
     "words": [
       {
-        "roman": "kiṅkaraśrīkare",
-        "gloss": "O you who grant prosperity to your attendants"
+        "roman": "kiṅkara",
+        "gloss": "attendants"
+      },
+      {
+        "roman": "śrī",
+        "gloss": "prosperity"
+      },
+      {
+        "roman": "kare",
+        "gloss": "O you who grant, make: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "किङ्करश्रीकरे",
+        "text": "किङ्कर",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "श्री",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "करे",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -1388,28 +4664,136 @@ window.SONG_LINES = {
   "l050": {
     "source": "हेमकुम्भोपमोत्तुङ्गवक्षोजभारावनम्रे त्रिलोकावनम्रे",
     "roman": "hemakumbhopamottuṅgavakṣojabhārāvanamre trilokāvanamre",
-    "english": "{0:Bent by the weight of high breasts like golden pitchers}, {1:you before whom the three worlds bow},",
+    "english": "{6:Bent }{5:by the weight }{3:of high }{4:breasts }{2:like }{0:golden }{1:pitchers}, {9:you before whom }{7:the three }{8:worlds }{9:bow},",
     "words": [
       {
-        "roman": "hemakumbhopamottuṅgavakṣojabhārāvanamre",
-        "gloss": "O you bent by the weight of high breasts like golden pitchers"
+        "roman": "hema",
+        "gloss": "golden"
       },
       {
-        "roman": "trilokāvanamre",
-        "gloss": "O you before whom the three worlds bow"
+        "roman": "kumbh",
+        "gloss": "pitchers (kumbha)"
+      },
+      {
+        "roman": "opam",
+        "gloss": "like (upama; kumbha + upama)"
+      },
+      {
+        "roman": "ottuṅga",
+        "gloss": "high (uttuṅga)"
+      },
+      {
+        "roman": "vakṣoja",
+        "gloss": "breasts"
+      },
+      {
+        "roman": "bhār",
+        "gloss": "weight (bhāra)"
+      },
+      {
+        "roman": "āvanamre",
+        "gloss": "O bent one: avanamrā, vocative"
+      },
+      {
+        "roman": "tri",
+        "gloss": "three"
+      },
+      {
+        "roman": "lok",
+        "gloss": "worlds (loka)"
+      },
+      {
+        "roman": "āvanamre",
+        "gloss": "O you before whom they bow: avanamra, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "हेमकुम्भोपमोत्तुङ्गवक्षोजभारावनम्रे",
+        "text": "हेम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "त्रिलोकावनम्रे",
+        "text": "कु",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "म्भो",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "प",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मो",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "त्तुङ्ग",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वक्षोज",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "भा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "वनम्रे",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "त्रि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "वनम्रे",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -1418,18 +4802,159 @@ window.SONG_LINES = {
   "l051": {
     "source": "लसद्वृत्तगम्भीरनाभीसरस्तीरशैवालशङ्काकरश्यामरोमावलीभूषणे",
     "roman": "lasadvṛttagambhīranābhīsarastīraśaivālaśaṅkākaraśyāmaromāvalībhūṣaṇe",
-    "english": "{0:Adorned with a dark line of hair that seems to be waterweed on the bank of the lake of your shining round deep navel},",
+    "english": "{12:Adorned }{9:with a dark }{11:line }{10:of hair }{7,8:that seems to be }{6:waterweed }{5:on the bank }{4:of the lake }{0:of your shining }{1:round }{2:deep }{3:navel},",
     "words": [
       {
-        "roman": "lasadvṛttagambhīranābhīsarastīraśaivālaśaṅkākaraśyāmaromāvalībhūṣaṇe",
-        "gloss": "O you adorned with a dark line of hair that seems to be waterweed on the bank of the lake of your shining round deep navel"
+        "roman": "lasad",
+        "gloss": "shining (lasat)"
+      },
+      {
+        "roman": "vṛtta",
+        "gloss": "round"
+      },
+      {
+        "roman": "gambhīra",
+        "gloss": "deep"
+      },
+      {
+        "roman": "nābhī",
+        "gloss": "navel"
+      },
+      {
+        "roman": "saras",
+        "gloss": "lake"
+      },
+      {
+        "roman": "tīra",
+        "gloss": "bank"
+      },
+      {
+        "roman": "śaivāla",
+        "gloss": "waterweed"
+      },
+      {
+        "roman": "śaṅkā",
+        "gloss": "suspicion; the impression of being"
+      },
+      {
+        "roman": "kara",
+        "gloss": "causing"
+      },
+      {
+        "roman": "śyāma",
+        "gloss": "dark"
+      },
+      {
+        "roman": "rom",
+        "gloss": "hair (roma)"
+      },
+      {
+        "roman": "āvalī",
+        "gloss": "line"
+      },
+      {
+        "roman": "bhūṣaṇe",
+        "gloss": "O adorned one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "लसद्वृत्तगम्भीरनाभीसरस्तीरशैवालशङ्काकरश्यामरोमावलीभूषणे",
+        "text": "लस",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "द्वृ",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "त्त",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "गम्भीर",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "नाभी",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सर",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्ती",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "र",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "शैवाल",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "शङ्का",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कर",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "श्याम",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रो",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "मा",
+        "wordIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "वली",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "भूषणे",
+        "wordIndices": [
+          12
         ]
       }
     ],
@@ -1438,18 +4963,28 @@ window.SONG_LINES = {
   "l052": {
     "source": "मञ्जुसम्भाषणे",
     "roman": "mañjusambhāṣaṇe",
-    "english": "{0:Whose speech is lovely},",
+    "english": "{1:Whose speech }{0:is lovely},",
     "words": [
       {
-        "roman": "mañjusambhāṣaṇe",
-        "gloss": "O you whose speech is lovely"
+        "roman": "mañju",
+        "gloss": "lovely"
+      },
+      {
+        "roman": "sambhāṣaṇe",
+        "gloss": "O you whose speech: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "मञ्जुसम्भाषणे",
+        "text": "मञ्जु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "सम्भाषणे",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -1458,18 +4993,122 @@ window.SONG_LINES = {
   "l053": {
     "source": "चारुशिञ्जत्कटीसूत्रनिर्भर्त्सितानङ्गलीलाधनुःशिञ्जिनीडम्बरे",
     "roman": "cāruśiñjatkaṭīsūtranirbhartsitānaṅgalīlādhanuḥśiñjinīḍambare",
-    "english": "{0:Whose beautifully tinkling waist-cord puts to shame the resounding string of Love’s playful bow},",
+    "english": "{9:Whose }{0:beautifully }{1:tinkling }{2:waist-}{3:cord }{4:puts to shame }{9:the resounding }{8:string }{5:of Love’s }{6:playful }{7:bow},",
     "words": [
       {
-        "roman": "cāruśiñjatkaṭīsūtranirbhartsitānaṅgalīlādhanuḥśiñjinīḍambare",
-        "gloss": "O you whose beautifully tinkling waist-cord puts to shame the resounding string of Love’s playful bow"
+        "roman": "cāru",
+        "gloss": "beautifully"
+      },
+      {
+        "roman": "śiñjat",
+        "gloss": "tinkling"
+      },
+      {
+        "roman": "kaṭī",
+        "gloss": "waist"
+      },
+      {
+        "roman": "sūtra",
+        "gloss": "cord"
+      },
+      {
+        "roman": "nirbhartsit",
+        "gloss": "put to shame (nirbhartsita)"
+      },
+      {
+        "roman": "ānaṅga",
+        "gloss": "Love, “the bodiless one” (anaṅga)"
+      },
+      {
+        "roman": "līlā",
+        "gloss": "play; playful"
+      },
+      {
+        "roman": "dhanuḥ",
+        "gloss": "bow (dhanus)"
+      },
+      {
+        "roman": "śiñjinī",
+        "gloss": "bowstring"
+      },
+      {
+        "roman": "ḍambare",
+        "gloss": "O you by whom the resounding: ḍambara, vocative compound"
       }
     ],
     "sourceWords": [
       {
-        "text": "चारुशिञ्जत्कटीसूत्रनिर्भर्त्सितानङ्गलीलाधनुःशिञ्जिनीडम्बरे",
+        "text": "चारु",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "शिञ्ज",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "त्क",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "टी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सूत्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "निर्भर्त्सि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ता",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "नङ्ग",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "लीला",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "धनुः",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "शिञ्जिनी",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "डम्बरे",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -1478,18 +5117,45 @@ window.SONG_LINES = {
   "l054": {
     "source": "दिव्यरत्नाम्बरे",
     "roman": "divyaratnāmbare",
-    "english": "{0:Clothed in divine gems},",
+    "english": "{2:Clothed }{0:in divine }{1:gems},",
     "words": [
       {
-        "roman": "divyaratnāmbare",
-        "gloss": "O you clothed in divine gems"
+        "roman": "divya",
+        "gloss": "divine"
+      },
+      {
+        "roman": "ratn",
+        "gloss": "gems (ratna)"
+      },
+      {
+        "roman": "āmbare",
+        "gloss": "O you whose clothing: ambara, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "दिव्यरत्नाम्बरे",
+        "text": "दिव्य",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "र",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "त्ना",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "म्बरे",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -1498,18 +5164,129 @@ window.SONG_LINES = {
   "l055": {
     "source": "पद्मरागोल्लसन्मेखलाभास्वरश्रोणिशोभाजितस्वर्णभूभृत्तले",
     "roman": "padmarāgollasanmekhalābhāsvaraśroṇiśobhājitasvarṇabhūbhṛttale",
-    "english": "{0:Whose radiant hips, shining with a ruby-glistening girdle, surpass the slopes of the golden mountain},",
+    "english": "{5:Whose radiant }{4:hips, }{3:shining }{0:with a ruby-}{1:glistening }{2:girdle, }{6:surpass }{9:the slopes }{7:of the golden }{8:mountain},",
     "words": [
       {
-        "roman": "padmarāgollasanmekhalābhāsvaraśroṇiśobhājitasvarṇabhūbhṛttale",
-        "gloss": "O you whose radiant hips, shining with a ruby-glistening girdle, surpass the slopes of the golden mountain"
+        "roman": "padmarāg",
+        "gloss": "ruby (padmarāga)"
+      },
+      {
+        "roman": "ollasan",
+        "gloss": "glistening (ullasat)"
+      },
+      {
+        "roman": "mekhalā",
+        "gloss": "girdle"
+      },
+      {
+        "roman": "bhāsvara",
+        "gloss": "shining"
+      },
+      {
+        "roman": "śroṇi",
+        "gloss": "hips"
+      },
+      {
+        "roman": "śobhā",
+        "gloss": "radiance, beauty"
+      },
+      {
+        "roman": "jita",
+        "gloss": "surpassed"
+      },
+      {
+        "roman": "svarṇa",
+        "gloss": "golden"
+      },
+      {
+        "roman": "bhūbhṛt",
+        "gloss": "mountain, “earth-bearer”"
+      },
+      {
+        "roman": "tale",
+        "gloss": "O you by whom the slopes: tala, vocative compound"
       }
     ],
     "sourceWords": [
       {
-        "text": "पद्मरागोल्लसन्मेखलाभास्वरश्रोणिशोभाजितस्वर्णभूभृत्तले",
+        "text": "पद्मरा",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "गो",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ल्लस",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "न्मे",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "खला",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भास्वर",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "श्रोणि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "शोभा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "जित",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "स्वर्ण",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "भूभृ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "त्त",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "ले",
+        "wordIndices": [
+          9
         ]
       }
     ],
@@ -1518,18 +5295,28 @@ window.SONG_LINES = {
   "l056": {
     "source": "चन्द्रिकाशीतले",
     "roman": "candrikāśītale",
-    "english": "{0:Cool as moonlight},",
+    "english": "{1:Cool }{0:as moonlight},",
     "words": [
       {
-        "roman": "candrikāśītale",
-        "gloss": "O you cool as moonlight"
+        "roman": "candrikā",
+        "gloss": "moonlight"
+      },
+      {
+        "roman": "śītale",
+        "gloss": "O cool one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "चन्द्रिकाशीतले",
+        "text": "चन्द्रिका",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "शीतले",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -1538,18 +5325,213 @@ window.SONG_LINES = {
   "l057": {
     "source": "विकसितनवकिंशुकाताम्रदिव्यांशुकच्छन्नचारूरुशोभापराभूतसिन्दूरशोणायमानेन्द्रमातङ्गहस्तार्गले",
     "roman": "vikasitanavakiṃśukātāmradivyāṃśukacchannacārūruśobhāparābhūtasindūraśoṇāyamānendramātaṅgahastārgale",
-    "english": "{0:Whose lovely thighs, covered in divine cloth red as newly opened kiṃśuka flowers, surpass the barlike trunk of Indra’s elephant reddened with vermilion},",
+    "english": "{7:Whose lovely }{8:thighs, }{6:covered }{4:in divine }{5:cloth }{3:red }{1:as newly }{0:opened }{2:kiṃśuka flowers, }{9,10:surpass }{16:the barlike }{15:trunk }{13:of Indra’s }{14:elephant }{12:reddened }{11:with vermilion},",
     "words": [
       {
-        "roman": "vikasitanavakiṃśukātāmradivyāṃśukacchannacārūruśobhāparābhūtasindūraśoṇāyamānendramātaṅgahastārgale",
-        "gloss": "O you whose lovely thighs, covered in divine cloth red as newly opened kiṃśuka flowers, surpass the barlike trunk of Indra’s elephant reddened with vermilion"
+        "roman": "vikasita",
+        "gloss": "opened, blossomed"
+      },
+      {
+        "roman": "nava",
+        "gloss": "new; newly"
+      },
+      {
+        "roman": "kiṃśuk",
+        "gloss": "kiṃśuka flowers (kiṃśuka)"
+      },
+      {
+        "roman": "ātāmra",
+        "gloss": "reddish (ātāmra)"
+      },
+      {
+        "roman": "divy",
+        "gloss": "divine (divya)"
+      },
+      {
+        "roman": "āṃśuka",
+        "gloss": "cloth (aṃśuka)"
+      },
+      {
+        "roman": "cchanna",
+        "gloss": "covered (channa)"
+      },
+      {
+        "roman": "cār",
+        "gloss": "lovely (cāru)"
+      },
+      {
+        "roman": "ūru",
+        "gloss": "thighs (cāru + ūru)"
+      },
+      {
+        "roman": "śobhā",
+        "gloss": "beauty; they surpass in beauty"
+      },
+      {
+        "roman": "parābhūta",
+        "gloss": "surpassed"
+      },
+      {
+        "roman": "sindūra",
+        "gloss": "vermilion"
+      },
+      {
+        "roman": "śoṇāyamān",
+        "gloss": "reddened (śoṇāyamāna)"
+      },
+      {
+        "roman": "endra",
+        "gloss": "Indra (indra)"
+      },
+      {
+        "roman": "mātaṅga",
+        "gloss": "elephant"
+      },
+      {
+        "roman": "hast",
+        "gloss": "trunk (hasta)"
+      },
+      {
+        "roman": "ārgale",
+        "gloss": "O you by whom the bar, bolt: argala, vocative compound"
       }
     ],
     "sourceWords": [
       {
-        "text": "विकसितनवकिंशुकाताम्रदिव्यांशुकच्छन्नचारूरुशोभापराभूतसिन्दूरशोणायमानेन्द्रमातङ्गहस्तार्गले",
+        "text": "विकसित",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "नव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "किंशु",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ताम्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "व्यां",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "शुक",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "च्छन्न",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "चा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "रू",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "रु",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "शोभा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "पराभूत",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "सिन्दूर",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "शोणायमा",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "ने",
+        "wordIndices": [
+          12,
+          13
+        ]
+      },
+      {
+        "text": "न्द्र",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "मातङ्ग",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "ह",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "स्ता",
+        "wordIndices": [
+          15,
+          16
+        ]
+      },
+      {
+        "text": "र्गले",
+        "wordIndices": [
+          16
         ]
       }
     ],
@@ -1558,18 +5540,35 @@ window.SONG_LINES = {
   "l058": {
     "source": "वैभवानर्गले",
     "roman": "vaibhavānargale",
-    "english": "{0:Whose splendour is unbarred},",
+    "english": "{0:Whose splendour }{1:is unbarred},",
     "words": [
       {
-        "roman": "vaibhavānargale",
-        "gloss": "O you whose splendour is unbarred"
+        "roman": "vaibhav",
+        "gloss": "splendour (vaibhava)"
+      },
+      {
+        "roman": "ānargale",
+        "gloss": "O you who are unbarred in: anargalā, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "वैभवानर्गले",
+        "text": "वैभ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "नर्गले",
+        "wordIndices": [
+          1
         ]
       }
     ],
@@ -1608,18 +5607,156 @@ window.SONG_LINES = {
   "l060": {
     "source": "कोमलस्निग्धनीलोत्पलोत्पादितानङ्गतूणीरशङ्काकरोद्दामजङ्घालते",
     "roman": "komalasnigdhanīlotpalotpāditānaṅgatūṇīraśaṅkākaroddāmajaṅghālate",
-    "english": "{0:Whose full creeperlike shanks suggest Love’s quiver made of tender smooth blue water-lilies},",
+    "english": "{9:Whose full }{11:creeperlike }{10:shanks }{7,8:suggest }{5:Love’s }{6:quiver }{4:made }{0:of tender }{1:smooth }{2:blue }{3:water-lilies},",
     "words": [
       {
-        "roman": "komalasnigdhanīlotpalotpāditānaṅgatūṇīraśaṅkākaroddāmajaṅghālate",
-        "gloss": "O you whose full creeperlike shanks suggest Love’s quiver made of tender smooth blue water-lilies"
+        "roman": "komala",
+        "gloss": "tender"
+      },
+      {
+        "roman": "snigdha",
+        "gloss": "smooth"
+      },
+      {
+        "roman": "nīl",
+        "gloss": "blue (nīla)"
+      },
+      {
+        "roman": "otpal",
+        "gloss": "water-lilies (utpala)"
+      },
+      {
+        "roman": "otpādit",
+        "gloss": "made, produced (utpādita)"
+      },
+      {
+        "roman": "ānaṅga",
+        "gloss": "Love, “the bodiless one” (anaṅga)"
+      },
+      {
+        "roman": "tūṇīra",
+        "gloss": "quiver"
+      },
+      {
+        "roman": "śaṅkā",
+        "gloss": "suspicion; the impression of being"
+      },
+      {
+        "roman": "kar",
+        "gloss": "causing (kara)"
+      },
+      {
+        "roman": "oddāma",
+        "gloss": "full, abundant (uddāma)"
+      },
+      {
+        "roman": "jaṅghā",
+        "gloss": "shanks"
+      },
+      {
+        "roman": "late",
+        "gloss": "O you whose creepers: latā, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "कोमलस्निग्धनीलोत्पलोत्पादितानङ्गतूणीरशङ्काकरोद्दामजङ्घालते",
+        "text": "कोमल",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "स्निग्ध",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "नी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "त्प",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "त्पादि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ता",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "नङ्ग",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "तूणीर",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "शङ्का",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "क",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "रो",
+        "wordIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "text": "द्दाम",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "जङ्घा",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "लते",
+        "wordIndices": [
+          11
         ]
       }
     ],
@@ -1648,18 +5785,211 @@ window.SONG_LINES = {
   "l062": {
     "source": "नम्रदिक्पालसीमन्तिनीकुन्तलस्निग्धनीलप्रभापुञ्जसञ्जातदूर्वाङ्कुराशङ्कसारङ्गसंयोगरिङ्खन्नखेन्दूज्ज्वले",
     "roman": "namradikpālasīmantinīkuntalasnigdhanīlaprabhāpuñjasañjātadūrvāṅkurāśaṅkasāraṅgasaṃyogariṅkhannakhendūjjvale",
-    "english": "{0:Whose nail-moons shine with the stirring of deer drawn to the mass of dark glossy radiance from the bowing guardians’ wives’ hair, which they mistake for sprouts of dūrvā grass},",
+    "english": "{15:Whose nail-}{16:moons }{17:shine }{14:with the stirring }{12:of deer }{13:drawn }{7:to the mass }{5:of dark }{4:glossy }{6:radiance }{0:from the bowing }{1:guardians’ }{2:wives’ }{3:hair, }{8,11:which they mistake }{10:for sprouts }{9:of dūrvā grass},",
     "words": [
       {
-        "roman": "namradikpālasīmantinīkuntalasnigdhanīlaprabhāpuñjasañjātadūrvāṅkurāśaṅkasāraṅgasaṃyogariṅkhannakhendūjjvale",
-        "gloss": "O you whose nail-moons shine with the stirring of deer drawn to the mass of dark glossy radiance from the bowing guardians’ wives’ hair, which they mistake for sprouts of dūrvā grass"
+        "roman": "namra",
+        "gloss": "bowing"
+      },
+      {
+        "roman": "dikpāla",
+        "gloss": "guardians of the directions"
+      },
+      {
+        "roman": "sīmantinī",
+        "gloss": "wives, women"
+      },
+      {
+        "roman": "kuntala",
+        "gloss": "hair"
+      },
+      {
+        "roman": "snigdha",
+        "gloss": "glossy"
+      },
+      {
+        "roman": "nīla",
+        "gloss": "dark"
+      },
+      {
+        "roman": "prabhā",
+        "gloss": "radiance"
+      },
+      {
+        "roman": "puñja",
+        "gloss": "mass"
+      },
+      {
+        "roman": "sañjāta",
+        "gloss": "arisen, produced"
+      },
+      {
+        "roman": "dūrv",
+        "gloss": "dūrvā grass (dūrvā)"
+      },
+      {
+        "roman": "āṅkur",
+        "gloss": "sprouts (aṅkura)"
+      },
+      {
+        "roman": "āśaṅka",
+        "gloss": "supposition, mistaken belief (āśaṅkā)"
+      },
+      {
+        "roman": "sāraṅga",
+        "gloss": "deer"
+      },
+      {
+        "roman": "saṃyoga",
+        "gloss": "contact, coming together"
+      },
+      {
+        "roman": "riṅkhan",
+        "gloss": "stirring, moving (riṅkhat)"
+      },
+      {
+        "roman": "nakh",
+        "gloss": "nails (nakha)"
+      },
+      {
+        "roman": "end",
+        "gloss": "moons (indu; nakha + indu)"
+      },
+      {
+        "roman": "ūjjvale",
+        "gloss": "O shining one: ujjvalā, vocative; indu + ujjvale"
       }
     ],
     "sourceWords": [
       {
-        "text": "नम्रदिक्पालसीमन्तिनीकुन्तलस्निग्धनीलप्रभापुञ्जसञ्जातदूर्वाङ्कुराशङ्कसारङ्गसंयोगरिङ्खन्नखेन्दूज्ज्वले",
+        "text": "नम्र",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "दिक्पाल",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सीमन्तिनी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "कुन्तल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्निग्ध",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नील",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "प्रभा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "पुञ्ज",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सञ्जात",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "दू",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "र्वा",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "ङ्कु",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "शङ्क",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सारङ्ग",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "संयोग",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "रिङ्ख",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "न्न",
+        "wordIndices": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "खे",
+        "wordIndices": [
+          15,
+          16
+        ]
+      },
+      {
+        "text": "न्दू",
+        "wordIndices": [
+          16,
+          17
+        ]
+      },
+      {
+        "text": "ज्ज्वले",
+        "wordIndices": [
+          17
         ]
       }
     ],
@@ -1698,18 +6028,293 @@ window.SONG_LINES = {
   "l064": {
     "source": "प्रह्वदेवेशलक्ष्मीशभूतेशतोयेशवाणीशकीनाशदैत्येशयक्षेशवाय्वग्निमाणिक्यसङ्घृष्टकोटीरबालातपोद्दामलाक्षारसारुण्यतारुण्यलक्ष्मीगृहीताङ्घ्रिपद्मे",
     "roman": "prahvadeveśalakṣmīśabhūteśatoyeśavāṇīśakīnāśadaityeśayakṣeśavāyvagnimāṇikyasaṅghṛṣṭakoṭīrabālātapoddāmalākṣārasāruṇyatāruṇyalakṣmīgṛhītāṅghripadme",
-    "english": "{0:Whose lotus feet are embraced by the fresh splendour of lac-red colour, glowing intensely with the morning-sun radiance of the ruby-touched crowns of the bowing lord of the gods, lord of Lakṣmī, lord of beings, lord of waters, lord of Speech, Death, lord of Daityas, lord of Yakṣas, Wind and Fire.}",
+    "english": "{24:Whose lotus }{23:feet }{22:are embraced }{20:by the fresh }{21:splendour }{17,18:of lac-}{19:red colour, }{16:glowing intensely }{14:with the morning-}{15:sun radiance }{11:of the ruby-}{12:touched }{13:crowns }{0:of the bowing }{1:lord of the gods, }{2:lord of Lakṣmī, }{3:lord of beings, }{4:lord of waters, }{5:lord of Speech, }{6:Death, }{7:lord of Daityas, }{8:lord of Yakṣas, }{9:Wind }{10:and Fire.}",
     "words": [
       {
-        "roman": "prahvadeveśalakṣmīśabhūteśatoyeśavāṇīśakīnāśadaityeśayakṣeśavāyvagnimāṇikyasaṅghṛṣṭakoṭīrabālātapoddāmalākṣārasāruṇyatāruṇyalakṣmīgṛhītāṅghripadme",
-        "gloss": "O you whose lotus feet are embraced by the fresh splendour of lac-red colour, glowing intensely with the morning-sun radiance of the ruby-touched crowns of the bowing lord of the gods, lord of Lakṣmī, lord of beings, lord of waters, lord of Speech, Death, lord of Daityas, lord of Yakṣas, Wind and Fire."
+        "roman": "prahva",
+        "gloss": "bowing"
+      },
+      {
+        "roman": "deveśa",
+        "gloss": "lord of the gods, Indra"
+      },
+      {
+        "roman": "lakṣmīśa",
+        "gloss": "lord of Lakṣmī, Viṣṇu"
+      },
+      {
+        "roman": "bhūteśa",
+        "gloss": "lord of beings, Śiva"
+      },
+      {
+        "roman": "toyeśa",
+        "gloss": "lord of waters, Varuṇa"
+      },
+      {
+        "roman": "vāṇīśa",
+        "gloss": "lord of Speech, Brahmā"
+      },
+      {
+        "roman": "kīnāśa",
+        "gloss": "Death, Yama"
+      },
+      {
+        "roman": "daityeśa",
+        "gloss": "lord of Daityas"
+      },
+      {
+        "roman": "yakṣeśa",
+        "gloss": "lord of Yakṣas, Kubera"
+      },
+      {
+        "roman": "vāyv",
+        "gloss": "Wind (vāyu)"
+      },
+      {
+        "roman": "agni",
+        "gloss": "Fire"
+      },
+      {
+        "roman": "māṇikya",
+        "gloss": "ruby"
+      },
+      {
+        "roman": "saṅghṛṣṭa",
+        "gloss": "rubbed, touched"
+      },
+      {
+        "roman": "koṭīra",
+        "gloss": "crowns"
+      },
+      {
+        "roman": "bāl",
+        "gloss": "young; of the morning (bāla)"
+      },
+      {
+        "roman": "ātap",
+        "gloss": "sunshine (ātapa)"
+      },
+      {
+        "roman": "oddāma",
+        "gloss": "intense, unbounded (uddāma)"
+      },
+      {
+        "roman": "lākṣā",
+        "gloss": "lac"
+      },
+      {
+        "roman": "ras",
+        "gloss": "juice, dye (rasa)"
+      },
+      {
+        "roman": "āruṇya",
+        "gloss": "redness"
+      },
+      {
+        "roman": "tāruṇya",
+        "gloss": "freshness, youth"
+      },
+      {
+        "roman": "lakṣmī",
+        "gloss": "splendour"
+      },
+      {
+        "roman": "gṛhīt",
+        "gloss": "embraced, held (gṛhīta)"
+      },
+      {
+        "roman": "āṅghri",
+        "gloss": "feet (aṅghri)"
+      },
+      {
+        "roman": "padme",
+        "gloss": "O you whose lotus: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "प्रह्वदेवेशलक्ष्मीशभूतेशतोयेशवाणीशकीनाशदैत्येशयक्षेशवाय्वग्निमाणिक्यसङ्घृष्टकोटीरबालातपोद्दामलाक्षारसारुण्यतारुण्यलक्ष्मीगृहीताङ्घ्रिपद्मे",
+        "text": "प्रह्व",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "देवेश",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लक्ष्मीश",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भूतेश",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तोयेश",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वाणीश",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कीनाश",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "दैत्येश",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "यक्षेश",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "य्व",
+        "wordIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "text": "ग्नि",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "माणिक्य",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "सङ्घृष्ट",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "कोटीर",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "बा",
+        "wordIndices": [
+          14
+        ]
+      },
+      {
+        "text": "ला",
+        "wordIndices": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "त",
+        "wordIndices": [
+          15
+        ]
+      },
+      {
+        "text": "पो",
+        "wordIndices": [
+          15,
+          16
+        ]
+      },
+      {
+        "text": "द्दाम",
+        "wordIndices": [
+          16
+        ]
+      },
+      {
+        "text": "लाक्षा",
+        "wordIndices": [
+          17
+        ]
+      },
+      {
+        "text": "र",
+        "wordIndices": [
+          18
+        ]
+      },
+      {
+        "text": "सा",
+        "wordIndices": [
+          18,
+          19
+        ]
+      },
+      {
+        "text": "रुण्य",
+        "wordIndices": [
+          19
+        ]
+      },
+      {
+        "text": "तारुण्य",
+        "wordIndices": [
+          20
+        ]
+      },
+      {
+        "text": "लक्ष्मी",
+        "wordIndices": [
+          21
+        ]
+      },
+      {
+        "text": "गृही",
+        "wordIndices": [
+          22
+        ]
+      },
+      {
+        "text": "ता",
+        "wordIndices": [
+          22,
+          23
+        ]
+      },
+      {
+        "text": "ङ्घ्रि",
+        "wordIndices": [
+          23
+        ]
+      },
+      {
+        "text": "पद्मे",
+        "wordIndices": [
+          24
         ]
       }
     ],
@@ -1748,11 +6353,27 @@ window.SONG_LINES = {
   "l066": {
     "source": "सुरुचिरनवरत्नपीठस्थिते सुस्थिते",
     "roman": "suruciranavaratnapīṭhasthite susthite",
-    "english": "{0:Seated on a lovely seat of nine gems}, {1:firmly established},",
+    "english": "{4:Seated }{0:on a lovely }{3:seat }{1:of nine }{2:gems}, {5:firmly established},",
     "words": [
       {
-        "roman": "suruciranavaratnapīṭhasthite",
-        "gloss": "O you seated on a lovely seat of nine gems"
+        "roman": "surucira",
+        "gloss": "lovely"
+      },
+      {
+        "roman": "nava",
+        "gloss": "nine"
+      },
+      {
+        "roman": "ratna",
+        "gloss": "gems"
+      },
+      {
+        "roman": "pīṭha",
+        "gloss": "seat"
+      },
+      {
+        "roman": "sthite",
+        "gloss": "O seated one: vocative"
       },
       {
         "roman": "susthite",
@@ -1761,15 +6382,39 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सुरुचिरनवरत्नपीठस्थिते",
+        "text": "सुरुचिर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सुस्थिते",
+        "text": "नव",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "रत्न",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पीठ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्थिते",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सुस्थिते",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -1778,28 +6423,65 @@ window.SONG_LINES = {
   "l067": {
     "source": "रक्तपद्मासने रत्नसिंहासने",
     "roman": "raktapadmāsane ratnasiṃhāsane",
-    "english": "{0:Seated on a red lotus}, {1:on a jeweled lion-throne},",
+    "english": "{2:Seated }{0:on a red }{1:lotus}, {3:on a jeweled }{4:lion-throne},",
     "words": [
       {
-        "roman": "raktapadmāsane",
-        "gloss": "O you seated on a red lotus"
+        "roman": "rakta",
+        "gloss": "red"
       },
       {
-        "roman": "ratnasiṃhāsane",
-        "gloss": "O you on a jeweled lion-throne"
+        "roman": "padm",
+        "gloss": "lotus (padma)"
+      },
+      {
+        "roman": "āsane",
+        "gloss": "O you whose seat: vocative"
+      },
+      {
+        "roman": "ratna",
+        "gloss": "jewel"
+      },
+      {
+        "roman": "siṃhāsane",
+        "gloss": "O you on a lion-throne: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "रक्तपद्मासने",
+        "text": "रक्त",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "रत्नसिंहासने",
+        "text": "प",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "द्मा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "सने",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "रत्न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सिंहासने",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -1808,11 +6490,23 @@ window.SONG_LINES = {
   "l068": {
     "source": "शङ्खपद्मद्वयोपाश्रिते विश्रुते",
     "roman": "śaṅkhapadmadvayopāśrite viśrute",
-    "english": "{0:Attended by the two treasures Śaṅkha and Padma}, {1:renowned},",
+    "english": "{3:Attended }{2:by the two treasures }{0:Śaṅkha }{1:and Padma}, {4:renowned},",
     "words": [
       {
-        "roman": "śaṅkhapadmadvayopāśrite",
-        "gloss": "O you attended by the two treasures Śaṅkha and Padma"
+        "roman": "śaṅkha",
+        "gloss": "the treasure Śaṅkha"
+      },
+      {
+        "roman": "padma",
+        "gloss": "the treasure Padma"
+      },
+      {
+        "roman": "dvay",
+        "gloss": "the two (dvaya)"
+      },
+      {
+        "roman": "opāśrite",
+        "gloss": "O you attended by: upāśritā, vocative"
       },
       {
         "roman": "viśrute",
@@ -1821,15 +6515,40 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "शङ्खपद्मद्वयोपाश्रिते",
+        "text": "शङ्ख",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "विश्रुते",
+        "text": "पद्म",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "द्व",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "यो",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "पाश्रिते",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विश्रुते",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -1838,15 +6557,27 @@ window.SONG_LINES = {
   "l069": {
     "source": "तत्र विघ्नेशदुर्गावटुक्षेत्रपालैर्युते",
     "roman": "tatra vighneśadurgāvaṭukṣetrapālaiḥ yute",
-    "english": "{2:Accompanied} {0:there} {1:by Vighneśa, Durgā, Vaṭu and Kṣetrapāla},",
+    "english": "{5:Accompanied} {0:there} {1:by Vighneśa, }{2:Durgā, }{3:Vaṭu }{4:and Kṣetrapāla},",
     "words": [
       {
         "roman": "tatra",
         "gloss": "there"
       },
       {
-        "roman": "vighneśadurgāvaṭukṣetrapālaiḥ",
-        "gloss": "with Vighneśa, lord of obstacles; Durgā, the unassailable goddess; Vaṭu, Śiva in youthful form; and Kṣetrapāla, guardian of the field"
+        "roman": "vighneśa",
+        "gloss": "Vighneśa, lord of obstacles"
+      },
+      {
+        "roman": "durgā",
+        "gloss": "Durgā, the unassailable goddess"
+      },
+      {
+        "roman": "vaṭu",
+        "gloss": "Vaṭu, Śiva in youthful form"
+      },
+      {
+        "roman": "kṣetrapālaiḥ",
+        "gloss": "with Kṣetrapāla, guardian of the field: instrumental"
       },
       {
         "roman": "yute",
@@ -1861,10 +6592,40 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "विघ्नेशदुर्गावटुक्षेत्रपालैर्युते",
+        "text": "विघ्नेश",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "दुर्गा",
+        "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "वटु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "क्षेत्रपालै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "र्यु",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ते",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -1873,18 +6634,65 @@ window.SONG_LINES = {
   "l070": {
     "source": "मत्तमातङ्गकन्यासमूहान्विते",
     "roman": "mattamātaṅgakanyāsamūhānvite",
-    "english": "{0:Accompanied by a group of intoxicated Mataṅga maidens},",
+    "english": "{4:Accompanied }{3:by a group }{0:of intoxicated }{1:Mataṅga }{2:maidens},",
     "words": [
       {
-        "roman": "mattamātaṅgakanyāsamūhānvite",
-        "gloss": "O you accompanied by a group of intoxicated Mataṅga maidens"
+        "roman": "matta",
+        "gloss": "intoxicated"
+      },
+      {
+        "roman": "mātaṅga",
+        "gloss": "of Mataṅga’s people"
+      },
+      {
+        "roman": "kanyā",
+        "gloss": "maidens"
+      },
+      {
+        "roman": "samūh",
+        "gloss": "group (samūha)"
+      },
+      {
+        "roman": "ānvite",
+        "gloss": "O accompanied one: anvitā, vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "मत्तमातङ्गकन्यासमूहान्विते",
+        "text": "मत्त",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "मातङ्ग",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "कन्या",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समू",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हा",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "न्विते",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -1893,18 +6701,66 @@ window.SONG_LINES = {
   "l071": {
     "source": "मञ्जुलामेनकाद्यङ्गनामानिते",
     "roman": "mañjulāmenakādyaṅganāmānite",
-    "english": "{0:Honoured by lovely women such as Menakā},",
+    "english": "{4:Honoured }{0:by lovely }{3:women }{2:such as }{1:Menakā},",
     "words": [
       {
-        "roman": "mañjulāmenakādyaṅganāmānite",
-        "gloss": "O you honoured by lovely women such as Menakā"
+        "roman": "mañjulā",
+        "gloss": "lovely"
+      },
+      {
+        "roman": "menak",
+        "gloss": "Menakā, the celestial nymph"
+      },
+      {
+        "roman": "ādy",
+        "gloss": "beginning with, such as (ādi)"
+      },
+      {
+        "roman": "aṅganā",
+        "gloss": "women"
+      },
+      {
+        "roman": "mānite",
+        "gloss": "O honoured one: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "मञ्जुलामेनकाद्यङ्गनामानिते",
+        "text": "मञ्जुला",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "मेन",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "द्य",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ङ्गना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मानिते",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -1993,7 +6849,7 @@ window.SONG_LINES = {
   "l074": {
     "source": "धात्रि लक्ष्म्यादिशक्त्यष्टकैः संयुते",
     "roman": "dhātri lakṣmyādiśaktyaṣṭakaiḥ saṃyute",
-    "english": "{0:O Mother,} {2:united} {1:with the eight powers beginning with Lakṣmī},",
+    "english": "{0:O Mother,} {5:united} {4:with the eight }{3:powers }{2:beginning }{1:with Lakṣmī},",
     "words": [
       {
         "roman": "dhātri",
@@ -2001,9 +6857,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "lakṣmyādiśaktyaṣṭakaiḥ",
-        "gloss": "with the eight powers beginning with Lakṣmī, fortune and prosperity personified",
-        "preserve_in_english": false
+        "roman": "lakṣmy",
+        "gloss": "Lakṣmī, fortune and prosperity personified"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "beginning with"
+      },
+      {
+        "roman": "śakty",
+        "gloss": "powers (śakti)"
+      },
+      {
+        "roman": "aṣṭakaiḥ",
+        "gloss": "with groups of eight: instrumental"
       },
       {
         "roman": "saṃyute",
@@ -2018,15 +6885,47 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "लक्ष्म्यादिशक्त्यष्टकैः",
+        "text": "ल",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "संयुते",
+        "text": "क्ष्म्या",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "दि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "श",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "क्त्य",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ष्टकैः",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "संयुते",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -2035,12 +6934,15 @@ window.SONG_LINES = {
   "l075": {
     "source": "मातृकामण्डलैर्मण्डिते",
     "roman": "mātṛkāmaṇḍalaiḥ maṇḍite",
-    "english": "{1:Adorned} {0:with circles of the Mother goddesses},",
+    "english": "{2:Adorned} {1:with circles }{0:of the Mother goddesses},",
     "words": [
       {
-        "roman": "mātṛkāmaṇḍalaiḥ",
-        "gloss": "with circles of the Mother goddesses (Mātṛkās)",
-        "preserve_in_english": false
+        "roman": "mātṛkā",
+        "gloss": "the Mother goddesses (Mātṛkās)"
+      },
+      {
+        "roman": "maṇḍalaiḥ",
+        "gloss": "with circles: instrumental"
       },
       {
         "roman": "maṇḍite",
@@ -2049,10 +6951,28 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "मातृकामण्डलैर्मण्डिते",
+        "text": "मातृका",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "मण्डलै",
+        "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "र्म",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ण्डिते",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -2061,11 +6981,27 @@ window.SONG_LINES = {
   "l076": {
     "source": "यक्षगन्धर्वसिद्धाङ्गनामण्डलीभिरर्चिते",
     "roman": "yakṣagandharvasiddhāṅganāmaṇḍalībhiḥ arcite",
-    "english": "{1:Worshipped} {0:by circles of Yakṣa, Gandharva and Siddha women},",
+    "english": "{5:Worshipped} {4:by circles }{0:of Yakṣa, }{1:Gandharva }{2:and Siddha }{3:women},",
     "words": [
       {
-        "roman": "yakṣagandharvasiddhāṅganāmaṇḍalībhiḥ",
-        "gloss": "by circles of Yakṣa, Gandharva and Siddha women"
+        "roman": "yakṣa",
+        "gloss": "Yakṣa, nature spirit"
+      },
+      {
+        "roman": "gandharva",
+        "gloss": "Gandharva, celestial musician"
+      },
+      {
+        "roman": "siddh",
+        "gloss": "Siddha, perfected being (siddha)"
+      },
+      {
+        "roman": "āṅganā",
+        "gloss": "women (aṅganā)"
+      },
+      {
+        "roman": "maṇḍalībhiḥ",
+        "gloss": "by circles: instrumental"
       },
       {
         "roman": "arcite",
@@ -2074,10 +7010,53 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "यक्षगन्धर्वसिद्धाङ्गनामण्डलीभिरर्चिते",
+        "text": "यक्ष",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "गन्धर्व",
+        "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "सि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "द्धा",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ङ्गना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मण्डलीभि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "र",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "र्चिते",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -2086,18 +7065,45 @@ window.SONG_LINES = {
   "l077": {
     "source": "पञ्चबाणात्मिके",
     "roman": "pañcabāṇātmike",
-    "english": "{0:Embodiment of the five arrows},",
+    "english": "{2:Embodiment }{0:of the five }{1:arrows},",
     "words": [
       {
-        "roman": "pañcabāṇātmike",
-        "gloss": "O embodiment of the five arrows"
+        "roman": "pañca",
+        "gloss": "five"
+      },
+      {
+        "roman": "bāṇ",
+        "gloss": "arrows (bāṇa)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "पञ्चबाणात्मिके",
+        "text": "पञ्च",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "बा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "णा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -2291,11 +7297,15 @@ window.SONG_LINES = {
   "l082": {
     "source": "छन्दसामोजसा भ्राजसे",
     "roman": "chandasāmojasā bhrājase",
-    "english": "{1:You blaze} {0:with the power of the Vedic hymns}.",
+    "english": "{2:You blaze} {1:with the power }{0:of the Vedic hymns}.",
     "words": [
       {
-        "roman": "chandasāmojasā",
-        "gloss": "with the power of the Vedic hymns"
+        "roman": "chandasām",
+        "gloss": "of the Vedic hymns: genitive plural"
+      },
+      {
+        "roman": "ojasā",
+        "gloss": "with the power: instrumental"
       },
       {
         "roman": "bhrājase",
@@ -2304,15 +7314,28 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "छन्दसामोजसा",
+        "text": "छन्दसा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "भ्राजसे",
+        "text": "मो",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "जसा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "भ्राजसे",
+        "wordIndices": [
+          2
         ]
       }
     ],
@@ -2321,11 +7344,27 @@ window.SONG_LINES = {
   "l083": {
     "source": "गीतविद्याविनोदातितृष्णेन कृष्णेन सम्पूज्यसे",
     "roman": "gītavidyāvinodātitṛṣṇena kṛṣṇena sampūjyase",
-    "english": "{2:You are worshipped} {1:by Kṛṣṇa}, {0:intensely thirsting for the delight of musical knowledge}.",
+    "english": "{6:You are worshipped} {5:by Kṛṣṇa}, {3:intensely }{4:thirsting }{2:for the delight }{0:of musical }{1:knowledge}.",
     "words": [
       {
-        "roman": "gītavidyāvinodātitṛṣṇena",
-        "gloss": "by one intensely thirsting for the delight of musical knowledge"
+        "roman": "gīta",
+        "gloss": "music, song"
+      },
+      {
+        "roman": "vidyā",
+        "gloss": "knowledge"
+      },
+      {
+        "roman": "vinod",
+        "gloss": "delight (vinoda)"
+      },
+      {
+        "roman": "āti",
+        "gloss": "intensely (ati)"
+      },
+      {
+        "roman": "tṛṣṇena",
+        "gloss": "by one thirsting: instrumental"
       },
       {
         "roman": "kṛṣṇena",
@@ -2338,21 +7377,52 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "गीतविद्याविनोदातितृष्णेन",
+        "text": "गीत",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कृष्णेन",
+        "text": "विद्या",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सम्पूज्यसे",
+        "text": "विनो",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दा",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "तृष्णेन",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कृष्णेन",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सम्पूज्यसे",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -2361,11 +7431,15 @@ window.SONG_LINES = {
   "l084": {
     "source": "भक्तिमच्चेतसा वेधसा स्तूयसे",
     "roman": "bhaktimaccetasā vedhasā stūyase",
-    "english": "{2:You are praised} {1:by Brahmā}, {0:with a heart endowed with devotion}.",
+    "english": "{3:You are praised} {2:by Brahmā}, {1:with a heart }{0:endowed with devotion}.",
     "words": [
       {
-        "roman": "bhaktimaccetasā",
-        "gloss": "with a heart endowed with devotion"
+        "roman": "bhaktimac",
+        "gloss": "endowed with devotion (bhaktimat)"
+      },
+      {
+        "roman": "cetasā",
+        "gloss": "with a heart, mind: instrumental"
       },
       {
         "roman": "vedhasā",
@@ -2378,21 +7452,34 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "भक्तिमच्चेतसा",
+        "text": "भक्तिम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "वेधसा",
+        "text": "च्चे",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "तसा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "स्तूयसे",
+        "text": "वेधसा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्तूयसे",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -2446,11 +7533,23 @@ window.SONG_LINES = {
   "l086": {
     "source": "श्रवणहरणदक्षिणक्वाणया वीणया किन्नरैर्गीयसे",
     "roman": "śravaṇaharaṇadakṣiṇakvāṇayā vīṇayā kinnaraiḥ gīyase",
-    "english": "{3:Your praises are sung} {2:by Kinnaras}, {1:with a vīṇā} {0:whose sound deftly captivates the ear}.",
+    "english": "{6:Your praises are sung} {5:by Kinnaras}, {4:with a vīṇā} {3:whose sound }{2:deftly }{1:captivates }{0:the ear}.",
     "words": [
       {
-        "roman": "śravaṇaharaṇadakṣiṇakvāṇayā",
-        "gloss": "with a sound skilful in captivating the ear"
+        "roman": "śravaṇa",
+        "gloss": "the ear"
+      },
+      {
+        "roman": "haraṇa",
+        "gloss": "captivating"
+      },
+      {
+        "roman": "dakṣiṇa",
+        "gloss": "skilful"
+      },
+      {
+        "roman": "kvāṇayā",
+        "gloss": "with a sound: instrumental"
       },
       {
         "roman": "vīṇayā",
@@ -2467,22 +7566,52 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "श्रवणहरणदक्षिणक्वाणया",
+        "text": "श्रवण",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "वीणया",
+        "text": "हरण",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "किन्नरैर्गीयसे",
+        "text": "दक्षिण",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "क्वाणया",
+        "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "वीणया",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "किन्नरै",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "र्गी",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "यसे",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -2491,11 +7620,27 @@ window.SONG_LINES = {
   "l087": {
     "source": "यक्षगन्धर्वसिद्धाङ्गनामण्डलैरर्च्यसे",
     "roman": "yakṣagandharvasiddhāṅganāmaṇḍalaiḥ arcyase",
-    "english": "{1:You are worshipped} {0:by circles of Yakṣa, Gandharva and Siddha women}.",
+    "english": "{5:You are worshipped} {4:by circles }{0:of Yakṣa, }{1:Gandharva }{2:and Siddha }{3:women}.",
     "words": [
       {
-        "roman": "yakṣagandharvasiddhāṅganāmaṇḍalaiḥ",
-        "gloss": "by circles of Yakṣa, Gandharva and Siddha women"
+        "roman": "yakṣa",
+        "gloss": "Yakṣa, nature spirit"
+      },
+      {
+        "roman": "gandharva",
+        "gloss": "Gandharva, celestial musician"
+      },
+      {
+        "roman": "siddh",
+        "gloss": "Siddha, perfected being (siddha)"
+      },
+      {
+        "roman": "āṅganā",
+        "gloss": "women (aṅganā)"
+      },
+      {
+        "roman": "maṇḍalaiḥ",
+        "gloss": "by circles: instrumental"
       },
       {
         "roman": "arcyase",
@@ -2504,10 +7649,53 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "यक्षगन्धर्वसिद्धाङ्गनामण्डलैरर्च्यसे",
+        "text": "यक्ष",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "गन्धर्व",
+        "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "सि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "द्धा",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ङ्गना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मण्डलै",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "र",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "र्च्यसे",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -2516,11 +7704,19 @@ window.SONG_LINES = {
   "l088": {
     "source": "सर्वसौभाग्यवाञ्छावतीभिर्वधूभिः सुराणां समाराध्यसे",
     "roman": "sarvasaubhāgyavāñchāvatībhiḥ vadhūbhiḥ surāṇāṃ samārādhyase",
-    "english": "{3:You are duly worshipped} {1:by the wives} {2:of the gods}, {0:wishing for every auspicious fortune}.",
+    "english": "{5:You are duly worshipped} {3:by the wives} {4:of the gods}, {2:wishing for }{0:every }{1:auspicious fortune}.",
     "words": [
       {
-        "roman": "sarvasaubhāgyavāñchāvatībhiḥ",
-        "gloss": "by those wishing for every auspicious fortune"
+        "roman": "sarva",
+        "gloss": "every"
+      },
+      {
+        "roman": "saubhāgya",
+        "gloss": "auspicious fortune"
+      },
+      {
+        "roman": "vāñchāvatībhiḥ",
+        "gloss": "by those wishing for: instrumental plural"
       },
       {
         "roman": "vadhūbhiḥ",
@@ -2537,22 +7733,46 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सर्वसौभाग्यवाञ्छावतीभिर्वधूभिः",
+        "text": "सर्व",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "सौभाग्य",
+        "wordIndices": [
           1
         ]
       },
       {
-        "text": "सुराणां",
+        "text": "वाञ्छावतीभि",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "समाराध्यसे",
+        "text": "र्व",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "धूभिः",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "सुराणां",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "समाराध्यसे",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -2561,28 +7781,85 @@ window.SONG_LINES = {
   "l089": {
     "source": "सर्वविद्याविशेषात्मकं चाटुगाथासमुच्चारणं",
     "roman": "sarvavidyāviśeṣātmakaṃ cāṭugāthāsamuccāraṇaṃ",
-    "english": "{0:Embodying every special branch of knowledge}, {1:uttering sweet verses},",
+    "english": "{3:Embodying }{0:every }{2:special branch }{1:of knowledge}, {6:uttering }{4:sweet }{5:verses},",
     "words": [
       {
-        "roman": "sarvavidyāviśeṣātmakaṃ",
-        "gloss": "embodying every special branch of knowledge"
+        "roman": "sarva",
+        "gloss": "every"
       },
       {
-        "roman": "cāṭugāthāsamuccāraṇaṃ",
-        "gloss": "uttering sweet verses"
+        "roman": "vidyā",
+        "gloss": "knowledge"
+      },
+      {
+        "roman": "viśeṣ",
+        "gloss": "special branch, kind (viśeṣa)"
+      },
+      {
+        "roman": "ātmakaṃ",
+        "gloss": "embodying"
+      },
+      {
+        "roman": "cāṭu",
+        "gloss": "sweet, pleasing"
+      },
+      {
+        "roman": "gāthā",
+        "gloss": "verses"
+      },
+      {
+        "roman": "samuccāraṇaṃ",
+        "gloss": "uttering"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वविद्याविशेषात्मकं",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "चाटुगाथासमुच्चारणं",
+        "text": "विद्या",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "विशे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "षा",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "त्मकं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चाटु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गाथा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "समुच्चारणं",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -2591,18 +7868,82 @@ window.SONG_LINES = {
   "l090": {
     "source": "कण्ठमूलोल्लसद्वर्णराजित्रयं",
     "roman": "kaṇṭhamūlollasadvarṇarājitrayaṃ",
-    "english": "{0:With three rows of colours shining at the root of its throat},",
+    "english": "{5:With three }{4:rows }{3:of colours }{2:shining }{1:at the root }{0:of its throat},",
     "words": [
       {
-        "roman": "kaṇṭhamūlollasadvarṇarājitrayaṃ",
-        "gloss": "with three rows of colours shining at the root of its throat"
+        "roman": "kaṇṭha",
+        "gloss": "throat"
+      },
+      {
+        "roman": "mūl",
+        "gloss": "root (mūla)"
+      },
+      {
+        "roman": "ollasad",
+        "gloss": "shining (ullasat)"
+      },
+      {
+        "roman": "varṇa",
+        "gloss": "colours"
+      },
+      {
+        "roman": "rāji",
+        "gloss": "rows"
+      },
+      {
+        "roman": "trayaṃ",
+        "gloss": "with a triad of"
       }
     ],
     "sourceWords": [
       {
-        "text": "कण्ठमूलोल्लसद्वर्णराजित्रयं",
+        "text": "कण्ठ",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "मू",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ल्लस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "द्व",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "र्ण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राजि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "त्रयं",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -2611,18 +7952,65 @@ window.SONG_LINES = {
   "l091": {
     "source": "कोमलश्यामलोदारपक्षद्वयं",
     "roman": "komalaśyāmalodārapakṣadvayaṃ",
-    "english": "{0:With a pair of beautiful tender dark wings},",
+    "english": "{4:With a pair }{2:of beautiful }{0:tender }{1:dark }{3:wings},",
     "words": [
       {
-        "roman": "komalaśyāmalodārapakṣadvayaṃ",
-        "gloss": "with a pair of beautiful tender dark wings"
+        "roman": "komala",
+        "gloss": "tender"
+      },
+      {
+        "roman": "śyāmal",
+        "gloss": "dark (śyāmala)"
+      },
+      {
+        "roman": "odāra",
+        "gloss": "beautiful, noble (udāra)"
+      },
+      {
+        "roman": "pakṣa",
+        "gloss": "wings"
+      },
+      {
+        "roman": "dvayaṃ",
+        "gloss": "with a pair of"
       }
     ],
     "sourceWords": [
       {
-        "text": "कोमलश्यामलोदारपक्षद्वयं",
+        "text": "कोमल",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "श्याम",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "लो",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "दार",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पक्ष",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "द्वयं",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -2631,18 +8019,89 @@ window.SONG_LINES = {
   "l092": {
     "source": "तुण्डशोभातिदूरीभवत्किंशुकाभं",
     "roman": "tuṇḍaśobhātidūrībhavatkiṃśukābhaṃ",
-    "english": "{0:Whose beak’s beauty far surpasses the brilliance of kiṃśuka flowers},",
+    "english": "{0:Whose beak’s }{1:beauty }{2:far }{3:surpasses }{5:the brilliance }{4:of kiṃśuka flowers},",
     "words": [
       {
-        "roman": "tuṇḍaśobhātidūrībhavatkiṃśukābhaṃ",
-        "gloss": "whose beak’s beauty far surpasses the brilliance of kiṃśuka flowers"
+        "roman": "tuṇḍa",
+        "gloss": "beak"
+      },
+      {
+        "roman": "śobh",
+        "gloss": "beauty (śobhā)"
+      },
+      {
+        "roman": "ātidūrī",
+        "gloss": "very far off (atidūra)"
+      },
+      {
+        "roman": "bhavat",
+        "gloss": "becoming; “put far away” means surpassed"
+      },
+      {
+        "roman": "kiṃśuk",
+        "gloss": "kiṃśuka flowers (kiṃśuka)"
+      },
+      {
+        "roman": "ābhaṃ",
+        "gloss": "brilliance (ābhā)"
       }
     ],
     "sourceWords": [
       {
-        "text": "तुण्डशोभातिदूरीभवत्किंशुकाभं",
+        "text": "तुण्ड",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "शो",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "तिदूरी",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भव",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "त्किं",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "शु",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "का",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "भं",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -2701,11 +8160,19 @@ window.SONG_LINES = {
   "l094": {
     "source": "पाणिपद्मद्वयेनाक्षमालामपि स्फाटिकीं ज्ञानसारात्मकं पुस्तकं चापरेणाङ्कुशं पाशमाबिभ्रती येन सञ्चिन्त्यसे चेतसा तस्य वक्त्रान्तराद्गद्यपद्यात्मिका भारती निःसरेत्",
     "roman": "pāṇipadmadvayena akṣamālām api sphāṭikīṃ jñānasārātmakaṃ pustakaṃ ca apareṇa aṅkuśaṃ pāśam ābibhratī yena sañcintyase cetasā tasya vaktrāntarāt gadyapadyātmikā bhāratī niḥsaret",
-    "english": "{17:Speech} {16:consisting of prose and verse} {18:would flow} {15:from within the mouth} {14:of one} {11:by whom} {12:you are contemplated} {13:with the mind}, {10:holding} {0:in one pair of lotus-hands} {1:a rosary} {3:of crystal} and {2:also} {5:a book} {4:embodying the essence of knowledge}, {6:and} {7:in the other pair} {8:a goad} and {9:a noose}.",
+    "english": "{24:Speech} {23:consisting }{21:of prose }{22:and verse} {25:would flow} {20:from within }{19:the mouth} {18:of one} {15:by whom} {16:you are contemplated} {17:with the mind}, {14:holding} {2:in one pair }{1:of lotus-}{0:hands} {3:a rosary} {5:of crystal} and {4:also} {9:a book} {8:embodying }{7:the essence }{6:of knowledge}, {10:and} {11:in the other pair} {12:a goad} and {13:a noose}.",
     "words": [
       {
-        "roman": "pāṇipadmadvayena",
-        "gloss": "with a pair of lotus-hands"
+        "roman": "pāṇi",
+        "gloss": "hands"
+      },
+      {
+        "roman": "padma",
+        "gloss": "lotus"
+      },
+      {
+        "roman": "dvayena",
+        "gloss": "with a pair: instrumental"
       },
       {
         "roman": "akṣamālām",
@@ -2720,8 +8187,16 @@ window.SONG_LINES = {
         "gloss": "of crystal"
       },
       {
-        "roman": "jñānasārātmakaṃ",
-        "gloss": "embodying the essence of knowledge"
+        "roman": "jñāna",
+        "gloss": "knowledge"
+      },
+      {
+        "roman": "sār",
+        "gloss": "essence (sāra)"
+      },
+      {
+        "roman": "ātmakaṃ",
+        "gloss": "embodying"
       },
       {
         "roman": "pustakaṃ",
@@ -2764,12 +8239,24 @@ window.SONG_LINES = {
         "gloss": "of that person"
       },
       {
-        "roman": "vaktrāntarāt",
-        "gloss": "from within the mouth"
+        "roman": "vaktr",
+        "gloss": "mouth (vaktra)"
       },
       {
-        "roman": "gadyapadyātmikā",
-        "gloss": "consisting of prose and verse"
+        "roman": "āntarāt",
+        "gloss": "from within: antara, ablative"
+      },
+      {
+        "roman": "gadya",
+        "gloss": "prose"
+      },
+      {
+        "roman": "pady",
+        "gloss": "verse (padya)"
+      },
+      {
+        "roman": "ātmikā",
+        "gloss": "consisting of"
       },
       {
         "roman": "bhāratī",
@@ -2782,87 +8269,216 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "पाणिपद्मद्वयेनाक्षमालामपि",
+        "text": "पाणि",
         "wordIndices": [
-          0,
-          1,
+          0
+        ]
+      },
+      {
+        "text": "पद्म",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "द्वये",
+        "wordIndices": [
           2
         ]
       },
       {
-        "text": "स्फाटिकीं",
+        "text": "ना",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "क्षमाला",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ज्ञानसारात्मकं",
+        "text": "म",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "पि",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "पुस्तकं",
+        "text": "स्फाटिकीं",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "चापरेणाङ्कुशं",
+        "text": "ज्ञान",
         "wordIndices": [
-          6,
+          6
+        ]
+      },
+      {
+        "text": "सा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
           7,
           8
         ]
       },
       {
-        "text": "पाशमाबिभ्रती",
+        "text": "त्मकं",
         "wordIndices": [
-          9,
-          10
+          8
         ]
       },
       {
-        "text": "येन",
+        "text": "पुस्तकं",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "चा",
+        "wordIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "text": "परे",
         "wordIndices": [
           11
         ]
       },
       {
-        "text": "सञ्चिन्त्यसे",
+        "text": "णा",
+        "wordIndices": [
+          11,
+          12
+        ]
+      },
+      {
+        "text": "ङ्कुशं",
         "wordIndices": [
           12
         ]
       },
       {
-        "text": "चेतसा",
+        "text": "पाश",
         "wordIndices": [
           13
         ]
       },
       {
-        "text": "तस्य",
+        "text": "मा",
+        "wordIndices": [
+          13,
+          14
+        ]
+      },
+      {
+        "text": "बिभ्रती",
         "wordIndices": [
           14
         ]
       },
       {
-        "text": "वक्त्रान्तराद्गद्यपद्यात्मिका",
+        "text": "येन",
         "wordIndices": [
-          15,
+          15
+        ]
+      },
+      {
+        "text": "सञ्चिन्त्यसे",
+        "wordIndices": [
           16
         ]
       },
       {
-        "text": "भारती",
+        "text": "चेतसा",
         "wordIndices": [
           17
         ]
       },
       {
-        "text": "निःसरेत्",
+        "text": "तस्य",
         "wordIndices": [
           18
+        ]
+      },
+      {
+        "text": "व",
+        "wordIndices": [
+          19
+        ]
+      },
+      {
+        "text": "क्त्रा",
+        "wordIndices": [
+          19,
+          20
+        ]
+      },
+      {
+        "text": "न्तरा",
+        "wordIndices": [
+          20
+        ]
+      },
+      {
+        "text": "द्ग",
+        "wordIndices": [
+          20,
+          21
+        ]
+      },
+      {
+        "text": "द्य",
+        "wordIndices": [
+          21
+        ]
+      },
+      {
+        "text": "प",
+        "wordIndices": [
+          22
+        ]
+      },
+      {
+        "text": "द्या",
+        "wordIndices": [
+          22,
+          23
+        ]
+      },
+      {
+        "text": "त्मिका",
+        "wordIndices": [
+          23
+        ]
+      },
+      {
+        "text": "भारती",
+        "wordIndices": [
+          24
+        ]
+      },
+      {
+        "text": "निःसरेत्",
+        "wordIndices": [
+          25
         ]
       }
     ],
@@ -2871,7 +8487,7 @@ window.SONG_LINES = {
   "l095": {
     "source": "येन वा यावकाभाकृतिर्भाव्यसे",
     "roman": "yena vā yāvakābhākṛtiḥ bhāvyase",
-    "english": "{1:Or} {0:whoever} {3:contemplates you} {2:in a form red as lac},",
+    "english": "{1:Or} {0:whoever} {5:contemplates you} {4:in a form }{3:red as }{2:lac},",
     "words": [
       {
         "roman": "yena",
@@ -2882,8 +8498,16 @@ window.SONG_LINES = {
         "gloss": "or"
       },
       {
-        "roman": "yāvakābhākṛtiḥ",
-        "gloss": "having the appearance of red lac"
+        "roman": "yāvak",
+        "gloss": "red lac (yāvaka)"
+      },
+      {
+        "roman": "ābh",
+        "gloss": "like, with the look of (ābha)"
+      },
+      {
+        "roman": "ākṛtiḥ",
+        "gloss": "having the form"
       },
       {
         "roman": "bhāvyase",
@@ -2904,10 +8528,42 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "यावकाभाकृतिर्भाव्यसे",
+        "text": "याव",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "का",
         "wordIndices": [
           2,
           3
+        ]
+      },
+      {
+        "text": "भा",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "कृति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "र्भा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "व्यसे",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3016,7 +8672,7 @@ window.SONG_LINES = {
   "l098": {
     "source": "येन वा शातकुम्भद्युतिर्भाव्यसे",
     "roman": "yena vā śātakumbhadyutiḥ bhāvyase",
-    "english": "{1:Or} {0:whoever} {3:contemplates you} {2:with the lustre of gold},",
+    "english": "{1:Or} {0:whoever} {4:contemplates you} {3:with the lustre }{2:of gold},",
     "words": [
       {
         "roman": "yena",
@@ -3027,8 +8683,12 @@ window.SONG_LINES = {
         "gloss": "or"
       },
       {
-        "roman": "śātakumbhadyutiḥ",
-        "gloss": "with the lustre of gold"
+        "roman": "śātakumbha",
+        "gloss": "gold"
+      },
+      {
+        "roman": "dyutiḥ",
+        "gloss": "with the lustre"
       },
       {
         "roman": "bhāvyase",
@@ -3049,10 +8709,28 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "शातकुम्भद्युतिर्भाव्यसे",
+        "text": "शातकुम्भ",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "द्युति",
+        "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "र्भा",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "व्यसे",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -3061,15 +8739,23 @@ window.SONG_LINES = {
   "l099": {
     "source": "सोऽपि लक्ष्मीसहस्रैः परिक्रीडते",
     "roman": "so'pi lakṣmīsahasraiḥ parikrīḍate",
-    "english": "{0:That one too} {2:sports} {1:with thousands of Lakṣmīs}.",
+    "english": "{0:That one }{1:too} {4:sports} {3:with thousands }{2:of Lakṣmīs}.",
     "words": [
       {
-        "roman": "so'pi",
-        "gloss": "that one too"
+        "roman": "so",
+        "gloss": "that one (saḥ)"
       },
       {
-        "roman": "lakṣmīsahasraiḥ",
-        "gloss": "with thousands of Lakṣmīs, personified forms of prosperity"
+        "roman": "'pi",
+        "gloss": "too, also (api)"
+      },
+      {
+        "roman": "lakṣmī",
+        "gloss": "Lakṣmīs, personified forms of prosperity"
+      },
+      {
+        "roman": "sahasraiḥ",
+        "gloss": "with thousands: instrumental"
       },
       {
         "roman": "parikrīḍate",
@@ -3078,21 +8764,33 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सोऽपि",
+        "text": "सो",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "लक्ष्मीसहस्रैः",
+        "text": "ऽपि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "परिक्रीडते",
+        "text": "लक्ष्मी",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सहस्रैः",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "परिक्रीडते",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -3101,7 +8799,7 @@ window.SONG_LINES = {
   "l100": {
     "source": "किं न सिद्ध्येद्वपुः श्यामलं कोमलं चन्द्रचूडान्वितं तावकं ध्यायतः",
     "roman": "kiṃ na siddhyedvapuḥ śyāmalaṃ komalaṃ candracūḍānvitaṃ tāvakaṃ dhyāyataḥ",
-    "english": "{0:What} would {1:not} {2:be accomplished} {7:for one contemplating} {6:your} {2:body}, {3:dark-hued}, {4:tender}, {5:with the moon as its crest}?",
+    "english": "{0:What} {2:would} {1:not} {2:be accomplished} {10:for one contemplating} {9:your} {3:body}, {4:dark-hued}, {5:tender}, {8:with }{6:the moon }{7:as its crest}?",
     "words": [
       {
         "roman": "kiṃ",
@@ -3112,8 +8810,12 @@ window.SONG_LINES = {
         "gloss": "not"
       },
       {
-        "roman": "siddhyedvapuḥ",
-        "gloss": "would be accomplished; the body"
+        "roman": "siddhyed",
+        "gloss": "would be accomplished: siddhyet, optative"
+      },
+      {
+        "roman": "vapuḥ",
+        "gloss": "the body"
       },
       {
         "roman": "śyāmalaṃ",
@@ -3124,8 +8826,16 @@ window.SONG_LINES = {
         "gloss": "tender"
       },
       {
-        "roman": "candracūḍānvitaṃ",
-        "gloss": "with the moon as its crest"
+        "roman": "candra",
+        "gloss": "moon"
+      },
+      {
+        "roman": "cūḍ",
+        "gloss": "crest (cūḍā)"
+      },
+      {
+        "roman": "ānvitaṃ",
+        "gloss": "furnished with (anvita)"
       },
       {
         "roman": "tāvakaṃ",
@@ -3150,39 +8860,71 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सिद्ध्येद्वपुः",
+        "text": "सिद्ध्ये",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "श्यामलं",
+        "text": "द्व",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "पुः",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "कोमलं",
+        "text": "श्यामलं",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "चन्द्रचूडान्वितं",
+        "text": "कोमलं",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "तावकं",
+        "text": "चन्द्र",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ध्यायतः",
+        "text": "चू",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "डा",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "न्वितं",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "तावकं",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ध्यायतः",
+        "wordIndices": [
+          10
         ]
       }
     ],
@@ -3401,28 +9143,82 @@ window.SONG_LINES = {
   "l106": {
     "source": "सर्वतीर्थात्मिके सर्वमन्त्रात्मिके",
     "roman": "sarvatīrthātmike sarvamantrātmike",
-    "english": "{0:Embodiment of all holy bathing places}, {1:embodiment of all sacred formulas},",
+    "english": "{2:Embodiment }{0:of all }{1:holy bathing places}, {5:embodiment }{3:of all }{4:sacred formulas},",
     "words": [
       {
-        "roman": "sarvatīrthātmike",
-        "gloss": "O embodiment of all holy bathing places"
+        "roman": "sarva",
+        "gloss": "all"
       },
       {
-        "roman": "sarvamantrātmike",
-        "gloss": "O embodiment of all sacred formulas"
+        "roman": "tīrth",
+        "gloss": "holy bathing places (tīrtha)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "mantr",
+        "gloss": "sacred formulas (mantra)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वतीर्थात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वमन्त्रात्मिके",
+        "text": "ती",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "र्था",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "म",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "न्त्रा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3431,28 +9227,82 @@ window.SONG_LINES = {
   "l107": {
     "source": "सर्वतन्त्रात्मिके सर्वयन्त्रात्मिके",
     "roman": "sarvatantrātmike sarvayantrātmike",
-    "english": "{0:Embodiment of all sacred treatises}, {1:embodiment of all ritual diagrams},",
+    "english": "{2:Embodiment }{0:of all }{1:sacred treatises}, {5:embodiment }{3:of all }{4:ritual diagrams},",
     "words": [
       {
-        "roman": "sarvatantrātmike",
-        "gloss": "O embodiment of all sacred treatises"
+        "roman": "sarva",
+        "gloss": "all"
       },
       {
-        "roman": "sarvayantrātmike",
-        "gloss": "O embodiment of all ritual diagrams"
+        "roman": "tantr",
+        "gloss": "sacred treatises (tantra)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "yantr",
+        "gloss": "ritual diagrams (yantra)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वतन्त्रात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वयन्त्रात्मिके",
+        "text": "त",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "न्त्रा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "य",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "न्त्रा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3461,28 +9311,82 @@ window.SONG_LINES = {
   "l108": {
     "source": "सर्वपीठात्मिके सर्वतत्त्वात्मिके",
     "roman": "sarvapīṭhātmike sarvatattvātmike",
-    "english": "{0:Embodiment of all sacred seats}, {1:embodiment of all principles of reality},",
+    "english": "{2:Embodiment }{0:of all }{1:sacred seats}, {5:embodiment }{3:of all }{4:principles of reality},",
     "words": [
       {
-        "roman": "sarvapīṭhātmike",
-        "gloss": "O embodiment of all sacred seats"
+        "roman": "sarva",
+        "gloss": "all"
       },
       {
-        "roman": "sarvatattvātmike",
-        "gloss": "O embodiment of all principles of reality"
+        "roman": "pīṭh",
+        "gloss": "sacred seats (pīṭha)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "tattv",
+        "gloss": "principles of reality (tattva)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वपीठात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वतत्त्वात्मिके",
+        "text": "पी",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ठा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "त",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "त्त्वा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3491,28 +9395,82 @@ window.SONG_LINES = {
   "l109": {
     "source": "सर्वशक्त्यात्मिके सर्वविद्यात्मिके",
     "roman": "sarvaśaktyātmike sarvavidyātmike",
-    "english": "{0:Embodiment of all powers}, {1:embodiment of all forms of knowledge},",
+    "english": "{2:Embodiment }{0:of all }{1:powers}, {5:embodiment }{3:of all }{4:forms of knowledge},",
     "words": [
       {
-        "roman": "sarvaśaktyātmike",
-        "gloss": "O embodiment of all powers"
+        "roman": "sarva",
+        "gloss": "all"
       },
       {
-        "roman": "sarvavidyātmike",
-        "gloss": "O embodiment of all forms of knowledge"
+        "roman": "śakty",
+        "gloss": "powers (śakti)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "vidy",
+        "gloss": "forms of knowledge (vidyā)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वशक्त्यात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वविद्यात्मिके",
+        "text": "श",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "क्त्या",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "द्या",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3521,28 +9479,82 @@ window.SONG_LINES = {
   "l110": {
     "source": "सर्वयोगात्मिके सर्वनादात्मिके",
     "roman": "sarvayogātmike sarvanādātmike",
-    "english": "{0:Embodiment of all disciplines of contemplation}, {1:embodiment of all resonant sound},",
+    "english": "{2:Embodiment }{0:of all }{1:disciplines of contemplation}, {5:embodiment }{3:of all }{4:resonant sound},",
     "words": [
       {
-        "roman": "sarvayogātmike",
-        "gloss": "O embodiment of all disciplines of contemplation"
+        "roman": "sarva",
+        "gloss": "all"
       },
       {
-        "roman": "sarvanādātmike",
-        "gloss": "O embodiment of all resonant sound"
+        "roman": "yog",
+        "gloss": "disciplines of contemplation (yoga)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "nād",
+        "gloss": "resonant sound (nāda)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वयोगात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वनादात्मिके",
+        "text": "यो",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "गा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ना",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "दा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3551,28 +9563,82 @@ window.SONG_LINES = {
   "l111": {
     "source": "सर्वशब्दात्मिके सर्ववर्णात्मिके",
     "roman": "sarvaśabdātmike sarvavarṇātmike",
-    "english": "{0:Embodiment of all articulated sound}, {1:embodiment of all speech sounds},",
+    "english": "{2:Embodiment }{0:of all }{1:articulated sound}, {5:embodiment }{3:of all }{4:speech sounds},",
     "words": [
       {
-        "roman": "sarvaśabdātmike",
-        "gloss": "O embodiment of all articulated sound"
+        "roman": "sarva",
+        "gloss": "all"
       },
       {
-        "roman": "sarvavarṇātmike",
-        "gloss": "O embodiment of all speech sounds"
+        "roman": "śabd",
+        "gloss": "articulated sound (śabda)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
+      },
+      {
+        "roman": "sarva",
+        "gloss": "all"
+      },
+      {
+        "roman": "varṇ",
+        "gloss": "speech sounds (varṇa)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       }
     ],
     "sourceWords": [
       {
-        "text": "सर्वशब्दात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्ववर्णात्मिके",
+        "text": "श",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "ब्दा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "व",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "र्णा",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -3581,11 +9647,19 @@ window.SONG_LINES = {
   "l112": {
     "source": "सर्वविश्वात्मिके सर्वगे",
     "roman": "sarvaviśvātmike sarvage",
-    "english": "{0:Embodiment of the whole universe}, {1:all-pervading one},",
+    "english": "{2:Embodiment }{0:of the whole }{1:universe}, {3:all-pervading one},",
     "words": [
       {
-        "roman": "sarvaviśvātmike",
-        "gloss": "O embodiment of the whole universe"
+        "roman": "sarva",
+        "gloss": "whole, all"
+      },
+      {
+        "roman": "viśv",
+        "gloss": "the universe (viśva)"
+      },
+      {
+        "roman": "ātmike",
+        "gloss": "O embodiment: vocative"
       },
       {
         "roman": "sarvage",
@@ -3594,15 +9668,34 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "सर्वविश्वात्मिके",
+        "text": "सर्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सर्वगे",
+        "text": "वि",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "श्वा",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "त्मिके",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सर्वगे",
+        "wordIndices": [
+          3
         ]
       }
     ],

@@ -253,7 +253,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisā kaṭhin bhī samāṁ āyā thā",
-    "english": "{2:Even}{0: such a}{1: difficult}{3: time}{4,5: had come}",
+    "english": "{2:Even}{0: such a}{1: difficult}{3: time}{5: had }{4:come}",
     "words": [
       {
         "roman": "aisā",
@@ -437,7 +437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mujh par paṛā jab bīmārī kā sāyā",
-    "english": "{3:When}{6: the shadow}{4,5: of illness}{2: fell}{0,1: upon me}",
+    "english": "{3:When}{6: the shadow}{5: of }{4:illness}{2: fell}{1: upon }{0:me}",
     "words": [
       {
         "roman": "mujh",
@@ -591,7 +591,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pās mere ākar hāthoṁ se",
-    "english": "{2:Coming}{0,1: near me,}{3,4: with his hands}",
+    "english": "{2:Coming}{0: near }{1:me,}{3,4: with his hands}",
     "words": [
       {
         "roman": "pās",
@@ -668,7 +668,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "babhūtī kā do ghūmṭ mujhko pilāyā",
-    "english": "{5:he gave}{4: me}{2,3: two sips}{0,1: of sacred ash}{5: to drink}",
+    "english": "{5:he gave}{4: me}{2: two }{3:sips}{0,1: of sacred ash}{5: to drink}",
     "words": [
       {
         "roman": "babhūtī",
@@ -745,7 +745,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pahcān nā pāyā maiṁ unko",
-    "english": "{3:I}{1,2: could not}{0: recognize}{4: him,}",
+    "english": "{3:I}{2: could }{1:not}{0: recognize}{4: him,}",
     "words": [
       {
         "roman": "pahcān",
@@ -834,7 +834,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo maut ke muṁh se bacā ke gae",
-    "english": "{0:who}{5: saved me}{1,2,3,4: from death's mouth}{6,7: before departing}",
+    "english": "{0:who}{5: saved me}{4: from }{1,2:death's }{3:mouth}{6,7: before departing}",
     "words": [
       {
         "roman": "jo",
@@ -1124,7 +1124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apnoṁ se śikvā kartā rahā",
-    "english": "{2,3,4:yet I kept holding grievances}{0,1: against my own}",
+    "english": "{4:yet I kept }{3:holding }{2:grievances}{1: against }{0:my own}",
     "words": [
       {
         "roman": "apnoṁ",
@@ -1201,7 +1201,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo saṁsār merā bacā ke gae",
-    "english": "{0:who}{3: saved}{2: my}{1: world}{4,5: and departed}",
+    "english": "{0:who}{3: saved}{2: my}{1: world}{4: and }{5:departed}",
     "words": [
       {
         "roman": "jo",
@@ -1296,7 +1296,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ kitnā bhī kar lūṁ sāīṁ ke lie",
-    "english": "{1,2:However much}{0,3,4: I may do}{5,6,7: for Sai,}",
+    "english": "{1,2:However much}{0: I }{4:may }{3:do}{5,6,7: for Sai,}",
     "words": [
       {
         "roman": "maiṁ",
@@ -1403,7 +1403,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phir bhī ye mol maiṁ nā juṭā pāūṅgā",
-    "english": "{0,1:even then,}{4: I}{5,6,7: will not be able to gather}{2,3: this price}",
+    "english": "{0,1:even then,}{4: I}{5,6,7: will not be able to gather}{2: this }{3:price}",
     "words": [
       {
         "roman": "phir",
@@ -1510,7 +1510,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "itnā hai karzā mujh par mere sāīṁ kā",
-    "english": "{0:So great}{1,2: is the debt}{3,4: upon me}{5,6,7: to my Sai,}",
+    "english": "{0:So great}{1,2: is the debt}{4: upon }{3:me}{5,6,7: to my Sai,}",
     "words": [
       {
         "roman": "itnā",
@@ -1706,7 +1706,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kitne haiṁ upkār mujh par sāīṁ ke",
-    "english": "{0:How manifold}{1,2: are the favors}{5,6: of Sai}{3,4: upon me,}",
+    "english": "{0:How manifold}{1,2: are the favors}{6: of }{5:Sai}{4: upon }{3:me,}",
     "words": [
       {
         "roman": "kitne",

@@ -784,7 +784,7 @@ window.SONG_LINES = {
     "source": "धन भारी से राम मिलत",
     "sourceLanguage": "hi",
     "roman": "dhana bhārī se rāma milata",
-    "english": "{3,4:If Rāma could be attained }{0,1,2:through immense wealth,}",
+    "english": "{3,4:If Rāma could be attained }{2:through }{1:immense }{0:wealth,}",
     "words": [
       {
         "roman": "dhana",
@@ -845,7 +845,7 @@ window.SONG_LINES = {
     "source": "धन भारी से राम मिलत पत जाने सुदाम जी की",
     "sourceLanguage": "hi",
     "roman": "dhana bhārī se rāma milata pata jāne sudāma jī kī",
-    "english": "{3,4:If Rāma could be attained }{0,1,2:through immense wealth, }{7,8,9:revered Sudāmā's }{5:honor }{6:would be lost.}",
+    "english": "{3,4:If Rāma could be attained }{2:through }{1:immense }{0:wealth, }{7,8,9:revered Sudāmā's }{5:honor }{6:would be lost.}",
     "words": [
       {
         "roman": "dhana",
@@ -1017,7 +1017,7 @@ window.SONG_LINES = {
     "source": "राम मिलत है भक्ति",
     "sourceLanguage": "hi",
     "roman": "rāma milata hai bhakti",
-    "english": "{0:Rāma }{1,2:is attained }{3:through devotion.}",
+    "english": "{0:Rāma }{2:is }{1:attained }{3:through devotion.}",
     "words": [
       {
         "roman": "rāma",
@@ -1119,7 +1119,7 @@ window.SONG_LINES = {
     "source": "राम भजन से ए मुक्ति",
     "sourceLanguage": "hi",
     "roman": "rāma bhajana se e mukti",
-    "english": "{3,4:This liberation }{2:comes through }{0,1:singing praise of Rāma.}",
+    "english": "{3:This }{4:liberation }{2:comes through }{0,1:singing praise of Rāma.}",
     "words": [
       {
         "roman": "rāma",

@@ -336,7 +336,7 @@ window.SONG_LINES = {
     "source": "वदन दिया हरि गुण गाने को",
     "sourceLanguage": "hi",
     "roman": "vadana diyā hari guṇa gāne ko",
-    "english": "{0:A mouth }{1:was given }{4,5:to sing }{2:Hari’s }{3:praises.}",
+    "english": "{0:A mouth }{1:was given }{5:to }{4:sing }{2:Hari’s }{3:praises.}",
     "words": [
       {
         "roman": "vadana",

@@ -128,28 +128,48 @@ window.SONG_LINES = {
   "l003": {
     "source": "हरिदधीश्वरं आराध्यपादुकम्",
     "roman": "haridadhīśvaraṃ ārādhyapādukam",
-    "english": "{0:Lord of the quarters of space}, {1:whose sandals are worthy of worship},",
+    "english": "{1:Lord }{0:of the quarters of space}, {3:whose sandals }{2:are worthy of worship},",
     "words": [
       {
-        "roman": "haridadhīśvaraṃ",
-        "gloss": "lord of the quarters of space"
+        "roman": "harid",
+        "gloss": "the quarters of space; harit"
       },
       {
-        "roman": "ārādhyapādukam",
-        "gloss": "whose sandals are worthy of worship"
+        "roman": "adhīśvaraṃ",
+        "gloss": "supreme lord: accusative"
+      },
+      {
+        "roman": "ārādhya",
+        "gloss": "worthy of worship"
+      },
+      {
+        "roman": "pādukam",
+        "gloss": "whose sandals are: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "हरिदधीश्वरं",
+        "text": "हरि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "आराध्यपादुकम्",
+        "text": "दधीश्वरं",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "आराध्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पादुकम्",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -198,11 +218,19 @@ window.SONG_LINES = {
   "l005": {
     "source": "हरिहरात्मजं स्वामि देवमाश्रये",
     "roman": "hariharātmajaṃ svāmi devam āśraye",
-    "english": "{1:O Lord}, {3:I take refuge in} the {2:god}, the {0:son of Hari and Hara}.",
+    "english": "{3:O Lord}, {5:I take refuge in} the {4:god}, the {2:son }{0:of Hari }{1:and Hara}.",
     "words": [
       {
-        "roman": "hariharātmajaṃ",
-        "gloss": "son of Hari (Viṣṇu, remover of evil and sin) and Hara (Śiva, the destroyer)"
+        "roman": "hari",
+        "gloss": "Hari (Viṣṇu, remover of evil and sin)"
+      },
+      {
+        "roman": "har",
+        "gloss": "Hara (Śiva, the destroyer); hara, joined a + ā"
+      },
+      {
+        "roman": "ātmajaṃ",
+        "gloss": "son, born of oneself: accusative"
       },
       {
         "roman": "svāmi",
@@ -219,22 +247,39 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "हरिहरात्मजं",
+        "text": "हरि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "हरा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "देवमाश्रये",
+        "text": "त्मजं",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "स्वामि",
+        "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "देव",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "माश्रये",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -243,38 +288,58 @@ window.SONG_LINES = {
   "l006": {
     "source": "शरणकीर्तनं स्वामि शक्तमानसम्",
     "roman": "śaraṇakīrtanaṃ svāmi śaktamānasam",
-    "english": "{0:Praised in chants of refuge}, {1:O Lord}, {2:whose mind is strong},",
+    "english": "{1:Praised in chants }{0:of refuge}, {2:O Lord}, {4:whose mind }{3:is strong},",
     "words": [
       {
-        "roman": "śaraṇakīrtanaṃ",
-        "gloss": "praised in chants of refuge"
+        "roman": "śaraṇa",
+        "gloss": "refuge"
+      },
+      {
+        "roman": "kīrtanaṃ",
+        "gloss": "praised in chants: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "śaktamānasam",
-        "gloss": "whose mind is strong"
+        "roman": "śakta",
+        "gloss": "strong, able"
+      },
+      {
+        "roman": "mānasam",
+        "gloss": "whose mind is: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "शरणकीर्तनं",
+        "text": "शरण",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "कीर्तनं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "शक्तमानसम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "शक्त",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मानसम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -283,38 +348,58 @@ window.SONG_LINES = {
   "l007": {
     "source": "भरणलोलुपं स्वामि नर्तनालसम्",
     "roman": "bharaṇalolupaṃ svāmi nartanālasam",
-    "english": "{1:O Lord}, {0:Eager to sustain and nurture}, {2:languid in dancing},",
+    "english": "{2:O Lord}, {1:Eager }{0:to sustain and nurture}, {4:languid }{3:in dancing},",
     "words": [
       {
-        "roman": "bharaṇalolupaṃ",
-        "gloss": "eager to sustain and nurture"
+        "roman": "bharaṇa",
+        "gloss": "sustaining, nurturing"
+      },
+      {
+        "roman": "lolupaṃ",
+        "gloss": "eager for: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "nartanālasam",
-        "gloss": "languid in dancing"
+        "roman": "nartan",
+        "gloss": "dancing; nartana, joined a + a"
+      },
+      {
+        "roman": "ālasam",
+        "gloss": "languid; alasam, accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "भरणलोलुपं",
+        "text": "भरण",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "लोलुपं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नर्तनालसम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नर्तना",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लसम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -363,38 +448,58 @@ window.SONG_LINES = {
   "l009": {
     "source": "प्रणयसत्यकं स्वामि प्राणनायकम्",
     "roman": "praṇayasatyakaṃ svāmi prāṇanāyakam",
-    "english": "{1:O Lord}, {0:True in love}, {2:lord of vital breath},",
+    "english": "{2:O Lord}, {1:True }{0:in love}, {4:lord }{3:of vital breath},",
     "words": [
       {
-        "roman": "praṇayasatyakaṃ",
-        "gloss": "true in love"
+        "roman": "praṇaya",
+        "gloss": "love"
+      },
+      {
+        "roman": "satyakaṃ",
+        "gloss": "true: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "prāṇanāyakam",
-        "gloss": "lord of vital breath"
+        "roman": "prāṇa",
+        "gloss": "vital breath"
+      },
+      {
+        "roman": "nāyakam",
+        "gloss": "lord, leader: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "प्रणयसत्यकं",
+        "text": "प्रणय",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "सत्यकं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्राणनायकम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "प्राण",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "नायकम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -403,38 +508,58 @@ window.SONG_LINES = {
   "l010": {
     "source": "प्रणतकल्पकं स्वामि सुप्रभाञ्चितम्",
     "roman": "praṇatakalpakaṃ svāmi suprabhāñcitam",
-    "english": "{1:O Lord}, {0:Wish-fulfilling tree for those who bow}, {2:adorned with splendid radiance},",
+    "english": "{2:O Lord}, {1:Wish-fulfilling tree }{0:for those who bow}, {4:adorned }{3:with splendid radiance},",
     "words": [
       {
-        "roman": "praṇatakalpakaṃ",
-        "gloss": "wish-fulfilling tree for those who bow"
+        "roman": "praṇata",
+        "gloss": "those who bow"
+      },
+      {
+        "roman": "kalpakaṃ",
+        "gloss": "wish-fulfilling tree: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "suprabhāñcitam",
-        "gloss": "adorned with splendid radiance"
+        "roman": "suprabh",
+        "gloss": "splendid radiance; suprabhā, joined ā + a"
+      },
+      {
+        "roman": "āñcitam",
+        "gloss": "adorned; añcitam, accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "प्रणतकल्पकं",
+        "text": "प्रणत",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "कल्पकं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सुप्रभाञ्चितम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सुप्रभा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ञ्चितम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -443,38 +568,58 @@ window.SONG_LINES = {
   "l011": {
     "source": "प्रणवमन्दिरं स्वामि कीर्तनप्रियम्",
     "roman": "praṇavamandiraṃ svāmi kīrtanapriyam",
-    "english": "{1:O Lord}, {0:Abode of the sacred syllable Oṃ}, {2:fond of songs of praise},",
+    "english": "{2:O Lord}, {1:Abode }{0:of the sacred syllable Oṃ}, {4:fond }{3:of songs of praise},",
     "words": [
       {
-        "roman": "praṇavamandiraṃ",
-        "gloss": "abode of the sacred syllable Oṃ"
+        "roman": "praṇava",
+        "gloss": "the sacred syllable Oṃ"
+      },
+      {
+        "roman": "mandiraṃ",
+        "gloss": "abode: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "kīrtanapriyam",
-        "gloss": "fond of songs of praise"
+        "roman": "kīrtana",
+        "gloss": "songs of praise"
+      },
+      {
+        "roman": "priyam",
+        "gloss": "fond of: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "प्रणवमन्दिरं",
+        "text": "प्रणव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "मन्दिरं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कीर्तनप्रियम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "कीर्तन",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रियम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -523,38 +668,68 @@ window.SONG_LINES = {
   "l013": {
     "source": "वरगदायुधं स्वामि वेदवर्णितम्",
     "roman": "varagadāyudhaṃ svāmi vedavarṇitam",
-    "english": "{1:O Lord}, {0:Whose weapon is an excellent mace}, {2:described in the Vedas},",
+    "english": "{3:O Lord}, {2:Whose weapon }{0:is an excellent }{1:mace}, {5:described }{4:in the Vedas},",
     "words": [
       {
-        "roman": "varagadāyudhaṃ",
-        "gloss": "whose weapon is an excellent mace"
+        "roman": "vara",
+        "gloss": "excellent"
+      },
+      {
+        "roman": "gad",
+        "gloss": "mace; gadā, joined ā + ā"
+      },
+      {
+        "roman": "āyudhaṃ",
+        "gloss": "whose weapon is: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "vedavarṇitam",
-        "gloss": "described in the Vedas"
+        "roman": "veda",
+        "gloss": "the Vedas"
+      },
+      {
+        "roman": "varṇitam",
+        "gloss": "described: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "वरगदायुधं",
+        "text": "वर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "गदा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "वेदवर्णितम्",
+        "text": "युधं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्वामि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वेद",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वर्णितम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -603,38 +778,68 @@ window.SONG_LINES = {
   "l015": {
     "source": "त्रिभुवनार्चितं स्वामि देवतात्मकम्",
     "roman": "tribhuvanārcitaṃ svāmi devatātmakam",
-    "english": "{1:O Lord}, {0:Worshipped by the three worlds}, {2:whose nature is divine},",
+    "english": "{3:O Lord}, {2:Worshipped }{0:by the three }{1:worlds}, {5:whose nature }{4:is divine},",
     "words": [
       {
-        "roman": "tribhuvanārcitaṃ",
-        "gloss": "worshipped by the three worlds"
+        "roman": "tri",
+        "gloss": "three"
+      },
+      {
+        "roman": "bhuvan",
+        "gloss": "worlds; bhuvana, joined a + a"
+      },
+      {
+        "roman": "ārcitaṃ",
+        "gloss": "worshipped; arcitam, accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "devatātmakam",
-        "gloss": "whose nature is divine"
+        "roman": "devat",
+        "gloss": "divinity; devatā, joined ā + ā"
+      },
+      {
+        "roman": "ātmakam",
+        "gloss": "whose nature is: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "त्रिभुवनार्चितं",
+        "text": "त्रि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "भुवना",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "देवतात्मकम्",
+        "text": "र्चितं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्वामि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "देवता",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "त्मकम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -693,38 +898,58 @@ window.SONG_LINES = {
   "l017": {
     "source": "त्रिदशपूजितं स्वामि चिन्तितप्रदम्",
     "roman": "tridaśapūjitaṃ svāmi cintitapradam",
-    "english": "{1:O Lord}, {0:Worshipped by the gods}, {2:giver of what is wished for},",
+    "english": "{2:O Lord}, {1:Worshipped }{0:by the gods}, {4:giver }{3:of what is wished for},",
     "words": [
       {
-        "roman": "tridaśapūjitaṃ",
-        "gloss": "worshipped by the gods"
+        "roman": "tridaśa",
+        "gloss": "the gods; literally the thirty"
+      },
+      {
+        "roman": "pūjitaṃ",
+        "gloss": "worshipped: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "cintitapradam",
-        "gloss": "giver of what is wished for"
+        "roman": "cintita",
+        "gloss": "what is wished for, thought of"
+      },
+      {
+        "roman": "pradam",
+        "gloss": "giver: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "त्रिदशपूजितं",
+        "text": "त्रिदश",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "पूजितं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "चिन्तितप्रदम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "चिन्तित",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रदम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -733,38 +958,68 @@ window.SONG_LINES = {
   "l018": {
     "source": "भवभयापहं स्वामि भावुकावहम्",
     "roman": "bhavabhayāpahaṃ svāmi bhāvukāvaham",
-    "english": "{1:O Lord}, {0:Remover of fear of worldly existence}, {2:bringer of good fortune},",
+    "english": "{3:O Lord}, {2:Remover }{1:of fear }{0:of worldly existence}, {5:bringer }{4:of good fortune},",
     "words": [
       {
-        "roman": "bhavabhayāpahaṃ",
-        "gloss": "remover of fear of worldly existence"
+        "roman": "bhava",
+        "gloss": "worldly existence"
+      },
+      {
+        "roman": "bhay",
+        "gloss": "fear; bhaya, joined a + a"
+      },
+      {
+        "roman": "āpahaṃ",
+        "gloss": "remover; apaham, accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "bhāvukāvaham",
-        "gloss": "bringer of good fortune"
+        "roman": "bhāvuk",
+        "gloss": "good fortune; bhāvuka, joined a + ā"
+      },
+      {
+        "roman": "āvaham",
+        "gloss": "bringer: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "भवभयापहं",
+        "text": "भव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "भया",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भावुकावहम्",
+        "text": "पहं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्वामि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भावुका",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वहम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -773,38 +1028,58 @@ window.SONG_LINES = {
   "l019": {
     "source": "भुवनमोहनं स्वामि भूतिभूषणम्",
     "roman": "bhuvanamohanaṃ svāmi bhūtibhūṣaṇam",
-    "english": "{1:O Lord}, {0:Enchanter of the world}, {2:adorned with sacred ash},",
+    "english": "{2:O Lord}, {1:Enchanter }{0:of the world}, {4:adorned }{3:with sacred ash},",
     "words": [
       {
-        "roman": "bhuvanamohanaṃ",
-        "gloss": "enchanter of the world"
+        "roman": "bhuvana",
+        "gloss": "the world"
+      },
+      {
+        "roman": "mohanaṃ",
+        "gloss": "enchanter: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "bhūtibhūṣaṇam",
-        "gloss": "adorned with sacred ash"
+        "roman": "bhūti",
+        "gloss": "sacred ash"
+      },
+      {
+        "roman": "bhūṣaṇam",
+        "gloss": "adorned with, whose ornament is: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "भुवनमोहनं",
+        "text": "भुवन",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "मोहनं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "भूतिभूषणम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "भूति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भूषणम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -813,38 +1088,58 @@ window.SONG_LINES = {
   "l020": {
     "source": "धवळवाहनं स्वामि दिव्यवारणम्",
     "roman": "dhavaḷavāhanaṃ svāmi divyavāraṇam",
-    "english": "{1:O Lord}, {0:whose mount is white}—{2:a divine elephant},",
+    "english": "{2:O Lord}, {1:whose mount }{0:is white}—{3:a divine }{4:elephant},",
     "words": [
       {
-        "roman": "dhavaḷavāhanaṃ",
-        "gloss": "whose mount is white"
+        "roman": "dhavaḷa",
+        "gloss": "white"
+      },
+      {
+        "roman": "vāhanaṃ",
+        "gloss": "whose mount is: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "divyavāraṇam",
-        "gloss": "a divine elephant; specifying the white mount"
+        "roman": "divya",
+        "gloss": "divine"
+      },
+      {
+        "roman": "vāraṇam",
+        "gloss": "elephant; specifying the white mount"
       }
     ],
     "sourceWords": [
       {
-        "text": "धवळवाहनं",
+        "text": "धवळ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "वाहनं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "दिव्यवारणम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "दिव्य",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "वारणम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -853,38 +1148,68 @@ window.SONG_LINES = {
   "l021": {
     "source": "कळमृदुस्मितं स्वामि सुन्दराननम्",
     "roman": "kaḷamṛdusmitaṃ svāmi sundarānanam",
-    "english": "{1:O Lord}, {0:Whose smile is sweet and gentle}, {2:beautiful-faced},",
+    "english": "{3:O Lord}, {2:Whose smile }{0:is sweet }{1:and gentle}, {4:beautiful-}{5:faced},",
     "words": [
       {
-        "roman": "kaḷamṛdusmitaṃ",
-        "gloss": "whose smile is sweet and gentle"
+        "roman": "kaḷa",
+        "gloss": "sweet"
+      },
+      {
+        "roman": "mṛdu",
+        "gloss": "gentle, soft"
+      },
+      {
+        "roman": "smitaṃ",
+        "gloss": "whose smile is: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "sundarānanam",
-        "gloss": "beautiful-faced"
+        "roman": "sundar",
+        "gloss": "beautiful; sundara, joined a + ā"
+      },
+      {
+        "roman": "ānanam",
+        "gloss": "faced, whose face is: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "कळमृदुस्मितं",
+        "text": "कळ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "मृदु",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सुन्दराननम्",
+        "text": "स्मितं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्वामि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सुन्दरा",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ननम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -893,38 +1218,58 @@ window.SONG_LINES = {
   "l022": {
     "source": "कळभकोमलं स्वामि गात्रमोहनम्",
     "roman": "kaḷabhakomalaṃ svāmi gātramohanam",
-    "english": "{0:Soft like fragrant sandal paste}, {1:O Lord}, {2:enchanting in body},",
+    "english": "{1:Soft }{0:like fragrant sandal paste}, {2:O Lord}, {4:enchanting }{3:in body},",
     "words": [
       {
-        "roman": "kaḷabhakomalaṃ",
-        "gloss": "soft like fragrant sandal paste"
+        "roman": "kaḷabha",
+        "gloss": "fragrant sandal paste"
+      },
+      {
+        "roman": "komalaṃ",
+        "gloss": "soft, tender: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "gātramohanam",
-        "gloss": "enchanting in body"
+        "roman": "gātra",
+        "gloss": "body, limbs"
+      },
+      {
+        "roman": "mohanam",
+        "gloss": "enchanting: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "कळभकोमलं",
+        "text": "कळभ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "कोमलं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "गात्रमोहनम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "गात्र",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मोहनम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -973,38 +1318,68 @@ window.SONG_LINES = {
   "l024": {
     "source": "श्रितजनप्रियं स्वामि चिन्तितप्रदम्",
     "roman": "śritajanapriyaṃ svāmi cintitapradam",
-    "english": "{0:Fond of those who have sought refuge}, {1:O Lord}, {2:giver of what is wished for},",
+    "english": "{2:Fond }{1:of those }{0:who have sought refuge}, {3:O Lord}, {5:giver }{4:of what is wished for},",
     "words": [
       {
-        "roman": "śritajanapriyaṃ",
-        "gloss": "fond of those who have sought refuge"
+        "roman": "śrita",
+        "gloss": "who have sought refuge"
+      },
+      {
+        "roman": "jana",
+        "gloss": "people, those"
+      },
+      {
+        "roman": "priyaṃ",
+        "gloss": "fond of: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "cintitapradam",
-        "gloss": "giver of what is wished for"
+        "roman": "cintita",
+        "gloss": "what is wished for, thought of"
+      },
+      {
+        "roman": "pradam",
+        "gloss": "giver: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "श्रितजनप्रियं",
+        "text": "श्रित",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "जन",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "चिन्तितप्रदम्",
+        "text": "प्रियं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "स्वामि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "चिन्तित",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रदम्",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -1013,38 +1388,58 @@ window.SONG_LINES = {
   "l025": {
     "source": "श्रुतिविभूषणं स्वामि साधुजीवनम्",
     "roman": "śrutivibhūṣaṇaṃ svāmi sādhujīvanam",
-    "english": "{1:O Lord}, {0:Ornament of sacred revelation}, {2:life of the good},",
+    "english": "{2:O Lord}, {1:Ornament }{0:of sacred revelation}, {4:life }{3:of the good},",
     "words": [
       {
-        "roman": "śrutivibhūṣaṇaṃ",
-        "gloss": "ornament of sacred revelation"
+        "roman": "śruti",
+        "gloss": "sacred revelation"
+      },
+      {
+        "roman": "vibhūṣaṇaṃ",
+        "gloss": "ornament: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "sādhujīvanam",
-        "gloss": "life of the good"
+        "roman": "sādhu",
+        "gloss": "the good"
+      },
+      {
+        "roman": "jīvanam",
+        "gloss": "life: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "श्रुतिविभूषणं",
+        "text": "श्रुति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "विभूषणं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "साधुजीवनम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "साधु",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जीवनम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -1053,38 +1448,58 @@ window.SONG_LINES = {
   "l026": {
     "source": "श्रुतिमनोहरं स्वामि गीतलालसम्",
     "roman": "śrutimanoharaṃ svāmi gītalālasam",
-    "english": "{1:O Lord}, {0:Delightful to the ear}, {2:eager for song},",
+    "english": "{2:O Lord}, {1:Delightful }{0:to the ear}, {4:eager }{3:for song},",
     "words": [
       {
-        "roman": "śrutimanoharaṃ",
-        "gloss": "delightful to the ear"
+        "roman": "śruti",
+        "gloss": "the ear, hearing"
+      },
+      {
+        "roman": "manoharaṃ",
+        "gloss": "delightful, heart-captivating: accusative"
       },
       {
         "roman": "svāmi",
         "gloss": "Lord, addressed directly"
       },
       {
-        "roman": "gītalālasam",
-        "gloss": "eager for song"
+        "roman": "gīta",
+        "gloss": "song"
+      },
+      {
+        "roman": "lālasam",
+        "gloss": "eager for: accusative"
       }
     ],
     "sourceWords": [
       {
-        "text": "श्रुतिमनोहरं",
+        "text": "श्रुति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वामि",
+        "text": "मनोहरं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "गीतलालसम्",
+        "text": "स्वामि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "गीत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लालसम्",
+        "wordIndices": [
+          4
         ]
       }
     ],

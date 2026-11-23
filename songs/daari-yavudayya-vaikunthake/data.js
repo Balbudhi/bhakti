@@ -197,15 +197,19 @@ window.SONG_LINES = {
   "l004": {
     "source": "ಬಲು ಭವದನುಭವದಿ ಕತ್ತಲೆಯೊಳು ಬಲು ಅಂಜುತೆ ನಡುಗಿ",
     "roman": "balu bhavadanubhavadi kattaleyoḷu balu añjute naḍugi",
-    "english": "{0:Deep} {1:in the experience of worldly existence}, {2:within darkness}, {4:afraid} {3:so greatly} and {5:trembling}…",
+    "english": "{0:Deep} {2:in the experience} {1:of worldly existence}, {3:within darkness}, {5:afraid} {4:so greatly} and {6:trembling}…",
     "words": [
       {
         "roman": "balu",
         "gloss": "greatly; much"
       },
       {
-        "roman": "bhavadanubhavadi",
-        "gloss": "in the experience of worldly existence"
+        "roman": "bhavad",
+        "gloss": "of worldly existence; bhavada"
+      },
+      {
+        "roman": "anubhavadi",
+        "gloss": "in the experience; locative"
       },
       {
         "roman": "kattaleyoḷu",
@@ -232,33 +236,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಭವದನುಭವದಿ",
+        "text": "ಭವ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಕತ್ತಲೆಯೊಳು",
+        "text": "ದನುಭವದಿ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಬಲು",
+        "text": "ಕತ್ತಲೆಯೊಳು",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಅಂಜುತೆ",
+        "text": "ಬಲು",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ನಡುಗಿ",
+        "text": "ಅಂಜುತೆ",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "ನಡುಗಿ",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -527,7 +537,7 @@ window.SONG_LINES = {
   "l010": {
     "source": "ಇನ್ನು ನಾ ಜನಿಸಲಾರೆ ಭೂಮಿಯ ಮೇಲೆ ನಿನ್ನ ದಾಸನಾದೆನೊ",
     "roman": "innu nā janisalāre bhūmiya mēle ninna dāsanādeno",
-    "english": "{1:I} {2:cannot be born} {0:again} {3,4:on earth}; {6:I have become} {5:your} {6:servant}.",
+    "english": "{1:I} {2:cannot be born} {0:again} {4:on }{3:earth}; {6:I have become} {5:your} {6:servant}.",
     "words": [
       {
         "roman": "innu",

@@ -1040,7 +1040,7 @@ window.SONG_LINES = {
     "source": "खालस इक भगवान भगवान भरोसे",
     "sourceLanguage": "hi",
     "roman": "khālas ik bhagvān bhagvān bharose",
-    "english": "{0:Khalas, }{4:relying }{1:only }{2:on God, }{3,4:on God,}",
+    "english": "{0:Khalas, }{4:relying }{1:only }{2:on God, }{4:on }{3:God,}",
     "words": [
       {
         "roman": "khālas",

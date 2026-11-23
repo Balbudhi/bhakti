@@ -362,7 +362,7 @@ window.SONG_LINES = {
     "source": "तथापि कर जोड़े करु अब गुरु प्रार्थना",
     "sourceLanguage": "hi",
     "roman": "Tathāpi kar joṛe karu ab guru prārthanā",
-    "english": "{0:Even so,}{1,2: with joined hands,}{3,4: I now}{5,6: offer prayer to the Guru.}",
+    "english": "{0:Even so,}{1,2: with joined hands,}{3: I }{4:now}{5,6: offer prayer to the Guru.}",
     "words": [
       {
         "roman": "Tathāpi",
@@ -797,7 +797,7 @@ window.SONG_LINES = {
     "source": "रवि उदय होते ही रहे ना आलस्य जरा सा",
     "sourceLanguage": "hi",
     "roman": "Ravi uday hote hī rahe nā ālasya jarā sā",
-    "english": "{0,1,2,3:As soon as the sun rises,}{5,7,8: not even a little bit}{6: of lethargy}{4: remains.}",
+    "english": "{3:As soon as }{0:the sun }{1,2:rises,}{5: not even }{7:a little }{8:bit}{6: of lethargy}{4: remains.}",
     "words": [
       {
         "roman": "Ravi",
@@ -1070,7 +1070,7 @@ window.SONG_LINES = {
     "source": "गुरु की उपमा बड़ी है विधि हरी हर से भी",
     "sourceLanguage": "hi",
     "roman": "Guru kī upamā baṛī hai vidhi harī har se bhī",
-    "english": "{0,1:The Guru's}{2: glory}{3,4: is greater}{8,9: even than}{5,6,7: Vidhi, Harī, and Har.}",
+    "english": "{0,1:The Guru's}{2: glory}{4: is }{3:greater}{9: even }{8:than}{5,6,7: Vidhi, Harī, and Har.}",
     "words": [
       {
         "roman": "Guru",
@@ -1181,7 +1181,7 @@ window.SONG_LINES = {
     "source": "गाये कैसे इसको शब्द छोटे है सभी",
     "sourceLanguage": "hi",
     "roman": "Gāye kaise isko śabd choṭe hai sabhī",
-    "english": "{1:How}{0: can one sing of}{2: this?}{6: All}{3: words}{4,5: are inadequate.}",
+    "english": "{1:How}{0: can one sing of}{2: this?}{6: All}{3: words}{5: are }{4:inadequate.}",
     "words": [
       {
         "roman": "Gāye",
@@ -1262,7 +1262,7 @@ window.SONG_LINES = {
     "source": "तुम्हारी उपमा तुम्हे ही शोभित है सज्जना",
     "sourceLanguage": "hi",
     "roman": "Tumhārī upamā tumhe hī śobhit hai sajjanā",
-    "english": "{0,1:Your praise}{4,5: is befitting}{2,3: to you alone,}{6: O noble one.}",
+    "english": "{0:Your }{1:praise}{5: is }{4:befitting}{2,3: to you alone,}{6: O noble one.}",
     "words": [
       {
         "roman": "Tumhārī",
@@ -1434,7 +1434,7 @@ window.SONG_LINES = {
     "source": "त्वदीय वचनों से कटे भव बंधन पल में",
     "sourceLanguage": "hi",
     "roman": "Tvadīya vachanoṁ se kaṭe bhava bandhana pal meṁ",
-    "english": "{0,2:By your}{1: words,}{4,5: the bonds of worldly existence}{3: are severed}{6,7: in a moment.}",
+    "english": "{2:By }{0:your}{1: words,}{4,5: the bonds of worldly existence}{3: are severed}{6,7: in a moment.}",
     "words": [
       {
         "roman": "Tvadīya",
@@ -1525,7 +1525,7 @@ window.SONG_LINES = {
     "source": "अजात रिपु सद्गुरु अखिल पातक भंजना",
     "sourceLanguage": "hi",
     "roman": "Ajāt ripu sadguru akhil pātaka bhañjanā",
-    "english": "{2:O Sadguru}{0,1: without enemy,}{5: destroyer}{3,4: of all sins!}",
+    "english": "{2:O Sadguru}{0: without }{1:enemy,}{5: destroyer}{3,4: of all sins!}",
     "words": [
       {
         "roman": "Ajāt",
@@ -1768,7 +1768,7 @@ window.SONG_LINES = {
     "source": "ऐसा सुहितकारी इस जगत में कोई अन्य ना",
     "sourceLanguage": "hi",
     "roman": "Aisā suhitakārī is jagat meṁ koī anya nā",
-    "english": "{0,1:Such a benefactor}{5,7: there is no}{6: other}{2,3,4: in this world.}",
+    "english": "{0,1:Such a benefactor}{5,7: there is no}{6: other}{4: in }{2:this }{3:world.}",
     "words": [
       {
         "roman": "Aisā",
@@ -1859,7 +1859,7 @@ window.SONG_LINES = {
     "source": "हो बहुत सयाना पर न हो गुरु की कृपा",
     "sourceLanguage": "hi",
     "roman": "Ho bahut sayānā par na ho guru kī kṛpā",
-    "english": "{0:One may be}{1,2: very clever,}{3,4,5: but if there is no}{6,7,8: grace of the Guru,}",
+    "english": "{0:One may be}{1: very }{2:clever,}{3,4,5: but if there is no}{6,7,8: grace of the Guru,}",
     "words": [
       {
         "roman": "Ho",
@@ -2051,7 +2051,7 @@ window.SONG_LINES = {
     "source": "गुरु चरण में रखा करे जो अटल भावना",
     "sourceLanguage": "hi",
     "roman": "Guru charaṇ meṁ rakhā kare jo aṭal bhāvanā",
-    "english": "{5:Whoever}{3,4: continually maintains}{6,7: unshakable devotion}{0,1,2: at the Guru's feet,}",
+    "english": "{5:Whoever}{3,4: continually maintains}{6: unshakable }{7:devotion}{0,1,2: at the Guru's feet,}",
     "words": [
       {
         "roman": "Guru",
@@ -2142,7 +2142,7 @@ window.SONG_LINES = {
     "source": "गुरु विनती मैं करू हृदय मंदिर में आ बसो",
     "sourceLanguage": "hi",
     "roman": "Guru vinatī maiṁ karū hṛday mandir meṁ ā baso",
-    "english": "{0:O Guru,}{2,3: I make}{1: this plea:}{7,8: come and dwell}{4,5,6: in the temple of my heart.}",
+    "english": "{0:O Guru,}{2: I }{3:make}{1: this plea:}{7,8: come and dwell}{4,5,6: in the temple of my heart.}",
     "words": [
       {
         "roman": "Guru",
@@ -2516,7 +2516,7 @@ window.SONG_LINES = {
     "source": "अखिल भ्रांति हर के दिया करता हूँ चित्त को नित्य शांति",
     "sourceLanguage": "hi",
     "roman": "Akhil bhrānti har ke diyā kartā hūṁ chitta ko nitya śānti",
-    "english": "{2,3:having dispelled}{0,1: all delusion,}{4,5,6: I continually grant}{9,10: eternal peace}{7,8: to the mind.}",
+    "english": "{2,3:having dispelled}{0: all }{1:delusion,}{4,5,6: I continually grant}{9: eternal }{10:peace}{7,8: to the mind.}",
     "words": [
       {
         "roman": "Akhil",
@@ -2637,7 +2637,7 @@ window.SONG_LINES = {
     "source": "ऐसा श्री साईनाथ ने कहकर बताया जैसा इस बालक से",
     "sourceLanguage": "hi",
     "roman": "Aisā Śrī Sāīnāth ne kahakar batāyā jaisā is bālak se",
-    "english": "{0:Thus}{1,2,3: Shri Sainath}{4,5: declared and narrated,}{6: just as}{7,8,9: to this child,}",
+    "english": "{0:Thus}{1,2,3: Shri Sainath}{4,5: declared and narrated,}{6: just as}{9: to }{7:this }{8:child,}",
     "words": [
       {
         "roman": "Aisā",
@@ -3133,7 +3133,7 @@ window.SONG_LINES = {
     "source": "मैं अंधा हूँ बंदा आपका मुझसे प्रभु दिखलाना",
     "sourceLanguage": "hi",
     "roman": "Maiṁ andhā hūṁ bandā āpakā mujhase prabhu dikhalānā",
-    "english": "{0,2:I am}{1,3,4: your blind servant;}{7: please reveal}{6: the Lord}{5: to me.}",
+    "english": "{0:I }{2:am}{4: your }{1:blind }{3:servant;}{7: please reveal}{6: the Lord}{5: to me.}",
     "words": [
       {
         "roman": "Maiṁ",
@@ -3224,7 +3224,7 @@ window.SONG_LINES = {
     "source": "दास गनू कहे अब क्या बोलूँ थक गई मेरी रसना",
     "sourceLanguage": "hi",
     "roman": "Dās Ganū kahe ab kyā bolūṁ thak gaī merī rasanā",
-    "english": "{0,1,2:Das Ganu says:}{4,5: what shall I speak}{3: now?}{8,9: My tongue}{6,7: has grown weary.}",
+    "english": "{0,1,2:Das Ganu says:}{4,5: what shall I speak}{3: now?}{8: My }{9:tongue}{6,7: has grown weary.}",
     "words": [
       {
         "roman": "Dās",
@@ -3406,7 +3406,7 @@ window.SONG_LINES = {
     "source": "तुम बिन नहीं मुझे माँ बाप भाई",
     "sourceLanguage": "hi",
     "roman": "Tuma bina nahī̃ mujhe mā̃ bāpa bhāī",
-    "english": "{0,1:Without you,}{2,3: I have no}{4: mother,}{5: father,}{6: or brother.}",
+    "english": "{1:Without }{0:you,}{2,3: I have no}{4: mother,}{5: father,}{6: or brother.}",
     "words": [
       {
         "roman": "Tuma",
@@ -3528,7 +3528,7 @@ window.SONG_LINES = {
     "source": "मैं अंधा हूँ बन्दा तुम्हारा",
     "sourceLanguage": "hi",
     "roman": "Maĩ andhā hū̃ bandā tumhārā",
-    "english": "{0,2:I am}{4: your}{1: blind}{3: servant.}",
+    "english": "{0:I }{2:am}{4: your}{1: blind}{3: servant.}",
     "words": [
       {
         "roman": "Maĩ",
@@ -3963,7 +3963,7 @@ window.SONG_LINES = {
     "source": "मालिक हमारे मालिक हमारे मालिक हमारे तुम बाबा साईं",
     "sourceLanguage": "hi",
     "roman": "Mālika hamāre mālika hamāre mālika hamāre tuma Bābā Sāī̃",
-    "english": "{0,1:Our Master,}{2,3: our Master,}{4,5: our Master,}{6: you are}{7,8: Baba Sai.}",
+    "english": "{1:Our }{0:Master,}{3: our }{2:Master,}{5: our }{4:Master,}{6: you are}{7,8: Baba Sai.}",
     "words": [
       {
         "roman": "Mālika",
@@ -4439,7 +4439,7 @@ window.SONG_LINES = {
     "source": "अब अंत न देखो मेरा सखा भगवंता श्रीकांता",
     "sourceLanguage": "hi",
     "roman": "Aba anta na dekho merā sakhā bhagavantā Śrīkāntā",
-    "english": "{0:Now}{2,3: do not test}{1,4: my limit,}{5: O friend,}{6: O Lord,}{7: O Śrīkānta!}",
+    "english": "{0:Now}{2,3: do not test}{4: my }{1:limit,}{5: O friend,}{6: O Lord,}{7: O Śrīkānta!}",
     "words": [
       {
         "roman": "Aba",
@@ -4763,7 +4763,7 @@ window.SONG_LINES = {
     "source": "श्री सद्गुरु बाबा साईं हो श्री सद्गुरु बाबा साईं",
     "sourceLanguage": "hi",
     "roman": "Śrī Sadguru Bābā Sāī̃ ho Śrī Sadguru Bābā Sāī̃",
-    "english": "{0,1,2,3,4:O Holy True Guru Baba Sai,}{5,6,7,8: Holy True Guru Baba Sai!}",
+    "english": "{4:O }{0:Holy }{1:True Guru }{2:Baba }{3:Sai,}{5: Holy }{6:True Guru }{7:Baba }{8:Sai!}",
     "words": [
       {
         "roman": "Śrī",
@@ -4864,7 +4864,7 @@ window.SONG_LINES = {
     "source": "तुम बिना न आश्रय कोई भूस्थली",
     "sourceLanguage": "hi",
     "roman": "Tuma binā na āśraya koī bhūsthalī",
-    "english": "{0,1:Without you}{2: there is no}{3,4: refuge}{5: on this earthly plane.}",
+    "english": "{1:Without }{0:you}{2: there is no}{3,4: refuge}{5: on this earthly plane.}",
     "words": [
       {
         "roman": "Tuma",
@@ -5189,7 +5189,7 @@ window.SONG_LINES = {
     "source": "तू शांतिक्षमा का मेरु हो",
     "sourceLanguage": "hi",
     "roman": "Tū śānti-kṣamā kā meru ho",
-    "english": "{0,5:You are}{4: Mount Meru}{1,3: of peace}{2: and forbearance!}",
+    "english": "{0:You }{5:are}{4: Mount Meru}{3: of }{1:peace}{2: and forbearance!}",
     "words": [
       {
         "roman": "Tū",
@@ -5255,7 +5255,7 @@ window.SONG_LINES = {
     "source": "तू शांतिक्षमा का मेरु",
     "sourceLanguage": "hi",
     "roman": "Tū śānti-kṣamā kā meru",
-    "english": "{0:You are}{4: the Mount Meru}{1,3: of peace}{2: and forbearance.}",
+    "english": "{0:You are}{4: the Mount Meru}{3: of }{1:peace}{2: and forbearance.}",
     "words": [
       {
         "roman": "Tū",
@@ -5311,7 +5311,7 @@ window.SONG_LINES = {
     "source": "तू ही भवार्णव का तारू गुरुवरा",
     "sourceLanguage": "hi",
     "roman": "Tū hī bhavārṇava kā tārū guruvarā",
-    "english": "{0,1:You alone}{4: are the boat}{2,3: on the ocean of worldly existence,}{5: O supreme Guru!}",
+    "english": "{0:You }{1:alone}{4: are the boat}{2,3: on the ocean of worldly existence,}{5: O supreme Guru!}",
     "words": [
       {
         "roman": "Tū",
@@ -5677,7 +5677,7 @@ window.SONG_LINES = {
     "source": "उठो उठो हे बांधव मनाओ ये रमाधव",
     "sourceLanguage": "hi",
     "roman": "Uṭhō uṭhō hē bāndhava manāō yē Ramādhava",
-    "english": "{0:Arise,}{1: arise,}{2,3: O brethren,}{4: propitiate}{5,6: this Ramadhava!}",
+    "english": "{0:Arise,}{1: arise,}{2: O }{3:brethren,}{4: propitiate}{5,6: this Ramadhava!}",
     "words": [
       {
         "roman": "Uṭhō",
@@ -5819,7 +5819,7 @@ window.SONG_LINES = {
     "source": "कर लेना स्थिर मन देखो गंभीर ये ध्यान",
     "sourceLanguage": "hi",
     "roman": "Kara lēnā sthira mana dēkhō gambhīra yē dhyāna",
-    "english": "{0,1,2:Make steady}{3: the mind;}{4: behold}{5,6,7: this profound meditation!}",
+    "english": "{0,1,2:Make steady}{3: the mind;}{4: behold}{6: this }{5:profound }{7:meditation!}",
     "words": [
       {
         "roman": "Kara",
@@ -5910,7 +5910,7 @@ window.SONG_LINES = {
     "source": "साईं का ये ध्यान देखो गंभीर ये ध्यान",
     "sourceLanguage": "hi",
     "roman": "Sāī̃ kā yē dhyāna dēkhō gambhīra yē dhyāna",
-    "english": "{0,1,2,3:This meditation of Sai,}{4: behold}{5,6,7: this profound meditation!}",
+    "english": "{2:This }{3:meditation }{1:of }{0:Sai,}{4: behold}{6: this }{5:profound }{7:meditation!}",
     "words": [
       {
         "roman": "Sāī̃",
@@ -6001,7 +6001,7 @@ window.SONG_LINES = {
     "source": "कृष्ण नाथा दत्त साईं पदों में चित्त जड़े साईं",
     "sourceLanguage": "hi",
     "roman": "Kṛṣṇa Nāthā Datta Sāī̃ padō̃ mē̃ citta jaṛē Sāī̃",
-    "english": "{0,1,2,3:Krishna, Natha, Datta, Sai,}{4,5: at your feet}{6: the mind}{7: is fixed,}{8: O Sai!}",
+    "english": "{0:Krishna, }{1:Natha, }{2:Datta, }{3:Sai,}{5: at }{4:your feet}{6: the mind}{7: is fixed,}{8: O Sai!}",
     "words": [
       {
         "roman": "Kṛṣṇa",
@@ -6102,7 +6102,7 @@ window.SONG_LINES = {
     "source": "चित्त बाबा साईं पदों में चित्त जड़े साईं",
     "sourceLanguage": "hi",
     "roman": "Citta Bābā Sāī̃ padō̃ mē̃ citta jaṛē Sāī̃",
-    "english": "{0:The mind,}{1,2,3,4: at Baba Sai's feet}{5,6: the mind is fixed,}{7: O Sai!}",
+    "english": "{0:The mind,}{4: at }{1:Baba }{2:Sai's }{3:feet}{5: the mind }{6:is fixed,}{7: O Sai!}",
     "words": [
       {
         "roman": "Citta",
@@ -8218,7 +8218,7 @@ window.SONG_LINES = {
     "source": "अवतरता होती जो धर्म की ग्लानि",
     "sourceLanguage": "hi",
     "roman": "Avataratā hōtī jō dharma kī glāni",
-    "english": "{0:He incarnates }{2:whenever }{1:there is }{5:a decline }{3,4:of righteousness.}",
+    "english": "{0:He incarnates }{2:whenever }{1:there is }{5:a decline }{4:of }{3:righteousness.}",
     "words": [
       {
         "roman": "Avataratā",
@@ -8613,7 +8613,7 @@ window.SONG_LINES = {
     "source": "यवन स्वरूपी एक को दर्शन प्रगटाया",
     "sourceLanguage": "hi",
     "roman": "yavana svarūpī eka ko darśana pragaṭāyā",
-    "english": "{5:You revealed }{4:a vision }{2,3:to one }{1:in the form of }{0:a Muslim.}",
+    "english": "{5:You revealed }{4:a vision }{3:to }{2:one }{1:in the form of }{0:a Muslim.}",
     "words": [
       {
         "roman": "yavana",
@@ -9069,7 +9069,7 @@ window.SONG_LINES = {
     "source": "प्रेम से देखे हिन्दू यवन या कोई",
     "sourceLanguage": "hi",
     "roman": "prema se dekhe hindū yavana yā koī",
-    "english": "{3:Whether Hindu,}{4: Muslim,}{5: or}{6: anyone else,}{2: whoever looks}{0,1: with love,}",
+    "english": "{3:Whether Hindu,}{4: Muslim,}{5: or}{6: anyone else,}{2: whoever looks}{1: with }{0:love,}",
     "words": [
       {
         "roman": "prema",
@@ -9150,7 +9150,7 @@ window.SONG_LINES = {
     "source": "दिखलाते हैं सब को व्यापक हैं साई",
     "sourceLanguage": "hi",
     "roman": "dikhalāte haiṁ saba ko vyāpaka haiṁ sāī",
-    "english": "{6:Sai }{0,1:reveals }{2,3:to all }{5:that he is }{4:all-pervading.}",
+    "english": "{6:Sai }{0,1:reveals }{3:to }{2:all }{5:that he is }{4:all-pervading.}",
     "words": [
       {
         "roman": "dikhalāte",
@@ -9769,7 +9769,7 @@ window.SONG_LINES = {
     "source": "आओ आओ सारे जन करें बाबा को वंदन",
     "sourceLanguage": "hi",
     "roman": "āao āao sāre jana kareṁ bābā ko vandana",
-    "english": "{0,1:Come, come,}{2,3: all people,}{4: let us offer}{7: obeisance}{5,6: to Baba.}",
+    "english": "{0,1:Come, come,}{2: all }{3:people,}{4: let us offer}{7: obeisance}{5,6: to Baba.}",
     "words": [
       {
         "roman": "āao",
@@ -9941,7 +9941,7 @@ window.SONG_LINES = {
     "source": "गणु कहे बाबा साईं दौड़े आओ मेरे साईं",
     "sourceLanguage": "hi",
     "roman": "gaṇu kahe bābā sāīṁ dauṛe āao mere sāīṁ",
-    "english": "{0,1:Ganu says,}{2,3: \"Baba Sai,}{4,5: come running,}{6,7: my Sai!\"}",
+    "english": "{0,1:Ganu says,}{2,3: \"Baba Sai,}{5: come }{4:running,}{6,7: my Sai!\"}",
     "words": [
       {
         "roman": "gaṇu",
@@ -10032,7 +10032,7 @@ window.SONG_LINES = {
     "source": "आओ मेरे साईं दौड़े आओ मेरे साईं",
     "sourceLanguage": "hi",
     "roman": "āao mere sāīṁ dauṛe āao mere sāīṁ",
-    "english": "{0,1,2:Come, my Sai,}{3,4: come running,}{5,6: my Sai!}",
+    "english": "{0,1,2:Come, my Sai,}{4: come }{3:running,}{5,6: my Sai!}",
     "words": [
       {
         "roman": "āao",
@@ -10113,7 +10113,7 @@ window.SONG_LINES = {
     "source": "साष्टांग नमन वंदूं मैं चरण नैनों से देखूं रूप तेरा",
     "sourceLanguage": "hi",
     "roman": "sāṣṭāṅga namana vandūṁ maiṁ caraṇa nainoṁ se dekhūṁ rūpa terā",
-    "english": "{0,1:With eight-limbed prostration}{2,3: I bow to}{4: your feet;}{5,6: with my eyes}{7: I behold}{8,9: your form.}",
+    "english": "{0,1:With eight-limbed prostration}{2,3: I bow to}{4: your feet;}{5,6: with my eyes}{7: I behold}{9: your }{8:form.}",
     "words": [
       {
         "roman": "sāṣṭāṅga",
@@ -10517,7 +10517,7 @@ window.SONG_LINES = {
     "source": "कायेन वाचा मनसेन्द्रियैर्वा बुद्ध्यात्मना वा प्रकृतिस्वभावात्",
     "sourceLanguage": "hi",
     "roman": "kāyena vācā manasendriyairvā buddhyātmanā vā prakṛtisvabhāvāt",
-    "english": "{0:By body,}{1: by speech,}{2: by mind or by senses,}{3,4: by intellect or by self,}{5: or from innate disposition—}",
+    "english": "{0:By body,}{1: by speech,}{2: by mind}{4: or}{3: by senses,}{5: by intellect}{7: or}{6: by self,}{7: or}{9: from}{8: innate}{9: disposition—}",
     "words": [
       {
         "roman": "kāyena",
@@ -10528,20 +10528,36 @@ window.SONG_LINES = {
         "gloss": "by speech (instrumental singular)"
       },
       {
-        "roman": "manasendriyairvā",
-        "gloss": "by mind (manasā) [or] by senses (indriyaiḥ) or (vā)"
+        "roman": "manas",
+        "gloss": "by mind; manasā, instrumental, joined ā + i"
       },
       {
-        "roman": "buddhyātmanā",
-        "gloss": "by intellect (buddhyā) [or] by self (ātmanā)"
+        "roman": "endriyair",
+        "gloss": "by senses; indriyaiḥ, instrumental plural"
       },
       {
         "roman": "vā",
         "gloss": "or"
       },
       {
-        "roman": "prakṛtisvabhāvāt",
-        "gloss": "from nature of one's disposition (ablative singular)"
+        "roman": "buddhy",
+        "gloss": "by intellect; buddhyā, instrumental, joined ā + ā"
+      },
+      {
+        "roman": "ātmanā",
+        "gloss": "by self: instrumental"
+      },
+      {
+        "roman": "vā",
+        "gloss": "or"
+      },
+      {
+        "roman": "prakṛti",
+        "gloss": "innate nature"
+      },
+      {
+        "roman": "svabhāvāt",
+        "gloss": "from [one's] disposition: ablative singular"
       }
     ],
     "grammarNote": "Bhagavata Purana verse (11.2.36); list of instrumentals of means and an ablative of cause governed by the verb in the following line.",
@@ -10559,27 +10575,51 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "मनसेन्द्रियैर्वा",
+        "text": "मनसे",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "बुद्ध्यात्मना",
+        "text": "न्द्रियै",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "वा",
+        "text": "र्वा",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "प्रकृतिस्वभावात्",
+        "text": "बुद्ध्या",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "त्मना",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "प्रकृति",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "स्वभावात्",
+        "wordIndices": [
+          9
         ]
       }
     ]
@@ -10659,7 +10699,7 @@ window.SONG_LINES = {
     "source": "अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम्",
     "sourceLanguage": "hi",
     "roman": "acyutaṁ keśavaṁ rāmanārāyaṇaṁ kṛṣṇadāmodaraṁ vāsudevaṁ harim",
-    "english": "{0:To Acyuta,}{1: Keśava,}{2: Rāma-Nārāyaṇa,}{3: Kṛṣṇa-Dāmodara,}{4: Vāsudeva,}{5: Hari,}",
+    "english": "{0:To Acyuta,}{1: Keśava,}{2: Rāma-}{3:Nārāyaṇa,}{4: Kṛṣṇa-}{5:Dāmodara,}{6: Vāsudeva,}{7: Hari,}",
     "words": [
       {
         "roman": "acyutaṁ",
@@ -10670,12 +10710,20 @@ window.SONG_LINES = {
         "gloss": "Keśava, the beautiful-haired one; a name of Viṣṇu/Kṛṣṇa"
       },
       {
-        "roman": "rāmanārāyaṇaṁ",
-        "gloss": "Viṣṇu in the form of Rāma; Rāma means “delightful”; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters"
+        "roman": "rāma",
+        "gloss": "Rāma, a form of Viṣṇu; the name means “delightful”"
       },
       {
-        "roman": "kṛṣṇadāmodaraṁ",
-        "gloss": "Kṛṣṇa as Dāmodara, the one with a rope around his waist; Kṛṣṇa means “dark” or “dark-hued”"
+        "roman": "nārāyaṇaṁ",
+        "gloss": "Nārāyaṇa, Viṣṇu, the refuge of living beings who rests upon the primordial waters"
+      },
+      {
+        "roman": "kṛṣṇa",
+        "gloss": "Kṛṣṇa, “dark” or “dark-hued”"
+      },
+      {
+        "roman": "dāmodaraṁ",
+        "gloss": "Dāmodara, the one with a rope around his waist"
       },
       {
         "roman": "vāsudevaṁ",
@@ -10701,27 +10749,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "रामनारायणं",
+        "text": "राम",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "कृष्णदामोदरं",
+        "text": "नारायणं",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "वासुदेवं",
+        "text": "कृष्ण",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "हरिम्",
+        "text": "दामोदरं",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "वासुदेवं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "हरिम्",
+        "wordIndices": [
+          7
         ]
       }
     ]
@@ -10730,7 +10790,7 @@ window.SONG_LINES = {
     "source": "श्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचंद्रं भजे",
     "sourceLanguage": "hi",
     "roman": "śrīdharaṁ mādhavaṁ gopikāvallabhaṁ jānakīnāyakaṁ rāmacandraṁ bhaje",
-    "english": "{0:Shridhara,}{1: Madhava,}{2: the Beloved of the cowherd maidens,}{3: the Lord of Janaki,}{4: Ramachandra—}{5:I adore.}",
+    "english": "{0:Shridhara,}{1: Madhava,}{3: the Beloved}{2: of the cowherd maidens,}{5: the Lord}{4: of Janaki,}{6: Ramachandra—}{7:I adore.}",
     "words": [
       {
         "roman": "śrīdharaṁ",
@@ -10741,12 +10801,20 @@ window.SONG_LINES = {
         "gloss": "Lord of Fortune / Madhava (accusative singular)"
       },
       {
-        "roman": "gopikāvallabhaṁ",
-        "gloss": "Beloved of the cowherd maidens (accusative singular)"
+        "roman": "gopikā",
+        "gloss": "the cowherd maidens"
       },
       {
-        "roman": "jānakīnāyakaṁ",
-        "gloss": "Lord of Janaki (accusative singular)"
+        "roman": "vallabhaṁ",
+        "gloss": "the Beloved: accusative singular"
+      },
+      {
+        "roman": "jānakī",
+        "gloss": "Janaki, Sita"
+      },
+      {
+        "roman": "nāyakaṁ",
+        "gloss": "Lord: accusative singular"
       },
       {
         "roman": "rāmacandraṁ",
@@ -10772,27 +10840,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "गोपिकावल्लभं",
+        "text": "गोपिका",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "जानकीनायकं",
+        "text": "वल्लभं",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "रामचंद्रं",
+        "text": "जानकी",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "भजे",
+        "text": "नायकं",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "रामचंद्रं",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "भजे",
+        "wordIndices": [
+          7
         ]
       }
     ]
@@ -11024,7 +11104,7 @@ window.SONG_LINES = {
     "source": "हरिः ॐ यज्ञेन यज्ञमयजन्त देवास्तानि धर्माणि प्रथमान्यासन्",
     "sourceLanguage": "sa",
     "roman": "hariḥ oṁ yajñena yajñamayajanta devāstāni dharmāṇi prathamānyāsan",
-    "english": "{0,1:Hariḥ Oṃ.}{2: With sacrifice,}{3,4: the gods sacrificed the sacrifice;}{5,6: those were the first foundations.}",
+    "english": "{0:Hariḥ }{1:Oṃ.}{2: With sacrifice,}{5: the gods}{4: sacrificed}{3: the sacrifice;}{6: those}{9: were}{8: the first}{7: foundations.}",
     "words": [
       {
         "roman": "hariḥ",
@@ -11039,20 +11119,32 @@ window.SONG_LINES = {
         "gloss": "by sacrifice (instrumental singular)"
       },
       {
-        "roman": "yajñamayajanta",
-        "gloss": "worshipped the sacrifice (yajñam + ayajanta, 3rd plural imperfect middle)"
+        "roman": "yajñam",
+        "gloss": "the sacrifice: accusative"
       },
       {
-        "roman": "devāstāni",
-        "gloss": "the gods (devāḥ) those (tāni)"
+        "roman": "ayajanta",
+        "gloss": "worshipped, sacrificed: 3rd plural imperfect middle"
+      },
+      {
+        "roman": "devās",
+        "gloss": "the gods; devāḥ"
+      },
+      {
+        "roman": "tāni",
+        "gloss": "those: neuter plural"
       },
       {
         "roman": "dharmāṇi",
         "gloss": "foundations; established ordinances (neuter plural)"
       },
       {
-        "roman": "prathamānyāsan",
-        "gloss": "first / earliest were (prathamāni + āsan, 3rd plural imperfect)"
+        "roman": "prathamāny",
+        "gloss": "first, earliest; prathamāni, i changed to y before ā"
+      },
+      {
+        "roman": "āsan",
+        "gloss": "were: 3rd plural imperfect"
       }
     ],
     "grammarNote": "Ṛgveda 10.90.16, the closing verse of the Puruṣa Sūkta. Hariḥ Oṃ is a recitational opening; the Vedic text begins with yajñena. The subject devāḥ governs ayajanta; dharmāṇi prathamāni āsan is the nominal clause.",
@@ -11076,27 +11168,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "यज्ञमयजन्त",
+        "text": "यज्ञ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "देवास्तानि",
+        "text": "मयजन्त",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "धर्माणि",
+        "text": "देवा",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "प्रथमान्यासन्",
+        "text": "स्तानि",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "धर्माणि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "प्रथमा",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "न्यासन्",
+        "wordIndices": [
+          9
         ]
       }
     ]
@@ -11105,7 +11215,7 @@ window.SONG_LINES = {
     "source": "ते ह नाकं महिमानः सचन्त यत्र पूर्वे साध्याः सन्ति देवाः",
     "sourceLanguage": "sa",
     "roman": "te ha nākaṁ mahimānaḥ sacanta yatra pūrve sādhyāḥ santi devāḥ",
-    "english": "{0,1:They indeed,}{3: in their greatness,}{2,4: reached the heavenly realm}{5: where}{6: the ancient}{7: Sādhya}{9: gods}{8: dwell.}",
+    "english": "{0:They }{1:indeed,}{3: in their greatness,}{2,4: reached the heavenly realm}{5: where}{6: the ancient}{7: Sādhya}{9: gods}{8: dwell.}",
     "words": [
       {
         "roman": "te",
@@ -11216,19 +11326,27 @@ window.SONG_LINES = {
     "source": "ॐ राजाधिराजाय प्रसह्यसाहिने नमो वयं वैश्रवणाय कुर्महे",
     "sourceLanguage": "sa",
     "roman": "oṁ rājādhirājāya prasahyasāhine namo vayaṁ vaiśravaṇāya kurmahe",
-    "english": "{0:Oṃ.}{1: To the king above kings,}{2: the overpowering conqueror,}{4: we}{6: offer}{3: homage}{5: to Vaiśravaṇa.}",
+    "english": "{0:Oṃ.}{2: To the king above}{1: kings,}{3: the overpowering}{4: conqueror,}{6: we}{8: offer}{5: homage}{7: to Vaiśravaṇa.}",
     "words": [
       {
         "roman": "oṁ",
         "gloss": "Om"
       },
       {
-        "roman": "rājādhirājāya",
-        "gloss": "to the king above kings (dative singular)"
+        "roman": "rāj",
+        "gloss": "kings; rājā, joined ā + a"
       },
       {
-        "roman": "prasahyasāhine",
-        "gloss": "to the overpowering conqueror (dative singular)"
+        "roman": "ādhirājāya",
+        "gloss": "to the supreme king, king above; adhirājāya, dative singular"
+      },
+      {
+        "roman": "prasahya",
+        "gloss": "overpoweringly, by force"
+      },
+      {
+        "roman": "sāhine",
+        "gloss": "to the conqueror: dative singular"
       },
       {
         "roman": "namo",
@@ -11256,39 +11374,51 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "राजाधिराजाय",
+        "text": "राजा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्रसह्यसाहिने",
+        "text": "धिराजाय",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "नमो",
+        "text": "प्रसह्य",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "वयं",
+        "text": "साहिने",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "वैश्रवणाय",
+        "text": "नमो",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "कुर्महे",
+        "text": "वयं",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "वैश्रवणाय",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "कुर्महे",
+        "wordIndices": [
+          8
         ]
       }
     ]
@@ -11297,7 +11427,7 @@ window.SONG_LINES = {
     "source": "स मे कामान् कामकामाय मह्यं कामेश्वरो वैश्रवणो दधातु",
     "sourceLanguage": "sa",
     "roman": "sa me kāmān kāmakāmāya mahyaṁ kāmeśvaro vaiśravaṇo dadhātu",
-    "english": "{0:May he,}{6: Vaiśravaṇa,}{5: the sovereign of desires,}{7: grant}{1,2: my desires}{3,4: to me, a seeker of desires.}",
+    "english": "{0:May he,}{6: Vaiśravaṇa,}{5: the sovereign of desires,}{7: grant}{1: my }{2:desires}{3,4: to me, a seeker of desires.}",
     "words": [
       {
         "roman": "sa",
@@ -11439,7 +11569,7 @@ window.SONG_LINES = {
     "source": "ॐ स्वस्ति साम्राज्यं भौज्यं स्वाराज्यं वैराज्यं पारमेष्ठ्यं राज्यं महाराज्यमाधिपत्यमयं समन्तपर्यायी स्यात्",
     "sourceLanguage": "sa",
     "roman": "oṁ svasti sāmrājyaṁ bhaujyaṁ svārājyaṁ vairājyaṁ pārameṣṭhyaṁ rājyaṁ mahārājyamādhipatyamayaṁ samantaparyāyī syāt",
-    "english": "{0,1:Oṃ, may there be well-being:}{2: universal sovereignty,}{3: bounteous dominion,}{4: self-rule,}{5: distinguished sovereignty,}{6: the highest authority,}{7: kingship,}{8: great sovereignty and paramount rule,}{9: extending in every direction,}{10: may it be.}",
+    "english": "{0:Oṃ,}{1: may there be well-being:}{2: universal sovereignty,}{3: bounteous dominion,}{4: self-rule,}{5: distinguished sovereignty,}{6: the highest authority,}{7: kingship,}{8: great}{9: sovereignty}{10: and paramount rule,}{13: extending}{12: in every direction,}{14: may}{11: it}{14: be.}",
     "words": [
       {
         "roman": "oṁ",
@@ -11474,12 +11604,28 @@ window.SONG_LINES = {
         "gloss": "kingship / kingdom"
       },
       {
-        "roman": "mahārājyamādhipatyamayaṁ",
-        "gloss": "great sovereignty and paramount rule (mahārājyam + ādhipatyam + ayam)"
+        "roman": "mahā",
+        "gloss": "great"
       },
       {
-        "roman": "samantaparyāyī",
-        "gloss": "all-encompassing / encircling the earth entirely"
+        "roman": "rājyam",
+        "gloss": "sovereignty"
+      },
+      {
+        "roman": "ādhipatyam",
+        "gloss": "paramount rule"
+      },
+      {
+        "roman": "ayaṁ",
+        "gloss": "this [one]"
+      },
+      {
+        "roman": "samanta",
+        "gloss": "every side, all around"
+      },
+      {
+        "roman": "paryāyī",
+        "gloss": "encompassing, encircling"
       },
       {
         "roman": "syāt",
@@ -11537,21 +11683,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "महाराज्यमाधिपत्यमयं",
+        "text": "महा",
         "wordIndices": [
           8
         ]
       },
       {
-        "text": "समन्तपर्यायी",
+        "text": "राज्य",
         "wordIndices": [
           9
         ]
       },
       {
-        "text": "स्यात्",
+        "text": "माधिपत्य",
         "wordIndices": [
           10
+        ]
+      },
+      {
+        "text": "मयं",
+        "wordIndices": [
+          11
+        ]
+      },
+      {
+        "text": "समन्त",
+        "wordIndices": [
+          12
+        ]
+      },
+      {
+        "text": "पर्यायी",
+        "wordIndices": [
+          13
+        ]
+      },
+      {
+        "text": "स्यात्",
+        "wordIndices": [
+          14
         ]
       }
     ]
@@ -11560,69 +11730,129 @@ window.SONG_LINES = {
     "source": "सार्वभौमः सार्वायुष आन्तादापरार्धात् पृथिव्यै समुद्रपर्यन्ताया एकराळिति",
     "sourceLanguage": "sa",
     "roman": "sārvabhaumaḥ sārvāyuṣa āntādāparārdhāt pṛthivyai samudraparyantāyā ekarāḷiti",
-    "english": "{0:May he be sovereign over all the earth,}{1: of full life,}{2: to the farthest limit—}{5:the sole ruler}{3,4: of earth as far as the ocean.}",
+    "english": "{1:May he be sovereign over }{0:all }{1:the earth,}{2: of full}{3: life,}{4: to}{5: the farthest}{4: limit—}{9:the sole }{10,11:ruler}{6: of earth}{8: as far as}{7: the ocean.}",
     "words": [
       {
-        "roman": "sārvabhaumaḥ",
-        "gloss": "sovereign over all the earth (nominative singular)"
+        "roman": "sārva",
+        "gloss": "all, whole; from sarva"
       },
       {
-        "roman": "sārvāyuṣa",
-        "gloss": "possessing full lifespan (sārvāyuṣaḥ, nominative singular)"
+        "roman": "bhaumaḥ",
+        "gloss": "sovereign over the earth; from bhūmi: nominative singular"
       },
       {
-        "roman": "āntādāparārdhāt",
-        "gloss": "from the limit (āntāt) to the far half / infinite span (āparārdhāt)"
+        "roman": "sārv",
+        "gloss": "full; from sarva, joined a + ā"
+      },
+      {
+        "roman": "āyuṣa",
+        "gloss": "possessing a lifespan; āyuṣaḥ, nominative singular"
+      },
+      {
+        "roman": "āntād",
+        "gloss": "unto the limit; ā + antāt"
+      },
+      {
+        "roman": "āparārdhāt",
+        "gloss": "to the far half, infinite span; ā + parārdhāt"
       },
       {
         "roman": "pṛthivyai",
         "gloss": "of the earth (genitive singular feminine)"
       },
       {
-        "roman": "samudraparyantāyā",
-        "gloss": "extending to the ocean (samudraparyantāyāḥ, genitive singular feminine)"
+        "roman": "samudra",
+        "gloss": "ocean"
       },
       {
-        "roman": "ekarāḷiti",
-        "gloss": "sole ruler (ekarāṭ), thus (iti)"
+        "roman": "paryantāyā",
+        "gloss": "extending to; paryantāyāḥ, genitive singular feminine"
+      },
+      {
+        "roman": "eka",
+        "gloss": "sole, one"
+      },
+      {
+        "roman": "rāḷ",
+        "gloss": "ruler; rāṭ, ṭ changed to ḷ before a vowel"
+      },
+      {
+        "roman": "iti",
+        "gloss": "thus: closes the quotation"
       }
     ],
     "grammarNote": "Continuation of Aitareya Brāhmaṇa 8.15. Vedic sandhi ekarāṭ + iti gives ekarāḷiti; the formula describes sovereignty over the ocean-bounded earth.",
     "sourceWords": [
       {
-        "text": "सार्वभौमः",
+        "text": "सार्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सार्वायुष",
+        "text": "भौमः",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "आन्तादापरार्धात्",
+        "text": "सार्वा",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "पृथिव्यै",
+        "text": "युष",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "समुद्रपर्यन्ताया",
+        "text": "आन्ता",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "एकराळिति",
+        "text": "दापरार्धात्",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "पृथिव्यै",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "समुद्र",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "पर्यन्ताया",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "एक",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "रा",
+        "wordIndices": [
+          10
+        ]
+      },
+      {
+        "text": "ळिति",
+        "wordIndices": [
+          11
         ]
       }
     ]
@@ -11631,15 +11861,23 @@ window.SONG_LINES = {
     "source": "तदेष श्लोकोऽभिगीतो मरुतः परिवेष्टारो मरुत्तस्यावसन् गृहे",
     "sourceLanguage": "sa",
     "roman": "tadeṣa śloko'bhigīto marutaḥ pariveṣṭāro maruttasyāvasan gṛhe",
-    "english": "{0:Concerning this, a}{1: verse is recited:}{2: 'The Maruts,}{3: as attendants,}{4: resided}{5: in Marutta’s house;'}",
+    "english": "{0:Concerning this,}{1: a}{2: verse}{3: is recited:}{4: 'The Maruts,}{5: as attendants,}{7: resided}{8: in}{6: Marutta’s}{8: house;'}",
     "words": [
       {
-        "roman": "tadeṣa",
-        "gloss": "concerning that (tat) this (eṣaḥ)"
+        "roman": "tad",
+        "gloss": "concerning that (tat)"
       },
       {
-        "roman": "śloko'bhigīto",
-        "gloss": "verse (ślokaḥ) is sung / proclaimed (abhigītaḥ)"
+        "roman": "eṣa",
+        "gloss": "this (eṣaḥ), with “verse”"
+      },
+      {
+        "roman": "śloko",
+        "gloss": "verse (ślokaḥ)"
+      },
+      {
+        "roman": "'bhigīto",
+        "gloss": "is sung, proclaimed (abhigītaḥ)"
       },
       {
         "roman": "marutaḥ",
@@ -11650,8 +11888,12 @@ window.SONG_LINES = {
         "gloss": "attendants / table-servers (pariveṣṭāraḥ, nominative plural)"
       },
       {
-        "roman": "maruttasyāvasan",
-        "gloss": "of Marutta (maruttasya); resided (avasan, 3rd plural imperfect)"
+        "roman": "maruttasy",
+        "gloss": "of Marutta (maruttasya)"
+      },
+      {
+        "roman": "āvasan",
+        "gloss": "resided (avasan, 3rd plural imperfect)"
       },
       {
         "roman": "gṛhe",
@@ -11661,39 +11903,57 @@ window.SONG_LINES = {
     "grammarNote": "Continuation of the Marutta citation in Aitareya Brāhmaṇa 8.15. The prose introduces a verse; Marutta is the son of Avikṣit in the following line.",
     "sourceWords": [
       {
-        "text": "तदेष",
+        "text": "त",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "श्लोकोऽभिगीतो",
+        "text": "देष",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मरुतः",
+        "text": "श्लोको",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "परिवेष्टारो",
+        "text": "ऽभिगीतो",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "मरुत्तस्यावसन्",
+        "text": "मरुतः",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "गृहे",
+        "text": "परिवेष्टारो",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "मरुत्तस्या",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "वसन्",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "गृहे",
+        "wordIndices": [
+          8
         ]
       }
     ]
@@ -11880,7 +12140,7 @@ window.SONG_LINES = {
     "source": "अनन्त तेरा स्तवन हम कैसे गाएँ",
     "sourceLanguage": "hi",
     "roman": "ananta terā stavana hama kaise gāeṁ",
-    "english": "{0:O Infinite One,}{4: how}{3: can we}{5: sing}{1,2: your praise?}",
+    "english": "{0:O Infinite One,}{4: how}{3: can we}{5: sing}{1: your }{2:praise?}",
     "words": [
       {
         "roman": "ananta",
@@ -12174,7 +12434,7 @@ window.SONG_LINES = {
     "source": "बचा शेष जीवन भक्ति में ही गमावें",
     "sourceLanguage": "hi",
     "roman": "bacā śeṣa jīvana bhakti meṁ hī gamāveṁ",
-    "english": "{6:May we spend}{0,1: the rest of our remaining}{2: life}{3,4: in devotion}{5: alone.}",
+    "english": "{6:May we spend}{0,1: the rest of our remaining}{2: life}{4: in }{3:devotion}{5: alone.}",
     "words": [
       {
         "roman": "bacā",
@@ -12570,7 +12830,7 @@ window.SONG_LINES = {
     "source": "नर देह पाया उत्तम यही है",
     "sourceLanguage": "hi",
     "roman": "nara deha pāyā uttama yahī hai",
-    "english": "{2:To have obtained}{0,1: a human body—}{4:this indeed}{3,5: is supreme;}",
+    "english": "{2:To have obtained}{0,1: a human body—}{4:this indeed}{5: is }{3:supreme;}",
     "words": [
       {
         "roman": "nara",
@@ -12702,7 +12962,7 @@ window.SONG_LINES = {
     "source": "साई प्रेम से नष्ट होती अहंता",
     "sourceLanguage": "hi",
     "roman": "sāī prema se naṣṭa hotī ahantā",
-    "english": "{1,2:Through love for}{0: Sai,}{5: ego}{3,4: is destroyed.}",
+    "english": "{1,2:Through love for}{0: Sai,}{5: ego}{4: is }{3:destroyed.}",
     "words": [
       {
         "roman": "sāī",
@@ -12773,7 +13033,7 @@ window.SONG_LINES = {
     "source": "धरे करों से यह मूढ़ बालक",
     "sourceLanguage": "hi",
     "roman": "dhare karoṁ se yaha mūḍha bālaka",
-    "english": "{0:He holds}{3,4,5: this innocent child}{1,2: with his hands,}",
+    "english": "{0:He holds}{3: this }{4:innocent }{5:child}{1,2: with his hands,}",
     "words": [
       {
         "roman": "dhare",
@@ -12844,7 +13104,7 @@ window.SONG_LINES = {
     "source": "चुमे गाल इसके हो धन्य बालक",
     "sourceLanguage": "hi",
     "roman": "cume gāla isake ho dhanya bālaka",
-    "english": "{0,1,2:Kisses his cheeks;}{5: may the child}{3,4: become blessed,}",
+    "english": "{0:Kisses }{2:his }{1:cheeks;}{5: may the child}{3: become }{4:blessed,}",
     "words": [
       {
         "roman": "cume",
@@ -12986,7 +13246,7 @@ window.SONG_LINES = {
     "source": "सुरादिक जिनके चरण पूजते हैं",
     "sourceLanguage": "hi",
     "roman": "surādika jinake caraṇa pūjate haiṁ",
-    "english": "{1,2:Whose feet}{0: the gods and others}{3,4: worship,}",
+    "english": "{1:Whose }{2:feet}{0: the gods and others}{3,4: worship,}",
     "words": [
       {
         "roman": "surādika",
@@ -13372,7 +13632,7 @@ window.SONG_LINES = {
     "source": "मैं मांगता तुम से एक यही",
     "sourceLanguage": "hi",
     "roman": "maiṁ māṅgatā tuma se eka yahī",
-    "english": "{0,1:I ask}{2,3: from you}{4,5: only this one thing:}",
+    "english": "{0:I }{1:ask}{3: from }{2:you}{4,5: only this one thing:}",
     "words": [
       {
         "roman": "maiṁ",
@@ -13443,7 +13703,7 @@ window.SONG_LINES = {
     "source": "आया कर जोड़े अति भाव से ही",
     "sourceLanguage": "hi",
     "roman": "āyā kara joḍe ati bhāva se hī",
-    "english": "{0:I have come}{1,2: with folded hands,}{5,6: with only}{3,4: deep devotion;}",
+    "english": "{0:I have come}{1,2: with folded hands,}{5: with }{6:only}{3: deep }{4:devotion;}",
     "words": [
       {
         "roman": "āyā",
@@ -13595,7 +13855,7 @@ window.SONG_LINES = {
     "source": "ऐसे आओ बाबा साई दिगंबरा",
     "sourceLanguage": "hi",
     "roman": "aise āo bābā sāī digambarā",
-    "english": "{0,1:Come thus,}{2,3: O Baba Sai,}{4: O Digambara!}",
+    "english": "{1:Come }{0:thus,}{2,3: O Baba Sai,}{4: O Digambara!}",
     "words": [
       {
         "roman": "aise",
@@ -13717,15 +13977,27 @@ window.SONG_LINES = {
     "source": "श्रुतिसारा अनुसयात्रिकुमारा ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "śrutisārā anusayātrikumārā aise āo bābā",
-    "english": "{0:O essence of the Śrutis,}{1: O son of Anasūyā and Atri,}{2,3: come thus,}{4: O Baba!}",
+    "english": "{1:O essence}{0: of the Śrutis,}{4: O son}{2: of Anasūyā}{3: and Atri,}{6: come}{5: thus,}{7: O Baba!}",
     "words": [
       {
-        "roman": "śrutisārā",
-        "gloss": "essence of the Śrutis; Vedic revelation"
+        "roman": "śruti",
+        "gloss": "of the Śrutis, Vedic revelation"
       },
       {
-        "roman": "anusayātrikumārā",
-        "gloss": "son of Anasūyā and Atri; Dattātreya epithet"
+        "roman": "sārā",
+        "gloss": "O essence (sāra)"
+      },
+      {
+        "roman": "anusay",
+        "gloss": "of Anasūyā; the ā merges with the next word"
+      },
+      {
+        "roman": "ātri",
+        "gloss": "and of Atri (atri); with Anasūyā, the parents of Dattātreya"
+      },
+      {
+        "roman": "kumārā",
+        "gloss": "O son; the whole is an epithet of Dattātreya"
       },
       {
         "roman": "aise",
@@ -13743,33 +14015,51 @@ window.SONG_LINES = {
     "grammarNote": "Vocative compounds leading into the refrain imperative. Anasūyā-Atri-kumārā conventionally invokes Dattātreya, while the grammatical addressee remains Sai from the refrain.",
     "sourceWords": [
       {
-        "text": "श्रुतिसारा",
+        "text": "श्रुति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "अनुसयात्रिकुमारा",
+        "text": "सारा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ऐसे",
+        "text": "अनुसया",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "आओ",
+        "text": "त्रि",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "बाबा",
+        "text": "कुमारा",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ऐसे",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "आओ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "बाबा",
+        "wordIndices": [
+          7
         ]
       }
     ]
@@ -13839,7 +14129,7 @@ window.SONG_LINES = {
     "source": "कोल्हापुर भिक्षार्थ निर्मल नदी तुंगा",
     "sourceLanguage": "hi",
     "roman": "kolhāpura bhikṣārtha nirmala nadī tuṅgā",
-    "english": "{0:In Kolhāpur}{1: for alms,}{2: at the pure}{3,4: river Tuṅgā}",
+    "english": "{0:In Kolhāpur}{1: for alms,}{2: at the pure}{3: river }{4:Tuṅgā}",
     "words": [
       {
         "roman": "kolhāpura",
@@ -13900,7 +14190,7 @@ window.SONG_LINES = {
     "source": "जल प्राशी निद्रा माहुर देशी ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "jala prāśī nidrā māhura deśī aise āo bābā",
-    "english": "{0,1:Drinking water}{2: and sleeping}{3,4: in the land of Mahur—}{5,6:come thus,}{7: O Baba!}",
+    "english": "{1:Drinking }{0:water}{2: and sleeping}{3,4: in the land of Mahur—}{6:come }{5:thus,}{7: O Baba!}",
     "words": [
       {
         "roman": "jala",
@@ -14123,7 +14413,7 @@ window.SONG_LINES = {
     "source": "सुखकारी देते हो मुक्ति चारी ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "sukhakārī dete ho mukti cārī aise āo bābā",
-    "english": "{0:Bringer of joy,}{1,2: you give}{3,4: the four liberations—}{5,6:come thus,}{7: O Baba!}",
+    "english": "{0:Bringer of joy,}{2: you }{1:give}{3,4: the four liberations—}{6:come }{5:thus,}{7: O Baba!}",
     "words": [
       {
         "roman": "sukhakārī",
@@ -14336,7 +14626,7 @@ window.SONG_LINES = {
     "source": "नागजटा मुकुट सोहता माथा ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "nāgajaṭā mukuṭa sohata māthā aise āo bābā",
-    "english": "{1:The crown}{0: of serpent-matted hair}{2,3: adorns your head—}{4,5:come thus,}{6: O Baba!}",
+    "english": "{1:The crown}{0: of serpent-matted hair}{2,3: adorns your head—}{5:come }{4:thus,}{6: O Baba!}",
     "words": [
       {
         "roman": "nāgajaṭā",
@@ -14478,7 +14768,7 @@ window.SONG_LINES = {
     "source": "अक्षय उनके घर में लक्ष्मी वास करे",
     "sourceLanguage": "hi",
     "roman": "akṣaya unake ghara meṁ lakṣmī vāsa kare",
-    "english": "{1,2,3:In their home}{4: Lakshmi}{5,6: dwells}{0: inexhaustibly,}",
+    "english": "{3:In }{1:their }{2:home}{4: Lakshmi}{5,6: dwells}{0: inexhaustibly,}",
     "words": [
       {
         "roman": "akṣaya",
@@ -14559,7 +14849,7 @@ window.SONG_LINES = {
     "source": "दिन रजनी संकट करते छटनी ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "dina rajanī saṅkaṭa karate chaṭanī aise āo bābā",
-    "english": "{3,4:Dispelling}{2: troubles}{0,1: day and night—}{5,6:come thus,}{7: O Baba!}",
+    "english": "{3,4:Dispelling}{2: troubles}{0,1: day and night—}{6:come }{5:thus,}{7: O Baba!}",
     "words": [
       {
         "roman": "dina",
@@ -14772,7 +15062,7 @@ window.SONG_LINES = {
     "source": "यह काया हरि गुण गाने लगाया ऐसे आओ बाबा",
     "sourceLanguage": "hi",
     "roman": "yaha kāyā hari guṇa gāne lagāyā aise āo bābā",
-    "english": "{0,1:This body}{4,5: is engaged in singing}{2,3: the praises of Hari—}{6,7:come thus,}{8: O Baba!}",
+    "english": "{0:This }{1:body}{4,5: is engaged in singing}{2,3: the praises of Hari—}{7:come }{6:thus,}{8: O Baba!}",
     "words": [
       {
         "roman": "yaha",
@@ -14873,29 +15163,69 @@ window.SONG_LINES = {
     "source": "सदासत्स्वरूपं चिदानन्दकन्दं",
     "sourceLanguage": "hi",
     "roman": "sadā-sat-svarūpaṁ cid-ānanda-kandam",
-    "english": "{0:Whose true nature is eternal reality,}{1: the root-source of consciousness and bliss,}",
+    "english": "{2:Whose true nature is}{0: eternal}{1: reality,}{5: the root-source}{3: of consciousness}{4: and bliss,}",
     "words": [
       {
-        "roman": "sadā-sat-svarūpaṁ",
-        "gloss": "whose true nature is eternal reality"
+        "roman": "sadā",
+        "gloss": "always, eternal"
       },
       {
-        "roman": "cid-ānanda-kandam",
-        "gloss": "the root-source of consciousness and bliss"
+        "roman": "sat",
+        "gloss": "reality, being"
+      },
+      {
+        "roman": "svarūpaṁ",
+        "gloss": "whose true nature (svarūpam, accusative)"
+      },
+      {
+        "roman": "cid",
+        "gloss": "consciousness (cit)"
+      },
+      {
+        "roman": "ānanda",
+        "gloss": "bliss"
+      },
+      {
+        "roman": "kandam",
+        "gloss": "root-source, accusative"
       }
     ],
     "grammarNote": "Sanskrit compound accusatives in apposition to 'sāīnātham' (line 193).",
     "sourceWords": [
       {
-        "text": "सदासत्स्वरूपं",
+        "text": "सदा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "चिदानन्दकन्दं",
+        "text": "स",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "त्स्वरूपं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "चि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दानन्द",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "कन्दं",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -14904,19 +15234,59 @@ window.SONG_LINES = {
     "source": "जगत्सम्भवस्थानसंहारहेतुम्",
     "sourceLanguage": "hi",
     "roman": "jagat-sambhava-sthāna-saṁhāra-hetum",
-    "english": "{0:The cause of the universe's creation, preservation, and dissolution,}",
+    "english": "{4:The cause}{0: of the universe's}{1: creation,}{2: preservation,}{3: and dissolution,}",
     "words": [
       {
-        "roman": "jagat-sambhava-sthāna-saṁhāra-hetum",
-        "gloss": "the cause of the universe's creation, preservation, and dissolution"
+        "roman": "jagat",
+        "gloss": "of the universe"
+      },
+      {
+        "roman": "sambhava",
+        "gloss": "creation, coming into being"
+      },
+      {
+        "roman": "sthāna",
+        "gloss": "preservation, continuance"
+      },
+      {
+        "roman": "saṁhāra",
+        "gloss": "dissolution"
+      },
+      {
+        "roman": "hetum",
+        "gloss": "the cause, accusative"
       }
     ],
     "grammarNote": "Complex tatpuruṣa compound in accusative singular modifying 'sāīnātham'.",
     "sourceWords": [
       {
-        "text": "जगत्सम्भवस्थानसंहारहेतुम्",
+        "text": "जग",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "त्सम्भव",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "स्थान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "संहार",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हेतुम्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -14925,11 +15295,19 @@ window.SONG_LINES = {
     "source": "स्वभक्तेच्छया मानुषं दर्शयन्तं",
     "sourceLanguage": "hi",
     "roman": "sva-bhaktecchayā mānuṣaṁ darśayantam",
-    "english": "{2:Displaying}{1: a human form}{0: by the desire of his own devotees,}",
+    "english": "{4:Displaying}{3: a human form}{2: by the desire}{0: of his own}{1: devotees,}",
     "words": [
       {
-        "roman": "sva-bhaktecchayā",
-        "gloss": "by the desire of his own devotees"
+        "roman": "sva",
+        "gloss": "his own"
+      },
+      {
+        "roman": "bhakt",
+        "gloss": "of devotees (bhakta)"
+      },
+      {
+        "roman": "ecchayā",
+        "gloss": "by the desire (icchayā, instrumental; a + i = e)"
       },
       {
         "roman": "mānuṣaṁ",
@@ -14943,21 +15321,33 @@ window.SONG_LINES = {
     "grammarNote": "Causative present participle 'darśayantam' (acc. sg. masc.) governing direct object 'mānuṣaṁ' with instrumental 'sva-bhaktecchayā'.",
     "sourceWords": [
       {
-        "text": "स्वभक्तेच्छया",
+        "text": "स्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मानुषं",
+        "text": "भक्ते",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "दर्शयन्तं",
+        "text": "च्छया",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मानुषं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दर्शयन्तं",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15007,19 +15397,59 @@ window.SONG_LINES = {
     "source": "भवध्वान्तविध्वंसमार्तण्डमीड्यं",
     "sourceLanguage": "hi",
     "roman": "bhavadhvānta-vidhvaṁsa-mārtaṇḍam-īḍyam",
-    "english": "{0:The sun destroying the darkness of worldly existence, the praiseworthy one,}",
+    "english": "{3:The sun}{2: destroying}{1: the darkness}{0: of worldly existence,}{4: the praiseworthy one,}",
     "words": [
       {
-        "roman": "bhavadhvānta-vidhvaṁsa-mārtaṇḍam-īḍyam",
-        "gloss": "the sun destroying the darkness of worldly existence, the praiseworthy one"
+        "roman": "bhava",
+        "gloss": "of worldly existence"
+      },
+      {
+        "roman": "dhvānta",
+        "gloss": "darkness"
+      },
+      {
+        "roman": "vidhvaṁsa",
+        "gloss": "destroying"
+      },
+      {
+        "roman": "mārtaṇḍam",
+        "gloss": "the sun, accusative"
+      },
+      {
+        "roman": "īḍyam",
+        "gloss": "praiseworthy"
       }
     ],
     "grammarNote": "Compound with sandhi ('-mārtaṇḍam + īḍyam') in accusative singular modifying the deity.",
     "sourceWords": [
       {
-        "text": "भवध्वान्तविध्वंसमार्तण्डमीड्यं",
+        "text": "भव",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "ध्वान्त",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "विध्वंस",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मार्तण्ड",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "मीड्यं",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15028,29 +15458,69 @@ window.SONG_LINES = {
     "source": "मनोवागतीतं मुनिर्ध्यानगम्यम्",
     "sourceLanguage": "hi",
     "roman": "mano-vāg-atītaṁ munir-dhyāna-gamyam",
-    "english": "{0:Transcending mind and speech,}{1: attainable through the meditation of sages,}",
+    "english": "{2:Transcending}{0: mind}{1: and speech,}{5: attainable}{4: through the meditation}{3: of sages,}",
     "words": [
       {
-        "roman": "mano-vāg-atītaṁ",
-        "gloss": "transcending mind and speech"
+        "roman": "mano",
+        "gloss": "mind (manas)"
       },
       {
-        "roman": "munir-dhyāna-gamyam",
-        "gloss": "attainable through the meditation of sages"
+        "roman": "vāg",
+        "gloss": "speech (vāk)"
+      },
+      {
+        "roman": "atītaṁ",
+        "gloss": "transcending, gone beyond"
+      },
+      {
+        "roman": "munir",
+        "gloss": "of sages (muni)"
+      },
+      {
+        "roman": "dhyāna",
+        "gloss": "meditation"
+      },
+      {
+        "roman": "gamyam",
+        "gloss": "attainable through"
       }
     ],
     "grammarNote": "Compound adjectives in accusative singular describing the transcendental nature of the Guru.",
     "sourceWords": [
       {
-        "text": "मनोवागतीतं",
+        "text": "मनो",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मुनिर्ध्यानगम्यम्",
+        "text": "वा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "गतीतं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मुनि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "र्ध्यान",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "गम्यम्",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -15110,11 +15580,23 @@ window.SONG_LINES = {
     "source": "भवाम्भोधिमग्नार्दितानां जनानां",
     "sourceLanguage": "hi",
     "roman": "bhavāmbhodhi-magnārditānāṁ janānām",
-    "english": "{1:For people}{0: submerged and suffering in the ocean of existence,}",
+    "english": "{4:For people}{2: submerged}{3: and suffering}{1: in the ocean}{0: of existence,}",
     "words": [
       {
-        "roman": "bhavāmbhodhi-magnārditānāṁ",
-        "gloss": "of those submerged and afflicted in the ocean of existence"
+        "roman": "bhav",
+        "gloss": "of worldly existence (bhava)"
+      },
+      {
+        "roman": "āmbhodhi",
+        "gloss": "in the ocean (ambhodhi)"
+      },
+      {
+        "roman": "magn",
+        "gloss": "submerged (magna)"
+      },
+      {
+        "roman": "ārditānāṁ",
+        "gloss": "of those afflicted (arditānām, genitive plural)"
       },
       {
         "roman": "janānām",
@@ -15124,15 +15606,33 @@ window.SONG_LINES = {
     "grammarNote": "Genitive plural compound modifying 'janānām' (the beings in samsara to be saved).",
     "sourceWords": [
       {
-        "text": "भवाम्भोधिमग्नार्दितानां",
+        "text": "भवा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "जनानां",
+        "text": "म्भोधि",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "मग्ना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "र्दितानां",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "जनानां",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15141,29 +15641,69 @@ window.SONG_LINES = {
     "source": "स्वपादाश्रितानां स्वभक्तिप्रियाणाम्",
     "sourceLanguage": "hi",
     "roman": "sva-pādāśritānāṁ sva-bhakti-priyāṇām",
-    "english": "{0:who seek shelter at his feet,}{1: dear through devotion to him,}",
+    "english": "{2:who seek shelter}{1: at}{0: his}{1: feet,}{5: dear}{4: through devotion}{3: to him,}",
     "words": [
       {
-        "roman": "sva-pādāśritānāṁ",
-        "gloss": "of those taking shelter at your feet"
+        "roman": "sva",
+        "gloss": "his own"
       },
       {
-        "roman": "sva-bhakti-priyāṇām",
-        "gloss": "of those dear through / devoted to your worship"
+        "roman": "pād",
+        "gloss": "feet (pāda)"
+      },
+      {
+        "roman": "āśritānāṁ",
+        "gloss": "of those taking shelter (āśritānām, genitive plural)"
+      },
+      {
+        "roman": "sva",
+        "gloss": "his own; toward himself"
+      },
+      {
+        "roman": "bhakti",
+        "gloss": "devotion"
+      },
+      {
+        "roman": "priyāṇām",
+        "gloss": "of those dear through, or devoted to (genitive plural)"
       }
     ],
     "grammarNote": "Parallel genitive plural compounds agreeing with 'janānām' (line 197).",
     "sourceWords": [
       {
-        "text": "स्वपादाश्रितानां",
+        "text": "स्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "स्वभक्तिप्रियाणाम्",
+        "text": "पादा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "श्रितानां",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्व",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भक्ति",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रियाणाम्",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -15172,11 +15712,15 @@ window.SONG_LINES = {
     "source": "समुद्धरणार्थं कलौ संभवन्तं",
     "sourceLanguage": "hi",
     "roman": "samuddharaṇārthaṁ kalau sambhavantam",
-    "english": "{2:he appears}{1: in the Kali age}{0: to lift them out.}",
+    "english": "{3:he appears}{2: in the Kali age}{1: to}{0: lift them out.}",
     "words": [
       {
-        "roman": "samuddharaṇārthaṁ",
-        "gloss": "for the purpose of complete salvation / upliftment"
+        "roman": "samuddharaṇ",
+        "gloss": "lifting out, complete upliftment (samuddharaṇa)"
+      },
+      {
+        "roman": "ārthaṁ",
+        "gloss": "for the purpose of (artham)"
       },
       {
         "roman": "kalau",
@@ -15190,21 +15734,27 @@ window.SONG_LINES = {
     "grammarNote": "Present participle 'sambhavantam' (acc. sg. masc.) with locative 'kalau' and purposive compound 'samuddharaṇārthaṁ'.",
     "sourceWords": [
       {
-        "text": "समुद्धरणार्थं",
+        "text": "समुद्धरणा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "कलौ",
+        "text": "र्थं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "संभवन्तं",
+        "text": "कलौ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "संभवन्तं",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -15213,29 +15763,59 @@ window.SONG_LINES = {
     "source": "सदानिम्बवृक्षस्य मूलाधिवासात्",
     "sourceLanguage": "hi",
     "roman": "sadā-nimba-vṛkṣasya mūlādhivāsāt",
-    "english": "{1:From dwelling at the base}{0: of the neem tree always,}",
+    "english": "{4:From dwelling}{3: at the base}{2: of the}{1: neem}{2: tree}{0: always,}",
     "words": [
       {
-        "roman": "sadā-nimba-vṛkṣasya",
-        "gloss": "always-of the neem tree"
+        "roman": "sadā",
+        "gloss": "always"
       },
       {
-        "roman": "mūlādhivāsāt",
-        "gloss": "from dwelling at the base/root"
+        "roman": "nimba",
+        "gloss": "neem"
+      },
+      {
+        "roman": "vṛkṣasya",
+        "gloss": "of the tree, genitive"
+      },
+      {
+        "roman": "mūl",
+        "gloss": "base, root (mūla)"
+      },
+      {
+        "roman": "ādhivāsāt",
+        "gloss": "from dwelling (adhivāsāt, ablative)"
       }
     ],
     "grammarNote": "Genitive singular compound sadā-nimba-vṛkṣasya depends on the ablative of place/cause mūlādhivāsāt (mūla + adhivāsa + -āt).",
     "sourceWords": [
       {
-        "text": "सदानिम्बवृक्षस्य",
+        "text": "सदा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "मूलाधिवासात्",
+        "text": "निम्ब",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "वृक्षस्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मूला",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "धिवासात्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15244,29 +15824,59 @@ window.SONG_LINES = {
     "source": "सुधास्राविणं तिक्तमप्यप्रियन्तम्",
     "sourceLanguage": "hi",
     "roman": "sudhā-srāviṇaṁ tiktam-apy-apriyantam",
-    "english": "{0:he made it flow with nectar,}{1: though bitter and unappealing,}",
+    "english": "{1:he made it flow}{0: with nectar,}{3: though}{2: bitter}{4: and unappealing,}",
     "words": [
       {
-        "roman": "sudhā-srāviṇaṁ",
-        "gloss": "nectar-flowing / oozing nectar"
+        "roman": "sudhā",
+        "gloss": "nectar"
       },
       {
-        "roman": "tiktam-apy-apriyantam",
-        "gloss": "bitter-even-disagreeable"
+        "roman": "srāviṇaṁ",
+        "gloss": "flowing with, oozing (accusative, describing the tree)"
+      },
+      {
+        "roman": "tiktam",
+        "gloss": "bitter"
+      },
+      {
+        "roman": "apy",
+        "gloss": "even, though (api)"
+      },
+      {
+        "roman": "apriyantam",
+        "gloss": "disagreeable, unappealing"
       }
     ],
     "grammarNote": "Accusative singular objects describing the tree (taruṁ); sandhi in second token: tiktam + api + apriyantam.",
     "sourceWords": [
       {
-        "text": "सुधास्राविणं",
+        "text": "सुधा",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "तिक्तमप्यप्रियन्तम्",
+        "text": "स्राविणं",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "तिक्त",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मप्य",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रियन्तम्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15275,15 +15885,23 @@ window.SONG_LINES = {
     "source": "तरुं कल्पवृक्षाधिकं साधयन्तं",
     "sourceLanguage": "hi",
     "roman": "taruṁ kalpa-vṛkṣādhikaṁ sādhayantam",
-    "english": "{2:making}{0: that tree}{1: surpass the wish-fulfilling tree.}",
+    "english": "{4:making}{0: that tree}{3: surpass}{1: the wish-fulfilling}{2: tree.}",
     "words": [
       {
         "roman": "taruṁ",
         "gloss": "the tree"
       },
       {
-        "roman": "kalpa-vṛkṣādhikaṁ",
-        "gloss": "superior to the wish-fulfilling tree"
+        "roman": "kalpa",
+        "gloss": "wish-fulfilling"
+      },
+      {
+        "roman": "vṛkṣ",
+        "gloss": "tree (vṛkṣa)"
+      },
+      {
+        "roman": "ādhikaṁ",
+        "gloss": "superior to, surpassing (adhikam)"
       },
       {
         "roman": "sādhayantam",
@@ -15299,15 +15917,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कल्पवृक्षाधिकं",
+        "text": "कल्प",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "साधयन्तं",
+        "text": "वृक्षा",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "धिकं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "साधयन्तं",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15357,29 +15987,69 @@ window.SONG_LINES = {
     "source": "भवद्भावबुद्ध्या सपर्यादिसेवाम्",
     "sourceLanguage": "hi",
     "roman": "bhavadbhāvabuddhyā saparyādisēvām",
-    "english": "{0:with the awareness of Your divine presence,}{1: worship and other ritual services}",
+    "english": "{2:with the awareness}{0: of Your}{1: divine presence,}{3: worship}{4: and other}{5: ritual services}",
     "words": [
       {
-        "roman": "bhavadbhāvabuddhyā",
-        "gloss": "with the awareness/attitude of Your divine presence"
+        "roman": "bhavad",
+        "gloss": "your (bhavat, respectful)"
       },
       {
-        "roman": "saparyādisēvām",
-        "gloss": "worship and other ritual services"
+        "roman": "bhāva",
+        "gloss": "being, divine presence"
+      },
+      {
+        "roman": "buddhyā",
+        "gloss": "with the awareness or attitude (instrumental)"
+      },
+      {
+        "roman": "sapary",
+        "gloss": "worship (saparyā)"
+      },
+      {
+        "roman": "ādi",
+        "gloss": "and other, “beginning with”"
+      },
+      {
+        "roman": "sēvām",
+        "gloss": "ritual service, accusative"
       }
     ],
     "grammarNote": "Instrumental singular bhavadbhāvabuddhyā qualifies the mental attitude during service; saparyādisēvām is the accusative singular direct object of kurvatām.",
     "sourceWords": [
       {
-        "text": "भवद्भावबुद्ध्या",
+        "text": "भव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सपर्यादिसेवाम्",
+        "text": "द्भाव",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "बुद्ध्या",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सपर्या",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दि",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सेवाम्",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -15388,7 +16058,7 @@ window.SONG_LINES = {
     "source": "नृणां कुर्वतां भुक्तिमुक्तिप्रदन्तम्",
     "sourceLanguage": "hi",
     "roman": "nṛṇāṃ kurvatāṃ bhuktimuktipradantam",
-    "english": "{0:to those}{1: who perform them,}{2: he grants enjoyment and liberation.}",
+    "english": "{0:to those}{1: who perform them,}{4: he grants}{2: enjoyment}{3: and liberation.}",
     "words": [
       {
         "roman": "nṛṇāṃ",
@@ -15399,8 +16069,16 @@ window.SONG_LINES = {
         "gloss": "performing [the service]"
       },
       {
-        "roman": "bhuktimuktipradantam",
-        "gloss": "bestowing both enjoyment and liberation"
+        "roman": "bhukti",
+        "gloss": "enjoyment"
+      },
+      {
+        "roman": "mukti",
+        "gloss": "liberation"
+      },
+      {
+        "roman": "pradantam",
+        "gloss": "bestowing, granting"
       }
     ],
     "grammarNote": "Genitive plural present participle kurvatāṃ denotes the recipients; bhuktimuktipradantam is accusative singular modifying the Lord.",
@@ -15418,9 +16096,21 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "भुक्तिमुक्तिप्रदन्तम्",
+        "text": "भुक्ति",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मुक्ति",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रदन्तम्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15429,19 +16119,59 @@ window.SONG_LINES = {
     "source": "अनेकाश्रुतातर्क्यलीलाविलासैः",
     "sourceLanguage": "hi",
     "roman": "anēkāśrutātarkyalīlāvilāsaiḥ",
-    "english": "{0:Through playful displays of countless unheard-of and inconceivable divine sports,}",
+    "english": "{4:Through playful displays}{0: of countless}{1: unheard-of}{2: and inconceivable}{3: divine sports,}",
     "words": [
       {
-        "roman": "anēkāśrutātarkyalīlāvilāsaiḥ",
-        "gloss": "through playful displays of countless unheard-of and inconceivable divine sports"
+        "roman": "anēk",
+        "gloss": "countless, “not one” (aneka)"
+      },
+      {
+        "roman": "āśrut",
+        "gloss": "unheard-of (aśruta)"
+      },
+      {
+        "roman": "ātarkya",
+        "gloss": "inconceivable (atarkya)"
+      },
+      {
+        "roman": "līlā",
+        "gloss": "divine sport, play"
+      },
+      {
+        "roman": "vilāsaiḥ",
+        "gloss": "through playful displays (instrumental plural)"
       }
     ],
     "grammarNote": "Instrumental plural compound (aneka + aśruta + atarkya + līlā-vilāsaiḥ) expressing the means of manifestation.",
     "sourceWords": [
       {
-        "text": "अनेकाश्रुतातर्क्यलीलाविलासैः",
+        "text": "अनेका",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "श्रुता",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "तर्क्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "लीला",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विलासैः",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15450,19 +16180,49 @@ window.SONG_LINES = {
     "source": "समाविष्कृतेशानभास्वत्प्रभावम्",
     "sourceLanguage": "hi",
     "roman": "samāviṣkṛtēśānabhāsvatprabhāvam",
-    "english": "{0:who has fully manifested the radiant majesty of the Supreme Lord,}",
+    "english": "{0:who has fully manifested}{2: the radiant}{3: majesty}{1: of the Supreme Lord,}",
     "words": [
       {
-        "roman": "samāviṣkṛtēśānabhāsvatprabhāvam",
-        "gloss": "who has fully manifested the radiant majesty of the Supreme Lord"
+        "roman": "samāviṣkṛt",
+        "gloss": "fully manifested (samāviṣkṛta)"
+      },
+      {
+        "roman": "ēśāna",
+        "gloss": "of the Supreme Lord (īśāna; a + ī = e)"
+      },
+      {
+        "roman": "bhāsvat",
+        "gloss": "radiant"
+      },
+      {
+        "roman": "prabhāvam",
+        "gloss": "majesty; the whole describes him whose majesty this is"
       }
     ],
     "grammarNote": "Accusative singular bahuvrīhi compound (samāviṣkṛta + īśāna + bhāsvat-prabhāvam) qualifying Sai Baba.",
     "sourceWords": [
       {
-        "text": "समाविष्कृतेशानभास्वत्प्रभावम्",
+        "text": "समाविष्कृते",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "शान",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "भास्व",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्प्रभावम्",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -15471,29 +16231,49 @@ window.SONG_LINES = {
     "source": "अहंभावहीनं प्रसन्नात्मभावम्",
     "sourceLanguage": "hi",
     "roman": "ahambhāvahīnaṃ prasannātmabhāvam",
-    "english": "{0:free from egoism,}{1: possessing a serene and gracious inner self,}",
+    "english": "{1:free from}{0: egoism,}{3: possessing}{2: a serene and gracious}{3: inner self,}",
     "words": [
       {
-        "roman": "ahambhāvahīnaṃ",
-        "gloss": "free from egoism / devoid of I-ness"
+        "roman": "ahambhāva",
+        "gloss": "egoism, the sense of “I”"
       },
       {
-        "roman": "prasannātmabhāvam",
-        "gloss": "possessing a serene and gracious inner self"
+        "roman": "hīnaṃ",
+        "gloss": "free from, devoid of"
+      },
+      {
+        "roman": "prasann",
+        "gloss": "serene and gracious (prasanna)"
+      },
+      {
+        "roman": "ātmabhāvam",
+        "gloss": "inner self; “one whose inner self is” so"
       }
     ],
     "grammarNote": "Accusative singular compounds modifying the object of adoration.",
     "sourceWords": [
       {
-        "text": "अहंभावहीनं",
+        "text": "अहंभाव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रसन्नात्मभावम्",
+        "text": "हीनं",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "प्रसन्ना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "त्मभावम्",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -15589,29 +16369,69 @@ window.SONG_LINES = {
     "source": "जनामोददं भक्तभद्रप्रदन्तम्",
     "sourceLanguage": "hi",
     "roman": "janāmōdadaṃ bhaktabhadrapradantam",
-    "english": "{0:giving joy to people,}{1: granting auspicious welfare to devotees,}",
+    "english": "{2:giving}{1: joy}{0: to people,}{5: granting}{4: auspicious welfare}{3: to devotees,}",
     "words": [
       {
-        "roman": "janāmōdadaṃ",
-        "gloss": "giving joy to people"
+        "roman": "jan",
+        "gloss": "to people (jana)"
       },
       {
-        "roman": "bhaktabhadrapradantam",
-        "gloss": "granting auspicious welfare to devotees"
+        "roman": "āmōda",
+        "gloss": "joy"
+      },
+      {
+        "roman": "daṃ",
+        "gloss": "giving"
+      },
+      {
+        "roman": "bhakta",
+        "gloss": "to devotees"
+      },
+      {
+        "roman": "bhadra",
+        "gloss": "auspicious welfare"
+      },
+      {
+        "roman": "pradantam",
+        "gloss": "granting"
       }
     ],
     "grammarNote": "Accusative singular upapada compounds functioning as descriptive epithets.",
     "sourceWords": [
       {
-        "text": "जनामोददं",
+        "text": "जना",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "भक्तभद्रप्रदन्तम्",
+        "text": "मोद",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "भक्त",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "भद्र",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "प्रदन्तम्",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -15711,15 +16531,19 @@ window.SONG_LINES = {
   "line-214": {
     "source": "भवद्दर्शनात् संपुनीतः प्रभोऽहम्",
     "sourceLanguage": "hi",
-    "roman": "bhavaddarśanāt saṃpunītāḥ prabhō 'ham",
-    "english": "{0:By beholding you,}{2: O Lord,}{3: I am}{1: wholly purified.}",
+    "roman": "bhavaddarśanāt saṃpunītaḥ prabhō 'ham",
+    "english": "{1:By beholding}{0: you,}{3: O Lord,}{4: I am}{2: wholly purified.}",
     "words": [
       {
-        "roman": "bhavaddarśanāt",
-        "gloss": "by beholding you; through seeing you"
+        "roman": "bhavad",
+        "gloss": "you (bhavat, respectful)"
       },
       {
-        "roman": "saṃpunītāḥ",
+        "roman": "darśanāt",
+        "gloss": "by beholding, through seeing (ablative)"
+      },
+      {
+        "roman": "saṃpunītaḥ",
         "gloss": "fully purified"
       },
       {
@@ -15734,22 +16558,33 @@ window.SONG_LINES = {
     "grammarNote": "Sandhi: prabho + aham -> prabhō 'ham. Ablative of cause bhavaddarśanāt; saṃpunītaḥ agrees with 1st person subject aham.",
     "sourceWords": [
       {
-        "text": "भवद्दर्शनात्",
+        "text": "भव",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "संपुनीतः",
+        "text": "द्दर्शनात्",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "प्रभोऽहम्",
+        "text": "संपुनीतः",
         "wordIndices": [
-          2,
+          2
+        ]
+      },
+      {
+        "text": "प्रभो",
+        "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ऽहम्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -15758,23 +16593,43 @@ window.SONG_LINES = {
     "source": "श्रीसायीश कृपानिधेऽखिलनृणां सर्वार्थसिद्धिप्रद",
     "sourceLanguage": "hi",
     "roman": "śrīsāyīśa kṛpānidhē 'khilanṛṇāṃ sarvārthasiddhiprada",
-    "english": "{0:O Lord Śrī Sāī,}{1: ocean of grace,}{3: who grants the fulfilment of every aim}{2: to all people!}",
+    "english": "{0:O Lord Śrī Sāī,}{2: ocean}{1: of grace,}{8: who grants}{7: the fulfilment}{6: of}{5: every}{6: aim}{4: to}{3: all}{4: people!}",
     "words": [
       {
         "roman": "śrīsāyīśa",
         "gloss": "O Lord Sri Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
       },
       {
-        "roman": "kṛpānidhē",
-        "gloss": "O ocean of grace"
+        "roman": "kṛpā",
+        "gloss": "of grace"
       },
       {
-        "roman": "'khilanṛṇāṃ",
-        "gloss": "of all men"
+        "roman": "nidhē",
+        "gloss": "O ocean, treasure-store (vocative)"
       },
       {
-        "roman": "sarvārthasiddhiprada",
-        "gloss": "O bestower of the accomplishment of all goals"
+        "roman": "'khila",
+        "gloss": "all (akhila)"
+      },
+      {
+        "roman": "nṛṇāṃ",
+        "gloss": "of people, men (genitive plural)"
+      },
+      {
+        "roman": "sarv",
+        "gloss": "every, all (sarva)"
+      },
+      {
+        "roman": "ārtha",
+        "gloss": "aim, goal (artha)"
+      },
+      {
+        "roman": "siddhi",
+        "gloss": "fulfilment, accomplishment"
+      },
+      {
+        "roman": "prada",
+        "gloss": "O bestower"
       }
     ],
     "grammarNote": "Series of vocatives; sandhi elision in 'khilanṛṇāṃ (kṛpānidhe + akhila- -> kṛpānidhē 'khila-).",
@@ -15786,16 +16641,51 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कृपानिधेऽखिलनृणां",
+        "text": "कृपा",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "निधे",
+        "wordIndices": [
           2
         ]
       },
       {
-        "text": "सर्वार्थसिद्धिप्रद",
+        "text": "ऽखिल",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "नृणां",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "सर्वा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "र्थ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "सिद्धि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "प्रद",
+        "wordIndices": [
+          8
         ]
       }
     ]
@@ -15804,44 +16694,100 @@ window.SONG_LINES = {
     "source": "युष्मत्पादरजःप्रभावमतुलं धातापि वक्ताक्षमः",
     "sourceLanguage": "hi",
     "roman": "yuṣmatpādarajaprabhāvam atulaṃ dhātāpi vaktākṣamaḥ",
-    "english": "{2:Even the Creator}{3: cannot express}{1: the incomparable}{0: power of the dust of your feet.}",
+    "english": "{6:Even}{5: the Creator}{8: cannot}{7: express}{4: the incomparable}{3: power}{2: of the dust}{1: of}{0: your}{1: feet.}",
     "words": [
       {
-        "roman": "yuṣmatpādarajaprabhāvam",
-        "gloss": "the power of the dust of Your feet"
+        "roman": "yuṣmat",
+        "gloss": "your"
+      },
+      {
+        "roman": "pāda",
+        "gloss": "of the feet"
+      },
+      {
+        "roman": "raja",
+        "gloss": "of the dust (rajas)"
+      },
+      {
+        "roman": "prabhāvam",
+        "gloss": "power, accusative"
       },
       {
         "roman": "atulaṃ",
         "gloss": "incomparable"
       },
       {
-        "roman": "dhātāpi",
-        "gloss": "even the Creator (Brahma)"
+        "roman": "dhātā",
+        "gloss": "the Creator (Brahma)"
       },
       {
-        "roman": "vaktākṣamaḥ",
-        "gloss": "is incapable of expressing"
+        "roman": "pi",
+        "gloss": "even (api; its a merges with dhātā)"
+      },
+      {
+        "roman": "vakt",
+        "gloss": "one who expresses (vaktā)"
+      },
+      {
+        "roman": "ākṣamaḥ",
+        "gloss": "unable (akṣamaḥ); vaktā + akṣamaḥ"
       }
     ],
     "grammarNote": "Sandhi: dhātā + api -> dhātāpi; vaktā + akṣamaḥ (or vaktum + akṣamaḥ). Accusative object yuṣmatpādarajaprabhāvam atulaṃ.",
     "sourceWords": [
       {
-        "text": "युष्मत्पादरजःप्रभावमतुलं",
+        "text": "युष्म",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "त्पाद",
+        "wordIndices": [
           1
         ]
       },
       {
-        "text": "धातापि",
+        "text": "रजः",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "वक्ताक्षमः",
+        "text": "प्रभाव",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "मतुलं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "धाता",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पि",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "वक्ता",
+        "wordIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "text": "क्षमः",
+        "wordIndices": [
+          8
         ]
       }
     ]
@@ -15850,19 +16796,27 @@ window.SONG_LINES = {
     "source": "सद्भक्त्या शरणं कृताञ्जलिपुटं संप्रापितोऽस्मि प्रभो",
     "sourceLanguage": "hi",
     "roman": "sadbhaktyā śaraṇaṃ kṛtāñjalipuṭaṃ saṃprāpitō 'smi prabhō",
-    "english": "{3,4:I have come}{1: for refuge,}{0: with true devotion}{2: and folded hands,}{5: O Lord.}",
+    "english": "{6:I have}{5: come}{2: for refuge,}{1: with}{0: true}{1: devotion}{3: and folded}{4: hands,}{7: O Lord.}",
     "words": [
       {
-        "roman": "sadbhaktyā",
-        "gloss": "with true devotion"
+        "roman": "sad",
+        "gloss": "true (sat)"
+      },
+      {
+        "roman": "bhaktyā",
+        "gloss": "with devotion (instrumental)"
       },
       {
         "roman": "śaraṇaṃ",
         "gloss": "for refuge / to surrender"
       },
       {
-        "roman": "kṛtāñjalipuṭaṃ",
-        "gloss": "with folded hands"
+        "roman": "kṛt",
+        "gloss": "made, formed (kṛta)"
+      },
+      {
+        "roman": "āñjalipuṭaṃ",
+        "gloss": "with hands cupped together (añjali-puṭa)"
       },
       {
         "roman": "saṃprāpitō",
@@ -15880,34 +16834,51 @@ window.SONG_LINES = {
     "grammarNote": "Sandhi: saṃprāpitaḥ + asmi -> saṃprāpitō 'smi. Idiomatic construction for seeking shelter with palms joined.",
     "sourceWords": [
       {
-        "text": "सद्भक्त्या",
+        "text": "स",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "शरणं",
+        "text": "द्भक्त्या",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कृताञ्जलिपुटं",
+        "text": "शरणं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "संप्रापितोऽस्मि",
+        "text": "कृता",
         "wordIndices": [
-          3,
+          3
+        ]
+      },
+      {
+        "text": "ञ्जलिपुटं",
+        "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "संप्रापितो",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ऽस्मि",
+        "wordIndices": [
+          6
         ]
       },
       {
         "text": "प्रभो",
         "wordIndices": [
-          5
+          7
         ]
       }
     ]
@@ -15916,11 +16887,27 @@ window.SONG_LINES = {
     "source": "श्रीमत्सायिपरेशपादकमलान् नान्यच्छरण्यं मम",
     "sourceLanguage": "hi",
     "roman": "śrīmatsāyiparēśapādakamalān nānyac charaṇyaṃ mama",
-    "english": "{3:I have}{1: no}{2: refuge}{0: but the lotus feet of the glorious supreme Lord Sāī.}",
+    "english": "{7:I have}{5: no}{6: refuge}{4: but the lotus}{3: feet}{0: of the glorious}{2: supreme Lord}{1: Sāī.}",
     "words": [
       {
-        "roman": "śrīmatsāyiparēśapādakamalān",
-        "gloss": "other than the lotus feet of the illustrious supreme Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
+        "roman": "śrīmat",
+        "gloss": "illustrious, glorious"
+      },
+      {
+        "roman": "sāyi",
+        "gloss": "Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
+      },
+      {
+        "roman": "parēśa",
+        "gloss": "supreme Lord (para + īśa)"
+      },
+      {
+        "roman": "pāda",
+        "gloss": "feet"
+      },
+      {
+        "roman": "kamalān",
+        "gloss": "other than the lotus (kamalāt, ablative)"
       },
       {
         "roman": "nānyac",
@@ -15938,22 +16925,51 @@ window.SONG_LINES = {
     "grammarNote": "Complex sandhi: -āt + na -> -ān na; na + anyat + śaraṇyam -> nānyac charaṇyam. Ablative of comparison dependent on anyat.",
     "sourceWords": [
       {
-        "text": "श्रीमत्सायिपरेशपादकमलान्",
+        "text": "श्रीम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "नान्यच्छरण्यं",
+        "text": "त्सायि",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "परेश",
+        "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "पाद",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "कमलान्",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "नान्य",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "च्छरण्यं",
+        "wordIndices": [
+          6
         ]
       },
       {
         "text": "मम",
         "wordIndices": [
-          3
+          7
         ]
       }
     ]
@@ -15993,11 +17009,23 @@ window.SONG_LINES = {
     "source": "भक्तकामविबुधद्रुमं प्रभुम्",
     "sourceLanguage": "hi",
     "roman": "bhaktakāmavibudhadrumaṃ prabhum",
-    "english": "{0:the celestial wish-fulfilling tree for devotees' desires,}{1: the Lord,}",
+    "english": "{2:the celestial}{3: wish-fulfilling tree}{0: for devotees'}{1: desires,}{4: the Lord,}",
     "words": [
       {
-        "roman": "bhaktakāmavibudhadrumaṃ",
-        "gloss": "the celestial wish-fulfilling tree for devotees' desires"
+        "roman": "bhakta",
+        "gloss": "of devotees"
+      },
+      {
+        "roman": "kāma",
+        "gloss": "desires"
+      },
+      {
+        "roman": "vibudha",
+        "gloss": "of the gods, celestial"
+      },
+      {
+        "roman": "drumaṃ",
+        "gloss": "tree; vibudha-druma is the wish-fulfilling tree of heaven"
       },
       {
         "roman": "prabhum",
@@ -16007,15 +17035,33 @@ window.SONG_LINES = {
     "grammarNote": "Accusative singular epithets continued from line 219.",
     "sourceWords": [
       {
-        "text": "भक्तकामविबुधद्रुमं",
+        "text": "भक्त",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रभुम्",
+        "text": "काम",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "विबुध",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "द्रुमं",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "प्रभुम्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -16024,19 +17070,49 @@ window.SONG_LINES = {
     "source": "माययोपहतचित्तशुद्धये",
     "sourceLanguage": "hi",
     "roman": "māyayōpahatacittaśuddhayē",
-    "english": "{0:for the purification of the mind afflicted by delusion,}",
+    "english": "{3:for the purification}{2: of the mind}{1: afflicted}{0: by delusion,}",
     "words": [
       {
-        "roman": "māyayōpahatacittaśuddhayē",
-        "gloss": "for the purification of the mind afflicted by delusion"
+        "roman": "māyay",
+        "gloss": "by delusion (māyayā, instrumental)"
+      },
+      {
+        "roman": "ōpahata",
+        "gloss": "afflicted, struck (upahata; ā + u = o)"
+      },
+      {
+        "roman": "citta",
+        "gloss": "mind"
+      },
+      {
+        "roman": "śuddhayē",
+        "gloss": "for the purification (dative)"
       }
     ],
     "grammarNote": "Sandhi: māyayā + upahata... Dative singular of purpose (śuddhaye) explaining why one meditates.",
     "sourceWords": [
       {
-        "text": "माययोपहतचित्तशुद्धये",
+        "text": "माययो",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "पहत",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चित्त",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "शुद्धये",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -16086,11 +17162,19 @@ window.SONG_LINES = {
     "source": "शरत्सुधांशुप्रतिमं प्रकाशम्",
     "sourceLanguage": "hi",
     "roman": "śaratsudhāṃśupratimaṃ prakāśam",
-    "english": "{1:Radiant}{0: as the autumn moon,}",
+    "english": "{3:Radiant}{2: as}{0: the autumn}{1: moon,}",
     "words": [
       {
-        "roman": "śaratsudhāṃśupratimaṃ",
-        "gloss": "resembling the autumnal moon"
+        "roman": "śarat",
+        "gloss": "autumn"
+      },
+      {
+        "roman": "sudhāṃśu",
+        "gloss": "moon, the “nectar-rayed”"
+      },
+      {
+        "roman": "pratimaṃ",
+        "gloss": "resembling"
       },
       {
         "roman": "prakāśam",
@@ -16100,15 +17184,27 @@ window.SONG_LINES = {
     "grammarNote": "Accusative/nominative singular compound modifying kṛpātapatram in line 224.",
     "sourceWords": [
       {
-        "text": "शरत्सुधांशुप्रतिमं",
+        "text": "शर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "प्रकाशम्",
+        "text": "त्सुधांशु",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "प्रतिमं",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "प्रकाशम्",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -16158,19 +17254,49 @@ window.SONG_LINES = {
     "source": "त्वदीयपादाब्जसमाश्रितानाम्",
     "sourceLanguage": "hi",
     "roman": "tvadīyapādābjasamāśritānām",
-    "english": "{0:of those who have taken refuge in Your lotus feet,}",
+    "english": "{3:of those who have taken refuge in}{0: Your}{2: lotus}{1: feet,}",
     "words": [
       {
-        "roman": "tvadīyapādābjasamāśritānām",
-        "gloss": "of those who have taken refuge in Your lotus feet"
+        "roman": "tvadīya",
+        "gloss": "your"
+      },
+      {
+        "roman": "pād",
+        "gloss": "feet (pāda)"
+      },
+      {
+        "roman": "ābja",
+        "gloss": "lotus (abja, “water-born”)"
+      },
+      {
+        "roman": "samāśritānām",
+        "gloss": "of those who have taken refuge (genitive plural)"
       }
     ],
     "grammarNote": "Genitive plural compound specifying whose distress is dispelled.",
     "sourceWords": [
       {
-        "text": "त्वदीयपादाब्जसमाश्रितानाम्",
+        "text": "त्वदीय",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "पादा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "ब्ज",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "समाश्रितानाम्",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -16215,11 +17341,15 @@ window.SONG_LINES = {
     "source": "उपासनादैवत साईनाथ",
     "sourceLanguage": "hi",
     "roman": "upāsanādaivata sāyinātha",
-    "english": "{0:O Deity of meditation and worship,}{1: O Lord Sai,}",
+    "english": "{1:O Deity}{0: of meditation and worship,}{2: O Lord Sai,}",
     "words": [
       {
-        "roman": "upāsanādaivata",
-        "gloss": "O Deity of meditation and worship"
+        "roman": "upāsanā",
+        "gloss": "of meditation and worship"
+      },
+      {
+        "roman": "daivata",
+        "gloss": "O Deity"
       },
       {
         "roman": "sāyinātha",
@@ -16229,15 +17359,21 @@ window.SONG_LINES = {
     "grammarNote": "Vocative singular invocations addressed to Sai Baba.",
     "sourceWords": [
       {
-        "text": "उपासनादैवत",
+        "text": "उपासना",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "साईनाथ",
+        "text": "दैवत",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          2
         ]
       }
     ]
@@ -16343,19 +17479,27 @@ window.SONG_LINES = {
     "source": "भृङ्गो यथाब्जे मकरन्दलुब्धः",
     "sourceLanguage": "hi",
     "roman": "bhṛṅgō yathābjē makarandalubdhaḥ",
-    "english": "{1:as }{0:a bee }{2:eager for nectar }{1:delights in a lotus.}",
+    "english": "{1:as }{0:a bee }{4:eager }{3:for nectar }delights {2:in a lotus.}",
     "words": [
       {
         "roman": "bhṛṅgō",
         "gloss": "a bee"
       },
       {
-        "roman": "yathābjē",
-        "gloss": "just as upon a lotus"
+        "roman": "yath",
+        "gloss": "just as (yathā)"
       },
       {
-        "roman": "makarandalubdhaḥ",
-        "gloss": "eager / longing for nectar"
+        "roman": "ābjē",
+        "gloss": "upon a lotus (abje, locative)"
+      },
+      {
+        "roman": "makaranda",
+        "gloss": "nectar"
+      },
+      {
+        "roman": "lubdhaḥ",
+        "gloss": "eager for, longing"
       }
     ],
     "grammarNote": "Sandhi: bhṛṅgaḥ -> bhṛṅgō; yathā + abje -> yathābjē. Standard devotional simile (upmāna).",
@@ -16367,15 +17511,27 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "यथाब्जे",
+        "text": "यथा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मकरन्दलुब्धः",
+        "text": "ब्जे",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मकरन्द",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "लुब्धः",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -16384,19 +17540,59 @@ window.SONG_LINES = {
     "source": "अनेकजन्मार्जितपापसंक्षयो",
     "sourceLanguage": "hi",
     "roman": "anēkajanmārjitapāpasaṅkṣayō",
-    "english": "{0:The complete destruction of sins accumulated through many births}",
+    "english": "{4:The complete destruction}{3: of sins}{2: accumulated}{1: through}{0: many}{1: births}",
     "words": [
       {
-        "roman": "anēkajanmārjitapāpasaṅkṣayō",
-        "gloss": "the complete destruction of sins accumulated through many births"
+        "roman": "anēka",
+        "gloss": "many, “not one”"
+      },
+      {
+        "roman": "janm",
+        "gloss": "births (janma)"
+      },
+      {
+        "roman": "ārjita",
+        "gloss": "accumulated, earned (arjita)"
+      },
+      {
+        "roman": "pāpa",
+        "gloss": "of sins"
+      },
+      {
+        "roman": "saṅkṣayō",
+        "gloss": "the complete destruction (saṅkṣayaḥ)"
       }
     ],
     "grammarNote": "Nominative singular masculine compound functioning as the subject of bhavēd in line 232.",
     "sourceWords": [
       {
-        "text": "अनेकजन्मार्जितपापसंक्षयो",
+        "text": "अनेक",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "जन्मा",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "र्जित",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पाप",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "संक्षयो",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -16405,24 +17601,59 @@ window.SONG_LINES = {
     "source": "भवेद्भवत्पादसरोजदर्शनात्",
     "sourceLanguage": "hi",
     "roman": "bhavēd bhavatpādasarōjadarśanāt",
-    "english": "{0:would occur}{1: from the sight of Your lotus feet.}",
+    "english": "{0:would occur}{4: from the sight}{1: of Your}{3: lotus}{2: feet.}",
     "words": [
       {
         "roman": "bhavēd",
         "gloss": "may happen / would occur"
       },
       {
-        "roman": "bhavatpādasarōjadarśanāt",
-        "gloss": "from the sight of Your lotus feet"
+        "roman": "bhavat",
+        "gloss": "your (respectful)"
+      },
+      {
+        "roman": "pāda",
+        "gloss": "feet"
+      },
+      {
+        "roman": "sarōja",
+        "gloss": "lotus"
+      },
+      {
+        "roman": "darśanāt",
+        "gloss": "from the sight (ablative)"
       }
     ],
     "grammarNote": "Sandhi: bhavet + bhavat... Ablative of cause bhavatpādasarōjadarśanāt governing the optative bhavēd.",
     "sourceWords": [
       {
-        "text": "भवेद्भवत्पादसरोजदर्शनात्",
+        "text": "भवे",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "द्भव",
+        "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "त्पाद",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "सरोज",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "दर्शनात्",
+        "wordIndices": [
+          4
         ]
       }
     ]
@@ -16431,7 +17662,7 @@ window.SONG_LINES = {
     "source": "क्षमस्व सर्वानपराधपुञ्जकान्",
     "sourceLanguage": "hi",
     "roman": "kṣamasva sarvān aparādhapuñjakān",
-    "english": "{0:Forgive}{1: all}{2: heaps of transgressions!}",
+    "english": "{0:Forgive}{1: all}{3: heaps}{2: of transgressions!}",
     "words": [
       {
         "roman": "kṣamasva",
@@ -16442,8 +17673,12 @@ window.SONG_LINES = {
         "gloss": "all"
       },
       {
-        "roman": "aparādhapuñjakān",
-        "gloss": "heaps / multitudes of transgressions"
+        "roman": "aparādha",
+        "gloss": "of transgressions"
+      },
+      {
+        "roman": "puñjakān",
+        "gloss": "heaps, multitudes (accusative plural)"
       }
     ],
     "grammarNote": "Imperative 2nd singular middle (kṣamasva) governing the accusative plural object sarvān aparādhapuñjakān.",
@@ -16455,10 +17690,21 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "सर्वानपराधपुञ्जकान्",
+        "text": "सर्वा",
         "wordIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "text": "नपराध",
+        "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "पुञ्जकान्",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -16518,19 +17764,69 @@ window.SONG_LINES = {
     "source": "श्रीसाईनाथचरणामृतपूतचित्तास्",
     "sourceLanguage": "hi",
     "roman": "śrīsāyināthacaraṇāmṛtapūtacittās",
-    "english": "{0:Those whose minds are purified by the nectar of the feet of Lord Sri Sai,}",
+    "english": "{5:Those whose minds}{4: are purified}{3: by the nectar}{2: of the feet}{1: of Lord}{0: Sri}{1: Sai,}",
     "words": [
       {
-        "roman": "śrīsāyināthacaraṇāmṛtapūtacittās",
-        "gloss": "those whose minds are purified by the nectar of the feet of Lord Sri Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
+        "roman": "śrī",
+        "gloss": "Sri, revered"
+      },
+      {
+        "roman": "sāyinātha",
+        "gloss": "of Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here"
+      },
+      {
+        "roman": "caraṇ",
+        "gloss": "of the feet (caraṇa)"
+      },
+      {
+        "roman": "āmṛta",
+        "gloss": "nectar (amṛta)"
+      },
+      {
+        "roman": "pūta",
+        "gloss": "purified"
+      },
+      {
+        "roman": "cittās",
+        "gloss": "those whose minds (nominative plural)"
       }
     ],
     "grammarNote": "Nominative plural masculine bahuvrīhi compound, joined in sandhi with line 236 (cittāḥ -> cittās before t-).",
     "sourceWords": [
       {
-        "text": "श्रीसाईनाथचरणामृतपूतचित्तास्",
+        "text": "श्री",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "साईनाथ",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "चरणा",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "मृत",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पूत",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "चित्तास्",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -16539,11 +17835,23 @@ window.SONG_LINES = {
     "source": "तत्पादसेवनरताः सततं च भक्त्या",
     "sourceLanguage": "hi",
     "roman": "tatpādasevanaratāḥ satatañ ca bhaktyā",
-    "english": "{0:engaged in the service of His feet}{1: constantly}{2: and}{3: with devotion,}",
+    "english": "{3:engaged}{2: in the service}{1: of}{0: His}{1: feet}{4: constantly}{5: and}{6: with devotion,}",
     "words": [
       {
-        "roman": "tatpādasevanaratāḥ",
-        "gloss": "engaged in the service of His feet"
+        "roman": "tat",
+        "gloss": "his"
+      },
+      {
+        "roman": "pāda",
+        "gloss": "feet"
+      },
+      {
+        "roman": "sevana",
+        "gloss": "service"
+      },
+      {
+        "roman": "ratāḥ",
+        "gloss": "engaged in, devoted to (nominative plural)"
       },
       {
         "roman": "satatañ",
@@ -16561,27 +17869,45 @@ window.SONG_LINES = {
     "grammarNote": "Sandhi: satatam + ca -> satatañ ca. Nominative plural adjective describing the devotees.",
     "sourceWords": [
       {
-        "text": "तत्पादसेवनरताः",
+        "text": "त",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सततं",
+        "text": "त्पाद",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "च",
+        "text": "सेवन",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "भक्त्या",
+        "text": "रताः",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "सततं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "च",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "भक्त्या",
+        "wordIndices": [
+          6
         ]
       }
     ]
@@ -16590,11 +17916,27 @@ window.SONG_LINES = {
     "source": "संसारजन्यदुरितौघविनिर्गतास्ते",
     "sourceLanguage": "hi",
     "roman": "saṃsārajanyaduritaughavinirgatās tē",
-    "english": "{0:freed from the flood of evils born of worldly existence,}{1: they}",
+    "english": "{4:freed from}{3: the flood}{2: of evils}{1: born}{0: of worldly existence,}{5: they}",
     "words": [
       {
-        "roman": "saṃsārajanyaduritaughavinirgatās",
-        "gloss": "freed from the stream of evils/sins born of worldly existence"
+        "roman": "saṃsāra",
+        "gloss": "worldly existence"
+      },
+      {
+        "roman": "janya",
+        "gloss": "born of"
+      },
+      {
+        "roman": "durit",
+        "gloss": "evils, sins (durita)"
+      },
+      {
+        "roman": "augha",
+        "gloss": "flood, stream (ogha; a + o = au)"
+      },
+      {
+        "roman": "vinirgatās",
+        "gloss": "freed from, come out of (nominative plural)"
       },
       {
         "roman": "tē",
@@ -16604,10 +17946,40 @@ window.SONG_LINES = {
     "grammarNote": "Sandhi: vinirgatāḥ + te -> vinirgatās tē. Demonstrative pronoun tē is the subject of samavāpnuvanti.",
     "sourceWords": [
       {
-        "text": "संसारजन्यदुरितौघविनिर्गतास्ते",
+        "text": "संसार",
         "wordIndices": [
-          0,
+          0
+        ]
+      },
+      {
+        "text": "जन्य",
+        "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दुरितौ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "घ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विनिर्गता",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "स्ते",
+        "wordIndices": [
+          5
         ]
       }
     ]
@@ -16616,11 +17988,15 @@ window.SONG_LINES = {
     "source": "कैवल्यधाम परमं समवाप्नुवन्ति",
     "sourceLanguage": "hi",
     "roman": "kaivalyadhāma paramaṃ samavāpnuvanti",
-    "english": "{2:fully attain}{1: the supreme}{0: abode of liberation.}",
+    "english": "{3:fully attain}{2: the supreme}{1: abode}{0: of liberation.}",
     "words": [
       {
-        "roman": "kaivalyadhāma",
-        "gloss": "the abode of liberation / absolute oneness"
+        "roman": "kaivalya",
+        "gloss": "of liberation, absolute oneness"
+      },
+      {
+        "roman": "dhāma",
+        "gloss": "abode"
       },
       {
         "roman": "paramaṃ",
@@ -16634,21 +18010,27 @@ window.SONG_LINES = {
     "grammarNote": "Present 3rd plural verb samavāpnuvanti (sam-ava-āp) taking accusative singular object kaivalyadhāma paramaṃ.",
     "sourceWords": [
       {
-        "text": "कैवल्यधाम",
+        "text": "कैवल्य",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "परमं",
+        "text": "धाम",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "समवाप्नुवन्ति",
+        "text": "परमं",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "समवाप्नुवन्ति",
+        "wordIndices": [
+          3
         ]
       }
     ]
@@ -16821,19 +18203,39 @@ window.SONG_LINES = {
     "source": "करचरणकृतं वाक्कायजं कर्मजं वा",
     "sourceLanguage": "hi",
     "roman": "karacaraṇakṛtaṃ vākkāyajaṃ karmajaṃ vā",
-    "english": "{0:Done by hands and feet,}{1: born of speech and body,}{3: or}{2: born of action,}",
+    "english": "{2:Done}{0: by hands}{1: and feet,}{5: born}{3: of speech}{4: and body,}{8: or}{7: born}{6: of action,}",
     "words": [
       {
-        "roman": "karacaraṇakṛtaṃ",
-        "gloss": "done by hands and feet"
+        "roman": "kara",
+        "gloss": "hands"
       },
       {
-        "roman": "vākkāyajaṃ",
-        "gloss": "born of speech and body"
+        "roman": "caraṇa",
+        "gloss": "feet"
       },
       {
-        "roman": "karmajaṃ",
-        "gloss": "born of action"
+        "roman": "kṛtaṃ",
+        "gloss": "done by"
+      },
+      {
+        "roman": "vāk",
+        "gloss": "speech"
+      },
+      {
+        "roman": "kāya",
+        "gloss": "body"
+      },
+      {
+        "roman": "jaṃ",
+        "gloss": "born of"
+      },
+      {
+        "roman": "karma",
+        "gloss": "action"
+      },
+      {
+        "roman": "jaṃ",
+        "gloss": "born of"
       },
       {
         "roman": "vā",
@@ -16843,19 +18245,19 @@ window.SONG_LINES = {
     "grammarNote": "Opening line of the standard kṣamāprārthanā (forgiveness prayer). The compounds are accusative singular modifiers agreeing with 'aparādham' in line 244.",
     "sourceWords": [
       {
-        "text": "करचरणकृतं",
+        "text": "कर",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "वाक्कायजं",
+        "text": "चरण",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "कर्मजं",
+        "text": "कृतं",
         "wordIndices": [
           2
         ]
@@ -16865,6 +18267,36 @@ window.SONG_LINES = {
         "wordIndices": [
           3
         ]
+      },
+      {
+        "text": "क्काय",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "जं",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "कर्म",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "जं",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          8
+        ]
       }
     ]
   },
@@ -16872,11 +18304,19 @@ window.SONG_LINES = {
     "source": "श्रवणनयनजं वा मानसं वापराधम्",
     "sourceLanguage": "hi",
     "roman": "śravaṇanayanajaṃ vā mānasaṃ vāparādham",
-    "english": "{0:born of ears and eyes,}{1: or}{2: mental,}{3: or any offense,}",
+    "english": "{2:born}{0: of ears}{1: and eyes,}{3: or}{4: mental,}{5: or}{6: any offense,}",
     "words": [
       {
-        "roman": "śravaṇanayanajaṃ",
-        "gloss": "born of ears and eyes"
+        "roman": "śravaṇa",
+        "gloss": "ears"
+      },
+      {
+        "roman": "nayana",
+        "gloss": "eyes"
+      },
+      {
+        "roman": "jaṃ",
+        "gloss": "born of"
       },
       {
         "roman": "vā",
@@ -16887,34 +18327,56 @@ window.SONG_LINES = {
         "gloss": "mental / of the mind"
       },
       {
-        "roman": "vāparādham",
-        "gloss": "or [any] offense"
+        "roman": "vā",
+        "gloss": "or"
+      },
+      {
+        "roman": "parādham",
+        "gloss": "[any] offense (aparādham; its a merges with vā)"
       }
     ],
     "grammarNote": "'vāparādham' contains sandhi for 'vā' + 'aparādham'. 'aparādham' (masculine accusative singular) is the head noun for the string of qualifiers across lines 243–244.",
     "sourceWords": [
       {
-        "text": "श्रवणनयनजं",
+        "text": "श्रवण",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "वा",
+        "text": "नयन",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "मानसं",
+        "text": "जं",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "वापराधम्",
+        "text": "वा",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "मानसं",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "वा",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "पराधम्",
+        "wordIndices": [
+          6
         ]
       }
     ]

@@ -87,7 +87,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prabhu jī more avaguṇa cita nā dharo",
-    "english": "{0,1:O Lord, }{5:do not }{6:take }{2,3:my faults }{4:to heart.}",
+    "english": "{0,1:O Lord, }{5:do not }{6:take }{2:my }{3:faults }{4:to heart.}",
     "words": [
       {
         "roman": "Prabhu",
@@ -176,7 +176,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prabhu more avaguṇa cita nā dharo",
-    "english": "{0:O Lord, }{4:do not }{5:take }{1,2:my faults }{3:to heart.}",
+    "english": "{0:O Lord, }{4:do not }{5:take }{1:my }{2:faults }{3:to heart.}",
     "words": [
       {
         "roman": "Prabhu",

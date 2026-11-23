@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Durgā Āpaduddhārāṣṭakam",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Sanskrit"
   ],
@@ -51,14 +51,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दुर्गापदुद्धाराष्टकम्",
+        "text": "दुर्गा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "प",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दुद्धा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "राष्टकम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "atha durgāpaduddhārāṣṭakam",
-    "english": "{0:Now begins}{1: the eight-verse hymn to Durgā for deliverance from distress.}",
+    "english": "{0:Now begins}{4: the eight-verse hymn}{1: to Durgā}{3: for deliverance}{2: from distress.}",
     "words": [
       {
         "roman": "atha",
@@ -67,8 +85,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "durgāpaduddhārāṣṭakam",
-        "gloss": "eight-verse hymn to Durgā for deliverance from distress",
+        "roman": "durg",
+        "gloss": "to Durgā; durgā, joined ā + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āpad",
+        "gloss": "distress, calamity",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "uddhār",
+        "gloss": "deliverance, rescue; uddhāra, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āṣṭakam",
+        "gloss": "eight-verse hymn; aṣṭakam",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -195,14 +231,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जगद्वन्द्यपादारविन्दे",
+        "text": "जग",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "द्वन्द्य",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "पादा",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रविन्दे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "namaste jagadvandyapādāravinde",
-    "english": "{0:Homage to you,}{1: whose lotus feet the world reveres.}",
+    "english": "{0:Homage to you,}{4: whose lotus}{3: feet}{1: the world}{2: reveres.}",
     "words": [
       {
         "roman": "namaste",
@@ -211,8 +265,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jagadvandyapādāravinde",
-        "gloss": "O you whose lotus feet are revered by the world",
+        "roman": "jagad",
+        "gloss": "the world; jagat",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vandya",
+        "gloss": "revered, to be revered",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pād",
+        "gloss": "feet; pāda, joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āravinde",
+        "gloss": "O you whose … are lotuses; aravinde, vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -291,14 +363,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "जगच्चिन्त्यमानस्वरूपे",
+        "text": "जग",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "च्चिन्त्यमान",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "स्वरूपे",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "namaste jagaccintyamānasvarūpe",
-    "english": "{0:Homage to you,}{1: whose true form the world contemplates.}",
+    "english": "{0:Homage to you,}{3: whose true form}{1: the world}{2: contemplates.}",
     "words": [
       {
         "roman": "namaste",
@@ -307,8 +391,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jagaccintyamānasvarūpe",
-        "gloss": "O you whose true form the world contemplates",
+        "roman": "jagac",
+        "gloss": "the world; jagat, t changed to c before c",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "cintyamāna",
+        "gloss": "being contemplated",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "svarūpe",
+        "gloss": "O you whose true form is: vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -327,14 +423,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "महायोगिविज्ञानरूपे",
+        "text": "महा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "योगि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "विज्ञान",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "रूपे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "namaste mahāyogivijñānarūpe",
-    "english": "{0:Homage to you,}{1: the realized knowledge of great yogins.}",
+    "english": "{0:Homage to you,}{3,4: the realized knowledge}{1: of great}{2: yogins.}",
     "words": [
       {
         "roman": "namaste",
@@ -343,8 +457,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mahāyogivijñānarūpe",
-        "gloss": "O you who are the realized knowledge of great yogins",
+        "roman": "mahā",
+        "gloss": "great",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "yogi",
+        "gloss": "yogins",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vijñāna",
+        "gloss": "realized knowledge",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rūpe",
+        "gloss": "O you whose form is: vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -735,14 +867,32 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "महादुस्तरेऽत्यन्तघोरे",
+        "text": "महा",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "दुस्तरे",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ऽत्यन्त",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "घोरे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "apāre mahādustare'tyantaghore",
-    "english": "{0:In the shoreless}, {1:terribly fearsome ocean}, {1:so hard to cross—}",
+    "english": "{0:In the shoreless}, {3:terribly }{4:fearsome ocean}, {1:so }{2:hard to cross—}",
     "words": [
       {
         "roman": "apāre",
@@ -751,8 +901,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "mahādustare'tyantaghore",
-        "gloss": "in what is very hard to cross, exceedingly terrible",
+        "roman": "mahā",
+        "gloss": "very, greatly",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dustare",
+        "gloss": "in what is hard to cross: locative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "'tyanta",
+        "gloss": "exceedingly; atyanta, its first a elided",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ghore",
+        "gloss": "terrible, fearsome: locative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -861,30 +1029,78 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "नमश्चण्डिके",
+        "text": "नम",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "चण्डदोर्दण्डलीला-",
+        "text": "श्चण्डिके",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "चण्ड",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दो",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "र्दण्ड",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "लीला-",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "namaścaṇḍike caṇḍadordaṇḍalīlā-",
-    "english": "{0:Homage}, {0:Caṇḍikā}! {1:With the play of your fierce, staff-like arms—}",
+    "english": "{0:Homage}, {1:Caṇḍikā}! {5:With the play }{3:of your }{2:fierce, }{4:staff-like }{3:arms—}",
     "words": [
       {
-        "roman": "namaścaṇḍike",
-        "gloss": "homage, O Caṇḍikā (Fierce One), a name of Durgā",
+        "roman": "namaś",
+        "gloss": "homage; namaḥ, ḥ changed to ś before c",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "caṇḍadordaṇḍalīlā-",
-        "gloss": "with the play of fierce, staff-like arms (compound continues)",
+        "roman": "caṇḍike",
+        "gloss": "O Caṇḍikā (Fierce One), a name of Durgā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "caṇḍa",
+        "gloss": "fierce",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dor",
+        "gloss": "arms; dos",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "daṇḍa",
+        "gloss": "staff; staff-like",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "līlā-",
+        "gloss": "play, sport (compound continues)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -897,18 +1113,54 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "समुत्खण्डिताखण्डलाशेषशत्रोः",
+        "text": "समुत्खण्डिता",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "खण्डला",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "शेष",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "शत्रोः",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "samutkhaṇḍitākhaṇḍalāśeṣaśatroḥ",
-    "english": "{0:you have cut to pieces all the enemies of Ākhaṇḍala.}",
+    "english": "{0:you have cut to pieces }{2:all }{3:the enemies }{1:of Ākhaṇḍala.}",
     "words": [
       {
-        "roman": "samutkhaṇḍitākhaṇḍalāśeṣaśatroḥ",
-        "gloss": "all the enemies of Ākhaṇḍala, a name of Indra, cut completely to pieces",
+        "roman": "samutkhaṇḍit",
+        "gloss": "cut completely to pieces; samutkhaṇḍita, joined a + ā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ākhaṇḍal",
+        "gloss": "of Ākhaṇḍala, a name of Indra; joined a + a",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "āśeṣa",
+        "gloss": "all, without remainder; aśeṣa",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "śatroḥ",
+        "gloss": "of the enemies: genitive",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -921,30 +1173,78 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "त्वमेका",
+        "text": "त्व",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "गतिर्विघ्नसन्दोहहर्त्री",
+        "text": "मेका",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "गति",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "र्विघ्न",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "सन्दोह",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "हर्त्री",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "tvamekā gatirvighnasandohahartrī",
-    "english": "{0:You alone}{1: are the refuge, }{1:remover of hosts of obstacles.}",
+    "english": "{0:You }{1:alone}{2: are the refuge, }{5:remover }{4:of hosts }{3:of obstacles.}",
     "words": [
       {
-        "roman": "tvamekā",
-        "gloss": "you alone",
+        "roman": "tvam",
+        "gloss": "you",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "gatirvighnasandohahartrī",
-        "gloss": "the refuge, remover of hosts of obstacles",
+        "roman": "ekā",
+        "gloss": "alone, the only one",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "gatir",
+        "gloss": "refuge; gatiḥ",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vighna",
+        "gloss": "obstacles",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sandoha",
+        "gloss": "hosts, multitude",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hartrī",
+        "gloss": "remover: feminine",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1005,30 +1305,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "न्यनेकाखिलाक्रोधना",
+        "text": "न्यनेका",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "क्रोधनिष्ठा",
+        "text": "खिला",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "क्रोधना",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "क्रोध",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "निष्ठा",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "nyanekākhilākrodhanā krodhaniṣṭhā",
-    "english": "{0:manifold} and {0:all-encompassing}, {0:wrathful} and {1:abiding in wrath}.",
+    "english": "{0:manifold} and {1:all-encompassing}, {2:wrathful} and {4:abiding }{3:in wrath}.",
     "words": [
       {
-        "roman": "nyanekākhilākrodhanā",
-        "gloss": "completes truth-speaking from preceding row; manifold, all-encompassing, wrathful",
+        "roman": "nyanek",
+        "gloss": "manifold; anekā, joined ā + a; the initial ny completes truth-speaking from the preceding row",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "krodhaniṣṭhā",
-        "gloss": "abiding in wrath",
+        "roman": "ākhilā",
+        "gloss": "all-encompassing; akhilā",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "krodhanā",
+        "gloss": "wrathful",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "krodha",
+        "gloss": "wrath",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "niṣṭhā",
+        "gloss": "abiding in",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1197,18 +1533,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "सदासर्वसिद्धिप्रदातृस्वरूपे",
+        "text": "सदा",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "सर्व",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "सिद्धि",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "प्रदातृ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्वरूपे",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "sadāsarvasiddhipradātṛsvarūpe",
-    "english": "{0:You whose nature is always to bestow every accomplishment}.",
+    "english": "{4:You whose nature is }{0:always }{3:to bestow }{1:every }{2:accomplishment}.",
     "words": [
       {
-        "roman": "sadāsarvasiddhipradātṛsvarūpe",
-        "gloss": "O you whose nature is always to bestow every accomplishment",
+        "roman": "sadā",
+        "gloss": "always",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sarva",
+        "gloss": "every, all",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "siddhi",
+        "gloss": "accomplishment",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pradātṛ",
+        "gloss": "bestower of",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "svarūpe",
+        "gloss": "O you whose nature is: vocative",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1281,30 +1665,48 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "शरणमसि",
+        "text": "शरण",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सुराणां",
+        "text": "मसि",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सिद्धविद्याधराणां",
+        "text": "सुराणां",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "सिद्ध",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "विद्याधराणां",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "śaraṇamasi surāṇāṃ siddhavidyādharāṇāṃ",
-    "english": "{0:You are refuge} {1:for the gods}, {2:the accomplished beings and Vidyādharas}—",
+    "english": "{1:You are }{0:refuge} {2:for the gods}, {3:the accomplished beings }{4:and Vidyādharas}—",
     "words": [
       {
-        "roman": "śaraṇamasi",
-        "gloss": "you are refuge",
+        "roman": "śaraṇam",
+        "gloss": "refuge",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "asi",
+        "gloss": "you are",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1315,8 +1717,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "siddhavidyādharāṇāṃ",
-        "gloss": "of the perfected beings and Vidyādharas (knowledge-bearers, a class of celestial beings)",
+        "roman": "siddha",
+        "gloss": "perfected beings",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vidyādharāṇāṃ",
+        "gloss": "of the Vidyādharas (knowledge-bearers, a class of celestial beings): genitive plural",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1329,30 +1737,54 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "मुनिदनुजवराणां",
+        "text": "मुनि",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "व्याधिभिः",
+        "text": "दनुज",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "पीडितानाम्",
+        "text": "वराणां",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "व्याधिभिः",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "पीडितानाम्",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "munidanujavarāṇāṃ vyādhibhiḥ pīḍitānām",
-    "english": "{0:for sages and the foremost Danu-born beings}, {2:for those} {2:afflicted} {1:by illness}—",
+    "english": "{0:for sages }{2:and the foremost }{1:Danu-born beings}, {4:for those} {4:afflicted} {3:by illness}—",
     "words": [
       {
-        "roman": "munidanujavarāṇāṃ",
-        "gloss": "of sages and the foremost descendants of Danu, a class of demons",
+        "roman": "muni",
+        "gloss": "sages",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "danuja",
+        "gloss": "descendants of Danu, a class of demons",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "varāṇāṃ",
+        "gloss": "of the foremost: genitive plural",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1377,30 +1809,66 @@ window.SONG_LINES = {
     "sourceLanguage": "sa",
     "sourceWords": [
       {
-        "text": "नृपतिगृहगतानां",
+        "text": "नृपति",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "दस्युभिस्त्रासितानां",
+        "text": "गृह",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "गतानां",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "दस्युभि",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "स्त्रासितानां",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "nṛpatigṛhagatānāṃ dasyubhistrāsitānāṃ",
-    "english": "{0:for those who have entered a king’s house}, {1:for those terrified by bandits}—",
+    "english": "{2:for those who have entered }{0:a king’s }{1:house}, {4:for those terrified }{3:by bandits}—",
     "words": [
       {
-        "roman": "nṛpatigṛhagatānāṃ",
-        "gloss": "of those who have entered a king’s house",
+        "roman": "nṛpati",
+        "gloss": "king",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dasyubhistrāsitānāṃ",
-        "gloss": "of those frightened by bandits",
+        "roman": "gṛha",
+        "gloss": "house",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "gatānāṃ",
+        "gloss": "of those who have entered: genitive plural",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "dasyubhis",
+        "gloss": "by bandits; dasyubhiḥ, instrumental plural",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "trāsitānāṃ",
+        "gloss": "of those frightened: genitive plural",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1444,7 +1912,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tvamasi śaraṇamekā devi durge prasīda",
-    "english": "{0,1:you alone}{0: are }{1:refuge}. {2:Goddess} {3:Durgā}, {4:be gracious}.",
+    "english": "{0:you }{1:alone}{0: are }{1:refuge}. {2:Goddess} {3:Durgā}, {4:be gracious}.",
     "words": [
       {
         "roman": "tvamasi",

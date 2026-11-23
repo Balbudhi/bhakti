@@ -626,7 +626,7 @@ window.SONG_LINES = {
   "l08": {
     "source": "जन्म कोटि ताप हर लें, कृपा रूप तारक",
     "roman": "janm koṭi tāp har lẽ kṛpā rūp tārak",
-    "english": "The {5,6:embodiment of grace}, the {7:deliverer}, {3,4:takes away} the {2:suffering} of {1:ten million} {0:births}.",
+    "english": "The {5,6:embodiment of grace}, the {7:deliverer}, {4:takes }{3:away} the {2:suffering} of {1:ten million} {0:births}.",
     "words": [
       {
         "roman": "janm",

@@ -418,7 +418,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rājā daśarath nṛp vāhā he bhuvanavā̃",
-    "english": "{0:King }{1:Dasharatha, }{2:the sovereign, }{3,4:is there }{5:in that palace;}",
+    "english": "{0:King }{1:Dasharatha, }{2:the sovereign, }{4:is }{3:there }{5:in that palace;}",
     "words": [
       {
         "roman": "Rājā",
@@ -708,7 +708,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kaun so prītam kaun devaravā̃",
-    "english": "{0,1:“Which one }{2:is your beloved, }{3:and which one }{4:is your brother-in-law?”}",
+    "english": "{0:“Which }{1:one }{2:is your beloved, }{3:and which one }{4:is your brother-in-law?”}",
     "words": [
       {
         "roman": "Kaun",

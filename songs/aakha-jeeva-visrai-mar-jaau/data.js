@@ -88,7 +88,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ākhā jīvā visarai mar jāu",
-    "english": "{0:Uttering the Name, }{1:I live; }{2:forgetting it, }{3,4:I die.}",
+    "english": "{0:Uttering the Name, }{1:I live; }{2:forgetting it, }{4:I }{3:die.}",
     "words": [
       {
         "roman": "Ākhā",

@@ -370,7 +370,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O Bhagavāna ko bhajane vāle, kyā Bhagavāna ko jānā hai",
-    "english": "{0:O }{3,4:worshiper of }{1,2:God, }{5,8,9:have you known }{6,7:God?}",
+    "english": "{0:O }{4:worshiper }{3:of }{1,2:God, }{5,8,9:have you known }{6,7:God?}",
     "words": [
       {
         "roman": "O",
@@ -1018,7 +1018,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prema pyāra se sīñca le jīvana, ye avasara phira nā āe",
-    "english": "{3,4:Irrigate }{5:life }{0,2:with love }{1:and affection; }{6:this }{7:opportunity }{9,10:will not come }{8:again.}",
+    "english": "{3,4:Irrigate }{5:life }{2:with }{0:love }{1:and affection; }{6:this }{7:opportunity }{9,10:will not come }{8:again.}",
     "words": [
       {
         "roman": "Prema",
@@ -1927,7 +1927,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Janama-maraṇa kī phām̐sa na chūṭe, rahe dukhoṁ se nita gherā",
-    "english": "{2:The snare }{0,1:of birth and death }{3,4:never loosens; }{5:you remain }{8:forever }{9:surrounded }{6,7:by sorrows.}",
+    "english": "{2:The snare }{0,1:of birth and death }{3,4:never loosens; }{5:you remain }{8:forever }{9:surrounded }{7:by }{6:sorrows.}",
     "words": [
       {
         "roman": "Janama-maraṇa",
@@ -2028,7 +2028,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rahe dukhoṁ se nita gherā",
-    "english": "{0:You remain }{3:forever }{4:surrounded }{1,2:by sorrows.}",
+    "english": "{0:You remain }{3:forever }{4:surrounded }{2:by }{1:sorrows.}",
     "words": [
       {
         "roman": "Rahe",
@@ -2117,7 +2117,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāpa gaṭhariyā bhārī ho gaī, kaise bojha uṭhāegā",
-    "english": "{1:The bundle }{0:of sins }{3,4:has become }{2:heavy; }{5:how }{7:will you carry }{6:the burden?}",
+    "english": "{1:The bundle }{0:of sins }{4:has }{3:become }{2:heavy; }{5:how }{7:will you carry }{6:the burden?}",
     "words": [
       {
         "roman": "Pāpa",

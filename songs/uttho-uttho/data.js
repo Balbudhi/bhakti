@@ -290,7 +290,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhyāna meṁ dhara ke sukha mūrti",
-    "english": "{2,3:Holding }{5:the embodiment }{4:of joy }{0,1:in meditation,}",
+    "english": "{2,3:Holding }{5:the embodiment }{4:of joy }{1:in }{0:meditation,}",
     "words": [
       {
         "roman": "dhyāna",

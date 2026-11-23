@@ -610,36 +610,46 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಮಂಗಳಮೂರುತಿ",
+        "text": "ಮಂಗಳ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಗುರು",
+        "text": "ಮೂರುತಿ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ರಂಗವಿಠ್ಠಲನ",
+        "text": "ಗುರು",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಪಾದ",
+        "text": "ರಂಗವಿಠ್ಠಲನ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಪಾದ",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "maṅgaḷamūruti guru raṅgaviṭṭhalana pāda",
-    "english": "{0:O auspicious form}, {3:the feet }{2:of }{1:the teacher} {2:Raṅgaviṭṭhala}…",
+    "english": "{0:O auspicious} {1:form}, {4:the feet }{3:of }{2:the teacher} {3:Raṅgaviṭṭhala}…",
     "words": [
       {
-        "roman": "maṅgaḷamūruti",
-        "gloss": "auspicious form; address to Gaṇanātha"
+        "roman": "maṅgaḷa",
+        "gloss": "auspicious"
+      },
+      {
+        "roman": "mūruti",
+        "gloss": "form; address to Gaṇanātha"
       },
       {
         "roman": "guru",

@@ -417,7 +417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "fidā ho gayā tab se tujh par maĩ sāī̃",
-    "english": "{3,4:Since then, }{7:I }{0,1,2:became devoted }{5,6:to you, }{8:O Sai.}",
+    "english": "{4:Since }{3:then, }{7:I }{0,1,2:became devoted }{5,6:to you, }{8:O Sai.}",
     "words": [
       {
         "roman": "fidā",
@@ -696,7 +696,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "magar tū to baiṭhā hai samādhi mẽ jāke",
-    "english": "{0:But }{1,2:you, indeed, }{3,4:are seated }{7:having entered }{6:into }{5:the tomb.}",
+    "english": "{0:But }{1:you, }{2:indeed, }{3,4:are seated }{7:having entered }{6:into }{5:the tomb.}",
     "words": [
       {
         "roman": "magar",
@@ -1028,7 +1028,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "magar mere bas kī ye bāt nahī̃ hai",
-    "english": "{0:But }{4,5:this matter }{6,7:is not }{1:within my }{2,3:capacity,}",
+    "english": "{0:But }{4:this }{5:matter }{7:is }{6:not }{1:within my }{2,3:capacity,}",
     "words": [
       {
         "roman": "magar",
@@ -1224,7 +1224,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nahī̃ jāū̃gā lauṭ kar maĩ bhī sāī̃",
-    "english": "{4,5:I too }{0:will not }{1,2,3:turn back and go, }{6:O Sai,}",
+    "english": "{4:I }{5:too }{0:will not }{1,2,3:turn back and go, }{6:O Sai,}",
     "words": [
       {
         "roman": "nahī̃",
@@ -1384,7 +1384,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "are tū to maulā",
-    "english": "{0:Ah, }{1,2:you indeed }{3:are the Lord...}",
+    "english": "{0:Ah, }{1:you }{2:indeed }{3:are the Lord...}",
     "words": [
       {
         "roman": "are",
@@ -1461,7 +1461,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "are tū to maulā nūre ḵẖudā hai",
-    "english": "{0:Ah, }{1,2:you indeed }{3,6:are the Lord, }{4:the light of }{5:God,}",
+    "english": "{0:Ah, }{1:you }{2:indeed }{3,6:are the Lord, }{4:the light of }{5:God,}",
     "words": [
       {
         "roman": "are",
@@ -1977,7 +1977,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gale se lagā le samādhi se uṭh ke",
-    "english": "{0,1,2,3:Embrace me, }{6,7:having risen }{5:from }{4:the tomb!}",
+    "english": "{0,1,2:Embrace }{3:me, }{6,7:having risen }{5:from }{4:the tomb!}",
     "words": [
       {
         "roman": "gale",

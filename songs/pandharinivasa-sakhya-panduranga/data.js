@@ -58,30 +58,40 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "पंढरीनिवासा",
+        "text": "पंढरी",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "सख्या",
+        "text": "निवासा",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "पांडुरंगा",
+        "text": "सख्या",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "पांडुरंगा",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "paṇḍharīnivāsā sakhyā pāṇḍuraṅgā",
-    "english": "{0:O dweller in Paṇḍharī}, {1:my friend} {2:Pāṇḍuraṅga},",
+    "english": "{1:O dweller} {0:in Paṇḍharī}, {2:my friend} {3:Pāṇḍuraṅga},",
     "words": [
       {
-        "roman": "paṇḍharīnivāsā",
-        "gloss": "O dweller in Paṇḍharī (Paṇḍharpur)"
+        "roman": "paṇḍharī",
+        "gloss": "the town Paṇḍharpur"
+      },
+      {
+        "roman": "nivāsā",
+        "gloss": "O dweller; vocative"
       },
       {
         "roman": "sakhyā",
@@ -154,18 +164,28 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "पंढरीनिवासा",
+        "text": "पंढरी",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "निवासा",
+        "wordIndices": [
+          1
         ]
       }
     ],
     "roman": "paṇḍharīnivāsā",
-    "english": "{0:O dweller in Paṇḍharī},",
+    "english": "{1:O dweller} {0:in Paṇḍharī},",
     "words": [
       {
-        "roman": "paṇḍharīnivāsā",
-        "gloss": "O dweller in Paṇḍharī (Paṇḍharpur)"
+        "roman": "paṇḍharī",
+        "gloss": "the town Paṇḍharpur"
+      },
+      {
+        "roman": "nivāsā",
+        "gloss": "O dweller; vocative"
       }
     ],
     "nameTable": false,
@@ -176,18 +196,28 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "भक्तकैवारिया",
+        "text": "भक्त",
         "wordIndices": [
           0
+        ]
+      },
+      {
+        "text": "कैवारिया",
+        "wordIndices": [
+          1
         ]
       }
     ],
     "roman": "bhaktakaivāriyā",
-    "english": "{0:O protector of devotees},",
+    "english": "{1:O protector} {0:of devotees},",
     "words": [
       {
-        "roman": "bhaktakaivāriyā",
-        "gloss": "O protector or champion of devotees"
+        "roman": "bhakta",
+        "gloss": "devotees"
+      },
+      {
+        "roman": "kaivāriyā",
+        "gloss": "O protector or champion; vocative"
       }
     ],
     "nameTable": false,
@@ -198,30 +228,40 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "भक्तकैवारिया",
+        "text": "भक्त",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "होसी",
+        "text": "कैवारिया",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "नारायणा",
+        "text": "होसी",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "नारायणा",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "bhaktakaivāriyā hosī nārāyaṇā",
-    "english": "{0:O protector of devotees}, {1:you are}, {2:O Nārāyaṇa};",
+    "english": "{1:O protector} {0:of devotees}, {2:you are}, {3:O Nārāyaṇa};",
     "words": [
       {
-        "roman": "bhaktakaivāriyā",
-        "gloss": "O protector or champion of devotees"
+        "roman": "bhakta",
+        "gloss": "devotees"
+      },
+      {
+        "roman": "kaivāriyā",
+        "gloss": "O protector or champion; vocative"
       },
       {
         "roman": "hosī",
@@ -240,7 +280,7 @@ window.SONG_LINES = {
     "sourceLanguage": "mr",
     "sourceWords": [
       {
-        "text": "भक्तकैवारिया",
+        "text": "भक्त",
         "wordIndices": [
           0
         ]
@@ -250,14 +290,24 @@ window.SONG_LINES = {
         "wordIndices": [
           1
         ]
+      },
+      {
+        "text": "कैवारिया",
+        "wordIndices": [
+          2
+        ]
       }
     ],
     "roman": "bhaktakaivāriyā kaivāriyā",
-    "english": "{0:O protector of devotees}, {1:O protector},",
+    "english": "{1:O protector} {0:of devotees}, {2:O protector},",
     "words": [
       {
-        "roman": "bhaktakaivāriyā",
-        "gloss": "O protector or champion of devotees"
+        "roman": "bhakta",
+        "gloss": "devotees"
+      },
+      {
+        "roman": "kaivāriyā",
+        "gloss": "O protector or champion; vocative"
       },
       {
         "roman": "kaivāriyā",

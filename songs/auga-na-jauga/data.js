@@ -143,7 +143,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yeh Bhagat Kabīr ṣāḥib ke ślok haiṅ.",
-    "english": "{0,6:These are}{4,5: the verses of }{1,2,3:Bhagat Kabīr Sahib.}",
+    "english": "{0:These }{6:are}{4,5: the verses of }{1,2,3:Bhagat Kabīr Sahib.}",
     "words": [
       {
         "roman": "Yeh",
@@ -422,7 +422,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṅ kisī kā ḥusn-e-ḵẖayāl hūṅ merā kučẖ wujūd-o-ʻadam nahīṅ",
-    "english": "{0,4:I am }{1,2:someone's }{3:beautiful thought; }{5:I }{8:have no }{7:existence or non-existence }{6:at all.}",
+    "english": "{0:I }{4:am }{1,2:someone's }{3:beautiful thought; }{5:I }{8:have no }{7:existence or non-existence }{6:at all.}",
     "words": [
       {
         "roman": "Maiṅ",
@@ -928,7 +928,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kabhī us ghar meṅ ā baiṭhe kabhī is ghar meṅ ā baiṭhe",
-    "english": "{0:At times}{4,5: we came and settled}{3: in}{1,2: that house,}{6: at times}{10,11: we came and settled}{9: in}{7,8: this house.}",
+    "english": "{0:At times}{4,5: we came and settled}{3: in}{1: that }{2:house,}{6: at times}{10,11: we came and settled}{9: in}{7: this }{8:house.}",
     "words": [
       {
         "roman": "Kabhī",
@@ -1417,7 +1417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maut ā ke faqīroṅ se tujhe kyā lenā, marne se pahle ye log marā karte haiṅ",
-    "english": "{0:O Death,}{1,2: having come,}{6: what}{5,7: business do you have}{3,4: with dervishes?}{9,10: Before}{8: dying,}{11,12: these people}{13,14,15: make a practice of dying.}",
+    "english": "{0:O Death,}{2: having }{1:come,}{6: what}{5,7: business do you have}{4: with }{3:dervishes?}{9,10: Before}{8: dying,}{11: these }{12:people}{13,14,15: make a practice of dying.}",
     "words": [
       {
         "roman": "Maut",
@@ -2540,7 +2540,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Woh aur hoṅge jinheṅ maut ā'egī Bedam, nigāh-e-yār se pā'ī hai zindagī maiṅ ne",
-    "english": "{0,2:There will be }{1:others }{3:to whom }{4:death }{5:will come, }{6:Bedam; }{8:through }{7:the gaze of the Beloved, }{12,13:I }{9,10:have received }{11:life.}",
+    "english": "{0,2:There will be }{1:others }{3:to whom }{4:death }{5:will come, }{6:Bedam; }{8:through }{7:the gaze of the Beloved, }{12,13:I }{10:have }{9:received }{11:life.}",
     "words": [
       {
         "roman": "Woh",
@@ -2737,7 +2737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jīwnā kyā agyān hai marnā kyā hai gyān in donoṅ se čẖūṭnā jo muktī is ko jān",
-    "english": "{0,1:Living}{2,3: is ignorance,}{4,5: dying}{6,7: is knowledge;}{16: know}{12: that}{11: release}{10: from}{8,9: both of these}{13,14,15: is liberation.}",
+    "english": "{0,1:Living}{3: is }{2:ignorance,}{4,5: dying}{6: is }{7:knowledge;}{16: know}{12: that}{11: release}{10: from}{8,9: both of these}{13,14,15: is liberation.}",
     "words": [
       {
         "roman": "Jīwnā",

@@ -1162,7 +1162,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pīche rah jāẽge",
-    "english": "{1,2:Will remain }{0:behind.}",
+    "english": "{2:Will }{1:remain }{0:behind.}",
     "words": [
       {
         "roman": "pīche",

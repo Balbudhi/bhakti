@@ -74,11 +74,11 @@
 
   // A bare name does not say whether it is the poet or the singer.
   const creditLine = song => {
-    const [writer, singer] = [song.writer, song.singer].map(name => String(name || "").trim());
-    if (!writer && !singer) return String(song.credit || "").trim();
-    if (writer === singer) return `Written and sung by ${writer}`;
-    return [writer && `By ${writer}`,
-      singer && `${writer ? "sung" : "Sung"} by ${singer}`].filter(Boolean).join(" · ");
+    const [writer, singer, ensemble] = [song.writer, song.singer, song.ensemble].map(name => String(name || "").trim());
+    if (!writer && !singer && !ensemble) return String(song.credit || "").trim();
+    if (writer && writer === singer) return `Written and sung by ${writer}`;
+    const performed = singer ? `sung by ${singer}` : ensemble ? `sung at ${ensemble}` : "";
+    return [writer && `By ${writer}`, writer ? performed : performed.replace(/^s/, "S")].filter(Boolean).join(" · ");
   };
 
   const filterSongs = (songs, { languages = [], subjects = [], poets = [], singers = [], query = "" } = {}) => {

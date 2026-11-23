@@ -4713,7 +4713,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dvaitāce kapāṭa lāvuna ekatra kele bābā ekatra kele",
-    "english": "{1:The doors }{0:of duality }{2:were shut }{3,4:and brought together, }{5:O Bābā, }{6,7:brought together.}",
+    "english": "{1:The doors }{0:of duality }{2:were shut }{3,4:and brought together, }{5:O Bābā, }{7:brought }{6:together.}",
     "words": [
       {
         "roman": "dvaitāce",
@@ -5241,7 +5241,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadguru sāīnātha mahārāja kī jaya",
-    "english": "{3,4:Victory to }{0:Sadguru }{1:Sainath }{2:Maharaj!}",
+    "english": "{4:Victory }{3:to }{0:Sadguru }{1:Sainath }{2:Maharaj!}",
     "words": [
       {
         "roman": "sadguru",

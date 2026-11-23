@@ -463,30 +463,42 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "గోవర్ధనంబెల్ల",
+        "text": "గోవర్ధనం",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "గొడుగుగా",
+        "text": "బెల్ల",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "బట్టి",
+        "text": "గొడుగుగా",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "బట్టి",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "gōvardhanambella goḍugugā baṭṭi",
-    "english": "{2:Holding up }{0:all of Govardhana }{1:as an umbrella,}",
+    "english": "{3:Holding up }{1:all }{0:of Govardhana }{2:as an umbrella,}",
     "words": [
       {
-        "roman": "gōvardhanambella",
-        "gloss": "the entirety of Govardhana hill",
+        "roman": "gōvardhanam",
+        "gloss": "Govardhana hill",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "bella",
+        "gloss": "all, the entirety; ella, with linking b",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -697,20 +709,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "దాళ్ళపాకన్నయ్య",
+        "text": "దాళ్ళపా",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "చాల",
+        "text": "కన్నయ్య",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "చాల",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "aṅgugā dāḷḷapākannayya cāla",
-    "english": "{2:Very }{0:beautifully, }{1:Tāḷḷapāka Annamayya}",
+    "english": "{3:Very }{0:beautifully, }{1:Tāḷḷapāka }{2:Annamayya}",
     "words": [
       {
         "roman": "aṅgugā",
@@ -719,8 +737,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "dāḷḷapākannayya",
-        "gloss": "Tāḷḷapāka Annamayya (the poet-saint)",
+        "roman": "dāḷḷapāk",
+        "gloss": "Tāḷḷapāka, the poet-saint's family and village name; t softened to d",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "annayya",
+        "gloss": "Annamayya, the poet-saint",
         "concept_key": "",
         "preserve_in_english": false
       },

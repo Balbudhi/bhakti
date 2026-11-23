@@ -76,7 +76,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āja badarā uṭhā prēma kā",
-    "english": "{0:Today }{1:the raincloud }{3,4:of love }{2:rose}",
+    "english": "{0:Today }{1:the raincloud }{4:of }{3:love }{2:rose}",
     "words": [
       {
         "roman": "Āja",
@@ -183,7 +183,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ē jī badarā uṭhā prēma kā rē hama para barasā hōya",
-    "english": "{0,1:O dear one, }{2:the raincloud }{4,5:of love }{3:rose; }{6:O, }{9,10:it rained }{7,8:upon us}",
+    "english": "{0,1:O dear one, }{2:the raincloud }{5:of }{4:love }{3:rose; }{6:O, }{9,10:it rained }{8:upon }{7:us}",
     "words": [
       {
         "roman": "Ē",
@@ -403,7 +403,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana masta huā phira kyā bōlē",
-    "english": "{0:The mind }{1,2:became ecstatic; }{3:then }{4:what }{5:can it say?}",
+    "english": "{0:The mind }{2:became }{1:ecstatic; }{3:then }{4:what }{5:can it say?}",
     "words": [
       {
         "roman": "Mana",

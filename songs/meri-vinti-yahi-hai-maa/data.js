@@ -2429,7 +2429,7 @@ window.SONG_LINES = {
   "l030": {
     "source": "ए बोलो ना जय जय माँ जय जय माँ मेरी माँ जय जय माँ माँ माँ",
     "roman": "e bolo nā jay jay mā̃ jay jay mā̃ merī mā̃ jay jay mā̃ mā̃ mā̃",
-    "english": "{0:Hey}, {1,2:do say}: {3:Hail}, {4:hail}, {5:Mother}! {6:Hail}, {7:hail}, {8:Mother}! {9:My} {10:Mother}! {11:Hail}, {12:hail}, {13:Mother}! {14:Mother}! {15:Mother}!",
+    "english": "{0:Hey}, {2:do }{1:say}: {3:Hail}, {4:hail}, {5:Mother}! {6:Hail}, {7:hail}, {8:Mother}! {9:My} {10:Mother}! {11:Hail}, {12:hail}, {13:Mother}! {14:Mother}! {15:Mother}!",
     "words": [
       {
         "roman": "e",

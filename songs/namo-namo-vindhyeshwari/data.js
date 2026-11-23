@@ -907,7 +907,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saba kara manasā puravata mātā | mahimā amita jagata vikhyātā ||",
-    "english": "{3:You fulfill }{2:the heart's desire }{0,1:of everyone, }{4:O Mother; }{6:your limitless }{5:glory }{7,8:is renowned throughout the world.}",
+    "english": "{3:You fulfill }{2:the heart's desire }{1:of }{0:everyone, }{4:O Mother; }{6:your limitless }{5:glory }{7,8:is renowned throughout the world.}",
     "words": [
       {
         "roman": "saba",
@@ -1300,7 +1300,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ramā rādhikā śyāmā kālī | tū hī mātu santana pratipālī ||",
-    "english": "{0,1,2,3:Rama, Radhika, Shyama, and Kali—}{4,5:you alone, }{6:O Mother, }{7,8:are the protector of the saints.}",
+    "english": "{0:Rama, }{1:Radhika, }{2:Shyama, }{3:and Kali}—{4:you }{5:alone, }{6:O Mother, }{7,8:are the protector of the saints.}",
     "words": [
       {
         "roman": "ramā",
@@ -1419,7 +1419,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "umā mādhavī caṇḍī jvālā | begi mohi para hohu dayālā ||",
-    "english": "{0,1,2,3:Uma, Madhavi, Chandi, Jwala—}{4:swiftly }{7,8:be merciful }{5,6:unto me.}",
+    "english": "{0:Uma, }{1:Madhavi, }{2:Chandi, }{3:Jwala}—{4:swiftly }{7:be }{8:merciful }{5,6:unto me.}",
     "words": [
       {
         "roman": "umā",
@@ -1770,7 +1770,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū hī jāhnavī aru rudrāṇī | hemāvatī ambe niravānī ||",
-    "english": "{0,1,2:You alone are Jāhnavī }{3,4:and Rudrāṇī, }{5:Hemāvatī, }{6,7:O Mother who grants liberation.}",
+    "english": "{0,1,2:You alone are Jāhnavī }{3:and }{4:Rudrāṇī, }{5:Hemāvatī, }{6,7:O Mother who grants liberation.}",
     "words": [
       {
         "roman": "tū",
@@ -1883,7 +1883,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṣṭabhujī vārāhinī devī | karata viṣṇu śiva jā kara sevī ||",
-    "english": "{0:The eight-armed }{1,2:goddess Varahi, }{6,7,8:whose service }{3,4,5:Vishnu and Shiva perform.}",
+    "english": "{0:The eight-armed }{2:goddess }{1:Varahi, }{6,7,8:whose service }{3,4,5:Vishnu and Shiva perform.}",
     "words": [
       {
         "roman": "aṣṭabhujī",
@@ -2103,7 +2103,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāṭana mumbā danta kumārī | bhadrakālī sunu vinaya hamārī ||",
-    "english": "{0,1,2,3:Patana, Mumba, Danteshwari, Kumari, }{4:Bhadrakali—}{5:hear }{6,7:our humble prayer.}",
+    "english": "{0:Patana, }{1:Mumba, }{2:Danteshwari, }{3:Kumari, }{4:Bhadrakali—}{5:hear }{6,7:our humble prayer.}",
     "words": [
       {
         "roman": "pāṭana",
@@ -2531,7 +2531,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jā para kṛpā mātu tava hoī | to vaha karai cahai mana joī ||",
-    "english": "{0,1:Upon whomsoever }{2,4:your grace }{5:falls, }{3:O Mother, }{6,7:that person }{8:accomplishes }{11:whatever }{9,10:their heart desires.}",
+    "english": "{0,1:Upon whomsoever }{4:your }{2:grace }{5:falls, }{3:O Mother, }{6,7:that person }{8:accomplishes }{11:whatever }{9,10:their heart desires.}",
     "words": [
       {
         "roman": "jā",
@@ -2674,7 +2674,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṛpā karahu mo para maharānī | siddhi karia ambe mama bānī ||",
-    "english": "{0,1:Bestow your grace }{2,3:upon me, }{4:O Great Queen; }{7:O Mother, }{6:make }{8,9:my speech }{5:fulfilled.}",
+    "english": "{0,1:Bestow your grace }{3:upon }{2:me, }{4:O Great Queen; }{7:O Mother, }{6:make }{8:my }{9:speech }{5:fulfilled.}",
     "words": [
       {
         "roman": "kṛpā",
@@ -3079,7 +3079,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo nara kaham̐ ṛṇa hoya apārā | so nara pāṭha karai śata bārā ||",
-    "english": "{0,1,2:If a person }{5:has boundless }{3,4:debt, }{6,7:let that person }{8,9:perform recitation }{10,11:a hundred times.}",
+    "english": "{0,1,2:If a person }{5:has boundless }{3,4:debt, }{6,7:let that person }{9:perform }{8:recitation }{10,11:a hundred times.}",
     "words": [
       {
         "roman": "jo",
@@ -3228,7 +3228,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "niścaya ṛṇa mocana hoī jāī | jo nara pāṭha karai mana lāī ||",
-    "english": "{2:Release }{1:from debt }{0:will certainly }{3,4:come to pass, }{5,6:if a person }{7,8:performs recitation }{9,10:with an attentive heart.}",
+    "english": "{2:Release }{1:from debt }{0:will certainly }{3,4:come to pass, }{5,6:if a person }{8:performs }{7:recitation }{9,10:with an attentive heart.}",
     "words": [
       {
         "roman": "niścaya",
@@ -3377,7 +3377,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "astuti jo nara paṛhai paṛhāvai | yā jaga meṁ so bahu sukha pāvai ||",
-    "english": "{1,2:Whoever }{3,4:recites and teaches }{0:this hymn of praise, }{8:that person }{11:obtains }{9,10:abundant joy }{5,6,7:in this world.}",
+    "english": "{1,2:Whoever }{3,4:recites and teaches }{0:this hymn of praise, }{8:that person }{11:obtains }{9,10:abundant joy }{7:in }{5:this }{6:world.}",
     "words": [
       {
         "roman": "astuti",
@@ -3514,7 +3514,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāko vyādhi satāvai bhāī | jāpa karata saba dūri parāī ||",
-    "english": "{0:Whomever }{1:disease }{2:torments, }{3:O brother, }{4,5:upon chanting, }{6:all afflictions }{8:flee }{7:far away.}",
+    "english": "{0:Whomever }{1:disease }{2:torments, }{3:O brother, }{5:upon }{4:chanting, }{6:all afflictions }{8:flee }{7:far away.}",
     "words": [
       {
         "roman": "jāko",
@@ -3782,7 +3782,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "niścaya bandī te chuṭi jāī | satya vacana mama mānahu bhāī ||",
-    "english": "{0:He will certainly }{3,4:be released }{1,2:from captivity; }{8:accept }{7:my }{6:words }{5:as true, }{9:O brother.}",
+    "english": "{0:He will certainly }{3,4:be released }{2:from }{1:captivity; }{8:accept }{7:my }{6:words }{5:as true, }{9:O brother.}",
     "words": [
       {
         "roman": "niścaya",
@@ -4596,44 +4596,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "श्रीविन्ध्याचल",
+        "text": "श्री",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "चालीसा",
+        "text": "विन्ध्याचल",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "रंक",
+        "text": "चालीसा",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "पढ़त",
+        "text": "रंक",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "होवे",
+        "text": "पढ़त",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "अवनीसा",
+        "text": "होवे",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "अवनीसा",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "yaha śrīvindhyācala cālīsā | raṅka paṛhata hove avanīsā ||",
-    "english": "{0:This }{1:is the sacred Vindhyachala }{2:Chalisa; }{4:by reciting it, }{3:a pauper }{5:becomes }{6:a ruler of the earth.}",
+    "english": "{0:This }{1:is the sacred} {2:Vindhyachala }{3:Chalisa; }{5:by reciting it, }{4:a pauper }{6:becomes }{7:a ruler of the earth.}",
     "words": [
       {
         "roman": "yaha",
@@ -4642,8 +4648,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śrīvindhyācala",
-        "gloss": "of sacred Vindhyachala",
+        "roman": "śrī",
+        "gloss": "sacred; honorific",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vindhyācala",
+        "gloss": "of Vindhyachala",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4883,7 +4895,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaya jaya jaya jagamātu bhavānī | kṛpā karahu mo para jana jānī ||",
-    "english": "{0,1,2:Victory, victory, victory, }{4:Bhavani, }{3:Mother of the universe! }{5,6:Bestow your grace }{7,8:upon me, }{9,10:knowing me as your servant.}",
+    "english": "{0,1,2:Victory, victory, victory, }{4:Bhavani, }{3:Mother of the universe! }{5,6:Bestow your grace }{8:upon }{7:me, }{9,10:knowing me as your servant.}",
     "words": [
       {
         "roman": "jaya",

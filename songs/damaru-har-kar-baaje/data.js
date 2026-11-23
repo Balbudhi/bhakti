@@ -122,38 +122,62 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "बालविधुर्गले",
+        "text": "बाल",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "च",
+        "text": "विधु",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "गरलम्",
+        "text": "र्गले",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "यस्योरसि",
+        "text": "च",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "व्यालराट्",
+        "text": "गरलम्",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "यस्यो",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "रसि",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "व्याल",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "राट्",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "bhāle bālavidhurgale ca garalaṃ yasyorasi vyālarāṭ",
-    "english": "{0:On the forehead }{1:the crescent moon}{2:, and }{1:in the throat }{3:poison, }{4:on whose chest }{5:the king of serpents,}",
+    "english": "{0:On the forehead }{1:the crescent }{2:moon}{4:, and }{3:in the throat }{5:poison, }{7:on }{6:whose }{7:chest }{9:the king }{8:of serpents,}",
     "words": [
       {
         "roman": "bhāle",
@@ -162,8 +186,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "bālavidhurgale",
-        "gloss": "the crescent moon [and] in the throat (bāla-vidhuḥ + gale)",
+        "roman": "bāla",
+        "gloss": "young; with moon, the crescent",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vidhur",
+        "gloss": "moon; vidhuḥ, nominative before g",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "gale",
+        "gloss": "in the throat; locative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -180,14 +216,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "yasyorasi",
-        "gloss": "on whose chest (yasya + urasi)",
+        "roman": "yasy",
+        "gloss": "whose; yasya, vowel joined to urasi",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "vyālarāṭ",
-        "gloss": "king of serpents (Vasuki)",
+        "roman": "orasi",
+        "gloss": "on the chest; urasi, locative",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "vyāla",
+        "gloss": "serpent",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "rāṭ",
+        "gloss": "king; rāj, here Vāsuki",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -199,60 +247,108 @@ window.SONG_LINES = {
     "sourceLanguage": "bra",
     "sourceWords": [
       {
-        "text": "सोऽयं",
+        "text": "सो",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "भूतिविभूषणः",
+        "text": "ऽयं",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "सुरवरः",
+        "text": "भूति",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "सर्वाधिपः",
+        "text": "विभूषणः",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "सर्वदा",
+        "text": "सुर",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "वरः",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "सर्वा",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "धिपः",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "सर्वदा",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "so'yaṃ bhūtivibhūṣaṇaḥ suravaraḥ sarvādhipaḥ sarvadā",
-    "english": "{0:This very Lord, }{1:adorned with sacred ash, }{2:foremost among the gods, }{3:sovereign lord of all, }{4:always,}",
+    "english": "{1:This }{0:very Lord, }{3:adorned }{2:with sacred ash, }{5:foremost }{4:among the gods, }{7:sovereign lord }{6:of all, }{8:always,}",
     "words": [
       {
-        "roman": "so'yaṃ",
-        "gloss": "that very [one] / this Lord (saḥ + ayam)",
+        "roman": "so",
+        "gloss": "that very one; saḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "bhūtivibhūṣaṇaḥ",
-        "gloss": "adorned with sacred ash (bhūti-vibhūṣaṇaḥ)",
+        "roman": "'yaṃ",
+        "gloss": "this; ayam, its a elided after o",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "suravaraḥ",
-        "gloss": "foremost among the gods",
+        "roman": "bhūti",
+        "gloss": "sacred ash",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "sarvādhipaḥ",
-        "gloss": "sovereign lord of all",
+        "roman": "vibhūṣaṇaḥ",
+        "gloss": "adorned with; having as ornament",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sura",
+        "gloss": "god",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "varaḥ",
+        "gloss": "foremost, best",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "sarv",
+        "gloss": "all; sarva, vowel joined to adhipa",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ādhipaḥ",
+        "gloss": "sovereign lord; adhipaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },

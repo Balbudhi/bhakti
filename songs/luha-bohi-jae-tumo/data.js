@@ -160,7 +160,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dēha thari uṭhē tuma pābana paraśē",
-    "english": "{0:The body}{1,2: starts trembling}{3: at your}{4: purifying}{5: touch}",
+    "english": "{0:The body}{2: starts }{1:trembling}{3: at your}{4: purifying}{5: touch}",
     "words": [
       {
         "roman": "dēha",

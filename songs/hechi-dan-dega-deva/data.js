@@ -154,7 +154,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "heci dān de gā devā",
-    "english": "{3,4:O God}, {2:give} {0:this alone} {1:as a gift}:",
+    "english": "{3:O }{4:God}, {2:give} {0:this alone} {1:as a gift}:",
     "words": [
       {
         "roman": "heci",

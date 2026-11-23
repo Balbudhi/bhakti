@@ -159,7 +159,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvana nirarthaka jāne na pāye",
-    "english": "that {0:life }{3,4:may not }{2:go }{1:in vain},",
+    "english": "that {0:life }{4:may }{3:not }{2:go }{1:in vain},",
     "words": [
       {
         "roman": "jīvana",
@@ -835,7 +835,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisī jagā do phira so na jāūṁ",
-    "english": "{1,2:Awaken me }{0:in such a way }that {5,6:I may not }{4:fall asleep }{3:again},",
+    "english": "{1:Awaken }{2:me }{0:in such a way }that {5,6:I may not }{4:fall asleep }{3:again},",
     "words": [
       {
         "roman": "aisī",

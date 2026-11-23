@@ -1778,7 +1778,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dās terī śaraṇ mẽ āyā hai",
-    "english": "{0:This servant}{4,5: has come}{3: into}{1: your}{2: shelter.}",
+    "english": "{0:This servant}{5: has }{4:come}{3: into}{1: your}{2: shelter.}",
     "words": [
       {
         "roman": "Dās",

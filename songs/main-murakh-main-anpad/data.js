@@ -752,7 +752,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Māṭī kā putlā hai mānav",
-    "english": "{4:A human being}{3: is}{2: a puppet}{0,1: of clay.}",
+    "english": "{4:A human being}{3: is}{2: a puppet}{1: of }{0:clay.}",
     "words": [
       {
         "roman": "Māṭī",

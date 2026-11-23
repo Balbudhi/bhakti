@@ -180,7 +180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śaṅkara suvana Bhavānī ke nandana",
-    "english": "{1:Son of }{0:Shankara}, {3,4:delight of }{2:Bhavani}",
+    "english": "{1:Son of }{0:Shankara}, {4:delight }{3:of }{2:Bhavani}",
     "words": [
       {
         "roman": "Śaṅkara",

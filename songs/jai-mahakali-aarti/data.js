@@ -246,7 +246,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jai Bolo Mā̃ Kālī Kī Jai Bolo Kāl Karālī Kī",
-    "english": "{0,1:Proclaim victory }{2:to Mother }{3,4:Kali; }{5,6:proclaim victory }{7,8,9:to the fearsome Kāl Karālī!}",
+    "english": "{1:Proclaim }{0:victory }{2:to Mother }{3,4:Kali; }{6:proclaim }{5:victory }{7,8,9:to the fearsome Kāl Karālī!}",
     "words": [
       {
         "roman": "Jai",
@@ -371,7 +371,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Caṇḍanāśinī Tū Hī Pracaṇḍā Tū Hī Durgā Tū Cāmuṇḍā",
-    "english": "{0:Destroyer of Chanda, }{1,2:You alone }{3:are the fierce one, }{4,5:You alone }{6:are Durga, }{7:You }{8:are Chamunda.}",
+    "english": "{0:Destroyer of Chanda, }{1:You }{2:alone }{3:are the fierce one, }{4:You }{5:alone }{6:are Durga, }{7:You }{8:are Chamunda.}",
     "words": [
       {
         "roman": "Caṇḍanāśinī",
@@ -502,7 +502,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū Hī Girijā Tū Hī Gaurī Aur Tū Hī Hai Kuṣmāṇḍā",
-    "english": "{0,1:You alone }{2:are Girija, }{3,4:You alone }{5:are Gauri, }{6:and }{7,8:You alone }{9:are }{10:Kushmanda.}",
+    "english": "{0:You }{1:alone }{2:are Girija, }{3:You }{4:alone }{5:are Gauri, }{6:and }{7:You }{8:alone }{9:are }{10:Kushmanda.}",
     "words": [
       {
         "roman": "Tū",

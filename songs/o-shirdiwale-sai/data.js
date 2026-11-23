@@ -429,7 +429,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere darbār mẽ āye na jāye hāth vo xālī",
-    "english": "{3:Whoever comes}{0,1,2: into your court,}{7: that one}{4: does not}{5: depart}{6,8: empty-handed.}",
+    "english": "{3:Whoever comes}{2: into }{0:your }{1:court,}{7: that one}{4: does not}{5: depart}{6,8: empty-handed.}",
     "words": [
       {
         "roman": "Tere",
@@ -649,7 +649,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terā darbār jannat kā",
-    "english": "{0,1:Your court}{2,3: of paradise...}",
+    "english": "{0:Your }{1:court}{3: of }{2:paradise...}",
     "words": [
       {
         "roman": "Terā",
@@ -708,7 +708,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terā darbār jannat kā",
-    "english": "{0,1:Your court}{2,3: of paradise...}",
+    "english": "{0:Your }{1:court}{3: of }{2:paradise...}",
     "words": [
       {
         "roman": "Terā",
@@ -797,7 +797,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ā... terā darbār jannat kā khulā darvāzā hai Sāī̃",
-    "english": "{0:Ah...}{1,2: your court}{7: is}{5: the open}{6: door}{3,4: of paradise,}{8: O Sai!}",
+    "english": "{0:Ah...}{1: your }{2:court}{7: is}{5: the open}{6: door}{4: of }{3:paradise,}{8: O Sai!}",
     "words": [
       {
         "roman": "Ā...",
@@ -981,7 +981,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere caraṇõ mẽ jhuk jāye use tū thām letā hai",
-    "english": "{3,4:Whoever bows}{0,1,2: at your feet,}{6: you}{7,8,9: take hold of}{5: them;}",
+    "english": "{3,4:Whoever bows}{2: at }{0:your }{1:feet,}{6: you}{7,8,9: take hold of}{5: them;}",
     "words": [
       {
         "roman": "Tere",
@@ -1195,7 +1195,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tujh par nāz hai",
-    "english": "{2,3:There is pride}{0,1: in you...}",
+    "english": "{2,3:There is pride}{1: in }{0:you...}",
     "words": [
       {
         "roman": "Tujh",
@@ -1254,7 +1254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tujh par nāz hai",
-    "english": "{2,3:There is pride}{0,1: in you...}",
+    "english": "{2,3:There is pride}{1: in }{0:you...}",
     "words": [
       {
         "roman": "Tujh",
@@ -1355,7 +1355,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ā... tujh par nāz hai sūraj ko aur cā̃d ko Sāī̃",
-    "english": "{0:Ah...}{5,6: the sun}{7: and}{8,9: the moon}{3,4: take pride}{1,2: in you,}{10: O Sai!}",
+    "english": "{0:Ah...}{5,6: the sun}{7: and}{8,9: the moon}{3,4: take pride}{2: in }{1:you,}{10: O Sai!}",
     "words": [
       {
         "roman": "Ā...",
@@ -1575,7 +1575,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū hai nūr-e-xudā Sāī̃ xudā kī tujh pe rahmat hai",
-    "english": "{0:You}{1: are}{2: the light of God,}{3: O Sai;}{4,5: God's}{8: mercy}{9: is}{6,7: upon you.}",
+    "english": "{0:You}{1: are}{2: the light of God,}{3: O Sai;}{4,5: God's}{8: mercy}{9: is}{7: upon }{6:you.}",
     "words": [
       {
         "roman": "Tū",
@@ -1694,7 +1694,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamārā rahnumā hai tū tere ham peś-e-xidmat haĩ",
-    "english": "{3:You}{2: are}{0,1: our guide,}{5: and we}{7: are}{4,6: at your service.}",
+    "english": "{3:You}{2: are}{0: our }{1:guide,}{5: and we}{7: are}{4,6: at your service.}",
     "words": [
       {
         "roman": "Hamārā",
@@ -1783,7 +1783,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terī dhūnī mẽ amṛt hai",
-    "english": "{0,2:In your}{1: sacred fire}{4: is}{3: nectar...}",
+    "english": "{2:In }{0:your}{1: sacred fire}{4: is}{3: nectar...}",
     "words": [
       {
         "roman": "Terī",
@@ -1854,7 +1854,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Terī dhūnī mẽ amṛt hai",
-    "english": "{0,2:In your}{1: sacred fire}{4: is}{3: nectar...}",
+    "english": "{2:In }{0:your}{1: sacred fire}{4: is}{3: nectar...}",
     "words": [
       {
         "roman": "Terī",
@@ -1961,7 +1961,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ā... terī dhūnī mẽ amṛt hai zarā pī letā hū̃ Sāī̃",
-    "english": "{0:Ah...}{1,3: in your}{2: sacred fire}{5: is}{4: nectar;}{7,8,9: I drink}{6: a little,}{10: O Sai!}",
+    "english": "{0:Ah...}{3: in }{1:your}{2: sacred fire}{5: is}{4: nectar;}{7,8,9: I drink}{6: a little,}{10: O Sai!}",
     "words": [
       {
         "roman": "Ā...",
@@ -2371,7 +2371,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere dīdār kā Sāī̃",
-    "english": "{0,1,2:Of the sight of you,}{3: O Sai...}",
+    "english": "{2:Of }{1:the sight }{0:of you,}{3: O Sai...}",
     "words": [
       {
         "roman": "Tere",
@@ -2430,7 +2430,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere dīdār kā ānand",
-    "english": "{3:The bliss}{0,1,2: of the sight of you...}",
+    "english": "{3:The bliss}{2: of}{1: the sight}{0: of you...}",
     "words": [
       {
         "roman": "Tere",

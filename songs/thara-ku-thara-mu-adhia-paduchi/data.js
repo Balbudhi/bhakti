@@ -38,7 +38,7 @@ window.SONG_LINES = {
     "source": "ଥରକୁ ଥର ମୁଁ ଅଧିଆ ପଡ଼ୁଛି ଗୁରୁବାରେ କୃପା କର",
     "sourceLanguage": "",
     "roman": "Tharaku thara muṃ adhiā paḍuchi gurubārē kṛpā kara",
-    "english": "{0,1:Time and again }{2:I }{3,4:lie prostrate in vigil; }{5:on Thursday, }{6,7:bestow grace.}",
+    "english": "{0,1:Time and again }{2:I }{3,4:lie prostrate in vigil; }{5:on Thursday, }{7:bestow }{6:grace.}",
     "words": [
       {
         "roman": "Tharaku",
@@ -145,7 +145,7 @@ window.SONG_LINES = {
     "source": "ଗୋଳାଗି ଲାଗେ ମୁଁ ଚରଣେ ତୁମରି ସାଇ ମୋତେ ରକ୍ଷା କର",
     "sourceLanguage": "",
     "roman": "Gōḷāgi lāgē muṃ caraṇē tumari sāi mōtē rakṣā kara",
-    "english": "{2:I }{0,1:fall prostrating }{4:at your very }{3:feet; }{5:O Sai, }{7,8:protect }{6:me.}",
+    "english": "{2:I }{1:fall }{0:prostrating }{4:at your very }{3:feet; }{5:O Sai, }{7,8:protect }{6:me.}",
     "words": [
       {
         "roman": "Gōḷāgi",
@@ -264,7 +264,7 @@ window.SONG_LINES = {
     "source": "କେତେ ଜନମର ପାପ ଯେ ମୋହର ଏବେ ବି ସରିନି ପରା",
     "sourceLanguage": "",
     "roman": "Kētē janamara pāpa jē mōhara ēbē bi sarini parā",
-    "english": "{2,3:The sins }{0:of so many }{1:births }{4:of mine }{8:have surely }{7:not ended }{5,6:even now.}",
+    "english": "{2,3:The sins }{0:of so many }{1:births }{4:of mine }{8:have surely }{7:not ended }{6:even }{5:now.}",
     "words": [
       {
         "roman": "Kētē",
@@ -633,7 +633,7 @@ window.SONG_LINES = {
     "source": "ପରଶ ତୁମର ପାଉଥିବି ସଦା ତୁମ ସାଥେ ଥିବି ରହି",
     "sourceLanguage": "",
     "roman": "Paraŕa tumara pāuthibi sadā tuma sāthē thibi rahi",
-    "english": "{2:I will continually receive }{1:your }{0:touch; }{3:I will always }{6,7:remain }{4,5:with you.}",
+    "english": "{2:I will continually receive }{1:your }{0:touch; }{3:I will always }{6,7:remain }{5:with }{4:you.}",
     "words": [
       {
         "roman": "Paraŕa",
@@ -1049,7 +1049,7 @@ window.SONG_LINES = {
     "source": "ପୋଡ଼ା କପାଳ ମୋ ହୀନ ଜନମର ତୁମ କୃପା ନ ମିଳିଲା",
     "sourceLanguage": "",
     "roman": "Pōḍā kapāḷa mō hīna janamara tuma kṛpā na miḷilā",
-    "english": "{5,6:your grace }{7,8:did not reach }{0:the ill-fated }{1:brow }{2:of my }{3:lowly }{4:birth.}",
+    "english": "{5:your }{6:grace }{7,8:did not reach }{0:the ill-fated }{1:brow }{2:of my }{3:lowly }{4:birth.}",
     "words": [
       {
         "roman": "Pōḍā",
@@ -1168,7 +1168,7 @@ window.SONG_LINES = {
     "source": "ତୁମରି ସମାଧି ନିକଟେ ଗୁରୁ ହେ ସଭିଏଁ କରନ୍ତି ଆଳି",
     "sourceLanguage": "",
     "roman": "Tumari samādhi nikaṭē guru hē sabhiēṃ karanti āḷi",
-    "english": "{2:Near }{0:your very }{1:samādhi, }{3,4:O Guru, }{5:everyone }{6:makes }{7:their heartfelt plea;}",
+    "english": "{2:Near }{0:your very }{1:samādhi, }{4:O }{3:Guru, }{5:everyone }{6:makes }{7:their heartfelt plea;}",
     "words": [
       {
         "roman": "Tumari",

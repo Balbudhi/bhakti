@@ -461,7 +461,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "haiṁ rām ramayyā vo, haiṁ kṛṣṇa kanhaiyā vo",
-    "english": "{3:He} {0:is} {1,2:Rām Ramaiyā;} {7:he} {4:is} {5,6:Kṛṣṇa Kanhaiyā.}",
+    "english": "{3:He} {0:is} {1,2:Rām Ramaiyā;} {7:he} {4:is} {5:Kṛṣṇa }{6:Kanhaiyā.}",
     "words": [
       {
         "roman": "haiṁ",
@@ -733,7 +733,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho prem se pukār",
-    "english": "{0:Oh,} {3:call out} {1,2:with love}",
+    "english": "{0:Oh,} {3:call out} {2:with }{1:love}",
     "words": [
       {
         "roman": "ho",
@@ -786,7 +786,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem se pukār",
-    "english": "{2:Call out} {0,1:with love}",
+    "english": "{2:Call out} {1:with }{0:love}",
     "words": [
       {
         "roman": "prem",
@@ -857,7 +857,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prem se pukār tere pāp ko jalāeṅge",
-    "english": "{2:Call out} {0,1:with love,} {6:he will burn} {3:your} {4,5:sins}",
+    "english": "{2:Call out} {1:with }{0:love,} {6:he will burn} {3:your} {4,5:sins}",
     "words": [
       {
         "roman": "prem",
@@ -946,7 +946,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṛpā kī chāyā meṁ baiṭhāeṅge tujhko",
-    "english": "{4:He will seat} {5:you} {2,3:in the shade} {0,1:of grace}",
+    "english": "{4:He will seat} {5:you} {2,3:in the shade} {1:of }{0:grace}",
     "words": [
       {
         "roman": "kṛpā",
@@ -1532,7 +1532,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kiyā guṇgān hai",
-    "english": "{0,2:have sung} {1:the praises}",
+    "english": "{2:have }{0:sung} {1:the praises}",
     "words": [
       {
         "roman": "kiyā",
@@ -1609,7 +1609,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ jī ke carṇoṁ meṁ jhuktī sakal sṛṣṭi",
-    "english": "{2,3,4:At the feet} {0,1:of revered Sai} {5:bows} {6,7:all creation,}",
+    "english": "{2,3,4:At the feet} {0,1:of revered Sai} {5:bows} {6:all }{7:creation,}",
     "words": [
       {
         "roman": "sāīṁ",

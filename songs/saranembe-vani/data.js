@@ -234,14 +234,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪ್ರಾರ್ಥಿಪೆನಮ್ಮ",
+        "text": "ಪ್ರಾರ್ಥಿಪೆ",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ನಮ್ಮ",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "hariya tōrisendu prārthipenamma",
-    "english": "{2:I pray}, {2:Mother}, {1:“Show me} {0:Hari}{1:.”}",
+    "english": "{2:I pray}, {3:Mother}, {1:“Show me} {0:Hari}{1:.”}",
     "words": [
       {
         "roman": "hariya",
@@ -252,8 +258,12 @@ window.SONG_LINES = {
         "gloss": "saying show me; asking to be shown"
       },
       {
-        "roman": "prārthipenamma",
-        "gloss": "I pray, Mother"
+        "roman": "prārthipen",
+        "gloss": "I pray; prārthipenu"
+      },
+      {
+        "roman": "amma",
+        "gloss": "O Mother; vocative"
       }
     ],
     "nameTable": false,

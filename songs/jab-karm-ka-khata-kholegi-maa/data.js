@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Jab Karmõ Kā Khātā Kholegī Mā̃",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Hindi",
     "Punjabi"
@@ -64,7 +64,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaikārā śerāvālī dā",
-    "english": "{0,1,2:Raise a victory cry for the lion-riding Mother!}",
+    "english": "{0:Raise a victory cry }{2:for }{1:the lion-riding Mother!}",
     "words": [
       {
         "roman": "jaikārā",
@@ -121,7 +121,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bol sāñce darabār kī jay",
-    "english": "{0,1,2,3,4:Call out: victory to the true court!}",
+    "english": "{0:Call out: }{4:victory }{3:to }{1:the true }{2:court!}",
     "words": [
       {
         "roman": "bol",
@@ -188,7 +188,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaikārā merī vaiṣṇo maiyā dā",
-    "english": "{0,1,2,3,4:Raise a victory cry for my Mother Vaiṣṇo Devī!}",
+    "english": "{0:Raise a victory cry }{4:for }{1:my }{3:Mother }{2:Vaiṣṇo Devī!}",
     "words": [
       {
         "roman": "jaikārā",
@@ -285,7 +285,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jab karmõ kā khātā kholegī mā̃, kyā tū bol sunāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:When Mother opens the ledger of your deeds, what words will you speak?}",
+    "english": "{0:When }{5:Mother }{4:opens }{3:the ledger }{2:of }{1:your deeds, }{6:what }{8:words }{7,9:will you speak?}",
     "words": [
       {
         "roman": "jab",
@@ -401,7 +401,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāpõ kī gaṭhaṛī lekar mā̃ ke, kaise sammukh jāegā",
-    "english": "{0,1,2,3,4,5,6,7,8:Carrying a bundle of sins, how will you go before Mother?}",
+    "english": "{3:Carrying }{2:a bundle }{1:of }{0:sins, }{6:how }{8:will you go }{7:before }{4,5:Mother?}",
     "words": [
       {
         "roman": "pāpõ",
@@ -518,7 +518,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kyā tū lekar āyā thā aur kyā tū lekar jāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:What did you bring when you came, and what will you take when you go?}",
+    "english": "{0:What }{4:did }{1:you }{2:bring }{3:when you came, }{5:and }{6:what }{9:will }{7:you }{8:take }{9:when you go?}",
     "words": [
       {
         "roman": "kyā",
@@ -553,17 +553,17 @@ window.SONG_LINES = {
       {
         "roman": "kyā",
         "gloss": "what",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 0
       },
       {
         "roman": "tū",
         "gloss": "you [singular intimate address]",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 1
       },
       {
         "roman": "lekar",
         "gloss": "carrying; having taken",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 2
       },
       {
         "roman": "jāegā",
@@ -646,7 +646,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho kyā tū lekar āyā thā aur kyā tū lekar jāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:O, what did you bring when you came, and what will you take when you go?}",
+    "english": "{0:O, }{1:what }{5:did }{2:you }{3:bring }{4:when you came, }{6:and }{7:what }{10:will }{8:you }{9:take }{10:when you go?}",
     "words": [
       {
         "roman": "ho",
@@ -686,17 +686,17 @@ window.SONG_LINES = {
       {
         "roman": "kyā",
         "gloss": "what",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 1
       },
       {
         "roman": "tū",
         "gloss": "you [singular intimate address]",
-        "sourceTokenIndex": 8
+        "sourceTokenIndex": 2
       },
       {
         "roman": "lekar",
         "gloss": "carrying; having taken",
-        "sourceTokenIndex": 9
+        "sourceTokenIndex": 3
       },
       {
         "roman": "jāegā",
@@ -767,7 +767,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisakā tujhe abhimān hai vo yahī̃ dharā rah jāegā",
-    "english": "{0,1,2,3,4,5,6,7,8:Whatever you are proud of will remain lying right here.}",
+    "english": "{0,4:Whatever }{1:you }{3:are }{2:proud of }{8:will }{7:remain }{6:lying }{5:right here.}",
     "words": [
       {
         "roman": "jisakā",
@@ -890,7 +890,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tūne kyā kyā karm kiye haĩ bande, kaise mā̃ ko batāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:All the deeds you have done, O mortal—how will you tell Mother?}",
+    "english": "{1,2:All the }{3:deeds }{0:you }{5:have }{4:done, }{6:O mortal—}{7:how }{10:will you tell }{8,9:Mother?}",
     "words": [
       {
         "roman": "tūne",
@@ -905,7 +905,7 @@ window.SONG_LINES = {
       {
         "roman": "kyā",
         "gloss": "what",
-        "sourceTokenIndex": 2
+        "sourceTokenIndex": 1
       },
       {
         "roman": "karm",
@@ -1029,7 +1029,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tūne kyā kyā karm kiye haĩ bande, kyā tū mā̃ ko batāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:All the deeds you have done, O mortal—what will you tell Mother?}",
+    "english": "{1,2:All the }{3:deeds }{0:you }{5:have }{4:done, }{6:O mortal—}{7:what }{11:will }{8:you }{11:tell }{9,10:Mother?}",
     "words": [
       {
         "roman": "tūne",
@@ -1044,7 +1044,7 @@ window.SONG_LINES = {
       {
         "roman": "kyā",
         "gloss": "what",
-        "sourceTokenIndex": 2
+        "sourceTokenIndex": 1
       },
       {
         "roman": "karm",
@@ -1069,7 +1069,7 @@ window.SONG_LINES = {
       {
         "roman": "kyā",
         "gloss": "what",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 1
       },
       {
         "roman": "tū",
@@ -1161,7 +1161,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "burā jo karne tū calā to acchā kahā̃ se pāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:If you set out to do evil, where will you find good?}",
+    "english": "{1,5:If }{3:you }{4:set out }{2:to do }{0:evil, }{7,8:where }{9:will you find }{6:good?}",
     "words": [
       {
         "roman": "burā",
@@ -1271,7 +1271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaisā boyā tūne bande vaisā hī phal pāegā",
-    "english": "{0,1,2,3,4,5,6,7:As you have sown, O mortal, just such fruit will you receive.}",
+    "english": "{0:As }{2:you }{1:have sown, }{3:O mortal, }{5:just }{4:such }{6:fruit }{7:will you receive.}",
     "words": [
       {
         "roman": "jaisā",
@@ -1383,7 +1383,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī bhalā kisī kā kiyā nahī̃ phir kaise mukti pāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:You have done no good for anyone; how, then, will you attain liberation?}",
+    "english": "{4:You have done }{0,5:no }{1:good }{3:for }{2:anyone; }{7:how, }{6:then, }{9:will you attain }{8:liberation?}",
     "words": [
       {
         "roman": "koī",
@@ -1511,7 +1511,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāṛī baṅgalā dhan aur daulat kuch pal ke tere sāthī haĩ",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:Your car, bungalow, wealth and riches are your companions for only a few moments.}",
+    "english": "{8:Your }{0:car, }{1:bungalow, }{2:wealth }{3:and }{4:riches }{10:are }{8:your }{9:companions }{7:for }{5:only a few }{6:moments.}",
     "words": [
       {
         "roman": "gāṛī",
@@ -1644,7 +1644,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "acche karam tū kar le bande, yahī to sacce sāthī haĩ",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:Do good deeds, O mortal; these indeed are your true companions.}",
+    "english": "{2,3,4:Do }{0:good }{1:deeds, }{5:O mortal; }{6:these }{7:indeed }{10:are your }{8:true }{9:companions.}",
     "words": [
       {
         "roman": "acche",
@@ -1783,7 +1783,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho acche karam tū kar le bande, yahī to sacce sāthī haĩ",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11:O, do good deeds, O mortal; these indeed are your true companions.}",
+    "english": "{0:O, }{3,4,5:do }{1:good }{2:deeds, }{6:O mortal; }{7:these }{8:indeed }{11:are your }{9:true }{10:companions.}",
     "words": [
       {
         "roman": "ho",
@@ -1915,7 +1915,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā puṇya hī sāth mẽ jāegā, svarg kī rāh dikhāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9:Your merit alone will go with you and show the road to heaven.}",
+    "english": "{0:Your }{1:merit }{2:alone }{5:will go }{4:with }{3:you }{9:and show }{8:the road }{7:to }{6:heaven.}",
     "words": [
       {
         "roman": "terā",
@@ -2043,7 +2043,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho terā puṇya hī sāth mẽ jāegā, svarg kī rāh dikhāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:O, your merit alone will go with you and show the road to heaven.}",
+    "english": "{0:O, }{1:your }{2:merit }{3:alone }{6:will go }{5:with }{4:you }{10:and show }{9:the road }{8:to }{7:heaven.}",
     "words": [
       {
         "roman": "ho",
@@ -2176,7 +2176,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃ kī śaraṇ mẽ ājā bande, saccā mā̃ kā dvār hai",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10:Come into Mother’s refuge, O mortal; Mother’s door is true.}",
+    "english": "{4:Come }{3:into }{0,1:Mother’s }{2:refuge, }{5:O mortal; }{7,8:Mother’s }{9:door }{10:is }{6:true.}",
     "words": [
       {
         "roman": "mā̃",
@@ -2216,7 +2216,7 @@ window.SONG_LINES = {
       {
         "roman": "mā̃",
         "gloss": "Mother; here the Goddess",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 0
       },
       {
         "roman": "kā",
@@ -2297,7 +2297,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "matlab kī ye duniyā sārī, jhūṭhā ye saṃsār hai",
-    "english": "{0,1,2,3,4,5,6,7,8:This whole world serves its own interests; this world is false.}",
+    "english": "{2:This }{4:whole }{3:world }{0,1:serves its own interests; }{6:this }{7:world }{8:is }{5:false.}",
     "words": [
       {
         "roman": "matlab",
@@ -2332,7 +2332,7 @@ window.SONG_LINES = {
       {
         "roman": "ye",
         "gloss": "this",
-        "sourceTokenIndex": 6
+        "sourceTokenIndex": 2
       },
       {
         "roman": "saṃsār",
@@ -2414,7 +2414,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho matlab kī ye duniyā sārī, jhūṭhā ye saṃsār hai",
-    "english": "{0,1,2,3,4,5,6,7,8,9:O, this whole world serves its own interests; this world is false.}",
+    "english": "{0:O, }{3:this }{5:whole }{4:world }{1,2:serves its own interests; }{7:this }{8:world }{9:is }{6:false.}",
     "words": [
       {
         "roman": "ho",
@@ -2454,7 +2454,7 @@ window.SONG_LINES = {
       {
         "roman": "ye",
         "gloss": "this",
-        "sourceTokenIndex": 7
+        "sourceTokenIndex": 3
       },
       {
         "roman": "saṃsār",
@@ -2554,7 +2554,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃ kī jyot ko man mẽ jagā le bande, jīvan vyarth nā jāegā",
-    "english": "{0,1,2,3,4,5,6,7,8,9,10,11,12:Awaken Mother’s flame within your mind, O mortal; your life will not go to waste.}",
+    "english": "{6,7:Awaken }{0,1:Mother’s }{2,3:flame }{5:within }{4:your mind, }{8:O mortal; }{9:your life }{11,12:will not go }{10:to waste.}",
     "words": [
       {
         "roman": "mā̃",
@@ -2661,7 +2661,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho kyā tū bol sunāegā",
-    "english": "{0,1,2,3,4:O, what words will you speak?}",
+    "english": "{0:O, }{1:what }{3:words }{2,4:will you speak?}",
     "words": [
       {
         "roman": "ho",
@@ -2722,7 +2722,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kyā tū bol sunāegā",
-    "english": "{0,1,2,3:What words will you speak?}",
+    "english": "{0:What }{2:words }{1,3:will you speak?}",
     "words": [
       {
         "roman": "kyā",
@@ -2790,7 +2790,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaikārā merī jyotā̃ vālī maiyā dā",
-    "english": "{0,1,2,3,4,5:Raise a victory cry for my Mother of the sacred flames!}",
+    "english": "{0:Raise a victory cry }{5:for }{1:my }{4:Mother }{3:of the }{2:sacred flames!}",
     "words": [
       {
         "roman": "jaikārā",

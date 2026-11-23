@@ -34,7 +34,7 @@ window.SONG_LINES = {
   "refrain_a": {
     "source": "ईश्वर से कुछ माँगना हो तो सन्त कृपा ही माँगिये।",
     "roman": "Īśvar se kuch māṅgnā ho to, sant kṛpā hī māṅgiye",
-    "english": "{3:If you wish to ask}{2: for something}{0,1: from God,}{4: then}{8: ask}{7: only}{6: for the grace}{5: of saints.}",
+    "english": "{3:If you wish to ask}{2: for something}{1: from }{0:God,}{4: then}{8: ask}{7: only}{6: for the grace}{5: of saints.}",
     "words": [
       {
         "roman": "Īśvar",
@@ -139,7 +139,7 @@ window.SONG_LINES = {
   "refrain_b": {
     "source": "ईश्वर से कुछ पूछना हो तो सद्गुरु का पता पूछिये।",
     "roman": "Īśvar se kuch pūchnā ho to, sadguru kā patā pūchiye",
-    "english": "{2,3:If you wish to ask something}{0,1: of God,}{4: then}{8: ask for}{7: the whereabouts}{5,6: of the True Guru.}",
+    "english": "{2,3:If you wish to ask something}{1: of }{0:God,}{4: then}{8: ask for}{7: the whereabouts}{5,6: of the True Guru.}",
     "words": [
       {
         "roman": "Īśvar",
@@ -487,7 +487,7 @@ window.SONG_LINES = {
   "v2a": {
     "source": "पूजा पाठ में मन न लगे तो सन्त वचन ही सुनिये।",
     "roman": "Pūjā-pāṭh meṃ man na lage to, sant-vachan hī suniye",
-    "english": "{3:If the mind}{4: does not}{5: engage}{0,2: in worship}{1: and recitation,}{6: then}{10: listen}{9: only}{8: to the words}{7: of saints.}",
+    "english": "{3:If the mind}{4: does not}{5: engage}{2: in }{0:worship}{1: and recitation,}{6: then}{10: listen}{9: only}{8: to the words}{7: of saints.}",
     "words": [
       {
         "roman": "Pūjā",
@@ -606,7 +606,7 @@ window.SONG_LINES = {
   "v2b": {
     "source": "हरि पूजा में मन न लगे तो सद्गुरु की पूजा कीजिये।",
     "roman": "Hari-pūjā meṃ man na lage to, sadguru kī pūjā kījiye",
-    "english": "{3:If the mind}{4: does not}{5: engage}{0,2: in Hari’s}{1: worship,}{6: then}{9,10: offer worship}{7,8: to the True Guru.}",
+    "english": "{3:If the mind}{4: does not}{5: engage}{0,2: in Hari’s}{1: worship,}{6: then}{10: offer }{9:worship}{7,8: to the True Guru.}",
     "words": [
       {
         "roman": "Hari",
@@ -725,7 +725,7 @@ window.SONG_LINES = {
   "v2c": {
     "source": "सद्गुरु की पूजा कीजिये।",
     "roman": "Sadguru kī pūjā kījiye",
-    "english": "{2,3:Offer worship}{0,1: to the True Guru.}",
+    "english": "{3:Offer }{2:worship}{0,1: to the True Guru.}",
     "words": [
       {
         "roman": "Sadguru",
@@ -873,7 +873,7 @@ window.SONG_LINES = {
   "v3b": {
     "source": "जन्म जन्म में अपने चरणों में इस सन्तान को दे दो स्थान।",
     "roman": "Janam janam meṃ apne charaṇoṃ meṃ is santān ko de do sthān",
-    "english": "{0,2:In birth}{1: after birth,}{9: grant}{6,7,8: this child}{10: a place}{3,5: at Your}{4: feet.}",
+    "english": "{2:In }{0:birth}{1: after birth,}{9: grant}{6,7,8: this child}{10: a place}{5: at }{3:Your}{4: feet.}",
     "words": [
       {
         "roman": "Janam",

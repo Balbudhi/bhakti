@@ -151,7 +151,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere dvār pe calkar āyā śiraḍī vālā sāīṁ",
-    "english": "{7:Sai }{5,6:of Shirdi }{4:has come }{3:walking }{0,1,2:to your doorstep}",
+    "english": "{7:Sai }{6:of }{5:Shirdi }{4:has come }{3:walking }{0,1,2:to your doorstep}",
     "words": [
       {
         "roman": "tere",

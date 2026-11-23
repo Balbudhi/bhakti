@@ -1640,7 +1640,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tālī sabhī hāth ūpar karake lagāie, ḍhīlī tālī nahīṁ. Tālī kī āvāz māṁ ke darabār tak pahuñce. Ek bār sabhī bhaktajan apne-apne hāth ūpar uṭhākar sabhī māṁ ke caraṇoṁ meṁ apnī-apnī hāzirī dījie. Yeh māṁ ke darabār kī hāzirī hai. Hāth ūpar karne se māṁ ke darabār kī hāzirī hotī hai, to hāth sabhī ūpar. Māṁ bhagvatī āp bhaktoṁ kī hāzirī svīkār kareṁ, āpkī jholiyāṁ bhareṁ, āpkī murādeṁ pūrī kareṁ, āpkā jīvan k͟huśiyoṁ se bhar de. Bolie sacce...",
-    "english": "{1:Everyone }{0,5:clap }{2:with hands }{3,4:raised up, }{8:no }{6:half-hearted }{7:clapping. }{11:May the sound }{9,10:of clapping }{16:reach }{12,13:the Mother's }{14,15:court. }{17,18:Once, }{19:all }{20:devotees, }{24:raising }{21:your respective }{22:hands }{23:up, }{25:all }{32:mark }{30:your respective }{31:attendance }{26,27,29:at the Mother's }{28:feet. }{33:This }{39:is }{38:attendance }{34,35,37:at the Mother's }{36:court. }{43:By }{42:raising }{40,41:hands, }{48:attendance }{44,45,47:at the Mother's }{46:court }{49,50:is marked, }{51:so }{52:hands }{54:up, }{53:everyone. }{55:May Mother }{56:Bhagwati }{61,62:accept }{60:the attendance }{57,59:of you }{58:devotees, }{65:fill }{63:your }{64:laps, }{68,69:fulfill }{66:your }{67:wishes, }{74,75:and fill }{70:your }{71:life }{72,73:with joys. }{76:Proclaim: }{77:True...}",
+    "english": "{1:Everyone }{0,5:clap }{2:with hands }{4:raised }{3:up, }{8:no }{6:half-hearted }{7:clapping. }{11:May the sound }{10:of }{9:clapping }{16:reach }{12,13:the Mother's }{14,15:court. }{17,18:Once, }{19:all }{20:devotees, }{24:raising }{21:your respective }{22:hands }{23:up, }{25:all }{32:mark }{30:your respective }{31:attendance }{26,27,29:at the Mother's }{28:feet. }{33:This }{39:is }{38:attendance }{34,35,37:at the Mother's }{36:court. }{43:By }{42:raising }{40,41:hands, }{48:attendance }{44,45,47:at the Mother's }{46:court }{50:is }{49:marked, }{51:so }{52:hands }{54:up, }{53:everyone. }{55:May Mother }{56:Bhagwati }{61,62:accept }{60:the attendance }{59:of }{57:you }{58:devotees, }{65:fill }{63:your }{64:laps, }{68,69:fulfill }{66:your }{67:wishes, }{74,75:and fill }{70:your }{71:life }{73:with }{72:joys. }{76:Proclaim: }{77:True...}",
     "words": [
       {
         "roman": "Tālī",
@@ -2321,7 +2321,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yeh itne riśte tum saṅg joṛe, riśtā nibhānā zarūr hogā",
-    "english": "{5:I have tied }{0:these }{1:many }{2:bonds }{4:with }{3:You; }{6:the bond }{8,9:must surely }{7:be honored.}",
+    "english": "{5:I have tied }{0:these }{1:many }{2:bonds }{4:with }{3:You; }{6:the bond }{9:must }{8:surely }{7:be honored.}",
     "words": [
       {
         "roman": "Yeh",
@@ -2446,7 +2446,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Itne riśte tum saṅg joṛe, riśtā nibhānā zarūr hogā",
-    "english": "{0:So many }{1:bonds }{4:I have tied }{3:with }{2:You; }{5:the bond }{7,8:must surely }{6:be honored.}",
+    "english": "{0:So many }{1:bonds }{4:I have tied }{3:with }{2:You; }{5:the bond }{8:must }{7:surely }{6:be honored.}",
     "words": [
       {
         "roman": "Itne",
@@ -3712,7 +3712,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho jab se lagan māṁ lagī hai terī, bhakti meṁ kuch to zarūr hogā",
-    "english": "{0:Oh, }{1,2:ever since }{3:longing }{7:for You }{5,6:has taken hold, }{4:Mother, }{12,13:there must surely }{10,11:be something }{8,9:in devotion.}",
+    "english": "{0:Oh, }{1,2:ever since }{3:longing }{7:for You }{5,6:has taken hold, }{4:Mother, }{12,13:there must surely }{10,11:be something }{9:in }{8:devotion.}",
     "words": [
       {
         "roman": "Ho",
@@ -3885,7 +3885,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jab se lagan māṁ lagī hai terī, bhakti meṁ kuch to zarūr hogā",
-    "english": "{0,1:Ever since }{2:longing }{6:for You }{4,5:has taken hold, }{3:Mother, }{11,12:there must surely }{9,10:be something }{7,8:in devotion.}",
+    "english": "{0,1:Ever since }{2:longing }{6:for You }{4,5:has taken hold, }{3:Mother, }{11,12:there must surely }{9,10:be something }{8:in }{7:devotion.}",
     "words": [
       {
         "roman": "Jab",

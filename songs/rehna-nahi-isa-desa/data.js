@@ -500,14 +500,20 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "झाड़ो-झींखर",
+        "text": "झाड़ो-",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "झींखर",
+        "wordIndices": [
+          3
         ]
       }
     ],
     "roman": "ye sansāra jhāṛō-jhīṅkhara",
-    "english": "{0:This }{1:world }is {2:a thicket of thorny bushes}",
+    "english": "{0:This }{1:world }is {2:a thicket }{3:of thorny bushes}",
     "words": [
       {
         "roman": "ye",
@@ -522,8 +528,14 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "jhāṛō-jhīṅkhara",
-        "gloss": "thicket of thorny bushes and dry scrub",
+        "roman": "jhāṛō-",
+        "gloss": "thicket; bushes",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "jhīṅkhara",
+        "gloss": "thorny, dry scrub",
         "concept_key": "",
         "preserve_in_english": false
       }

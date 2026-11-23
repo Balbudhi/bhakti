@@ -308,7 +308,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āvai sabhaya sarana taki mōhī.",
-    "english": "{0:and comes }{1:fearful, }{2,3:seeking refuge }{4:in me,}",
+    "english": "{0:and comes }{1:fearful, }{3:seeking }{2:refuge }{4:in me,}",
     "words": [
       {
         "roman": "āvai",
@@ -7625,7 +7625,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "puni kahu khabari bibhīṣana kerī",
-    "english": "{0:Then }{1:relate }{2:the news }{3,4:of Vibhishana,}",
+    "english": "{0:Then }{1:relate }{2:the news }{4:of }{3:Vibhishana,}",
     "words": [
       {
         "roman": "puni",
@@ -8051,7 +8051,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jinha ke jīvana kara rakhavārā",
-    "english": "{4:the guardian }{0,1:of whose }{2,3:lives}",
+    "english": "{4:the guardian }{1:of }{0:whose }{2,3:lives}",
     "words": [
       {
         "roman": "jinha",
@@ -8437,7 +8437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kī bhai bheṃṭa ki phiri gae śravana sujasu suni mora | kahasi na ripu dala teja bala bahuta cakita cita tora ||",
-    "english": "{0,1,2:“Did an encounter take place, }{3,4,5:or did they turn back, }{6,8:having heard with their ears }{7,9:my renown? }{10,11:Why do you not speak }{12,13:of the enemy host’s }{14,15:prowess and might? }{18,19:Your mind }{16:is exceedingly }{17:bewildered.”}",
+    "english": "{0,1,2:“Did an encounter take place, }{3,4,5:or did they turn back, }{6,8:having heard with their ears }{9:my }{7:renown? }{10,11:Why do you not speak }{12,13:of the enemy host’s }{14,15:prowess and might? }{19:Your }{18:mind }{16:is exceedingly }{17:bewildered.”}",
     "words": [
       {
         "roman": "kī",
@@ -8933,7 +8933,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāvana dūta hamahi suni kānā | kapinha bām̐dhi dīnhe dukha nānā || śravana nāsikā kāṭaiṃ lāge | rāma sapatha dīnhe hama tyāge ||",
-    "english": "{3,4:Hearing with their ears }{0:that we were Ravana’s }{1:spies, }{5:the monkeys }{2,6:bound us }{7:and inflicted }{8,9:manifold torments. }{13:They began }{12:to cut off }{10:our ears }{11:and noses; }{15:when an oath }{14:of Rama }{16:was invoked, }{18:they released }{17:us.}",
+    "english": "{3,4:Hearing with their ears }{0:that we were Ravana’s }{1:spies, }{5:the monkeys }{6:bound }{2:us }{7:and inflicted }{8,9:manifold torments. }{13:They began }{12:to cut off }{10:our ears }{11:and noses; }{15:when an oath }{14:of Rama }{16:was invoked, }{18:they released }{17:us.}",
     "words": [
       {
         "roman": "rāvana",
@@ -9417,7 +9417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jehiṃ pura daheu hateu suta torā | sakala kapinha mahaṃ tehi balu thorā || amita nāma bhaṭa kaṭhina karālā | amita nāga bala bipula bisālā ||",
-    "english": "{0:He who }{2:burned }{1:the city }{3:and slew }{4,5:your son }{11:has the least }{10:strength }{6,8:among all }{7,9:the monkeys. }{12:There are countless }{13:renowned }{14:warriors, }{15:fierce }{16:and dreadful, }{17:possessing the boundless }{18,19:strength of elephants, }{20:vast }{21:and colossal.}",
+    "english": "{0:He who }{2:burned }{1:the city }{3:and slew }{5:your }{4:son }{11:has the least }{10:strength }{8:among }{6:all }{7,9:the monkeys. }{12:There are countless }{13:renowned }{14:warriors, }{15:fierce }{16:and dreadful, }{17:possessing the boundless }{18,19:strength of elephants, }{20:vast }{21:and colossal.}",
     "words": [
       {
         "roman": "jehiṃ",
@@ -9847,7 +9847,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "e kapi saba sugrīva samānā | inha sama koṭinha ganai ko nānā || rāma kṛpām̐ atulita bala tinhahīṃ | tṛna samāna trailokahi ganahīṃ ||",
-    "english": "{0,2:All these }{1:monkeys }{3,4:are equal to Sugriva; }{9:who }{8:can count }{10:the manifold }{7:crores }{5,6:like them? }{11:By Rama’s }{12:grace, }{13,15:unto them is incomparable }{14:strength; }{19:they deem }{18:the three worlds }{17:as equal to }{16:a blade of grass.}",
+    "english": "{2:All }{0:these }{1:monkeys }{3,4:are equal to Sugriva; }{9:who }{8:can count }{10:the manifold }{7:crores }{6:like }{5:them? }{11:By Rama’s }{12:grace, }{13,15:unto them is incomparable }{14:strength; }{19:they deem }{18:the three worlds }{17:as equal to }{16:a blade of grass.}",
     "words": [
       {
         "roman": "e",
@@ -10104,7 +10104,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asa maiṃ sunā śravana dasakaṃdhara | paduma aṭhāraha jūthapa baṃdara || nātha kaṭaka mahaṃ so kapi nāhīṃ | jo na tumhahi jītai rana māhīṃ ||",
-    "english": "{0,1:Thus have I }{2:heard }{3:with my ears, }{4:O Ten-necked One: }{6:there are eighteen }{5:padmas }{8:of monkey }{7:troop-leaders. }{9:O lord, }{10,11:in the army }{12,14:there is no such }{13:monkey }{15:who }{16:would not }{17,18:defeat you }{20:in }{19:battle!”}",
+    "english": "{0,1:Thus have I }{2:heard }{3:with my ears, }{4:O Ten-necked One: }{6:there are eighteen }{5:padmas }{8:of monkey }{7:troop-leaders. }{9:O lord, }{10,11:in the army }{12,14:there is no such }{13:monkey }{15:who }{16:would not }{18:defeat }{17:you }{20:in }{19:battle!”}",
     "words": [
       {
         "roman": "asa",
@@ -16114,7 +16114,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "inha kai nātha sahaja jaṛa karanī",
-    "english": "{3:the innate }{5:nature }{0,1:of these, }{2:O Lord, }{4:is inert.}",
+    "english": "{3:the innate }{5:nature }{1:of }{0:these, }{2:O Lord, }{4:is inert.}",
     "words": [
       {
         "roman": "inha",
@@ -18398,32 +18398,44 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "श्रीरघुपतिहि",
+        "text": "श्री",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "यह",
+        "text": "रघु",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "मत",
+        "text": "पतिहि",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "भायऊ",
+        "text": "यह",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "मत",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "भायऊ",
+        "wordIndices": [
+          9
         ]
       }
     ],
     "roman": "nija bhavana gavaneu sindhu śrīraghupatihi yaha mata bhāyaū",
-    "english": "{3:The ocean}{2: departed}{0: to his own}{1: abode,}{5: and this}{6: counsel}{7: pleased}{4: Śrī Rāma, guardian of the Raghu lineage.}",
+    "english": "{3:The ocean}{2: departed}{0: to his own}{1: abode,}{7: and this}{8: counsel}{9: pleased}{4: Śrī }{6:Rāma, guardian }{5:of the Raghu lineage.}",
     "words": [
       {
         "roman": "nija",
@@ -18450,8 +18462,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "śrīraghupatihi",
-        "gloss": "to Śrī Rāma, guardian of the Raghu lineage",
+        "roman": "śrī",
+        "gloss": "auspicious; honorific",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "raghu",
+        "gloss": "the Raghu lineage",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "patihi",
+        "gloss": "to the lord, guardian, i.e., Rāma: dative -hi",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19730,7 +19754,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śravaṇa kareṁ nita prema se",
-    "english": "{0,1:listens }{2:constantly }{3,4:with love,}",
+    "english": "{0,1:listens }{2:constantly }{4:with }{3:love,}",
     "words": [
       {
         "roman": "śravaṇa",

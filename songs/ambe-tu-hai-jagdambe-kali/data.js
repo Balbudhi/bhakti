@@ -1401,7 +1401,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nahī̃ mā̃gate dhana aura daulata nā cā̃dī nā sonā",
-    "english": "{1:We}{1: ask for}{0,2: neither wealth}{3,4: nor riches,}{5,6: neither silver}{7,8: nor gold.}",
+    "english": "{1:We}{1: ask for}{0,2: neither wealth}{3,4: nor riches,}{5,6: neither silver}{7: nor }{8:gold.}",
     "words": [
       {
         "roman": "nahī̃",
@@ -1491,7 +1491,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nā cā̃dī nā sonā",
-    "english": "{0,1:Neither silver}{2,3: nor gold.}",
+    "english": "{0:Neither }{1:silver}{2: nor }{3:gold.}",
     "words": [
       {
         "roman": "nā",
@@ -1593,7 +1593,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hama to mā̃gẽ mā̃ tere mana mẽ ika choṭā sā konā",
-    "english": "{1:All}{0: we}{2: ask,}{3: Mother,}{1: is}{7: one}{8,9: little}{10: corner}{4,5,6: in your heart.}",
+    "english": "{1:All}{0: we}{2: ask,}{3: Mother,}{1: is}{7: one}{8,9: little}{10: corner}{6: in }{4:your }{5:heart.}",
     "words": [
       {
         "roman": "hama",

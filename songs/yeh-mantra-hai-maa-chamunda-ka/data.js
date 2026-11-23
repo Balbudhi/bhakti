@@ -1,8 +1,8 @@
 window.SONG_META = {
   "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
   "subtitle": "Śakti",
-  "credit": "",
-  "pageCredit": "",
+  "credit": "Shri Mata Vaishno Devi Bhawan",
+  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
@@ -10,7 +10,7 @@ window.SONG_META = {
   "singer": "",
   "vocalist": "",
   "composer": "",
-  "ensemble": "",
+  "ensemble": "Shri Mata Vaishno Devi Bhawan",
   "languages": [
     "Hindi",
     "Punjabi",
@@ -121,7 +121,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bol sacce darabār kī jai",
-    "english": "{0:Call out: }{4:victory}{1,2,3: to the true court!}",
+    "english": "{0:Call out: }{4:victory}{3: to}{1,2: the true court!}",
     "words": [
       {
         "roman": "bol",
@@ -218,7 +218,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye mantra hai mā̃ cāmuṇḍā kā ismẽ mahāśakti samātī hai",
-    "english": "{0,2:This is }{3,4,5:Mother Cāmuṇḍā’s}{1: mantra; }{7:great power}{8,9: resides}{6: within it.}",
+    "english": "{0:This }{2:is }{3,4,5:Mother Cāmuṇḍā’s}{1: mantra; }{7:great power}{8,9: resides}{6: within it.}",
     "words": [
       {
         "roman": "ye",
@@ -352,7 +352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "har ek cintā har ek bādhā ise japne se miṭ jātī hai",
-    "english": "{0,1,2:Every worry, }{3,4,5:every obstacle }{9,10,11:is erased}{6,7,8: by chanting it.}",
+    "english": "{0,1,2:Every worry, }{3,4,5:every obstacle }{9,10,11:is erased}{8: by }{7:chanting }{6:it.}",
     "words": [
       {
         "roman": "har",
@@ -460,7 +460,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nahī̃ bāl bhī bā̃kā ho sakā",
-    "english": "{0:Not}{2: even}{1: a hair}{4,5: could be}{3: harmed.}",
+    "english": "{0:Not}{2: even}{1: a hair}{5: could }{4:be}{3: harmed.}",
     "words": [
       {
         "roman": "nahī̃",
@@ -574,7 +574,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nahī̃ bāl bhī bā̃kā ho sakā jo sumare ise man se sacce",
-    "english": "{0:Not}{2: even}{1: a hair}{6: of the one who}{7,8: remembers it}{9,10,11: with a sincere heart}{4,5: could be}{3: harmed.}",
+    "english": "{0:Not}{2: even}{1: a hair}{6: of the one who}{7: remembers }{8:it}{9,10,11: with a sincere heart}{5: could }{4:be}{3: harmed.}",
     "words": [
       {
         "roman": "nahī̃",

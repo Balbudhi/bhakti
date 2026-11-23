@@ -86,7 +86,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukha kā duḥkha kā melā lagā hai",
-    "english": "{4:A fair }{0,1:of joy }{2,3:and sorrow }{5,6:is underway}",
+    "english": "{4:A fair }{1:of }{0:joy }{2,3:and sorrow }{5,6:is underway}",
     "words": [
       {
         "roman": "sukha",
@@ -560,7 +560,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "duniyā ke tuma ġama ko bhulāo, jīvana kī tuma khuśiyāṁ pāo",
-    "english": "{5:Forget }{2,3,4:the sorrows }{0,1:of the world, }{10:receive }{8,9:the joys }{6,7:of life}",
+    "english": "{5:Forget }{2,3,4:the sorrows }{0,1:of the world, }{10:receive }{8,9:the joys }{7:of }{6:life}",
     "words": [
       {
         "roman": "duniyā",
@@ -727,7 +727,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ to kahatā āo śaraṇa meṁ, maiṁ to kahatā āo śaraṇa meṁ, ho sabakā kalyāṇa",
-    "english": "{0,1,2:I say, }{3,4,5:come into refuge, }{6,7,8:I say, }{9,10,11:come into refuge, }{12:may there be }{14:well-being }{13:for all}",
+    "english": "{0,1,2:I say, }{3:come }{5:into }{4:refuge, }{6,7,8:I say, }{9:come }{11:into }{10:refuge, }{12:may there be }{14:well-being }{13:for all}",
     "words": [
       {
         "roman": "maiṁ",
@@ -852,7 +852,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dvārakāmāī meṁ dhunī jalāī",
-    "english": "{0,1:In Dwarakamayi, }{3:he kindled }{2:the sacred fire}",
+    "english": "{1:In }{0:Dwarakamayi, }{3:he kindled }{2:the sacred fire}",
     "words": [
       {
         "roman": "dvārakāmāī",
@@ -917,7 +917,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "leṁḍī bāga meṁ bagiyā khilāī",
-    "english": "{0,1,2:In Lendi Garden, }{3:he made a garden }{4:bloom}",
+    "english": "{2:In }{0:Lendi }{1:Garden, }{3:he made a garden }{4:bloom}",
     "words": [
       {
         "roman": "leṁḍī",
@@ -1018,7 +1018,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mainā kī tūne jāna bacāī, pānī se tūne jyota jalāī",
-    "english": "{2:You }{4:saved }{0,1:Maina's }{3:life, }{5,6:with water }{7:you }{9:lit }{8:the flame}",
+    "english": "{2:You }{4:saved }{0,1:Maina's }{3:life, }{6:with }{5:water }{7:you }{9:lit }{8:the flame}",
     "words": [
       {
         "roman": "mainā",
@@ -1613,7 +1613,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "īśvara allāha eka haiṁ bande, īśvara allāha eka haiṁ bande, eka rahīma aura rāma",
-    "english": "{0:Ishvara }{1:and Allah }{2,3:are One, }{4:O mortal, }{5:Ishvara }{6:and Allah }{7,8:are One, }{9:O mortal, }{10:One }{11:are Rahim }{12:and }{13:Rama}",
+    "english": "{0:Ishvara }{1:and Allah }{3:are }{2:One, }{4:O mortal, }{5:Ishvara }{6:and Allah }{8:are }{7:One, }{9:O mortal, }{10:One }{11:are Rahim }{12:and }{13:Rama}",
     "words": [
       {
         "roman": "īśvara",

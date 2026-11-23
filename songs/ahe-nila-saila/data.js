@@ -37,7 +37,7 @@ window.SONG_LINES = {
   "l001": {
     "source": "ଆହେ ନୀଳ ଶଇଳ ପ୍ରବଳ ମତ୍ତ ବାରଣ",
     "roman": "āhe nīḷa śaiḷa prabaḷa matta bāraṇa",
-    "english": "{0:O} {1,2:Nīḷa Śaiḷa}, {3:mighty} {5:elephant} {4:in rut},",
+    "english": "{0:O} {2:Nīḷa }{1:Śaiḷa}, {3:mighty} {5:elephant} {4:in rut},",
     "words": [
       {
         "roman": "āhe",
@@ -167,7 +167,7 @@ window.SONG_LINES = {
   "l003": {
     "source": "ଆହେ ନୀଳ ଶଇଳ",
     "roman": "āhe nīḷa śaiḷa",
-    "english": "{0:O} {1,2:Nīḷa Śaiḷa}!",
+    "english": "{0:O} {2:Nīḷa }{1:Śaiḷa}!",
     "words": [
       {
         "roman": "āhe",
@@ -397,7 +397,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "କେଡ଼େ ବଡ଼ ବିପତ୍ତିରୁ କରିଅଛ ତାରଣ",
     "roman": "keṛe baṛa bipattiru kariacha tāraṇa",
-    "english": "{3,4:You have rescued her }{0,1,2:from such great danger!}",
+    "english": "{3:You have }{4:rescued her }{2:from }{0,1:such great }{2:danger!}",
     "words": [
       {
         "roman": "keṛe",

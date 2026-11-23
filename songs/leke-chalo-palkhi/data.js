@@ -156,7 +156,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lēkē calō pālakī śiraḍī kē nātha kī,",
-    "english": "{0,1:Carry forward }{2:the palanquin }{3,4,5,6:of the Lord of Shirdi, }",
+    "english": "{0,1:Carry forward }{2:the palanquin }{6:of }{5:the Lord }{4:of }{3:Shirdi, }",
     "words": [
       {
         "roman": "lēkē",
@@ -441,7 +441,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āsānī sē kaṭa jāēgā kāṇṭōṁ bharā rāstā",
-    "english": "{4:The thorn-}{5:filled }{6:journey }{2,3:will pass }{0,1:with ease}",
+    "english": "{4:The thorn-}{5:filled }{6:journey }{3:will }{2:pass }{1:with }{0:ease}",
     "words": [
       {
         "roman": "āsānī",
@@ -560,7 +560,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hara ēka pala japa karatā cala tū sāīṁ kē nāma kā",
-    "english": "{0:At every }{1:single }{2:moment, }{3,4,5,6:keep chanting }{9,10:the name }{7,8:of Sai}",
+    "english": "{0:At every }{1:single }{2:moment, }{5,6:keep }{3,4:chanting }{9,10:the name }{7,8:of Sai}",
     "words": [
       {
         "roman": "hara",
@@ -685,7 +685,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sātha hai tērē bābā basa āgē calatā jā,",
-    "english": "{3:Baba }{0,1,2:is with you, }{4:just }{6,7:keep walking }{5:forward, }",
+    "english": "{3:Baba }{1:is }{0:with }{2:you, }{4:just }{7:keep }{6:walking }{5:forward, }",
     "words": [
       {
         "roman": "sātha",
@@ -857,7 +857,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāthī hai vō duḥkha darda kā saba kucha hai vō dēkhatā",
-    "english": "{1,2:He is }{0:the companion }{3,5:in sorrow }{4:and pain, }{9:he }{8,10:sees }{6,7:everything}",
+    "english": "{2:He }{1:is }{0:the companion }{3,5:in sorrow }{4:and pain, }{9:he }{8,10:sees }{6,7:everything}",
     "words": [
       {
         "roman": "sāthī",
@@ -1101,7 +1101,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sātha hai tērē bābā phira kāhē kā daranā,",
-    "english": "{3:Baba }{0,1,2:is with you, }{5:why }{4:then }{6,7:fear at all, }",
+    "english": "{3:Baba }{1:is }{0:with }{2:you, }{5:why }{4:then }{6,7:fear at all, }",
     "words": [
       {
         "roman": "sātha",
@@ -1321,7 +1321,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "usakē liē saba ēka haiṁ karatā hai sabakā bhalā",
-    "english": "{0,1:For him }{2:all }{4:are }{3:one, }{5,6:he works }{8:the good }{7:of all}",
+    "english": "{1:For }{0:him }{2:all }{4:are }{3:one, }{5,6:he works }{8:the good }{7:of all}",
     "words": [
       {
         "roman": "usakē",
@@ -1428,7 +1428,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sātha hai tērē bābā jō māṅgōgē dēgā,",
-    "english": "{3:Baba }{0,1,2:is with you, }{4:whatever }{5:you ask }{6:he will give, }",
+    "english": "{3:Baba }{1:is }{0:with }{2:you, }{4:whatever }{5:you ask }{6:he will give, }",
     "words": [
       {
         "roman": "sātha",

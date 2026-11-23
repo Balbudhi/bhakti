@@ -468,14 +468,26 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "कलिमलहारिणी",
+        "text": "कलि",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "मल",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "हारिणी",
+        "wordIndices": [
+          4
         ]
       }
     ],
     "roman": "Pāpa vināśinī kalimalahāriṇī",
-    "english": "{0,1:Destroyer of sin}, {2:dispeller of the impurities of the Kali age}",
+    "english": "{1:Destroyer}{0: of sin}, {4:dispeller} {3:of the impurities} {2:of the Kali age}",
     "words": [
       {
         "roman": "Pāpa",
@@ -490,8 +502,20 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "kalimalahāriṇī",
-        "gloss": "remover of the taints/impurities of the Kali age",
+        "roman": "kali",
+        "gloss": "the Kali age",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "mala",
+        "gloss": "impurity; taint",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "hāriṇī",
+        "gloss": "she who removes; dispeller (feminine)",
         "concept_key": "",
         "preserve_in_english": false
       }

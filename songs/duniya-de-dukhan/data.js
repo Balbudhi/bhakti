@@ -32,7 +32,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation": {
     "roman": "Jai karā sherān wālī maiyā jī dā... Bol sache darbār kī jai",
-    "english": "{0,3,4,5:Hail to the Mother}{1,2: who rides the lion...}{6: Chant:}{10: Glory}{7,9: to the true}{8: court!}",
+    "english": "{0:Hail }{5:to }{3,4:the Mother}{2: who rides }{1:the lion...}{6: Chant:}{10: Glory}{7,9: to the true}{8: court!}",
     "words": [
       {
         "roman": "Jai karā",

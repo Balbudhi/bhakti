@@ -716,38 +716,50 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "டொன்றொடேழு",
+        "text": "டொன்றொ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "பதினெட்டொடாறும்",
+        "text": "டேழு",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "உடனாய",
+        "text": "பதினெட்டொ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "நாள்க",
+        "text": "டாறும்",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ளவைதாம்",
+        "text": "உடனாய",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "நாள்க",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ளவைதாம்",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "oṉpato ṭoṉṟoṭēḻu patiṉeṭṭoṭāṟum uṭaṉāya nāḷka ḷavaitām",
-    "english": "{4,5:those asterisms themselves—}{0:the ninth,}{1: the tenth and sixteenth,}{2: the eighteenth and sixth,}{3: and those associated with them—}",
+    "english": "{7:those}{6: asterisms}{7: themselves—}{0:the ninth,}{1: the tenth}{2: and sixteenth,}{3: the eighteenth}{4: and sixth,}{5: and those associated with them—}",
     "words": [
       {
         "roman": "oṉpato",
@@ -756,14 +768,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "ṭoṉṟoṭēḻu",
-        "gloss": "nine plus one and nine plus seven: the tenth and sixteenth asterisms",
+        "roman": "ṭoṉṟo",
+        "gloss": "one: nine plus one, the tenth asterism (oṉṟu + oṭu, “with”)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "patiṉeṭṭoṭāṟum",
-        "gloss": "the eighteenth and sixth asterisms also",
+        "roman": "ṭēḻu",
+        "gloss": "seven: nine plus seven, the sixteenth asterism (ēḻu)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "patiṉeṭṭo",
+        "gloss": "the eighteenth asterism (patiṉeṭṭu + oṭu, “with”)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ṭāṟum",
+        "gloss": "the sixth also (āṟu + um)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2630,60 +2654,109 @@ window.SONG_LINES = {
     "sourceLanguage": "",
     "sourceWords": [
       {
-        "text": "செப்பிள",
+        "text": "செப்பி",
         "wordIndices": [
-          0
+          0,
+          1
         ]
       },
       {
-        "text": "முலைநன்மங்கை",
+        "text": "ள",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ஒருபாக",
+        "text": "முலை",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "மாக",
+        "text": "நன்மங்கை",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "விடையேறு",
+        "text": "ஒரு",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "செல்வனடைவார்",
+        "text": "பாக",
         "wordIndices": [
           5
+        ]
+      },
+      {
+        "text": "மாக",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "விடை",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "யேறு",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "செல்வ",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "னடைவார்",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "ceppiḷa mulaiṉaṉmaṅkai orupāka māka viṭaiyēṟu celvaṉaṭaivār",
-    "english": "With the {1:noble maiden }of {0:youthful cup-like }{1:breasts }{3:as }{2:one half, }{5:the prosperous Lord }{4:who mounts the bull}{5:—reached by}",
+    "english": "With the {3:noble maiden }of {1:youthful }{0:cup-like }{2:breasts }{6:as }{4:one }{5:half, }{9:the prosperous Lord }{8:who mounts }{7:the bull}{10:—reached by}",
     "words": [
       {
-        "roman": "ceppiḷa",
-        "gloss": "cup-like youthful / round young",
+        "roman": "cepp",
+        "gloss": "cup-like, round (ceppu)",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "mulaiṉaṉmaṅkai",
-        "gloss": "breasted noble maiden (Pārvatī)",
+        "roman": "iḷa",
+        "gloss": "youthful, young",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "orupāka",
-        "gloss": "one half / one side",
+        "roman": "mulai",
+        "gloss": "breasts",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "ṉaṉmaṅkai",
+        "gloss": "noble maiden (naṉ + maṅkai; Pārvatī)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "oru",
+        "gloss": "one",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "pāka",
+        "gloss": "half, side (pākam)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2694,14 +2767,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "viṭaiyēṟu",
-        "gloss": "riding the bull",
+        "roman": "viṭai",
+        "gloss": "the bull",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "celvaṉaṭaivār",
-        "gloss": "the prosperous Lord; reaching or settling upon Him (continuing with the waters in the next line)",
+        "roman": "yēṟu",
+        "gloss": "riding, mounting (ēṟu)",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "celvaṉ",
+        "gloss": "the prosperous Lord",
+        "concept_key": "",
+        "preserve_in_english": false
+      },
+      {
+        "roman": "aṭaivār",
+        "gloss": "reaching or settling upon Him (continuing with the waters in the next line)",
         "concept_key": "",
         "preserve_in_english": false
       }

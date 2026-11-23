@@ -221,7 +221,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ab tō thōṛī sī umra hai bāqī",
-    "english": "{0,1:Now indeed, }{2,3:only a little }{4:lifespan }{5,6:remains}",
+    "english": "{0:Now }{1:indeed, }{2,3:only a little }{4:lifespan }{5,6:remains}",
     "words": [
       {
         "roman": "ab",
@@ -453,7 +453,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ nā cāhakar bhī jī rahā thā, tum nā āyē thē jab guru rāī",
-    "english": "{0,4,5,6:I was living }{1,2,3:even without wishing to, }{11:when }{7,8,9,10:you had not come, }{12,13:O sovereign Guru}",
+    "english": "{0:I }{6:was }{4,5:living }{3:even }{1,2:without wishing to, }{11:when }{7:you }{10:had }{8:not }{9:come, }{13:O sovereign }{12:Guru}",
     "words": [
       {
         "roman": "maiṁ",
@@ -596,7 +596,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ab tō jīnē kā tum hī hō kāraṇ",
-    "english": "{0,1:Now indeed, }{4,5:you alone }{6,7:are the reason }{2,3:for living}",
+    "english": "{0:Now }{1:indeed, }{4:you }{5:alone }{6,7:are the reason }{2,3:for living}",
     "words": [
       {
         "roman": "ab",
@@ -691,7 +691,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "khūb jīnē kō dil karatā hai",
-    "english": "{3,4,5:The heart longs }{0,1,2:to live fully}",
+    "english": "{3,4,5:The heart longs }{2:to }{1:live }{0:fully}",
     "words": [
       {
         "roman": "khūb",
@@ -810,7 +810,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "zindagī sē ḍaratā thā maiṁ pahalē, maut kī ab parvāh nahīṁ hai",
-    "english": "{5:Earlier }{2,3,4:I was afraid }{0,1:of life; }{8:now }{9,10,11:there is no concern }{6,7:about death}",
+    "english": "{5:Earlier }{4:I }{3:was }{2:afraid }{1:of }{0:life; }{8:now }{9,10,11:there is no concern }{6,7:about death}",
     "words": [
       {
         "roman": "zindagī",
@@ -1036,7 +1036,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ab tō rāt mēṁ bhī nīnd nahīṁ hai",
-    "english": "{0,1:Now indeed, }{5,6,7:there is no sleep }{2,3,4:even at night}",
+    "english": "{0:Now }{1:indeed, }{5,6,7:there is no sleep }{4:even }{3:at }{2:night}",
     "words": [
       {
         "roman": "ab",
@@ -1155,7 +1155,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "musībat kē pahāṛ girē tō, sāvan kē ōlē lagatē haiṁ",
-    "english": "{4:Even if }{0,1,2:mountains of calamity }{3:crash down, }{8,9:they feel like }{5,6,7:monsoon hailstones}",
+    "english": "{4:Even if }{2:mountains }{1:of }{0:calamity }{3:crash down, }{8,9:they feel like }{5,6,7:monsoon hailstones}",
     "words": [
       {
         "roman": "musībat",
@@ -1256,7 +1256,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "zindagī sē phir kyā ghabarānā",
-    "english": "{2,3:Why then }{4:fear }{0,1:life,}",
+    "english": "{3:Why }{2:then }{4:fear }{0,1:life,}",
     "words": [
       {
         "roman": "zindagī",
@@ -1327,7 +1327,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisē āpakī śaraṇ mil jāyē",
-    "english": "{0:For whoever }{3,4:attains }{1,2:your refuge?}",
+    "english": "{0:For whoever }{3,4:attains }{1:your }{2:refuge?}",
     "words": [
       {
         "roman": "jisē",
@@ -1434,7 +1434,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "us jīvan sē rōnā phir kaisā, jō āpakī hī amānat hai",
-    "english": "{4,5:Why then }{3:lament }{0,1,2:over that life, }{6,10:which is }{8:solely }{7,9:your sacred trust?}",
+    "english": "{5:Why }{4:then }{3:lament }{2:over }{0:that }{1:life, }{6:which }{10:is }{8:solely }{7,9:your sacred trust?}",
     "words": [
       {
         "roman": "us",

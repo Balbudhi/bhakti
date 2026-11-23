@@ -323,7 +323,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ terī mandira kī maiṁ ghaṇṭī bana kara āūm̐, ho",
-    "english": "{0:O Sai, }{4:may I }{8:return }{6,7:having become }{5:the bell }{3:of }{1:Your }{2:temple, }{9:oh}",
+    "english": "{0:O Sai, }{4:may I }{8:return }{7:having }{6:become }{5:the bell }{3:of }{1:Your }{2:temple, }{9:oh}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -448,7 +448,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ terī mandira kī maiṁ ghaṇṭī bana kara āūm̐",
-    "english": "{0:O Sai, }{4:may I }{8:return }{6,7:having become }{5:the bell }{3:of }{1:Your }{2:temple}",
+    "english": "{0:O Sai, }{4:may I }{8:return }{7:having }{6:become }{5:the bell }{3:of }{1:Your }{2:temple}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -2372,7 +2372,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bābā terī mandira kī maiṁ ghaṇṭī bana kara āūm̐",
-    "english": "{0:O Baba, }{4:may I }{8:return }{6,7:having become }{5:the bell }{3:of }{1:Your }{2:temple}",
+    "english": "{0:O Baba, }{4:may I }{8:return }{7:having }{6:become }{5:the bell }{3:of }{1:Your }{2:temple}",
     "words": [
       {
         "roman": "bābā",

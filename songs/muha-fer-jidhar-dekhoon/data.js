@@ -1132,7 +1132,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tere dar pe ho sar merā Bābā dar pe ho sar merā",
-    "english": "{5:may my }{4:head }{2,3:be at }{0:your }{1:threshold, }{6:Baba, }{8:at the }{7:threshold }{11:may my }{10:head }{9:be,}",
+    "english": "{5:may my }{4:head }{3:be }{2:at }{0:your }{1:threshold, }{6:Baba, }{8:at the }{7:threshold }{11:may my }{10:head }{9:be,}",
     "words": [
       {
         "roman": "Tere",
@@ -1316,7 +1316,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ham khāknashīnõ kī kyā khūb tamannā hai",
-    "english": "{3:What a }{4:wondrous }{5:longing }{6:is this }{0,2:of us }{1:dwellers in the dust:}",
+    "english": "{3:What a }{4:wondrous }{5:longing }{6:is this }{2:of }{0:us }{1:dwellers in the dust:}",
     "words": [
       {
         "roman": "Ham",

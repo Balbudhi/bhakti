@@ -399,15 +399,31 @@ window.SONG_LINES = {
   "l009": {
     "source": "ஆகம மாகிநின் றண்ணிப்பான் தாள்வாழ்க",
     "roman": "ākamamākiniṉṟaṇṇippāṉ tāḷvāḻka",
-    "english": "{1:May the feet} of {0:the one who abides as the revealed scriptures and draws near} {1:flourish}!",
+    "english": "{5:May }{4:the feet} of {3:the one who }{2:abides }{1:as }{0:the revealed scriptures }{3:and draws near} {5:flourish}!",
     "words": [
       {
-        "roman": "ākamamākiniṉṟaṇṇippāṉ",
-        "gloss": "being the Āgamas, the revealed Śaiva scriptures; standing; abiding; the one who comes close; draws near"
+        "roman": "ākamam",
+        "gloss": "the Āgamas, the revealed Śaiva scriptures"
       },
       {
-        "roman": "tāḷvāḻka",
-        "gloss": "sacred feet; may they flourish; hail"
+        "roman": "āki",
+        "gloss": "being, having become"
+      },
+      {
+        "roman": "niṉṟ",
+        "gloss": "standing; abiding (niṉṟu)"
+      },
+      {
+        "roman": "aṇṇippāṉ",
+        "gloss": "the one who comes close; draws near"
+      },
+      {
+        "roman": "tāḷ",
+        "gloss": "sacred feet"
+      },
+      {
+        "roman": "vāḻka",
+        "gloss": "may they flourish; hail"
       }
     ],
     "sourceWords": [
@@ -418,21 +434,54 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "மாகிநின்",
+        "text": "மா",
         "wordIndices": [
-          0
+          0,
+          1
         ]
       },
       {
-        "text": "றண்ணிப்பான்",
-        "wordIndices": [
-          0
-        ]
-      },
-      {
-        "text": "தாள்வாழ்க",
+        "text": "கி",
         "wordIndices": [
           1
+        ]
+      },
+      {
+        "text": "நின்",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "ற",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ண்ணிப்பான்",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "தா",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ள்வா",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ழ்க",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -1131,7 +1180,7 @@ window.SONG_LINES = {
   "l024": {
     "source": "சிந்தை மகிழச் சிவபுராணந்தன்னை",
     "roman": "cintai makiḻac civapurāṇantaṉṉai",
-    "english": "{0:so that the mind }{1:may rejoice, }{2:this Civapurāṇam }{2:itself,}",
+    "english": "{0:so that the mind }{1:may rejoice, }{2:this Civapurāṇam }{3:itself,}",
     "words": [
       {
         "roman": "cintai",
@@ -1142,8 +1191,12 @@ window.SONG_LINES = {
         "gloss": "so as to rejoice; to gladden"
       },
       {
-        "roman": "civapurāṇantaṉṉai",
-        "gloss": "this sacred lore of Śiva, the auspicious one; Civapurāṇam itself"
+        "roman": "civapurāṇan",
+        "gloss": "Civapurāṇam, this sacred lore of Śiva, the auspicious one"
+      },
+      {
+        "roman": "taṉṉai",
+        "gloss": "itself: accusative"
       }
     ],
     "sourceWords": [
@@ -1160,9 +1213,22 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "சிவபுராணந்தன்னை",
+        "text": "சிவபுராண",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "ந்த",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ன்னை",
+        "wordIndices": [
+          3
         ]
       }
     ],
@@ -1367,40 +1433,112 @@ window.SONG_LINES = {
   "l029": {
     "source": "எண்ணிறந் தெல்லையிலா தானே நின்பெருஞ்சீர்",
     "roman": "eṇṇiṟantellaiyilātāṉē niṉperuñcīr",
-    "english": "{0:O One beyond count, }{0:without }{0:limit! }{1:Your }{1:great glory}",
+    "english": "{3:O One }{1:beyond }{0:count, }{3:without }{2:limit! }{4:Your }{5:great }{6:glory}",
     "words": [
       {
-        "roman": "eṇṇiṟantellaiyilātāṉē",
-        "gloss": "transcending number; beyond counting; immeasurable; limit; boundary; O One who is without; O Boundless One!"
+        "roman": "eṇṇ",
+        "gloss": "number, count (eṇ)"
       },
       {
-        "roman": "niṉperuñcīr",
-        "gloss": "your; of You; great glory; immense sacred excellence"
+        "roman": "iṟant",
+        "gloss": "transcending, beyond (iṟantu)"
+      },
+      {
+        "roman": "ellai",
+        "gloss": "limit; boundary"
+      },
+      {
+        "roman": "yilātāṉē",
+        "gloss": "O One who is without (ilātāṉē)"
+      },
+      {
+        "roman": "niṉ",
+        "gloss": "your; of You"
+      },
+      {
+        "roman": "peruñ",
+        "gloss": "great, immense (perum)"
+      },
+      {
+        "roman": "cīr",
+        "gloss": "glory; sacred excellence"
       }
     ],
     "sourceWords": [
       {
-        "text": "எண்ணிறந்",
+        "text": "எ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "தெல்லையிலா",
+        "text": "ண்ணி",
         "wordIndices": [
-          0
+          0,
+          1
+        ]
+      },
+      {
+        "text": "றந்",
+        "wordIndices": [
+          1
+        ]
+      },
+      {
+        "text": "தெ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ல்லை",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "யிலா",
+        "wordIndices": [
+          3
         ]
       },
       {
         "text": "தானே",
         "wordIndices": [
-          0
+          3
         ]
       },
       {
-        "text": "நின்பெருஞ்சீர்",
+        "text": "நி",
         "wordIndices": [
-          1
+          4
+        ]
+      },
+      {
+        "text": "ன்பெ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ரு",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ஞ்சீ",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ர்",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -1409,19 +1547,35 @@ window.SONG_LINES = {
   "l030": {
     "source": "பொல்லா வினையேன் புகழுமா றொன்றறியேன்",
     "roman": "pollā viṉaiyēṉ pukaḻumāṟoṉṟaṟiyēṉ",
-    "english": "{1:I, burdened with} {0:evil deeds}, {2:know not one} {2:way to praise}.",
+    "english": "{2:I, burdened with} {0:evil }{1:deeds}, {6:know not }{5:one} {4:way }{3:to praise}.",
     "words": [
       {
         "roman": "pollā",
         "gloss": "wretched; evil; vile"
       },
       {
-        "roman": "viṉaiyēṉ",
-        "gloss": "I who bear the effects of deeds; self-description"
+        "roman": "viṉai",
+        "gloss": "deeds and their effects"
       },
       {
-        "roman": "pukaḻumāṟoṉṟaṟiyēṉ",
-        "gloss": "the way to praise; how to extol; I know not one [way]; I know nothing at all"
+        "roman": "yēṉ",
+        "gloss": "I who bear: self-description"
+      },
+      {
+        "roman": "pukaḻum",
+        "gloss": "to praise, extol: participle"
+      },
+      {
+        "roman": "āṟ",
+        "gloss": "way (āṟu)"
+      },
+      {
+        "roman": "oṉṟ",
+        "gloss": "one; with the negative, not one (oṉṟu)"
+      },
+      {
+        "roman": "aṟiyēṉ",
+        "gloss": "I know not"
       }
     ],
     "sourceWords": [
@@ -1432,21 +1586,48 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "வினையேன்",
+        "text": "வினை",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "புகழுமா",
+        "text": "யேன்",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "றொன்றறியேன்",
+        "text": "புகழு",
         "wordIndices": [
-          2
+          3
+        ]
+      },
+      {
+        "text": "மா",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "றொ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ன்ற",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "றியேன்",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -1505,44 +1686,99 @@ window.SONG_LINES = {
   "l032": {
     "source": "பல்விருக மாகிப் பறவையாய்ப் பாம்பாகிக்",
     "roman": "palvirukamākip paṟavaiyāyp pāmpākik",
-    "english": "{0:becoming manifold beasts, }{1:becoming birds, }{2:becoming serpents,}",
+    "english": "{2:becoming }{0:manifold }{1:beasts, }{4:becoming }{3:birds, }{6:becoming }{5:serpents,}",
     "words": [
       {
-        "roman": "palvirukamākip",
-        "gloss": "manifold; various; many; having become beasts; having become animals"
+        "roman": "pal",
+        "gloss": "manifold; many"
       },
       {
-        "roman": "paṟavaiyāyp",
-        "gloss": "having become birds"
+        "roman": "virukam",
+        "gloss": "beasts; animals"
       },
       {
-        "roman": "pāmpākik",
-        "gloss": "having become snakes; having become serpents"
+        "roman": "ākip",
+        "gloss": "having become (āki)"
+      },
+      {
+        "roman": "paṟavai",
+        "gloss": "birds"
+      },
+      {
+        "roman": "yāyp",
+        "gloss": "having become (āy)"
+      },
+      {
+        "roman": "pāmp",
+        "gloss": "snakes; serpents (pāmpu)"
+      },
+      {
+        "roman": "ākik",
+        "gloss": "having become (āki)"
       }
     ],
     "sourceWords": [
       {
-        "text": "பல்விருக",
+        "text": "ப",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "மாகிப்",
+        "text": "ல்வி",
         "wordIndices": [
-          0
+          0,
+          1
         ]
       },
       {
-        "text": "பறவையாய்ப்",
+        "text": "ருக",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "பாம்பாகிக்",
+        "text": "மா",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "கிப்",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "பறவை",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "யாய்ப்",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "பா",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ம்பா",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "கிக்",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -1693,7 +1929,7 @@ window.SONG_LINES = {
   "l036": {
     "source": "எல்லாப் பிறப்பும் பிறந்திளைத்தேன் எம்பெருமான்",
     "roman": "ellāp piṟappum piṟantiḷaittēṉ emperumāṉ",
-    "english": "{2:having been born }{0:in every single }{1:birth, }{2:I grew weary, }{3:O my Master!}",
+    "english": "{2:having been born }{0:in every single }{1:birth, }{3:I grew weary, }{5:O }{4:my }{5:Master!}",
     "words": [
       {
         "roman": "ellāp",
@@ -1704,12 +1940,20 @@ window.SONG_LINES = {
         "gloss": "births; every single embodiment"
       },
       {
-        "roman": "piṟantiḷaittēṉ",
-        "gloss": "having been born, I grew weary; I took birth and was exhausted"
+        "roman": "piṟant",
+        "gloss": "having been born (piṟantu)"
       },
       {
-        "roman": "emperumāṉ",
-        "gloss": "O my Master; O my Lord"
+        "roman": "iḷaittēṉ",
+        "gloss": "I grew weary, was exhausted"
+      },
+      {
+        "roman": "em",
+        "gloss": "my; our"
+      },
+      {
+        "roman": "perumāṉ",
+        "gloss": "O Master; O Lord"
       }
     ],
     "sourceWords": [
@@ -1726,15 +1970,41 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "பிறந்திளைத்தேன்",
+        "text": "பிற",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "எம்பெருமான்",
+        "text": "ந்தி",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ளைத்தேன்",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "எ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ம்பெ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ருமான்",
+        "wordIndices": [
+          5
         ]
       }
     ],
@@ -1793,44 +2063,93 @@ window.SONG_LINES = {
   "l038": {
     "source": "உய்யஎன் உள்ளத்துள் ஓங்கார மாய்நின்ற",
     "roman": "uyyaeṉ uḷḷattuḷ ōṅkāramāyniṉṟa",
-    "english": "{2:You who stood as the syllable Oṃ} {1:within} {0:my} {1:heart}, {0:so that I might be saved},",
+    "english": "{6:You who stood }{5:as }{4:the syllable Oṃ} {3:within} {1:my} {2:heart}, {0:so that I might be saved},",
     "words": [
       {
-        "roman": "uyyaeṉ",
-        "gloss": "to be saved; to be redeemed; so that [I] may live; my; of me"
+        "roman": "uyya",
+        "gloss": "to be saved; so that [I] may live"
       },
       {
-        "roman": "uḷḷattuḷ",
-        "gloss": "inside [my] heart-mind; within [my] inner being"
+        "roman": "eṉ",
+        "gloss": "my; of me"
       },
       {
-        "roman": "ōṅkāramāyniṉṟa",
-        "gloss": "as Oṃ, the sacred syllable resonating within the heart; who stood; abiding; who remains"
+        "roman": "uḷḷatt",
+        "gloss": "heart-mind; inner being (uḷḷam, oblique)"
+      },
+      {
+        "roman": "uḷ",
+        "gloss": "inside, within"
+      },
+      {
+        "roman": "ōṅkāram",
+        "gloss": "Oṃ, the sacred syllable resonating within the heart"
+      },
+      {
+        "roman": "āy",
+        "gloss": "as, being"
+      },
+      {
+        "roman": "niṉṟa",
+        "gloss": "who stood; abiding; who remains"
       }
     ],
     "sourceWords": [
       {
-        "text": "உய்யஎன்",
+        "text": "உய்ய",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "உள்ளத்துள்",
+        "text": "என்",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ஓங்கார",
+        "text": "உள்ள",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "மாய்நின்ற",
+        "text": "த்து",
         "wordIndices": [
-          2
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ள்",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ஓங்கார",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "மா",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ய்நி",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ன்ற",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -1939,7 +2258,7 @@ window.SONG_LINES = {
   "l041": {
     "source": "வெய்யாய் தணியாய் இயமான னாம்விமலா",
     "roman": "veyyāy taṇiyāy iyamāṉaṉāmvimalā",
-    "english": "{0:O You who are heat, }{1:You who are coolness, }{2:who are the sacrificer, }{2:O Stainless One!}",
+    "english": "{0:O You who are heat, }{1:You who are coolness, }{3:who are }{2:the sacrificer, }{4:O Stainless One!}",
     "words": [
       {
         "roman": "veyyāy",
@@ -1950,8 +2269,16 @@ window.SONG_LINES = {
         "gloss": "O cool one; one who is coolness"
       },
       {
-        "roman": "iyamāṉaṉāmvimalā",
-        "gloss": "who is the sacrificer; Śiva in the embodied sacrificer’s aspect; O Stainless One; O Pure One"
+        "roman": "iyamāṉaṉ",
+        "gloss": "the sacrificer; Śiva in the embodied sacrificer’s aspect"
+      },
+      {
+        "roman": "ām",
+        "gloss": "who is"
+      },
+      {
+        "roman": "vimalā",
+        "gloss": "O Stainless One; O Pure One"
       }
     ],
     "sourceWords": [
@@ -1974,9 +2301,23 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "னாம்விமலா",
+        "text": "னா",
         "wordIndices": [
-          2
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ம்வி",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "மலா",
+        "wordIndices": [
+          4
         ]
       }
     ],
@@ -1985,44 +2326,99 @@ window.SONG_LINES = {
   "l042": {
     "source": "பொய்யா யினவெல்லாம் போயகல வந்தருளி",
     "roman": "poyyāyiṉavellām pōyakala vantaruḷi",
-    "english": "{2:graciously coming }{0:so that all }{0:that is false }{1:may depart }{1:and disperse,}",
+    "english": "{6:graciously }{5:coming }{4:so that }{2:all }{1:that is }{0:false }{3:may depart }{4:and disperse,}",
     "words": [
       {
-        "roman": "poyyāyiṉavellām",
-        "gloss": "things that are false; all that is unreal; all; everything"
+        "roman": "poyy",
+        "gloss": "false, unreal (poy)"
       },
       {
-        "roman": "pōyakala",
-        "gloss": "having departed; going away; to disperse; to be dispelled; to be banished"
+        "roman": "āyiṉa",
+        "gloss": "things that are"
       },
       {
-        "roman": "vantaruḷi",
-        "gloss": "having graciously come; having bestowed grace by arriving"
+        "roman": "vellām",
+        "gloss": "all; everything (ellām)"
+      },
+      {
+        "roman": "pōy",
+        "gloss": "having departed; going away"
+      },
+      {
+        "roman": "akala",
+        "gloss": "so as to disperse; to be dispelled"
+      },
+      {
+        "roman": "vant",
+        "gloss": "having come (vantu)"
+      },
+      {
+        "roman": "aruḷi",
+        "gloss": "bestowing grace; graciously"
       }
     ],
     "sourceWords": [
       {
-        "text": "பொய்யா",
+        "text": "பொ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "யினவெல்லாம்",
+        "text": "ய்யா",
         "wordIndices": [
-          0
+          0,
+          1
         ]
       },
       {
-        "text": "போயகல",
+        "text": "யின",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "வந்தருளி",
+        "text": "வெல்லாம்",
         "wordIndices": [
           2
+        ]
+      },
+      {
+        "text": "போ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ய",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "கல",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "வ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ந்த",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ருளி",
+        "wordIndices": [
+          6
         ]
       }
     ],
@@ -2427,44 +2823,88 @@ window.SONG_LINES = {
   "l051": {
     "source": "கறந்தபால் கன்னலொடு நெய்கலந்தாற் போலச்",
     "roman": "kaṟantapāl kaṉṉaloṭu neykalantāṟpōlac",
-    "english": "{2:Like }{0:freshly drawn }{0:milk }{2:blended with }{1:cane sugar }{2:and ghee,}",
+    "english": "{5:Like }{0:freshly drawn }{1:milk }{4:blended }{2:with cane sugar }{3:and ghee,}",
     "words": [
       {
-        "roman": "kaṟantapāl",
-        "gloss": "freshly milked; drawn; milk"
+        "roman": "kaṟanta",
+        "gloss": "freshly milked; drawn"
+      },
+      {
+        "roman": "pāl",
+        "gloss": "milk"
       },
       {
         "roman": "kaṉṉaloṭu",
         "gloss": "with cane sugar"
       },
       {
-        "roman": "neykalantāṟpōlac",
-        "gloss": "as when mixed with clarified butter"
+        "roman": "ney",
+        "gloss": "clarified butter, ghee"
+      },
+      {
+        "roman": "kalant",
+        "gloss": "mixed, blended (kalantu)"
+      },
+      {
+        "roman": "āṟpōlac",
+        "gloss": "like, as when (āl + pōla)"
       }
     ],
     "sourceWords": [
       {
-        "text": "கறந்தபால்",
+        "text": "கறந்த",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "கன்னலொடு",
+        "text": "பால்",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "நெய்கலந்தாற்",
+        "text": "கன்னலொடு",
         "wordIndices": [
           2
         ]
       },
       {
+        "text": "நெ",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ய்க",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ல",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ந்தா",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ற்",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
         "text": "போலச்",
         "wordIndices": [
-          2
+          5
         ]
       }
     ],
@@ -2633,19 +3073,35 @@ window.SONG_LINES = {
   "l055": {
     "source": "மறைந்திருந்தாய் எம்பெருமான் வல்வினையேன் தன்னை",
     "roman": "maṟaintiruntāy emperumāṉ valviṉaiyēṉ taṉṉai",
-    "english": "{0:You remained hidden}, {1:my great Lord}! {2:I, burdened with forceful deeds}, {3:myself}—",
+    "english": "{1:You remained }{0:hidden}, {2:my }{3:great Lord}! {6:I, burdened with }{4:forceful }{5:deeds}, {7:myself}—",
     "words": [
       {
-        "roman": "maṟaintiruntāy",
-        "gloss": "you remained hidden; you stayed concealed"
+        "roman": "maṟaint",
+        "gloss": "hidden, concealed (maṟaintu)"
       },
       {
-        "roman": "emperumāṉ",
-        "gloss": "my sovereign Lord"
+        "roman": "iruntāy",
+        "gloss": "you remained, stayed"
       },
       {
-        "roman": "valviṉaiyēṉ",
-        "gloss": "I bearing forceful deeds and their binding consequences"
+        "roman": "em",
+        "gloss": "my; our"
+      },
+      {
+        "roman": "perumāṉ",
+        "gloss": "sovereign Lord, great one"
+      },
+      {
+        "roman": "val",
+        "gloss": "forceful"
+      },
+      {
+        "roman": "viṉai",
+        "gloss": "deeds and their binding consequences"
+      },
+      {
+        "roman": "yēṉ",
+        "gloss": "I who bear: first person"
       },
       {
         "roman": "taṉṉai",
@@ -2654,27 +3110,72 @@ window.SONG_LINES = {
     ],
     "sourceWords": [
       {
-        "text": "மறைந்திருந்தாய்",
+        "text": "மறை",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "எம்பெருமான்",
+        "text": "ந்தி",
+        "wordIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "text": "ருந்தாய்",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "வல்வினையேன்",
+        "text": "எ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "தன்னை",
+        "text": "ம்பெ",
+        "wordIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "ருமான்",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "வ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ல்வி",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "னை",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "யேன்",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "தன்னை",
+        "wordIndices": [
+          7
         ]
       }
     ],
@@ -4569,15 +5070,27 @@ window.SONG_LINES = {
   "l093": {
     "source": "கள்ளப் புலக்குரம்பை கட்டழிக்க வல்லானே",
     "roman": "kaḷḷap pulakkurampaikaṭṭaḻikka vallāṉē",
-    "english": "{2:O mighty one }{1:capable of dismantling the structure }{0:of the deceitful }{1:sensory hut!}",
+    "english": "{5:O mighty one capable }{4:of dismantling }{3:the structure }{0:of the deceitful }{1:sensory }{2:hut!}",
     "words": [
       {
         "roman": "kaḷḷap",
         "gloss": "deceitful; treacherous"
       },
       {
-        "roman": "pulakkurampaikaṭṭaḻikka",
-        "gloss": "of the sensory hut; shack of the sense-faculties; to dismantle the structure; to shatter the bond"
+        "roman": "pulak",
+        "gloss": "of the senses (pulam)"
+      },
+      {
+        "roman": "kurampai",
+        "gloss": "hut; shack"
+      },
+      {
+        "roman": "kaṭṭ",
+        "gloss": "structure; bond (kaṭṭu)"
+      },
+      {
+        "roman": "aḻikka",
+        "gloss": "to dismantle; to shatter"
       },
       {
         "roman": "vallāṉē",
@@ -4592,21 +5105,47 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "புலக்குரம்பை",
+        "text": "புல",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "கட்டழிக்க",
+        "text": "க்கு",
         "wordIndices": [
-          1
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ரம்பை",
+        "wordIndices": [
+          2
+        ]
+      },
+      {
+        "text": "க",
+        "wordIndices": [
+          3
+        ]
+      },
+      {
+        "text": "ட்ட",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ழிக்க",
+        "wordIndices": [
+          4
         ]
       },
       {
         "text": "வல்லானே",
         "wordIndices": [
-          2
+          5
         ]
       }
     ],

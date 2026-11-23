@@ -73,7 +73,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bolo ambe māt kī jai",
-    "english": "{0:Proclaim }{3,4:victory to }{1,2:Mother Amba!}",
+    "english": "{0:Proclaim }{3,4:victory to }{2:Mother }{1:Amba!}",
     "words": [
       {
         "roman": "Bolo",
@@ -387,7 +387,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū hī sat cit sukhamaya śuddha brahma rūpā",
-    "english": "{0,1:You alone }{2:are being, }{3:consciousness, }{4:and bliss, }{7:the embodiment of }{5:pure }{6:Brahman.}",
+    "english": "{0:You }{1:alone }{2:are being, }{3:consciousness, }{4:and bliss, }{7:the embodiment of }{5:pure }{6:Brahman.}",
     "words": [
       {
         "roman": "Tū",
@@ -1294,7 +1294,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mūla prakṛti vidyā tū mūla prakṛti vidyā tū tū jananī jāyā",
-    "english": "{0,1:Primordial nature }{2:and wisdom }{3:are you, }{4,5:primordial nature }{6:and wisdom }{7:are you, }{8:you are }{9:mother }{10:and consort.}",
+    "english": "{0:Primordial }{1:nature }{2:and wisdom }{3:are you, }{4:primordial }{5:nature }{6:and wisdom }{7:are you, }{8:you are }{9:mother }{10:and consort.}",
     "words": [
       {
         "roman": "Mūla",
@@ -2113,7 +2113,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū hī śmaśāna vihāriṇi tū hī śmaśāna vihāriṇi tāṇḍava lāsini tū",
-    "english": "{0,1:You alone }{2,3:roam the cremation grounds, }{4,5:you alone }{6,7:roam the cremation grounds; }{10:you are }{8,9:a dancer of the Tandava.}",
+    "english": "{0:You }{1:alone }{2,3:roam the cremation grounds, }{4:you }{5:alone }{6,7:roam the cremation grounds; }{10:you are }{8,9:a dancer of the Tandava.}",
     "words": [
       {
         "roman": "Tū",
@@ -2499,7 +2499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū hī sneha sudhāmayī tū ati garala manā",
-    "english": "{0,1:You alone }{3:are filled with the nectar of }{2:love, }{4:you are }{5:intensely }{6,7:venom-minded.}",
+    "english": "{0:You }{1:alone }{3:are filled with the nectar of }{2:love, }{4:you are }{5:intensely }{6,7:venom-minded.}",
     "words": [
       {
         "roman": "Tū",
@@ -2701,7 +2701,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ratna vibhūṣita tū hī ratna vibhūṣita tū hī tū hī asthi tanā",
-    "english": "{0,1:Adorned with jewels }{2,3:are you alone, }{4,5:adorned with jewels }{6,7:are you alone, }{8,9:you alone }{10,11:have a body of bones.}",
+    "english": "{0,1:Adorned with jewels }{2,3:are you alone, }{4,5:adorned with jewels }{6,7:are you alone, }{8:you }{9:alone }{10,11:have a body of bones.}",
     "words": [
       {
         "roman": "Ratna",

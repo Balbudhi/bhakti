@@ -152,20 +152,45 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಕೋಮಲಾಂಗಿಯೇ",
+        "text": "ಕೋಮ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ಸಾಮಗಾನಪ್ರಿಯಳೇ",
+        "text": "ಲಾಂ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ಗಿಯೇ",
         "wordIndices": [
           4
+        ]
+      },
+      {
+        "text": "ಸಾಮ",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ಗಾನ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ಪ್ರಿಯಳೇ",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "śrī mahālakumi dēviyē kōmalāṅgiyē sāmagānapriyaḷē",
-    "english": "{0:Revered} {1:Mahālakumi}, {2:Goddess}, {3:tender-limbed one}, {4:lover of Sāma chanting}!",
+    "english": "{0:Revered} {1:Mahālakumi}, {2:Goddess}, {3:tender-}{4:limbed one}, {7:lover }{5:of Sāma }{6:chanting}!",
     "words": [
       {
         "roman": "śrī",
@@ -180,12 +205,24 @@ window.SONG_LINES = {
         "gloss": "O goddess"
       },
       {
-        "roman": "kōmalāṅgiyē",
-        "gloss": "O tender-limbed one"
+        "roman": "kōmal",
+        "gloss": "tender (kōmala)"
       },
       {
-        "roman": "sāmagānapriyaḷē",
-        "gloss": "O lover of Sāma chanting, the melodic recitation of the Sāmaveda"
+        "roman": "āṅgiyē",
+        "gloss": "O limbed one: aṅgi, vocative"
+      },
+      {
+        "roman": "sāma",
+        "gloss": "Sāma, the Sāmaveda"
+      },
+      {
+        "roman": "gāna",
+        "gloss": "chanting, melodic recitation"
+      },
+      {
+        "roman": "priyaḷē",
+        "gloss": "O lover: vocative"
       }
     ],
     "nameTable": false,
@@ -868,38 +905,70 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಕರವೊಡ್ಡದಂತೆ",
+        "text": "ಕರ",
         "wordIndices": [
           3
         ]
       },
       {
-        "text": "ನೀ",
+        "text": "ವೊ",
+        "wordIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "ಡ್ಡ",
         "wordIndices": [
           4
         ]
       },
       {
-        "text": "ಕರುಣಿಸು",
+        "text": "ದಂ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ತೆ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ತಾಯೆ",
+        "text": "ನೀ",
         "wordIndices": [
           6
         ]
       },
       {
-        "text": "ರಾಕೇಂದುವದನೆ",
+        "text": "ಕರುಣಿಸು",
         "wordIndices": [
           7
+        ]
+      },
+      {
+        "text": "ತಾಯೆ",
+        "wordIndices": [
+          8
+        ]
+      },
+      {
+        "text": "ರಾಕೇಂದು",
+        "wordIndices": [
+          9
+        ]
+      },
+      {
+        "text": "ವದನೆ",
+        "wordIndices": [
+          10
         ]
       }
     ],
     "roman": "lōkada janarige nā karavoḍḍadante nī karuṇisu tāye rākēnduvadane",
-    "english": "{6:Mother}, {7:full-moon-faced one}, {4:you}, {5:show mercy}, {3:so that} {2:I} {3:need not stretch out my hand} {1:to people} {0:of the world}.",
+    "english": "{8:Mother}, {9:full-moon-}{10:faced one}, {6:you}, {7:show mercy}, {5:so that} {2:I} {4:need not stretch out }{3:my hand} {1:to people} {0:of the world}.",
     "words": [
       {
         "roman": "lōkada",
@@ -914,8 +983,16 @@ window.SONG_LINES = {
         "gloss": "I"
       },
       {
-        "roman": "karavoḍḍadante",
-        "gloss": "so that I do not stretch out my hand to beg"
+        "roman": "karav",
+        "gloss": "my hand, to beg (karava, accusative)"
+      },
+      {
+        "roman": "oḍḍad",
+        "gloss": "not stretching out (oḍḍada)"
+      },
+      {
+        "roman": "ante",
+        "gloss": "so that"
       },
       {
         "roman": "nī",
@@ -930,8 +1007,12 @@ window.SONG_LINES = {
         "gloss": "Mother"
       },
       {
-        "roman": "rākēnduvadane",
-        "gloss": "O full-moon-faced one"
+        "roman": "rākēndu",
+        "gloss": "full moon"
+      },
+      {
+        "roman": "vadane",
+        "gloss": "O faced one: vocative"
       }
     ],
     "nameTable": false,
@@ -942,36 +1023,82 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಮಂದರಧರನರಸಿಯೇ",
+        "text": "ಮಂದರ",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಇಂದಿರೆ",
+        "text": "ಧರ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಎನ್ನ",
+        "text": "ನ",
+        "wordIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "ರಸಿಯೇ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಕುಂದುದೋಷಗಳಳಿಯೇ",
+        "text": "ಇಂದಿರೆ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಎನ್ನ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ಕುಂದು",
+        "wordIndices": [
+          5
+        ]
+      },
+      {
+        "text": "ದೋಷಗ",
+        "wordIndices": [
+          6
+        ]
+      },
+      {
+        "text": "ಳ",
+        "wordIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "text": "ಳಿಯೇ",
+        "wordIndices": [
+          7
         ]
       }
     ],
     "roman": "mandaradharanarasiye indire enna kundudōṣagaḷaḷiyē",
-    "english": "{0:Queen of the bearer of Mandara}, {1:Indirā}, {3:erase} {2:my} {3:shortcomings and faults}.",
+    "english": "{2:Queen }{1:of the bearer }{0:of Mandara}, {3:Indirā}, {7:erase} {4:my} {5:shortcomings }{6:and faults}.",
     "words": [
       {
-        "roman": "mandaradharanarasiye",
-        "gloss": "O queen of the bearer of Mount Mandara, Viṣṇu"
+        "roman": "mandara",
+        "gloss": "Mount Mandara"
+      },
+      {
+        "roman": "dharan",
+        "gloss": "of the bearer, Viṣṇu (dharana)"
+      },
+      {
+        "roman": "arasiye",
+        "gloss": "O queen: vocative"
       },
       {
         "roman": "indire",
@@ -982,8 +1109,16 @@ window.SONG_LINES = {
         "gloss": "my"
       },
       {
-        "roman": "kundudōṣagaḷaḷiyē",
-        "gloss": "erase the shortcomings and faults"
+        "roman": "kundu",
+        "gloss": "shortcomings"
+      },
+      {
+        "roman": "dōṣagaḷ",
+        "gloss": "faults: plural"
+      },
+      {
+        "roman": "aḷiyē",
+        "gloss": "erase"
       }
     ],
     "nameTable": false,
@@ -1096,36 +1231,59 @@ window.SONG_LINES = {
     "sourceLanguage": "kn",
     "sourceWords": [
       {
-        "text": "ಸಿಂಧುಶಯನ",
+        "text": "ಸಿಂಧು",
         "wordIndices": [
           0
         ]
       },
       {
-        "text": "ಸಿರಿವಿಜಯವಿಠ್ಠಲರೇಯ",
+        "text": "ಶಯನ",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "ಎಂದೆಂದಿಗೆ",
+        "text": "ಸಿರಿವಿಜಯವಿಠ್ಠಲರೇಯ",
         "wordIndices": [
           2
         ]
       },
       {
-        "text": "ಮನದಿಂದಗಳದೆ",
+        "text": "ಎಂದೆಂದಿಗೆ",
         "wordIndices": [
           3
+        ]
+      },
+      {
+        "text": "ಮನದಿಂ",
+        "wordIndices": [
+          4
+        ]
+      },
+      {
+        "text": "ದ",
+        "wordIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "text": "ಗಳದೆ",
+        "wordIndices": [
+          5
         ]
       }
     ],
     "roman": "sindhuśayana sirivijayaviṭṭhalarēya endendige manadindagaḷade",
-    "english": "{0:Ocean-reclining} {1:Śrī Vijaya Viṭṭhalarāya}, {2:for ever} {3:without leaving my mind}…",
+    "english": "{0:Ocean-}{1:reclining} {2:Śrī Vijaya Viṭṭhalarāya}, {3:for ever} {5:without leaving }{4:my mind}…",
     "words": [
       {
-        "roman": "sindhuśayana",
-        "gloss": "the one who reclines upon the ocean"
+        "roman": "sindhu",
+        "gloss": "ocean"
+      },
+      {
+        "roman": "śayana",
+        "gloss": "the one who reclines upon"
       },
       {
         "roman": "sirivijayaviṭṭhalarēya",
@@ -1136,8 +1294,12 @@ window.SONG_LINES = {
         "gloss": "for ever"
       },
       {
-        "roman": "manadindagaḷade",
-        "gloss": "without departing from my mind"
+        "roman": "manadind",
+        "gloss": "from my mind (manadinda)"
+      },
+      {
+        "roman": "agaḷade",
+        "gloss": "without departing"
       }
     ],
     "nameTable": false,
@@ -1178,20 +1340,39 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ಪೇಳಮ್ಮ",
+        "text": "ಪೇ",
         "wordIndices": [
           5
         ]
       },
       {
-        "text": "ಸಿಂಧುಸುತೆಯಳೇ",
+        "text": "ಳ",
+        "wordIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "text": "ಮ್ಮ",
         "wordIndices": [
           6
+        ]
+      },
+      {
+        "text": "ಸಿಂಧು",
+        "wordIndices": [
+          7
+        ]
+      },
+      {
+        "text": "ಸುತೆಯಳೇ",
+        "wordIndices": [
+          8
         ]
       }
     ],
     "roman": "ānandadindali bandu munde kuṇiyuvante vandisi pēḷamma sindhusuteyaḷē",
-    "english": "{6:Daughter of the ocean}, {4:bow} {5:and tell him, Mother}, {1:to come} {0:joyfully} {2:before me} {3:and dance}.",
+    "english": "{8:Daughter }{7:of the ocean}, {4:bow} {5:and tell him, }{6:Mother}, {1:to come} {0:joyfully} {2:before me} {3:and dance}.",
     "words": [
       {
         "roman": "ānandadindali",
@@ -1214,12 +1395,20 @@ window.SONG_LINES = {
         "gloss": "having bowed"
       },
       {
-        "roman": "pēḷamma",
-        "gloss": "tell him, Mother"
+        "roman": "pēḷ",
+        "gloss": "tell him"
       },
       {
-        "roman": "sindhusuteyaḷē",
-        "gloss": "O daughter of the ocean"
+        "roman": "amma",
+        "gloss": "Mother"
+      },
+      {
+        "roman": "sindhu",
+        "gloss": "ocean"
+      },
+      {
+        "roman": "suteyaḷē",
+        "gloss": "O daughter: vocative"
       }
     ],
     "nameTable": false,

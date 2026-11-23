@@ -220,7 +220,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vinatī sun le o rakhavāle dvār tere maĩ kaise āū̃",
-    "english": "{1,2:Hear}{0: the plea,}{3,4: O protector,}{8: how}{7,9: may I come}{5,6: to your door?}",
+    "english": "{1,2:Hear}{0: the plea,}{3: O }{4:protector,}{8: how}{7,9: may I come}{5,6: to your door?}",
     "words": [
       {
         "roman": "vinatī",
@@ -416,7 +416,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dekhanā cāhū̃ terī sūrat par ā̃khõ se andhā hū̃",
-    "english": "{0,1:I wish to see}{2,3: your face,}{4: but}{7,8: I am blind}{5,6: in my eyes.}",
+    "english": "{0,1:I wish to see}{2: your }{3:face,}{4: but}{7,8: I am blind}{5,6: in my eyes.}",
     "words": [
       {
         "roman": "dekhanā",
@@ -541,7 +541,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man mẽ basī hai terī mūrat sāī̃ terā bandā hū̃",
-    "english": "{0,1:In my heart}{4,5: your image}{2,3: resides;}{6: O Sai,}{7,8,9: I am your servant.}",
+    "english": "{0,1:In my heart}{4: your }{5:image}{2,3: resides;}{6: O Sai,}{7,8,9: I am your servant.}",
     "words": [
       {
         "roman": "man",
@@ -636,7 +636,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bābā terā bandā hū̃",
-    "english": "{0:O Baba,}{1,2,3: I am your servant.}",
+    "english": "{0:O Baba,}{3: I am}{1: your}{2: servant.}",
     "words": [
       {
         "roman": "bābā",
@@ -737,7 +737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "de sakate to de do ā̃khẽ rūp terā maĩ dekh sakū̃",
-    "english": "{0,1:If you can give,}{2,3,4: then give}{5: eyes,}{8,9,10: that I may see}{6,7: your form.}",
+    "english": "{0,1:If you can give,}{2,3,4: then give}{5: eyes,}{8,9,10: that I may see}{7: your }{6:form.}",
     "words": [
       {
         "roman": "de",
@@ -874,7 +874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunū̃ kaise maĩ terī kathāē̃ par kānõ se baharā hū̃",
-    "english": "{1:How}{0,2: can I hear}{3,4: your stories}{5: when}{6,7: my ears}{8,9: are deaf?}",
+    "english": "{1:How}{0,2: can I hear}{3: your }{4:stories}{5: when}{6,7: my ears}{8,9: are deaf?}",
     "words": [
       {
         "roman": "sunū̃",
@@ -1017,7 +1017,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo kahā vā kā kuch to sunāe ās lie maĩ baiṭhā hū̃",
-    "english": "{7,8:Holding hope}{6: that someone will let me hear}{4,5: at least something}{2,3: of}{0,1: what was said,}{9,10,11: I sit waiting.}",
+    "english": "{8:Holding }{7:hope}{6: that someone will let me hear}{4,5: at least something}{2,3: of}{0,1: what was said,}{9,10,11: I sit waiting.}",
     "words": [
       {
         "roman": "jo",
@@ -1130,7 +1130,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ās lie maĩ baiṭhā hū̃",
-    "english": "{0,1:Holding hope,}{2,3,4: I sit waiting.}",
+    "english": "{1:Holding }{0:hope,}{2,3,4: I sit waiting.}",
     "words": [
       {
         "roman": "ās",
@@ -1225,7 +1225,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "de sakate to do varadān terī kathāē̃ sun pāū̃",
-    "english": "{0,1:If you can give,}{2,3: then grant}{4: a boon,}{7,8: that I may hear}{5,6: your stories.}",
+    "english": "{0,1:If you can give,}{2,3: then grant}{4: a boon,}{7,8: that I may hear}{5: your }{6:stories.}",
     "words": [
       {
         "roman": "de",
@@ -1344,7 +1344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ānā cāhū̃ dvār tumhāre pair nahī̃ maĩ laṅgaṛā hū̃",
-    "english": "{0,1:I wish to come}{2,3: to your door,}{4,5: I have no legs,}{6,7,8: I am crippled.}",
+    "english": "{0,1:I wish to come}{2,3: to your door,}{4,5: I have no legs,}{6: I }{8:am }{7:crippled.}",
     "words": [
       {
         "roman": "ānā",
@@ -1469,7 +1469,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kis janam kā pāp hai merā isīlie maĩ bichaṛā hū̃",
-    "english": "{0,1,2:From which birth}{3,4,5: is this sin of mine?}{6: That is why}{7,8,9: I am separated.}",
+    "english": "{0,1,2:From which birth}{3,4,5: is this sin of mine?}{6: That is why}{7: I }{9:am }{8:separated.}",
     "words": [
       {
         "roman": "kis",
@@ -1564,7 +1564,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "isīlie maĩ bichaṛā hū̃",
-    "english": "{0:That is why}{1,2,3: I am separated.}",
+    "english": "{0:That is why}{1: I }{3:am }{2:separated.}",
     "words": [
       {
         "roman": "isīlie",
@@ -1748,7 +1748,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū rahamat kā dātā sāī̃ tū sabakā kalyāṇ kare",
-    "english": "{0,1,2,3:You are the giver of mercy,}{4: O Sai,}{5: you}{8: grant}{6,7: welfare to all.}",
+    "english": "{0:You }{3:are the giver }{2:of }{1:mercy,}{4: O Sai,}{5: you}{8: grant}{7: welfare }{6:to all.}",
     "words": [
       {
         "roman": "tū",
@@ -1867,7 +1867,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃g rahā hū̃ tumase bhikṣā tere haĩ bhaṇḍār bhare",
-    "english": "{0,1,2:I am begging}{4: alms}{3: from you;}{5,7: your storehouses}{6,8: are full.}",
+    "english": "{0,1,2:I am begging}{4: alms}{3: from you;}{5: your }{7:storehouses}{6: are }{8:full.}",
     "words": [
       {
         "roman": "mā̃g",
@@ -1956,7 +1956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere haĩ bhaṇḍār bhare",
-    "english": "{0,2:Your storehouses}{1,3: are full.}",
+    "english": "{0:Your }{2:storehouses}{1: are }{3:full.}",
     "words": [
       {
         "roman": "tere",
@@ -2045,7 +2045,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kar do rahamat mujhapar sāī̃ caraṇ tumhāre chū pāū̃",
-    "english": "{0,1,2:Bestow mercy}{3: upon me,}{4: O Sai,}{7,8: that I may touch}{5,6: your feet.}",
+    "english": "{0,1,2:Bestow mercy}{3: upon me,}{4: O Sai,}{7,8: that I may touch}{6: your }{5:feet.}",
     "words": [
       {
         "roman": "kar",

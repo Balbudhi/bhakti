@@ -1075,7 +1075,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhajo rām aur kṛṣṇa kanhaiyā, smaraṇ karo din rāt",
-    "english": "{0:Worship }{1:Rama }{2:and }{3:Krishna }{4:Kanhaiya, }{5,6:practice remembrance }{7:day }{8:and night}",
+    "english": "{0:Worship }{1:Rama }{2:and }{3:Krishna }{4:Kanhaiya, }{6:practice }{5:remembrance }{7:day }{8:and night}",
     "words": [
       {
         "roman": "Bhajo",

@@ -203,7 +203,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vo to sadā bhaktõ ke dil mẽ rahte haĩ",
-    "english": "{0:He }{1:indeed }{2:always }{7,8:dwells }{5,6:in the heart }{3,4:of devotees.}",
+    "english": "{0:He }{1:indeed }{2:always }{7,8:dwells }{5,6:in the heart }{4:of }{3:devotees.}",
     "words": [
       {
         "roman": "vo",
@@ -512,7 +512,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāī̃ to bulāe par tū hī jā na pāe",
-    "english": "{0:Sai }{1:indeed }{2:calls, }{3:but }{4,5:you yourself }{6,7,8:cannot go,}",
+    "english": "{0:Sai }{1:indeed }{2:calls, }{3:but }{4:you }{5:yourself }{6,7,8:cannot go,}",
     "words": [
       {
         "roman": "sāī̃",
@@ -631,7 +631,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bābā to bulāe par tū hī jā na pāe",
-    "english": "{0:Baba }{1:indeed }{2:calls, }{3:but }{4,5:you yourself }{6,7,8:cannot go,}",
+    "english": "{0:Baba }{1:indeed }{2:calls, }{3:but }{4:you }{5:yourself }{6,7,8:cannot go,}",
     "words": [
       {
         "roman": "bābā",
@@ -750,7 +750,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "der ho na jāe cal der ho na jāe",
-    "english": "{0,1,2,3:Lest it be too late, }{4:come on, }{5,6,7,8:lest it be too late!}",
+    "english": "{2:Lest }{1,3:it be }{0:too late, }{4:come on, }{7:lest }{6,8:it be }{5:too late!}",
     "words": [
       {
         "roman": "der",
@@ -1095,7 +1095,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhūkhõ kī bhūkh ho pyāsõ kī pyās miṭtī hai",
-    "english": "{2:the hunger }{0,1:of the hungry }{3:or }{6:the thirst }{4,5:of the thirsty }{7,8:is quenched;}",
+    "english": "{2:the hunger }{0,1:of the hungry }{3:or }{6:the thirst }{4,5:of the thirsty }{8:is }{7:quenched;}",
     "words": [
       {
         "roman": "bhūkhõ",
@@ -1731,7 +1731,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āyā hai tujhko jo bulāvā kyõ soce re",
-    "english": "{3:Since }{4:the summons }{0,1:has come }{2:to you, }{5:why }{6:do you hesitate, }{7:O?}",
+    "english": "{3:Since }{4:the summons }{1:has }{0:come }{2:to you, }{5:why }{6:do you hesitate, }{7:O?}",
     "words": [
       {
         "roman": "āyā",
