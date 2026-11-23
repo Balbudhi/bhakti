@@ -838,6 +838,51 @@ window.BHAKTI_SONGS = [
     "queueNumber": 177
   },
   {
+    "slug": "devi-aparadha-kshamapana-stotram",
+    "queueId": "09c13e74",
+    "title": "Devī Aparādha Kṣamāpana Stotram",
+    "credit": "Ādi Śaṅkarācārya · Ashit Desai & Hema Desai",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Durgā",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Devi Aparadha Kshamapana Stotram",
+      "Devi Aparadh Kshamapan Stotra",
+      "Devyaparadha Kshamapana Stotram",
+      "Devyaparādhakṣamāpana Stotram",
+      "Bhavani Stuti",
+      "Na Mantram No Yantram",
+      "Adi Shankaracharya",
+      "Adi Sankaracharya",
+      "Adi Shankara",
+      "Shakti",
+      "Durga",
+      "Shiva",
+      "Ashit Desai",
+      "Hema Desai"
+    ],
+    "writer": "Ādi Śaṅkarācārya",
+    "singer": "Ashit Desai & Hema Desai",
+    "composer": "Ashit Desai",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-aparadha-kshamapana-stotram-81d81f189867180905f56a839f2cdc5a774788e900199f4a42751419904bd63a.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-aparadha-kshamapana-stotram-5f16d5865fca6739c6bdfa4bce908e11fc74f17c73cff84aa67c5cdd85af09e5.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 390
+  },
+  {
     "slug": "kaha-dhundhu-sai",
     "queueId": "e7066e86",
     "title": "Kaha Dhundhu Sai",
@@ -13242,4 +13287,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 329
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "00c6e44230011a6acef5441c1768888094e00fcbf19348b5feb0cfbbf8bcc29c";
+window.BHAKTI_SHUFFLE_REVISION = "fefefc878d2e7076d9716d705b43d8e086b6f867f75783b0ea9148a709a23ac7";

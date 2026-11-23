@@ -42078,6 +42078,131 @@
         "qualificationVersion": 1,
         "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
       }
+    },
+    "09c13e74": {
+      "slug": "devi-aparadha-kshamapana-stotram",
+      "semantic": {
+        "assessment": "reviewed",
+        "outcome": "known",
+        "inputHash": "af3064d1202ff74690aefe8d04d2906c3848a43c0511a1d727087afadad32914",
+        "method": {
+          "id": "source-grounded-semantic-review",
+          "version": 4,
+          "model": "google/gemini-3.7-flash",
+          "fingerprint": "9ba75380b2d80aca6114f0faac0f0e34a038303da72333e8cbc997fcd7aa7bb8",
+          "projectionVersion": 3,
+          "projectionFingerprint": "b704a519139e12c8e619e509c7c4a8f3e8666dcfd08b514e84a48c9308a09527"
+        },
+        "review": {
+          "kind": "independent-model",
+          "recordHash": "1be5ccb1160fe67d8378340e61ab31c2a7d87e49e3a3c8642120b1d5f2a3b512",
+          "extractionRequestIds": [
+            "3ca17c5a91e04f5393aff3f6247af0fb"
+          ],
+          "reviewRequestIds": [
+            "10af56385aae4760a53a599eb5d7374d"
+          ],
+          "coveredLineCount": 48
+        },
+        "features": {
+          "themes": [
+            {
+              "id": "theme.compassion",
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "theme.humility",
+              "weight": 0.4166666666666667
+            },
+            {
+              "id": "theme.refuge",
+              "weight": 0.16666666666666669
+            }
+          ],
+          "actions": [
+            {
+              "id": "action.petition",
+              "weight": 0.5555555555555556
+            },
+            {
+              "id": "action.praise",
+              "weight": 0.22222222222222224
+            },
+            {
+              "id": "action.remembrance",
+              "weight": 0.22222222222222224
+            }
+          ],
+          "subjects": [
+            {
+              "id": "subject.devi",
+              "weight": 0.5555555555555556,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.durga",
+              "weight": 0.22222222222222224,
+              "role": "worship_focus"
+            },
+            {
+              "id": "subject.shiva",
+              "weight": 0.22222222222222224,
+              "role": "narrative_subject"
+            }
+          ]
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+      },
+      "audio": {
+        "inputHash": "45228fa7fca432fb5644c937e02ecf593cd59833043c6c34c21f54e6dd708bc9",
+        "mediaSha256": "81d81f189867180905f56a839f2cdc5a774788e900199f4a42751419904bd63a",
+        "assessment": "measured",
+        "outcome": "known",
+        "methodFingerprint": "0bd55d38d1771b16cd11db92fd11697d1b06406a58da4d749f88074a7e9eba58",
+        "method": {
+          "id": "physical",
+          "version": "physical-2",
+          "fingerprint": "a6e2ae13d4def2cc8a93a509efb7e7720302ddfb698a5f8ac91ab067deeacc29"
+        },
+        "domain": {
+          "codec": "opus",
+          "sampleRate": 48000,
+          "channels": 2,
+          "durationSeconds": 398.941
+        },
+        "receiptHash": "3a278f9a23d656a59e767a7a0ee89dcb214946986e1946d5a6fd203c5a54553e",
+        "physical": {
+          "whole": {
+            "integratedLufs": -12.7,
+            "truePeakDbfs": 2.1,
+            "rmsDbfs": -12.978965524000314,
+            "centroidHz": 1578.6780580334796
+          },
+          "profiles": {
+            "beginning": {
+              "startSeconds": 0,
+              "endSeconds": 30.0,
+              "rmsDbfs": -12.335938827246583,
+              "centroidHz": 1559.6006652908866
+            },
+            "body": {
+              "startSeconds": 0,
+              "endSeconds": 398.9159375,
+              "rmsDbfs": -12.978965524000314,
+              "centroidHz": 1578.6780580334796
+            },
+            "end": {
+              "startSeconds": 368.9159375,
+              "endSeconds": 398.9159375,
+              "rmsDbfs": -17.66684872859765,
+              "centroidHz": 1358.8151228530703
+            }
+          }
+        },
+        "qualificationVersion": 1,
+        "evidenceRevision": "physical-v2-complete-353-20261115:e5958360b22a71b9284c8a016623bf9b2c06422cf9dcf66622e2f2c9de6fea7a"
+      }
     }
   }
 }

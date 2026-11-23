@@ -2413,6 +2413,12 @@
       "definitionCount": 7,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+    },
+    "devi-aparadha-kshamapana-stotram": {
+      "status": "finished",
+      "readerSha256": "6ad2d0c3e2c7e6079dbabfc9a868af10bc9e531d5ccec0077ac9c17932390fa0",
+      "definitionCount": 256,
+      "reviewedAt": "2026-11-22"
     }
   },
   "followUpReport": "docs/research/translation-source-resolution-2026-11-21.md",
