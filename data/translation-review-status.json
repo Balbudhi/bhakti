@@ -165,7 +165,7 @@
     },
     "tero-chakar-kare-pukar": {
       "status": "finished",
-      "readerSha256": "5313044626885667c516020fdc4ceecc7eae097f6c5f573ee99e78e4e4335c66",
+      "readerSha256": "fb2c82118a4a6fa5a775b18978b92c06a04bf9e75fa3128c69cc582eecd24aa4",
       "definitionCount": 19,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
@@ -1076,7 +1076,7 @@
     },
     "hanuman-bahuk": {
       "status": "finished",
-      "readerSha256": "f0f725767e4bce783b5a4f4cd98f158ac6b99e313f6348ee91fa531740425ba6",
+      "readerSha256": "c93f8f57d42008b5b85a6a16e76cac203833dd5616bb9dc0ac926e9f84fc68e0",
       "definitionCount": 203,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
@@ -1538,7 +1538,7 @@
     },
     "ekdant-gajvadan": {
       "status": "finished",
-      "readerSha256": "f0fbe234e7896dfc33b339d99aec8786e92654a461cf78143e3b231d8d5589e9",
+      "readerSha256": "6f1d28e8bbacbaa3d5c479ded501a83fb2d9120c3b8e0b0e2e1d0b0b10cd1e83",
       "definitionCount": 12,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
@@ -1552,7 +1552,7 @@
     },
     "siddh-bhajo-omkar-avadho": {
       "status": "finished",
-      "readerSha256": "4202b17b1e1e6bd616e4a1a9ed5d5ebca526de60ea97e3638f83d80453d0490a",
+      "readerSha256": "6370f63b28e84920eebda2bbb516e150cba9abea038c6c4fd058d9998c130bfe",
       "definitionCount": 20,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
@@ -2339,7 +2339,7 @@
     },
     "jai-jai-durge-aad-bhavani": {
       "status": "finished",
-      "readerSha256": "c8eed5b3c842d67fdc2fe4479a120cbf433f7e2f4736305fdaf0dc324e55be5f",
+      "readerSha256": "65bd8871af008d469f53912dae171fbfd9110316234786cdeb0a81acdb4d7282",
       "definitionCount": 52,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
@@ -2367,14 +2367,14 @@
     },
     "meri-dati-daya-har-ik-te-kardi-ae": {
       "status": "finished",
-      "readerSha256": "0216fcb77b57983cd570db6bbfbe49a3ac1f5deab2cd557620eda7a1d197b814",
+      "readerSha256": "a4e7585e91aff27045337b67c638280c4cbf08faa1c396418e9978831322c93a",
       "definitionCount": 42,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
     },
     "narayani-stuti": {
       "status": "finished",
-      "readerSha256": "b19a40632a7ce48aaf9cbc8d9c09804fedec2b9aa0c2e93f75a04e0bed6d5432",
+      "readerSha256": "7004abc2aee17dfb200f2352db8f5efd4b067abaa4e96017a32738c5d207903b",
       "definitionCount": 60,
       "reviewedAt": "2026-11-22",
       "resolutionRecord": "docs/research/translation-review-2026-11-22.md"

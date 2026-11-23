@@ -175,7 +175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ vakratuṇḍa mahākāya sūryakoṭisamaprabha |\nnirvighnaṃ kuru me deva sarvakāryeṣu sarvadā ||",
-    "english": "{0:Oṃ.}{1: Curved-trunked,}{2: great-bodied}{7: god,}{3: radiant as ten million suns:}{9: always}{5: make}{6: my}{8: every undertaking}{4: free of obstacles.}",
+    "english": "{0:Oṃ.}{1: Curved-trunked,}{2: great-bodied}{7: God,}{3: radiant as ten million suns:}{9: always}{5: make}{6: my}{8: every undertaking}{4: free of obstacles.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3919,7 +3919,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "etatkṛtaṃ yatkadanaṃ tvayādya dharmadviṣāṃ devi mahāsurāṇām |\nrūpairanekairbahudhā''tmamūrtiṃ kṛtvāmbike tatprakaroti kānyā ||",
-    "english": "{9:Who else}{8: can do}{0,2: what you have done today,}{4: Goddess—}{1:slaughtering}{5: the great demons}{3: who hate righteousness,}{7: making}{6: your own embodiment manifold in many forms,}{7: Mother?}",
+    "english": "{9:Who else}{8: can do}{0,2: what you have done today,}{4: Goddess—}{1:slaughtering}{5: the great demons}{3: who hate righteousness,}{7: making}{6: your own form manifold in many shapes,}{7: Mother?}",
     "words": [
       {
         "roman": "etatkṛtaṃ",

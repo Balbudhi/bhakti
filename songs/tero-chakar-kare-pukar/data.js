@@ -1118,7 +1118,7 @@ window.SONG_LINES = {
     "grammarNote": "Locative phrase Bhavasāgar meṃ with present participle ḍūbat modifying the implied devotee; second clause contains direct object hāth and respectful imperative pasāro with particle nā."
   },
   "v4-2": {
-    "source": "सकल दानि तेहि छोड़ि अम्बिका",
+    "source": "सकल दान देहि छोड़ि अम्बिका",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1128,13 +1128,13 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दानि",
+        "text": "दान",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "तेहि",
+        "text": "देहि",
         "wordIndices": [
           2
         ]
@@ -1152,24 +1152,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sakal dāni tehi choṛi ambikā",
-    "english": "{3:apart from }{2:that }{1:giver }{0:of all, }{4:Ambika,}",
+    "roman": "Sakal dān dehi choṛi ambikā",
+    "english": "{2:grant }{0:every }{1:gift; }{3:apart from }{4:Ambika,}",
     "words": [
       {
-        "roman": "sakal",
-        "gloss": "all; everything",
+        "roman": "Sakal",
+        "gloss": "all / entire",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dāni",
-        "gloss": "giver; bestower",
+        "roman": "dān",
+        "gloss": "gifts / charity / boons",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tehi",
-        "gloss": "that one (Braj oblique)",
+        "roman": "dehi",
+        "gloss": "grant; give",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1181,15 +1181,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambikā",
-        "gloss": "Mother, the Goddess",
+        "gloss": "Divine Mother",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sakal dāni' (giver of all) describes Ambikā; 'tehi choṛi' (leaving that one aside) completes with the next line, 'there is no other support'. 'dāni tehi' is the best-supported hearing of a compressed sung phrase."
+    "grammarNote": "'dehi' is the imperative 'grant', with 'sakal dān' (every gift) as object. 'choṛi ambikā' (leaving Ambikā aside) completes with the next line, 'there is no other support'."
   },
   "v4-3": {
-    "source": "सकल दानि तेहि छोड़ि अम्बिका",
+    "source": "सकल दान देहि छोड़ि अम्बिका",
     "sourceLanguage": "bra",
     "sourceWords": [
       {
@@ -1199,13 +1199,13 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "दानि",
+        "text": "दान",
         "wordIndices": [
           1
         ]
       },
       {
-        "text": "तेहि",
+        "text": "देहि",
         "wordIndices": [
           2
         ]
@@ -1223,24 +1223,24 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "sakal dāni tehi choṛi ambikā",
-    "english": "{3:apart from }{2:that }{1:giver }{0:of all, }{4:Ambika,}",
+    "roman": "Sakal dān dehi choṛi ambikā",
+    "english": "{2:grant }{0:every }{1:gift; }{3:apart from }{4:Ambika,}",
     "words": [
       {
-        "roman": "sakal",
-        "gloss": "all; everything",
+        "roman": "Sakal",
+        "gloss": "all / entire",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "dāni",
-        "gloss": "giver; bestower",
+        "roman": "dān",
+        "gloss": "gifts / charity / boons",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
-        "roman": "tehi",
-        "gloss": "that one (Braj oblique)",
+        "roman": "dehi",
+        "gloss": "grant; give",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1252,12 +1252,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambikā",
-        "gloss": "Mother, the Goddess",
+        "gloss": "Divine Mother",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'sakal dāni' (giver of all) describes Ambikā; 'tehi choṛi' (leaving that one aside) completes with the next line, 'there is no other support'. 'dāni tehi' is the best-supported hearing of a compressed sung phrase."
+    "grammarNote": "'dehi' is the imperative 'grant', with 'sakal dān' (every gift) as object. 'choṛi ambikā' (leaving Ambikā aside) completes with the next line, 'there is no other support'."
   },
   "v4-4": {
     "source": "और सहारो ना",

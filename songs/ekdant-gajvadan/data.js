@@ -959,7 +959,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tānasena terī stuti",
-    "english": "{0:Tānsen, }{2:praise }{1:to you}",
+    "english": "{0:Tānsen—}{1:your }{2:praise}",
     "words": [
       {
         "roman": "tānasena",
@@ -1043,11 +1043,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karata kāṭo kaleśa prathama vandanā karata dvaṁdva miṭa jāī",
-    "english": "{0:offering: }{1:cut away }{2:distress. }{5:On offering }{3:the first }{4:salutation, }{6:conflict }{7,8:is wiped away}",
+    "english": "{0:he offers: }{1:cut away }{2:distress. }{5:On offering }{3:the first }{4:salutation, }{6:conflict }{7,8:is wiped away}",
     "words": [
       {
         "roman": "karata",
-        "gloss": "offering; doing",
+        "gloss": "offers; does",
         "concept_key": "",
         "preserve_in_english": false
       },

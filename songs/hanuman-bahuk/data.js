@@ -4027,7 +4027,7 @@ window.SONG_LINES = {
     "source": "कमठ की पीठि जाके गोड़नि की गाड़ैं मानो नाप के भाजन भरी जलनिधि जल भो",
     "sourceLanguage": "bra",
     "roman": "kamaṭha kī pīṭhi jāke goṛani kī gāṛaiṁ māno nāpa ke bhājana bharī jalanidhi jala bho",
-    "english": "{6:The deep hollows }{3:his }{4,5:feet left }{2:in the shell }{0,1:of the cosmic tortoise }{14:became, }{7:as it were, }{8,9,10:measuring vessels }{11:to hold }{13:the waters }{12:of the ocean;}",
+    "english": "{6:In the deep hollows }{3:his }{4,5:feet left }{2:in the shell }{0,1:of the cosmic tortoise, }{12:the ocean’s }{13:water }{14:became, }{7:as it were, }{8,9:the measured }{11:fill }{10:of a vessel;}",
     "words": [
       {
         "roman": "kamaṭha",
@@ -4091,13 +4091,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhājana",
-        "gloss": "vessels; containers",
+        "gloss": "vessel; vessels",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bharī",
-        "gloss": "to fill; to hold; the full amount of",
+        "gloss": "fill; -ful (as in “vesselful”)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4120,7 +4120,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`goṛani` is the Braj oblique plural of `goṛa` ('foot/leg'). `māno` marks utprekṣā (poetic conjecture). `nāpa ke bhājana` is a genitive phrase, 'vessels of measure'; `jāke` refers to Hanumān, named at the end of the stanza.",
+    "grammarNote": "`bho` is masculine singular and agrees with `jala`: the ocean's water became a vesselful. `bhājana bharī` is a measure phrase, 'the fill of a vessel'; `nāpa ke` qualifies it, 'of measure'. `goṛani` is the Braj oblique plural of `goṛa` (foot); `jāke` continues `jākī` of the preceding line, Hanumān's. `māno` marks utprekṣā (poetic conjecture).",
     "sourceWords": [
       {
         "text": "कमठ",
@@ -4218,7 +4218,7 @@ window.SONG_LINES = {
     "source": "जातुधान दावन परावन को दुर्ग भयो महामीन बास तिमि तोमनी को थल भो",
     "sourceLanguage": "bra",
     "roman": "jātudhāna dāvana parāvana ko durga bhayo mahāmīna bāsa timi tomanī ko thala bho",
-    "english": "{5:it became }{4:a fortress }{2,3:for those fleeing }{1:the destruction }{0:of the demons, }{12:and became }{7,11:a dwelling place }{6:for giant fish }{9,10:and swarms }{8:of sea-monsters,}",
+    "english": "{5:it became }{4:a stronghold }{2,3:for those fleeing }{1:the crushing }{0:of the demons, }{12:and became }{7,11:a dwelling place }{6:for giant fish }{9,10:and swarms }{8:of sea-monsters,}",
     "words": [
       {
         "roman": "jātudhāna",
@@ -4228,7 +4228,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dāvana",
-        "gloss": "destruction; subduing",
+        "gloss": "crushing; subduing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4299,7 +4299,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "`tomanī` is the Braj oblique plural of `toma` ('multitude/swarm'). `timi` is a legendary giant fish; the `timiṅgila` is the larger creature that swallows it. `jātudhāna dāvana` is 'destruction of the demons'; `parāvana ko durga` is 'a fortress for flight'.",
+    "grammarNote": "The subject is the ocean's water of the preceding line. `jātudhāna dāvana` is 'the crushing of the demons'; `parāvana ko durga`, 'a stronghold for flight'. `tomanī` is the Braj oblique plural of `toma` (multitude). `timi` is a legendary giant fish.",
     "sourceWords": [
       {
         "text": "जातुधान",
@@ -6961,7 +6961,7 @@ window.SONG_LINES = {
     "source": "खल दुख दोषिबे को जन परितोषिबे को माँगिबो मलीनता को मोदक सुदान भो",
     "sourceLanguage": "bra",
     "roman": "khala dukha doṣibe ko jana paritoṣibe ko mā̃gibo malīnatā ko modaka sudāna bho",
-    "english": "{12:He became }{2,3:one to bring }{1:suffering }{2:and disgrace }{0:upon the wicked, }{5,6:to satisfy fully }{4:the devotees, }{8,9:and, against the wretchedness }{7:of begging, }{11:a noble gift }{10:of sweets.}",
+    "english": "{3:For }{1:paining }{2:and shaming }{0:the wicked, }{5,6:for fully satisfying }{4:the devotees, }{8,9:against the wretchedness }{7:of begging, }{12:he became }{11:a noble gift }{10:of sweets.}",
     "words": [
       {
         "roman": "khala",
@@ -6971,13 +6971,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "dukha",
-        "gloss": "sorrow; affliction",
+        "gloss": "pain; paining",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "doṣibe",
-        "gloss": "for faulting; for disgracing",
+        "gloss": "for faulting; for shaming",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7745,11 +7745,11 @@ window.SONG_LINES = {
     "source": "ताके जो अनरथ सो समर्थ एक आंक को ।",
     "sourceLanguage": "bra",
     "roman": "tāke jo anartha so samartha eka āṅka ko ।",
-    "english": "{3,7:Who is there }{4:so powerful }{5,6:and so firm of resolve }{1:as }{0:to wish him }{2:harm?}",
+    "english": "{7:Who, }{5,6:for certain, }{3:is so }{4:powerful }{1:as }{0:to aim }{2:harm at him?}",
     "words": [
       {
         "roman": "tāke",
-        "gloss": "would seek; would intend",
+        "gloss": "would look toward; would aim",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -7785,7 +7785,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āṅka",
-        "gloss": "mark; with eka: firm resolve; certainty",
+        "gloss": "mark; with eka: for certain, a settled thing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15540,7 +15540,7 @@ window.SONG_LINES = {
     "source": "आई है बनाई वेष आप ही बिचारि देखु पाप जाय सब को गुनी के पाले परैगी।",
     "sourceLanguage": "bra",
     "roman": "āī hai banāī veṣa āpa hī bicāri dekhu pāpa jāya saba ko gunī ke pāle paraigī.",
-    "english": "{0,1:She has come }{2,3:assuming a disguise; }{6,7:reflect and see }{4,5:for yourself—}{10,11:everyone’s }{8:sin }{9:will be gone }{14,15:once she falls into the clutches }{12,13:of one skilled enough.}",
+    "english": "{0,1:She has come }{2,3:assuming a disguise; }{6,7:reflect and see }{4,5:for yourself—}{10,11:everyone’s }{8:sin }{9:will go; }{14,15:she will fall into the clutches }{12,13:of one who has the skill.}",
     "words": [
       {
         "roman": "āī",
@@ -20969,7 +20969,7 @@ window.SONG_LINES = {
     "source": "तेरे बल रामराज किये सब सुरकाज सकल समाज साज साजे रघुबर के।",
     "sourceLanguage": "bra",
     "roman": "tere bala rāmarāja kiye saba surakāja sakala samāja sāja sāje raghubara ke.",
-    "english": "{0:By your }{1:might, }{2:King Rama }{3:accomplished }{4:all }{5:the tasks of the gods, }{9:and you arrayed }{6:the entire }{7:assembly }{8:and regalia }{10,11:of Raghubara.}",
+    "english": "{0:By your }{1:might, }{2:King Rama }{3:accomplished }{4:all }{5:the tasks of the gods, }{6:and the entire }{7:assembly }{8:and regalia }{10,11:of Raghubara }{9:were arrayed.}",
     "words": [
       {
         "roman": "tere",
@@ -23139,7 +23139,7 @@ window.SONG_LINES = {
     "source": "श्रीरघुबीर निवारिये पीर रहौं दरबार परो लटिलूलो॥",
     "sourceLanguage": "bra",
     "roman": "śrī-raghubīr niwāriye pīr rahauṁ darabār paro laṭilūlo.",
-    "english": "{0:O Sri Rama, hero of the Raghus, }{1:please remove }{2:this pain; }{3:let me remain }{5:lying, }{6:though limp and crippled, }{4:at your court threshold.}",
+    "english": "{0:O Sri Rama, hero of the Raghus, }{1:please remove }{2:this pain; }{3:let me remain }{5:lying, }{6:limp and crippled, }{4:at your court threshold.}",
     "words": [
       {
         "roman": "śrī-raghubīr",
@@ -24570,7 +24570,7 @@ window.SONG_LINES = {
     "source": "बाहुक सुबाहु नीच लीचर मरीच मिली मुँहपीर केतुजा कुरोग जातुधान है।",
     "sourceLanguage": "bra",
     "roman": "bāhuka subāhu nīc līcar marīc milī mum̐hpīr ketujā kurog jātudhān hai.",
-    "english": "{0:Arm-pain }{2:is vile }{1:Subāhu, }{5:joined by }{3:bodily weakness }{4:as Mārīca; }{6:mouth-pain }{7:is Tataka, }{8:and foul diseases }{10:are }{9:the demons.}",
+    "english": "{0:Arm-pain }{2:is vile }{1:Subāhu, }{3:clinging debility }{4:is Mārīca; }{6:mouth-pain }{5:has joined }{7:as Tataka, }{8:and foul diseases }{10:are }{9:the demons.}",
     "words": [
       {
         "roman": "bāhuka",
@@ -24592,7 +24592,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "līcar",
-        "gloss": "weakness; bodily debility",
+        "gloss": "clinging; sluggish debility",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24604,7 +24604,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "milī",
-        "gloss": "joined; together with",
+        "gloss": "has joined; met with",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24892,11 +24892,11 @@ window.SONG_LINES = {
     "source": "सुमिरे सहाय राम लखन आखर दोऊ जिनके समूह साके जागत जहान है।",
     "sourceLanguage": "bra",
     "roman": "sumire sahāy rām lakhan ākhar doū jinke samūh sāke jāgat jahān hai.",
-    "english": "{0:When remembered, }{5:both }{4:syllables of that name }{1:are my helpers, }{2:as Rama }{3:and Lakshmana, }{6:whose }{7:host }{8:of heroic deeds }{9,11:shines }{10:throughout the world.}",
+    "english": "{0:I have invoked }{1:as helpers }{5:both }{4:syllables, }{2:Rama }{3:and Lakshmana, }{6:whose }{7:host }{8:of heroic deeds }{9,11:shines }{10:throughout the world.}",
     "words": [
       {
         "roman": "sumire",
-        "gloss": "when remembered; invoked",
+        "gloss": "remembered",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -24967,7 +24967,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "The two syllables rā and ma are personified as Rāma and Lakṣmaṇa, who guarded Viśvāmitra’s sacrifice. sāke is plural of sākā (heroic exploit / famous historical deed).",
+    "grammarNote": "sāke is plural of sākā (heroic exploit / famous historical deed).",
     "sourceWords": [
       {
         "text": "सुमिरे",

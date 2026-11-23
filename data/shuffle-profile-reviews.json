@@ -2833,7 +2833,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "44ee4b15d60cff15f977a4b1a786388ef6aa169d0f6f128699d3d16425d870a9",
+        "inputHash": "ba3c285e0f630691cbe2d2e3d3b4ee6cc4cc66ae052ca2a40efa530ece927e31",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -2844,12 +2844,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "aaf074fafb98c42e6ab205289568cf51d8a3d21b2cced35d3ce263675c59d0b4",
+          "recordHash": "261db3eba503e7a6aa34cff479a72e1c0f07ef39b1e5fc0c41cf0e359d70659e",
           "extractionRequestIds": [
-            "470c617a894347d2bb5619bcbf1bfc5b"
+            "c4decf4928e44b3bb6b320775e4e6719"
           ],
           "reviewRequestIds": [
-            "d1417d64ba504da48adce03f431148c1"
+            "114c074263f940038b915f6f3119594a"
           ],
           "coveredLineCount": 19
         },
@@ -2866,12 +2866,8 @@
           ],
           "actions": [
             {
-              "id": "action.invitation",
-              "weight": 0.28571428571428575
-            },
-            {
               "id": "action.petition",
-              "weight": 0.7142857142857143
+              "weight": 1.0
             }
           ],
           "subjects": [
@@ -19031,7 +19027,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "d756a6c7b94a76a6698677c8b480901cfb95c54777252a5451670b00ef6a2480",
+        "inputHash": "fa3954e2d0e54c57e94bd29776fbf3d24dee9854d59151b9de2f24d938b71ca3",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -19042,12 +19038,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "6ebd11189337dfa90f4bc8dc4ce84ca6e0a9c8d6bf9b58e7368e05ca860e3e9c",
+          "recordHash": "e7c86548e5fe5f466f9885e3a50eae8cb4341c5f6328ed6165339aecc6af1b87",
           "extractionRequestIds": [
-            "5815327f207544649248f2ec90390cf3"
+            "06bc3c7746e84c938d91ccd303c789cb"
           ],
           "reviewRequestIds": [
-            "75fbab7054664ece979d612fc088db8f"
+            "398c1b0cab164d81bf30c0d19298cce9"
           ],
           "coveredLineCount": 203
         },
@@ -19073,15 +19069,11 @@
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.4166666666666667
+              "weight": 0.5
             },
             {
               "id": "action.praise",
-              "weight": 0.4166666666666667
-            },
-            {
-              "id": "action.remembrance",
-              "weight": 0.16666666666666669
+              "weight": 0.5
             }
           ],
           "subjects": [
@@ -19093,10 +19085,10 @@
             {
               "id": "subject.rama",
               "weight": 0.22222222222222224,
-              "role": "narrative_subject"
+              "role": "worship_focus"
             },
             {
-              "id": "subject.shiva",
+              "id": "subject.sita",
               "weight": 0.22222222222222224,
               "role": "narrative_subject"
             }
@@ -27298,7 +27290,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "60b76728421acdb7d2b4ca6831027f87e91e5a4a485d93284ce149aa119c9333",
+        "inputHash": "6c173b84d5f7b57084f85da7187f084c1a19464c0e9052f70941874b5c1239fd",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -27309,12 +27301,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "6dd8c744ba0b9b5f744c7b25d6150244454ab2a664b07d538c6a776484c50d5c",
+          "recordHash": "b20810e7b3e27b140f93ebefd82d1ae6af6250f90a80982ad5f7ecd81dac8b2d",
           "extractionRequestIds": [
-            "39a619e7b5be4008b9ac100cac257e5f"
+            "ec62a4dd49ca41dbab5323cda1a5827c"
           ],
           "reviewRequestIds": [
-            "5d122472d6064be4b3fe660d1ccaceeb"
+            "76915c39178d4b968f9037204903220f"
           ],
           "coveredLineCount": 12
         },
@@ -27494,7 +27486,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "1776dc3c9f1a21bc43a6df7027acd1f1fa9a96e808bcf943acea7fe600ec39a6",
+        "inputHash": "397005d9111b95227c7beb51db77529934d75a6f67c1286467c176d985ee2983",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -27505,12 +27497,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "2ae7c7f35516a2a1017dcafc4ba64d33746cdf4c1de9237459ae62171957072f",
+          "recordHash": "42a802abb7bbe92acaf3e5f57af0e6cd39ef375288461997e1a7f7b0d1f21a37",
           "extractionRequestIds": [
-            "81d0df5c926c4e9681f70d7cfdce57ed"
+            "6e97551f6c4a420eaad6711d14121457"
           ],
           "reviewRequestIds": [
-            "182e42e9c5874d699fedd8d34f0eefc9"
+            "df05d0b01e324fbeb932fc4876ea7ffa"
           ],
           "coveredLineCount": 20
         },
@@ -40762,7 +40754,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "47feedc0aef2d98d4dc8067feea283fd683ce60cb7ed789301a1bb9ff773c273",
+        "inputHash": "1257567e7fa76c8163aad23977bc3f126ab4f8ae9b3ee16ba908da5c7b750fa0",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -40773,12 +40765,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "eb3245991068c11f74fae4507b85e475c9257b7a233033c1cbe4b15e93d3aaf7",
+          "recordHash": "50fe43ce23784a7eefd1c3acf0b983f1ec623919d62124d0ebe390f9ace22ed7",
           "extractionRequestIds": [
-            "94e3d652633340e29b49b1ec2af5bd18"
+            "bee3b103da794a72a36794d32178bd92"
           ],
           "reviewRequestIds": [
-            "5c62dd84d7d74d0ebd6bb74c05309cc9"
+            "013a2bda518d49cfaec1397144c88206"
           ],
           "coveredLineCount": 60
         },
@@ -40786,36 +40778,49 @@
           "themes": [
             {
               "id": "theme.creation",
-              "weight": 0.22222222222222224
+              "weight": 0.125
             },
             {
               "id": "theme.divine_presence",
-              "weight": 0.22222222222222224
+              "weight": 0.3125
+            },
+            {
+              "id": "theme.grace",
+              "weight": 0.125
+            },
+            {
+              "id": "theme.liberation",
+              "weight": 0.125
             },
             {
               "id": "theme.refuge",
-              "weight": 0.5555555555555556
+              "weight": 0.3125
             }
           ],
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.28571428571428575
+              "weight": 0.5
             },
             {
               "id": "action.praise",
-              "weight": 0.7142857142857143
+              "weight": 0.5
             }
           ],
           "subjects": [
             {
               "id": "subject.devi",
-              "weight": 0.5,
+              "weight": 0.3333333333333333,
               "role": "worship_focus"
             },
             {
+              "id": "subject.devi",
+              "weight": 0.3333333333333333,
+              "role": "narrative_subject"
+            },
+            {
               "id": "subject.durga",
-              "weight": 0.5,
+              "weight": 0.3333333333333333,
               "role": "worship_focus"
             }
           ]
@@ -41203,7 +41208,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "577dd291e6d51fda4d43a0116f060c54928a06a480354d10b786af3e6705558f",
+        "inputHash": "bf7606941676192974e35c03df359c8fcf178d2d5c2091ca67292ae531ef3001",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -41214,12 +41219,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "81121652177094d8926993516ba252cb79e29d9030185a733e8a92c0b5324c37",
+          "recordHash": "fe18c07670daa3405ec8bd22743f5f191397952647f62f218c106f6ce62ea6bc",
           "extractionRequestIds": [
-            "bf02b5bc10fd40968b126700810eddf2"
+            "e608c0a6216f4c14b602051ae2a3d1fc"
           ],
           "reviewRequestIds": [
-            "7ba86ad6a81f419db6687d4e9c1bc0cc"
+            "bb900bb136c541da973ee69cd9769ba0"
           ],
           "coveredLineCount": 52
         },
@@ -41253,7 +41258,7 @@
             {
               "id": "subject.vaishno_devi",
               "weight": 0.28571428571428575,
-              "role": "worship_focus"
+              "role": "narrative_subject"
             }
           ]
         },
@@ -41422,7 +41427,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "a87ca830280c5854ae658a7b26c334f1e299982b4a6ea57ead1029b552f0c46f",
+        "inputHash": "a7f4daab7052034a7161e820d9c1d152af97af146fc2a71212ad27617807ce9d",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -41433,12 +41438,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "3561cb583aebf35da5f8efed114140675572f0284a58f27b86c8a0715a765a5d",
+          "recordHash": "75b0205f20ffe0cc404af366cda3d7b32b6f7f528627a99e25462cd759e3663b",
           "extractionRequestIds": [
-            "0afc1f52a9e54c0abb888e1074a9ae37"
+            "83c491d4fd8a47b7b346b588f72c39f3"
           ],
           "reviewRequestIds": [
-            "2e15e3bdafb24ac59c0744aa77264398"
+            "99a49a98baef4f8d9340f778a4a28340"
           ],
           "coveredLineCount": 42
         },
