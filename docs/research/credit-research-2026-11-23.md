@@ -99,3 +99,31 @@ Evidence order: official release role credits (label metadata); identity of our 
 Not assigned: the two other voices on the TTD album Nōḍide Veṅkaṭaramaṇana; singers of the 32 Odia Satpathy recordings (only live performances by others were found); the uncredited Vaiṣṇo Devī shrine recordings and recitations, whose shared acoustics make voice comparison unreliable; four Sāī recordings; authors of the bhents sung by the shrine singers.
 
 Duplicate found: `ghana-shyama-sundara` and `ghanshyam-sundara` are the same recording. Nothing was removed.
+
+## Captions pass — 23 November 2026 (supersedes earlier shrine and Satpathy entries)
+
+Every source video's caption was read (198 of 203 ids; five are gone), then 948 captions of
+other uploads. A length match alone was not accepted: the audio had to line up.
+
+| Reader | Credit | Basis |
+|---|---|---|
+| chala-patha-ra-geeta and the seven others of that album | singer Shri Chandra Bhanu Satpathy | official album cover: lyricist, composer and voice |
+| dake-aahe-jagannath | Sudha Mishra | official video caption; same recording (0.89) |
+| janena-mu-kiba-debi | Antara Chakraborty | official video caption; same recording, constant offset |
+| bela-gadi-jae-kala-sari-jae; shri-kshetra-biharii | Antara Chakraborty; Sudha Mishra | same album as the two above; voice 0.87 / 0.85, other singers 0.2–0.5 |
+| mohodadhi-kule, jagannath-jagannath, guru-karo-aparadha-kshyama | Karunakar Sethi | voice 0.85 / 0.86 / 0.91 to his captioned recording, others at most 0.6 |
+| jab-karm-ka-khata-kholegi-maa | Desraj Ji | caption of the same recording; constant 10.5 s offset throughout |
+| meri-dati-daya-har-ik-te-kardi-ae | Yashpal Ji (was Jaipal Ji) | the same recording is on his channel; another upload names him |
+| maa-ne-raunkan-lagaiyan-kamaal-ho-gaya | Vijay Ji | caption of this bheṇṭ; labelled voice test |
+| yeh-mantra-hai-maa-chamunda-ka | Maninder Ji | every caption of this bheṇṭ; voice test undecided |
+| jai-jai-durge-aad-bhavani, russiya-tu-sade-naal | Jaipal Ji (kept) | captions of these bheṇṭs; labelled voice test |
+| aisa-pyar-baha-de-maiya | Balbir Nirdosh; Murli Manohar Swarup | Saregama caption; same recording (0.56) |
+| mere-man-prem; prabh-ju; sabh-gobind | composer | source caption |
+
+Shrine voices: plain similarity does not separate them (different singers reach 0.7–0.86).
+A test trained on 63 clips from the seven singers' own channels was right on 55.
+
+Rejected: Mysore Ramachandrachar for Ghaṭikācaladi (same length, different recording);
+Honājī Bāḷā for the Hindi Ghanaśyāma Sundarā; Bharati Krushna and Sarat Nayak for Sai
+Naivedya (a different album); Antara Chakraborty for Īśvar Se Kuch (a different recording).
+Open: the caption of Jab Karm signs "Bagge" (Sahil Bagga); this recording sings "bande".

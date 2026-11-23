@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Dake Aahe Jagannath",
   "subtitle": "Jagannātha",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Sudha Mishra",
+  "pageCredit": "Sudha Mishra",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "",
+  "singer": "Sudha Mishra",
   "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Odia"

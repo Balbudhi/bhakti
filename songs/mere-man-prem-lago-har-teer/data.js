@@ -9,7 +9,7 @@ window.SONG_META = {
   "translatorAttribution": "",
   "singer": "Jagjit Singh",
   "vocalist": "",
-  "composer": "",
+  "composer": "Jagjit Singh",
   "ensemble": "",
   "languages": [
     "Punjabi"

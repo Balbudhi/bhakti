@@ -1,10 +1,11 @@
 window.SONG_META = {
   "title": "Aisā Pyār Bahā De Maiyā",
+  "pageCredit": "Hari Om Sharan",
   "subtitle": "Durgā Vandanā",
-  "credit": "Hari Om Sharan",
-  "writer": "",
+  "credit": "Balbir Nirdosh · Hari Om Sharan · Murli Manohar Swarup",
+  "writer": "Balbir Nirdosh",
   "singer": "Hari Om Sharan",
-  "composer": "",
+  "composer": "Murli Manohar Swarup",
   "searchAliases": [
     "Aisa Pyar Baha De Maiya",
     "Durga Vandana",

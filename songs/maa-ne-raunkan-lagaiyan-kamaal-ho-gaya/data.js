@@ -1,16 +1,16 @@
 window.SONG_META = {
   "title": "Mā̃ Ne Rauṇkā̃ Lagāīā̃ Kamāl Ho Giā",
   "subtitle": "Śakti",
-  "credit": "Shri Mata Vaishno Devi Bhawan",
-  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
+  "credit": "Vijay Ji",
+  "pageCredit": "Vijay Ji",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Vijay Ji",
   "vocalist": "",
   "composer": "",
-  "ensemble": "Shri Mata Vaishno Devi Bhawan",
+  "ensemble": "",
   "languages": [
     "Punjabi",
     "Hindi"

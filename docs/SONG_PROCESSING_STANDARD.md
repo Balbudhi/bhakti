@@ -171,6 +171,13 @@ monotonic/coverage gate after occurrence 16, leaving occurrences 17–28 invalid
 for about $0.0029 on that call. Treat Lite timing as a cost probe only, not a
 publishable start source.
 
+## Credits from captions
+
+Read the source video's title and full caption first, then captions of other uploads of the
+same recording and the performer's own channel. Confirm "same recording" by aligning the
+audio along its whole length; equal duration or an equal title is only a lead. Voice
+comparison is supporting evidence and must first be shown to separate that group of singers.
+
 ## Word links
 
 A click opens one word. English is linked phrase by phrase to the words it renders;

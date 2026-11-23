@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Janena Mu Kiba Debi",
   "subtitle": "Baishi Pahacha",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Antara Chakraborty",
+  "pageCredit": "Antara Chakraborty",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "",
+  "singer": "Antara Chakraborty",
   "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Odia"

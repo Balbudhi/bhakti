@@ -1,10 +1,10 @@
 window.SONG_META = {
   "title": "Guru Kara Aparādha Kṣamā",
   "subtitle": "Guru",
-  "credit": "Shri Chandra Bhanu Satpathy",
-  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "credit": "Shri Chandra Bhanu Satpathy · Karunakar Sethi",
+  "pageCredit": "Karunakar Sethi",
   "writer": "Shri Chandra Bhanu Satpathy",
-  "singer": "",
+  "singer": "Karunakar Sethi",
   "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Odia"

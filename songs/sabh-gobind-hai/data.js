@@ -9,7 +9,7 @@ window.SONG_META = {
   "translatorAttribution": "",
   "singer": "Bhai Harjinder Singh",
   "vocalist": "",
-  "composer": "",
+  "composer": "Bhai Harjinder Singh",
   "ensemble": "",
   "languages": [
     "Punjabi"

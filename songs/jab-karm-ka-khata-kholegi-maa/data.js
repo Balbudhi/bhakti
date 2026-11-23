@@ -1,16 +1,16 @@
 window.SONG_META = {
   "title": "Jab Karmõ Kā Khātā Kholegī Mā̃",
   "subtitle": "Śakti",
-  "credit": "Shri Mata Vaishno Devi Bhawan",
-  "pageCredit": "Shri Mata Vaishno Devi Bhawan",
+  "credit": "Desraj Ji",
+  "pageCredit": "Desraj Ji",
   "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",
-  "singer": "",
+  "singer": "Desraj Ji",
   "vocalist": "",
   "composer": "",
-  "ensemble": "Shri Mata Vaishno Devi Bhawan",
+  "ensemble": "",
   "languages": [
     "Hindi",
     "Punjabi"

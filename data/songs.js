@@ -208,6 +208,69 @@ window.BHAKTI_SONGS = [
     "queueNumber": 334
   },
   {
+    "slug": "bela-gadi-jae-kala-sari-jae",
+    "queueId": "9dde6a77",
+    "title": "Bela Gadi Jae Kala Sari Jae",
+    "credit": "Shri Chandra Bhanu Satpathy · Antara Chakraborty",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Antara Chakraborty",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bela-gadi-jae-kala-sari-jae.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bela-gadi-jae-kala-sari-jae.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 20
+  },
+  {
+    "slug": "janena-mu-kiba-debi",
+    "queueId": "71bb179d",
+    "title": "Janena Mu Kiba Debi",
+    "credit": "Shri Chandra Bhanu Satpathy · Antara Chakraborty",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Antara Chakraborty",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-kiba-debi.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-kiba-debi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Baishi Pahacha",
+    "queueNumber": 93
+  },
+  {
     "slug": "jaya-jagdisha-hare",
     "queueId": "0eddb422",
     "title": "Jaya Jagdisha Hare",
@@ -1628,7 +1691,7 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Gurū Gobind Siṅgh",
     "singer": "Bhai Harjinder Singh",
-    "composer": "",
+    "composer": "Bhai Harjinder Singh",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c.webm",
@@ -1711,7 +1774,7 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Nāmadev",
     "singer": "Bhai Harjinder Singh",
-    "composer": "",
+    "composer": "Bhai Harjinder Singh",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sabh-gobind-hai.webm",
@@ -3951,6 +4014,40 @@ window.BHAKTI_SONGS = [
     "queueNumber": 142
   },
   {
+    "slug": "jab-karm-ka-khata-kholegi-maa",
+    "queueId": "51dcb055",
+    "title": "Jab Karmõ Kā Khātā Kholegī Mā̃",
+    "credit": "Desraj Ji",
+    "languageTags": [
+      "Hindi",
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Jab Karmõ Ka Khata Kholegi Mã",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mata Vaishno Devi",
+      "Jab Karmon Ka Khata Kholegi Maa"
+    ],
+    "writer": "",
+    "singer": "Desraj Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-karm-ka-khata-kholegi-maa-7e86a321b57e76ce1c99fad882960e069ecd0506810029c7b42845874c2c616d.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 381
+  },
+  {
     "slug": "devi-dhyana",
     "queueId": "8ec8b956",
     "title": "Devī Dhyāna",
@@ -5083,7 +5180,7 @@ window.BHAKTI_SONGS = [
     "slug": "aisa-pyar-baha-de-maiya",
     "queueId": "f09292f0",
     "title": "Aisā Pyār Bahā De Maiyā",
-    "credit": "Hari Om Sharan",
+    "credit": "Balbir Nirdosh · Hari Om Sharan · Murli Manohar Swarup",
     "languageTags": [
       "Hindi",
       "Sanskrit"
@@ -5097,9 +5194,9 @@ window.BHAKTI_SONGS = [
       "Durga Vandana",
       "Hari Om Sharan"
     ],
-    "writer": "",
+    "writer": "Balbir Nirdosh",
     "singer": "Hari Om Sharan",
-    "composer": "",
+    "composer": "Murli Manohar Swarup",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aisa-pyar-baha-de-maiya.webm",
@@ -5260,41 +5357,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 193
   },
   {
-    "slug": "jab-karm-ka-khata-kholegi-maa",
-    "queueId": "51dcb055",
-    "title": "Jab Karmõ Kā Khātā Kholegī Mā̃",
-    "credit": "Shri Mata Vaishno Devi Bhawan",
-    "languageTags": [
-      "Hindi",
-      "Punjabi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Jab Karmõ Ka Khata Kholegi Mã",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Mata Vaishno Devi",
-      "Jab Karmon Ka Khata Kholegi Maa"
-    ],
-    "writer": "",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jab-karm-ka-khata-kholegi-maa-7e86a321b57e76ce1c99fad882960e069ecd0506810029c7b42845874c2c616d.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "ensemble": "Shri Mata Vaishno Devi Bhawan",
-    "subtitle": "Śakti",
-    "queueNumber": 381
-  },
-  {
     "slug": "mere-man-prem-lago-har-teer",
     "queueId": "94d89632",
     "title": "Merai Mani Premu Lago Hari Tīru",
@@ -5319,7 +5381,7 @@ window.BHAKTI_SONGS = [
     ],
     "writer": "Gurū Rām Dās",
     "singer": "Jagjit Singh",
-    "composer": "",
+    "composer": "Jagjit Singh",
     "audioSources": [
       {
         "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mere-man-prem-lago-har-teer-ac9f9b0dffe5f34efd48fe932f4f05b12825ffe921a813049e204412bf2b43c4.webm",
@@ -5406,49 +5468,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 382
-  },
-  {
-    "slug": "meri-dati-daya-har-ik-te-kardi-ae",
-    "queueId": "4e7f69e6",
-    "title": "Merī Dātī Dayā Har Ik Te Kardī E",
-    "credit": "Caman · Jaipal Ji",
-    "languageTags": [
-      "Punjabi",
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī",
-      "Kālī",
-      "Viṣṇu",
-      "Śiva"
-    ],
-    "searchAliases": [
-      "Meri Dati Daya Har Ik Te Kardi E",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Kali",
-      "Vishnu",
-      "Visnu",
-      "Shiva",
-      "Siva",
-      "Mata Vaishno Devi",
-      "Meri Daati Daya Har Ek Te Kardi Ae",
-      "Chaman"
-    ],
-    "writer": "Caman",
-    "singer": "Jaipal Ji",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-dati-daya-har-ik-te-kardi-ae-790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 384
   },
   {
     "slug": "ma-karali-kali-ma",
@@ -5550,6 +5569,105 @@ window.BHAKTI_SONGS = [
       }
     ],
     "queueNumber": 299
+  },
+  {
+    "slug": "guru-karo-aparadha-kshyama",
+    "queueId": "83a04fd4",
+    "title": "Guru Kara Aparādha Kṣamā",
+    "credit": "Shri Chandra Bhanu Satpathy · Karunakar Sethi",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru"
+    ],
+    "searchAliases": [
+      "Guru Kara Aparadha Kshama",
+      "Guru Kara Aparadha Ksama",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Satpathy Baba",
+      "Guru Karo Aparadha Khyama"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Karunakar Sethi",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Guru",
+    "queueNumber": 57
+  },
+  {
+    "slug": "jagannath-jagannath",
+    "queueId": "2d435de5",
+    "title": "Jagannath Jagannath",
+    "credit": "Shri Chandra Bhanu Satpathy · Karunakar Sethi",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Karunakar Sethi",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 76
+  },
+  {
+    "slug": "mohodadhi-kule",
+    "queueId": "03dfafcc",
+    "title": "Mohodadhi Kule",
+    "credit": "Shri Chandra Bhanu Satpathy · Karunakar Sethi",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Karunakar Sethi",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mohodadhi-kule.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mohodadhi-kule.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 149
   },
   {
     "slug": "tere-dvar-khara-bhagvan",
@@ -6666,6 +6784,40 @@ window.BHAKTI_SONGS = [
     "queueNumber": 311
   },
   {
+    "slug": "yeh-mantra-hai-maa-chamunda-ka",
+    "queueId": "a6f604c9",
+    "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
+    "credit": "Maninder Ji",
+    "languageTags": [
+      "Hindi",
+      "Punjabi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Ye Mantra Hai Mã Camunda Ka",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Yah Mantra Hai Maa Chamunda Ka"
+    ],
+    "writer": "",
+    "singer": "Maninder Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-mantra-hai-maa-chamunda-ka-65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 386
+  },
+  {
     "slug": "jhoothe-jag-ne",
     "queueId": "71764ce6",
     "title": "Jhūṭhe Jag Ne Liyā Mainū Lūṭ Mā",
@@ -6896,42 +7048,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 158
-  },
-  {
-    "slug": "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya",
-    "queueId": "6861dbba",
-    "title": "Mā̃ Ne Rauṇkā̃ Lagāīā̃ Kamāl Ho Giā",
-    "credit": "Shri Mata Vaishno Devi Bhawan",
-    "languageTags": [
-      "Punjabi",
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Mã Ne Raunkã Lagaiã Kamal Ho Gia",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Mata Vaishno Devi",
-      "Maa Ne Raunkan Lagaiyan Kamal Ho Gia",
-      "Maa Ne Ronkan Lagaiyan Kamaal Ho Gaya"
-    ],
-    "writer": "",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maa-ne-raunkan-lagaiyan-kamaal-ho-gaya-d827b734f423031c94e4a0734a2fe243f69c640399a6598d210ff95b938d20ba.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "ensemble": "Shri Mata Vaishno Devi Bhawan",
-    "subtitle": "Śakti",
-    "queueNumber": 385
   },
   {
     "slug": "raam-bhajan-ki-or",
@@ -10026,7 +10142,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10057,7 +10173,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10107,41 +10223,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 55
   },
   {
-    "slug": "guru-karo-aparadha-kshyama",
-    "queueId": "83a04fd4",
-    "title": "Guru Kara Aparādha Kṣamā",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Guru"
-    ],
-    "searchAliases": [
-      "Guru Kara Aparadha Kshama",
-      "Guru Kara Aparadha Ksama",
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Satpathy Baba",
-      "Guru Karo Aparadha Khyama"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/guru-karo-aparadha-kshyama.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Guru",
-    "queueNumber": 57
-  },
-  {
     "slug": "he-guru-gobinda-gosain",
     "queueId": "3260fa4b",
     "title": "He Guru Gobinda Gosain",
@@ -10157,7 +10238,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10187,7 +10268,7 @@ window.BHAKTI_SONGS = [
       "Satpathy Baba"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10251,7 +10332,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10282,7 +10363,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10313,7 +10394,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10344,7 +10425,7 @@ window.BHAKTI_SONGS = [
       "Chandra Bhanu Satpathy"
     ],
     "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
+    "singer": "Shri Chandra Bhanu Satpathy",
     "composer": "Shri Chandra Bhanu Satpathy",
     "audioSources": [
       {
@@ -10358,198 +10439,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Guru",
     "queueNumber": 205
-  },
-  {
-    "slug": "bela-gadi-jae-kala-sari-jae",
-    "queueId": "9dde6a77",
-    "title": "Bela Gadi Jae Kala Sari Jae",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bela-gadi-jae-kala-sari-jae.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bela-gadi-jae-kala-sari-jae.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 20
-  },
-  {
-    "slug": "dake-aahe-jagannath",
-    "queueId": "5809bc7f",
-    "title": "Dake Aahe Jagannath",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dake-aahe-jagannath.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dake-aahe-jagannath.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 35
-  },
-  {
-    "slug": "jagannath-jagannath",
-    "queueId": "2d435de5",
-    "title": "Jagannath Jagannath",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 76
-  },
-  {
-    "slug": "janena-mu-kiba-debi",
-    "queueId": "71bb179d",
-    "title": "Janena Mu Kiba Debi",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-kiba-debi.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janena-mu-kiba-debi.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Baishi Pahacha",
-    "queueNumber": 93
-  },
-  {
-    "slug": "mohodadhi-kule",
-    "queueId": "03dfafcc",
-    "title": "Mohodadhi Kule",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mohodadhi-kule.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/mohodadhi-kule.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 149
-  },
-  {
-    "slug": "shri-kshetra-biharii",
-    "queueId": "dbc29b39",
-    "title": "Shri Kshetra Biharii",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha",
-      "Nirguṇa"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 206
   },
   {
     "slug": "e-barashe-aasi-achi",
@@ -12024,6 +11913,71 @@ window.BHAKTI_SONGS = [
     "queueNumber": 289
   },
   {
+    "slug": "dake-aahe-jagannath",
+    "queueId": "5809bc7f",
+    "title": "Dake Aahe Jagannath",
+    "credit": "Shri Chandra Bhanu Satpathy · Sudha Mishra",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Sudha Mishra",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dake-aahe-jagannath.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/dake-aahe-jagannath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 35
+  },
+  {
+    "slug": "shri-kshetra-biharii",
+    "queueId": "dbc29b39",
+    "title": "Shri Kshetra Biharii",
+    "credit": "Shri Chandra Bhanu Satpathy · Sudha Mishra",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha",
+      "Nirguṇa"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Sudha Mishra",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/shri-kshetra-biharii.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 206
+  },
+  {
     "slug": "brahmam-okkate",
     "queueId": "c3b16728",
     "title": "Brahmam Okkaṭē",
@@ -13143,6 +13097,41 @@ window.BHAKTI_SONGS = [
     "queueNumber": 105
   },
   {
+    "slug": "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya",
+    "queueId": "6861dbba",
+    "title": "Mā̃ Ne Rauṇkā̃ Lagāīā̃ Kamāl Ho Giā",
+    "credit": "Vijay Ji",
+    "languageTags": [
+      "Punjabi",
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Mã Ne Raunkã Lagaiã Kamal Ho Gia",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mata Vaishno Devi",
+      "Maa Ne Raunkan Lagaiyan Kamal Ho Gia",
+      "Maa Ne Ronkan Lagaiyan Kamaal Ho Gaya"
+    ],
+    "writer": "",
+    "singer": "Vijay Ji",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maa-ne-raunkan-lagaiyan-kamaal-ho-gaya-d827b734f423031c94e4a0734a2fe243f69c640399a6598d210ff95b938d20ba.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 385
+  },
+  {
     "slug": "pavamana-jagada-prana",
     "queueId": "c10846cf",
     "title": "Pavamāna Jagada Prāṇa",
@@ -13428,39 +13417,47 @@ window.BHAKTI_SONGS = [
     "queueNumber": 328
   },
   {
-    "slug": "yeh-mantra-hai-maa-chamunda-ka",
-    "queueId": "a6f604c9",
-    "title": "Ye Mantra Hai Mā̃ Cāmuṇḍā Kā",
-    "credit": "Shri Mata Vaishno Devi Bhawan",
+    "slug": "meri-dati-daya-har-ik-te-kardi-ae",
+    "queueId": "4e7f69e6",
+    "title": "Merī Dātī Dayā Har Ik Te Kardī E",
+    "credit": "Caman · Yashpal Ji",
     "languageTags": [
-      "Hindi",
       "Punjabi",
-      "Sanskrit"
+      "Hindi"
     ],
     "subjectTags": [
       "Śakti",
-      "Vaiṣṇo Devī"
+      "Vaiṣṇo Devī",
+      "Kālī",
+      "Viṣṇu",
+      "Śiva"
     ],
     "searchAliases": [
-      "Ye Mantra Hai Mã Camunda Ka",
+      "Meri Dati Daya Har Ik Te Kardi E",
       "Shakti",
       "Sakti",
       "Vaishno Devi",
       "Vaisno Devi",
-      "Yah Mantra Hai Maa Chamunda Ka"
+      "Kali",
+      "Vishnu",
+      "Visnu",
+      "Shiva",
+      "Siva",
+      "Mata Vaishno Devi",
+      "Meri Daati Daya Har Ek Te Kardi Ae",
+      "Chaman"
     ],
-    "writer": "",
-    "singer": "",
+    "writer": "Caman",
+    "singer": "Yashpal Ji",
     "composer": "",
     "audioSources": [
       {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/yeh-mantra-hai-maa-chamunda-ka-65fd745eaf71990aeddf4732a5601ab82cd2616fd3abc053b058b73e2b276dc9.m4a",
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/meri-dati-daya-har-ik-te-kardi-ae-790ac34101aec312399108e6a32ac6f138465ee0130c6c636400a0a2d43fb59e.m4a",
         "type": "audio/mp4"
       }
     ],
-    "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
-    "queueNumber": 386
+    "queueNumber": 384
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "35ef06e3239903be0546ca0b39aeef021964493ec17e2ebbdf15029fe1d54783";
+window.BHAKTI_SHUFFLE_REVISION = "b938cea6cb4e345f38910947110da01bbe34c7783334dc133822b5e2f8b53ff6";
