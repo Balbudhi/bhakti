@@ -77,7 +77,7 @@
     const [writer, singer] = [song.writer, song.singer].map(name => String(name || "").trim());
     if (!writer && !singer) return String(song.credit || "").trim();
     if (writer === singer) return `Written and sung by ${writer}`;
-    return [writer && (/^traditional$/i.test(writer) ? "Traditional" : `By ${writer}`),
+    return [writer && `By ${writer}`,
       singer && `${writer ? "sung" : "Sung"} by ${singer}`].filter(Boolean).join(" · ");
   };
 

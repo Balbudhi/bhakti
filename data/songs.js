@@ -455,7 +455,7 @@ window.BHAKTI_SONGS = [
     "slug": "jai-mahakali-aarti",
     "queueId": "e2616bc7",
     "title": "Jai Mahakali Aarti",
-    "credit": "Traditional · Anuradha Paudwal · Dhananjay Mishra",
+    "credit": "Anuradha Paudwal · Dhananjay Mishra",
     "languageTags": [
       "Hindi"
     ],
@@ -475,7 +475,7 @@ window.BHAKTI_SONGS = [
       "Anuradha Paudwal",
       "Dhananjay Mishra"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "Dhananjay Mishra",
     "audioSources": [
@@ -821,7 +821,7 @@ window.BHAKTI_SONGS = [
     "slug": "ambe-tu-hai-jagdambe-kali",
     "queueId": "5239a2c8",
     "title": "Ambe Tū Hai Jagadambe Kālī",
-    "credit": "Traditional · Anuradha Paudwal",
+    "credit": "Anuradha Paudwal",
     "languageTags": [
       "Hindi"
     ],
@@ -839,7 +839,7 @@ window.BHAKTI_SONGS = [
       "Ambe Aarti",
       "Anuradha Paudwal"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "",
     "audioSources": [
@@ -860,7 +860,7 @@ window.BHAKTI_SONGS = [
     "slug": "uttho-uttho",
     "queueId": "8c323993",
     "title": "Uttho Uttho",
-    "credit": "Traditional · Anuradha Paudwal · Sudhanshu & Shank–Neel",
+    "credit": "Anuradha Paudwal · Sudhanshu & Shank–Neel",
     "languageTags": [
       "Marathi"
     ],
@@ -879,7 +879,7 @@ window.BHAKTI_SONGS = [
       "Sudhanshu",
       "Shank–Neel"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "Sudhanshu & Shank–Neel",
     "audioSources": [
@@ -895,7 +895,7 @@ window.BHAKTI_SONGS = [
     "slug": "om-jai-gangadhar-aarti",
     "queueId": "02354c80",
     "title": "Om Jai Gangadhar Aarti",
-    "credit": "Traditional · Anuradha Paudwal · Dhananjay Mishra",
+    "credit": "Anuradha Paudwal · Dhananjay Mishra",
     "languageTags": [
       "Hindi"
     ],
@@ -909,7 +909,7 @@ window.BHAKTI_SONGS = [
       "Anuradha Paudwal",
       "Dhananjay Mishra"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Anuradha Paudwal",
     "composer": "Dhananjay Mishra",
     "audioSources": [
@@ -925,7 +925,7 @@ window.BHAKTI_SONGS = [
     "slug": "ghana-shyama-sundara",
     "queueId": "f260a099",
     "title": "Ghanashyāma Sundarā",
-    "credit": "Traditional · Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
+    "credit": "Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
     "languageTags": [
       "Hindi"
     ],
@@ -941,7 +941,7 @@ window.BHAKTI_SONGS = [
       "Sudhanshu",
       "Shank–Neel"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Anuradha Paudwal & Ravindra Sathe",
     "composer": "Sudhanshu & Shank–Neel",
     "audioSources": [
@@ -957,7 +957,7 @@ window.BHAKTI_SONGS = [
     "slug": "ghanshyam-sundara",
     "queueId": "f4f44a8b",
     "title": "Ghanaśyāma Sundarā",
-    "credit": "Traditional · Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
+    "credit": "Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
     "languageTags": [
       "Hindi"
     ],
@@ -974,7 +974,7 @@ window.BHAKTI_SONGS = [
       "Sudhanshu",
       "Shank–Neel"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Anuradha Paudwal & Ravindra Sathe",
     "composer": "Sudhanshu & Shank–Neel",
     "audioSources": [
@@ -1302,7 +1302,7 @@ window.BHAKTI_SONGS = [
     "slug": "jai-shri-shankar-sut-ganesh",
     "queueId": "af2352fd",
     "title": "Jai Shri Shankar Sut Ganesh",
-    "credit": "Traditional · Ashwini Bhide",
+    "credit": "Ashwini Bhide",
     "languageTags": [
       "Braj"
     ],
@@ -1314,7 +1314,7 @@ window.BHAKTI_SONGS = [
       "Ganesa",
       "Ashwini Bhide"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Ashwini Bhide",
     "composer": "",
     "audioSources": [
@@ -1330,7 +1330,7 @@ window.BHAKTI_SONGS = [
     "slug": "ganapat-vighna-haran",
     "queueId": "4e0f2a07",
     "title": "Ganapat Vighna Haran",
-    "credit": "Traditional · Ashwini Bhide",
+    "credit": "Ashwini Bhide",
     "languageTags": [
       "Hindi",
       "Marathi",
@@ -1344,7 +1344,7 @@ window.BHAKTI_SONGS = [
       "Ganesa",
       "Ashwini Bhide"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Ashwini Bhide",
     "composer": "",
     "audioSources": [
@@ -1450,7 +1450,7 @@ window.BHAKTI_SONGS = [
     "slug": "choti-choti-gaiya-chote-chote-gwal",
     "queueId": "a46714ba",
     "title": "Chhoṭī Chhoṭī Gaiyā̃, Chhoṭe Chhoṭe Gwāl",
-    "credit": "Traditional · Asif Jeriya & Ami Joshi · Manoj-Vimal",
+    "credit": "Asif Jeriya & Ami Joshi · Manoj-Vimal",
     "languageTags": [
       "Hindi",
       "Braj"
@@ -1463,7 +1463,7 @@ window.BHAKTI_SONGS = [
       "Krshna",
       "Krsna"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Asif Jeriya & Ami Joshi",
     "composer": "Manoj-Vimal",
     "audioSources": [
@@ -3951,6 +3951,73 @@ window.BHAKTI_SONGS = [
     "queueNumber": 142
   },
   {
+    "slug": "devi-dhyana",
+    "queueId": "8ec8b956",
+    "title": "Devī Dhyāna",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Mahakali Mahalakshmi Mahasarasvati meditation",
+      "Durga Saptashati Dhyana"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-dhyana-da482bc157c0a3403d5b981fe4236e0602fdf340c4b2674a9073cf603320ab48.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 389
+  },
+  {
+    "slug": "devi-kshama-prarthana",
+    "queueId": "1caf44ad",
+    "title": "Devī Kṣamā Prārthanā",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit",
+      "Hindi",
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī"
+    ],
+    "searchAliases": [
+      "Devi Ksama Prarthana",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Aparadha Sahasrani",
+      "Aparadha Kshamapana"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-kshama-prarthana-379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 373
+  },
+  {
     "slug": "kolaru-pathigam",
     "queueId": "bda159b5",
     "title": "Kōḷaṟu Patikam",
@@ -4151,6 +4218,40 @@ window.BHAKTI_SONGS = [
       }
     ],
     "queueNumber": 305
+  },
+  {
+    "slug": "durga-apaduddharashtakam",
+    "queueId": "8fb8a4f3",
+    "title": "Durgā Āpaduddhārāṣṭakam",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Durgā"
+    ],
+    "searchAliases": [
+      "Durga Apaduddharastakam",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Durga",
+      "Namaste Sharanye Shive Sanukampe"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durga-apaduddharashtakam-b69aa89a22f3fc66d38c3e9dd8c1cffa484452191d0d2512ec3579ca1011c6f1.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 374
   },
   {
     "slug": "ee-padame-kada",
@@ -4760,7 +4861,7 @@ window.BHAKTI_SONGS = [
     "slug": "aarti-kunj-bihari-ki",
     "queueId": "9eb6e683",
     "title": "Aarti Kunj Bihari Ki",
-    "credit": "Traditional · Hari Om Sharan · Murli Manohar Swarup",
+    "credit": "Hari Om Sharan · Murli Manohar Swarup",
     "languageTags": [
       "Braj"
     ],
@@ -4778,7 +4879,7 @@ window.BHAKTI_SONGS = [
       "Hari Om Sharan",
       "Murli Manohar Swarup"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "Murli Manohar Swarup",
     "audioSources": [
@@ -4854,7 +4955,7 @@ window.BHAKTI_SONGS = [
     "slug": "tera-ram-ji-karenge-beda-paar",
     "queueId": "55d91291",
     "title": "Tera Ram Ji Karenge Beda Paar",
-    "credit": "Traditional · Hari Om Sharan",
+    "credit": "Hari Om Sharan",
     "languageTags": [
       "Hindi"
     ],
@@ -4868,7 +4969,7 @@ window.BHAKTI_SONGS = [
       "Visnu",
       "Hari Om Sharan"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
     "audioSources": [
@@ -5013,7 +5114,7 @@ window.BHAKTI_SONGS = [
     "slug": "maa-jag-janani-jai-jai",
     "queueId": "ac2b623b",
     "title": "Maa Jag Janani Jai Jai",
-    "credit": "Traditional · Hari Om Sharan",
+    "credit": "Hari Om Sharan",
     "languageTags": [
       "Hindi"
     ],
@@ -5033,7 +5134,7 @@ window.BHAKTI_SONGS = [
       "Visnu",
       "Hari Om Sharan"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
     "audioSources": [
@@ -5087,7 +5188,7 @@ window.BHAKTI_SONGS = [
     "slug": "namo-namo-vindhyeshwari",
     "queueId": "6ca4bf0e",
     "title": "Namo Namo Vindhyeshwari",
-    "credit": "Traditional · Hari Om Sharan",
+    "credit": "Hari Om Sharan",
     "languageTags": [
       "Hindi"
     ],
@@ -5109,7 +5210,7 @@ window.BHAKTI_SONGS = [
       "Siva",
       "Hari Om Sharan"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Hari Om Sharan",
     "composer": "",
     "audioSources": [
@@ -6514,7 +6615,7 @@ window.BHAKTI_SONGS = [
     "slug": "bhor-bhai-din-chadh-gaya",
     "queueId": "bd4ebe6e",
     "title": "Bhor Bhaī Din Caṛh Gayā Merī Ambe",
-    "credit": "Traditional · Manjushree Assudani",
+    "credit": "Manjushree Assudani",
     "languageTags": [
       "Punjabi",
       "Hindi"
@@ -6536,7 +6637,7 @@ window.BHAKTI_SONGS = [
       "Manjushree Asudani",
       "Manjushree Assudani"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Manjushree Assudani",
     "composer": "",
     "audioSources": [
@@ -6920,7 +7021,7 @@ window.BHAKTI_SONGS = [
     "slug": "meri-ek-antar-abhilash",
     "queueId": "dad840d9",
     "title": "Merī Ek Antar Abhilāṣ",
-    "credit": "Traditional · Pandit Jasraj",
+    "credit": "Pandit Jasraj",
     "languageTags": [
       "Braj"
     ],
@@ -6934,7 +7035,7 @@ window.BHAKTI_SONGS = [
       "Sakti",
       "Pandit Jasraj"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Pandit Jasraj",
     "composer": "",
     "audioSources": [
@@ -7224,7 +7325,7 @@ window.BHAKTI_SONGS = [
     "slug": "lalakari",
     "queueId": "a33391f4",
     "title": "Lalakari",
-    "credit": "Traditional · Pramod Medhi",
+    "credit": "Pramod Medhi",
     "languageTags": [
       "Hindi"
     ],
@@ -7237,7 +7338,7 @@ window.BHAKTI_SONGS = [
       "Sirdi Sai",
       "Pramod Medhi"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
     "audioSources": [
@@ -7394,7 +7495,7 @@ window.BHAKTI_SONGS = [
     "slug": "sai-ke-11-vachan",
     "queueId": "f8cb209d",
     "title": "Sai Ke 11 Vachan",
-    "credit": "Traditional · Pramod Medhi",
+    "credit": "Pramod Medhi",
     "languageTags": [
       "Hindi"
     ],
@@ -7407,7 +7508,7 @@ window.BHAKTI_SONGS = [
       "Sirdi Sai",
       "Pramod Medhi"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
     "audioSources": [
@@ -7644,7 +7745,7 @@ window.BHAKTI_SONGS = [
     "slug": "shejarti",
     "queueId": "e05904a2",
     "title": "Śrī Sāī Aṣṭottaraśatanāmāvalī",
-    "credit": "Traditional · Pramod Medhi",
+    "credit": "Pramod Medhi",
     "languageTags": [
       "Sanskrit"
     ],
@@ -7662,7 +7763,7 @@ window.BHAKTI_SONGS = [
       "Sirdi Sai",
       "Pramod Medhi"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Pramod Medhi",
     "composer": "",
     "audioSources": [
@@ -8720,7 +8821,7 @@ window.BHAKTI_SONGS = [
     "slug": "sheesh-gang-ardhang-parvati",
     "queueId": "decf09b9",
     "title": "Sheesh Gang Ardhang Parvati",
-    "credit": "Traditional · Rajan Mishra & Sajan Mishra",
+    "credit": "Rajan Mishra & Sajan Mishra",
     "languageTags": [
       "Braj"
     ],
@@ -8734,7 +8835,7 @@ window.BHAKTI_SONGS = [
       "Rajan Mishra",
       "Sajan Mishra"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Rajan Mishra & Sajan Mishra",
     "composer": "",
     "audioSources": [
@@ -8897,7 +8998,7 @@ window.BHAKTI_SONGS = [
     "slug": "sohe-maa-chole-waliye",
     "queueId": "3570cde4",
     "title": "Sūhe Mā̃ Cole Vālie",
-    "credit": "Traditional · Rohan Kumar · Rohit Kumar Bobby",
+    "credit": "Rohan Kumar · Rohit Kumar Bobby",
     "languageTags": [
       "Punjabi",
       "Hindi"
@@ -8916,7 +9017,7 @@ window.BHAKTI_SONGS = [
       "Rohan Kumar",
       "Rohit Kumar Bobby"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Rohan Kumar",
     "composer": "Rohit Kumar Bobby",
     "audioSources": [
@@ -9538,7 +9639,7 @@ window.BHAKTI_SONGS = [
     "slug": "pradnya-vivardhan-stotra",
     "queueId": "a35f026d",
     "title": "Prajñā Vivardhana Stotra",
-    "credit": "Traditional · Shankar Mahadevan · Kedar Pandit",
+    "credit": "Shankar Mahadevan · Kedar Pandit",
     "languageTags": [
       "Sanskrit"
     ],
@@ -9551,7 +9652,7 @@ window.BHAKTI_SONGS = [
       "Sarasvati",
       "Pragya Vivardhan Stotra"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Shankar Mahadevan",
     "composer": "Kedar Pandit",
     "audioSources": [
@@ -9700,7 +9801,7 @@ window.BHAKTI_SONGS = [
     "slug": "maiya-odh-chunariya-laal",
     "queueId": "0e39454b",
     "title": "Maiyā Oṛh Cunariyā Lāl Hamāre Ghar Ā Jānā",
-    "credit": "Traditional · Sheela Kalson · Pardeep Panchal",
+    "credit": "Sheela Kalson · Pardeep Panchal",
     "languageTags": [
       "Hindi"
     ],
@@ -9717,7 +9818,7 @@ window.BHAKTI_SONGS = [
       "Sheela Kalson",
       "Pardeep Panchal"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Sheela Kalson",
     "composer": "Pardeep Panchal",
     "audioSources": [
@@ -11138,7 +11239,7 @@ window.BHAKTI_SONGS = [
     "slug": "aarti-gajvadan-vinayak-ki",
     "queueId": "18e0c9b6",
     "title": "Aarti Gajvadan Vinayak Ki",
-    "credit": "Traditional · Shruti Sadolikar",
+    "credit": "Shruti Sadolikar",
     "languageTags": [
       "Hindi"
     ],
@@ -11153,7 +11254,7 @@ window.BHAKTI_SONGS = [
       "Siva",
       "Shruti Sadolikar"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Shruti Sadolikar",
     "composer": "",
     "audioSources": [
@@ -11197,7 +11298,7 @@ window.BHAKTI_SONGS = [
     "slug": "aarti-kijiye-shailsuta-ki",
     "queueId": "58f391b3",
     "title": "Āratī Kījai Śailasutā Kī",
-    "credit": "Traditional · Shruti Sadolikar",
+    "credit": "Shruti Sadolikar",
     "languageTags": [
       "Hindi"
     ],
@@ -11217,7 +11318,7 @@ window.BHAKTI_SONGS = [
       "Ganesa",
       "Shruti Sadolikar"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Shruti Sadolikar",
     "composer": "",
     "audioSources": [
@@ -11326,7 +11427,7 @@ window.BHAKTI_SONGS = [
     "slug": "mera-aap-ki-krupa-se",
     "queueId": "5026652a",
     "title": "Mera Aap Ki Krupa Se",
-    "credit": "Traditional · Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
+    "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
     "languageTags": [
       "Hindi"
     ],
@@ -11342,7 +11443,7 @@ window.BHAKTI_SONGS = [
       "Pramod Medhi",
       "Sudhanshu–Samir"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Shubhram Bahal & Pramod Medhi",
     "composer": "Sudhanshu–Samir",
     "audioSources": [
@@ -11545,6 +11646,46 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śrī Śāradā Devī",
     "queueNumber": 121
+  },
+  {
+    "slug": "siddha-kunjika-stotram",
+    "queueId": "b096d731",
+    "title": "Siddhakuñjikā Stotram",
+    "credit": "",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Śiva",
+      "Kālī"
+    ],
+    "searchAliases": [
+      "Siddhakunyjika Stotram",
+      "Siddhakunjika Stotram",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Shiva",
+      "Siva",
+      "Kali",
+      "Siddha Kunjika Stotra",
+      "Kunjika Stotram",
+      "Kunjika Stotra"
+    ],
+    "writer": "",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siddha-kunjika-stotram-c3624a78cf78504d86be67cf6313f3816d6ac83142f48f8cef0a6a206a8da3ed.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 377
   },
   {
     "slug": "shrdi-sai-dwarka-maai",
@@ -12095,7 +12236,7 @@ window.BHAKTI_SONGS = [
     "slug": "maine-tere-hi-bharose",
     "queueId": "74816a8b",
     "title": "Maiṃne Tere Hī Bharose",
-    "credit": "Traditional · Suneel Lodhi",
+    "credit": "Suneel Lodhi",
     "languageTags": [
       "Hindi"
     ],
@@ -12108,7 +12249,7 @@ window.BHAKTI_SONGS = [
       "Hanuman Ansh",
       "Suneel Lodhi"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Suneel Lodhi",
     "composer": "Suneel Lodhi",
     "audioSources": [
@@ -12196,7 +12337,7 @@ window.BHAKTI_SONGS = [
     "slug": "maiya-ji-tum-badi-dayalu-ho",
     "queueId": "0ae069fc",
     "title": "Maiyā Jī Tum Baṛī Dayālu Ho",
-    "credit": "Traditional · Suresh Ji",
+    "credit": "Suresh Ji",
     "languageTags": [
       "Hindi"
     ],
@@ -12214,7 +12355,7 @@ window.BHAKTI_SONGS = [
       "Mata Vaishno Devi",
       "Suresh Ji"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Suresh Ji",
     "composer": "",
     "audioSources": [
@@ -12435,147 +12576,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 301
   },
   {
-    "slug": "devi-dhyana",
-    "queueId": "8ec8b956",
-    "title": "Devī Dhyāna",
-    "credit": "Traditional",
-    "languageTags": [
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Mahakali Mahalakshmi Mahasarasvati meditation",
-      "Durga Saptashati Dhyana"
-    ],
-    "writer": "Traditional",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-dhyana-da482bc157c0a3403d5b981fe4236e0602fdf340c4b2674a9073cf603320ab48.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 389
-  },
-  {
-    "slug": "devi-kshama-prarthana",
-    "queueId": "1caf44ad",
-    "title": "Devī Kṣamā Prārthanā",
-    "credit": "Traditional",
-    "languageTags": [
-      "Sanskrit",
-      "Hindi",
-      "Punjabi"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Devi Ksama Prarthana",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Aparadha Sahasrani",
-      "Aparadha Kshamapana"
-    ],
-    "writer": "Traditional",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devi-kshama-prarthana-379eb8c5cdec11278492c5e82c3442a84f323d9eb3a60fb190c404e871eb1aea.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 373
-  },
-  {
-    "slug": "durga-apaduddharashtakam",
-    "queueId": "8fb8a4f3",
-    "title": "Durgā Āpaduddhārāṣṭakam",
-    "credit": "Traditional",
-    "languageTags": [
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī",
-      "Durgā"
-    ],
-    "searchAliases": [
-      "Durga Apaduddharastakam",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Durga",
-      "Namaste Sharanye Shive Sanukampe"
-    ],
-    "writer": "Traditional",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/durga-apaduddharashtakam-b69aa89a22f3fc66d38c3e9dd8c1cffa484452191d0d2512ec3579ca1011c6f1.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 374
-  },
-  {
-    "slug": "siddha-kunjika-stotram",
-    "queueId": "b096d731",
-    "title": "Siddhakuñjikā Stotram",
-    "credit": "Traditional",
-    "languageTags": [
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī",
-      "Śiva",
-      "Kālī"
-    ],
-    "searchAliases": [
-      "Siddhakunyjika Stotram",
-      "Siddhakunjika Stotram",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Shiva",
-      "Siva",
-      "Kali",
-      "Siddha Kunjika Stotra",
-      "Kunjika Stotram",
-      "Kunjika Stotra"
-    ],
-    "writer": "Traditional",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siddha-kunjika-stotram-c3624a78cf78504d86be67cf6313f3816d6ac83142f48f8cef0a6a206a8da3ed.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 377
-  },
-  {
     "slug": "chitrakoot-ati-vichitra",
     "queueId": "2041d310",
     "title": "Chitrakoot Ati Vichitra",
@@ -12776,7 +12776,7 @@ window.BHAKTI_SONGS = [
     "slug": "jayati-jayati-shri-ganesh",
     "queueId": "38af146f",
     "title": "Jayati, Jayati, Shri Ganesh",
-    "credit": "Traditional · Umakant & Ramakant Gundecha",
+    "credit": "Umakant & Ramakant Gundecha",
     "languageTags": [
       "Hindi",
       "Sanskrit"
@@ -12790,7 +12790,7 @@ window.BHAKTI_SONGS = [
       "Umakant",
       "Ramakant Gundecha"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Umakant & Ramakant Gundecha",
     "composer": "",
     "audioSources": [
@@ -12841,7 +12841,7 @@ window.BHAKTI_SONGS = [
     "slug": "siddh-bhajo-omkar-avadho",
     "queueId": "06871d8d",
     "title": "Siddh Bhajo Omkar Avadho",
-    "credit": "Traditional · Veena Sahasrabuddhe",
+    "credit": "Veena Sahasrabuddhe",
     "languageTags": [
       "Hindi"
     ],
@@ -12853,7 +12853,7 @@ window.BHAKTI_SONGS = [
       "Ganesa",
       "Veena Sahasrabuddhe"
     ],
-    "writer": "Traditional",
+    "writer": "",
     "singer": "Veena Sahasrabuddhe",
     "composer": "",
     "audioSources": [
@@ -13449,4 +13449,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "0532ef9a904058c590c5a77dd9e5f925b19fc8624154eb5783c14e0f952fdb66";
+window.BHAKTI_SHUFFLE_REVISION = "0735af394f5f06c22643fc7caffeda3656d29293e68aa3906cf88e440481ac3d";

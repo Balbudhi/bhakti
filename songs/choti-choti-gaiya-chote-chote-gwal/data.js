@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Chhoṭī Chhoṭī Gaiyā̃, Chhoṭe Chhoṭe Gwāl",
   "subtitle": "Kṛṣṇa",
-  "credit": "Traditional · Asif Jeriya & Ami Joshi · Manoj-Vimal",
+  "credit": "Asif Jeriya & Ami Joshi · Manoj-Vimal",
   "pageCredit": "Asif Jeriya & Ami Joshi",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Asif Jeriya & Ami Joshi",
   "composer": "Manoj-Vimal",
   "languages": [

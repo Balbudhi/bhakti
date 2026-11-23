@@ -228,8 +228,10 @@ separate strings. Any unverified role is the empty string and is omitted
 publicly rather than guessed, including a genuinely uncredited singer. The song page labels
 the verified roles as `Poet`, `Singer`, and `Composer`. When one person holds
 several roles, group the labels once, and label a single name too: a bare name
-does not say who it is. `Traditional` is used only for an official traditional
-credit or an established traditional/liturgical text, and is labelled `Lyrics`.
+does not say who it is. Attribution follows the tradition (owner rule,
+2026-11-23): credit the poet the tradition names, such as Vyāsa, Tulsīdās or Ādi
+Śaṅkarācārya, with no caveat. Never write "Traditional" as a credit or label,
+whatever a record company prints; when no poet is named, leave the role empty.
 The library row reads `By POET · sung by SINGER`. For example,
 `Poet · Singer · Composer — Shri Chandra Bhanu Satpathy`. Never infer one role
 from another merely to fill the display.

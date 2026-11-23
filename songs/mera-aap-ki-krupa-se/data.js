@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Mera Aap Ki Krupa Se",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Traditional · Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
+  "credit": "Shubhram Bahal & Pramod Medhi · Sudhanshu–Samir",
   "pageCredit": "Shubhram Bahal & Pramod Medhi",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Shubhram Bahal & Pramod Medhi",
   "composer": "Sudhanshu–Samir",
   "languages": [

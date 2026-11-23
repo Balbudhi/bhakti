@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Ghanashyāma Sundarā",
   "subtitle": "Kṛṣṇa",
-  "credit": "Traditional · Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
+  "credit": "Anuradha Paudwal & Ravindra Sathe · Sudhanshu & Shank–Neel",
   "pageCredit": "Anuradha Paudwal & Ravindra Sathe",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Anuradha Paudwal & Ravindra Sathe",
   "composer": "Sudhanshu & Shank–Neel",
   "languages": [

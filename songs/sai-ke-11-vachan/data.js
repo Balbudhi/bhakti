@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Sai Ke 11 Vachan",
   "subtitle": "Śirḍī Sāī",
-  "credit": "Traditional · Pramod Medhi",
+  "credit": "Pramod Medhi",
   "pageCredit": "Pramod Medhi",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Pramod Medhi",
   "composer": "",
   "languages": [

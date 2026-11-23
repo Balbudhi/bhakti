@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Namo Namo Vindhyeshwari",
   "subtitle": "Śakti",
-  "credit": "Traditional · Hari Om Sharan",
+  "credit": "Hari Om Sharan",
   "pageCredit": "Hari Om Sharan",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Hari Om Sharan",
   "composer": "",
   "languages": [

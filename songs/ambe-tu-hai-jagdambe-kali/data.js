@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Ambe Tū Hai Jagadambe Kālī",
   "subtitle": "Śakti",
-  "credit": "Traditional · Anuradha Paudwal",
+  "credit": "Anuradha Paudwal",
   "pageCredit": "Anuradha Paudwal",
-  "writer": "Traditional",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

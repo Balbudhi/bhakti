@@ -97,6 +97,10 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
     if not isinstance(lines, dict):
         problems.append("SONG_LINES is not an object")
         lines = {}
+    if isinstance(meta, dict):
+        for role in ("writer", "translator", "singer", "vocalist", "composer", "musicDirector", "credit", "pageCredit", "writerAttribution"):
+            if re.search(r"\btraditional\b", str(meta.get(role) or ""), re.I):
+                problems.append(f"SONG_META {role} uses a Traditional label; credit the tradition's poet or leave it empty")
     inferred_tags = tag_taxonomy.infer_named_subject_tags(lines.values())
     reviewed_tags = {"subjectTags": inferred_tags}
     try:

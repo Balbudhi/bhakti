@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Maiyā Jī Tum Baṛī Dayālu Ho",
   "subtitle": "Śakti",
-  "credit": "Traditional · Suresh Ji",
+  "credit": "Suresh Ji",
   "pageCredit": "Suresh Ji",
-  "writer": "Traditional",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

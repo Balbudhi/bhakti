@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Prajñā Vivardhana Stotra",
   "subtitle": "Kārtikeya",
-  "credit": "Traditional · Shankar Mahadevan · Kedar Pandit",
+  "credit": "Shankar Mahadevan · Kedar Pandit",
   "pageCredit": "Shankar Mahadevan",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Shankar Mahadevan",
   "vocalist": "",
   "composer": "Kedar Pandit",

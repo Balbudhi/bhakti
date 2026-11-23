@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jayati, Jayati, Shri Ganesh",
   "subtitle": "Gaṇeśa",
-  "credit": "Traditional · Umakant & Ramakant Gundecha",
+  "credit": "Umakant & Ramakant Gundecha",
   "pageCredit": "Umakant & Ramakant Gundecha",
-  "writer": "Traditional",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

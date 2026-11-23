@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Jai Shri Shankar Sut Ganesh",
   "subtitle": "Gaṇeśa",
-  "credit": "Traditional · Ashwini Bhide",
+  "credit": "Ashwini Bhide",
   "pageCredit": "Ashwini Bhide",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Ashwini Bhide",
   "composer": "",
   "languages": [

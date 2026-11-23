@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Āratī Kījai Śailasutā Kī",
   "subtitle": "Śakti",
-  "credit": "Traditional · Shruti Sadolikar",
+  "credit": "Shruti Sadolikar",
   "pageCredit": "Shruti Sadolikar",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Shruti Sadolikar",
   "composer": "",
   "languages": [

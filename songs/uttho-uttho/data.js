@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Uttho Uttho",
   "subtitle": "Gaṇeśa",
-  "credit": "Traditional · Anuradha Paudwal · Sudhanshu & Shank–Neel",
+  "credit": "Anuradha Paudwal · Sudhanshu & Shank–Neel",
   "pageCredit": "Anuradha Paudwal",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Anuradha Paudwal",
   "composer": "Sudhanshu & Shank–Neel",
   "languages": [

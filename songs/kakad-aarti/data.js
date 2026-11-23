@@ -88,7 +88,7 @@ window.SONG_META = {
     },
     {
       "sequenceIndex": 176,
-      "title": "Traditional Closing Prayers",
+      "title": "Closing Prayers",
       "poet": ""
     },
     {

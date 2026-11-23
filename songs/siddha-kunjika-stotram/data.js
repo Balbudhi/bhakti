@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Siddhakuñjikā Stotram",
   "subtitle": "Śakti",
-  "credit": "Traditional",
-  "pageCredit": "Traditional",
-  "writer": "Traditional",
+  "credit": "",
+  "pageCredit": "",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

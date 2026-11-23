@@ -5686,7 +5686,7 @@ def page_html(meta: dict[str, Any], slug: str) -> str:
     escape = lambda text: (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                            .replace('"', "&quot;").replace("'", "&#39;"))
     people: dict[str, list[str]] = {}
-    for field, label in (("writer", str(meta.get("writerAttribution") or ("Lyrics" if str(meta.get("writer", "")).strip().casefold() == "traditional" else "Poet"))),
+    for field, label in (("writer", str(meta.get("writerAttribution") or "Poet")),
                          ("translator", str(meta.get("translatorAttribution") or "Translation")),
                          ("singer", "Singer"), ("vocalist", "Vocalist"),
                          ("composer", "Composer"), ("musicDirector", "Music direction"),

@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Om Jai Gangadhar Aarti",
   "subtitle": "Śiva",
-  "credit": "Traditional · Anuradha Paudwal · Dhananjay Mishra",
+  "credit": "Anuradha Paudwal · Dhananjay Mishra",
   "pageCredit": "Anuradha Paudwal",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Anuradha Paudwal",
   "composer": "Dhananjay Mishra",
   "languages": [

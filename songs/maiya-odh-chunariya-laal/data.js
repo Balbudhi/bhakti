@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Maiyā Oṛh Cunariyā Lāl Hamāre Ghar Ā Jānā",
   "subtitle": "Śakti",
-  "credit": "Traditional · Sheela Kalson · Pardeep Panchal",
+  "credit": "Sheela Kalson · Pardeep Panchal",
   "pageCredit": "Sheela Kalson",
-  "writer": "Traditional",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

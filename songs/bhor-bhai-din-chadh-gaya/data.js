@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Bhor Bhaī Din Caṛh Gayā Merī Ambe",
   "subtitle": "Śakti",
-  "credit": "Traditional · Manjushree Assudani",
+  "credit": "Manjushree Assudani",
   "pageCredit": "Manjushree Assudani",
-  "writer": "Traditional",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

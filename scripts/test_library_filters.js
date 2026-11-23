@@ -76,7 +76,6 @@ test('a library row says who wrote and who sang', () => {
   assert.equal(creditLine({writer: 'Tulsīdās', singer: 'Hari Om Sharan'}), 'By Tulsīdās · sung by Hari Om Sharan');
   assert.equal(creditLine({writer: '', singer: 'Maninder Ji'}), 'Sung by Maninder Ji');
   assert.equal(creditLine({writer: 'Kabīr', singer: ''}), 'By Kabīr');
-  assert.equal(creditLine({writer: 'Traditional', singer: 'X'}), 'Traditional · sung by X');
   assert.equal(creditLine({writer: 'X', singer: 'X'}), 'Written and sung by X');
   assert.equal(creditLine({credit: ''}), '');
 });

@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Sūhe Mā̃ Cole Vālie",
   "subtitle": "Śakti",
-  "credit": "Traditional · Rohan Kumar · Rohit Kumar Bobby",
+  "credit": "Rohan Kumar · Rohit Kumar Bobby",
   "pageCredit": "Rohan Kumar",
-  "writer": "Traditional",
+  "writer": "",
   "writerAttribution": "",
   "translator": "",
   "translatorAttribution": "",

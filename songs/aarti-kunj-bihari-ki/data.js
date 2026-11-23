@@ -1,9 +1,9 @@
 window.SONG_META = {
   "title": "Aarti Kunj Bihari Ki",
   "subtitle": "Kṛṣṇa",
-  "credit": "Traditional · Hari Om Sharan · Murli Manohar Swarup",
+  "credit": "Hari Om Sharan · Murli Manohar Swarup",
   "pageCredit": "Hari Om Sharan",
-  "writer": "Traditional",
+  "writer": "",
   "singer": "Hari Om Sharan",
   "composer": "Murli Manohar Swarup",
   "languages": [
