@@ -41931,7 +41931,7 @@
       "semantic": {
         "assessment": "reviewed",
         "outcome": "known",
-        "inputHash": "7d9d944e9811f3f9f2bfe6127c1ebfe7ac513f100ba700d1806f61f45c2d4c23",
+        "inputHash": "d6af68678a249d503be0e5fd7acf7a967c5d34a2f9d5d4408ce75b0662181116",
         "method": {
           "id": "source-grounded-semantic-review",
           "version": 4,
@@ -41942,12 +41942,12 @@
         },
         "review": {
           "kind": "independent-model",
-          "recordHash": "dcda68318fceefe35b53a760fdb40632f200706cff32e56892a450096d5d8eab",
+          "recordHash": "5915377e9898fa6c2f8daa91a49ef406dbcbf2207058eba9c92701d1d79da685",
           "extractionRequestIds": [
-            "bbc5aa3abe904e56b11cffbd22e9e9b4"
+            "489cabc533204b5da64dcc67032f4e87"
           ],
           "reviewRequestIds": [
-            "abf26374ebc3403a939bb0e313d83d77"
+            "acdee89cf77d4b99b6cd920fca9f8492"
           ],
           "coveredLineCount": 48
         },
@@ -41955,45 +41955,36 @@
           "themes": [
             {
               "id": "theme.compassion",
-              "weight": 0.29411764705882354
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.humility",
-              "weight": 0.29411764705882354
-            },
-            {
-              "id": "theme.name_power",
-              "weight": 0.11764705882352942
+              "weight": 0.3333333333333333
             },
             {
               "id": "theme.refuge",
-              "weight": 0.29411764705882354
+              "weight": 0.3333333333333333
             }
           ],
           "actions": [
             {
               "id": "action.petition",
-              "weight": 0.7142857142857143
+              "weight": 0.4
             },
             {
               "id": "action.remembrance",
-              "weight": 0.28571428571428575
+              "weight": 0.4
             }
           ],
           "subjects": [
             {
               "id": "subject.devi",
-              "weight": 0.5555555555555556,
-              "role": "worship_focus"
-            },
-            {
-              "id": "subject.durga",
-              "weight": 0.22222222222222224,
+              "weight": 0.7142857142857143,
               "role": "worship_focus"
             },
             {
               "id": "subject.shiva",
-              "weight": 0.22222222222222224,
+              "weight": 0.28571428571428575,
               "role": "narrative_subject"
             }
           ]

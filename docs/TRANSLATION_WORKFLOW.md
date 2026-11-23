@@ -1,5 +1,8 @@
 # Translation and library review workflow
 
+Reference for the older model pipeline. The procedure for adding or revising a song is
+`docs/ADD_A_SONG.md`; do not read this file to add a song.
+
 ## Contextual names and completed poetic English
 
 Shared translation policy 11 preserves a divine name's evidenced meaning,

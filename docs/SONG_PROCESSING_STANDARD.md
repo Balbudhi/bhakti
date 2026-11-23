@@ -1,5 +1,8 @@
 # Song processing standard
 
+Reference only. The procedure for adding or revising a song is `docs/ADD_A_SONG.md`; do not
+read this file to add a song.
+
 Every song uses the same source-to-song page contract. A YouTube link, MP3, or
 M4A begins the same process regardless of language, deity, musical form, or
 whether the user supplied a translation.

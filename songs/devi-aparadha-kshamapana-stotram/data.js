@@ -4,7 +4,6 @@ window.SONG_META = {
   "credit": "Ādi Śaṅkarācārya · Ashit Desai & Hema Desai",
   "pageCredit": "Ashit Desai & Hema Desai",
   "writer": "Ādi Śaṅkarācārya",
-  "writerAttribution": "Poet",
   "singer": "Ashit Desai & Hema Desai",
   "composer": "Ashit Desai",
   "languages": [
@@ -29,7 +28,11 @@ window.SONG_META = {
     "Durga",
     "Shiva",
     "Ashit Desai",
-    "Hema Desai"
+    "Hema Desai",
+    "Devi Aparadha Ksamapana Stotram",
+    "Adi Sankaracarya",
+    "Sakti",
+    "Siva"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=LilKBguuRC0",
   "audioSources": [
@@ -120,7 +123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na mantraṃ no yantraṃ tadapi ca na jāne stutimaho",
-    "english": "{8:I know }{0:no }{1:mantra, }{2:no }{3:yantra; }{6:and }{9:praise—}{10:alas, }{8:I do }{7:not }{8:know }{5:even }{4:that;}",
+    "english": "{8:I know }{0:no }{1:mantra, }{2:no }{3:yantra; }{6:and }{9:praise—}{10:alas, }{5:even }{4:that }{8:I do }{7:not }{8:know;}",
     "words": [
       {
         "roman": "na",
@@ -258,7 +261,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na cāhvānaṃ dhyānaṃ tadapi ca na jāne stutikathāḥ",
-    "english": "{0:nor }{1:how to call you near, }{2:nor how to meditate; }{5:and }{9:the tales }{8:told in your praise—}{7:I do }{6:not }{7:know }{4:even }{3:that.}",
+    "english": "{0:nor }{1:how to call you near, }{2:nor how to hold you in mind; }{5:and }{9:the tales }{8:told in your praise—}{4:even }{3:those }{7:I do }{6:not }{7:know.}",
     "words": [
       {
         "roman": "na",
@@ -390,7 +393,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na jāne mudrāste tadapi ca na jāne vilapanaṃ",
-    "english": "{1:I do }{0:not }{1:know }{3:your }{2:gestures of worship; }{6:and }{9:to cry out in grief—}{8:I do }{7:not }{8:know }{5:even }{4:that.}",
+    "english": "{1:I do }{0:not }{1:know }{2:the gestures }{3:of your worship; }{6:and }{9:how to weep out my grief—}{5:even }{4:that }{8:I do }{7:not }{8:know.}",
     "words": [
       {
         "roman": "na",
@@ -504,7 +507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paraṃ jāne mātastvadanusaraṇaṃ kleśaharaṇam",
-    "english": "{0:But }{1:this I know, }{2:Mother: }{4:following after }{3:you }{6:takes }{5:sorrow }{6:away.}",
+    "english": "{0:But }{1:this I know, }{2:Mother: }{4:to follow }{3:you }{6:takes }{5:sorrow }{6:away.}",
     "words": [
       {
         "roman": "paraṃ",
@@ -768,7 +771,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tadetat kṣantavyaṃ janani sakaloddhāriṇi śive",
-    "english": "{0,1:this }{2:is yours to forgive, }{3:Mother, }{5:you who lift up }{4:all, }{6:gracious one:}",
+    "english": "{0,1:this }{2:you must forgive, }{3:Mother, }{6:gracious one }{5:who lifts up }{4:all:}",
     "words": [
       {
         "roman": "tad",
@@ -864,7 +867,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuputro jāyeta kvacidapi kumātā na bhavati",
-    "english": "{0:a bad son }{1:may be born; }{2,5:nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
+    "english": "{0:a bad son }{1:may be born, }{2,5:but nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
     "words": [
       {
         "roman": "kuputro",
@@ -1062,7 +1065,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paraṃ teṣāṃ madhye viralataralo'haṃ tava sutaḥ",
-    "english": "{0:but }{2:among }{1:them }{5:I am }{3:the rare one }{4:who wavers, }{6:your }{7:son.}",
+    "english": "{0:but }{2:among }{1:them }{5:I am }{3:the rare, }{4:the restless one, }{6:your }{7:son.}",
     "words": [
       {
         "roman": "paraṃ",
@@ -1272,7 +1275,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuputro jāyeta kvacidapi kumātā na bhavati",
-    "english": "{0:a bad son }{1:may be born; }{2,5:nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
+    "english": "{0:a bad son }{1:may be born, }{2,5:but nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
     "words": [
       {
         "roman": "kuputro",
@@ -1374,7 +1377,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jaganmātarmātastava caraṇasevā na racitā",
-    "english": "{1:Mother }{0:of the world, }{2:Mother, }{7:I have done }{6:no }{5:service }{4:at }{3:your }{4:feet,}",
+    "english": "{1:Mother }{0:of the world, }{2:Mother, }{6:never }{7:have I }{5:served }{3:at your }{4:feet,}",
     "words": [
       {
         "roman": "jagan",
@@ -1488,7 +1491,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na vā dattaṃ devi draviṇamapi bhūyastava mayā",
-    "english": "{0,1:nor, }{3:Goddess, }{8:have I }{2:given }{7:you }{5:even }{4:riches }{6:in plenty.}",
+    "english": "{0,1:nor, }{3:Goddess, }{8:have I }{5:even }{2:given }{7:you }{4:riches }{6:in plenty.}",
     "words": [
       {
         "roman": "na",
@@ -1704,7 +1707,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kuputro jāyeta kvacidapi kumātā na bhavati",
-    "english": "{0:a bad son }{1:may be born; }{2,5:nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
+    "english": "{0:a bad son }{1:may be born, }{2,5:but nowhere, }{3:ever, }{6:is there }{4:a bad mother.}",
     "words": [
       {
         "roman": "kuputro",
@@ -1794,7 +1797,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "parityaktā devā vividhavidhasevākulatayā",
-    "english": "{0:I have forsaken }{1:the gods, }{5:bewildered }{4:by their service }{2:of so many }{3:kinds,}",
+    "english": "{0:I have given up }{1:the gods, }{5:overwhelmed }{2:by so many }{3:kinds }{4:of worship,}",
     "words": [
       {
         "roman": "parityaktā",
@@ -1980,7 +1983,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "idānīṃ cenmātastava yadi kṛpā nāpi bhavitā",
-    "english": "{1,4:If }{0:now, }{2:Mother, }{6:not }{7:even }{3:your }{5:compassion }{8:is to come,}",
+    "english": "{1,4:If }{0:now, }{2:Mother, }{7:even }{3:your }{5:compassion }{8:will }{6:not }{8:come,}",
     "words": [
       {
         "roman": "idānīṃ",
@@ -2190,7 +2193,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śvapāko jalpāko bhavati madhupākopamagirā",
-    "english": "{1:An outcast who cooks }{0:dogs }{3:becomes }{2:a ready talker, }{7:his speech }{6:like }{5:sweets cooked }{4:in honey;}",
+    "english": "{1:An outcast who cooks }{0:dogs }{3:becomes }{2:eloquent, }{7:his speech }{6:like }{5:sweets cooked }{4:in honey;}",
     "words": [
       {
         "roman": "śva",
@@ -2496,7 +2499,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "janaḥ ko jānīte janani japanīyaṃ japavidhau",
-    "english": "{0,1:who, }{3:Mother, }{2:can know }{4:what it is to chant it }{5:as chanting }{6:should be done?}",
+    "english": "{0,1:who, }{3:Mother, }{2:can know }{4:what it is to chant it }{6:in the due rite }{5:of chanting?}",
     "words": [
       {
         "roman": "janaḥ",
@@ -3030,7 +3033,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na mokṣasyākāṅkṣā bhavavibhavavāñchāpi ca na me",
-    "english": "{9:I have }{0:no }{2:longing }{1:for liberation, }{7:and }{8:no }{5:desire }{6:either }{3:for the world }{4:and its wealth;}",
+    "english": "{9:I have }{0:no }{2:longing }{1:for liberation, }{7:and }{8:no }{5:wish }{6:either }{3:for the world }{4:and its wealth;}",
     "words": [
       {
         "roman": "na",
@@ -3162,7 +3165,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na vijñānāpekṣā śaśimukhi sukhecchāpi na punaḥ",
-    "english": "{0:no }{2:need }{1:of knowledge, }{3:moon}{4:-faced one, }{8:nor }{9:any more }{7:even }{6:the wish }{5:for happiness.}",
+    "english": "{0:no }{2:need }{1:of knowledge, }{3:moon}{4:-faced one, }{8:nor, }{9:any more, }{7:even }{6:the wish }{5:for happiness.}",
     "words": [
       {
         "roman": "na",
@@ -3564,7 +3567,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kiṃ rūkṣacintanaparairna kṛtaṃ vacobhiḥ",
-    "english": "{0:what }{6:have my words }{4:not }{5:done, }{3:bent on }{1:harsh }{2:thoughts?}",
+    "english": "{0:what }{6:have my words, }{3:bent on }{1:harsh }{2:thoughts, }{4:left un}{5:done?}",
     "words": [
       {
         "roman": "kiṃ",
@@ -3660,7 +3663,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śyāme tvameva yadi kiñcana mayyanāthe",
-    "english": "{0:Dark one, }{3:if }{1:you }{2:yourself, }{4:however little, }{5:toward me, }{6:an orphan,}",
+    "english": "{0:Dark one, }{3:if }{1:you }{2:yourself, }{5:for me, }{6:an orphan, }{4:even a little}",
     "words": [
       {
         "roman": "śyāme",
@@ -3756,7 +3759,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhatse kṛpāmucitamamba paraṃ tavaiva",
-    "english": "{0:bear }{1:compassion, }{3:Mother—}{2:it befits }{5:you }{4:above all, }{6:you alone.}",
+    "english": "{0:feel }{1:compassion, }{3:Mother, }{2:it becomes }{5:you }{4:above all, }{6:you alone.}",
     "words": [
       {
         "roman": "dhatse",
@@ -3972,7 +3975,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "naitacchaṭhatvaṃ mama bhāvayethāḥ",
-    "english": "{0:Do not }{4:think }{1:it }{2:falseness }{3:in me:}",
+    "english": "{0:Do not }{4:take }{1:this }{2:for deceit }{3:in me:}",
     "words": [
       {
         "roman": "nai",
@@ -4044,7 +4047,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṣudhātṛṣārtā jananīṃ smaranti",
-    "english": "{0:the hungry }{1:and thirsty, }{2:in their distress, }{4:remember }{3:their mother.}",
+    "english": "{0:the hungry }{1:and the thirsty, }{2:in their distress, }{4:remember }{3:their mother.}",
     "words": [
       {
         "roman": "kṣudhā",
@@ -4590,7 +4593,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yathāyogyaṃ tathā kuru",
-    "english": "{3:do, }{2:then, }{0:as }{1:is fitting.}",
+    "english": "{3:do, }{2:then, }{0:what }{1:is fitting.}",
     "words": [
       {
         "roman": "yathā",

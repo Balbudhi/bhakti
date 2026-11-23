@@ -999,7 +999,7 @@
     },
     "arunachala-akshara-mana-malai": {
       "status": "owner_protected",
-      "readerSha256": "b5b63a8549b7a6e875566941da5068f585310551aa195d37a1d4daf16ad58d90",
+      "readerSha256": "ddca120dcb4f2dd52a272b35e047ca7a4ccd2aea2487fb7fdb7a796f338e7e0c",
       "definitionCount": 115,
       "reviewedAt": "2026-11-22",
       "ownerApproval": "Owner-designated protected editorial baseline. Protection records approval and preservation, not an inferred authorship claim; older authorship is not fully recoverable."
@@ -1026,7 +1026,7 @@
     },
     "sai-ba-prakash-hai": {
       "status": "finished",
-      "readerSha256": "50a7f3f1329509920ef9163ba66948cf737ddf3d819e65da7a651c1051664128",
+      "readerSha256": "f59ef1af808f52f7b9945d5a56b0d0b0cbd13b3feef7ee7a4dbb73b836afb172",
       "definitionCount": 18,
       "reviewedAt": "2026-11-21"
     },
@@ -1856,7 +1856,7 @@
     },
     "sai-sai-bol-sai-sai-bol": {
       "status": "finished",
-      "readerSha256": "365eec2162103c3ad8bf5c0fc5a486bd1458b4311d68769cad6b78bf72d6b3b9",
+      "readerSha256": "7b199d1d45e019702e82369270efc115b636bb3637c8a6b57bee404b7d7acd87",
       "definitionCount": 15,
       "reviewedAt": "2026-11-21"
     },
@@ -2416,9 +2416,9 @@
     },
     "devi-aparadha-kshamapana-stotram": {
       "status": "finished",
-      "readerSha256": "c1fdbf71b276e36347d2dbf039721207b205f8b51b47ec453d7efe92195c6881",
+      "readerSha256": "55a90fa21d6a17bbbab18a7c92b3a6d00147564bfb2a8d9f8484b614fcc64221",
       "definitionCount": 48,
-      "reviewedAt": "2026-11-22"
+      "reviewedAt": "2026-11-23"
     }
   },
   "followUpReport": "docs/research/translation-source-resolution-2026-11-21.md",

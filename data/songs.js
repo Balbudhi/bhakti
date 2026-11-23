@@ -1193,7 +1193,11 @@ window.BHAKTI_SONGS = [
       "Durga",
       "Shiva",
       "Ashit Desai",
-      "Hema Desai"
+      "Hema Desai",
+      "Devi Aparadha Ksamapana Stotram",
+      "Adi Sankaracarya",
+      "Sakti",
+      "Siva"
     ],
     "writer": "Ādi Śaṅkarācārya",
     "singer": "Ashit Desai & Hema Desai",
@@ -8322,6 +8326,40 @@ window.BHAKTI_SONGS = [
     "queueNumber": 67
   },
   {
+    "slug": "sai-sai-bol-sai-sai-bol",
+    "queueId": "1ad68fc1",
+    "title": "Sāī Sāī Bol",
+    "credit": "Pramod Medhi, Sachidanand Appa & Anupama Deshpande",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Rāma",
+      "Śiva",
+      "Guru"
+    ],
+    "searchAliases": [
+      "Sai Sai Bol",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Rama",
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "Pramod Medhi, Sachidanand Appa & Anupama Deshpande",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-sai-bol-sai-sai-bol.mp3",
+        "type": "audio/mpeg"
+      }
+    ],
+    "subtitle": "Śirḍī Sāī",
+    "queueNumber": 301
+  },
+  {
     "slug": "jo-achyutananda",
     "queueId": "eb9071eb",
     "title": "Jō Acyutānanda",
@@ -9050,45 +9088,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 21
   },
   {
-    "slug": "arunachala-akshara-mana-malai",
-    "queueId": "927edb40",
-    "title": "Aruṇācala Akṣaramaṇamālai",
-    "credit": "Ramana Maharshi",
-    "languageTags": [
-      "Tamil"
-    ],
-    "subjectTags": [
-      "Aruṇācala",
-      "Śiva",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Arunacala Aksharamanamalai",
-      "Arunacala Aksaramanamalai",
-      "Arunacala",
-      "Shiva",
-      "Siva",
-      "Arunachala",
-      "Arunachala Aksharamanamalai",
-      "Marital Garland of Letters"
-    ],
-    "writer": "Ramana Maharshi",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Aruṇācala",
-    "queueNumber": 12
-  },
-  {
     "slug": "rudrashtakam-rameshbhai-oza",
     "queueId": "ef07b1c2",
     "title": "Rudrāṣṭakam",
@@ -9475,36 +9474,6 @@ window.BHAKTI_SONGS = [
       }
     ],
     "queueNumber": 188
-  },
-  {
-    "slug": "sai-ba-prakash-hai",
-    "queueId": "23cf919c",
-    "title": "Sai Ba Prakash Hai",
-    "credit": "",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Rāma",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Rama"
-    ],
-    "writer": "",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ba-prakash-hai.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śirḍī Sāī",
-    "queueNumber": 181
   },
   {
     "slug": "sai-ram-ram-jap-le",
@@ -11004,6 +10973,37 @@ window.BHAKTI_SONGS = [
     "queueNumber": 187
   },
   {
+    "slug": "sai-ba-prakash-hai",
+    "queueId": "23cf919c",
+    "title": "Sai Ba Prakash Hai",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Rāma",
+      "Guru"
+    ],
+    "searchAliases": [
+      "Jahan Dharti Chunti Hai",
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Rama"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-ba-prakash-hai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śirḍī Sāī",
+    "queueNumber": 181
+  },
+  {
     "slug": "ishwar-se-kuch-mangna-ho-to",
     "queueId": "52e297a9",
     "title": "Īśvar Se Kuch Māṅgnā Ho To",
@@ -12149,6 +12149,45 @@ window.BHAKTI_SONGS = [
     "queueNumber": 183
   },
   {
+    "slug": "arunachala-akshara-mana-malai",
+    "queueId": "927edb40",
+    "title": "Aruṇācala Akṣaramaṇamālai",
+    "credit": "Ramana Maharshi · Sulochana Natarajan",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Aruṇācala",
+      "Śiva",
+      "Guru"
+    ],
+    "searchAliases": [
+      "Arunacala Aksharamanamalai",
+      "Arunacala Aksaramanamalai",
+      "Arunacala",
+      "Shiva",
+      "Siva",
+      "Arunachala",
+      "Arunachala Aksharamanamalai",
+      "Marital Garland of Letters"
+    ],
+    "writer": "Ramana Maharshi",
+    "singer": "Sulochana Natarajan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/arunachala-akshara-mana-malai-20261011.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Aruṇācala",
+    "queueNumber": 12
+  },
+  {
     "slug": "deh-javo-athava-raho",
     "queueId": "50ae6822",
     "title": "Deh Jāo Athavā Rāho",
@@ -12503,40 +12542,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Nirguṇa",
     "queueNumber": 44
-  },
-  {
-    "slug": "sai-sai-bol-sai-sai-bol",
-    "queueId": "1ad68fc1",
-    "title": "Sāī Sāī Bol",
-    "credit": "",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Rāma",
-      "Śiva",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Sai Sai Bol",
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Rama",
-      "Shiva",
-      "Siva"
-    ],
-    "writer": "",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sai-sai-bol-sai-sai-bol.mp3",
-        "type": "audio/mpeg"
-      }
-    ],
-    "subtitle": "Śirḍī Sāī",
-    "queueNumber": 301
   },
   {
     "slug": "chitrakoot-ati-vichitra",
@@ -13460,4 +13465,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 384
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "b938cea6cb4e345f38910947110da01bbe34c7783334dc133822b5e2f8b53ff6";
+window.BHAKTI_SHUFFLE_REVISION = "8fe3ad12360d11b1b1cce50d2709c0cc3bbcd72de18ec005a86a9d2a0ec9d835";

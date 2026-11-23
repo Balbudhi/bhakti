@@ -127,3 +127,14 @@ Rejected: Mysore Ramachandrachar for Ghaṭikācaladi (same length, different re
 Honājī Bāḷā for the Hindi Ghanaśyāma Sundarā; Bharati Krushna and Sarat Nayak for Sai
 Naivedya (a different album); Antara Chakraborty for Īśvar Se Kuch (a different recording).
 Open: the caption of Jab Karm signs "Bagge" (Sahil Bagga); this recording sings "bande".
+
+## Shazam, disc identifiers and Apple previews — 23 November 2026
+
+| Reader | Credit | Basis |
+|---|---|---|
+| arunachala-akshara-mana-malai | Sulochana Natarajan | Shazam, five of five samples, offsets advancing through the official Ramana Digital track |
+| sai-sai-bol-sai-sai-bol | Pramod Medhi, Sachidanand Appa & Anupama Deshpande | Shazam; then all four album previews match (0.84–0.91) |
+| sai-ba-prakash-hai | poet and composer Shri Chandra Bhanu Satpathy | track 5 of the same CD (disc identifier in the file); official preview “Jahan Dharti Chunti He” 0.66 |
+
+Shazam found the control song and did not know the Tirupati recordings tried, the rest of the
+CD holding Sai Ram Ram Jap Le, or the Geet Sai Ke Lie songs. Single hits were often false.

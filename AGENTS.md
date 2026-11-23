@@ -23,125 +23,25 @@ on its recorded open definitions. A concrete new defect or source can reopen an
 affected passage; a completion mark is not evidence against the owner’s report.
 The marks cover translation review, not a new listening or exhaustive word-analysis audit.
 
-## One-command production pipeline
+## Adding or revising songs
 
-OpenRouter is again the default provider, with `google/gemini-3.7-flash` as the
-established audio/text baseline. Compare `google/gemini-3.8-flash` on actual song
-coverage and translation before changing the production model. Newer is not
-proof of better sung-language recognition. `BHAKTI_MODEL` or `--model` overrides
-it explicitly; `BHAKTI_GEMINI_PROVIDER` defaults to `openrouter`.
+Follow `docs/ADD_A_SONG.md`: one page, with `scripts/song.py` for every mechanical step.
+The agent writes the text, the word meanings and the English itself and looks things up
+when needed. Do not read the rest of `docs/` first, and do not start the older paid
+pipeline, a library-wide audit, or a chain of review agents for an ordinary song.
 
-Use the owner-only OpenRouter key file named by `OPENROUTER_API_KEY_FILE` or the
-configured secure Bhakti key-file reference. Never print, commit, copy or place
-credentials in command arguments/history. Hosted intake uses the existing
-`OPENROUTER_API_KEY` repository secret. Together remains an explicit text-only
-option; its failed audio qualification is recorded in
-`docs/TOGETHER_AUDIO_QUALIFICATION.md`. Do not substitute its Whisper output for
-Gemini's audio review. A text-only model has not listened to a recording.
+The older model pipeline (`python3 scripts/bhakti_pipeline.py --batch intake.json`,
+documented in `docs/TRANSLATION_WORKFLOW.md`) remains for hosted intake and for audio whose
+words cannot be established otherwise. Always set `--budget-usd`. Its gates still apply to
+its own output; `--generate-only` makes no API calls. OpenRouter with
+`google/gemini-3.7-flash` is its baseline; credentials come only from the key file named by
+`OPENROUTER_API_KEY_FILE` and are never printed, copied, committed or put in arguments. Keep raw
+evidence private. For a YouTube link, resolve the official audio first
+(`python3 scripts/resolve_youtube_music_audio.py <url-or-query>`) and keep the original
+audio-only stream; never transcode a lossy source and call it better.
 
-The completeness, first-syllable timing, contextual translation and independent
-review gates remain in force. `--generate-only` uses already-reviewed artifacts
-without a new API call. The whole-library repair task is recorded in
-`docs/LIBRARY_REPAIR_TASKS.md`. The maintained operational guide is
-`docs/TRANSLATION_WORKFLOW.md`: source-language dictionary retrieval, context
-embeddings, gloss-first sense decisions, independent review, bounded stage-level
-Flash-to-Pro escalation, and private library inventory/run/resume. Embedding
-similarity never selects a meaning automatically. Keep all cited alternatives
-available and preserve owner English. The library runner has no publish flag;
-its source-adapter and end-to-end qualification status must be checked before
-claiming a full repair pass succeeded.
-
-For one or more local audio files or source URLs, use:
-
-```sh
-python3 scripts/bhakti_pipeline.py --workers 7 --publish \
-  --song song-slug='https://www.youtube.com/watch?v=…'
-```
-
-For a larger batch, use a JSON manifest:
-
-```json
-{"songs":[{"slug":"song-slug","source":"/absolute/song.m4a","title":"…","writer":"…","singer":"…","languages":["Hindi"],"subjectTags":["Śirḍī Sāī"],"searchAliases":["Shirdi Sai"]}]}
-```
-
-```sh
-python3 scripts/bhakti_pipeline.py --workers 7 --publish --batch intake.json
-```
-
-To regenerate pages and the shared catalogue from already reviewed artifacts
-without any API calls or cost, use `--generate-only --batch intake.json`.
-
-The pipeline preserves audio-only source input, then performs distinct stages:
-
-1. complete transcription (adaptive overlapping segments above 15 minutes);
-2. independent transcription/order audit that receives the first transcript;
-3. exact ordered start-only timing: one full pass plus one bounded verification
-   grid for ordinary songs, or one exact timing call per audited long segment,
-   with focused retry only for a disagreement;
-4. literal word glosses and grammar notes;
-5. semantic frames plus English derived from those glosses only, with agency,
-   imagery, completeness, alternatives, and unsupported additions checked;
-6. an independent adversarial translation review that cannot rewrite;
-7. semantic shuffle assessment with separate extraction/review, and local
-   physical audio assessment of the exact retained first listener source; and
-8. deterministic `data.js`, song-page HTML, and catalogue generation.
-
-Both shuffle assessments are mandatory for future intake. Normal intake invokes
-them automatically after the existing text gates, reusing identity-bound caches
-and the existing bounded provider budget. Qualified, reviewed unknown results
-are valid; missing, failed, pending, stale, or unsupported results are not an
-accepted assessment. Method and input-domain qualification is governed by
-`data/shuffle-profile-policy.json`; do not bypass a hold or invent musical labels.
-`--generate-only` makes no API calls and holds a new song if its required current
-assessments are absent. Keep raw evidence private; commit only sanitized review
-summaries and the generated public projection. Shuffle itself makes no paid
-calls, and missing legacy features never remove a song from playback. See the
-mandatory shuffle assessment section in `docs/TRANSLATION_WORKFLOW.md`.
-
-Song concurrency and API concurrency are separate. The default seven song
-workers keep local intake, FFmpeg, validation, and generation busy, while the
-shared provider scheduler permits at most three simultaneous outbound calls
-and staggers starts by 350 ms. It honors `Retry-After` and uses bounded exponential backoff.
-OpenRouter-specific routing applies when OpenRouter is selected; Together does not inherit those fields. Tune only with `BHAKTI_API_MAX_CONCURRENCY`,
-`BHAKTI_API_MIN_START_INTERVAL`, or `OPENROUTER_PROVIDER_SORT`; never solve a
-429 by globally serializing the whole batch.
-
-For YouTube, preserve the highest-quality original audio stream as the first
-listener source and retain the highest native M4A/AAC stream as a compatibility
-fallback. Never improve a lossy source by transcoding it and calling the result
-“higher quality.” Model-only canonical AAC copies are temporary and never
-replace listener audio. Run `python3 scripts/audit_audio_quality.py` before
-release. Resolve YouTube-family references through
-`python3 scripts/resolve_youtube_music_audio.py <url-or-query>` first whenever
-the pasted link is not already an official art-track. That resolver accepts
-`music.youtube.com`, `youtube.com`, `youtu.be`, and search queries, canonicalizes
-the result to `https://www.youtube.com/watch?v=ID`, prefers `Provided to
-YouTube` / `Auto-generated by YouTube` / `- Topic` tracks, expands YouTube
-Music album pages when needed, and fails closed on ambiguity. Use the resulting
-watch URL for `yta` or the production pipeline; do not ingest a random lyrical
-upload just because it was the first pasted link.
-Long devotional recordings often have almost no internal silence;
-FFmpeg energy valleys may route overlapping chunks, but only audited lyric
-continuity and start-time consensus can validate them.
-Long gloss and translation output is split into cached 40-line text batches;
-do not request one enormous structured response.
-
-It blocks publication for unresolved transcription uncertainty, missing,
-reordered, duplicated, non-increasing, out-of-duration, or explicitly uncertain
-first-syllable starts, source/IAST omissions, non-mappable glosses, or uncertain literal
-translations. It never fixes those errors by guessing. Do not replace this
-with manual song-page construction or separate generic audio passes.
-It also blocks a translation when materially different poetic choices remain
-or the fidelity record reports changed agency, lost imagery, omitted meaning,
-or unsupported additions. A supplied human translation is copied exactly and
-any suspected conflict is queued for review rather than silently rewritten.
-
-For an existing song page whose wording needs review but whose audio must not be
-rerun, use `python3 scripts/audit_translation_style.py all --workers 2`. It
-audits the current English against the reviewed public glosses in cached text
-batches and does **not** overwrite public translations. Every proposed change
-must be reviewed before it is applied. Use `retranslate_bhakti.py` only when
-the word glosses themselves also require a fresh independent reconstruction.
+Semantic and audio shuffle assessments are required for every new song (`song.py release`
+runs them). Do not bypass a hold or invent musical labels.
 
 ## Song-page schema and content rules
 

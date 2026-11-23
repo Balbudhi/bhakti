@@ -1,11 +1,11 @@
 window.SONG_META = {
   "title": "Sai Ba Prakash Hai",
   "subtitle": "Śirḍī Sāī",
-  "credit": "",
-  "pageCredit": "",
-  "writer": "",
+  "credit": "Shri Chandra Bhanu Satpathy",
+  "pageCredit": "Shri Chandra Bhanu Satpathy",
+  "writer": "Shri Chandra Bhanu Satpathy",
   "singer": "",
-  "composer": "",
+  "composer": "Shri Chandra Bhanu Satpathy",
   "languages": [
     "Hindi"
   ],
@@ -15,6 +15,7 @@ window.SONG_META = {
     "Guru"
   ],
   "searchAliases": [
+    "Jahan Dharti Chunti Hai",
     "Shirdi Sai",
     "Sirdi Sai",
     "Rama"
