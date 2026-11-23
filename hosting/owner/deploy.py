@@ -23,6 +23,9 @@ DOMAIN = 'owner.bhakti.eeshan.xyz'
 PUBLIC_NAME = 'bhakti-owner-public'
 PRIVATE_NAME = '.bhakti-owner'
 MAX_EXPORT = 100 * 1024 * 1024
+MAX_GEO = 400 * 1024 * 1024
+GEO_MARKER = b'\xab\xcd\xefMaxMind.com'
+PUBLIC_ORIGIN = 'https://bhakti.eeshan.xyz'
 DENY = r'''# bhakti-owner denied pending HTTPS activation
 Options -Indexes -ExecCGI -Includes
 RewriteEngine On
@@ -202,6 +205,30 @@ def install_release(public, private, binary, expected):
     atomic_file(public / '.htaccess', APACHE.encode(), 0o644)
 
 
+def install_geo(private, source, expected):
+    """Stream a location database into place; a partial or altered upload changes nothing."""
+    fd, name = tempfile.mkstemp(prefix='.owner-', dir=private)
+    try:
+        digest, size, tail = hashlib.sha256(), 0, b''
+        with os.fdopen(fd, 'wb') as target:
+            while chunk := source.read(1 << 20):
+                size += len(chunk)
+                if size > MAX_GEO:
+                    raise ValueError('Location database is too large')
+                digest.update(chunk)
+                tail = (tail + chunk)[-(128 << 10):]  # The format's metadata is at the end.
+                target.write(chunk)
+            target.flush()
+            os.fchmod(target.fileno(), 0o600)
+            os.fsync(target.fileno())
+        if digest.hexdigest() != expected or GEO_MARKER not in tail:
+            raise ValueError('Location database verification failed')
+        os.replace(name, private / 'geo.mmdb')
+    finally:
+        if os.path.exists(name):
+            os.unlink(name)
+
+
 def is_active(public):
     return (public / 'owner.cgi').is_file() and (public / '.htaccess').is_file() and (public / '.htaccess').read_text() == APACHE
 
@@ -259,6 +286,9 @@ def remote_main(action, expected=None):
         elif action == 'rollback':
             rollback_release(public, private, expected)
             print('{"rolledBack":true}')
+        elif action == 'geo':
+            install_geo(private, sys.stdin.buffer, expected)
+            print(json.dumps({'installed': True, 'sha256': expected}))
         elif action == 'complete':
             data = json.loads(sys.stdin.buffer.read(1025))
             if not isinstance(data, dict) or set(data) != {'requestId', 'expectedTextSha256'}:
@@ -312,10 +342,10 @@ def complete_request(request_id, expected_text_sha256):
     return {key: result[key] for key in ('id', 'status', 'completedAt')}
 
 
-def request(path, method='GET', host=DOMAIN, secure=True, body=None, origin=None):
+def request(path, method='GET', host=DOMAIN, secure=True, body=None, origin=None, content_type='application/json'):
     connection = (http.client.HTTPSConnection if secure else http.client.HTTPConnection)(DOMAIN, timeout=30)
     try:
-        headers = {'Host': host, 'User-Agent': 'Bhakti-owner-deployment/1', 'Content-Type': 'application/json'}
+        headers = {'Host': host, 'User-Agent': 'Bhakti-owner-deployment/1', 'Content-Type': content_type}
         if origin is not None:
             headers['Origin'] = origin
         connection.request(method, path, body=body, headers=headers)
@@ -350,6 +380,24 @@ def verify_https(active=False):
         raise ValueError('CGI handler not verified')
 
 
+def verify_visits():
+    """Exercise the anonymous boundary; this declared automation is never counted."""
+    status, headers, body = request('/api/visit', 'POST', body='{}', origin=PUBLIC_ORIGIN, content_type='text/plain')
+    receipt = json.loads(body)
+    if status != 200 or set(receipt) != {'day', 'until'} or headers.get('access-control-allow-origin') != PUBLIC_ORIGIN or 'set-cookie' in headers or 'access-control-allow-credentials' in headers:
+        raise ValueError('Visitor counting contract failed')
+    for parameters in ({'origin': 'https://' + DOMAIN, 'content_type': 'text/plain'}, {'origin': 'https://invalid.example', 'content_type': 'text/plain'}, {'origin': PUBLIC_ORIGIN}):
+        status, headers, _ = request('/api/visit', 'POST', body='{}', **parameters)
+        if status not in (400, 403) or 'access-control-allow-origin' in headers:
+            raise ValueError('Visitor counting boundary failed')
+    for path in ('/api/visitors?days=30', '/visits/limiter.json', '/geo.mmdb'):
+        if request(path)[0] not in (401, 403, 404):
+            raise ValueError('Visitor totals were not private')
+    status, headers, body = request('/world.svg')
+    if status != 200 or 'image/svg+xml' not in headers.get('content-type', '') or not body.startswith(b'<svg'):
+        raise ValueError('Visitor map asset failed')
+
+
 def local_forbidden_roots():
     roots = [Path(__file__).resolve().parents[2], Path.home() / 'public_html', Path.home() / 'Sites']
     return roots
@@ -357,7 +405,8 @@ def local_forbidden_roots():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['inspect', 'provision', 'activate', 'verify', 'rollback', 'bootstrap', 'complete'])
+    parser.add_argument('action', choices=['inspect', 'provision', 'activate', 'verify', 'rollback', 'bootstrap', 'complete', 'geo'])
+    parser.add_argument('--database', type=Path)
     parser.add_argument('--go', default=os.environ.get('GO', 'go'))
     parser.add_argument('--output', type=Path)
     parser.add_argument('--request-id')
@@ -383,16 +432,23 @@ def main():
             ssh('activate', binary, expected)
             try:
                 verify_https(active=True)
+                verify_visits()
             except Exception:
                 ssh('rollback', expected=expected)
                 raise ValueError('Activation verification failed; rollback requested') from None
             print(json.dumps({'active': True, 'httpsVerified': True, 'sha256': expected}))
     elif args.action == 'verify':
         verify_https(active=True)
+        verify_visits()
         print('{"httpsVerified":true}')
     elif args.action == 'rollback':
         info = json.loads(ssh('inspect'))
         print(ssh('rollback', expected=info['sha256']).decode().strip())
+    elif args.action == 'geo':
+        if not args.database or not args.database.is_file() or args.database.stat().st_size > MAX_GEO:
+            raise ValueError('geo requires --database with an uncompressed MMDB file')
+        data = args.database.read_bytes()
+        print(ssh('geo', data, hashlib.sha256(data).hexdigest()).decode().strip())
     elif args.action == 'complete':
         print(json.dumps(complete_request(args.request_id, args.expected_text_sha256)))
     elif args.action == 'bootstrap':

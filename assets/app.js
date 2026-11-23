@@ -1299,6 +1299,7 @@
   initializeState();
   window.BHAKTI_READER.setVisible(view === "song");
   import(assetPath("/assets/owner-entry.js")).catch(error => console.warn("Owner entry could not be initialized", error));
+  import(assetPath("/assets/visit.js")).catch(() => {});
   if ("mediaSession" in navigator) {
     import(assetPath("/assets/media-session.js")).then(({ attach }) => {
       systemMedia = attach({

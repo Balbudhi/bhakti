@@ -104,7 +104,7 @@ def prepare_release(staged: Path) -> None:
     # Precache the home entrypoint and its real dependencies, not every public
     # asset (including unused styles, license texts and deferred shuffle data).
     required = {'/assets/release-map.js', '/manifest.webmanifest', '/assets/icon-192.png',
-                '/assets/media-session.js', '/assets/owner-entry.js', '/assets/player-icons.svg'}
+                '/assets/media-session.js', '/assets/owner-entry.js', '/assets/visit.js', '/assets/player-icons.svg'}
     home = (staged / 'index.html').read_text()
     required.update(urlsplit(raw).path for raw in re.findall(r'(?:src|href)=["\']([^"\']+)', home)
                     if raw.startswith('/'))

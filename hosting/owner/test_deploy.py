@@ -1,5 +1,7 @@
 """Deployment boundary tests use real files; cPanel/network remain external checks."""
+import hashlib
 import importlib.util
+import io
 import json
 import os
 from pathlib import Path
@@ -41,6 +43,25 @@ class DeploymentTests(unittest.TestCase):
         (self.home / 'bhakti-owner-public').unlink()
         with self.assertRaises(ValueError):
             self.deploy.check_layout(self.home, self.roots + [{'domain': self.deploy.DOMAIN, 'documentroot': str(self.home / 'public_html')}])
+
+    def test_geo_database_is_verified_before_replacement(self):
+        private = self.home / '.bhakti-owner'
+        private.mkdir(mode=0o700)
+        install, marker = self.deploy.install_geo, self.deploy.GEO_MARKER
+        real = (Path(__file__).parent / 'testdata' / 'GeoIP2-City-Test.mmdb').read_bytes()
+        digest = lambda data: hashlib.sha256(data).hexdigest()
+        install(private, io.BytesIO(real), digest(real))
+        target = private / 'geo.mmdb'
+        self.assertEqual(target.read_bytes(), real)
+        self.assertEqual(target.stat().st_mode & 0o777, 0o600)
+        for data, expected in ((real[:-1], digest(real)), (b'not a database', digest(b'not a database')), (marker + b'x' * (200 << 10), digest(marker + b'x' * (200 << 10)))):
+            with self.assertRaises(ValueError):
+                install(private, io.BytesIO(data), expected)
+        self.deploy.MAX_GEO = len(real) - 1
+        with self.assertRaises(ValueError):
+            install(private, io.BytesIO(real), digest(real))
+        self.assertEqual(target.read_bytes(), real)
+        self.assertEqual([path.name for path in private.iterdir()], ['geo.mmdb'])
 
     def test_unknown_public_file_and_private_mode_rejected(self):
         public, private = self.deploy.check_layout(self.home, self.roots)

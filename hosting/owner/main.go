@@ -31,6 +31,9 @@ func serveWeb(w http.ResponseWriter, r *http.Request) {
 	case "/owner.js":
 		name = "owner.js"
 		mime = "text/javascript; charset=utf-8"
+	case "/world.svg":
+		name = "world.svg"
+		mime = "image/svg+xml"
 	case "/fonts/cormorant-garamond-latin.woff2", "/fonts/inter-latin-ext.woff2", "/fonts/inter-latin.woff2":
 		name = r.URL.Path[1:]
 		mime = "font/woff2"

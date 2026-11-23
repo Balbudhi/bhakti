@@ -1,0 +1,2 @@
+GeoIP2-City-Test.mmdb: MaxMind-DB test data, https://github.com/maxmind/MaxMind-DB
+Copyright (c) 2013-2026 MaxMind, Inc. Apache License 2.0 or MIT License.

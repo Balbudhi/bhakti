@@ -9,3 +9,8 @@ Backend owner R supplies completion endpoint/schema and authenticated fixed-publ
 Tests: five-song overlapping/deduplicated/empty-label fixture; empty catalogue; every category retained; malicious labels as text; unauthenticated no catalogue read; pending/completed partition; completed add replay; complete CSRF + exact receipt; ambiguous failure/same-ID retry; malformed receipt; confirmed completion then failed refresh; busy double click; expired-session clearing. Existing auth/import/exact-draft tests remain in force. Real HTTP storage/auth tests are backend-owned; this harness only certifies shipped client behavior.
 
 Research rationale: Heer and Bostock, CHI 2010, experiment 1A (pp. 3–4) found common-scale position judgments more accurate than length, angle, or area judgments. Aligned horizontal bars make the endpoints comparable on a shared baseline and retain readable category text on mobile. This supports the chosen display without claiming that their experiment proved length superior to angle. https://hci.stanford.edu/publications/2010/crowd-perception/heer-chi2010.pdf
+
+
+# Visitors
+
+Contract, privacy limits and storage: `docs/OWNER_INTAKE.md`, "Visitor counts". The section uses the same single ink, hairlines and bar lists as the library breakdown; it adds no card, color or dependency. Daily counts are columns (at most 24px wide) on one labelled scale, dense above 100 days. The map answers "roughly where" only; circle area is proportional to visitors, and the country and city lists carry every value. Pointing at or tapping a mark writes its value below the figure; the Daily numbers table and the lists give the same values without a pointer. Refetching keeps the previous figures dimmed; failure removes them instead of showing zero.

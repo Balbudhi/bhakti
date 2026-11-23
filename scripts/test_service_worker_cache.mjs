@@ -87,7 +87,7 @@ try {
     assert.deepEqual(new Uint8Array(await response.arrayBuffer()), await Deno.readFile(new URL(new URL(url, origin).pathname.slice(1), root)));
   }
   // Deferred bare-path icons are routed to the current revision, not refetched.
-  for (const path of ["/assets/media-session.js", "/assets/owner-entry.js", "/assets/player-icons.svg"])
+  for (const path of ["/assets/media-session.js", "/assets/owner-entry.js", "/assets/visit.js", "/assets/player-icons.svg"])
     assert.ok((await first.request(path))?.ok);
   offline = false; network.length = 0;
   for (const url of bootstrap) assert.ok((await first.request(url))?.ok);

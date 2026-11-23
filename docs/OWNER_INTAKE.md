@@ -5,7 +5,7 @@
 Provide a discreet entrance from the public library to a separate passkey-only
 owner service at `https://owner.bhakti.eeshan.xyz`. The owner can paste song links
 and notes or load a UTF-8 text file, submit once, and see the durable private queue, explicitly mark delivered requests completed, and
-view the current public library’s language and subject breakdowns.
+view the current public library’s language and subject breakdowns and approximate visitor counts and places.
 The public library stays on GitHub Pages. TimeCrystals authentication, credentials,
 content and installed-app identity are unchanged.
 
@@ -43,7 +43,7 @@ Never put actual hosting IPs, account names, absolute remote home paths, secrets
 requests or credentials in this public repository. Deployment uses `hostgator`.
 
 The exact HTTPS origin and RP ID are `owner.bhakti.eeshan.xyz`. No parent-domain
-RP, CORS access, shared cookies, password fallback or alternate public registration.
+RP, credentialed CORS access, shared cookies, password fallback or alternate public registration.
 Require WebAuthn user verification, exact expected origin/RP/challenge, valid
 signature and the enrolled owner credential. Use cryptographically random IDs,
 single-use expiring challenges, opaque server-side sessions, Secure HttpOnly
@@ -86,6 +86,10 @@ requests carry `challengeId` and the standard serialized `credential` object.
   no redirects and exact wrapper/JSON parsing (no JavaScript evaluation). Returns
   `{songs:[{slug,title,languageTags,subjectTags}],fetchedAt}`; failures return 503,
   never a fabricated empty library. The fetch runs outside the private state lock.
+- `POST /api/visit`: the only anonymous write and the only cross-origin endpoint.
+  Requires exact Origin `https://bhakti.eeshan.xyz`. See "Visitor counts".
+- `GET /api/visitors?days=7|30|90|400`: requires session; returns the bounded
+  summary described in "Visitor counts". Other methods and ranges return 400.
 - `GET /api/export`: requires session; downloads all queued and completed requests
   as JSON. No credential/session fields are exported.
 
@@ -97,6 +101,68 @@ text returns 409. Bound overall body,
 challenge/session storage, request count and aggregate text size, with explicit
 capacity errors that never silently discard requests. The first release supports
 up to 1,000 requests and 16 MiB total text. No deletion or automatic processing.
+
+## Visitor counts
+
+Outcome: the owner page shows how many people use the public library and roughly
+where they are. Nothing was counted before this feature, so there is no earlier
+history to show. Public pages gain no visible control, cookie or identifier.
+
+**One count per device per day.** `assets/visit.js` runs on the public origin when
+a page is visible. It sends `{}` on a first visit, or `{"last":"YYYY-MM-DD"}` with
+the day it was last counted. The server answers `{day, until}`; the device stores
+only that receipt and stays quiet until `until` (epoch milliseconds, the next
+midnight in the library's `America/New_York` day). Failure stores nothing and is
+silent; a later view tries again. It never delays or breaks a page. Automated
+browsers, other hosts, and browsers without storage send nothing.
+
+**Distinct visitors without identifiers.** The server stores, per day and place,
+how many visits had each gap in days since that device's previous counted day.
+Gap `0` means first visit; gaps are capped at 400. A device's first visit inside a
+window starting on day A is exactly a visit whose previous day precedes A, so the
+distinct devices in any retained window are `gap = 0 or gap > day - A`, summed.
+A replay (`last` equal to today) or a future `last` returns the receipt and counts
+nothing. Cleared storage, private windows and Safari's storage expiry make one
+person look new; different devices count separately. The UI says "approximate".
+
+**Place.** The address is looked up at request time in a local database file
+(`geo.mmdb`, DB-IP City Lite, CC BY 4.0, attributed on the owner page) and then
+discarded. Only country code, region, city (without a parenthesised neighbourhood)
+and coordinates rounded to 0.1 degree are stored. A missing database, unknown
+address or overfull day still counts the visit, under a less specific place.
+
+**Abuse limits.** Text/plain JSON bodies of at most 256 bytes. Declared bots are
+answered but not counted. One network (IPv4 address or IPv6 /64) may add 50 counts
+per day; one day holds at most 20,000 counts, 20,000 networks and 2,000 places.
+Over a limit the receipt is still returned, so refusing creates no retry loop. Networks appear
+only as truncated HMACs under a random salt in the current day's limiter file;
+the file is replaced on the next day's first visit and removed by any later owner
+read. Counts remain forgeable by a determined sender; they are not audit evidence.
+
+**Storage.** `visits/` inside the private directory, mode 0700, with its own lock,
+so public traffic never holds or rewrites credential, session or request state.
+One `YYYY-MM-DD.json` per day, written atomically; days older than 400 are removed
+when a new day begins. An unreadable day returns 503 and is never overwritten.
+
+**Summary.** `{from, to, since, visitors, firstTime, daily:[{day,visitors,firstTime}],
+places:[{country,region,city,lat,lon,visitors}], unlocated}`. `since` is the
+earliest retained day or null. `daily` has one entry for every day from
+max(from, since) to today, including zero days, and is empty when `since` is null.
+`places` is sorted by visitors, then country/region/city; a place without a country
+is excluded and counted in `unlocated`, so places plus `unlocated` equals `visitors`.
+
+**Owner page.** A `N visitors today` link under the heading jumps to a Visitors
+section above Library breakdown: 7/30/90/all-time choices, headline counts, a daily
+bar chart, a dotted Equal Earth map with area-scaled circles, and country and city
+lists. Map circles and bars are never the only carrier of a value. A failed load
+says unavailable and never shows zero; it affects neither requests nor catalogue.
+
+Deploy order: install `geo.mmdb` (`deploy.py geo`), activate the backend, verify,
+then release the public script. An older backend ignores `visits/` and `geo.mmdb`,
+so rollback is safe; the public script stays silent on errors. The database comes from
+https://db-ip.com/db/download/ip-to-city-lite (unzip it first); refresh it with the
+same command when places look stale. The map is `web/world.svg`, drawn by
+`build_world.py` from Natural Earth 1:110m land (public domain).
 
 ## Local bridge and deployment
 
@@ -126,6 +192,7 @@ to proceed without a trusted certificate for the exact hostname.
 ```sh
 python3 hosting/owner/deploy.py activate --go /absolute/path/to/go
 python3 hosting/owner/deploy.py verify
+python3 hosting/owner/deploy.py geo --database /path/to/dbip-city-lite-YYYY-MM.mmdb
 python3 hosting/owner/deploy.py bootstrap --output ~/.config/bhakti/owner-private/setup-code
 python3 hosting/owner/pull.py --output ~/.config/bhakti/owner-private/requests.json
 ```
@@ -194,6 +261,14 @@ The local recording-quality audit reported 275 recordings and no errors. The
 existing trim audit reports six content-evidence failures (one interval mismatch
 and five invalid review artifacts), retained for the separate translation/content
 repair task. This release changes no recordings, lyrics, timing or trim evidence.
+
+Visitor counts (2026-11-22): the backend and `geo.mmdb` (DB-IP City Lite 2026-11)
+were activated and verified over the real network before the public script was
+released. One live request was counted with a city-level place by the deployed CGI and its
+record was then removed, so counting starts with real visitors. Go race tests,
+owner UI, counter, deployment, assembled service-worker and workflow tests pass.
+The owner page was checked with a DOM harness and a document renderer only; the
+in-app Browser check at 390px and desktop and physical iPhone use remain open.
 
 ## Hidden entrance correction
 

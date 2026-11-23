@@ -58,6 +58,7 @@ jobs:
           node scripts/test_playback_recovery.js
           node scripts/test_repeat_playback.js
           node scripts/test_view_transitions.js
+          node scripts/test_visit.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

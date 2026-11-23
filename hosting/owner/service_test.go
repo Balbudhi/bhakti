@@ -670,7 +670,7 @@ func TestCGICannotInvokeAdministration(t *testing.T) {
 }
 func TestStaticOwnerAssets(t *testing.T) {
 	b, _, _ := fixture(t)
-	for _, path := range []string{"/", "/setup", "/owner.css", "/owner.js", "/fonts/cormorant-garamond-latin.woff2", "/fonts/inter-latin-ext.woff2", "/fonts/inter-latin.woff2", "/fonts/inter-OFL.txt", "/fonts/cormorantgaramond-OFL.txt", "/fonts/SOURCES.txt"} {
+	for _, path := range []string{"/", "/setup", "/owner.css", "/owner.js", "/world.svg", "/fonts/cormorant-garamond-latin.woff2", "/fonts/inter-latin-ext.woff2", "/fonts/inter-latin.woff2", "/fonts/inter-OFL.txt", "/fonts/cormorantgaramond-OFL.txt", "/fonts/SOURCES.txt"} {
 		w := b.request("GET", path, nil)
 		if w.Code != 200 || w.Body.Len() == 0 {
 			t.Fatal(path, w.Code)

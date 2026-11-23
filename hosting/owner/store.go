@@ -228,34 +228,42 @@ func lockDirectory(dir string) (func(), error) {
 	}
 	return func() { syscall.Flock(fd, syscall.LOCK_UN); f.Close() }, nil
 }
-func readState(dir string) (*state, error) {
-	fd, e := syscall.Open(filepath.Join(dir, "state.json"), syscall.O_RDONLY|syscall.O_NOFOLLOW, 0)
+
+// readPrivate decodes one owner-only JSON file of known shape and bounded size.
+func readPrivate(dir, name string, limit int64, out any) error {
+	fd, e := syscall.Open(filepath.Join(dir, name), syscall.O_RDONLY|syscall.O_NOFOLLOW, 0)
 	if e != nil {
-		return nil, e
+		return e
 	}
-	f := os.NewFile(uintptr(fd), "state.json")
+	f := os.NewFile(uintptr(fd), name)
 	defer f.Close()
 	info, e := f.Stat()
 	if e != nil {
-		return nil, e
+		return e
 	}
 	if e = checkPrivate(info, false); e != nil {
-		return nil, e
+		return e
 	}
-	if info.Size() > maxStateBytes {
-		return nil, errors.New("private state too large")
+	if info.Size() > limit {
+		return errors.New("private state too large")
 	}
-	decoder := json.NewDecoder(io.LimitReader(f, maxStateBytes+1))
+	decoder := json.NewDecoder(io.LimitReader(f, limit+1))
 	decoder.DisallowUnknownFields()
-	var s state
-	if e = decoder.Decode(&s); e != nil {
-		return nil, e
+	if e = decoder.Decode(out); e != nil {
+		return e
 	}
 	var extra any
 	if decoder.Decode(&extra) != io.EOF {
-		return nil, errors.New("trailing private state")
+		return errors.New("trailing private state")
 	}
-	if e = s.validate(); e != nil {
+	return nil
+}
+func readState(dir string) (*state, error) {
+	var s state
+	if e := readPrivate(dir, "state.json", maxStateBytes, &s); e != nil {
+		return nil, e
+	}
+	if e := s.validate(); e != nil {
 		return nil, e
 	}
 	return &s, nil
@@ -267,16 +275,21 @@ func atomicState(dir string, s *state, afterRename func() error) error {
 	if e := s.validate(); e != nil {
 		return e
 	}
+	return writePrivate(dir, "state.json", s, afterRename)
+}
+
+// writePrivate replaces one owner-only JSON file and synchronizes its directory.
+func writePrivate(dir, name string, value any, afterRename func() error) error {
 	f, e := os.CreateTemp(dir, ".state-*")
 	if e != nil {
 		return e
 	}
-	name := f.Name()
-	defer os.Remove(name)
+	temporary := f.Name()
+	defer os.Remove(temporary)
 	defer f.Close()
 	encoder := json.NewEncoder(f)
 	encoder.SetEscapeHTML(false)
-	if e = encoder.Encode(s); e != nil {
+	if e = encoder.Encode(value); e != nil {
 		return e
 	}
 	if e = f.Sync(); e != nil {
@@ -285,7 +298,7 @@ func atomicState(dir string, s *state, afterRename func() error) error {
 	if e = f.Close(); e != nil {
 		return e
 	}
-	if e = os.Rename(name, filepath.Join(dir, "state.json")); e != nil {
+	if e = os.Rename(temporary, filepath.Join(dir, name)); e != nil {
 		return e
 	}
 	if afterRename != nil {

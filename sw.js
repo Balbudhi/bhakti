@@ -3,7 +3,7 @@
 const DEVELOPMENT_SHELL = [
   "/", "/index.html", "/manifest.webmanifest", "/assets/site.css", "/assets/song.css",
   "/assets/app.css", "/assets/library.js", "/assets/song.js", "/assets/queue.js",
-  "/assets/app.js", "/assets/pwa.js", "/assets/media-session.js", "/assets/owner-entry.js",
+  "/assets/app.js", "/assets/pwa.js", "/assets/media-session.js", "/assets/owner-entry.js", "/assets/visit.js",
   "/assets/icon-192.png", "/assets/player-icons.svg", "/data/songs.js",
   "/assets/favicon.svg", "/assets/favicon.png",
 ];

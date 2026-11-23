@@ -3,6 +3,7 @@
 // UI and HTTP are boundaries; these tests do not claim authenticator verification.
 // Partitions: sign in/setup/cancel; exact text/import bounds; ambiguous retries/edit;
 // expired authentication; saved-but-refresh-failed; hostile text rendered inertly.
+// Visitors: counted/no history/quiet/failed/inconsistent; located and unlocated; range races.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -22,11 +23,12 @@ class Element {
   focus() { this.focused = true; }
   click() { return this.emit('click'); }
 }
-const ids = ['heading', 'auth', 'sign-in', 'setup', 'setup-form', 'setup-code', 'create-passkey', 'inbox', 'request-form', 'request-text', 'request-file', 'import-file', 'submit-request', 'byte-count', 'requests', 'load-more', 'refresh-requests', 'sign-out', 'status', 'pending-heading', 'completed-heading', 'completed-history', 'completed-requests', 'load-completed', 'analytics', 'analytics-status', 'language-chart', 'subject-chart', 'queue-section'];
+const ids = ['heading', 'auth', 'sign-in', 'setup', 'setup-form', 'setup-code', 'create-passkey', 'inbox', 'request-form', 'request-text', 'request-file', 'import-file', 'submit-request', 'byte-count', 'requests', 'load-more', 'refresh-requests', 'sign-out', 'status', 'pending-heading', 'completed-heading', 'completed-history', 'completed-requests', 'load-completed', 'analytics', 'analytics-status', 'language-chart', 'subject-chart', 'queue-section',
+  'visitors', 'visitors-heading', 'visitors-status', 'visitor-detail', 'visitor-glance', 'visitor-points', 'figure-visitors', 'figure-first', 'figure-today', 'figure-countries', 'daily-max', 'daily-chart', 'daily-from', 'daily-readout', 'daily-rows', 'map-readout', 'country-list', 'city-list', 'more-countries', 'more-cities', 'range-7', 'range-30', 'range-90', 'range-400'];
 const response = (body, status = 200) => ({ ok: status < 400, status, json: async () => body });
 const bytes = (...values) => Uint8Array.from(values).buffer;
 const assertion = () => ({ id: 'AQI', rawId: bytes(1, 2), type: 'public-key', authenticatorAttachment: 'cross-platform', response: { clientDataJSON: bytes(3, 4), authenticatorData: bytes(5, 6), signature: bytes(7, 8), userHandle: null }, getClientExtensionResults: () => ({}) });
-let mountOwner, catalogueBreakdown;
+let mountOwner, catalogueBreakdown, projectPlace, validVisitors;
 async function fixture({ setup = false, authenticated = false, getCredential = async () => assertion(), createCredential, handler } = {}) {
   const elements = Object.fromEntries(ids.map(id => [id, new Element()]));
   const requests = [];
@@ -42,6 +44,7 @@ async function fixture({ setup = false, authenticated = false, getCredential = a
       const result = handler ? await handler(call) : undefined;
       if (result) return result;
       if (url === '/api/catalogue') return response({songs: [], fetchedAt: '2026-11-15T00:00:00Z'});
+      if (url.startsWith('/api/visitors')) return response({ from: '2026-10-24', to: '2026-11-22', since: null, visitors: 0, firstTime: 0, daily: [], places: [], unlocated: 0 });
       if (url === '/api/session') return response(authenticated ? { authenticated: true, csrfToken: 'csrf' } : { authenticated: false });
       if (url === '/api/requests') return call.method === 'POST' ? response({ request: { id: call.body.requestId, text: call.body.text, status: 'queued', createdAt: '2026-01-01T00:00:00Z' } }) : response({ requests: [] });
       if (url.endsWith('/begin')) return response({ publicKey: { challenge: 'AQI', allowCredentials: [{ type: 'public-key', id: 'AwQ' }] }, challengeId: 'challenge' });
@@ -57,7 +60,7 @@ function collect(element) { return [element.textContent, ...element.children.map
 
 (async () => {
   const source = fs.readFileSync(path.join(__dirname, '../hosting/owner/web/owner.js'), 'utf8');
-  ({ mountOwner, catalogueBreakdown } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`));
+  ({ mountOwner, catalogueBreakdown, projectPlace, validVisitors } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`));
   {
     const rows = catalogueBreakdown([
       {languageTags:['Hindi','Sanskrit','Hindi']}, {languageTags:['Hindi']},
@@ -291,6 +294,136 @@ function collect(element) { return [element.textContent, ...element.children.map
     assert.equal(f.elements['completed-requests'].children.length,0);
     assert.equal(f.elements.inbox.hidden,true);
     assert.equal(f.elements.auth.hidden,false);
+  }
+  // Visitors. Every id used here must exist in the shipped page.
+  {
+    const html = fs.readFileSync(path.join(__dirname, '../hosting/owner/web/index.html'), 'utf8');
+    for (const id of ids) assert.equal(html.split(`id="${id}"`).length, 2, `one #${id} in the owner page`);
+    assert.match(html, /<a href="https:\/\/db-ip\.com"[^>]*>IP Geolocation by DB-IP<\/a>/);
+    assert.doesNotMatch(html + source, / style="|setAttribute\('style'/, 'inline styles are blocked by the page policy');
+  }
+  {
+    // The client projection must agree with the drawn land, in both viewBoxes.
+    const svg = fs.readFileSync(path.join(__dirname, '../hosting/owner/web/world.svg'), 'utf8');
+    assert.match(svg, /viewBox="40 0 920 429"/);
+    assert.match(fs.readFileSync(path.join(__dirname, '../hosting/owner/web/index.html'), 'utf8'), /id="visitor-points" viewBox="40 0 920 429"/);
+    const dots = []; let x = 0, y = 0;
+    for (const [, kind, dx, dy] of svg.matchAll(/([Mm])([\d.]+) ([\d.]+)h0/g)) {
+      if (kind === 'M') { x = +dx; y = +dy; } else x += +dx;
+      dots.push([x, y]);
+    }
+    assert.ok(dots.length > 2000);
+    const distance = (lat, lon) => { const p = projectPlace(lat, lon); return Math.min(...dots.map(([a, b]) => Math.hypot(a - p.x, b - p.y))); };
+    for (const inland of [[28.6, 77.2], [21.1, 79.1], [39.1, -94.6], [-23.7, 133.9], [52.5, 13.4], [0.3, 32.6], [-15.8, -47.9], [35.7, 139.4]]) assert.ok(distance(...inland) < 7, `land at ${inland}`);
+    for (const ocean of [[-30, 80], [30, -45], [10, -140], [-30, -15], [40, -30]]) assert.ok(distance(...ocean) > 30, `ocean at ${ocean}`);
+    // Published Equal Earth extent: the equator spans 2.7066 radii each way.
+    assert.ok(Math.abs(projectPlace(0, 180).x - 1000) < 1e-9 && Math.abs(projectPlace(0, 0).x - 500) < 1e-9);
+  }
+  const visitors = {
+    from: '2026-10-24', to: '2026-11-22', since: '2026-11-20', visitors: 12, firstTime: 7, unlocated: 1,
+    daily: [{ day: '2026-11-20', visitors: 9, firstTime: 5 }, { day: '2026-11-21', visitors: 0, firstTime: 0 }, { day: '2026-11-22', visitors: 4, firstTime: 2 }],
+    places: [
+      { country: 'IN', region: 'Maharashtra', city: 'Mumbai', lat: 19.1, lon: 72.9, visitors: 6 },
+      { country: 'US', region: 'Massachusetts', city: '<b>Cambridge</b>', lat: 42.4, lon: -71.1, visitors: 3 },
+      { country: 'IN', region: 'Delhi', city: 'Delhi', lat: 28.6, lon: 77.2, visitors: 1 },
+      { country: 'SG', region: '', city: '', lat: 0, lon: 0, visitors: 1 },
+    ],
+  };
+  const showing = (overrides = {}) => fixture({ authenticated: true, handler: call => call.url.startsWith('/api/visitors') ? response({ ...visitors, ...overrides }) : undefined });
+  {
+    const f = await showing();
+    const text = id => f.elements[id].textContent;
+    assert.deepEqual(f.requests.filter(r => r.url.startsWith('/api/visitors')).map(r => r.url), ['/api/visitors?days=30']);
+    assert.deepEqual(['figure-visitors', 'figure-first', 'figure-today', 'figure-countries'].map(text), ['12', '7', '4', '3']);
+    assert.equal(text('visitor-glance'), '4 visitors today');
+    assert.equal(f.elements['visitor-glance'].hidden, false);
+    assert.equal(f.elements['visitor-detail'].hidden, false);
+    assert.equal(f.elements['visitor-detail'].attributes['aria-busy'], undefined);
+    assert.match(text('visitors-status'), /Counting began on/);
+    // Bars share the 9-visitor scale and a zero day stays a zero-height day.
+    assert.deepEqual(f.elements['daily-chart'].children.map(day => day.children[0].style.height), ['100%', '0%', `${4 / 9 * 100}%`]);
+    // Marks are styled before anyone points at them, and only one is highlighted.
+    const classes = () => [...f.elements['daily-chart'].children, ...f.elements['visitor-points'].children].map(mark => mark.attributes.class);
+    assert.deepEqual(classes(), ['day', 'day', 'day', 'place', 'place', 'place']);
+    assert.equal(f.elements['daily-rows'].children.length, 3);
+    assert.deepEqual(f.elements['daily-rows'].children[0].children.slice(1).map(cell => cell.textContent), ['4', '2']);
+    assert.match(text('daily-readout'), /9 visitors/);
+    await f.elements['daily-chart'].children[2].emit('click');
+    assert.match(text('daily-readout'), /4 visitors, 2 new/);
+    assert.deepEqual(classes().slice(0, 3), ['day', 'day', 'day shown']);
+    f.elements['daily-chart'].onpointerleave();
+    assert.match(text('daily-readout'), /Busiest day.*9 visitors/);
+    // Three places have coordinates; circle area follows visitors.
+    const points = f.elements['visitor-points'].children;
+    assert.equal(points.length, 3);
+    const radii = points.map(point => Number(point.children.find(child => child.attributes.class === 'halo').attributes.r));
+    assert.ok(Math.abs((radii[0] / radii[1]) ** 2 - 2) < 0.02);
+    assert.match(text('map-readout'), /^2 visitors could not be placed/);
+    await points[0].emit('pointerenter');
+    assert.match(text('map-readout'), /^Mumbai, Maharashtra, India: 6 visitors/);
+    // Both lists account for all twelve visitors; hostile names stay text.
+    const rows = id => f.elements[id].children[0].children.map(item => item.children[0].children.map(part => part.textContent));
+    assert.deepEqual(rows('country-list').map(row => row[1]), ['7 visitors · 58.3%', '3 visitors · 25.0%', '1 visitor · 8.3%', '1 visitor · 8.3%']);
+    assert.equal(rows('country-list')[0][0], 'India');
+    assert.deepEqual(rows('city-list').map(row => row[0]), ['Mumbai, Maharashtra, India', '<b>Cambridge</b>, Massachusetts, United States', 'Delhi, India', 'Singapore, city unknown', 'Unknown place']);
+    assert.equal(f.elements['more-cities'].hidden, true);
+    // Signing out leaves no visitor data on the page.
+    await f.elements['sign-out'].emit('click');
+    assert.equal(f.elements['visitor-glance'].hidden, true);
+    assert.equal(f.elements['visitor-detail'].hidden, true);
+    for (const id of ['visitor-glance', 'visitor-points', 'city-list', 'country-list', 'daily-chart', 'daily-rows', 'figure-visitors', 'map-readout', 'visitors-status']) assert.equal(collect(f.elements[id]).trim(), '', id);
+  }
+  {
+    // No history is not zero visitors; an empty recent window is.
+    const none = await showing({ since: null, daily: [], places: [], visitors: 0, firstTime: 0, unlocated: 0 });
+    assert.match(none.elements['visitors-status'].textContent, /No visits counted yet/);
+    assert.equal(none.elements['visitor-detail'].hidden, true);
+    assert.equal(none.elements['visitor-glance'].hidden, true);
+    const quiet = await showing({ since: '2026-01-01', daily: [{ day: '2026-11-22', visitors: 0, firstTime: 0 }], places: [], visitors: 0, firstTime: 0, unlocated: 0 });
+    assert.equal(quiet.elements['figure-visitors'].textContent, '0');
+    assert.equal(quiet.elements['visitors-status'].textContent, '');
+    assert.match(quiet.elements['daily-readout'].textContent, /No visitors/);
+  }
+  {
+    const many = Array.from({ length: 11 }, (_, i) => ({ country: 'IN', region: 'R', city: `City ${i}`, lat: 20, lon: 78, visitors: 1 }));
+    const f = await showing({ places: many });
+    assert.equal(f.elements['city-list'].children[0].children.length, 8);
+    assert.match(f.elements['more-cities'].textContent, /Show all 12 cities/);
+    f.elements['more-cities'].onclick();
+    assert.equal(f.elements['city-list'].children[0].children.length, 12);
+    assert.equal(f.elements['more-cities'].hidden, true);
+  }
+  {
+    // Any failed or inconsistent answer says unavailable, shows no zero, and leaves
+    // the queue and the library breakdown working.
+    const broken = { visitors: 13 };
+    assert.equal(validVisitors(visitors), true);
+    for (const bad of [{ ...visitors, ...broken }, { ...visitors, since: null }, { ...visitors, daily: [{ day: 'x', visitors: 1, firstTime: 0 }] }, { ...visitors, firstTime: -1 }, { ...visitors, places: [{ ...visitors.places[0], lat: 'x' }] }, null, {}]) assert.equal(validVisitors(bad), false);
+    for (const answer of [() => response({ ...visitors, ...broken }), () => response({ error: 'no' }, 503), () => { throw new TypeError('offline'); }]) {
+      const f = await fixture({ authenticated: true, handler: call => call.url.startsWith('/api/visitors') ? answer() : call.url === '/api/catalogue' ? response({ songs: [{ slug: 'a', languageTags: ['Hindi'], subjectTags: ['Kṛṣṇa'] }], fetchedAt: '2026-11-15T00:00:00Z' }) : undefined });
+      assert.match(f.elements['visitors-status'].textContent, /unavailable/);
+      assert.equal(f.elements['visitor-detail'].hidden, true);
+      assert.equal(f.elements['figure-visitors'].textContent, '');
+      assert.equal(f.elements['visitor-glance'].hidden, true);
+      assert.match(f.elements['analytics-status'].textContent, /1 song/);
+      assert.match(f.elements['pending-heading'].textContent, /0 pending/);
+    }
+  }
+  {
+    // The last chosen range wins even when an earlier answer arrives later.
+    const waiting = {};
+    const f = await fixture({ authenticated: true, handler: call => {
+      const days = call.url.match(/visitors\?days=(\d+)/)?.[1];
+      if (days === '30') return response(visitors);
+      if (days) return new Promise(resolve => { waiting[days] = () => resolve(response({ ...visitors, firstTime: Number(days) === 90 ? 9 : 1 })); });
+    } });
+    const slow = f.elements['range-90'].emit('click');
+    assert.equal(f.elements['visitor-detail'].attributes['aria-busy'], 'true');
+    assert.equal(f.elements['figure-first'].textContent, '7', 'previous figures stay while loading');
+    const fast = f.elements['range-7'].emit('click');
+    waiting['7'](); await fast; waiting['90'](); await slow;
+    assert.equal(f.elements['figure-first'].textContent, '1');
+    assert.deepEqual([7, 30, 90, 400].map(days => f.elements[`range-${days}`].attributes['aria-pressed']), ['true', 'false', 'false', 'false']);
   }
   console.log('owner UI: authentication flow, exact import, safe rendering, and retry cases passed');
 })().catch(error => { console.error(error); process.exitCode = 1; });

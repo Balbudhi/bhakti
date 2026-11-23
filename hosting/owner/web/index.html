@@ -30,6 +30,7 @@
       <a class="text-action" href="/">Already set up? Sign in</a>
     </section>
     <section id="inbox" aria-label="Song requests" hidden>
+      <p class="visitor-glance"><a id="visitor-glance" href="#visitors" hidden></a></p>
       <section id="queue-section" aria-labelledby="pending-heading">
         <div class="section-heading">
           <h2 id="pending-heading" tabindex="-1">Pending requests</h2>
@@ -58,6 +59,51 @@
           <button id="submit-request" type="submit" class="primary">Add to queue</button>
         </form>
       </details>
+      <section id="visitors" class="analytics" aria-labelledby="visitors-heading">
+        <div class="section-heading">
+          <h2 id="visitors-heading" tabindex="-1">Visitors</h2>
+          <div class="ranges" role="group" aria-label="Visitor date range">
+            <button id="range-7" type="button" aria-pressed="false">7 days</button>
+            <button id="range-30" type="button" aria-pressed="true">30 days</button>
+            <button id="range-90" type="button" aria-pressed="false">90 days</button>
+            <button id="range-400" type="button" aria-pressed="false">All</button>
+          </div>
+        </div>
+        <p id="visitors-status" class="hint" role="status" aria-live="polite"></p>
+        <div id="visitor-detail" hidden>
+          <dl class="figures">
+            <div class="hero"><dt>Visitors</dt><dd id="figure-visitors"></dd></div>
+            <div><dt>New</dt><dd id="figure-first"></dd></div>
+            <div><dt>Today</dt><dd id="figure-today"></dd></div>
+            <div><dt>Countries</dt><dd id="figure-countries"></dd></div>
+          </dl>
+          <h3>Visitors each day</h3>
+          <div class="daily">
+            <p id="daily-max" class="axis" aria-hidden="true"></p>
+            <div id="daily-chart" class="daily-chart" role="img"></div>
+            <div class="daily-dates axis" aria-hidden="true"><span id="daily-from"></span><span>Today</span></div>
+          </div>
+          <p id="daily-readout" class="hint readout"></p>
+          <h3>Where they are</h3>
+          <div class="visitor-map">
+            <img src="/world.svg" alt="" width="920" height="429">
+            <svg id="visitor-points" viewBox="40 0 920 429" role="img" aria-label="World map of visitors; the same numbers are listed below"></svg>
+          </div>
+          <p id="map-readout" class="hint readout"></p>
+          <div class="breakdown-columns">
+            <section aria-labelledby="country-heading"><h3 id="country-heading">Countries</h3><div id="country-list"></div><button id="more-countries" type="button" class="text-action" hidden></button></section>
+            <section aria-labelledby="city-heading"><h3 id="city-heading">Cities</h3><div id="city-list"></div><button id="more-cities" type="button" class="text-action" hidden></button></section>
+          </div>
+          <details class="daily-table">
+            <summary>Daily numbers</summary>
+            <table>
+              <thead><tr><th scope="col">Day</th><th scope="col">Visitors</th><th scope="col">New</th></tr></thead>
+              <tbody id="daily-rows"></tbody>
+            </table>
+          </details>
+        </div>
+        <p class="hint">Approximate. Each device counts once a day, and once in the totals above. Cleared or private browsing looks new. Days follow New York time. Places are estimated from the network and can be off by a city or more; addresses are not kept. <a href="https://db-ip.com" rel="noreferrer">IP Geolocation by DB-IP</a>.</p>
+      </section>
       <section id="analytics" class="analytics" aria-labelledby="analytics-heading">
         <h2 id="analytics-heading">Library breakdown</h2>
         <p id="analytics-status" class="hint" role="status" aria-live="polite"></p>

@@ -12,6 +12,53 @@ export function catalogueBreakdown(songs, field) {
   return [...counts].map(([label, count]) => ({ label, count, coverage: count / songs.length * 100 }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
+
+// Equal Earth, with the constants and viewBox of web/world.svg (build_world.py).
+const EARTH = { scale: 184.73156767339816, top: 1.2882111962202532, a1: 1.340264, a2: -0.081106, a3: 0.000893, a4: 0.003796, m: Math.sqrt(3) / 2 };
+export function projectPlace(latitude, longitude) {
+  const { scale, top, a1, a2, a3, a4, m } = EARTH;
+  const theta = Math.asin(m * Math.sin(latitude * Math.PI / 180));
+  const square = theta * theta;
+  const sixth = square * square * square;
+  const x = longitude * Math.PI / 180 * Math.cos(theta) / (m * (a1 + 3 * a2 * square + sixth * (7 * a3 + 9 * a4 * square)));
+  return { x: 500 + x * scale, y: (top - theta * (a1 + a2 * square + sixth * (a3 + a4 * square))) * scale };
+}
+const isCount = value => Number.isSafeInteger(value) && value >= 0;
+const isDay = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value));
+export function validVisitors(data) {
+  return Boolean(data) && isDay(data.from) && isDay(data.to) && (data.since === null || isDay(data.since)) &&
+    [data.visitors, data.firstTime, data.unlocated].every(isCount) && Array.isArray(data.daily) && Array.isArray(data.places) &&
+    (data.since === null) === !data.daily.length &&
+    data.daily.every(row => row && isDay(row.day) && isCount(row.visitors) && isCount(row.firstTime) && row.firstTime <= row.visitors) &&
+    data.places.every(row => row && [row.country, row.region, row.city].every(value => typeof value === 'string') && row.country &&
+      isCount(row.visitors) && Math.abs(row.lat) <= 90 && Math.abs(row.lon) <= 180) &&
+    data.places.reduce((sum, row) => sum + row.visitors, data.unlocated) === data.visitors;
+}
+function countryName(code) {
+  try { return new Intl.DisplayNames(undefined, { type: 'region' }).of(code) || code; } catch { return code; }
+}
+// Every visitor appears in exactly one row, so each list adds up to all visitors.
+export function visitorPlaces(data) {
+  const row = (label, count) => ({ label, count, coverage: count / data.visitors * 100 });
+  const countries = new Map();
+  for (const item of data.places) countries.set(item.country, (countries.get(item.country) || 0) + item.visitors);
+  const unknown = data.unlocated ? [row('Unknown place', data.unlocated)] : [];
+  return {
+    countryCount: countries.size,
+    countries: [...[...countries].sort((a, b) => b[1] - a[1]).map(([code, count]) => row(countryName(code), count)), ...unknown],
+    cities: [...data.places.map(item => row(placeName(item), item.visitors)), ...unknown],
+  };
+}
+function placeName(item) {
+  const country = countryName(item.country);
+  return item.city ? [item.city, item.region !== item.city && item.region, country].filter(Boolean).join(', ') : `${item.region || country}, city unknown`;
+}
+function plural(count, noun) { return `${count.toLocaleString()} ${noun}${count === 1 ? '' : 's'}`; }
+function dayLabel(day) {
+  return new Date(`${day}T00:00:00Z`).toLocaleDateString(undefined, {
+    timeZone: 'UTC', day: 'numeric', month: 'long', ...(day.slice(0, 4) !== String(new Date().getFullYear()) && { year: 'numeric' }),
+  });
+}
 function validRequest(request) {
   return request && typeof request.id === 'string' && typeof request.text === 'string' &&
     Number.isFinite(Date.parse(request.createdAt)) &&
@@ -68,6 +115,10 @@ export async function mountOwner(env) {
   let visibleCount = 25;
   let completedVisibleCount = 25;
   let requestButtons = [];
+  const RANGES = [7, 30, 90, 400];
+  const LISTED_PLACES = 8;
+  let visitorRange = 30;
+  let visitorLoad = 0; // Only the latest load may render; sign-out invalidates all.
 
   const status = message => { element('status').textContent = message; };
   function setBusy(value) {
@@ -85,6 +136,9 @@ export async function mountOwner(env) {
     element('language-chart').replaceChildren();
     element('subject-chart').replaceChildren();
     element('analytics-status').textContent = '';
+    visitorLoad++;
+    clearVisitors();
+    element('visitors-status').textContent = '';
     requestButtons = [];
     element('inbox').hidden = true;
     element('auth').hidden = setupView;
@@ -190,14 +244,14 @@ export async function mountOwner(env) {
     requests = data.requests;
     renderRequests();
   }
-  function renderBreakdown(target, rows) {
+  function renderBreakdown(target, rows, noun = 'song') {
     const list = doc.createElement('ul'); list.className = 'breakdown-list';
     for (const row of rows) {
       const item = doc.createElement('li');
       const line = doc.createElement('div'); line.className = 'breakdown-label';
       const label = doc.createElement('span'); label.textContent = row.label;
       const value = doc.createElement('span'); value.className = 'breakdown-value';
-      value.textContent = `${row.count} song${row.count === 1 ? '' : 's'} · ${row.coverage.toFixed(1)}%`;
+      value.textContent = `${plural(row.count, noun)} · ${row.coverage.toFixed(1)}%`;
       line.append(label, value);
       // SVG presentation attributes work under the existing strict style CSP.
       // Text above contains the entire meaning, so the graphic is decorative.
@@ -228,9 +282,134 @@ export async function mountOwner(env) {
       else status(errorMessage(error));
     }
   }
+  function clearVisitors() {
+    for (const id of ['daily-chart', 'visitor-points', 'country-list', 'city-list', 'daily-rows']) element(id).replaceChildren();
+    for (const id of ['figure-visitors', 'figure-first', 'figure-today', 'figure-countries', 'daily-max', 'daily-from', 'daily-readout', 'map-readout']) element(id).textContent = '';
+    element('visitor-detail').hidden = true;
+    element('visitor-detail').removeAttribute('aria-busy');
+    element('visitor-glance').hidden = true;
+    element('visitor-glance').textContent = '';
+  }
+  function svgElement(tag, attributes) {
+    const result = doc.createElementNS('http://www.w3.org/2000/svg', tag);
+    for (const [name, value] of Object.entries(attributes)) result.setAttribute(name, String(value));
+    return result;
+  }
+  // Pointing at or tapping a mark shows its value; leaving restores the summary.
+  function describeMarks(container, readout, summary, marks) {
+    let shown = null;
+    const show = mark => {
+      if (shown) shown.node.setAttribute('class', shown.name);
+      shown = mark;
+      if (mark) mark.node.setAttribute('class', `${mark.name} shown`);
+      element(readout).textContent = mark ? mark.text : summary;
+    };
+    for (const mark of marks) {
+      mark.node.setAttribute('class', mark.name);
+      for (const type of ['pointerenter', 'click']) mark.node.addEventListener(type, () => show(mark));
+    }
+    container.onpointerleave = () => show(null);
+    show(null);
+  }
+  function renderDaily(days) {
+    const chart = element('daily-chart');
+    const largest = Math.max(...days.map(row => row.visitors));
+    const busiest = days.find(row => row.visitors === largest);
+    const summary = largest ? `Busiest day: ${dayLabel(busiest.day)}, ${plural(largest, 'visitor')}.` : 'No visitors in this period.';
+    const marks = days.map(row => {
+      const node = doc.createElement('div');
+      const bar = doc.createElement('span');
+      // CSSOM assignment is permitted by the strict style policy.
+      bar.style.height = `${largest ? row.visitors / largest * 100 : 0}%`;
+      node.append(bar);
+      return { node, name: 'day', text: `${dayLabel(row.day)}: ${plural(row.visitors, 'visitor')}, ${row.firstTime.toLocaleString()} new.` };
+    });
+    chart.className = days.length > 100 ? 'daily-chart dense' : 'daily-chart';
+    chart.replaceChildren(...marks.map(mark => mark.node));
+    chart.setAttribute('aria-label', `Visitors each day. ${summary} Every day is listed under Daily numbers.`);
+    element('daily-max').textContent = largest.toLocaleString();
+    element('daily-from').textContent = days.length > 1 ? dayLabel(days[0].day) : '';
+    describeMarks(chart, 'daily-readout', summary, marks);
+    element('daily-rows').replaceChildren(...[...days].reverse().map(row => {
+      const line = doc.createElement('tr');
+      for (const text of [dayLabel(row.day), row.visitors.toLocaleString(), row.firstTime.toLocaleString()]) {
+        const cell = doc.createElement('td'); cell.textContent = text; line.append(cell);
+      }
+      return line;
+    }));
+  }
+  function renderMap(data) {
+    const located = data.places.filter(item => item.lat || item.lon).sort((a, b) => b.visitors - a.visitors);
+    const largest = Math.max(1, ...located.map(item => item.visitors));
+    const mapped = located.reduce((sum, item) => sum + item.visitors, 0);
+    const marks = located.map(item => {
+      const { x, y } = projectPlace(item.lat, item.lon);
+      // Area, not radius, is proportional to visitors.
+      const radius = Math.max(5, 30 * Math.sqrt(item.visitors / largest));
+      const at = { cx: x.toFixed(1), cy: y.toFixed(1) };
+      const node = svgElement('g', {});
+      const title = svgElement('title', {});
+      const text = `${placeName(item)}: ${plural(item.visitors, 'visitor')}`;
+      title.textContent = text;
+      node.append(title, svgElement('circle', { ...at, r: radius.toFixed(1), class: 'halo' }),
+        svgElement('circle', { ...at, r: 4.5, class: 'core' }), svgElement('circle', { ...at, r: Math.max(16, radius).toFixed(1), class: 'hit' }));
+      return { node, name: 'place', text: `${text}.` };
+    });
+    element('visitor-points').replaceChildren(...marks.map(mark => mark.node));
+    const missing = data.visitors - mapped;
+    describeMarks(element('visitor-points'), 'map-readout', missing ? `${plural(missing, 'visitor')} could not be placed on the map.` : '', marks);
+  }
+  function renderPlaceList(list, more, rows, noun) {
+    const button = element(more);
+    const draw = all => {
+      renderBreakdown(list, all ? rows : rows.slice(0, LISTED_PLACES), 'visitor');
+      button.hidden = all || rows.length <= LISTED_PLACES;
+      button.textContent = `Show all ${rows.length} ${noun}`;
+    };
+    button.onclick = () => draw(true);
+    draw(false);
+  }
+  function renderVisitors(data) {
+    if (data.since === null) {
+      clearVisitors();
+      element('visitors-status').textContent = 'No visits counted yet. The first one appears after someone opens the library.';
+      return;
+    }
+    const today = data.daily[data.daily.length - 1].visitors;
+    const places = visitorPlaces(data);
+    element('figure-visitors').textContent = data.visitors.toLocaleString();
+    element('figure-first').textContent = data.firstTime.toLocaleString();
+    element('figure-today').textContent = today.toLocaleString();
+    element('figure-countries').textContent = places.countryCount.toLocaleString();
+    renderDaily(data.daily);
+    renderMap(data);
+    renderPlaceList('country-list', 'more-countries', places.countries, 'countries');
+    renderPlaceList('city-list', 'more-cities', places.cities, 'cities');
+    element('visitors-status').textContent = data.since > data.from ? `Counting began on ${dayLabel(data.since)}.` : '';
+    element('visitor-glance').textContent = `${plural(today, 'visitor')} today`;
+    element('visitor-glance').hidden = false;
+    element('visitor-detail').hidden = false;
+  }
+  async function refreshVisitors() {
+    const load = ++visitorLoad;
+    for (const days of RANGES) element(`range-${days}`).setAttribute('aria-pressed', String(days === visitorRange));
+    element('visitor-detail').setAttribute('aria-busy', 'true');
+    if (element('visitor-detail').hidden) element('visitors-status').textContent = 'Loading visitors…';
+    try {
+      const data = await api(`/api/visitors?days=${visitorRange}`, undefined, true);
+      if (load !== visitorLoad) return;
+      if (!validVisitors(data)) throw new Error('Visitor counts unavailable.');
+      renderVisitors(data);
+      element('visitor-detail').removeAttribute('aria-busy');
+    } catch (error) {
+      if (load !== visitorLoad) return;
+      clearVisitors();
+      element('visitors-status').textContent = 'Visitor counts are unavailable. Use Refresh to try again.';
+    }
+  }
   async function refreshDashboard() {
     try { await refresh(); } catch (error) { status(errorMessage(error)); }
-    if (csrfToken) await refreshCatalogue();
+    if (csrfToken) await Promise.all([refreshVisitors(), refreshCatalogue()]);
   }
   async function authenticate(setup) {
     if (busy) return;
@@ -304,6 +483,11 @@ export async function mountOwner(env) {
   });
   element('load-more').addEventListener('click', () => { visibleCount += 25; renderRequests(); });
   element('load-completed').addEventListener('click', () => { completedVisibleCount += 25; renderRequests(); });
+  for (const days of RANGES) element(`range-${days}`).addEventListener('click', () => {
+    if (!csrfToken || days === visitorRange) return;
+    visitorRange = days;
+    return refreshVisitors();
+  });
   element('refresh-requests').addEventListener('click', async () => {
     if (busy) return;
     setBusy(true);

@@ -72,12 +72,17 @@ func setCookie(w http.ResponseWriter, name, value string, ttl time.Duration) {
 	http.SetCookie(w, &http.Cookie{Name: name, Value: value, Path: "/", Secure: true, HttpOnly: true, SameSite: http.SameSiteStrictMode, MaxAge: int(ttl.Seconds())})
 }
 func decodeBody(r *http.Request, out any) error {
+	return decodeLimited(r, "application/json", 512<<10, out)
+}
+
+// decodeLimited reads exactly one JSON value of the expected media type and shape.
+func decodeLimited(r *http.Request, media string, limit int64, out any) error {
 	content, _, e := mime.ParseMediaType(r.Header.Get("Content-Type"))
-	if e != nil || content != "application/json" {
+	if e != nil || content != media {
 		return errInvalid
 	}
-	raw, e := io.ReadAll(io.LimitReader(r.Body, (512<<10)+1))
-	if e != nil || len(raw) > 512<<10 || !utf8.Valid(raw) {
+	raw, e := io.ReadAll(io.LimitReader(r.Body, limit+1))
+	if e != nil || int64(len(raw)) > limit || !utf8.Valid(raw) {
 		return errInvalid
 	}
 	decoder := json.NewDecoder(strings.NewReader(string(raw)))
@@ -101,7 +106,11 @@ func trustedRequest(r *http.Request) bool {
 			return false
 		}
 	}
-	return r.Method != "POST" || r.Header.Get("Origin") == origin
+	expected := origin
+	if r.URL.Path == visitPath {
+		expected = publicOrigin
+	}
+	return r.Method != "POST" || r.Header.Get("Origin") == expected
 }
 func (s *Service) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// Apache must finish its bounded CGI request pipe even when access is denied.
@@ -137,6 +146,10 @@ func (s *Service) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	case "/api/catalogue":
 		e = s.catalogue(w, r)
+	case visitPath:
+		e = s.visit(w, r)
+	case "/api/visitors":
+		e = s.visitors(w, r)
 	case "/api/session", "/api/logout", "/api/requests", "/api/requests/complete", "/api/export":
 		e = s.inbox(w, r)
 	default:
@@ -297,6 +310,20 @@ func (s *Service) authentication(w http.ResponseWriter, r *http.Request) error {
 	}
 	jsonResponse(w, 200, response)
 	return nil
+}
+
+// requireSession authenticates under the state lock, then releases it.
+func (s *Service) requireSession(r *http.Request) error {
+	token := cookieValue(r, sessionCookie)
+	if token == "" {
+		return errUnauthorized
+	}
+	return transact(s.Directory, s.now(), s.afterRename, func(st *state, _ func() error) error {
+		if _, ok := st.Sessions[digest(token)]; !ok {
+			return errUnauthorized
+		}
+		return nil
+	})
 }
 func (s *Service) inbox(w http.ResponseWriter, r *http.Request) error {
 	if cookieValue(r, sessionCookie) == "" {

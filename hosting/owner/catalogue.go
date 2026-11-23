@@ -53,17 +53,8 @@ func (s *Service) catalogue(w http.ResponseWriter, r *http.Request) error {
 	if r.Method != "GET" {
 		return errInvalid
 	}
-	token := cookieValue(r, sessionCookie)
-	if token == "" {
-		return errUnauthorized
-	}
-	// Authenticate under the state lock, then release it before bounded network I/O.
-	if e := transact(s.Directory, s.now(), s.afterRename, func(st *state, _ func() error) error {
-		if _, ok := st.Sessions[digest(token)]; !ok {
-			return errUnauthorized
-		}
-		return nil
-	}); e != nil {
+	// The state lock is released before bounded network I/O.
+	if e := s.requireSession(r); e != nil {
 		return e
 	}
 	client := &http.Client{Timeout: 10 * time.Second, CheckRedirect: func(*http.Request, []*http.Request) error { return http.ErrUseLastResponse }}
