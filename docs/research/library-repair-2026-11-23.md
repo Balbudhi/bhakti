@@ -68,7 +68,7 @@ disposition for each original semantic feature. Unsupported features can only be
 reduced. Binding hashes establish which text was reviewed, not whether a reviewer's
 judgment is correct. Private receipts are excluded from public assembly.
 
-## Release verification
+## Release verification before publication
 
 The release runner executed 45 commands: 44 passed, with the historical trim audit
 the only failure. All 386 readers pass structural contracts. Automated player tests
@@ -109,3 +109,23 @@ trim-record conflicts remain unresolved; the audit has not passed and no audio r
 is claimed. This authorization supersedes the earlier release hold for this prepared
 batch, not the normal requirements for future releases. The 33 source questions remain
 open. Deployment and served-byte verification are the next steps.
+
+The owner subsequently confirmed that the current live Satpathy recording of
+`he-sadaguru-tume-mor-haatku-dhara` is fine as it is. Retain that exact audio and
+timing. Its old trim records still disagree, but the current recording is no longer
+an open content-repair request. The explicit retention decision is privately bound
+to the current reader and audio digests.
+
+## Published result
+
+Commit `04b77d364017994e3064030c9f3012d5a1ed771b` is live. All CI checks passed.
+The first run failed only when GitHub Pages could not find the uploaded artifact;
+a fresh run, `45308914642`, succeeded. Direct served-byte comparison matched all
+779 checked files: 386 reader data files, 386 song entrypoints, the library entrypoint
+and six shared runtime/catalogue/search/service-worker resources. The comparison
+receipt is preserved privately in `.transcription/library-repair-20261123/live-verification.json`.
+
+All 386 readers retain performance order, timestamps and non-tag metadata from the
+previous deployed commit. No audio files were changed. Browser verification was
+waived by the owner; neither fresh browser behavior nor acoustic timing is certified.
+The 33 source questions and historical trim-record discrepancies remain explicit.

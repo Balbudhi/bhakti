@@ -3827,6 +3827,17 @@
     "record": "data/song_tag_overrides.json",
     "note": "Actual public counts include declared umbrella tags for reviewed specific identities; a reviewed witness may restate an already present tag."
   },
-  "releaseState": "Owner authorized publication of prepared text, tags and search without browser verification; deployment pending. Existing audio/timings are unchanged; historical trim conflicts and 33 source questions remain open.",
-  "priority": "Owner requests fast, economical delivery: prepared translation and deity-tag repairs first, then the small spelling and lyric search improvement; no repeat library-wide review."
+  "releaseState": "Published and served-byte verified. Browser verification waived by owner for this release. Audio/timings unchanged; historical trim records and 33 source questions remain unresolved.",
+  "priority": "Owner requests fast, economical delivery: prepared translation and deity-tag repairs first, then the small spelling and lyric search improvement; no repeat library-wide review.",
+  "publication": {
+    "commit": "04b77d364017994e3064030c9f3012d5a1ed771b",
+    "runId": 45308914642,
+    "status": "success",
+    "servedFilesChecked": 779,
+    "servedFilesMatched": 779,
+    "verificationRecord": ".transcription/library-repair-20261123/live-verification.json",
+    "ownerConfirmedCurrentAudio": [
+      "he-sadaguru-tume-mor-haatku-dhara"
+    ]
+  }
 }

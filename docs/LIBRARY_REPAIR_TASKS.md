@@ -17,16 +17,17 @@ satisfied by actual readers and callers. Completion flags are review records, no
   build and old generation both apply reviewed tags; enforce tag review in release/CI.
 - [x] Apply only reviewed repairs; preserve source/audio/timing unless a separately evidenced
   defect requires changing them. Preserve the original shuffle evidence on tag-only changes.
-- [ ] Run relevant regression, contract, profile, trim, assembly and exact stored-onset seek
-  checks; verify desktop/390px in-app Browser when available. Distinguish stored-onset tests
-  from new acoustic verification. Confirm authorized deployment/live output before claiming live.
+- [x] Run relevant regression, contract, profile, trim, assembly and exact stored-onset seek
+  checks; retain the six trim failures explicitly. Owner waived desktop/390px browser
+  verification for this release. No fresh acoustic verification claimed. Deployment
+  succeeded and all 779 checked served files match the prepared release.
 
 Priority after the owner’s speed/cost clarification: ship the prepared translation and tag
 repairs first; finish only the small spelling/lyric-search change already underway. Do not
 restart a library-wide audit or launch paid processing.
 
-Current step: owner-authorized publication without browser verification; existing audio
-and timing remain unchanged and the historical trim questions remain open. 80 readers have 261 English-definition
+Current step: published and verified against 779 served files. Browser verification
+was waived by the owner for this release. Existing audio and timing are unchanged. 80 readers have 261 English-definition
 repairs, 217 word-map updates and 267 language-label corrections (overlapping across
 526 definitions). Source scripts, Roman text, performance order, timing and audio are
 preserved. Five unsupported shuffle features are reduced with explicit evidence.
@@ -36,7 +37,7 @@ below that every reader was complete are superseded by this evidence, not erased
 See [the repair report](research/library-repair-2026-11-23.md) and
 `data/translation-review-2026-11-23.json` for exact coverage and open passages.
 
-Next: deploy the prepared changes and verify served bytes. Misspellings, phonetic
+Next: targeted source follow-up and reconciliation of historical trim records. Misspellings, phonetic
 spellings and half-remembered lyric queries pass against the actual catalogue.
 Actual callers: song.py build/retag/release,
 legacy pipeline generation, public library search/filter, reader renderer, shuffle publication.
