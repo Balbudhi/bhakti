@@ -99,3 +99,13 @@ corresponding passage is therefore explicitly reopened too: 33 open questions
 across the same 23 readers. No public text, audio or timing changed in this follow-up.
 The downloaded primary witness is preserved privately with its digest in the review
 record. A previously accepted parallel passage is not independent evidence.
+
+## Owner-authorized publication
+
+The owner explicitly requested publication of the prepared website changes and
+waived browser verification for this release. Publish the translation, reference-tag
+and search repairs while retaining the existing audio and timings. The six historical
+trim-record conflicts remain unresolved; the audit has not passed and no audio repair
+is claimed. This authorization supersedes the earlier release hold for this prepared
+batch, not the normal requirements for future releases. The 33 source questions remain
+open. Deployment and served-byte verification are the next steps.

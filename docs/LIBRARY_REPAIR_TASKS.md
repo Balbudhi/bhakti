@@ -25,7 +25,8 @@ Priority after the owner’s speed/cost clarification: ship the prepared transla
 repairs first; finish only the small spelling/lyric-search change already underway. Do not
 restart a library-wide audit or launch paid processing.
 
-Current step: prepared changes awaiting the unresolved release checks. 80 readers have 261 English-definition
+Current step: owner-authorized publication without browser verification; existing audio
+and timing remain unchanged and the historical trim questions remain open. 80 readers have 261 English-definition
 repairs, 217 word-map updates and 267 language-label corrections (overlapping across
 526 definitions). Source scripts, Roman text, performance order, timing and audio are
 preserved. Five unsupported shuffle features are reduced with explicit evidence.
@@ -35,8 +36,8 @@ below that every reader was complete are superseded by this evidence, not erased
 See [the repair report](research/library-repair-2026-11-23.md) and
 `data/translation-review-2026-11-23.json` for exact coverage and open passages.
 
-Next: resolve the recorded release blockers before publication. Misspellings, phonetic
-spellings and half-remembered lyric queries now pass against the actual catalogue.
+Next: deploy the prepared changes and verify served bytes. Misspellings, phonetic
+spellings and half-remembered lyric queries pass against the actual catalogue.
 Actual callers: song.py build/retag/release,
 legacy pipeline generation, public library search/filter, reader renderer, shuffle publication.
 

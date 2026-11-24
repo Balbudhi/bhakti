@@ -3827,6 +3827,6 @@
     "record": "data/song_tag_overrides.json",
     "note": "Actual public counts include declared umbrella tags for reviewed specific identities; a reviewed witness may restate an already present tag."
   },
-  "releaseState": "prepared locally; not published; historical trim audit and in-app browser verification remain unresolved",
+  "releaseState": "Owner authorized publication of prepared text, tags and search without browser verification; deployment pending. Existing audio/timings are unchanged; historical trim conflicts and 33 source questions remain open.",
   "priority": "Owner requests fast, economical delivery: prepared translation and deity-tag repairs first, then the small spelling and lyric search improvement; no repeat library-wide review."
 }
