@@ -69,7 +69,7 @@ Catalogue objects and loaded index objects are immutable for a release.
 4. Run required release audits, assemble, verify resources, publish and compare served
    bytes. Retain existing source/audio review limits; this patch changes search only.
 
-Current step: implementation and independent review complete; publication checks.
+Current step: complete; implementation, independent review and publication verified.
 Root owns implementation and integration; independent review was read-only.
 No per-query API/model calls or new dependencies.
 
@@ -90,3 +90,7 @@ No per-query API/model calls or new dependencies.
   discrepancies. The owner authorized publication preserving those recordings,
   explicitly including the live Satpathy `He Sadaguru`; search changes no audio.
   Translation-review statuses are unaffected by this search release.
+- Published runtime commit `12e164b1d2fccb80bf43b24e0dbc44608588cfb0`;
+  Pages run `45361607541` passed the complete deployment checks. All 779 checked
+  served files match the assembled release, including search code, index, every
+  reader and entrypoint. Browser verification was waived by the owner.
