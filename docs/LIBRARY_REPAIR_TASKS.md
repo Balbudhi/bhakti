@@ -29,7 +29,7 @@ Current step: prepared changes awaiting the unresolved release checks. 80 reader
 repairs, 217 word-map updates and 267 language-label corrections (overlapping across
 526 definitions). Source scripts, Roman text, performance order, timing and audio are
 preserved. Five unsupported shuffle features are reduced with explicit evidence.
-The current ledger has 361 screened readers, 23 with 32 open source questions, and two
+The current ledger has 361 screened readers, 23 with 33 open source questions, and two
 owner-protected readers. No new blanket completion marks were made. Historical claims
 below that every reader was complete are superseded by this evidence, not erased.
 See [the repair report](research/library-repair-2026-11-23.md) and

@@ -1979,7 +1979,8 @@
         "resolutionDisposition": "finished_unchanged"
       },
       "openDefinitions": [
-        "line-034"
+        "line-034",
+        "line-045"
       ],
       "openReason": "See source-specific openQuestions in data/translation-review-2026-11-23.json. These are unresolved, not certified correct."
     },

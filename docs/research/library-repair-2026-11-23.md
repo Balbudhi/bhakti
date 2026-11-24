@@ -46,7 +46,7 @@ labels across 80 readers (526 distinct definitions; categories overlap). Public 
 gain 351 entries across 158 readers, including declared umbrella tags. The separate
 registry has 294 reviewed witnesses across 159 records; those are different counts.
 Source scripts, Roman text, performance order, timestamps and audio are preserved.
-The ledger now distinguishes 361 screened readers, 23 readers with 32 open source
+The ledger now distinguishes 361 screened readers, 23 readers with 33 open source
 questions, and two owner-protected readers. No new blanket `finished` marks were made.
 
 Source and literal strangeness are preserved when supported. Prabh Jū's
@@ -88,3 +88,14 @@ Original streams have been preserved for the six historical trim conflicts; pack
 and waveform comparisons establish copied intervals but do not settle whether every
 edge belongs to the performance. The in-app Browser still returns a native-pipe
 connection failure. These remain explicit release blockers; neither is waived.
+
+## Bounded follow-up
+
+The continuation rechecked the same browser failure and six historical trim failures;
+no release was made. It also compared the unresolved Kākaḍ `paramāyā` passage with
+Madhyāhna line-045. The official Sansthan hymn PDF confirms the printed wording,
+but contains no commentary resolving the disputed interpretation. Madhyāhna's
+corresponding passage is therefore explicitly reopened too: 33 open questions
+across the same 23 readers. No public text, audio or timing changed in this follow-up.
+The downloaded primary witness is preserved privately with its digest in the review
+record. A previously accepted parallel passage is not independent evidence.

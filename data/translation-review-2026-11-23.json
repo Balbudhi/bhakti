@@ -2619,6 +2619,15 @@
       "slug": "vishnu-sahasranama",
       "lineId": "dialogue-13",
       "reason": "brahma-nidhi and brahmaṇya can involve sacred learning/Veda and/or absolute reality; existing literal gloss alone does not establish which contextual English should replace Brahman. Need source-grounded commentator/lexical choice."
+    },
+    {
+      "slug": "madhyahna-aarti",
+      "lineId": "line-045",
+      "reason": "Cross-reader consistency review: the same paramaya phrase remains unresolved in kakad-aarti line-114. The official Sansthan printed hymn confirms the wording but supplies no semantic commentary settling segmentation or the supreme-power interpretation. Current English is a contextual reading, not a resolved lexical finding. Do not transfer its acceptance to the Hindi adaptation as independent evidence.",
+      "evidence": [
+        "https://sai.org.in/sites/default/files/Jay-Dev-Jay-Dev.pdf",
+        "Official one-page hymn, stanza 4 line 2; visually inspected 2026-11-23. SHA256 33bc647f5b054e1b67e34845015133d4ba984cc653da0929159892eebfad565b"
+      ]
     }
   ],
   "sourceFollowupDecisions": [
@@ -3797,6 +3806,16 @@
       "status": "prior_evidence_reused",
       "reason": "Prior source resolution is unchanged; the new screen offers no concrete contradictory evidence. Sharada performed forms were acoustically compared22Nov; Sankat follows the attested source rather than conjecturally correcting the narrative.",
       "report": "docs/research/translation-source-resolution-2026-11-21.md"
+    },
+    {
+      "slug": "madhyahna-aarti",
+      "lineId": "line-045",
+      "reason": "Cross-reader consistency review: the same paramaya phrase remains unresolved in kakad-aarti line-114. The official Sansthan printed hymn confirms the wording but supplies no semantic commentary settling segmentation or the supreme-power interpretation. Current English is a contextual reading, not a resolved lexical finding. Do not transfer its acceptance to the Hindi adaptation as independent evidence.",
+      "evidence": [
+        "https://sai.org.in/sites/default/files/Jay-Dev-Jay-Dev.pdf",
+        "Official one-page hymn, stanza 4 line 2; visually inspected 2026-11-23. SHA256 33bc647f5b054e1b67e34845015133d4ba984cc653da0929159892eebfad565b"
+      ],
+      "status": "reopened_cross_reader_evidence_gap"
     }
   ],
   "repairReceipt": "data/translation-repair-reviews.json",
