@@ -26,18 +26,6 @@
     return [...new Set([searchKey(source), searchKey(common), searchKey(unaccented)].filter(Boolean))];
   };
 
-  const searchableValues = song => [
-    song.slug,
-    song.title,
-    song.subtitle,
-    song.credit,
-    song.singer,
-    song.writer,
-    ...(song.searchAliases || []),
-    ...(song.languageTags || []),
-    ...(song.subjectTags || []),
-  ].filter(Boolean);
-
   const sortKey = value => searchKey(value).normalize("NFKD").replace(/\p{M}/gu, "");
   const singerSort = song => song.singer || song.writer || song.credit || song.title || song.slug;
   const tagSort = values => (values || []).join(" ");
@@ -51,11 +39,22 @@
 
   // A loaded release owns immutable catalogue objects. Weak keys let a replaced
   // catalogue be collected without retaining another full set of search data.
-  const songSearchForms = new WeakMap();
-  const formsForSong = song => {
-    if (!songSearchForms.has(song)) songSearchForms.set(song, searchableValues(song).flatMap(searchForms));
-    return songSearchForms.get(song);
+  const songSearchFields = new WeakMap();
+  const fieldsForSong = song => {
+    if (!songSearchFields.has(song)) {
+      const { title, writer, singer, composer, ensemble, credit, subtitle, slug } = song;
+      const fields = [
+        [title], [writer, singer, composer, ensemble, credit],
+        [subtitle, slug, ...(song.searchAliases || [])],
+        [...(song.subjectTags || []), ...(song.languageTags || [])],
+      ].map(values => values.filter(Boolean).flatMap(searchForms));
+      songSearchFields.set(song, { fields, all: fields.flat(), tie: [
+        sortKey(title), sortKey(singer || writer || credit || title || slug), sortKey(slug),
+      ] });
+    }
+    return songSearchFields.get(song);
   };
+  const formsForSong = song => fieldsForSong(song).all;
   const matchesTerms = (song, queryTerms, lyricIndex = null) => {
     const songForms = formsForSong(song);
     const lyricForms = lyricIndex?.[song.slug] || [];
@@ -177,11 +176,153 @@
         if (!previous || rank.metadata > previous.metadata || (rank.metadata === previous.metadata && rank.cost < previous.cost)) ranked.set(i, rank);
       });
     }
-    return [...ranked.values()].sort((a, b) => Number(b.metadata) - Number(a.metadata) || a.cost - b.cost).map(rank => rank.song);
+    return [...ranked.values()];
   };
   const hasWordPrefixMatch = (song, queryTerms, lyrics) => {
     const forms = formsForSong(song).concat(lyrics?.[song.slug] || []);
     return queryTerms.some(terms => terms.every(term => forms.some(form => form.startsWith(term) || form.includes(" " + term))));
+  };
+
+  const compareTuple = (left, right) => {
+    for (let i = 0; i < left.length; i++) {
+      const difference = left[i] - right[i];
+      if (difference) return difference;
+    }
+    return 0;
+  };
+  const bestTuple = (left, right) => !left || compareTuple(right, left) < 0 ? right : left;
+
+  // Smallest token window with multiplicity for unambiguous assignments;
+  // overlapping prefixes have a conservative whole-field fallback below.
+  const coveringWindow = (tokens, terms, prefixes) => {
+    const need = new Map();
+    for (const term of terms) need.set(term, (need.get(term) || 0) + 1);
+    const longest = [...need.keys()].sort((a, b) => b.length - a.length);
+    const labels = tokens.map(token => need.has(token) ? token : prefixes
+      ? longest.find(term => token.startsWith(term)) : undefined);
+    const counts = new Map();
+    let left = 0, missing = terms.length, best = null;
+    for (let right = 0; right < labels.length; right++) {
+      const term = labels[right];
+      if (term !== undefined) {
+        const count = counts.get(term) || 0;
+        if (count < need.get(term)) missing--;
+        counts.set(term, count + 1);
+      }
+      while (!missing) {
+        const rank = [right - left + 1 - terms.length, left];
+        best = bestTuple(best, rank);
+        const removed = labels[left++];
+        if (removed !== undefined) {
+          const count = counts.get(removed) - 1;
+          counts.set(removed, count);
+          if (count < need.get(removed)) missing++;
+        }
+      }
+    }
+    if (!best && prefixes) {
+      // Overlapping prefixes can need a different assignment: in "rama
+      // ramayana", query "ram rama" must use two distinct tokens. A bounded
+      // augmenting match preserves eligibility; use the whole-field window
+      // conservatively instead of claiming an optimal proximity bonus.
+      const assigned = new Map();
+      const assign = (termIndex, seen) => {
+        for (let i = 0; i < tokens.length; i++) {
+          if (seen.has(i) || !tokens[i].startsWith(terms[termIndex])) continue;
+          seen.add(i);
+          if (!assigned.has(i) || assign(assigned.get(i), seen)) {
+            assigned.set(i, termIndex);
+            return true;
+          }
+        }
+        return false;
+      };
+      if (terms.every((_, i) => assign(i, new Set()))) best = [tokens.length - terms.length, 0];
+    }
+    return best;
+  };
+  const formQuality = (form, query, terms) => {
+    if (form === query) return [0, 0, 0, 0, form.length];
+    let position = form.indexOf(query);
+    while (position !== -1) {
+      const end = position + query.length;
+      if ((position === 0 || form[position - 1] === " ") && (end === form.length || form[end] === " ")) {
+        return [position === 0 ? 1 : 2, 0, 0, form.slice(0, position).split(" ").length - 1, form.length];
+      }
+      position = form.indexOf(query, position + 1);
+    }
+    if (!terms.every(term => form.includes(term))) return null;
+    const tokens = form.split(" ");
+    const whole = coveringWindow(tokens, terms, false);
+    if (whole) return [3, 0, ...whole, form.length];
+    const prefix = coveringWindow(tokens, terms, true);
+    return prefix ? [4, 0, ...prefix, form.length] : null;
+  };
+  const qualityForForms = (forms, variants) => {
+    let best = null;
+    for (const { query, terms } of variants) for (const form of forms) {
+      const rank = formQuality(form, query, terms);
+      if (rank) best = bestTuple(best, rank);
+    }
+    return best;
+  };
+  const combinedQuality = (forms, variants) => {
+    // Field boundaries cannot manufacture a phrase or proximity bonus.
+    for (const { terms } of variants) if (terms.every(term => forms.some(form =>
+      form.startsWith(term) || form.includes(" " + term)))) return [4, 0, 0, 0, 0];
+    return null;
+  };
+  const approximateQuality = (forms, variants) => {
+    let best = null;
+    for (const { terms } of variants) for (const form of forms) {
+      const tokens = form.split(" ");
+      let cost = 0;
+      for (const term of terms) {
+        const key = /^[a-z]+$/.test(term) ? phoneticKey(term) : null;
+        let minimum = Infinity;
+        for (const token of tokens) {
+          if (term.length < 3 ? token === term : token.startsWith(term)) { minimum = 0; break; }
+          if (!key || term.length < 3 || !/^[a-z]+$/.test(token)) continue;
+          const other = phoneticKey(token);
+          if (key === other) minimum = Math.min(minimum, 1);
+          else if (key.length >= 4 && other.length >= 4 && key.length <= 48 && other.length <= 48) {
+            const limit = Math.min(key.length, other.length) >= 8 ? 2 : 1;
+            const distance = editDistance(key, other, limit);
+            if (distance <= limit) minimum = Math.min(minimum, distance + 1);
+          }
+        }
+        cost += minimum;
+        if (!Number.isFinite(cost)) break;
+      }
+      if (Number.isFinite(cost)) best = bestTuple(best, [5, cost, 0, 0, form.length]);
+    }
+    return best;
+  };
+  const relevance = (song, variants, lyrics, approximate) => {
+    const { fields, all } = fieldsForSong(song);
+    // Reliability, field, match kind, edit cost, gap, position, field length.
+    // No amount of lyric repetition can cross a stronger field's tier.
+    for (let field = 0; field < fields.length; field++) {
+      let quality = qualityForForms(fields[field], variants);
+      if (!quality && approximate) quality = approximateQuality(fields[field], variants);
+      if (quality) return [0, field, ...quality];
+    }
+    const metadata = combinedQuality(all, variants);
+    if (metadata) return [0, 4, ...metadata];
+    if (approximate?.metadata) return [0, 4, 5, approximate.cost, 0, 0, 0];
+    const lyricForms = lyrics?.[song.slug] || [];
+    const lyric = qualityForForms(lyricForms, variants);
+    if (lyric) return [0, 5, ...lyric];
+    if (combinedQuality(all.concat(lyricForms), variants)) return [0, 6, 4, 0, 0, 0, 0];
+    if (approximate) return [0, 6, 5, approximate.cost, 0, 0, 0];
+    return [1, 7, 6, 0, 0, 0, 0]; // Existing interior-substring recall, last.
+  };
+  const rankSongs = (songs, queryForms, lyrics, approximations) => {
+    const variants = queryForms.map(query => ({ query, terms: query.split(" ") }));
+    return songs.map(song => ({ song, rank: relevance(song, variants, lyrics, approximations.get(song)),
+      tie: fieldsForSong(song).tie })).sort((a, b) => compareTuple(a.rank, b.rank)
+        || a.tie[0].localeCompare(b.tie[0]) || a.tie[1].localeCompare(b.tie[1]) || a.tie[2].localeCompare(b.tie[2]))
+      .map(row => row.song);
   };
 
   // Split explicit joint credits only; retain each credited spelling as supplied.
@@ -222,11 +363,15 @@
       : songs.filter(song => matchesTerms(song, queryTerms, lyricIndex));
     // Internal fragments such as hnad inside krshnadamodaram must not block a
     // remembered English "hand". Known metadata phrases remain authoritative.
+    const approximations = new Map();
     if (queryForms.length && !phraseMatches.length
         && !searchMatches.some(song => hasWordPrefixMatch(song, queryTerms, lyricIndex))) {
       const exact = new Set(searchMatches);
-      searchMatches = searchMatches.concat(fallbackSongs(songs, queryTerms, lyricIndex).filter(song => !exact.has(song)));
+      const fallback = fallbackSongs(songs, queryTerms, lyricIndex);
+      for (const match of fallback) approximations.set(match.song, match);
+      searchMatches = searchMatches.concat(fallback.map(match => match.song).filter(song => !exact.has(song)));
     }
+    if (queryForms.length) searchMatches = rankSongs(searchMatches, queryForms, lyricIndex, approximations);
     return searchMatches.filter(song => {
       const matchesLanguage = !selectedLanguages.size
         || [...selectedLanguages].some(tag => song.languageTags.includes(tag));

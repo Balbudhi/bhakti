@@ -109,14 +109,14 @@ test('fallback searches generated lyrics and glosses, with metadata ahead of lyr
   try {
     const find=(query,songs=catalogue,lyrics=index.songs)=>Array.from(app.w.BHAKTI_SEARCH.filterSongs(songs,{query,lyricIndex:lyrics}),s=>s.slug);
     assert.deepEqual(find('take my hnad'),['lyrics'],'omitted words and an adjacent transposition');
-    assert.deepEqual(find('naam'),['title','lyrics'],'long-vowel spelling matches the performed romanization');
+    assert.deepEqual(find('naam'),['lyrics','title'],'both lyric-only vowel matches remain findable, with title-alphabetical ties');
     assert.deepEqual(find('kabir hnad'),['lyrics'],'remembered credit and lyric word may be combined');
     assert.deepEqual(find('कमल sheltr'),['lyrics'],'mixed native-script exact word and Latin typo');
     assert.deepEqual(find('किमल sheltr'),[],'mixed-script fallback must not approximate the native word');
     assert.deepEqual(find('take my hnad unicorn'),[],'all supplied terms remain required');
     const accidental=[{slug:'fragment',title:'Arati',languageTags:[],subjectTags:[]},{slug:'intended',title:'Rescue',languageTags:[],subjectTags:[]}];
     const fragments={fragment:['take my krshnadamodaram'],intended:['take hold of my hand']};
-    assert.deepEqual(find('take my hnad',accidental,fragments),['fragment','intended'],'an internal substring cannot suppress a useful typo match');
+    assert.deepEqual(find('take my hnad',accidental,fragments),['intended','fragment'],'a useful typo match outranks an accidental internal substring');
     assert.deepEqual(find('take my hand',accidental,fragments),['intended'],'a genuine exact lyric result still suppresses approximations');
 
     const songs=[{slug:'lyric-only',title:'Different',languageTags:[],subjectTags:[]},{slug:'metadata',title:'Shelter',languageTags:[],subjectTags:[]}];
