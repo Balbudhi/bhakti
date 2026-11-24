@@ -1641,7 +1641,7 @@
       "question": "Canonical Gurbāṇī identity not established for this popular Nānak Śāh-attributed Hindi bhajan compilation. Retain existing Nirguṇa classification; do not infer scripture membership from credit."
     }
   ],
-  "releaseState": "Release checks complete; publication pending. Historical trim audit retains six pre-existing record discrepancies; owner authorized retaining current audio and waived browser verification. No audio edit or fresh listening claimed.",
+  "releaseState": "Published and verified. All 779 checked served files match the reviewed release. Browser verification waived by owner; audio and timings preserved. Historical trim-record discrepancies remain explicitly separate.",
   "resolvedQuestions": [
     {
       "slug": "mera-man-lochai",
@@ -1663,5 +1663,12 @@
     "addedTags": 9,
     "tagChangedReaders": 6,
     "newProviderCalls": 0
+  },
+  "publication": {
+    "commit": "084601d49236d1659d9aac96a92b544ad19fc0ee",
+    "runId": 45368859410,
+    "status": "success",
+    "servedFilesChecked": 779,
+    "servedFilesMatched": 779
   }
 }

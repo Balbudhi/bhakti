@@ -16,9 +16,10 @@ parallel. A song with no changes still needs a concrete reading disposition.
   resolve the inherited bharīle analysis from the explicit commentary.
 - [x] Integrate eight English/gloss/link corrections across six readers and nine
   tag additions across six readers, preserving original shuffle assessments.
-- [ ] Run release checks, publish, and verify served files.
+- [x] Run release checks, publish, and verify all 779 checked served files.
 
-Current step: release checks complete; publication pending. Only the six pre-existing
+Current step: published as `084601d4`; Pages run `45368859410` succeeded and all
+779 checked served files matched. Only the six pre-existing
 trim-record discrepancies fail; the owner's explicit audio-retention and browser
 waiver remain in force. Exact per-song readings, source comparisons, retained
 passages, corrections and exclusions are in `data/gurbani-review-2026-11-24.json`.
