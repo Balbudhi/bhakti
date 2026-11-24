@@ -16,7 +16,8 @@ window.SONG_META = {
     "Nirguṇa",
     "Gurbāṇī",
     "Viṣṇu",
-    "Śiva"
+    "Śiva",
+    "Brahmā"
   ],
   "searchAliases": [
     "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",

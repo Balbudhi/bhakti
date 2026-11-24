@@ -264,7 +264,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhūpu malaānalo pavaṇu cavaro kare sagala banarāi phūlanta jotī ॥",
-    "english": "{1:The sandalwood breeze }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:bears flowers }{8:for the divine Light.}",
+    "english": "{1:The breeze from Malaya }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:bears flowers }{8:for the divine Light.}",
     "words": [
       {
         "roman": "dhūpu",
@@ -274,7 +274,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "malaānalo",
-        "gloss": "sandalwood breeze",
+        "gloss": "sandalwood-scented breeze from Mount Malaya",
         "concept_key": "",
         "preserve_in_english": false
       },

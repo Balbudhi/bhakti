@@ -1590,7 +1590,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mitra ghanere kari thakī merā dukhu kāṭai koi",
-    "english": "{3:I grew weary }{2:making }{1:many }{0:friends, }{7:that someone }{6:might cut away }{4:my }{5:pain.}",
+    "english": "{3:I grew weary }{2:making }{1:many }{0:friends, }hoping {7:someone }{6:might cut away }{4:my }{5:pain.}",
     "words": [
       {
         "roman": "mitra",

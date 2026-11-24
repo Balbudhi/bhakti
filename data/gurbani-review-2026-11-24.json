@@ -1,0 +1,1667 @@
+{
+  "version": 1,
+  "date": "2026-11-24",
+  "scope": "Direct read of 27 Gurbāṇī readers and one Nānak-attributed inclusion candidate; 608 performed definitions / 3199 word entries. Every no-change result follows a concrete source/gloss/English reading. Original whole-library task remains open beyond this group.",
+  "rootCause": "Prior reference review followed a finite detector and existing tag examples too closely; explicit Brahmā/Indra and specific Nṛsiṃha were missed. Broad screened labels then obscured incomplete reference coverage. Grammar/word-link errors also survived those labels. The song procedure now explicitly requires named-reference inventory beyond the detector list.",
+  "songs": [
+    {
+      "slug": "jin-prem-kiyo",
+      "performedDefinitionsRead": 11,
+      "lineIdsRead": [
+        "saach-kaho-intro",
+        "saach-kaho-refrain",
+        "jin-prem-kiyo",
+        "saach-kaho-alap",
+        "kaha-bhayo",
+        "baith-rahio",
+        "nhat-phirio",
+        "lok-gayo",
+        "baas-kio",
+        "aaise-hee",
+        "saach-kaho-closing"
+      ],
+      "reading": "All 11 performed definitions read with glosses. Heron meditation, bathing seven seas, losing this/next world and sensual dwelling remain concrete; no named deity form beyond generic Prabh. No tag inferred from the poet.",
+      "sources": [],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "3e6eebc48a0b7ce98ba336f6ce5b2267b0c6fb1bdb84435318b20f8c281c051b",
+      "readerSha256": "3e6eebc48a0b7ce98ba336f6ce5b2267b0c6fb1bdb84435318b20f8c281c051b",
+      "wordEntriesRead": 72,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "mittar-pyare-nu",
+      "performedDefinitionsRead": 6,
+      "lineIdsRead": [
+        "intro-alaap",
+        "refrain-main",
+        "refrain-sub",
+        "verse-1",
+        "verse-2",
+        "verse-3"
+      ],
+      "reading": "All six definitions read with glosses. Beloved Friend, quilts/sickness, snakes, flask/spike, cup/dagger, butchers curved knife and Khera rejection retained. Friend is not evidence for a Krishna tag; no avatar inferred from love-story comparison.",
+      "sources": [],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "8b5f00339d87146dd4aa9662e121e960248f6324f52c391d0a4f5d2aba6c4723",
+      "readerSha256": "8b5f00339d87146dd4aa9662e121e960248f6324f52c391d0a4f5d2aba6c4723",
+      "wordEntriesRead": 39,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "prabh-ju-to-kah-laj-hamari",
+      "performedDefinitionsRead": 17,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003",
+        "g004",
+        "g005",
+        "g006",
+        "g007",
+        "g008",
+        "g009",
+        "g010",
+        "g011",
+        "g012",
+        "g013",
+        "g014",
+        "g015",
+        "g016",
+        "g017"
+      ],
+      "reading": "All 17 definitions read. Nīlakaṇṭha, Narhari, Nārāyaṇa, Banvārī, Mādhava, Madhu-mardana, Mukunda and Murāri checked together. Existing poison/hell attachment is correct; no Rama from a generic bow, no Lakshmi tag just from explanatory Madhava gloss. Add specific Narasimha reference already present as Narhari. Preserved fever/poison/air-eating imagery and understood mardan across g007–g008.",
+      "sources": [
+        "https://sikhsamridhi.com/en/literature/dasam-granth/710",
+        "https://sikhibookclub.com/wp-content/uploads/2020/01/click-here-to-download-shabad-hazare-sggs-academy.pdf"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [
+        {
+          "tag": "Nṛsiṃha",
+          "lineId": "g003",
+          "source": "ਨੀਲ ਕੰਠ ਨਰਹਰਿ ਨਾਰਾਇਣ",
+          "reason": "Narhari is the man-lion Nṛsiṃha form, explicitly named alongside Nārāyaṇa; specific form retained with Viṣṇu."
+        }
+      ],
+      "beforeReaderSha256": "9c7a898021cfb059e9dd7fc2b63c622bddc84dcc4f9500d776b6a120ddfa9be7",
+      "readerSha256": "20088bb4c9500aec70f8b651244ce910f2dcec82c00e883763ce085d03d19508",
+      "wordEntriesRead": 54,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "deh-shiva-bar-mohe-hai",
+      "performedDefinitionsRead": 6,
+      "lineIdsRead": [
+        "l001",
+        "l002",
+        "l003",
+        "l004",
+        "l005",
+        "l006"
+      ],
+      "reading": "All six definitions read. Śivā is feminine divine power in Caṇḍī-caritra, not male Śiva; include Durgā specific reference with Śakti. Battle/foe/death wording retained. Correct hau from may be to first-person I in l004 and move its English link to the speaker of ucaroṃ.",
+      "sources": [
+        "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਸਿਵਾ",
+        "https://sikhsamridhi.com/hi/literature/dasam-granth/100",
+        "https://srigranth.org/servlet/gurbani.dictionary?Param=ਹਉ"
+      ],
+      "uncertainties": [],
+      "changes": [
+        {
+          "lineId": "l004",
+          "reason": "ਹਉ is first-person I, not may be; preserve the same prayer while fixing pronoun gloss and English link."
+        }
+      ],
+      "tagAdditions": [
+        {
+          "tag": "Durgā",
+          "lineId": "l002",
+          "source": "ਦੇਹ ਸਿਵਾ ਬਰ ਮੋਹਿ ਇਹੈ ਸੁਭ ਕਰਮਨ ਤੇ ਕਬਹੂੰ ਨ ਟਰੋ",
+          "reason": "The performed feminine Śivā invocation belongs to Caṇḍī-caritra; auspicious goddess/power of the Supreme in this Caṇḍī context. Specific Durgā reference alongside Śakti, not male Śiva."
+        }
+      ],
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.ethical_conduct",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l002"
+          ],
+          "reason": "Prayer never to turn aside from good deeds remains unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.petition",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l001",
+            "l002",
+            "l004"
+          ],
+          "reason": "The same request for a boon and desire to utter virtues remains; the correction identifies I as speaker."
+        },
+        {
+          "facet": "actions",
+          "id": "action.praise",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l004"
+          ],
+          "reason": "Uttering the addressees virtues still supports praise after correcting hau."
+        },
+        {
+          "facet": "subjects",
+          "id": "subject.shakti",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l001",
+            "l002"
+          ],
+          "reason": "Feminine Śivā in the Caṇḍī context is the invoked power/goddess; corrected pronoun does not alter this.",
+          "role": "worship_focus"
+        }
+      ],
+      "beforeReaderSha256": "04a6be838366cb8293d3d6f88a1e4e7da2ad58d5d34303539f63171ee59c1dfd",
+      "readerSha256": "691966b7c8c3137aa6eaa513d92cffda786fc02226ad58f616b04766ff190c3a",
+      "wordEntriesRead": 59,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "benti-chaupai",
+      "performedDefinitionsRead": 101,
+      "lineIdsRead": [
+        "patshahi-10-intro",
+        "line-01",
+        "line-02",
+        "line-03",
+        "line-04",
+        "line-05",
+        "line-06",
+        "line-07",
+        "line-08",
+        "line-09",
+        "line-10",
+        "line-11",
+        "line-12",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-16",
+        "line-17",
+        "line-18",
+        "line-19",
+        "line-20",
+        "line-21",
+        "line-22",
+        "line-23",
+        "line-24",
+        "line-25",
+        "line-26",
+        "line-27",
+        "line-28",
+        "line-29",
+        "line-30",
+        "line-31",
+        "line-32",
+        "line-33",
+        "line-34",
+        "line-35",
+        "line-36",
+        "line-37",
+        "line-38",
+        "line-39",
+        "line-40",
+        "line-41",
+        "line-42",
+        "line-43",
+        "line-44",
+        "line-45",
+        "line-46",
+        "line-47",
+        "line-48",
+        "line-49",
+        "line-50",
+        "line-51",
+        "line-52",
+        "line-53",
+        "line-54",
+        "line-55",
+        "line-56",
+        "line-57",
+        "line-58",
+        "line-59",
+        "line-60",
+        "line-61",
+        "line-62",
+        "line-63",
+        "line-64",
+        "line-65",
+        "line-66",
+        "line-67",
+        "line-68",
+        "line-69",
+        "line-70",
+        "line-71",
+        "line-72",
+        "line-73",
+        "line-74",
+        "line-75",
+        "line-76",
+        "line-77",
+        "line-78",
+        "line-79",
+        "line-80",
+        "line-81",
+        "line-82",
+        "line-83",
+        "line-84",
+        "line-85",
+        "line-86",
+        "line-87",
+        "line-88",
+        "line-89",
+        "line-90",
+        "line-91",
+        "line-92",
+        "line-93",
+        "line-94",
+        "line-95",
+        "line-96",
+        "line-97",
+        "line-98",
+        "line-99",
+        "line-100"
+      ],
+      "reading": "All 101 definitions read with glosses in full argument. Explicit Brahmā, Śiva, Viṣṇu contrasts with the formless Creator/Guru; add missing Brahmā. Sword-banner is not sufficient for another form; sivgun means auspicious virtues, not a second Shiva identity. Checked kāl Time/death/time-occurrence distinctions and sikh disciples versus asikh opponents; retained concrete protection, enemies, creation, heart-veils and embodied beings. No new translation defect found.",
+      "sources": [
+        "https://sikhsamridhi.com/en/literature/dasam-granth/1386",
+        "https://sikhsamridhi.com/en/literature/dasam-granth/1387",
+        "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਆਲਮ"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [
+        {
+          "tag": "Brahmā",
+          "lineId": "line-25",
+          "source": "ਕਾਲ ਪਾਇ ਬ੍ਰਹਮਾ ਬਪੁ ਧਰਾ ॥",
+          "reason": "The performed line explicitly names Brahmā assuming a body under Time; also named at line-30 as Veda king. Named-reference tag, not the primary worship focus."
+        }
+      ],
+      "beforeReaderSha256": "475f0009185afec2f1f85c00dbd610c312bc695aa2d4b10e37bec59f945f151b",
+      "readerSha256": "38feab1651b19e2177c3be3855d19418491406322871c4cad79d5fcd9fbb1d7a",
+      "wordEntriesRead": 499,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "re-man-aiso-kar-sanyasa",
+      "performedDefinitionsRead": 52,
+      "lineIdsRead": [
+        "l001",
+        "l002",
+        "l003",
+        "l004",
+        "l005",
+        "l006",
+        "l007",
+        "l008",
+        "l009",
+        "l010",
+        "l011",
+        "l012",
+        "l013",
+        "l014",
+        "l015",
+        "l016",
+        "l017",
+        "l018",
+        "l019",
+        "l020",
+        "l021",
+        "l022",
+        "l023",
+        "l024",
+        "l025",
+        "l026",
+        "l027",
+        "l028",
+        "l029",
+        "l030",
+        "l031",
+        "l032",
+        "l033",
+        "l034",
+        "l035",
+        "l036",
+        "l037",
+        "l038",
+        "l039",
+        "l040",
+        "l041",
+        "l042",
+        "l043",
+        "l044",
+        "l045",
+        "l046",
+        "l047",
+        "l048",
+        "l049",
+        "l050",
+        "l051",
+        "l052"
+      ],
+      "reading": "l001–l010: opening Gurū invocations and actual names Nānak Dev/Gobind Siṅgh; Gobind in the latter is a human name, not deity evidence. l019–l026: Gobind, Rām, Dāmodar and Mādhav are actual divine invocations; retain Guru/Rāma/Kṛṣṇa/Viṣṇu. Dāmodar supplies concrete Kṛṣṇa identity independently of generic lord titles. l031–l050: read renunciation teaching in full: forest/home comparison, chastity as locks, spiritual discipline as bath, observance as nails, knowledge as teacher, name as ashes, compassion and forgiveness, three qualities, rejection of vices, self and Supreme Being. l045 tan=with/toward is explicitly supported by Mahan Kosh quoting this line; do not change to body. l025 bodily health/decline and l026 prayer may Nanak remember agree with Sahib Singh.",
+      "sources": [
+        "https://sikhsamridhi.com/pa/bani/15/3",
+        "https://srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1358&g=1&h=0&k=1&p=0&r=0&t=1",
+        "https://www.srigurugranth.org/servlet/gurbani.dictionary?Param=ਤਨ"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "c1f639cf1f5842bf7352abefbffe40b96528c4e31f2daad3846aa350b3c9912f",
+      "readerSha256": "c1f639cf1f5842bf7352abefbffe40b96528c4e31f2daad3846aa350b3c9912f",
+      "wordEntriesRead": 234,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "sabh-gobind-hai",
+      "performedDefinitionsRead": 21,
+      "lineIdsRead": [
+        "sabh-gobind-hai",
+        "gobind-bin-nahi-koi",
+        "sut-ek-mani-sat-sahans-jaise",
+        "ot-pot-prabh-soi",
+        "ek-anek-biapak-purak",
+        "jat-dekhau-tat-soi",
+        "maia-chitr-bichitr-bimohit",
+        "birla-bujhai-koi",
+        "jal-tarang-ar-phen-budbuda",
+        "jal-te-bhinn-na-hoi",
+        "ih-parpanch-parbrahm-ki-lila",
+        "bichrat-an-na-hoi",
+        "mithia-bharam-ar-supan-manorath",
+        "sat-padarath-jania",
+        "sukrit-mansa-gur-updesi",
+        "jagat-hi-man-mania",
+        "vahiguru",
+        "kahat-namdeu-har-ki-rachna",
+        "dekhahu-ridai-bichari",
+        "ghat-ghat-antar-sarab-nirantar",
+        "keval-ek-murari"
+      ],
+      "reading": "All 21 records read, including thread/beads, warp/weft, one/many, māiā pictures, water/waves/foam/bubbles, manifest world as play, dream objects falsely taken as permanent, Guru instruction and awakened mind. Gobind, Hari, Murārī occur as source names; Murārī at keval-ek-murari explicitly supports Kṛṣṇa/Viṣṇu despite universal divine context. Sukrit mansā=good understanding and bicrat=on reflection are confirmed in Sahib Singh. Existing translation retains concrete images; no text change needed.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0485.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "cb99072bfabd0bc953b9e49983eb051c2f77a9a5bdf11a2d67e97ddaef0a5f63",
+      "readerSha256": "cb99072bfabd0bc953b9e49983eb051c2f77a9a5bdf11a2d67e97ddaef0a5f63",
+      "wordEntriesRead": 84,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "tu-thakur-tum-peh-ardas",
+      "performedDefinitionsRead": 11,
+      "lineIdsRead": [
+        "tu-thakur-tum-peh-ardas",
+        "jio-pind-sabh-teri-ras",
+        "tum-mat-pita-ham-barik-tere",
+        "tumri-kripa-meh-sukh-ghanere",
+        "koe-na-janai-tumra-ant",
+        "uche-te-ucha-bhagvant",
+        "sagal-samagri-tumrai-sutri-dhari",
+        "tum-te-hoe-so-agiakari",
+        "tumri-gat-mit-tum-hi-jani",
+        "nanak-das-sada-kurbani",
+        "vahiguru"
+      ],
+      "reading": "All 11 records read: prayer to master, life/body as capital, mother/father and children, grace, immeasurability, creation/thread, obedience, nature/extent, sacrifice, Vāhigurū. Bhagvant and Ṭhākur are generic divine titles here; mother/father are relational metaphors, not named Śakti/Śiva references. No new deity tags warranted. Guru supported by performed Vāhigurū, existing Nirguṇa consistent with boundless divine description. Rāsi capital/entrusted stock retains material metaphor; sūtri thread retains concrete image underlying command/order interpretation.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0268.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "aebaf2756638b9b7693b57fab4f08d12d422afcc6e14a2ab4adb39cab6a23881",
+      "readerSha256": "aebaf2756638b9b7693b57fab4f08d12d422afcc6e14a2ab4adb39cab6a23881",
+      "wordEntriesRead": 51,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "tera-kiya-meetha-laage",
+      "performedDefinitionsRead": 8,
+      "lineIdsRead": [
+        "tera-kiya-meetha-laage",
+        "har-naam-padarath-nanak-mange",
+        "nanak-mange-chant",
+        "har-ka-naam-ridhai-nit-dhiaai",
+        "sangi-saathi-sagal-taraai",
+        "gur-merai-sang-sada-hai-naale",
+        "simar-simar-tis-sada-samhale",
+        "nanak-mange-closing"
+      ],
+      "reading": "All eight records read, including repeated Nānak begs. Divine sweetness, request for Name, inward meditation, ferrying companions, Guru at side, repeated remembrance all remain intact. Dhiāī/tarāī first-person interpretation is supported by Sahib Singh; do not replace with second-person imperative merely because one English version does. Hari supports existing Viṣṇu name reference; no specific Kṛṣṇa episode or exclusive epithet in this text. Existing Guru explicit in gur-merai-sang-sada-hai-naale. No tag change proposed.",
+      "sources": [
+        "https://srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=394&g=2&h=0&k=1&p=0&r=0&t=0"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "c475ddc2450fa795336fcccdf7f874adba5833b4ffcd8329a27dbb6e03e444e1",
+      "readerSha256": "c475ddc2450fa795336fcccdf7f874adba5833b4ffcd8329a27dbb6e03e444e1",
+      "wordEntriesRead": 34,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "mera-man-lochai",
+      "performedDefinitionsRead": 48,
+      "lineIdsRead": [
+        "line-000",
+        "line-001",
+        "line-002",
+        "line-003",
+        "line-004",
+        "line-005",
+        "line-006",
+        "line-007",
+        "line-008",
+        "line-009",
+        "line-010",
+        "line-011",
+        "line-012",
+        "line-013",
+        "line-014",
+        "line-015",
+        "line-016",
+        "line-017",
+        "line-018",
+        "line-019",
+        "line-020",
+        "line-021",
+        "line-022",
+        "line-023",
+        "line-024",
+        "line-025",
+        "line-026",
+        "line-027",
+        "line-028",
+        "line-029",
+        "line-030",
+        "line-031",
+        "line-032",
+        "line-033",
+        "line-034",
+        "line-035",
+        "line-036",
+        "line-037",
+        "line-038",
+        "line-039",
+        "line-040",
+        "line-041",
+        "line-042",
+        "line-043",
+        "line-044",
+        "line-045",
+        "line-046",
+        "line-047"
+      ],
+      "reading": "All 48 records read, including performance fragments/repeated lines and appended longing verses. Cātaka/rainbird cry, thirst, face/speech, separation as dark age, sleeplessness, Guru reunion, arrow in heart, unknowable pain, waiting bride, tears/sighs/unmoving foot, opened doors retained. line-007 Śārṅgapāṇi identifies bow-bearing Viṣṇu; line-009/011 Murāri identifies enemy of Mura and supports Kṛṣṇa/Viṣṇu. Generic manohara, bride and dark age do not independently support further tags. line-019 guri is agentive and santu the peaceful divine one in Sahib Singh; current Guru united me with holy one and its clarifying gloss accurately preserve this. Final source comparison resolves line-040 as the adjective bharīle, filled with tears, not separate le meaning draws. Source and Roman token units retained, with joint gloss/link and accurate grammar note.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0097.html",
+        "https://srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=337&g=1&h=0&k=1&p=0&r=0&t=2"
+      ],
+      "uncertainties": [],
+      "changes": [
+        {
+          "lineId": "line-040",
+          "reason": "Sahib Singh on SGGS 337 explicitly glosses ਭਰੀਲੇ as filled with tears. Treat bharī+le jointly; remove false separate le=draws gloss, correct English word links and grammar note. Whole sentence meaning retained."
+        }
+      ],
+      "tagAdditions": [],
+      "beforeReaderSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
+      "readerSha256": "7cb10ea11a6e3368d9487ce7243e9ecdfff268397bac04602692ddb6b2b14521",
+      "wordEntriesRead": 252,
+      "disposition": "corrected",
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.beloved_relationship",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-009",
+            "line-015",
+            "line-039"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.longing",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-000",
+            "line-003",
+            "line-014",
+            "line-039",
+            "line-040",
+            "line-043"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.meeting",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-019",
+            "line-020",
+            "line-045",
+            "line-046"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.service",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-021",
+            "line-022"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "actions",
+          "id": "action.offering",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-004",
+            "line-010",
+            "line-029"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "subjects",
+          "id": "subject.guru",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-000",
+            "line-005",
+            "line-011",
+            "line-017"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning.",
+          "role": "worship_focus"
+        }
+      ]
+    },
+    {
+      "slug": "tum-karo-daya-mere-sai",
+      "performedDefinitionsRead": 27,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003",
+        "g004",
+        "g005",
+        "g006",
+        "g007",
+        "g008",
+        "g009",
+        "g010",
+        "g011",
+        "g012",
+        "g013",
+        "g014",
+        "g015",
+        "g016",
+        "g017",
+        "g018",
+        "g019",
+        "g020",
+        "g021",
+        "g022",
+        "g023",
+        "g024",
+        "g025",
+        "g026",
+        "g027"
+      ],
+      "reading": "All 27 records read: compassion prayer, service by water/fanning/grinding, singing Govind, breath remembrance, peace, release of attachment/pride/confusion, bliss pervading all, mercy/fallen purification, royal delights in a moment of calling, qualified practices pleasing divine heart, quenched craving. g005 Govid is performed regional/spelling form of Govind; actual source name supports existing Kṛṣṇa and proposed Viṣṇu umbrella. Sāī means Master here, not Śirḍī Sāī. Gosāī is Lord of world, not an additional specific form. g017–g018 royal pleasure and calling retain their relationship; g019–g024 devotion/repetition/austerity are conditioned by pleasing God. Corrected g024 word linkage to attach Lord to prabh and possessive to kai; rendered English unchanged.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0673.html",
+        "https://www.srigranth.org/servlet/gurbani.gurbani?Action=KeertanPage&K=673&L=9&id=29228"
+      ],
+      "uncertainties": [],
+      "changes": [
+        {
+          "lineId": "g024",
+          "source": "ਜੋ ਪ੍ਰਭ ਕੈ ਮਨਿ ਭਾਈ",
+          "field": "english word alignment",
+          "before": "{0:which }{4:pleases }{1:the }{2:Lord’s }{3:heart.}",
+          "after": "{0:which }{4:pleases }{1:the Lord}{2:’s }{3:heart.}",
+          "reason": "prabh means Lord; kai supplies possessive. Previously Lord was linked to kai and prabh to only the article. Visible English unchanged."
+        }
+      ],
+      "tagAdditions": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "g005",
+          "source": "ਗੁਣ ਗੋਵਿਦ ਜਸੁ ਗਾਈ",
+          "reason": "Performed Govid/Govind is the divine name Govinda, shared by Kṛṣṇa and Viṣṇu; retain specific Kṛṣṇa alongside umbrella identity. Actual source name, not inference from gloss alone."
+        }
+      ],
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.compassion",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g001",
+            "g013",
+            "g016"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.detachment",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g008",
+            "g010"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.divine_presence",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g011",
+            "g012"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.grace",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g008",
+            "g013"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.name_power",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g006",
+            "g025"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.service",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g004"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.petition",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g001",
+            "g002"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.praise",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g005",
+            "g013"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.remembrance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g003",
+            "g006",
+            "g025"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        }
+      ],
+      "beforeReaderSha256": "fc81db1a3b2ad38884b6a1b41d65f4b0cadd0aa62ef44b0c6b2a5ee465a641d1",
+      "readerSha256": "f6bdfb34aceafccc75ef9950ddce56b14b0dcd1e8a003c112fc9cd6ebc4004a1",
+      "wordEntriesRead": 108,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "mo-kau-tar-le-rama",
+      "performedDefinitionsRead": 37,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003",
+        "g004",
+        "g005",
+        "g006",
+        "g007",
+        "g008",
+        "g009",
+        "g010",
+        "g011",
+        "g012",
+        "g013",
+        "g014",
+        "g015",
+        "g016",
+        "g017",
+        "g018",
+        "g019",
+        "g020",
+        "g021",
+        "g022",
+        "g023",
+        "g024",
+        "g025",
+        "g026",
+        "g027",
+        "g028",
+        "g029",
+        "g030",
+        "g031",
+        "g032",
+        "g033",
+        "g034",
+        "g035",
+        "g036",
+        "g037"
+      ],
+      "reading": "All 37 records read including expanded repeated refrain; drowning/swimming/rescuing arm image retained. g010/g017 Bīṭhulā is Viṭṭhala, the divine father invoked as Rāma in this same prayer. Proposed Kṛṣṇa/Viṣṇu tags record the named form and its identity, not an assertion of idol worship; Sahib Singh explicitly reads the prayer as addressed to God. g018–g025 human becoming god and conquering heaven with remedy of Guru-given understanding retained. Pāī may I obtain is supported by Sahib Singh. g028–g036 Dhruva and Nārada actually named and preserved; source narrative asks same stable spiritual condition. Naiku for ever follows explicit Sahib Singh derivation from Sanskrit naikaś/repeatedly and Punjabi sadā; no correction to a moment is justified merely by English variant.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0873.html",
+        "https://www.srigranth.org/servlet/gurbani.dictionary?Param=ਬੀਠਲ"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "g010",
+          "source": "ਬਾਪ ਬੀਠੁਲਾ ਬਾਹ ਦੇ",
+          "reason": "Bīṭhulā is the named Viṭṭhala form of Kṛṣṇa/Viṣṇu, addressed as father and Rāma; retain Viṭṭhala plus its evidenced identities without asserting worship of an image."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "g010",
+          "source": "ਬਾਪ ਬੀਠੁਲਾ ਬਾਹ ਦੇ",
+          "reason": "Bīṭhulā is the named Viṭṭhala form of Kṛṣṇa/Viṣṇu, addressed as father and Rāma; retain Viṭṭhala plus its evidenced identities without asserting worship of an image."
+        }
+      ],
+      "beforeReaderSha256": "87358b464268303839ba4bdc9688e17be5215e2b976e7c997c34776ac7bb2bda",
+      "readerSha256": "4a2f8354d6c9f3da9043daf7542110dad75aa502dde5c25714d257fa0e43c776",
+      "wordEntriesRead": 241,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "dhan-dhan-ramdas-guru",
+      "performedDefinitionsRead": 25,
+      "lineIdsRead": [
+        "dhan-dhan-ramdas-gur",
+        "jin-siri-a-tinai-sawari-a",
+        "poori-ho-ee-karamat",
+        "poori-ho-ee-karamat-aap-sirjanharai-dhari-a",
+        "aap-sirjanharai-dhari-a",
+        "sikhi-atai-sangti",
+        "sikhi-atai-sangti-parbrahm-kar-namaskari-a",
+        "parbrahm-kar-namaskari-a",
+        "atal-athahu-atol-tu",
+        "atal-athahu-atol-tu-tera-ant-na-parawari-a",
+        "tera-ant-na-parawari-a",
+        "jini-tu-sevi-a-bhao-kar",
+        "jini-tu-sevi-a-bhao-kar-se-tudh-paar-utari-a",
+        "se-tudh-paar-utari-a",
+        "lab-lobh-kaam-krodh-moh",
+        "lab-lobh-kaam-krodh-moh-maar-kadhe-tudh-saparwari-a",
+        "maar-kadhe-tudh-saparwari-a",
+        "dhan-so-tera-thaan-hai",
+        "dhan-so-tera-thaan-hai-sach-tera-paiskari-a",
+        "sach-tera-paiskari-a",
+        "nanak-tu-lehna-tuhai",
+        "nanak-tu-lehna-tuhai-gur-amar-tu-veechari-a",
+        "gur-amar-tu-veechari-a",
+        "gur-dithha-ta-man-sadhari-a",
+        "waheguru"
+      ],
+      "reading": "25 definitions read, including repeated fragments. Rām Dās is the fourth Sikh Guru, Nānak/Lehṇā/Amar Dās refer to Guru continuity. Pārbrahm is supreme divine reality, not Brahmā. Creator placing Himself within the Guru, vice-family driven out, unweighable depth, congregation and steady mind checked against Darpan 968. Vāhigurū adds no separate deity form.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0968.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "02fe2bc050bc7eab36c2eeb91f3ed7d8631ed0f8c1e9a72586eaba94221b1da4",
+      "readerSha256": "02fe2bc050bc7eab36c2eeb91f3ed7d8631ed0f8c1e9a72586eaba94221b1da4",
+      "wordEntriesRead": 122,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "gur-satgur-ka-jo-sikh-akhaye",
+      "performedDefinitionsRead": 14,
+      "lineIdsRead": [
+        "refrain-1",
+        "refrain-2",
+        "verse-1a",
+        "verse-1b",
+        "verse-1c",
+        "verse-1d",
+        "verse-2a",
+        "verse-2b",
+        "verse-2c",
+        "verse-2d",
+        "verse-3a",
+        "verse-3b",
+        "verse-3c",
+        "verse-3d"
+      ],
+      "reading": "All 14 definitions read: daily rising/bath/nectar pool, repeated Hari recitation, breath and morsel, Guru instruction and disciple dust. Hari named; existing Viṣṇu/Guru retained. Nānak is signature; no Kṛṣṇa inferred solely from explanatory Hari gloss. Nectar pool retained literally, with Darpan interpreting the Name metaphor.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0305.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "3d67a46a1cf9b60d4fbdfdd96fa68e52977f173e3c2cd4ec0a71b7993079a49c",
+      "readerSha256": "3d67a46a1cf9b60d4fbdfdd96fa68e52977f173e3c2cd4ec0a71b7993079a49c",
+      "wordEntriesRead": 79,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "koee-aan-milavai-mera-pritam-pyara",
+      "performedDefinitionsRead": 10,
+      "lineIdsRead": [
+        "koee-aan-milavai",
+        "hau-tis-pai-aap",
+        "darsan-har-dekhan",
+        "kripa-kare-ta-satgur",
+        "je-sukh-dehe-ta",
+        "je-bhukh-dehe-ta",
+        "tan-man-kaat-kaat",
+        "pakha-pheri-pani",
+        "nanak-garib-dheh",
+        "koee-aan-closing"
+      ],
+      "reading": "All 10 definitions read: self-sale, Hari sight, grace, comfort/pain, being sated in hunger, body/mind cutting, fire, fan/water service, threshold and favor. Full source Darpan 757 confirms rājā as being sated and vaḍiāī as favor. Performed kare/mele variant retained; no source/transcription change. Existing Guru/Viṣṇu cover explicit named references.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0757.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "3bff37ec7fa513bd4fcbe5b98c1db37b49e0575fdac06e4165c9981a0bcb2f3f",
+      "readerSha256": "3bff37ec7fa513bd4fcbe5b98c1db37b49e0575fdac06e4165c9981a0bcb2f3f",
+      "wordEntriesRead": 78,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "satgur-kai-bhane-chal",
+      "performedDefinitionsRead": 21,
+      "lineIdsRead": [
+        "line-000",
+        "line-001",
+        "line-002",
+        "line-003",
+        "line-004",
+        "line-005",
+        "line-006",
+        "line-007",
+        "line-008",
+        "line-010",
+        "line-011",
+        "line-012",
+        "line-014",
+        "line-015",
+        "line-016",
+        "line-017",
+        "line-018",
+        "line-020",
+        "line-021",
+        "line-022",
+        "line-023"
+      ],
+      "reading": "All 21 definitions read, including complete refrain and fragments. Bride/virtue, Guru Word dye/piercing, dye-vat, directions, friends failing and Beloved meeting, truth as capital/earnings all considered. Generic True One/Prabh/Beloved does not name an additional deity form; no tag addition. Darpan 37 supports all-pervading bharpūri, dye-vat raṅgaṇi and expectation behind making friends. Clarified English purpose clause only.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0037.html"
+      ],
+      "uncertainties": [],
+      "changes": [
+        {
+          "lineId": "line-018",
+          "source": "ਮਿਤ੍ਰ ਘਨੇਰੇ ਕਰਿ ਥਕੀ ਮੇਰਾ ਦੁਖੁ ਕਾਟੈ ਕੋਇ",
+          "before": "I grew weary making many friends, that someone might cut away my pain.",
+          "after": "I grew weary making many friends, hoping someone might cut away my pain.",
+          "reason": "Make the implicit purpose/hope intelligible in English; Darpan explains the expectation that a friend would remove the pain. No changed interpretation."
+        }
+      ],
+      "tagAdditions": [],
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.beloved_relationship",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-004",
+            "line-008",
+            "line-020"
+          ],
+          "reason": "Virtuous/unvirtuous bride and Beloved meeting remain explicit."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.detachment",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-004",
+            "line-007",
+            "line-018"
+          ],
+          "reason": "Abandoning craving/vices and turning from unreliable worldly friends remain unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.guidance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-001",
+            "line-006",
+            "line-017",
+            "line-022"
+          ],
+          "reason": "Walking in Guru will and Guru-guided union remain explicit."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.meeting",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-012",
+            "line-017",
+            "line-020"
+          ],
+          "reason": "Meeting the Lord/Beloved through Guru Word remains explicit."
+        }
+      ],
+      "beforeReaderSha256": "60b7c61bc8949a0f5117003c7925fc3c19d187a50aa94917aeb5277b4d24056c",
+      "readerSha256": "7de31751464028d6d71179a4f85e39c5fbbef960c4f59a83a0c5483f336f2768",
+      "wordEntriesRead": 148,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "so-satgur-pyara-mere-naal-hai",
+      "performedDefinitionsRead": 9,
+      "lineIdsRead": [
+        "so-satgur-pyara",
+        "jithai-kithai-mainu",
+        "tis-gur-kau-hau-varia",
+        "tis-gur-kau-sad-baliharnai",
+        "jin-har-seva-banat-banai",
+        "tis-gur-kau-sabas-hai",
+        "nanak-gur-vitahu-varia",
+        "mere-man-ki-as-purai",
+        "vahiguru"
+      ],
+      "reading": "All nine definitions read: Guru alongside and deliverance everywhere, telling Hari story, sacrifice, established devotional practice, imparted understanding, Name and fulfilled yearning, Vāhigurū. Darpan 588 validates baṇat as practice and pāī as imparted understanding. No additional named deity beyond Hari; current tags retained.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0588.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "56678dfbd553c213c06a86a0684cdb2c5d7afe1f20b1118d22e29909866bc0d2",
+      "readerSha256": "56678dfbd553c213c06a86a0684cdb2c5d7afe1f20b1118d22e29909866bc0d2",
+      "wordEntriesRead": 60,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "main-banjaran-ram-ki",
+      "performedDefinitionsRead": 20,
+      "lineIdsRead": [
+        "l001",
+        "l002",
+        "l003",
+        "l004",
+        "l005",
+        "l006",
+        "l007",
+        "l008",
+        "l009",
+        "l010",
+        "l011",
+        "l012",
+        "l013",
+        "l014",
+        "l015",
+        "l016",
+        "l017",
+        "l018",
+        "l019",
+        "l020"
+      ],
+      "reading": "All 20 definitions read. Rām named as divine beloved, already tagged. Merchant feminine; doe, cuckoo/mango, fish/water and female serpent/earth are speaker transformations, not Matsya or Śiva identification. Darpan 157 explicitly takes sāri as the Lord caring for creatures and darasani/rūpi as beautiful to behold/in form; retained. Husband, offered self, arms and divine light kept concrete.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0157.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "a2316d685822463d307773c62a3ebd029ea8542bc079201f31667970838bb1b1",
+      "readerSha256": "a2316d685822463d307773c62a3ebd029ea8542bc079201f31667970838bb1b1",
+      "wordEntriesRead": 78,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "har-jiyo-kirpa-karo",
+      "performedDefinitionsRead": 12,
+      "lineIdsRead": [
+        "refrain-1",
+        "refrain-2",
+        "rahao-1",
+        "rahao-2",
+        "v1-1",
+        "v1-2",
+        "v2-1",
+        "v2-2",
+        "v3-1",
+        "v3-2",
+        "v4-1",
+        "v4-2"
+      ],
+      "reading": "All 12 definitions read. Hari named, Guru giver, four ages, destitution, desire/double-mindedness dissolving, sweetness cutting sins, dying/living through Word, nectar Name, gift in Giver hand and divine court checked. Darpan 603 supports mansā/dubidhā/sahaj reading. Generic Giver is no new deity form; current Guru/Viṣṇu tags retained.",
+      "sources": [
+        "https://www.gurugranthdarpan.net/0603.html"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "bc90a02e0c4206863c1ad601b7a41d6a99c5cee089732c704f05be44281802fa",
+      "readerSha256": "bc90a02e0c4206863c1ad601b7a41d6a99c5cee089732c704f05be44281802fa",
+      "wordEntriesRead": 86,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "mere-man-prem-lago-har-teer",
+      "performedDefinitionsRead": 13,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003",
+        "g004",
+        "g005",
+        "g006",
+        "g007",
+        "g008",
+        "g009",
+        "g010",
+        "g011",
+        "g012",
+        "g013"
+      ],
+      "reading": "All 13 definitions read, preserving sung fragments. Love arrow lodged in heart, burning/thirst, inner ache, news of Beloved, repeated brother, feminine companions, steadying Guru instruction, hope and body cooled by sight read together. Named Hari and Guru already covered; no Rāma from poet credit or additional Kṛṣṇa from gloss alone.",
+      "sources": [
+        "https://www.searchgurbani.com/guru-granth-sahib/shabad/3228/line/3"
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "de56515dce43b435b5c606f700c6a10aa44294e5070c57df52d9103e40c6a685",
+      "readerSha256": "de56515dce43b435b5c606f700c6a10aa44294e5070c57df52d9103e40c6a685",
+      "wordEntriesRead": 67,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "aakha-jeeva-visrai-mar-jaau",
+      "performedDefinitionsRead": 19,
+      "lineIdsRead": [
+        "refrain-1",
+        "refrain-2",
+        "verse-1-1",
+        "verse-1-2",
+        "verse-2-1",
+        "verse-2-2",
+        "verse-3-1",
+        "verse-3-2",
+        "verse-3-3",
+        "verse-3-4",
+        "verse-4-1",
+        "verse-4-2",
+        "verse-4-3",
+        "verse-4-4",
+        "verse-5-1",
+        "verse-5-2",
+        "verse-5-3",
+        "verse-5-4",
+        "closing-waheguru"
+      ],
+      "reading": "Read Name/hunger/eating and sorrows departing together; khāi is feeding, not hunger eating sorrows. Mother address is human rhetorical address, not Śakti; Master/divine spouse are not sufficient for a specific deity tag. Reviewed til vaḍiāī valuation, inexhaustible giving, unique giver, day/night, severe kamjāt/sanāt concluding censure and single Vāhigurū invocation. No clear correction identified.",
+      "sources": [],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "ca07178c48b391a29772cf591dc8d55599d87f4da93d39e7c79fedb1e02adb80",
+      "readerSha256": "ca07178c48b391a29772cf591dc8d55599d87f4da93d39e7c79fedb1e02adb80",
+      "wordEntriesRead": 92,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "kahe-re-ban-khojan-jai",
+      "performedDefinitionsRead": 14,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003",
+        "g004",
+        "g005",
+        "g006",
+        "g007",
+        "g008",
+        "g009",
+        "g010",
+        "g011",
+        "g012",
+        "g013",
+        "g014"
+      ],
+      "reading": "Read forest-search contrast with flower/fragrance and mirror/reflection; Har reference, inner vessel, within/outside One, Guru teaching and self-recognition removing moss of delusion. Retain Viṣṇu from Har; no more specific Kṛṣṇa narrative or epithet. No clear correction identified.",
+      "sources": [],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "5a78889bfabac5f24ed4257a429c3a030913f3025a2e21f580394ea21453bc66",
+      "readerSha256": "5a78889bfabac5f24ed4257a429c3a030913f3025a2e21f580394ea21453bc66",
+      "wordEntriesRead": 54,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "man-tu-jot-saroop-hai",
+      "performedDefinitionsRead": 9,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003",
+        "g004",
+        "g005",
+        "g006",
+        "g007",
+        "g008",
+        "g009"
+      ],
+      "reading": "Read divine-light essential being and recognition of source; Har jī companionship, Guru guidance, divine Husband, death/life understanding, One versus love of another, peace/acclaim/acceptance. Retain Viṣṇu from Har; Husband is not evidence for a more specific deity. No clear correction identified.",
+      "sources": [],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "07d76b277dfea179d091919751689286e2f4d2b029bee0f2fca3c5c9cab1ea7c",
+      "readerSha256": "07d76b277dfea179d091919751689286e2f4d2b029bee0f2fca3c5c9cab1ea7c",
+      "wordEntriesRead": 74,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "je-sau-chanda-ugveh",
+      "performedDefinitionsRead": 3,
+      "lineIdsRead": [
+        "g001",
+        "g002",
+        "g003"
+      ],
+      "reading": "Read authorial Mahallā dūjā, hundred moons/thousand suns counterfactual, spiritual darkness without Guru. Sun/moon are astronomical sources of light, not named Sūrya/Candra deities. No new subject tag.",
+      "sources": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=463&g=1&h=0&r=0&t=1&p=0&k=1",
+          "scope": "SGGS Ang 463 with Sahib Singh confirms whole two-line light/darkness counterfactual and Second Guru heading."
+        }
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "372090ad743cba47a07672506a28d40ed16650b4943ecac4fa8180243dbed858",
+      "readerSha256": "372090ad743cba47a07672506a28d40ed16650b4943ecac4fa8180243dbed858",
+      "wordEntriesRead": 16,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "gagan-mein-thaal",
+      "performedDefinitionsRead": 8,
+      "lineIdsRead": [
+        "gagan-mai-thaal",
+        "dhoop-malianlo",
+        "gur-saakhi-jot",
+        "har-charan-kamal",
+        "andino-mohe",
+        "kirpa-jal-dehi",
+        "hoi-ja-te",
+        "terai-naam-vaasa"
+      ],
+      "reading": "Read sky tray, sun/moon lamps, star pearls, Malaya breeze/incense, wind fly-whisk, vegetation flowering for divine Light. Read Guru instruction making light manifest and pleasing divine will as worship; Hari lotus feet nectar, thirst, Nānak as pied cuckoo asking grace-water to dwell in Name. Malaya geographical image restored. No Kṛṣṇa tag based solely on generic Hari/lotus feet; retain current Viṣṇu.",
+      "sources": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=13&g=1&h=0&r=0&t=0&p=0&k=1",
+          "scope": "SGGS Ang 13, Sahib Singh commentary; full performed imagery comparison."
+        },
+        {
+          "url": "https://www.khudaemann.org/uploads/shabad/pdf/shabad_7.pdf",
+          "scope": "Explicit padārth malaānalo: breeze from Malaya mountain where sandalwood trees grow; joṭī as divine light."
+        }
+      ],
+      "uncertainties": [],
+      "changes": [
+        {
+          "lineId": "dhoop-malianlo",
+          "field": "english + malaānalo gloss",
+          "before": "The sandalwood breeze / sandalwood breeze",
+          "after": "The breeze from Malaya / sandalwood-scented breeze from Mount Malaya",
+          "reason": "Restore the concrete Malaya reference embedded in malay-anila rather than reducing it to a generic sandalwood breeze."
+        }
+      ],
+      "tagAdditions": [],
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.grace",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kirpa-jal-dehi"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.guidance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "gur-saakhi-jot"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.longing",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "har-charan-kamal",
+            "andino-mohe"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.name_power",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "hoi-ja-te",
+            "terai-naam-vaasa"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "actions",
+          "id": "action.petition",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kirpa-jal-dehi"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        }
+      ],
+      "beforeReaderSha256": "e785dab718e381d17a9fc2b2103732acfaf5ddfabe9f27db047e48b04bacda1b",
+      "readerSha256": "925124f5fec0e03801d69684c651c7a5cb6a3e030c155be5b405ee3bb06df2b1",
+      "wordEntriesRead": 60,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "jo-nar-dukh-mein-dukh-nahin-jaane",
+      "performedDefinitionsRead": 30,
+      "lineIdsRead": [
+        "line-000",
+        "line-001",
+        "line-002",
+        "line-003",
+        "line-004",
+        "line-005",
+        "line-006",
+        "line-007",
+        "line-008",
+        "line-009",
+        "line-010",
+        "line-011",
+        "line-012",
+        "line-013",
+        "line-014",
+        "line-015",
+        "line-016",
+        "line-017",
+        "line-018",
+        "line-019",
+        "line-020",
+        "line-021",
+        "line-022",
+        "line-023",
+        "line-024",
+        "line-025",
+        "line-026",
+        "line-027",
+        "line-028",
+        "line-029"
+      ],
+      "reading": "Read entire equanimity portrait: suffering not taken to heart, attachment to pleasure/fear, gold/clay, slander/flattery, greed/attachment/pride, joy/sorrow/honor/disgrace, hopes/desires/world-expectation, desire/anger. Braham is supreme reality Brahman, not creator Brahmā; no Brahmā tag. Guru grace enables recognition, Gobind and water-merging image support existing Kṛṣṇa/Viṣṇu references. No clear correction identified.",
+      "sources": [
+        {
+          "url": "https://punjabi-kavita.com/ShabadGuruTegBahadur.php",
+          "scope": "Composition 25 whole canonical shabad and padārth compare equanimity, Gobind and water image."
+        }
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [],
+      "beforeReaderSha256": "db53355804a82d29398d229ed4c9fc41b3240f45591db974b89d5faa8c2d4f34",
+      "readerSha256": "db53355804a82d29398d229ed4c9fc41b3240f45591db974b89d5faa8c2d4f34",
+      "wordEntriesRead": 139,
+      "disposition": "retained after direct reading"
+    },
+    {
+      "slug": "so-dar-keha-so-ghar-keha",
+      "performedDefinitionsRead": 41,
+      "lineIdsRead": [
+        "alap-intro",
+        "so-dar-keha-1",
+        "so-dar-keha-2",
+        "jit-behai-1",
+        "jit-behai-2",
+        "vaje-naad-1",
+        "vaje-naad-2",
+        "kete-vavan-1",
+        "kete-raag-1",
+        "kete-raag-2",
+        "kete-gavan-1",
+        "gaveh-tuhno-pawan",
+        "gaveh-chit-gupat",
+        "likh-likh-dharm-vichare",
+        "gaveh-eesar-barma",
+        "sohan-sada-savare",
+        "gaveh-ind-idasan",
+        "devtia-dar-nale",
+        "gaveh-sidh-samadhi",
+        "gavan-jati-sati",
+        "gaveh-vir-karare-1",
+        "gaveh-vir-karare-2",
+        "gavan-pandit-parhan",
+        "gaveh-mohnian-man-mohan",
+        "gavan-ratan-upaye",
+        "gaveh-jodh-mahabal",
+        "gaveh-khani-chare",
+        "gaveh-khand-mandal",
+        "sayee-tudhno-gaveh",
+        "hor-kete-gavan",
+        "nanak-kia-vichare",
+        "soi-soi-sada-sach",
+        "hai-bhi-hosi-jae",
+        "rangi-rangi-bhati",
+        "kar-kar-vekhai-keeta",
+        "jo-tis-bhavai-soi",
+        "so-patishah-shaha",
+        "nanak-rahan-rajai-1",
+        "so-patishah-shaha-rep",
+        "nanak-rahan-rajai-2",
+        "nanak-rahan-rajai-3"
+      ],
+      "reading": "Read cosmic singers from wind/water/fire and Dharma judge through Citra/Gupta, Śiva/Brahmā/goddesses, Indras/devas, adepts, holy seekers, celibates/charitable/contented, heroes, sages, enchanting women, jewels/pilgrimage sites, four birth kinds, worlds and devotees. Read enduring creator/renown, manifold māyā-creation, care for creation, sovereign action and Nānak living in divine will. mohaṇīā plural enchanting women is not specific Mohinī; no Viṣṇu tag from this passage. devī goddesses supports Śakti but does not settle specific Durgā/Lakṣmī/Sarasvatī.",
+      "sources": [
+        {
+          "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=6&g=1&h=&k=2&p=1&r=0&t=2",
+          "scope": "SGGS Ang 6 and Sahib Singh padārth: īsar=Śiva, baramā=Brahmā, devī=goddesses; Indras; Dharma-rāja considers Citra/Gupta records."
+        },
+        {
+          "url": "https://srigranth.org/servlet/gurbani.dictionary?Param=%E0%A8%9C%E0%A8%AE",
+          "scope": "Gurbani dictionary jam identifies Yamarāja/Dharmarāja, supporting contextual mapping of the personified judge."
+        }
+      ],
+      "uncertainties": [],
+      "changes": [],
+      "tagAdditions": [
+        {
+          "tag": "Brahmā",
+          "lineId": "gaveh-eesar-barma",
+          "source": "ਗਾਵਹਿ ਈਸਰੁ ਬਰਮਾ ਦੇਵੀ ਸੋਹਨਿ ਸਦਾ ਸਵਾਰੇ ॥",
+          "reason": "Baramā explicitly names creator Brahmā among divine singers, distinct from Brahman."
+        },
+        {
+          "tag": "Indra",
+          "lineId": "gaveh-ind-idasan",
+          "source": "ਗਾਵਹਿ ਇੰਦ ਇਦਾਸਣਿ ਬੈਠੇ ਦੇਵਤਿਆ ਦਰਿ ਨਾਲੇ ॥",
+          "reason": "Ind explicitly names Indras on Indra thrones with devas."
+        },
+        {
+          "tag": "Yama",
+          "lineId": "gaveh-tuhno-pawan",
+          "source": "ਗਾਵਹਿ ਤੁਹਨੋ ਪਉਣੁ ਪਾਣੀ ਬੈਸੰਤਰੁ ਗਾਵੈ ਰਾਜਾ ਧਰਮੁ ਦੁਆਰੇ ॥",
+          "reason": "Rājā Dharam is Dharma-rāja/Yama, the personified judge singing at the divine door. The adjacent Citra/Gupta records establish the tribunal context; Sahib Singh explains the named judge as Yamarāja. This is not an inference from generic death."
+        }
+      ],
+      "beforeReaderSha256": "9ffe919b43df5acf31dac9adfac25f3aa0320c2bf30fec98a345ab1995128b39",
+      "readerSha256": "d42219757694e6a5a5d9e9103c71a177e37bf071afcb5e8593abccead934a23c",
+      "wordEntriesRead": 233,
+      "disposition": "corrected"
+    },
+    {
+      "slug": "duhkh-me-sumiran-sab-kare",
+      "performedDefinitionsRead": 15,
+      "lineIdsRead": [
+        "dukh-mein-sumiran",
+        "sukh-mein-kare-na-koy",
+        "jo-sukh-mein-sumiran",
+        "to-dukh-kaahe-ko-hoy",
+        "sumiran-kar-le",
+        "teri-beeti-umar",
+        "koop-neer-bin",
+        "jaise-taruvar",
+        "taise-praani",
+        "deh-nain-bin",
+        "jaise-pandit",
+        "kaam-krodh-mad",
+        "kahai-nanak-shah",
+        "koi-nahi-jag-mein",
+        "sumiran-kar-le-part"
+      ],
+      "reading": "Read sorrow/joy remembrance couplet and exhortation to mind; life passing without Hari name. Read well/water, cow/milk, earth/cloud, tree/fruit, body/eyes, night/moon, temple/lamp, scholar/Vedas analogies, lust/anger/pride/greed renunciation, Nānak Śāh signature and no worldly own companion. The performed Hindi compilation matches popular Sumiran Kar Le material in Ashram Bhajanavali; Guru credit/signature alone is insufficient to certify canonical Gurbāṇī. Retain current Nirguṇa, Viṣṇu classification.",
+      "sources": [
+        {
+          "url": "https://www.mkgandhi.org/ebks/hindi/ashram-bhajanavali.pdf",
+          "scope": "Poem 62 contains same principal analogy sequence and Nānakśāh signature; its budhimantā variant differs from performed bhagavantā."
+        },
+        {
+          "url": "https://gandhi-manibhavan.org/gandhi-comes-alive/aashram-prayers.html",
+          "scope": "Gandhi translation dated 11 September 1930, entry 138, witnesses the same poem and Nānakshah attribution, including divine address."
+        }
+      ],
+      "uncertainties": [
+        "Canonical Gurbāṇī identity has not been established. Do not add Gurbāṇī solely from Nānak Śāh signature or poet credit. Poem is demonstrably circulated in bhajan anthologies; no claim that it is absent from every Sikh corpus."
+      ],
+      "changes": [
+        {
+          "field": "nām gloss",
+          "before": "sacred invocation; devotional recitation",
+          "after": "name; here, the divine name of Hari",
+          "reason": "Noun is name in these privative phrases; existing English already says name.",
+          "lineId": "teri-beeti-umar"
+        },
+        {
+          "field": "nām gloss",
+          "before": "sacred invocation; devotional recitation",
+          "after": "name; here, the divine name of Hari",
+          "reason": "Noun is name in these privative phrases; existing English already says name.",
+          "lineId": "taise-praani"
+        },
+        {
+          "lineId": "jaise-pandit",
+          "field": "ved gloss",
+          "before": "sacred knowledge texts",
+          "after": "the Vedas; sacred texts",
+          "reason": "Restore explicit proper textual identity already present in English."
+        }
+      ],
+      "tagAdditions": [],
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.detachment",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kaam-krodh-mad",
+            "koi-nahi-jag-mein"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.ethical_conduct",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kaam-krodh-mad"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.impermanence",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "teri-beeti-umar"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.name_power",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "teri-beeti-umar",
+            "taise-praani"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "actions",
+          "id": "action.remembrance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "sumiran-kar-le",
+            "dukh-mein-sumiran"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "subjects",
+          "id": "subject.vishnu",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "teri-beeti-umar",
+            "taise-praani"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference.",
+          "role": "worship_focus"
+        }
+      ],
+      "beforeReaderSha256": "693c2d1a77180934e6ab637ccda2127c3c645b52da7a63de0b6f49df7cd64ff2",
+      "readerSha256": "c2c9dd70e39320bf88f0b933826a347c3f505758467d81766270b24915950d58",
+      "wordEntriesRead": 86,
+      "disposition": "corrected"
+    }
+  ],
+  "openQuestions": [
+    {
+      "slug": "duhkh-me-sumiran-sab-kare",
+      "kind": "group inclusion",
+      "question": "Canonical Gurbāṇī identity not established for this popular Nānak Śāh-attributed Hindi bhajan compilation. Retain existing Nirguṇa classification; do not infer scripture membership from credit."
+    }
+  ],
+  "releaseState": "Release checks complete; publication pending. Historical trim audit retains six pre-existing record discrepancies; owner authorized retaining current audio and waived browser verification. No audio edit or fresh listening claimed.",
+  "resolvedQuestions": [
+    {
+      "slug": "mera-man-lochai",
+      "lineId": "line-040",
+      "resolution": "Sahib Singh on SGGS 337 explicitly glosses ਭਰੀਲੇ as filled with tears. Treat bharī+le jointly; remove false separate le=draws gloss, correct English word links and grammar note. Whole sentence meaning retained.",
+      "source": "https://www.gurugranthdarpan.net/0337.html"
+    }
+  ],
+  "validation": {
+    "releaseCommands": 46,
+    "passed": 45,
+    "failed": [
+      "python3 scripts/audit_youtube_trims.py (six pre-existing review-record discrepancies)"
+    ],
+    "actualPublicFilterAdditionsChecked": 9,
+    "sourceRomanSequenceTimingNonTagMetadataPreservedReaders": 28,
+    "changedDefinitions": 8,
+    "changedTextReaders": 6,
+    "addedTags": 9,
+    "tagChangedReaders": 6,
+    "newProviderCalls": 0
+  }
+}

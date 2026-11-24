@@ -91,6 +91,13 @@ Gurbāṇī/Nirguṇa may coexist with Kṛṣṇa, Viṣṇu or Śiva reference
 assert a different theology. A shared symbol, generic “Lord”, a poet/artist name,
 or a name appearing only in an explanatory gloss is not enough by itself.
 
+The examples and detector aliases are not a closed list. An explicit Brahmā or
+Indra reference still needs its own tag, and Narhari needs the specific Nṛsiṃha
+reference alongside Viṣṇu. Reuse an established canonical label where available;
+otherwise record the evidenced name in IAST. For a group review, record each
+song's named references and contextual exclusions, including songs needing no
+changes. A clean keyword scan cannot replace that reading.
+
 Search before deciding, using the free local command (no API calls):
 
 ```sh

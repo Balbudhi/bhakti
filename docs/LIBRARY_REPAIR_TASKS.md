@@ -1,5 +1,34 @@
 # Whole-library repair task
 
+## Owner-reopened Gurbāṇī review — 24 November 2026
+
+The owner rejected ledger-only assurance. Read all 27 currently grouped Gurbāṇī
+readers plus the Nānak-attributed `duhkh-me-sumiran-sab-kare` compilation, including
+every performed source line, word map and English in context. Check all named forms,
+epithets and narrative references, not only detector candidates. Preserve recordings,
+timings and source text; publish supported text/tag repairs. Root integrates shared
+registries and reviews changed passages; three disjoint reader groups are read in
+parallel. A song with no changes still needs a concrete reading disposition.
+
+- [x] Read and record all 28 readers (27 Gurbāṇī plus one inclusion candidate):
+  608 performed definitions and 3,199 word entries.
+- [x] Adjudicate source-sensitive readings and exact-witness reference additions;
+  resolve the inherited bharīle analysis from the explicit commentary.
+- [x] Integrate eight English/gloss/link corrections across six readers and nine
+  tag additions across six readers, preserving original shuffle assessments.
+- [ ] Run release checks, publish, and verify served files.
+
+Current step: release checks complete; publication pending. Only the six pre-existing
+trim-record discrepancies fail; the owner's explicit audio-retention and browser
+waiver remain in force. Exact per-song readings, source comparisons, retained
+passages, corrections and exclusions are in `data/gurbani-review-2026-11-24.json`.
+Merā Manu Locai line-040's inherited `bharī le` analysis was corrected to the joint
+adjective `bharīle`, filled, from Sahib Singh's explicit gloss; the whole English
+meaning is retained. No unresolved translation finding remains in these 27 Gurbāṇī
+readers from this reading. The Nānak Śāh-attributed Hindi compilation's canonical
+Gurbāṇī membership remains unestablished. The wider library's 33 prior source questions
+across 23 other readers remain. Historical completion claims do not close them.
+
 ## Active owner-directed repair — 23 November 2026
 
 Outcome: accurate, readable source-constrained translations and word meanings,

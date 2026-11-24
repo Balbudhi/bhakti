@@ -18,7 +18,9 @@ window.SONG_META = {
     "Gurbāṇī",
     "Rāma",
     "Guru",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Mo Kau Tari Le Rama",

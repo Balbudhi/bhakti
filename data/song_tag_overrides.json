@@ -910,7 +910,8 @@
         "Nirguṇa",
         "Gurbāṇī",
         "Viṣṇu",
-        "Śiva"
+        "Śiva",
+        "Brahmā"
       ],
       "evidence": [
         {
@@ -944,6 +945,13 @@
           "lineId": "line-26",
           "source": "ਕਾਲ ਪਾਇ ਸਿਵਜੂ ਅਵਤਰਾ ॥",
           "reason": "Sivjū explicitly names Śiva as incarnating under Time; reference tag does not change the poem’s theology."
+        },
+        {
+          "operation": "add",
+          "tag": "Brahmā",
+          "lineId": "line-25",
+          "source": "ਕਾਲ ਪਾਇ ਬ੍ਰਹਮਾ ਬਪੁ ਧਰਾ ॥",
+          "reason": "The performed line explicitly names Brahmā assuming a body under Time; also named at line-30 as Veda king. Named-reference tag, not the primary worship focus."
         }
       ]
     },
@@ -1974,7 +1982,9 @@
       ]
     },
     "deh-shiva-bar-mohe-hai": {
-      "addTags": [],
+      "addTags": [
+        "Durgā"
+      ],
       "removeTags": [
         "Śiva"
       ],
@@ -1984,6 +1994,13 @@
           "tag": "Śiva",
           "source": "ਦੇਹ ਸਿਵਾ ਬਰ ਮੋਹਿ ਇਹੈ ਸੁਭ ਕਰਮਨ ਤੇ ਕਬਹੂੰ ਨ ਟਰੋ",
           "reason": "Śivā is the feminine auspicious Goddess invoked in this Caṇḍī-caritra prayer. Folding its long final ā creates a male Śiva match; retain the reviewed Śakti and Gurbāṇī classification."
+        },
+        {
+          "operation": "add",
+          "tag": "Durgā",
+          "lineId": "l002",
+          "source": "ਦੇਹ ਸਿਵਾ ਬਰ ਮੋਹਿ ਇਹੈ ਸੁਭ ਕਰਮਨ ਤੇ ਕਬਹੂੰ ਨ ਟਰੋ",
+          "reason": "The performed feminine Śivā invocation belongs to Caṇḍī-caritra; auspicious goddess/power of the Supreme in this Caṇḍī context. Specific Durgā reference alongside Śakti, not male Śiva."
         }
       ],
       "performedSourcesSha256": "7d7c6af14cd103deea5ecc93791277db86091f55407715d207d3f466f143d268"
@@ -3508,7 +3525,8 @@
         "Guru",
         "Kṛṣṇa",
         "Viṣṇu",
-        "Śiva"
+        "Śiva",
+        "Nṛsiṃha"
       ],
       "evidence": [
         {
@@ -3534,6 +3552,13 @@
           "lineId": "g003",
           "source": "ਨੀਲ ਕੰਠ ਨਰਹਰਿ ਨਾਰਾਇਣ",
           "reason": "Nīl kaṇṭh invokes the blue-throated Śiva epithet, as explained by SGGS Academy Shabad Hazare p26; named-reference tag within a universal divine address."
+        },
+        {
+          "operation": "add",
+          "tag": "Nṛsiṃha",
+          "lineId": "g003",
+          "source": "ਨੀਲ ਕੰਠ ਨਰਹਰਿ ਨਾਰਾਇਣ",
+          "reason": "Narhari is the man-lion Nṛsiṃha form, explicitly named alongside Nārāyaṇa; specific form retained with Viṣṇu."
         }
       ]
     },
@@ -3573,7 +3598,9 @@
     "mo-kau-tar-le-rama": {
       "addTags": [
         "Guru",
-        "Viṭṭhala"
+        "Viṭṭhala",
+        "Kṛṣṇa",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -3587,6 +3614,20 @@
           "lineId": "g010",
           "source": "ਬਾਪ ਬੀਠੁਲਾ ਬਾਹ ਦੇ",
           "reason": "Bīṭhulā is the performed regional name of Viṭṭhala, explicitly addressed as father."
+        },
+        {
+          "operation": "add",
+          "tag": "Kṛṣṇa",
+          "lineId": "g010",
+          "source": "ਬਾਪ ਬੀਠੁਲਾ ਬਾਹ ਦੇ",
+          "reason": "Bīṭhulā is the named Viṭṭhala form of Kṛṣṇa/Viṣṇu, addressed as father and Rāma; retain Viṭṭhala plus its evidenced identities without asserting worship of an image."
+        },
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "g010",
+          "source": "ਬਾਪ ਬੀਠੁਲਾ ਬਾਹ ਦੇ",
+          "reason": "Bīṭhulā is the named Viṭṭhala form of Kṛṣṇa/Viṣṇu, addressed as father and Rāma; retain Viṭṭhala plus its evidenced identities without asserting worship of an image."
         }
       ]
     },
@@ -5225,7 +5266,8 @@
     },
     "tum-karo-daya-mere-sai": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -5233,6 +5275,13 @@
           "lineId": "g005",
           "source": "ਗੁਣ ਗੋਵਿਦ ਜਸੁ ਗਾਈ",
           "reason": "Govind is the performed divine name being praised, supporting a Kṛṣṇa named-reference tag without changing the Gurbāṇī interpretation."
+        },
+        {
+          "operation": "add",
+          "tag": "Viṣṇu",
+          "lineId": "g005",
+          "source": "ਗੁਣ ਗੋਵਿਦ ਜਸੁ ਗਾਈ",
+          "reason": "Performed Govid/Govind is the divine name Govinda, shared by Kṛṣṇa and Viṣṇu; retain specific Kṛṣṇa alongside umbrella identity. Actual source name, not inference from gloss alone."
         }
       ]
     },
@@ -5357,6 +5406,36 @@
           "lineId": "refrain-1",
           "source": "तेरो चाकर करे पुकार भवानी बेग पधारो ना",
           "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "so-dar-keha-so-ghar-keha": {
+      "addTags": [
+        "Brahmā",
+        "Indra",
+        "Yama"
+      ],
+      "evidence": [
+        {
+          "operation": "add",
+          "tag": "Brahmā",
+          "lineId": "gaveh-eesar-barma",
+          "source": "ਗਾਵਹਿ ਈਸਰੁ ਬਰਮਾ ਦੇਵੀ ਸੋਹਨਿ ਸਦਾ ਸਵਾਰੇ ॥",
+          "reason": "Baramā explicitly names creator Brahmā among divine singers, distinct from Brahman."
+        },
+        {
+          "operation": "add",
+          "tag": "Indra",
+          "lineId": "gaveh-ind-idasan",
+          "source": "ਗਾਵਹਿ ਇੰਦ ਇਦਾਸਣਿ ਬੈਠੇ ਦੇਵਤਿਆ ਦਰਿ ਨਾਲੇ ॥",
+          "reason": "Ind explicitly names Indras on Indra thrones with devas."
+        },
+        {
+          "operation": "add",
+          "tag": "Yama",
+          "lineId": "gaveh-tuhno-pawan",
+          "source": "ਗਾਵਹਿ ਤੁਹਨੋ ਪਉਣੁ ਪਾਣੀ ਬੈਸੰਤਰੁ ਗਾਵੈ ਰਾਜਾ ਧਰਮੁ ਦੁਆਰੇ ॥",
+          "reason": "Rājā Dharam is Dharma-rāja/Yama, the personified judge singing at the divine door. The adjacent Citra/Gupta records establish the tribunal context; Sahib Singh explains the named judge as Yamarāja. This is not an inference from generic death."
         }
       ]
     }

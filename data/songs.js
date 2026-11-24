@@ -1803,7 +1803,8 @@ window.BHAKTI_SONGS = [
       "Guru",
       "Kṛṣṇa",
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Nṛsiṃha"
     ],
     "searchAliases": [
       "Gurbani",
@@ -2018,7 +2019,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Gurbāṇī",
-      "Śakti"
+      "Śakti",
+      "Durgā"
     ],
     "searchAliases": [
       "Deh Shiva Bar Mohe Hai",
@@ -2488,7 +2490,10 @@ window.BHAKTI_SONGS = [
       "Gurbāṇī",
       "Nirguṇa",
       "Śiva",
-      "Śakti"
+      "Śakti",
+      "Brahmā",
+      "Indra",
+      "Yama"
     ],
     "searchAliases": [
       "So Dar Keha",
@@ -2531,7 +2536,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Gurbāṇī",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Tumh Karahu Daia Mere Sai",
@@ -9265,7 +9271,8 @@ window.BHAKTI_SONGS = [
       "Nirguṇa",
       "Gurbāṇī",
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Brahmā"
     ],
     "searchAliases": [
       "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
@@ -10236,7 +10243,9 @@ window.BHAKTI_SONGS = [
       "Gurbāṇī",
       "Rāma",
       "Guru",
-      "Viṭṭhala"
+      "Viṭṭhala",
+      "Kṛṣṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Mo Kau Tari Le Rama",
@@ -13818,4 +13827,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "9748395beb400cafaf40a9fdf9bd5bfc9c13f8482758f7f8008b4ebc3658002f";
+window.BHAKTI_SHUFFLE_REVISION = "3eacd052716f8a25386dbb5cad8cc556a8154ee9adbbdbdd8193515182f7b075";

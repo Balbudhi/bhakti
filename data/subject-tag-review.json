@@ -73,15 +73,15 @@
     "duhkh-me-sumiran-sab-kare": {
       "Kṛṣṇa": {
         "decision": "dismiss",
-        "inputHash": "6891a77cab4cb4fb5ea8b175264e589e3074dc6e1d1284c17d5754e763a35133",
-        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+        "inputHash": "90c4e7ea7a01ecd5d3032186f77e4145adc7aaf5b1a0b9fcfe88732e451742d3",
+        "reason": "Full fifteen-line source/gloss/English reading: performed Hari is retained under Viṣṇu; no exclusive Kṛṣṇa name, episode or concrete form occurs. Nānak Śāh signature is not a deity reference. Correcting name/Vedas glosses does not supply new deity evidence."
       }
     },
     "gagan-mein-thaal": {
       "Kṛṣṇa": {
         "decision": "dismiss",
-        "inputHash": "eb3a91a80184604b988b3d91e20ada9c1b9e1967033f8089360cc069b22d2f26",
-        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+        "inputHash": "5a73ff69c2884c787682517155ed96853ca7fe8003f795bb741123bb5c7e1b59",
+        "reason": "Full eight-line source/gloss/English reading: Hari and lotus feet support existing Viṣṇu reference but do not distinguish Kṛṣṇa. Malaya is a geographical incense-breeze image, not a deity form. No Kṛṣṇa identity inferred from glossary alternatives."
       }
     },
     "gaiye-ganpati-jagvandan": {
@@ -261,8 +261,8 @@
     "deh-shiva-bar-mohe-hai": {
       "Śiva": {
         "decision": "dismiss",
-        "inputHash": "1be11e9da79a35f58e8c630a61efeae7017ce6218522fd5d73fdf41ad8c8a554",
-        "reason": "Existing reviewed exclusion: Śivā is feminine Goddess in this Chandi prayer; folding final ā must not create male Śiva."
+        "inputHash": "6809ae0e840d9a6ca682b5905f300c71c832648a9bb76dd9af8c1e14aa32ab7e",
+        "reason": "Full six-line source/gloss/English reading: feminine Śivā in the Caṇḍī prayer denotes the auspicious goddess/power, now specifically tagged Durgā and Śakti. No male Śiva reference. The hau pronoun correction does not change that distinction."
       }
     },
     "deha-re-mo-lagilani": {

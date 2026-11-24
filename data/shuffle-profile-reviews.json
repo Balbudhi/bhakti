@@ -8605,7 +8605,136 @@
           "subjects": []
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "editorialTextRevision": {
+          "version": 1,
+          "priorLines": {
+            "dhoop-malianlo": {
+              "source": "ਧੂਪੁ ਮਲਆਨਲੋ ਪਵਣੁ ਚਵਰੋ ਕਰੇ ਸਗਲ ਬਨਰਾਇ ਫੂਲੰਤ ਜੋਤੀ ॥",
+              "sourceLanguage": "pa",
+              "sourceWords": [
+                {
+                  "text": "ਧੂਪੁ",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ਮਲਆਨਲੋ",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "ਪਵਣੁ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ਚਵਰੋ",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "ਕਰੇ",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "ਸਗਲ",
+                  "wordIndices": [
+                    5
+                  ]
+                },
+                {
+                  "text": "ਬਨਰਾਇ",
+                  "wordIndices": [
+                    6
+                  ]
+                },
+                {
+                  "text": "ਫੂਲੰਤ",
+                  "wordIndices": [
+                    7
+                  ]
+                },
+                {
+                  "text": "ਜੋਤੀ",
+                  "wordIndices": [
+                    8
+                  ]
+                }
+              ],
+              "roman": "dhūpu malaānalo pavaṇu cavaro kare sagala banarāi phūlanta jotī ॥",
+              "english": "{1:The sandalwood breeze }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:bears flowers }{8:for the divine Light.}",
+              "words": [
+                {
+                  "roman": "dhūpu",
+                  "gloss": "incense",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "malaānalo",
+                  "gloss": "sandalwood breeze",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "pavaṇu",
+                  "gloss": "wind",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "cavaro",
+                  "gloss": "ceremonial fly-whisk",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "kare",
+                  "gloss": "waves",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "sagala",
+                  "gloss": "all",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "banarāi",
+                  "gloss": "vegetation",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "phūlanta",
+                  "gloss": "bears flowers",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "jotī",
+                  "gloss": "the divine Light",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "nameTable": false,
+              "grammarNote": "Malaānalo names the breeze from the sandalwood-bearing Malaya mountains. Pavaṇu is the subject of kare, with cavaro as its object. Phūlanta describes the vegetation bearing flowers; jotī names the divine Light for whom those flowers are offered."
+            }
+          },
+          "originalInputHash": "0c390adb9ef16fe9924b07fe87d46d55205b91b7a6f8178d734ffe8b836f063c",
+          "inputHash": "8d86834f6c9f293a4124d763430ac3ceedca5c5836aedaaa063e1f68b08c28ec",
+          "baseFeaturesHash": "a632a047f6aa46da4f7fd8762ad57f19a952de70f10beb7be7cef1378c3b4fb0",
+          "evidenceHash": "5b8b0685f5663f176f0eaf077d645b7c2d405ce11346430cf972e3de1c208f06"
+        }
       }
     },
     "ec1f7376": {
@@ -8834,7 +8963,76 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "editorialTextRevision": {
+          "version": 1,
+          "priorLines": {
+            "line-040": {
+              "source": "ਲੋਚਨ ਭਰੀ ਲੇ ਉਸਾਸਾ ॥",
+              "sourceLanguage": "pa",
+              "sourceWords": [
+                {
+                  "text": "ਲੋਚਨ",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ਭਰੀ",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "ਲੇ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ਉਸਾਸਾ",
+                  "wordIndices": [
+                    3
+                  ]
+                }
+              ],
+              "roman": "locana bharī le usāsā",
+              "english": "{0,1:With eyes brimming with tears, }{2:she draws }{3:deep sighs.}",
+              "words": [
+                {
+                  "roman": "locana",
+                  "gloss": "eyes",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "bharī",
+                  "gloss": "filled with tears; brimming",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "le",
+                  "gloss": "drawing; taking",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "usāsā",
+                  "gloss": "deep sighs; heavy breaths",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "nameTable": false,
+              "grammarNote": "locana bharī is a participial clause describing state; le is a conjunctive/present participle governing the direct object usāsā."
+            }
+          },
+          "originalInputHash": "9a5b70b3a151e2e1ffcb3f81fcb4ee4315933302c4a4bab1a204d453f52b3432",
+          "inputHash": "c84838b406d01daccf4401aa51e1b610ba15b36af45ea494fdf29514e0fccad7",
+          "baseFeaturesHash": "6323bb2d25f22c6d5cdf63bdd0040ace0a6a98ff3c7d3bff6a9b4f50cf8d2b7c",
+          "evidenceHash": "520b5384bb804eb07c0b9afc3d2d0434005367a7775ba423f40037aeb12038e5"
+        }
       }
     },
     "b91e295a": {
@@ -8935,7 +9133,19 @@
           "subjects": []
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Gurbāṇī",
+            "Nirguṇa",
+            "Śiva",
+            "Śakti"
+          ],
+          "originalInputHash": "7fa13a37d7e9c46530048410dddd6c3db4cb9cb9d94948436f21b4b8c323b402",
+          "inputHash": "c199b2acdd08604611b7844f5db6e93a743e7b10dca0f7401d950eaa2d3ef088",
+          "evidenceHash": "b87291a82e1ee9a04905ff1eb91ee0854fba82b22cff2f69b4108437c7523654"
+        }
       }
     },
     "3cf96b53": {
@@ -45285,8 +45495,8 @@
             "Gurbāṇī"
           ],
           "originalInputHash": "707afa12db36f22625a4dc4e99590601e9516ab1f4d98f0f46fd5325d7d51cd6",
-          "inputHash": "402fbf6ebcaaa73c52ff29be90114cf4fe99e0c4d3396438dab955ecaa173d83",
-          "evidenceHash": "7b728a3a18568b9372f9136b28812038dbb38cc32b73b7448796cb2f74c83709"
+          "inputHash": "385eaf9d6ad72a3818f34744f01cc2f65cd70268f35db6f67d2b7ed380b5ed88",
+          "evidenceHash": "c4f08e43cd3c0212ac06853215bb45130102541c9e6de03acb8df467d30659e5"
         }
       }
     },
@@ -66183,7 +66393,229 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "editorialTextRevision": {
+          "version": 1,
+          "priorLines": {
+            "teri-beeti-umar": {
+              "source": "तेरी बीती उमर हरि नाम बिना",
+              "sourceLanguage": "hi",
+              "sourceWords": [
+                {
+                  "text": "तेरी",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "बीती",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "उमर",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "हरि",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "नाम",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "बिना",
+                  "wordIndices": [
+                    5
+                  ]
+                }
+              ],
+              "roman": "terī bītī umar hari nām binā",
+              "english": "{0:your }{2:lifespan }{1:has passed }{5:without }{3,4:the name of Hari.}",
+              "words": [
+                {
+                  "roman": "terī",
+                  "gloss": "your",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "bītī",
+                  "gloss": "passed; spent; elapsed",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "umar",
+                  "gloss": "life; lifetime; lifespan",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "hari",
+                  "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "nām",
+                  "gloss": "sacred invocation; devotional recitation",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "binā",
+                  "gloss": "without",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "bītī is a feminine past participle serving as the finite predicate agreeing with the feminine noun umar."
+            },
+            "taise-praani": {
+              "source": "तैसे प्राणी हरि नाम बिना",
+              "sourceLanguage": "hi",
+              "sourceWords": [
+                {
+                  "text": "तैसे",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "प्राणी",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "हरि",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "नाम",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "बिना",
+                  "wordIndices": [
+                    4
+                  ]
+                }
+              ],
+              "roman": "taise prāṇī hari nām binā",
+              "english": "{0:so is }{1:a living being }{4:without }{2,3:the name of Hari.}",
+              "words": [
+                {
+                  "roman": "taise",
+                  "gloss": "so; in that same way",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "prāṇī",
+                  "gloss": "a living being; a mortal creature",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "hari",
+                  "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "nām",
+                  "gloss": "sacred invocation; devotional recitation",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "binā",
+                  "gloss": "without",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "taise correlates with jaise. The predicate adjective describing emptiness/destitution is understood from hīnā in the prior line."
+            },
+            "jaise-pandit": {
+              "source": "जैसे पण्डित वेद विहीना",
+              "sourceLanguage": "hi",
+              "sourceWords": [
+                {
+                  "text": "जैसे",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "पण्डित",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "वेद",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "विहीना",
+                  "wordIndices": [
+                    3
+                  ]
+                }
+              ],
+              "roman": "jaise paṇḍit ved vihīnā",
+              "english": "{0:just as }{1:a scholar }{3:is bereft }{2:of the Vedas,}",
+              "words": [
+                {
+                  "roman": "jaise",
+                  "gloss": "just as; like",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "paṇḍit",
+                  "gloss": "a scholar; learned pandit",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "ved",
+                  "gloss": "sacred knowledge texts",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "vihīnā",
+                  "gloss": "bereft; devoid; lacking",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "ved vihīnā is an adjectival compound/phrase (from Sanskrit veda-vihīna) serving as a predicate complement qualifying paṇḍit."
+            }
+          },
+          "originalInputHash": "cebd3190c5e6743dc550e8ecfe226ae62c205d48d42ac4dca809da7e59e9aa76",
+          "inputHash": "22e2f1c2a4b4309f928d3f69b7c46036b55cb6ce7cf63e9910de3c325fbd8b32",
+          "baseFeaturesHash": "6c7349ca23a231f48107864fcd8250ff8a433f81d3a293161a109aab09f59aca",
+          "evidenceHash": "f19abdb22dc1aa0213d93a2eac9c9190b99e2b96fe10ee46190ffcf69d8d405c"
+        }
       }
     },
     "7520c8b3": {
@@ -79373,7 +79805,166 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Gurbāṇī",
+            "Śakti"
+          ],
+          "originalInputHash": "440feb1fabcb44eb6396b36747ff5560326eac1db2c202929ed237485bad7963",
+          "inputHash": "06fa8390af2b09da35e7e656d9b219ec71695cb09a7af30bec8749eb07edaa92",
+          "evidenceHash": "04a761a6ec5d64e3e462ea17d824b2dd1862134dd0d27326b08d1ebe7ef59d59"
+        },
+        "editorialTextRevision": {
+          "version": 1,
+          "priorLines": {
+            "l004": {
+              "source": "ਅਰੁ ਸਿਖ ਹੋਂ ਅਪਨੇ ਹੀ ਮਨ ਕੌ ਇਹ ਲਾਲਚ ਹਉ ਗੁਨ ਤਉ ਉਚਰੋਂ",
+              "roman": "Aru sikh hoṃ apane hī man kau ih lālac hau gun tau ucaroṃ",
+              "english": "{0:And }{2:may I }{1:teach }{3,4:my own }{5,6:mind: }{7,9:let this be }its {8:longing—}{12:may I utter }{11:your }{10:virtues.}",
+              "words": [
+                {
+                  "roman": "Aru",
+                  "gloss": "and"
+                },
+                {
+                  "roman": "sikh",
+                  "gloss": "teach; instruct"
+                },
+                {
+                  "roman": "hoṃ",
+                  "gloss": "I"
+                },
+                {
+                  "roman": "apane",
+                  "gloss": "my own"
+                },
+                {
+                  "roman": "hī",
+                  "gloss": "very; emphatic"
+                },
+                {
+                  "roman": "man",
+                  "gloss": "mind"
+                },
+                {
+                  "roman": "kau",
+                  "gloss": "to; object marker"
+                },
+                {
+                  "roman": "ih",
+                  "gloss": "this"
+                },
+                {
+                  "roman": "lālac",
+                  "gloss": "longing"
+                },
+                {
+                  "roman": "hau",
+                  "gloss": "may be"
+                },
+                {
+                  "roman": "gun",
+                  "gloss": "virtues"
+                },
+                {
+                  "roman": "tau",
+                  "gloss": "your"
+                },
+                {
+                  "roman": "ucaroṃ",
+                  "gloss": "may I utter"
+                }
+              ],
+              "sourceWords": [
+                {
+                  "text": "ਅਰੁ",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ਸਿਖ",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "ਹੋਂ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ਅਪਨੇ",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "ਹੀ",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "ਮਨ",
+                  "wordIndices": [
+                    5
+                  ]
+                },
+                {
+                  "text": "ਕੌ",
+                  "wordIndices": [
+                    6
+                  ]
+                },
+                {
+                  "text": "ਇਹ",
+                  "wordIndices": [
+                    7
+                  ]
+                },
+                {
+                  "text": "ਲਾਲਚ",
+                  "wordIndices": [
+                    8
+                  ]
+                },
+                {
+                  "text": "ਹਉ",
+                  "wordIndices": [
+                    9
+                  ]
+                },
+                {
+                  "text": "ਗੁਨ",
+                  "wordIndices": [
+                    10
+                  ]
+                },
+                {
+                  "text": "ਤਉ",
+                  "wordIndices": [
+                    11
+                  ]
+                },
+                {
+                  "text": "ਉਚਰੋਂ",
+                  "wordIndices": [
+                    12
+                  ]
+                }
+              ],
+              "sourceLanguage": "bra"
+            }
+          },
+          "originalInputHash": "440feb1fabcb44eb6396b36747ff5560326eac1db2c202929ed237485bad7963",
+          "inputHash": "45e61905b54ada202a0e8b3f2911645c95100661722232b3d6f06de5225894a8",
+          "baseFeaturesHash": "92e3f95fab258965582caa4bf300d583e40962fd85652f6c0b7c679957cdb82a",
+          "evidenceHash": "228c9bd278524ea2a71a72289f42a6043728104f8ac2441fe8b79a8b05d7ede9"
+        }
       }
     },
     "c3b16728": {
@@ -80667,7 +81258,124 @@
           "subjects": []
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "editorialTextRevision": {
+          "version": 1,
+          "priorLines": {
+            "line-018": {
+              "source": "ਮਿਤ੍ਰ ਘਨੇਰੇ ਕਰਿ ਥਕੀ ਮੇਰਾ ਦੁਖੁ ਕਾਟੈ ਕੋਇ",
+              "sourceLanguage": "pa",
+              "sourceWords": [
+                {
+                  "text": "ਮਿਤ੍ਰ",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ਘਨੇਰੇ",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "ਕਰਿ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ਥਕੀ",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "ਮੇਰਾ",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "ਦੁਖੁ",
+                  "wordIndices": [
+                    5
+                  ]
+                },
+                {
+                  "text": "ਕਾਟੈ",
+                  "wordIndices": [
+                    6
+                  ]
+                },
+                {
+                  "text": "ਕੋਇ",
+                  "wordIndices": [
+                    7
+                  ]
+                }
+              ],
+              "roman": "mitra ghanere kari thakī merā dukhu kāṭai koi",
+              "english": "{3:I grew weary }{2:making }{1:many }{0:friends, }{7:that someone }{6:might cut away }{4:my }{5:pain.}",
+              "words": [
+                {
+                  "roman": "mitra",
+                  "gloss": "friends; worldly companions",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "ghanere",
+                  "gloss": "many; numerous",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "kari",
+                  "gloss": "making; having made",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "thakī",
+                  "gloss": "I grew weary; I wore myself out",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "merā",
+                  "gloss": "my",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "dukhu",
+                  "gloss": "pain; suffering",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "kāṭai",
+                  "gloss": "might cut away; may remove",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "koi",
+                  "gloss": "someone; anyone",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "nameTable": false,
+              "grammarNote": "Thakī is feminine, continuing the soul-bride’s voice. Making many friends carries the expectation that someone might cut away her pain, explicitly explained in Darpan; retain that purpose reading and the concrete cutting image. Actual ghanere has dental n rather than the older retroflex spelling."
+            }
+          },
+          "originalInputHash": "fa8b1a651b00e31bcc53b095d7f48d90db54c504672a7cd116269d155011d9c5",
+          "inputHash": "b2f4518c58cf1820c65c2e38043fb956fcfc266081d323475cfab8f8c2e6fccb",
+          "baseFeaturesHash": "869abd92700a89871570b164a61616385b8b9e05b3ccacb18bd8fa531a014018",
+          "evidenceHash": "b4233dcf5358216c1788041326e814d683fecd8ec72d6d0ed598e47055057401"
+        }
       },
       "audio": {
         "inputHash": "79c57a10d9bc72cd28c86853ecd2db1905588cf4c9eea8d94e9dc1375cedf7d8",
@@ -86725,8 +87433,8 @@
             "Guru"
           ],
           "originalInputHash": "17591ce4c75be0457c2d6f5a8b2dd93cbe1011c07d40a1ba26b999564ca31208",
-          "inputHash": "3cf0c4a89aa67cb17c09fb1e385c2addd07de8f8566f9404524671f749a013ea",
-          "evidenceHash": "966d63ccbd6b9afcf7b0541ce4d4f3336b5c956c60c167c326c1f02956bd17f6"
+          "inputHash": "052eb21c6e5de66735274f6f433662a73e2c0b97b587ee87c6861124ad8d16e7",
+          "evidenceHash": "4ab9a62165e3296e6c31c60a3afa5e9f10ae43af89044d0a8df2e236d6c44ffb"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -86817,7 +87525,7 @@
             }
           },
           "originalInputHash": "17591ce4c75be0457c2d6f5a8b2dd93cbe1011c07d40a1ba26b999564ca31208",
-          "inputHash": "953ae1be475c8492309b7784e1506ee8afca7ba4802b93511b3a444ac87feee5",
+          "inputHash": "fe60a924ed0fafbfd7d599f6bb8038639452358c15f56fe7f3725c62242cafc4",
           "baseFeaturesHash": "594e098b0175835abada393cc840237f5c84154ccd05e25c80718927ac9f91d2",
           "evidenceHash": "c7363a5dc80c686d72046ecf13fc15aa673cdb179dd7b2153bce05a10f780608"
         }
@@ -87300,8 +88008,79 @@
             "Gurbāṇī"
           ],
           "originalInputHash": "ec672275086c66c39ec2bb578402a29dd0aed28a9e1b328b460e95e25ed5e376",
-          "inputHash": "216f38aafd7dc2b82b58d058e1ce3abcad1a415deeb91eebb43fca9bd4a86a2c",
-          "evidenceHash": "df6644e8dc80012d486cb96c73beaebd3c0f04cda24b97192a0cc652961b6dcd"
+          "inputHash": "a09c57e9c98fa126e8faf9bc08e413c7dbad0cbc614bde2e14e7be70c3920a94",
+          "evidenceHash": "79b7dc1caccfaf0101c5813fd97a7fb5e88c149fb8cfff4df0e3c2a3bac7bae4"
+        },
+        "editorialTextRevision": {
+          "version": 1,
+          "priorLines": {
+            "g024": {
+              "source": "ਜੋ ਪ੍ਰਭ ਕੈ ਮਨਿ ਭਾਈ",
+              "sourceLanguage": "pa",
+              "sourceWords": [
+                {
+                  "text": "ਜੋ",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ਪ੍ਰਭ",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "ਕੈ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ਮਨਿ",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "ਭਾਈ",
+                  "wordIndices": [
+                    4
+                  ]
+                }
+              ],
+              "roman": "jo prabh kai man bhāī",
+              "english": "{0:which }{4:pleases }{1:the }{2:Lord’s }{3:heart.}",
+              "words": [
+                {
+                  "roman": "jo",
+                  "gloss": "which"
+                },
+                {
+                  "roman": "prabh",
+                  "gloss": "the Lord"
+                },
+                {
+                  "roman": "kai",
+                  "gloss": "of; in the Lord’s"
+                },
+                {
+                  "roman": "man",
+                  "gloss": "mind; heart"
+                },
+                {
+                  "roman": "bhāī",
+                  "gloss": "pleases; is pleasing"
+                }
+              ],
+              "nameTable": false,
+              "grammarNote": "Proposed performed phrase of canonical l009 tokens5–9; adjacent actual phrases retain the connected prayer. Three practices are coordinated; the predicate is conditioned by pleasing the Lord, not an unqualified validation of ritual or ascetic display."
+            }
+          },
+          "originalInputHash": "ec672275086c66c39ec2bb578402a29dd0aed28a9e1b328b460e95e25ed5e376",
+          "inputHash": "a09c57e9c98fa126e8faf9bc08e413c7dbad0cbc614bde2e14e7be70c3920a94",
+          "baseFeaturesHash": "c3f57678cc1966fd04e43a60418e2838bdc8d3256ca48690455177653b809102",
+          "evidenceHash": "154b3eb45a10d4a68b32f330d99eee289c838f9dba56eaf044d20a63db09276d"
         }
       },
       "audio": {
@@ -87776,8 +88555,8 @@
             "Guru"
           ],
           "originalInputHash": "caeee49a6154ef441a35bec5a58c56d94d955e3d6d5dae8699851e1b670cab7b",
-          "inputHash": "98ad122e6b8c03e2007d61055045a74f1afd6e2e1f4c9c67d04239a76303f943",
-          "evidenceHash": "8caf3651d4c79211c9cdb439c95cd6ad74c7f5c6e40f6d416f92def2bfd7987a"
+          "inputHash": "c9d0c5f1c7afff651d9c4e79a3a1b347d0333e46f2ec6907d4dc50ef8926a351",
+          "evidenceHash": "e68220a90f13e70cf452ddb0125641633ca40a621aa6c81dedbd5bab0fcba23a"
         }
       },
       "audio": {

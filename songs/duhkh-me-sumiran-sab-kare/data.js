@@ -474,7 +474,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation",
+        "gloss": "name; here, the divine name of Hari",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -735,7 +735,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nām",
-        "gloss": "sacred invocation; devotional recitation",
+        "gloss": "name; here, the divine name of Hari",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -913,7 +913,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ved",
-        "gloss": "sacred knowledge texts",
+        "gloss": "the Vedas; sacred texts",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -3260,7 +3260,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "locana bharī le usāsā",
-    "english": "{0,1:With eyes brimming with tears, }{2:she draws }{3:deep sighs.}",
+    "english": "{0:With eyes }{1,2:brimming with tears, }she draws {3:deep sighs.}",
     "words": [
       {
         "roman": "locana",
@@ -3270,13 +3270,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bharī",
-        "gloss": "filled with tears; brimming",
+        "gloss": "with le: filled with tears; brimming",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "le",
-        "gloss": "drawing; taking",
+        "gloss": "completes bharīle: filled; brimming",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3288,7 +3288,7 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "locana bharī is a participial clause describing state; le is a conjunctive/present participle governing the direct object usāsā."
+    "grammarNote": "Read bharī le together as the adjective bharīle, filled, qualifying locana (eyes), as explained by Sahib Singh. The sighing action is supplied in English from usāsā (sighs); le is not separately translated as draws."
   },
   "line-041": {
     "source": "ਉਰ ਨ ਭੀਜੈ ਪਗ ਨਾ ਖਿਸੈ",

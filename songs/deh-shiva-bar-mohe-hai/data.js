@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gurbāṇī",
-    "Śakti"
+    "Śakti",
+    "Durgā"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=qykD63z-MIA",
   "searchAliases": [
@@ -343,7 +344,7 @@ window.SONG_LINES = {
   "l004": {
     "source": "ਅਰੁ ਸਿਖ ਹੋਂ ਅਪਨੇ ਹੀ ਮਨ ਕੌ ਇਹ ਲਾਲਚ ਹਉ ਗੁਨ ਤਉ ਉਚਰੋਂ",
     "roman": "Aru sikh hoṃ apane hī man kau ih lālac hau gun tau ucaroṃ",
-    "english": "{0:And }{2:may I }{1:teach }{3,4:my own }{5,6:mind: }{7,9:let this be }its {8:longing—}{12:may I utter }{11:your }{10:virtues.}",
+    "english": "{0:And }{2:may I }{1:teach }{3,4:my own }{5,6:mind }{7:this }{8:longing—}{9:that I }{12:may utter }{11:your }{10:virtues.}",
     "words": [
       {
         "roman": "Aru",
@@ -383,7 +384,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hau",
-        "gloss": "may be"
+        "gloss": "I; the speaker who longs to utter the divine virtues"
       },
       {
         "roman": "gun",

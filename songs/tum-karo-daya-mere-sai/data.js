@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gurbāṇī",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Tumh Karahu Daia Mere Sai",
@@ -1259,7 +1260,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo prabh kai man bhāī",
-    "english": "{0:which }{4:pleases }{1:the }{2:Lord’s }{3:heart.}",
+    "english": "{0:which }{4:pleases }{1:the Lord}{2:’s }{3:heart.}",
     "words": [
       {
         "roman": "jo",

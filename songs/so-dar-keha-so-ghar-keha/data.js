@@ -18,7 +18,10 @@ window.SONG_META = {
     "Gurbāṇī",
     "Nirguṇa",
     "Śiva",
-    "Śakti"
+    "Śakti",
+    "Brahmā",
+    "Indra",
+    "Yama"
   ],
   "searchAliases": [
     "So Dar Keha",

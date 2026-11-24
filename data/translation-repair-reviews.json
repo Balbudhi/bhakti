@@ -100140,6 +100140,1891 @@
           ]
         }
       ]
+    },
+    "deh-shiva-bar-mohe-hai": {
+      "reviewer": {
+        "kind": "assistant-source-review",
+        "reason": "Read every performed source line, word gloss and English in this song. Rechecked changed passages and retained original shuffle features against exact source lines. Earlier source-supported repairs are retained; no new audio assessment or provider claim."
+      },
+      "beforeLines": {
+        "l004": {
+          "source": "ਅਰੁ ਸਿਖ ਹੋਂ ਅਪਨੇ ਹੀ ਮਨ ਕੌ ਇਹ ਲਾਲਚ ਹਉ ਗੁਨ ਤਉ ਉਚਰੋਂ",
+          "roman": "Aru sikh hoṃ apane hī man kau ih lālac hau gun tau ucaroṃ",
+          "english": "{0:And }{2:may I }{1:teach }{3,4:my own }{5,6:mind: }{7,9:let this be }its {8:longing—}{12:may I utter }{11:your }{10:virtues.}",
+          "words": [
+            {
+              "roman": "Aru",
+              "gloss": "and"
+            },
+            {
+              "roman": "sikh",
+              "gloss": "teach; instruct"
+            },
+            {
+              "roman": "hoṃ",
+              "gloss": "I"
+            },
+            {
+              "roman": "apane",
+              "gloss": "my own"
+            },
+            {
+              "roman": "hī",
+              "gloss": "very; emphatic"
+            },
+            {
+              "roman": "man",
+              "gloss": "mind"
+            },
+            {
+              "roman": "kau",
+              "gloss": "to; object marker"
+            },
+            {
+              "roman": "ih",
+              "gloss": "this"
+            },
+            {
+              "roman": "lālac",
+              "gloss": "longing"
+            },
+            {
+              "roman": "hau",
+              "gloss": "may be"
+            },
+            {
+              "roman": "gun",
+              "gloss": "virtues"
+            },
+            {
+              "roman": "tau",
+              "gloss": "your"
+            },
+            {
+              "roman": "ucaroṃ",
+              "gloss": "may I utter"
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "ਅਰੁ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਸਿਖ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਹੋਂ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਅਪਨੇ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਹੀ",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "ਮਨ",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "ਕੌ",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "ਇਹ",
+              "wordIndices": [
+                7
+              ]
+            },
+            {
+              "text": "ਲਾਲਚ",
+              "wordIndices": [
+                8
+              ]
+            },
+            {
+              "text": "ਹਉ",
+              "wordIndices": [
+                9
+              ]
+            },
+            {
+              "text": "ਗੁਨ",
+              "wordIndices": [
+                10
+              ]
+            },
+            {
+              "text": "ਤਉ",
+              "wordIndices": [
+                11
+              ]
+            },
+            {
+              "text": "ਉਚਰੋਂ",
+              "wordIndices": [
+                12
+              ]
+            }
+          ],
+          "sourceLanguage": "bra"
+        }
+      },
+      "afterLines": {
+        "l004": {
+          "source": "ਅਰੁ ਸਿਖ ਹੋਂ ਅਪਨੇ ਹੀ ਮਨ ਕੌ ਇਹ ਲਾਲਚ ਹਉ ਗੁਨ ਤਉ ਉਚਰੋਂ",
+          "roman": "Aru sikh hoṃ apane hī man kau ih lālac hau gun tau ucaroṃ",
+          "english": "{0:And }{2:may I }{1:teach }{3,4:my own }{5,6:mind }{7:this }{8:longing—}{9:that I }{12:may utter }{11:your }{10:virtues.}",
+          "words": [
+            {
+              "roman": "Aru",
+              "gloss": "and"
+            },
+            {
+              "roman": "sikh",
+              "gloss": "teach; instruct"
+            },
+            {
+              "roman": "hoṃ",
+              "gloss": "I"
+            },
+            {
+              "roman": "apane",
+              "gloss": "my own"
+            },
+            {
+              "roman": "hī",
+              "gloss": "very; emphatic"
+            },
+            {
+              "roman": "man",
+              "gloss": "mind"
+            },
+            {
+              "roman": "kau",
+              "gloss": "to; object marker"
+            },
+            {
+              "roman": "ih",
+              "gloss": "this"
+            },
+            {
+              "roman": "lālac",
+              "gloss": "longing"
+            },
+            {
+              "roman": "hau",
+              "gloss": "I; the speaker who longs to utter the divine virtues"
+            },
+            {
+              "roman": "gun",
+              "gloss": "virtues"
+            },
+            {
+              "roman": "tau",
+              "gloss": "your"
+            },
+            {
+              "roman": "ucaroṃ",
+              "gloss": "may I utter"
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "ਅਰੁ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਸਿਖ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਹੋਂ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਅਪਨੇ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਹੀ",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "ਮਨ",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "ਕੌ",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "ਇਹ",
+              "wordIndices": [
+                7
+              ]
+            },
+            {
+              "text": "ਲਾਲਚ",
+              "wordIndices": [
+                8
+              ]
+            },
+            {
+              "text": "ਹਉ",
+              "wordIndices": [
+                9
+              ]
+            },
+            {
+              "text": "ਗੁਨ",
+              "wordIndices": [
+                10
+              ]
+            },
+            {
+              "text": "ਤਉ",
+              "wordIndices": [
+                11
+              ]
+            },
+            {
+              "text": "ਉਚਰੋਂ",
+              "wordIndices": [
+                12
+              ]
+            }
+          ],
+          "sourceLanguage": "bra"
+        }
+      },
+      "lineEvidence": {
+        "l004": "Current review: ਹਉ is first-person I, not may be; preserve the same prayer while fixing pronoun gloss and English link."
+      },
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.ethical_conduct",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l002"
+          ],
+          "reason": "Prayer never to turn aside from good deeds remains unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.petition",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l001",
+            "l002",
+            "l004"
+          ],
+          "reason": "The same request for a boon and desire to utter virtues remains; the correction identifies I as speaker."
+        },
+        {
+          "facet": "actions",
+          "id": "action.praise",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l004"
+          ],
+          "reason": "Uttering the addressees virtues still supports praise after correcting hau."
+        },
+        {
+          "facet": "subjects",
+          "id": "subject.shakti",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "l001",
+            "l002"
+          ],
+          "reason": "Feminine Śivā in the Caṇḍī context is the invoked power/goddess; corrected pronoun does not alter this.",
+          "role": "worship_focus"
+        }
+      ]
+    },
+    "tum-karo-daya-mere-sai": {
+      "reviewer": {
+        "kind": "assistant-source-review",
+        "reason": "Read every performed source line, word gloss and English in this song. Rechecked changed passages and retained original shuffle features against exact source lines. Earlier source-supported repairs are retained; no new audio assessment or provider claim."
+      },
+      "beforeLines": {
+        "g024": {
+          "source": "ਜੋ ਪ੍ਰਭ ਕੈ ਮਨਿ ਭਾਈ",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਜੋ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਪ੍ਰਭ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਕੈ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਮਨਿ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਭਾਈ",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "roman": "jo prabh kai man bhāī",
+          "english": "{0:which }{4:pleases }{1:the }{2:Lord’s }{3:heart.}",
+          "words": [
+            {
+              "roman": "jo",
+              "gloss": "which"
+            },
+            {
+              "roman": "prabh",
+              "gloss": "the Lord"
+            },
+            {
+              "roman": "kai",
+              "gloss": "of; in the Lord’s"
+            },
+            {
+              "roman": "man",
+              "gloss": "mind; heart"
+            },
+            {
+              "roman": "bhāī",
+              "gloss": "pleases; is pleasing"
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Proposed performed phrase of canonical l009 tokens5–9; adjacent actual phrases retain the connected prayer. Three practices are coordinated; the predicate is conditioned by pleasing the Lord, not an unqualified validation of ritual or ascetic display."
+        }
+      },
+      "afterLines": {
+        "g024": {
+          "source": "ਜੋ ਪ੍ਰਭ ਕੈ ਮਨਿ ਭਾਈ",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਜੋ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਪ੍ਰਭ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਕੈ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਮਨਿ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਭਾਈ",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "roman": "jo prabh kai man bhāī",
+          "english": "{0:which }{4:pleases }{1:the Lord}{2:’s }{3:heart.}",
+          "words": [
+            {
+              "roman": "jo",
+              "gloss": "which"
+            },
+            {
+              "roman": "prabh",
+              "gloss": "the Lord"
+            },
+            {
+              "roman": "kai",
+              "gloss": "of; in the Lord’s"
+            },
+            {
+              "roman": "man",
+              "gloss": "mind; heart"
+            },
+            {
+              "roman": "bhāī",
+              "gloss": "pleases; is pleasing"
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Proposed performed phrase of canonical l009 tokens5–9; adjacent actual phrases retain the connected prayer. Three practices are coordinated; the predicate is conditioned by pleasing the Lord, not an unqualified validation of ritual or ascetic display."
+        }
+      },
+      "lineEvidence": {
+        "g024": "Current review: prabh means Lord; kai supplies possessive. Previously Lord was linked to kai and prabh to only the article. Visible English unchanged."
+      },
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.compassion",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g001",
+            "g013",
+            "g016"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.detachment",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g008",
+            "g010"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.divine_presence",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g011",
+            "g012"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.grace",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g008",
+            "g013"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.name_power",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g006",
+            "g025"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.service",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g004"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.petition",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g001",
+            "g002"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.praise",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g005",
+            "g013"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        },
+        {
+          "facet": "actions",
+          "id": "action.remembrance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "g003",
+            "g006",
+            "g025"
+          ],
+          "reason": "Direct performed source support; correction only restores word-to-English alignment and leaves rendered English and interpretation unchanged."
+        }
+      ]
+    },
+    "satgur-kai-bhane-chal": {
+      "reviewer": {
+        "kind": "assistant-source-review",
+        "reason": "Read every performed source line, word gloss and English in this song. Rechecked changed passages and retained original shuffle features against exact source lines. Earlier source-supported repairs are retained; no new audio assessment or provider claim."
+      },
+      "beforeLines": {
+        "line-018": {
+          "source": "ਮਿਤ੍ਰ ਘਨੇਰੇ ਕਰਿ ਥਕੀ ਮੇਰਾ ਦੁਖੁ ਕਾਟੈ ਕੋਇ",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਮਿਤ੍ਰ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਘਨੇਰੇ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਕਰਿ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਥਕੀ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਮੇਰਾ",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "ਦੁਖੁ",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "ਕਾਟੈ",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "ਕੋਇ",
+              "wordIndices": [
+                7
+              ]
+            }
+          ],
+          "roman": "mitra ghanere kari thakī merā dukhu kāṭai koi",
+          "english": "{3:I grew weary }{2:making }{1:many }{0:friends, }{7:that someone }{6:might cut away }{4:my }{5:pain.}",
+          "words": [
+            {
+              "roman": "mitra",
+              "gloss": "friends; worldly companions",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ghanere",
+              "gloss": "many; numerous",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kari",
+              "gloss": "making; having made",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "thakī",
+              "gloss": "I grew weary; I wore myself out",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "merā",
+              "gloss": "my",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dukhu",
+              "gloss": "pain; suffering",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kāṭai",
+              "gloss": "might cut away; may remove",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "koi",
+              "gloss": "someone; anyone",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Thakī is feminine, continuing the soul-bride’s voice. Making many friends carries the expectation that someone might cut away her pain, explicitly explained in Darpan; retain that purpose reading and the concrete cutting image. Actual ghanere has dental n rather than the older retroflex spelling."
+        }
+      },
+      "afterLines": {
+        "line-018": {
+          "source": "ਮਿਤ੍ਰ ਘਨੇਰੇ ਕਰਿ ਥਕੀ ਮੇਰਾ ਦੁਖੁ ਕਾਟੈ ਕੋਇ",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਮਿਤ੍ਰ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਘਨੇਰੇ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਕਰਿ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਥਕੀ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਮੇਰਾ",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "ਦੁਖੁ",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "ਕਾਟੈ",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "ਕੋਇ",
+              "wordIndices": [
+                7
+              ]
+            }
+          ],
+          "roman": "mitra ghanere kari thakī merā dukhu kāṭai koi",
+          "english": "{3:I grew weary }{2:making }{1:many }{0:friends, }hoping {7:someone }{6:might cut away }{4:my }{5:pain.}",
+          "words": [
+            {
+              "roman": "mitra",
+              "gloss": "friends; worldly companions",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ghanere",
+              "gloss": "many; numerous",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kari",
+              "gloss": "making; having made",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "thakī",
+              "gloss": "I grew weary; I wore myself out",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "merā",
+              "gloss": "my",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "dukhu",
+              "gloss": "pain; suffering",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kāṭai",
+              "gloss": "might cut away; may remove",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "koi",
+              "gloss": "someone; anyone",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Thakī is feminine, continuing the soul-bride’s voice. Making many friends carries the expectation that someone might cut away her pain, explicitly explained in Darpan; retain that purpose reading and the concrete cutting image. Actual ghanere has dental n rather than the older retroflex spelling."
+        }
+      },
+      "lineEvidence": {
+        "line-018": "Current review: Make the implicit purpose/hope intelligible in English; Darpan explains the expectation that a friend would remove the pain. No changed interpretation."
+      },
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.beloved_relationship",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-004",
+            "line-008",
+            "line-020"
+          ],
+          "reason": "Virtuous/unvirtuous bride and Beloved meeting remain explicit."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.detachment",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-004",
+            "line-007",
+            "line-018"
+          ],
+          "reason": "Abandoning craving/vices and turning from unreliable worldly friends remain unchanged."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.guidance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-001",
+            "line-006",
+            "line-017",
+            "line-022"
+          ],
+          "reason": "Walking in Guru will and Guru-guided union remain explicit."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.meeting",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-012",
+            "line-017",
+            "line-020"
+          ],
+          "reason": "Meeting the Lord/Beloved through Guru Word remains explicit."
+        }
+      ]
+    },
+    "gagan-mein-thaal": {
+      "reviewer": {
+        "kind": "assistant-source-review",
+        "reason": "Read every performed source line, word gloss and English in this song. Rechecked changed passages and retained original shuffle features against exact source lines. Earlier source-supported repairs are retained; no new audio assessment or provider claim."
+      },
+      "beforeLines": {
+        "dhoop-malianlo": {
+          "source": "ਧੂਪੁ ਮਲਆਨਲੋ ਪਵਣੁ ਚਵਰੋ ਕਰੇ ਸਗਲ ਬਨਰਾਇ ਫੂਲੰਤ ਜੋਤੀ ॥",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਧੂਪੁ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਮਲਆਨਲੋ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਪਵਣੁ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਚਵਰੋ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਕਰੇ",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "ਸਗਲ",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "ਬਨਰਾਇ",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "ਫੂਲੰਤ",
+              "wordIndices": [
+                7
+              ]
+            },
+            {
+              "text": "ਜੋਤੀ",
+              "wordIndices": [
+                8
+              ]
+            }
+          ],
+          "roman": "dhūpu malaānalo pavaṇu cavaro kare sagala banarāi phūlanta jotī ॥",
+          "english": "{1:The sandalwood breeze }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:bears flowers }{8:for the divine Light.}",
+          "words": [
+            {
+              "roman": "dhūpu",
+              "gloss": "incense",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "malaānalo",
+              "gloss": "sandalwood breeze",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pavaṇu",
+              "gloss": "wind",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "cavaro",
+              "gloss": "ceremonial fly-whisk",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kare",
+              "gloss": "waves",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sagala",
+              "gloss": "all",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "banarāi",
+              "gloss": "vegetation",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "phūlanta",
+              "gloss": "bears flowers",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jotī",
+              "gloss": "the divine Light",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Malaānalo names the breeze from the sandalwood-bearing Malaya mountains. Pavaṇu is the subject of kare, with cavaro as its object. Phūlanta describes the vegetation bearing flowers; jotī names the divine Light for whom those flowers are offered."
+        }
+      },
+      "afterLines": {
+        "dhoop-malianlo": {
+          "source": "ਧੂਪੁ ਮਲਆਨਲੋ ਪਵਣੁ ਚਵਰੋ ਕਰੇ ਸਗਲ ਬਨਰਾਇ ਫੂਲੰਤ ਜੋਤੀ ॥",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਧੂਪੁ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਮਲਆਨਲੋ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਪਵਣੁ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਚਵਰੋ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਕਰੇ",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "ਸਗਲ",
+              "wordIndices": [
+                5
+              ]
+            },
+            {
+              "text": "ਬਨਰਾਇ",
+              "wordIndices": [
+                6
+              ]
+            },
+            {
+              "text": "ਫੂਲੰਤ",
+              "wordIndices": [
+                7
+              ]
+            },
+            {
+              "text": "ਜੋਤੀ",
+              "wordIndices": [
+                8
+              ]
+            }
+          ],
+          "roman": "dhūpu malaānalo pavaṇu cavaro kare sagala banarāi phūlanta jotī ॥",
+          "english": "{1:The breeze from Malaya }{0:is incense, }{2:the wind }{4:waves }{3:the fly-whisk, }{5:and all }{6:vegetation }{7:bears flowers }{8:for the divine Light.}",
+          "words": [
+            {
+              "roman": "dhūpu",
+              "gloss": "incense",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "malaānalo",
+              "gloss": "sandalwood-scented breeze from Mount Malaya",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pavaṇu",
+              "gloss": "wind",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "cavaro",
+              "gloss": "ceremonial fly-whisk",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kare",
+              "gloss": "waves",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "sagala",
+              "gloss": "all",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "banarāi",
+              "gloss": "vegetation",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "phūlanta",
+              "gloss": "bears flowers",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "jotī",
+              "gloss": "the divine Light",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Malaānalo names the breeze from the sandalwood-bearing Malaya mountains. Pavaṇu is the subject of kare, with cavaro as its object. Phūlanta describes the vegetation bearing flowers; jotī names the divine Light for whom those flowers are offered."
+        }
+      },
+      "lineEvidence": {
+        "dhoop-malianlo": "Current review: Restore the concrete Malaya reference embedded in malay-anila rather than reducing it to a generic sandalwood breeze."
+      },
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.grace",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kirpa-jal-dehi"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.guidance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "gur-saakhi-jot"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.longing",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "har-charan-kamal",
+            "andino-mohe"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.name_power",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "hoi-ja-te",
+            "terai-naam-vaasa"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "actions",
+          "id": "action.petition",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kirpa-jal-dehi"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        }
+      ]
+    },
+    "duhkh-me-sumiran-sab-kare": {
+      "reviewer": {
+        "kind": "assistant-source-review",
+        "reason": "Read every performed source line, word gloss and English in this song. Rechecked changed passages and retained original shuffle features against exact source lines. Earlier source-supported repairs are retained; no new audio assessment or provider claim."
+      },
+      "beforeLines": {
+        "teri-beeti-umar": {
+          "source": "तेरी बीती उमर हरि नाम बिना",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "तेरी",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "बीती",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "उमर",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "हरि",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "नाम",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "बिना",
+              "wordIndices": [
+                5
+              ]
+            }
+          ],
+          "roman": "terī bītī umar hari nām binā",
+          "english": "{0:your }{2:lifespan }{1:has passed }{5:without }{3,4:the name of Hari.}",
+          "words": [
+            {
+              "roman": "terī",
+              "gloss": "your",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bītī",
+              "gloss": "passed; spent; elapsed",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "umar",
+              "gloss": "life; lifetime; lifespan",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hari",
+              "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nām",
+              "gloss": "sacred invocation; devotional recitation",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "binā",
+              "gloss": "without",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "bītī is a feminine past participle serving as the finite predicate agreeing with the feminine noun umar."
+        },
+        "taise-praani": {
+          "source": "तैसे प्राणी हरि नाम बिना",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "तैसे",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "प्राणी",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "हरि",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "नाम",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "बिना",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "roman": "taise prāṇī hari nām binā",
+          "english": "{0:so is }{1:a living being }{4:without }{2,3:the name of Hari.}",
+          "words": [
+            {
+              "roman": "taise",
+              "gloss": "so; in that same way",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prāṇī",
+              "gloss": "a living being; a mortal creature",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hari",
+              "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nām",
+              "gloss": "sacred invocation; devotional recitation",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "binā",
+              "gloss": "without",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "taise correlates with jaise. The predicate adjective describing emptiness/destitution is understood from hīnā in the prior line."
+        },
+        "jaise-pandit": {
+          "source": "जैसे पण्डित वेद विहीना",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "जैसे",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "पण्डित",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "वेद",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "विहीना",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "roman": "jaise paṇḍit ved vihīnā",
+          "english": "{0:just as }{1:a scholar }{3:is bereft }{2:of the Vedas,}",
+          "words": [
+            {
+              "roman": "jaise",
+              "gloss": "just as; like",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "paṇḍit",
+              "gloss": "a scholar; learned pandit",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ved",
+              "gloss": "sacred knowledge texts",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vihīnā",
+              "gloss": "bereft; devoid; lacking",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "ved vihīnā is an adjectival compound/phrase (from Sanskrit veda-vihīna) serving as a predicate complement qualifying paṇḍit."
+        }
+      },
+      "afterLines": {
+        "teri-beeti-umar": {
+          "source": "तेरी बीती उमर हरि नाम बिना",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "तेरी",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "बीती",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "उमर",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "हरि",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "नाम",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "बिना",
+              "wordIndices": [
+                5
+              ]
+            }
+          ],
+          "roman": "terī bītī umar hari nām binā",
+          "english": "{0:your }{2:lifespan }{1:has passed }{5:without }{3,4:the name of Hari.}",
+          "words": [
+            {
+              "roman": "terī",
+              "gloss": "your",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bītī",
+              "gloss": "passed; spent; elapsed",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "umar",
+              "gloss": "life; lifetime; lifespan",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hari",
+              "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nām",
+              "gloss": "name; here, the divine name of Hari",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "binā",
+              "gloss": "without",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "bītī is a feminine past participle serving as the finite predicate agreeing with the feminine noun umar."
+        },
+        "taise-praani": {
+          "source": "तैसे प्राणी हरि नाम बिना",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "तैसे",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "प्राणी",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "हरि",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "नाम",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "बिना",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "roman": "taise prāṇī hari nām binā",
+          "english": "{0:so is }{1:a living being }{4:without }{2,3:the name of Hari.}",
+          "words": [
+            {
+              "roman": "taise",
+              "gloss": "so; in that same way",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prāṇī",
+              "gloss": "a living being; a mortal creature",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "hari",
+              "gloss": "of Hari, a name of Viṣṇu/Kṛṣṇa, the Lord who removes evil and sin",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nām",
+              "gloss": "name; here, the divine name of Hari",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "binā",
+              "gloss": "without",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "taise correlates with jaise. The predicate adjective describing emptiness/destitution is understood from hīnā in the prior line."
+        },
+        "jaise-pandit": {
+          "source": "जैसे पण्डित वेद विहीना",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "जैसे",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "पण्डित",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "वेद",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "विहीना",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "roman": "jaise paṇḍit ved vihīnā",
+          "english": "{0:just as }{1:a scholar }{3:is bereft }{2:of the Vedas,}",
+          "words": [
+            {
+              "roman": "jaise",
+              "gloss": "just as; like",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "paṇḍit",
+              "gloss": "a scholar; learned pandit",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ved",
+              "gloss": "the Vedas; sacred texts",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "vihīnā",
+              "gloss": "bereft; devoid; lacking",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "ved vihīnā is an adjectival compound/phrase (from Sanskrit veda-vihīna) serving as a predicate complement qualifying paṇḍit."
+        }
+      },
+      "lineEvidence": {
+        "teri-beeti-umar": "Current review: Noun is name in these privative phrases; existing English already says name.",
+        "taise-praani": "Current review: Noun is name in these privative phrases; existing English already says name.",
+        "jaise-pandit": "Current review: Restore explicit proper textual identity already present in English."
+      },
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.detachment",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kaam-krodh-mad",
+            "koi-nahi-jag-mein"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.ethical_conduct",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "kaam-krodh-mad"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.impermanence",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "teri-beeti-umar"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.name_power",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "teri-beeti-umar",
+            "taise-praani"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "actions",
+          "id": "action.remembrance",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "sumiran-kar-le",
+            "dukh-mein-sumiran"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference."
+        },
+        {
+          "facet": "subjects",
+          "id": "subject.vishnu",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "teri-beeti-umar",
+            "taise-praani"
+          ],
+          "reason": "Direct performed source still supports this feature; localized lexical clarification does not alter the passage action, theme or named Hari reference.",
+          "role": "worship_focus"
+        }
+      ]
+    },
+    "mera-man-lochai": {
+      "reviewer": {
+        "kind": "assistant-source-review",
+        "reason": "Read full song source/glosses/English, compared explicit Sahib Singh word meaning at SGGS337, and independently checked the proposed lexical repair and retained semantic features."
+      },
+      "beforeLines": {
+        "line-040": {
+          "source": "ਲੋਚਨ ਭਰੀ ਲੇ ਉਸਾਸਾ ॥",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਲੋਚਨ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਭਰੀ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਲੇ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਉਸਾਸਾ",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "roman": "locana bharī le usāsā",
+          "english": "{0,1:With eyes brimming with tears, }{2:she draws }{3:deep sighs.}",
+          "words": [
+            {
+              "roman": "locana",
+              "gloss": "eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bharī",
+              "gloss": "filled with tears; brimming",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "le",
+              "gloss": "drawing; taking",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "usāsā",
+              "gloss": "deep sighs; heavy breaths",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "locana bharī is a participial clause describing state; le is a conjunctive/present participle governing the direct object usāsā."
+        }
+      },
+      "afterLines": {
+        "line-040": {
+          "source": "ਲੋਚਨ ਭਰੀ ਲੇ ਉਸਾਸਾ ॥",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਲੋਚਨ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਭਰੀ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਲੇ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਉਸਾਸਾ",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "roman": "locana bharī le usāsā",
+          "english": "{0:With eyes }{1,2:brimming with tears, }she draws {3:deep sighs.}",
+          "words": [
+            {
+              "roman": "locana",
+              "gloss": "eyes",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bharī",
+              "gloss": "with le: filled with tears; brimming",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "le",
+              "gloss": "completes bharīle: filled; brimming",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "usāsā",
+              "gloss": "deep sighs; heavy breaths",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Read bharī le together as the adjective bharīle, filled, qualifying locana (eyes), as explained by Sahib Singh. The sighing action is supplied in English from usāsā (sighs); le is not separately translated as draws."
+        }
+      },
+      "lineEvidence": {
+        "line-040": "Sahib Singh on SGGS 337 explicitly glosses ਭਰੀਲੇ as filled with tears. Treat bharī+le jointly; remove false separate le=draws gloss, correct English word links and grammar note. Whole sentence meaning retained."
+      },
+      "featureDispositions": [
+        {
+          "facet": "themes",
+          "id": "theme.beloved_relationship",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-009",
+            "line-015",
+            "line-039"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.longing",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-000",
+            "line-003",
+            "line-014",
+            "line-039",
+            "line-040",
+            "line-043"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.meeting",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-019",
+            "line-020",
+            "line-045",
+            "line-046"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "themes",
+          "id": "theme.service",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-021",
+            "line-022"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "actions",
+          "id": "action.offering",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-004",
+            "line-010",
+            "line-029"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning."
+        },
+        {
+          "facet": "subjects",
+          "id": "subject.guru",
+          "factor": 1,
+          "disposition": "retain",
+          "sourceLineIds": [
+            "line-000",
+            "line-005",
+            "line-011",
+            "line-017"
+          ],
+          "reason": "The full performed passage still supports this feature. Correcting bharīle segmentation and word linkage retains the same tears/sighs sentence meaning.",
+          "role": "worship_focus"
+        }
+      ]
     }
   }
 }

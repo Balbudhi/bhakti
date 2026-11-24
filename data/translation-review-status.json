@@ -393,183 +393,197 @@
       "status": "screened",
       "readerSha256": "02fe2bc050bc7eab36c2eeb91f3ed7d8631ed0f8c1e9a72586eaba94221b1da4",
       "definitionCount": 25,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "3c0afb7830f014314563292ee3e8af036d68fe35d1bd9d7a46e6bdbf5dd6c70e",
         "definitionCount": 25,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "sabh-gobind-hai": {
       "status": "screened",
       "readerSha256": "cb99072bfabd0bc953b9e49983eb051c2f77a9a5bdf11a2d67e97ddaef0a5f63",
       "definitionCount": 21,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "cb99072bfabd0bc953b9e49983eb051c2f77a9a5bdf11a2d67e97ddaef0a5f63",
         "definitionCount": 21,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "gur-satgur-ka-jo-sikh-akhaye": {
       "status": "screened",
       "readerSha256": "3d67a46a1cf9b60d4fbdfdd96fa68e52977f173e3c2cd4ec0a71b7993079a49c",
       "definitionCount": 14,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "3d67a46a1cf9b60d4fbdfdd96fa68e52977f173e3c2cd4ec0a71b7993079a49c",
         "definitionCount": 14,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "jin-prem-kiyo": {
       "status": "screened",
       "readerSha256": "3e6eebc48a0b7ce98ba336f6ce5b2267b0c6fb1bdb84435318b20f8c281c051b",
       "definitionCount": 11,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "3e6eebc48a0b7ce98ba336f6ce5b2267b0c6fb1bdb84435318b20f8c281c051b",
         "definitionCount": 11,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "koee-aan-milavai-mera-pritam-pyara": {
       "status": "screened",
       "readerSha256": "3bff37ec7fa513bd4fcbe5b98c1db37b49e0575fdac06e4165c9981a0bcb2f3f",
       "definitionCount": 10,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "3bff37ec7fa513bd4fcbe5b98c1db37b49e0575fdac06e4165c9981a0bcb2f3f",
         "definitionCount": 10,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "mittar-pyare-nu": {
       "status": "screened",
       "readerSha256": "8b5f00339d87146dd4aa9662e121e960248f6324f52c391d0a4f5d2aba6c4723",
       "definitionCount": 6,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "8b5f00339d87146dd4aa9662e121e960248f6324f52c391d0a4f5d2aba6c4723",
         "definitionCount": 6,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "tu-thakur-tum-peh-ardas": {
       "status": "screened",
       "readerSha256": "aebaf2756638b9b7693b57fab4f08d12d422afcc6e14a2ab4adb39cab6a23881",
       "definitionCount": 11,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "aebaf2756638b9b7693b57fab4f08d12d422afcc6e14a2ab4adb39cab6a23881",
         "definitionCount": 11,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "so-satgur-pyara-mere-naal-hai": {
       "status": "screened",
       "readerSha256": "56678dfbd553c213c06a86a0684cdb2c5d7afe1f20b1118d22e29909866bc0d2",
       "definitionCount": 9,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "56678dfbd553c213c06a86a0684cdb2c5d7afe1f20b1118d22e29909866bc0d2",
         "definitionCount": 9,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "tera-kiya-meetha-laage": {
       "status": "screened",
       "readerSha256": "c475ddc2450fa795336fcccdf7f874adba5833b4ffcd8329a27dbb6e03e444e1",
       "definitionCount": 8,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "c475ddc2450fa795336fcccdf7f874adba5833b4ffcd8329a27dbb6e03e444e1",
         "definitionCount": 8,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "gagan-mein-thaal": {
       "status": "screened",
-      "readerSha256": "e785dab718e381d17a9fc2b2103732acfaf5ddfabe9f27db047e48b04bacda1b",
+      "readerSha256": "925124f5fec0e03801d69684c651c7a5cb6a3e030c155be5b405ee3bb06df2b1",
       "definitionCount": 8,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "e785dab718e381d17a9fc2b2103732acfaf5ddfabe9f27db047e48b04bacda1b",
         "definitionCount": 8,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "jo-nar-dukh-mein-dukh-nahin-jaane": {
       "status": "screened",
       "readerSha256": "db53355804a82d29398d229ed4c9fc41b3240f45591db974b89d5faa8c2d4f34",
       "definitionCount": 30,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "f52c46e2e4adcf4ac6568fc3cdea318c92c341d2fe658cf18adbefc98c32f1b0",
         "definitionCount": 30,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "mera-man-lochai": {
       "status": "screened",
-      "readerSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
+      "readerSha256": "7cb10ea11a6e3368d9487ce7243e9ecdfff268397bac04602692ddb6b2b14521",
       "definitionCount": 48,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
         "definitionCount": 48,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "so-dar-keha-so-ghar-keha": {
       "status": "screened",
-      "readerSha256": "9ffe919b43df5acf31dac9adfac25f3aa0320c2bf30fec98a345ab1995128b39",
+      "readerSha256": "d42219757694e6a5a5d9e9103c71a177e37bf071afcb5e8593abccead934a23c",
       "definitionCount": 41,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "9ffe919b43df5acf31dac9adfac25f3aa0320c2bf30fec98a345ab1995128b39",
         "definitionCount": 41,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "har-jiyo-kirpa-karo": {
       "status": "screened",
       "readerSha256": "bc90a02e0c4206863c1ad601b7a41d6a99c5cee089732c704f05be44281802fa",
       "definitionCount": 12,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "bc90a02e0c4206863c1ad601b7a41d6a99c5cee089732c704f05be44281802fa",
         "definitionCount": 12,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "anuraniya-thokada": {
       "status": "screened",
@@ -2168,16 +2182,17 @@
     },
     "benti-chaupai": {
       "status": "screened",
-      "readerSha256": "475f0009185afec2f1f85c00dbd610c312bc695aa2d4b10e37bec59f945f151b",
+      "readerSha256": "38feab1651b19e2177c3be3855d19418491406322871c4cad79d5fcd9fbb1d7a",
       "definitionCount": 101,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "678db02b4568fa3ad49f2f0b16444baa1612b3e2114ec71cd5a442daa64fdbaa",
         "definitionCount": 101,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "arunachala-akshara-mana-malai": {
       "status": "owner_protected",
@@ -3252,16 +3267,17 @@
     },
     "duhkh-me-sumiran-sab-kare": {
       "status": "screened",
-      "readerSha256": "693c2d1a77180934e6ab637ccda2127c3c645b52da7a63de0b6f49df7cd64ff2",
+      "readerSha256": "c2c9dd70e39320bf88f0b933826a347c3f505758467d81766270b24915950d58",
       "definitionCount": 15,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "693c2d1a77180934e6ab637ccda2127c3c645b52da7a63de0b6f49df7cd64ff2",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "sadguru-mujhko-alag-na-kariyo": {
       "status": "screened",
@@ -3812,14 +3828,15 @@
       "status": "screened",
       "readerSha256": "a2316d685822463d307773c62a3ebd029ea8542bc079201f31667970838bb1b1",
       "definitionCount": 20,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "a2316d685822463d307773c62a3ebd029ea8542bc079201f31667970838bb1b1",
         "definitionCount": 20,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "rudrashtakam-sharma-bandhu": {
       "status": "screened",
@@ -3933,14 +3950,15 @@
       "status": "screened",
       "readerSha256": "c1f639cf1f5842bf7352abefbffe40b96528c4e31f2daad3846aa350b3c9912f",
       "definitionCount": 52,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "8c58772b92503a23cc514304e709e6fa4eaff9ccb1f4f8175f3fc3511720007d",
         "definitionCount": 52,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "kanakadhara-stotram": {
       "status": "screened",
@@ -3959,16 +3977,17 @@
     },
     "deh-shiva-bar-mohe-hai": {
       "status": "screened",
-      "readerSha256": "04a6be838366cb8293d3d6f88a1e4e7da2ad58d5d34303539f63171ee59c1dfd",
+      "readerSha256": "691966b7c8c3137aa6eaa513d92cffda786fc02226ad58f616b04766ff190c3a",
       "definitionCount": 6,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "04a6be838366cb8293d3d6f88a1e4e7da2ad58d5d34303539f63171ee59c1dfd",
         "definitionCount": 6,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "brahmam-okkate": {
       "status": "screened",
@@ -4106,16 +4125,17 @@
     },
     "satgur-kai-bhane-chal": {
       "status": "screened",
-      "readerSha256": "60b7c61bc8949a0f5117003c7925fc3c19d187a50aa94917aeb5277b4d24056c",
+      "readerSha256": "7de31751464028d6d71179a4f85e39c5fbbef960c4f59a83a0c5483f336f2768",
       "definitionCount": 21,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "60b7c61bc8949a0f5117003c7925fc3c19d187a50aa94917aeb5277b4d24056c",
         "definitionCount": 21,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "aane-banditamma": {
       "status": "screened",
@@ -4654,14 +4674,15 @@
       "status": "screened",
       "readerSha256": "07d76b277dfea179d091919751689286e2f4d2b029bee0f2fca3c5c9cab1ea7c",
       "definitionCount": 9,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "ffa69b08e25892ed6ddcc62261c689bc21d5762ac1d8b280da4419b1b66438b2",
         "definitionCount": 9,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "rajas-sukumar": {
       "status": "screened",
@@ -4758,14 +4779,15 @@
       "status": "screened",
       "readerSha256": "de56515dce43b435b5c606f700c6a10aa44294e5070c57df52d9103e40c6a685",
       "definitionCount": 13,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "0b045dafc7c81fd5f23bb3dfa4786da661299dbd269e16314358a2393b33facf",
         "definitionCount": 13,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "vaishnavaghari-sarvakal": {
       "status": "screened",
@@ -4797,27 +4819,29 @@
       "status": "screened",
       "readerSha256": "372090ad743cba47a07672506a28d40ed16650b4943ecac4fa8180243dbed858",
       "definitionCount": 3,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "372090ad743cba47a07672506a28d40ed16650b4943ecac4fa8180243dbed858",
         "definitionCount": 3,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "prabh-ju-to-kah-laj-hamari": {
       "status": "screened",
-      "readerSha256": "9c7a898021cfb059e9dd7fc2b63c622bddc84dcc4f9500d776b6a120ddfa9be7",
+      "readerSha256": "20088bb4c9500aec70f8b651244ce910f2dcec82c00e883763ce085d03d19508",
       "definitionCount": 17,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "2f84e37122b09b10f1af0386b03f45d61037424571a7124ad29b6de9b130ee9f",
         "definitionCount": 17,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "amrutahuni-god-nam-tujhe-deva": {
       "status": "screened",
@@ -4860,29 +4884,31 @@
     },
     "tum-karo-daya-mere-sai": {
       "status": "screened",
-      "readerSha256": "fc81db1a3b2ad38884b6a1b41d65f4b0cadd0aa62ef44b0c6b2a5ee465a641d1",
+      "readerSha256": "f6bdfb34aceafccc75ef9950ddce56b14b0dcd1e8a003c112fc9cd6ebc4004a1",
       "definitionCount": 27,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "38e5cfcaedcfd2ad69c7c3c3eb690e4333742829d6c222451776da7a1b60bbce",
         "definitionCount": 27,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "aakha-jeeva-visrai-mar-jaau": {
       "status": "screened",
       "readerSha256": "ca07178c48b391a29772cf591dc8d55599d87f4da93d39e7c79fedb1e02adb80",
       "definitionCount": 19,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "ca07178c48b391a29772cf591dc8d55599d87f4da93d39e7c79fedb1e02adb80",
         "definitionCount": 19,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "vitthal-giti-gava": {
       "status": "screened",
@@ -4903,27 +4929,29 @@
       "status": "screened",
       "readerSha256": "5a78889bfabac5f24ed4257a429c3a030913f3025a2e21f580394ea21453bc66",
       "definitionCount": 14,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "49ed6769b715d0b6eaa8928ccbbeadd052febaf04397b67a05a3db33c9012449",
         "definitionCount": 14,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "mo-kau-tar-le-rama": {
       "status": "screened",
-      "readerSha256": "87358b464268303839ba4bdc9688e17be5215e2b976e7c997c34776ac7bb2bda",
+      "readerSha256": "4a2f8354d6c9f3da9043daf7542110dad75aa502dde5c25714d257fa0e43c776",
       "definitionCount": 37,
-      "screenedAt": "2026-11-23",
-      "reviewScope": "whole-song English/context screen; targeted source and word-map investigation; no new full listening or independent reconstruction of every word",
+      "screenedAt": "2026-11-24",
+      "reviewScope": "Direct reading of every performed source line, word gloss and English in whole-song context; individual divine-reference review; targeted source comparisons. No fresh listening or transcription reconstruction.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "1b72b80127406bc65ac4d12fdd744164e15770981f335c303ecb0f8e675653f6",
         "definitionCount": 37,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "bhor-bhai-din-chadh-gaya": {
       "status": "screened",
@@ -5225,5 +5253,6 @@
   },
   "followUpReport": "docs/research/translation-source-resolution-2026-11-21.md",
   "followUpReport2026-11-22": "docs/research/translation-review-2026-11-22.md",
-  "currentEvidence": "data/translation-review-2026-11-23.json"
+  "currentEvidence": "data/translation-review-2026-11-23.json",
+  "gurbaniFollowUpEvidence": "data/gurbani-review-2026-11-24.json"
 }

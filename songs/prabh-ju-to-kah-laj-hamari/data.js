@@ -20,7 +20,8 @@ window.SONG_META = {
     "Guru",
     "Kṛṣṇa",
     "Viṣṇu",
-    "Śiva"
+    "Śiva",
+    "Nṛsiṃha"
   ],
   "searchAliases": [
     "Gurbani",
