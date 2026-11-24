@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Vishnu",

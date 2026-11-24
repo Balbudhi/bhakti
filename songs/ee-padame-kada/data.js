@@ -16,7 +16,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Veṅkaṭeśa"
+    "Veṅkaṭeśa",
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "I Padamē Kada",

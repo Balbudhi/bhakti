@@ -10,7 +10,9 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Sītā",
+    "Śakti"
   ],
   "searchAliases": [
     "Rama"
@@ -861,7 +863,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yaha karma gati balavānā",
-    "english": "{0:This }{2:course of }{1:karma }{3:is mighty;}",
+    "english": "{0:This }{2:course of }{1:deeds and their consequences }{3:is mighty;}",
     "words": [
       {
         "roman": "yaha",
@@ -871,9 +873,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "gati",

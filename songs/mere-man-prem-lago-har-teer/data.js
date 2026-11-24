@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gurbāṇī",
-    "Guru"
+    "Guru",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Merai Mani Premu Lago Hari Tiru",

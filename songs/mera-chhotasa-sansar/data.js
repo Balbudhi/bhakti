@@ -849,7 +849,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yē kaisī tumhārī māyā hai",
-    "english": "{1:What strange }{3:māyā }{2:of yours }{4:is }{0:this?}",
+    "english": "{1:What strange }{3:beguiling power }{2:of yours }{4:is }{0:this?}",
     "words": [
       {
         "roman": "Yē",
@@ -871,9 +871,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "beguiling power; divine power that keeps appearances and experience hidden or changed",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "hai",

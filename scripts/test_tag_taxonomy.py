@@ -16,7 +16,7 @@ class TagTaxonomyTests(unittest.TestCase):
 
     def test_declared_goddess_identities_keep_specific_tags_and_add_parent(self) -> None:
         identities = ["Durgā", "Kālī", "Lakṣmī", "Sarasvatī", "Pārvatī", "Sītā",
-                      "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā"]
+                      "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā", "Rādhā"]
         for identity in identities:
             with self.subTest(identity=identity):
                 self.assertEqual(tags.normalize_subject_tags([identity]), [identity, "Śakti"])
@@ -35,11 +35,12 @@ class TagTaxonomyTests(unittest.TestCase):
             with self.subTest(identity=identity):
                 self.assertEqual(tags.normalize_subject_tags([identity]), [identity, "Guru"])
 
-    def test_closure_applies_to_inferred_names(self) -> None:
-        self.assertEqual(tags.merge_subject_tags([], [{"roman": "sarasvatī"}]),
+    def test_closure_applies_only_to_reviewed_explicit_names(self) -> None:
+        self.assertEqual(tags.merge_subject_tags(["Sarasvatī"], [{"roman": "sarasvatī"}]),
                          ["Sarasvatī", "Śakti"])
-        self.assertEqual(tags.merge_subject_tags([], [{"roman": "Śirḍī Sāī"}]),
+        self.assertEqual(tags.merge_subject_tags(["Śirḍī Sāī"], [{"roman": "Śirḍī Sāī"}]),
                          ["Śirḍī Sāī", "Guru"])
+        self.assertEqual(tags.merge_subject_tags([], [{"roman": "sarasvatī Śirḍī Sāī"}]), [])
 
     def test_no_general_mother_teacher_or_author_classification(self) -> None:
         self.assertEqual(tags.merge_subject_tags([], [{"roman": "mā mātā mother guru satguru sadguru",
@@ -55,6 +56,12 @@ class TagTaxonomyTests(unittest.TestCase):
             {"roman": "hari bhajana ko māna le"},
         ]
         self.assertEqual(tags.infer_named_subject_tags(lines), ["Rāma", "Kṛṣṇa"])
+
+    def test_iast_and_common_regional_endings_do_not_escape_name_check(self) -> None:
+        for name in ("Kṛṣṇa", "Krishna", "Krsna", "Gōpāla", "Govind", "Mādhav", "Dāmodar", "Murārī", "Banvārī"):
+            with self.subTest(name=name):
+                self.assertIn("Kṛṣṇa", tags.infer_named_subject_tags([{"roman": name}]))
+        self.assertIn("Viṣṇu", tags.infer_named_subject_tags([{"roman": "Nārāyaṇ"}]))
 
     def test_generic_sai_does_not_claim_shirdi(self) -> None:
         self.assertNotIn("Śirḍī Sāī", tags.infer_named_subject_tags([{"roman": "bhūkhā sāīṁ"}]))
@@ -77,7 +84,17 @@ class TagTaxonomyTests(unittest.TestCase):
 
     def test_merge_preserves_editorial_tags(self) -> None:
         merged = tags.merge_subject_tags(["Nirguṇa"], [{"roman": "Rāma nāma japa karanā"}])
-        self.assertEqual(merged, ["Nirguṇa", "Rāma"])
+        self.assertEqual(merged, ["Nirguṇa"])
+
+    def test_ambiguous_candidates_never_become_assignments(self) -> None:
+        for roman, explicit in [("ramā jayati", ["Lakṣmī"]),
+                                ("śyāmā devī", ["Kālī"]),
+                                ("durga", [])]:
+            with self.subTest(roman=roman):
+                self.assertEqual(tags.merge_subject_tags(explicit, [{"roman": roman}]),
+                                 tags.normalize_subject_tags(explicit))
+        # Compatibility helper may still return a review lead, never a verdict.
+        self.assertIn("Rāma", tags.infer_named_subject_tags([{"roman": "ramā jayati"}]))
 
     def test_ambiguous_historical_names_are_not_inferred(self) -> None:
         inferred = tags.infer_named_subject_tags([

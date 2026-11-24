@@ -17,7 +17,10 @@ window.SONG_META = {
     "Śakti",
     "Sarasvatī",
     "Viṣṇu",
-    "Guru"
+    "Guru",
+    "Śiva",
+    "Sītā",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Hanuman",
@@ -210,7 +213,7 @@ window.SONG_LINES = {
   },
   "line-001": {
     "source": "शान्तं शाश्वतमप्रमेयमनघं निर्वाणशान्तिप्रदं",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "शान्तं",
@@ -257,7 +260,7 @@ window.SONG_LINES = {
   },
   "line-002": {
     "source": "ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं वेदान्तवेद्यं विभुम् ।",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं",
@@ -304,7 +307,7 @@ window.SONG_LINES = {
   },
   "line-003": {
     "source": "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "रामाख्यं",
@@ -338,7 +341,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāmākhyaṁ jagadīśvaraṁ suraguruṁ māyāmanuṣyaṁ hariṁ",
-    "english": "{0:known by the name of Rāma, }{1:sovereign of the universe, }{2:spiritual teacher of the gods, }{3:human through māyā, }{4:Hari—}",
+    "english": "{0:known by the name of Rāma, }{1:sovereign of the universe, }{2:spiritual teacher of the gods, }{3:appearing as human through his creative power, }{4:Hari—}",
     "words": [
       {
         "roman": "rāmākhyaṁ",
@@ -360,7 +363,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyāmanuṣyaṁ",
-        "gloss": "appearing as human through worldly creative power (māyā)",
+        "gloss": "appearing as human through his divine creative power",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -375,7 +378,7 @@ window.SONG_LINES = {
   },
   "line-004": {
     "source": "वन्देऽहं करुणाकरं रघुवरं भूपालचूड़ामणिम्",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "वन्देऽहं",
@@ -434,7 +437,7 @@ window.SONG_LINES = {
   },
   "line-005": {
     "source": "नान्या स्पृहा रघुपते हृदयेऽस्मदीये",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नान्या",
@@ -493,7 +496,7 @@ window.SONG_LINES = {
   },
   "line-006": {
     "source": "सत्यं वदामि च भवानखिलान्तरात्मा।",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सत्यं",
@@ -552,7 +555,7 @@ window.SONG_LINES = {
   },
   "line-007": {
     "source": "भक्तिं प्रयच्छ रघुपुङ्गव निर्भरां मे",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "भक्तिं",
@@ -623,7 +626,7 @@ window.SONG_LINES = {
   },
   "line-008": {
     "source": "कामादिदोषरहितं कुरु मानसं च",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कामादिदोषरहितं",
@@ -682,7 +685,7 @@ window.SONG_LINES = {
   },
   "line-009": {
     "source": "अतुलितबलधामं हेमशैलाभदेहं",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अतुलितबलधामं",
@@ -717,7 +720,7 @@ window.SONG_LINES = {
   },
   "line-010": {
     "source": "दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्।",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "दनुजवनकृशानुं",
@@ -752,7 +755,7 @@ window.SONG_LINES = {
   },
   "line-011": {
     "source": "सकलगुणनिधानं वानराणामधीशं",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सकलगुणनिधानं",
@@ -787,7 +790,7 @@ window.SONG_LINES = {
   },
   "line-012": {
     "source": "रघुपतिप्रियभक्तं वातजातं नमामि",
-    "sourceLanguage": "awa",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "रघुपतिप्रियभक्तं",

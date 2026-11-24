@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Conservative deterministic deity tags from explicit lyric names."""
+"""Reviewed subject tags and separate lexical candidates for contextual review."""
 
 from __future__ import annotations
 
@@ -18,10 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 TAG_ALIASES: dict[str, tuple[str, ...]] = {
     "Rāma": ("ram", "rama", "ramachandra", "rajaram", "rajarama", "raghunath"),
     "Kṛṣṇa": (
-        "krishna", "nandalala", "manmohan", "govinda", "gopal", "damodara",
+        "krishna", "krshna", "krsna", "nandalala", "manmohan", "govinda", "govind",
+        "gopal", "gopala", "damodara", "damodar", "madhav", "murari", "banvari", "banwari",
         "vasudeva", "keshava", "achyuta", "madhava", "gopikavallabha",
     ),
-    "Viṣṇu": ("vishnu", "narayana"),
+    "Viṣṇu": ("vishnu", "narayana", "narayan"),
     "Nirguṇa": ("nirgun", "nirguna"),
     "Śiva": (
         "shiva", "shiv", "shankara", "shankar", "maheshvara", "maheshwar",
@@ -62,7 +63,7 @@ SUBJECT_TAG_ALIASES = {
 # for finding a goddess or teacher in arbitrary lyric/author text.
 SUBJECT_TAG_PARENTS = {
     **dict.fromkeys(("Durgā", "Kālī", "Lakṣmī", "Sarasvatī", "Pārvatī", "Sītā",
-                     "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā"), ("Śakti",)),
+                     "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā", "Rādhā"), ("Śakti",)),
     **dict.fromkeys(("Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa", "Śrī Rāmakṛṣṇa"), ("Guru",)),
     "Śāradā Devī": ("Śakti", "Guru"),
 }
@@ -114,6 +115,11 @@ def normalized_tokens(value: str) -> set[str]:
 
 
 def infer_named_subject_tags(lines: Iterable[dict[str, Any]]) -> list[str]:
+    """Return lexical review leads, not identities authorized for assignment.
+
+    Folding loses distinctions such as Rāma/Ramā; names may also identify poets
+    or ordinary words. Keep this compatibility helper separate from tag writers.
+    """
     tokens: set[str] = set()
     lyric_text: list[str] = []
     for line in lines:
@@ -144,7 +150,12 @@ def infer_named_subject_tags(lines: Iterable[dict[str, Any]]) -> list[str]:
 
 
 def merge_subject_tags(explicit: Iterable[object], lines: Iterable[dict[str, Any]]) -> list[str]:
-    return normalize_subject_tags([*explicit, *infer_named_subject_tags(lines)])
+    """Normalize reviewed input only; retain the legacy caller signature.
+
+    Lyric candidates require a contextual disposition through the subject search
+    gate. Source-bound registry decisions are applied separately by both writers.
+    """
+    return normalize_subject_tags(explicit)
 
 
 def _unique_registry_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
@@ -233,6 +244,8 @@ def apply_reviewed_subject_tags(
         ref = entry.get("ref") if isinstance(entry, dict) else None
         if not isinstance(ref, str) or ref not in lines or not isinstance(lines[ref], Mapping):
             raise ValueError(f"{slug}: invalid performed reference {ref!r}")
+        if entry.get("section") == "instrumental":
+            continue
         source = lines[ref].get("source")
         if not isinstance(source, str):
             raise ValueError(f"{slug}:{ref}: missing performed source")

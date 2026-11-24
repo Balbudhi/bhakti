@@ -12,7 +12,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śakti",
     "Durgā",
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Gaṇeśa"
   ],
   "searchAliases": [
     "Devi Aparadha Kshamapana Stotram",
@@ -123,7 +125,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na mantraṃ no yantraṃ tadapi ca na jāne stutimaho",
-    "english": "{8:I know }{0:no }{1:mantra, }{2:no }{3:yantra; }{6:and }{9:praise—}{10:alas, }{5:even }{4:that }{8:I do }{7:not }{8:know;}",
+    "english": "{8:I know }{0:no }{1:sacred formula, }{2:no }{3:sacred diagram; }{6:and }{9:praise—}{10:alas, }{5:even }{4:that }{8:I do }{7:not }{8:know;}",
     "words": [
       {
         "roman": "na",
@@ -133,7 +135,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mantraṃ",
-        "gloss": "mantra, a sacred formula for recitation",
+        "gloss": "sacred formula for recitation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -145,7 +147,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yantraṃ",
-        "gloss": "yantra, a sacred diagram used in worship",
+        "gloss": "sacred diagram used in worship",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2295,7 +2297,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nirātaṅko raṅko viharati ciraṃ koṭikanakaiḥ",
-    "english": "{2:a pauper, }{0:free of }{1:dread, }{3:roams }{4:long }{3:at his ease }{6:amid gold }{5:by the ten million—}",
+    "english": "{2:a pauper, }{0:free of }{1:dread, }{3:roams }{4:long }{3:at his ease }{6:amid gold pieces }{5:by the ten million—}",
     "words": [
       {
         "roman": "nir",
@@ -2397,7 +2399,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tavāparṇe karṇe viśati manuvarṇe phalamidaṃ",
-    "english": "{1:Aparṇā, }{7:this }{6:is the fruit }{3:when }{5:one syllable }{0:of your }{4:mantra }{3:enters }{2:the ear—}",
+    "english": "{1:Aparṇā, }{7:this }{6:is the fruit }{3:when }{5:one syllable }{0:of your }{4:sacred formula }{3:enters }{2:the ear—}",
     "words": [
       {
         "roman": "tav",
@@ -2425,7 +2427,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manu",
-        "gloss": "mantra",
+        "gloss": "sacred formula",
         "concept_key": "",
         "preserve_in_english": false
       },

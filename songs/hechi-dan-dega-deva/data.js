@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Śakti"
+    "Śakti",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Heci Dan De Ga Deva",

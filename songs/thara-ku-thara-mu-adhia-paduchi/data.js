@@ -1168,7 +1168,7 @@ window.SONG_LINES = {
     "source": "ତୁମରି ସମାଧି ନିକଟେ ଗୁରୁ ହେ ସଭିଏଁ କରନ୍ତି ଆଳି",
     "sourceLanguage": "",
     "roman": "Tumari samādhi nikaṭē guru hē sabhiēṃ karanti āḷi",
-    "english": "{2:Near }{0:your very }{1:samādhi, }{4:O }{3:Guru, }{5:everyone }{6:makes }{7:their heartfelt plea;}",
+    "english": "{2:Near }{0:your very }{1:tomb-shrine, }{4:O }{3:Guru, }{5:everyone }{6:makes }{7:their heartfelt plea;}",
     "words": [
       {
         "roman": "Tumari",
@@ -1178,9 +1178,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "samādhi",
-        "gloss": "tomb-shrine / final resting place of yogic absorption",
+        "gloss": "tomb-shrine; the spiritual teacher’s final resting place",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nikaṭē",

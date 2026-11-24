@@ -9,7 +9,10 @@ window.SONG_META = {
     "Telugu"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Śiva",
+    "Hanumān",
+    "Viṣṇu"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=hIQPVd9HeiM",
   "searchAliases": [

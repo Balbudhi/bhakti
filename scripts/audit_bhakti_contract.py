@@ -101,19 +101,20 @@ def audit_song(directory: Path, catalogue_entry: dict[str, Any] | None = None) -
         for role in ("writer", "translator", "singer", "vocalist", "composer", "musicDirector", "credit", "pageCredit", "writerAttribution"):
             if re.search(r"\btraditional\b", str(meta.get(role) or ""), re.I):
                 problems.append(f"SONG_META {role} uses a Traditional label; credit the tradition's poet or leave it empty")
-    inferred_tags = tag_taxonomy.infer_named_subject_tags(lines.values())
-    reviewed_tags = {"subjectTags": inferred_tags}
+    # Folded names are review leads, not proof of an identity. The separate
+    # subject-search gate checks unresolved candidates; this audit enforces the
+    # actual source-bound decisions, including removals, without editing tags.
+    current_tags = meta.get("subjectTags", []) if isinstance(meta, dict) else []
+    reviewed_tags = {"subjectTags": current_tags}
     try:
         tag_taxonomy.apply_reviewed_subject_tags(
             reviewed_tags, directory.name, lines, data.get("SONG_SEQUENCE", []), root=ROOT,
         )
-        inferred_tags = reviewed_tags["subjectTags"]
+        if reviewed_tags["subjectTags"] != current_tags:
+            problems.append("SONG_META subjectTags differ from reviewed subject tags")
     except ValueError as exc:
         problems.append(f"reviewed subject tags: {exc}")
     if isinstance(meta, dict):
-        for tag in inferred_tags:
-            if tag not in meta.get("subjectTags", []):
-                problems.append(f"SONG_META subjectTags omit explicit lyric name {tag}")
         if catalogue_entry is not None:
             if meta.get("languages") != catalogue_entry.get("languageTags"):
                 problems.append("catalogue languageTags differ from SONG_META languages")

@@ -668,11 +668,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "babhūtī kā do ghūmṭ mujhko pilāyā",
-    "english": "{5:he gave}{4: me}{2: two }{3:sips}{0,1: of sacred ash}{5: to drink}",
+    "english": "{5:he gave}{4: me}{2: two }{3:sips} of water mixed {0,1:with sacred ash}{5: to drink}",
     "words": [
       {
         "roman": "babhūtī",
-        "gloss": "sacred ash / sanctified ash (vibhūti/udhi)",
+        "gloss": "sacred ash (here mixed in water for drinking)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1403,7 +1403,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phir bhī ye mol maiṁ nā juṭā pāūṅgā",
-    "english": "{0,1:even then,}{4: I}{5,6,7: will not be able to gather}{2: this }{3:price}",
+    "english": "{0,1:even then,}{4: I}{5,6,7: will not be able to raise enough to pay}{2: this }{3:price}",
     "words": [
       {
         "roman": "phir",
@@ -1443,7 +1443,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "juṭā",
-        "gloss": "gather / assemble / muster",
+        "gloss": "raise; gather enough to pay",
         "concept_key": "",
         "preserve_in_english": false
       },

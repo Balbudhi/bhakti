@@ -64,7 +64,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāṇenā mū̃ debatā ki",
-    "english": "{0,1:I do not know }{3:whether }{2:a deity,}",
+    "english": "{0,1:I do not know }{3:whether you are }{2:a deity,}",
     "words": [
       {
         "roman": "Jāṇenā",
@@ -117,7 +117,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāṇenā mū̃ īśbara",
-    "english": "{0,1:I do not know }{2:if the Supreme Lord,}",
+    "english": "{0,1:I do not know }{2:whether you are the Supreme Lord,}",
     "words": [
       {
         "roman": "Jāṇenā",
@@ -311,11 +311,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Biuchuṇā cākara",
-    "english": "{0:hand-fan }{1:servant,}",
+    "english": "{1:servant }{0:who fans you,}",
     "words": [
       {
         "roman": "Biuchuṇā",
-        "gloss": "hand-fan; fanning",
+        "gloss": "fanning with a hand-fan",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1104,19 +1104,19 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Janamara māyā jālu",
-    "english": "{2:from the snare }{0:of birth's }{1:māyā,}",
+    "english": "{2:from the snare }{1:of worldly entanglement }{0:bound up with birth,}",
     "words": [
       {
         "roman": "Janamara",
-        "gloss": "of birth; of reincarnation",
+        "gloss": "of birth",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "māyā",
-        "gloss": "power of worldly appearance and entanglement",
+        "gloss": "worldly entanglement",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jālu",

@@ -15,7 +15,12 @@ window.SONG_META = {
     "Tamil"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Viṣṇu",
+    "Lakṣmī",
+    "Śakti",
+    "Pārvatī",
+    "Durgā"
   ],
   "searchAliases": [
     "Kōlaṟu Patikam",
@@ -47,7 +52,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "invocation-tiruchitrambalam": {
     "source": "திருச்சிற்றம்பலம்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "திருச்சிற்றம்பலம்",
@@ -71,7 +76,7 @@ window.SONG_LINES = {
   },
   "v1-l1": {
     "source": "வேயுறு தோளி பங்கன் விடமுண்ட கண்டன் மிகநல்ல வீணை தடவி",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "வேயுறு",
@@ -179,7 +184,7 @@ window.SONG_LINES = {
   },
   "v1-l2": {
     "source": "மாசறு திங்கள் கங்கை முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "மாசறு",
@@ -287,7 +292,7 @@ window.SONG_LINES = {
   },
   "v1-l3": {
     "source": "ஞாயிறு திங்கள் செவ்வாய் புதன் வியாழன் வெள்ளி சனி பாம்பிரண்டும் உடனே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஞாயிறு",
@@ -407,7 +412,7 @@ window.SONG_LINES = {
   },
   "v1-l4": {
     "source": "ஆசறு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஆசறு",
@@ -527,7 +532,7 @@ window.SONG_LINES = {
   },
   "v2-l1": {
     "source": "என்பொடு கொம்பொடாமை இவை மார்பிலங்க எருதேறி ஏழையுடனே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "என்பொடு",
@@ -611,7 +616,7 @@ window.SONG_LINES = {
   },
   "v2-l2": {
     "source": "பொன்பொதி மத்தமாலை புனல்சூடி வந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "பொன்பொதி",
@@ -707,7 +712,7 @@ window.SONG_LINES = {
   },
   "v2-l3": {
     "source": "ஒன்பதொ டொன்றொடேழு பதினெட்டொடாறும் உடனாய நாள்க ளவைதாம்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஒன்பதொ",
@@ -815,7 +820,7 @@ window.SONG_LINES = {
   },
   "v2-l4": {
     "source": "அன்பொடு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அன்பொடு",
@@ -935,7 +940,7 @@ window.SONG_LINES = {
   },
   "v2-extra": {
     "source": "நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நல்ல",
@@ -995,7 +1000,7 @@ window.SONG_LINES = {
   },
   "v3-l1": {
     "source": "உருவளர் பவளமேனி ஒளிநீறணிந்து உமையோடும் வெள்ளை விடைமேல்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "உருவளர்",
@@ -1079,7 +1084,7 @@ window.SONG_LINES = {
   },
   "v3-l2": {
     "source": "முருகலர் கொன்றை திங்கள் முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "முருகலர்",
@@ -1187,7 +1192,7 @@ window.SONG_LINES = {
   },
   "v3-l3": {
     "source": "திருமகள் கலையதூர்தி செயமாது பூமி திசை தெய்வமான பலவும்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "திருமகள்",
@@ -1283,7 +1288,7 @@ window.SONG_LINES = {
   },
   "v3-l4": {
     "source": "அருநெதி நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அருநெதி",
@@ -1403,7 +1408,7 @@ window.SONG_LINES = {
   },
   "v4-l1": {
     "source": "மதிநுதன் மங்கையோடு வடாலிருந்து மறையோதும் எங்கள் பரமன்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "மதிநுதன்",
@@ -1487,7 +1492,7 @@ window.SONG_LINES = {
   },
   "v4-l2": {
     "source": "நதியொடு கொன்றைமாலை முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நதியொடு",
@@ -1583,7 +1588,7 @@ window.SONG_LINES = {
   },
   "v4-l3": {
     "source": "கொதியுறு காலன் அங்கி நமனோடு தூதர் கொடுநோய்க ளான பலவும்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "கொதியுறு",
@@ -1691,7 +1696,7 @@ window.SONG_LINES = {
   },
   "v4-l4": {
     "source": "அதிகுணம் நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அதிகுணம்",
@@ -1811,7 +1816,7 @@ window.SONG_LINES = {
   },
   "v5-l1": {
     "source": "நஞ்சணி கண்டன் எந்தை மடவாள் தனோடும் விடையேறும் எங்கள் பரமன்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நஞ்சணி",
@@ -1919,7 +1924,7 @@ window.SONG_LINES = {
   },
   "v5-l2": {
     "source": "துஞ்சிருள் வன்னி கொன்றை முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "துஞ்சிருள்",
@@ -1971,11 +1976,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuñjiruḷ vaṉṉi koṉṟai muṭimē laṇinteṉ uḷamē pukunta ataṉāl",
-    "english": "{4:having adorned}{3: His crown with}{1: Indian mesquite}{2: and golden shower blossoms,}{6: entered}{4: my}{5: heart}{0: in the darkness of sleep;}{7: therefore,}",
+    "english": "{4:having adorned}{3: His crown with}{0: dark, dense}{1: Indian mesquite}{2: and golden shower blossoms,}{6: entered}{4: my}{5: heart;}{7: therefore,}",
     "words": [
       {
         "roman": "tuñjiruḷ",
-        "gloss": "the darkness of sleep; here the time of His entry",
+        "gloss": "dark and dense (qualifying the vanni)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2023,11 +2028,11 @@ window.SONG_LINES = {
       }
     ],
     "nameTable": false,
-    "grammarNote": "tuñjiruḷ combines tuñcu (sleep) and iruḷ (darkness), read here as the time of His entry into the heart. Another possible construction relates abiding darkness to the adjacent tree; tuñcu can mean both sleep and abide. muṭimē laṇinteṉ represents muṭimēl + aṇintu + eṉ."
+    "grammarNote": "tuñjiruḷ qualifies the adjacent vaṉṉi with its dense darkness; it does not specify the time of entry into the heart. muṭimē laṇinteṉ represents muṭimēl + aṇintu + eṉ."
   },
   "v5-l3": {
     "source": "வெஞ்சின அவுணரோடும் உருமிடியும் மின்னும் மிகையான பூதமவையும்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "வெஞ்சின",
@@ -2111,7 +2116,7 @@ window.SONG_LINES = {
   },
   "v5-l4": {
     "source": "அஞ்சிடும் நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அஞ்சிடும்",
@@ -2231,7 +2236,7 @@ window.SONG_LINES = {
   },
   "v6-l1": {
     "source": "வாள்வரி யதளதாடை வரி கோவணத்தர் மடவாள் தனோடும் உடனாய்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "வாள்வரி",
@@ -2327,7 +2332,7 @@ window.SONG_LINES = {
   },
   "v6-l2": {
     "source": "நாண்மலர் வன்னி கொன்றை நதிசூடி வந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நாண்மலர்",
@@ -2435,7 +2440,7 @@ window.SONG_LINES = {
   },
   "v6-l3": {
     "source": "கோளரி யுழுவையோடு கொலையானை கேழல் கொடுநாக மோடு கரடி",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "கோளரி",
@@ -2531,7 +2536,7 @@ window.SONG_LINES = {
   },
   "v6-l4": {
     "source": "ஆளரி நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஆளரி",
@@ -2651,7 +2656,7 @@ window.SONG_LINES = {
   },
   "v7-l1": {
     "source": "செப்பிள முலைநன்மங்கை ஒருபாக மாக விடையேறு செல்வனடைவார்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "செப்பி",
@@ -2796,7 +2801,7 @@ window.SONG_LINES = {
   },
   "v7-l2": {
     "source": "ஒப்பிள மதியும் அப்பும் முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஒப்பிள",
@@ -2904,7 +2909,7 @@ window.SONG_LINES = {
   },
   "v7-l3": {
     "source": "வெப்பொடு குளிரும் வாதம் மிகையான பித்தும் வினையான வந்து நலியா",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "வெப்பொடு",
@@ -3012,7 +3017,7 @@ window.SONG_LINES = {
   },
   "v7-l4": {
     "source": "அப்படி நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அப்படி",
@@ -3132,7 +3137,7 @@ window.SONG_LINES = {
   },
   "v8-l1": {
     "source": "வேள்பட விழிசெய் தன்று விடைமே லிருந்து மடவாள் தனோடும் உடனாய்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "வேள்பட",
@@ -3240,7 +3245,7 @@ window.SONG_LINES = {
   },
   "v8-l2": {
     "source": "வாண்மதி வன்னி கொன்றை மலர்சூடி வந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "வாண்மதி",
@@ -3348,7 +3353,7 @@ window.SONG_LINES = {
   },
   "v8-l3": {
     "source": "ஏழ்கடல் சூழிலங்கை அரையன்த னோடும் இடரான வந்து நலியா",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஏழ்கடல்",
@@ -3444,7 +3449,7 @@ window.SONG_LINES = {
   },
   "v8-l4": {
     "source": "ஆழ்கடல் நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஆழ்கடல்",
@@ -3564,7 +3569,7 @@ window.SONG_LINES = {
   },
   "v9-l1": {
     "source": "பலபல வேட மாகும் பரனாரி பாகன் பசுவேறும் எங்கள் பரமன்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "பலபல",
@@ -3672,7 +3677,7 @@ window.SONG_LINES = {
   },
   "v9-l2": {
     "source": "சலமக ளோடு எருக்கு முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "சலமக",
@@ -3780,7 +3785,7 @@ window.SONG_LINES = {
   },
   "v9-l3": {
     "source": "மலர்மிசை யோனும் மாலும் மறையோடு தேவர் வருகால மான பலவும்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "மலர்மிசை",
@@ -3888,7 +3893,7 @@ window.SONG_LINES = {
   },
   "v9-l4": {
     "source": "அலைகடல் மேரு நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அலைகடல்",
@@ -4008,7 +4013,7 @@ window.SONG_LINES = {
   },
   "v9-extra": {
     "source": "அடியா ரவர்க்கு மிகவே நல்ல நல்ல அடியா ரவர்க்கு மிகவே நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அடியா",
@@ -4176,7 +4181,7 @@ window.SONG_LINES = {
   },
   "v10-l1": {
     "source": "கொத்தலர் குழலி யோடு விசயற்கு நல்கு குணமாய வேட விகிர்தன்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "கொத்தலர்",
@@ -4284,7 +4289,7 @@ window.SONG_LINES = {
   },
   "v10-l2": {
     "source": "மத்தமும் மதியும் நாகம் முடிமே லணிந்தென் உளமே புகுந்த அதனால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "மத்தமும்",
@@ -4392,7 +4397,7 @@ window.SONG_LINES = {
   },
   "v10-l3": {
     "source": "புத்தரொ டமணை வாதில் அழிவிக்கும் அண்ணல் திருநீறு செம்மை திடமே திருநீறு செம்மை திடமே திருநீறு செம்மை திடமே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "புத்தரொ",
@@ -4572,7 +4577,7 @@ window.SONG_LINES = {
   },
   "v10-l4": {
     "source": "அத்தகு நல்ல நல்ல அவை நல்ல நல்ல அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அத்தகு",
@@ -4692,7 +4697,7 @@ window.SONG_LINES = {
   },
   "v10-extra": {
     "source": "அடியா ரவர்க்கு மிகவே நல்ல நல்ல அடியா ரவர்க்கு மிகவே அடியா ரவர்க்கு மிகவே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "அடியா",
@@ -4836,7 +4841,7 @@ window.SONG_LINES = {
   },
   "v11-l1": {
     "source": "தேனமர் பொழில்கொள் ஆலை விளைசெந்நெல் துன்னி வளர்செம்பொன் எங்கும் நிகழ",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "தேனமர்",
@@ -4944,7 +4949,7 @@ window.SONG_LINES = {
   },
   "v11-l2": {
     "source": "நான்முகன் ஆதி யாய பிரமா புரத்து மறைஞான ஞான முனிவன்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நான்முகன்",
@@ -5052,7 +5057,7 @@ window.SONG_LINES = {
   },
   "v11-l3": {
     "source": "தானுறு கோளும் நாளும் அடியாரை வந்து நலியாத வண்ணம் உரைசெய்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "தானுறு",
@@ -5160,7 +5165,7 @@ window.SONG_LINES = {
   },
   "v11-l4": {
     "source": "ஆனசொல் மாலை யோதும் அடியார்கள் வானில் அரசாள்வர் ஆணை நமதே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஆனசொல்",
@@ -5268,7 +5273,7 @@ window.SONG_LINES = {
   },
   "v11-closing": {
     "source": "ஆணை நமதே",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஆணை",

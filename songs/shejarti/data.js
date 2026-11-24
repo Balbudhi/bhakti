@@ -16,7 +16,9 @@ window.SONG_META = {
     "Viṣṇu",
     "Rāma",
     "Śiva",
-    "Hanumān"
+    "Hanumān",
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -2348,7 +2350,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ parabrahmaṇe namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the supreme Brahman.}",
+    "english": "{0:Oṃ, }{2:salutations }{1:to the supreme absolute reality.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5600,7 +5602,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ yogeśvarāya namaḥ",
-    "english": "{0:Om, }{2:salutations }{1:to the Lord of yoga.}",
+    "english": "{0:Oṃ, }{2:salutations }{1:to the Lord of spiritual discipline.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5610,7 +5612,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "yogeśvarāya",
-        "gloss": "to the supreme master and Lord of yoga",
+        "gloss": "to the Lord of spiritual discipline",
         "concept_key": "",
         "preserve_in_english": false
       },

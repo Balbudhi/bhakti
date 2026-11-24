@@ -17,7 +17,10 @@ window.SONG_META = {
   "subjectTags": [
     "Viṣṇu",
     "Kṛṣṇa",
-    "Guru"
+    "Guru",
+    "Lakṣmī",
+    "Rāma",
+    "Śakti"
   ],
   "searchAliases": [
     "Visnu Sahasranama",
@@ -777,7 +780,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yasya smaraṇamātreṇa janmasaṃsārabandhanāt |\nvimucyate namastasmai viṣṇave prabhaviṣṇave ||",
-    "english": "{4:Obeisance} {5:to him}, {6:to Viṣṇu}, {7:to all-powerful Viṣṇu}, {0:by whose} {1:mere remembrance} one {3:is released} {2:from the bond of birth and saṃsāra}.",
+    "english": "{4:Obeisance} {5:to him}, {6:to Viṣṇu}, {7:to all-powerful Viṣṇu}, {0:by whose} {1:mere remembrance} one {3:is released} {2:from the bondage of birth and repeated worldly existence}.",
     "words": [
       {
         "roman": "yasya",
@@ -801,7 +804,7 @@ window.SONG_LINES = {
         "roman": "janmasaṃsārabandhanāt",
         "citationRoman": "janma-saṃsāra-bandhanāt",
         "deva": "जन्मसंसारबन्धनात्",
-        "gloss": "from the bond of birth and saṃsāra",
+        "gloss": "from the bondage of birth and repeated worldly existence",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -1378,7 +1381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ko dharmaḥ sarvadharmāṇāṃ bhavataḥ paramo mataḥ |\nkiṃ japanmucyate janturjanmasaṃsārabandhanāt ||",
-    "english": "{0:Which} {1:dharma}, {2:of all dharmas}, is {5:regarded} {4:highest} {3:by you}? {7:Reciting} {6:what} {8:is} {9:a living being} {8:released} {10:from the bond of birth and saṃsāra}?",
+    "english": "{0:Which} {1:religious duty}, {2:of all religious duties}, is {5:regarded} {4:highest} {3:by you}? {7:Reciting} {6:what} {8:is} {9:a living being} {8:released} {10:from the bondage of birth and repeated worldly existence}?",
     "words": [
       {
         "roman": "ko",
@@ -1393,7 +1396,7 @@ window.SONG_LINES = {
         "roman": "dharmaḥ",
         "citationRoman": "dharmaḥ",
         "deva": "धर्मः",
-        "gloss": "dharma",
+        "gloss": "religious duty",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -1402,7 +1405,7 @@ window.SONG_LINES = {
         "roman": "sarvadharmāṇāṃ",
         "citationRoman": "sarva-dharmāṇām",
         "deva": "सर्वधर्माणाम्",
-        "gloss": "of all dharmas",
+        "gloss": "of all religious duties",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -1474,7 +1477,7 @@ window.SONG_LINES = {
         "roman": "janmasaṃsārabandhanāt",
         "citationRoman": "janma-saṃsāra-bandhanāt",
         "deva": "जन्मसंसारबन्धनात्",
-        "gloss": "from the bond of birth and saṃsāra",
+        "gloss": "from the bondage of birth and repeated worldly existence",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -2145,7 +2148,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "eṣa me sarvadharmāṇāṃ dharmo'dhikatamo mataḥ |\nyadbhaktyā puṇḍarīkākṣaṃ stavairarcennaraḥ sadā ||",
-    "english": "{0:This} {3:dharma} is {5:regarded} {4:highest} {2:of all dharmas} {1:by me}: {6:that} {11:a person} {10:should worship} {8:the lotus-eyed} {7:with devotion}, {9:with hymns}, {12:always}.",
+    "english": "{0:This} {3:religious duty} is {5:regarded} {4:highest} {2:of all religious duties} {1:by me}: {6:that} {11:a person} {10:should worship} {8:the lotus-eyed} {7:with devotion}, {9:with hymns}, {12:always}.",
     "words": [
       {
         "roman": "eṣa",
@@ -2169,7 +2172,7 @@ window.SONG_LINES = {
         "roman": "sarvadharmāṇāṃ",
         "citationRoman": "sarva-dharmāṇām",
         "deva": "सर्वधर्माणाम्",
-        "gloss": "of all dharmas",
+        "gloss": "of all religious duties",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -2178,7 +2181,7 @@ window.SONG_LINES = {
         "roman": "dharmo",
         "citationRoman": "dharmaḥ",
         "deva": "धर्मः",
-        "gloss": "dharma",
+        "gloss": "religious duty",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -2349,7 +2352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paramaṃ yo mahattejaḥ paramaṃ yo mahattapaḥ |\nparamaṃ yo mahadbrahma paramaṃ yaḥ parāyaṇam ||",
-    "english": "{1:He who is} {0:the supreme}, {2:great} {3:radiance}; {5:he who is} {4:the supreme}, {6:great} {7:austerity}; {9:he who is} {8:the supreme}, {10:great} {11:Brahman}; {13:he who is} {12:the supreme} {14:highest refuge}.",
+    "english": "{1:He who is} {0:the supreme}, {2:great} {3:radiance}; {5:he who is} {4:the supreme}, {6:great} {7:austerity}; {9:he who is} {8:the supreme}, {10:great} {11:absolute reality}; {13:he who is} {12:the supreme} {14:highest refuge}.",
     "words": [
       {
         "roman": "paramaṃ",
@@ -2454,7 +2457,7 @@ window.SONG_LINES = {
         "roman": "brahma",
         "citationRoman": "brahma",
         "deva": "ब्रह्म",
-        "gloss": "Brahman; the supreme reality",
+        "gloss": "absolute reality",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -3649,7 +3652,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ asya śrīviṣṇordivyasahasranāmastotramahāmantrasya ||",
-    "english": "{0:Oṃ}. {1:Of this} {3:great mantra of the divine thousand-name hymn} {2:of blessed Viṣṇu}—",
+    "english": "{0:Oṃ}. {1:Of this} {3:great sacred formula of the divine thousand-name hymn} {2:of blessed Viṣṇu}—",
     "words": [
       {
         "roman": "oṃ",
@@ -3682,7 +3685,7 @@ window.SONG_LINES = {
         "roman": "divyasahasranāmastotramahāmantrasya",
         "citationRoman": "divya-sahasra-nāma-stotra-mahā-mantrasya",
         "deva": "दिव्यसहस्रनामस्तोत्रमहामन्त्रस्य",
-        "gloss": "of the great mantra of the divine thousand-name hymn",
+        "gloss": "of the great sacred formula of the divine thousand-name hymn",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -4038,7 +4041,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "udbhavaḥ kṣobhaṇo deva iti paramo mantraḥ ||",
-    "english": "‘{0:The source}, {1:the agitator}, {2:God},’ {3:thus}, is {4:the supreme} {5:mantra}.",
+    "english": "‘{0:The source}, {1:the agitator}, {2:God},’ {3:thus}, is {4:the supreme} {5:sacred formula}.",
     "words": [
       {
         "roman": "udbhavaḥ",
@@ -4089,7 +4092,7 @@ window.SONG_LINES = {
         "roman": "mantraḥ",
         "citationRoman": "mantraḥ",
         "deva": "मन्त्रः",
-        "gloss": "mantra",
+        "gloss": "sacred formula",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -4416,7 +4419,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ānandaṃ parabrahmeti yoniḥ ||",
-    "english": "‘{0:Bliss}, {1:supreme Brahman},’ {2:thus}, is {3:the source}.",
+    "english": "‘{0:Bliss}, {1:supreme absolute reality},’ {2:thus}, is {3:the source}.",
     "words": [
       {
         "roman": "ānandaṃ",
@@ -4431,7 +4434,7 @@ window.SONG_LINES = {
         "roman": "parabrahm",
         "citationRoman": "para-brahma",
         "deva": "परब्रह्म",
-        "gloss": "supreme Brahman",
+        "gloss": "supreme absolute reality",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -6596,7 +6599,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yogo yogavidāṃ netā pradhānapuruṣeśvaraḥ nārasiṃhavapuḥ śrīmān keśavaḥ puruṣottamaḥ",
-    "english": "{0:Union with the supreme Self} · {1:Leader of those who know yoga} · {2:Lord of primordial nature and the individual soul} · {3:He whose body is the man-lion Narasiṃha} · {4:He who bears Śrī, the goddess of fortune} · {5:Keśava, with beautiful hair} · {6:The highest Person}",
+    "english": "{0:Union with the supreme Self} · {1:Leader of those who know spiritual union} · {2:Lord of primordial nature and the individual soul} · {3:He whose body is the man-lion Narasiṃha} · {4:He who bears Śrī, the goddess of fortune} · {5:Keśava, with beautiful hair} · {6:The highest Person}",
     "words": [
       {
         "roman": "yogo",
@@ -6611,7 +6614,7 @@ window.SONG_LINES = {
         "roman": "yogavidāṃ netā",
         "citationRoman": "yogavidāṃ netā",
         "deva": "योगविदां नेता",
-        "gloss": "Leader of those who know yoga",
+        "gloss": "leader of those who know spiritual union with the supreme Self",
         "analysis": "yoga-vid — knower of yoga · netṛ — leader, guide · genitive plural masculine dependent + nominative singular masculine head",
         "concept_key": "",
         "preserve_in_english": false
@@ -10615,7 +10618,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ojastejodyutidharaḥ prakāśātmā pratāpanaḥ ṛddhaḥ spaṣṭākṣaro mantraś candrāṃśur bhāskaradyutiḥ",
-    "english": "{0:Bearer of vitality, splendour, and radiance} · {1:The luminous Self} · {2:He who warms the world} · {3:He rich in excellence} · {4:He whose clear sacred syllable is Oṃ} · {5:The sacred mantra} · {6:He soothing as moonbeams} · {7:He radiant as the sun}",
+    "english": "{0:Bearer of vitality, splendour, and radiance} · {1:The luminous Self} · {2:He who warms the world} · {3:He rich in excellence} · {4:He whose clear sacred syllable is Oṃ} · {5:The sacred formula} · {6:He soothing as moonbeams} · {7:He radiant as the sun}",
     "words": [
       {
         "roman": "ojastejodyutidharaḥ",
@@ -10666,7 +10669,7 @@ window.SONG_LINES = {
         "roman": "mantraś",
         "citationRoman": "mantraḥ",
         "deva": "मन्त्रः",
-        "gloss": "The sacred mantra",
+        "gloss": "The sacred formula",
         "analysis": "mantra — sacred formula · nominative singular masculine",
         "concept_key": "",
         "preserve_in_english": false

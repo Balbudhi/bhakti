@@ -16,7 +16,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Hanumān",
-    "Vāyu"
+    "Vāyu",
+    "Rāma",
+    "Śiva",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Hanuman",

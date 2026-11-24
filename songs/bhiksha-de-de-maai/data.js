@@ -762,7 +762,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dān dharm se moh hai ghaṭtā yah batlāne āye",
-    "english": "{2:Through }{0:charity }{1:and dharma, }{3:attachment }{4,5:diminishes; }{8:he has come }{7:to teach }{6:this}",
+    "english": "{2:Through }{0:charity }{1:and righteous conduct, }{3:attachment }{4,5:diminishes; }{8:he has come }{7:to teach }{6:this}",
     "words": [
       {
         "roman": "dān",
@@ -772,9 +772,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharm",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "righteous conduct",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "se",

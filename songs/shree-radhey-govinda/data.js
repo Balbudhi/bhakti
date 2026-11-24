@@ -13,7 +13,9 @@ window.SONG_META = {
     "Kṛṣṇa",
     "Viṣṇu",
     "Gaṇeśa",
-    "Śakti"
+    "Śakti",
+    "Rādhā",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Krshna",

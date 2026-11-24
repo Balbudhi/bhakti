@@ -13,7 +13,8 @@ window.SONG_META = {
     "Śirḍī Sāī",
     "Rāma",
     "Śiva",
-    "Guru"
+    "Guru",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Shirdi Sai",

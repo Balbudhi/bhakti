@@ -506,7 +506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tīrath sāre tum mẽ haĩ sāī̃, tum mantrõ ke prakāś ho",
-    "english": "{1:All }{0:pilgrimage places }{4:are }{3:in }{2:you, }{5:O Sai, }{6:you }{10:are }{9:the light }{8:of }{7:mantras}",
+    "english": "{1:All }{0:pilgrimage places }{4:are }{3:in }{2:you, }{5:O Sāī, }{6:you }{10:are }{9:the light }{8:of }{7:sacred utterances}",
     "words": [
       {
         "roman": "tīrath",
@@ -552,7 +552,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mantrõ",
-        "gloss": "mantras / sacred verses",
+        "gloss": "sacred utterances; mantras",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -803,7 +803,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum pūjā phir arpaṇ ho sāī̃, jag māyā ke ant ho",
-    "english": "{0:You }{4:are }{1:worship, }{2:then }{3:the offering, }{5:O Sai, }{10:you are }{9:the end }{6,8:of worldly }{7:māyā}",
+    "english": "{0:You }{4:are }{1:worship, }{2:then }{3:the offering, }{5:O Sāī, }{10:you are }{9:the end }{6,8:of worldly }{7:appearances}",
     "words": [
       {
         "roman": "tum",
@@ -849,9 +849,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "worldly appearance; the world as it appears, whose ending is attributed to Sai here",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ke",

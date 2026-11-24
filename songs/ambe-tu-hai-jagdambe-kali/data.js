@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Śakti",
     "Kālī",
-    "Durgā"
+    "Durgā",
+    "Sarasvatī"
   ],
   "searchAliases": [
     "Ambe Tu Hai Jagadambe Kali",

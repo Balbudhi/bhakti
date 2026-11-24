@@ -15,7 +15,9 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Kṛṣṇa",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Deh Jao Athava Raho",

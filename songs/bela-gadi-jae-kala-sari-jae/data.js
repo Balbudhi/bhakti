@@ -231,7 +231,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "narara karama cāli sāthirē...",
-    "english": "{0:Man's }{1:karma }{2:walks }{3:alongside...}",
+    "english": "{0:A person’s }{1:deeds and their consequences }{2:walk }{3:alongside...}",
     "words": [
       {
         "roman": "narara",
@@ -241,9 +241,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "cāli",
@@ -290,7 +290,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "narara karama cāli sāthirē",
-    "english": "{0:Man's }{1:karma }{2:walks }{3:alongside}",
+    "english": "{0:A person’s }{1:deeds and their consequences }{2:walk }{3:alongside}",
     "words": [
       {
         "roman": "narara",
@@ -300,9 +300,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "cāli",
@@ -511,19 +511,19 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prārabdha karmara khēḷarē...",
-    "english": "{1,2:In the play of }{0:allotted }{1:karma...}",
+    "english": "{2:In the play }{1:of past deeds }{0:whose consequences are now unfolding...}",
     "words": [
       {
         "roman": "prārabdha",
-        "gloss": "already-begun karma bearing its present result",
+        "gloss": "already begun; here past deeds whose consequences are now unfolding",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karmara",
-        "gloss": "of action and its consequences",
+        "gloss": "of past deeds",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "khēḷarē...",
@@ -558,19 +558,19 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prārabdha karmara khēḷarē",
-    "english": "{1,2:In the play of }{0:allotted }{1:karma}",
+    "english": "{2:In the play }{1:of past deeds }{0:whose consequences are now unfolding}",
     "words": [
       {
         "roman": "prārabdha",
-        "gloss": "already-begun karma bearing its present result",
+        "gloss": "already begun; here past deeds whose consequences are now unfolding",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karmara",
-        "gloss": "of action and its consequences",
+        "gloss": "of past deeds",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "khēḷarē",
@@ -1069,17 +1069,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karama ṛṇara khēḷarē...",
-    "english": "{2:In the play of }{0,1:karma's }{1:debt...}",
+    "english": "{2:In the play }{1:of debt }{0:incurred by one’s deeds...}",
     "words": [
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds; here the source of the debt",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ṛṇara",
-        "gloss": "of debt; of obligation",
+        "gloss": "of debt",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1116,17 +1116,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karama ṛṇara khēḷarē",
-    "english": "{2:In the play of }{0,1:karma's }{1:debt}",
+    "english": "{2:In the play }{1:of debt }{0:incurred by one’s deeds}",
     "words": [
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds; here the source of the debt",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ṛṇara",
-        "gloss": "of debt; of obligation",
+        "gloss": "of debt",
         "concept_key": "",
         "preserve_in_english": false
       },

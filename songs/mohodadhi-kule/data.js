@@ -35,7 +35,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "mahodadhi-kule": {
     "source": "ମହୋଦଧି କୂଳେ କଳ୍ପବଟ ମୂଳେ ବିଜଯେ କାଳିଆ ମୂରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମହୋଦଧି",
@@ -130,7 +130,7 @@ window.SONG_LINES = {
   },
   "adikalu-bhakta": {
     "source": "ଆଦିକାଳୁ ଣକ୍ତ ରକ୍ଷଣେ ମଗନ ବିରାଜିତ କୃପାମୂରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଆଦିକାଳୁ",
@@ -213,7 +213,7 @@ window.SONG_LINES = {
   },
   "ho-birajita": {
     "source": "ହୋ... ବିରାଜିତ କୃପାମୂରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ହୋ...",
@@ -260,7 +260,7 @@ window.SONG_LINES = {
   },
   "koti-koti-prana": {
     "source": "କୋଟି କୋଟି ପ୍ରାଣ ଗୋଟିକୁ ଡାକଇ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "କୋଟି",
@@ -331,7 +331,7 @@ window.SONG_LINES = {
   },
   "dina-dukhi-arati": {
     "source": "ଦୀନଦୁଃଖୀ କରେ ଆରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଦୀନଦୁଃଖୀ",
@@ -378,7 +378,7 @@ window.SONG_LINES = {
   },
   "ho-dina-dukhi-arati": {
     "source": "ହୋ... ଦୀନଦୁଃଖୀ କରେ ଆରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ହୋ...",
@@ -437,7 +437,7 @@ window.SONG_LINES = {
   },
   "jaga-mahaprana": {
     "source": "ଜଗ ମହାପ୍ରାଣ ଜଗତ ଜୀବନ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଜଗ",
@@ -496,7 +496,7 @@ window.SONG_LINES = {
   },
   "akhila-brahmandapati": {
     "source": "ଅଖିଳ ବ୍ରହ୍ମାଣ୍ଡପତି ହୋ...",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଅଖିଳ",
@@ -543,7 +543,7 @@ window.SONG_LINES = {
   },
   "ho-bijaye-kalia": {
     "source": "ହୋ... ବିଜଯେ କାଳିଆ ମୂରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ହୋ...",
@@ -602,7 +602,7 @@ window.SONG_LINES = {
   },
   "kete-kete-bhakta": {
     "source": "କେତେ କେତେ ଭକ୍ତ ଉଦ୍ଧାର କରନ୍ତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "କେତେ",
@@ -673,7 +673,7 @@ window.SONG_LINES = {
   },
   "nandighosa-rathe-rahi": {
     "source": "ନନ୍ଦିଘୋଷ ରଥେ ରହି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ନନ୍ଦିଘୋଷ",
@@ -720,7 +720,7 @@ window.SONG_LINES = {
   },
   "bhabagrahi-se-je": {
     "source": "ଭାବଗ୍ରାହୀ ସେ ଯେ କ୍ଷମାର ମୂରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଭାବଗ୍ରାହୀ",
@@ -791,7 +791,7 @@ window.SONG_LINES = {
   },
   "jagata-jananka-pati": {
     "source": "ଜଗତଜନଙ୍କ ପତି ହୋ...",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଜଗତଜନଙ୍କ",
@@ -838,7 +838,7 @@ window.SONG_LINES = {
   },
   "bijaye-kalia-outro": {
     "source": "ବିଜଯେ କାଳିଆ ମୂରତି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ବିଜଯେ",

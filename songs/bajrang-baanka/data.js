@@ -12,7 +12,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Hanumān",
-    "Rāma"
+    "Rāma",
+    "Sītā",
+    "Śakti"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=6CKW_rya3Pw",
   "searchAliases": [

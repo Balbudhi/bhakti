@@ -303,11 +303,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gopīcaṁdana uṭī tuḷasīcyā māḷā",
-    "english": "{1:With smears of }{0:Gopichandana paste }{3:and garlands }{2:of Tulsi,}",
+    "english": "{1:With smears of }{0:sacred gopīcandana clay }{3:and garlands }{2:of holy basil,}",
     "words": [
       {
         "roman": "gopīcaṁdana",
-        "gloss": "sacred clay; Gopichandana",
+        "gloss": "gopīcandana, a sacred clay",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -319,7 +319,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tuḷasīcyā",
-        "gloss": "of Tulsi; of holy basil",
+        "gloss": "of holy basil",
         "concept_key": "",
         "preserve_in_english": false
       },

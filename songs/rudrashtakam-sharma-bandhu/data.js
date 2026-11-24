@@ -9,7 +9,9 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Śakti"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=8xvbnfVIJL4",
   "searchAliases": [

@@ -17,7 +17,10 @@ window.SONG_META = {
     "Sarasvatī",
     "Guru",
     "Kṛṣṇa",
-    "Śakti"
+    "Śakti",
+    "Sītā",
+    "Lakṣmī",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -150,7 +153,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrī Saccidānanda Sadguru Sāīnātha Mahārāja kī jaya",
-    "english": "{5,6:Victory to }{0:holy }{1:Saccidānanda }{2:Sadguru }{3:Sainath }{4:Maharaj!}",
+    "english": "{5,6:Victory to }{0:holy }{1:Saccidānanda }{2:Sadguru }{3:Sāīnātha }{4:Mahārāja!}",
     "words": [
       {
         "roman": "Śrī",
@@ -172,7 +175,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Lord Sāī; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -221,11 +224,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī Sāī Bābā",
-    "english": "{0:Aarti }{1:to Sai }{2:Baba,}",
+    "english": "{0:Worship with lights }{1:to Sāī }{2:Bābā,}",
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -499,7 +502,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mumukṣu janāṅ dāvī nija doḷāṅ Śrīraṅga",
-    "english": "{0,1:To seekers of liberation, }{2:he reveals }{5:Lord Shriranga }{3:before their own }{4:eyes,}",
+    "english": "{0,1:To seekers of liberation, }{2:he reveals }{5:Lord Śrīraṅga }{3:before their own }{4:eyes,}",
     "words": [
       {
         "roman": "Mumukṣu",
@@ -558,7 +561,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Doḷāṅ Śrīraṅga",
-    "english": "{0:Before the eyes, }{1:Lord Shriranga.}",
+    "english": "{0:Before the eyes, }{1:Lord Śrīraṅga.}",
     "words": [
       {
         "roman": "Doḷāṅ",
@@ -1663,7 +1666,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pājaveṅ mādhavāyā sāmbhāḷa āpulī bhāka",
-    "english": "{0:Give drink to }{1:Madhava; }{2:uphold }{3:your own }{4:promise!}",
+    "english": "{0:Give drink to }{1:Mādhava; }{2:uphold }{3:your own }{4:promise!}",
     "words": [
       {
         "roman": "Pājaveṅ",
@@ -1673,7 +1676,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mādhavāyā",
-        "gloss": "to Madhava (the poet / devotee)",
+        "gloss": "to Mādhava (the poet / devotee)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1773,7 +1776,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Śiraḍī",
-        "gloss": "Shirdi",
+        "gloss": "the town where Sāī Bābā lived and taught, a destination for his devotees",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1785,7 +1788,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Paṇḍharapūra",
-        "gloss": "Pandharpur",
+        "gloss": "Paṇḍharpur",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1905,7 +1908,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śuddha bhaktī Candrabhāgā bhāva Puṇḍalīka jāgā",
-    "english": "{0:Pure }{1:devotion }{2:is the Chandrabhaga; }{3:inner faith }{4:is Pundalika }{5:awake.}",
+    "english": "{0:Pure }{1:devotion }{2:is the Candrabhāgā; }{3:inner faith }{4:is Puṇḍalīka }{5:awake.}",
     "words": [
       {
         "roman": "Śuddha",
@@ -1921,7 +1924,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Candrabhāgā",
-        "gloss": "river Chandrabhaga",
+        "gloss": "river Candrabhāgā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1982,7 +1985,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Puṇḍalīka jāgā bhāva Puṇḍalīka jāgā",
-    "english": "{0:Pundalika }{1:is awake; }{2:inner faith }{3:is Pundalika }{4:awake.}",
+    "english": "{0:Puṇḍalīka }{1:is awake; }{2:inner faith }{3:is Puṇḍalīka }{4:awake.}",
     "words": [
       {
         "roman": "Puṇḍalīka",
@@ -2065,7 +2068,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yāho yāho avaghe jana karū bābāṅsī vandana",
-    "english": "{0:Come, }{1:come, }{2:all }{3:people, }{4:let us offer }{6:obeisance }{5:to Baba.}",
+    "english": "{0:Come, }{1:come, }{2:all }{3:people, }{4:let us offer }{6:obeisance }{5:to Bābā.}",
     "words": [
       {
         "roman": "Yāho",
@@ -2099,7 +2102,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāṅsī",
-        "gloss": "to Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
+        "gloss": "to Bābā; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2148,11 +2151,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāīṅsī vandana karū bābāṅsī vandana",
-    "english": "{1:Obeisance }{0:to Sai; }{2:let us offer }{4:obeisance }{3:to Baba.}",
+    "english": "{1:Obeisance }{0:to Sāī; }{2:let us offer }{4:obeisance }{3:to Bābā.}",
     "words": [
       {
         "roman": "Sāīṅsī",
-        "gloss": "to Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "to Sāī; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2170,7 +2173,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābāṅsī",
-        "gloss": "to Baba; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
+        "gloss": "to Bābā; Bābā means “father”, a respectful address to the spiritual elder Śirḍī Sāī Bābā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2237,11 +2240,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gaṇu mhaṇe bābā Sāī dhāva pāva mājhe āī",
-    "english": "{0:Ganu }{1:says, }{2:O Baba }{3:Sai, }{4:run, }{5:come to the rescue, }{6:my }{7:Mother!}",
+    "english": "{0:Gaṇu }{1:says, }{2:O Bābā }{3:Sāī, }{4:run, }{5:come to the rescue, }{6:my }{7:Mother!}",
     "words": [
       {
         "roman": "Gaṇu",
-        "gloss": "Das Ganu",
+        "gloss": "Das Gaṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2439,11 +2442,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ghālīna loṭāṅgaṇa vandīna caraṇa doḷyāna pāhīna rūpa tujheṅ",
-    "english": "{0:I will cast }{1:prostrations, }{2:I will revere }{3:the holy feet, }{4:with my eyes }{5:I will behold }{7:your }{6:form.}",
+    "english": "{0,1:I will prostrate myself, }{2:I will revere }{3:the holy feet, }{4:with my eyes }{5:I will behold }{7:your }{6:form.}",
     "words": [
       {
         "roman": "Ghālīna",
-        "gloss": "I will cast / perform",
+        "gloss": "I will perform; with loṭāṅgaṇa, I will prostrate myself",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2546,7 +2549,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Premeṅ āliṅgina ānandeṅ pūjina bhāveṅ ovāḷina mhaṇe nāmā",
-    "english": "{0:With love }{1:I will embrace, }{2:in joy }{3:I will worship, }{4:with devotion }{5:I will wave the lamps}{6:—says }{7:Nama.}",
+    "english": "{0:With love }{1:I will embrace, }{2:in joy }{3:I will worship, }{4:with devotion }{5:I will wave the lamps}{6:—says }{7:Nāmā.}",
     "words": [
       {
         "roman": "Premeṅ",
@@ -2998,7 +3001,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Karomi yadyat sakalaṁ parasmai Nārāyaṇāyeti samarpayāmi",
-    "english": "{1:Whatever }{0:I perform, }{2:all of it }{5:I surrender }{3:to the Supreme }{4:Narayana.}",
+    "english": "{1:Whatever }{0:I perform, }{2:all of it }{5:I surrender }{3:to the Supreme }{4:Nārāyaṇa.}",
     "words": [
       {
         "roman": "Karomi",
@@ -3026,7 +3029,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Nārāyaṇāyeti",
-        "gloss": "unto Narayana, thus saying; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
+        "gloss": "unto Nārāyaṇa, thus saying; Nārāyaṇa is the refuge of living beings and rests upon the primordial waters",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3093,7 +3096,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Acyutaṁ Keśavaṁ Rāmanārāyaṇaṁ Kṛṣṇadāmodaraṁ Vāsudevaṁ Harim",
-    "english": "{0:Acyuta, }{1:Keshava, }{2:Rama}-{3:Narayana, }{4:Krishna}-{5:Damodara, }{6:Vasudeva, }{7:Hari,}",
+    "english": "{0:Acyuta, }{1:Keśava, }{2:Rāma}-{3:Nārāyaṇa, }{4:Kṛṣṇa}-{5:Dāmodara, }{6:Vāsudeva, }{7:Hari,}",
     "words": [
       {
         "roman": "Acyutaṁ",
@@ -3133,7 +3136,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Vāsudevaṁ",
-        "gloss": "son of Vasudeva / all-dwelling Lord",
+        "gloss": "son of Vāsudeva / all-dwelling Lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3200,7 +3203,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrīdharaṁ Mādhavaṁ Gopikāvallabhaṁ Jānakīnāyakaṁ Rāmacandraṁ bhaje",
-    "english": "{7:I worship }{0:Shridhara, }{1:Madhava, }{3:the beloved }{2:of the cowherd maidens, }{5:the lord }{4:of Janaki, }{6:Ramachandra.}",
+    "english": "{7:I worship }{0:Śrīdhara, }{1:Mādhava, }{3:the beloved }{2:of the cowherd maidens, }{5:the lord }{4:of Jānakī, }{6:Rāmacandra.}",
     "words": [
       {
         "roman": "Śrīdharaṁ",
@@ -3210,7 +3213,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mādhavaṁ",
-        "gloss": "Lord of Lakshmi / Madhava",
+        "gloss": "Lord of Lakṣmī / Mādhava",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3307,7 +3310,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hare Rāma Hare Rāma Rāma Rāma Hare Hare",
-    "english": "{0:Hare }{1:Rama, }{2:Hare }{3:Rama, }{4:Rama }{5:Rama, }{6:Hare }{7:Hare.}",
+    "english": "{0:Hare }{1:Rāma, }{2:Hare }{3:Rāma, }{4:Rāma }{5:Rāma, }{6:Hare }{7:Hare.}",
     "words": [
       {
         "roman": "Hare",
@@ -3414,7 +3417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hare Kṛṣṇa Hare Kṛṣṇa Kṛṣṇa Kṛṣṇa Hare Hare",
-    "english": "{0:Hare }{1:Krishna, }{2:Hare }{3:Krishna, }{4:Krishna }{5:Krishna, }{6:Hare }{7:Hare.}",
+    "english": "{0:Hare }{1:Kṛṣṇa, }{2:Hare }{3:Kṛṣṇa, }{4:Kṛṣṇa }{5:Kṛṣṇa, }{6:Hare }{7:Hare.}",
     "words": [
       {
         "roman": "Hare",
@@ -3424,7 +3427,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
+        "gloss": "O Kṛṣṇa; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3436,19 +3439,19 @@ window.SONG_LINES = {
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
+        "gloss": "O Kṛṣṇa; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
+        "gloss": "O Kṛṣṇa; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Kṛṣṇa",
-        "gloss": "O Krishna; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
+        "gloss": "O Kṛṣṇa; the divine cowherd; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3716,7 +3719,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Anantā mukhāñcā śiṇe Śeṣa gātāṅ",
-    "english": "{3:Shesha }{0:of infinite }{1:mouths }{2:grows weary }{4:while singing.}",
+    "english": "{3:Śeṣa }{0:of infinite }{1:mouths }{2:grows weary }{4:while singing.}",
     "words": [
       {
         "roman": "Anantā",
@@ -3781,7 +3784,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "namaskāra sāṣṭāṅga śrī sāīnāthā",
-    "english": "{0:Prostration }{1:with eight limbs }{2:unto holy }{3:Sainatha!}",
+    "english": "{0:Prostration }{1:with eight limbs }{2:unto holy }{3:Sāīnātha!}",
     "words": [
       {
         "roman": "namaskāra",
@@ -3803,7 +3806,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthā",
-        "gloss": "unto Sri Sainatha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
+        "gloss": "unto Śrī Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -4734,7 +4737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śukādīka jyāṁte samānatva detī",
-    "english": "{1:Unto whom }{0:Shuka and the great sages }{3:accord }{2:equality,}",
+    "english": "{1:Unto whom }{0:Śuka and the great sages }{3:accord }{2:equality,}",
     "words": [
       {
         "roman": "śukādīka",
@@ -4799,11 +4802,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prayāgādi tīrthe padī namra hotā",
-    "english": "{0:Prayag and other }{1:sacred pilgrimage waters }{4:become }{3:humble }{2:at whose feet,}",
+    "english": "{0:Prayāga and other }{1:sacred pilgrimage waters }{4:become }{3:humble }{2:at whose feet,}",
     "words": [
       {
         "roman": "prayāgādi",
-        "gloss": "Prayag and other",
+        "gloss": "Prayāga and other",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5006,7 +5009,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karī rāsakrīḍā save kṛṣṇanāthā",
-    "english": "{0:Engaged in }{1:the Rasa dance sport }{2:together with }{3:Lord Krishna.}",
+    "english": "{0:Engaged in }{1:the Rasa dance sport }{2:together with }{3:Lord Kṛṣṇa.}",
     "words": [
       {
         "roman": "karī",
@@ -5028,7 +5031,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kṛṣṇanāthā",
-        "gloss": "Lord Krishna; Kṛṣṇa means “dark” or “dark-hued”",
+        "gloss": "Lord Kṛṣṇa; Kṛṣṇa means “dark” or “dark-hued”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -5213,7 +5216,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhavī mohanīrāja hā tārī ātā",
-    "english": "{0:In worldly existence, }{3:ferry }{2:this }{1:Mohiniraj }{3:across }{4:now!}",
+    "english": "{0:In worldly existence, }{3:ferry }{2:this }{1:Mohanīrāja }{3:across }{4:now!}",
     "words": [
       {
         "roman": "bhavī",
@@ -5223,7 +5226,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mohanīrāja",
-        "gloss": "Mohiniraj (the poet)",
+        "gloss": "Mohanīrāja (the poet)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5284,7 +5287,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisā yeī bā sāī digambarā",
-    "english": "{1:Come }{0:thus, }{2:O dear }{3:Sai }{4:Digambara!}",
+    "english": "{1:Come }{0:thus, }{2:O dear }{3:Sāī }{4:Digambara!}",
     "words": [
       {
         "roman": "aisā",
@@ -5444,7 +5447,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrutisārā anusayātrikumārā bābā yeī bā",
-    "english": "{1:O essence }{0:of scripture, }{4:O son }{2:of Anasūyā }{3:and Atri, }{5:Baba, }{6:come, }{7:O dear one!}",
+    "english": "{1:O essence }{0:of scripture, }{4:O son }{2:of Anasūyā }{3:and Atri, }{5:Bābā, }{6:come, }{7:O dear one!}",
     "words": [
       {
         "roman": "śruti",
@@ -5478,7 +5481,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba / O father",
+        "gloss": "O Bābā / O father",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5527,11 +5530,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāśī snāna japa pratidivaśī",
-    "english": "{0:At Kashi, }{1:holy bath }{2:and mantra recitation }{3:every day,}",
+    "english": "{0:At Kāśī, }{1:holy bath }{2:and mantra recitation }{3:every day,}",
     "words": [
       {
         "roman": "kāśī",
-        "gloss": "at Kashi / Varanasi",
+        "gloss": "at Kāśī / Varanasi",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5592,11 +5595,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kolhāpūra bhikṣeśī nirmala nadī tuṅgā",
-    "english": "{0:At Kolhapur }{1:for alms, }{2:at the pure }{3:river }{4:Tunga,}",
+    "english": "{0:At Kolhāpūra }{1:for alms, }{2:at the pure }{3:river }{4:Tuṅgā,}",
     "words": [
       {
         "roman": "kolhāpūra",
-        "gloss": "at Kolhapur",
+        "gloss": "at Kolhāpūra",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5669,7 +5672,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jalaprāśī nidrā māhuradeśī aisā yeī bā",
-    "english": "{0:Drinking water, }{1:sleeping }{2:in the land of Mahur—}{4:come }{3:thus, }{5:O dear one!}",
+    "english": "{0:Drinking water, }{1:sleeping }{2:in the land of Māhura—}{4:come }{3:thus, }{5:O dear one!}",
     "words": [
       {
         "roman": "jalaprāśī",
@@ -5685,7 +5688,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māhuradeśī",
-        "gloss": "in the region of Mahur",
+        "gloss": "in the region of Māhura",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5793,7 +5796,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "triśūla ḍamarūdhārī bhaktāṁ varada sadā",
-    "english": "{0,1:Bearer of the trident }{1:and damaru, }{4:ever }{3:bestowing boons }{2:upon devotees,}",
+    "english": "{0,1:Bearer of the trident }{1:and hourglass drum, }{4:ever }{3:bestowing boons }{2:upon devotees,}",
     "words": [
       {
         "roman": "triśūla",
@@ -5803,7 +5806,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarūdhārī",
-        "gloss": "bearer of the damaru drum",
+        "gloss": "bearer of the hourglass drum",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6237,7 +6240,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "akṣaya tyāñce sadanī lakṣmī vāsa karī",
-    "english": "{1:in their }{2:abode, }{3:Lakshmi }{5:takes up }{0:imperishable }{4:residence.}",
+    "english": "{1:in their }{2:abode, }{3:Lakṣmī }{5:takes up }{0:imperishable }{4:residence.}",
     "words": [
       {
         "roman": "akṣaya",
@@ -6871,7 +6874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "namāmīśvaraṁ sadguruṁ sāīnātham",
-    "english": "{0:I bow to the Supreme Lord, }{1:the Sadguru, }{2:Sai Nath.}",
+    "english": "{0:I bow to the Supreme Lord, }{1:the Sadguru, }{2:Sāīnātha.}",
     "words": [
       {
         "roman": "namāmīśvaraṁ",
@@ -6887,7 +6890,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātham",
-        "gloss": "to Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
+        "gloss": "to Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -8151,7 +8154,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ajanmādyamekaṃ parabrahma sākṣāt svayaṃ sambhavaṃ rāmamevāvatīrṇam | bhavaddarśanātsaṃpunītaḥ prabho'haṃ",
-    "english": "{0:Unborn, }{1:primal, }{2:and one, }{3:the Supreme }{4:Brahman }{5:directly, }{6:self-}{7:manifest, }{8:Rāma }{9:himself }{10:descended—}{12:by beholding }{11:you, }{14:O Lord, }{15:I am }{13:thoroughly purified.}",
+    "english": "{0:Unborn, }{1:primal, }{2:and one, }{5:the very }{3:supreme }{4:reality, }{6:self-}{7:manifest, }{8:Rāma }{9:himself }{10:descended—}{12:by beholding }{11:you, }{14:O Lord, }{15:I am }{13:thoroughly purified.}",
     "words": [
       {
         "roman": "ajanm",
@@ -8179,13 +8182,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "Brahman, the Absolute Reality",
+        "gloss": "supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sākṣāt",
-        "gloss": "directly; manifestly",
+        "gloss": "in person; the very reality itself",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8203,7 +8206,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rāmam",
-        "gloss": "Rama; Rāma means “pleasing” or “delightful”: accusative",
+        "gloss": "Rāma; Rāma means “pleasing” or “delightful”: accusative",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8378,7 +8381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī-sāīśa kṛpānidhe'khilanṛṇāṃ sarvārthasiddhiprada yuṣmatpādarajaḥprabhāvamatulaṃ dhātāpi vaktā'kṣamaḥ |",
-    "english": "{0:O glorious }{2:Lord }{1:Sai, }{4:O treasure-house }{3:of mercy }{6:for }{5:all }{6:people, }{10:O bestower }{9:of the attainment }{7:of all }{8:aims, }{17:even }{16:the Creator }{19:is powerless }{18:to describe }{15:the peerless }{14:power }{13:of the dust }{11:of your }{12:feet.}",
+    "english": "{0:O glorious }{2:Lord }{1:Sāī, }{4:O treasure-house }{3:of mercy }{6:for }{5:all }{6:people, }{10:O bestower }{9:of the attainment }{7:of all }{8:aims, }{17:even }{16:the Creator }{19:is powerless }{18:to describe }{15:the peerless }{14:power }{13:of the dust }{11:of your }{12:feet.}",
     "words": [
       {
         "roman": "śrī",
@@ -8388,7 +8391,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī",
-        "gloss": "Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Sāī; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8611,7 +8614,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadbhaktyā śaraṇaṃ kṛtāñjalipuṭaḥ saṃprāpito'smi prabho śrīmat-sāīpareśapādakamalānnānyaccharaṇyaṃ mama ||",
-    "english": "{1:With }{0:true }{1:devotion, }{4:with palms }{3:folded }{4:in reverence, }{6:I have }{5:come }{2:for refuge, }{7:O Lord; }{12:other than the lotus }{11:feet }{8:of the glorious }{10:Supreme Lord }{9:Sai, }{13:there is no }{14:other }{15:refuge }{16:for me.}",
+    "english": "{1:With }{0:true }{1:devotion, }{4:with palms }{3:folded }{4:in reverence, }{6:I have }{5:come }{2:for refuge, }{7:O Lord; }{12:other than the lotus }{11:feet }{8:of the glorious }{10:Supreme Lord }{9:Sāī, }{13:there is no }{14:other }{15:refuge }{16:for me.}",
     "words": [
       {
         "roman": "sad",
@@ -8669,7 +8672,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī",
-        "gloss": "Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Sāī; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -8784,11 +8787,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīrūpadhararāghavottamaṃ bhaktakāmavibudhadrumaṃ prabhum |",
-    "english": "{4:Upon the foremost }{3:of the Raghus }{2:assuming }{1:the form }{0:of Sai, }{7:the celestial }{8:wish-fulfilling tree }{6:for the desires }{5:of devotees, }{9:the Lord—}",
+    "english": "{4:Upon the foremost }{3:of the Raghus }{2:assuming }{1:the form }{0:of Sāī, }{7:the celestial }{8:wish-fulfilling tree }{6:for the desires }{5:of devotees, }{9:the Lord—}",
     "words": [
       {
         "roman": "sāī",
-        "gloss": "Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Sāī; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9022,7 +9025,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaratsudhāṃśupratimaṃ prakāśaṃ kṛpātapatraṃ tava sāīnātha |",
-    "english": "{7:O Sai Nath, }{6:your }{3:radiant }{5:parasol }{4:of mercy, }{2:resembling }{0:the autumn }{1:nectar-rayed moon—}",
+    "english": "{7:O Sāīnātha, }{6:your }{3:radiant }{5:parasol }{4:of mercy, }{2:resembling }{0:the autumn }{1:nectar-rayed moon—}",
     "words": [
       {
         "roman": "śarat",
@@ -9068,7 +9071,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
+        "gloss": "O Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -9236,7 +9239,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upāsanādaivata sāīnātha stavairmayopāsaninā stutastvam |",
-    "english": "{1:O chosen deity }{0:of worship, }{2:O Sai Nath, }{7:you are }{6:praised }{3:through hymns of praise }{4:by me, }{5:Upasani.}",
+    "english": "{1:O chosen deity }{0:of worship, }{2:O Sāīnātha, }{7:you are }{6:praised }{3:through hymns of praise }{4:by me, }{5:Upāsanī.}",
     "words": [
       {
         "roman": "upāsanā",
@@ -9252,7 +9255,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
+        "gloss": "O Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9270,7 +9273,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "opāsaninā",
-        "gloss": "Upasani, the hymn's author; upāsaninā, instrumental",
+        "gloss": "Upāsanī, the hymn's author; upāsaninā, instrumental",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9629,7 +9632,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṣamasva sarvānaparādhapuñjān prasīda sāīśa sadguro dayānidhe ||",
-    "english": "{0:Forgive }{1:all }{3:heaps }{2:of offenses, }{4:be gracious, }{6:O Lord }{5:Sai, }{7:O Sadguru, }{9:O ocean }{8:of compassion.}",
+    "english": "{0:Forgive }{1:all }{3:heaps }{2:of offenses, }{4:be gracious, }{6:O Lord }{5:Sāī, }{7:O Sadguru, }{9:O ocean }{8:of compassion.}",
     "words": [
       {
         "roman": "kṣamasva",
@@ -9663,7 +9666,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāī",
-        "gloss": "Sai; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Sāī; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9778,7 +9781,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī-sāīnāthacaraṇāmṛtapūtacittāstatpādasevanaratāḥ satataṃ ca bhaktyā |",
-    "english": "{5:Those whose minds }{4:are purified }{3:by the nectar }{0:of Sri }{1:Sai Nath's }{2:feet }{9:and who are immersed }{8:in serving }{6:his }{7:feet, }{10:constantly }{11:and }{12:with devotion—}",
+    "english": "{5:Those whose minds }{4:are purified }{3:by the nectar }{0:of Śrī }{1:Sāīnātha's }{2:feet }{9:and who are immersed }{8:in serving }{6:his }{7:feet, }{10:constantly }{11:and }{12:with devotion—}",
     "words": [
       {
         "roman": "śrī",
@@ -9788,7 +9791,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
+        "gloss": "Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9927,11 +9930,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṃsārajanyaduritaughavinirgatāste kaivalyadhāma paramaṃ samavāpnuvanti ||",
-    "english": "{4:having emerged }{3:from the flood }{2:of sins }{1:born }{0:of saṃsāra, }{5:they }{9:fully attain }{8:the supreme }{7:abode }{6:of absolute liberation.}",
+    "english": "{4:having emerged }{3:from the flood }{2:of sins }{1:born }{0:of the cycle of worldly existence, }{5:they }{9:fully attain }{8:the supreme }{7:abode }{6:of absolute liberation.}",
     "words": [
       {
         "roman": "saṃsāra",
-        "gloss": "worldly transmigration",
+        "gloss": "the cycle of worldly existence",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10141,7 +10144,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadguroḥ sāīnāthasya kṛpāpātraṃ bhaveddhruvam ||",
-    "english": "{3:surely becomes }{2:a vessel of grace }{0:of the Sadguru, }{1:Sai Nath.}",
+    "english": "{3:surely becomes }{2:a vessel of grace }{0:of the Sadguru, }{1:Sāīnātha.}",
     "words": [
       {
         "roman": "sadguroḥ",
@@ -10151,7 +10154,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnāthasya",
-        "gloss": "of Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
+        "gloss": "of Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here; nātha means “lord” or “protector”",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -10503,7 +10506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na Dattaguru Sāī mā majavarī kadhīhī ruso",
-    "english": "{0:May}{1: Datta Guru}{2: Sai,}{3: Mother,}{0,5: never}{6: be angry}{4: with me.}",
+    "english": "{0:May}{1: Datta Guru}{2: Sāī,}{3: Mother,}{0,5: never}{6: be angry}{4: with me.}",
     "words": [
       {
         "roman": "na",
@@ -10919,7 +10922,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "parī na guru sāī majavarī kadhīhī ruso",
-    "english": "{0:Yet}{1: may}{2: Guru}{3: Sai}{1,5: never}{6: be angry}{4: with me.}",
+    "english": "{0:Yet}{1: may}{2: Guru}{3: Sāī}{1,5: never}{6: be angry}{4: with me.}",
     "words": [
       {
         "roman": "parī",
@@ -11620,7 +11623,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na datta guru sāī majavarī kadhīhī ruso",
-    "english": "{0:May}{1: Datta}{2: Guru}{3: Sai}{0,5: never}{6: be angry}{4: with me.}",
+    "english": "{0:May}{1: Datta}{2: Guru}{3: Sāī}{0,5: never}{6: be angry}{4: with me.}",
     "words": [
       {
         "roman": "na",
@@ -13377,7 +13380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "padī praṇaya voharo nikhila dṛśya bābā diso",
-    "english": "{1:May deep love }{2:stream }{0:at the feet; }{3:may the entire }{4:visible world }{6:appear as }{5:Baba.}",
+    "english": "{1:May deep love }{2:stream }{0:at the feet; }{3:may the entire }{4:visible world }{6:appear as }{5:Bābā.}",
     "words": [
       {
         "roman": "padī",
@@ -13484,7 +13487,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na datta guru sāī maja uparī yā janelā ruso",
-    "english": "{1:May Datta }{2:Guru }{3:Sai }{0:not }{8:be displeased }{4:with me, }{5:upon }{6:this }{7:servant.}",
+    "english": "{1:May Datta }{2:Guru }{3:Sāī }{0:not }{8:be displeased }{4:with me, }{5:upon }{6:this }{7:servant.}",
     "words": [
       {
         "roman": "na",
@@ -14711,7 +14714,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī nārāyaṇa vāsudevāya saccidānanda sadguru sāīnātha mahārāja kī jaya",
-    "english": "{8:Victory}{7: to }{0:Holy }{1:Narayana, }{2:unto Vasudeva, }{4:the True Master, }{3:existence, consciousness, and bliss embodied, }{6:Great King }{5:Sai Nath!}",
+    "english": "{8:Victory}{7: to }{0:Holy }{1:Nārāyaṇa, }{2:unto Vāsudeva, }{4:the True Master, }{3:existence, consciousness, and bliss embodied, }{6:Great King }{5:Sāīnātha!}",
     "words": [
       {
         "roman": "śrī",
@@ -14727,7 +14730,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "vāsudevāya",
-        "gloss": "unto Vasudeva (the all-pervading Lord)",
+        "gloss": "unto Vāsudeva (the all-pervading Lord)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -14745,7 +14748,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Lord Sāī / Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15057,7 +15060,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vihitamavihitaṁ vā sarvametatkṣamasva jaya jaya karuṇābdhe śrīprabho sāīnātha ||",
-    "english": "{0:prescribed }{1:or unprescribed, }{2:or otherwise—}{5:forgive }{3:all }{4:this! }{6:Victory, }{7:victory, }{9:O ocean }{8:of compassion, }{10:O glorious }{11:Lord, }{12:O Sai Nath!}",
+    "english": "{0:prescribed }{1:or unprescribed, }{2:or otherwise—}{5:forgive }{3:all }{4:this! }{6:Victory, }{7:victory, }{9:O ocean }{8:of compassion, }{10:O glorious }{11:Lord, }{12:O Sāīnātha!}",
     "words": [
       {
         "roman": "vihitam",
@@ -15133,7 +15136,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "O Lord Sai / Sai Nath (vocative); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "O Lord Sāī / Sāīnātha (vocative); Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -15188,7 +15191,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrī saccidānanda sadguru sāīnātha mahārāja kī jaya",
-    "english": "{6:Victory}{5: to }{0:the holy }{2:True Master, }{1:existence, consciousness, and bliss embodied, }{4:Great King }{3:Sai Nath!}",
+    "english": "{6:Victory}{5: to }{0:the holy }{2:True Master, }{1:existence, consciousness, and bliss embodied, }{4:Great King }{3:Sāīnātha!}",
     "words": [
       {
         "roman": "śrī",
@@ -15210,7 +15213,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Lord Sāī / Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -15271,7 +15274,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rājādhirāja yogirāja parabrahma sāīnātha mahārāja",
-    "english": "{0:King of kings, }{1:King of yogis, }{2:Supreme Brahman, }{4:Great King }{3:Sai Nath!}",
+    "english": "{0:King of kings, }{1:King of yogis, }{2:supreme reality, }{4:Great King }{3:Sāīnātha!}",
     "words": [
       {
         "roman": "rājādhirāja",
@@ -15287,13 +15290,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "parabrahma",
-        "gloss": "supreme Brahman / ultimate reality",
+        "gloss": "supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai / Sai Nath; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
+        "gloss": "Lord Sāī / Sāīnātha; Sāī (“master” or “lord”) names the revered spiritual teacher Śirḍī Sāī Bābā here",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Gurbāṇī",
     "Rāma",
-    "Guru"
+    "Guru",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Mo Kau Tari Le Rama",

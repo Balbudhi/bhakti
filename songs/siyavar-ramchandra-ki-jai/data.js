@@ -11,7 +11,10 @@ window.SONG_META = {
   "subjectTags": [
     "Rāma",
     "Śiva",
-    "Hanumān"
+    "Hanumān",
+    "Sītā",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Siyavar Ramchandra Ki Jai",

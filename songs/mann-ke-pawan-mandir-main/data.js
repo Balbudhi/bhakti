@@ -1147,7 +1147,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum pūjā phir arpaṇ tum, jag māyā ke ant ho tum",
-    "english": "{0:You are }{1:worship, }{2:then }{4:you are }{3:the offering; }{10:you }{9:are }{8:the end }{7:of }{5:worldly }{6:māyā},",
+    "english": "{0:You are }{1:worship, }{2:then }{4:you are }{3:the offering; }{10:you }{9:are }{8:the end }{7:of }{5:worldly }{6:enchantment},",
     "words": [
       {
         "roman": "tum",
@@ -1187,9 +1187,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "power of worldly appearance; cosmic veil",
+        "gloss": "enchantment; the veiling power of worldly appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ke",

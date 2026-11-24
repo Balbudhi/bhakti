@@ -10,7 +10,9 @@ window.SONG_META = {
     "Awadhi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Sītā",
+    "Śakti"
   ],
   "searchAliases": [
     "Rama",

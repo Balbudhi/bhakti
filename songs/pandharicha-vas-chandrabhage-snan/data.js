@@ -15,7 +15,8 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Pandharica Vas Candrabhage Snan",

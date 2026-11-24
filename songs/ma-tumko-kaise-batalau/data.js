@@ -12,7 +12,8 @@ window.SONG_META = {
   "subjectTags": [
     "Śāradā Devī",
     "Śakti",
-    "Guru"
+    "Guru",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Shri Sharada Devi",

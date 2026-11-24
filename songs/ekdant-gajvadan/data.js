@@ -16,7 +16,10 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Śiva",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Ganesha",
@@ -889,7 +892,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaṅkara suvana riddhi siddhi nava nidhi dāī",
-    "english": "{0,1:Son of Śaṅkara, }{6:bestower of }{2:Ṛddhi, }{3:Siddhi, }{4:and the nine }{5:treasures}",
+    "english": "{0,1:Son of Śaṅkara, }{6:bestower of }{2:prosperity, }{3:spiritual accomplishment, }{4:and the nine }{5:treasures}",
     "words": [
       {
         "roman": "śaṅkara",
@@ -905,13 +908,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "riddhi",
-        "gloss": "prosperity; abundance [Ṛddhi]",
+        "gloss": "prosperity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "siddhi",
-        "gloss": "spiritual accomplishment; attainment [Siddhi]",
+        "gloss": "spiritual accomplishment",
         "concept_key": "",
         "preserve_in_english": false
       },

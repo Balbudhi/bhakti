@@ -43,7 +43,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "line-paluke-short": {
     "source": "పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "పలుకే",
@@ -79,7 +79,7 @@ window.SONG_LINES = {
   },
   "line-kodanda-paluke": {
     "source": "కోదండపాణి పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "కోదండపాణి",
@@ -127,7 +127,7 @@ window.SONG_LINES = {
   },
   "line-paluke-kodanda-paluke": {
     "source": "పలుకే బంగారమాయెనా కోదండపాణి పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "పలుకే",
@@ -199,7 +199,7 @@ window.SONG_LINES = {
   },
   "line-pilichina": {
     "source": "పలుకే బంగారమాయె పిలిచినా పలుకవేమి",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "పలుకే",
@@ -259,7 +259,7 @@ window.SONG_LINES = {
   },
   "line-kalalo": {
     "source": "కలలో నీ నామస్మరణ మరువ చక్కని తండ్రి పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "కలలో",
@@ -367,7 +367,7 @@ window.SONG_LINES = {
   },
   "line-iravuga": {
     "source": "ఇరవుగ ఇసుకలోన పొరలిన యుడుత భక్తికి",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "ఇరవుగ",
@@ -439,7 +439,7 @@ window.SONG_LINES = {
   },
   "line-karuninchi-brochiti": {
     "source": "కరుణించి బ్రోచితివని నెరనమ్మితిని తండ్రి పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "కరుణించి",
@@ -523,7 +523,7 @@ window.SONG_LINES = {
   },
   "line-enta-vedina": {
     "source": "ఎంత వేడినగాని సుంతైన దయరాదు",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "ఎంత",
@@ -583,7 +583,7 @@ window.SONG_LINES = {
   },
   "line-pantamu-seya": {
     "source": "పంతము సేయ నేనెంతటి వాడను తండ్రి పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "పంతము",
@@ -679,7 +679,7 @@ window.SONG_LINES = {
   },
   "line-sharanagata": {
     "source": "శరణాగత త్రాణ బిరుదాంకితుడవు కావా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "శరణాగత",
@@ -751,7 +751,7 @@ window.SONG_LINES = {
   },
   "line-karuninchu-bhadrachala": {
     "source": "కరుణించు భద్రాచల వర రామదాస పోష పలుకే బంగారమాయెనా",
-    "sourceLanguage": "",
+    "sourceLanguage": "te",
     "sourceWords": [
       {
         "text": "కరుణించు",

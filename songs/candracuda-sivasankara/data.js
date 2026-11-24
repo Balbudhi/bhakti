@@ -15,7 +15,14 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Kṛṣṇa",
+    "Viṣṇu",
+    "Rāma",
+    "Lakṣmī",
+    "Viṭṭhala",
+    "Śakti"
   ],
   "searchAliases": [
     "Candracuda Shivashangkara",

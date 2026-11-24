@@ -432,19 +432,19 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dharama karama nija swārthare",
-    "english": "{0:dharma }and {1:karma }{2:for one's own }{3:selfish interest.}",
+    "english": "{0:duties }and {1:deeds }{2:for one’s own }{3:selfish interest.}",
     "words": [
       {
         "roman": "Dharama",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "duties",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds; actions",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "nija",

@@ -18,7 +18,8 @@ window.SONG_META = {
     "Gurbāṇī",
     "Guru",
     "Kṛṣṇa",
-    "Nirguṇa"
+    "Nirguṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Jo Nar Dukh Mein Dukh Nahi Mane",

@@ -16,7 +16,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Sarasvatī",
-    "Śakti"
+    "Śakti",
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Sharanembe Vani",

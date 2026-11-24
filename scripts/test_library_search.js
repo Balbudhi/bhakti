@@ -36,6 +36,8 @@ assert.equal(matchesSearch(song, "thanu"), true);
 assert.equal(matchesSearch({ ...song, subjectTags: ["Śirḍī Sāī"] }, "Shirdi Sai"), true);
 assert.equal(matchesSearch({ ...song, searchAliases: ["Sangeetha Katti"] }, "Sangeetha"), true);
 assert.equal(matchesSearch(song, "Krishna"), false);
+assert.equal(matchesSearch({ ...song, subjectTags: ["Kṛṣṇa"] }, "Krishna"), true);
+assert.equal(matchesSearch({ ...song, subjectTags: ["Kṛṣṇa"] }, "Krsna"), true);
 
 // Query words may span fields and arrive in any order; all words must match.
 // Aliases supply evidenced spelling variants without broad phonetic conflation.
@@ -161,5 +163,38 @@ for (const query of ['namdev bhimsen tirtha', 'absent phrase', 'Viṭṭhal', ''
 }
 assert.equal(titleReads, readsAfterIndex, 'Repeated input reuses immutable catalogue search fields');
 assert.equal(filterSongs([{...indexedSong, title: 'Changed title'}], {query: 'Changed title'}).length, 1);
+
+// Query aliases must also find ordinary English metadata, not only IAST entries.
+const ordinaryKrishna = {...song, slug: "ordinary-krishna", title: "Krishna", subjectTags: [], searchAliases: []};
+for (const query of ["Krishna", "Krsna", "Krshna", "Krisna", "Kṛṣṇa"]) {
+  assert.equal(filterSongs([ordinaryKrishna], {query}).length, 1, query + " matches ordinary Krishna spelling");
+}
+
+// Fallback is reserved for a globally empty exact search, including before
+// facet narrowing. Every remembered word still has to be accounted for.
+const approximateSongs = [
+  {slug:'remembered-prabh', title:'Prabh Jū To Kah Lāj Hamārī', languageTags:['Hindi'], subjectTags:[]},
+  {slug:'remembered-krishna', title:'Kṛṣṇa', languageTags:['Sanskrit'], subjectTags:[]},
+  {slug:'remembered-shiva', title:'Śiva Śaṅkara', languageTags:['Sanskrit'], subjectTags:[]},
+  {slug:'remembered-hanuman', title:'Hanumān', languageTags:['Hindi'], subjectTags:[]},
+];
+for (const [query,slug] of [
+  ['prab joo laaj hamari','remembered-prabh'],
+  ['krishan','remembered-krishna'],
+  ['shiv shanker','remembered-shiva'],
+  ['hanumaan','remembered-hanuman'],
+]) assert.deepEqual(Array.from(filterSongs(approximateSongs,{query}),s=>s.slug),[slug],query);
+assert.equal(filterSongs(approximateSongs,{query:'prab joo impossible'}).length,0);
+assert.equal(filterSongs([{slug:'long',title:'Compassionate',languageTags:[],subjectTags:[]}],{query:'kompassionte'}).length,1,'long words allow at most two edits');
+assert.equal(filterSongs([{title:'on ram cat',slug:'short',languageTags:[],subjectTags:[]}],{query:'om'}).length,0,'two-letter words do not fuzz');
+assert.equal(filterSongs([{title:'ram cat',slug:'short',languageTags:[],subjectTags:[]}],{query:'ran'}).length,0,'three-letter words require exact/vowel-form evidence');
+assert.equal(filterSongs([{title:'organ',slug:'unrelated',languageTags:[],subjectTags:[]}],{query:'ocean'}).length,0,'two edits in a short word are not tolerated');
+assert.equal(filterSongs([{title:'कमल',slug:'native',languageTags:[],subjectTags:[]}],{query:'किमल'}).length,0,'native-script spelling is not approximated');
+const exactAndNear = [
+  {slug:'exact-name',title:'Guru Gobind Singh',languageTags:['Punjabi'],subjectTags:[]},
+  {slug:'near-name',title:'Guru Gobind Sing',languageTags:['Hindi'],subjectTags:[]},
+];
+assert.deepEqual(Array.from(filterSongs(exactAndNear,{query:'Guru Gobind Singh'}),s=>s.slug),['exact-name']);
+assert.equal(filterSongs(exactAndNear,{query:'Guru Gobind Singh',languages:['Hindi']}).length,0,'facets cannot enable fuzzy alternatives to an exact name');
 
 process.stdout.write("library search aliases and cached fields: ok\n");

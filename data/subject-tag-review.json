@@ -1,0 +1,944 @@
+{
+  "schemaVersion": 1,
+  "scope": "Contextual dispositions of the finite subject signal screen; not an exhaustive certification of all possible references. Accepted additions are recorded with performed-source witnesses in song_tag_overrides.json.",
+  "decisions": {
+    "aisa-pyar-baha-de-maiya": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "226736433cd86d4dfd0cb0fb8bc9d402340892261fb6540ce553c4b7ed8e8827",
+        "reason": "Shiva occurs in the explanatory etymology of Bhavani; the lyric invokes the goddess and adds no separate Shiva name or narrated relationship."
+      }
+    },
+    "auga-na-jauga": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "d4708a2cf1562ac8f1b5f2539c8dc860828cf6f19c03b429de044779380b26f1",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      }
+    },
+    "baithe-hain-rama-lakhan": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "2984b12b0eca985ee95feb867b42af4ae97ec5024aa664a16600b7b1f966a5d8",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "barayya-ba-ba-bhakutara-priya": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "dd585a300c77723756fd95bc5341cac352fd2ac20a8e516bace8c5611221696c",
+        "reason": "The performed feminine Ramā/Rame name refers to Lakshmi or her consort relation; diacritic folding must not turn it into masculine Rāma."
+      }
+    },
+    "biduvenenayya-hanuma": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "f450b8bd66c7f3816089f89b51b0e6a97b592ff23996e8c225d9ce1de6396fca",
+        "reason": "Rama occurs only in explanatory Hanuman/Hari gloss context in these candidates; the performed words do not name Rama here."
+      }
+    },
+    "bolo-lakshmi-maat-ki-jai": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "9162ea2a19bacfa43ae43eefd4ab8a7536c2322945c3e230b9420853ecd2cb64",
+        "reason": "The performed feminine Ramā/Rame name refers to Lakshmi or her consort relation; diacritic folding must not turn it into masculine Rāma."
+      }
+    },
+    "chitrakoot-ati-vichitra": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "b929d1d357b9802d666f9871be6b0693a607d134239bb509ec6b1150eff48386",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      },
+      "Sarasvatī": {
+        "decision": "dismiss",
+        "inputHash": "eb7c0fd94f2a6527b99ea6eef3a5473652c7bb85b2712d57138b58341f805123",
+        "reason": "Śarada describes the autumn moon here, not the goddess Śāradā."
+      }
+    },
+    "daata-ek-ram": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "0075f70fad85400bd8bcb071dbc4e42cb914e4d701d167383fe767518534d185",
+        "reason": "The screened Sita name occurs in an explanatory gloss for Rama; the performed line does not itself name or narratively identify Sita. Do not derive family tags from an encyclopedic gloss."
+      }
+    },
+    "doi-kar-teka-hei-matha": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "72e8b40154add63c028cfd3507f3a976f5c0d0e13a927f4738b3fd0c00df8df0",
+        "reason": "The performed feminine Ramā/Rame name refers to Lakshmi or her consort relation; diacritic folding must not turn it into masculine Rāma."
+      }
+    },
+    "duhkh-me-sumiran-sab-kare": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "6891a77cab4cb4fb5ea8b175264e589e3074dc6e1d1284c17d5754e763a35133",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      }
+    },
+    "gagan-mein-thaal": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "eb3a91a80184604b988b3d91e20ada9c1b9e1967033f8089360cc069b22d2f26",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      }
+    },
+    "gaiye-ganpati-jagvandan": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "c46f272567be79fe6f054cb8f0255b6e4b9144c3a9e01a9ef7cee5ee744ccc6a",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "ghatikachaladi-ninta-shri-hanumanta": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "745c99e7b1ae5b64b1242e955b04e17fd97ae811fcfe0f3acefe5cbcab138fb6",
+        "reason": "Rama occurs only in explanatory Hanuman/Hari gloss context in these candidates; the performed words do not name Rama here."
+      }
+    },
+    "gur-satgur-ka-jo-sikh-akhaye": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "59ddff9c3b452e11d412c218e95697f1896dea2f850043b0a2719bf225663d02",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      }
+    },
+    "hanuman": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "3d6b9dea20b82afa86557cdffd344aecd0c46f248e806aa1ac24012dd8b6f1b5",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "har-jiyo-kirpa-karo": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "619e0e3c7242c63717159e56db2a76d0106724db097c32ed2190431688e22a69",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      }
+    },
+    "he-dukhbhanjan": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "23ebc80718693ae1a0e0a22a22c4aa1449e5963ea700182565e4e5e982bf5407",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "jaake-priya-na-rama": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "3b3c9bb8383e36c825b688505f207f9917a1356c25298ba8b92f129fb0e65c72",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "jai-hanuman-hanuman-ansh": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "d6c10a04aaa495ca282a41b45cc743dc7ef0e93ea473ce5a35573b864933c911",
+        "reason": "The screened Sita name occurs in an explanatory gloss for Rama; the performed line does not itself name or narratively identify Sita. Do not derive family tags from an encyclopedic gloss."
+      }
+    },
+    "jai-jai-durge-aad-bhavani": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "a2e76349d25e02351cf67d97641697914692a6457d04178d1c3625b3282f6c92",
+        "reason": "Shiva occurs in the explanatory etymology of Bhavani; the lyric invokes the goddess and adds no separate Shiva name or narrated relationship."
+      }
+    },
+    "jai-shankar-bhole": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "4009d0e30ef927b182f20ab8bcb2075e573c749f5e82f84f73e84c487695a104",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "0baafbbe7ae6d5594732b89c2f159ae271a4e8545d9df64fb2f492c0306bcb28",
+        "reason": "The screened Sita name occurs in an explanatory gloss for Rama; the performed line does not itself name or narratively identify Sita. Do not derive family tags from an encyclopedic gloss."
+      }
+    },
+    "jaise-suraj-ki-garmi-se": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "b14a5ef09b4e276f204d271371b2826d749c016123d2ebf29551c53bde116add",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "24e7d8750ca25fc5f2fe6b4a73d5cab15bc5469e131c0399f1dcca901755c506",
+        "reason": "The screened Sita name occurs in an explanatory gloss for Rama; the performed line does not itself name or narratively identify Sita. Do not derive family tags from an encyclopedic gloss."
+      }
+    },
+    "janani-main-na-jiyun-bin-rama": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "0a9c71da6f691ef4256c842780fd5a6c9dd1c29eef913d1e396a13fa0bbd1183",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "jo-kachu-sankat-hoye-hamaro": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "a902b5b39f7e5d4e7e6a1d5a487b3b8a1b9cba3df9dfd0198551dab9eba79bab",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      }
+    },
+    "kahe-re-ban-khojan-jai": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "fb9afb9cf04fc8b5d921eaa7913814f4f0951212432e272f19cfcc90ebc7cb94",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      }
+    },
+    "kanakadhara-stotram": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "b2e843878f01e90bd2c0b4b49657b56ee244e03f3fc847f2d00ea2b0736fce53",
+        "reason": "The performed feminine Ramā/Rame name refers to Lakshmi or her consort relation; diacritic folding must not turn it into masculine Rāma."
+      }
+    },
+    "koee-aan-milavai-mera-pritam-pyara": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "b7b61d6640761c3ebedb68113de25411bf600a9a139c01b7d3eb6c66bdf3868b",
+        "reason": "Hari/Har is a divine name here, already handled under the broader Vishnu name-reference policy; Krishna appears only as a possible referent in its gloss, without a performed Krishna-specific name or image."
+      },
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "fd09696c84564f746867af9ac602eb3a9ca6865bf08dde9a9cbcc36ee6fc90d4",
+        "reason": "Rama occurs only in explanatory Hanuman/Hari gloss context in these candidates; the performed words do not name Rama here."
+      }
+    },
+    "koi-bhaje": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "e258ef30839102f7e8eac4fc6122fe530ae51e5142a58ddef47d68a5e7f8346e",
+        "reason": "The screened Sita name occurs in an explanatory gloss for Rama; the performed line does not itself name or narratively identify Sita. Do not derive family tags from an encyclopedic gloss."
+      }
+    },
+    "leke-bhesh-fakirika": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "4ca4e7463a42932a00256202c70cb559191852ddcb4f7daba799519deea2c99f",
+        "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "19e94718f90be8a7052669d867e99818ee44f34d4a4aa7569a1bb7e347b75457",
+        "reason": "The screened Sita name occurs in an explanatory gloss for Rama; the performed line does not itself name or narratively identify Sita. Do not derive family tags from an encyclopedic gloss."
+      }
+    },
+    "benti-chaupai": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "62e5d33db15b9faa5ceccad46e358b93b71dba3e22e04e05e9d8db53649db64d",
+        "reason": "Gobind in this match belongs to the historical Guru Gobind Singh introduction; no Krishna identity is asserted there."
+      }
+    },
+    "bhagyada-lakshmi-baramma": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "5ec8b88d8b22e970f49a36b84072bcda78a177917a65983b4f287a869038bd2e",
+        "reason": "The performed forms are Alagiri Ranga and Purandara Vitthala; tag those actual forms and Vishnu context without adding Krishna solely from the Vitthala gloss."
+      }
+    },
+    "bhetilagi-jiva": {
+      "Viṭṭhala": {
+        "decision": "dismiss",
+        "inputHash": "c2b4168c8a626a147651ade5f5280c0a1fa790649ad3c28a3a2fe2b9a3eb2f03",
+        "reason": "The screened verses name Pandhari as the maternal home of the soul; no explicit Vitthala name appears in these hits. Pilgrimage/author association alone is left unassigned pending more specific identity evidence."
+      }
+    },
+    "datta-brahmachari": {
+      "Viṭṭhala": {
+        "decision": "dismiss",
+        "inputHash": "1863e719d863807fd17096417f035646018ca910461c7b997e720296b09e2aca",
+        "reason": "Pandharpur is one location of Dattatreya’s roaming; the sung action belongs to Datta, not a named Vitthala reference."
+      }
+    },
+    "deh-shiva-bar-mohe-hai": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "1be11e9da79a35f58e8c630a61efeae7017ce6218522fd5d73fdf41ad8c8a554",
+        "reason": "Existing reviewed exclusion: Śivā is feminine Goddess in this Chandi prayer; folding final ā must not create male Śiva."
+      }
+    },
+    "deha-re-mo-lagilani": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "e6f21d8cbee5ec50a571cbaa1afa9d2608406fabc6eaa58dbb304bdc4e0fd277",
+        "reason": "Śeṣa means end/remaining in the line about decaying wood, not the serpent Śeṣa or a Vishnu image."
+      }
+    },
+    "devi-aparadha-kshamapana-stotram": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "0a7747cebd5e409fb6779e035a69ed1b884a480fc1ad2262b032aae58f505c93",
+        "reason": "Śyāme is feminine address to the dark Goddess in the verse, not male Śyāma/Krishna."
+      }
+    },
+    "devi-dhyana": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "0c95045d9d29453ccf91b76580739ab683ff115e9d220997e128c41ab3996fbb",
+        "reason": "Tridents, crescent and three eyes belong to the described goddesses here; shared iconography alone does not create Shiva reference."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "8edfed7f0ebc94d2faaa205d3e4b6f189f6fbbbf357cc03279dff838251b267a",
+        "reason": "Śītāṃśu means the cool-rayed moon in this compound, not Sita."
+      }
+    },
+    "devimahatmya-chapter-12": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "f3d859ea444ba7a7884da9cbd7ed89b2131d91c0fb8e3f8b3dd16d660d42f02d",
+        "reason": "The discus and other weapons are borne by Durga in this meditation; a discus alone does not create a separate Vishnu reference."
+      }
+    },
+    "dhan-dhan-ramdas-guru": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "e7d3e5569a6b53dd6b25db6f81656013bd5436f90e650b48ab8497db016b4b40",
+        "reason": "Rāmdās is the historical Guru Ram Das in the performed praise, not a separate Rama name."
+      }
+    },
+    "dhoop-aarti": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "cbb1ae6fcad8efc528e39f9228284d2bcd833a5612d5333c88417df886110dbe",
+        "reason": "Trident and drum describe Dattatreya in the surrounding Datta aarti; these shared attributes do not alone make a separate Shiva reference."
+      }
+    },
+    "endaro-mahanubhavulu": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "279362ceb2f41962bbf10961af86213649ace70d67ba32106e975bc8dac76b29",
+        "reason": "Gita names a text among scriptures; Krishna occurs only in its explanatory gloss, not as a performed deity name in the screened line."
+      }
+    },
+    "ganapat-vighna-haran": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "8e8d2d5311862312bf224cf03aedc64e77487fdea6c3d6a3616983c7d7ea7a4c",
+        "reason": "The moon on the forehead belongs to Ganesh in this song, not a separate Shiva figure."
+      }
+    },
+    "ghana-shyama-sundara": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "8aa6d016a51479c755fdd5bc575e5978616065b7ab08d8725a0a5bae9fc43fdd",
+        "reason": "Conches are temple instruments sounding in the morning; their sound is not a separate Vishnu identity signal."
+      }
+    },
+    "ghanshyam-sundara": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "5a8f56301c17edbf573941fb2955068584faf34352ce59343a3a471d66a3fead",
+        "reason": "Śrīdhara is applied to the explicitly invoked Krishna here. Retain Lakshmi relationship, but do not add Vishnu from a gloss listing alternative bearer identities."
+      }
+    },
+    "jab-karm-ka-khata-kholegi-maa": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "296750a8d31e09d9043c08233bea59d1edeccd1abf1abb9c1ffd2463e105d5ca",
+        "reason": "Vaiṣṇo is the named Goddess Vaiṣṇo Devi; its derivation must not automatically add male Vishnu."
+      },
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "3263fdba5d27ab43c0aab5065fecb045f47f83f3db24cdbf1a2e6d252a4280ee",
+        "reason": "Lion-riding Mother is shared goddess iconography in these Vaiṣṇo/Chamunda songs; it does not independently establish a specific Durga name-reference."
+      }
+    },
+    "jagadamb-jagadamb": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "7bb4567feb7e331349fae42268bb465a2c67bf2eb33810977ed3f950a2260b5a",
+        "reason": "Vishnu plays flute in the divine assembly, but the instrument alone does not identify a separate Krishna form."
+      }
+    },
+    "jagannath-jagannath": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "0bd0b1e0ad2f1950f320da769a1b3b1e0c6daf2059dc8f96045327f2eb19ed5e",
+        "reason": "Śeṣa ṭhāba means final refuge, not the serpent couch. The performed Vāsudeva name is covered by Kṛṣṇa; the generic glossary relation to Viṣṇu does not add an independently performed Viṣṇu form."
+      }
+    },
+    "jai-ambe-gauri": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "0b9ec8783c4d7ea63d05e78aaf5abe20c8876464d292202d5e2042aa39d7d24b",
+        "reason": "Śyāmā Gaurī is feminine Goddess address, not Krishna."
+      }
+    },
+    "jai-ganesh-gananath-dayanidhi": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "65796bfc2a38ad5aeb3e64ed18000f7dbec5fa411ce7a38cb1f764a611221091",
+        "reason": "Trident and axe are explicitly held by Ganesh; shared weapons alone do not establish Shiva."
+      }
+    },
+    "jiba-dale-dale-jae-lo": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "a357e9fabd0d760d7995e18bff60189152ad2ccafcf1283e6561d8bf7277060b",
+        "reason": "Śeṣa means the end of life, not the serpent Śeṣa or Vishnu."
+      }
+    },
+    "ksirabdhisayana-sribhasya-mangala": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "262ebafcf043ad3c6a22d15885550afdda417f5e26577a6b5ae4214d9e9c4456",
+        "reason": "The speaker’s mind is compared to a peacock rejoicing in the cloud-colored Lord; this is a simile, not Krishna’s peacock feather."
+      }
+    },
+    "ma-tumko-kaise-batalau": {
+      "Sarasvatī": {
+        "decision": "dismiss",
+        "inputHash": "f20a76a65054ceedf6dc4349d183a4f52c612833ca2606504691fb950dd6620a",
+        "reason": "Śāradā here is the historical Śāradā Devī addressed as Mother, already identified by that subject tag; the name alone does not establish Sarasvatī."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "7581d0751fe67d769b1837f07d1e5b963dad4a2aa3cf789adfef7e6056e3345e",
+        "reason": "Bhavānī names the Goddess; Śiva occurs only in the glossary’s etymological relationship, not as a performed reference."
+      }
+    },
+    "madhur-madhur-sai-naam": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "dd100aca191ed980385daf2fb849a44ea625da47338a94dface3c4f50beefbd4",
+        "reason": "Sītā occurs only in the explanatory Rāma gloss; no performed Sītā reference is present in these hits."
+      }
+    },
+    "madhyahna-aarti": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "88bbfec8c32e7b6ac69bb25e00a6e8d2de0437ff1011174d2f10866d6f57237a",
+        "reason": "The trident, drum and matted-hair description is addressed to Sai/Datta, explicitly the son of Anasūyā and Atri; it does not name Śiva separately."
+      }
+    },
+    "mahavir-hanuman-gosain": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "ff2153b7e53ba21bd9b0398c912a7eec5f5253449d69f8057712d85c239e178f",
+        "reason": "Viṣṇu occurs only in the general Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      }
+    },
+    "main-dharu-tiharo-dhyan": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "cea681c799eddb96a3963cdb876e95c96e0ec23240111197c1f33514b43ed9e7",
+        "reason": "Śyām modifies the dark complexion of the fearsome Goddess; it does not name Kṛṣṇa."
+      }
+    },
+    "man-maila-aur-tan-ko-dhoye": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "feb8fd9688eee486cad2e713d30ac1e0d8bb678551b38c65ac00114e3b0423a8",
+        "reason": "Bholā means the naive sleeping person in this line, not Śiva."
+      }
+    },
+    "man-tu-jot-saroop-hai": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "72c5b946f596fb57b23063cae6bb30cab7c0d16f26e65ecb611c920b807385d0",
+        "reason": "Hari is the divine name here; Kṛṣṇa occurs only as one glossary identification without a specific Kṛṣṇa reference in the performed passage."
+      }
+    },
+    "mangala-slokagalu": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "0de8364b9e338f57e6676558106616029b0e7ff23bad67936cb472b34b01ddd9",
+        "reason": "Rāma occurs only in background information about Hanūmat in the gloss, not as the performed object of this remembrance verse."
+      },
+      "Jagannātha": {
+        "decision": "dismiss",
+        "inputHash": "0d9baa9f513982e77964b0996a8bef000b11fd670babff82eea9c5ab82701c56",
+        "reason": "Jagannātha is the named human teacher being praised here, not the deity of Purī."
+      }
+    },
+    "mere-man-prem-lago-har-teer": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "beb3dc195fa5f1801d123ffb29ff18924c4afd5d545635c25b2254e00eb6020a",
+        "reason": "Hari is the divine name here; Kṛṣṇa occurs only as one glossary identification without a specific Kṛṣṇa reference in the performed passage."
+      },
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "3305afa57535c42ce1e81cf802ff1945dca839a2bb094d6cd181340b7c356158",
+        "reason": "Rām Dās is the human Guru identified in the Nānak signature gloss, not a deity reference."
+      }
+    },
+    "mere-ram-tum": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "d8de7241fe53701bcac06b73c47989b06a18551420238d575e80fd12cc53f169",
+        "reason": "Sītā occurs only in background information about Rāma in the glossary."
+      }
+    },
+    "mujhe-apni-sharan-mein-le-lo-maa": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "a39e96139a836f0bd80c667d92d96ac2f2e2e69f2d70a762bb6ce9613fb1ff44",
+        "reason": "Bhavānī names the Goddess; Śiva is only an explanatory spouse identification in the gloss."
+      }
+    },
+    "namacha-gajar-garje-bhimatir": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "89c5c033fc3221269095bc8a683985379fcbb2074b0eaff5a653149c98c5407f",
+        "reason": "Hari Viṭṭhal names Viṭṭhala; the gloss’s broad Kṛṣṇa equivalence does not add a separate form tag."
+      }
+    },
+    "namo-namo-vindhyeshwari": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "050f02e40e0ec74aa4e88ff622ffc9ea2cfcc461766e5fb5527d4c30f1710e0e",
+        "reason": "Ramā is the goddess Lakṣmī, not the masculine name Rāma."
+      },
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "fd65330e32aedc9ced1d441f9b35c7bf3f44eaeb8275a6ffe0e970cf45f04c7e",
+        "reason": "Rādhikā, Śyāmā and Mādhavī are goddess names here; Kṛṣṇa appears only as glossary relationship/background, not a separately evidenced performed reference."
+      }
+    },
+    "narayani-stuti": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "3bdd62a08c87db338cf0238fddce9195106be403a8123ec170081e03aed16f84",
+        "reason": "The peacock belongs to Kaumārī’s iconography, and Yaśodā’s daughter is the Goddess herself; neither line names or describes Kṛṣṇa as its referent."
+      }
+    },
+    "o-shirdi-ke-sai": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "0ea93938a7362ab394d56f60a771118e2f85bc045c21dd95988f66a0cfa7817d",
+        "reason": "Viṣṇu occurs only in the Rāma gloss; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "1901b994a3076b1c0a3a32c3676074b72a857f2504f2d756be264047529c7967",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "om-jai-gangadhar-aarti": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "a735d4784b2b6178ad697f0ce4099076957a646abb95ea8ed1519ccb493495f5",
+        "reason": "The peacock comparison and flute describe the musicians/dancers in this Śiva āratī, not Kṛṣṇa."
+      },
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "82b7250a010863da1da32087ab28c48697a154e420fe6060e9429d3834193972",
+        "reason": "The conch is a musical instrument in this āratī scene, not a specific Viṣṇu reference."
+      }
+    },
+    "pandharicha-vas-chandrabhage-snan": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "7e957d56bef075dfe3eb8b3c803ea44e7eea288ca15791a5503dde710b0beb77",
+        "reason": "Janārdana is named as the Lord present in all people; a generic Viṣṇu/Kṛṣṇa gloss does not establish a specific Kṛṣṇa form reference."
+      }
+    },
+    "parvati-devi-mahamayavini": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "961041586b60f99b23ff5d3765c25a45fd03908c128ea822056e15b55cd389e4",
+        "reason": "Nārāyaṇī names the Goddess; the glossary’s derivation from Nārāyaṇa is not a separately performed Viṣṇu reference."
+      }
+    },
+    "parvati-hanuman-ansh": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "06ef569fc0429ab91d2aea1ad20bdb5dab56ba6f5140dc432f2ba0d978b17305",
+        "reason": "Sītā occurs only in background information in the Rāma gloss."
+      }
+    },
+    "patita-pavan-jai-raam": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "236556739333928f7bb4998d591c29487781298b3e75b1e0d5afb87e879d0ac3",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      }
+    },
+    "pavamana-jagada-prana": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "a7ef3cac3db74e8cd9b2da27d9b753e5c57a41791321153884c7002875313380",
+        "reason": "The performed name is Vijaya Viṭṭhala; the broad glossary identification with Kṛṣṇa does not create a separate Kṛṣṇa reference."
+      },
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "9cfb9cb95e2f5a1dbbe50474366042443a9b2537db628170c826033397b2063e",
+        "reason": "The performed name is Vijaya Viṭṭhala; the broad glossary identification with Viṣṇu does not create a separate Viṣṇu reference."
+      }
+    },
+    "prabh-ju-to-kah-laj-hamari": {
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "a67ec32f7e129de77b87d35e08f1c9f161b567499da1ac555814cdd7400474e4",
+        "reason": "Mādhava is the performed divine name; Lakṣmī appears only in one explanatory derivation of that name, not an explicit separate reference."
+      }
+    },
+    "prabhu-ham-pe-kripa-karna": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "7ce21174cc935c16220734a25a4d27610b9e8a7801611b00a757ba69fbc72f23",
+        "reason": "Ramā is the verb permeate or dwell in the breath, not the divine name Rāma."
+      }
+    },
+    "prabhu-ji-tuma-candana-hama-pani": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "7a8cce292a5d76af1090647a2638f303e4d2c9c3ea8d145aadcaa84bc47fa7aa",
+        "reason": "The peacock is explicitly the devotee in a raincloud/peacock comparison, not an identifying Kṛṣṇa attribute."
+      }
+    },
+    "pradnya-vivardhan-stotra": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "d2f13b07493e9fb113cd5543f1819f1c318c4e35912b998bd467221450dcb569",
+        "reason": "The peacock banner belongs to Skanda, the named deity praised; it does not identify Kṛṣṇa."
+      },
+      "Sarasvatī": {
+        "decision": "dismiss",
+        "inputHash": "57a641ce37d7647c942480f248bf62036614165ad40ece78061f447c9e01e6a5",
+        "reason": "Sārasvata describes attained eloquence and learning here; Sarasvatī is only the glossary derivation, not a separate named deity reference."
+      }
+    },
+    "ram-sumir-ke-raham-kare-na": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "578d764b913f22550fd142282120478c3ea6e66a4d3d632338ab7ad466f3c73f",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "36dcb31ceedc2ae9e2857ef59125d3b42144ae929405f9b62d0cd30babcf8e42",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "rama-ho-rama": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "f46b4ab1d4ae8f8e69468664951f01b20263dce61ae9620e46927ae2699113c4",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "61df8d25e4ff47ad256d2a8c9cfc60fe875dbf41d7d119688325aef7703d1bcd",
+        "reason": "Sītā occurs only in the Rāma glossary background; this is a Rāma birth song."
+      }
+    },
+    "rama-rama-rama-bhajo": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "caa044b958117fdb5ee3148b5184e5b5480cec2825115b4a3b623ff5dd26f7d8",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "324456899cf2af63621740cf581a5b25faee4b7e89bc9f663670d152bed53365",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "rama-rama-ratte-ratte": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "5fe78f490f84951d895a4dc831cac80e5ad48de6bfe422a99124cfb92b0d935c",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      }
+    },
+    "rann-jeeti-rama-rao-aye": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "2852d9501e48695162b33d69c642b97a2da28df74c6046c72a9c0170432b4caa",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      }
+    },
+    "re-man-aiso-kar-sanyasa": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "f08489596be111c081fa57c10f0f3fd412fa6f9dcde6342bd68b9d6504b6574d",
+        "reason": "Matted locks metaphorically represent chastity in renunciation; the text does not identify Śiva."
+      }
+    },
+    "rom-rom-mein-basne-wale-ram": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "882345ffabd00ac6a74d9ce30685a1f9aaa0d6275ab23daf25f10b07fc57ee90",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "c2660be4156089b95198065bc506967106e74b51b9efa5a9dfb93e0e6eee17e0",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "sai-ba-prakash-hai": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "6a5abcccc18b6afb5da105d3a1cdf7676b17f89f895cdf817fdf9c58e0745e3c",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "sai-ram-ram-jap-le": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "381621ae73021ddd0f407f02bb7a264d7a3238e3a8210efb91ff8e01933cd855",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "a595a2454f06858ffcaa048558e3a60c3aeae6e170073289767dcb23ca4830be",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "e52fccc702ef46dfb8dbf918bc2274942bab8281ec5d0aa5f626d8dcb1813955",
+        "reason": "Bhole-bhāle describes Sai as guileless, not Śiva."
+      }
+    },
+    "sampati-vandana": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "369a73873e1f0c6f7297e1bb180703efc5ba105bf734427acc006b1a0ca635ad",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "881eb890b641e1d9533bba22766ce4713d3fddd605580c087440d160bda73176",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "sampurna-sundarakanda": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "4cec1d05a5f320aa22fbb2f579865ed7ae580fc8831b1db42df1d4a8bb326850",
+        "reason": "Syāma describes Rāma’s dark limbs in the Sundarakāṇḍa narrative, not Kṛṣṇa."
+      },
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "83978cd0379e5e64e55d231963dfe3fa93725c9ee960e049dc8b05955495621e",
+        "reason": "Durga is the ordinary noun fortress/stronghold in these battlefield descriptions, not the goddess Durgā."
+      }
+    },
+    "sanjivana-giridhara": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "d4c09b4e28fc0a29c9e49f322514ec58f38e03dfe14ed897df647af68b0d015f",
+        "reason": "Giridhara refers to Hanumān carrying the life-restoring mountain, not Kṛṣṇa lifting Govardhana."
+      }
+    },
+    "saranu-siddhi-vinayaka": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "f72b029f0af6204bd383780a96634e1cf3ab476dfaab6618f872b7257d6c5e1d",
+        "reason": "The performed name is Purandara Viṭṭhala; Kṛṣṇa is only a broad identification in the gloss."
+      }
+    },
+    "savale-sundar-rup-manohar": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "b658226ec2a0553d070196d42a9c732d76b17a2021a73d2bb9dcb6bcaf72cc63",
+        "reason": "Pāṇḍuraṅga names Viṭṭhala; the broad glossary identification with Kṛṣṇa does not create a separate Kṛṣṇa reference."
+      }
+    },
+    "sharada-vidyadani-dayani": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "519b33164275ec3181603db39d6d52e276887d3bf9ac81ec39e678796765fa6b",
+        "reason": "Nārāyaṇī names the Goddess; the glossary’s derivation from Nārāyaṇa is not a separate performed Viṣṇu reference."
+      }
+    },
+    "shej-aarti": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "2bb682828cf83c4568aed060d99b315337eafaac7703adc4a0d78263c2ed701d",
+        "reason": "Bhoḷā describes the compassionate master as guileless, not Śiva."
+      },
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "8b8ff1e3d872965d027aaf6bc9a06c9eef4141f947edc8af30054e73facce6f0",
+        "reason": "Śeṣa means meal remnants here, not the cosmic serpent or Viṣṇu."
+      }
+    },
+    "shiv-ka-naam-japo-sansari": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "1d2b064a7cc9aca29fa725002706417671e4847dbf825193ed44fc10a396c1c2",
+        "reason": "Śaṅkara drinks poison from a conch in the narrated act; the vessel does not identify Viṣṇu."
+      }
+    },
+    "shiva-shiva-hoi-prasanna": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "56d9f6e3659d77052e2afd97faf97a90bc55963a6d0b0d50e15fa8824e98676e",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "shri-kshetra-biharii": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "0d19a1d694ec72de45958d5bcbf5f4f0029d25440c16c6d950d174c65fe77f6e",
+        "reason": "Ramāramaṇa means beloved of the goddess Ramā, not Rāma."
+      }
+    },
+    "shri-ramachandra-kripalu-bhajman": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "3967e21d7674df51f493def05902caace8995e2f522aed1653d019ac1961fe2d",
+        "reason": "Rāma’s glossary avatāra description and the separately named serpent Śeṣa do not establish a performed Viṣṇu reference."
+      }
+    },
+    "shyamala-dandakam": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "dc32378685dafb3d0fa753ce584a3890d9a360ed523a6a7afae4985f4d80cb6c",
+        "reason": "Ramā is the goddess name in the feminine vocative, not Rāma."
+      }
+    },
+    "siri-ram-kahe-samjhayi": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "bd15b553ec45370436eb3cf0690a14963d7834b594270baa84af249ffe213074",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      }
+    },
+    "so-satgur-pyara-mere-naal-hai": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "7e645bcf69a14c7bae888c620e5d0f57f7293d0eae23a56176a51cfa9c99bc13",
+        "reason": "Hari is performed as a divine name; Kṛṣṇa appears only as a broad glossary identification without a specific form reference."
+      },
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "3076a735905b9f14241a16206d0403071dadcf5e6ced69faaee85e40ac7f78be",
+        "reason": "Rām Dās is the human Guru identified in the signature gloss, not a deity reference."
+      }
+    },
+    "soyara-sukhacha": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "56e213ddb569b8bc7e9806782d94d2f48c5b5ea0cd92dfea1ec1351abf08cdbf",
+        "reason": "Hari refers to the Viṭṭhala already named; the broad Kṛṣṇa glossary identification does not add a distinct form reference."
+      }
+    },
+    "sri-mahalakumi-deviye": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "3989c03c4e1e6b9d3bdd703ce9c769b27b8f292bdf6419bce49764c995e25c94",
+        "reason": "The performed name is Vijaya Viṭṭhalarāya; the broad Kṛṣṇa identification occurs only in the gloss."
+      }
+    },
+    "sukh-ka-dukh-ka": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "41cd04b322a8a0e8859e6a2141e68a65b17f9384f1be8aaff944edad979a29d6",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "6b56f124f68403db0e0526b31b1b220e16d6aee27902e5df93b97c9d641eda8c",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "sumukh-pratham-he-svanam-gayak": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "4a6cb5c9881e1d0065fc07308fa012feade69a8892808960bf7db3460cf31a74",
+        "reason": "Śiva occurs only in the explanatory etymology of Gaṇeśa’s attendant hosts; the performed line concerns Gaṇeśa having no superior."
+      },
+      "Sarasvatī": {
+        "decision": "dismiss",
+        "inputHash": "af664c2756700eec360ae0d63751101c0e363f65e309d41f14e5473e4fff37a5",
+        "reason": "Sarasvatī is part of the human poet’s name Vāsudevānanda Sarasvatī in the colophon, not the goddess."
+      }
+    },
+    "tera-kiya-meetha-laage": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "8cf7c2dfc410c74d0b9abaed3e6e9a9c92a2b07b54a457b8fad92e2dbc2db73e",
+        "reason": "Hari is performed as a divine name; Kṛṣṇa appears only as a broad glossary identification without a specific form reference."
+      }
+    },
+    "tera-ram-ji-karenge-beda-paar": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "bae075a2828e669392ac33a896f20c30f7c445f538781793f23ebb79227cb137",
+        "reason": "Hari here refers to the explicitly named Rāma; the glossary’s broad Kṛṣṇa alternative is not a performed Kṛṣṇa reference."
+      }
+    },
+    "tero-chakar-kare-pukar": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "68e18dc287a621c5ea0a5d011a2b5192a33380d00fab7907ef4b05f56ad645a1",
+        "reason": "Bhavānī names the Goddess; Śiva occurs only in the explanatory relationship in the gloss."
+      }
+    },
+    "thoda-dhyan-laga": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "a5f547f6ea6553cf2881b3bdee5e2bcffb560fe042cf8ca62fc415f1250edfe3",
+        "reason": "Viṣṇu occurs only in the Rāma glossary description; the performed Rāma/Kṛṣṇa names do not automatically add a parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "f8fb327328930e985134fa458cbea5ed703b55448903ad2def2c70a2b43b977e",
+        "reason": "Sītā occurs only in the Rāma glossary background."
+      }
+    },
+    "vishnu-sahasranama": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "d8d693107cbecc211b84bf0ebd877cd8afc436c5e936d49ea31f0a5f6d42eb4c",
+        "reason": "Śiva, Śambhu, Rudra and Mahādeva in these stanzas are names predicated of Viṣṇu within his thousand-name list, not a separately identified Śiva reference; dictionary overlap alone is insufficient."
+      }
+    },
+    "vitthal-giti-gava": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "d2ff26d486b691a007a6262e6830e0559d0ddff91c6d9b28b0f078f97c55fb07",
+        "reason": "Viṭṭhal is the explicitly praised form; Kṛṣṇa is only a broad form identification in the glossary."
+      }
+    },
+    "hanuman-bahuk": {
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "fa3b20cb6c87e1899b9ab677e92bd30f2a5e4cb99bdc4d3f358f67018e868fa0",
+        "reason": "Durga is the ordinary noun fortress/stronghold in these battlefield descriptions, not the goddess Durgā."
+      }
+    },
+    "bhor-bhai-din-chadh-gaya": {
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "2f0c8c46d5e783f2bd55a2f554f356aff28638017551e07a885e1d67313f3469",
+        "reason": "Ambā means Mother and is used for the already-tagged goddess; this general epithet alone does not resolve her specifically as Durga beyond the current named form."
+      }
+    },
+    "maiya-ji-tum-badi-dayalu-ho": {
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "577a88c8a6fae902eb86362df108043e5eece55de65f28ab57f241c1039f3f91",
+        "reason": "Ambā means Mother and is used for the already-tagged goddess; this general epithet alone does not resolve her specifically as Durga beyond the current named form."
+      }
+    },
+    "russiya-tu-sade-naal-kyon-meri-maaye": {
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "6ca2f7995256896683d4b472fd440e7089cda1526ee9f7475fb154c65d29e084",
+        "reason": "Lion-riding Mother is shared goddess iconography in these Vaiṣṇo/Chamunda songs; it does not independently establish a specific Durga name-reference."
+      }
+    },
+    "yeh-mantra-hai-maa-chamunda-ka": {
+      "Durgā": {
+        "decision": "dismiss",
+        "inputHash": "00742602338ffec64afaf1c10f54f23994078bb32f963b9b33c23d90cb022cc3",
+        "reason": "Lion-riding Mother is shared goddess iconography in these Vaiṣṇo/Chamunda songs; it does not independently establish a specific Durga name-reference."
+      }
+    }
+  }
+}

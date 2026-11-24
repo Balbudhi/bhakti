@@ -12,7 +12,8 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Ganesha",
@@ -488,11 +489,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gaṇapata vighna harana gajānana",
-    "english": "{0:O Lord of the Ganas, }{1,2:remover of obstacles, }{3:O elephant-faced Lord,}",
+    "english": "{0:O Lord of the celestial attendants, }{1,2:remover of obstacles, }{3:O elephant-faced Lord,}",
     "words": [
       {
         "roman": "gaṇapata",
-        "gloss": "O Lord of the Ganas",
+        "gloss": "O Lord of the celestial attendants",
         "concept_key": "",
         "preserve_in_english": false
       },

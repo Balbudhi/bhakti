@@ -17,7 +17,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Durgā"
+    "Durgā",
+    "Pārvatī"
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",
@@ -1354,7 +1355,7 @@ window.SONG_LINES = {
   },
   "v2d": {
     "roman": "De aisā vardān he maiyā, sumiran terā gāūṅ main",
-    "english": "{0:Grant }{1:such a }{2:boon, }{3:O }{4:Mother: }{8:may I }{7:sing }{6:Your }{5:remembrance.}",
+    "english": "{0:Grant }{1:such a }{2:boon, }{3:O }{4:Mother: }{8:may I }{7:sing }{5:in remembrance }{6:of You.}",
     "words": [
       {
         "roman": "De",
@@ -1378,11 +1379,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "sumiran",
-        "gloss": "remembrance, devotional recollection"
+        "gloss": "remembrance; devotional recollection"
       },
       {
         "roman": "terā",
-        "gloss": "Your"
+        "gloss": "of You; Your"
       },
       {
         "roman": "gāūṅ",

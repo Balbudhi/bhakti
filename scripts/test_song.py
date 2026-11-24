@@ -2,6 +2,8 @@
 """song.txt is read exactly, mistakes are named, and duplicates are recognised."""
 import tempfile
 import unittest
+import json
+from unittest.mock import patch
 from pathlib import Path
 
 import song
@@ -52,6 +54,34 @@ class SongText(unittest.TestCase):
         self.assertEqual(meta["credit"], "Purandaradāsa · Asha Rao & Uma Rao")
         self.assertIn("Siva", meta["searchAliases"])
 
+    def test_compile_applies_source_bound_tags_used_by_legacy_generation(self):
+        (song.WORK / "data").mkdir()
+        (song.WORK / "data/song_tag_overrides.json").write_text(json.dumps({"version": 1, "songs": {
+            "x": {"addTags": ["Śiva"], "evidence": [{"tag": "Śiva", "lineId": "r-1",
+            "source": "शिवनाम जप", "reason": "The performed compound invokes Śiva's name."}]}}}))
+        with patch.object(song, "ROOT", song.WORK):
+            meta, _, _ = self.compile(GOOD.replace("subjects: Śiva", "subjects: Guru"))
+        self.assertEqual(meta["subjectTags"], ["Guru", "Śiva"])
+
+    def test_compile_does_not_assign_ambiguous_keyword_identities(self):
+        for source, roman, gloss, explicit, expected in (
+            ("रमा", "ramā", "Lakṣmī, the goddess", "Lakṣmī", ["Lakṣmī", "Śakti"]),
+            ("श्यामा", "śyāmā", "the dark Goddess", "Kālī", ["Kālī", "Śakti"]),
+            ("दुर्ग", "durga", "fortress", "Nirguṇa", ["Nirguṇa"]),
+        ):
+            with self.subTest(source=source):
+                meta, _, _ = self.compile(f"""title: Example
+languages: Sanskrit
+subjects: {explicit}
+
+[a verse]
+{roman} | {gloss} | {source}
+en: {{0:{gloss}}}
+
+order: a
+""")
+                self.assertEqual(meta["subjectTags"], expected)
+
     def test_mistakes_are_named(self):
         self.assertIn("leaves out 1 nāma", self.rejected(GOOD.replace("{1:the name }", "")))
         self.assertIn("text outside", self.rejected(GOOD.replace("{2:Chant }", "Chant {2:}")))
@@ -71,6 +101,32 @@ class SongText(unittest.TestCase):
         self.assertEqual(song.closest("Ye Garv Bhara", 287.0, songs), ("a", "recording"))
         self.assertEqual(song.closest("Rudraashtakam", 385.0, songs), ("b", "text"))
         self.assertEqual(song.closest("Madhurashtakam", 481.0, songs)[1], None)
+
+
+class ReleaseReviewStatus(unittest.TestCase):
+    def test_release_does_not_certify_or_rebind_translation_review(self):
+        # Release mechanics cannot establish that changed English was reviewed.
+        import bhakti_pipeline
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "data").mkdir()
+            (root / "data/media.json").write_text(json.dumps({"songs": {"existing": [], "new": []}}))
+            ledger = {"songs": {"existing": {"status": "finished", "readerSha256": "previous-reviewed-reader"}}}
+            path = root / "data/translation-review-status.json"
+            path.write_text(json.dumps(ledger))
+            original = path.read_bytes()
+            for slug in ("existing", "new"):
+                target = root / "songs" / slug
+                target.mkdir(parents=True)
+                (target / "index.html").write_text("<html></html>")
+                (target / "data.js").write_text('window.SONG_LINES = {"changed": {"english": "Unreviewed edit"}};')
+            with patch.object(song, "ROOT", root), patch.object(song, "WORK", root / "work"), \
+                 patch.object(song, "assess"), patch.object(song, "check"), \
+                 patch.object(bhakti_pipeline, "load_song_meta", return_value={}), \
+                 patch.object(bhakti_pipeline, "page_html", return_value="<html></html>"), \
+                 patch.object(bhakti_pipeline, "write_catalogue"):
+                song.release(["existing", "new"])
+            self.assertEqual(path.read_bytes(), original)
 
 
 if __name__ == "__main__":

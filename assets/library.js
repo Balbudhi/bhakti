@@ -13,15 +13,16 @@
   const searchKey = value => String(value || "")
     .toLocaleLowerCase()
     .replace(/[’‘`]/g, "'")
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/[^\p{L}\p{M}\p{N}]+/gu, " ")
     .trim()
     .replace(/\s+/g, " ");
 
   const searchForms = value => {
     const source = String(value || "");
     const common = [...source].map(character => IAST_TO_COMMON[character] || character).join("")
-      .replace(/ngg/g, "ng").replace(/Ngg/g, "Ng");
-    const unaccented = source.normalize("NFKD").replace(/\p{M}/gu, "");
+      .replace(/ngg/g, "ng").replace(/Ngg/g, "Ng")
+      .replace(/\b(?:krshna|krsna|krisna)\b/gi, "krishna");
+    const unaccented = source.normalize("NFKD").replace(/(\p{Script=Latin})\p{M}+/gu, "$1");
     return [...new Set([searchKey(source), searchKey(common), searchKey(unaccented)].filter(Boolean))];
   };
 
@@ -55,15 +56,132 @@
     if (!songSearchForms.has(song)) songSearchForms.set(song, searchableValues(song).flatMap(searchForms));
     return songSearchForms.get(song);
   };
-  const matchesTerms = (song, queryTerms) => {
+  const matchesTerms = (song, queryTerms, lyricIndex = null) => {
     const songForms = formsForSong(song);
+    const lyricForms = lyricIndex?.[song.slug] || [];
     return queryTerms.some(terms => terms.every(term =>
-      songForms.some(songForm => songForm.includes(term))
+      songForms.some(songForm => songForm.includes(term)) || lyricForms.some(form => form.includes(term))
     ));
   };
   const matchesSearch = (song, query) => {
     const queryForms = searchForms(query);
     return !queryForms.length || matchesTerms(song, queryForms.map(form => form.split(" ")));
+  };
+
+  // Approximation is a last resort. These forms never change exact search or
+  // the published index, and apply only to Latin spellings remembered by ear.
+  const phoneticKey = token => token.replace(/aa+/g, "a").replace(/ee+/g, "i")
+    .replace(/oo+/g, "u").replace(/ng(?=[kg])/g, "n")
+    .replace(/^(.{4,})a$/, "$1");
+  const editDistance = (left, right, limit) => {
+    if (Math.abs(left.length - right.length) > limit) return limit + 1;
+    if (limit === 1) {
+      if (left === right) return 0;
+      let i = 0;
+      while (i < left.length && left[i] === right[i]) i++;
+      if (left.length === right.length) {
+        if (left.slice(i + 1) === right.slice(i + 1)) return 1;
+        return left[i] === right[i + 1] && left[i + 1] === right[i]
+          && left.slice(i + 2) === right.slice(i + 2) ? 1 : 2;
+      }
+      return left.length < right.length
+        ? (left.slice(i) === right.slice(i + 1) ? 1 : 2)
+        : (left.slice(i + 1) === right.slice(i) ? 1 : 2);
+    }
+    let previous = Array.from({ length: right.length + 1 }, (_, i) => i);
+    let older = previous;
+    for (let i = 1; i <= left.length; i++) {
+      const row = [i];
+      let minimum = i;
+      for (let j = 1; j <= right.length; j++) {
+        row[j] = Math.min(row[j - 1] + 1, previous[j] + 1,
+          previous[j - 1] + (left[i - 1] === right[j - 1] ? 0 : 1));
+        if (i > 1 && j > 1 && left[i - 1] === right[j - 2] && left[i - 2] === right[j - 1]) {
+          row[j] = Math.min(row[j], older[j - 2] + 1);
+        }
+        minimum = Math.min(minimum, row[j]);
+      }
+      if (minimum > limit) return limit + 1;
+      older = previous;
+      previous = row;
+    }
+    return previous[right.length];
+  };
+  const fallbackCaches = new WeakMap();
+  const fallbackIndex = (songs, lyrics) => {
+    let caches = fallbackCaches.get(songs);
+    if (!caches) { caches = { metadata: null, lyrics: new WeakMap() }; fallbackCaches.set(songs, caches); }
+    let index = lyrics ? caches.lyrics.get(lyrics) : caches.metadata;
+    if (index) return index;
+    const vocabulary = new Map();
+    const add = (forms, songIndex, field) => {
+      const tokens = new Set(forms.flatMap(form => form.split(" ")));
+      for (const token of tokens) {
+        if (!/^[a-z0-9]+$/.test(token)) continue;
+        let entry = vocabulary.get(token);
+        if (!entry) {
+          entry = { token, key: /^[a-z]+$/.test(token) ? phoneticKey(token) : null, metadata: [], lyrics: [] };
+          vocabulary.set(token, entry);
+        }
+        entry[field].push(songIndex);
+      }
+    };
+    songs.forEach((song, i) => {
+      add(formsForSong(song), i, "metadata");
+      if (lyrics) add(lyrics[song.slug] || [], i, "lyrics");
+    });
+    index = { vocabulary: [...vocabulary.values()], hits: new Map() };
+    if (lyrics) caches.lyrics.set(lyrics, index); else caches.metadata = index;
+    return index;
+  };
+  const fallbackSongs = (songs, queryTerms, lyrics) => {
+    const index = fallbackIndex(songs, lyrics);
+    const hitsFor = term => {
+      if (index.hits.has(term)) return index.hits.get(term);
+      const hits = { all: new Uint8Array(songs.length).fill(255), metadata: new Uint8Array(songs.length).fill(255) };
+      const key = /^[a-z]+$/.test(term) ? phoneticKey(term) : null;
+      // Native/diacritic terms in a mixed query remain exact. They need no
+      // duplicate token index alongside the already-normalized field strings.
+      if (!/^[a-z0-9]+$/.test(term)) {
+        const startsWord = form => form.startsWith(term) || form.includes(" " + term);
+        songs.forEach((song, i) => {
+          if (formsForSong(song).some(startsWord)) hits.metadata[i] = hits.all[i] = 0;
+          else if ((lyrics?.[song.slug] || []).some(startsWord)) hits.all[i] = 0;
+        });
+      }
+      for (const entry of /^[a-z0-9]+$/.test(term) ? index.vocabulary : []) {
+        let cost = term.length < 3 ? (entry.token === term ? 0 : 255) : (entry.token.startsWith(term) ? 0 : 255);
+        if (cost && key && entry.key && term.length >= 3) {
+          if (key === entry.key) cost = 1;
+          else if (key.length >= 4 && entry.key.length >= 4 && key.length <= 48 && entry.key.length <= 48) {
+            const limit = Math.min(key.length, entry.key.length) >= 8 ? 2 : 1;
+            const distance = editDistance(key, entry.key, limit);
+            if (distance <= limit) cost = distance + 1;
+          }
+        }
+        if (cost === 255) continue;
+        for (const i of entry.metadata) { hits.metadata[i] = Math.min(hits.metadata[i], cost); hits.all[i] = Math.min(hits.all[i], cost); }
+        for (const i of entry.lyrics) hits.all[i] = Math.min(hits.all[i], cost);
+      }
+      if (index.hits.size >= 64) index.hits.delete(index.hits.keys().next().value);
+      index.hits.set(term, hits);
+      return hits;
+    };
+    const ranked = new Map();
+    for (const terms of queryTerms) {
+      const hits = terms.map(hitsFor);
+      songs.forEach((song, i) => {
+        if (hits.some(hit => hit.all[i] === 255)) return;
+        const rank = { song, metadata: hits.every(hit => hit.metadata[i] !== 255), cost: hits.reduce((sum, hit) => sum + hit.all[i], 0) };
+        const previous = ranked.get(i);
+        if (!previous || rank.metadata > previous.metadata || (rank.metadata === previous.metadata && rank.cost < previous.cost)) ranked.set(i, rank);
+      });
+    }
+    return [...ranked.values()].sort((a, b) => Number(b.metadata) - Number(a.metadata) || a.cost - b.cost).map(rank => rank.song);
+  };
+  const hasWordPrefixMatch = (song, queryTerms, lyrics) => {
+    const forms = formsForSong(song).concat(lyrics?.[song.slug] || []);
+    return queryTerms.some(terms => terms.every(term => forms.some(form => form.startsWith(term) || form.includes(" " + term))));
   };
 
   // Split explicit joint credits only; retain each credited spelling as supplied.
@@ -81,7 +199,7 @@
     return [writer && `By ${writer}`, writer ? performed : performed.replace(/^s/, "S")].filter(Boolean).join(" · ");
   };
 
-  const filterSongs = (songs, { languages = [], subjects = [], poets = [], singers = [], query = "" } = {}) => {
+  const filterSongs = (songs, { languages = [], subjects = [], poets = [], singers = [], query = "", lyricIndex = null } = {}) => {
     const selectedLanguages = new Set(languages);
     const selectedSubjects = new Set(subjects);
     const selectedSingers = new Set(singers);
@@ -95,7 +213,20 @@
       return queryForms.some(queryForm => songForms.some(songForm => songForm.includes(queryForm)));
     }) : songs;
     const queryTerms = queryForms.map(form => form.split(" "));
-    const searchMatches = phraseMatches.length ? phraseMatches : songs.filter(song => matchesTerms(song, queryTerms));
+    const phraseSlugs = new Set(phraseMatches.map(song => song.slug));
+    // Exact title/name phrases retain priority. Lyrics can add genuine phrase
+    // matches, but cannot manufacture a person's name from scattered words.
+    const lyricMatches = queryForms.length ? songs.filter(song => !phraseSlugs.has(song.slug)
+      && queryForms.some(queryForm => (lyricIndex?.[song.slug] || []).some(form => form.includes(queryForm)))) : [];
+    let searchMatches = phraseMatches.length ? phraseMatches.concat(lyricMatches)
+      : songs.filter(song => matchesTerms(song, queryTerms, lyricIndex));
+    // Internal fragments such as hnad inside krshnadamodaram must not block a
+    // remembered English "hand". Known metadata phrases remain authoritative.
+    if (queryForms.length && !phraseMatches.length
+        && !searchMatches.some(song => hasWordPrefixMatch(song, queryTerms, lyricIndex))) {
+      const exact = new Set(searchMatches);
+      searchMatches = searchMatches.concat(fallbackSongs(songs, queryTerms, lyricIndex).filter(song => !exact.has(song)));
+    }
     return searchMatches.filter(song => {
       const matchesLanguage = !selectedLanguages.size
         || [...selectedLanguages].some(tag => song.languageTags.includes(tag));
@@ -113,6 +244,31 @@
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+
+  // A release has one deferred index. Failed requests retain metadata search;
+  // a later input can retry. Strings have already been folded by assembly.
+  const lyricSearch = { status: "idle", forms: null, pending: null };
+  const loadLyrics = () => {
+    if (lyricSearch.status === "ready") return Promise.resolve();
+    if (lyricSearch.pending) return lyricSearch.pending;
+    lyricSearch.status = "loading";
+    const url = window.BHAKTI_ASSETS?.["/data/search-index.json"] || "/data/search-index.json";
+    lyricSearch.pending = Promise.resolve().then(() => window.fetch(url)).then(response => {
+      if (!response.ok) throw new Error("Lyric search unavailable");
+      return response.json();
+    }).then(index => {
+      if (index?.schemaVersion !== 1 || !index.songs || typeof index.songs !== "object"
+          || Array.isArray(index.songs) || !Object.values(index.songs).every(forms =>
+            Array.isArray(forms) && forms.every(form => typeof form === "string"))
+          || !(window.BHAKTI_SONGS || []).every(song => Object.hasOwn(index.songs, song.slug))) {
+        throw new Error("Invalid lyric search index");
+      }
+      lyricSearch.forms = index.songs;
+      lyricSearch.status = "ready";
+    }).catch(() => { lyricSearch.status = "error"; })
+      .finally(() => { lyricSearch.pending = null; });
+    return lyricSearch.pending;
+  };
 
   const controllers = new WeakMap();
 
@@ -294,6 +450,7 @@
             <button class="song-queue-choice" role="menuitem" tabindex="-1" type="button" data-add-to-queue="" data-queue-position="end"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 11h12M4 16h7M17 14v7M13.5 17.5h7"/></svg>Add to end</button>
           </div>`;
     const cards = [...listRoot.querySelectorAll(".song-card")];
+    const cardsBySlug = new Map(cards.map(card => [card.dataset.songSlug, card]));
     const emptyMessage = listRoot.querySelector(".library-empty");
     const queueMenu = listRoot.querySelector(".song-queue-actions");
     const queueChoices = [...queueMenu.querySelectorAll("[role=menuitem]")];
@@ -309,6 +466,7 @@
         singers: selectedSingers,
         poets: selectedPoets,
         query,
+        lyricIndex: lyricSearch.forms,
       });
 
       filters.querySelectorAll(".tag-filter").forEach(button => {
@@ -330,7 +488,25 @@
         const hidden = !visibleSlugs.has(card.dataset.songSlug);
         if (card.hidden !== hidden) card.hidden = hidden;
       }
+      // Keep result order aligned with the search ranking without replacing
+      // controls. Moving a focused row must not discard keyboard focus.
+      const ranked = query ? visibleSongs.concat(orderedSongs.filter(song => !visibleSlugs.has(song.slug))) : orderedSongs;
+      const focused = listRoot.contains(document.activeElement) ? document.activeElement : null;
+      let position = listRoot.firstElementChild;
+      for (const song of ranked) {
+        const card = cardsBySlug.get(song.slug);
+        if (card !== position) listRoot.insertBefore(card, position);
+        position = card.nextElementSibling;
+      }
+      if (focused && document.activeElement !== focused && !focused.closest(".song-card")?.hidden) {
+        focused.focus({preventScroll: true});
+      }
       emptyMessage.hidden = visibleSongs.length > 0;
+      emptyMessage.textContent = query && lyricSearch.status === "loading"
+        ? "No songs match your search or filters yet. Searching lyrics…"
+        : query && lyricSearch.status === "error"
+          ? "No songs match your search or filters. Lyrics are unavailable; edit your search to retry."
+          : "No songs match. Try changing your search or filters.";
 
       if (shuffleButton) {
         shuffleButton.disabled = !visibleSongs.length;
@@ -357,7 +533,18 @@
       else facet.selected.has(tag) ? facet.selected.delete(tag) : facet.selected.add(tag);
       render();
     });
-    search.addEventListener("input", render);
+    let awaitingLyrics = false;
+    const searchChanged = () => {
+      if (search.value.trim() && lyricSearch.status !== "ready" && !awaitingLyrics) {
+        awaitingLyrics = true;
+        loadLyrics().then(() => {
+          awaitingLyrics = false;
+          render(); // Read the current input and facets, never the initiating query.
+        });
+      }
+      render();
+    };
+    search.addEventListener("input", searchChanged);
     filterToggle?.addEventListener("click", () => {
       filters.hidden = !filters.hidden;
       filterToggle.setAttribute("aria-expanded", String(!filters.hidden));
@@ -447,11 +634,11 @@
     wireAbout(root);
     wirePreface(root);
     const controller = Object.freeze({
-      render,
+      render: searchChanged,
       getVisibleSongs: () => [...visibleSongs],
     });
     controllers.set(root, controller);
-    render();
+    searchChanged();
     return controller;
   };
 

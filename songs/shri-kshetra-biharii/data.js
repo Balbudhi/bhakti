@@ -11,7 +11,11 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Jagannātha",
-    "Nirguṇa"
+    "Nirguṇa",
+    "Kṛṣṇa",
+    "Viṣṇu",
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "Jagannatha",
@@ -1591,7 +1595,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saguṇa rūpare nirguṇa brahma",
-    "english": "{2:Beyond all qualities, }{3:Brahman }{1:in a form }{0:endowed with qualities,}",
+    "english": "{2:Beyond all qualities, }{3:the absolute reality }{1:in a form }{0:endowed with qualities,}",
     "words": [
       {
         "roman": "Saguṇa",
@@ -1613,7 +1617,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "the supreme reality (Brahman)",
+        "gloss": "the absolute reality",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1656,11 +1660,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Brahmadārurūpī ādi caitanya",
-    "english": "{2:Embodied }{1:as the wooden }{0:Brahman, }{3:primordial }{4:Consciousness,}",
+    "english": "{2:Embodied }{1:as the wooden }{0:absolute reality, }{3:primordial }{4:Consciousness,}",
     "words": [
       {
         "roman": "Brahma",
-        "gloss": "Brahman",
+        "gloss": "the absolute reality",
         "concept_key": "",
         "preserve_in_english": false
       },

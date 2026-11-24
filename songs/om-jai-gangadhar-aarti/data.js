@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śiva",
-    "Śakti"
+    "Śakti",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Shiva",
@@ -33,7 +34,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "refrain-1": {
     "source": "ॐ जय गङ्गाधर हर जय गिरिजाधीशा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -116,7 +117,7 @@ window.SONG_LINES = {
   },
   "refrain-2": {
     "source": "स्वामी जय गिरिजाधीशा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -163,7 +164,7 @@ window.SONG_LINES = {
   },
   "refrain-3": {
     "source": "त्वं मां पालय नित्यं",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "त्वं",
@@ -222,7 +223,7 @@ window.SONG_LINES = {
   },
   "refrain-4": {
     "source": "कृपया जगदीशा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कृपया",
@@ -257,7 +258,7 @@ window.SONG_LINES = {
   },
   "refrain-maha-dev": {
     "source": "ॐ हर हर हर महादेव",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -328,7 +329,7 @@ window.SONG_LINES = {
   },
   "verse-1-1": {
     "source": "कैलाशे गिरिशिखरे कल्पद्रुमविपिने",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कैलाशे",
@@ -411,7 +412,7 @@ window.SONG_LINES = {
   },
   "verse-1-2": {
     "source": "स्वामी कल्पद्रुमविपिने",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -470,7 +471,7 @@ window.SONG_LINES = {
   },
   "verse-1-3": {
     "source": "गुञ्जति मधुकरपुञ्जे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "गुञ्जति",
@@ -517,7 +518,7 @@ window.SONG_LINES = {
   },
   "verse-1-4": {
     "source": "कुञ्जवने गहने",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कुञ्जवने",
@@ -552,7 +553,7 @@ window.SONG_LINES = {
   },
   "verse-2-1": {
     "source": "कोकिल कूजति खेलति हंसावन ललिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कोकिल",
@@ -623,7 +624,7 @@ window.SONG_LINES = {
   },
   "verse-2-2": {
     "source": "स्वामी हंसावन ललिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -670,7 +671,7 @@ window.SONG_LINES = {
   },
   "verse-2-3": {
     "source": "रचयति कलाकलापं",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "रचयति",
@@ -705,7 +706,7 @@ window.SONG_LINES = {
   },
   "verse-2-4": {
     "source": "नृत्यति मुदसहिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नृत्यति",
@@ -740,7 +741,7 @@ window.SONG_LINES = {
   },
   "verse-3-1": {
     "source": "तस्मिँल्ललितसुदेशे शालामणिरचिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "तस्मिँ",
@@ -835,7 +836,7 @@ window.SONG_LINES = {
   },
   "verse-3-2": {
     "source": "स्वामी शालामणिरचिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -894,7 +895,7 @@ window.SONG_LINES = {
   },
   "verse-3-3": {
     "source": "तन्मध्ये हरनिकटे",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "तन्मध्ये",
@@ -929,7 +930,7 @@ window.SONG_LINES = {
   },
   "verse-3-4": {
     "source": "गौरी मुदसहिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "गौरी",
@@ -964,7 +965,7 @@ window.SONG_LINES = {
   },
   "verse-4-1": {
     "source": "क्रीडां रचयति भूषां रञ्जितनिजमीशम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "क्रीडां",
@@ -1047,7 +1048,7 @@ window.SONG_LINES = {
   },
   "verse-4-2": {
     "source": "स्वामी रञ्जितनिजमीशम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -1106,7 +1107,7 @@ window.SONG_LINES = {
   },
   "verse-4-3": {
     "source": "इन्द्रादिकसुरसेवित",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "इन्द्रा",
@@ -1165,7 +1166,7 @@ window.SONG_LINES = {
   },
   "verse-4-4": {
     "source": "नामयते शीर्षम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नामयते",
@@ -1200,7 +1201,7 @@ window.SONG_LINES = {
   },
   "verse-5-1": {
     "source": "विबुधवधू बहु नृत्यति हृदये मुदसहिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "विबुधवधू",
@@ -1271,7 +1272,7 @@ window.SONG_LINES = {
   },
   "verse-5-2": {
     "source": "स्वामी हृदये मुदसहिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -1318,7 +1319,7 @@ window.SONG_LINES = {
   },
   "verse-5-3": {
     "source": "किन्नरगानं कुरुते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "किन्नरगानं",
@@ -1353,7 +1354,7 @@ window.SONG_LINES = {
   },
   "verse-5-4": {
     "source": "सप्तस्वरसहिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सप्त",
@@ -1400,7 +1401,7 @@ window.SONG_LINES = {
   },
   "verse-6-1": {
     "source": "धिनकत थै थै धिनकत मृदङ्गं वादयते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "धिनकत",
@@ -1483,7 +1484,7 @@ window.SONG_LINES = {
   },
   "verse-6-2": {
     "source": "स्वामी मृदङ्गं वादयते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -1530,7 +1531,7 @@ window.SONG_LINES = {
   },
   "verse-6-3": {
     "source": "क्वण क्वण ललिता वेणुं",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "क्वण",
@@ -1589,7 +1590,7 @@ window.SONG_LINES = {
   },
   "verse-6-4": {
     "source": "मधुरं नादयते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "मधुरं",
@@ -1624,7 +1625,7 @@ window.SONG_LINES = {
   },
   "verse-7-1": {
     "source": "रुण रुण चरणे रचयति नूपुरमुज्ज्वलिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "रुण",
@@ -1707,7 +1708,7 @@ window.SONG_LINES = {
   },
   "verse-7-2": {
     "source": "स्वामी नूपुरमुज्ज्वलिता",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -1754,7 +1755,7 @@ window.SONG_LINES = {
   },
   "verse-7-3": {
     "source": "चक्रावर्ते भ्रमयति",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "चक्रावर्ते",
@@ -1789,7 +1790,7 @@ window.SONG_LINES = {
   },
   "verse-7-4": {
     "source": "कुरुते तां धिक्ताम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कुरुते",
@@ -1836,7 +1837,7 @@ window.SONG_LINES = {
   },
   "verse-8-1": {
     "source": "सुन्दरजटाकलापं पावकयुतभालम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सुन्दर",
@@ -1919,7 +1920,7 @@ window.SONG_LINES = {
   },
   "verse-8-2": {
     "source": "स्वामी पावकयुतभालम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -1978,7 +1979,7 @@ window.SONG_LINES = {
   },
   "verse-8-3": {
     "source": "डमरुत्रिशूलपिनाकं",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "डमरु",
@@ -2025,7 +2026,7 @@ window.SONG_LINES = {
   },
   "verse-8-4": {
     "source": "करधृतनृकपालम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कर",
@@ -2084,7 +2085,7 @@ window.SONG_LINES = {
   },
   "verse-9-1": {
     "source": "मुण्डै रचयति मालां पन्नगमुपवीतम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "मुण्डै",
@@ -2155,7 +2156,7 @@ window.SONG_LINES = {
   },
   "verse-9-2": {
     "source": "स्वामी पन्नगमुपवीतम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -2202,7 +2203,7 @@ window.SONG_LINES = {
   },
   "verse-9-3": {
     "source": "वामविभागे गिरिजा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "वामविभागे",
@@ -2237,7 +2238,7 @@ window.SONG_LINES = {
   },
   "verse-9-4": {
     "source": "रूपमतिललितम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "रूप",
@@ -2284,7 +2285,7 @@ window.SONG_LINES = {
   },
   "verse-10-1": {
     "source": "सुन्दरसकलशरीरे कृतभस्माभरणम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सुन्दर",
@@ -2367,7 +2368,7 @@ window.SONG_LINES = {
   },
   "verse-10-2": {
     "source": "स्वामी कृतभस्माभरणम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -2426,7 +2427,7 @@ window.SONG_LINES = {
   },
   "verse-10-3": {
     "source": "इति वृषभध्वजरूपं",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "इति",
@@ -2485,7 +2486,7 @@ window.SONG_LINES = {
   },
   "verse-10-4": {
     "source": "तापत्रयहरणम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ताप",
@@ -2532,7 +2533,7 @@ window.SONG_LINES = {
   },
   "verse-11-1": {
     "source": "शङ्खनिनादं कृत्वा झल्लरि नादयते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "शङ्खनिनादं",
@@ -2591,7 +2592,7 @@ window.SONG_LINES = {
   },
   "verse-11-2": {
     "source": "स्वामी झल्लरि नादयते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -2638,7 +2639,7 @@ window.SONG_LINES = {
   },
   "verse-11-3": {
     "source": "नीराजयते ब्रह्मा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नीराजयते",
@@ -2673,7 +2674,7 @@ window.SONG_LINES = {
   },
   "verse-11-4": {
     "source": "वेदर्चां पठते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "वेदर्चां",
@@ -2708,7 +2709,7 @@ window.SONG_LINES = {
   },
   "verse-12-1": {
     "source": "अतिमृदुचरणसरोजं हृत्कमले धृत्वा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अति",
@@ -2803,7 +2804,7 @@ window.SONG_LINES = {
   },
   "verse-12-2": {
     "source": "स्वामी हृत्कमले धृत्वा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -2850,7 +2851,7 @@ window.SONG_LINES = {
   },
   "verse-12-3": {
     "source": "अवलोकयति महेशम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अवलोकयति",
@@ -2885,7 +2886,7 @@ window.SONG_LINES = {
   },
   "verse-12-4": {
     "source": "ईशं मतिनत्वा",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ईशं",
@@ -2920,7 +2921,7 @@ window.SONG_LINES = {
   },
   "verse-13-1": {
     "source": "सङ्गीतमेव प्रतिदिनं पठनं यः कुरुते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सङ्गीतमेव",
@@ -2991,7 +2992,7 @@ window.SONG_LINES = {
   },
   "verse-13-2": {
     "source": "स्वामी पठनं यः कुरुते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वामी",
@@ -3050,7 +3051,7 @@ window.SONG_LINES = {
   },
   "verse-13-3": {
     "source": "शिवसायुज्यं गच्छति",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "शिवसायुज्यं",
@@ -3085,7 +3086,7 @@ window.SONG_LINES = {
   },
   "verse-13-4": {
     "source": "भक्त्या यः शृणुते",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "भक्त्या",
@@ -3132,7 +3133,7 @@ window.SONG_LINES = {
   },
   "closing-shloka-1": {
     "source": "कर्पूरगौरं करुणावतारं संसारसारं भुजगेन्द्रहारम्",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कर्पूर",
@@ -3251,7 +3252,7 @@ window.SONG_LINES = {
   },
   "closing-shloka-2": {
     "source": "सदावसन्तं हृदयारविन्दे भवं भवानीसहितं नमामि",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सदा",

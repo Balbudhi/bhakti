@@ -554,7 +554,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jñāna karma bhakti dei mate je uddhāra",
-    "english": "{3:by giving }{0:knowledge, }{1:karma, }{2:and devotion, }{5:truly }{6:deliver }{4:me.}",
+    "english": "{3:by giving }{0:knowledge, }{1:action, }{2:and devotion, }{5:truly }{6:deliver }{4:me.}",
     "words": [
       {
         "roman": "Jñāna",
@@ -564,9 +564,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karma",
-        "gloss": "action and its moral consequences; selfless action",
+        "gloss": "action",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bhakti",
@@ -643,7 +643,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Biśwa tuma aṁśa mātra tume pūrṇabrahma",
-    "english": "{0:The universe }{3:is merely }{1:your }{2:part; }{4:you are }{5:the complete Brahman,}",
+    "english": "{0:The universe }{3:is merely }{1:your }{2:part; }{4:you are }{5:the fullness of supreme reality,}",
     "words": [
       {
         "roman": "Biśwa",
@@ -677,7 +677,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pūrṇabrahma",
-        "gloss": "the complete Supreme Reality (Pūrṇabrahman)",
+        "gloss": "the fullness of supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -726,7 +726,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "He śūnya puruṣa tume śūnyātīta brahma",
-    "english": "{0:O }{2:Person }{1:of the Void, }{3:you are }{5:Brahman }{4:transcending the void,}",
+    "english": "{0:O }{2:Person }{1:of the Void, }{3:you are }{5:the supreme reality }{4:transcending the void,}",
     "words": [
       {
         "roman": "He",
@@ -760,7 +760,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "the supreme reality (Brahman)",
+        "gloss": "supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -904,7 +904,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāri hebā pāĩ ei māyāra saṁsāra",
-    "english": "{0,1,2:to cross over }{3:this }{5:saṃsāra }{4:of māyā.}",
+    "english": "{0,1,2:to cross over }{3:this }{5:worldly existence }{4:bound up with appearances.}",
     "words": [
       {
         "roman": "Pāri",
@@ -932,15 +932,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyāra",
-        "gloss": "of the power of worldly appearance",
+        "gloss": "of worldly appearance; qualifying worldly existence",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned worldly existence",
+        "gloss": "worldly existence",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "pāri hebā pāĩ forms a purposive verbal compound ('in order to cross'); māyāra is genitive modifying saṁsāra."

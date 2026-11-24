@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Śiva",
+    "Gaṇeśa"
   ],
   "searchAliases": [
     "Shakti",

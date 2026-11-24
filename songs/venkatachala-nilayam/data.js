@@ -15,7 +15,9 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Kṛṣṇa",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Vengkatacala Nilayam",

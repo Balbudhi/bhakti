@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Rāma",
-    "Hanumān"
+    "Hanumān",
+    "Sītā",
+    "Śakti"
   ],
   "searchAliases": [
     "Maine Tere Hi Bharose",

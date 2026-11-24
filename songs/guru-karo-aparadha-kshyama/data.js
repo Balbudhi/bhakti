@@ -573,13 +573,13 @@ window.SONG_LINES = {
     "source": "ମାୟାବଶେ ହୁଏ ବାଟବଣା",
     "sourceLanguage": "",
     "roman": "māyābaśe hue bāṭabaṇā",
-    "english": "{0:Under the sway of māyā, }{1:I go }{2:astray.}",
+    "english": "{0:Under the sway of deceptive worldly appearances, }{1:I go }{2:astray.}",
     "words": [
       {
         "roman": "māyābaśe",
-        "gloss": "under the sway of māyā (the delusive power of worldly appearance)",
+        "gloss": "under the sway of deceptive worldly appearances",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "hue",

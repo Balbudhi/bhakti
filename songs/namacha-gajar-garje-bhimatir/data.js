@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Śiva"
+    "Śiva",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Namaca Gajar Garje Bhimatir",

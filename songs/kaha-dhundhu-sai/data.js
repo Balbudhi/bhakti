@@ -1556,7 +1556,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ḵẖudā kī qasam de de darśan āke",
-    "english": "{0,1,2:By God, }{6:come }{3,4:and grant }{5:darshan!}",
+    "english": "{0,1,2:By God, }{6:come }{3,4:and grant me }{5:the sight of you!}",
     "words": [
       {
         "roman": "ḵẖudā",
@@ -1590,7 +1590,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśan",
-        "gloss": "sacred sight / vision",
+        "gloss": "sacred sight of you",
         "concept_key": "",
         "preserve_in_english": false
       },

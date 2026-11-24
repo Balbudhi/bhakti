@@ -20,7 +20,12 @@ window.SONG_META = {
     "Guru",
     "Kṛṣṇa",
     "Śiva",
-    "Hanumān"
+    "Hanumān",
+    "Sītā",
+    "Lakṣmī",
+    "Durgā",
+    "Viṭṭhala",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -256,11 +261,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yogeśvarā śrī sāīnāthā",
-    "english": "{0:O Lord of yoga, }{1:venerable }{2:Lord Sai,}",
+    "english": "{0:O Lord of spiritual discipline, }{1:venerable }{2:Lord Sāī,}",
     "words": [
       {
         "roman": "yogeśvarā",
-        "gloss": "O Lord of yoga; master of spiritual discipline",
+        "gloss": "O Lord of spiritual discipline; yogeśvara",
         "concept_key": "",
         "preserve_in_english": false
       },

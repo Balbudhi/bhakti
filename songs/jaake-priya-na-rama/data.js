@@ -11,7 +11,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Rāma",
-    "Guru"
+    "Guru",
+    "Sītā",
+    "Kṛṣṇa",
+    "Śakti"
   ],
   "searchAliases": [
     "Rama",
@@ -200,7 +203,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jadyapi parama sanehī",
-    "english": "{0:even though }{1:supremely }{2:beloved.}",
+    "english": "{0:even though }{1:deeply }{2:loving toward you.}",
     "words": [
       {
         "roman": "Jadyapi",
@@ -210,13 +213,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "parama",
-        "gloss": "supremely / exceedingly",
+        "gloss": "deeply; exceedingly",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sanehī",
-        "gloss": "loving / an intimate companion or kin",
+        "gloss": "loving; affectionate toward you",
         "concept_key": "",
         "preserve_in_english": false
       }

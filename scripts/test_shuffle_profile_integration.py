@@ -175,6 +175,15 @@ class PublicationProfileTests(unittest.TestCase):
         pipeline.write_catalogue()
         return profiles.load_catalogue(self.root)
 
+    def assembly_ready(self):
+        import assemble_public_site as assembly
+        self.ready()
+        (self.root / 'assets').mkdir()
+        (self.root / 'assets/library.js').write_bytes(
+            (Path(__file__).resolve().parents[1] / 'assets/library.js').read_bytes())
+        for name in assembly.PUBLIC_ROOT_FILES:
+            (self.root / name).write_text('fixture')
+
     def test_pair_revision_and_exact_reader_snapshot(self):
         loaded = self.ready()
         document = profiles.validate_public_profiles(self.root)
@@ -222,10 +231,7 @@ class PublicationProfileTests(unittest.TestCase):
 
     def test_assembly_ships_projection_only_and_holds_previous_site(self):
         import assemble_public_site as assembly
-        self.ready()
-        (self.root / 'assets').mkdir()
-        for name in assembly.PUBLIC_ROOT_FILES:
-            (self.root / name).write_text('fixture')
+        self.assembly_ready()
         assembly.assemble_public_site(self.root)
         self.assertTrue((self.root / '_site/data/shuffle-profiles.js').is_file())
         self.assertFalse((self.root / '_site/data/shuffle-profile-reviews.json').exists())
@@ -238,9 +244,7 @@ class PublicationProfileTests(unittest.TestCase):
 
     def test_assembly_rejects_writer_racing_after_real_profile_validation(self):
         import assemble_public_site as assembly
-        self.ready(); (self.root / 'assets').mkdir()
-        for name in assembly.PUBLIC_ROOT_FILES:
-            (self.root / name).write_text('fixture')
+        self.assembly_ready()
         assembly.assemble_public_site(self.root)
         sentinel = self.root / '_site/retained'; sentinel.write_text('old valid site')
         validate = profiles.validate_public_profiles
@@ -253,6 +257,30 @@ class PublicationProfileTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'snapshot'):
                 assembly.assemble_public_site(self.root)
         self.assertEqual(sentinel.read_text(), 'old valid site')
+
+    def test_assembly_rejects_private_receipt_or_tag_evidence_race(self):
+        import assemble_public_site as assembly
+        self.assembly_ready()
+        receipt = self.root / profiles.TEXT_REPAIRS
+        receipt.write_text('{"version":1,"songs":{}}')
+        assembly.assemble_public_site(self.root)
+        self.assertFalse((self.root / '_site' / profiles.TEXT_REPAIRS).exists())
+        self.assertFalse((self.root / '_site/data/song_tag_overrides.json').exists())
+        sentinel = self.root / '_site/retained'; sentinel.write_text('old valid site')
+        validate = profiles.validate_public_profiles
+        for relative in (profiles.TEXT_REPAIRS, 'data/song_tag_overrides.json'):
+            path = self.root / relative
+            original = path.read_bytes()
+            def change(*args, **kwargs):
+                result = validate(*args, **kwargs)
+                path.write_bytes(original + b'\n')
+                return result
+            with self.subTest(relative=relative), \
+                 patch.object(profiles, 'validate_public_profiles', side_effect=change), \
+                 self.assertRaisesRegex(RuntimeError, 'assessment inputs changed'):
+                assembly.assemble_public_site(self.root)
+            self.assertEqual(sentinel.read_text(), 'old valid site')
+            path.write_bytes(original)
 
     def test_legacy_projection_does_not_allow_new_song_to_claim_legacy(self):
         self.save('shuffle-profile-policy.json', {'schemaVersion': 1, 'legacySongs': {self.queue_id: 'wrong-song'}})

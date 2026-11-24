@@ -15,7 +15,8 @@ window.SONG_META = {
     "Punjabi"
   ],
   "subjectTags": [
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Tumh Karahu Daia Mere Sai",

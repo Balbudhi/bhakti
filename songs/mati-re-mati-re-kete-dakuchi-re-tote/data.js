@@ -34,7 +34,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "mati-re-mati-re": {
     "source": "ମାଟି ରେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମାଟି",
@@ -69,7 +69,7 @@ window.SONG_LINES = {
   },
   "kete-dakuchi-re-tote": {
     "source": "କେତେ ଡାକୁଛି ରେ ତୋତେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "କେତେ",
@@ -128,7 +128,7 @@ window.SONG_LINES = {
   },
   "sneha-mamata-sathere": {
     "source": "ସ୍ନେହ ମମତା ସାଥେରେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ସ୍ନେହ",
@@ -175,7 +175,7 @@ window.SONG_LINES = {
   },
   "sneha-mamata-sathe": {
     "source": "ସ୍ନେହ ମମତା ସାଥେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ସ୍ନେହ",
@@ -222,7 +222,7 @@ window.SONG_LINES = {
   },
   "matire-janami-tu-matire-badhilu": {
     "source": "ମାଟିରେ ଜନମି ତୁ ମାଟିରେ ବଢ଼ିଲୁ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମାଟିରେ",
@@ -293,7 +293,7 @@ window.SONG_LINES = {
   },
   "matira-kolare-jibana-gadhilu": {
     "source": "ମାଟିର କୋଳରେ ଜୀବନ ଗଢ଼ିଲୁ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମାଟିର",
@@ -352,7 +352,7 @@ window.SONG_LINES = {
   },
   "mati-pindaku-chhari-dine": {
     "source": "ମାଟି ପିଣ୍ଡକୁ ଛାଡ଼ି ଦିନେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମାଟି",
@@ -411,7 +411,7 @@ window.SONG_LINES = {
   },
   "jibu-tu-ajana-pathe": {
     "source": "ଯିବୁ ତୁ ଅଜଣା ପଥେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଯିବୁ",
@@ -470,7 +470,7 @@ window.SONG_LINES = {
   },
   "jibu-tu-ajana-pathe-re": {
     "source": "ଯିବୁ ତୁ ଅଜଣା ପଥେ ରେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଯିବୁ",
@@ -541,7 +541,7 @@ window.SONG_LINES = {
   },
   "duniyara-jete-apanara-jana": {
     "source": "ଦୁନିଆର ଯେତେ ଆପଣାର ଜନ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଦୁନିଆର",
@@ -600,7 +600,7 @@ window.SONG_LINES = {
   },
   "chharijibe-tote-nama-jasa-dhana": {
     "source": "ଛାଡ଼ିଯିବେ ତୋତେ ନାମ ଯଶ ଧନ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଛାଡ଼ିଯିବେ",
@@ -671,7 +671,7 @@ window.SONG_LINES = {
   },
   "bhangijiba-dine-tora": {
     "source": "ଭାଙ୍ଗିଯିବ ଦିନେ ତୋର",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଭାଙ୍ଗିଯିବ",
@@ -718,7 +718,7 @@ window.SONG_LINES = {
   },
   "balukara-ehi-ghara": {
     "source": "ବାଲୁକାର ଏହି ଘର",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ବାଲୁକାର",

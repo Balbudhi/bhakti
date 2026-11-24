@@ -17,7 +17,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gurbāṇī",
-    "Guru"
+    "Guru",
+    "Kṛṣṇa",
+    "Viṣṇu",
+    "Śiva"
   ],
   "searchAliases": [
     "Gurbani",
@@ -411,11 +414,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mukand",
-        "gloss": "the giver of liberation, a divine epithet"
+        "gloss": "the giver of liberation; Mukunda, an epithet of Viṣṇu and Kṛṣṇa"
       },
       {
         "roman": "Murārī",
-        "gloss": "the enemy of the demon Mura, a divine epithet"
+        "gloss": "Murāri, the enemy of the demon Mura; an epithet of Kṛṣṇa"
       }
     ],
     "nameTable": false,
@@ -487,7 +490,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nirbikh narak nivārī",
-    "english": "{0:without poison, }{2:savior from }{1:hell!}",
+    "english": "{0:without poison, }{2:who wards off }{1:hell!}",
     "words": [
       {
         "roman": "Nirbikh",
@@ -499,7 +502,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nivārī",
-        "gloss": "one who wards off; saves from"
+        "gloss": "one who wards off; here, protects the supplicant from hell"
       }
     ],
     "nameTable": false,

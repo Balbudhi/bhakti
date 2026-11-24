@@ -12,7 +12,15 @@ window.SONG_META = {
   "subjectTags": [
     "Śirḍī Sāī",
     "Guru",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Hanumān",
+    "Śiva",
+    "Pārvatī",
+    "Lakṣmī",
+    "Viṣṇu",
+    "Rādhā",
+    "Viṭṭhala",
+    "Śakti"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -171,7 +179,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -339,7 +347,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Suna līje arajī hamārī Paṇḍharīnāthā",
-    "english": "{1:Please }{0:hear }{3:our }{2:petition, }{4:O Lord of Pandhari!}",
+    "english": "{1:Please }{0:hear }{3:our }{2:petition, }{4:O Lord of Paṇḍharī!}",
     "words": [
       {
         "roman": "Suna",
@@ -367,7 +375,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Paṇḍharīnāthā",
-        "gloss": "O Lord of Pandhari (Vithoba / Sai)",
+        "gloss": "O Lord of Paṇḍharī (Vithoba / Sāī)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -713,7 +721,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dayā karo de do bābā kṛpā kī chāyā",
-    "english": "{1:Show }{0:mercy }{2,3:and grant, }{4:O Baba, }{7:the shade }{5,6:of your grace.}",
+    "english": "{1:Show }{0:mercy }{2,3:and grant, }{4:O Bābā, }{7:the shade }{5,6:of your grace.}",
     "words": [
       {
         "roman": "Dayā",
@@ -741,7 +749,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bābā",
-        "gloss": "O Baba; O father",
+        "gloss": "O Bābā; O father",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -808,7 +816,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tukā kahe sevā merī bholī bhāvaḍī",
-    "english": "{0:Tuka }{1:says, }{3:my }{2:service }{4:is simple }{5:and guileless.}",
+    "english": "{0:Tukā }{1:says, }{3:my }{2:service }{4:is simple }{5:and guileless.}",
     "words": [
       {
         "roman": "Tukā",
@@ -986,7 +994,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭho Pāṇḍuraṅga prabhāta samaya ā gayā",
-    "english": "{0:Arise, }{1:O Panduranga, }{3:the hour }{2:of dawn }{4,5:has arrived!}",
+    "english": "{0:Arise, }{1:O Pāṇḍuraṅga, }{3:the hour }{2:of dawn }{4,5:has arrived!}",
     "words": [
       {
         "roman": "Uṭho",
@@ -1075,11 +1083,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vaiṣṇavoṁ kā melā Garuḍa Pāra ā gayā",
-    "english": "{2:The gathering }{1:of }{0:Vaishnavas }{5,6:has reached }{3:the Garuda }{4:platform.}",
+    "english": "{2:The gathering }{1:of }{0:Vaiṣṇavas }{5,6:has reached }{3:the Garuḍa }{4:platform.}",
     "words": [
       {
         "roman": "Vaiṣṇavoṁ",
-        "gloss": "of Vaishnavas; of devotees of Vishnu",
+        "gloss": "of Vaiṣṇavas; of devotees of Vishnu",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1164,7 +1172,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Garuḍa Pāra se mahādvāra deharī taka",
-    "english": "{2:From }{0:the Garuda }{1:platform }{5:up to }{4:the threshold }{3:of the main gate,}",
+    "english": "{2:From }{0:the Garuḍa }{1:platform }{5:up to }{4:the threshold }{3:of the main gate,}",
     "words": [
       {
         "roman": "Garuḍa",
@@ -1336,7 +1344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śuka Sanakādika Nārada Tumbara bhakta haiṁ koṭi",
-    "english": "{0:Shuka, }{1:Sanaka and the sages, }{2:Narada, }{3:Tumburu, }{6:and crores }{4:of devotees }{5:are present.}",
+    "english": "{0:Śuka, }{1:Sanaka and the sages, }{2:Nārada, }{3:Tumburu, }{6:and crores }{4:of devotees }{5:are present.}",
     "words": [
       {
         "roman": "Śuka",
@@ -1431,7 +1439,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Triśūla ḍamarū lekara āye Girijā ke pati",
-    "english": "{2:Bearing }{0:his trident }{1:and drum, }{6:the husband }{4,5:of Girija }{3:has arrived.}",
+    "english": "{2:Bearing }{0:his trident }{1:and drum, }{6:the husband }{4,5:of Girijā }{3:has arrived.}",
     "words": [
       {
         "roman": "Triśūla",
@@ -1520,7 +1528,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kaliyuga kā bhakta Nāmā banā kīrtanī",
-    "english": "{3:Nama, }{2:the devotee }{0,1:of the Kali age, }{4:has become }{5:the lead singer of praise,}",
+    "english": "{3:Nāmā, }{2:the devotee }{0,1:of the Kali age, }{4:has become }{5:the lead singer of praise,}",
     "words": [
       {
         "roman": "Kaliyuga",
@@ -1609,7 +1617,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pīṭha pīche khaḍī āke bandagī ye Janī",
-    "english": "{2:Standing }{0,1:right behind his back, }{5:this }{6:Jani }{3:has come }{4:in humble homage.}",
+    "english": "{2:Standing }{0,1:right behind his back, }{5:this }{6:Janī }{3:has come }{4:in humble homage.}",
     "words": [
       {
         "roman": "Pīṭha",
@@ -1710,7 +1718,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭho uṭho Śrī Sāīnātha guru caraṇa kamala dikhalāo",
-    "english": "{0:Arise, }{1:arise, }{2:O Sri }{3:Sainath }{4:Guru, }{7:reveal }{6:your lotus }{5:feet!}",
+    "english": "{0:Arise, }{1:arise, }{2:O Śrī }{3:Sāīnātha }{4:Guru, }{7:reveal }{6:your lotus }{5:feet!}",
     "words": [
       {
         "roman": "Uṭho",
@@ -1732,7 +1740,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2061,7 +2069,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Phira bhī ajñāna sī chāī hai tumharī yoga māyā",
-    "english": "{0,1:Even so, }{6:Your }{7:yoga} - {8:māyā }{5:is }{4:spread }{3:like }{2:ignorance,}",
+    "english": "{0,1:Even so, }{6:Your }{7,8:divine power of concealment }{5:is }{4:spread }{3:like }{2:ignorance,}",
     "words": [
       {
         "roman": "Phira",
@@ -2107,15 +2115,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "yoga",
-        "gloss": "discipline or union; divine power",
+        "gloss": "divine power; with māyā, the divine power of concealment",
         "concept_key": "yoga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "māyā",
-        "gloss": "power of appearance or concealment",
+        "gloss": "power of concealment",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Compound phrase 'yoga māyā' acts as the feminine singular subject agreeing with 'chāī hai'; 'ajñāna sī' is an adjectival modifier of state."
@@ -2376,7 +2384,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bho Sāīnātha Mahārāja bhavatimiranāśaka ravi",
-    "english": "{0:O }{2:Lord }{1:Sai }{3:Maharaj, }{7:sun }{6:destroying }{5:the darkness }{4:of worldly existence!}",
+    "english": "{0:O }{2:Lord }{1:Sāī }{3:Mahārāja, }{7:sun }{6:destroying }{5:the darkness }{4:of worldly existence!}",
     "words": [
       {
         "roman": "Bho",
@@ -2386,7 +2394,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāī",
-        "gloss": "Sai, the revered spiritual teacher",
+        "gloss": "Sāī, the revered spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3172,7 +3180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭhākara netra palakeṁ dīna bandhu Ramākāntā",
-    "english": "{0:Lifting }{2:the eyelids }{1:of Your eyes, }{4:O friend }{3:of the humble, }{5:O beloved of Lakshmi,}",
+    "english": "{0:Lifting }{2:the eyelids }{1:of Your eyes, }{4:O friend }{3:of the humble, }{5:O beloved of Lakṣmī,}",
     "words": [
       {
         "roman": "Uṭhākara",
@@ -3350,7 +3358,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sunāo madhura vāṇī haro tāpa Sāīnāthā",
-    "english": "{0:Speak }{1:sweet }{2:words, }{3:dispel }{4:the burning afflictions, }{5:O Lord Sai!}",
+    "english": "{0:Speak }{1:sweet }{2:words, }{3:dispel }{4:the burning afflictions, }{5:O Lord Sāī!}",
     "words": [
       {
         "roman": "Sunāo",
@@ -3384,7 +3392,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāthā",
-        "gloss": "O Lord Sai",
+        "gloss": "O Lord Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3546,7 +3554,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sahana karake āo cāhe bheṭa Kṛṣṇa devā",
-    "english": "{0,1:bearing it patiently, }{2:come forth; }{3:one longs for }{4:a meeting, }{6:O Lord }{5:Krishna!}",
+    "english": "{0,1:bearing it patiently, }{2:come forth; }{3:one longs for }{4:a meeting, }{6:O Lord }{5:Kṛṣṇa!}",
     "words": [
       {
         "roman": "Sahana",
@@ -3641,7 +3649,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭho Pāṇḍuraṅga aba to darśana do sabako",
-    "english": "{0:Arise, }{1:O Panduranga, }{2,3:now at last }{5:grant }{4:sacred vision }{6:to all!}",
+    "english": "{0:Arise, }{1:O Pāṇḍuraṅga, }{2,3:now at last }{5:grant }{4:sacred vision }{6:to all!}",
     "words": [
       {
         "roman": "Uṭho",
@@ -4199,7 +4207,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāī Rakhumābaī mana meṁ āne do dayā",
-    "english": "{0:O Rai }{1:and Rakhumabai, }{5:let }{6:compassion }{4:arise }{2,3:in your hearts!}",
+    "english": "{0:O Rāī }{1:and Rakhumābāī, }{5:let }{6:compassion }{4:arise }{2,3:in your hearts!}",
     "words": [
       {
         "roman": "Rāī",
@@ -4389,7 +4397,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Garuḍa Hanumanta ṭhāḍe johate bāṭa",
-    "english": "{0:Garuda }{1:and Hanuman }{2:stand }{3:watching }{4:the path.}",
+    "english": "{0:Garuḍa }{1:and Hanumān }{2:stand }{3:watching }{4:the path.}",
     "words": [
       {
         "roman": "Garuḍa",
@@ -4626,7 +4634,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Viṣṇudāsa Nāmā khaḍā lekara kākaḍā",
-    "english": "{0:Vishnudasa }{1:Nama }{2:stands }{3:holding }{4:the morning torch.}",
+    "english": "{0:Viṣṇudāsa }{1:Nāmā }{2:stands }{3:holding }{4:the morning torch.}",
     "words": [
       {
         "roman": "Viṣṇudāsa",
@@ -4703,7 +4711,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lekara pañcāratī karūṁ bābā kī āratī",
-    "english": "{0:Holding }{1:the five-flame lamp, }{2:I offer }{5:worship with lights }{3,4:to Baba.}",
+    "english": "{0:Holding }{1:the five-flame lamp, }{2:I offer }{5:worship with lights }{3,4:to Bābā.}",
     "words": [
       {
         "roman": "Lekara",
@@ -4792,7 +4800,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭho uṭho he bāndhava manāo ye Ramādhava",
-    "english": "{0:Arise, }{1:arise, }{2:O }{3:brethren! }{4:Propitiate }{5:this }{6:Ramadhava!}",
+    "english": "{0:Arise, }{1:arise, }{2:O }{3:brethren! }{4:Propitiate }{5:this }{6:Ramādhava!}",
     "words": [
       {
         "roman": "Uṭho",
@@ -5000,11 +5008,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kṛṣṇanāthā Datta Sāī padoṁ meṁ citta jaḍe Sāī",
-    "english": "{0:Krishnanatha }{6:fixes }{5:his consciousness }{3,4:at the feet }{1,2:of Datta Sai, }{7:O Sai.}",
+    "english": "{0:Kṛṣṇanātha }{6:fixes }{5:his consciousness }{3,4:at the feet }{1,2:of Datta Sāī, }{7:O Sāī.}",
     "words": [
       {
         "roman": "Kṛṣṇanāthā",
-        "gloss": "Krishnanatha (author-devotee)",
+        "gloss": "Kṛṣṇanātha (author-devotee)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5089,7 +5097,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kākaḍa āratī karatā Sāīnātha devā",
-    "english": "{2:I perform }{0:the dawn }{1:worship with lights, }{4:O Lord }{3:Sainatha!}",
+    "english": "{2:I perform }{0:the dawn }{1:worship with lights, }{4:O Lord }{3:Sāīnātha!}",
     "words": [
       {
         "roman": "Kākaḍa",
@@ -5111,7 +5119,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5469,11 +5477,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāīnātha ke bhakti tāpa se usako jalāyā",
-    "english": "{4:With }{3:the heat }{2:of devotion }{0,1:to Sainatha, }{6:I ignited }{5:it.}",
+    "english": "{4:With }{3:the heat }{2:of devotion }{0,1:to Sāīnātha, }{6:I ignited }{5:it.}",
     "words": [
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai",
+        "gloss": "Lord Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5861,7 +5869,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aise Datta deva Śiraḍī rahakar bhī milate",
-    "english": "{0:In such a way} {1,2:Lord Datta} {6:meets seekers,} {4,5:even while dwelling} {3:in Shirdi.}",
+    "english": "{0:In such a way} {1,2:Lord Datta} {6:meets seekers,} {4,5:even while dwelling} {3:in Śiraḍī.}",
     "words": [
       {
         "roman": "Aise",
@@ -5883,7 +5891,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiraḍī",
-        "gloss": "Shirdi (the sacred village of Sai Baba)",
+        "gloss": "Śiraḍī (the sacred village of Sāī Bābā)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6378,7 +6386,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saguṇa darśana pāne jana jana Śiraḍī ā rahā",
-    "english": "{2:To obtain} {1:the sacred vision} {0:of your embodied form,} {3,4:multitudes of people} {6,7:are coming} {5:to Shirdi.}",
+    "english": "{2:To obtain} {1:the sacred vision} {0:of your embodied form,} {3,4:multitudes of people} {6,7:are coming} {5:to Śiraḍī.}",
     "words": [
       {
         "roman": "Saguṇa",
@@ -6412,7 +6420,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śiraḍī",
-        "gloss": "Shirdi",
+        "gloss": "the town where Sāī Bābā lived and taught, a destination for his devotees",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6996,7 +7004,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī utārūṁ mere Paṇḍharīnāthā",
-    "english": "{1:I wave} {0:the worship lamp,} {2:my} {3:Lord of Pandharpur,}",
+    "english": "{1:I wave} {0:the worship lamp,} {2:my} {3:Lord of Paṇḍharpur,}",
     "words": [
       {
         "roman": "Āratī",
@@ -7018,7 +7026,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Paṇḍharīnāthā",
-        "gloss": "Lord of Pandharpur (Lord Vithoba / Vitthala)",
+        "gloss": "Lord of Paṇḍharpur (Lord Vithoba / Vitthala)",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7043,7 +7051,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mere Sāīnāthā",
-    "english": "{0:My} {1:Lord Sai.}",
+    "english": "{0:My} {1:Lord Sāī.}",
     "words": [
       {
         "roman": "Mere",
@@ -7053,7 +7061,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Sāīnāthā",
-        "gloss": "Lord Sai; Master Sai",
+        "gloss": "Lord Sāī; Master Sāī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -7666,7 +7674,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ī̃ṭa para khaḍā huā hai sundara bābā",
-    "english": "{0,1:Upon the brick} {2,3,4:stands} {5,6:beautiful Baba.}",
+    "english": "{0,1:Upon the brick} {2,3,4:stands} {5,6:beautiful Bābā.}",
     "words": [
       {
         "roman": "Ī̃ṭa",
@@ -7969,7 +7977,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭhakara bhora meṁ bābā khaḍe haiṁ ī̃ṭa pe",
-    "english": "{0:Having awakened }{2:at }{1:dawn, }{3:Baba }{4,5:stands }{7:upon }{6:the brick.}",
+    "english": "{0:Having awakened }{2:at }{1:dawn, }{3:Bābā }{4,5:stands }{7:upon }{6:the brick.}",
     "words": [
       {
         "roman": "Uṭhakara",
@@ -8878,7 +8886,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Keśavarāja ī̃ṭa pe khaḍe Nāmā caraṇa pūjate",
-    "english": "{0:Keshavaraj }{3:stands }{2:upon }{1:the brick; }{4:Nama }{6:worships }{5:his feet.}",
+    "english": "{0:Keśavarāja }{3:stands }{2:upon }{1:the brick; }{4:Nāmā }{6:worships }{5:his feet.}",
     "words": [
       {
         "roman": "Keśavarāja",
@@ -8991,11 +8999,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāīnātha guru merī māī caraṇoṁ meṁ sthāna de do Sāī",
-    "english": "{0:O Sainath, }{1:guru }{2:and my }{3:mother, }{7,8:grant }{6:a place }{4,5:at your feet, }{9:O Sai.}",
+    "english": "{0:O Sāīnātha, }{1:guru }{2:and my }{3:mother, }{7,8:grant }{6:a place }{4,5:at your feet, }{9:O Sāī.}",
     "words": [
       {
         "roman": "Sāīnātha",
-        "gloss": "Lord Sai; Master Sai",
+        "gloss": "Lord Sāī; Master Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -9122,7 +9130,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dattarāja guru merī māī caraṇoṁ meṁ sthāna de do Sāī",
-    "english": "{0:O Dattaraja, }{1:guru }{2:and my }{3:mother, }{7,8:grant }{6:a place }{4,5:at your feet, }{9:O Sai.}",
+    "english": "{0:O Dattarāja, }{1:guru }{2:and my }{3:mother, }{7,8:grant }{6:a place }{4,5:at your feet, }{9:O Sāī.}",
     "words": [
       {
         "roman": "Dattarāja",

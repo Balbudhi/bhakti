@@ -16,7 +16,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Vaiṣṇo Devī"
+    "Vaiṣṇo Devī",
+    "Lakṣmī",
+    "Durgā",
+    "Kālī"
   ],
   "searchAliases": [
     "Devimahatmyam — Adhyaya 12",

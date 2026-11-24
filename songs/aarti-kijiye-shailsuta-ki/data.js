@@ -12,7 +12,8 @@ window.SONG_META = {
   "subjectTags": [
     "Śakti",
     "Śiva",
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Arati Kijai Shailasuta Ki",
@@ -67,17 +68,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī kījai śailasutā kī",
-    "english": "{0,1:Perform the āratī}{2,3: of the Daughter of the Mountain}",
+    "english": "{0,1:Offer worship with lights}{2,3: to the Daughter of the Mountain}",
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kījai",
-        "gloss": "let be performed; one should perform",
+        "gloss": "offer; perform",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -126,7 +127,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jagadambā kī āratī kījai",
-    "english": "{2,3:Perform the āratī}{1: of }{0:the Mother of the Universe}",
+    "english": "{2,3:Offer worship with lights}{1: to }{0:the Mother of the Universe}",
     "words": [
       {
         "roman": "Jagadambā",
@@ -142,13 +143,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kījai",
-        "gloss": "let be performed; one should perform",
+        "gloss": "offer; perform",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -197,11 +198,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī kījai āratī kījai śailasutā kī",
-    "english": "{0,1:Perform the āratī}, {2,3:perform the āratī}{4,5: of the Daughter of the Mountain}",
+    "english": "{0,1:Offer worship with lights}, {2,3:offer worship with lights}{4,5: to the Daughter of the Mountain}",
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -213,7 +214,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -952,17 +953,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kare āratī milajula tākī",
-    "english": "{2:Together }{0:let us perform }{3:Her }{1:āratī}",
+    "english": "{2:Together }{0:let us offer }{1:worship with lights }{3:to Her}",
     "words": [
       {
         "roman": "Kare",
-        "gloss": "let us perform; they perform",
+        "gloss": "let us offer",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -974,7 +975,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tākī",
-        "gloss": "of Her; of that (Devi)",
+        "gloss": "of Her; marks the recipient of the worship",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1035,11 +1036,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī kījai āratī kījai āratī kījai śailasutā kī",
-    "english": "{0,1:Perform the āratī}, {2,3:perform the āratī}, {4,5:perform the āratī}{6,7: of the Daughter of the Mountain}",
+    "english": "{0,1:Offer worship with lights}, {2,3:offer worship with lights}, {4,5:offer worship with lights}{6,7: to the Daughter of the Mountain}",
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1051,7 +1052,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1063,7 +1064,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1112,7 +1113,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kī āratī kījai",
-    "english": "{1,2:Perform the āratī}{0: of...}",
+    "english": "{1,2:Offer worship with lights}{0: of...}",
     "words": [
       {
         "roman": "Kī",
@@ -1122,7 +1123,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },

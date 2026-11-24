@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Kālī"
+    "Kālī",
+    "Pārvatī",
+    "Śiva"
   ],
   "searchAliases": [
     "Shakti",
@@ -53,7 +55,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pārvatī Devī Mahāmāyāvinī",
-    "english": "{1:Goddess }{0:Parvati}{2:, she who wields great māyā}",
+    "english": "{1:Goddess }{0:Pārvatī}{2:, she who wields great cosmic creative power}",
     "words": [
       {
         "roman": "Pārvatī",
@@ -69,7 +71,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Mahāmāyāvinī",
-        "gloss": "she who possesses/wields great māyā; cosmic creative power",
+        "gloss": "she who wields great cosmic creative power; mahā-māyāvinī",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -388,7 +390,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tuma Śakti Ho Jagatāriṇī",
-    "english": "{0:You }{2:are }{1:Shakti}{3:, deliverer of the world}",
+    "english": "{0:You }{2:are }{1:power}{3:, deliverer of the world}",
     "words": [
       {
         "roman": "Tuma",
@@ -398,7 +400,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Śakti",
-        "gloss": "primordial power; divine energy",
+        "gloss": "power; the divine feminine power",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -348,7 +348,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hai ajīb ye māyā",
-    "english": "{2:This }{3:māyā }{0:is }{1:strange,}",
+    "english": "{2:This }{3:power of worldly appearance }{0:is }{1:strange,}",
     "words": [
       {
         "roman": "hai",
@@ -372,7 +372,7 @@ window.SONG_LINES = {
         "roman": "māyā",
         "gloss": "power of worldly appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Inverted predicate construction where the copula hai and predicate adjective ajīb precede the subject ye māyā."

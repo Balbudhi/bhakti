@@ -15,7 +15,8 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Vitthal Gitim Gava",

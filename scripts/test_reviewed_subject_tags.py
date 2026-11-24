@@ -37,6 +37,16 @@ class ReviewedSubjectTagTests(unittest.TestCase):
     def apply(self, meta: dict, slug: str = 'reviewed') -> None:
         tags.apply_reviewed_subject_tags(meta, slug, self.lines, self.sequence, root=self.root)
 
+    def test_instrumental_without_source_is_not_a_lyric_witness(self):
+        self.lines['alap'] = {'instrumental': True}
+        self.sequence.append({'ref': 'alap', 'section': 'instrumental'})
+        meta = {'subjectTags': []}
+        self.apply(meta)
+        self.assertEqual(meta['subjectTags'], ['Guru', 'Viṣṇu'])
+        self.sequence = [{'ref': 'new-id', 'section': 'instrumental'}, {'ref': 'hari'}]
+        with self.assertRaisesRegex(ValueError, 'not performed'):
+            self.apply({'subjectTags': []})
+
     def test_unregistered_song_gets_canonical_parent_closure(self) -> None:
         meta = {"subjectTags": ["Devī", "Satguru", "Sarasvatī"], "writer": "Unchanged"}
         self.apply(meta, "other")
@@ -116,6 +126,31 @@ class ReviewedSubjectTagTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "canonical.*conflict"):
                     self.apply(meta)
                 self.assertEqual(meta, before)
+
+    def test_contract_does_not_turn_ambiguous_keywords_into_required_tags(self) -> None:
+        self.registry = {"version": 1, "songs": {}}
+        self.save()
+        directory = self.root / "other"
+        directory.mkdir()
+        (directory / "data.js").touch()
+        for source, roman, gloss, explicit in (
+            ("रमा", "ramā", "Lakṣmī, the goddess", ["Lakṣmī", "Śakti"]),
+            ("श्यामा", "śyāmā", "the dark Goddess", ["Kālī", "Śakti"]),
+            ("दुर्ग", "durga", "fortress", []),
+        ):
+            data = {"SONG_META": {"title": "Example", "credit": "", "writer": "", "singer": "",
+                    "composer": "", "languages": ["Sanskrit"], "subjectTags": explicit,
+                    "timingStatus": "start-only-reviewed", "translationStatus": "reviewed",
+                    "sourceStatus": "reviewed"}, "SONG_LINES": {"a": {
+                    "source": source, "roman": roman, "english": "{0:" + gloss + "}",
+                    "words": [{"roman": roman, "gloss": gloss}],
+                    "sourceWords": [{"text": source, "wordIndices": [0]}]}},
+                    "SONG_SEQUENCE": [{"ref": "a", "section": "verse", "repeats": 1}],
+                    "SONG_TIMINGS": [{"start": 0, "end": 1}]}
+            with self.subTest(source=source), patch.object(audit, "load_data", return_value=data), \
+                 patch.object(audit, "ROOT", self.root):
+                self.assertEqual(audit.audit_song(directory)["problems"], [])
+                self.assertEqual(data["SONG_META"]["subjectTags"], explicit)
 
     def test_removing_parent_of_retained_identity_fails_before_any_mutation(self) -> None:
         self.registry = {"version": 1, "songs": {"reviewed": {
@@ -295,6 +330,15 @@ class ReviewedSubjectTagTests(unittest.TestCase):
         with patch.object(audit, 'load_data', return_value=data), patch.object(audit, 'ROOT', self.root):
             problems = audit.audit_song(path)['problems']
             self.assertEqual(problems, [])
+            accepted_tags = list(meta['subjectTags'])
+            meta['subjectTags'].append('Rāma')
+            problems = audit.audit_song(path)['problems']
+            self.assertTrue(any('reviewed subject tags' in p for p in problems), problems)
+            self.assertIn('Rāma', meta['subjectTags'], 'audit must remain read-only')
+            meta['subjectTags'] = [tag for tag in accepted_tags if tag != 'Viṣṇu']
+            problems = audit.audit_song(path)['problems']
+            self.assertTrue(any('reviewed subject tags' in p for p in problems), problems)
+            meta['subjectTags'] = accepted_tags
             self.lines['goddess']['source'] = 'Changed source'
             problems = audit.audit_song(path)['problems']
             self.assertTrue(any('Rāma evidence changed' in p for p in problems), problems)
@@ -402,6 +446,28 @@ class ReviewedSubjectTagTests(unittest.TestCase):
                 self.assertNotIn('— Śirḍī Sāī', page)
                 expected_heading = 'Example — Guru' if subtitle else 'Example'
                 self.assertIn(f'<meta property="og:title" content="{expected_heading}"', page)
+
+    def test_real_generator_keeps_keyword_candidates_out_of_metadata(self) -> None:
+        self.registry = {'version': 1, 'songs': {}}
+        self.save()
+        (self.root / 'data/editorial_baselines.json').write_text('{"version":1,"songs":{}}')
+        directory = self.root / 'songs/other'
+        directory.mkdir(parents=True)
+        with patch.object(pipeline, 'ROOT', self.root), patch.object(pipeline, 'publication_errors', return_value=[]):
+            pipeline.generate(directory, {'slug': 'other', 'displayTitle': 'Ramā',
+                'languages': ['Sanskrit'], 'subjectTags': ['Lakṣmī']}, {},
+                {'packet': {'verified_lines': [{'id': 'a', 'source_text': 'रमा', 'roman': 'ramā', 'kind': 'verse'}]}},
+                {'sequence': [{'ref': 'a', 'start': 0, 'end': 5}]},
+                {'packet': {'glosses': [{'id': 'a', 'word_glosses': [{'roman': 'ramā', 'gloss': 'Lakṣmī, the goddess'}]}]}},
+                {'packet': {'translations': [{'id': 'a', 'segments': [{'text': 'Ramā', 'word_indices': [0]}]}]}},
+                write_catalogue_after=False)
+        reader = audit.load_data(directory / 'data.js')
+        self.assertEqual(reader['SONG_META']['subjectTags'], ['Lakṣmī', 'Śakti'])
+        import search_song_subjects as search
+        result = search.check_candidates({'other': reader}, {'schemaVersion': 1, 'decisions': {}})
+        self.assertFalse(result['passed'])
+        self.assertIn('Rāma', [group['candidateTag'] for group in result['unresolved']])
+        self.assertEqual(reader['SONG_META']['subjectTags'], ['Lakṣmī', 'Śakti'])
 
 
 if __name__ == '__main__':

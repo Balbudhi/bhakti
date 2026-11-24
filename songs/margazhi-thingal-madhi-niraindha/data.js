@@ -49,7 +49,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "margazhi-thingal-mathi": {
     "source": "மார்கழித் திங்கள் மதிநிறைந்த நன்னாளால்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "மார்கழித்",
@@ -116,7 +116,7 @@ window.SONG_LINES = {
   },
   "neerada-poduveer": {
     "source": "நீராடப் போதுவீர் போதுமினோ நேரிழையீர்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நீராடப்",
@@ -176,7 +176,7 @@ window.SONG_LINES = {
   },
   "seermalgum-aaypadi-aalaap": {
     "source": "சீர்மல்கும் ஆய்ப்பாடி ஆ... ஆ...",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "சீர்மல்கும்",
@@ -236,7 +236,7 @@ window.SONG_LINES = {
   },
   "seermalgum-aaypadi-selva": {
     "source": "சீர்மல்கும் ஆய்ப்பாடிச் செல்வச் சிறுமீர்காள்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "சீர்மல்கும்",
@@ -296,7 +296,7 @@ window.SONG_LINES = {
   },
   "koorvel-kodunthozhilan": {
     "source": "கூர்வேல் கொடுந்தொழிலன் நந்தகோபன் குமரன்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "கூர்வேல்",
@@ -356,7 +356,7 @@ window.SONG_LINES = {
   },
   "eraandha-kanni-yasodhai": {
     "source": "ஏரார்ந்த கண்ணி யசோதை இளம் சிங்கம்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஏரார்ந்த",
@@ -428,7 +428,7 @@ window.SONG_LINES = {
   },
   "eraandha-kanni": {
     "source": "ஏரார்ந்த கண்ணி",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "ஏரார்ந்த",
@@ -464,7 +464,7 @@ window.SONG_LINES = {
   },
   "kaarmeni-sengan": {
     "source": "கார்மேனிச் செங்கண் கதிர்மதியம் போல் முகத்தான்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "கார்மேனிச்",
@@ -536,7 +536,7 @@ window.SONG_LINES = {
   },
   "narayanane-namakku-aalaap": {
     "source": "நாராயணனே நமக்கே ஆ... ஆ...",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நாராயணனே",
@@ -596,7 +596,7 @@ window.SONG_LINES = {
   },
   "narayanane-namakke-parai": {
     "source": "நாராயணனே நமக்கே பறை தருவான்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "நாராயணனே",
@@ -656,7 +656,7 @@ window.SONG_LINES = {
   },
   "paror-pugazha": {
     "source": "பாரோர் புகழப் படிந்தேலோர் எம்பாவாய்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "பாரோர்",
@@ -716,7 +716,7 @@ window.SONG_LINES = {
   },
   "margazhi-thingal-closing": {
     "source": "மார்கழித் திங்கள்",
-    "sourceLanguage": "",
+    "sourceLanguage": "ta",
     "sourceWords": [
       {
         "text": "மார்கழித்",

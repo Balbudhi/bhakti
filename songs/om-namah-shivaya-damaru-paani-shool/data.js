@@ -12,7 +12,9 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Om Namah Shivaya: Damaru Pani Shula Pani",
@@ -40,7 +42,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "om-namah-shivaya-solo": {
     "source": "ॐ नमः शिवाय",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -87,7 +89,7 @@ window.SONG_LINES = {
   },
   "om-namah-shivaya-chorus-1": {
     "source": "ॐ नमः शिवाय नमः शिवाय नमः शिवाय",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -289,7 +291,7 @@ window.SONG_LINES = {
   },
   "namo-namo-call-response": {
     "source": "नमो नमो",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नमो",
@@ -633,7 +635,7 @@ window.SONG_LINES = {
   },
   "om-namah-shivaya-short": {
     "source": "ॐ नमः शिवाय",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -964,7 +966,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "niḥsāra isa saṁsāra meṁ śiva nāma kevala sāra hai",
-    "english": "{3:In }{1:this }{0:substanceless }{2:saṃsāra, }{4,5:the name of Shiva }{6:alone }{8:is }{7:the essence.}",
+    "english": "{3:In }{1:this }{0:substanceless }{2:worldly existence, }{4,5:the name of Śiva }{6:alone }{8:is }{7:the essence.}",
     "words": [
       {
         "roman": "niḥsāra",
@@ -980,9 +982,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "saṁsāra",
-        "gloss": "cycle of conditioned birth and death",
+        "gloss": "worldly existence; the world of conditioned life",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "meṁ",
@@ -1168,7 +1170,7 @@ window.SONG_LINES = {
   },
   "om-namah-shivaya-chorus-2": {
     "source": "ॐ नमः शिवाय नमः शिवाय नमः शिवाय नमः शिवाय",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1394,7 +1396,7 @@ window.SONG_LINES = {
   },
   "mantra-shambhavaya": {
     "source": "ॐ नमः शम्भवाय च मयोभवाय च",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -1477,7 +1479,7 @@ window.SONG_LINES = {
   },
   "mantra-shankaraya": {
     "source": "नमः शंकराय च मयस्कराय च",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नमः",
@@ -1548,7 +1550,7 @@ window.SONG_LINES = {
   },
   "mantra-shivaya": {
     "source": "नमः शिवाय च शिवतराय च",
-    "sourceLanguage": "hi",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नमः",

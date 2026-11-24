@@ -16,7 +16,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Nṛsiṃha"
+    "Nṛsiṃha",
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "Nagumogamutōdi Ō Narakēsari",

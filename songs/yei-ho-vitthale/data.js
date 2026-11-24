@@ -15,7 +15,9 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Viṭṭhala",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Yei Ho Vitthale Bhaktajanavatsale",

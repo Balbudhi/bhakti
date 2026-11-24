@@ -4,7 +4,9 @@ window.SONG_META = {
   "singer": "Dr. Vidyabhushana",
   "composer": "",
   "subjectTags": [
-    "Hanumān"
+    "Hanumān",
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=E1GMoflAz0A",
   "searchAliases": [
@@ -516,7 +518,7 @@ window.SONG_LINES = {
   "l014": {
     "source": "ಫುಲ್ಲನಾಭನಲ್ಲಿ ಎನ್ನ",
     "roman": "phullanābhanalli enna",
-    "english": "{2:My}… {1:in the} {0:lotus}-{1:naveled Lord}…",
+    "english": "{1:In the }{0:lotus-}{1:navelled Lord, }{2:my}",
     "words": [
       {
         "roman": "phulla",
@@ -556,11 +558,11 @@ window.SONG_LINES = {
   "l015": {
     "source": "ಮನಸ ನೀ ನಿಲ್ಲಿಸೊ ತನಕ",
     "roman": "manasa nī nilliso tanaka",
-    "english": "{3:Until} {1:you} {2:steady} {0:my mind}…",
+    "english": "{0:mind—}{3:until }{1:you }{2:steady }{0:it,}",
     "words": [
       {
         "roman": "manasa",
-        "gloss": "mind; object of steadying"
+        "gloss": "mind; resumed as it in the English after the topicalized mind"
       },
       {
         "roman": "nī",

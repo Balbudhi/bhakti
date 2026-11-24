@@ -15,7 +15,9 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Rāma",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Vaishnava Gharim Sarvakal",

@@ -16,7 +16,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Hanumān",
-    "Narasimha"
+    "Narasimha",
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Ghatikacaladi Ninta Shri Hanumanta",
@@ -361,7 +363,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caturayugadi tānu ati balavaṃtanu caturmukhanayyana",
-    "english": "{2:He is} {3:exceedingly} {4:mighty} {1:in the }{0:four }{1:ages}. {7:The father }{5:of four-}{6:faced Brahmā}{7:’s}",
+    "english": "{2:He is} {3:exceedingly} {4:mighty} {1:in the }{0:four }{1:ages}. {5:Four-}{6:faced Brahmā’s }{7:father—}",
     "words": [
       {
         "roman": "catura",
@@ -429,11 +431,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "catura mūrutigaḷa caturatanadi bhajisi",
-    "english": "{0:four} {1:forms} {3:he worships} {2:wisely},",
+    "english": "{3:he worships }{0:his four }{1:forms }{2:wisely},",
     "words": [
       {
         "roman": "catura",
-        "gloss": "four"
+        "gloss": "four; the forms belong to Brahmā’s father in the preceding line"
       },
       {
         "roman": "mūrutigaḷa",

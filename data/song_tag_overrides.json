@@ -173,7 +173,10 @@
       "addTags": [
         "Guru",
         "Kṛṣṇa",
-        "Śakti"
+        "Śakti",
+        "Sītā",
+        "Lakṣmī",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -195,13 +198,38 @@
           "lineId": "line-141",
           "source": "रुसो मन सरस्वती चपल चित्त तेही रुसो",
           "reason": "Actual named Sarasvati passage, already specifically classified Sarasvatī; parent closure applies without replacing Sai subject."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "line-040",
+          "source": "श्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचंद्रं भजे",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "line-082",
+          "source": "अक्षय त्यांचे सदनी लक्ष्मी वास करी",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "line-025",
+          "source": "शिरडी माझे पंढरपूर साईबाबा रमावर",
+          "reason": "The performed stanza identifies Shirdi with Pandharpur and Sai with Ramā’s consort; neighboring Chandrabhaga and Pundalik complete the specific Vitthala devotional setting. This is a coordinated identity comparison, not a place-only guess."
         }
       ]
     },
     "doi-kar-teka-hei-matha": {
       "addTags": [
         "Guru",
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Hanumān",
+        "Śiva",
+        "Pārvatī",
+        "Lakṣmī",
+        "Viṣṇu",
+        "Rādhā",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -217,6 +245,48 @@
           "lineId": "line-36-sahan-karke-aao",
           "source": "सहन करके आओ चाहे भेट कृष्ण देवा",
           "reason": "Direct divine address avoids existing line52 poet-versus-deity translation inconsistency."
+        },
+        {
+          "tag": "Hanumān",
+          "lineId": "line-45-garuda-hanumanta-thade",
+          "source": "गरुड़ हनुमन्त ठाड़े जोहते बाट",
+          "reason": "Explicit Hanumant name; Garuda and Hanuman stand waiting."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "line-15-trishula-damaru",
+          "source": "त्रिशूल डमरू लेकर आये गिरिजा के पति",
+          "reason": "Girijā’s husband arriving with trident and drum is an unambiguous Śiva relationship/iconographic reference."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "line-15-trishula-damaru",
+          "source": "त्रिशूल डमरू लेकर आये गिरिजा के पति",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "line-32-uthakar-netra",
+          "source": "उठाकर नेत्र पलकें दीन बन्धु रमाकान्ता",
+          "reason": "Ramākānta explicitly identifies Lakshmi’s beloved; Ramā is the goddess, not Rama the hero."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line-32-uthakar-netra",
+          "source": "उठाकर नेत्र पलकें दीन बन्धु रमाकान्ता",
+          "reason": "Ramākānta is the Lord as Lakshmi’s beloved, within the Panduranga/garuda temple context."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "line-43-rai-rakhumabai-man-me",
+          "source": "राई रखुमाबाई मन में आने दो दया",
+          "reason": "Rāī alongside Rakhumābāī identifies Radha in the paired female attendants of Vitthala."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "line-10-utho-panduranga",
+          "source": "उठो पाण्डुरङ्ग प्रभात समय आ गया",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
         }
       ]
     },
@@ -302,7 +372,11 @@
     },
     "hanuman-chalisa": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Sītā",
+        "Pārvatī",
+        "Śiva",
+        "Sarasvatī"
       ],
       "evidence": [
         {
@@ -311,6 +385,30 @@
           "lineId": "doha-1a",
           "source": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि ।",
           "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "chaupai-08",
+          "source": "प्रभु चरित्र सुनिबे को रसिया । राम लखन सीता मन बसिया ॥",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "chaupai-39",
+          "source": "जो यह पढ़ै हनुमान चलीसा । होय सिद्धि साखी गौरीसा ॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "chaupai-06",
+          "source": "संकर सुवन केसरीनंदन । तेज प्रताप महा जग बंदन ॥",
+          "reason": "Śaṅkara is explicitly named in the performed Śaṅkara-suvana relationship."
+        },
+        {
+          "tag": "Sarasvatī",
+          "lineId": "chaupai-14",
+          "source": "सनकादिक ब्रह्मादि मुनीसा । नारद सारद सहित अहीसा ॥",
+          "reason": "Sārada is named among Brahma, sages, Narada and the serpent king, identifying Sarasvati in the praise list."
         }
       ]
     },
@@ -356,7 +454,11 @@
     },
     "kakad-aarti": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Sītā",
+        "Lakṣmī",
+        "Śiva",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -365,6 +467,30 @@
           "lineId": "line-002",
           "source": "तथापि कर जोड़े करु अब गुरु प्रार्थना",
           "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "line-132",
+          "source": "श्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचंद्रं भजे",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "line-185",
+          "source": "अक्षय उनके घर में लक्ष्मी वास करे",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "line-010",
+          "source": "गुरु की उपमा बड़ी है विधि हरी हर से भी",
+          "reason": "The performed divine triad Vidhi, Hari, Har explicitly references Hara/Shiva."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "line-117",
+          "source": "शिरडी मेरा पंढरपुर साईं बाबा रमावर",
+          "reason": "The performed stanza identifies Shirdi with Pandharpur and Sai with Ramā’s consort; neighboring Chandrabhaga and Pundalik complete the specific Vitthala devotional setting. This is a coordinated identity comparison, not a place-only guess."
         }
       ]
     },
@@ -413,7 +539,10 @@
     "madhyahna-aarti": {
       "addTags": [
         "Guru",
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Sītā",
+        "Lakṣmī",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -429,6 +558,24 @@
           "lineId": "line-069",
           "source": "कृष्णदामोदरं वासुदेवं हरिम्",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "line-071",
+          "source": "जानकीनायकं रामचंद्रं भजे",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "line-132",
+          "source": "अक्षय त्यांचे सदनी लक्ष्मी वास करी",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "line-048",
+          "source": "शिर्डी माझे पंढरपूर साईबाबा रमावर",
+          "reason": "The stanza identifies Śirḍī with Paṇḍharpur and Sai with Ramā’s consort; the adjacent Candrabhāgā and Puṇḍalīka identification establishes the Viṭṭhala setting."
         }
       ]
     },
@@ -507,7 +654,12 @@
         "Guru",
         "Kṛṣṇa",
         "Śiva",
-        "Hanumān"
+        "Hanumān",
+        "Sītā",
+        "Lakṣmī",
+        "Durgā",
+        "Viṭṭhala",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -537,6 +689,36 @@
           "lineId": "hanuman-rakshak",
           "source": "हनुमान रक्षक हे दीनानाथा",
           "reason": "Explicit Hanumanta/Hanumān/Māruti devotional reference in performed text."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "shri-ram-sita",
+          "source": "श्री राम सीता गोपाल कृष्णा",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "jai-lakshmi-mata",
+          "source": "जय लक्ष्मी माता हे दीनानाथा",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "jai-durge-mata",
+          "source": "जय दुर्गे माता हे दीनानाथा",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "mata-pita-tum",
+          "source": "माता पिता तुम हे पंढरीनाथा",
+          "reason": "Paṇḍharīnātha explicitly addresses the Lord of Paṇḍharpur, Viṭṭhala."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "jai-ho-bhavani",
+          "source": "जय हो भवानी जय काली माता",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
         }
       ]
     },
@@ -571,7 +753,8 @@
     "shej-aarti": {
       "addTags": [
         "Guru",
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -587,6 +770,12 @@
           "lineId": "line-075",
           "source": "आता स्वामी सुखे निद्रा करा गोपाळा बाबा साई दयाळा",
           "reason": "The addressed/praised figure is explicitly Kṛṣṇa, Giridhara-Gopāla, or Śyāma of Braj; surrounding performed verses confirm the referent. Proper devotional name, not an author-name component or colour adjective."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "line-012",
+          "source": "अवतार पांडुरंग नाव ठेविले ज्ञानी",
+          "reason": "Pāṇḍuraṅga is explicitly named as descending in an incarnation."
         }
       ]
     },
@@ -597,7 +786,8 @@
         "Viṣṇu",
         "Rāma",
         "Śiva",
-        "Hanumān"
+        "Hanumān",
+        "Lakṣmī"
       ],
       "evidence": [
         {
@@ -641,12 +831,20 @@
           "lineId": "line-003",
           "source": "ॐ कृष्णरामशिवमारुत्यादिरूपाय नमः",
           "reason": "Explicit Hanumanta/Hanumān/Māruti devotional reference in performed text."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "line-002",
+          "source": "ॐ लक्ष्मीनारायणाय नमः",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
         }
       ]
     },
     "shree-sai-aarti": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Rāma",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -655,6 +853,18 @@
           "lineId": "line-jayakara-1",
           "source": "श्री सच्चिदानन्द सद्गुरु साईंनाथ महाराज की जय",
           "reason": "Performed line explicitly addresses or praises the spiritual teacher, the teacher’s feet/word, or the Guru-disciple relation. This is not an author credit, Thursday, or a substring match."
+        },
+        {
+          "tag": "Rāma",
+          "lineId": "line-shloka-2",
+          "source": "साईरूपधरं राघवोत्तमं भक्तकामविबुधद्रुमं प्रभुम् । माययोपहतचित्तशुद्धये चिन्तयाम्यहमहर्निशं मुदा ॥",
+          "reason": "Rāghavottama, best of Raghu’s lineage, is praised as assuming Sai’s form; clear Rama epithet reference."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line-verse-1b",
+          "source": "मोक्षमार्गी को दिखाते राह, दृष्टि से श्री रंग, दृष्टि से श्री रंग",
+          "reason": "Śrīraṅga is the explicitly performed divine name of Viṣṇu/Raṅganātha."
         }
       ]
     },
@@ -698,7 +908,9 @@
       "addTags": [
         "Guru",
         "Nirguṇa",
-        "Gurbāṇī"
+        "Gurbāṇī",
+        "Viṣṇu",
+        "Śiva"
       ],
       "evidence": [
         {
@@ -720,6 +932,18 @@
           "lineId": "patshahi-10-intro",
           "source": "ਪਾਤਿਸਾਹੀ ੧੦ ॥ ਕਬ੍ਯੋ ਬਾਚ ਬੇਨਤੀ ॥ ਚੌਪਈ ॥",
           "reason": "Owner-requested Sikh sacred-song grouping, including Guru Gobind Singh compositions outside the Guru Granth Sahib. Verified source: Dasam Granth · Caritropākhyān 404 · Bentī Caupaī, stanzas 377–401."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line-27",
+          "source": "ਕਾਲ ਪਾਇ ਕਰਿ ਬਿਸਨ ਪ੍ਰਕਾਸਾ ॥",
+          "reason": "Bisan is the Braj form of Viṣṇu, explicitly manifested under Time; reference tag does not change the poem’s theology."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "line-26",
+          "source": "ਕਾਲ ਪਾਇ ਸਿਵਜੂ ਅਵਤਰਾ ॥",
+          "reason": "Sivjū explicitly names Śiva as incarnating under Time; reference tag does not change the poem’s theology."
         }
       ]
     },
@@ -780,7 +1004,8 @@
     },
     "ghanshyam-sundara": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Lakṣmī"
       ],
       "evidence": [
         {
@@ -803,6 +1028,12 @@
           "source": "जागो हे कृष्ण मुरारी, गिरिधारी",
           "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Kṛṣṇa awakening song; no teacher/Sai referent.",
           "operation": "remove"
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "ghanshyam-sundara-shridhara",
+          "source": "घनश्याम सुंदरा श्रीधरा",
+          "reason": "Śrīdhara, bearer of Śrī, explicitly references Lakshmi through the invoked Krishna epithet."
         }
       ],
       "removeTags": [
@@ -849,7 +1080,13 @@
     "maa-jag-janani-jai-jai": {
       "addTags": [
         "Kṛṣṇa",
-        "Śiva"
+        "Śiva",
+        "Sītā",
+        "Pārvatī",
+        "Durgā",
+        "Sarasvatī",
+        "Lakṣmī",
+        "Rādhā"
       ],
       "evidence": [
         {
@@ -865,13 +1102,51 @@
           "lineId": "v1-lead-part2",
           "source": "सत्य सनातन सुन्दर सत्य सनातन सुन्दर परशिव सुर भूपा",
           "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "v5-lead",
+          "source": "राम कृष्ण तू सीता ब्रज रानी राधा",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "v4-lead",
+          "source": "तू विधि वधू रमा तू उमा महामाया",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "v6-lead",
+          "source": "दश विद्या नव दुर्गा नाना शस्त्र करा",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Sarasvatī",
+          "lineId": "v4-lead",
+          "source": "तू विधि वधू रमा तू उमा महामाया",
+          "reason": "Vidhi-vadhū explicitly identifies Sarasvatī as Brahmā’s bride among the forms praised."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "v4-lead",
+          "source": "तू विधि वधू रमा तू उमा महामाया",
+          "reason": "Ramā is named as a goddess here; the same hymn also directly names Kamalā."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "v5-lead",
+          "source": "राम कृष्ण तू सीता ब्रज रानी राधा",
+          "reason": "Rādhā is explicitly named as the queen of Braj."
         }
       ]
     },
     "prem-sahit-sab-bolo-kirtan": {
       "addTags": [
         "Kṛṣṇa",
-        "Hanumān"
+        "Hanumān",
+        "Sītā",
+        "Rādhā"
       ],
       "evidence": [
         {
@@ -887,6 +1162,18 @@
           "lineId": "hanuman-ke-hridaya",
           "source": "हनुमान के हृदय बिराजे",
           "reason": "Explicit Hanumanta/Hanumān/Māruti devotional reference in performed text."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "jai-siya-ram-1",
+          "source": "जय सिया राम जय जय सिया राम",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "murali-manohar-1",
+          "source": "मुरली मनोहर राधे श्याम",
+          "reason": "Rādhe is explicitly named with Śyāma."
         }
       ]
     },
@@ -928,7 +1215,9 @@
     "vishnu-sahasranama": {
       "addTags": [
         "Kṛṣṇa",
-        "Guru"
+        "Guru",
+        "Lakṣmī",
+        "Rāma"
       ],
       "evidence": [
         {
@@ -943,12 +1232,25 @@
           "lineId": "stanza-23",
           "source": "गुरुर्गुरुतमो धाम सत्यः सत्यपराक्रमः ।\nनिमिषोऽनिमिषः स्रग्वी वाचस्पतिरुदारधीः ॥",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "meditation-3",
+          "source": "ॐ शान्ताकारं भुजगशयनं पद्मनाभं सुरेशं ।\nविश्वाधारं गगनसदृशं मेघवर्णं शुभाङ्गम् ।\nलक्ष्मीकान्तं कमलनयनं योगिभिर्ध्यानगम्यं ।\nवन्दे विष्णुं भवभयहरं सर्वलोकैकनाथम् ॥",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Rāma",
+          "lineId": "stanza-43",
+          "source": "रामो विरामो विरजो मार्गो नेयो नयोऽनयः ।\nवीरः शक्तिमतां श्रेष्ठो धर्मो धर्मविदुत्तमः ॥",
+          "reason": "Rāma is explicitly named; kapīndra and other narrative epithets elsewhere in the performed list reinforce the Rāma reference."
         }
       ]
     },
     "prabhu-ham-pe-kripa-karna": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Viṣṇu"
       ],
       "removeTags": [
         "Rāma"
@@ -967,6 +1269,12 @@
           "lineId": "v3-pranon-me-rama-karna",
           "source": "प्राणों में रमा करना",
           "reason": "ramā karanā here is a verb (dwell/be absorbed in the breath), not the name Rāma; direct address is Śyāma/Ghanaśyāma, Lord residing in Braj. Whole song inspected."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "refrain-vaikunth-to-yahi",
+          "source": "बैकुंठ तो यही है",
+          "reason": "Vaikuṇṭha is the explicitly named abode of Viṣṇu, placed in the heart in this prayer; this is a specific sacred reference, not a generic heaven."
         }
       ]
     },
@@ -986,7 +1294,8 @@
     },
     "e-barashe-aasi-achi": {
       "addTags": [
-        "Viṣṇu"
+        "Viṣṇu",
+        "Lakṣmī"
       ],
       "evidence": [
         {
@@ -995,6 +1304,12 @@
           "lineId": "v2-haribola",
           "source": "ହରିବୋଲ ସଙ୍ଗେ ହୁଳହୁଳି ପଡ଼ୁଥିବ",
           "reason": "Explicit devotional Hari/Hare or Nārāyaṇa invocation, under owner Hari→Viṣṇu name-reference policy. Does not rewrite contextual translation or impose an incarnation narrative."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "v3-bhai-bhauni",
+          "source": "ଭାଇଭଉଣୀ ସାଥିରେ କମଳାର ବର",
+          "reason": "Kamaḷāra bara names the beloved of Kamala/Lakshmi."
         }
       ]
     },
@@ -1035,7 +1350,10 @@
     "sampurna-sundarakanda": {
       "addTags": [
         "Viṣṇu",
-        "Guru"
+        "Guru",
+        "Śiva",
+        "Sītā",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -1050,6 +1368,24 @@
           "lineId": "line-003",
           "source": "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "line-002",
+          "source": "ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं वेदान्तवेद्यं विभुम् ।",
+          "reason": "Śambhu explicitly serves Rama alongside Brahma and the serpent king in the invocation."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "line-013",
+          "source": "जब लगि आवौं सीतहि देखी। होइहि काजु मोहि हरष बिसेषी ॥",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "line-044",
+          "source": "उमा न कछु कपि कै अधिकाई। प्रभु प्रताप जो कालहि खाई ॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
         }
       ]
     },
@@ -1069,7 +1405,9 @@
     },
     "aarti-kijiye-hanuman-lala-ki": {
       "addTags": [
-        "Rāma"
+        "Rāma",
+        "Sītā",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -1078,6 +1416,18 @@
           "lineId": "refrain-full",
           "source": "आरती कीजै हनुमान लला की । दुष्ट दलन रघुनाथ कला की ॥",
           "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "verse-2b",
+          "source": "लङ्का जारि सीय सुधि लाए ॥",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "verse-6b",
+          "source": "बसि बैकुण्ठ परम पद पावै ॥",
+          "reason": "Vaikuntha is explicitly the divine abode attained in this line; index the specific Vishnu-associated place reference without changing Hanuman as the praised deity."
         }
       ]
     },
@@ -1097,7 +1447,8 @@
     },
     "janchiye-girijapati-kashi": {
       "addTags": [
-        "Rāma"
+        "Rāma",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -1106,12 +1457,19 @@
           "lineId": "vimala-bhagati-raghupati-ke-pavai",
           "source": "विमल भगति रघुपति के पावै",
           "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "gaurishvara-mahadeva",
+          "source": "गौरीश्वरा महादेवा नमो नमः",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
         }
       ]
     },
     "sankat-mochan-naam-tiharo": {
       "addTags": [
-        "Rāma"
+        "Rāma",
+        "Sītā"
       ],
       "evidence": [
         {
@@ -1120,12 +1478,19 @@
           "lineId": "v6-l2",
           "source": "श्रीरघुनाथ समेत सबै दल मोह भयो यह संकट भारो ॥",
           "reason": "Explicit devotional Rāma/Raghunātha/Raghupati reference in the performed lyric, not Ramā-Lakṣmī, a poet name, or the verb ramā."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "v3-l1",
+          "source": "अंगद के संग लेन गए सिय खोज कपीस यह बैन उचारो ।",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
         }
       ]
     },
     "maharaj-bhavani-brahmabhuvan-ki-rani": {
       "addTags": [
-        "Śiva"
+        "Śiva",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -1134,6 +1499,12 @@
           "lineId": "verse-1",
           "source": "आगे शंकर तांडव करत हैं करत हैं",
           "reason": "Explicit named Śiva/Śaṅkara/Mahādeva invocation, personified action or parentage in the performed line; not adjective auspicious or substring of śaśivarṇa."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "refrain-1",
+          "source": "महाराज भवानी ब्रह्मभुवन की रानी",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
         }
       ]
     },
@@ -1153,7 +1524,8 @@
     },
     "om-jai-gangadhar-aarti": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -1162,12 +1534,19 @@
           "lineId": "closing-shloka-2",
           "source": "सदावसन्तं हृदयारविन्दे भवं भवानीसहितं नमामि",
           "reason": "Explicit Bhavānī/Pārvatī accompanying Śiva and receiving homage; a deity reference, not a dark-colour adjective."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "refrain-1",
+          "source": "ॐ जय गङ्गाधर हर जय गिरिजाधीशा",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
         }
       ]
     },
     "sheesh-gang-ardhang-parvati": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -1176,12 +1555,21 @@
           "lineId": "sheesh-gang-1",
           "source": "शीश गंग अरधंग पार्वती सदा विराजत कैलासी",
           "reason": "Explicit Bhavānī/Pārvatī accompanying Śiva and receiving homage; a deity reference, not a dark-colour adjective."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "bhavam-bhavani",
+          "source": "भवं भवानीसहितं नमामि",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
         }
       ]
     },
     "bolo-lakshmi-maat-ki-jai": {
       "addTags": [
-        "Lakṣmī"
+        "Lakṣmī",
+        "Pārvatī",
+        "Durgā",
+        "Śiva"
       ],
       "removeTags": [
         "Rāma"
@@ -1200,12 +1588,33 @@
           "lineId": "uma-rama-brahmani",
           "source": "उमा रमा ब्रह्माणी, तू ही जग की है माता",
           "reason": "Ramā in the feminine list Umā Ramā Brahmāṇī is Lakṣmī, not Rāma. All performed lines inspected; no Rāma occurrence."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "uma-rama-brahmani",
+          "source": "उमा रमा ब्रह्माणी, तू ही जग की है माता",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "durga-rup-niranjan",
+          "source": "दुर्गा रूप निरंजन, सुख सम्पति दाता",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "har-vishnu-vidhata",
+          "source": "हर विष्णु विधाता",
+          "reason": "Har/Hara is explicitly named alongside Vishnu and Vidhata in the divine triad."
         }
       ]
     },
     "namo-namo-vindhyeshwari": {
       "addTags": [
-        "Lakṣmī"
+        "Lakṣmī",
+        "Durgā",
+        "Rādhā",
+        "Pārvatī"
       ],
       "removeTags": [
         "Rāma"
@@ -1224,16 +1633,36 @@
           "lineId": "verse-8",
           "source": "रमा राधिका श्यामा काली । तू ही मातु संतन प्रतिपाली ॥",
           "reason": "Ramā is a goddess name in the list Ramā Rādhikā Śyāmā Kālī, not Rāma. All performed lines inspected; no Rāma occurrence."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "verse-11",
+          "source": "दुर्गा दुर्ग विनाशिनी माता । तू ही लक्ष्मी जग सुखदाता ॥",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "verse-8",
+          "source": "रमा राधिका श्यामा काली । तू ही मातु संतन प्रतिपाली ॥",
+          "reason": "Rādhikā is explicitly named among the divine forms."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse-9",
+          "source": "उमा माधवी चण्डी ज्वाला । बेगि मोहि पर होहु दयाला ॥",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
         }
       ]
     },
     "pradnya-vivardhan-stotra": {
       "addTags": [
-        "Kārtikeya"
+        "Kārtikeya",
+        "Śiva",
+        "Gaṇeśa",
+        "Pārvatī"
       ],
       "removeTags": [
-        "Sarasvatī",
-        "Śakti"
+        "Sarasvatī"
       ],
       "evidence": [
         {
@@ -1251,11 +1680,22 @@
           "reason": "siddhasārasvato is an epithet in Skanda’s name list, not a separate invocation of Sarasvatī. Presiding-deity line and closing identify Kārtikeya. Entire performed hymn inspected."
         },
         {
-          "tag": "Śakti",
-          "lineId": "viniyoga-3",
-          "source": "स्वामी कार्तिकेयो देवता",
-          "reason": "Entire19-unit performed hymn reviewed: presiding deity explicitly Kārtikeya; opening, name list and closing consistently praise Skanda. siddhasārasvato is a Skanda epithet, not Sarasvatī; Gaṅgā/Umā appear only in his parentage compounds, not independent Goddess devotion. Remove leaked Śakti parent when the already rejected Sarasvatī tag is removed; retain actual Kārtikeya classification.",
-          "operation": "remove"
+          "tag": "Śiva",
+          "lineId": "verse-1b",
+          "source": "स्कन्दः कुमारः सेनानीः स्वामी शङ्करसम्भवः ॥",
+          "reason": "Śaṅkarasambhava explicitly identifies Skanda as born of Śaṅkara."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "verse-4a",
+          "source": "शरजन्मा गणाधीशपूर्वजो मुक्तिमार्गकृत् ।",
+          "reason": "Gaṇādhīśa is explicitly identified through the elder-brother relationship to the deity praised, Skanda."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse-2b",
+          "source": "तारकारिरुमापुत्रः क्रौञ्चारिश्च षडाननः ॥",
+          "reason": "Umāputra explicitly names Skanda as Umā’s son. The current owner-directed reference-tag review includes evidenced parentage, superseding the earlier main-addressee-only Śakti exclusion. Skanda remains the principal deity."
         }
       ],
       "performedSourcesSha256": "c5cd94472b4ae4a5af180dd2ed8cc0c8b6fba893dc798678570df96ded44d054"
@@ -1415,7 +1855,9 @@
       "reviewedSubtitle": "Guru"
     },
     "uttho-uttho": {
-      "addTags": [],
+      "addTags": [
+        "Pārvatī"
+      ],
       "evidence": [
         {
           "operation": "remove",
@@ -1430,6 +1872,12 @@
           "source": "वाणी से सुमिरें गजानना",
           "reason": "Block Guru inherited from already-rejected Shirdi Sai tag. Explicit Gaṇeśa awakening hymn, no Guru reference.",
           "operation": "remove"
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "refrain-3",
+          "source": "गिरिजा शिव का नंदना",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
         }
       ],
       "removeTags": [
@@ -1542,7 +1990,8 @@
     },
     "saso-ki-mala-par-simaru-nisdina-pi-ka-nama": {
       "addTags": [
-        "Kṛṣṇa"
+        "Kṛṣṇa",
+        "Viṣṇu"
       ],
       "reviewedSubtitle": "Rāma · Kṛṣṇa",
       "evidence": [
@@ -1551,6 +2000,12 @@
           "lineId": "line-049",
           "source": "प्रेम की माला जपते जपते आप बनी मैं श्याम",
           "reason": "The performed speaker identifies with Śyāma, the dark-hued Kṛṣṇa. Verified in retained audits and four fresh blind audio occurrences; no unperformed verses imported."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line-035",
+          "source": "हर-हर में है हर बसे",
+          "reason": "Devotional Har is the named indwelling Beloved, distinct from the adjacent ordinary har-har meaning each and every; reviewed Viṣṇu-name reference."
         }
       ]
     },
@@ -1609,7 +2064,9 @@
     },
     "bhagyada-lakshmi-baramma": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Viṣṇu",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1617,13 +2074,28 @@
           "lineId": "refrain-1",
           "source": "ಭಾಗ್ಯಾದ ಲಕ್ಷ್ಮೀ ಬಾರಮ್ಮ ನಮ್ಮಮ್ಮ ನೀ ಸೌಭಾಗ್ಯಾದ ಲಕ್ಷ್ಮೀ ಬಾರಮ್ಮ",
           "reason": "Direct invitation to Lakshmi as our Mother; preserve Lakṣmī and add Śakti."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "verse-5-part-2",
+          "source": "ಅಕ್ಕರೆಯುಳ್ಳಳಗಿರಿ ರಂಗನ ಚೊಕ್ಕ ಪುರಂದರ ವಿಠಲನ ರಾಣಿ",
+          "reason": "Lakshmi is called queen of Alagiri Ranga, the named Vishnu form."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "verse-5-part-2",
+          "source": "ಅಕ್ಕರೆಯುಳ್ಳಳಗಿರಿ ರಂಗನ ಚೊಕ್ಕ ಪುರಂದರ ವಿಠಲನ ರಾಣಿ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
         }
       ]
     },
     "kanakadhara-stotram": {
       "addTags": [
         "Śakti",
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Viṣṇu",
+        "Śiva"
       ],
       "evidence": [
         {
@@ -1637,12 +2109,32 @@
           "lineId": "l038",
           "source": "तस्यै नमस्त्रिभुवनैकगुरोस्तरुण्यै",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l058",
+          "source": "नमोऽस्तु नन्दात्मजवल्लभायै",
+          "reason": "The goddess is called the beloved of Nanda’s son, an unambiguous Krishna kinship epithet; Dāmodara and Murāri elsewhere reinforce it."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l052",
+          "source": "नमोऽस्तु विष्णोरुरसि स्थितायै",
+          "reason": "The goddess dwells on Vishnu’s chest; explicit inflected Viṣṇu name, reinforced by Nārāyaṇa elsewhere."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l036",
+          "source": "शाकम्भरीति शशिशेखरवल्लभेति",
+          "reason": "The moon-crested lord in śaśiśekharavallabhā names Śiva through the goddess’s consort relationship."
         }
       ]
     },
     "saranembe-vani": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Viṣṇu",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1650,12 +2142,27 @@
           "lineId": "l003",
           "source": "ವಾಗಭಿಮಾನಿ ವರಬ್ರಹ್ಮಾಣಿ",
           "reason": "Direct refuge in Vani/Sarasvati, presiding goddess of speech; preserve Sarasvatī."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l006",
+          "source": "ಹರಿಯ ತೋರಿಸೆಂದು ಪ್ರಾರ್ಥಿಪೆನಮ್ಮ",
+          "reason": "The performed prayer asks Sarasvatī to show Hari, an explicit Viṣṇu-name reference."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l008",
+          "source": "ಪುರಂದರವಿಠ್ಠಲನ ಹಿರಿಯ ಸೊಸೆಯ",
+          "reason": "Purandara Viṭṭhala is explicitly named through the daughter-in-law relationship."
         }
       ]
     },
     "sri-mahalakumi-deviye": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Śiva",
+        "Viṣṇu",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1663,6 +2170,24 @@
           "lineId": "l002",
           "source": "ಶ್ರೀ ಮಹಾಲಕುಮಿ ದೇವಿಯೇ ಕೋಮಲಾಂಗಿಯೇ ಸಾಮಗಾನಪ್ರಿಯಳೇ",
           "reason": "Direct address to Mahalakshmi Devi, not a generic word for a human mother."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l001",
+          "source": "ಹೇಮಗರ್ಭ ಕಾಮಾರಿ ಶಕ್ರ ಸುರ ಸೋಮ ವಂದಿತಳೆ ಸೋಮ ಸೋದರಿಯೇ",
+          "reason": "Kāmāri, enemy of Kāma, explicitly identifies Śiva among the gods worshipping the goddess."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l011",
+          "source": "ಮಂದರಧರನರಸಿಯೇ ಇಂದಿರೆ ಎನ್ನ ಕುಂದುದೋಷಗಳಳಿಯೇ",
+          "reason": "The bearer of Mandara explicitly identifies Viṣṇu through the mythic mountain-bearing epithet."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l013",
+          "source": "ಸಿಂಧುಶಯನ ಸಿರಿವಿಜಯವಿಠ್ಠಲರೇಯ ಎಂದೆಂದಿಗೆ ಮನದಿಂದಗಳದೆ",
+          "reason": "Vijaya Viṭṭhalarāya is explicitly named in the performed prayer."
         }
       ]
     },
@@ -1682,7 +2207,8 @@
     "mangala-slokagalu": {
       "addTags": [
         "Śakti",
-        "Guru"
+        "Guru",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1696,13 +2222,23 @@
           "lineId": "l012",
           "source": "ತಂ ವಂದೇ ನೃಸಿಂಹತೀರ್ಥನಿಲಯಂ ಶ್ರೀವ್ಯಾಸರಾಟ್ ಪೂಜಿತಂ ಧ್ಯಾಯಂತಂ ಮನಸಾ ನೃಸಿಂಹಚರಣಂ ಶ್ರೀಪಾದರಾಜಂ ಗುರುಮ್",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l006",
+          "source": "ಸದಯಧವಲಹಾಸಂ ವಿಠ್ಠಲಂ ಚಿಂತಯಾಮಿ",
+          "reason": "Viṭṭhala is explicitly named as the deity contemplated."
         }
       ]
     },
     "durge-palise-mate": {
       "addTags": [
         "Śakti",
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Viṣṇu",
+        "Śiva",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1716,6 +2252,30 @@
           "lineId": "l020",
           "source": "ಪರತರ ಗುರು ಗೋಪಾಲ ವಿಠ್ಠಲನ ಚರಣ ಕಮಲದಲ್ಲಿ ಸ್ಥಿರವಾದ ಭಕುತಿಯ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l020",
+          "source": "ಪರತರ ಗುರು ಗೋಪಾಲ ವಿಠ್ಠಲನ ಚರಣ ಕಮಲದಲ್ಲಿ ಸ್ಥಿರವಾದ ಭಕುತಿಯ",
+          "reason": "The performed Gōpāla Viṭṭhala name identifies Krishna; this is the divine signature/addressee, not an author credit."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l015",
+          "source": "ಸಿರಿ ನರಸಿಂಹನ ರಾಣಿ",
+          "reason": "The goddess is explicitly addressed as Narasimha’s queen, a reference to the Vishnu incarnation."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l002",
+          "source": "ನಂಬಿದೆ ಬ್ರಹ್ಮ ಭರ್ಗಾದಿ ಸುರ ವಿನುತೆ",
+          "reason": "Bharga is the Śiva epithet in the list of gods headed by Brahma who praise the goddess."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l020",
+          "source": "ಪರತರ ಗುರು ಗೋಪಾಲ ವಿಠ್ಠಲನ ಚರಣ ಕಮಲದಲ್ಲಿ ಸ್ಥಿರವಾದ ಭಕುತಿಯ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
         }
       ]
     },
@@ -1734,7 +2294,8 @@
     },
     "baishi-pahacha": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -1742,6 +2303,12 @@
           "lineId": "line-pahacha-10",
           "source": "ଦଶମେ ଆଦିନୃସିଂହଙ୍କୁ ସ୍ମରିଲି ଜାଣ / ଦଶମହାବିଦ୍ୟା ବିମଳାଙ୍କୁ ଯେ ପ୍ରଣାମ",
           "reason": "Actual homage to Bimala of the ten Mahavidyas, followed by explicit remembrance of sixteen Mother Goddesses in line-pahacha-16."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "line-pahacha-15",
+          "source": "ପୁଣି ଛିଡ଼ା ହେଲି ପଞ୍ଚଦଶ ପାହାଚରେ / ନୀଳମାଧବଙ୍କୁ ଧ୍ୟାୟୀ ବିଗ୍ରହ ରୂପରେ",
+          "reason": "Nīḷamādhaba is the explicit Odia Nilamadhava divine name in the meditation."
         }
       ]
     },
@@ -1760,7 +2327,8 @@
     },
     "mahavir-hanuman-gosain": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Sītā"
       ],
       "evidence": [
         {
@@ -1768,12 +2336,20 @@
           "lineId": "verse2-line-4",
           "source": "जगजननी सीता महमाई",
           "reason": "Sita is explicitly lauded as Mother of the universe and great Mother; supports Śakti alongside Hanuman/Rama."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "verse2-line-4",
+          "source": "जगजननी सीता महमाई",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
         }
       ]
     },
     "shree-radhey-govinda": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Rādhā",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1781,13 +2357,26 @@
           "lineId": "radha-shakti-shyamal-darshan",
           "source": "राधा शक्ति बिना न कोई श्यामल दर्शन पावे",
           "reason": "Explicit Radha-shakti and injunction to worship Radha in adjacent line; genuinely divine female devotion, not incidental name matching."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "shree-radhe-govinda",
+          "source": "श्री राधे गोविन्दा मन भज ले हरि का प्यारा नाम है",
+          "reason": "Rādhe is directly invoked; the song also names Rādhā’s power."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "tukaram-aur-namdev",
+          "source": "तुकाराम और नामदेव ने विट्ठल-विट्ठल गाया",
+          "reason": "The lyric explicitly says the saints sang Viṭṭhala’s name."
         }
       ]
     },
     "aarti-kunj-bihari-ki": {
       "addTags": [
         "Śakti",
-        "Guru"
+        "Guru",
+        "Rādhā"
       ],
       "evidence": [
         {
@@ -1801,12 +2390,19 @@
           "lineId": "shloka-2",
           "source": "देवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम्",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "verse1-5",
+          "source": "राधिका रमण बिहारी की, श्री गिरिधर कृष्ण मुरारी की",
+          "reason": "Rādhikāramaṇa names Radha through Krishna’s relation as her beloved."
         }
       ]
     },
     "hechi-dan-dega-deva": {
       "addTags": [
-        "Śakti"
+        "Śakti",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -1814,6 +2410,12 @@
           "lineId": "g001",
           "source": "पांडुरंग ध्यानी पांडुरंग मनी विठू रखुमाई",
           "reason": "Explicit joint invocation Vitthu/Rakhumai; Rakhumai is the divine consort independently named in the invocation, unlike an epithet such as her husband."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g001",
+          "source": "पांडुरंग ध्यानी पांडुरंग मनी विठू रखुमाई",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
         }
       ]
     },
@@ -1845,7 +2447,8 @@
     },
     "baba-tum-antaryami": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -1853,6 +2456,12 @@
           "lineId": "sain_tum_antaryami",
           "source": "साईं तुम अंतर्यामी",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "tumko_he_natnagar",
+          "source": "तुमको हे नटनागर",
+          "reason": "Naṭanāgar is directly invoked, alongside the preceding dark complexion and charming smile, as Krishna imagery used to address Sai."
         }
       ]
     },
@@ -1923,7 +2532,8 @@
     },
     "mere-ram-tum": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -1931,12 +2541,22 @@
           "lineId": "bhagawan-tum-sai-ram-tum",
           "source": "भगवान तुम साईं राम तुम",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "shiv-naam-tum-ghanshyam-tum",
+          "source": "शिव नाम तुम घनश्याम तुम",
+          "reason": "The performed invocation identifies Sai with Śiva and Ghanaśyāma; Krishna name-reference complements retained Sai/Rama/Shiva tags."
         }
       ]
     },
     "durga-chalisa": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Pārvatī",
+        "Lakṣmī",
+        "Durgā",
+        "Hanumān"
       ],
       "evidence": [
         {
@@ -1944,12 +2564,37 @@
           "lineId": "verse-8",
           "source": "जोगी सुर मुनि कहत पुकारी । योग न हो बिन शक्ति तुम्हारी ॥\nशंकर आचारज तप कीनो । काम अरु क्रोध जीति सब लीनो ॥\nनिशिदिन ध्यान धरो शंकर को । काहू काल नहिं सुमिरो तुमको ॥\nशक्ति रूप को मरम न पायो । शक्ति गई तब मन पछतायो ॥",
           "reason": "Narrative reference to actual teacher (Bali guru / Shankaracharya); subject mention need not be praise."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse-2",
+          "source": "तुम संसार शक्ति लय कीना । पालन हेतु अन्न धन दीना ॥\nअन्नपूर्णा हुई जग पाला । तुम ही आदि सुन्दरी बाला ॥\nप्रलयकाल सब नाशन हारी । तुम गौरी शिव शंकर प्यारी ॥\nशिव योगी तुम्हरे गुण गावें । ब्रह्मा विष्णु तुम्हें नित ध्यावें ॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "verse-3",
+          "source": "रूप सरस्वती को तुम धारा । दे सुबुद्धि ऋषि मुनिन उबारा ॥\nधर्यो रूप नरसिंह को अम्बा । परगट भई फाड़कर खम्बा ॥\nरक्षा करि प्रह्लाद बचायो । हिरणाकुश को स्वर्ग पठायो ॥\nलक्ष्मी रूप धरो जग माहीं । श्री नारायण अंग समाहीं ॥",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "refrain-1",
+          "source": "नमो नमो दुर्गे सुख करनी । नमो नमो अम्बे दुःख हरनी ॥",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Hanumān",
+          "lineId": "verse-5",
+          "source": "केहरि वाहन सोह भवानी । लांगुर वीर चलत अगवानी ॥\nकर में खप्पर खड्ग विराजै । जाको देख काल डर भाजै ॥\nसोहै अस्त्र और त्रिशूला । जाते उठत शत्रु हिय शूला ॥\nनगरकोटि में तुम्हीं विराजत । तिहूँ लोक में डंका बाजत ॥",
+          "reason": "Lāṅgura Vīra, the monkey hero advancing before the goddess, is the contextual Hanuman guardian reference."
         }
       ]
     },
     "leke-bhesh-fakirika": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -1957,6 +2602,12 @@
           "lineId": "sai-pyaare-sab-se-nyaare",
           "source": "साईं प्यारे सबसे न्यारे",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "khud-hi-jaane-wo-ghanshyaam",
+          "source": "खुद ही जाने वो घनश्याम",
+          "reason": "Ghanaśyāma is invoked as a personal divine name in the Sai hymn, not used merely as a color adjective."
         }
       ]
     },
@@ -1975,7 +2626,8 @@
     },
     "o-shirdi-ke-sai": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -1983,6 +2635,12 @@
           "lineId": "sai-ram-sai-shyam",
           "source": "साईं राम साईं श्याम",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "sai-ram-sai-shyam",
+          "source": "साईं राम साईं श्याम",
+          "reason": "Sai Rām and Sai Śyām are paired personal divine invocations; Śyām here refers to Krishna, not color description."
         }
       ]
     },
@@ -2144,7 +2802,8 @@
     },
     "arunachala-akshara-mana-malai": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Gaṇeśa"
       ],
       "evidence": [
         {
@@ -2152,6 +2811,12 @@
           "lineId": "line-021",
           "source": "குற்றமுற் றறுத்தெனை குணமாய்ப் பணித்தாள் குருவுரு வாய் ஒளிர் அருணாசலா",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "line-001",
+          "source": "கருணாகர கணபதியே கரமருளிக் காப்பாயே",
+          "reason": "Tamil Kaṇapati is explicitly invoked to grant protective aid in the opening."
         }
       ]
     },
@@ -2222,7 +2887,8 @@
     },
     "patita-pavan-jai-raam": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Sītā"
       ],
       "evidence": [
         {
@@ -2230,12 +2896,19 @@
           "lineId": "saguna-svarupa-sai-ram",
           "source": "सगुण स्वरूप साईं राम",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "shabari-pujita-janaki-jivana",
+          "source": "शबरी पूजित जानकी जीवन",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
         }
       ]
     },
     "madhur-madhur-sai-naam": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Lakṣmī"
       ],
       "evidence": [
         {
@@ -2243,12 +2916,23 @@
           "lineId": "madhura-madhura",
           "source": "मधुर मधुर हरि नाम साई नाम",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "rama-ramana",
+          "source": "रमारमण हरि तापहरण",
+          "reason": "Ramāramaṇa explicitly means beloved of Lakshmi; Ramā is the goddess, not Rama the hero."
         }
       ]
     },
     "hanuman-bahuk": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Śiva",
+        "Gaṇeśa",
+        "Sītā",
+        "Pārvatī",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -2256,6 +2940,36 @@
           "lineId": "line-192",
           "source": "सीतापती साहेब सहाय हनुमान नित हित उपदेस को महेस मानो गुर कै",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "line-192",
+          "source": "सीतापती साहेब सहाय हनुमान नित हित उपदेस को महेस मानो गुर कै",
+          "reason": "Maheśa is explicitly cited as teacher in the performed lyric."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "line-000",
+          "source": "श्री गणेशाय नमः",
+          "reason": "The performed opening explicitly invokes Gaṇeśa; inflection gaṇeśāya defeated exact-token matching."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "line-001",
+          "source": "श्री जानकीवल्लभो विजयते",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "line-060",
+          "source": "सानुग सगौरी सानुकूल सूलपानि ताहि",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "line-123",
+          "source": "पूतना पिसाचिनी ज्यों कपिकान्ह तुलसी की बाँहपीर महाबीर तेरे मारे मरैगी॥",
+          "reason": "Hanuman is compared to Krishna killing Putana: kapikānha, monkey-Krishna, is an explicit narrative simile, not a generic dark adjective."
         }
       ]
     },
@@ -2391,7 +3105,8 @@
     },
     "ma-tumko-kaise-batalau": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Pārvatī"
       ],
       "evidence": [
         {
@@ -2399,6 +3114,12 @@
           "lineId": "verse3-sharada-maa",
           "source": "शारदा माँ तुम हृदय निवासिनी जानती हो मेरी जीवन कहानी",
           "reason": "Actual address to Mother Sharada, identified as Holy Mother Sarada Devi by existing subject/metadata; named spiritual teacher."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse3-bhavani",
+          "source": "संतान को गोद उठाओ भवानी",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
         }
       ]
     },
@@ -2417,7 +3138,9 @@
     },
     "jaake-priya-na-rama": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Sītā",
+        "Kṛṣṇa"
       ],
       "evidence": [
         {
@@ -2425,6 +3148,18 @@
           "lineId": "verse-2-line-1",
           "source": "बलि गुरु तज्यो कंत ब्रजबनितनि",
           "reason": "Narrative reference to actual teacher (Bali guru / Shankaracharya); subject mention need not be praise."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "refrain-1",
+          "source": "जाके प्रिय न राम वैदेही",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "verse-2-line-1",
+          "source": "बलि गुरु तज्यो कंत ब्रजबनितनि",
+          "reason": "The women of Braj abandoning their husbands is the specific gopi/Krishna devotion narrative used as the comparison."
         }
       ]
     },
@@ -2469,7 +3204,9 @@
     },
     "re-man-aiso-kar-sanyasa": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -2477,12 +3214,26 @@
           "lineId": "l001",
           "source": "ਗੁਰੂ ਗਰੀਬ ਨਿਵਾਜ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l026",
+          "source": "ਸਿਮਰੰਤਿ ਨਾਨਕ ਰਾਮ ਦਾਮੋਦਰ ਮਾਧਵਹ",
+          "reason": "The performed invocation explicitly names Dāmodara and Mādhava; this evidence is independent of the historical Guru Gobind Singh credit."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l026",
+          "source": "ਸਿਮਰੰਤਿ ਨਾਨਕ ਰਾਮ ਦਾਮੋਦਰ ਮਾਧਵਹ",
+          "reason": "Mādhava and Dāmodara are performed divine names supporting the Viṣṇu reference independently of Rāma."
         }
       ]
     },
     "harivarasanam": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṣṇu",
+        "Śiva"
       ],
       "evidence": [
         {
@@ -2490,12 +3241,26 @@
           "lineId": "l016",
           "source": "त्रिनयनं प्रभुं स्वामि दिव्यदेशिकम्",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l005",
+          "source": "हरिहरात्मजं स्वामि देवमाश्रये",
+          "reason": "Hariharātmaja names Ayyappa as the son of Hari and Hara, explicitly referencing Vishnu."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l005",
+          "source": "हरिहरात्मजं स्वामि देवमाश्रये",
+          "reason": "Hariharātmaja names Ayyappa as the son of Hari and Hara, explicitly referencing Shiva."
         }
       ]
     },
     "shrdi-sai-dwarka-maai": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Rādhā"
       ],
       "evidence": [
         {
@@ -2503,12 +3268,27 @@
           "lineId": "line-003",
           "source": "शिर्डी साईं द्वारकामाई सर्वांतर्यामी साईं राम",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "line-008",
+          "source": "कृष्ण राम राधे श्याम सबका मालिक साईं राम",
+          "reason": "Explicit Kṛṣṇa in the performed divine-name invocation."
+        },
+        {
+          "tag": "Rādhā",
+          "lineId": "line-004",
+          "source": "साईं राम राधे श्याम मेघ श्याम सुंदर नाम",
+          "reason": "Rādhe is explicitly named with Śyāma."
         }
       ]
     },
     "sai-sai-bol-sai-sai-bol": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Viṭṭhala",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -2516,6 +3296,24 @@
           "lineId": "line-001",
           "source": "साईं राम बोल साईं श्याम बोल",
           "reason": "Actual sung Sai identity plus existing Shirdi Sai subject: named spiritual teacher belongs under Guru."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "line-004",
+          "source": "गोविंद साईं बोल साईं राम बोल",
+          "reason": "Explicit Govind Sai devotional invocation, reinforced by Sai Śyām elsewhere."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "line-006",
+          "source": "विट्ठल साईं बोल साईं राम बोल",
+          "reason": "Viṭṭhal is explicitly named in the chant."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line-009",
+          "source": "हरि साईं बोल शिव साईं बोल",
+          "reason": "Performed devotional Hari is explicitly invoked alongside Śiva; reviewed Viṣṇu-name reference."
         }
       ]
     },
@@ -2534,7 +3332,10 @@
     },
     "jayagalu-agali": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Lakṣmī",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -2542,12 +3343,31 @@
           "lineId": "l004",
           "source": "ವಿಜಯರಾಯರ ಕೀರ್ತಿ ಮೆರೆಯಲಿ ಕೋಲೆ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l014",
+          "source": "ಕೋಲು ಕೋಲೇ ಕೃಷ್ಣ ಕೋಲು ಕೋಲೇ",
+          "reason": "Explicit performed Kṛṣṇa name in the refrain."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l002",
+          "source": "ಜಯದೇವಿ ರಮಣ ಒಲಿಯಲಿ ಕೋಲೆ",
+          "reason": "Jayādevī-ramaṇa names the Lord as Lakshmi’s beloved, a performed divine relationship."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l012",
+          "source": "ಮೋಹನವಿಠಲ ಕರುಣಿಸು ಕೋಲೆ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
         }
       ]
     },
     "modalondipe-ninage-gananatha": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -2555,12 +3375,19 @@
           "lineId": "l013",
           "source": "ಮಂಗಳಮೂರುತಿ ಗುರು ರಂಗವಿಠ್ಠಲನ ಪಾದ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l013",
+          "source": "ಮಂಗಳಮೂರುತಿ ಗುರು ರಂಗವಿಠ್ಠಲನ ಪಾದ",
+          "reason": "Raṅgaviṭṭhala is named in the performed prayer as the Lord whose feet are sought, not only in a credit."
         }
       ]
     },
     "tolu-tolu-tolu-ranga": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -2568,6 +3395,12 @@
           "lineId": "l019",
           "source": "ಸ್ವಾಮಿ ಸುಖತೀರ್ಥರ ಪತಿ ಪುರಂದರವಿಠಲ ತೋಳನ್ನಾಡೆ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l019",
+          "source": "ಸ್ವಾಮಿ ಸುಖತೀರ್ಥರ ಪತಿ ಪುರಂದರವಿಠಲ ತೋಳನ್ನಾಡೆ",
+          "reason": "Purandara Viṭṭhala is explicitly addressed and asked to move his arms."
         }
       ]
     },
@@ -2599,7 +3432,8 @@
     },
     "tirtha-vitthal-kshetra-vitthal": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -2607,12 +3441,19 @@
           "lineId": "g008",
           "source": "गुरु विठ्ठल गुरुदेवता विठ्ठल",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g001",
+          "source": "देव विठ्ठल देवपूजा विठ्ठल",
+          "reason": "Viṭṭhal is explicitly named throughout the performed hymn."
         }
       ]
     },
     "man-tu-jot-saroop-hai": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -2620,12 +3461,19 @@
           "lineId": "g003",
           "source": "ਮਨ ਹਰਿ ਜੀ ਤੇਰੈ ਨਾਲਿ ਹੈ ਗੁਰਮਤੀ ਰੰਗੁ ਮਾਣੁ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "g002",
+          "source": "ਮਨ ਹਰਿ ਜੀ ਤੇਰੈ ਨਾਲਿ ਹੈ",
+          "reason": "Performed devotional Har/Hari is an explicit Viṣṇu-name reference under the owner’s name-reference policy; this does not assert an incarnation narrative."
         }
       ]
     },
     "mere-man-prem-lago-har-teer": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -2633,6 +3481,12 @@
           "lineId": "g010",
           "source": "ਲੇ ਸਤਿਗੁਰ ਕੀ ਮਤਿ ਧੀਰ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "g002",
+          "source": "ਪ੍ਰੇਮ ਲਗੋ ਹਰਿ ਤੀਰ",
+          "reason": "Performed devotional Har/Hari is an explicit Viṣṇu-name reference under the owner’s name-reference policy; this does not assert an incarnation narrative."
         }
       ]
     },
@@ -2651,7 +3505,10 @@
     },
     "prabh-ju-to-kah-laj-hamari": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Kṛṣṇa",
+        "Viṣṇu",
+        "Śiva"
       ],
       "evidence": [
         {
@@ -2659,6 +3516,24 @@
           "lineId": "g017",
           "source": "ਵਾਹਿਗੁਰੂ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "g008",
+          "source": "ਮਾਨ ਮੁਕੰਦ ਮੁਰਾਰੀ",
+          "reason": "Mukand (Mukunda) and Murārī identify Krishna; neighboring Mādhav, destroyer of Madhu and Banvārī confirm the epithet cluster within the universal divine address. Named-reference tag, not doctrinal reclassification."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "g003",
+          "source": "ਨੀਲ ਕੰਠ ਨਰਹਰਿ ਨਾਰਾਇਣ",
+          "reason": "Explicit Nārāyaṇ and Narhari name-reference in the performed lyric; preserve Gurbāṇī classification."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "g003",
+          "source": "ਨੀਲ ਕੰਠ ਨਰਹਰਿ ਨਾਰਾਇਣ",
+          "reason": "Nīl kaṇṭh invokes the blue-throated Śiva epithet, as explained by SGGS Academy Shabad Hazare p26; named-reference tag within a universal divine address."
         }
       ]
     },
@@ -2677,7 +3552,8 @@
     },
     "kahe-re-ban-khojan-jai": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṣṇu"
       ],
       "evidence": [
         {
@@ -2685,12 +3561,19 @@
           "lineId": "g009",
           "source": "ਇਹੁ ਗੁਰ ਗਿਆਨੁ ਬਤਾਈ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "g006",
+          "source": "ਤੈਸੇ ਹੀ ਹਰਿ ਬਸੇ ਨਿਰੰਤਰਿ",
+          "reason": "Har is the divine Hari name, who dwells continuously, under existing owner name-reference policy."
         }
       ]
     },
     "mo-kau-tar-le-rama": {
       "addTags": [
-        "Guru"
+        "Guru",
+        "Viṭṭhala"
       ],
       "evidence": [
         {
@@ -2698,6 +3581,12 @@
           "lineId": "g019",
           "source": "ਸਤਿਗੁਰ ਬੁਧਿ ਸਿਖਲਾਈ",
           "reason": "Actual performed teacher reference/invocation supported by reviewed source and meaning, not author metadata."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g010",
+          "source": "ਬਾਪ ਬੀਠੁਲਾ ਬਾਹ ਦੇ",
+          "reason": "Bīṭhulā is the performed regional name of Viṭṭhala, explicitly addressed as father."
         }
       ]
     },
@@ -2732,6 +3621,1744 @@
         "Guru"
       ],
       "performedSourcesSha256": "d1d0b70164f973f92ba9358b8c14bf93928fc14ca8571998c9afe8ed2c7c59de"
+    },
+    "deh-javo-athava-raho": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "g008",
+          "source": "नामा म्हणे केशवराजा",
+          "reason": "Keśavarājā is the performed Keshava divine name; compound inflection hid it from exact-token matching."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g002",
+          "source": "पांडुरंगी दृढ भावो",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "istu-dina-ee-vaikuntha": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l015",
+          "source": "ಕಾಗಿನೆಲೆಯಾದಿ ಕೇಶವನ ನಾ ಕಂಡೆ",
+          "reason": "The speaker sees Kāginele Ādi Keśava; explicit inflected Keshava name."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l013",
+          "source": "ನಾಗಶಯನನ ಮೂರುತಿ ಕಂಡೆ ಭೋಗಿಭೂಷಣ ಶಿವನನು ಕಂಡೆ",
+          "reason": "Explicit Śiva reference in the performed line describing the seen deities."
+        }
+      ]
+    },
+    "nodire-venkataramanana": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Śiva",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l016",
+          "source": "ಶ್ಯಾಮಸುಂದರ ವಿಠ್ಠಲ ಮುಕುಂದನ",
+          "reason": "The performed epithet cluster Śyāmasundara Viṭṭhala Mukunda explicitly identifies Krishna."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l015",
+          "source": "ಇಂದುಧರಾಮರವಂದ್ಯನ",
+          "reason": "Indudhara, moon-bearer, identifies Śiva among the gods revering Venkataramana."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l016",
+          "source": "ಶ್ಯಾಮಸುಂದರ ವಿಠ್ಠಲ ಮುಕುಂದನ",
+          "reason": "Viṭṭhala is explicitly named alongside Śyāmasundara and Mukunda."
+        }
+      ]
+    },
+    "sweekaro-mere-pranam": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "line-14",
+          "source": "शरणागत के श्याम हरि हे नाथ मुझे तुम लेना थाम",
+          "reason": "Śyāma Hari is directly addressed as the refuge-giving Lord, a Krishna name-reference in context."
+        }
+      ]
+    },
+    "venkatachala-nilayam": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "makara-kundaladhara",
+          "source": "ಮಕರ ಕುಂಡಲಧರ ಮದನ ಗೋಪಾಲಂ",
+          "reason": "The performed Madana Gōpāla name identifies Krishna, with inflected Gopāla missed by exact-token matching."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "bhaktaposhaka-purandara",
+          "source": "ಭಕ್ತಪೋಷಕ ಶ್ರೀ ಪುರಂದರ ವಿಠಲಂ",
+          "reason": "Purandara Viṭṭhala is explicitly invoked in the performed prayer."
+        }
+      ]
+    },
+    "bhagavati-stotram": {
+      "addTags": [
+        "Viṣṇu",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "jaya-devi-pitamahavisnunute",
+          "source": "जय देवि पितामहविष्णुनुते",
+          "reason": "Viṣṇu is explicitly named as praising the goddess inside a Sanskrit compound."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "jaya-sagaragamini-sambhunute",
+          "source": "जय सागरगामिनि शम्भुनुते",
+          "reason": "Śambhu is explicitly named as praising the goddess inside a Sanskrit compound."
+        }
+      ]
+    },
+    "ghatikachaladi-ninta-shri-hanumanta": {
+      "addTags": [
+        "Viṣṇu",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l010",
+          "source": "ಮೆರೆವಾಚಲದಿ ನಿತ್ಯ ನರಹರಿಗೆದುರಾಗಿ",
+          "reason": "Narahari explicitly identifies the Narasimha form of Vishnu in the performed lyric."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l013",
+          "source": "ಪಂಕಜನಾಭ ಶ್ರೀಪುರಂದರವಿಠಲನ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "ekdant-gajvadan": {
+      "addTags": [
+        "Śiva",
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "jaga-vandana-shivasuta",
+          "source": "जग वंदन शिवसुत तू दे राज सब वरदाई",
+          "reason": "Śivasuta explicitly identifies Ganesh as Shiva’s son."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "gauri-suta-ganesha-mushaka",
+          "source": "गौरी सुत गणेश मूषक",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "endaro-mahanubhavulu": {
+      "addTags": [
+        "Śiva",
+        "Hanumān",
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "l021",
+          "source": "నారద తుంబురు పవనసూను అర్ధచంద్రధర శుక సరోజభవ భూసురవరులు",
+          "reason": "Ardhacandradhara, bearer of the crescent moon, identifies Śiva among the revered beings; śivādi elsewhere confirms him."
+        },
+        {
+          "tag": "Hanumān",
+          "lineId": "l021",
+          "source": "నారద తుంబురు పవనసూను అర్ధచంద్రధర శుక సరోజభవ భూసురవరులు",
+          "reason": "Pavanasūnu, son of the Wind, identifies Hanuman among the revered beings."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l013",
+          "source": "హరి గుణమణిమయ సరములు గళమున శోభిల్లు భక్తకోటులిలలో",
+          "reason": "Explicit performed Hari name under the owner’s devotional name-reference policy."
+        }
+      ]
+    },
+    "hanuman-bhajan-hariharan": {
+      "addTags": [
+        "Śiva",
+        "Sītā",
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "line-001",
+          "source": "जान भुसुंडि संभु गिरिजाऊ॥",
+          "reason": "Śambhu is explicitly named with Girijā in the performed lyric."
+        },
+        {
+          "tag": "Sītā",
+          "lineId": "line-095",
+          "source": "सीता देइ मिलहु न त आवा कालु तुम्हार",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "line-001",
+          "source": "जान भुसुंडि संभु गिरिजाऊ॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "jai-jai-jai-giriraj-kishori": {
+      "addTags": [
+        "Śiva",
+        "Pārvatī",
+        "Gaṇeśa"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "jaya-mahesha-mukha-chandra-chakori",
+          "source": "जय महेस मुख चंद चकोरी",
+          "reason": "Maheśa’s face is the moon for which the goddess is the cakora bird; explicit Śiva consort imagery."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "jai-jai-jai-giriraj-kishori",
+          "source": "जय जय जय गिरिराज किशोरी",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "jaya-gajabadana-shadanana-mata",
+          "source": "जय गजबदन षडानन माता",
+          "reason": "The goddess is mother of the elephant-faced son and six-faced son; gajabadana is the Ganesh kinship/iconographic reference."
+        }
+      ]
+    },
+    "main-dharu-tiharo-dhyan": {
+      "addTags": [
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "vikacha-kamala-patrair",
+          "source": "विकचकमलपत्रैरर्चयन्तीं महेशम्",
+          "reason": "The goddess worships Maheśa with lotus petals; explicit inflected Śiva name."
+        }
+      ]
+    },
+    "rajabidiyolaginda-kasturi-ranga": {
+      "addTags": [
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "l013",
+          "source": "ಶಂಭುಮುಖ ನಿರ್ಜರರೆಲ್ಲ ಸ್ವಾಮಿ ಪರಾಕೆನ್ನುತ",
+          "reason": "Śambhu is explicitly the leader of the immortals saluting the Lord."
+        }
+      ]
+    },
+    "narayani-stuti": {
+      "addTags": [
+        "Gaṇeśa",
+        "Viṣṇu",
+        "Śiva",
+        "Pārvatī",
+        "Kālī"
+      ],
+      "evidence": [
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "om-sri-ganeshaya-namah",
+          "source": "ॐ श्री गणेशाय नमः",
+          "reason": "The performed opening explicitly invokes Gaṇeśa."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "tvam-vaishnavi-shaktiranantavirya",
+          "source": "त्वं वैष्णवी शक्तिरनन्तवीर्या विश्वस्य बीजं परमासि माया।\nसम्मोहितं देवि समस्तमेतत्त्वं वै प्रसन्ना भुवि मुक्तिहेतुः॥",
+          "reason": "Vaiṣṇavī is explicitly Vishnu’s power in the performed goddess praise; this is a relational reference, not classification from Nārāyaṇī spelling alone."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "shivadutisvarupena",
+          "source": "शिवदूतीस्वरूपेण हतदैत्यमहाबले।\nघोररूपे महारवे नारायणि नमोऽस्तु ते॥",
+          "reason": "Śivadūtī explicitly means the goddess having Śiva as messenger, naming the god relationally."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "sarvamangalamangalye",
+          "source": "सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके।\nशरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Kālī",
+          "lineId": "jvalakaralamatyugram",
+          "source": "ज्वालाकरालमत्युग्रमशेषासुरसूदनम्।\nत्रिशूलं पातु नो भीतेर्भद्रकालि नमोऽस्तु ते॥",
+          "reason": "Bhadrakālī is directly addressed by name."
+        }
+      ]
+    },
+    "jagannath-jagannath": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "sabhien-tuma-asrita",
+          "source": "ସଭିଏଁ ତୁମ ଆଶ୍ରିତ ଆହେ ବାସୁଦେବ",
+          "reason": "Bāsudeba is the Odia form of Vāsudeva in direct address; regional spelling hid the explicit name."
+        }
+      ]
+    },
+    "shri-kshetra-biharii": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Viṣṇu",
+        "Lakṣmī"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "v3-7",
+          "source": "ନୀଳମାଧବ ହେ ଶ୍ରୀବାସୁଦେବ",
+          "reason": "Nīḷamādhaba and Śrībāsudeba are Odia forms of Nīlamādhava and Vāsudeva, reinforced by kuñjabihārī and ten-avatar imagery."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "v3-8",
+          "source": "ଦଶ ଅବତାରଧାରୀ ହେ ମାଧବ",
+          "reason": "The deity is explicitly bearer of the ten incarnations, Mādhava; ten-avatar identity and Lakshmi consort imagery establish Vishnu reference."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "v1-5",
+          "source": "ଜଗବଲ୍ଲଭ ହେ ଲକ୍ଷ୍ମୀବଲ୍ଲଭ",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        }
+      ]
+    },
+    "devi-dhyana": {
+      "addTags": [
+        "Kālī",
+        "Lakṣmī",
+        "Sarasvatī",
+        "Viṣṇu",
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Kālī",
+          "lineId": "line_02",
+          "source": "नीलाश्मद्युतिमास्यपाददशकां सेवे महाकालिकां यामस्तौत्स्वपिते हरौ कमलजो हन्तुं मधुं कैटभम् ॥",
+          "reason": "Mahākālikā is explicitly named in performed meditation."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "line_04",
+          "source": "शूलं पाशसुदर्शने च दधतीं हस्तैः प्रसन्नाननां सेवे सैरिभमर्दिनीमिह महालक्ष्मीं सरोजस्थिताम् ॥",
+          "reason": "Mahālakṣmī is explicitly named in performed meditation."
+        },
+        {
+          "tag": "Sarasvatī",
+          "lineId": "line_06",
+          "source": "गौरीदेहसमुद्भवां त्रिजगतामाधारभूतां महापूर्वामत्र सरस्वतीमनुभजे शुम्भादिदैत्यार्दिनीम् ॥",
+          "reason": "Mahāsarasvatī is explicitly named in performed meditation."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line_02",
+          "source": "नीलाश्मद्युतिमास्यपाददशकां सेवे महाकालिकां यामस्तौत्स्वपिते हरौ कमलजो हन्तुं मधुं कैटभम् ॥",
+          "reason": "Hari is explicitly asleep while Brahma praises the goddess for Madhu/Kaitabha’s slaying; narrative confirms Vishnu identity."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "line_06",
+          "source": "गौरीदेहसमुद्भवां त्रिजगतामाधारभूतां महापूर्वामत्र सरस्वतीमनुभजे शुम्भादिदैत्यार्दिनीम् ॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "baithe-hain-rama-lakhan": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "ref-baithe-hain-ram",
+          "source": "बैठे हैं राम लखन अरु सीता",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "bajrang-baanka": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "l009",
+          "source": "सीताराम जय जय राम जय जय राम सीताराम",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "gaiye-ganpati-jagvandan": {
+      "addTags": [
+        "Sītā",
+        "Pārvatī",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "verse-4-line-2",
+          "source": "बसहिं राम सिय मानस मोरे",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse-1-line-1",
+          "source": "शंकर सुवन भवानी के नंदन",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "verse-1-line-1",
+          "source": "शंकर सुवन भवानी के नंदन",
+          "reason": "Śaṅkara is explicitly named as Ganesh’s father."
+        }
+      ]
+    },
+    "hanuman": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "ram-lakhan-sita-man-basiya",
+          "source": "राम लखन सीता मन बसिया",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "he-dukhbhanjan": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "siaram-ke-kaaj-sanware",
+          "source": "सियाराम के काज संवारे",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "jab-hi-raghupati-sang-siya-chali": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "jabahi-raghupati-sang-siya-chali",
+          "source": "जबहीं रघुपति संग सिय चली",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "janani-main-na-jiyun-bin-rama": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "ram-lakhan-siya-ban-hi-gavan-kinho",
+          "source": "राम लखन सिया बन ही गवन कीन्हों",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "jo-kachu-sankat-hoye-hamaro": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "ram-lakhan",
+          "source": "राम लखन वैदेही तुम पर सदा रहे हरषाये",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "kahan-ke-pathik-kahan": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "v2-gram-badhu",
+          "source": "ग्रामबधू पूछें सिया से",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "maine-tere-hi-bharose": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "l12",
+          "source": "अरे सीता सखी वा में बैठनहारी रामा पार लगाये",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "raghuvar-doori-jayi-mriga-maryo": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "verse-1-c",
+          "source": "कह्यो लखन हत्या हरिन कपट सीय हठि पठ्यो बरियाईँ",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "rann-jeeti-rama-rao-aye": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "sanuja-sadala",
+          "source": "सानुज सदल ससिय कुसल आजु",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        }
+      ]
+    },
+    "shri-ramachandra-kripalu-bhajman": {
+      "addTags": [
+        "Sītā",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "sita-samaropita",
+          "source": "सीतासमारोपितवामभागम्",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "iti-vadati-tulasidasa",
+          "source": "इति वदति तुलसीदास शङ्कर शेष मुनि मन रञ्जनम्",
+          "reason": "Śaṅkara is explicitly named among those whose minds Rama delights."
+        }
+      ]
+    },
+    "siyavar-ramchandra-ki-jai": {
+      "addTags": [
+        "Sītā",
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "l01",
+          "source": "सीताराम, सीताराम,",
+          "reason": "The performed lyric names Sītā (including Siyā, Sīya, Jānakī or Vaidehī), directly or in Rama’s consort relationship. Preserve the specific named goddess alongside the Śakti umbrella."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "l11",
+          "source": "उमापति महादेव की जय।",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "candracuda-sivasankara": {
+      "addTags": [
+        "Pārvatī",
+        "Kṛṣṇa",
+        "Viṣṇu",
+        "Rāma",
+        "Lakṣmī",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "l002",
+          "source": "ಶಿವಶಂಕರ ಪಾರ್ವತೀರಮಣ ನಿನಗೆ",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l031",
+          "source": "ಛಲ ಮಾಡಿದ ಗೋಪಾಲನೆಂಬ ಹೆಣ್ಣಿಗೆ ಮರುಳಾದವ ನೀನೆ",
+          "reason": "The lyric explicitly calls the enchanting female form Gōpāla; Krishna name-reference within the Mohini narrative, rather than an author-name match."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l037",
+          "source": "ಕೊರಳಲಿ ಭಸ್ಮ ರುದ್ರಾಕ್ಷವ ಧರಿಸಿದ ಪರಮ ವೈಷ್ಣವ ನೀನೆ",
+          "reason": "Śiva is called the foremost Vaiṣṇava, an explicit relation to Vishnu, reinforced by the preceding Mohini/Gopala narrative."
+        },
+        {
+          "tag": "Rāma",
+          "lineId": "l018",
+          "source": "ಇಂದಿರೇಶ ಶ್ರೀರಾಮನ ನಾಮವ",
+          "reason": "Śrīrāma is explicitly named; the worshipped name is Rama, not feminine Ramā."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l018",
+          "source": "ಇಂದಿರೇಶ ಶ್ರೀರಾಮನ ನಾಮವ",
+          "reason": "Indirēśa identifies the Lord of Indira/Lakshmi in the performed line."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l038",
+          "source": "ಗರುಡಗಮನ ಶ್ರೀ ಪುರಂದರವಿಠಲಗೆ ಪ್ರಾಣಪ್ರಿಯನು ನೀನೆ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "devi-aparadha-kshamapana-stotram": {
+      "addTags": [
+        "Pārvatī",
+        "Gaṇeśa"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "v7-d",
+          "source": "भवानि त्वत्पाणिग्रहणपरिपाटीफलमिदम् ॥",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "v5-d",
+          "source": "निरालम्बो लम्बोदरजननि कं यामि शरणम् ॥",
+          "reason": "Lambodara-jananī identifies the goddess as mother of large-bellied Ganesh."
+        }
+      ]
+    },
+    "jai-ambe-gauri": {
+      "addTags": [
+        "Pārvatī",
+        "Durgā",
+        "Lakṣmī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "refrain-jai-ambe-gauri-1",
+          "source": "जय अम्बे गौरी, मैया जय श्यामा गौरी",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "spoken-bol-durge-maat",
+          "source": "बोल दुर्गे मात की जय!",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "verse-7-line-1",
+          "source": "ब्रह्माणी, रुद्राणी, तुम कमला रानी",
+          "reason": "Kamalā Rānī explicitly names Lakshmi among the goddess’s identities."
+        }
+      ]
+    },
+    "jai-bhole-nath": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "spoken-intro",
+          "source": "पार्वती जी ने घोर तपस्या करके जिन त्रिलोचनी भगवान शिव को पाया, सारे गण, यक्ष, भूत, प्रेत जिनके इशारों पर नाचते हैं, वो त्रिशूल और डमरूधारी भगवान शिव अपनी जटाओं में गंगा को धारण किए हुए हैं और अपने भक्तों पर सदा अमृत बरसाते रहते हैं।",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "jai-mahakali-aarti": {
+      "addTags": [
+        "Pārvatī",
+        "Durgā"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse-1-2",
+          "source": "तू ही गिरिजा तू ही गौरी और तू ही है कुष्माण्डा",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "verse-1-1",
+          "source": "चण्डनाशिनी तू ही प्रचण्डा तू ही दुर्गा तू चामुण्डा",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        }
+      ]
+    },
+    "jai-shri-shankar-sut-ganesh": {
+      "addTags": [
+        "Pārvatī",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse-2b",
+          "source": "पालक दासन सुत गिरिजा जय",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "refrain-1",
+          "source": "जय श्री शंकर सुत गणेश",
+          "reason": "Śaṅkara is explicitly named as Ganesh’s father."
+        }
+      ]
+    },
+    "janam-janam-ka-das-tumhara": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "spoken-intro-3",
+          "source": "भगवान शिव के भक्त पर पार्वती जी की भी कृपा होती है, और विघ्नविनाशक गणेश जी की भी।",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "jayati-jayati-shri-ganesh": {
+      "addTags": [
+        "Pārvatī",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "uma-tanaya",
+          "source": "उमा तनय सिद्धिधर",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "shankara-suta",
+          "source": "शंकर सुत लम्बोदर",
+          "reason": "Śaṅkara is explicitly named as Ganesh’s father."
+        }
+      ]
+    },
+    "namah-parvatipati": {
+      "addTags": [
+        "Pārvatī",
+        "Kṛṣṇa",
+        "Lakṣmī",
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "l001",
+          "source": "ನಮಃ ಪಾರ್ವತೀಪತಿ ನುತಜನಪರ ನಮೋ ವಿರೂಪಾಕ್ಷ",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l017",
+          "source": "ಕರ್ತೃ ಉಡುಪಿ ಸರ್ವೋತ್ತಮ ಕೃಷ್ಣನ ಪೌತ್ರ ಕೃಪಾಪಾತ್ರ",
+          "reason": "Explicit Kṛṣṇa of Uḍupi name in a divine family relationship, not an author credit."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l007",
+          "source": "ಶ್ರೀ ಲಕುಮೀಶನ ವೊಲೈಸುವ ಭಕ್ತಾವಳಿಗಳ ಪಕ್ಷ",
+          "reason": "Lakumīśa explicitly identifies the Lord of Lakshmi; regional spelling hid the reference."
+        },
+        {
+          "tag": "Rāma",
+          "lineId": "l011",
+          "source": "ದಾಶರಥಿಯ ಉಪಾಸಕ ಸುಜನರ ಪೋಷಿಪ ಪ್ರಭಾವ",
+          "reason": "Dāśarathi, the son of Daśaratha, explicitly identifies Rāma."
+        }
+      ]
+    },
+    "om-namah-shivaya-damaru-paani-shool": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "shrimant-ho",
+          "source": "श्रीमंत हो भगवंत हो हे नाथ गिरिजा कंत हो",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "parvati-devi-mahamayavini": {
+      "addTags": [
+        "Pārvatī",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "parvati-devi-mahamayavini",
+          "source": "पार्वती देवी महामायाविनी",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "hara-ki-priya-manmohani",
+          "source": "हर की प्रिया मनमोहिनी",
+          "reason": "Hara is explicitly named as the one whose beloved Pārvatī is."
+        }
+      ]
+    },
+    "rudrashtakam-rameshbhai-oza": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "l011",
+          "source": "त्रयःशूलनिर्मूलनं शूलपाणिं भजेऽहं भवानीपतिं भावगम्यम्",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "rudrashtakam-sharma-bandhu": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "l011",
+          "source": "त्रयःशूलनिर्मूलनं शूलपाणिं भजेऽहं भवानीपतिं भावगम्यम्",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "saranu-siddhi-vinayaka": {
+      "addTags": [
+        "Pārvatī",
+        "Viṣṇu",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "l004",
+          "source": "ಶರಣು ಪಾರ್ವತೀತನಯ ಮೂರುತಿ",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l010",
+          "source": "ಪಕ್ಷಿವಾಹನ ಶ್ರೀಪುರಂದರ ವಿಠಲನ ನಿಜದಾಸನ",
+          "reason": "The bird-mounted Purandara Viṭṭhala combines the named deity with the Garuḍa mount epithet, explicitly indicating Viṣṇu."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l010",
+          "source": "ಪಕ್ಷಿವಾಹನ ಶ್ರೀಪುರಂದರ ವಿಠಲನ ನಿಜದಾಸನ",
+          "reason": "Purandara Viṭṭhala is explicitly named in the performed prayer."
+        }
+      ]
+    },
+    "sharada-vidyadani-dayani": {
+      "addTags": [
+        "Pārvatī",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse2-line6",
+          "source": "अश्विनी हर पार्वती",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "verse2-line6",
+          "source": "अश्विनी हर पार्वती",
+          "reason": "Hara is explicitly named in the performed line."
+        }
+      ]
+    },
+    "shiva-shiva-hoi-prasanna": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse3-1",
+          "source": "गिरिजामन मानस मराल",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        }
+      ]
+    },
+    "siddha-kunjika-stotram": {
+      "addTags": [
+        "Pārvatī",
+        "Durgā"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "gopaniyam-prayatnena",
+          "source": "गोपनीयं प्रयत्नेन स्वयोनिरिव पार्वति",
+          "reason": "The performed lyric identifies Pārvatī through her explicit name, Umā/Gaurī/Girijā name, mountain-daughter identity, or Śiva/Gaṇeśa family relationship. Preserve the named goddess alongside Śakti."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "kunjika-patha-matrena",
+          "source": "कुञ्जिकापाठमात्रेण दुर्गापाठफलं लभेत्",
+          "reason": "Durgā is explicitly named in the Durga scripture recitation, a performed named religious reference."
+        }
+      ]
+    },
+    "devimahatmya-chapter-12": {
+      "addTags": [
+        "Lakṣmī",
+        "Durgā",
+        "Kālī"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "v040",
+          "source": "भवकाले नृणां सैव लक्ष्मीर्वृद्धिप्रदा गृहे सैवाभावे तथाऽलक्ष्मीर्विनाशायोपजायते",
+          "reason": "The performed lyric explicitly names Lakṣmī, including in the Lakṣmī-Nārāyaṇa or Lakṣmī’s beloved relationship. This is a divine-name reference, not an inferred wealth theme."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "invocation-dhyana",
+          "source": "ॐ विद्युद्दामसमप्रभां मृगपतिस्कन्धस्थितां भीषणां कन्याभिः करवालखेटविलसद्धस्ताभिरासेविताम् । हस्तैश्चक्रगदासिखेटविशिखांश्चापं गुणं तर्जनीं बिभ्राणामनलात्मिकां शशधरां दुर्गां त्रिनेत्रां भजे ॥",
+          "reason": "The performed meditation explicitly worships three-eyed Durgā."
+        },
+        {
+          "tag": "Kālī",
+          "lineId": "v038",
+          "source": "व्याप्तं तयैतत्सकलं ब्रह्माण्डं मनुजेश्वर महाकाल्या महाकाले महामारीस्वरूपया",
+          "reason": "Mahākālī is explicitly named in inflected Mahākālyā."
+        }
+      ]
+    },
+    "jai-durge-durgati-pariharini": {
+      "addTags": [
+        "Durgā",
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Durgā",
+          "lineId": "jai-durge-durgati-pariharini",
+          "source": "जय दुर्गे दुर्गति परिहारिणी",
+          "reason": "The performed lyric explicitly names the goddess Durgā/Durge; this is not the common noun durga meaning a fortress or difficulty."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "shumbha-vidarini-mata-bhavani",
+          "source": "शुंभ विदारिणी मात भवानी",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "shyamala-dandakam": {
+      "addTags": [
+        "Kṛṣṇa",
+        "Śiva",
+        "Lakṣmī",
+        "Viṣṇu",
+        "Pārvatī",
+        "Durgā",
+        "Gaṇeśa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "l083",
+          "source": "गीतविद्याविनोदातितृष्णेन कृष्णेन सम्पूज्यसे",
+          "reason": "Explicit inflected Kṛṣṇa name: Krishna worships the goddess out of love for musical knowledge."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l014",
+          "source": "जय जननि सुधासमुद्रान्तरुद्यन्मणिद्वीपसंरूढबिल्वाटवीमध्यकल्पद्रुमाकल्पकादम्बकान्तारवासप्रिये कृत्तिवासःप्रिये सर्वलोकप्रिये",
+          "reason": "Kṛttivāsaḥpriyā identifies the goddess as beloved of skin-clad Śiva."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l074",
+          "source": "धात्रि लक्ष्म्यादिशक्त्यष्टकैः संयुते",
+          "reason": "Lakṣmyādi explicitly names Lakshmi as heading the eight powers united with the goddess."
+        },
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l064",
+          "source": "प्रह्वदेवेशलक्ष्मीशभूतेशतोयेशवाणीशकीनाशदैत्येशयक्षेशवाय्वग्निमाणिक्यसङ्घृष्टकोटीरबालातपोद्दामलाक्षारसारुण्यतारुण्यलक्ष्मीगृहीताङ्घ्रिपद्मे",
+          "reason": "Lakṣmīśa, lord of Lakṣmī, explicitly identifies Viṣṇu among the gods bowing."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "l065",
+          "source": "सुपद्मे उमे",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "l069",
+          "source": "तत्र विघ्नेशदुर्गावटुक्षेत्रपालैर्युते",
+          "reason": "Durgā is explicitly named among the goddess’s attendants."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "l069",
+          "source": "तत्र विघ्नेशदुर्गावटुक्षेत्रपालैर्युते",
+          "reason": "Vighneśa, Lord of obstacles, explicitly names Ganesh among the attendants."
+        }
+      ]
+    },
+    "kolaru-pathigam": {
+      "addTags": [
+        "Viṣṇu",
+        "Lakṣmī",
+        "Śakti",
+        "Pārvatī",
+        "Durgā"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "v9-l3",
+          "source": "மலர்மிசை யோனும் மாலும் மறையோடு தேவர் வருகால மான பலவும்",
+          "reason": "Māl is the Tamil divine name for Viṣṇu, named alongside lotus-born Brahma and the gods."
+        },
+        {
+          "tag": "Lakṣmī",
+          "lineId": "v3-l3",
+          "source": "திருமகள் கலையதூர்தி செயமாது பூமி திசை தெய்வமான பலவும்",
+          "reason": "Tirumakaḷ, Tamil goddess of fortune, explicitly names Lakshmi alongside the other goddesses."
+        },
+        {
+          "tag": "Śakti",
+          "lineId": "v3-l3",
+          "source": "திருமகள் கலையதூர்தி செயமாது பூமி திசை தெய்வமான பலவும்",
+          "reason": "The stag-mounted goddess of victory identifies Durga, alongside Lakshmi and Earth Goddess."
+        },
+        {
+          "tag": "Pārvatī",
+          "lineId": "v3-l1",
+          "source": "உருவளர் பவளமேனி ஒளிநீறணிந்து உமையோடும் வெள்ளை விடைமேல்",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        },
+        {
+          "tag": "Durgā",
+          "lineId": "v3-l3",
+          "source": "திருமகள் கலையதூர்தி செயமாது பூமி திசை தெய்வமான பலவும்",
+          "reason": "The stag-mounted goddess of victory is the Tamil Durga form in this list of divine beings; iconography and goddess identity together establish the reference."
+        }
+      ]
+    },
+    "jagadamb-jagadamb": {
+      "addTags": [
+        "Śiva",
+        "Gaṇeśa"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "shira-ganga",
+          "source": "शिर गंग हर संग",
+          "reason": "Hara with the Ganges upon his head unambiguously identifies Śiva through combined divine name and iconography."
+        },
+        {
+          "tag": "Gaṇeśa",
+          "lineId": "nachata-heramba",
+          "source": "नाचत श्री हेरंब जगदंब जगदंब जगदंब जगदंब",
+          "reason": "Heramba explicitly names Ganesh dancing in the goddess’s divine assembly."
+        }
+      ]
+    },
+    "vaishnavaghari-sarvakal": {
+      "addTags": [
+        "Rāma",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Rāma",
+          "lineId": "g004",
+          "source": "गांठीं रामनाम नाणें",
+          "reason": "The performed line explicitly names Rāma’s name as the devotee’s coin."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g020",
+          "source": "चित्त अखंड विठ्ठलपायीं",
+          "reason": "Viṭṭhala is explicitly named as the deity at whose feet the mind rests."
+        }
+      ]
+    },
+    "barayya-ba-ba-bhakutara-priya": {
+      "addTags": [
+        "Lakṣmī",
+        "Śiva",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l015",
+          "source": "ದೇವ ಪರಾಕು ಅಡಿಗಳ ನೀಡು ಭಕ್ತವತ್ಸಲ ಹೇ ಲಕುಮಿನಲ್ಲ",
+          "reason": "Lakuminalla is the Kannada name/relationship Lakshmi’s beloved; regional morphology hid the reference."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l008",
+          "source": "ಕಂದ ವಿರಿಂಚಿಯು ನಂದಿವಾಹನ ಅಮರೇಂದ್ರ ಸನಕ ಸನಂದನಾದಿ ಮುನಿವೃಂದ ಬಂದು ನಿಂದು ಧೀಂ ಧೀಂ ಧೀಮಿಕೆಂದು",
+          "reason": "Nandivāhana, the rider of Nandi, names Shiva among the divine company."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l014",
+          "source": "ತಡಮಾಡಬೇಡವೊ ಹೇ ನಲ್ಲ ವಾಕುಲಾಲಿಸೆನ್ನೊಡೆಯ ಶ್ರೀ ಗೋಪಾಲವಿಠ್ಠಲ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "ahe-nila-saila": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l005",
+          "source": "ଚକ୍ର ପେଶି ଗ୍ରାହ ନାଶି ଉଦ୍ଧାରିଲ ଆପଣ",
+          "reason": "The deity rescues the elephant by killing the crocodile with the discus: the Gajendra rescue narrative identifies Vishnu, reinforced by Śrīraṅga address."
+        }
+      ]
+    },
+    "ambe-tu-hai-jagdambe-kali": {
+      "addTags": [
+        "Sarasvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Sarasvatī",
+          "lineId": "refrain-tere-hi-gun",
+          "source": "तेरे ही गुण गाए भारती",
+          "reason": "Bhāratī sings the goddess’s qualities: a personified divine speech/Sarasvati reference, not merely an adjective."
+        }
+      ]
+    },
+    "biduvenenayya-hanuma": {
+      "addTags": [
+        "Viṣṇu",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l011",
+          "source": "ಹಸ್ತಿವರದನ ತೋರುವ ತನಕ",
+          "reason": "Hastivarada, boon-giver to the elephant, and the following lotus-naveled deity refer to Vishnu."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l019",
+          "source": "ಪುರಂದರ ವಿಠಲನ ತೋರುವ ತನಕ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "chakar-rakho-ji": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "verse-4-b",
+          "source": "हरी भजन को साधू आया",
+          "reason": "Explicit devotional Hari name; reviewed owner policy tags the named Hari reference without changing the Krishna addressee."
+        }
+      ]
+    },
+    "chala-patha-ra-geeta": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "he-guru-gobinda-gosain",
+          "source": "ହେ ଗୁରୁ ଗୋବିନ୍ଦ ଗୋସାଇଁ ତୁମେ ଭକତର ଭାବଗ୍ରାହୀ",
+          "reason": "The performed address Guru Gobinda Gosain invokes the Govinda divine name; it is not the lyric’s author/singer credit."
+        }
+      ]
+    },
+    "chitrakoot-ati-vichitra": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "antar-3-sub-2",
+          "source": "जय जय रघुनन्दन जय जय जय रघुनन्दन जय जनक नन्दिनी",
+          "reason": "Janaka-nandinī, Janaka’s daughter, is an unambiguous Sita kinship reference paired with Raghunandana."
+        }
+      ]
+    },
+    "chittaja-guruda-neeku": {
+      "addTags": [
+        "Lakṣmī"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l010",
+          "source": "సిరివరా నీకు నిదే శ్రీమంగళం",
+          "reason": "Sirivara names Śrī/Lakshmi’s beloved; this is a relational goddess reference."
+        }
+      ]
+    },
+    "daari-yavudayya-vaikunthake": {
+      "addTags": [
+        "Lakṣmī",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l009",
+          "source": "ಶ್ರೀಪತಿ ಸಲಹೆನ್ನ ಭೂಪ ನಾರಾಯಣ",
+          "reason": "Śrīpati explicitly names Lakshmi’s consort, reinforced by Narayana in the same line."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l011",
+          "source": "ಪನ್ನಗಶಯನ ಶ್ರೀ ಪುರಂದರ ವಿಠ್ಠಲ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "ee-padame-kada": {
+      "addTags": [
+        "Lakṣmī"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l002",
+          "source": "ఈ పాదమే కదా ఇందిరాహస్తముల కీతవైనది",
+          "reason": "Indirā’s hands explicitly name Lakshmi in service at the Lord’s foot."
+        }
+      ]
+    },
+    "ganapat-vighna-haran": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "shuklambaradharam-vishnum",
+          "source": "शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम्",
+          "reason": "The invocation explicitly pronounces viṣṇuṃ; preserve the Ganesh context while indexing the divine name-reference rather than choosing between liturgical readings."
+        }
+      ]
+    },
+    "ghana-ghamand-nabh-garajat-ghora": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "sthayi-2",
+          "source": "प्रिया हीन डरपत मन मोरा",
+          "reason": "Rama’s absent beloved in this named Ramayana monsoon scene is Sita; the pronoun/image has a specific narrative referent."
+        }
+      ]
+    },
+    "he-guru-gobinda-gosain": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "refrain-lead-1",
+          "source": "ହେ ଗୁରୁ ଗୋବିନ୍ଦ ଗୋସାଇଁ",
+          "reason": "Govinda is explicitly invoked as divine guru and lord; not a credit-only historical name."
+        }
+      ]
+    },
+    "jai-shiva-shankar-jai-gangadhar": {
+      "addTags": [
+        "Rāma"
+      ],
+      "evidence": [
+        {
+          "tag": "Rāma",
+          "lineId": "jai-rameshwar-nageshwar",
+          "source": "जय रामेश्वर जय नागेश्वर",
+          "reason": "Rāmeśvara explicitly relates Shiva to Rama; reference tagging preserves Shiva as principal addressee."
+        }
+      ]
+    },
+    "jo-nar-dukh-mein-dukh-nahin-jaane": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "line-018",
+          "source": "ਨਾਨਕ ਲੀਨ ਭਇਓ ਗੋਬਿੰਦ ਸਿਉ",
+          "reason": "Gobind is a devotional divine name in the performed union with the Lord; reference tagging preserves Gurbani context."
+        }
+      ]
+    },
+    "ksirabdhisayana-sribhasya-mangala": {
+      "addTags": [
+        "Lakṣmī"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l020",
+          "source": "బ్రహ్మణి శ్రీనివాసే",
+          "reason": "Śrīnivāsa identifies the abode of Śrī/Lakshmi in the performed invocation."
+        }
+      ]
+    },
+    "aane-banditamma": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l016",
+          "source": "ಪುರಂದರ ವಿಠಲನೆಂಬಾನೆ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "amrutahuni-god-nam-tujhe-deva": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g005",
+          "source": "सांग पंढरीराया काय करू यासी",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "dasana-madiko-enna": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l015",
+          "source": "ಸಿರಿ ಪುರಂದರವಿಠ್ಠಲ ಎನ್ನನು ಪೊರೆದು",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "jagadoddharana": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l008",
+          "source": "ಪುರಂದರ ವಿಠ್ಠಲನ ಆಡಿಸಿದಳೆಶೋದಾ",
+          "reason": "The performed lyric names Viṭṭhala/Pāṇḍuraṅga or directly invokes the Lord of Pandhari; keep this specific deity form searchable."
+        }
+      ]
+    },
+    "maili-chadar-odhe-ke": {
+      "addTags": [
+        "Viṣṇu",
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "he-harihar-main-haar-ke-aaya",
+          "source": "हे हरिहर मैं हार के आया अब क्या हार चढ़ाऊँ",
+          "reason": "The vocative Harihara explicitly invokes the combined Hari and Hara deity, supporting Viṣṇu and Śiva."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "he-harihar-main-haar-ke-aaya",
+          "source": "हे हरिहर मैं हार के आया अब क्या हार चढ़ाऊँ",
+          "reason": "The vocative Harihara explicitly invokes the combined Hari and Hara deity, supporting Viṣṇu and Śiva."
+        }
+      ]
+    },
+    "nagumogamutodi-o-narakesari": {
+      "addTags": [
+        "Lakṣmī"
+      ],
+      "evidence": [
+        {
+          "tag": "Lakṣmī",
+          "lineId": "l010",
+          "source": "కమలాగ్ర వామాంక కనక నరకేసరీ",
+          "reason": "Kamalā is explicitly seated on Narakēsarī’s left lap, identifying Lakṣmī."
+        }
+      ]
+    },
+    "namacha-gajar-garje-bhimatir": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g001",
+          "source": "जय जय विठ्ठल जय हरी विठ्ठल",
+          "reason": "Viṭṭhal is explicitly invoked repeatedly."
+        }
+      ]
+    },
+    "pandharicha-vas-chandrabhage-snan": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g002",
+          "source": "आणिक दर्शन आणिक दर्शन विठोबाचे",
+          "reason": "Viṭhobā is explicitly named as the deity whose sight is sought."
+        }
+      ]
+    },
+    "pandharinivasa-sakhya-panduranga": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g001",
+          "source": "पंढरीनिवासा सख्या पांडुरंगा",
+          "reason": "Pāṇḍuraṅga is explicitly addressed as the friend dwelling in Paṇḍharī."
+        }
+      ]
+    },
+    "pavamana-jagada-prana": {
+      "addTags": [
+        "Rāma",
+        "Śiva",
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Rāma",
+          "lineId": "l008",
+          "source": "ರಾಮಚಂದ್ರನ ನಿಜ ದೂತ",
+          "reason": "Rāmacandra is explicitly named as the Lord whose messenger is praised."
+        },
+        {
+          "tag": "Śiva",
+          "lineId": "l022",
+          "source": "ನೀನೆ ಶರ್ವಾದಿ ಗೀರ್ವಾಣಾದ್ಯಮರರಿಗೆ",
+          "reason": "Śarva is explicitly named among the gods."
+        },
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "l025",
+          "source": "ಪ್ರಾಣನಾಥ ಸಿರಿ ವಿಜಯವಿಠ್ಠಲನ",
+          "reason": "Vijayaviṭhṭhala is a performed divine name in the prayer, not merely a credit."
+        }
+      ]
+    },
+    "sanjivana-giridhara": {
+      "addTags": [
+        "Viṣṇu"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṣṇu",
+          "lineId": "l005",
+          "source": "ಮಂತ್ರಮೂಲಸ್ಥಿತ ಕಂತುಪಿತನ ದೂತ ಯಂತ್ರೋದ್ಧಾರಕ ಪಾಹಿಮಾಂ",
+          "reason": "Kantupita, father of Kāma, explicitly identifies Viṣṇu as the Lord whose messenger Hanumān is."
+        }
+      ]
+    },
+    "savale-sundar-rup-manohar": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g004",
+          "source": "तुझे नाम गोड पांडुरंगा",
+          "reason": "Pāṇḍuraṅga is explicitly addressed by name."
+        }
+      ]
+    },
+    "sawan-gagane-ghor-ghanaghata": {
+      "addTags": [
+        "Rādhā"
+      ],
+      "evidence": [
+        {
+          "tag": "Rādhā",
+          "lineId": "line-16",
+          "source": "সকরুণ রাধানাম",
+          "reason": "The lyric explicitly names Rādhā’s name sounding plaintively."
+        }
+      ]
+    },
+    "siri-ram-kahe-samjhayi": {
+      "addTags": [
+        "Sītā"
+      ],
+      "evidence": [
+        {
+          "tag": "Sītā",
+          "lineId": "verse-1-janakasuta",
+          "source": "संग जनकसुता सुखदाई",
+          "reason": "Janakasutā, Janaka’s daughter, explicitly identifies Sītā accompanying Rāma."
+        }
+      ]
+    },
+    "soyara-sukhacha": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g003",
+          "source": "विठोबा निजाचा मायबाप",
+          "reason": "Viṭhobā is explicitly named as mother and father."
+        }
+      ]
+    },
+    "sun-sun-sadho-jee": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "verse2-4",
+          "source": "धन भारी से राम मिलत पत जाने सुदाम जी की",
+          "reason": "The Sudāmā relationship, together with the preceding Ugrasena and Kubjā examples, specifically evokes Kṛṣṇa’s narratives."
+        }
+      ]
+    },
+    "tum-karo-daya-mere-sai": {
+      "addTags": [
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "g005",
+          "source": "ਗੁਣ ਗੋਵਿਦ ਜਸੁ ਗਾਈ",
+          "reason": "Govind is the performed divine name being praised, supporting a Kṛṣṇa named-reference tag without changing the Gurbāṇī interpretation."
+        }
+      ]
+    },
+    "uyarvara-uyar-nalam": {
+      "addTags": [
+        "Śiva"
+      ],
+      "evidence": [
+        {
+          "tag": "Śiva",
+          "lineId": "l032",
+          "source": "அரன் அயன் என உலகு அழித்து அமைத்து உளனே",
+          "reason": "Aran explicitly names Śiva in the destroying role, paired with Ayan in creation."
+        }
+      ]
+    },
+    "vitthal-giti-gava": {
+      "addTags": [
+        "Viṭṭhala"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g001",
+          "source": "विठ्ठल गीतीं गावा विठ्ठल चित्तीं ध्यावा",
+          "reason": "Viṭṭhal is explicitly named in the performed hymn."
+        }
+      ]
+    },
+    "yei-ho-vitthale": {
+      "addTags": [
+        "Viṭṭhala",
+        "Kṛṣṇa"
+      ],
+      "evidence": [
+        {
+          "tag": "Viṭṭhala",
+          "lineId": "g002",
+          "source": "येई वो विठ्ठले",
+          "reason": "Viṭṭhala is explicitly invoked by the regional vocative viṭṭhale."
+        },
+        {
+          "tag": "Kṛṣṇa",
+          "lineId": "g008",
+          "source": "केशीराजे",
+          "reason": "Keśirāja is the performed divine epithet here identifying the Viṣṇu/Kṛṣṇa deity addressed alongside Viṭṭhala."
+        }
+      ]
+    },
+    "aarti-kijiye-shailsuta-ki": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "aarti-kijai-shailsuta-ki",
+          "source": "आरती कीजै शैलसुता की",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "aisa-pyar-baha-de-maiya": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "v2a",
+          "source": "कर कृपा जगदम्बे भवानी, मैं बालक नादान हूँ",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "damaru-har-kar-baaje": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "shloka-1",
+          "source": "यस्याङ्के च विभाति भूधरसुता देवापगा मस्तके",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "he-shivshankar-he-karunakar": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "verse4-5",
+          "source": "झुक गया माथा कि तुमने हाँ कहा जिस पल उमापति",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "piththa-pirai-soodi": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "l001",
+          "source": "கொத்தார் மலர்க்குழலாள் ஒரு கூறாய்",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
+    },
+    "tero-chakar-kare-pukar": {
+      "addTags": [
+        "Pārvatī"
+      ],
+      "evidence": [
+        {
+          "tag": "Pārvatī",
+          "lineId": "refrain-1",
+          "source": "तेरो चाकर करे पुकार भवानी बेग पधारो ना",
+          "reason": "The performed lyric identifies Pārvatī through Bhavānī/Umā, the mountain-daughter epithet, or her explicit relationship as Shiva’s consort/body-half or Skanda’s mother. This names the goddess form rather than deriving it from a credit."
+        }
+      ]
     }
   }
 }

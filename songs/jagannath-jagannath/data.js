@@ -10,7 +10,8 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Jagannātha"
+    "Jagannātha",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Jagannatha",
@@ -749,7 +750,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Atuṭa bhābara sāthe bhakti karma jñāna",
-    "english": "{2:Along with }{0:unbroken }{1:devotional feeling, }{3:devotion, }{4:karma, }{5:and wisdom.}",
+    "english": "{2:Along with }{0:unbroken }{1:devotional feeling, }{3:devotion, }{4:action, }{5:and wisdom.}",
     "words": [
       {
         "roman": "Atuṭa",
@@ -777,9 +778,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "action",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jñāna",

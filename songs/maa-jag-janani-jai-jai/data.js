@@ -15,7 +15,13 @@ window.SONG_META = {
     "Rāma",
     "Viṣṇu",
     "Kṛṣṇa",
-    "Śiva"
+    "Śiva",
+    "Sītā",
+    "Pārvatī",
+    "Durgā",
+    "Sarasvatī",
+    "Lakṣmī",
+    "Rādhā"
   ],
   "searchAliases": [
     "Shakti",
@@ -387,7 +393,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū hī sat cit sukhamaya śuddha brahma rūpā",
-    "english": "{0:You }{1:alone }{2:are being, }{3:consciousness, }{4:and bliss, }{7:the embodiment of }{5:pure }{6:Brahman.}",
+    "english": "{0:You }{1:alone }{2:are being, }{3:consciousness, }{4:and bliss, }{7:the embodiment of }{5:pure }{6:absolute reality.}",
     "words": [
       {
         "roman": "Tū",
@@ -427,7 +433,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "Brahman, the supreme reality",
+        "gloss": "the absolute reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -470,7 +476,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā śuddha brahma rūpā",
-    "english": "{0:O Mother, }{3:embodiment of }{1:pure }{2:Brahman.}",
+    "english": "{0:O Mother, }{3:embodiment of }{1:pure }{2:absolute reality.}",
     "words": [
       {
         "roman": "Maiyā",
@@ -486,7 +492,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "Brahman, the supreme reality",
+        "gloss": "the absolute reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2820,11 +2826,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mūlādhāra nivāsini iha para siddhi prade",
-    "english": "{1:O dweller in the }{0:Muladhara, }{5:bestower of }{4:attainments }{2:in this world }{3:and the beyond.}",
+    "english": "{1:O dweller in the }{0:root centre at the base of the spine, }{5:bestower of }{4:attainments }{2:in this world }{3:and the beyond.}",
     "words": [
       {
         "roman": "Mūlādhāra",
-        "gloss": "“root support”; yogic centre at the base of the spine",
+        "gloss": "root support; the yogic centre at the base of the spine",
         "concept_key": "",
         "preserve_in_english": false
       },

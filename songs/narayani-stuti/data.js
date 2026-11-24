@@ -19,7 +19,12 @@ window.SONG_META = {
     "Vaiṣṇo Devī",
     "Durgā",
     "Lakṣmī",
-    "Sarasvatī"
+    "Sarasvatī",
+    "Gaṇeśa",
+    "Viṣṇu",
+    "Śiva",
+    "Pārvatī",
+    "Kālī"
   ],
   "searchAliases": [
     "Shakti",

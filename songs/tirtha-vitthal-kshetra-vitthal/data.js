@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Guru"
+    "Guru",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Tirtha Vitthal Ksetra Vitthal",

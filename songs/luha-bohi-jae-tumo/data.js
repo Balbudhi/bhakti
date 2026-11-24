@@ -37,7 +37,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "refrain-luha-bohi-jae": {
     "source": "ଲୁହ ବହି ଯାଏ ତୁମ ଶ୍ରୀମୁଖ ଦରଶନେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଲୁହ",
@@ -120,7 +120,7 @@ window.SONG_LINES = {
   },
   "refrain-deha-thari-uthe": {
     "source": "ଦେହ ଥରି ଉଠେ ତୁମ ପାବନ ପରଶେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଦେହ",
@@ -203,7 +203,7 @@ window.SONG_LINES = {
   },
   "refrain-antare-jaage-je": {
     "source": "ଅନ୍ତରେ ଜାଗେ ଯେ କୋହ ଶୁଣି ତୁମ ଗୀତ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଅନ୍ତରେ",
@@ -298,7 +298,7 @@ window.SONG_LINES = {
   },
   "refrain-prana-pulakita-hue": {
     "source": "ପ୍ରାଣ ପୁଲକିତ ହୁଏ ତୁମ ସାଈ ନାମେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ପ୍ରାଣ",
@@ -381,7 +381,7 @@ window.SONG_LINES = {
   },
   "v1-bhakati-je-byatha-die": {
     "source": "ଭକତି ଯେ ବ୍ୟଥା ଦିଏ ନଥିଲି ମୁଁ ଜାଣି",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଭକତି",
@@ -476,7 +476,7 @@ window.SONG_LINES = {
   },
   "v1-tamaku-loduchhi-mu-je": {
     "source": "ତମକୁ ଲୋଡୁଛି ମୁଁ ଯେ ପ୍ରତି ମୁହୂର୍ତ୍ତରେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ତମକୁ",
@@ -559,7 +559,7 @@ window.SONG_LINES = {
   },
   "v1-sneha-prema-raaga-preeti": {
     "source": "ସ୍ନେହ ପ୍ରେମ ରାଗ ପ୍ରୀତି ସଉରାଗଠୁ ବେଶୀ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ସ୍ନେହ",
@@ -642,7 +642,7 @@ window.SONG_LINES = {
   },
   "v1-karunara-bhaba-jhare": {
     "source": "କରୁଣାର ଭାବ ଝରେ ତୁମରି ନୟନେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "କରୁଣାର",
@@ -713,7 +713,7 @@ window.SONG_LINES = {
   },
   "v2-janama-marana-die": {
     "source": "ଜନମ ମରଣ ଦିଏ ନିଷ୍ଠୁର ସମୟ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ଜନମ",
@@ -784,7 +784,7 @@ window.SONG_LINES = {
   },
   "v2-mo-aatmare-naahi-kintu": {
     "source": "ମୋ ଆତ୍ମାରେ ନାହିଁ କିନ୍ତୁ ତୁମରି ବିଲୟ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମୋ",
@@ -867,7 +867,7 @@ window.SONG_LINES = {
   },
   "v2-kete-janma-pare-aaba": {
     "source": "କେତେ ଜନ୍ମ ପରେ ଅବା କେତେ କଳ୍ପ ପରେ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "କେତେ",
@@ -962,7 +962,7 @@ window.SONG_LINES = {
   },
   "v2-mo-aatmare-thiba-tume": {
     "source": "ମୋ ଆତ୍ମାରେ ଥିବ ତୁମେ ଆହେ ଦୟାମୟ",
-    "sourceLanguage": "",
+    "sourceLanguage": "or",
     "sourceWords": [
       {
         "text": "ମୋ",

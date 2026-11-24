@@ -14,7 +14,7 @@ python3 scripts/song.py new SLUG /path/audio.m4a   # audio, duplicates, credit e
 #   write .transcription/songs/SLUG/song.txt (in the main checkout; steps 1–3)
 python3 scripts/song.py align SLUG                 # line starts and a score per line
 python3 scripts/song.py build SLUG                 # names every mistake in song.txt
-python3 scripts/song.py release SLUG               # audio, catalogue, ledger, every check
+python3 scripts/song.py release SLUG               # audio, catalogue, every check
 git add … && git commit && git push origin HEAD:main   # release prints the paths
 ```
 
@@ -80,6 +80,58 @@ another version of a song did not write this one. If a role is unknown leave it 
 move on: five minutes of searching per song, no more. Tags are subjects, not albums:
 `Śiva`, `Viṣṇu`, `Rāma`, `Kṛṣṇa`, `Śakti`, `Durgā`, `Kālī`, `Lakṣmī`, `Sarasvatī`, `Gaṇeśa`,
 `Hanumān`, `Guru`, `Śirḍī Sāī`, `Vaiṣṇo Devī`, `Nirguṇa`, `Gurbāṇī`, and others already used.
+
+### Subject tags are a separate review
+
+Read the whole performed text for names, inflections, compounds, regional spellings,
+kinship, attributes and narratives: Murāri/Banvārī, Nanda’s son, the mountain-lifter,
+Girijā’s husband with trident and drum. Tags include evidenced named references,
+not only the main addressee. Keep specific forms alongside their umbrella tags.
+Gurbāṇī/Nirguṇa may coexist with Kṛṣṇa, Viṣṇu or Śiva reference tags; this does not
+assert a different theology. A shared symbol, generic “Lord”, a poet/artist name,
+or a name appearing only in an explanatory gloss is not enough by itself.
+
+Search before deciding, using the free local command (no API calls):
+
+```sh
+python3 scripts/search_song_subjects.py 'Murari' --context 1
+python3 scripts/search_song_subjects.py --candidates --slug SLUG --json
+```
+
+It searches source script, IAST, English and word meanings across performed lines.
+Read each candidate with its neighbors and the whole poem. Record accepted contextual
+changes with an exact performed source witness and reason in
+`data/song_tag_overrides.json`; `build` applies the same registry as the older pipeline.
+Record rejected candidate groups with their full-text hash and concrete reason in
+`data/subject-tag-review.json`. `--check` blocks new or stale unresolved candidates;
+a clean scan is coverage of its listed signals, not proof of exhaustive interpretation.
+A text edit invalidates a dismissal. Check actual catalogue filters after release.
+Keyword matches are suggestions, never automatic assignments. Both writers retain
+the explicitly reviewed subjects plus source-bound registry decisions. In particular,
+accent folding cannot decide between Ramā and Rāma, or Śyāmā and Śyāma.
+
+For an existing reader, after recording the source-bound decision, run
+`python3 scripts/song.py retag SLUG`. This updates reader/page metadata and the
+catalogue together, preserving lyrics, timings, audio and the original shuffle
+assessment. It records the tag correction separately from that assessment.
+Do not rebuild an existing reader from an older intake file just to change tags.
+
+Translation, subject tags, audio/timing and shuffle assessments are distinct reviews.
+`release` does not create a translation `finished` mark or move its reviewed hash.
+Only a substantive translation review may update that record; metadata-only changes
+can retain the prior review after inspecting the diff, without calling it a new review.
+The current `screened` status records a bounded contextual reading; it is not a
+claim that every source, word analysis and recording has been independently verified.
+Keep concrete open passages under `needs_source_review`.
+
+For translation corrections, read the complete passage, compare source and linked
+word meanings, and check the resulting English again with its adjacent lines.
+Check who does what to whom, negation, imperative versus description, compounds,
+proper-name identity, and concrete objects. A dictionary gloss or a clean
+structural audit cannot settle these. Record unresolved alternatives explicitly;
+do not silently choose a familiar theological reading to make the sentence smooth.
+The public search index is generated from the released performed lyrics and word
+meanings during assembly; it is loaded only when someone starts searching.
 
 ## 4. song.txt
 

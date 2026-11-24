@@ -12,7 +12,9 @@ window.SONG_META = {
     "Bengali"
   ],
   "subjectTags": [
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Rādhā",
+    "Śakti"
   ],
   "searchAliases": [
     "Shaona Gagane Ghora Ghanaghata",

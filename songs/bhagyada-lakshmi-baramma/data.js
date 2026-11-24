@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Lakṣmī",
-    "Śakti"
+    "Śakti",
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Bhagyada Laksmi Baramma",
@@ -128,7 +130,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ōm trilōka janani, ōm jagat sṛṣṭikartē, ōm trimūrti mātē, ōṅkāra svarūpiṇi, pāhimāṃ pāhimāṃ pāhimāṃ",
-    "english": "{0:Om, }{1,2:Mother of the three worlds, }{3:Om, }{4,5:Creator of the universe, }{6:Om, }{7,8:Mother of the Trimurti, }{9,10:Embodiment of Om, }{11:protect me, }{12:protect me, }{13:protect me!}",
+    "english": "{0:Oṃ, }{1,2:Mother of the three worlds, }{3:Oṃ, }{4,5:Creator of the universe, }{6:Oṃ, }{7,8:Mother of the three divine forms, }{9,10:Embodiment of Oṃ, }{11:protect me, }{12:protect me, }{13:protect me!}",
     "words": [
       {
         "roman": "Ōm",
@@ -174,7 +176,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "trimūrti",
-        "gloss": "of the three divine forms",
+        "gloss": "the three divine forms",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1264,11 +1266,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Saṅkhyeyillada bhāgyava koṭṭu kaṅkaṇa kaiya tiruvuta bāre",
-    "english": "{2:Having given }{0:countless }{1:fortune, }{5:turning }{3:your bangled }{4:hand, }{6:come!}",
+    "english": "{2:Having given }{0:boundless }{1:fortune, }{5:turning }{3:your bangled }{4:hand, }{6:come!}",
     "words": [
       {
         "roman": "Saṅkhyeyillada",
-        "gloss": "countless",
+        "gloss": "without number; boundless",
         "concept_key": "",
         "preserve_in_english": false
       },

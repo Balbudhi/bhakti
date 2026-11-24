@@ -18,7 +18,10 @@ window.SONG_META = {
     "Śirḍī Sāī",
     "Rāma",
     "Śiva",
-    "Guru"
+    "Guru",
+    "Kṛṣṇa",
+    "Viṭṭhala",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Sai Sai Bol",

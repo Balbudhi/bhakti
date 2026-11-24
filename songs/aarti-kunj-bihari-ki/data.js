@@ -13,7 +13,8 @@ window.SONG_META = {
     "Kṛṣṇa",
     "Śiva",
     "Śakti",
-    "Guru"
+    "Guru",
+    "Rādhā"
   ],
   "searchAliases": [
     "Krshna",
@@ -267,11 +268,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī kuñjabihārī kī, śrī giridhara kṛṣṇa murārī kī",
-    "english": "{0:The arati }{1,2:of Kunjabihari, }{7:of }{3:Sri }{4:Giridhar }{5:Krishna }{6:Murari,}",
+    "english": "{0:Worship with lights }{1,2:to Kuñjabihārī, }{7:to }{3:Śrī }{4:Giridhara }{5:Kṛṣṇa }{6:Murārī,}",
     "words": [
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -19,7 +19,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Rāma",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Samsom Ki Mala",

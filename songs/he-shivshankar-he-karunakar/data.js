@@ -10,7 +10,9 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "He Shivshangkar He Karunakar",
@@ -442,19 +444,19 @@ window.SONG_LINES = {
     "source": "योग राग को ही माना",
     "sourceLanguage": "hi",
     "roman": "yoga rāga ko hī mānā",
-    "english": "{4:and regarded }{1,2,3:rāga alone }{0:as yoga.}",
+    "english": "{4:and regarded }{1,2,3:melody alone }{0:as spiritual discipline.}",
     "words": [
       {
         "roman": "yoga",
-        "gloss": "discipline or union",
+        "gloss": "spiritual discipline",
         "concept_key": "yoga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "rāga",
-        "gloss": "melodic mode; attachment or passion, according to context",
+        "gloss": "melody; melodic mode",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ko",
@@ -596,7 +598,7 @@ window.SONG_LINES = {
     "source": "मेरे तन-मन को पावन कर",
     "sourceLanguage": "hi",
     "roman": "mere tana-mana ko pāvana kara",
-    "english": "{2,3,4:purifying }{0:my }{1:body and mind.}",
+    "english": "{2,3,4:purify }{0:my }{1:body and mind.}",
     "words": [
       {
         "roman": "mere",
@@ -624,7 +626,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kara",
-        "gloss": "making / having made / make",
+        "gloss": "make; imperative, with pāvana: purify",
         "concept_key": "",
         "preserve_in_english": false
       }

@@ -17,7 +17,12 @@ window.SONG_META = {
     "Kṛṣṇa",
     "Viṣṇu",
     "Jagannātha",
-    "Guru"
+    "Guru",
+    "Sītā",
+    "Lakṣmī",
+    "Śiva",
+    "Viṭṭhala",
+    "Śakti"
   ],
   "searchAliases": [
     "Morning Arati",
@@ -14068,19 +14073,19 @@ window.SONG_LINES = {
     "source": "काशी स्नान जप प्रतिदिन ही",
     "sourceLanguage": "hi",
     "roman": "kāśī snāna japa pratidina hī",
-    "english": "{3,4:Every single day}{1: taking bath}{2: and reciting japa}{0: in Kashi,}",
+    "english": "{3,4:Every single day}{1: bathing}{2: and repeating sacred words}{0: in Kāśī,}",
     "words": [
       {
         "roman": "kāśī",
-        "gloss": "in Kashi / Varanasi"
+        "gloss": "in Kāśī (Varanasi)"
       },
       {
         "roman": "snāna",
-        "gloss": "bath"
+        "gloss": "bathing; a bath"
       },
       {
         "roman": "japa",
-        "gloss": "recitation / japa"
+        "gloss": "repetition of sacred words"
       },
       {
         "roman": "pratidina",
@@ -14555,7 +14560,7 @@ window.SONG_LINES = {
     "source": "कमंडलु मृगछाला धारित है सिर पे",
     "sourceLanguage": "hi",
     "roman": "kamaṇḍalu mṛgachālā dhārita hai sira pe",
-    "english": "{0:A water-pot}{1: and deerskin}{2,3: donned,}{4,5: and on your head}",
+    "english": "{2,3:Bearing }{0:a water-pot}{1: and a deerskin;}{4,5: on your head}",
     "words": [
       {
         "roman": "kamaṇḍalu",
@@ -14567,7 +14572,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "dhārita",
-        "gloss": "donned / held"
+        "gloss": "borne; held"
       },
       {
         "roman": "hai",

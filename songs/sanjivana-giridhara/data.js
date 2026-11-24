@@ -15,7 +15,8 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Hanumān"
+    "Hanumān",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Sanyjivana Giridhara",

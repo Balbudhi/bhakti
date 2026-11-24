@@ -13,7 +13,9 @@ window.SONG_META = {
     "Gurbāṇī",
     "Nirguṇa",
     "Rāma",
-    "Guru"
+    "Guru",
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=KeppPoEjU9c",
   "searchAliases": [

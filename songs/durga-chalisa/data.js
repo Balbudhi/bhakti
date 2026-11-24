@@ -15,7 +15,11 @@ window.SONG_META = {
     "Viṣṇu",
     "Śiva",
     "Sarasvatī",
-    "Guru"
+    "Guru",
+    "Pārvatī",
+    "Lakṣmī",
+    "Durgā",
+    "Hanumān"
   ],
   "searchAliases": [
     "Shakti",
@@ -105,7 +109,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "namō namō durgē sukha karanī | namō namō ambē duḥkha haranī ||",
-    "english": "{0:Salutations, }{1:salutations, }{2:O Durga, }{4:bringer of }{3:joy! }{5:Salutations, }{6:salutations, }{7:O Mother Amba, }{9:dispeller of }{8:sorrow!}",
+    "english": "{0:Salutations, }{1:salutations, }{2:O Durgā, }{4:bringer of }{3:joy! }{5:Salutations, }{6:salutations, }{7:O Mother Ambā, }{9:dispeller of }{8:sorrow!}",
     "words": [
       {
         "roman": "namō",
@@ -121,7 +125,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "durgē",
-        "gloss": "O Durga (the invincible Goddess)",
+        "gloss": "O Durgā (the invincible Goddess)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -151,7 +155,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambē",
-        "gloss": "O Mother / Amba",
+        "gloss": "O Mother / Ambā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -571,7 +575,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "namō namō ambē sukha karanī | namō namō ambē duḥkha haranī ||",
-    "english": "{0:Salutations, }{1:salutations, }{2:O Mother Amba, }{4:bringer of }{3:joy! }{5:Salutations, }{6:salutations, }{7:O Mother Amba, }{9:dispeller of }{8:sorrow!}",
+    "english": "{0:Salutations, }{1:salutations, }{2:O Mother Ambā, }{4:bringer of }{3:joy! }{5:Salutations, }{6:salutations, }{7:O Mother Ambā, }{9:dispeller of }{8:sorrow!}",
     "words": [
       {
         "roman": "namō",
@@ -587,7 +591,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambē",
-        "gloss": "O Mother / Amba",
+        "gloss": "O Mother / Ambā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -617,7 +621,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambē",
-        "gloss": "O Mother / Amba",
+        "gloss": "O Mother / Ambā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -870,7 +874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma sansāra śakti laya kīnā | pālana hētu anna dhana dīnā ||\nannapūrṇā huī jaga pālā | tuma hī ādi sundarī bālā ||\npralayakāla saba nāśana hārī | tuma gaurī śiva śaṅkara pyārī ||\nśiva yōgī tumharē guṇa gāvēm̐ | brahmā viṣṇu tumhēṁ nita dhyāvēm̐ ||",
-    "english": "{0:By your }{2:power, }{3,4:you dissolved }{1:saṃsāra, }{6:and for the sake of }{5:sustenance }{9:gave }{7:grain }{8:and wealth. }{11:Having become }{10:Annapūrṇā, }{13:you nourished }{12:the world; }{14:you }{15:alone }{16:are the primordial }{17:beautiful }{18:maiden. }{19:At the time of cosmic dissolution }{21,22:you destroy }{20:all; }{23:you }{24:are Gaurī, }{27:beloved of }{25:Shiva }{26:Shankara. }{28:Shiva }{29:and the yogis }{32:sing }{30:your }{31:virtues; }{33:Brahmā }{34:and Viṣṇu }{36:constantly }{37:meditate }{35:upon you.}",
+    "english": "{0:By your }{2:power, }{3,4:you dissolved }{1:the manifested world, }{6:and for the sake of }{5:sustenance }{9:gave }{7:grain }{8:and wealth. }{11:Having become }{10:Annapūrṇā, }{13:you nourished }{12:the world; }{14:you }{15:alone }{16:are the primordial }{17:beautiful }{18:maiden. }{19:At the time of cosmic dissolution }{21,22:you destroy }{20:all; }{23:you }{24:are Gaurī, }{27:beloved of }{25:Śiva }{26:Śaṅkara. }{28:Śiva }{29:and the yogis }{32:sing }{30:your }{31:virtues; }{33:Brahmā }{34:and Viṣṇu }{36:constantly }{37:meditate }{35:upon you.}",
     "words": [
       {
         "roman": "tuma",
@@ -880,9 +884,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "sansāra",
-        "gloss": "cycle of conditioned birth and death; manifest worldly existence",
+        "gloss": "the manifested world",
         "concept_key": "samsara",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "śakti",
@@ -1413,7 +1417,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ambā",
-        "gloss": "O Mother / Amba",
+        "gloss": "O Mother / Ambā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2175,7 +2179,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kēhari vāhana sōha bhavānī | lāṅgura vīra calata agavānī ||\nkara mēṁ khappara khaḍga virājai | jākō dēkha kāla ḍara bhājai ||\nsōhai astra aura triśūlā | jātē uṭhata śatru hiya śūlā ||\nnagarakōṭi mēṁ tumhīṁ virājata | tihūm̐ lōka mēṁ ḍaṅkā bājata ||",
-    "english": "{0:On your lion }{1:mount, }{3:Bhavānī, }{2:you look splendid, }{5:while the hero }{4:Lāṅgura }{6:marches }{7:in the vanguard. }{8,9:In your hand }{12:shine }{10:the skull-bowl }{11:and sword, }{14:beholding }{13:which }{15:Death }{17:flees }{16:in fear. }{19:Weapons }{20:and }{21:the trident }{18:adorn you, }{22:from which }{26:piercing pain }{23:rises }{24:in the enemy’s }{25:heart. }{28:In }{27:Nagarkot }{29:you alone }{30:are enthroned, }{33:and in }{31:the three }{32:worlds }{34:your victory drum }{35:resounds.}",
+    "english": "{0:On your lion }{1:mount, }{3:Bhavānī, }{2:you look splendid, }{5:while the hero }{4:Lāṅgura }{6:marches }{7:in the vanguard. }{8,9:In your hand }{12:shine }{10:the skull-bowl }{11:and sword, }{14:beholding }{13:which }{15:Death }{17:flees }{16:in fear. }{19:Weapons }{20:and }{21:the trident }{18:adorn you, }{22:from which }{26:piercing pain }{23:rises }{24:in the enemy’s }{25:heart. }{28:In }{27:Nagarakoṭi }{29:you alone }{30:are enthroned, }{33:and in }{31:the three }{32:worlds }{34:your victory drum }{35:resounds.}",
     "words": [
       {
         "roman": "kēhari",
@@ -2341,7 +2345,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nagarakōṭi",
-        "gloss": "Nagarkot (Kangra shrine)",
+        "gloss": "Nagarakoṭi (Kangra shrine)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3624,7 +3628,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jōgī sura muni kahata pukārī | yōga na hō bina śakti tumhārī ||\nśaṅkara ācāraja tapa kīnō | kāma aru krōdha jīti saba līnō ||\nniśidina dhyāna dharō śaṅkara kō | kāhū kāla nahiṁ sumirō tumakō ||\nśakti rūpa kō marama na pāyō | śakti gaī taba mana pachatāyō ||",
-    "english": "{0:Yogis, }{1:gods, }{2:and sages }{3,4:proclaim aloud: }{5:yoga }{6,7:cannot happen }{8:without }{10:your }{9:power. }{11,12:Shankaracharya }{14:performed }{13:austerities }{19,20:and completely }{18:conquered }{15:lust }{16:and }{17:anger. }{21:Day and night }{22,23:he meditated }{24,25:upon Shankara, }{26,28:and at no }{27:time }{29:remembered }{30:you. }{35:He did not }{36:grasp }{34:the mystery }{32,33:of the form }{31:of Shakti; }{37:when power }{38:departed, }{39:then }{41:he repented }{40:in his mind.}",
+    "english": "{0:Yogis, }{1:gods, }{2:and sages }{3,4:proclaim aloud: }{5:yoga }{6,7:cannot happen }{8:without }{10:your }{9:power. }{11,12:Śaṅkarācārya }{14:performed }{13:austerities }{19,20:and completely }{18:conquered }{15:lust }{16:and }{17:anger. }{21:Day and night }{22,23:he meditated }{24,25:upon Śaṅkara, }{26,28:and at no }{27:time }{29:remembered }{30:you. }{35:He did not }{36:grasp }{34:the mystery }{32,33:of the form }{31:of Shakti; }{37:when power }{38:departed, }{39:then }{41:he repented }{40:in his mind.}",
     "words": [
       {
         "roman": "jōgī",
@@ -4624,7 +4628,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śatru nāśa kījai mahārānī | sumirauṁ ikacita tumhēṁ bhavānī ||\nkarō kṛpā hē mātu dayālā | ṛddhi siddhi dai karahu nihālā ||\njaba lagi jīōṁ dayā phala pāūm̐ | tumharō yaśa maiṁ sadā sunāūm̐ ||\ndurgā cālīsā jō gāvai | saba sukha bhōga parama pada pāvai ||\ndēvīdāsa śaraṇa nija jānī | karahu kṛpā jagadamba bhavānī ||",
-    "english": "{1,2:Destroy }{0:my enemies, }{3:O Great Queen, }{4:as I remember }{6:you }{5:single-mindedly, }{7:O Bhavānī. }{8:Bestow }{9:grace, }{10:O }{12:compassionate }{11:Mother, }{16:and make me }{17:fulfilled }{15:by granting }{13:prosperity }{14:and siddhi. }{18,19:As long as }{20:I live, }{23:may I receive }{22:the fruit }{21:of your compassion, }{26:and I }{27:shall ever }{28:recite }{24:your }{25:praise. }{31:Whoever }{32:sings }{29:the Durgā }{30:Chālīsā, }{35:enjoying }{33:all }{34:joys, }{38:attains }{36:the supreme }{37:abode. }{42:Knowing }{39:Devīdāsa }{41:to be your own }{40:in shelter, }{43:bestow }{44:grace, }{45:O Jagadambā }{46:Bhavānī!}",
+    "english": "{1,2:Destroy }{0:my enemies, }{3:O Great Queen, }{4:as I remember }{6:you }{5:single-mindedly, }{7:O Bhavānī. }{8:Bestow }{9:grace, }{10:O }{12:compassionate }{11:Mother, }{16:and make me }{17:fulfilled }{15:by granting }{13:prosperity }{14:and spiritual accomplishment. }{18,19:As long as }{20:I live, }{23:may I receive }{22:the fruit }{21:of your compassion, }{26:and I }{27:shall ever }{28:recite }{24:your }{25:praise. }{31:Whoever }{32:sings }{29:the Durgā }{30:Chālīsā, }{35:enjoying }{33:all }{34:joys, }{38:attains }{36:the supreme }{37:abode. }{42:Knowing }{39:Devīdāsa }{41:to be your own }{40:in shelter, }{43:bestow }{44:grace, }{45:O Jagadambā }{46:Bhavānī!}",
     "words": [
       {
         "roman": "śatru",
@@ -4712,7 +4716,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "siddhi",
-        "gloss": "spiritual accomplishment / power",
+        "gloss": "spiritual accomplishment",
         "concept_key": "",
         "preserve_in_english": false
       },

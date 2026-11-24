@@ -430,7 +430,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eka jīva ika brahma kahāvata",
-    "english": "{0:One }{4:is called }{1:jīva, }{2:the other }{3:Brahman.}",
+    "english": "{0:One }{4:is called }{1:the individual living being, }{2:the other }{3:the supreme reality.}",
     "words": [
       {
         "roman": "Eka",
@@ -442,7 +442,7 @@ window.SONG_LINES = {
         "roman": "jīva",
         "gloss": "individual living being; embodied self",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ika",

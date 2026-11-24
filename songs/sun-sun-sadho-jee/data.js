@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Nirguṇa",
-    "Rāma"
+    "Rāma",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Sun Sun Sadho Ji",
@@ -519,11 +520,11 @@ window.SONG_LINES = {
     "source": "जोग जुगत नहिं पावे",
     "sourceLanguage": "hi",
     "roman": "joga jugata nahiṁ pāve",
-    "english": "{0:Yoga }{1:and technique }{2:cannot }{3:attain Him.}",
+    "english": "{0:Ascetic discipline }{1:and technique }{2:cannot }{3:attain Him.}",
     "words": [
       {
         "roman": "joga",
-        "gloss": "yoga / ascetic discipline (masculine noun, Skt. yoga)"
+        "gloss": "ascetic discipline"
       },
       {
         "roman": "jugata",

@@ -218,7 +218,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye mantra hai mā̃ cāmuṇḍā kā ismẽ mahāśakti samātī hai",
-    "english": "{0:This }{2:is }{3,4,5:Mother Cāmuṇḍā’s}{1: mantra; }{7:great power}{8,9: resides}{6: within it.}",
+    "english": "{0:This }{2:is }{3,4,5:Mother Cāmuṇḍā’s}{1: sacred formula; }{7:great power}{8,9: resides}{6: within it.}",
     "words": [
       {
         "roman": "ye",
@@ -227,7 +227,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mantra",
-        "gloss": "sacred utterance; formula for recitation",
+        "gloss": "sacred formula for recitation",
         "sourceTokenIndex": 1
       },
       {

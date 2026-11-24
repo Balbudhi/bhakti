@@ -1889,7 +1889,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru kāṭi prārabdha ṛṇa",
-    "english": "{0:The Guru, }{1:severing }{3:the debt }{2:of allotted karma,}",
+    "english": "{0:The Guru, }{1:severing }{3:the debt }{2:of past deeds now bearing fruit,}",
     "words": [
       {
         "roman": "Guru",
@@ -1905,7 +1905,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prārabdha",
-        "gloss": "already-begun karma bearing its present result",
+        "gloss": "past deeds whose consequences are now bearing fruit",
         "concept_key": "",
         "preserve_in_english": false
       },

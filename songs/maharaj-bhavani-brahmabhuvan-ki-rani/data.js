@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Śiva"
+    "Śiva",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Maharaja Bhavani Brahmabhuvana Ki Rani",

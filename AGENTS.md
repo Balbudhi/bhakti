@@ -21,7 +21,11 @@ changes before deciding what needs review. Preserve `owner_protected` English
 exactly using `data/editorial_baselines.json`. Focus `needs_source_review` work
 on its recorded open definitions. A concrete new defect or source can reopen an
 affected passage; a completion mark is not evidence against the owner’s report.
-The marks cover translation review, not a new listening or exhaustive word-analysis audit.
+The marks cover translation review, not subject-tag completeness, a new listening
+or exhaustive word-analysis audit. Release mechanics must not create or renew them.
+The current `screened` state is a bounded contextual reading, not blanket completion;
+its report and open questions govern. Historical `finished` entries retained under
+`previousReview` are history, not a current certification.
 
 ## Adding or revising songs
 
@@ -86,6 +90,16 @@ choose by grammar and the whole passage. The chosen primary gloss and English
 must agree. Dictionary alternatives are not interchangeable popup definitions.
 Do not import Vedanta's full indexing engine, grammar cards or expositions.
 
+## Subject-tag review
+
+Use the subject procedure in `docs/ADD_A_SONG.md`. Search performed source, IAST,
+English and glosses; resolve names, compounds, regional forms, symbols and narrative
+relationships in context. Tags include evidenced named references, not only the
+central addressee. Record exact-source additions/removals in
+`data/song_tag_overrides.json` and source-bound dismissed candidates in
+`data/subject-tag-review.json`. Tradition tags do not exclude deity-reference tags.
+Never infer a form from a generic symbol or a credit alone.
+
 ## Release checks
 
 - Run `python3 scripts/audit_bhakti_contract.py`, `python3 -m py_compile
@@ -97,6 +111,8 @@ Do not import Vedanta's full indexing engine, grammar cards or expositions.
   failure. New intake trims before any transcript or timing stage; historical
   repairs remove the spoken occurrence and shift retained timestamps by the
   reviewed offset.
+- Run `python3 scripts/search_song_subjects.py --check` before release; unresolved
+  or stale candidate decisions require contextual review, not automatic tagging.
 - Run `python3 scripts/audit_shuffle_profiles.py` before release. It checks the
   current reader/media identities, qualification, and paired catalogue/profile
   revision without API calls; direct reader edits must pass the same gate.

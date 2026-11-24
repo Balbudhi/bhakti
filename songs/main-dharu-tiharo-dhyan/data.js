@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Kālī",
-    "Śakti"
+    "Śakti",
+    "Śiva"
   ],
   "searchAliases": [
     "Shakti",
@@ -33,7 +34,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "sphatika-rachita-pithe": {
     "source": "स्फटिकरचितपीठे रम्यकैलासशृङ्गे",
-    "sourceLanguage": "bra",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्फटिक",
@@ -116,7 +117,7 @@ window.SONG_LINES = {
   },
   "vikacha-kamala-patrair": {
     "source": "विकचकमलपत्रैरर्चयन्तीं महेशम्",
-    "sourceLanguage": "bra",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "विकच",
@@ -187,7 +188,7 @@ window.SONG_LINES = {
   },
   "kara-dhruta-ghana-vadya": {
     "source": "करधृतघनवाद्या",
-    "sourceLanguage": "bra",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कर",
@@ -246,7 +247,7 @@ window.SONG_LINES = {
   },
   "pita-varna-yatakshi": {
     "source": "पीतवर्णाऽयताक्षी",
-    "sourceLanguage": "bra",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "पीत",
@@ -305,7 +306,7 @@ window.SONG_LINES = {
   },
   "sukavibhir-iyam-ukta": {
     "source": "सुकविभिरियमुक्ता",
-    "sourceLanguage": "bra",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सु",
@@ -364,7 +365,7 @@ window.SONG_LINES = {
   },
   "bhairavi-bhairava-stri": {
     "source": "भैरवी भैरवस्त्री",
-    "sourceLanguage": "bra",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "भैरवी",

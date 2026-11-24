@@ -21,6 +21,7 @@ POLICY = 'data/shuffle-profile-policy.json'
 REVIEWS = 'data/shuffle-profile-reviews.json'
 TAXONOMY = 'data/shuffle-taxonomy.json'
 PUBLIC = 'data/shuffle-profiles.js'
+TEXT_REPAIRS = 'data/translation-repair-reviews.json'
 
 
 def digest(value) -> str:
@@ -137,8 +138,214 @@ def _number(value, label, minimum=None, maximum=None, nullable=False):
     return value
 
 
-def _semantic(part, reader, taxonomy):
-    if part.get('inputHash') != semantic_input_hash(reader, taxonomy):
+def _subject_tag_revision(part, reader, taxonomy, *, root, slug):
+    """Validate a public name-reference correction, not a new model assessment.
+
+    The original model input and features stay authoritative for the semantic
+    dimensions. Only subjectTags may differ, and the real reviewed registry must
+    produce those tags from the original tags with still-performed evidence.
+    """
+    from tag_taxonomy import apply_reviewed_subject_tags
+    revision = part.get('subjectTagRevision')
+    fields = {'version', 'priorTags', 'originalInputHash', 'inputHash', 'evidenceHash'}
+    if (root is None or not slug or not isinstance(revision, dict)
+            or set(revision) != fields or type(revision.get('version')) is not int
+            or revision['version'] != 1):
+        raise ValueError('subject tag revision requires its repository and supported binding')
+    prior_tags = revision['priorTags']
+    if (not isinstance(prior_tags, list)
+            or any(not isinstance(tag, str) or not tag.strip() for tag in prior_tags)
+            or len(set(prior_tags)) != len(prior_tags)):
+        raise ValueError('subject tag revision prior tags invalid')
+    for key in ('originalInputHash', 'inputHash', 'evidenceHash'):
+        require_hash(revision[key], f'subject tag revision {key}')
+    current_hash = semantic_input_hash(reader, taxonomy)
+    original_reader = copy.deepcopy(reader)
+    original_reader['SONG_META']['subjectTags'] = list(prior_tags)
+    if (revision['originalInputHash'] != part.get('inputHash')
+            or semantic_input_hash(original_reader, taxonomy) != part.get('inputHash')
+            or revision['inputHash'] != current_hash
+            or prior_tags == reader['SONG_META'].get('subjectTags', [])):
+        raise ValueError('subject tag revision is stale or changes assessed meaning')
+    try:
+        registry = read_json(Path(root) / 'data/song_tag_overrides.json')
+        evidence = registry['songs'][slug]
+    except (OSError, KeyError, TypeError) as exc:
+        raise ValueError('subject tag revision reviewed registry record missing') from exc
+    if digest(evidence) != revision['evidenceHash']:
+        raise ValueError('subject tag revision evidence changed; review required')
+    apply_reviewed_subject_tags(original_reader['SONG_META'], slug,
+        reader['SONG_LINES'], reader['SONG_SEQUENCE'], root=Path(root))
+    if original_reader['SONG_META']['subjectTags'] != reader['SONG_META'].get('subjectTags', []):
+        raise ValueError('subject tag revision includes unreviewed tag changes')
+
+
+def reviewed_subject_tag_revision(root, slug, reader, record, *, prior_tags):
+    """Prepare an amendment from the stored assessment without changing it.
+
+    Callers supply the original assessed tags, retain every existing assessment
+    field, and store only this returned object as semantic.subjectTagRevision.
+    A previous amendment may be replaced when the registry review changes; the
+    original tags/hash still anchor all non-tag meaning to the model assessment.
+    """
+    root = Path(root)
+    policy, reviews, taxonomy = _configuration(root)
+    queue_id = hashlib.blake2s(slug.encode(), digest_size=4).hexdigest()
+    if (not isinstance(record, dict) or record.get('slug') != slug
+            or record != reviews['profiles'].get(queue_id)):
+        raise ValueError('subject tag revision must retain the stored assessment record')
+    if 'editorialTextRevision' in record.get('semantic', {}):
+        # An already-current combined amendment is an idempotent retag. New tag
+        # changes need the combined text receipt reviewed, not an implicit rebase.
+        part = record['semantic']
+        if part.get('subjectTagRevision', {}).get('priorTags') != prior_tags:
+            raise ValueError('subject tag revision original tags differ from the text amendment')
+        _qualified(part, 'semantic', reader, policy)
+        _semantic(part, reader, taxonomy, root=root, slug=slug)
+        return copy.deepcopy(part['subjectTagRevision'])
+    original_reader = copy.deepcopy(reader)
+    original_reader['SONG_META']['subjectTags'] = copy.deepcopy(prior_tags)
+    part = copy.deepcopy(record.get('semantic'))
+    if not isinstance(part, dict):
+        raise ValueError('subject tag revision requires an existing semantic assessment')
+    part.pop('subjectTagRevision', None)
+    _qualified(part, 'semantic', original_reader, policy)
+    _semantic(part, original_reader, taxonomy)
+    try:
+        evidence = read_json(root / 'data/song_tag_overrides.json')['songs'][slug]
+    except (OSError, KeyError, TypeError) as exc:
+        raise ValueError('subject tag revision reviewed registry record missing') from exc
+    revision = {'version': 1, 'priorTags': copy.deepcopy(prior_tags),
+                'originalInputHash': part['inputHash'],
+                'inputHash': semantic_input_hash(reader, taxonomy), 'evidenceHash': digest(evidence)}
+    part['subjectTagRevision'] = revision
+    _subject_tag_revision(part, reader, taxonomy, root=root, slug=slug)
+    return revision
+
+
+def _text_repair_evidence(root, slug):
+    try:
+        registry = read_json(Path(root) / TEXT_REPAIRS)
+        if type(registry.get('version')) is not int or registry['version'] != 1:
+            raise ValueError('unsupported text repair registry version')
+        evidence = registry['songs'][slug]
+    except (OSError, KeyError, TypeError) as exc:
+        raise ValueError('text revision reviewed repair receipt missing') from exc
+    return evidence
+
+
+def _editorial_text_revision(part, reader, taxonomy, *, root, slug):
+    """Validate a source review, never claim the model assessed corrected text.
+
+    Hashes bind the receipt to actual text; they do not prove its review is true.
+    The reviewer must check every retained feature against the corrected meaning.
+    Unsupported features may only be reduced, and unresolved changes stay blocked.
+    """
+    revision = part.get('editorialTextRevision')
+    fields = {'version', 'priorLines', 'originalInputHash', 'inputHash',
+              'evidenceHash', 'baseFeaturesHash'}
+    if (root is None or not slug or not isinstance(revision, dict)
+            or set(revision) != fields or type(revision.get('version')) is not int
+            or revision['version'] != 1):
+        raise ValueError('text revision requires its repository and supported binding')
+    for key in ('originalInputHash', 'inputHash', 'evidenceHash', 'baseFeaturesHash'):
+        require_hash(revision[key], f'text revision {key}')
+    evidence = _text_repair_evidence(root, slug)
+    if not isinstance(evidence, dict) or digest(evidence) != revision['evidenceHash']:
+        raise ValueError('text revision evidence changed; review required')
+    review = evidence.get('reviewer')
+    if (not isinstance(review, dict) or review.get('kind') != 'assistant-source-review'
+            or not isinstance(review.get('reason'), str) or not review['reason'].strip()):
+        raise ValueError('text revision needs an explicit assistant source-review disposition')
+    prior, after, line_evidence = (evidence.get(key) for key in ('beforeLines', 'afterLines', 'lineEvidence'))
+    line_ids = {row['ref'] for row in reader['SONG_SEQUENCE']}
+    if (not isinstance(prior, dict) or not prior or not isinstance(after, dict)
+            or not isinstance(line_evidence, dict) or set(prior) != set(after)
+            or set(prior) != set(line_evidence) or not set(prior).issubset(line_ids)
+            or revision['priorLines'] != prior):
+        raise ValueError('text revision needs exact reviewed performed before/after lines')
+    restored = copy.deepcopy(reader)
+    for key in prior:
+        if (not isinstance(prior[key], dict) or not isinstance(after[key], dict)
+                or prior[key] == after[key] or reader['SONG_LINES'].get(key) != after[key]
+                or not isinstance(line_evidence[key], str) or not line_evidence[key].strip()):
+            raise ValueError('text revision changed line differs from its reviewed source evidence')
+        restored['SONG_LINES'][key] = copy.deepcopy(prior[key])
+    if (revision['originalInputHash'] != part.get('inputHash')
+            or revision['inputHash'] != semantic_input_hash(reader, taxonomy)
+            or revision['baseFeaturesHash'] != digest(part.get('features'))):
+        raise ValueError('text revision current input or original feature binding is stale')
+    if 'subjectTagRevision' in part:
+        # The tag amendment remains the original receipt for the intermediate
+        # tag-only state; do not rewrite it as if it had assessed the new text.
+        _subject_tag_revision(part, restored, taxonomy, root=root, slug=slug)
+        from tag_taxonomy import apply_reviewed_subject_tags
+        meta = copy.deepcopy(reader['SONG_META'])
+        meta['subjectTags'] = copy.deepcopy(part['subjectTagRevision']['priorTags'])
+        apply_reviewed_subject_tags(meta, slug, reader['SONG_LINES'], reader['SONG_SEQUENCE'], root=Path(root))
+        if meta.get('subjectTags', []) != reader['SONG_META'].get('subjectTags', []):
+            raise ValueError('text revision invalidates current tag evidence')
+    elif semantic_input_hash(restored, taxonomy) != part.get('inputHash'):
+        raise ValueError('text revision does not reconstruct the original assessed reader')
+    expected = {(facet, row['id'], row.get('role')) for facet in ('themes', 'actions', 'subjects')
+                for row in part.get('features', {}).get(facet, [])}
+    dispositions = evidence.get('featureDispositions')
+    if not isinstance(dispositions, list):
+        raise ValueError('text revision feature dispositions missing')
+    seen = set()
+    for row in dispositions:
+        if not isinstance(row, dict):
+            raise ValueError('text revision feature disposition invalid')
+        identity = (row.get('facet'), row.get('id'), row.get('role'))
+        if (identity not in expected or identity in seen
+                or set(row) - {'facet', 'id', 'role', 'factor', 'disposition', 'reason', 'sourceLineIds'}
+                or row.get('facet') != 'subjects' and 'role' in row):
+            raise ValueError('text revision must review every original feature exactly once')
+        seen.add(identity)
+        factor = _number(row.get('factor'), 'text revision reduction factor', 0, 1)
+        ids = row.get('sourceLineIds')
+        if (row.get('disposition') != ('retain' if factor == 1 else 'reduce')
+                or not isinstance(row.get('reason'), str) or not row['reason'].strip()
+                or not isinstance(ids, list) or not ids or len(set(ids)) != len(ids)
+                or any(not isinstance(key, str) or key not in line_ids for key in ids)):
+            raise ValueError('text revision feature needs its explicit source-bound disposition')
+    if seen != expected:
+        raise ValueError('text revision must review every original feature exactly once')
+    if not expected and (not isinstance(evidence.get('emptyFeatureDisposition'), str)
+                         or not evidence['emptyFeatureDisposition'].strip()):
+        raise ValueError('text revision must explicitly review an empty semantic classification')
+    return dispositions
+
+
+def reviewed_editorial_text_revision(root, slug, reader, record):
+    """Prepare only an amendment from a real stored assessment and repair receipt."""
+    root = Path(root)
+    policy, reviews, taxonomy = _configuration(root)
+    queue_id = hashlib.blake2s(slug.encode(), digest_size=4).hexdigest()
+    if (not isinstance(record, dict) or record.get('slug') != slug
+            or record != reviews['profiles'].get(queue_id)):
+        raise ValueError('text revision must retain the stored assessment record')
+    part = copy.deepcopy(record.get('semantic'))
+    if not isinstance(part, dict):
+        raise ValueError('text revision requires the original semantic assessment')
+    evidence = _text_repair_evidence(root, slug)
+    revision = {'version': 1, 'priorLines': copy.deepcopy(evidence.get('beforeLines')),
+                'originalInputHash': part.get('inputHash'),
+                'inputHash': semantic_input_hash(reader, taxonomy),
+                'baseFeaturesHash': digest(part.get('features')), 'evidenceHash': digest(evidence)}
+    part['editorialTextRevision'] = revision
+    _qualified(part, 'semantic', reader, policy)
+    _semantic(part, reader, taxonomy, root=root, slug=slug)
+    return revision
+
+
+def _semantic(part, reader, taxonomy, *, root=None, slug=None):
+    text_dispositions = []
+    if 'editorialTextRevision' in part:
+        text_dispositions = _editorial_text_revision(part, reader, taxonomy, root=root, slug=slug)
+    elif 'subjectTagRevision' in part:
+        _subject_tag_revision(part, reader, taxonomy, root=root, slug=slug)
+    elif part.get('inputHash') != semantic_input_hash(reader, taxonomy):
         raise ValueError('semantic profile stale; reassess current reader')
     if part.get('assessment') != 'reviewed' or part.get('outcome') not in {'known', 'unknown'}:
         raise ValueError('semantic assessment is not completed and reviewed')
@@ -184,6 +391,14 @@ def _semantic(part, reader, taxonomy):
     if not present and not str(part.get('reason', '')).strip():
         raise ValueError('semantic unknown needs an assessment reason')
     _apply_editorial_reductions(part, result, line_ids)
+    for disposition in text_dispositions:
+        rows = result[disposition['facet']]
+        for row in list(rows):
+            if (row['id'], row.get('role')) == (disposition['id'], disposition.get('role')):
+                if disposition['factor'] == 0:
+                    rows.remove(row)
+                else:
+                    row['weight'] *= disposition['factor']
     return result
 
 
@@ -331,12 +546,13 @@ def _qualified(part, kind, reader, qualification):
         _number(domain.get('durationSeconds'), 'qualification duration',
                 rule.get('minDurationSeconds', 0.001), rule.get('maxDurationSeconds', 0))
 
-def project_song_profile(queue_id, slug, reader, taxonomy, media_hash, record, *, required, qualification=None):
+def project_song_profile(queue_id, slug, reader, taxonomy, media_hash, record, *, required, qualification=None,
+                         root=None):
     """Reject incomplete new intake; unavailable legacy dimensions remain neutral."""
     if record and record.get('slug') != slug:
         raise ValueError(f'{slug}: profile belongs to another song')
     output = {}
-    for key, validator in [('semantic', lambda part: _semantic(part, reader, taxonomy)),
+    for key, validator in [('semantic', lambda part: _semantic(part, reader, taxonomy, root=root, slug=slug)),
                            ('audio', lambda part: _audio(part, media_hash))]:
         try:
             part = record.get(key) if isinstance(record, dict) else None
@@ -401,7 +617,7 @@ def require_song_profile(root, slug, reader):
         if required: raise
         media_hash = None
     return project_song_profile(queue_id, slug, reader, taxonomy, media_hash,
-                                reviews['profiles'].get(queue_id, {}), required=required, qualification=policy)
+                                reviews['profiles'].get(queue_id, {}), required=required, qualification=policy, root=root)
 
 
 def parse_javascript_sources(sources):
@@ -443,7 +659,7 @@ def build_public_profiles(root, catalogue):
             if required: raise
             media_hash = None
         projected[queue_id] = project_song_profile(queue_id, slug, reader, taxonomy, media_hash,
-            reviews['profiles'].get(queue_id, {}), required=required, qualification=policy)
+            reviews['profiles'].get(queue_id, {}), required=required, qualification=policy, root=root)
         dependencies[queue_id] = {'slug': slug, 'readerSha256': hashlib.sha256(raw[slug]).hexdigest(),
                                   'mediaSha256': media_hash}
     document = {'schemaVersion': 1, 'taxonomyVersion': taxonomy.get('vocabularyVersion'), 'profiles': projected}
@@ -508,7 +724,7 @@ def store_reviewed_profile(root, slug, reader, media_hash, record):
                 if key in existing:
                     incoming[key] = copy.deepcopy(existing[key])
         project_song_profile(queue_id, slug, reader, taxonomy, media_hash, record,
-                             required=True, qualification=policy)
+                             required=True, qualification=policy, root=root)
         reviews['profiles'][queue_id] = record
         atomic_text(root / REVIEWS, json.dumps(reviews, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
 

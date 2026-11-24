@@ -10,7 +10,9 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "Ghanashyama Sundara",
@@ -20,7 +22,7 @@ window.SONG_META = {
     "Anuradha Paudwal",
     "Ravindra Sathe",
     "Sudhanshu",
-    "Shank\u2013Neel"
+    "Shank–Neel"
   ],
   "audioSources": [
     {

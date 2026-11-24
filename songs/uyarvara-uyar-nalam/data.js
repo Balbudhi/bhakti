@@ -9,7 +9,8 @@ window.SONG_META = {
     "Tamil"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Śiva"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=9LdvFUOSTQ8",
   "searchAliases": [

@@ -14,7 +14,8 @@ window.SONG_META = {
     "Śirḍī Sāī",
     "Rāma",
     "Guru",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -148,17 +149,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrī Saccidānanda Sadguru Sāīnātha Mahārāja kī jaya",
-    "english": "{5,6:Victory to }{0:Śrī }{1:Saccidānanda }{2:Sadguru }{3:Sāīnātha }{4:Mahārāja!}",
+    "english": "{5,6:Victory to }{0:revered }{3:Sāīnātha }{4:Mahārāja, }{2:the true spiritual teacher, }{1:whose nature is being, consciousness, and bliss!}",
     "words": [
       {
         "roman": "Śrī",
-        "gloss": "auspicious; holy title of reverence",
+        "gloss": "revered; auspicious honorific",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Saccidānanda",
-        "gloss": "existence-consciousness-bliss",
+        "gloss": "being, consciousness, and bliss",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -237,7 +238,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ovāḷū āratī mājhyā sadgurunāthā mājhyā sāīnāthā",
-    "english": "{0:Let me wave }{1:the āratī }{2:before my }{3:Sadguru Lord, }{4:my }{5:Lord Sai.}",
+    "english": "{0:Let me wave }{1:the offering of light }{2:before my }{3:true spiritual teacher and Lord, }{4:my }{5:Lord Sāī.}",
     "words": [
       {
         "roman": "Ovāḷū",
@@ -247,7 +248,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -259,7 +260,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sadgurunāthā",
-        "gloss": "unto the true teacher and master",
+        "gloss": "unto the true spiritual teacher and Lord",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1269,11 +1270,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī Jñānarājā",
-    "english": "{0:Āratī }{1:to King Jñānarāja,}",
+    "english": "{0:An offering of light }{1:to King Jñānarāja,}",
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "an offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1641,7 +1642,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Viśva brahmaci kēlē",
-    "english": "{2:and revealed }{0:the universe }{1:to be Brahman itself.}",
+    "english": "{2:and revealed }{0:the universe }{1:to be the absolute reality itself.}",
     "words": [
       {
         "roman": "Viśva",
@@ -1858,17 +1859,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī Tukārāmā",
-    "english": "{0:Arati }{1:unto Tukaram,}",
+    "english": "{0:An offering of light }{1:unto Tukārām,}",
     "words": [
       {
         "roman": "Āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "an offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Tukārāmā",
-        "gloss": "unto Saint Tukaram",
+        "gloss": "unto Saint Tukārām",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1899,7 +1900,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Svāmī sadguru dhāmā",
-    "english": "{0:O Master, }{2:abode }{1:of the Sadguru,}",
+    "english": "{0:O Master, }{2:abode }{1:of the true spiritual teacher,}",
     "words": [
       {
         "roman": "Svāmī",
@@ -2127,11 +2128,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Abhaṅga rakṣilē",
-    "english": "{0:abhangas }{1:were protected.}",
+    "english": "{0:devotional hymns }{1:were protected.}",
     "words": [
       {
         "roman": "Abhaṅga",
-        "gloss": "devotional hymns; abhangas",
+        "gloss": "devotional hymns",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2203,17 +2204,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Brahma Tukāsī ālē",
-    "english": "{0:Brahman }{2:came equal }{1:to Tuka.}",
+    "english": "{0:The absolute reality }{2:came equal }{1:to Tukā.}",
     "words": [
       {
         "roman": "Brahma",
-        "gloss": "the supreme reality (Brahman)",
+        "gloss": "the absolute reality",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Tukāsī",
-        "gloss": "to Tukaram; equal to Tuka",
+        "gloss": "to Tukārām; equal to Tukā",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2451,7 +2452,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āḷavitō saprēmē tujalā āratī ghēuna karī hō",
-    "english": "{0:I implore }{2:You }{1:with deep love, }{4:holding }{3:the arati }{5:in hand, }{6:O!}",
+    "english": "{0:I implore }{2:You }{1:with deep love, }{4:holding }{3:the offering-lamp }{5:in hand, }{6:O!}",
     "words": [
       {
         "roman": "Āḷavitō",
@@ -2473,7 +2474,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the lamp held for the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3912,7 +3913,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āḷavito sapreme tujalā āratī gheūna karī ho",
-    "english": "{0:I invoke }{2:you }{1:lovingly, }{4:holding }{3:the aarti }{5:in hand, }{6:O!}",
+    "english": "{0:I invoke }{2:you }{1:lovingly, }{4:holding }{3:the offering-lamp }{5:in hand, }{6:O!}",
     "words": [
       {
         "roman": "āḷavito",
@@ -3934,7 +3935,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the lamp held for the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5241,17 +5242,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadguru sāīnātha mahārāja kī jaya",
-    "english": "{4:Victory }{3:to }{0:Sadguru }{1:Sainath }{2:Maharaj!}",
+    "english": "{4:Victory }{3:to }{0:the true spiritual teacher, }{1:Sāīnātha }{2:Mahārāja!}",
     "words": [
       {
         "roman": "sadguru",
-        "gloss": "true spiritual teacher",
+        "gloss": "the true spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāīnātha",
-        "gloss": "Lord Sai; Sai Nath",
+        "gloss": "Sāīnātha, Lord Sāī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5365,7 +5366,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāhe prasādācī vāṭa dyāve dhuvoniyā tāṭa",
-    "english": "{0,2:[I] await }{1:the prasad; }{4:having washed }{5:the dining plate, }{3:please give it.}",
+    "english": "{0,2:[I] await }{1:the consecrated food; }{4:having washed }{5:the dining plate, }{3:please give it.}",
     "words": [
       {
         "roman": "pāhe",
@@ -5375,7 +5376,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prasādācī",
-        "gloss": "of the consecrated food-offering",
+        "gloss": "of the consecrated food",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -5697,7 +5698,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāvalā prasāda ātā uṭhoni jāve bābā ātā nijave",
-    "english": "{1:The prasad }{0:is received; }{2:now, }{3:rising, }{4:one should depart, }{5:O Baba, }{6:now }{7:please rest.}",
+    "english": "{1:The consecrated food }{0:is received; }{2:now, }{3:rising, }{4:one should depart, }{5:O Bābā, }{6:now }{7:please rest.}",
     "words": [
       {
         "roman": "pāvalā",
@@ -5707,7 +5708,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "prasāda",
-        "gloss": "consecrated grace-gift; prasad",
+        "gloss": "the consecrated food received as a grace-gift",
         "concept_key": "",
         "preserve_in_english": false
       },

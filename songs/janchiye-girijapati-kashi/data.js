@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śiva",
-    "Rāma"
+    "Rāma",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Shiva",
@@ -413,7 +415,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sukha sampati mati sugati suhāī",
-    "english": "{0:Happiness, }{1:prosperity, }{2:pure intellect, }{4:and delightful }{3:noble liberation—}",
+    "english": "{0:Happiness, }{1:prosperity, }{2:intellect, }{4:and delightful }{3:favorable destiny—}",
     "words": [
       {
         "roman": "Sukha",
@@ -429,13 +431,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mati",
-        "gloss": "pure intellect; discerning mind",
+        "gloss": "intellect; mind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sugati",
-        "gloss": "noble destiny; liberation",
+        "gloss": "favorable destiny",
         "concept_key": "",
         "preserve_in_english": false
       },

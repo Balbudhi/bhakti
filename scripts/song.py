@@ -7,7 +7,8 @@
   align SLUG               line starts from the recording, with a score per line
   build SLUG               check song.txt and write songs/SLUG
   assess SLUG              shuffle assessment (about $0.03, capped at $0.25)
-  release SLUG [SLUG ...]  publish audio, rebuild catalogue and ledger, run all checks
+  retag SLUG [SLUG ...]     apply reviewed subject tags without paid assessment
+  release SLUG [SLUG ...]  publish audio, rebuild catalogue, run all checks
   check                    the release checks alone
 
 docs/ADD_A_SONG.md is the procedure and explains the song.txt format.
@@ -16,7 +17,6 @@ Working files live in .transcription/songs/SLUG, which is never published.
 
 from __future__ import annotations
 
-import datetime
 import difflib
 import hashlib
 import json
@@ -296,7 +296,9 @@ def compile_song(slug):
     people = [meta.get(k, "") for k in ("writer", "singer", "composer", "musicDirector", "ensemble")]
     if any("traditional" in p.lower() for p in people):
         fail("never credit 'Traditional': name the poet the tradition names, or leave it blank")
-    subjects = [x.strip() for x in meta["subjects"].split(",") if x.strip()]
+    import tag_taxonomy
+    subjects = tag_taxonomy.merge_subject_tags(
+        [x.strip() for x in meta["subjects"].split(",") if x.strip()], readers.values())
     plain = lambda t: unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
     aliases = [x.strip() for x in meta.get("aliases", "").split(",") if x.strip()]
     for extra in [meta["title"], meta.get("writer", "")] + subjects:
@@ -312,6 +314,7 @@ def compile_song(slug):
     for key, name in (("musicDirector", "musicDirector"), ("ensemble", "ensemble"), ("source", "sourceUrl")):
         if meta.get(key):
             full[name] = meta[key]
+    tag_taxonomy.apply_reviewed_subject_tags(full, slug, readers, sequence, root=ROOT)
     return full, readers, sequence
 
 
@@ -454,7 +457,14 @@ def assess(slug):
     digest = profiles.recording_sha256(ROOT, slug, reader)
     stored = profiles.read_json(ROOT / profiles.REVIEWS)["profiles"].get(
         hashlib.blake2s(slug.encode(), digest_size=4).hexdigest(), {})
-    if stored.get("semantic", {}).get("inputHash") == profiles.semantic_input_hash(reader, taxonomy):
+    semantic = stored.get("semantic", {})
+    if (semantic.get("inputHash") == profiles.semantic_input_hash(reader, taxonomy)
+            or "subjectTagRevision" in semantic or "editorialTextRevision" in semantic):
+        try:
+            profiles.project_song_profile(hashlib.blake2s(slug.encode(), digest_size=4).hexdigest(),
+                slug, reader, taxonomy, digest, stored, required=True, qualification=policy, root=ROOT)
+        except ValueError as exc:
+            fail(f"stored assessment needs review: {exc}")
         print("assessment is current:", slug)
         return
     here.mkdir(parents=True, exist_ok=True)
@@ -470,6 +480,141 @@ def assess(slug):
     profiles._qualified(part, "semantic", reader, policy)
     profiles.store_reviewed_profile(ROOT, slug, reader, digest, {"slug": slug, "semantic": part, "audio": heard})
     print("assessed", slug)
+
+
+def retag(slugs):
+    """Apply source-reviewed public tags as one prepared batch, without intake."""
+    import copy
+    import tempfile
+    import bhakti_pipeline as pipeline
+    import bhakti_shuffle_profiles as profiles
+    from bhakti_boundary_timebase import boundary_transaction
+    from tag_taxonomy import apply_reviewed_subject_tags
+
+    slugs = list(dict.fromkeys(slugs))
+    if not slugs or any(not slug or Path(slug).name != slug for slug in slugs):
+        fail("retag needs existing song slugs")
+    snapshots = {}
+
+    def snapshot(path):
+        if path in snapshots:
+            return snapshots[path]
+        value = path.read_bytes() if path.is_file() else None
+        snapshots[path] = value
+        return value
+
+    for name in (profiles.POLICY, profiles.TAXONOMY, profiles.REVIEWS,
+                 'data/song_tag_overrides.json', 'data/media.json', profiles.TEXT_REPAIRS):
+        snapshot(ROOT / name)
+    policy, reviews, taxonomy = profiles._configuration(ROOT)
+    updated_reviews = copy.deepcopy(reviews)
+    prepared = {}
+    for slug in slugs:
+        folder = ROOT / 'songs' / slug
+        source_path, page_path = folder / 'data.js', folder / 'index.html'
+        source_bytes, page_bytes = snapshot(source_path), snapshot(page_path)
+        if source_bytes is None or page_bytes is None:
+            raise ValueError(f'{slug}: retag requires its existing reader and page')
+        source, page = source_bytes.decode('utf-8'), page_bytes.decode('utf-8')
+        reader = profiles.parse_javascript_sources({slug: source})[slug]
+        prior_meta = copy.deepcopy(reader['SONG_META'])
+        reviewed_meta = copy.deepcopy(prior_meta)
+        apply_reviewed_subject_tags(reviewed_meta, slug, reader['SONG_LINES'], reader['SONG_SEQUENCE'], root=ROOT)
+        # This operation changes public tags only, not a reviewed subtitle or text.
+        reader['SONG_META']['subjectTags'] = reviewed_meta.get('subjectTags', [])
+        queue_id = hashlib.blake2s(slug.encode(), digest_size=4).hexdigest()
+        stored = reviews['profiles'].get(queue_id, {})
+        record = copy.deepcopy(stored)
+        semantic = record.get('semantic', {})
+        if (prior_meta.get('subjectTags', []) != reader['SONG_META']['subjectTags']
+                or 'subjectTagRevision' in semantic):
+            prior_tags = semantic.get('subjectTagRevision', {}).get('priorTags', prior_meta.get('subjectTags', []))
+            semantic['subjectTagRevision'] = profiles.reviewed_subject_tag_revision(
+                ROOT, slug, reader, stored, prior_tags=prior_tags)
+        media_hash = profiles.recording_sha256(ROOT, slug, reader)
+        profiles.project_song_profile(queue_id, slug, reader, taxonomy, media_hash, record,
+                                      required=True, qualification=policy, root=ROOT)
+        updated_reviews['profiles'][queue_id] = record
+        matches = list(re.finditer(r'window\.SONG_META\s*=\s*', source))
+        if len(matches) != 1:
+            raise ValueError(f'{slug}: retag requires one SONG_META assignment')
+        start = matches[0].end()
+        literal, end = json.JSONDecoder().raw_decode(source[start:])
+        if literal != prior_meta:
+            raise ValueError(f'{slug}: SONG_META literal differs from its executed reader')
+        if reader['SONG_META'] != prior_meta:
+            rendered = json.dumps(reader['SONG_META'], ensure_ascii=False, indent=2)
+            prepared[source_path] = (source[:start] + rendered + source[start + end:]).encode('utf-8')
+        pattern = r'^      <div class="song-meta">.*$'
+        old = list(re.finditer(pattern, page, re.M))
+        new = re.search(pattern, pipeline.page_html(reader['SONG_META'], slug), re.M)
+        if len(old) != 1 or new is None:
+            raise ValueError(f'{slug}: retag requires one existing song metadata line')
+        changed_page = page[:old[0].start()] + new[0] + page[old[0].end():]
+        if changed_page != page:
+            prepared[page_path] = changed_page.encode('utf-8')
+    if updated_reviews != reviews:
+        prepared[ROOT / profiles.REVIEWS] = (json.dumps(updated_reviews, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    outputs = [ROOT / name for name in ('data/songs.js', profiles.PUBLIC, 'data/queue_numbers.json', 'sitemap.xml')]
+    for path in outputs:
+        snapshot(path)
+    population = sorted((ROOT / 'songs').glob('*/data.js'))
+    for path in population:
+        snapshot(path)
+    # Use the real complete-library publisher against a prepared snapshot. Its
+    # failure must not leave amended readers paired with yesterday's catalogue.
+    with tempfile.TemporaryDirectory(prefix='.retag-', dir=ROOT) as temporary:
+        staged = Path(temporary)
+        for path, value in snapshots.items():
+            if value is None:
+                continue
+            target = staged / path.relative_to(ROOT)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(prepared.get(path, value))
+        # Audio remains immutable input; avoid copying recordings into the
+        # scratch publication while preserving the real media identity checks.
+        for reader_path in population:
+            for audio_path in reader_path.parent.glob('audio.*'):
+                if audio_path.is_file():
+                    (staged / audio_path.relative_to(ROOT)).symlink_to(audio_path.resolve())
+        pipeline_root, queue_path = pipeline.ROOT, pipeline.QUEUE_NUMBERS_PATH
+        try:
+            pipeline.ROOT = staged
+            pipeline.QUEUE_NUMBERS_PATH = staged / 'data/queue_numbers.json'
+            pipeline.write_catalogue()
+        finally:
+            pipeline.ROOT, pipeline.QUEUE_NUMBERS_PATH = pipeline_root, queue_path
+        for path in outputs:
+            target = staged / path.relative_to(ROOT)
+            value = target.read_bytes() if target.is_file() else None
+            if value is not None and value != snapshots[path]:
+                prepared[path] = value
+    with boundary_transaction(ROOT / 'data'):
+        if sorted((ROOT / 'songs').glob('*/data.js')) != population:
+            raise ValueError('retag song population changed during preparation')
+        for path, expected in snapshots.items():
+            current = path.read_bytes() if path.is_file() else None
+            if current != expected:
+                raise ValueError(f'retag inputs changed during preparation: {path}')
+        written = []
+        try:
+            for path, value in prepared.items():
+                profiles.atomic_text(path, value.decode('utf-8'))
+                written.append(path)
+        except Exception:
+            for path in reversed(written):
+                # Never roll back over a concurrent external writer's bytes.
+                if path.read_bytes() != prepared[path]:
+                    raise RuntimeError(f'retag rollback blocked by concurrent edit: {path}')
+                if snapshots[path] is None:
+                    path.unlink()
+                else:
+                    profiles.atomic_text(path, snapshots[path].decode('utf-8'))
+            raise
+    if prepared:
+        print('\n'.join(str(path.relative_to(ROOT)) for path in sorted(prepared)))
+    else:
+        print('reviewed tags and public pairing are current:', ', '.join(slugs))
 
 
 def release(slugs):
@@ -493,37 +638,58 @@ def release(slugs):
             (folder / "index.html").write_text(page)
         assess(slug)
     pipeline.write_catalogue()
-    path = ROOT / "data" / "translation-review-status.json"
-    ledger = json.loads(path.read_text())
-    for slug in slugs:
-        data = (ROOT / "songs" / slug / "data.js")
-        count = int(subprocess.run(["node", "-e", 'global.window={};eval(require("fs").readFileSync(process.argv[1],"utf8"));'
-                                    'process.stdout.write(String(Object.keys(window.SONG_LINES).length))', str(data)],
-                                   capture_output=True, text=True, check=True).stdout)
-        entry = ledger["songs"].setdefault(slug, {"status": "finished", "reviewedAt": datetime.date.today().isoformat()})
-        entry.update(readerSha256=hashlib.sha256(data.read_bytes()).hexdigest(), definitionCount=count)
-    path.write_text(json.dumps(ledger, ensure_ascii=False, indent=2) + "\n")
+    # Publication mechanics do not establish or renew a translation review.
+    # Keep its reviewed hash intact so changed text remains visibly unreviewed.
     check()
     print("\nReady. Commit and push:\n  git add data sitemap.xml " + " ".join(f"songs/{s}" for s in slugs)
           + "\n  git commit && git push origin HEAD:main")
 
 
+def check_commands(workflow):
+    """Read explicit workflow checks as argv, preserving flags and quoted args."""
+    import shlex
+    commands = [('python3', 'scripts/assemble_public_site.py')]
+    for line in workflow.splitlines():
+        command = re.sub(r'^\s*(?:-\s*)?run:\s*', '', line).strip()
+        if not re.match(r'^(?:node|python3)\s', command):
+            continue
+        arguments = shlex.split(command, comments=True)
+        if (len(arguments) > 1 and re.fullmatch(r'scripts/[\w-]+\.(?:js|py)', arguments[1])):
+            commands.append(tuple(arguments))
+        elif arguments[:3] == ['python3', '-m', 'py_compile']:
+            # subprocess does not invoke a shell: explicitly expand the one
+            # compile glob used by this repository's workflow.
+            expanded = []
+            for argument in arguments[3:]:
+                if '*' in argument:
+                    expanded.extend(str(path.relative_to(ROOT)) for path in sorted(ROOT.glob(argument)))
+                else:
+                    expanded.append(argument)
+            commands.append(tuple(arguments[:3] + expanded))
+    commands.extend([
+        ('python3', 'scripts/audit_bhakti_contract.py'),
+        ('python3', 'scripts/audit_shuffle_profiles.py'),
+        ('python3', 'scripts/search_song_subjects.py', '--check'),
+        ('python3', 'scripts/audit_youtube_trims.py'), ('git', 'diff', '--check')])
+    return list(dict.fromkeys(commands))
+
+
 def check():
+    import shlex
     if not (ROOT / "node_modules").is_dir():
         subprocess.run(["npm", "ci", "--silent", "--no-audit", "--no-fund"], cwd=ROOT, check=True)
     workflow = (ROOT / ".github/workflows/deploy-pages.yml").read_text()
-    commands = sorted(set(re.findall(r"(?:node|python3) scripts/[a-z_]+\.(?:js|py)", workflow)))
-    commands = ["python3 scripts/assemble_public_site.py"] + [c for c in commands if "assemble_public" not in c]
+    commands = check_commands(workflow)
     failed = []
-    for command in commands + ["python3 scripts/audit_bhakti_contract.py", "python3 scripts/audit_shuffle_profiles.py",
-                               "git diff --check"]:
-        run = subprocess.run(command.split(), cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
+    for arguments in commands:
+        command = shlex.join(arguments)
+        run = subprocess.run(arguments, cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
         if run.returncode:
             failed.append(command)
             print("FAIL", command, "\n   ", "\n    ".join((run.stdout + run.stderr).strip().splitlines()[-8:]))
     if failed:
         fail(f"{len(failed)} checks failed")
-    print(f"{len(commands) + 3} checks passed")
+    print(f"{len(commands)} checks passed")
 
 
 def main(arguments):
@@ -536,6 +702,8 @@ def main(arguments):
         new(*arguments[1:])
     elif arguments[:1] == ["release"] and len(arguments) > 1:
         release(arguments[1:])
+    elif arguments[:1] == ["retag"] and len(arguments) > 1:
+        retag(arguments[1:])
     elif len(arguments) == 2 and arguments[0] in one:
         one[arguments[0]](arguments[1])
     else:

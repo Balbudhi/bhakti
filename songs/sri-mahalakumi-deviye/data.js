@@ -16,7 +16,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Lakṣmī",
-    "Śakti"
+    "Śakti",
+    "Śiva",
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Shri Mahalakumi Dēviyē",

@@ -4,7 +4,10 @@ window.SONG_META = {
   "singer": "Dr. Vidyabhushana & Rathnamala Prakash",
   "composer": "C. Ashwath",
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Lakṣmī",
+    "Viṭṭhala",
+    "Śakti"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=uUQEXieL6iM",
   "searchAliases": [

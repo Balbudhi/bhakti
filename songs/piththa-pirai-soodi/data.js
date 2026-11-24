@@ -9,7 +9,9 @@ window.SONG_META = {
     "Tamil"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Śakti"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=ijCv8L4fcPY",
   "searchAliases": [

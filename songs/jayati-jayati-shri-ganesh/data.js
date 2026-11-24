@@ -16,7 +16,10 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Pārvatī",
+    "Śiva",
+    "Śakti"
   ],
   "searchAliases": [
     "Ganesha",

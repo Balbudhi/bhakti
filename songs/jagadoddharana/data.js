@@ -9,7 +9,8 @@ window.SONG_META = {
     "Kannada"
   ],
   "subjectTags": [
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṭṭhala"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=7oF-8QED6vk",
   "searchAliases": [

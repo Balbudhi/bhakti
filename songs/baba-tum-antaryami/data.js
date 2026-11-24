@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śirḍī Sāī",
-    "Guru"
+    "Guru",
+    "Kṛṣṇa"
   ],
   "translationStatus": "reviewed",
   "sourceStatus": "reviewed",

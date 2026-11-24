@@ -1579,7 +1579,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī utāre āratī, koī utāre āratī, śrī guru ke caraṇoṁ meṁ koī haṁse koī roe re",
-    "english": "{0:Someone }{1:performs }{2:arati, }{3:someone }{4:performs }{5:arati, }{10:at }{6:the holy }{7,8:Guru's }{9:feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O!}",
+    "english": "{0:Someone }{1:performs }{2:the offering of light, }{3:someone }{4:performs }{5:the offering of light, }{10:at }{6:the holy }{7,8:Guru's }{9:feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O!}",
     "words": [
       {
         "roman": "koī",
@@ -1595,7 +1595,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī,",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1613,7 +1613,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī,",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1812,7 +1812,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī utāre āratī, koī utāre āratī, śrī guru ke caraṇoṁ meṁ koī haṁse koī roe re, koī haṁse koī roe re",
-    "english": "{0:Someone }{1:performs }{2:arati, }{3:someone }{4:performs }{5:arati, }{10:at }{6:the holy }{7,8:Guru's }{9:feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O, }{16:someone }{17:laughs, }{18:someone }{19:weeps, }{20:O!}",
+    "english": "{0:Someone }{1:performs }{2:the offering of light, }{3:someone }{4:performs }{5:the offering of light, }{10:at }{6:the holy }{7,8:Guru's }{9:feet }{11:someone }{12:laughs, }{13:someone }{14:weeps, }{15:O, }{16:someone }{17:laughs, }{18:someone }{19:weeps, }{20:O!}",
     "words": [
       {
         "roman": "koī",
@@ -1828,7 +1828,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī,",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1846,7 +1846,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī,",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "the ritual offering of light",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2295,7 +2295,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jogī lie darśana, jogī lie darśana, sādhu cale ho magana, ye to guru sāīṁ līlā re",
-    "english": "{0:Yogis }{1:receive }{2:darshan, }{3:yogis }{4:receive }{5:darshan, }{6:sadhus }{7:walk }{8,9:absorbed, }{10:this }{11:is truly }{12,13:Guru Sai's }{14:divine play, }{15:O!}",
+    "english": "{0:Yogis }{1:receive }{2:the sacred sight, }{3:yogis }{4:receive }{5:the sacred sight, }{6:holy ascetics }{7:walk }{8,9:absorbed, }{10:this }{11:is truly }{12,13:Guru Sāī’s }{14:divine play, }{15:O!}",
     "words": [
       {
         "roman": "jogī",
@@ -2311,7 +2311,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana,",
-        "gloss": "sacred sight; viewing",
+        "gloss": "sacred sight of the deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2329,13 +2329,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana,",
-        "gloss": "sacred sight; viewing",
+        "gloss": "sacred sight of the deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sādhu",
-        "gloss": "ascetics; holy mendicants",
+        "gloss": "holy ascetics",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2534,7 +2534,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jogī lie darśana, jogī lie darśana, sādhu cale ho magana, ye to guru sāīṁ līlā re, ye to guru sāīṁ līlā re",
-    "english": "{0:Yogis }{1:receive }{2:darshan, }{3:yogis }{4:receive }{5:darshan, }{6:sadhus }{7:walk }{8,9:absorbed, }{10:this }{11:is truly }{12,13:Guru Sai's }{14:divine play, }{15:O, }{16:this }{17:is truly }{18,19:Guru Sai's }{20:divine play, }{21:O!}",
+    "english": "{0:Yogis }{1:receive }{2:the sacred sight, }{3:yogis }{4:receive }{5:the sacred sight, }{6:holy ascetics }{7:walk }{8,9:absorbed, }{10:this }{11:is truly }{12,13:Guru Sāī’s }{14:divine play, }{15:O, }{16:this }{17:is truly }{18,19:Guru Sāī’s }{20:divine play, }{21:O!}",
     "words": [
       {
         "roman": "jogī",
@@ -2550,7 +2550,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana,",
-        "gloss": "sacred sight; viewing",
+        "gloss": "sacred sight of the deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2568,13 +2568,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana,",
-        "gloss": "sacred sight; viewing",
+        "gloss": "sacred sight of the deity",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sādhu",
-        "gloss": "ascetics; holy mendicants",
+        "gloss": "holy ascetics",
         "concept_key": "",
         "preserve_in_english": false
       },

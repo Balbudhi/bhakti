@@ -261,7 +261,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhaktōṁ kō darśan dēnē kō",
-    "english": "{4:to }{3:give }{2:darshan }{0,1:to the devotees}",
+    "english": "{4:to }{3:grant }{2:sight of yourself }{0,1:to the devotees}",
     "words": [
       {
         "roman": "Bhaktōṁ",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśan",
-        "gloss": "divine sight; auspicious vision",
+        "gloss": "sacred sight of the addressed deity",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -344,7 +344,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāgō jāgō Sāīnāth prabhu darśan dēnē kō",
-    "english": "{0:Awake, }{1:awake, }{2,3:Lord Sainath, }{6:to }{5:give }{4:darshan}",
+    "english": "{0:Awake, }{1:awake, }{2,3:Lord Sāīnāth, }{6:to }{5:grant }{4:sight of yourself}",
     "words": [
       {
         "roman": "Jāgō",
@@ -372,7 +372,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśan",
-        "gloss": "divine sight; auspicious vision",
+        "gloss": "sacred sight of the addressed deity",
         "concept_key": "",
         "preserve_in_english": false
       },

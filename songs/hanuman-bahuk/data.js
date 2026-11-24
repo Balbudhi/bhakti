@@ -14,7 +14,12 @@ window.SONG_META = {
     "Rāma",
     "Viṣṇu",
     "Śakti",
-    "Guru"
+    "Guru",
+    "Śiva",
+    "Gaṇeśa",
+    "Sītā",
+    "Pārvatī",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Hanuman",
@@ -14837,13 +14842,13 @@ window.SONG_LINES = {
     "source": "कर्म काल लोकपाल अग जग जीवजाल नाथ हाथ सब निज महिमा बिचारिये",
     "sourceLanguage": "bra",
     "roman": "karma kāla lokapāla aga jaga jīvajāla nātha hātha saba nija mahimā bicāriye",
-    "english": "{0:Karma, }{1:time, }{2:the world-guardians, }{5:and the entire web of living beings, }{3:unmoving }{4:and moving, }{8:are all }{7:in your hand, }{6:O Lord; }{11:reflect upon }{9:your own }{10:majesty!}",
+    "english": "{0:Deeds and their consequences, }{1:time, }{2:the world-guardians, }{5:and the entire web of living beings, }{3:unmoving }{4:and moving, }{8:are all }{7:in your hand, }{6:O Lord; }{11:reflect upon }{9:your own }{10:majesty!}",
     "words": [
       {
         "roman": "karma",
-        "gloss": "action and its consequences; destiny",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kāla",
@@ -15302,13 +15307,13 @@ window.SONG_LINES = {
     "source": "करम कराल कंस भूमिपाल के भरोसे बकी बकभगिनी काहू ते कहा डरैगी",
     "sourceLanguage": "bra",
     "roman": "karama karāla kansa bhūmipāla ke bharose bakī bakabhaginī kāhū te kahā ḍaraigī",
-    "english": "{4,5:Relying on }{1:dreadful }{0:karma—}{3:King }{2:Kaṃsa—}{10:why would }{6:Bakī, }{7:the sister of Baka, }{11:fear }{8,9:anyone?}",
+    "english": "{4,5:Relying on }{1:dreadful }{0:deeds and their consequences—}{3:King }{2:Kaṃsa—}{10:why would }{6:Bakī, }{7:the sister of Baka, }{11:fear }{8,9:anyone?}",
     "words": [
       {
         "roman": "karama",
         "gloss": "deeds and their consequences, pictured here as King Kaṃsa",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "karāla",
@@ -16173,17 +16178,17 @@ window.SONG_LINES = {
     "source": "करमन कूट की कि जंत्र मंत्र बूट की पराहि जाहि पापिनी मलीन मन माँह की।",
     "sourceLanguage": "bra",
     "roman": "karamana kūṭa kī ki jantra mantra būṭa kī parāhi jāhi pāpinī malīna mana mām̐ha kī.",
-    "english": "{1,2:Born of the deceit }{0:of karmas, }{3:or }{4:of amulets, }{5:spells, }{6,7:and occult roots—}{8:flee, }{9:begone, }{10:O sinful witch }{11,12:of foul mind }{13,14:within!}",
+    "english": "{0:Born of sorcery }{1,2:and secret rites, }{3:or }{4:of amulets, }{5:spells, }{6,7:and occult roots—}{8:flee, }{9:begone, }{10:O sinful one }{13,14:dwelling within }{11:a foul }{12:mind!}",
     "words": [
       {
         "roman": "karamana",
-        "gloss": "action and its consequences",
-        "concept_key": "karma",
-        "preserve_in_english": true
+        "gloss": "sorcery; kārmaṇa, occult operations employing spells and herbs",
+        "concept_key": "",
+        "preserve_in_english": false
       },
       {
         "roman": "kūṭa",
-        "gloss": "fraud; deceitful manipulation",
+        "gloss": "secret rite; concealed occult operation",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -16237,36 +16242,36 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāpinī",
-        "gloss": "O sinful woman / witch!",
+        "gloss": "O sinful one; the arm-pain personified",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "malīna",
-        "gloss": "impure; foul",
+        "gloss": "foul; impure",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mana",
-        "gloss": "mind; intention",
+        "gloss": "mind",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mām̐ha",
-        "gloss": "within; inside",
+        "gloss": "within",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kī.",
-        "gloss": "of",
+        "gloss": "of; linking the personified pain to its dwelling within the foul mind",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'parāhi' and 'jāhi' are imperative forms. 'karamana' is the oblique/plural form of 'karama' (karma).",
+    "grammarNote": "The pain is addressed as pāpinī, a sinful one. The commentary reads karamana as kārmaṇa (occult operations) and kūṭa as secret rites. malīna mana mām̐ha kī describes the personified pain dwelling within a foul mind; parāhi and jāhi are imperatives to depart.",
     "sourceWords": [
       {
         "text": "करमन",
@@ -19120,41 +19125,41 @@ window.SONG_LINES = {
     "source": "करतार भरतार हरतार कर्म काल को है जगजाल जो न मानत इताती है।",
     "sourceLanguage": "bra",
     "roman": "karatāra bharatāra haratāra karma kāla ko hai jagajāla jo na mānata itātī hai.",
-    "english": "{0,6:You are the creator, }{1:sustainer, }{2:and destroyer }{5:of }{3:karma }{4:and time, }{8:who }{9,10,12:does not tolerate }{11:the insolence }{7:of the worldly snare.}",
+    "english": "{0:Creator, }{1:sustainer, }{2:destroyer, }{3:deeds and their consequences, }{4:time—}{5,6:who is there }{7:in all the world }{8:that }{9:does not }{10,12:obey }{11:your command?}",
     "words": [
       {
         "roman": "karatāra",
-        "gloss": "creator",
+        "gloss": "the Creator, Brahmā",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bharatāra",
-        "gloss": "sustainer; lord",
+        "gloss": "the Sustainer, Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "haratāra",
-        "gloss": "destroyer",
+        "gloss": "the Destroyer, Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kāla",
-        "gloss": "of time / death",
+        "gloss": "time",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ko",
-        "gloss": "of",
+        "gloss": "who?; interrogative, not genitive here",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19166,13 +19171,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "jagajāla",
-        "gloss": "the worldly snare / universal net",
+        "gloss": "the entire world and its affairs",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "jo",
-        "gloss": "which / who",
+        "gloss": "who; that",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -19184,24 +19189,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "mānata",
-        "gloss": "submits to; heeds",
+        "gloss": "obeys; heeds",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "itātī",
-        "gloss": "insolence; rebellious defiance",
+        "gloss": "command; obedience",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "hai.",
-        "gloss": "acts; does",
+        "gloss": "does; auxiliary",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'karatāra bharatāra haratāra' is a rhyming tripartite epithet of cosmic sovereignty. 'itātī' means insolence or overbearing behavior.",
+    "grammarNote": "ko hai is an interrogative: who is there? The listed Creator, Sustainer, Destroyer, deeds, and time are among those who obey Hanumān. itāti means command or obedience; the question is rhetorical.",
     "sourceWords": [
       {
         "text": "करतार",
@@ -20182,7 +20187,7 @@ window.SONG_LINES = {
     "source": "देवी देव दनुज मनुज मुनि सिद्ध नाग छोटे बड़े जीव जेते चेतन अचेत हैं।",
     "sourceLanguage": "bra",
     "roman": "devī deva danuja manuja muni siddha nāga choṭe baṛe jīva jete cetana aceta haiṁ.",
-    "english": "{0:Goddesses, }{1:gods, }{2:demons, }{3:humans, }{4:sages, }{5:Siddhas, }{6:Nagas—}{10:all }{9:the jīvas }{7:small }{8:and great, }{11:conscious }{12:and unconscious that }{13:are—}",
+    "english": "{0:Goddesses, }{1:gods, }{2:demons, }{3:humans, }{4:sages, }{5:perfected beings, }{6:serpent-beings—}{10:all }{9:the beings }{7:small }{8:and great, }{11:conscious }{12:and unconscious that }{13:are—}",
     "words": [
       {
         "roman": "devī",
@@ -20240,9 +20245,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "beings",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jete",
@@ -20683,7 +20688,7 @@ window.SONG_LINES = {
     "source": "क्रोध कीजे कर्म को प्रबोध कीजे तुलसी को सोध कीजे तिनको जो दोष दुख देत हैं॥",
     "sourceLanguage": "bra",
     "roman": "krodha kīje karma ko prabodha kīje tulasī ko sodha kīje tinako jo doṣa dukha deta haiṁ.",
-    "english": "{1:Direct }{0:wrath }{3:upon }{2:karma, }{5:impart }{4:awakening }{7:to }{6:Tulsidas, }{8,9:and punish }{10:those }{11:who }{14,15:inflict }{12:malice }{13:and suffering!}",
+    "english": "{1:Direct }{0:wrath }{3:upon }{2:deeds and their consequences, }{5:impart }{4:awakening }{7:to }{6:Tulasī, }{8,9:and punish }{10:those }{11:who }{14,15:inflict }{12:malice }{13:and suffering!}",
     "words": [
       {
         "roman": "krodha",
@@ -20699,9 +20704,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karma",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ko",
@@ -20723,7 +20728,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tulasī",
-        "gloss": "to Tulsidas",
+        "gloss": "Tulasī, the poet Tulasīdāsa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -23330,7 +23335,7 @@ window.SONG_LINES = {
     "source": "काल की करालता करम कठिनाई कीधौं पाप के प्रभाव की सुभायँ बायँ बावरे।",
     "sourceLanguage": "bra",
     "roman": "kāl kī karālatā karam kaṭhināī kīdhauṁ pāp ke prabhāv kī subhāyaṁ bāyaṁ bāware.",
-    "english": "{2:Is it from the terror }{1:of }{0:Time, }{4:the severity }{3:of karma, }{5:or }{8:the power }{7:of }{6:sin, }{9:or }{11:has the bodily wind }{12:gone mad }{10:by its own nature?}",
+    "english": "{2:Is it from the terror }{1:of }{0:Time, }{4:the severity }{3:of deeds and their consequences, }{5:or }{8:the power }{7:of }{6:sin, }{9:or }{11:has the bodily wind }{12:gone mad }{10:by its own nature?}",
     "words": [
       {
         "roman": "kāl",
@@ -23352,9 +23357,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karam",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kaṭhināī",
@@ -24117,7 +24122,7 @@ window.SONG_LINES = {
     "source": "देव भूत पितर करम खल काल ग्रह मोहि पर दवरि दमान कसी दई है।",
     "sourceLanguage": "bra",
     "roman": "dev bhūt pitar karam khal kāl grah mohi par dawari damān kasī daī hai.",
-    "english": "{0:Gods, }{1:spirits, }{2:ancestors, }{3:karma, }{4:villains, }{5:Time, }{6:and planets }{9:have charged }{8:upon }{7:me }{11,12,13:and trained }{10:their cannons }{11:tight.}",
+    "english": "{0:Gods, }{1:spirits, }{2:ancestors, }{3:deeds and their consequences, }{4:villains, }{5:Time, }{6:and planets }{9:have charged }{8:upon }{7:me }{11,12,13:and trained }{10:their cannons }{11:tight.}",
     "words": [
       {
         "roman": "dev",
@@ -24139,9 +24144,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karam",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "khal",
@@ -25763,11 +25768,11 @@ window.SONG_LINES = {
     "source": "तुलसी गोसाँई भयो भोंड़े दिन भूली गयो ताको फल पावत निदान परिपाक हौं॥",
     "sourceLanguage": "bra",
     "roman": "tulasī gosām̐ī bhayo bhoṁṛe din bhūlī gayo tāko phal pāwat nidān paripāk hauṁ.",
-    "english": "{0:Tulsi }{2:became }{1:a Goswami }{5,6:and forgot }{3,4:his wretched days; }{7:of that, }{10:in the end, }{12:I }{9:am receiving }{11:the fully ripened }{8:fruit.}",
+    "english": "{0:Tulasī }{2:became }{1:a revered master }{5,6:and forgot }{3,4:his wretched days; }{7:of that, }{10:in the end, }{12:I }{9:am receiving }{11:the fully ripened }{8:fruit.}",
     "words": [
       {
         "roman": "tulasī",
-        "gloss": "Tulsidas",
+        "gloss": "Tulasī, the poet Tulasīdāsa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -28316,19 +28321,19 @@ window.SONG_LINES = {
     "source": "माया जीव काल के करम के सुभाय के करैया राम बेद कहै साँचै मन गुनिए",
     "sourceLanguage": "bra",
     "roman": "māyā jīva kāla ke karama ke subhāya ke karaiyā rāma beda kahai sāñcai mana gunie",
-    "english": "{8,9:Rama is the maker of }{0:māyā, }{1,2,3:jīva, Time, }{4,5:karma, }{6,7:and innate nature; }{10,11:the Vedas declare this, }{12,13,14:contemplate it as truth in the mind.}",
+    "english": "{8,9:Rāma is the maker of }{0:the power of worldly appearance, }{1:embodied beings, }{2,3:Time, }{4,5:deeds and their consequences, }{6,7:and innate nature; }{10,11:the Vedas declare this, }{12,13,14:contemplate it as truth in the mind.}",
     "words": [
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "the power of worldly appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "jīva",
-        "gloss": "individual living being; embodied self",
+        "gloss": "embodied beings",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kāla",
@@ -28344,9 +28349,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karama",
-        "gloss": "action and its consequences",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "ke",
@@ -28368,7 +28373,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "karaiyā",
-        "gloss": "the ultimate master",
+        "gloss": "maker; the one who brings about",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -28409,7 +28414,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "karaiyā is an agent noun from karnā (the doer/master). gunie is a hortative/precative verb.",
+    "grammarNote": "karaiyā is the agent noun, maker or doer, governing māyā, living beings, time, deeds, and innate nature. gunie retains the source’s invitation to contemplate the truth in the mind.",
     "sourceWords": [
       {
         "text": "माया",

@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Rāma",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Sītā",
+    "Śakti"
   ],
   "searchAliases": [
     "Rama",
@@ -906,7 +908,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "janu jīvahi māyā lapaṭānī",
-    "english": "{0:as though }{2:māyā }{3:clung }{1:to the embodied jīva.}",
+    "english": "{0:as though }{2:the power of worldly appearance }{3:clung }{1:to the embodied soul.}",
     "words": [
       {
         "roman": "janu",
@@ -916,15 +918,15 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvahi",
-        "gloss": "individual living being; embodied self",
+        "gloss": "to the embodied soul",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "the power of worldly appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "lapaṭānī",

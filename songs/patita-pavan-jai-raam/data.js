@@ -12,7 +12,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śirḍī Sāī",
     "Rāma",
-    "Guru"
+    "Guru",
+    "Sītā",
+    "Śakti"
   ],
   "searchAliases": [
     "Shirdi Sai",

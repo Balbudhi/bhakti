@@ -33,6 +33,7 @@ jobs:
         run: |
           node scripts/test_library_filters.js
           node scripts/test_library_search.js
+          node scripts/test_lyric_search.js
           node scripts/test_queue_render.js
           node scripts/test_queue_drag_performance.js
           node scripts/test_reader_performance.js
@@ -41,6 +42,18 @@ jobs:
           node scripts/test_app_loading.js
           node scripts/test_all_line_seeks.js
           python3 scripts/test_naming.py
+          python3 scripts/test_tag_taxonomy.py
+          python3 scripts/test_reviewed_subject_tags.py
+          python3 scripts/test_search_song_subjects.py
+          python3 scripts/test_subject_metadata_refresh.py
+          python3 scripts/test_editorial_text_revision.py
+          python3 scripts/test_shuffle_profile_integration.py
+          python3 scripts/test_hosted_public_assembly.py
+          python3 scripts/test_song.py
+          python3 scripts/test_song_check.py
+          python3 scripts/audit_bhakti_contract.py
+          python3 scripts/search_song_subjects.py --check
+          python3 -m py_compile scripts/*.py
           node scripts/test_player_progress.js
           node scripts/test_player_keyboard.js
           node scripts/test_player_viewport.js

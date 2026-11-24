@@ -4,7 +4,11 @@ window.SONG_META = {
   "singer": "M. L. Vasanthakumari",
   "composer": "",
   "subjectTags": [
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Pārvatī",
+    "Viṣṇu",
+    "Viṭṭhala",
+    "Śakti"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=RshpIz5Wa48",
   "searchAliases": [

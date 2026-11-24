@@ -272,7 +272,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Janama maraṇa kheḷa je māyāra",
-    "english": "{0:Birth}{1: and death}{3: are indeed}{2: the play}{4: of māyā.}",
+    "english": "{0:Birth}{1: and death}{3: are indeed}{2: the play}{4: of the power of worldly appearance.}",
     "words": [
       {
         "roman": "Janama",
@@ -302,7 +302,7 @@ window.SONG_LINES = {
         "roman": "māyāra",
         "gloss": "of the power of worldly appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Janama maraṇa is an asyndetic dvandva compound functioning in apposition to kheḷa. māyāra carries the Odia genitive suffix -ra."

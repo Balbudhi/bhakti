@@ -40,7 +40,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Viṣṇu",
-      "Lakṣmī"
+      "Lakṣmī",
+      "Pārvatī",
+      "Durgā",
+      "Śiva"
     ],
     "searchAliases": [
       "Bolo Lakshmi Mat Ki Jay!",
@@ -298,35 +301,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 95
   },
   {
-    "slug": "jai-bhole-nath",
-    "queueId": "2fc9f74a",
-    "title": "Jai Bhole Nath",
-    "credit": "Amin Sangeet · Anup Jalota",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śiva"
-    ],
-    "searchAliases": [
-      "Shiva",
-      "Siva",
-      "Amin Sangeet",
-      "Anup Jalota"
-    ],
-    "writer": "Amin Sangeet",
-    "singer": "Anup Jalota",
-    "composer": "Amin Sangeet",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-bhole-nath.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śiva",
-    "queueNumber": 78
-  },
-  {
     "slug": "neelkanth-mahadev-dayalu",
     "queueId": "c41d8cff",
     "title": "Neelkanth Mahadev Dayalu",
@@ -397,7 +371,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śiva",
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -418,6 +394,37 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śiva",
     "queueNumber": 89
+  },
+  {
+    "slug": "jai-bhole-nath",
+    "queueId": "2fc9f74a",
+    "title": "Jai Bhole Nath",
+    "credit": "Amin Sangeet · Anup Jalota",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva",
+      "Amin Sangeet",
+      "Anup Jalota"
+    ],
+    "writer": "Amin Sangeet",
+    "singer": "Anup Jalota",
+    "composer": "Amin Sangeet",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-bhole-nath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 78
   },
   {
     "slug": "jai-shankar-bhole",
@@ -526,7 +533,9 @@ window.BHAKTI_SONGS = [
       "Kālī",
       "Śakti",
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Durgā"
     ],
     "searchAliases": [
       "Shakti",
@@ -629,46 +638,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 144
   },
   {
-    "slug": "chakar-rakho-ji",
-    "queueId": "77e5ac2d",
-    "title": "Chākar Rākho Jī",
-    "credit": "Mīrābāī · Anuradha Paudwal",
-    "languageTags": [
-      "Braj",
-      "Rajasthani"
-    ],
-    "subjectTags": [
-      "Kṛṣṇa"
-    ],
-    "searchAliases": [
-      "Krshna",
-      "Krsna",
-      "Mirabai · Anuradha Paudwal",
-      "Mirabai",
-      "Chaakar Rakho Jee",
-      "Chaakar Rakho Ji",
-      "Shyam Mane Chakar Rakho Ji",
-      "Meera",
-      "Meera Bai",
-      "Mira Bai"
-    ],
-    "writer": "Mīrābāī",
-    "singer": "Anuradha Paudwal",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Kṛṣṇa",
-    "queueNumber": 27
-  },
-  {
     "slug": "mhare-ghar-ao-pritam-pyara",
     "queueId": "8f8a03f9",
     "title": "Mhāre Ghara Āo Prītama Pyārā",
@@ -707,6 +676,47 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Kṛṣṇa",
     "queueNumber": 148
+  },
+  {
+    "slug": "chakar-rakho-ji",
+    "queueId": "77e5ac2d",
+    "title": "Chākar Rākho Jī",
+    "credit": "Mīrābāī · Anuradha Paudwal",
+    "languageTags": [
+      "Braj",
+      "Rajasthani"
+    ],
+    "subjectTags": [
+      "Kṛṣṇa",
+      "Viṣṇu"
+    ],
+    "searchAliases": [
+      "Krshna",
+      "Krsna",
+      "Mirabai · Anuradha Paudwal",
+      "Mirabai",
+      "Chaakar Rakho Jee",
+      "Chaakar Rakho Ji",
+      "Shyam Mane Chakar Rakho Ji",
+      "Meera",
+      "Meera Bai",
+      "Mira Bai"
+    ],
+    "writer": "Mīrābāī",
+    "singer": "Anuradha Paudwal",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chakar-rakho-ji.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Kṛṣṇa",
+    "queueNumber": 27
   },
   {
     "slug": "prabhu-ji-tuma-candana-hama-pani",
@@ -891,7 +901,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Kālī",
-      "Durgā"
+      "Durgā",
+      "Sarasvatī"
     ],
     "searchAliases": [
       "Ambe Tu Hai Jagadambe Kali",
@@ -929,7 +940,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śiva",
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -964,7 +977,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śiva",
-      "Śakti"
+      "Śakti",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Shiva",
@@ -1025,7 +1039,9 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Ghanashyama Sundara",
@@ -1098,7 +1114,9 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Viṭṭhala",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Yei Ho Vitthale Bhaktajanavatsale",
@@ -1177,7 +1195,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Durgā",
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Gaṇeśa"
     ],
     "searchAliases": [
       "Devi Aparadha Kshamapana Stotram",
@@ -1270,7 +1290,12 @@ window.BHAKTI_SONGS = [
       "Guru",
       "Kṛṣṇa",
       "Śiva",
-      "Hanumān"
+      "Hanumān",
+      "Sītā",
+      "Lakṣmī",
+      "Durgā",
+      "Viṭṭhala",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -1374,7 +1399,10 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Pārvatī",
+      "Śiva",
+      "Śakti"
     ],
     "searchAliases": [
       "Ganesha",
@@ -1404,7 +1432,8 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Ganesha",
@@ -1433,7 +1462,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Kālī",
-      "Śakti"
+      "Śakti",
+      "Śiva"
     ],
     "searchAliases": [
       "Shakti",
@@ -1454,6 +1484,34 @@ window.BHAKTI_SONGS = [
     "queueNumber": 128
   },
   {
+    "slug": "tero-chakar-kare-pukar",
+    "queueId": "7375e77a",
+    "title": "Tero Chakar Kare Pukar",
+    "credit": "Ashwini Bhide",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Pārvatī"
+    ],
+    "searchAliases": [
+      "Shakti",
+      "Sakti"
+    ],
+    "writer": "",
+    "singer": "Ashwini Bhide",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tero-chakar-kare-pukar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śakti",
+    "queueNumber": 216
+  },
+  {
     "slug": "jai-jai-jai-giriraj-kishori",
     "queueId": "94f67325",
     "title": "Jai Jai Jai Giriraj Kishori",
@@ -1462,7 +1520,10 @@ window.BHAKTI_SONGS = [
       "Awadhi"
     ],
     "subjectTags": [
-      "Śakti"
+      "Śakti",
+      "Śiva",
+      "Pārvatī",
+      "Gaṇeśa"
     ],
     "searchAliases": [
       "Shakti",
@@ -1485,33 +1546,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śakti",
     "queueNumber": 83
-  },
-  {
-    "slug": "tero-chakar-kare-pukar",
-    "queueId": "7375e77a",
-    "title": "Tero Chakar Kare Pukar",
-    "credit": "Ashwini Bhide",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Śakti"
-    ],
-    "searchAliases": [
-      "Shakti",
-      "Sakti"
-    ],
-    "writer": "",
-    "singer": "Ashwini Bhide",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/tero-chakar-kare-pukar.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śakti",
-    "queueNumber": 216
   },
   {
     "slug": "choti-choti-gaiya-chote-chote-gwal",
@@ -1560,7 +1594,9 @@ window.BHAKTI_SONGS = [
       "Gurbāṇī",
       "Nirguṇa",
       "Rāma",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Reman Aiso Kar Sanyasa",
@@ -1671,45 +1707,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 249
   },
   {
-    "slug": "prabh-ju-to-kah-laj-hamari",
-    "queueId": "a397cf54",
-    "title": "Prabh Jū To Kah Lāj Hamārī",
-    "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh",
-    "languageTags": [
-      "Braj",
-      "Punjabi"
-    ],
-    "subjectTags": [
-      "Gurbāṇī",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Gurbani",
-      "Guru Gobind Singh · Bhai Harjinder Singh",
-      "Guru Gobind Singh",
-      "Prabh Joo Ti Keh Laaj Hamari",
-      "Sikh",
-      "Sikhi",
-      "Guru Gobind",
-      "Guru Govind Singh"
-    ],
-    "writer": "Gurū Gobind Siṅgh",
-    "singer": "Bhai Harjinder Singh",
-    "composer": "Bhai Harjinder Singh",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-715f7384c7fac8e017d8a4b4d4bfae4c5523264a5872e46a8f8cdbd588e523b1.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Gurbāṇī",
-    "queueNumber": 360
-  },
-  {
     "slug": "dhan-dhan-ramdas-guru",
     "queueId": "07e2972b",
     "title": "Dhannu Dhannu Rāmadāsa Guru",
@@ -1791,6 +1788,48 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Gurbāṇī",
     "queueNumber": 268
+  },
+  {
+    "slug": "prabh-ju-to-kah-laj-hamari",
+    "queueId": "a397cf54",
+    "title": "Prabh Jū To Kah Lāj Hamārī",
+    "credit": "Gurū Gobind Siṅgh · Bhai Harjinder Singh",
+    "languageTags": [
+      "Braj",
+      "Punjabi"
+    ],
+    "subjectTags": [
+      "Gurbāṇī",
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Gurbani",
+      "Guru Gobind Singh · Bhai Harjinder Singh",
+      "Guru Gobind Singh",
+      "Prabh Joo Ti Keh Laaj Hamari",
+      "Sikh",
+      "Sikhi",
+      "Guru Gobind",
+      "Guru Govind Singh"
+    ],
+    "writer": "Gurū Gobind Siṅgh",
+    "singer": "Bhai Harjinder Singh",
+    "composer": "Bhai Harjinder Singh",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-9c0b7e3449ee515cc36882c704b49be695a4a7eed69bbc4148b1faefb567f45c.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/prabh-ju-to-kah-laj-hamari-715f7384c7fac8e017d8a4b4d4bfae4c5523264a5872e46a8f8cdbd588e523b1.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gurbāṇī",
+    "queueNumber": 360
   },
   {
     "slug": "tu-thakur-tum-peh-ardas",
@@ -2016,7 +2055,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Gurbāṇī",
-      "Guru"
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Gurbani",
@@ -2056,7 +2096,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Gurbāṇī",
-      "Guru"
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Man Tum Joti Sarupu Hai",
@@ -2349,7 +2390,8 @@ window.BHAKTI_SONGS = [
       "Gurbāṇī",
       "Guru",
       "Kṛṣṇa",
-      "Nirguṇa"
+      "Nirguṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Jo Nar Dukh Mein Dukh Nahi Mane",
@@ -2488,7 +2530,8 @@ window.BHAKTI_SONGS = [
       "Punjabi"
     ],
     "subjectTags": [
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Tumh Karahu Daia Mere Sai",
@@ -2570,7 +2613,8 @@ window.BHAKTI_SONGS = [
       "Odia"
     ],
     "subjectTags": [
-      "Jagannātha"
+      "Jagannātha",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Ahe Nila Saila",
@@ -2925,41 +2969,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 191
   },
   {
-    "slug": "sun-sun-sadho-jee",
-    "queueId": "5285ce6f",
-    "title": "Sun Sun Sādho Jī",
-    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Nirguṇa",
-      "Rāma"
-    ],
-    "searchAliases": [
-      "Sun Sun Sadho Ji",
-      "Kabir",
-      "Kabir · Bhimsen Joshi · Shrinivas Khale",
-      "Nirguna",
-      "Sun Bhai Sadho",
-      "Kabir Das",
-      "Kabirdas",
-      "Sant Kabir",
-      "Bhagat Kabir"
-    ],
-    "writer": "Kabīr",
-    "singer": "Bhimsen Joshi",
-    "composer": "Shrinivas Khale",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sun-sun-sadho-jee.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Kabīr",
-    "queueNumber": 210
-  },
-  {
     "slug": "ye-tanu-mundna-be-mundna",
     "queueId": "f99c7178",
     "title": "Ye Tanu Muṇḍanā Be Muṇḍanā",
@@ -2993,6 +3002,42 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Kabīr",
     "queueNumber": 226
+  },
+  {
+    "slug": "sun-sun-sadho-jee",
+    "queueId": "5285ce6f",
+    "title": "Sun Sun Sādho Jī",
+    "credit": "Kabīr · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Nirguṇa",
+      "Rāma",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Sun Sun Sadho Ji",
+      "Kabir",
+      "Kabir · Bhimsen Joshi · Shrinivas Khale",
+      "Nirguna",
+      "Sun Bhai Sadho",
+      "Kabir Das",
+      "Kabirdas",
+      "Sant Kabir",
+      "Bhagat Kabir"
+    ],
+    "writer": "Kabīr",
+    "singer": "Bhimsen Joshi",
+    "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sun-sun-sadho-jee.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Kabīr",
+    "queueNumber": 210
   },
   {
     "slug": "mat-kar-moh-too-hari-bhajan-ko-maan-re",
@@ -3083,32 +3128,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 172
   },
   {
-    "slug": "siri-ram-kahe-samjhayi",
-    "queueId": "023f2e95",
-    "title": "Siri Ram Kahe Samjhayi",
-    "credit": "Brahmanand · Bhimsen Joshi",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Rāma"
-    ],
-    "searchAliases": [
-      "Rama"
-    ],
-    "writer": "Brahmanand",
-    "singer": "Bhimsen Joshi",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siri-ram-kahe-samjhayi.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Rāma",
-    "queueNumber": 208
-  },
-  {
     "slug": "sadho-rama-anupam-bani",
     "queueId": "12b8af38",
     "title": "Sādho Rāma Anupama Bānī",
@@ -3135,6 +3154,34 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Rāma",
     "queueNumber": 180
+  },
+  {
+    "slug": "siri-ram-kahe-samjhayi",
+    "queueId": "023f2e95",
+    "title": "Siri Ram Kahe Samjhayi",
+    "credit": "Brahmanand · Bhimsen Joshi",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Sītā",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Rama"
+    ],
+    "writer": "Brahmanand",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/siri-ram-kahe-samjhayi.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāma",
+    "queueNumber": 208
   },
   {
     "slug": "majha-bhav-tujhe-charani",
@@ -3182,51 +3229,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 345
   },
   {
-    "slug": "pandharicha-vas-chandrabhage-snan",
-    "queueId": "17e6ebbe",
-    "title": "Paṇḍharīcā Vās Candrabhāge Snān",
-    "credit": "Nāmadev · Bhimsen Joshi",
-    "languageTags": [
-      "Marathi"
-    ],
-    "subjectTags": [
-      "Viṣṇu"
-    ],
-    "searchAliases": [
-      "Pandharica Vas Candrabhage Snan",
-      "Vishnu",
-      "Visnu",
-      "Namadev · Bhimsen Joshi",
-      "Namadev",
-      "पंढरीचा वास चंद्रभागे स्नान",
-      "Pandharicha Vaas Chandrabhage Snan",
-      "Nāmdev",
-      "Namdev",
-      "Sant Namdev",
-      "Vitthal",
-      "Vithal",
-      "Vithoba",
-      "Pandurang",
-      "Namadeva",
-      "Bhagat Namdev"
-    ],
-    "writer": "Nāmadev",
-    "singer": "Bhimsen Joshi",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-d98bb8a2f8047b4d939634c09dd1439cf50e46389da018bb29a2882c357a5a20.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-532efd71534bc78dbfafc63f6a295e4c9409bdf3acc41f9fb23b1391e6addf99.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Viṣṇu",
-    "queueNumber": 356
-  },
-  {
     "slug": "rajas-sukumar",
     "queueId": "66c96dba",
     "title": "Rājas Sukumār Madanācā Putaḷā",
@@ -3269,137 +3271,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 353
   },
   {
-    "slug": "savale-sundar-rup-manohar",
-    "queueId": "a4a15809",
-    "title": "Sāvaḷe Sundar Rūp Manohar",
-    "credit": "Tukārām · Bhimsen Joshi",
-    "languageTags": [
-      "Marathi"
-    ],
-    "subjectTags": [
-      "Viṣṇu"
-    ],
-    "searchAliases": [
-      "Vishnu",
-      "Visnu",
-      "Tukaram · Bhimsen Joshi",
-      "Tukaram",
-      "सावळे सुंदर रूप मनोहर",
-      "Sant Tukaram",
-      "Vitthal",
-      "Vithal",
-      "Vithoba",
-      "Pandurang",
-      "Tukaram Maharaj"
-    ],
-    "writer": "Tukārām",
-    "singer": "Bhimsen Joshi",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-7a27a12714da3b561764a24b66d1d3e7a86aa8547439c8b2085a2fc649ddcdf9.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-bd14d8abe8f948303ae68e835e3233b50843d35ff649bf73621ea7e504d90fa2.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Viṣṇu",
-    "queueNumber": 357
-  },
-  {
-    "slug": "vaishnavaghari-sarvakal",
-    "queueId": "ba70e013",
-    "title": "Vaiṣṇavā Gharīṃ Sarvakāḷ",
-    "credit": "Nāmadev · Bhimsen Joshi",
-    "languageTags": [
-      "Marathi"
-    ],
-    "subjectTags": [
-      "Viṣṇu"
-    ],
-    "searchAliases": [
-      "Vaishnava Gharim Sarvakal",
-      "Vaisnava Gharim Sarvakal",
-      "Vishnu",
-      "Visnu",
-      "Namadev · Bhimsen Joshi",
-      "Namadev",
-      "Vaisnavaghari Sarvakal",
-      "Vaiṣṇavāgharī Sarvakāḷ",
-      "वैष्णवाघरी सर्वकाळ",
-      "Vaishnawa Ghari Sarvkaal",
-      "Nāmdev",
-      "Namdev",
-      "Sant Namdev",
-      "Vitthal",
-      "Vithal",
-      "Vithoba",
-      "Pandurang",
-      "Namadeva",
-      "Bhagat Namdev"
-    ],
-    "writer": "Nāmadev",
-    "singer": "Bhimsen Joshi",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-eba09facec4400479f443c506c0bad3feb3ad2c04f051a87f2914130d6a39a6c.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-ea16223b7a589bf53109f8f6c65e2f280bc84c9edebaf4509bf4b1fd44d79ad7.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Viṣṇu",
-    "queueNumber": 361
-  },
-  {
-    "slug": "vitthal-giti-gava",
-    "queueId": "9d8c6f40",
-    "title": "Viṭṭhal Gītīṃ Gāvā",
-    "credit": "Tukārām · Bhimsen Joshi · Shrinivas Khale",
-    "languageTags": [
-      "Marathi"
-    ],
-    "subjectTags": [
-      "Viṣṇu"
-    ],
-    "searchAliases": [
-      "Vitthal Gitim Gava",
-      "Vishnu",
-      "Visnu",
-      "Tukaram · Bhimsen Joshi · Shrinivas Khale",
-      "Tukaram",
-      "विठ्ठल गीतीं गावा",
-      "Vithal Geeti Gava",
-      "Sant Tukaram",
-      "Vitthal",
-      "Vithal",
-      "Vithoba",
-      "Pandurang",
-      "Viṭṭhal Gītī Gāvā",
-      "Tukaram Maharaj"
-    ],
-    "writer": "Tukārām",
-    "singer": "Bhimsen Joshi",
-    "composer": "Shrinivas Khale",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Viṣṇu",
-    "queueNumber": 368
-  },
-  {
     "slug": "tirtha-vitthal-kshetra-vitthal",
     "queueId": "960d9522",
     "title": "Tīrtha Viṭṭhal Kṣetra Viṭṭhal",
@@ -3409,7 +3280,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Guru"
+      "Guru",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Tirtha Vitthal Ksetra Vitthal",
@@ -3455,7 +3327,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Vishnu",
@@ -3493,6 +3366,187 @@ window.BHAKTI_SONGS = [
     "queueNumber": 348
   },
   {
+    "slug": "vaishnavaghari-sarvakal",
+    "queueId": "ba70e013",
+    "title": "Vaiṣṇavā Gharīṃ Sarvakāḷ",
+    "credit": "Nāmadev · Bhimsen Joshi",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Rāma",
+      "Viṭṭhala"
+    ],
+    "searchAliases": [
+      "Vaishnava Gharim Sarvakal",
+      "Vaisnava Gharim Sarvakal",
+      "Vishnu",
+      "Visnu",
+      "Namadev · Bhimsen Joshi",
+      "Namadev",
+      "Vaisnavaghari Sarvakal",
+      "Vaiṣṇavāgharī Sarvakāḷ",
+      "वैष्णवाघरी सर्वकाळ",
+      "Vaishnawa Ghari Sarvkaal",
+      "Nāmdev",
+      "Namdev",
+      "Sant Namdev",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-eba09facec4400479f443c506c0bad3feb3ad2c04f051a87f2914130d6a39a6c.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vaishnavaghari-sarvakal-ea16223b7a589bf53109f8f6c65e2f280bc84c9edebaf4509bf4b1fd44d79ad7.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 361
+  },
+  {
+    "slug": "pandharicha-vas-chandrabhage-snan",
+    "queueId": "17e6ebbe",
+    "title": "Paṇḍharīcā Vās Candrabhāge Snān",
+    "credit": "Nāmadev · Bhimsen Joshi",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Viṭṭhala"
+    ],
+    "searchAliases": [
+      "Pandharica Vas Candrabhage Snan",
+      "Vishnu",
+      "Visnu",
+      "Namadev · Bhimsen Joshi",
+      "Namadev",
+      "पंढरीचा वास चंद्रभागे स्नान",
+      "Pandharicha Vaas Chandrabhage Snan",
+      "Nāmdev",
+      "Namdev",
+      "Sant Namdev",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang",
+      "Namadeva",
+      "Bhagat Namdev"
+    ],
+    "writer": "Nāmadev",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-d98bb8a2f8047b4d939634c09dd1439cf50e46389da018bb29a2882c357a5a20.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/pandharicha-vas-chandrabhage-snan-532efd71534bc78dbfafc63f6a295e4c9409bdf3acc41f9fb23b1391e6addf99.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 356
+  },
+  {
+    "slug": "savale-sundar-rup-manohar",
+    "queueId": "a4a15809",
+    "title": "Sāvaḷe Sundar Rūp Manohar",
+    "credit": "Tukārām · Bhimsen Joshi",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Viṭṭhala"
+    ],
+    "searchAliases": [
+      "Vishnu",
+      "Visnu",
+      "Tukaram · Bhimsen Joshi",
+      "Tukaram",
+      "सावळे सुंदर रूप मनोहर",
+      "Sant Tukaram",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang",
+      "Tukaram Maharaj"
+    ],
+    "writer": "Tukārām",
+    "singer": "Bhimsen Joshi",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-7a27a12714da3b561764a24b66d1d3e7a86aa8547439c8b2085a2fc649ddcdf9.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/savale-sundar-rup-manohar-bd14d8abe8f948303ae68e835e3233b50843d35ff649bf73621ea7e504d90fa2.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 357
+  },
+  {
+    "slug": "vitthal-giti-gava",
+    "queueId": "9d8c6f40",
+    "title": "Viṭṭhal Gītīṃ Gāvā",
+    "credit": "Tukārām · Bhimsen Joshi · Shrinivas Khale",
+    "languageTags": [
+      "Marathi"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Viṭṭhala"
+    ],
+    "searchAliases": [
+      "Vitthal Gitim Gava",
+      "Vishnu",
+      "Visnu",
+      "Tukaram · Bhimsen Joshi · Shrinivas Khale",
+      "Tukaram",
+      "विठ्ठल गीतीं गावा",
+      "Vithal Geeti Gava",
+      "Sant Tukaram",
+      "Vitthal",
+      "Vithal",
+      "Vithoba",
+      "Pandurang",
+      "Viṭṭhal Gītī Gāvā",
+      "Tukaram Maharaj"
+    ],
+    "writer": "Tukārām",
+    "singer": "Bhimsen Joshi",
+    "composer": "Shrinivas Khale",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-2aa0538de56ffb98124b8cdb0d6cb87139bf1500deb22e8f359fc663a1bd1671.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/vitthal-giti-gava-a51290fd8f8bb36d0eb9a643792cc40cb1c1a8702a2c9500cdb51b3a51ae699c.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 368
+  },
+  {
     "slug": "namacha-gajar-garje-bhimatir",
     "queueId": "ccafe315",
     "title": "Nāmācā Gajar Garje Bhīmātīr",
@@ -3502,7 +3556,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Namaca Gajar Garje Bhimatir",
@@ -3578,7 +3633,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Sarasvatī"
+      "Sarasvatī",
+      "Pārvatī",
+      "Śiva"
     ],
     "searchAliases": [
       "Shakti",
@@ -3609,7 +3666,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Durgā",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Jaya Durge Durgati Pariharini",
@@ -3642,7 +3701,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Śiva"
+      "Śiva",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Maharaja Bhavani Brahmabhuvana Ki Rani",
@@ -3673,7 +3733,14 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śyāmalā",
-      "Śakti"
+      "Śakti",
+      "Kṛṣṇa",
+      "Śiva",
+      "Lakṣmī",
+      "Viṣṇu",
+      "Pārvatī",
+      "Durgā",
+      "Gaṇeśa"
     ],
     "searchAliases": [
       "Shyamala Dandakam",
@@ -3778,35 +3845,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 7
-  },
-  {
-    "slug": "baba-tum-antaryami",
-    "queueId": "0764be2f",
-    "title": "Bābā Tum Antaryāmī",
-    "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Baba Tum Antaryami",
-      "Satpathy Baba",
-      "Deepak Kumar",
-      "Shirdi Sai"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Deepak Kumar",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baba-tum-antaryami.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "queueNumber": 14
   },
   {
     "slug": "he-sai-apne-charno-mein",
@@ -3984,6 +4022,36 @@ window.BHAKTI_SONGS = [
     "queueNumber": 228
   },
   {
+    "slug": "baba-tum-antaryami",
+    "queueId": "0764be2f",
+    "title": "Bābā Tum Antaryāmī",
+    "credit": "Shri Chandra Bhanu Satpathy · Deepak Kumar",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Guru",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Baba Tum Antaryami",
+      "Satpathy Baba",
+      "Deepak Kumar",
+      "Shirdi Sai"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Deepak Kumar",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/baba-tum-antaryami.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 14
+  },
+  {
     "slug": "mere-ram-tum",
     "queueId": "afd60e8b",
     "title": "Mere Ram Tum",
@@ -3995,7 +4063,8 @@ window.BHAKTI_SONGS = [
       "Śirḍī Sāī",
       "Rāma",
       "Śiva",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -4061,7 +4130,12 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Vaiṣṇo Devī"
+      "Vaiṣṇo Devī",
+      "Kālī",
+      "Lakṣmī",
+      "Sarasvatī",
+      "Viṣṇu",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Shakti",
@@ -4121,77 +4195,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 373
   },
   {
-    "slug": "kolaru-pathigam",
-    "queueId": "bda159b5",
-    "title": "Kōḷaṟu Patikam",
-    "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
-    "languageTags": [
-      "Tamil"
-    ],
-    "subjectTags": [
-      "Śiva"
-    ],
-    "searchAliases": [
-      "Kōlaṟu Patikam",
-      "Kolaru Patikam",
-      "Shiva",
-      "Siva",
-      "Tirujnyanasambandar · Dharmapuram P. Swaminathan",
-      "Tirujnanasambandar · Dharmapuram P. Swaminathan",
-      "Tirujnyanasambandar",
-      "Tirujnanasambandar",
-      "Vaiyour Tholipangan",
-      "Kolaru Thirupathikam"
-    ],
-    "writer": "Tirujñānasambandar",
-    "singer": "Dharmapuram P. Swaminathan",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śiva",
-    "queueNumber": 266
-  },
-  {
-    "slug": "piththa-pirai-soodi",
-    "queueId": "7816b268",
-    "title": "Pittā Piṟai Cūṭī",
-    "credit": "Cuntarar & Cēkkiḻār · Dharmapuram P. Swaminathan",
-    "languageTags": [
-      "Tamil"
-    ],
-    "subjectTags": [
-      "Śiva"
-    ],
-    "searchAliases": [
-      "Piththa Pirai Soodi",
-      "Pitha Pirai Soodi",
-      "Sundarar",
-      "Sekkizhar"
-    ],
-    "writer": "Cuntarar & Cēkkiḻār",
-    "singer": "Dharmapuram P. Swaminathan",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/piththa-pirai-soodi-d15ef49db7d3871d9fa4c302b4206cf4116a4b5667a238081c70632cd6ec9c78.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/piththa-pirai-soodi-a2dd88816208474d2fa04c5e5191c26385ef0d05483ed536c1edaa54a8670baf.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "queueNumber": 288
-  },
-  {
     "slug": "thodudaiya-seviyan",
     "queueId": "67621b38",
     "title": "Tōṭuṭaiya Seviyan",
@@ -4229,6 +4232,84 @@ window.BHAKTI_SONGS = [
     "queueNumber": 259
   },
   {
+    "slug": "piththa-pirai-soodi",
+    "queueId": "7816b268",
+    "title": "Pittā Piṟai Cūṭī",
+    "credit": "Cuntarar & Cēkkiḻār · Dharmapuram P. Swaminathan",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Piththa Pirai Soodi",
+      "Pitha Pirai Soodi",
+      "Sundarar",
+      "Sekkizhar"
+    ],
+    "writer": "Cuntarar & Cēkkiḻār",
+    "singer": "Dharmapuram P. Swaminathan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/piththa-pirai-soodi-d15ef49db7d3871d9fa4c302b4206cf4116a4b5667a238081c70632cd6ec9c78.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/piththa-pirai-soodi-a2dd88816208474d2fa04c5e5191c26385ef0d05483ed536c1edaa54a8670baf.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 288
+  },
+  {
+    "slug": "kolaru-pathigam",
+    "queueId": "bda159b5",
+    "title": "Kōḷaṟu Patikam",
+    "credit": "Tirujñānasambandar · Dharmapuram P. Swaminathan",
+    "languageTags": [
+      "Tamil"
+    ],
+    "subjectTags": [
+      "Śiva",
+      "Viṣṇu",
+      "Lakṣmī",
+      "Śakti",
+      "Pārvatī",
+      "Durgā"
+    ],
+    "searchAliases": [
+      "Kōlaṟu Patikam",
+      "Kolaru Patikam",
+      "Shiva",
+      "Siva",
+      "Tirujnyanasambandar · Dharmapuram P. Swaminathan",
+      "Tirujnanasambandar · Dharmapuram P. Swaminathan",
+      "Tirujnyanasambandar",
+      "Tirujnanasambandar",
+      "Vaiyour Tholipangan",
+      "Kolaru Thirupathikam"
+    ],
+    "writer": "Tirujñānasambandar",
+    "singer": "Dharmapuram P. Swaminathan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/kolaru-pathigam.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 266
+  },
+  {
     "slug": "biduvenenayya-hanuma",
     "queueId": "19825bbe",
     "title": "Biḍuvenēnayya Hanuma",
@@ -4237,7 +4318,9 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Hanumān"
+      "Hanumān",
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Biduvenenayya Hanuma",
@@ -4268,7 +4351,9 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa",
+      "Śiva"
     ],
     "searchAliases": [
       "Ishtu Dina Ee Vaikunta",
@@ -4299,7 +4384,10 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Lakṣmī",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Daari Yavudayya Vaikunthake",
@@ -4367,7 +4455,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Veṅkaṭeśa"
+      "Veṅkaṭeśa",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "I Padamē Kada",
@@ -4444,7 +4534,11 @@ window.BHAKTI_SONGS = [
       "Lakṣmī",
       "Narasimha",
       "Śakti",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Śiva",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Durga",
@@ -4463,30 +4557,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Durgā",
     "queueNumber": 333
-  },
-  {
-    "slug": "maili-chadar-odhe-ke",
-    "queueId": "49682a95",
-    "title": "Maili Chadar Odhe Ke",
-    "credit": "Hari Om Sharan · Murli Manohar Swarup",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [],
-    "searchAliases": [
-      "Hari Om Sharan",
-      "Murli Manohar Swarup"
-    ],
-    "writer": "Hari Om Sharan",
-    "singer": "Hari Om Sharan",
-    "composer": "Murli Manohar Swarup",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maili-chadar-odhe-ke.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "queueNumber": 127
   },
   {
     "slug": "samapti",
@@ -4543,6 +4613,72 @@ window.BHAKTI_SONGS = [
     "queueNumber": 227
   },
   {
+    "slug": "sampati-vandana",
+    "queueId": "702f2453",
+    "title": "Sampati Vandana",
+    "credit": "Hari Om Sharan · Murli Manohar Swarup",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Hanumān",
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Hanuman",
+      "Rama",
+      "Hari Om Sharan",
+      "Murli Manohar Swarup"
+    ],
+    "writer": "Hari Om Sharan",
+    "singer": "Hari Om Sharan",
+    "composer": "Murli Manohar Swarup",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampati-vandana.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Hanumān",
+    "queueNumber": 190
+  },
+  {
+    "slug": "aarti-kijiye-hanuman-lala-ki",
+    "queueId": "409794d6",
+    "title": "Aarti Kijiye Hanuman Lala Ki",
+    "credit": "Tulsīdās · Hari Om Sharan",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Hanumān",
+      "Rāma",
+      "Sītā",
+      "Viṣṇu",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Hanuman",
+      "Tulsidas · Hari Om Sharan",
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Hari Om Sharan",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-kijiye-hanuman-lala-ki.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Hanumān",
+    "queueNumber": 2
+  },
+  {
     "slug": "jo-kachu-sankat-hoye-hamaro",
     "queueId": "57e8dd36",
     "title": "Jo Kachu Sankat Hoye Hamaro",
@@ -4552,7 +4688,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4586,7 +4724,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4610,39 +4750,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 192
   },
   {
-    "slug": "aarti-kijiye-hanuman-lala-ki",
-    "queueId": "409794d6",
-    "title": "Aarti Kijiye Hanuman Lala Ki",
-    "credit": "Tulsīdās · Hari Om Sharan",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Hanumān",
-      "Rāma"
-    ],
-    "searchAliases": [
-      "Hanuman",
-      "Tulsidas · Hari Om Sharan",
-      "Tulsidas",
-      "Tulasīdāsa",
-      "Tulasidas",
-      "Tulsi Das",
-      "Goswami Tulsidas"
-    ],
-    "writer": "Tulsīdās",
-    "singer": "Hari Om Sharan",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/aarti-kijiye-hanuman-lala-ki.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Hanumān",
-    "queueNumber": 2
-  },
-  {
     "slug": "hanuman",
     "queueId": "a5146764",
     "title": "Hanuman",
@@ -4652,7 +4759,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -4681,7 +4790,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4702,36 +4813,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 63
   },
   {
-    "slug": "sampati-vandana",
-    "queueId": "702f2453",
-    "title": "Sampati Vandana",
-    "credit": "Hari Om Sharan · Murli Manohar Swarup",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Hanumān",
-      "Rāma"
-    ],
-    "searchAliases": [
-      "Hanuman",
-      "Rama",
-      "Hari Om Sharan",
-      "Murli Manohar Swarup"
-    ],
-    "writer": "Hari Om Sharan",
-    "singer": "Hari Om Sharan",
-    "composer": "Murli Manohar Swarup",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/sampati-vandana.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Hanumān",
-    "queueNumber": 190
-  },
-  {
     "slug": "hanuman-chalisa",
     "queueId": "4e0365bb",
     "title": "Hanuman Chalisa",
@@ -4743,7 +4824,12 @@ window.BHAKTI_SONGS = [
       "Hanumān",
       "Rāma",
       "Viṣṇu",
-      "Guru"
+      "Guru",
+      "Sītā",
+      "Pārvatī",
+      "Śiva",
+      "Sarasvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4782,7 +4868,10 @@ window.BHAKTI_SONGS = [
       "Hanumān",
       "Rāma",
       "Viṣṇu",
-      "Śakti"
+      "Śakti",
+      "Śiva",
+      "Sītā",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4831,7 +4920,10 @@ window.BHAKTI_SONGS = [
       "Śakti",
       "Sarasvatī",
       "Viṣṇu",
-      "Guru"
+      "Guru",
+      "Śiva",
+      "Sītā",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4877,7 +4969,8 @@ window.BHAKTI_SONGS = [
       "Hanumān",
       "Rāma",
       "Śiva",
-      "Śakti"
+      "Śakti",
+      "Sītā"
     ],
     "searchAliases": [
       "Hanuman",
@@ -4906,7 +4999,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Rama",
@@ -4937,7 +5031,9 @@ window.BHAKTI_SONGS = [
       "Kṛṣṇa",
       "Viṣṇu",
       "Gaṇeśa",
-      "Śakti"
+      "Śakti",
+      "Rādhā",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Krshna",
@@ -4973,7 +5069,8 @@ window.BHAKTI_SONGS = [
       "Kṛṣṇa",
       "Śiva",
       "Śakti",
-      "Guru"
+      "Guru",
+      "Rādhā"
     ],
     "searchAliases": [
       "Krshna",
@@ -5099,7 +5196,10 @@ window.BHAKTI_SONGS = [
       "Rāma",
       "Viṣṇu",
       "Kṛṣṇa",
-      "Hanumān"
+      "Hanumān",
+      "Sītā",
+      "Rādhā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -5160,7 +5260,8 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Vishnu",
@@ -5181,6 +5282,33 @@ window.BHAKTI_SONGS = [
     "queueNumber": 213
   },
   {
+    "slug": "maili-chadar-odhe-ke",
+    "queueId": "49682a95",
+    "title": "Maili Chadar Odhe Ke",
+    "credit": "Hari Om Sharan · Murli Manohar Swarup",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Hari Om Sharan",
+      "Murli Manohar Swarup"
+    ],
+    "writer": "Hari Om Sharan",
+    "singer": "Hari Om Sharan",
+    "composer": "Murli Manohar Swarup",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/maili-chadar-odhe-ke.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "queueNumber": 127
+  },
+  {
     "slug": "aisa-pyar-baha-de-maiya",
     "queueId": "f09292f0",
     "title": "Aisā Pyār Bahā De Maiyā",
@@ -5191,7 +5319,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Durgā"
+      "Durgā",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Aisa Pyar Baha De Maiya",
@@ -5228,7 +5357,13 @@ window.BHAKTI_SONGS = [
       "Rāma",
       "Viṣṇu",
       "Kṛṣṇa",
-      "Śiva"
+      "Śiva",
+      "Sītā",
+      "Pārvatī",
+      "Durgā",
+      "Sarasvatī",
+      "Lakṣmī",
+      "Rādhā"
     ],
     "searchAliases": [
       "Shakti",
@@ -5264,7 +5399,11 @@ window.BHAKTI_SONGS = [
       "Viṣṇu",
       "Śiva",
       "Sarasvatī",
-      "Guru"
+      "Guru",
+      "Pārvatī",
+      "Lakṣmī",
+      "Durgā",
+      "Hanumān"
     ],
     "searchAliases": [
       "Shakti",
@@ -5302,7 +5441,10 @@ window.BHAKTI_SONGS = [
       "Viṣṇu",
       "Śiva",
       "Sarasvatī",
-      "Lakṣmī"
+      "Lakṣmī",
+      "Durgā",
+      "Rādhā",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Shakti",
@@ -5335,7 +5477,9 @@ window.BHAKTI_SONGS = [
       "Bengali"
     ],
     "subjectTags": [
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Rādhā",
+      "Śakti"
     ],
     "searchAliases": [
       "Shaona Gagane Ghora Ghanaghata",
@@ -5370,7 +5514,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Gurbāṇī",
-      "Guru"
+      "Guru",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Merai Mani Premu Lago Hari Tiru",
@@ -5551,7 +5696,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Ayyappa",
-      "Guru"
+      "Guru",
+      "Viṣṇu",
+      "Śiva"
     ],
     "searchAliases": [
       "Harivarasanam",
@@ -5610,38 +5757,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 57
   },
   {
-    "slug": "jagannath-jagannath",
-    "queueId": "2d435de5",
-    "title": "Jagannath Jagannath",
-    "credit": "Shri Chandra Bhanu Satpathy · Karunakar Sethi",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Jagannātha"
-    ],
-    "searchAliases": [
-      "Jagannatha",
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Karunakar Sethi",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Jagannātha",
-    "queueNumber": 76
-  },
-  {
     "slug": "mohodadhi-kule",
     "queueId": "03dfafcc",
     "title": "Mohodadhi Kule",
@@ -5672,6 +5787,39 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Jagannātha",
     "queueNumber": 149
+  },
+  {
+    "slug": "jagannath-jagannath",
+    "queueId": "2d435de5",
+    "title": "Jagannath Jagannath",
+    "credit": "Shri Chandra Bhanu Satpathy · Karunakar Sethi",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Jagannātha",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Jagannatha",
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Karunakar Sethi",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jagannath-jagannath.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Jagannātha",
+    "queueNumber": 76
   },
   {
     "slug": "tere-dvar-khara-bhagvan",
@@ -5750,7 +5898,8 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Soyara Sukhaca",
@@ -5911,7 +6060,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Viṣṇu",
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Durgā",
+      "Lakṣmī"
     ],
     "searchAliases": [
       "Shakti",
@@ -6019,7 +6171,10 @@ window.BHAKTI_SONGS = [
       "Telugu"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Śiva",
+      "Hanumān",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Endaro Mahanubhavulu",
@@ -6052,7 +6207,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Nṛsiṃha"
+      "Nṛsiṃha",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Nagumogamutōdi Ō Narakēsari",
@@ -6152,45 +6309,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Viṣṇu",
     "queueNumber": 315
-  },
-  {
-    "slug": "chittaja-guruda-neeku",
-    "queueId": "240d1b3e",
-    "title": "Cittaja Guruḍā Nīku Śrīmaṅgaḷam",
-    "credit": "Annamācārya · M. Balamuralikrishna",
-    "languageTags": [
-      "Telugu"
-    ],
-    "subjectTags": [
-      "Viṣṇu",
-      "Veṅkaṭeśa"
-    ],
-    "searchAliases": [
-      "Cittaja Guruda Niku Shrimangalam",
-      "Cittaja Guruda Niku Srimangalam",
-      "Vishnu",
-      "Visnu",
-      "Annamacarya · M. Balamuralikrishna",
-      "Annamacarya",
-      "Vengkatesha",
-      "Venkatesa",
-      "Chittaja Guruda Neeku Sri Mangalam",
-      "Annamacharya",
-      "Mangalampalli Balamuralikrishna",
-      "Annamayya",
-      "Tallapaka Annamacharya"
-    ],
-    "writer": "Annamācārya",
-    "singer": "M. Balamuralikrishna",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chittaja-guruda-neeku-1baf05eb07522ea236f8b20e8a6db193d71af11081c081b1d63cf4c28bda0b49.mp3",
-        "type": "audio/mpeg"
-      }
-    ],
-    "subtitle": "Viṣṇu",
-    "queueNumber": 316
   },
   {
     "slug": "javvadi-mettinadi",
@@ -6338,6 +6456,47 @@ window.BHAKTI_SONGS = [
     "queueNumber": 323
   },
   {
+    "slug": "chittaja-guruda-neeku",
+    "queueId": "240d1b3e",
+    "title": "Cittaja Guruḍā Nīku Śrīmaṅgaḷam",
+    "credit": "Annamācārya · M. Balamuralikrishna",
+    "languageTags": [
+      "Telugu"
+    ],
+    "subjectTags": [
+      "Viṣṇu",
+      "Veṅkaṭeśa",
+      "Lakṣmī",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Cittaja Guruda Niku Shrimangalam",
+      "Cittaja Guruda Niku Srimangalam",
+      "Vishnu",
+      "Visnu",
+      "Annamacarya · M. Balamuralikrishna",
+      "Annamacarya",
+      "Vengkatesha",
+      "Venkatesa",
+      "Chittaja Guruda Neeku Sri Mangalam",
+      "Annamacharya",
+      "Mangalampalli Balamuralikrishna",
+      "Annamayya",
+      "Tallapaka Annamacharya"
+    ],
+    "writer": "Annamācārya",
+    "singer": "M. Balamuralikrishna",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chittaja-guruda-neeku-1baf05eb07522ea236f8b20e8a6db193d71af11081c081b1d63cf4c28bda0b49.mp3",
+        "type": "audio/mpeg"
+      }
+    ],
+    "subtitle": "Viṣṇu",
+    "queueNumber": 316
+  },
+  {
     "slug": "saranu-siddhi-vinayaka",
     "queueId": "d1cbc301",
     "title": "Śaraṇu Siddhivināyaka",
@@ -6346,7 +6505,11 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Pārvatī",
+      "Viṣṇu",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Sharanu Siddhi Vinayaka",
@@ -6462,7 +6625,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Lakṣmī",
       "Śakti",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Śiva"
     ],
     "searchAliases": [
       "Kanakadhara Stotram",
@@ -6495,7 +6661,8 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Dasana Madiko Enna",
@@ -6531,7 +6698,8 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Jagadoddharana",
@@ -6607,7 +6775,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Amrtahuni God Nam Tujhe Deva",
@@ -7062,7 +7231,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Rāma",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Samsom Ki Mala",
@@ -7186,7 +7356,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Śiva",
+      "Gaṇeśa"
     ],
     "searchAliases": [
       "Shakti",
@@ -7216,7 +7388,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Śakti"
+      "Śakti",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Heci Dan De Ga Deva",
@@ -7290,7 +7463,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Veṅkaṭeśa"
+      "Veṅkaṭeśa",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Kshirabdhishayana — Shribhashya Mangala",
@@ -7839,7 +8014,15 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Guru",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Hanumān",
+      "Śiva",
+      "Pārvatī",
+      "Lakṣmī",
+      "Viṣṇu",
+      "Rādhā",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -7885,7 +8068,9 @@ window.BHAKTI_SONGS = [
       "Viṣṇu",
       "Rāma",
       "Śiva",
-      "Hanumān"
+      "Hanumān",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -7920,7 +8105,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Kṛṣṇa",
-      "Guru"
+      "Guru",
+      "Rāma",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -7944,80 +8131,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 204
-  },
-  {
-    "slug": "leke-bhesh-fakirika",
-    "queueId": "bf55ac57",
-    "title": "Leke Bhesh Fakirika",
-    "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Rāma",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Rama",
-      "Kishore Gagare & Jayshree Medhi",
-      "Pramod Medhi",
-      "Suresh–Sanjay"
-    ],
-    "writer": "Kishore Gagare & Jayshree Medhi",
-    "singer": "Pramod Medhi",
-    "composer": "Suresh–Sanjay",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-bhesh-fakirika.mp3",
-        "type": "audio/mpeg"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-bhesh-fakirika.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śirḍī Sāī",
-    "queueNumber": 117
-  },
-  {
-    "slug": "o-shirdi-ke-sai",
-    "queueId": "54f4f422",
-    "title": "O Shirdi Ke Sai",
-    "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
-    "languageTags": [
-      "Hindi"
-    ],
-    "subjectTags": [
-      "Śirḍī Sāī",
-      "Rāma",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Shirdi Sai",
-      "Sirdi Sai",
-      "Rama",
-      "Kishore Gagare & Jayshree Medhi",
-      "Pramod Medhi",
-      "Suresh–Sanjay"
-    ],
-    "writer": "Kishore Gagare & Jayshree Medhi",
-    "singer": "Pramod Medhi",
-    "composer": "Suresh–Sanjay",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdi-ke-sai.mp3",
-        "type": "audio/mpeg"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdi-ke-sai.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śirḍī Sāī",
-    "queueNumber": 157
   },
   {
     "slug": "sukh-ka-dukh-ka",
@@ -8055,6 +8168,82 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Śirḍī Sāī",
     "queueNumber": 209
+  },
+  {
+    "slug": "leke-bhesh-fakirika",
+    "queueId": "bf55ac57",
+    "title": "Leke Bhesh Fakirika",
+    "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Rāma",
+      "Guru",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Rama",
+      "Kishore Gagare & Jayshree Medhi",
+      "Pramod Medhi",
+      "Suresh–Sanjay"
+    ],
+    "writer": "Kishore Gagare & Jayshree Medhi",
+    "singer": "Pramod Medhi",
+    "composer": "Suresh–Sanjay",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-bhesh-fakirika.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/leke-bhesh-fakirika.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śirḍī Sāī",
+    "queueNumber": 117
+  },
+  {
+    "slug": "o-shirdi-ke-sai",
+    "queueId": "54f4f422",
+    "title": "O Shirdi Ke Sai",
+    "credit": "Kishore Gagare & Jayshree Medhi · Pramod Medhi · Suresh–Sanjay",
+    "languageTags": [
+      "Hindi"
+    ],
+    "subjectTags": [
+      "Śirḍī Sāī",
+      "Rāma",
+      "Guru",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Shirdi Sai",
+      "Sirdi Sai",
+      "Rama",
+      "Kishore Gagare & Jayshree Medhi",
+      "Pramod Medhi",
+      "Suresh–Sanjay"
+    ],
+    "writer": "Kishore Gagare & Jayshree Medhi",
+    "singer": "Pramod Medhi",
+    "composer": "Suresh–Sanjay",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdi-ke-sai.mp3",
+        "type": "audio/mpeg"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/o-shirdi-ke-sai.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śirḍī Sāī",
+    "queueNumber": 157
   },
   {
     "slug": "thoda-dhyan-laga",
@@ -8108,7 +8297,8 @@ window.BHAKTI_SONGS = [
       "Śirḍī Sāī",
       "Rāma",
       "Guru",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -8149,7 +8339,12 @@ window.BHAKTI_SONGS = [
       "Kṛṣṇa",
       "Viṣṇu",
       "Jagannātha",
-      "Guru"
+      "Guru",
+      "Sītā",
+      "Lakṣmī",
+      "Śiva",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Morning Arati",
@@ -8184,7 +8379,11 @@ window.BHAKTI_SONGS = [
       "Rāma",
       "Viṣṇu",
       "Guru",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Sītā",
+      "Lakṣmī",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -8227,7 +8426,10 @@ window.BHAKTI_SONGS = [
       "Sarasvatī",
       "Guru",
       "Kṛṣṇa",
-      "Śakti"
+      "Śakti",
+      "Sītā",
+      "Lakṣmī",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -8303,7 +8505,10 @@ window.BHAKTI_SONGS = [
       "Śirḍī Sāī",
       "Rāma",
       "Śiva",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa",
+      "Viṭṭhala",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Sai Sai Bol",
@@ -8379,7 +8584,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Narasimha"
+      "Narasimha",
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Ghatikacaladi Ninta Shri Hanumanta",
@@ -8410,7 +8617,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Kṛṣṇa",
-      "Guru"
+      "Guru",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Tōlu Tōlu Tōlu Ranga",
@@ -8441,7 +8649,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Lakṣmī",
-      "Śakti"
+      "Śakti",
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Bhagyada Laksmi Baramma",
@@ -8477,7 +8687,9 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Vengkatacala Nilayam",
@@ -8516,7 +8728,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Gaṇeśa",
       "Viṣṇu",
-      "Guru"
+      "Guru",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Ganesha",
@@ -8549,7 +8762,8 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Hanumān"
+      "Hanumān",
+      "Viṣṇu"
     ],
     "searchAliases": [
       "Sanyjivana Giridhara",
@@ -8580,7 +8794,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Kṛṣṇa",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Śiva"
     ],
     "searchAliases": [
       "Krshna",
@@ -8613,7 +8828,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Sarasvatī",
-      "Śakti"
+      "Śakti",
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Sharanembe Vani",
@@ -8644,7 +8861,11 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa",
+      "Lakṣmī",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Vishnu",
@@ -8675,7 +8896,11 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Lakṣmī",
+      "Śiva",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Vishnu",
@@ -8707,7 +8932,10 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Viṣṇu",
-      "Veṅkaṭeśa"
+      "Veṅkaṭeśa",
+      "Kṛṣṇa",
+      "Śiva",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Nōdire Vengkataramanana",
@@ -8743,7 +8971,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Gaṇeśa",
       "Rāma",
-      "Śakti"
+      "Śakti",
+      "Sītā",
+      "Pārvatī",
+      "Śiva"
     ],
     "searchAliases": [
       "Ganesha",
@@ -8801,38 +9032,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 223
   },
   {
-    "slug": "janani-main-na-jiyun-bin-rama",
-    "queueId": "d1ab933f",
-    "title": "Janani Main Na Jiyun Bin Rama",
-    "credit": "Tulsīdās · Rajan Mishra & Sajan Mishra",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Rāma"
-    ],
-    "searchAliases": [
-      "Rama",
-      "Tulsidas · Rajan Mishra & Sajan Mishra",
-      "Tulsidas",
-      "Tulasīdāsa",
-      "Tulasidas",
-      "Tulsi Das",
-      "Goswami Tulsidas"
-    ],
-    "writer": "Tulsīdās",
-    "singer": "Rajan Mishra & Sajan Mishra",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janani-main-na-jiyun-bin-rama.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Rāma",
-    "queueNumber": 90
-  },
-  {
     "slug": "jaagiye-raghunath-kunwar",
     "queueId": "c982912d",
     "title": "Jaagiye Raghunath Kunwar",
@@ -8861,6 +9060,40 @@ window.BHAKTI_SONGS = [
     "queueNumber": 243
   },
   {
+    "slug": "janani-main-na-jiyun-bin-rama",
+    "queueId": "d1ab933f",
+    "title": "Janani Main Na Jiyun Bin Rama",
+    "credit": "Tulsīdās · Rajan Mishra & Sajan Mishra",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Sītā",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Rama",
+      "Tulsidas · Rajan Mishra & Sajan Mishra",
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Rajan Mishra & Sajan Mishra",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/janani-main-na-jiyun-bin-rama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāma",
+    "queueNumber": 90
+  },
+  {
     "slug": "shri-ramachandra-kripalu-bhajman",
     "queueId": "477088da",
     "title": "Shri Ramachandra Kripalu Bhajman",
@@ -8871,7 +9104,10 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śiva",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -8900,7 +9136,9 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -8919,33 +9157,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 36
   },
   {
-    "slug": "jai-shiva-shankar-jai-gangadhar",
-    "queueId": "d547507b",
-    "title": "Jai Shiva Shankar Jai Gangadhar",
-    "credit": "Rajan Mishra & Sajan Mishra",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Śiva"
-    ],
-    "searchAliases": [
-      "Shiva",
-      "Siva"
-    ],
-    "writer": "",
-    "singer": "Rajan Mishra & Sajan Mishra",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shiva-shankar-jai-gangadhar.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Śiva",
-    "queueNumber": 86
-  },
-  {
     "slug": "he-shivshankar-he-karunakar",
     "queueId": "249cfecd",
     "title": "He Śivśaṅkar He Karuṇākar",
@@ -8954,7 +9165,9 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "He Shivshangkar He Karunakar",
@@ -8981,6 +9194,34 @@ window.BHAKTI_SONGS = [
     "queueNumber": 68
   },
   {
+    "slug": "jai-shiva-shankar-jai-gangadhar",
+    "queueId": "d547507b",
+    "title": "Jai Shiva Shankar Jai Gangadhar",
+    "credit": "Rajan Mishra & Sajan Mishra",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Śiva",
+      "Rāma"
+    ],
+    "searchAliases": [
+      "Shiva",
+      "Siva"
+    ],
+    "writer": "",
+    "singer": "Rajan Mishra & Sajan Mishra",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jai-shiva-shankar-jai-gangadhar.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Śiva",
+    "queueNumber": 86
+  },
+  {
     "slug": "sheesh-gang-ardhang-parvati",
     "queueId": "decf09b9",
     "title": "Sheesh Gang Ardhang Parvati",
@@ -8990,7 +9231,8 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śiva",
-      "Śakti"
+      "Śakti",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Shiva",
@@ -9021,7 +9263,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Guru",
       "Nirguṇa",
-      "Gurbāṇī"
+      "Gurbāṇī",
+      "Viṣṇu",
+      "Śiva"
     ],
     "searchAliases": [
       "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",
@@ -9062,7 +9306,9 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Rudrashtakam",
@@ -9293,7 +9539,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Bajrang Baanka",
@@ -9514,7 +9762,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Viṣṇu",
       "Kṛṣṇa",
-      "Guru"
+      "Guru",
+      "Lakṣmī",
+      "Rāma",
+      "Śakti"
     ],
     "searchAliases": [
       "Visnu Sahasranama",
@@ -9549,7 +9800,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Rāma",
-      "Guru"
+      "Guru",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -9586,7 +9839,9 @@ window.BHAKTI_SONGS = [
       "Śirḍī Sāī",
       "Rāma",
       "Viṣṇu",
-      "Guru"
+      "Guru",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai",
@@ -9626,7 +9881,12 @@ window.BHAKTI_SONGS = [
       "Rāma",
       "Viṣṇu",
       "Śakti",
-      "Guru"
+      "Guru",
+      "Śiva",
+      "Gaṇeśa",
+      "Sītā",
+      "Pārvatī",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Hanuman",
@@ -9668,7 +9928,9 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Om Namah Shivaya: Damaru Pani Shula Pani",
@@ -9703,7 +9965,11 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Kārtikeya"
+      "Kārtikeya",
+      "Śiva",
+      "Gaṇeśa",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Prajnya Vivardhana Stotra",
@@ -9767,7 +10033,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Rāma",
       "Śiva",
-      "Hanumān"
+      "Hanumān",
+      "Sītā",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Siyavar Ramchandra Ki Jai",
@@ -9829,7 +10098,9 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Rudrashtakam",
@@ -9964,7 +10235,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Gurbāṇī",
       "Rāma",
-      "Guru"
+      "Guru",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Mo Kau Tari Le Rama",
@@ -10093,37 +10365,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 17
   },
   {
-    "slug": "chala-patha-ra-geeta",
-    "queueId": "269f7912",
-    "title": "Chala Patha Ra Geeta",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Guru"
-    ],
-    "searchAliases": [
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chala-patha-ra-geeta.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chala-patha-ra-geeta.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Guru",
-    "queueNumber": 29
-  },
-  {
     "slug": "guru-charana-re-karo-dhyana",
     "queueId": "1206cf7c",
     "title": "Guru Caraṇare Kara Dhyāna",
@@ -10156,37 +10397,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Guru",
     "queueNumber": 55
-  },
-  {
-    "slug": "he-guru-gobinda-gosain",
-    "queueId": "3260fa4b",
-    "title": "He Guru Gobinda Gosain",
-    "credit": "Shri Chandra Bhanu Satpathy",
-    "languageTags": [
-      "Odia"
-    ],
-    "subjectTags": [
-      "Guru"
-    ],
-    "searchAliases": [
-      "Satpathy Baba",
-      "Chandra Bhanu Satpathy"
-    ],
-    "writer": "Shri Chandra Bhanu Satpathy",
-    "singer": "Shri Chandra Bhanu Satpathy",
-    "composer": "Shri Chandra Bhanu Satpathy",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-guru-gobinda-gosain.webm",
-        "type": "audio/webm; codecs=opus"
-      },
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-guru-gobinda-gosain.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Guru",
-    "queueNumber": 64
   },
   {
     "slug": "he-sadaguru-tume-mor-haatku-dhara",
@@ -10376,6 +10586,70 @@ window.BHAKTI_SONGS = [
     "queueNumber": 205
   },
   {
+    "slug": "chala-patha-ra-geeta",
+    "queueId": "269f7912",
+    "title": "Chala Patha Ra Geeta",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chala-patha-ra-geeta.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/chala-patha-ra-geeta.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Guru",
+    "queueNumber": 29
+  },
+  {
+    "slug": "he-guru-gobinda-gosain",
+    "queueId": "3260fa4b",
+    "title": "He Guru Gobinda Gosain",
+    "credit": "Shri Chandra Bhanu Satpathy",
+    "languageTags": [
+      "Odia"
+    ],
+    "subjectTags": [
+      "Guru",
+      "Kṛṣṇa"
+    ],
+    "searchAliases": [
+      "Satpathy Baba",
+      "Chandra Bhanu Satpathy"
+    ],
+    "writer": "Shri Chandra Bhanu Satpathy",
+    "singer": "Shri Chandra Bhanu Satpathy",
+    "composer": "Shri Chandra Bhanu Satpathy",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-guru-gobinda-gosain.webm",
+        "type": "audio/webm; codecs=opus"
+      },
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/he-guru-gobinda-gosain.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Guru",
+    "queueNumber": 64
+  },
+  {
     "slug": "shri-kshetra-biharii",
     "queueId": "dbc29b39",
     "title": "Shri Kshetra Biharii",
@@ -10385,7 +10659,11 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Jagannātha",
-      "Nirguṇa"
+      "Nirguṇa",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Jagannatha",
@@ -10418,7 +10696,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Jagannātha",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Lakṣmī",
+      "Śakti"
     ],
     "searchAliases": [
       "Jagannatha",
@@ -10452,7 +10732,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Jagannātha",
       "Viṣṇu",
-      "Śakti"
+      "Śakti",
+      "Kṛṣṇa"
     ],
     "searchAliases": [
       "Jagannatha",
@@ -11172,7 +11453,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śakti",
-      "Kālī"
+      "Kālī",
+      "Pārvatī",
+      "Śiva"
     ],
     "searchAliases": [
       "Shakti",
@@ -11201,7 +11484,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śakti",
       "Śiva",
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Arati Kijai Shailasuta Ki",
@@ -11511,7 +11795,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śāradā Devī",
       "Śakti",
-      "Guru"
+      "Guru",
+      "Pārvatī"
     ],
     "searchAliases": [
       "Shri Sharada Devi",
@@ -11555,7 +11840,9 @@ window.BHAKTI_SONGS = [
       "Śakti",
       "Vaiṣṇo Devī",
       "Śiva",
-      "Kālī"
+      "Kālī",
+      "Pārvatī",
+      "Durgā"
     ],
     "searchAliases": [
       "Siddhakunyjika Stotram",
@@ -11595,7 +11882,10 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śirḍī Sāī",
       "Rāma",
-      "Guru"
+      "Guru",
+      "Kṛṣṇa",
+      "Rādhā",
+      "Śakti"
     ],
     "searchAliases": [
       "Shirdi Sai Dvarakamai",
@@ -11854,7 +12144,8 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Kṛṣṇa"
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Aane Banditamma",
@@ -11887,7 +12178,8 @@ window.BHAKTI_SONGS = [
       "Tamil"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Śiva"
     ],
     "searchAliases": [
       "Uyarvara Uyarnalam",
@@ -11987,7 +12279,14 @@ window.BHAKTI_SONGS = [
       "Kannada"
     ],
     "subjectTags": [
-      "Śiva"
+      "Śiva",
+      "Pārvatī",
+      "Kṛṣṇa",
+      "Viṣṇu",
+      "Rāma",
+      "Lakṣmī",
+      "Viṭṭhala",
+      "Śakti"
     ],
     "searchAliases": [
       "Candracuda Shivashangkara",
@@ -12125,7 +12424,8 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Aruṇācala",
       "Śiva",
-      "Guru"
+      "Guru",
+      "Gaṇeśa"
     ],
     "searchAliases": [
       "Arunacala Aksharamanamalai",
@@ -12162,7 +12462,9 @@ window.BHAKTI_SONGS = [
       "Marathi"
     ],
     "subjectTags": [
-      "Viṣṇu"
+      "Viṣṇu",
+      "Kṛṣṇa",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Deh Jao Athava Raho",
@@ -12210,7 +12512,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Rāma",
-      "Hanumān"
+      "Hanumān",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Maine Tere Hi Bharose",
@@ -12518,7 +12822,9 @@ window.BHAKTI_SONGS = [
       "Awadhi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12550,7 +12856,9 @@ window.BHAKTI_SONGS = [
       "Awadhi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12582,7 +12890,9 @@ window.BHAKTI_SONGS = [
       "Awadhi"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12615,7 +12925,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12650,7 +12962,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12676,6 +12990,39 @@ window.BHAKTI_SONGS = [
     "queueNumber": 169
   },
   {
+    "slug": "jayati-jayati-shri-ganesh",
+    "queueId": "38af146f",
+    "title": "Jayati, Jayati, Shri Ganesh",
+    "credit": "Umakant & Ramakant Gundecha",
+    "languageTags": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Gaṇeśa",
+      "Pārvatī",
+      "Śiva",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Ganesha",
+      "Ganesa",
+      "Umakant",
+      "Ramakant Gundecha"
+    ],
+    "writer": "",
+    "singer": "Umakant & Ramakant Gundecha",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayati-jayati-shri-ganesh-56492ee6b8139eb0b232a68799d17e9589a5ea21d9b5acdd97f95cbfba85741d.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Gaṇeśa",
+    "queueNumber": 238
+  },
+  {
     "slug": "ekdant-gajvadan",
     "queueId": "9cdf86cd",
     "title": "Ekdant Gajvadan",
@@ -12685,7 +13032,10 @@ window.BHAKTI_SONGS = [
       "Sanskrit"
     ],
     "subjectTags": [
-      "Gaṇeśa"
+      "Gaṇeśa",
+      "Śiva",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Ganesha",
@@ -12705,36 +13055,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Gaṇeśa",
     "queueNumber": 237
-  },
-  {
-    "slug": "jayati-jayati-shri-ganesh",
-    "queueId": "38af146f",
-    "title": "Jayati, Jayati, Shri Ganesh",
-    "credit": "Umakant & Ramakant Gundecha",
-    "languageTags": [
-      "Hindi",
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Gaṇeśa"
-    ],
-    "searchAliases": [
-      "Ganesha",
-      "Ganesa",
-      "Umakant",
-      "Ramakant Gundecha"
-    ],
-    "writer": "",
-    "singer": "Umakant & Ramakant Gundecha",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jayati-jayati-shri-ganesh-56492ee6b8139eb0b232a68799d17e9589a5ea21d9b5acdd97f95cbfba85741d.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Gaṇeśa",
-    "queueNumber": 238
   },
   {
     "slug": "paluke-bangaramayena",
@@ -12832,6 +13152,42 @@ window.BHAKTI_SONGS = [
     "queueNumber": 171
   },
   {
+    "slug": "jaake-priya-na-rama",
+    "queueId": "67bc5d29",
+    "title": "Jaake Priya Na Rama",
+    "credit": "Tulsīdās · Veena Sahasrabuddhe",
+    "languageTags": [
+      "Braj"
+    ],
+    "subjectTags": [
+      "Rāma",
+      "Guru",
+      "Sītā",
+      "Kṛṣṇa",
+      "Śakti"
+    ],
+    "searchAliases": [
+      "Rama",
+      "Tulsidas · Veena Sahasrabuddhe",
+      "Tulsidas",
+      "Tulasīdāsa",
+      "Tulasidas",
+      "Tulsi Das",
+      "Goswami Tulsidas"
+    ],
+    "writer": "Tulsīdās",
+    "singer": "Veena Sahasrabuddhe",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaake-priya-na-rama.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "subtitle": "Rāma",
+    "queueNumber": 71
+  },
+  {
     "slug": "baithe-hain-rama-lakhan",
     "queueId": "ea0a037b",
     "title": "Baithe Hain Rama Lakhan",
@@ -12840,7 +13196,9 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12872,7 +13230,9 @@ window.BHAKTI_SONGS = [
       "Braj"
     ],
     "subjectTags": [
-      "Rāma"
+      "Rāma",
+      "Sītā",
+      "Śakti"
     ],
     "searchAliases": [
       "Rama",
@@ -12894,39 +13254,6 @@ window.BHAKTI_SONGS = [
     ],
     "subtitle": "Rāma",
     "queueNumber": 104
-  },
-  {
-    "slug": "jaake-priya-na-rama",
-    "queueId": "67bc5d29",
-    "title": "Jaake Priya Na Rama",
-    "credit": "Tulsīdās · Veena Sahasrabuddhe",
-    "languageTags": [
-      "Braj"
-    ],
-    "subjectTags": [
-      "Rāma",
-      "Guru"
-    ],
-    "searchAliases": [
-      "Rama",
-      "Tulsidas · Veena Sahasrabuddhe",
-      "Tulsidas",
-      "Tulasīdāsa",
-      "Tulasidas",
-      "Tulsi Das",
-      "Goswami Tulsidas"
-    ],
-    "writer": "Tulsīdās",
-    "singer": "Veena Sahasrabuddhe",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/jaake-priya-na-rama.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "subtitle": "Rāma",
-    "queueNumber": 71
   },
   {
     "slug": "dev-bade-data-bade",
@@ -12971,7 +13298,9 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śiva",
-      "Rāma"
+      "Rāma",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -13006,7 +13335,9 @@ window.BHAKTI_SONGS = [
     "subjectTags": [
       "Śiva",
       "Rāma",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Pārvatī",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -13112,7 +13443,10 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Hanumān",
-      "Vāyu"
+      "Vāyu",
+      "Rāma",
+      "Śiva",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Hanuman",
@@ -13141,7 +13475,10 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Lakṣmī",
-      "Śakti"
+      "Śakti",
+      "Śiva",
+      "Viṣṇu",
+      "Viṭṭhala"
     ],
     "searchAliases": [
       "Shri Mahalakumi Dēviyē",
@@ -13195,77 +13532,6 @@ window.BHAKTI_SONGS = [
     "queueNumber": 272
   },
   {
-    "slug": "devimahatmya-chapter-12",
-    "queueId": "bea54621",
-    "title": "Devīmāhātmyam — Adhyāya 12",
-    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
-    "languageTags": [
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Devimahatmyam — Adhyaya 12",
-      "Shakti",
-      "Sakti",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Durga Saptashati Chapter 12",
-      "Chandi Path",
-      "Devi Mahatmya",
-      "Vyasa"
-    ],
-    "writer": "Vyāsa",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devimahatmya-chapter-12-c1dae93db39074c0997cd420fdbdc73cfbd1f4268e9dfb11935c27c0631979a0.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "ensemble": "Shri Mata Vaishno Devi Bhawan",
-    "subtitle": "Śakti",
-    "queueNumber": 387
-  },
-  {
-    "slug": "bhagavati-stotram",
-    "queueId": "75bbc561",
-    "title": "Śrībhagavatīstotram",
-    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
-    "languageTags": [
-      "Sanskrit"
-    ],
-    "subjectTags": [
-      "Śakti",
-      "Vaiṣṇo Devī"
-    ],
-    "searchAliases": [
-      "Shribhagavatistotram",
-      "Sribhagavatistotram",
-      "Shakti",
-      "Sakti",
-      "Vyasa",
-      "Vaishno Devi",
-      "Vaisno Devi",
-      "Jaya Bhagavati Devi Namo Varade"
-    ],
-    "writer": "Vyāsa",
-    "singer": "",
-    "composer": "",
-    "audioSources": [
-      {
-        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagavati-stotram-ec186d819f24523b8638a2b5820aa3fb2feceb9d88bceafb1513adfa59b65b28.m4a",
-        "type": "audio/mp4"
-      }
-    ],
-    "ensemble": "Shri Mata Vaishno Devi Bhawan",
-    "subtitle": "Śakti",
-    "queueNumber": 372
-  },
-  {
     "slug": "narayani-stuti",
     "queueId": "8f6ef7f0",
     "title": "Nārāyaṇī Stuti",
@@ -13278,7 +13544,12 @@ window.BHAKTI_SONGS = [
       "Vaiṣṇo Devī",
       "Durgā",
       "Lakṣmī",
-      "Sarasvatī"
+      "Sarasvatī",
+      "Gaṇeśa",
+      "Viṣṇu",
+      "Śiva",
+      "Pārvatī",
+      "Kālī"
     ],
     "searchAliases": [
       "Shakti",
@@ -13309,6 +13580,45 @@ window.BHAKTI_SONGS = [
     "ensemble": "Shri Mata Vaishno Devi Bhawan",
     "subtitle": "Śakti",
     "queueNumber": 376
+  },
+  {
+    "slug": "devimahatmya-chapter-12",
+    "queueId": "bea54621",
+    "title": "Devīmāhātmyam — Adhyāya 12",
+    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Lakṣmī",
+      "Durgā",
+      "Kālī"
+    ],
+    "searchAliases": [
+      "Devimahatmyam — Adhyaya 12",
+      "Shakti",
+      "Sakti",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Durga Saptashati Chapter 12",
+      "Chandi Path",
+      "Devi Mahatmya",
+      "Vyasa"
+    ],
+    "writer": "Vyāsa",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/devimahatmya-chapter-12-c1dae93db39074c0997cd420fdbdc73cfbd1f4268e9dfb11935c27c0631979a0.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
+    "subtitle": "Śakti",
+    "queueNumber": 387
   },
   {
     "slug": "ya-devi-sarvabhuteshu",
@@ -13355,6 +13665,43 @@ window.BHAKTI_SONGS = [
     "queueNumber": 388
   },
   {
+    "slug": "bhagavati-stotram",
+    "queueId": "75bbc561",
+    "title": "Śrībhagavatīstotram",
+    "credit": "Vyāsa · Shri Mata Vaishno Devi Bhawan",
+    "languageTags": [
+      "Sanskrit"
+    ],
+    "subjectTags": [
+      "Śakti",
+      "Vaiṣṇo Devī",
+      "Viṣṇu",
+      "Śiva"
+    ],
+    "searchAliases": [
+      "Shribhagavatistotram",
+      "Sribhagavatistotram",
+      "Shakti",
+      "Sakti",
+      "Vyasa",
+      "Vaishno Devi",
+      "Vaisno Devi",
+      "Jaya Bhagavati Devi Namo Varade"
+    ],
+    "writer": "Vyāsa",
+    "singer": "",
+    "composer": "",
+    "audioSources": [
+      {
+        "src": "https://github.com/Balbudhi/bhakti/releases/download/media-v1/bhagavati-stotram-ec186d819f24523b8638a2b5820aa3fb2feceb9d88bceafb1513adfa59b65b28.m4a",
+        "type": "audio/mp4"
+      }
+    ],
+    "ensemble": "Shri Mata Vaishno Devi Bhawan",
+    "subtitle": "Śakti",
+    "queueNumber": 372
+  },
+  {
     "slug": "namah-parvatipati",
     "queueId": "5ddbe89b",
     "title": "Namaḥ Pārvatīpati",
@@ -13364,7 +13711,12 @@ window.BHAKTI_SONGS = [
     ],
     "subjectTags": [
       "Śiva",
-      "Viṣṇu"
+      "Viṣṇu",
+      "Pārvatī",
+      "Kṛṣṇa",
+      "Lakṣmī",
+      "Rāma",
+      "Śakti"
     ],
     "searchAliases": [
       "Shiva",
@@ -13466,4 +13818,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "bf36668bfe5a3d9a8f80a909ddf86278212ca087aab602bbb4d17db10264e5f9";
+window.BHAKTI_SHUFFLE_REVISION = "9748395beb400cafaf40a9fdf9bd5bfc9c13f8482758f7f8008b4ebc3658002f";

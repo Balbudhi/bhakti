@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Gaṇeśa",
     "Viṣṇu",
-    "Guru"
+    "Guru",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Ganesha",

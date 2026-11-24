@@ -1970,23 +1970,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhāgabata ṭuṅgi ghare lo guru dibya rūpa diśe",
-    "english": "{0:In the Bhagavata}{1: tungi}{2: room,}{3: O,}{4: the Guru's}{5: divine}{6: form}{7: appears.}",
+    "english": "{2:In the }{0:Bhāgavata }{1:prayer hall,}{3: O,}{4: the Guru’s}{5: divine}{6: form}{7: appears.}",
     "words": [
       {
         "roman": "Bhāgabata",
-        "gloss": "Bhāgavata (sacred scripture / sanctuary)",
+        "gloss": "Bhāgavata, the sacred scripture read in the prayer hall",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ṭuṅgi",
-        "gloss": "village prayer room / sacred pavilion",
+        "gloss": "village prayer hall",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "ghare",
-        "gloss": "in the room / sanctuary of",
+        "gloss": "in the room; in the hall",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -9,7 +9,10 @@ window.SONG_META = {
   "languages": [
     "Hindi"
   ],
-  "subjectTags": [],
+  "subjectTags": [
+    "Viṣṇu",
+    "Śiva"
+  ],
   "searchAliases": [
     "Hari Om Sharan",
     "Murli Manohar Swarup"

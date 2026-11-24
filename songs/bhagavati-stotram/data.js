@@ -16,7 +16,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Vaiṣṇo Devī"
+    "Vaiṣṇo Devī",
+    "Viṣṇu",
+    "Śiva"
   ],
   "searchAliases": [
     "Shribhagavatistotram",

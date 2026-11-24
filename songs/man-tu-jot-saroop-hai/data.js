@@ -16,7 +16,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gurbāṇī",
-    "Guru"
+    "Guru",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Man Tum Joti Sarupu Hai",

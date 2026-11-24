@@ -10,7 +10,14 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śyāmalā",
-    "Śakti"
+    "Śakti",
+    "Kṛṣṇa",
+    "Śiva",
+    "Lakṣmī",
+    "Viṣṇu",
+    "Pārvatī",
+    "Durgā",
+    "Gaṇeśa"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=qN3ALz_7vKg",
   "searchAliases": [

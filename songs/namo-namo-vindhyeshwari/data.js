@@ -15,7 +15,10 @@ window.SONG_META = {
     "Viṣṇu",
     "Śiva",
     "Sarasvatī",
-    "Lakṣmī"
+    "Lakṣmī",
+    "Durgā",
+    "Rādhā",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Shakti",
@@ -1300,7 +1303,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ramā rādhikā śyāmā kālī | tū hī mātu santana pratipālī ||",
-    "english": "{0:Rama, }{1:Radhika, }{2:Shyama, }{3:and Kali}—{4:you }{5:alone, }{6:O Mother, }{7,8:are the protector of the saints.}",
+    "english": "{0:Ramā, }{1:Rādhikā, }{2:Śyāmā, }{3:and Kālī}—{4:you }{5:alone, }{6:O Mother, }{7,8:are the protector of the saints.}",
     "words": [
       {
         "roman": "ramā",

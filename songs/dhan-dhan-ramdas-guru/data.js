@@ -449,7 +449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sikhī atai saṅgatī pārbrahmu kari namaskāriā",
-    "english": "{0:The disciples }{1:and }{2:the congregations }{5:have bowed to You, }{4:recognizing You as }{3:Pārbrahm.}",
+    "english": "{0:The disciples }{1:and }{2:the congregations }{5:have bowed to You, }{4:recognizing You as }{3:the supreme divine reality.}",
     "words": [
       {
         "roman": "Sikhī",
@@ -471,7 +471,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pārbrahmu",
-        "gloss": "Supreme Brahman, the highest divine reality; para means supreme, and Brahman the great",
+        "gloss": "the supreme divine reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -515,11 +515,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pārbrahmu kari namaskāriā",
-    "english": "{1:Recognizing You as }{0:Pārbrahm, }{2:they have bowed to You.}",
+    "english": "{1:Recognizing You as }{0:the supreme divine reality, }{2:they have bowed to You.}",
     "words": [
       {
         "roman": "Pārbrahmu",
-        "gloss": "Supreme Brahman, the highest divine reality; para means supreme, and Brahman the great",
+        "gloss": "the supreme divine reality",
         "concept_key": "",
         "preserve_in_english": false
       },

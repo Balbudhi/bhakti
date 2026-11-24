@@ -12,7 +12,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śakti",
     "Viṣṇu",
-    "Śiva"
+    "Śiva",
+    "Durgā",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Jaya Durge Durgati Pariharini",

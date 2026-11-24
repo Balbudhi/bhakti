@@ -9,7 +9,8 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Jagannātha"
+    "Jagannātha",
+    "Viṣṇu"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=K_zLigS4OKk",
   "searchAliases": [
@@ -37,7 +38,7 @@ window.SONG_LINES = {
   "l001": {
     "source": "ଆହେ ନୀଳ ଶଇଳ ପ୍ରବଳ ମତ୍ତ ବାରଣ",
     "roman": "āhe nīḷa śaiḷa prabaḷa matta bāraṇa",
-    "english": "{0:O} {2:Nīḷa }{1:Śaiḷa}, {3:mighty} {5:elephant} {4:in rut},",
+    "english": "{0:O} {1:Nīḷa }{2:Śaiḷa}, {3:mighty} {5:elephant} {4:in rut},",
     "words": [
       {
         "roman": "āhe",
@@ -167,7 +168,7 @@ window.SONG_LINES = {
   "l003": {
     "source": "ଆହେ ନୀଳ ଶଇଳ",
     "roman": "āhe nīḷa śaiḷa",
-    "english": "{0:O} {2:Nīḷa }{1:Śaiḷa}!",
+    "english": "{0:O} {1:Nīḷa }{2:Śaiḷa}!",
     "words": [
       {
         "roman": "āhe",

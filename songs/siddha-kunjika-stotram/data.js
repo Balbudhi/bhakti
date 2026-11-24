@@ -18,7 +18,9 @@ window.SONG_META = {
     "Śakti",
     "Vaiṣṇo Devī",
     "Śiva",
-    "Kālī"
+    "Kālī",
+    "Pārvatī",
+    "Durgā"
   ],
   "searchAliases": [
     "Siddhakunyjika Stotram",
@@ -504,7 +506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na sūktaṁ nāpi dhyānaṁ ca na nyāso na ca vārcanam",
-    "english": "{0,1:nor a hymn of praise}{2,3,4: or meditation,}{5,6: the placing of mantras on the body,}{7,8,9: or worship is required.}",
+    "english": "{0,1:nor a hymn of praise}{2,3,4: or meditation,}{5,6: the placing of sacred formulas on the body,}{7,8,9: or worship is required.}",
     "words": [
       {
         "roman": "na",
@@ -544,7 +546,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nyāso",
-        "gloss": "ritual placing of mantras on the body: nyāsaḥ",
+        "gloss": "ritual placing of sacred formulas on the body: nyāsaḥ",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2035,7 +2037,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vicce cābhayadā nityaṁ namaste mantrarūpiṇi",
-    "english": "{0:Vicce—}{2:ever}{1: giving fearlessness;}{3: homage to you}{4: whose form is the mantra.}",
+    "english": "{0:Vicce—}{2:ever}{1: giving fearlessness;}{3: homage to you}{4: whose form is the sacred formula.}",
     "words": [
       {
         "roman": "vicce",
@@ -2063,7 +2065,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mantrarūpiṇi",
-        "gloss": "O you whose form is the mantra",
+        "gloss": "O you whose form is the sacred formula",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3163,11 +3165,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mantrasiddhiṁ kuruṣva me",
-    "english": "{1:bring}{0: the mantra to fulfilment}{2: for me.}",
+    "english": "{1:bring}{0: the sacred formula to fulfilment}{2: for me.}",
     "words": [
       {
         "roman": "mantrasiddhiṁ",
-        "gloss": "accomplishment/effectiveness of the mantra",
+        "gloss": "accomplishment/effectiveness of the sacred formula",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3235,7 +3237,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "idaṁ tu kuñjikāstotraṁ mantrajāgartihetave",
-    "english": "{0,1:This}{3: Hymn}{2: of the Little Key}{6: is for}{5: awakening}{4: the mantra.}",
+    "english": "{0,1:This}{3: Hymn}{2: of the Little Key}{6: is for}{5: awakening}{4: the sacred formula.}",
     "words": [
       {
         "roman": "idaṁ",
@@ -3263,7 +3265,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mantra",
-        "gloss": "the sacred formula, mantra",
+        "gloss": "the sacred formula, sacred formula",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -4,7 +4,9 @@ window.SONG_META = {
   "singer": "Dr. Vidyabhushana",
   "composer": "Dr. Vidyabhushana",
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Kṛṣṇa",
+    "Śiva"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=JdtBenxAEyI",
   "searchAliases": [

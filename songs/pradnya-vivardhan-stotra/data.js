@@ -12,7 +12,11 @@ window.SONG_META = {
     "Sanskrit"
   ],
   "subjectTags": [
-    "Kārtikeya"
+    "Kārtikeya",
+    "Śiva",
+    "Gaṇeśa",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Prajnya Vivardhana Stotra",
@@ -149,7 +153,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "asya śrīprajñāvivardhanastotramantrasya sanatkumāra ṛṣiḥ",
-    "english": "{0:Of this }{1:sacred }{2:wisdom-}{3:expanding }{4:hymn-}{5:mantra, }{6:Sanatkumāra }{7:is the seer.}",
+    "english": "{0:Of this }{1:sacred }{2:wisdom-}{3:expanding }{4:hymn }{5:used as a sacred formula, }{6:Sanatkumāra }{7:is the seer.}",
     "words": [
       {
         "roman": "asya",
@@ -183,7 +187,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mantrasya",
-        "gloss": "of the mantra; genitive",
+        "gloss": "of the sacred formula; mantra in the ritual designation of this hymn",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -469,11 +473,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yogīśvaro mahāsenaḥ kārtikeyo'gninandanaḥ |",
-    "english": "{1:Lord }{0:of yoga, }{3:leader of the }{2:great }{3:army, }{4:Kārtikeya, }{6:the delight }{5:of Agni,}",
+    "english": "{1:Lord }{0:of those who practice spiritual discipline, }{3:leader of the }{2:great }{3:army, }{4:Kārtikeya, }{6:the delight }{5:of Agni,}",
     "words": [
       {
         "roman": "yog",
-        "gloss": "yogins, practitioners of yoga; yogin, joined to īśvara",
+        "gloss": "practitioners of spiritual discipline; yogins, from yogin joined to īśvara",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -641,7 +645,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāṅgeyastāmracūḍaśca brahmacārī śikhidhvajaḥ |",
-    "english": "{0:Son of Gaṅgā, }{1:rooster-crested, }{2:and }{3:chaste seeker of Brahman, }{4:peacock-}{5:bannered;}",
+    "english": "{0:Son of Gaṅgā, }{1:rooster-crested, }{2:and }{3:celibate student, }{4:peacock-}{5:bannered;}",
     "words": [
       {
         "roman": "gāṅgeyas",
@@ -663,7 +667,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmacārī",
-        "gloss": "celibate student of Brahman",
+        "gloss": "celibate student; brahmacārī",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1021,7 +1025,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śarajanmā gaṇādhīśapūrvajo muktimārgakṛt |",
-    "english": "{1:Born }{0:in the reed-thicket, }{4:elder brother }{3:of the lord }{2:of Gaṇas, }{7:creator }{6:of the path }{5:to liberation;}",
+    "english": "{1:Born }{0:in the reed-thicket, }{4:elder brother }{3:of the lord }{2:of the attendant hosts, }{7:creator }{6:of the path }{5:to liberation;}",
     "words": [
       {
         "roman": "śara",
@@ -1037,7 +1041,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gaṇ",
-        "gloss": "the Gaṇas, Śiva’s attendant hosts; gaṇa joined a + a",
+        "gloss": "of the attendant hosts; gaṇa, the hosts whose lord is Gaṇeśa",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1377,7 +1381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mahāmantramayānīti mama nāmānukīrtanam |",
-    "english": "{5:Through the chanting of }{3:my }{4:names, }{2:which consist }{0:of great }{1:mantras,}",
+    "english": "{5:Through the chanting of }{3:my }{4:names, }{2:which consist }{0:of great }{1:sacred formulas,}",
     "words": [
       {
         "roman": "mahā",

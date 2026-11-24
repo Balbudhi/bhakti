@@ -594,7 +594,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jahā̃ karm chūtā hai puṇya ko",
-    "english": "{0:Where }{1:karma }{2,3:touches }{4,5:spiritual merit,}",
+    "english": "{0:Where }{1:action }{2,3:touches }{4,5:spiritual merit,}",
     "words": [
       {
         "roman": "Jahā̃",
@@ -604,9 +604,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "karm",
-        "gloss": "action and its consequences",
+        "gloss": "action; deeds",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "chūtā",
@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aur dharm chūtā hai bhakti ko",
-    "english": "{0:and }{1:dharma }{2,3:touches }{4,5:devotion,}",
+    "english": "{0:and }{1:righteous conduct }{2,3:touches }{4,5:devotion,}",
     "words": [
       {
         "roman": "Aur",
@@ -687,9 +687,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharm",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "righteous conduct",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "chūtā",

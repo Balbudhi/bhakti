@@ -12,7 +12,8 @@ window.SONG_META = {
   "subjectTags": [
     "Jagannātha",
     "Viṣṇu",
-    "Śakti"
+    "Śakti",
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Jagannatha",
@@ -1252,7 +1253,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṣṭame guhāri kali kāṭa aṣṭapāśa / māyāpīṛita bhaktara āhe abināśa",
-    "english": "{0:On the eighth,}{2: I made}{1: an earnest plea:}{3: sever}{4: the eight bonds}{6: of the devotee}{5: afflicted by māyā,}{7: O}{8: Imperishable One.}",
+    "english": "{0:On the eighth,}{2: I made}{1: an earnest plea:}{3: sever}{4: the eight bonds}{6: of the devotee}{5: afflicted by deceptive worldly appearances,}{7: O}{8: Imperishable One.}",
     "words": [
       {
         "roman": "aṣṭame",
@@ -1286,7 +1287,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyāpīṛita",
-        "gloss": "afflicted by worldly appearance (māyā)",
+        "gloss": "afflicted by deceptive worldly appearances",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1371,7 +1372,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aṣṭame guhāri kali kāṭa aṣṭapāśa / māyāpīṛita bhaktara āhe abināśa",
-    "english": "{0:On the eighth,}{2: I made}{1: an earnest plea:}{3: sever}{4: the eight bonds}{6: of the devotee}{5: afflicted by māyā,}{7: O}{8: Imperishable One.}",
+    "english": "{0:On the eighth,}{2: I made}{1: an earnest plea:}{3: sever}{4: the eight bonds}{6: of the devotee}{5: afflicted by deceptive worldly appearances,}{7: O}{8: Imperishable One.}",
     "words": [
       {
         "roman": "aṣṭame",
@@ -1405,7 +1406,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyāpīṛita",
-        "gloss": "afflicted by worldly appearance (māyā)",
+        "gloss": "afflicted by deceptive worldly appearances",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1502,7 +1503,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nabama pāhāce dṛśya hele nabagraha / yoṛahaste chanti ṭhiā cāhiṁ tuma muhaṁ",
-    "english": "{0:On the ninth}{1: step,}{4: the nine planets}{3: became}{2: visible;}{6: they are}{7: standing}{5: with folded hands,}{8: gazing upon}{9: your}{10: face.}",
+    "english": "{0:On the ninth}{1: step,}{4: the nine planetary deities}{3: became}{2: visible;}{6: they are}{7: standing}{5: with folded hands,}{8: gazing upon}{9: your}{10: face.}",
     "words": [
       {
         "roman": "nabama",
@@ -1530,7 +1531,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nabagraha",
-        "gloss": "the nine planetary deities (Navagrahas)",
+        "gloss": "the nine planetary deities",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2615,7 +2616,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ṣoṛaśa pāhāce mātā ṣoṛaśa debīṅku / smarili sṛṣṭira mūḷa ṣoṛaśa śaktiṅku",
-    "english": "{0:On the sixteenth}{1: step,}{5: I remembered}{3: the sixteen}{2: Mother}{4: Goddesses,}{8: the sixteen}{7: primal}{9: Shaktis}{6: of creation.}",
+    "english": "{0:On the sixteenth}{1: step,}{5: I remembered}{3: the sixteen}{2: Mother}{4: Goddesses,}{8: the sixteen}{7: primal}{9: divine powers}{6: of creation.}",
     "words": [
       {
         "roman": "ṣoṛaśa",
@@ -2673,7 +2674,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śaktiṅku",
-        "gloss": "to the primal powers (Shaktis)",
+        "gloss": "the divine powers",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3115,7 +3116,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "uṇe'iśa pāhācare patitapābana / mana byākuḷa ati labhibāku darśana",
-    "english": "{0:On the nineteenth}{1: step}{2: is Patitapabana;}{3: my heart}{5: is exceedingly}{4: anxious}{6: to attain}{7: darshan.}",
+    "english": "{0:On the nineteenth}{1: step}{2: is Patitapābana;}{3: my heart}{5: is exceedingly}{4: anxious}{6: to obtain}{7: a sacred vision of him.}",
     "words": [
       {
         "roman": "uṇe'iśa",
@@ -3161,7 +3162,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana",
-        "gloss": "sacred sight / vision of the deity",
+        "gloss": "sacred vision of the deity",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3466,7 +3467,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "eko'iśi pāhāce praṇāmī debadebī / ḍākili darśana di'a jagannātha swāmī",
-    "english": "{0:On the twenty-first}{1: step,}{2: having bowed to}{3: the gods and goddesses,}{4: I called out,}{6: grant}{5: darshan,}{7: O Jagannath}{8: Swami!}",
+    "english": "{0:On the twenty-first}{1: step,}{2: having bowed to}{3: the gods and goddesses,}{4: I called out,}{6: grant}{5: a sacred vision of yourself,}{7: O Jagannātha}{8: Svāmī!}",
     "words": [
       {
         "roman": "eko'iśi",
@@ -3500,7 +3501,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "darśana",
-        "gloss": "sacred vision / sight of yourself",
+        "gloss": "sacred vision of yourself",
         "concept_key": "",
         "preserve_in_english": false
       },

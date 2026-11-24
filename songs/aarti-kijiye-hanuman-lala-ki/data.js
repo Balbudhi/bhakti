@@ -11,7 +11,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Hanumān",
-    "Rāma"
+    "Rāma",
+    "Sītā",
+    "Viṣṇu",
+    "Śakti"
   ],
   "searchAliases": [
     "Hanuman",
@@ -100,17 +103,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī kījai hanumāna lalā kī । duṣṭa dalana raghunātha kalā kī ॥",
-    "english": "{0,1:Perform the aarti}{4: of }{3:beloved }{2:Hanuman, }{5,6:crusher of the wicked and }{8:radiant manifestation }{7,9:of Raghunath.}",
+    "english": "{0,1:Offer worship with lights}{4: to }{3:beloved }{2:Hanumān, }{5,6:crusher of the wicked and }{8:radiant manifestation }{7,9:of Raghunātha.}",
     "words": [
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kījai",
-        "gloss": "should be performed; let us perform",
+        "gloss": "offer; perform",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -128,7 +131,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kī",
-        "gloss": "of",
+        "gloss": "of; marks the recipient of the worship",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -201,17 +204,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āratī kījai hanumāna lalā kī ॥",
-    "english": "{0,1:Perform the aarti}{4: of }{3:beloved }{2:Hanuman.}",
+    "english": "{0,1:Offer worship with lights}{4: to }{3:beloved }{2:Hanumān.}",
     "words": [
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kījai",
-        "gloss": "should be performed; let us perform",
+        "gloss": "offer; perform",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -229,7 +232,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kī",
-        "gloss": "of",
+        "gloss": "of; marks the recipient of the worship",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1268,7 +1271,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sura nara muni āratī utāreṁ ।",
-    "english": "{0:Gods, }{1:mortals, }{2:and sages }{4:perform }{3:the aarti,}",
+    "english": "{0:Gods, }{1:mortals, }{2:and sages }{4:perform }{3:worship with lights,}",
     "words": [
       {
         "roman": "sura",
@@ -1290,7 +1293,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1434,7 +1437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kañcana thāra kapūra lau chāī । āratī karata añjanā māī ॥",
-    "english": "{0:On a golden }{1:platter, }{2:the camphor }{3:flame }{4:radiates; }{8:mother }{7:Anjana }{6:performs }{5:the aarti.}",
+    "english": "{0:On a golden }{1:platter, }{2:the camphor }{3:flame }{4:radiates; }{8:mother }{7:Añjanā }{6:performs }{5:worship with lights.}",
     "words": [
       {
         "roman": "kañcana",
@@ -1468,7 +1471,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1529,7 +1532,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo hanumānajī kī āratī gāvai ।",
-    "english": "{0:Whoever }{4:sings }{3:the aarti }{2:of }{1:Hanuman,}",
+    "english": "{0:Whoever }{4:sings }{3:the hymn of worship }{2:of }{1:Hanumān,}",
     "words": [
       {
         "roman": "jo",
@@ -1551,7 +1554,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "hymn sung during worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },

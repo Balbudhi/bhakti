@@ -762,11 +762,11 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Aiveṅ jāye nā jind kite rul mā, māye merī bānh phaṛ lai",
-    "english": "{2:Lest }{3:this life }{0:somehow }{1,5:be ruined }{4:somewhere, }{6:O Mother} — {7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
+    "english": "{2,4:Lest }{3:this life }{1,5:be ruined }{0:for nothing, }{6:O Mother} — {7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
     "words": [
       {
         "roman": "Aiveṅ",
-        "gloss": "somehow, just like that, needlessly"
+        "gloss": "for nothing; needlessly"
       },
       {
         "roman": "jāye",
@@ -782,7 +782,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kite",
-        "gloss": "somewhere"
+        "gloss": "lest; in case (with nā, expressing apprehension)"
       },
       {
         "roman": "rul",

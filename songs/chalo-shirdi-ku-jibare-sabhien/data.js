@@ -671,7 +671,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bāje re mahurī khoḷa karatāḷa raṇaśiṅgā bherī bājā",
-    "english": "{0:There resound, }{1:O, }{2:the reed pipe, }{3:khol, }{4:cymbals, }{5:battle horn, }{6:kettledrum, }{7:and musical instruments!}",
+    "english": "{0:There resound, }{1:O, }{2:the reed pipe, }{3:the double-headed drum, }{4:cymbals, }{5:battle horn, }{6:kettledrum, }{7:and musical instruments!}",
     "words": [
       {
         "roman": "bāje",
@@ -693,7 +693,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "khoḷa",
-        "gloss": "high-pitched Odia double-headed drum",
+        "gloss": "double-headed drum",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1063,19 +1063,19 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yoga samādhire sāi yogīrāja śoichanti mandirare",
-    "english": "{0:In yoga }{1:samādhi, }{2:Sai, }{3:the king of yogis, }{4:rests }{5:in the temple.}",
+    "english": "{0:In yogic }{1:meditative absorption, }{2:Sāī, }{3:the king of yogis, }{4:rests }{5:in the temple.}",
     "words": [
       {
         "roman": "yoga",
-        "gloss": "discipline or union",
+        "gloss": "yogic; pertaining to spiritual discipline",
         "concept_key": "yoga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "samādhire",
-        "gloss": "meditative absorption",
+        "gloss": "in meditative absorption",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "sāi",
@@ -1152,7 +1152,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pratimā rūpare birājita sāi samādhi mandira ghare",
-    "english": "{1:In the form }{0:of a sculpted image, }{3:Sai }{2:sits resplendent }{6:in the chamber }{4:of the samādhi }{5:temple.}",
+    "english": "{1:In the form }{0:of a sculpted image, }{3:Sāī }{2:sits resplendent }{6:in the chamber }{4:of the tomb }{5:temple.}",
     "words": [
       {
         "roman": "pratimā",
@@ -1182,7 +1182,7 @@ window.SONG_LINES = {
         "roman": "samādhi",
         "gloss": "tomb; here Sāī Bābā’s burial shrine",
         "concept_key": "samadhi",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mandira",

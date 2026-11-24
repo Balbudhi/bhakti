@@ -1255,7 +1255,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mōha māyā kē bandhana khōlō hē sāīṁ apanī śaraṇa mēṁ lē lō",
-    "english": "{4:Untie }{3:the bonds }{2:of }{0:delusion }{1:and māyā; }{5:O }{6:Sai, }{10,11:take me }{7,9:into your own }{8:refuge.}",
+    "english": "{4:Untie }{3:the bonds }{2:of }{0:delusion }{1:and worldly enchantment; }{5:O }{6:Sāī, }{10,11:take me }{7,9:into your own }{8:refuge.}",
     "words": [
       {
         "roman": "mōha",
@@ -1265,9 +1265,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "a context-dependent power or condition of worldly appearance",
+        "gloss": "worldly enchantment; the captivating power of appearances",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "kē",

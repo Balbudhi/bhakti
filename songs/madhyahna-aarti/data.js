@@ -15,7 +15,11 @@ window.SONG_META = {
     "Rāma",
     "Viṣṇu",
     "Guru",
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Sītā",
+    "Lakṣmī",
+    "Viṭṭhala",
+    "Śakti"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -153,7 +157,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śrī saccidānanda sadgurū sāīnātha mahārāja kī jaya",
-    "english": "{5,6:Victory to }{0:holy }{1:Saccidānanda }{2:Sadguru }{3:Sainath }{4:Maharaj!}",
+    "english": "{5,6:Victory to }{0:holy }{3:Sāīnātha }{4:Mahārāja, }{2:the true spiritual teacher, }{1:whose nature is being, consciousness and bliss!}",
     "words": [
       {
         "roman": "Śrī",
@@ -163,13 +167,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "saccidānanda",
-        "gloss": "existence-consciousness-bliss",
+        "gloss": "being, consciousness and bliss",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sadgurū",
-        "gloss": "true spiritual teacher",
+        "gloss": "the true spiritual teacher",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -930,7 +934,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī sāībābā saukhyadātāra jīvā",
-    "english": "{0:Aarti to }{1:Sai Baba, }{2:the bestower of bliss }{3:upon the jīva,}",
+    "english": "{0:Offering lights to }{1:Sāī Bābā, }{2:the bestower of bliss }{3:upon the living soul,}",
     "words": [
       {
         "roman": "Āratī",
@@ -952,9 +956,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "jīvā",
-        "gloss": "individual living being; embodied self",
+        "gloss": "upon the living soul",
         "concept_key": "jiva",
-        "preserve_in_english": true
+        "preserve_in_english": false
       }
     ],
     "grammarNote": "Saukhyadātāra is an agentive compound noun (saukhya + dātṛ). Jīvā carries the dative/oblique ending -ā."
@@ -1695,7 +1699,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kaliyugīṁ avatāra saguṇa parabrahma sācāra",
-    "english": "{0:In the Kali age, }{1:an incarnation—}{4:truly }{2:the manifest }{3:supreme Brahman,}",
+    "english": "{0:In the Kali age, }{1:an incarnation—}{4:truly }{2:the manifest }{3:supreme reality,}",
     "words": [
       {
         "roman": "Kaliyugīṁ",
@@ -1717,7 +1721,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "parabrahma",
-        "gloss": "supreme Brahman; absolute reality",
+        "gloss": "the supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2633,7 +2637,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Avatarasī tū yetāṁ dharmāte glānī",
-    "english": "{1:You }{0:incarnate }{4:when decline }{2:comes to }{3:dharma,}",
+    "english": "{1:You }{0:incarnate }{4:when decline }{2:comes to }{3:right order,}",
     "words": [
       {
         "roman": "Avatarasī",
@@ -2655,9 +2659,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmāte",
-        "gloss": "right order, duty, or sustaining principle",
+        "gloss": "right order; the sustaining moral order",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "glānī",
@@ -3774,13 +3778,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paramāyā mohita jana mocana jhaṇi vhāve",
-    "english": "{2:May the people }{1:deluded by }{0:primal māyā }{4:swiftly }{3,5:be liberated.}",
+    "english": "{2:May the people }{1:deluded by }{0:the supreme power of worldly appearance }{4:swiftly }{3,5:be liberated.}",
     "words": [
       {
         "roman": "paramāyā",
-        "gloss": "delusive power of worldly appearance; supreme māyā",
+        "gloss": "the supreme power of worldly appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mohita",
@@ -4847,7 +4851,7 @@ window.SONG_LINES = {
   },
   "line-060": {
     "source": "त्वमेव माता च पिता त्वमेव",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "त्वमेव",
@@ -4918,7 +4922,7 @@ window.SONG_LINES = {
   },
   "line-061": {
     "source": "त्वमेव बन्धुश्च सखा त्वमेव",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "त्वमेव",
@@ -4977,7 +4981,7 @@ window.SONG_LINES = {
   },
   "line-062": {
     "source": "त्वमेव विद्या द्रविणं त्वमेव",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "त्वमेव",
@@ -5036,7 +5040,7 @@ window.SONG_LINES = {
   },
   "line-063": {
     "source": "त्वमेव सर्वं मम देव देव",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "त्वमेव",
@@ -5107,7 +5111,7 @@ window.SONG_LINES = {
   },
   "line-064": {
     "source": "कायेन वाचा मनसेन्द्रियैर्वा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कायेन",
@@ -5178,7 +5182,7 @@ window.SONG_LINES = {
   },
   "line-065": {
     "source": "बुद्ध्यात्मना वा प्रकृतिस्वभावात्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "बुद्ध्या",
@@ -5250,7 +5254,7 @@ window.SONG_LINES = {
   },
   "line-066": {
     "source": "करोमि यद्यत् सकलं परस्मै",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "करोमि",
@@ -5309,7 +5313,7 @@ window.SONG_LINES = {
   },
   "line-067": {
     "source": "नारायणायेति समर्पयामि",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नारायणायेति",
@@ -5344,7 +5348,7 @@ window.SONG_LINES = {
   },
   "line-068": {
     "source": "अच्युतं केशवं रामनारायणं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अच्युतं",
@@ -5391,7 +5395,7 @@ window.SONG_LINES = {
   },
   "line-069": {
     "source": "कृष्णदामोदरं वासुदेवं हरिम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कृष्ण",
@@ -5450,7 +5454,7 @@ window.SONG_LINES = {
   },
   "line-070": {
     "source": "श्रीधरं माधवं गोपिकावल्लभं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्रीधरं",
@@ -5509,7 +5513,7 @@ window.SONG_LINES = {
   },
   "line-071": {
     "source": "जानकीनायकं रामचंद्रं भजे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "जानकीनायकं",
@@ -5556,7 +5560,7 @@ window.SONG_LINES = {
   },
   "line-072": {
     "source": "हरे राम हरे राम राम राम हरे हरे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "हरे",
@@ -5663,7 +5667,7 @@ window.SONG_LINES = {
   },
   "line-073": {
     "source": "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "हरे",
@@ -5770,7 +5774,7 @@ window.SONG_LINES = {
   },
   "line-074": {
     "source": "श्री गुरुदेव दत्त",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्री",
@@ -5817,7 +5821,7 @@ window.SONG_LINES = {
   },
   "line-075": {
     "source": "हरिः ॐ यज्ञेन यज्ञमयजन्त देवास्तानि धर्माणि प्रथमान्यासन्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "हरिः",
@@ -5881,7 +5885,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hariḥ oṃ yajñena yajñamayajanta devāstāni dharmāṇi prathamānyāsan",
-    "english": "{0:Harih }{1:Om. }{2:With sacrifice }{5:the gods }{4:sacrificed }{3:unto sacrifice; }{6:those }{9:were }{8:the first }{7:dharmas.}",
+    "english": "{0:Harih }{1:Om. }{2:With sacrifice }{5:the gods }{4:sacrificed }{3:unto sacrifice; }{6:those }{9:were }{8:the first }{7:sacred ordinances.}",
     "words": [
       {
         "roman": "hariḥ",
@@ -5927,9 +5931,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "dharmāṇi",
-        "gloss": "right orders, duties, or sustaining principles; primary cosmic ordinances",
+        "gloss": "sacred ordinances; established sacred orders",
         "concept_key": "dharma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "prathamāny",
@@ -5948,7 +5952,7 @@ window.SONG_LINES = {
   },
   "line-076": {
     "source": "ते ह नाकं महिमानः सचन्त यत्र पूर्वे साध्याः सन्ति देवाः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ते",
@@ -6079,7 +6083,7 @@ window.SONG_LINES = {
   },
   "line-077": {
     "source": "ॐ राजाधिराजाय प्रसह्यसाहिने",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -6150,7 +6154,7 @@ window.SONG_LINES = {
   },
   "line-078": {
     "source": "नमो वयं वैश्रवणाय कुर्महे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नमो",
@@ -6209,7 +6213,7 @@ window.SONG_LINES = {
   },
   "line-079": {
     "source": "स मे कामान्कामकामाय मह्यम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स",
@@ -6292,7 +6296,7 @@ window.SONG_LINES = {
   },
   "line-080": {
     "source": "कामेश्वरो वैश्रवणो दधातु",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कामेश्वरो",
@@ -6339,7 +6343,7 @@ window.SONG_LINES = {
   },
   "line-081": {
     "source": "कुबेराय वैश्रवणाय",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कुबेराय",
@@ -6374,7 +6378,7 @@ window.SONG_LINES = {
   },
   "line-082": {
     "source": "महाराजाय नमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "महाराजाय",
@@ -6409,7 +6413,7 @@ window.SONG_LINES = {
   },
   "line-083": {
     "source": "ॐ स्वस्ति",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "ॐ",
@@ -6444,7 +6448,7 @@ window.SONG_LINES = {
   },
   "line-084": {
     "source": "साम्राज्यं भौज्यं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "साम्राज्यं",
@@ -6479,7 +6483,7 @@ window.SONG_LINES = {
   },
   "line-085": {
     "source": "स्वाराज्यं वैराज्यं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्वाराज्यं",
@@ -6514,7 +6518,7 @@ window.SONG_LINES = {
   },
   "line-086": {
     "source": "पारमेष्ठ्यं राज्यं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "पारमेष्ठ्यं",
@@ -6549,7 +6553,7 @@ window.SONG_LINES = {
   },
   "line-087": {
     "source": "महाराज्यमाधिपत्यमयं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "महा",
@@ -6608,7 +6612,7 @@ window.SONG_LINES = {
   },
   "line-088": {
     "source": "समन्तपर्यायी",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "समन्त",
@@ -6643,7 +6647,7 @@ window.SONG_LINES = {
   },
   "line-089": {
     "source": "स्यात् सार्वभौमः सार्वायुष आन्तादापरार्धात्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्यात्",
@@ -6726,7 +6730,7 @@ window.SONG_LINES = {
   },
   "line-090": {
     "source": "पृथिव्यै समुद्रपर्यन्ताया",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "पृथिव्यै",
@@ -6773,7 +6777,7 @@ window.SONG_LINES = {
   },
   "line-091": {
     "source": "एकराळिति तदप्येष श्लोकोऽभिगीतो",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "एकराळिति",
@@ -6820,7 +6824,7 @@ window.SONG_LINES = {
   },
   "line-092": {
     "source": "मरुतः परिवेष्टारो मरुत्तस्यावसन्गृहे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "मरुतः",
@@ -10135,7 +10139,7 @@ window.SONG_LINES = {
   },
   "line-137": {
     "source": "सदा सस्वरूपं चिदानन्दकन्दं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सदा",
@@ -10218,7 +10222,7 @@ window.SONG_LINES = {
   },
   "line-138": {
     "source": "जगत्सम्भवस्थानसंहारहेतुम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "जग",
@@ -10289,7 +10293,7 @@ window.SONG_LINES = {
   },
   "line-139": {
     "source": "स्वभक्तेच्छया मानुषं दर्शयन्तं",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्व",
@@ -10360,7 +10364,7 @@ window.SONG_LINES = {
   },
   "line-140": {
     "source": "नमामीश्वरं सद्गुरुं साईनाथम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नमामीश्वरं",
@@ -10407,7 +10411,7 @@ window.SONG_LINES = {
   },
   "line-141": {
     "source": "भवध्वान्तविध्वंसमार्तण्डमीड्यं मनोवागतीतं मुनिर्ध्यानगम्यम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "भव",
@@ -10550,7 +10554,7 @@ window.SONG_LINES = {
   },
   "line-142": {
     "source": "जगद्व्यापकं निर्मलं निर्गुणं त्वाम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "जगद्व्यापकं",
@@ -10609,7 +10613,7 @@ window.SONG_LINES = {
   },
   "line-143": {
     "source": "भवाम्भोधिमग्नार्थितानां जनानां स्वपादाश्रितानां स्वभक्तिप्रियाणाम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "भवा",
@@ -10752,7 +10756,7 @@ window.SONG_LINES = {
   },
   "line-144": {
     "source": "समुद्धारणार्थं कलौ सम्भवन्तम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "समुद्धारणा",
@@ -10811,7 +10815,7 @@ window.SONG_LINES = {
   },
   "line-145": {
     "source": "सदानिम्बवृक्षस्य मूलाधिवासात् सुधास्राविणं तिक्तमप्यप्रियन्तम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सदा",
@@ -10954,7 +10958,7 @@ window.SONG_LINES = {
   },
   "line-146": {
     "source": "तरुं कल्पवृक्षाधिकं साधयन्तम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "तरुं",
@@ -11025,7 +11029,7 @@ window.SONG_LINES = {
   },
   "line-147": {
     "source": "सदा कल्पवृक्षस्य तस्याधिमूले भवद्भावबुद्ध्या सपर्यादिसेवाम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सदा",
@@ -11168,7 +11172,7 @@ window.SONG_LINES = {
   },
   "line-148": {
     "source": "नृणां कुर्वतां भुक्तिमुक्तिप्रदन्तम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "नृणां",
@@ -11239,7 +11243,7 @@ window.SONG_LINES = {
   },
   "line-149": {
     "source": "अनेकाश्रुतातर्क्यलीलाविलासैः समाविष्कृतेशान भास्वत्प्रभावम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अनेका",
@@ -11358,7 +11362,7 @@ window.SONG_LINES = {
   },
   "line-150": {
     "source": "अहम्भावहीनं प्रसन्नात्मभावम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अहम्भाव",
@@ -11429,7 +11433,7 @@ window.SONG_LINES = {
   },
   "line-151": {
     "source": "सतां विश्रमाराममेवाभिरामं सदा सज्जनैः संस्तुतं सन्नमद्भिः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सतां",
@@ -11548,7 +11552,7 @@ window.SONG_LINES = {
   },
   "line-152": {
     "source": "जनामोददं भक्तभद्रप्रदन्तम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "जना",
@@ -11631,7 +11635,7 @@ window.SONG_LINES = {
   },
   "line-153": {
     "source": "अजन्माद्यमेकं परब्रह्म साक्षात् स्वयं सम्भवं राममेवावतीर्णम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अजन्मा",
@@ -11701,7 +11705,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ajanmādyamekaṃ parabrahma sākṣāt svayaṃ sambhavaṃ rāmamevāvatīrṇam",
-    "english": "{0:The birthless, }{1:beginningless, }{2:and one }{3:Supreme }{4:Brahman, }{5:visibly in person, }{6:himself }{7:manifested, }{8:Rama }{9:himself }{10:descended,}",
+    "english": "{0:The birthless, }{1:primordial, }{2:and one }{3:Supreme }{4:Reality, }{5:visibly in person, }{6:himself }{7:manifested, }{8:Rāma }{9:himself }{10:descended,}",
     "words": [
       {
         "roman": "ajanm",
@@ -11711,7 +11715,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ādyam",
-        "gloss": "beginningless, primal (ādyam)",
+        "gloss": "primordial; first",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11729,7 +11733,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahma",
-        "gloss": "Brahman, the absolute",
+        "gloss": "absolute reality",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -11774,7 +11778,7 @@ window.SONG_LINES = {
   },
   "line-154": {
     "source": "भवद्दर्शनात्सम्पुनीतः प्रभोऽहम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "भव",
@@ -11845,7 +11849,7 @@ window.SONG_LINES = {
   },
   "line-155": {
     "source": "श्रीसाईश कृपानिधेऽखिलनृणां सर्वार्थसिद्धिप्रद",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्रीसाईश",
@@ -11964,7 +11968,7 @@ window.SONG_LINES = {
   },
   "line-156": {
     "source": "युष्मत्पादरजः प्रभावमतुलं धातापि वक्ताऽक्षमः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "युष्म",
@@ -12083,7 +12087,7 @@ window.SONG_LINES = {
   },
   "line-157": {
     "source": "सद्भक्त्या शरणं कृताञ्जलिपुटः सम्प्रापितोऽस्मि प्रभो",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स",
@@ -12190,7 +12194,7 @@ window.SONG_LINES = {
   },
   "line-158": {
     "source": "श्रीमत्सईपरेशपादकमलान्नान्यच्छरण्यं मम",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्रीम",
@@ -12309,7 +12313,7 @@ window.SONG_LINES = {
   },
   "line-159": {
     "source": "साईरूपधर राघवोत्तमं भक्तकामविबुधद्रुमं प्रभुम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "साई",
@@ -12440,7 +12444,7 @@ window.SONG_LINES = {
   },
   "line-160": {
     "source": "माययोपहत्तचित्तशुद्धये चिन्तयाम्यहमहर्निशं मुदा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "माययो",
@@ -12498,11 +12502,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "māyayopahatacittaśuddhaye cintayāmyahamaharniśaṃ mudā",
-    "english": "{3:For the purification }{2:of the mind }{1:afflicted }{0:by māyā, }{5:I }{4:contemplate }{6:day }{7:and night }{8:with joy,}",
+    "english": "{3:For the purification }{2:of the mind }{1:afflicted }{0:by the world's delusive appearance, }{5:I }{4:contemplate }{6:day }{7:and night }{8:with joy,}",
     "words": [
       {
         "roman": "māyay",
-        "gloss": "by māyā (māyayā, instrumental)",
+        "gloss": "by the world's delusive appearance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -12559,7 +12563,7 @@ window.SONG_LINES = {
   },
   "line-161": {
     "source": "शरत्सुधांशुप्रतिमं प्रकाशं कृपात्तपत्रं तव साईनाथ",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "शर",
@@ -12666,7 +12670,7 @@ window.SONG_LINES = {
   },
   "line-162": {
     "source": "त्वदीयपादाब्जसमाश्रितानां स्वच्छायया तापमपाकरोतु",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "त्वदीय",
@@ -12773,7 +12777,7 @@ window.SONG_LINES = {
   },
   "line-163": {
     "source": "उपासनादैवत साईनाथ स्तवैर्मयोपासनिनोस्तुतस्त्वम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "उपासना",
@@ -12880,7 +12884,7 @@ window.SONG_LINES = {
   },
   "line-164": {
     "source": "रमेन्मनो मे तव पादयुग्मे भृङ्गो यथाम्भोजे मकरन्दलुब्धः",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "रमे",
@@ -13023,7 +13027,7 @@ window.SONG_LINES = {
   },
   "line-165": {
     "source": "अनेकजन्मार्जितपापसंक्षयो भवेद्भवत्पादसरोजदर्शनात्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "अनेक",
@@ -13154,7 +13158,7 @@ window.SONG_LINES = {
   },
   "line-166": {
     "source": "क्षमस्व सर्वानपराधपुञ्जान् प्रसीद साईश सद्गुरो दयानिधे",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "क्षमस्व",
@@ -13285,7 +13289,7 @@ window.SONG_LINES = {
   },
   "line-167": {
     "source": "श्रीसाईनाथचरणामृतपूतचित्ताः तत्पादसेवनरताः सततं च भक्त्या",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्री",
@@ -13452,7 +13456,7 @@ window.SONG_LINES = {
   },
   "line-168": {
     "source": "संसारजन्यदुरितौघविनिर्गतास्ते कैवल्यधाम परमं समवाप्नुवन्ति",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "संसार",
@@ -13517,11 +13521,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṃsārajanyaduritaughavinirgatāste kaivalyadhāma paramaṃ samavāpnuvanti",
-    "english": "{4:freed from }{3:the flood }{2:of evils }{1:born }{0:of saṃsāra, }{5:they }{9:attain }{8:the supreme }{7:realm }{6:of absolute liberation.}",
+    "english": "{4:freed from }{3:the flood }{2:of evils }{1:born }{0:of the round of worldly existence, }{5:they }{9:attain }{8:the supreme }{7:realm }{6:of absolute liberation.}",
     "words": [
       {
         "roman": "saṃsāra",
-        "gloss": "saṃsāra, the round of worldly existence",
+        "gloss": "the round of worldly existence",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -13584,7 +13588,7 @@ window.SONG_LINES = {
   },
   "line-169": {
     "source": "स्तोत्रमेतत्पठेद्भक्त्या यो नरस्तन्मनाः सदा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "स्तोत्र",
@@ -13703,7 +13707,7 @@ window.SONG_LINES = {
   },
   "line-170": {
     "source": "सद्गुरोः साईनाथस्य कृपापात्रं भवेद्ध्रुवम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "सद्गुरोः",
@@ -13762,7 +13766,7 @@ window.SONG_LINES = {
   },
   "line-171": {
     "source": "करचरणकृतं वाक्कायजं कर्मजं वा",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "कर",
@@ -13881,7 +13885,7 @@ window.SONG_LINES = {
   },
   "line-172": {
     "source": "श्रवणनयनजं वा मानसं वापराधम्",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "श्रवण",
@@ -13976,7 +13980,7 @@ window.SONG_LINES = {
   },
   "line-173": {
     "source": "विहितमविहितं वा सर्वमेतत्क्षमस्व",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "विहित",
@@ -14059,7 +14063,7 @@ window.SONG_LINES = {
   },
   "line-174": {
     "source": "जय जय करुणाब्धे श्रीप्रभो साईनाथ",
-    "sourceLanguage": "mr",
+    "sourceLanguage": "sa",
     "sourceWords": [
       {
         "text": "जय",
@@ -14259,7 +14263,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rājādhirāja yogirāja parabrahma sāīnātha mahārāja",
-    "english": "{0:King of kings, }{1:king of yogis, }{2:supreme Brahman, }{3:Lord Sai Nath }{4:Maharaj!}",
+    "english": "{0:King of kings, }{1:king of yogis, }{2:the supreme reality, }{3:Lord Sāīnātha }{4:Mahārāja!}",
     "words": [
       {
         "roman": "rājādhirāja",
@@ -14275,7 +14279,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "parabrahma",
-        "gloss": "supreme Brahman",
+        "gloss": "the supreme reality",
         "concept_key": "",
         "preserve_in_english": false
       },

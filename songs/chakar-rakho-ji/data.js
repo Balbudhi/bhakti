@@ -13,7 +13,8 @@ window.SONG_META = {
     "Rajasthani"
   ],
   "subjectTags": [
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Krshna",
@@ -1538,7 +1539,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "harī bhajana ko sādhū āyā",
-    "english": "{3:Sadhus }{4:have come }{2:for }{1:the worship }{0:of Hari,}",
+    "english": "{3:Holy seekers }{4:have come }{2:for }{1:the worship }{0:of Hari,}",
     "words": [
       {
         "roman": "harī",
@@ -1560,7 +1561,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sādhū",
-        "gloss": "holy persons; virtuous seekers; sadhus",
+        "gloss": "holy seekers",
         "concept_key": "",
         "preserve_in_english": false
       },

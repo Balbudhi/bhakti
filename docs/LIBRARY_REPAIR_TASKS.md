@@ -1,5 +1,56 @@
 # Whole-library repair task
 
+## Active owner-directed repair — 23 November 2026
+
+Outcome: accurate, readable source-constrained translations and word meanings,
+correct deity-reference tags, useful common-word search, and the song-page contract
+satisfied by actual readers and callers. Completion flags are review records, not proof.
+
+- [x] Read all 386 current readers / 9,447 unique performed lines in whole-song context;
+  trace suspect English to source and word map; preserve the two protected English baselines.
+- [x] Reopen and repair Prabh Jū, including ambiguous “savior from hell” and divine epithets.
+- [x] Resolve the full subject candidate screen; retain exact-source witnesses for additions
+  and full-text-bound contextual dismissals. Do not conflate name references with theology.
+- [x] Fix ordinary-spelling search and check common words against the actual search consumer;
+  make lyric/word-meaning search available without slowing initial library/player loading.
+- [x] Remove automatic translation completion/rebinding from release mechanics; ensure new
+  build and old generation both apply reviewed tags; enforce tag review in release/CI.
+- [x] Apply only reviewed repairs; preserve source/audio/timing unless a separately evidenced
+  defect requires changing them. Preserve the original shuffle evidence on tag-only changes.
+- [ ] Run relevant regression, contract, profile, trim, assembly and exact stored-onset seek
+  checks; verify desktop/390px in-app Browser when available. Distinguish stored-onset tests
+  from new acoustic verification. Confirm authorized deployment/live output before claiming live.
+
+Priority after the owner’s speed/cost clarification: ship the prepared translation and tag
+repairs first; finish only the small spelling/lyric-search change already underway. Do not
+restart a library-wide audit or launch paid processing.
+
+Current step: prepared changes awaiting the unresolved release checks. 80 readers have 261 English-definition
+repairs, 217 word-map updates and 267 language-label corrections (overlapping across
+526 definitions). Source scripts, Roman text, performance order, timing and audio are
+preserved. Five unsupported shuffle features are reduced with explicit evidence.
+The current ledger has 361 screened readers, 23 with 32 open source questions, and two
+owner-protected readers. No new blanket completion marks were made. Historical claims
+below that every reader was complete are superseded by this evidence, not erased.
+See [the repair report](research/library-repair-2026-11-23.md) and
+`data/translation-review-2026-11-23.json` for exact coverage and open passages.
+
+Next: resolve the recorded release blockers before publication. Misspellings, phonetic
+spellings and half-remembered lyric queries now pass against the actual catalogue.
+Actual callers: song.py build/retag/release,
+legacy pipeline generation, public library search/filter, reader renderer, shuffle publication.
+
+Known unresolved evidence: six historical boundary-review conflicts still make
+`audit_youtube_trims.py` fail (see historical-boundary section below); no current source/audio
+change has resolved them. Browser control currently returns “native pipe closed before
+response” after create/inventory/rebind attempts. Neither is a passing check.
+
+Completed verification: the release runner executed 45 commands; 44 passed and the
+trim audit alone failed. Contract checks cover all 386 readers. Automated line-button
+tests verified 30,640 ready/deferred seeks at stored timestamps, not freshly heard
+onsets. Public assembly and resource integrity passed. Search changes made after that
+run receive focused search and assembled-resource checks before adoption.
+
 ## Focused resolution of the remaining 39 readers — 21 November 2026
 
 The owner authorized integrating and publishing only the 14 prepared readers. They are now integrated: 19 existing English definitions, 10 annotation-only definitions, and two restored Sundarakāṇḍa couplets. Jayagaḷu’s literal stick refrain is preserved. Current registry: 350 finished, 2 protected, 14 pending; those 14 pending readers are deferred at the owner’s request. See [the integration record](research/translation-source-resolution-2026-11-21.md#integration-release). Release assembly and desktop/mobile checks pass; this batch is ready for deployment and live verification. Reuse completed marks; do not reopen the deferred readers without a new request.

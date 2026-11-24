@@ -12,7 +12,10 @@ window.SONG_META = {
   "subjectTags": [
     "Gaṇeśa",
     "Rāma",
-    "Śakti"
+    "Śakti",
+    "Sītā",
+    "Pārvatī",
+    "Śiva"
   ],
   "searchAliases": [
     "Ganesha",
@@ -363,11 +366,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Modaka priya mudamaṅgala dātā",
-    "english": "{1:Fond of }{0:modakas}, {3:giver of }{2:joy and auspiciousness}",
+    "english": "{1:Fond of }{0:sweet dumplings}, {3:giver of }{2:joy and auspiciousness}",
     "words": [
       {
         "roman": "Modaka",
-        "gloss": "sweet dumpling (a sweetmeat favored by Gaṇeśa)",
+        "gloss": "sweet dumplings, a sweetmeat favored by Gaṇeśa",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -10,7 +10,9 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
-    "Śiva"
+    "Śiva",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Shiva",
@@ -533,11 +535,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ḍamarū hara kara bāje",
-    "english": "{0:The damaru }{3:sounds }{2:in }{1:Hara's }{2:hand.}",
+    "english": "{0:The hourglass drum }{3:sounds }{2:in }{1:Hara's }{2:hand.}",
     "words": [
       {
         "roman": "ḍamarū",
-        "gloss": "small hourglass drum associated with Śiva",
+        "gloss": "hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1567,11 +1569,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ḍamarū hara kara ḍamarū hara kara ḍamarū hara kara bāje",
-    "english": "{0:The damaru }{2:in }{1:Hara's }{2:hand, }{3:the damaru }{5:in }{4:Hara's }{5:hand, }{6:the damaru }{8:in }{7:Hara's }{8:hand }{9:sounds.}",
+    "english": "{0:The hourglass drum }{2:in }{1:Hara's }{2:hand, }{3:the hourglass drum }{5:in }{4:Hara's }{5:hand, }{6:the hourglass drum }{8:in }{7:Hara's }{8:hand }{9:sounds.}",
     "words": [
       {
         "roman": "ḍamarū",
-        "gloss": "small hourglass drum associated with Śiva",
+        "gloss": "hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1589,7 +1591,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarū",
-        "gloss": "small hourglass drum associated with Śiva",
+        "gloss": "hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1607,7 +1609,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍamarū",
-        "gloss": "small hourglass drum associated with Śiva",
+        "gloss": "hourglass drum associated with Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Hanumān",
-    "Rāma"
+    "Rāma",
+    "Sītā",
+    "Śakti"
   ],
   "searchAliases": [
     "Rama",

@@ -12,7 +12,10 @@ window.SONG_META = {
   "subjectTags": [
     "Śakti",
     "Viṣṇu",
-    "Lakṣmī"
+    "Lakṣmī",
+    "Pārvatī",
+    "Durgā",
+    "Śiva"
   ],
   "searchAliases": [
     "Bolo Lakshmi Mat Ki Jay!",
@@ -473,23 +476,23 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Umā Ramā Brahmāṇī, tū hī jag kī hai mātā",
-    "english": "{0:Uma, }{1:Rama, }{2:Brahmani—}{3:You }{4:alone }{7:are }{8:the Mother }{5,6:of the universe,}",
+    "english": "{0:Umā, }{1:Ramā, }{2:Brahmāṇī—}{3:You }{4:alone }{7:are }{8:the Mother }{5,6:of the universe,}",
     "words": [
       {
         "roman": "Umā",
-        "gloss": "Goddess Parvati / Shiva's consort",
+        "gloss": "Umā, Pārvatī, the consort of Śiva",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Ramā",
-        "gloss": "Goddess Lakshmi / Vishnu's consort; Ramā means “good fortune” or “splendour”",
+        "gloss": "Ramā, Lakṣmī, the consort of Viṣṇu",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "Brahmāṇī,",
-        "gloss": "Brahmā’s śakti; feminine manifestation of creative power",
+        "gloss": "Brahmāṇī, the feminine manifestation of Brahmā’s creative power",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1147,13 +1150,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Karma prabhāv prakāśinī,",
-    "english": "{2:Revealer of }{1:the power of }{0:karma, }",
+    "english": "{2:Revealer of }{1:the power of }{0:deeds and their consequences, }",
     "words": [
       {
         "roman": "Karma",
-        "gloss": "action and its consequences; cosmic moral cause and effect",
+        "gloss": "deeds and their consequences",
         "concept_key": "karma",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "prabhāv",
@@ -2111,7 +2114,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ye āratī Lakṣmī jī kī, jo koī gātā",
-    "english": "{5,6:For whoever }{7:sings }{0:this }{1:āratī }{4:of }{3:revered }{2:Lakṣmī,}",
+    "english": "{5,6:For whoever }{7:sings }{0:this }{1:hymn of worship }{4:of }{3:revered }{2:Lakṣmī,}",
     "words": [
       {
         "roman": "Ye",
@@ -2121,7 +2124,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āratī",
-        "gloss": "ritual waving of light before a deity; the hymn sung with it",
+        "gloss": "hymn sung during worship with lights",
         "concept_key": "",
         "preserve_in_english": false
       },

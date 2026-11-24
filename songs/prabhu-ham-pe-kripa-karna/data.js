@@ -10,7 +10,8 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Kṛṣṇa"
+    "Kṛṣṇa",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Rama",
@@ -432,7 +433,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gūñjeṅge rāg bankar",
-    "english": "{0:We will resound, }{2:becoming a }{1:rāga,}",
+    "english": "{0:We will resound, }{2:becoming a }{1:melodic mode,}",
     "words": [
       {
         "roman": "gūñjeṅge",
@@ -444,7 +445,7 @@ window.SONG_LINES = {
         "roman": "rāg",
         "gloss": "melodic mode",
         "concept_key": "raga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "bankar",
@@ -656,7 +657,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "har rāginī kī dhun par",
-    "english": "{3,4:To the tune }{2:of }{0:every }{1:ragini,}",
+    "english": "{3,4:To the tune }{2:of }{0:every }{1:melodic mode,}",
     "words": [
       {
         "roman": "har",
@@ -1370,7 +1371,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum soham śabd bankar",
-    "english": "{0:You, }{3:becoming }{2:the sacred word }{1:'Soham',}",
+    "english": "{0:You, }{3:becoming }{2:the sacred utterance }{1:“I am That”,}",
     "words": [
       {
         "roman": "tum",

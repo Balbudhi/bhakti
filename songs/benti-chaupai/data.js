@@ -14,7 +14,9 @@ window.SONG_META = {
   "subjectTags": [
     "Guru",
     "Nirguṇa",
-    "Gurbāṇī"
+    "Gurbāṇī",
+    "Viṣṇu",
+    "Śiva"
   ],
   "searchAliases": [
     "Message to God: Words of a Guru - Amazing Daily Protection Prayer!",

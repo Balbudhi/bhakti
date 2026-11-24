@@ -16,7 +16,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Veṅkaṭeśa"
+    "Veṅkaṭeśa",
+    "Kṛṣṇa",
+    "Śiva",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Nōdire Vengkataramanana",

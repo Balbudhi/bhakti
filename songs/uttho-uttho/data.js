@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śiva",
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Pārvatī",
+    "Śakti"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -22,7 +24,7 @@ window.SONG_META = {
     "Ganesa",
     "Anuradha Paudwal",
     "Sudhanshu",
-    "Shank\u2013Neel"
+    "Shank–Neel"
   ],
   "audioSources": [
     {

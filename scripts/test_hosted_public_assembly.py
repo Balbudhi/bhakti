@@ -41,10 +41,12 @@ class HostedPublicAssembly(unittest.TestCase):
                        'songs/fixture/audio.m4a','songs/fixture/source-notes.txt','songs/fixture/review-candidate.js']
             for name in allowed+forbidden:
                 target=root/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(name)
+            (root/'assets/library.js').write_bytes((ROOT/'assets/library.js').read_bytes())
+            (root/'songs/fixture/data.js').write_text('window.SONG_LINES={};window.SONG_SEQUENCE=[];')
             stale=root/'_site/private-from-old-build.json';stale.parent.mkdir();stale.write_text('private')
             module.assemble_public_site(root)
             actual={str(path.relative_to(root/'_site')) for path in (root/'_site').rglob('*') if path.is_file()}
-            self.assertEqual(actual,set(allowed) | {"assets/release-map.js"})
+            self.assertEqual(actual,set(allowed) | {"assets/release-map.js", "data/search-index.json"})
             for name in allowed:
                 if name != 'sw.js':
                     self.assertEqual((root/'_site'/name).read_bytes(), (root/name).read_bytes())

@@ -19,7 +19,11 @@ window.SONG_META = {
     "Lakṣmī",
     "Narasimha",
     "Śakti",
-    "Guru"
+    "Guru",
+    "Kṛṣṇa",
+    "Viṣṇu",
+    "Śiva",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Durga",

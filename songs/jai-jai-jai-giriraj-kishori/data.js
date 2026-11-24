@@ -10,7 +10,10 @@ window.SONG_META = {
     "Awadhi"
   ],
   "subjectTags": [
-    "Śakti"
+    "Śakti",
+    "Śiva",
+    "Pārvatī",
+    "Gaṇeśa"
   ],
   "searchAliases": [
     "Shakti",

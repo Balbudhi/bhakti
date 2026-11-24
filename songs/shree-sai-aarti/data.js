@@ -13,7 +13,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śirḍī Sāī",
     "Kṛṣṇa",
-    "Guru"
+    "Guru",
+    "Rāma",
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Shirdi Sai",
@@ -2484,7 +2486,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīrūpadharaṁ rāghavottamaṁ bhaktakāmavibudhadrumaṁ prabhum | māyayopahatacittaśuddhaye cintayāmyahamaharniśaṁ mudā ||",
-    "english": "{13:For the purification }{12:of the mind }{11:afflicted }{10:by māyā, }{15:I }{14:meditate }{16:day }{17:and night }{18:with joyful delight }{9:upon the Lord }{2:who wears }{1:the bodily form }{0:of Sai, }{4:the supreme }{3:scion of Raghu, }{7:the celestial }{8:tree that fulfills }{6:the kāma }{5:of devotees.}",
+    "english": "{13:For the purification }{12:of the mind }{11:afflicted }{10:by the power of worldly appearance, }{15:I }{14:meditate }{16:day }{17:and night }{18:with joyful delight }{9:upon the Lord }{2:who wears }{1:the bodily form }{0:of Sāī, }{4:the supreme }{3:scion of Raghu, }{7:the celestial }{8:tree that fulfills }{6:the desires }{5:of devotees.}",
     "words": [
       {
         "roman": "sāī",
@@ -2524,7 +2526,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kāma",
-        "gloss": "desire",
+        "gloss": "desires; wishes of the devotees",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2548,7 +2550,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyay",
-        "gloss": "by māyā, the power of worldly appearance; māyayā joined ā + u",
+        "gloss": "by the power of worldly appearance, which afflicts the mind",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -4226,7 +4228,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rājādhirāja yogirāja parabrahma sāīnātha mahārāja",
-    "english": "{0:King of Kings, }{1:Emperor of yoga, }{2:Supreme Absolute Reality, }{3:Lord Sai, }{4:the Supreme Sovereign!}",
+    "english": "{0:King of Kings, }{1:King of yogis, }{2:Supreme Absolute Reality, }{3:Lord Sāī, }{4:the Supreme Sovereign!}",
     "words": [
       {
         "roman": "rājādhirāja",
@@ -4236,9 +4238,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "yogirāja",
-        "gloss": "king of practitioners of spiritual discipline or union; master of yoga",
+        "gloss": "king of yogis; master of spiritual discipline",
         "concept_key": "yoga",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "parabrahma",

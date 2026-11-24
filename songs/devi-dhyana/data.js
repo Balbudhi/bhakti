@@ -16,7 +16,12 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Vaiṣṇo Devī"
+    "Vaiṣṇo Devī",
+    "Kālī",
+    "Lakṣmī",
+    "Sarasvatī",
+    "Viṣṇu",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Shakti",

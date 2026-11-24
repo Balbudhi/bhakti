@@ -14,7 +14,10 @@ window.SONG_META = {
     "Hanumān",
     "Rāma",
     "Viṣṇu",
-    "Śakti"
+    "Śakti",
+    "Śiva",
+    "Sītā",
+    "Pārvatī"
   ],
   "searchAliases": [
     "Hanuman",
@@ -3168,7 +3171,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "soi saṁpadā bibhīṣanahi sakuci dīnha raghunātha",
-    "english": "{0:that very }{1:sovereignty }{5:the Lord of the Raghus }{4:gave }{2:to Vibhishana }{3:with hesitation.}",
+    "english": "{0:that very }{1:sovereignty }{5:the Lord of the Raghus }{4:gave }{2:to Vibhīṣaṇa }{3:with modesty.}",
     "words": [
       {
         "roman": "soi",
@@ -3184,13 +3187,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "bibhīṣanahi",
-        "gloss": "to Vibhishana",
+        "gloss": "to Vibhīṣaṇa",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sakuci",
-        "gloss": "hesitatingly; with modesty / bashfulness",
+        "gloss": "with modesty; bashfully",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6536,7 +6539,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dīna pukārata tadapi na tyāge",
-    "english": "{1:they cried out }{0:piteously, }{2:yet even then }{3:they did not }{4:spare them.}",
+    "english": "{1:The spies cried out }{0:piteously, }{2:yet even then }{3:the monkeys did not }{4:spare them.}",
     "words": [
       {
         "roman": "dīna",
@@ -6546,7 +6549,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pukārata",
-        "gloss": "crying out; pleading",
+        "gloss": "cried out; here the spies are the subject",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -6564,7 +6567,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "tyāge",
-        "gloss": "released; spared; let go",
+        "gloss": "spared; here the monkeys are the subject",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -16185,7 +16188,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tava prērita māyām̐ upajāē",
-    "english": "{1:Impelled }{0:by You, }{3:they were brought forth }{2:by māyā,}",
+    "english": "{1:Impelled }{0:by You, }{3:they were brought forth }{2:by the creative power of appearance,}",
     "words": [
       {
         "roman": "tava",
@@ -16201,9 +16204,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyām̐",
-        "gloss": "creative power of appearance; cosmic delusive potency",
+        "gloss": "creative power of appearance",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "upajāē",

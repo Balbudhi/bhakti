@@ -352,7 +352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maĩ māyā mẽ ghirā bechārā",
-    "english": "{0:I }am {3:surrounded }{2:by }{1:māyā, }{4:helpless.}",
+    "english": "{0:I }am {3:surrounded }{2:by }{1:worldly enchantment, }{4:helpless.}",
     "words": [
       {
         "roman": "Maĩ",
@@ -362,9 +362,9 @@ window.SONG_LINES = {
       },
       {
         "roman": "māyā",
-        "gloss": "power of worldly appearance and delusion",
+        "gloss": "worldly enchantment; the trapping power of appearance and delusion",
         "concept_key": "maya",
-        "preserve_in_english": true
+        "preserve_in_english": false
       },
       {
         "roman": "mẽ",

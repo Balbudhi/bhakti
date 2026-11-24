@@ -11,7 +11,9 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śakti",
-    "Sarasvatī"
+    "Sarasvatī",
+    "Pārvatī",
+    "Śiva"
   ],
   "searchAliases": [
     "Shakti",
