@@ -40,6 +40,18 @@ preserving the existing order when replayed from the original assessment.
 Catalogue rebuilt through song.py retag; run required checks, publish and compare
 served files. Existing browser waiver/audio-retention decisions apply.
 
+Deployment recovery: runs `45677225845` and `45677631695` passed every CI check
+but deploy-pages v4.0.5 reported no artifacts through its job-scoped Twirp client.
+The preceding REST visibility guard and independent run/name query both returned
+one live `github-pages` artifact. The last successful run used the same action SHA,
+so this is not a tag-release build regression. Pin the official v4.0.0 action
+(`f33f41b675f0ab2dc5a6863c9a170fe83af3571e`) to use the already-verified REST
+run/name lookup. Preserve the same OIDC token, build SHA, environment, permissions,
+artifact count guard, deployment polling and output. Verify unchanged check-command
+selection and YAML structure, then the actual deployment and all served files.
+The pin can be upgraded after the upstream artifact-discovery path is verified.
+
+
 
 ## Owner-reopened English repair — 25 November 2026
 

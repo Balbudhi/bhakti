@@ -96,4 +96,4 @@ jobs:
           echo "Pages artifact did not become visible within 60 seconds."
           exit 1
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@f33f41b675f0ab2dc5a6863c9a170fe83af3571e # v4.0.0: REST artifact lookup; see LIBRARY_REPAIR_TASKS.md
