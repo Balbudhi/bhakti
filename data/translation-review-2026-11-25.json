@@ -33370,7 +33370,7 @@
     }
   ],
   "releaseState": {
-    "stage": "verified locally; publication pending",
+    "stage": "published and verified",
     "browser": "Owner explicitly waived browser verification; file and deployment work continued without Computer Use.",
     "audio": "Existing audio, order and timings preserved; six historical trim-record discrepancies remain.",
     "paidCalls": 0,
@@ -33416,5 +33416,15 @@
       "occurrenceButtons": 15320,
       "readyAndDeferredSeeks": 30640
     }
+  },
+  "publication": {
+    "commit": "3c247d82fc551ac514b456649526de2f78327282",
+    "runId": 45668461047,
+    "conclusion": "success",
+    "publicUrl": "https://bhakti.eeshan.xyz",
+    "servedFilesChecked": 779,
+    "servedFilesMatched": 779,
+    "scope": "386 reader data files, 386 song entrypoints, library entrypoint and six shared runtime/catalogue/search/service-worker resources",
+    "receipt": ".transcription/english-repair-20261125/live-verification.json"
   }
 }

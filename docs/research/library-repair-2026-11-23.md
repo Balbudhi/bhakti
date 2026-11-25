@@ -171,5 +171,10 @@ command is the historical trim audit with the same six documentary discrepancies
 All 386 reader contracts, subject decisions, shuffle profiles, public assembly,
 resource bindings, compilation and whitespace checks pass. The actual reader
 consumer passes 30,640 ready/deferred DOM-click seeks for all 15,320 occurrences;
-these check stored onsets, not a new acoustic judgment. Deployed-byte verification
-is next.
+these check stored onsets, not a new acoustic judgment.
+
+Commit `3c247d82fc551ac514b456649526de2f78327282` is live. Pages run
+`45668461047` succeeded. All 779 checked served files match the prepared release:
+386 reader data files, 386 song entrypoints, the library entrypoint and six shared
+runtime/catalogue/search/service-worker resources. The exact comparison receipt is
+preserved privately in `.transcription/english-repair-20261125/live-verification.json`.

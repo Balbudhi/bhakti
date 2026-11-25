@@ -18,9 +18,9 @@ were contextually reinspected; no tags were added by this English pass.
 
 Verification: 45 of 46 release commands pass; only the six historical trim-record
 discrepancies remain. All 30,640 ready/deferred DOM-click seeks match the stored
-onsets across 15,320 occurrence buttons. Next: publish and compare the served
-website with the assembled files. The owner explicitly waived browser checks and
-requested publication; the locked Mac does not block file work or deployment.
+onsets across 15,320 occurrence buttons. Published as `3c247d82`; Pages run
+`45668461047` succeeded. All 779 checked served files match the assembled release.
+The owner explicitly waived browser checks and requested publication; the locked Mac does not block file work or deployment.
 The six historical trim-record discrepancies remain, with audio unchanged.
 
 Four prior source questions were resolved; 36 exact source-dependent passages across
