@@ -255,7 +255,7 @@ window.SONG_LINES = {
   "l004": {
     "source": "பின்னலிட்ட கோபியரின் கன்னத்திலே கன்னமிட்டு மன்னவன் போல் லீலை செய்தான் தாலேலோ",
     "roman": "piṉṉaliṭṭa kōpiyariṉ kaṉṉattilē kaṉṉamiṭṭu maṉṉavaṉ pōl līlai ceytāṉ tālēlō",
-    "english": "{3:placing his cheek} {2:against the cheeks} {1:of the cowherd women} {0:with braided hair}, {5:like} {4:a king}, {7:he performed} {6:his playful acts}. {8:Tālēlō}.",
+    "english": "{3:Pressing his cheek} {2:against the cheeks} {1:of the cowherd women} {0:with braided hair}, {6,7:he played} {5:like} {4:a king}. {8:Tālēlō}.",
     "words": [
       {
         "roman": "piṉṉaliṭṭa",
@@ -475,7 +475,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "நாகபடம் மீதில் அவன் நர்த்தனங்கள் ஆடியதில் தாகமெல்லாம் தீர்த்துக்கொண்டான் தாலேலோ",
     "roman": "nākapaṭam mītil avaṉ narttaṉaṅkaḷ āṭiyatil tākamellām tīrttukkoṇṭāṉ tālēlō",
-    "english": "{2:He}, {4:through dancing} {3:his dances} {1:upon} {0:the serpent’s hood}, {6:quenched} {5:all his thirst}. {7:Tālēlō}.",
+    "english": "{3,4:By dancing} {1:upon} {0:the serpent’s hood}, {2:he} {6:quenched} {5:all his thirst}. {7:Tālēlō}.",
     "words": [
       {
         "roman": "nākapaṭam",
@@ -755,7 +755,7 @@ window.SONG_LINES = {
   "l011": {
     "source": "அவன் பொன்னழகை பார்ப்பதற்கும் போதை முத்தம் பெறுவதற்கும்",
     "roman": "avaṉ poṉṉaḻakai pārppataṟkum pōtai muttam peṟuvataṟkum",
-    "english": "{2:To see} {0:his} {1:golden beauty} {2:as well}, {5:and to receive} {3:an intoxicating} {4:kiss},",
+    "english": "{2:To see} {0:his} {1:golden beauty}, {5:and to receive} {3:an intoxicating} {4:kiss},",
     "words": [
       {
         "roman": "avaṉ",

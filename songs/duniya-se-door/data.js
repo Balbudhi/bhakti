@@ -86,7 +86,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum jān yogya bisrāo mujhe",
-    "english": "{0:You, }{1:deeming }{2:it fit, }{3:may forget }{4:me,}",
+    "english": "{0:You }{3:may forget }{4:me, }{1,2:if you see fit,}",
     "words": [
       {
         "roman": "tum",
@@ -329,7 +329,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum mān karo maiṁ manāyā karūm̐",
-    "english": "{0:You }{2:may remain }{1:aloof in pique; }{3:I }{4,5:will keep coaxing }you.",
+    "english": "{0:You }{1,2:may sulk; }{3:I }{4,5:will keep coaxing }you.",
     "words": [
       {
         "roman": "tum",
@@ -424,7 +424,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "duniyā se dil lagākar, duniyā se kyā milegā",
-    "english": "{3:Having attached }{2:the heart }{1:to }{0:the world, }{6:what }{7:will you gain }{5:from }{4:the world?}",
+    "english": "{3:If you give }{2:your heart }{1:to }{0:the world, }{6:what }{7:will you gain }{5:from }{4:it?}",
     "words": [
       {
         "roman": "duniyā",
@@ -745,7 +745,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "har cīz miṭne vālī, har cīz ānī jānī",
-    "english": "{0:Every }{1:thing }{2,3:is destined to perish, }{4:every }{5:thing }{6:is coming }{7:and going.}",
+    "english": "{0,1:Everything }{2,3:must perish, }{4,5:everything }{6:comes }{7:and goes.}",
     "words": [
       {
         "roman": "har",
@@ -858,7 +858,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye sab ġurūr ik din, miṭṭī meṁ jā milegā",
-    "english": "{1:All }{0:this }{2:pride, }{3:one }{4:day, }{7,8:will go and merge }{6:into }{5:the dust.}",
+    "english": "{1:All }{0:this }{2:pride }{7,8:will turn }{6:to }{5:dust }{3:one }{4:day.}",
     "words": [
       {
         "roman": "ye",
@@ -977,7 +977,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisko tū samjhe apnā, vo to hai jhūṭhā sapnā",
-    "english": "{0:That which }{1:you }{2:consider }{3:your own, }{4:that }{5:indeed }{6:is }{7:a false }{8:dream.}",
+    "english": "{0:What }{1:you }{2:think }{3:is yours }{4,5,6:is only }{7:a false }{8:dream.}",
     "words": [
       {
         "roman": "jisko",

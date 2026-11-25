@@ -441,7 +441,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āsānī sē kaṭa jāēgā kāṇṭōṁ bharā rāstā",
-    "english": "{4:The thorn-}{5:filled }{6:journey }{3:will }{2:pass }{1:with }{0:ease}",
+    "english": "{4:The thorn-}{5:filled }{6:path }{2,3:will be crossed }{1:with }{0:ease}",
     "words": [
       {
         "roman": "āsānī",
@@ -1321,7 +1321,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "usakē liē saba ēka haiṁ karatā hai sabakā bhalā",
-    "english": "{1:For }{0:him }{2:all }{4:are }{3:one, }{5,6:he works }{8:the good }{7:of all}",
+    "english": "{1:For }{0:him }{2:all }{4:are }{3:one; }{5,6:he works }{7:for everyone’s }{8:good}",
     "words": [
       {
         "roman": "usakē",

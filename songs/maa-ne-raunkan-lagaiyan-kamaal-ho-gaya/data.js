@@ -437,7 +437,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ral ke kẖuśīā̃ manāīā̃ kamāl ho giā",
-    "english": "{0,1:Together}{3: we celebrated}{2: joys}{4,5,6:—what a marvel!}",
+    "english": "{0,1:Together}{3: we celebrated}{2: in joy}{4,5,6:—what a marvel!}",
     "words": [
       {
         "roman": "ral",
@@ -539,7 +539,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "o ral ke kẖuśīā̃ manāīā̃ kamāl ho giā",
-    "english": "{0:Oh,}{1,2: together}{4: we celebrated}{3: joys}{5,6,7:—what a marvel!}",
+    "english": "{0:Oh,}{1,2: together}{4: we celebrated}{3: in joy}{5,6,7:—what a marvel!}",
     "words": [
       {
         "roman": "o",
@@ -1049,7 +1049,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kẖuśīā̃ manāũde sāre,",
-    "english": "{2:Everyone}{1: celebrates}{0: joys;}",
+    "english": "{2:Everyone}{1: celebrates}{0: joyfully;}",
     "words": [
       {
         "roman": "kẖuśīā̃",
@@ -1343,7 +1343,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pūjā kītī jagg vī kītā, kītā mā̃ dā pāṭh hai",
-    "english": "{0:Worship}{1: was performed,}{2: a sacrifice}{3: too}{4: was performed;}{6,7: Mother’s}{8: sacred recitation}{5,9: has been performed.}",
+    "english": "{0:Worship}{1: was offered,}{2: a sacrifice}{3: too}{4: was performed;}{6,7: Mother’s}{8: sacred text}{5,9: has been recited.}",
     "words": [
       {
         "roman": "pūjā",
@@ -1445,7 +1445,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kītā mā̃ dā pāṭh hai,",
-    "english": "{1,2:Mother’s}{3: sacred recitation}{0,4: has been performed;}",
+    "english": "{1,2:Mother’s}{3: sacred text}{0,4: has been recited;}",
     "words": [
       {
         "roman": "kītā",
@@ -2927,7 +2927,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhagat lagāũde mā̃ dīā̃ bheṭā̃ gūñj rahe jaikāre",
-    "english": "{0:Devotees}{1: sing}{4: offerings}{2,3: to Mother;}{7: cries of victory}{5,6: resound.}",
+    "english": "{0:Devotees}{1: sing}{4: devotional songs}{2,3: to Mother;}{7: cries of victory}{5,6: resound.}",
     "words": [
       {
         "roman": "bhagat",

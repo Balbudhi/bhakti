@@ -870,7 +870,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manmukhi sabadu na jāṇaī avagaṇi so prabh dūri",
-    "english": "{0:The self-willed one }{2:does not }{3:know }{1:the Word; }{4:through demerit, }{5:that }{6:Lord }{7:is far away.}",
+    "english": "{0:The self-willed one }{2:does not }{3:know }{1:the Word; }{4:through their faults, }{5:that }{6:Lord }{7:remains distant.}",
     "words": [
       {
         "roman": "manmukhi",

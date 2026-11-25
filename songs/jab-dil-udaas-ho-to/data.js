@@ -622,7 +622,7 @@ window.SONG_LINES = {
   },
   "jab_aakhiri_saans_chale_to": {
     "roman": "Jab ākhirī sāṅs chale to",
-    "english": "{0,4:When}{1: the final}{2: breath}{3: moves…}",
+    "english": "{0,4:When}{1: your last}{2,3: breath leaves you…}",
     "words": [
       {
         "roman": "Jab",

@@ -339,7 +339,7 @@ window.SONG_LINES = {
     "source": "हर पल होता जग में परिवर्तन",
     "sourceLanguage": "hi",
     "roman": "Hara pala hotā jaga mẽ parivartana",
-    "english": "{0:Every }{1:moment, }{5:change }{2:occurs }{4:in }{3:the world}",
+    "english": "{0:Every }{1:moment }{2:brings }{5:change }{4:in }{3:the world}",
     "words": [
       {
         "roman": "Hara",
@@ -422,7 +422,7 @@ window.SONG_LINES = {
     "source": "जड़ चेतन के तुम हो चेतन",
     "sourceLanguage": "hi",
     "roman": "Jaṛa cetana ke tuma ho cetana",
-    "english": "{2:Of the }{0:inert }and the {1:sentient, }{3:You }{4:are }{5:the consciousness}",
+    "english": "{3:You }{4:are }{5:the consciousness }{2:of both }{0:the inert }and {1:the sentient}",
     "words": [
       {
         "roman": "Jaṛa",

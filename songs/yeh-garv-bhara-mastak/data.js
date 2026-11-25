@@ -213,7 +213,7 @@ window.SONG_LINES = {
   },
   "refrain_d": {
     "roman": "Nij nām kī mālā japne de",
-    "english": "{4,5:…let it repeat }{3:the rosary }{2:of }{0:Your own }{1:Name.}",
+    "english": "{4,5:…let it chant }{0:Your own }{1:Name }{2,3:upon the rosary.}",
     "words": [
       {
         "roman": "nij",

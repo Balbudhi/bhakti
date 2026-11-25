@@ -64,7 +64,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jēhi sumirata sidhi hōī",
-    "english": "{1:Upon remembering }{0:whom, }{2:perfection }{3:comes to be,}",
+    "english": "{1:By remembering }{0:him, }{2:perfection }{3:is attained,}",
     "words": [
       {
         "roman": "Jēhi",
@@ -305,7 +305,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mūka hōi bācāla",
-    "english": "{0:The mute }{1:becomes }{2:eloquent,}",
+    "english": "{0:The mute }{1:become }{2:eloquent,}",
     "words": [
       {
         "roman": "Mūka",
@@ -358,7 +358,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Paṅgu caṛhai girivara gahanā",
-    "english": "{0:and the lame }{1:climbs }{3:the formidable }{2:lofty mountain,}",
+    "english": "{0:and the lame }{1:climb }{3:the formidable, }{2:lofty mountain,}",
     "words": [
       {
         "roman": "Paṅgu",

@@ -65,7 +65,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ātmāra antarakoṇe tame abatara",
-    "english": "{1:Into the inner corner}{0: of the soul,}{2: You}{3: descend,}",
+    "english": "{2,3:Descend}{1: into the innermost corner}{0: of my soul,}",
     "words": [
       {
         "roman": "Ātmāra",
@@ -201,7 +201,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Duḥkhīra duḥkhare prāṇa āndoḷita kara",
-    "english": "{3,4:Stir}{2: the life-breath}{1: with the sorrow}{0: of the suffering one,}",
+    "english": "{3,4:Stir}{2: my heart}{1: with the sorrow}{0: of those who suffer,}",
     "words": [
       {
         "roman": "Duḥkhīra",
@@ -349,7 +349,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śatruku bi sebā karibāra śakti dia",
-    "english": "{5:Give}{4: the strength}{3: to do}{2: service}{1: even}{0: to an enemy,}",
+    "english": "{5:Give me}{4: the strength}{2,3: to serve}{1: even}{0: an enemy,}",
     "words": [
       {
         "roman": "Śatruku",
@@ -864,7 +864,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gurumaya kara mote sebāmaya kara",
-    "english": "{1:Make}{2: me}{0: absorbed in the Guru,}{4: make}{2: me}{3: filled with service.}",
+    "english": "{1:Make}{2: me}{0: absorbed in the Guru,}{4: make}{2: me}{3: devoted to service.}",
     "words": [
       {
         "roman": "Gurumaya",

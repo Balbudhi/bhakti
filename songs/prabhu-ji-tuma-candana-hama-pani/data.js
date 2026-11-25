@@ -1665,7 +1665,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aisī bhagati karai raidāsā,",
-    "english": "{0:Such}{1: devotion}{3: Ravidas}{2: renders,}",
+    "english": "{0:Such}{1: is the devotion}{3: Ravidāsa}{2: offers,}",
     "words": [
       {
         "roman": "Aisī",
@@ -1730,7 +1730,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho aisī bhagati karai raidāsā",
-    "english": "{0:O, }{1:such}{2: devotion}{4: Ravidas}{3: renders}",
+    "english": "{0:Oh, }{1:such}{2: is the devotion}{4: Ravidāsa}{3: offers}",
     "words": [
       {
         "roman": "Ho",
@@ -1795,7 +1795,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aisī bhagati karai raidāsā",
-    "english": "{0:Such}{1: devotion}{3: Ravidas}{2: renders}",
+    "english": "{0:Such}{1: is the devotion}{3: Ravidāsa}{2: offers}",
     "words": [
       {
         "roman": "Aisī",

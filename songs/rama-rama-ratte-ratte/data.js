@@ -96,7 +96,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ās bhare mere do nainā palak nahī̃ jhapkāte haĩ",
-    "english": "{2:My }{3:two }{4:eyes, }{1:full of }{0:hope, }{6:do not }{7,8:blink }{5:an eyelid.}",
+    "english": "{2:My }{3:two }{4:eyes, }{1:full of }{0:hope, }{6:do not }{5,7,8:blink.}",
     "words": [
       {
         "roman": "Ās",
@@ -363,7 +363,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamrī duvariyā",
-    "english": "{0:at our }{1:doorway.}",
+    "english": "{0:to our }{1:door?}",
     "words": [
       {
         "roman": "Hamrī",
@@ -868,7 +868,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho kā̃ṭe kaṅkar chun ke hamne",
-    "english": "{0:O, }{3,4:having gathered }{1:thorns }{2:and pebbles, }{5:we...}",
+    "english": "{0:Oh, }{5:we }{3,4:picked away }{1:the thorns }{2:and pebbles...}",
     "words": [
       {
         "roman": "Ho",
@@ -963,7 +963,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kā̃ṭe kaṅkar chun ke hamne sāf kī ḍagariyā",
-    "english": "{2,3:Having gathered }{0:thorns }{1:and pebbles, }{4:we }{5,6:have cleared }{7:the pathway,}",
+    "english": "{4:We }{2,3:picked away }{0:the thorns }{1:and pebbles }and {5,6:cleared }{7:the path,}",
     "words": [
       {
         "roman": "Kā̃ṭe",

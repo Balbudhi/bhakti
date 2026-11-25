@@ -167,7 +167,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ēkadanta ati viśāla śōbhita sindūra bhāla",
-    "english": "{0:The one-tusked one, }{1:exceedingly }{2:immense, }{5:his forehead }{3:adorned with }{4:vermilion,}",
+    "english": "{0:One-tusked, }{1:so }{2:vast in form, }{5:his forehead }{3:adorned with }{4:vermilion,}",
     "words": [
       {
         "roman": "Ēkadanta",
@@ -238,7 +238,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ēkadanta ati viśāla... ā...",
-    "english": "{0:The one-tusked one, }{1:exceedingly }{2:immense... }{3:ah...}",
+    "english": "{0:One-tusked, }{1:so }{2:vast in form... }{3:ah...}",
     "words": [
       {
         "roman": "Ēkadanta",
@@ -702,7 +702,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tumakō jō dharata dhyāna vākō tuma dēta māna",
-    "english": "{1:Whoever }{2:fixes }{3:meditation }{0:upon you, }{4:unto them }{5:you }{6:bestow }{7:honor,}",
+    "english": "{5:You }{6,7:honor }{4:those }{1:who }{2,3:meditate }{0:upon you,}",
     "words": [
       {
         "roman": "Tumakō",

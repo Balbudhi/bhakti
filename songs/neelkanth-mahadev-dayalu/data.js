@@ -707,7 +707,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āśāẽ sab pūrṇ karo tum",
-    "english": "{2,3:Fulfill }{1:all }{0:hopes, }{4:you,}",
+    "english": "{2,3,4:Fulfill }{1:all }{0:hopes,}",
     "words": [
       {
         "roman": "āśāẽ",
@@ -1751,7 +1751,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jahā̃ jahā̃ terā sumiran ho",
-    "english": "{0,1:Wherever }{3:remembrance }{2:of you }{4:takes place,}",
+    "english": "{0,1:wherever }{2:you }{3,4:are remembered,}",
     "words": [
       {
         "roman": "jahā̃",

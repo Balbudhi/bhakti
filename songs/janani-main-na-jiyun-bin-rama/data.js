@@ -627,7 +627,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāma lakhana siyā bana hī gavana kīnhom̐",
-    "english": "{0:Rama, }{1:Lakshmana, }{2:and Sita }{5,6:departed }{3:for the forest }{4:itself}",
+    "english": "{0:Rāma, }{1:Lakṣmaṇa, }{2:and Sītā }{4:have indeed }{5,6:departed }{3:for the forest}",
     "words": [
       {
         "roman": "rāma",
@@ -1585,7 +1585,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tulasīdāsa prabhu āsa caraṇa ke",
-    "english": "{0:Tulsidas }{2:holds hope }{3,4:in the feet }{1:of the Lord}",
+    "english": "{0:Tulsīdās }{2:places his hope }{3,4:at the feet }{1:of the Lord}",
     "words": [
       {
         "roman": "tulasīdāsa",
@@ -1727,7 +1727,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhaye vidhātā bāma",
-    "english": "{1:Providence }{0:has turned }{2:adverse}",
+    "english": "{1:Fate }{0:has turned }{2:against us}",
     "words": [
       {
         "roman": "bhaye",
@@ -1780,7 +1780,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "he bhaye vidhātā bāma",
-    "english": "{0:O, }{2:Providence }{1:has turned }{3:adverse}",
+    "english": "{0:Oh, }{2:fate }{1:has turned }{3:against us}",
     "words": [
       {
         "roman": "he",

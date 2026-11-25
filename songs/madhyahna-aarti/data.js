@@ -1610,7 +1610,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Agādha tava karaṇī mārga dāvisī anāthā, dāvisī anāthā",
-    "english": "{0:Unfathomable }{1:are your }{2:deeds; }{4:you show }{3:the path }{5:to the helpless, }{6:you show }{7:to the helpless.}",
+    "english": "{0:Unfathomable }{1:are your }{2:deeds; }{4:you show }{3:the path }{5:to the helpless, }{6:you show it }{7:to the helpless.}",
     "words": [
       {
         "roman": "Agādha",
@@ -2049,7 +2049,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mājhā nijadravyaṭhevā tava caraṇarajasevā",
-    "english": "{0:My }{1:own }{2:treasure }{3:hoard is }{7:service }{6:to the dust }{4:of your }{5:feet,}",
+    "english": "{0:My }{1:own }{2,3:treasure is }{7:service }{6:to the dust }{4:of your }{5:feet,}",
     "words": [
       {
         "roman": "Mājhā",
@@ -4885,7 +4885,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tvameva mātā ca pitā tvameva",
-    "english": "{0:You alone are }{1:mother }{2:and }{3:father }{4:you alone,}",
+    "english": "{0:You alone are }{1:mother, }{2:and }{4:you alone are }{3:father,}",
     "words": [
       {
         "roman": "tvameva",
@@ -4950,7 +4950,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tvameva bandhuśca sakhā tvameva",
-    "english": "{0:You alone are }{1:kinsman and }{2:friend }{3:you alone,}",
+    "english": "{0:you alone are }{1:kinsman, and }{3:you alone are }{2:friend,}",
     "words": [
       {
         "roman": "tvameva",
@@ -5009,7 +5009,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tvameva vidyā draviṇaṃ tvameva",
-    "english": "{0:You alone are }{1:knowledge, }{2:wealth }{3:you alone,}",
+    "english": "{0:you alone are }{1:knowledge, }{3:you alone are }{2:wealth,}",
     "words": [
       {
         "roman": "tvameva",
@@ -8018,7 +8018,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karāve āmhā dhanya cuṃboni gālā",
-    "english": "{0:make }{1:us }{2:blessed, }{3:having kissed }{4:the cheek;}",
+    "english": "{0,2:bless }{1:us }{3:with a kiss }{4:on the cheek;}",
     "words": [
       {
         "roman": "karāve",
@@ -9006,7 +9006,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāśī snāna japa pratidivaśī",
-    "english": "{0:At Kashi, }{1:taking bath }{2:and chanting prayers }{3:every day,}",
+    "english": "{0:At Kashi, }{1:bathing }{2:and chanting prayers }{3:every day,}",
     "words": [
       {
         "roman": "kāśī",
@@ -10582,7 +10582,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jagadvyāpakaṃ nirmalaṃ nirguṇaṃ tvām",
-    "english": "{0:all-pervading the universe, }{1:spotless, }{2:beyond attributes, }{3:to you.}",
+    "english": "{0:pervading the universe, }{1:spotless, }{2:beyond attributes, }{3:to you.}",
     "words": [
       {
         "roman": "jagadvyāpakaṃ",
@@ -11396,7 +11396,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ahambhāvahīnaṃ prasannātmabhāvam",
-    "english": "{1:devoid }{0:of egoism, }{2:of tranquil and gracious }{3:self-}{4:nature,}",
+    "english": "{1:free }{0:of egoism, }{2:tranquil and gracious }{3,4:in nature,}",
     "words": [
       {
         "roman": "ahambhāva",
@@ -13091,7 +13091,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anekajanmārjitapāpasaṃkṣayo bhavedbhavatpādasarojadarśanāt",
-    "english": "{5:May }{4:the destruction }{3:of sins }{2:accumulated }{1:across }{0:many }{1:births }{5:occur }{9:from the vision }{6:of Your }{8:lotus }{7:feet;}",
+    "english": "{5:May }{3:the sins }{2:accumulated }{1:across }{0:many }{1:births }{4:be destroyed }{9:by beholding }{6:your }{8:lotus }{7:feet;}",
     "words": [
       {
         "roman": "aneka",
@@ -13646,7 +13646,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "stotrametatpaṭhedbhaktyā yo narastanmanāḥ sadā",
-    "english": "{4:Whatever }{5:person, }{7:with mind absorbed }{6:in Him }{8:always, }{2:recites }{1:this }{0:hymn }{3:with devotion,}",
+    "english": "{4,5:Whoever, }{7:with mind absorbed }{6:in him }{8:always, }{2:recites }{1:this }{0:hymn }{3:with devotion,}",
     "words": [
       {
         "roman": "stotram",

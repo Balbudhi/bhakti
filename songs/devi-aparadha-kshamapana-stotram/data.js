@@ -1067,7 +1067,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paraṃ teṣāṃ madhye viralataralo'haṃ tava sutaḥ",
-    "english": "{0:but }{2:among }{1:them }{5:I am }{3:the rare, }{4:the restless one, }{6:your }{7:son.}",
+    "english": "{0:but }{2:among }{1:them }{5:I am }{3:a rare exception—}{6:your }{4:fickle }{7:son.}",
     "words": [
       {
         "roman": "paraṃ",
@@ -3665,7 +3665,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śyāme tvameva yadi kiñcana mayyanāthe",
-    "english": "{0:Dark one, }{3:if }{1:you }{2:yourself, }{5:for me, }{6:an orphan, }{4:even a little}",
+    "english": "{0:Dark one, }{3:if }{1:you }{2:yourself, }{5:for me, }{6:an orphan, }{4:even in the slightest measure}",
     "words": [
       {
         "roman": "śyāme",
@@ -3761,7 +3761,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhatse kṛpāmucitamamba paraṃ tavaiva",
-    "english": "{0:feel }{1:compassion, }{3:Mother, }{2:it becomes }{5:you }{4:above all, }{6:you alone.}",
+    "english": "{0:show }{1:compassion, }{3:Mother, }{2:that is fitting }{4:above all }{5:for you, }{6:you alone.}",
     "words": [
       {
         "roman": "dhatse",

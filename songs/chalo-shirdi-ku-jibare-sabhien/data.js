@@ -95,7 +95,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cāla siriṛīku jibā re sabhieṁ se parā sāiṅka ghara",
-    "english": "{0,2:Come, let us go }{1:to Shirdi, }{3:O }{4:everyone; }{5:that }{6:is indeed }{7:Sai's }{8:home.}",
+    "english": "{0:Come, }{4:everyone, }{2:let us go }{1:to Shirdi; }{3:oh, }{5:that }{6:is indeed }{7:Sai's }{8:home.}",
     "words": [
       {
         "roman": "cāla",
@@ -671,7 +671,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bāje re mahurī khoḷa karatāḷa raṇaśiṅgā bherī bājā",
-    "english": "{0:There resound, }{1:O, }{2:the reed pipe, }{3:the double-headed drum, }{4:cymbals, }{5:battle horn, }{6:kettledrum, }{7:and musical instruments!}",
+    "english": "{1:Oh, }{2:the reed pipe, }{3:drum, }{4:cymbals, }{5:battle horn, }{6:kettledrum }{7:and other instruments }{0:ring out!}",
     "words": [
       {
         "roman": "bāje",

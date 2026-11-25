@@ -435,7 +435,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Parama kṛpā dē apanī bhava sē ubāratā",
-    "english": "{2:Bestowing }{3:His own }{0:supreme }{1:grace, }{6:He rescues }{5:from }{4:worldly existence.}",
+    "english": "{2:Bestowing }{3:His own }{0:supreme }{1:grace, }{6:He rescues them }{5:from }{4:worldly existence.}",
     "words": [
       {
         "roman": "Parama",

@@ -1559,7 +1559,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kvaṇa kvaṇa lalitā veṇuṃ",
-    "english": "{0:Kvaṇa, }{1:kvaṇa—}{2:the graceful maiden }{3:upon the flute,}",
+    "english": "{0:Kvaṇa, }{1:kvaṇa—}{2:the graceful maiden }{3:plays the flute,}",
     "words": [
       {
         "roman": "kvaṇa",
@@ -1606,7 +1606,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "madhuraṃ nādayate",
-    "english": "{0:sweetly }{1:causes it to resound.}",
+    "english": "{1:making it ring out }{0:sweetly.}",
     "words": [
       {
         "roman": "madhuraṃ",
@@ -1771,7 +1771,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cakrāvarte bhramayati",
-    "english": "{0:in circular pirouettes }{1:she whirls around,}",
+    "english": "{0:in circles }{1:she whirls,}",
     "words": [
       {
         "roman": "cakrāvarte",
@@ -1812,7 +1812,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kurute tāṃ dhiktām",
-    "english": "{0:and executes }{1:tāṃ }{2:dhiktām.}",
+    "english": "{0:dancing to }{1:tāṃ }{2:dhiktām.}",
     "words": [
       {
         "roman": "kurute",
@@ -2561,7 +2561,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaṅkhaninādaṃ kṛtvā jhallari nādayate",
-    "english": "{1:Having sounded }{0:the blare of the conch, }{3:one causes }{2:the cymbals }{3:to ring,}",
+    "english": "{1:After blowing }{0:the conch, }{3:one rings }{2:the cymbals,}",
     "words": [
       {
         "roman": "śaṅkhaninādaṃ",

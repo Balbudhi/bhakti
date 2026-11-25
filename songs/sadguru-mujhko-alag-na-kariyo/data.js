@@ -66,7 +66,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sadguru mujhko alag na kariyo",
-    "english": "{0:Sadguru, }{3:do not }{2,4:separate }{1:me,}",
+    "english": "{0:Sadguru, }{3:do not }{2,4:part }{1:from me,}",
     "words": [
       {
         "roman": "sadguru",
@@ -143,7 +143,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cākar hū̃ terā janam janam kā",
-    "english": "{1:I am }{2:your }{0:servant }{5:of }{3:birth }{4:after birth,}",
+    "english": "{1:I have been }{2:your }{0:servant }{5:through }{3:birth }{4:after birth,}",
     "words": [
       {
         "roman": "cākar",
@@ -285,7 +285,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mujhko alag na kariyo",
-    "english": "{2:do not }{1,3:separate }{0:me.}",
+    "english": "{2:do not }{1,3:part }{0:from me.}",
     "words": [
       {
         "roman": "mujhko",
@@ -664,7 +664,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cātak hū̃ tere kṛpā sāvan kā",
-    "english": "{1:I am }{0:the cātaka bird }{4,5:of the monsoon }{2:of your }{3:grace,}",
+    "english": "{1:I am }{0:the cātaka bird }{4,5:awaiting the monsoon }{2:of your }{3:grace,}",
     "words": [
       {
         "roman": "cātak",

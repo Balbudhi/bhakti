@@ -303,7 +303,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ā̃kha jō bhāyē vō kōrā sapanā",
-    "english": "{1:Whatever }{2:pleases }{0:the eye, }{3:that }{4:is a mere }{5:dream,}",
+    "english": "{1:Whatever }{2:pleases }{0:the eye }{3,4:is only }{5:a dream,}",
     "words": [
       {
         "roman": "Ā̃kha",
@@ -683,7 +683,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana suna mērī kāna lagā kē",
-    "english": "{0:O mind, }{1:listen }{2:to my words, }{4,5:lending }{3:your ear,}",
+    "english": "{0:O mind, }{1:listen }{4,5:closely, }{3:give ear }{2:to my words,}",
     "words": [
       {
         "roman": "Mana",

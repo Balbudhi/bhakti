@@ -196,7 +196,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bas dhūl jo mil jāe",
-    "english": "{2:If }{0:only }{1:the dust }{3,4:were obtained,}",
+    "english": "{2:If }{0:only }{3,4:I could receive }{1:the dust,}",
     "words": [
       {
         "roman": "Bas",
@@ -267,7 +267,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sac kahtā hū̃ bas apnī",
-    "english": "{2:I }{1:tell }{0:the truth, }{3:simply }{4:my}",
+    "english": "{0,1,2:Truly, }{3:then }{4:my}",
     "words": [
       {
         "roman": "Sac",
@@ -609,7 +609,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ik bū̃d jo mil jāe",
-    "english": "{2:If }{0:a single }{1:drop }{3,4:were obtained,}",
+    "english": "{2:If }{3,4:I could receive }{0:one }{1:drop,}",
     "words": [
       {
         "roman": "Ik",
@@ -910,7 +910,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nazrõ se girānā nā",
-    "english": "{3:Do not }{2:cast me down }{1:from }{0:your sight,}",
+    "english": "{3:Do not }{2:let me fall }{1:from }{0:your favor,}",
     "words": [
       {
         "roman": "Nazrõ",
@@ -1046,7 +1046,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nazrõ se jo gir jāe",
-    "english": "{2:Whoever }{3,4:falls }{1:from }{0:your sight,}",
+    "english": "{2:Whoever }{3,4:falls }{1:from }{0:your favor,}",
     "words": [
       {
         "roman": "Nazrõ",
@@ -1111,7 +1111,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Muśkil vo sambhal pāe",
-    "english": "{1:That one }{3:can }{0:scarcely }{2:steady themselves.}",
+    "english": "{1:they }{3:can }{0:scarcely }{2:find their footing again.}",
     "words": [
       {
         "roman": "Muśkil",
@@ -1294,7 +1294,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Merā dam hī nikal jāe",
-    "english": "{0:And my }{2:very }{1:breath }{4:should }{3:depart.}",
+    "english": "{2:just as }{0:I }{1,3,4:breathe my last.}",
     "words": [
       {
         "roman": "Merā",

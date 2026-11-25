@@ -181,7 +181,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prasannavadanaṁ dhyāyet sarvavighnopaśāntaye",
-    "english": "{1:of }{0:serene }{1:countenance, }{2:one should meditate upon Him }{5:for the pacification }{3:of all }{4:obstacles.}",
+    "english": "{1:with a }{0:serene }{1:face—}{2:one should meditate upon him }{5:to still }{3:all }{4:obstacles.}",
     "words": [
       {
         "roman": "prasanna",
@@ -807,7 +807,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cañcala śaśi prabhu stuti karata haiṁ",
-    "english": "{0:The restless }{1:moon }{4,5:performs }{3:praise }{2:of the Lord,}",
+    "english": "{0:The restless }{1:moon }{4,5:sings }{2:the Lord’s }{3:praises,}",
     "words": [
       {
         "roman": "cañcala",

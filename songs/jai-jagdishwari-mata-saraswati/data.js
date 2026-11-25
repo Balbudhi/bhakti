@@ -419,7 +419,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāma gīta dhvani madhura piyārī",
-    "english": "{3:the sweet }{2:sound }{0:of Sāmaveda }{1:song }{4:is dearly pleasing.}",
+    "english": "{2:the sound }{0:of Sāmaveda }{1:song }{3:is sweet }{4:and lovely.}",
     "words": [
       {
         "roman": "Sāma",

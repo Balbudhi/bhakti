@@ -526,7 +526,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paga ghūṅgharū bāndha maiṁ to nācūm̐ re",
-    "english": "{2:Having tied}{1: ankle bells}{0: to my feet}{3:, I}{4: indeed}{5: dance}{6:, O!}",
+    "english": "{2:I have tied}{1: ankle bells}{0: to my feet}{3,4:—yes, I}{5: dance}{6:!}",
     "words": [
       {
         "roman": "paga",
@@ -835,7 +835,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sudha-budha khoī morī",
-    "english": "{2:My}{0: wits and senses}{1: were lost}",
+    "english": "{2:I}{1: have lost}{0: all sense of myself}",
     "words": [
       {
         "roman": "sudha-budha",
@@ -900,7 +900,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sudha-budha khoī morī ho gaī bāvariyā",
-    "english": "{2:My}{0: wits and senses}{1: were lost}{3,4:, I became}{5: an ecstatic woman,}",
+    "english": "{2:I}{1: have lost}{0: all sense of myself}{3,4: and gone}{5: mad with love,}",
     "words": [
       {
         "roman": "sudha-budha",
@@ -965,7 +965,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho gaī bāvariyā",
-    "english": "{0,1:I have become}{2: an ecstatic woman,}",
+    "english": "{0,1:I have gone}{2: mad with love,}",
     "words": [
       {
         "roman": "ho",
@@ -1450,7 +1450,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koī na merā saṅgī sāthī hai tū merā ādhāra",
-    "english": "{0,1:No}{3: companion}{4: or fellow traveler}{2: is mine;}{6: you}{5: are}{7: my}{8: foundation.}",
+    "english": "{2:I have}{0,1: no}{3: companion}{4: or friend;}{6: you}{5: are}{7: my}{8: support.}",
     "words": [
       {
         "roman": "koī",
@@ -1533,7 +1533,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū merā ādhāra",
-    "english": "{0:You are}{1: my}{2: foundation.}",
+    "english": "{0:You}{1: are my}{2: support.}",
     "words": [
       {
         "roman": "tū",
@@ -2255,7 +2255,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ananta terī śaraṇa",
-    "english": "{0:Anant: }{1:in Your }{2:refuge.}",
+    "english": "{0:Anant }{2:takes refuge }{1:in You.}",
     "words": [
       {
         "roman": "ananta",

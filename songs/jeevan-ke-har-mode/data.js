@@ -253,7 +253,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisā kaṭhin bhī samāṁ āyā thā",
-    "english": "{2:Even}{0: such a}{1: difficult}{3: time}{5: had }{4:come}",
+    "english": "{2:There was even}{0: such a}{1: difficult}{3: time}{4,5: in my life}",
     "words": [
       {
         "roman": "aisā",
@@ -342,7 +342,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ki us vaqt hameṁ sāīṁ milke gae",
-    "english": "{0:when}{1: at that}{2: moment,}{4: Sāīṁ}{5: met}{3: us}{6: before departing}",
+    "english": "{0:when,}{1,2: at that moment,}{4: Sāī}{5: met}{3: us}{6: and went on his way}",
     "words": [
       {
         "roman": "ki",
@@ -1510,7 +1510,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "itnā hai karzā mujh par mere sāīṁ kā",
-    "english": "{0:So great}{1,2: is the debt}{4: upon }{3:me}{5,6,7: to my Sai,}",
+    "english": "{0:So great}{1,2: is the debt}{3,4: I owe}{5,6,7: my Sāī,}",
     "words": [
       {
         "roman": "itnā",
@@ -1706,7 +1706,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kitne haiṁ upkār mujh par sāīṁ ke",
-    "english": "{0:How manifold}{1,2: are the favors}{6: of }{5:Sai}{4: upon }{3:me,}",
+    "english": "{0:How many}{1,2: kindnesses}{5,6: Sāī}{3,4: has shown me,}",
     "words": [
       {
         "roman": "kitne",

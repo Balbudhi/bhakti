@@ -67,7 +67,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "e baraṣe āsiachi naba kaḷebara",
-    "english": "{0:In this }{1:year, }{3:the new }{4:embodiment }{2:has arrived,}",
+    "english": "{0:This }{1:year, }{3:the new }{4:embodiment }{2:has arrived,}",
     "words": [
       {
         "roman": "e",
@@ -482,7 +482,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ki sundara śobhā dekha naba kaḷebara",
-    "english": "{3:Behold }{0:what }{1:beautiful }{2:splendor }{4:of the new }{5:embodiment,}",
+    "english": "{3:Behold }{0:how }{1:beautiful }{2:the splendor }{4:of the new }{5:embodiment is,}",
     "words": [
       {
         "roman": "ki",

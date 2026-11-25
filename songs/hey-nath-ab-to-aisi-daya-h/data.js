@@ -236,7 +236,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ye mana na jāne kyā-kyā karāye",
-    "english": "{0:This }{1:mind}, {2,3:who knows }{4:what all }{5:it makes one do},",
+    "english": "{2,3:Who knows }{4:all that }{0:this }{1:mind }{5:drives one to do?}",
     "words": [
       {
         "roman": "ye",
@@ -918,7 +918,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apane ko niṣkāma premī banāūṁ",
-    "english": "{4:may I make }{0,1:myself }a {2:desireless }{3:lover},",
+    "english": "{4:may I become }{0,1:one who }{3:loves }{2:without desire},",
     "words": [
       {
         "roman": "apane",

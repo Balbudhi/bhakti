@@ -272,7 +272,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Aisī bhūl bhaī kyā karanī saṅkaṭ ṭāro nā",
-    "english": "{3:What }{4:deed, }{0:what such }{1:lapse }{2:occurred? }{7:Please }{6:ward off }{5:the calamity.}",
+    "english": "{3:What }{4:have I done, }{0:what }{1:terrible mistake }{2:have I made? }{7:Please }{6:ward off }{5:the calamity.}",
     "words": [
       {
         "roman": "Aisī",
@@ -367,7 +367,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bigaṛ gaī kachu rahī na bākī",
-    "english": "{0,1:Everything has gone to ruin; }{2,4:nothing }{3:remains }{5:left.}",
+    "english": "{0,1:Everything has gone to ruin; }{2,4:nothing }{3,5:is left.}",
     "words": [
       {
         "roman": "Bigaṛ",
@@ -775,7 +775,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāran kaun bhayo jag jananī so duḥkh jāro nā",
-    "english": "{1:What }{0:cause }{2:has arisen, }{3,4:O Mother of the World? }{8:Please }{7:burn away }{5:that }{6:sorrow.}",
+    "english": "{1:What }{0:has caused }{2:this, }{3,4:O Mother of the World? }{8:Please }{7:burn away }{5:that }{6:sorrow.}",
     "words": [
       {
         "roman": "Kāran",
@@ -870,7 +870,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāran kaun bhayo jag jananī",
-    "english": "{1:What }{0:cause }{2:has arisen, }{3,4:O Mother of the World?}",
+    "english": "{1:What }{0:has caused }{2:this, }{3,4:O Mother of the World?}",
     "words": [
       {
         "roman": "Kāran",
@@ -1000,7 +1000,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sab niravāro nā",
-    "english": "{2:please }{1:resolve }{0:all.}",
+    "english": "{2:please }{1:resolve }{0:it all.}",
     "words": [
       {
         "roman": "Sab",

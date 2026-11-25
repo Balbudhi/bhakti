@@ -891,7 +891,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "koyala śabda sunāvata sundara bhramara karata haiṁ guñjāsī",
-    "english": "{0:The koel} {2:sings} {3:sweet} {1:notes;} {4:the black bees} {5,6:make} {7:a humming resonance.}",
+    "english": "{0:The koel} {2:sings} {3:sweet} {1:notes;} {4:the black bees} {5,6,7:hum.}",
     "words": [
       {
         "roman": "koyala",
@@ -956,7 +956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "guñjāsī",
-    "english": "{0:Humming resonance.}",
+    "english": "{0:Humming.}",
     "words": [
       {
         "roman": "guñjāsī",

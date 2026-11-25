@@ -182,7 +182,7 @@ window.SONG_LINES = {
     "source": "ଥରେ ନୁହେଁ କେତେ ଥର ଭୁଲ କରେ ବାରମ୍ବାର",
     "sourceLanguage": "",
     "roman": "thare nuheṁ kete thara bhula kare bārambāra",
-    "english": "{1:Not }{0:once, }{2:so many }{3:times, }{5:I make }{4:mistakes }{6:again and again.}",
+    "english": "{1:Not just }{0:once }but {2:so many }{3:times, }{5:I make }{4:mistakes }{6:again and again.}",
     "words": [
       {
         "roman": "thare",
@@ -620,7 +620,7 @@ window.SONG_LINES = {
     "source": "ବାନ୍ଧିଛି ତୁମକୁ ପ୍ରାଣେ ତଥାପି ଯେ ପାପ ମନେ",
     "sourceLanguage": "",
     "roman": "bāndhichi tumaku prāṇe tathāpi ye pāpa mane",
-    "english": "{0:I hold }{1:You }{0:fast }{2:within my life-breath, }{3,4:yet }{5:sin }{6:remains in my mind.}",
+    "english": "{0:I hold }{1:You }{0:fast }{2:within my soul, }{3,4:yet }{5:sin }{6:remains in my mind.}",
     "words": [
       {
         "roman": "bāndhichi",

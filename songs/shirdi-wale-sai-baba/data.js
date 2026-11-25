@@ -235,7 +235,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apnā tajurbā pakkā hai, apnā tajurbā pakkā hai, mũh mā̃gā phal vo pāegā",
-    "english": "{0:Our }{1:experience }{3:is }{2:certain, }{4:our }{5:experience }{7:is }{6:certain, }{11:that person}{12: will receive}{8,9,10: the asked-for fruit}",
+    "english": "{0,1:We know from experience, }{2,3:we are certain; }{4,5:we know from experience, }{6,7:we are certain: }{11:that person}{12: will receive}{10: the fruit}{8,9: they ask for}",
     "words": [
       {
         "roman": "apnā",

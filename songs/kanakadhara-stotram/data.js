@@ -574,7 +574,7 @@ window.SONG_LINES = {
   "l009": {
     "source": "आमीलिताक्षमधिगम्य मुदा मुकुन्दम्",
     "roman": "āmīlitākṣamadhigamya mudā mukundam",
-    "english": "{2:Having reached }{4:Mukunda, }{1:whose eyes }{0:are closed, }{3:with joy—}",
+    "english": "{2:Resting }{3:joyfully }{4:on Mukunda, }{1:whose eyes }{0:are closed—}",
     "words": [
       {
         "roman": "āmīlit",
@@ -1284,7 +1284,7 @@ window.SONG_LINES = {
   "l021": {
     "source": "प्राप्तं पदं प्रथमतः खलु यत्प्रभावात्",
     "roman": "prāptaṃ padaṃ prathamataḥ khalu yatprabhāvāt",
-    "english": "{4:Through its power }{1:a foothold }{0:was attained }{2:first, }{3:indeed,}",
+    "english": "{4:Through its power }{1:a foothold }{0:was }{3:indeed }{2:first }{0:won}",
     "words": [
       {
         "roman": "prāptaṃ",
@@ -1805,7 +1805,7 @@ window.SONG_LINES = {
   "l029": {
     "source": "इष्टाविशिष्टमतयोऽपि यया दयार्द्र दृष्ट्या त्रिविष्टपपदं सुलभं लभन्ते",
     "roman": "iṣṭāviśiṣṭamatayo'pi yayā dayārdra dṛṣṭyā triviṣṭapapadaṃ sulabhaṃ labhante",
-    "english": "{3:Even }{2:those whose understanding }{1:is not distinguished }{0:by sacrificial worship }{11:obtain }{9:the station }{8:in heaven }{10:easily }{7:through }{4:her }{5:compassion-}{6:moistened }{7:glance.}",
+    "english": "{3:Even }{2:those whose understanding }{1:is not distinguished }{0:by sacrificial worship }{11:attain }{9:a place }{8:in heaven }{10:easily }{7:through }{4:her }{7:glance, }{6:moist }{5:with compassion.}",
     "words": [
       {
         "roman": "iṣṭ",
@@ -1936,7 +1936,7 @@ window.SONG_LINES = {
   "l030": {
     "source": "दृष्टिः प्रहृष्टकमलोदरदीप्तिरिष्टां पुष्टिं कृषीष्ट मम पुष्करविष्टरायाः",
     "roman": "dṛṣṭiḥ prahṛṣṭakamalodaradīptiriṣṭāṃ puṣṭiṃ kṛṣīṣṭa mama puṣkaraviṣṭarāyāḥ",
-    "english": "{7:May }{0:the glance }{10:of the }{9:lotus-}{10:seated goddess, }{4:bright as }{3:the heart }{1:of an opened }{2:lotus, }{7:bring about }{5:desired }{6:flourishing }{8:for me.}",
+    "english": "{7:May }{0:the glance }{10:of the }{9:lotus-}{10:seated goddess, }{4:bright as }{3:the heart }{1:of an opened }{2:lotus, }{7:grant }{8:me }{6:the prosperity }{5:I long for.}",
     "words": [
       {
         "roman": "dṛṣṭiḥ",
@@ -2176,7 +2176,7 @@ window.SONG_LINES = {
   "l033": {
     "source": "दुष्कर्मघर्ममपनीय चिराय दूरं",
     "roman": "duṣkarmagharmamapanīya cirāya dūraṃ",
-    "english": "{2:having carried }{1:the heat }{0:of evil deeds }{4:far away }{3:for a long time—}",
+    "english": "{2:driving }{1:the heat }{0:of evil deeds }{4:far away }{3:for a long time—}",
     "words": [
       {
         "roman": "duṣkarma",
@@ -2436,7 +2436,7 @@ window.SONG_LINES = {
   "l037": {
     "source": "सृष्टिस्थितिप्रलयकेलिषु संस्थितायै",
     "roman": "sṛṣṭisthitipralayakeliṣu saṃsthitāyai",
-    "english": "{4:to her established }{3:in the plays }{0:of creation, }{1:continuance }{2:and dissolution,}",
+    "english": "{4:to her who dwells }{3:in the play }{0:of creation, }{1:preservation }{2:and dissolution,}",
     "words": [
       {
         "roman": "sṛṣṭi",
@@ -3137,7 +3137,7 @@ window.SONG_LINES = {
   "l048": {
     "source": "नमोऽस्तु भूमण्डलनायिकायै",
     "roman": "namo'stu bhūmaṇḍalanāyikāyai",
-    "english": "{0,1:homage }{4:to the sovereign }{3:of the circle }{2:of earth;}",
+    "english": "{0,1:homage }{4:to the sovereign }{2,3:of the earth;}",
     "words": [
       {
         "roman": "namo",
@@ -3197,7 +3197,7 @@ window.SONG_LINES = {
   "l049": {
     "source": "नमोऽस्तु देवादिदयापरायै",
     "roman": "namo'stu devādidayāparāyai",
-    "english": "{0,1:homage }{5:to her intent }{4:on compassion }{2:toward gods }{3:and others;}",
+    "english": "{0,1:homage }{5:to her devoted }{4:to showing compassion }{2:to gods }{3:and others;}",
     "words": [
       {
         "roman": "namo",
@@ -3877,7 +3877,7 @@ window.SONG_LINES = {
   "l061": {
     "source": "त्वद्वन्दनानि दुरिताहरणोद्यतानि",
     "roman": "tvadvandanāni duritāharaṇodyatāni",
-    "english": "{1:acts of reverence }{0:to you }{4:are intent }{3:on taking away }{2:misfortune.}",
+    "english": "{1:acts of reverence }{0:to you }{4:work }{3:to take away }{2:misfortune.}",
     "words": [
       {
         "roman": "tvad",
@@ -3937,7 +3937,7 @@ window.SONG_LINES = {
   "l062": {
     "source": "मामेव मातरनिशं कलयन्तु मान्ये",
     "roman": "māmeva mātaraniśaṃ kalayantu mānye",
-    "english": "{1:O mother, }{3:worthy of honour, }{2:may they take hold of }{0:me indeed, }{1:without ceasing.}",
+    "english": "{1:O mother, }{3:worthy of honour, }{2:may they fill }{0:my life }{1:without ceasing.}",
     "words": [
       {
         "roman": "māmeva",
@@ -3987,7 +3987,7 @@ window.SONG_LINES = {
   "l063": {
     "source": "यत्कटाक्षसमुपासनाविधिः",
     "roman": "yatkaṭākṣasamupāsanāvidhiḥ",
-    "english": "{2,3:Devotion to }{0:your }{1:sidelong glance}",
+    "english": "{2,3:Through worship of }{0:your }{1:sidelong glance,}",
     "words": [
       {
         "roman": "yat",
@@ -4037,7 +4037,7 @@ window.SONG_LINES = {
   "l064": {
     "source": "सेवकस्य सकलार्थसम्पदः",
     "roman": "sevakasya sakalārthasampadaḥ",
-    "english": "{0:for the worshipper, }{3:fulfilment }{1:of every }{2:aim}",
+    "english": "{0:the worshipper’s }{3:fulfilment }{1:of every }{2:aim}",
     "words": [
       {
         "roman": "sevakasya",
@@ -4087,7 +4087,7 @@ window.SONG_LINES = {
   "l065": {
     "source": "सन्तनोति वचनाङ्गमानसैः",
     "roman": "santanoti vacanāṅgamānasaiḥ",
-    "english": "{0:brings forth. }{1:With speech, }{2:body }{3:and mind}",
+    "english": "{0:is brought forth. }{1:With speech, }{2:body }{3:and mind}",
     "words": [
       {
         "roman": "santanoti",
@@ -4868,7 +4868,7 @@ window.SONG_LINES = {
   "l077": {
     "source": "स्तुवन्ति ये स्तुतिभिरमीभिरन्वहं",
     "roman": "stuvanti ye stutibhiramībhiranvahaṃ",
-    "english": "{1:Those who }{0:praise }{3:with these }{2:praises }{4:day after day}",
+    "english": "{1:Those who }{0:praise }{3:with these }{2:hymns }{4:day after day}",
     "words": [
       {
         "roman": "stuvanti",

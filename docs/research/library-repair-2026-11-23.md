@@ -129,3 +129,47 @@ All 386 readers retain performance order, timestamps and non-tag metadata from t
 previous deployed commit. No audio files were changed. Browser verification was
 waived by the owner; neither fresh browser behavior nor acoustic timing is certified.
 The 33 source questions and historical trim-record discrepancies remain explicit.
+
+
+## Owner-reopened whole-library English repair — 25 November 2026
+
+The owner reported obvious defects despite the earlier complete-reading claim.
+Every current reader was reopened for an English reading: 386 readers, 9,455 stored
+definitions (9,451 referenced by the performance sequences, including non-lyric
+entries). Four disjoint groups read the complete songs against source and word maps;
+the lead independently read all final changed definitions and challenged altered
+images, agency, tense, modifiers, compounds and token links before integration.
+
+Applied 787 English corrections across 221 readers and seven corresponding gloss
+repairs. The reported butter passage now says soft throughout; the eyes do not blink.
+Other repairs remove calqued sentence order, repair misplaced modifiers and explicit
+word-sense errors, and preserve the source's concrete images. Proposed changes that
+erased the cooling image, shifted possession, inferred unsupported gifts, or changed
+an unresolved boon-bearing phrase were rejected or corrected.
+
+The source script, Roman text, source tokens, language labels, song metadata,
+performance sequences, timestamps and audio remain unchanged. The two protected
+English readers remain byte-identical. The exact complete coverage and corrections
+are in `data/translation-review-2026-11-25.json`; cumulative semantic receipts retain
+the original assessment and audio, with 1,220 explicit feature dispositions for the
+changed readers. All earlier reductions remain reduced. Integration rejected an
+accidentally revived petition feature and a witness taken from a trimmed introduction;
+both were corrected against the performed source. The 81 stale subject dismissals
+were reinspected in context before rebinding to the corrected text.
+
+Four prior questions were resolved: the two Viṣṇusahasranāma senses from the direct
+teaching commentary, Kākaḍ's Muslim-form modifier, and its serpent/matted-locks
+compound. The report records exact evidence. Thirty-six source-dependent passages
+across 27 readers remain open, including new findings; an awkward phrase is not
+permission to invent its missing interpretation. No historical finished flag was
+renewed. Current screened marks record this bounded reading and its exact file hash.
+
+The owner requested website publication and explicitly waived browser verification.
+No fresh listening or browser/device behavior is claimed. Existing audio is retained;
+the six historical trim-record discrepancies remain documented. Local release verification completed: 45 of 46 commands pass. The only failing
+command is the historical trim audit with the same six documentary discrepancies.
+All 386 reader contracts, subject decisions, shuffle profiles, public assembly,
+resource bindings, compilation and whitespace checks pass. The actual reader
+consumer passes 30,640 ready/deferred DOM-click seeks for all 15,320 occurrences;
+these check stored onsets, not a new acoustic judgment. Deployed-byte verification
+is next.

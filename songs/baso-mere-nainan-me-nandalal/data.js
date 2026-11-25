@@ -166,7 +166,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mohanī mūrati sāṃvari sūrati",
-    "english": "{0:Enchanting }{1:form, }{2:dark-complexioned }{3:visage,}",
+    "english": "{0:Enchanting }{1:form, }{2:dark }{3:face,}",
     "words": [
       {
         "roman": "Mohanī",
@@ -219,7 +219,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Naiṇā bane bisāl",
-    "english": "{0:eyes }{1:fashioned }{2:large,}",
+    "english": "{0:your eyes }{1:are }{2:wide,}",
     "words": [
       {
         "roman": "Naiṇā",
@@ -384,7 +384,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Chudra ghaṇṭikā kaṭi taṭ śobhit",
-    "english": "{0:Tiny }{1:bells }{4:adorn }{2,3:the region of the waist,}",
+    "english": "{0:Tiny }{1:bells }{4:adorn }{2,3:your waist,}",
     "words": [
       {
         "roman": "Chudra",
@@ -549,7 +549,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhagat bachhal gopāl",
-    "english": "{2:Gopala, }{1:tenderly affectionate }{0:to devotees.}",
+    "english": "{2:Gopāla, }{1:so tender }{0:toward his devotees.}",
     "words": [
       {
         "roman": "Bhagat",

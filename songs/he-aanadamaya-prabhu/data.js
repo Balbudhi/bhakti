@@ -105,7 +105,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "he ānanda ghana",
-    "english": "{0:O }{2:dense mass }{1:of bliss,}",
+    "english": "{0:O }{2:solid embodiment }{1:of bliss,}",
     "words": [
       {
         "roman": "he",
@@ -677,7 +677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ānanda sikta ākāśe graha tārā janma",
-    "english": "{2:In the }{0:bliss-}{1:drenched }{2:sky }{5:is the birth }{3:of planets }{4:and stars,}",
+    "english": "{3:Planets }{4:and stars }{5:are born }{2:in the }{0:bliss-}{1:drenched }{2:sky,}",
     "words": [
       {
         "roman": "ānanda",
@@ -766,7 +766,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ho ānanda sikta ākāśe graha tārā janma",
-    "english": "{0:Oh, }{3:in the }{1:bliss-}{2:drenched }{3:sky }{6:is the birth }{4:of planets }{5:and stars,}",
+    "english": "{0:Oh, }{4:planets }{5:and stars }{6:are born }{3:in the }{1:bliss-}{2:drenched }{3:sky,}",
     "words": [
       {
         "roman": "ho",

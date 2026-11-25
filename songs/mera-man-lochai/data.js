@@ -1820,7 +1820,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sev karī palu casā na vichuṛā",
-    "english": "{0,1:I shall render service }{4,5:and not part }{2:for a moment }{3:or an instant,}",
+    "english": "{0,1:I shall serve you }{4,5:and never part, }{2:not for a moment }{3:or an instant,}",
     "words": [
       {
         "roman": "sev",

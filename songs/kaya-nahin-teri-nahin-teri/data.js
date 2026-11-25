@@ -600,7 +600,7 @@ window.SONG_LINES = {
     "source": "वहाँ की क्या करता गुमानी",
     "sourceLanguage": "hi",
     "roman": "Vahām̐ kī kyā karatā gumānī",
-    "english": "{2:What }{3:are you proud }{1:of }{0:there, }{4:O proud one?}",
+    "english": "{0:There, }{2:what }{1:have you }{3:to boast of, }{4:proud one?}",
     "words": [
       {
         "roman": "Vahām̐",

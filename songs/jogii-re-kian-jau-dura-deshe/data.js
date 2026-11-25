@@ -600,7 +600,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nijaku ṭeki de'i prabhuṅka hātare",
-    "english": "{1,2:entrusting }{0:yourself }{4:into the hands }{3:of the Lord,}",
+    "english": "{1,2:entrusting }{0:yourself }{4:to the hands }{3:of the Lord,}",
     "words": [
       {
         "roman": "nijaku",
@@ -665,7 +665,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nirmohī ātura helu re",
-    "english": "{3:O }{0:unattached one, }{2:you became }{1:restless with yearning, }{3:O!}",
+    "english": "{3:O }{0:unattached one, }{2:you have grown }{1:restless with yearning!}",
     "words": [
       {
         "roman": "nirmohī",
@@ -807,7 +807,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bāṭa sarigale khaṭa chāṛijiba tote re",
-    "english": "{0:when the path }{1:runs out, }{2:the cot }{3:will abandon }{4:you, }{5:O!}",
+    "english": "{0:when the path }{1:ends, }{2:the cot }{3:will abandon }{4:you}{5:!}",
     "words": [
       {
         "roman": "bāṭa",
@@ -890,7 +890,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śeṣe deba ki'e mukhe ṭope pāṇi",
-    "english": "{0:At the end, }{2:who }{1:will give }{4:a drop of }{5:water }{3:into your mouth?}",
+    "english": "{0:At the end, }{2:who }{1:will put }{4:a drop of }{5:water }{3:in your mouth?}",
     "words": [
       {
         "roman": "śeṣe",
@@ -979,7 +979,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "e kathā bi tora mane nāhī̃ re",
-    "english": "{2:Even }{0:this }{1:thought }{5:is not }{3:in your }{4:mind, }{6:O!}",
+    "english": "{0,1:This thought }{5:has not }{2:even }{4:crossed }{3:your mind}{6:!}",
     "words": [
       {
         "roman": "e",

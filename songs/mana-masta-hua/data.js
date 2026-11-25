@@ -776,7 +776,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrī bharī phira kyā tōlē",
-    "english": "{0:Fully }{1:filled, }{3:why }{4:weigh it }{2:anymore?}",
+    "english": "{1:Filled }{0:to the brim, }{3:why }{4:weigh it }{2:anymore?}",
     "words": [
       {
         "roman": "Pūrī",

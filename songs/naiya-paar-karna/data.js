@@ -761,7 +761,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kar dō ēk upkār mujh par karz rahēgā bāqī",
-    "english": "{0,1:Do }{2,3:one act of kindness }{5:upon }{4:me; }{6:the debt }{7:will remain }{8:outstanding}",
+    "english": "{0,1:Show }{4,5:me }{2,3:this one kindness; }{6:I will owe you a debt }{7,8:forever}",
     "words": [
       {
         "roman": "kar",
@@ -1380,7 +1380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jō bhī hai ab tērē bas mēṁ tū tārē yā mārē",
-    "english": "{0,1,2:Whatever is, }{3:is now }{6:in }{4:your }{5:power: }{7:you may }{8:save }{9:or }{10:slay}",
+    "english": "{0,1,2:Everything }{3:is now }{6:in }{4:your }{5:power: }{7:you may }{8:save me }{9:or }{10:slay me}",
     "words": [
       {
         "roman": "jō",

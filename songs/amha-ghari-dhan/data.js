@@ -79,7 +79,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āmhā gharī dhan śabdāñcīc ratne",
-    "english": "{0:In our} {1:home}, {2:wealth is} {4:jewels} {3:of words alone}.",
+    "english": "{0:In our} {1:home}, {4:the jewels} {3:of words alone} {2:are our wealth}.",
     "words": [
       {
         "roman": "āmhā",

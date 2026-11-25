@@ -1440,7 +1440,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kar na sake sohī kar le,",
-    "english": "{2:What one could }{1:not }{0:do, }{3:that very thing }{4,5:one accomplishes; }",
+    "english": "{3:Even what }{2:one }{1:could not }{0:do, }{4,5:one accomplishes; }",
     "words": [
       {
         "roman": "Kar",
@@ -1505,7 +1505,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Man nahīṁ bharapātā",
-    "english": "{0:the mind }{1:cannot }{2:be sated.}",
+    "english": "{0:the heart }{1:never }{2:has enough.}",
     "words": [
       {
         "roman": "Man",

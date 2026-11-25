@@ -39,7 +39,7 @@ window.SONG_LINES = {
   "l001": {
     "source": "கொத்தார் மலர்க்குழலாள் ஒரு கூறாய்",
     "roman": "kottār malarkkuḻalāḷ oru kūṟāy",
-    "english": "{3:Of him whose} {2:one} {3:half is} {1:the lady with flowers in her hair}, {0:in clusters}—",
+    "english": "{3:Of him whose} {2:one} {3:half is} {1:the lady with} {0:clusters of} {1:flowers in her hair}—",
     "words": [
       {
         "roman": "kottār",
@@ -209,7 +209,7 @@ window.SONG_LINES = {
   "l006": {
     "source": "எனப் பெரிதாம் திருப்பதிகம்",
     "roman": "eṉap peritām tiruppatikam",
-    "english": "{2:the sacred hymn} {1:so great}, {0:beginning thus}—",
+    "english": "{2:the sacred hymn} {1:of such greatness}, {0:beginning thus}—",
     "words": [
       {
         "roman": "eṉap",
@@ -409,11 +409,11 @@ window.SONG_LINES = {
   "l011": {
     "source": "எத்தான் மறவாதே",
     "roman": "ettāṉ maṟavātē",
-    "english": "{0:How}, {1:without forgetting}—",
+    "english": "{0:Whatever happens,} {1:never forgetting you}—",
     "words": [
       {
         "roman": "ettāṉ",
-        "gloss": "by what means; how"
+        "gloss": "whatever happens; for any reason (negative context: not for any reason)"
       },
       {
         "roman": "maṟavātē",
@@ -439,7 +439,7 @@ window.SONG_LINES = {
   "l012": {
     "source": "நினைக்கின்றேன் மனத்துன்னை",
     "roman": "niṉaikkiṉṟēṉ maṉattuṉṉai",
-    "english": "{0:do I remember} {1:you} {1:in my mind}?",
+    "english": "{0:I remember} {1:you in my mind}.",
     "words": [
       {
         "roman": "niṉaikkiṉṟēṉ",
@@ -1519,7 +1519,7 @@ window.SONG_LINES = {
   "l030": {
     "source": "ஆதன் பொருளானேன் அறிவில்லேன் அருளாளா",
     "roman": "ātaṉ poruḷāṉēṉ aṟivillēṉ aruḷāḷā",
-    "english": "{1:I am} {1:what the word} “{0:fool}” means; {2:I have no understanding}, {3:O gracious one}.",
+    "english": "{1:I am the very definition of} {0:a fool}; {2:I have no understanding}, {3:O gracious one}.",
     "words": [
       {
         "roman": "ātaṉ",
@@ -2489,7 +2489,7 @@ window.SONG_LINES = {
   "l046": {
     "source": "ஏற்றாய் பெண்ணைத் தென்பால் வெண்ணெய் நல்லூர் அருட்டுறையுள் ஆற்றாய் உனக்காளாய் இனி அல்லேன் எனலாமே",
     "roman": "ēṟṟāy peṇṇait teṉpāl veṇṇey nallūr aruṭṭuṟaiyuḷ āṟṟāy uṉakkāḷāy iṉi allēṉ eṉalāmē",
-    "english": "{0:you received}.  {5:in Aruṭṭuṟai}, {3,4:Veṇṇeynallūr}, {2:on the southern bank} of {1:the Peṇṇai}— {6:O way}, {7:having become your servant}, {10:can} I {8:now} {10:say}, “{9:I am not}”?",
+    "english": "{0:you received}. {5:in Aruṭṭuṟai}, {3,4:Veṇṇeynallūr}, {2:on the southern bank} of {1:the Peṇṇai}— {6:O guide}, {7:having become your servant}, {10:can} I {8:now} {10:say}, “{9:I am not}”?",
     "words": [
       {
         "roman": "ēṟṟāy",
@@ -2517,7 +2517,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āṟṟāy",
-        "gloss": "one who is the way; direct address"
+        "gloss": "guide; one who shows the way"
       },
       {
         "roman": "uṉakkāḷāy",
@@ -3889,7 +3889,7 @@ window.SONG_LINES = {
   "l064": {
     "source": "வெண்ணெய் நல்லூர் அருட்டுறையுள் ஆற்றா உனக்காளாய் இனி அல்லேன் எனலாமே",
     "roman": "veṇṇey nallūr aruṭṭuṟaiyuḷ āṟṟā uṉakkāḷāy iṉi allēṉ eṉalāmē",
-    "english": "{2:in Aruṭṭuṟai}, {0,1:Veṇṇeynallūr}— {3:O way}, {4:having become your servant}, {7:can} I {5:now} {7:say}, “{6:I am not}”?",
+    "english": "{2:in Aruṭṭuṟai}, {0,1:Veṇṇeynallūr}— {3:O guide}, {4:having become your servant}, {7:can} I {5:now} {7:say}, “{6:I am not}”?",
     "words": [
       {
         "roman": "veṇṇey",
@@ -3905,7 +3905,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āṟṟā",
-        "gloss": "one who is the way; direct address"
+        "gloss": "guide; one who shows the way"
       },
       {
         "roman": "uṉakkāḷāy",

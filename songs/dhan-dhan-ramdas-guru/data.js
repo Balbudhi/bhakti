@@ -899,7 +899,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jinī tū seviā bhāu kari se tudhu pāri utāriā",
-    "english": "{0:Those who }{2:have served }{1:You }{4:with }{3:loving devotion, }{5:them }{6:You }{8:have carried across }{7:to the other shore.}",
+    "english": "{6:You }{8:have carried }{5:those }{7:to the other shore }{0:who }{2:served }{1:You }{4:with }{3:loving devotion.}",
     "words": [
       {
         "roman": "Jinī",

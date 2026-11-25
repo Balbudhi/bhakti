@@ -3369,7 +3369,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śūnyapuruṣa he ciraśāśwata",
-    "english": "{0:Person of the Void, }{1:O }{2:eternally everlasting One,}",
+    "english": "{0:Person of the Void, }{1:O }{2:everlasting One,}",
     "words": [
       {
         "roman": "Śūnyapuruṣa",

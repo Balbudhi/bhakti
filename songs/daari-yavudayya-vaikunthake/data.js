@@ -150,7 +150,7 @@ window.SONG_LINES = {
   "l003": {
     "source": "ಆಧಾರಮೂರುತಿ ನಿನ್ನ ಪಾದ ಸೇರುವುದಕೆ",
     "roman": "ādhāramūruti ninna pāda sēruvudake",
-    "english": "{0:O embodiment of support}, {3:to reach} {1:your} {2:feet}.",
+    "english": "{0:O support of all}, {3:to reach} {1:your} {2:feet}.",
     "words": [
       {
         "roman": "ādhāramūruti",
@@ -200,7 +200,7 @@ window.SONG_LINES = {
   "l004": {
     "source": "ಬಲು ಭವದನುಭವದಿ ಕತ್ತಲೆಯೊಳು ಬಲು ಅಂಜುತೆ ನಡುಗಿ",
     "roman": "balu bhavadanubhavadi kattaleyoḷu balu añjute naḍugi",
-    "english": "{0:Deep} {2:in the experience} {1:of worldly existence}, {3:within darkness}, {5:afraid} {4:so greatly} and {6:trembling}…",
+    "english": "{2:Amid the experience} {1:of worldly existence}, {0:deep} {3:in darkness}, {4,5:terrified} and {6:trembling}…",
     "words": [
       {
         "roman": "balu",
@@ -380,7 +380,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "ಪಾಪ ಪೂರ್ವದಲಿ ಮಾಡಿದುದಕೆ ಲೇಪವಾಗಿದೆ ಕರ್ಮ",
     "roman": "pāpa pūrvadali māḍidudake lēpavāgide karma",
-    "english": "{2:Because I committed} {0:sin} {1:before}, {4:the consequences of action} {3:have become a coating}.",
+    "english": "{2:Because I committed} {0:sin} {1:before}, {4:the consequences of my actions} {3:cling to me}.",
     "words": [
       {
         "roman": "pāpa",
@@ -620,7 +620,7 @@ window.SONG_LINES = {
   "l011": {
     "source": "ಪನ್ನಗಶಯನ ಶ್ರೀ ಪುರಂದರ ವಿಠ್ಠಲ",
     "roman": "pannagaśayana śrī purandara viṭhṭhala",
-    "english": "{0:O serpent-reclining} {1,2,3:Śrī Purandara Viṭṭhala}.",
+    "english": "{1,2,3:Śrī Purandara Viṭṭhala}, {0:you who recline upon the serpent}.",
     "words": [
       {
         "roman": "pannagaśayana",

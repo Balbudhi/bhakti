@@ -1710,7 +1710,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jo xud hī jal rahā ho aur kyoṅ usko jalātā hai",
-    "english": "{0:One who }{1,2:is already }{3,4,5:burning, }{7:why }{9,10:do you burn }{8:that one }{6:even more?}",
+    "english": "{7:Why }{9,10:burn }{6:still more }{0,8:someone }{1,2:who is already }{3,4,5:burning?}",
     "words": [
       {
         "roman": "Jo",
@@ -2352,7 +2352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṅne to man likh diyā sāṅvariyā ke nām",
-    "english": "{1:As for me, }{0,3,4:I have deeded }{2:my heart }{6,7:in the name }{5:of the dark Beloved.}",
+    "english": "{1:As for me, }{0,3,4:I have signed over }{2:my heart }{6,7:to }{5:the dark Beloved.}",
     "words": [
       {
         "roman": "Maiṅne",
@@ -2820,7 +2820,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ham aur nahīṅ kachu kām ke",
-    "english": "{0:I am }{2:not }{3:of any }{1:other }{4,5:use,}",
+    "english": "{0:I am }{2:good for no }{1:other }{3,4,5:work,}",
     "words": [
       {
         "roman": "Ham",
@@ -2964,7 +2964,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sajanī pātī tab likhūṅ",
-    "english": "{0:O companion, }{3:I would write }{1:a letter }{2:only then,}",
+    "english": "{0:O companion, }{3:I would write }{1:a letter }{2:only}",
     "words": [
       {
         "roman": "Sajanī",
@@ -4944,7 +4944,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "piyā, in nainan meñ jo palak ḍhāñp tohe lūñ, nā maiñ dekhūñ ġhair ko, nā tohe dekhan dūñ",
-    "english": "{0:Beloved, }{4:if }{6:closing }{5:my eyelids }{8:I enclose }{7:you }{3:in }{1:these }{2:eyes, }{9:neither }{10:will I }{11:look upon }{12,13:a stranger, }{14:nor }{17:will I let }{15:you }{16:look}",
+    "english": "{0:Beloved, }{4:if }{6:I close }{5:my eyelids }{8:and enclose }{7:you }{3:in }{1:these }{2:eyes, }{9:neither }{10:will I }{11:look upon }{12,13:another, }{14:nor }{17:will I let }{15:you }{16:look.}",
     "words": [
       {
         "roman": "piyā,",
@@ -5556,7 +5556,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum nāhīñ to kachhu nāhīñ, tum mile to jāge bhāg",
-    "english": "{0:If you }{1:are not, }{2:then }{3,4:there is nothing; }{5:if you }{6:are found, }{7:then }{9:good fortune }{8:awakens}",
+    "english": "{1:Without }{0:you, }{2:there is }{3,4:nothing; }{5:when you }{6:come to me, }{7:then }{9:good fortune }{8:awakens.}",
     "words": [
       {
         "roman": "tum",
@@ -6042,7 +6042,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hṛdaya mēṁ sē jā'ō tō taba maiṁ jānūm̐ tōhē",
-    "english": "{3,4:If you depart} {1,2:from within} {0:the heart,} {5:then} {6,7:I will acknowledge} {8:you.}",
+    "english": "{3,4:If you can leave} {1,2:from within} {0:my heart,} {5:then} {6,7:I will know} {8:what you are capable of.}",
     "words": [
       {
         "roman": "hṛdaya",
@@ -9336,7 +9336,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prītam kī nazroṅ se gir kar jīnā hai kis kām",
-    "english": "{4,5:Having fallen }{3:in }{0,1:the beloved's }{2:eyes, }{8:of what }{9:use }{7:is }{6:living?}",
+    "english": "{4,5:Having fallen }{3:from }{0,1:the beloved’s }{2:favor, }{8:what }{9:use }{7:is }{6:living?}",
     "words": [
       {
         "roman": "prītam",

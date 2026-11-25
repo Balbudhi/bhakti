@@ -380,7 +380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "doṅga nīvani satulu poṅgucunnārā",
-    "english": "{1:Saying you are }{0:the thief, }{2:the women }{3:are swelling with delight!}",
+    "english": "{1:Calling you }{0:a thief, }{2:the women }{3:overflow with delight!}",
     "words": [
       {
         "roman": "doṅga",
@@ -608,7 +608,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nīvu madhurāpuramu nēla jēpaṭṭi",
-    "english": "{0:you, }{3:taking charge of }{1:the city of Mathurā }{2:to rule it,}",
+    "english": "{0:you }{3:took charge of }{1:Mathurā }{2:to rule it,}",
     "words": [
       {
         "roman": "nīvu",

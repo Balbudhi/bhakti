@@ -72,7 +72,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mere to giridhara gopāla",
-    "english": "{0:Mine }{1:indeed is }{2:Giridhar }{3:Gopal,}",
+    "english": "{2:Giridhara }{3:Gopāla }{1:alone is }{0:mine,}",
     "words": [
       {
         "roman": "mere",
@@ -608,7 +608,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ãsuana jala sī̃chi sī̃chi ke",
-    "english": "{2:Watering }{3,4:and watering }{1:with the water }{0:of tears,}",
+    "english": "{2:Watering }{3,4:again and again }{0,1:with my tears,}",
     "words": [
       {
         "roman": "ãsuana",

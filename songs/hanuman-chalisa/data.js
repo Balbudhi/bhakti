@@ -3229,7 +3229,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rāma duāre tuma rakhavāre । hota na ājñā binu paisāre ॥",
-    "english": "{2:You are}{3: the sentry}{0: at Rama's}{1: door;}{5: no}{8: entry}{4: occurs}{7: without}{6: your command.}",
+    "english": "{2:You are}{3: the sentry}{0: at Rāma’s}{1: door;}{5: no one}{4,8: enters}{7: without}{6: your permission.}",
     "words": [
       {
         "roman": "rāma",
@@ -3854,7 +3854,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "saṅkaṭa teṁ hanumāna chuṛāvai । mana krama bacana dhyāna jo lāvai ॥",
-    "english": "{2:Hanuman}{3: frees}{1: from}{0: distress}{8: whoever}{9: meditates on him}{7:}{4: in thought,}{5: deed,}{6: and word.}",
+    "english": "{2:Hanumān}{3: frees}{8: whoever}{7,9: meditates on him}{4: in thought,}{5: deed,}{6: and word}{1: from}{0: distress.}",
     "words": [
       {
         "roman": "saṅkaṭa",

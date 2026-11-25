@@ -701,7 +701,7 @@ window.SONG_LINES = {
   "l012": {
     "source": "जय सङ्गीतरसिके",
     "roman": "jaya saṅgītarasike",
-    "english": "{0:Hail}, {1:appreciator of music’s flavour}!",
+    "english": "{0:Hail}, {1:you who savor music}!",
     "words": [
       {
         "roman": "jaya",
@@ -2420,7 +2420,7 @@ window.SONG_LINES = {
   "l028": {
     "source": "स्वेदबिन्दूल्लसत्फाललावण्यनिःष्यन्दसन्दोहसन्देहकृन्नासिकामौक्तिके",
     "roman": "svedabindūllasatphālalāvaṇyaniḥṣyandasandohasandehakṛnnāsikāmauktike",
-    "english": "{10:Whose }{9:nose-}{10:pearl }{7,8:seems }{6:a gathered drop }{4:of beauty }{5:flowing }{3:from your forehead }{2:shining }{1:with beads }{0:of sweat},",
+    "english": "{10:Whose }{9,10:nose pearl }{7,8:seems }{6:a gathered drop }{4:of beauty }{5:flowing }{3:from your forehead }{2:shining }{1:with beads }{0:of sweat},",
     "words": [
       {
         "roman": "sveda",
@@ -3548,7 +3548,7 @@ window.SONG_LINES = {
   "l038": {
     "source": "रत्नकेयूररश्मिच्छटापल्लवप्रोल्लसद्दोर्लताराजिते",
     "roman": "ratnakeyūraraśmicchaṭāpallavaprollasaddorlatārājite",
-    "english": "{8:Radiant }{6:with arm-}{7:creepers }{5:on which }{4:shoots }{2,3:of rays }{0:from jeweled }{1:armlets }{5:shine forth},",
+    "english": "{8:Radiant }{6,7:with creeperlike arms }{5:on which }{4:shoots }{2,3:of light }{0:from jeweled }{1:armlets }{5:shine forth},",
     "words": [
       {
         "roman": "ratna",
@@ -4022,7 +4022,7 @@ window.SONG_LINES = {
   "l043": {
     "source": "दिव्यरत्नोर्मिकादीधितिस्तोमसन्ध्यायमानाङ्गुलीपल्लवोद्यन्नखेन्दुप्रभामण्डले",
     "roman": "divyaratnormikādīdhitistomasandhyāyamānāṅgulīpallavodyannakhenduprabhāmaṇḍale",
-    "english": "{12:With a circle }{11:of radiance }{10:from moonlike }{9:nails }{8:rising }{6:on finger-}{7:shoots }{5:made twilight-red }{4:by masses }{3:of rays }{0:from divine }{1:jeweled }{2:rings},",
+    "english": "{12:With a circle }{11:of radiance }{10:from moonlike }{9:nails }{8:rising }{6,7:on fingers like young shoots, }{5:made twilight-red }{4:by masses }{3:of rays }{0:from divine }{1:jeweled }{2:rings},",
     "words": [
       {
         "roman": "divya",
@@ -5547,7 +5547,7 @@ window.SONG_LINES = {
   "l058": {
     "source": "वैभवानर्गले",
     "roman": "vaibhavānargale",
-    "english": "{0:Whose splendour }{1:is unbarred},",
+    "english": "{0:Whose splendour }{1:knows no bounds},",
     "words": [
       {
         "roman": "vaibhav",
@@ -5792,7 +5792,7 @@ window.SONG_LINES = {
   "l062": {
     "source": "नम्रदिक्पालसीमन्तिनीकुन्तलस्निग्धनीलप्रभापुञ्जसञ्जातदूर्वाङ्कुराशङ्कसारङ्गसंयोगरिङ्खन्नखेन्दूज्ज्वले",
     "roman": "namradikpālasīmantinīkuntalasnigdhanīlaprabhāpuñjasañjātadūrvāṅkurāśaṅkasāraṅgasaṃyogariṅkhannakhendūjjvale",
-    "english": "{15:Whose nail-}{16:moons }{17:shine }{14:with the stirring }{12:of deer }{13:drawn }{7:to the mass }{5:of dark }{4:glossy }{6:radiance }{0:from the bowing }{1:guardians’ }{2:wives’ }{3:hair, }{8,11:which they mistake }{10:for sprouts }{9:of dūrvā grass},",
+    "english": "{15:Whose }{16:moonlike }{15:nails }{17:shine }{14:with the stirring }{12:of deer }{13:drawn }{7:to the mass }{5:of dark }{4:glossy }{6:radiance }{0:from the bowing }{1:guardians’ }{2:wives’ }{3:hair, }{8,11:which they mistake }{10:for sprouts }{9:of dūrvā grass},",
     "words": [
       {
         "roman": "namra",
@@ -7438,7 +7438,7 @@ window.SONG_LINES = {
   "l084": {
     "source": "भक्तिमच्चेतसा वेधसा स्तूयसे",
     "roman": "bhaktimaccetasā vedhasā stūyase",
-    "english": "{3:You are praised} {2:by Brahmā}, {1:with a heart }{0:endowed with devotion}.",
+    "english": "{3:You are praised} {2:by Brahmā}, {1:with a }{0:devoted }{1:heart}.",
     "words": [
       {
         "roman": "bhaktimac",

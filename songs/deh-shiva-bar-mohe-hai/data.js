@@ -214,7 +214,7 @@ window.SONG_LINES = {
   "l003": {
     "source": "ਨ ਡਰੋਂ ਅਰਿ ਸੋਂ ਜਬ ਜਾਇ ਲਰੋਂ ਨਿਸਚੈ ਕਰਿ ਅਪਨੀ ਜੀਤ ਕਰੋਂ",
     "roman": "Na ḍaroṃ ari soṃ jab jāi laroṃ niscai kari apanī jīt karoṃ",
-    "english": "{0:May I not }{1:fear }{3:before }{2:the enemy }{4:when }{5:I go }{6:to fight; }{7,8:with firm resolve, }{11:may I achieve }{10:victory }{9:for myself.}",
+    "english": "{0:May I not }{1:be afraid }{2,3:of the enemy }{4:when }{5:I go }{6:to fight; }{7,8:with firm resolve, }{11:may I achieve }{9,10:my victory.}",
     "words": [
       {
         "roman": "Na",

@@ -1213,7 +1213,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gaurīdehasamudbhavāṁ trijagatāmādhārabhūtāṁ mahāpūrvāmatra sarasvatīmanubhaje śumbhādidaityārdinīm ||",
-    "english": "{9:Here}{11: I worship}{7: Mahā}{10:sarasvatī}—{10:Sarasvatī}{8: called}{7: “Great”}—{2:arisen}{1: from}{0: Gaurī’s}{1: body,}{5,6: foundation}{4: of the}{3: three}{4: worlds,}{15: destroyer}{12: of Śumbha}{13: and the other}{14: Daityas.}",
+    "english": "{9:Here}{11: I worship}{7,8,10: Mahāsarasvatī}, {2:arisen}{1: from}{0: Gaurī’s}{1: body,}{5,6: foundation}{4: of the}{3: three}{4: worlds,}{15: destroyer}{12: of Śumbha}{13: and the other}{14: Daityas.}",
     "words": [
       {
         "roman": "gaurī",

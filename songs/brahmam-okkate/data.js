@@ -621,7 +621,7 @@ window.SONG_LINES = {
   "l014": {
     "source": "నిండార రాజు నిద్రించు నిద్రయు నొకటే",
     "roman": "niṇḍāra rāju nidriñcu nidrayu nokaṭē",
-    "english": "{3:The sleep} {1:the king} {2:sleeps} {0:so soundly} {4:is the same},",
+    "english": "{3:The sleep} {1:of the king} {2:who sleeps} {0:so soundly} {4:is the same},",
     "words": [
       {
         "roman": "niṇḍāra",
@@ -891,7 +891,7 @@ window.SONG_LINES = {
   "l019": {
     "source": "కడగి యేనుగుమీద వాలు నెండొకటే",
     "roman": "kaḍagi yēnugumīda vālu neṇḍokaṭē",
-    "english": "{3:The sunshine} {0:that sets out to} {2:fall} {1:upon an elephant} {3:is the same},",
+    "english": "{3:The sunshine} {0,2:that falls} {1:upon an elephant} {3:is the same},",
     "words": [
       {
         "roman": "kaḍagi",

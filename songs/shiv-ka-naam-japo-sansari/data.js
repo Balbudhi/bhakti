@@ -306,7 +306,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāgara manthana kē pratiphala sē",
-    "english": "{4:From }{3:the outcome }{1,2:of the churning }{0:of the ocean,}",
+    "english": "{3,4:As a result }{1,2:of churning }{0:the ocean,}",
     "words": [
       {
         "roman": "sāgara",

@@ -217,7 +217,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yēṇēṁ sukhēṁ rucē ēkāntācā vāsa",
-    "english": "{0:Through this }{1:bliss, }{4:dwelling }{3:in solitude }{2:is pleasing,}",
+    "english": "{0:With this }{1:joy, }{4:life }{3:in solitude }{2:is sweet,}",
     "words": [
       {
         "roman": "Yēṇēṁ",
@@ -288,7 +288,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nāhīṁ guṇa dōṣa aṅgā yēta",
-    "english": "{1:Virtues }{2:and faults }{0:do not }{4:come }{3:upon the body.}",
+    "english": "{1:Virtues }{2:and faults }{0:do not }{4:attach }{3:to us.}",
     "words": [
       {
         "roman": "Nāhīṁ",
@@ -736,7 +736,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tukā mhaṇē hōya manāsī saṁvāda",
-    "english": "{0:Tukā }{1:says, }{4:a dialogue }{2:takes place }{3:with the mind:}",
+    "english": "{0:Tukā }{1:says: }{2:I enter }{4:into dialogue }{3:with my mind—}",
     "words": [
       {
         "roman": "Tukā",
@@ -795,7 +795,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āpulācī vāda āpaṇāsī",
-    "english": "{0:one's very own }{1:discourse }{2:with oneself.}",
+    "english": "{0:my own }{1:debate }{2:with myself.}",
     "words": [
       {
         "roman": "Āpulācī",

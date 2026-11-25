@@ -205,7 +205,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bāla na bāṅkā kara sake jo jaga bairī hoya",
-    "english": "{5:Even if }{6:the world }{8:becomes }{7:an enemy, }{1,4:it cannot }{2,3:bend }{0:a single hair.}",
+    "english": "{5:Even if }{6:the world }{8:becomes }{7:an enemy, }{1,4:it cannot }{2,3:harm }{0:a single hair.}",
     "words": [
       {
         "roman": "Bāla",
@@ -431,7 +431,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāha tumhārī dekha dekha merī akhiyāṁ bhara bhara āīṁ",
-    "english": "{2,3:Watching and watching }{1:your }{0:path, }{4:my }{5:eyes }{6,7,8:have filled and filled with tears.}",
+    "english": "{2,3:Watching and watching }{1:for your }{0:coming, }{4:my }{5:eyes }{6,7,8:fill with tears again and again.}",
     "words": [
       {
         "roman": "Rāha",

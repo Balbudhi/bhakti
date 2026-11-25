@@ -446,7 +446,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terī bītī umar hari nām binā",
-    "english": "{0:your }{2:lifespan }{1:has passed }{5:without }{3,4:the name of Hari.}",
+    "english": "{0:Your }{2:life }{1:has passed }{5:without }{3,4:the name of Hari.}",
     "words": [
       {
         "roman": "terī",

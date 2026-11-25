@@ -399,7 +399,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upadesi gurū hari hari japu jāpai",
-    "english": "{0:Following the instruction }{1:of the Guru, }{5:they chant }{4:the recitation }{2:“Hari, }{3:Hari”;}",
+    "english": "{0:Following the instruction }{1:of the Guru, }{4,5:they chant }{2:“Hari, }{3:Hari”;}",
     "words": [
       {
         "roman": "upadesi",

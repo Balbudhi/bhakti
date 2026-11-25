@@ -193,7 +193,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Apūrṇa jībane mora bhakti pūrṇa kara",
-    "english": "{1:in }{2:my }{0:incomplete }{1:life, }{5:make }{3:devotion }{4:full.}",
+    "english": "{1:In }{2:my }{0:incomplete }{1:life, }{5:bring }{3:devotion }{4:to fullness.}",
     "words": [
       {
         "roman": "Apūrṇa",
@@ -323,7 +323,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mũ je chāra aṇuṭie biśwa prāṅgaṇara",
-    "english": "{0:I am }{1:indeed }{2:a wretched }{3:tiny particle }{5:of the courtyard }{4:of the universe,}",
+    "english": "{0:I am }{1:but }{2:a lowly }{3:particle }{5:in the courtyard }{4:of the universe,}",
     "words": [
       {
         "roman": "Mũ",
@@ -643,7 +643,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Biśwa tuma aṁśa mātra tume pūrṇabrahma",
-    "english": "{0:The universe }{3:is merely }{1:your }{2:part; }{4:you are }{5:the fullness of supreme reality,}",
+    "english": "{0:The universe }{3:is only }{2:a part }{1:of you; }{4:you are }{5:supreme reality in all its fullness,}",
     "words": [
       {
         "roman": "Biśwa",

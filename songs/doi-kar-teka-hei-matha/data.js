@@ -1944,7 +1944,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gaī choḍa kara bhava se rajanī tama ne vilaya pāyā",
-    "english": "{5:Night }{0:has gone, }{1,2:having left }{3,4:the world; }{6,7:darkness }{8,9:has dissolved.}",
+    "english": "{5:Night }{0:has departed }{1,2:and left }{3,4:the world behind; }{6,7:darkness }{8,9:has dissolved.}",
     "words": [
       {
         "roman": "Gaī",
@@ -2176,7 +2176,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śakti nahīṁ yatkiñcita usako nā sarakā pāyā",
-    "english": "There is {1:no }{0:strength }{2:in the least; }{6:one could }{4:not }{5:shift }{3:it,}",
+    "english": "I have {1:not }{2:the slightest }{0:strength; }I {4,6:cannot }{5:move }{3:it aside,}",
     "words": [
       {
         "roman": "Śakti",
@@ -2277,7 +2277,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tumhī haṭā kara mukha dikhalānā jana tāro rāyā",
-    "english": "{0:You alone, }{1,2:having removed it, }{4:reveal Your }{3:face; }{6:deliver }{5:the devotees, }{7:O King!}",
+    "english": "{0:You alone }{1,2:can remove it; }{4:show us Your }{3:face }and {6:deliver }{5:Your devotees, }{7:O King!}",
     "words": [
       {
         "roman": "Tumhī",
@@ -2687,7 +2687,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sakṛpa hokara apanī mahimā khuda hī sunavāo",
-    "english": "{1:Becoming }{0:gracious, }{2:cause Your own }{3:glory }{6:to be heard }{4:Yourself }{5:alone!}",
+    "english": "{0,1:Be gracious: }{4,5:You Yourself }{6:proclaim }{2:Your own }{3:glory!}",
     "words": [
       {
         "roman": "Sakṛpa",
@@ -3180,7 +3180,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uṭhākara netra palakeṁ dīna bandhu Ramākāntā",
-    "english": "{0:Lifting }{2:the eyelids }{1:of Your eyes, }{4:O friend }{3:of the humble, }{5:O beloved of Lakṣmī,}",
+    "english": "{0:Lift }{1,2:Your eyelids, }{4:O friend }{3:of the humble, }{5:O beloved of Lakṣmī,}",
     "words": [
       {
         "roman": "Uṭhākara",
@@ -3269,7 +3269,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dekho aise dekhe jaise bālaka ko mātā",
-    "english": "{0:look }{1:in such a way }{3:as }{6:a mother }{2:looks }{4,5:upon her child!}",
+    "english": "{0:look upon us }{1,3:as }{6:a mother }{2:looks }{4,5:upon her child!}",
     "words": [
       {
         "roman": "Dekho",
@@ -3453,7 +3453,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hama hī apanī khātira tumako kaṣṭa dete devā",
-    "english": "{0:We }{1:ourselves }{6:give }{5:trouble }{4:to You }{2:for our own }{3:sake, }{7:O Lord;}",
+    "english": "{0,1:We ourselves }{5,6:trouble }{4:You }{2:for our own }{3:sake, }{7:O Lord;}",
     "words": [
       {
         "roman": "Hama",
@@ -3554,7 +3554,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sahana karake āo cāhe bheṭa Kṛṣṇa devā",
-    "english": "{0,1:bearing it patiently, }{2:come forth; }{3:one longs for }{4:a meeting, }{6:O Lord }{5:Kṛṣṇa!}",
+    "english": "{0,1:bear with us }and {2:come forth; }{3:we long }{4:to meet You, }{6:O Lord }{5:Kṛṣṇa!}",
     "words": [
       {
         "roman": "Sahana",
@@ -6505,7 +6505,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tvadvacanāmṛta prāśana kara ke dehabhāna kho rahā",
-    "english": "{3,4,5:Drinking} {2:the nectar }{0:of your }{1:words,} {8,9:one is losing} {6:bodily }{7:consciousness.}",
+    "english": "{3,4,5:Drinking} {2:the nectar }{0:of your }{1:words,} {8,9:we lose} {7:awareness} {6:of the body.}",
     "words": [
       {
         "roman": "Tvad",
@@ -8601,7 +8601,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dvāra pe bāje bajate ḍhola ḍhamāḍhama garajate",
-    "english": "{1:At }{0:the doorway }{2:musical instruments }{3:sound, }{4:and drums }{6:thunder }{5:booming.}",
+    "english": "{1:At }{0:the doorway }{2:musical instruments }{3:sound, }{4:and drums }{6:roar }{5:with a booming beat.}",
     "words": [
       {
         "roman": "Dvāra",

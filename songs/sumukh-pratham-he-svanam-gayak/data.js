@@ -104,7 +104,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sumukha prathama he svanāmagāyakapālaka sevakamaṅgalakāraka",
-    "english": "{2:O} {0:beautiful-faced one}, {1:foremost one}, {6:protector }{5:of those who sing }{3:your own }{4:name}, {9:maker }{8:of auspiciousness }{7:for your servants}!",
+    "english": "{2:O} {0:beautiful-faced one}, {1:foremost one}, {6:protector }{5:of those who sing }{3:your own }{4:name}, {9:bringer }{8:of good fortune }{7:to your servants}!",
     "words": [
       {
         "roman": "sumukha",
@@ -168,7 +168,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kāmasupūraka maṅgalakāraka",
-    "english": "{0:Thorough fulfiller of desires}, {1:maker of auspiciousness}!",
+    "english": "{0:You who fulfill every desire}, {1:bringer of good fortune}!",
     "words": [
       {
         "roman": "kāmasupūraka",
@@ -635,7 +635,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pālaya sevakam akhilaprahāraka",
-    "english": "{0:Protect} {1:the servant}, {3:O striker }{2:of all}!",
+    "english": "{0:Protect} {1:your servant}, {3:you who strike down }{2:all}!",
     "words": [
       {
         "roman": "pālaya",

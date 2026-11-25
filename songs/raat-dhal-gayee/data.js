@@ -766,7 +766,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Parvatmālā nadī sarōvar, saptaraṅgī ākāś manōhar",
-    "english": "{0:Mountain ranges, }{1:rivers, }{2:lakes, }{3:the seven-colored }{4:sky }{5:is enchanting}",
+    "english": "{0:Mountain ranges, }{1:rivers, }{2:lakes, }{3:the seven-colored }{4:sky}—{5:all enchanting}",
     "words": [
       {
         "roman": "Parvatmālā",
@@ -843,7 +843,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pēṛ phūlōṁ kā sugandh mahakā",
-    "english": "{3:The fragrance }{2:of }{0:trees }{1:and flowers }{4:has wafted}",
+    "english": "{3:The fragrance }{2:of }{0:trees }{1:and flowers }{4:fills the air}",
     "words": [
       {
         "roman": "Pēṛ",
@@ -1122,7 +1122,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gāy bachṛē śōr macāē, cahak rahē haiṁ pañchī",
-    "english": "{0:Cows }{1:and calves }{3:raise }{2:clamor, }{7:the birds }{4,5,6:are chirping}",
+    "english": "{0:Cows }{1:and calves }{3:raise }{2:a clamor, }{7:the birds }{4,5,6:are chirping}",
     "words": [
       {
         "roman": "Gāy",
@@ -1609,7 +1609,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Apnā tan man sārē",
-    "english": "{3:all }{0:of their own }{1:body }{2:and mind}",
+    "english": "{0:their own }{1:bodies }{2:and minds }{3:entirely}",
     "words": [
       {
         "roman": "Apnā",

@@ -766,7 +766,7 @@ window.SONG_LINES = {
   "l015": {
     "source": "ಮದಮುಖದ ಸುರರ ದಿಗಿಲಿಟ್ಟು ಕೊಂದ",
     "roman": "madamukhadasurara digiliṭṭu konda",
-    "english": "{5:Who killed} {2:the} {0:pride}-{1:faced} {2:demons}, {4:striking} {3:terror} {4:into them}.",
+    "english": "{5:Who killed} {2:the demons} {0,1:with pride on their faces}, {4:striking} {3:terror} {4:into them}.",
     "words": [
       {
         "roman": "mada",

@@ -1028,7 +1028,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "magar mere bas kī ye bāt nahī̃ hai",
-    "english": "{0:But }{4:this }{5:matter }{7:is }{6:not }{1:within my }{2,3:capacity,}",
+    "english": "{0:But }{4,5:this }{6,7:is beyond }{1,2,3:what I can do,}",
     "words": [
       {
         "roman": "magar",
@@ -1977,7 +1977,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gale se lagā le samādhi se uṭh ke",
-    "english": "{0,1,2:Embrace }{3:me, }{6,7:having risen }{5:from }{4:the tomb!}",
+    "english": "{6,7:Rise }{5:from }{4:the tomb }{0,1,2:and embrace }{3:me!}",
     "words": [
       {
         "roman": "gale",

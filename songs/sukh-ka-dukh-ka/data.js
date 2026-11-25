@@ -459,7 +459,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁnātha ko kaṣṭa sunāo",
-    "english": "{3:Tell }{2:your hardships }{0,1:to Lord Sainath}",
+    "english": "{3:Tell }{0,1:Lord Sāīnātha }{2:of your hardships}",
     "words": [
       {
         "roman": "sāīṁnātha",
@@ -1613,7 +1613,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "īśvara allāha eka haiṁ bande, īśvara allāha eka haiṁ bande, eka rahīma aura rāma",
-    "english": "{0:Ishvara }{1:and Allah }{3:are }{2:One, }{4:O mortal, }{5:Ishvara }{6:and Allah }{8:are }{7:One, }{9:O mortal, }{10:One }{11:are Rahim }{12:and }{13:Rama}",
+    "english": "{0:Īśvara }{1:and Allāh }{3:are }{2:one, }{4:O mortal, }{5:Īśvara }{6:and Allāh }{8:are }{7:one, }{9:O mortal; }{11:Rahīm }{12:and }{13:Rāma }are {10:one}",
     "words": [
       {
         "roman": "īśvara",

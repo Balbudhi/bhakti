@@ -463,7 +463,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jin caraṇõ mẽ tīrath base haĩ",
-    "english": "{2:In }{0:which }{1:feet }{3:sacred pilgrimage shrines }{4,5:dwell,}",
+    "english": "{0,1:Those feet }{2:where }{3:sacred pilgrimage shrines }{4,5:dwell,}",
     "words": [
       {
         "roman": "jin",
@@ -546,7 +546,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jin pairõ ko muni dhote haĩ",
-    "english": "{0:which }{1,2:feet }{3:the sages }{4,5:wash,}",
+    "english": "{0,1,2:those feet }{3:the sages }{4,5:wash,}",
     "words": [
       {
         "roman": "jin",
@@ -635,7 +635,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jin caraṇõ mẽ merā jīvan basā hai",
-    "english": "{2:in }{0:which }{1:feet }{3:my }{4:life }{5,6:has its abode,}",
+    "english": "{0,1:those feet }{2:where }{3:my }{4:life }{5,6:has its home—}",
     "words": [
       {
         "roman": "jin",

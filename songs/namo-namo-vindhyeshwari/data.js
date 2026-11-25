@@ -779,7 +779,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dīnana ke duḥkha harata bhavānī | nahī̃ dekhyo tuma sama koī dānī ||",
-    "english": "{3:You remove }{2:the sorrows }{0,1:of the humble, }{4:O Bhavani; }{5,6,9:none has been seen }{10:as a benefactor }{7,8:equal to you.}",
+    "english": "{3:You remove }{2:the sorrows }{0,1:of the humble, }{4:O Bhavānī; }{5,6,9:no one has seen }{10:a giver }{7,8:equal to you.}",
     "words": [
       {
         "roman": "dīnana",
@@ -1035,7 +1035,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo jana dhyāna tumhāro lāvai | so turatahi vāñchita phala pāvai ||",
-    "english": "{0,1:Whoever }{2,4:fixes their contemplation }{3:upon you, }{5:that person }{6:instantly }{9:receives }{7,8:the desired fruit.}",
+    "english": "{0,1:Whoever }{2,4:meditates }{3:upon you }{5:will }{6:at once }{9:receive }{7,8:the fruit they desire.}",
     "words": [
       {
         "roman": "jo",
@@ -2677,7 +2677,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kṛpā karahu mo para maharānī | siddhi karia ambe mama bānī ||",
-    "english": "{0,1:Bestow your grace }{3:upon }{2:me, }{4:O Great Queen; }{7:O Mother, }{6:make }{8:my }{9:speech }{5:fulfilled.}",
+    "english": "{0,1:Bestow your grace }{3:upon }{2:me, }{4:O Great Queen; }{7:O Mother, }{6:make }{8:my }{9:words }{5:come true.}",
     "words": [
       {
         "roman": "kṛpā",
@@ -2808,7 +2808,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo nara dharai mātu kara dhyānā | tākara sadā hoya kalyānā ||",
-    "english": "{0,1:Whoever }{2:maintains }{5:contemplation }{3,4:of the Mother, }{6:for that person }{9:auspicious welfare }{7,8:is forever assured.}",
+    "english": "{0,1:Whoever }{2,5:meditates }{3,4:upon the Mother }{6,9:will fare well }{7,8:always.}",
     "words": [
       {
         "roman": "jo",
@@ -2939,7 +2939,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vipati tāhi sapanehũ nahĩ āvai | jo devī kara jāpa karāvai ||",
-    "english": "{0:Calamity }{3,4:does not approach }{1:him }{2:even in a dream, }{5:whoever }{6,7:causes the Goddess’s }{8:chanting }{9:to be performed.}",
+    "english": "{0:Calamity }{3,4:does not approach }{1:them, }{2:even in a dream—}{5:those who }{6,7:have the Goddess’s name }{8,9:chanted.}",
     "words": [
       {
         "roman": "vipati",

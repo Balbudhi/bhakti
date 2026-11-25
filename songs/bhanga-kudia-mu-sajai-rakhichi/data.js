@@ -38,7 +38,7 @@ window.SONG_LINES = {
     "source": "ଭଙ୍ଗା କୁଡ଼ିଆ ମୋ ସଜାଇ ବସିଛି ଆସିବ କି ମୋର ଦ୍ୱାରେ",
     "sourceLanguage": "",
     "roman": "Bhaṅgā kuṛiā mo sajāi basichi āsiba ki mora dvāre",
-    "english": "{3:Having decorated }{2:my }{0:broken }{1:hut, }{4:I sit; }{5,6:will you come }{7,8:to my door?}",
+    "english": "{3:I have decorated }{2:my }{0:broken }{1:hut }{4:and sit waiting; }{5,6:will you come }{7,8:to my door?}",
     "words": [
       {
         "roman": "Bhaṅgā",
@@ -157,7 +157,7 @@ window.SONG_LINES = {
     "source": "ଝରିବ ତୁମର କୃପାର ବରଷା",
     "sourceLanguage": "",
     "roman": "Jhariba tumara kṛpāra baraṣā",
-    "english": "{3:The rain }{1:of your }{2:grace }{0:will shower,}",
+    "english": "{3:The rain }{1:of your }{2:grace }{0:will fall,}",
     "words": [
       {
         "roman": "Jhariba",
@@ -216,7 +216,7 @@ window.SONG_LINES = {
     "source": "ଝରିବ ତୁମର କୃପାର ବରଷା ମୋ ହୃଦ ଅଗଣା ପରେ",
     "sourceLanguage": "",
     "roman": "Jhariba tumara kṛpāra baraṣā mo hṛda agaṇā pare",
-    "english": "{3:The rain }{1:of your }{2:grace }{0:will shower }{7:upon }{6:the courtyard }{4:of my }{5:heart.}",
+    "english": "{3:The rain }{1:of your }{2:grace }{0:will fall }{7:upon }{6:the courtyard }{4:of my }{5:heart.}",
     "words": [
       {
         "roman": "Jhariba",
@@ -572,7 +572,7 @@ window.SONG_LINES = {
     "source": "ଚିତା କାଟିଦେଇ ମୁରୁଜ ପକାଇ ଝୋଟି ପାରିଦେଇ ଗୋବର ଲିପାଇ",
     "sourceLanguage": "",
     "roman": "Citā kāṭidei muruja pakāi jhoṭi pāridei gobara lipāi",
-    "english": "{1:Having drawn }{0:floor-patterns, }{3:scattered }{2:colored powder, }{5:spread }{4:rice-paste art, }{7:and plastered }{6:with cow dung,}",
+    "english": "{1:Having drawn }{0:patterns on the floor, }{3:scattered }{2:colored powder, }{5:painted }{4:designs in rice paste, }{7:and plastered the floor }{6:with cow dung,}",
     "words": [
       {
         "roman": "Citā",
@@ -679,7 +679,7 @@ window.SONG_LINES = {
     "source": "ମନ ସଫା କରି ହୃଦୟ ରଙ୍ଗାଇ",
     "sourceLanguage": "",
     "roman": "Mana saphā kari hṛdaya raṅgāi",
-    "english": "{2:Having made }{0:the mind }{1:clean }{4:and dyed }{3:the heart,}",
+    "english": "{2:Having }{1:cleansed }{0:my mind }{4:and dyed }{3:my heart,}",
     "words": [
       {
         "roman": "Mana",

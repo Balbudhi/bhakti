@@ -1249,7 +1249,7 @@ window.SONG_LINES = {
   "l015": {
     "source": "तेरा एहसास मेरे जीवन का आधार हो",
     "roman": "terā ehsās mere jīvan kā ādhār ho",
-    "english": "{6:May} the {1:felt awareness} {0:of you} be the {5:foundation} {4:of} {2:my} {3:life}.",
+    "english": "{6:May} the {1:sense} {0:of your presence} be the {5:foundation} {4:of} {2:my} {3:life}.",
     "words": [
       {
         "roman": "terā",
@@ -1639,7 +1639,7 @@ window.SONG_LINES = {
   "l022": {
     "source": "हर आहट से तेरे आने की उम्मीद लगती है",
     "roman": "har āhaṭ se tere āne kī ummīd lagtī hai",
-    "english": "{2:From} {0:every} {1:sound of movement}, {6:hope} {7,8:arises} {5:of} {3:your} {4:coming}.",
+    "english": "{0:Every} {1:footfall} {2,7,8:stirs} {6:hope} {5:of} {3:your} {4:coming}.",
     "words": [
       {
         "roman": "har",

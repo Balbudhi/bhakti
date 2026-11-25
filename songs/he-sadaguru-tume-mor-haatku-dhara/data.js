@@ -1649,7 +1649,7 @@ window.SONG_LINES = {
     "source": "ତୁମେ ଆସି କର ଉପଚାର",
     "sourceLanguage": "",
     "roman": "Tume āsi kara upacāra",
-    "english": "{0,1:Come }{2:and administer }{3:the remedy}",
+    "english": "{0,1:Come }{2:and bring }{3:healing}",
     "words": [
       {
         "roman": "Tume",
@@ -1708,7 +1708,7 @@ window.SONG_LINES = {
     "source": "ଜାଣେନା ମୁଁ ପୂଜା ଆରତି ଧ୍ୟାନ ତେତିଶି କୋଟି ଦେବଙ୍କର",
     "sourceLanguage": "",
     "roman": "Jāṇenā muṁ pūjā ārati dhyāna tetiśi koṭi debaṅkara",
-    "english": "{0,1:I know not }{2:the worship, }{3:lamp-offering, }{4:or meditation }{5:of the thirty-three }{6:crore }{7:deities}",
+    "english": "{0,1:I do not know how }{2:to worship, }{3:offer lamps, }{4:or meditate upon }{5,6:the 330 million }{7:deities}",
     "words": [
       {
         "roman": "Jāṇenā",
@@ -1957,7 +1957,7 @@ window.SONG_LINES = {
     "source": "ଚାଲି ଚାଲି ଜୀବନେ କଣ୍ଟା ଝଣ୍ଟା ବାଟେ ଥକି ସାରିଲାଣି ଜୀବ ମୋର",
     "sourceLanguage": "",
     "roman": "Cāli cāli jībane kaṇṭā jhaṇṭā bāṭe thaki sārilāṇi jība mora",
-    "english": "{0,1:Walking and walking }{2:in life }{5:along the path }{3:of thorns }{4:and brambles, }{8,9:my life-force }{6,7:is completely exhausted}",
+    "english": "{0,1:Walking and walking }{5:the path }{3:of thorns }{4:and brambles }{2:through life, }{8,9:my soul }{6,7:is utterly exhausted}",
     "words": [
       {
         "roman": "Cāli",
@@ -2088,7 +2088,7 @@ window.SONG_LINES = {
     "source": "କୃପା କରି ଗୁରୁ ଏବେ ବିଜେ କର",
     "sourceLanguage": "",
     "roman": "Kṛpā kari guru ebe bije kara",
-    "english": "{0,1:Graciously, }{2:O Guru, }{4,5:make Your holy arrival }{3:now}",
+    "english": "{0,1:In Your grace, }{2:O Guru, }{4,5:come }{3:now}",
     "words": [
       {
         "roman": "Kṛpā",

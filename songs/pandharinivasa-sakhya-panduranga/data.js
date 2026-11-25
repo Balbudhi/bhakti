@@ -254,7 +254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhaktakaivāriyā hosī nārāyaṇā",
-    "english": "{1:O protector} {0:of devotees}, {2:you are}, {3:O Nārāyaṇa};",
+    "english": "{3:O Nārāyaṇa}, {2:you are} {1:the protector} {0:of devotees};",
     "words": [
       {
         "roman": "bhakta",
@@ -380,7 +380,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bolatā vacane kāy lāj",
-    "english": "{0:In speaking} {1:words}— {2:what} {3:shame} is there?",
+    "english": "{2:What} {3:shame} is there {0:in speaking} {1:a word}?",
     "words": [
       {
         "roman": "bolatā",

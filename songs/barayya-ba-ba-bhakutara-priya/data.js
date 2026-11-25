@@ -664,7 +664,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kaṃda viriṃciyu naṃdivāhana amarēṃdra sanaka sanaṃdanādi munivṛṃda baṃdu niṃdu dhīṃ dhīṃ dhīmikeṃdu",
-    "english": "{0:Your son} {1:Viriñci}, {2:Nandi’s rider}, {3:Indra}, {7:having come}, {8:stand with} {6:the company of sages}, {4:Sanaka}, {5:Sanandana and the others}, {9:“dhīṃ}, {10:dhīṃ}, {11:dhīmiki” on their lips},",
+    "english": "{0:Your son} {1:Viriñci}, {2:Nandi’s rider}, {3:Indra}, {6:and the company of sages}—{4:Sanaka}, {5:Sanandana and the others}—{7:come} {8:and stand}, {9:“dhīṃ}, {10:dhīṃ}, {11:dhīmiki” on their lips},",
     "words": [
       {
         "roman": "kaṃda",
@@ -1486,7 +1486,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maḍuvinoḷage gaja moreyiḍalākṣaṇa maḍadige hēḷade duḍuduḍane baṃdu hiḍidu nakrana bāyi kaḍidu biḍisidane",
-    "english": "{3:The moment} {1:the elephant} {2:cried for help} {0:in the pool}, {6:headlong} {7:you came}, {5:without telling} {4:your wife}; {8:seizing}, {11:cutting} {9:the crocodile’s} {10:jaws}, {12:you freed him}.",
+    "english": "{3:The moment} {1:the elephant} {2:cried for help} {0:in the pool}, {7:you came} {6:rushing}, {5:without telling} {4:your wife}; {8:you seized} {9:the crocodile} {11:and cut} {10:its jaws}, {12:freeing the elephant}.",
     "words": [
       {
         "roman": "maḍuvinoḷage",

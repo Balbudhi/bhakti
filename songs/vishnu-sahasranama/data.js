@@ -241,7 +241,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śuklāmbaradharaṃ viṣṇuṃ śaśivarṇaṃ caturbhujam |\nprasannavadanaṃ dhyāyet sarvavighnopaśāntaye ||",
-    "english": "{5:One should meditate on} {1:Viṣṇu}, {0:wearing a white garment}, {2:moon-coloured}, {3:four-armed}, {4:with a serene face}, {6:for the pacification of every obstacle}.",
+    "english": "{5:Meditate on} {1:Viṣṇu}, {0:clad in white}, {2:moon-coloured}, {3:four-armed}, {4:serene of face}, {6:so that every obstacle may fall away}.",
     "words": [
       {
         "roman": "śuklāmbaradharaṃ",
@@ -518,7 +518,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vyāsāya viṣṇurūpāya vyāsarūpāya viṣṇave |\nnamo vai brahmanidhaye vāsiṣṭhāya namo namaḥ ||",
-    "english": "{4:Obeisance} {0:to Vyāsa}, {1:whose form is Viṣṇu}; {8:obeisance} {3:to Viṣṇu}, {2:whose form is Vyāsa}; {9:obeisance} {5:indeed} {7:to the descendant of Vasiṣṭha}, {6:the treasury of Brahman}.",
+    "english": "{4:Obeisance} {0:to Vyāsa}, {1:whose form is Viṣṇu}; {8:obeisance} {3:to Viṣṇu}, {2:whose form is Vyāsa}; {9:obeisance} {5:indeed} {7:to the descendant of Vasiṣṭha}, {6:the treasury of Vedic wisdom}.",
     "words": [
       {
         "roman": "vyāsāya",
@@ -578,7 +578,7 @@ window.SONG_LINES = {
         "roman": "brahmanidhaye",
         "citationRoman": "brahma-nidhaye",
         "deva": "ब्रह्मनिधये",
-        "gloss": "to the treasury of Brahman",
+        "gloss": "to the treasury of Vedic wisdom; brahman here denotes the Vedas",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -1381,7 +1381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ko dharmaḥ sarvadharmāṇāṃ bhavataḥ paramo mataḥ |\nkiṃ japanmucyate janturjanmasaṃsārabandhanāt ||",
-    "english": "{0:Which} {1:religious duty}, {2:of all religious duties}, is {5:regarded} {4:highest} {3:by you}? {7:Reciting} {6:what} {8:is} {9:a living being} {8:released} {10:from the bondage of birth and repeated worldly existence}?",
+    "english": "{0:Which} {1:religious duty}, {2:among all religious duties}, do {3:you} {5:regard as} {4:highest}? {6:What} {7:must} {9:a living being} {7:recite} {8:to be released} {10:from the bondage of birth and repeated worldly existence}?",
     "words": [
       {
         "roman": "ko",
@@ -2006,13 +2006,13 @@ window.SONG_LINES = {
       }
     ],
     "roman": "brahmaṇyaṃ sarvadharmajñaṃ lokānāṃ kīrtivardhanam |\nlokanāthaṃ mahadbhūtaṃ sarvabhūtabhavodbhavam ||",
-    "english": "The one {0:devoted to Brahman and the Veda}, {1:knower of every duty}, {3:who increases} {2:the worlds’} {3:glory}, {4:the Lord of the worlds}, {6:the} {5:great being}, {7:the source from which all beings arise}.",
+    "english": "{0:Protector of sacred wisdom and its keepers}, {1:knower of every duty}, {3:who increases} {2:the worlds’} {3:glory}, {4:the Lord of the worlds}, {6:the} {5:great being}, {7:the source from which all beings arise}.",
     "words": [
       {
         "roman": "brahmaṇyaṃ",
         "citationRoman": "brahmaṇyam",
         "deva": "ब्रह्मण्यम्",
-        "gloss": "devoted to Brahman and the Veda",
+        "gloss": "beneficial to sacred wisdom and its keepers; the commentary includes Brahmā, the Vedas, Brahmins, and contemplative discipline in the scope of brahman here",
         "analysis": "",
         "concept_key": "",
         "preserve_in_english": false
@@ -2148,7 +2148,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "eṣa me sarvadharmāṇāṃ dharmo'dhikatamo mataḥ |\nyadbhaktyā puṇḍarīkākṣaṃ stavairarcennaraḥ sadā ||",
-    "english": "{0:This} {3:religious duty} is {5:regarded} {4:highest} {2:of all religious duties} {1:by me}: {6:that} {11:a person} {10:should worship} {8:the lotus-eyed} {7:with devotion}, {9:with hymns}, {12:always}.",
+    "english": "{1:I} {5:regard} {0:this} {3:religious duty} as {4:highest} {2:of all religious duties}: {6:that} {11:one} {10:should worship} {8:the lotus-eyed one} {12:always}, {7:with devotion} {9:and hymns}.",
     "words": [
       {
         "roman": "eṣa",
@@ -2352,7 +2352,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paramaṃ yo mahattejaḥ paramaṃ yo mahattapaḥ |\nparamaṃ yo mahadbrahma paramaṃ yaḥ parāyaṇam ||",
-    "english": "{1:He who is} {0:the supreme}, {2:great} {3:radiance}; {5:he who is} {4:the supreme}, {6:great} {7:austerity}; {9:he who is} {8:the supreme}, {10:great} {11:absolute reality}; {13:he who is} {12:the supreme} {14:highest refuge}.",
+    "english": "{1:He who is} {2:great} {3:radiance} {0:beyond all}; {5:he who is} {6:great} {7:austerity} {4:beyond all}; {9:he who is} {10:great} {11:absolute reality} {8:beyond all}; {13:he who is} {14:the highest refuge} {12:beyond all}.",
     "words": [
       {
         "roman": "paramaṃ",
@@ -2927,7 +2927,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tasya lokapradhānasya jagannāthasya bhūpate |\nviṣṇornāmasahasraṃ me śṛṇu pāpabhayāpaham ||",
-    "english": "{3:O lord of the earth}, {7:hear} {6:from me} {5:the thousand names} {4:of Viṣṇu}, {0:of him}, {1:the foremost of the world}, {2:the Lord of the world}, {8:removing evil and fear}.",
+    "english": "{3:O king}, {7:hear} {6:from me} {5:the thousand names} {4:of Viṣṇu}—{0:him}, {1:foremost in the world}, {2:Lord of the universe}—{8:names that remove evil and fear}.",
     "words": [
       {
         "roman": "tasya",
@@ -3540,7 +3540,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "viṣṇuṃ jiṣṇuṃ mahāviṣṇuṃ prabhaviṣṇuṃ maheśvaram |\nanekarūpadaityāntaṃ namāmi puruṣottamam ||",
-    "english": "{7:I bow to} {0:Viṣṇu}, {1:the conqueror}, {2:great Viṣṇu}, {3:all-powerful Viṣṇu}, {4:the great Lord}, {5:of many forms}, {6:the ender of Daityas}, {8:the highest Person}.",
+    "english": "{7:I bow to} {0:Viṣṇu}, {1:the conqueror}, {2:great Viṣṇu}, {3:all-powerful Viṣṇu}, {4:the great Lord}, {5:of many forms}, {6:destroyer of the Daityas}, {8:the highest Person}.",
     "words": [
       {
         "roman": "viṣṇuṃ",
@@ -4629,7 +4629,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrīmahāviṣṇuprītyarthe sahasranāmastotrapāṭhe viniyogaḥ ||",
-    "english": "{2:The application} is {1:in the recitation of the thousand-name hymn}, {0:for the pleasure of blessed great Viṣṇu}.",
+    "english": "{2:This is used} {1:in reciting the thousand-name hymn} {0:to please blessed great Viṣṇu}.",
     "words": [
       {
         "roman": "śrīmahāviṣṇuprītyarthe",
@@ -21856,7 +21856,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sarvapraharaṇāyudhaḥ | oṃ nama iti ||",
-    "english": "{0:The one whose weapons are every implement}. {1:Oṃ}; {2:obeisance}, {3:thus}.",
+    "english": "{0:He for whom every implement is a weapon}. {1:Oṃ}; {3:thus we offer} {2:homage}.",
     "words": [
       {
         "roman": "sarvapraharaṇāyudhaḥ",

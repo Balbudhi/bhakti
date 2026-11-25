@@ -1409,7 +1409,7 @@ window.SONG_LINES = {
     "source": "संताप पाप तेहि पुरुष पहिं सपनेहुँ नहिं आवत निकट",
     "sourceLanguage": "bra",
     "roman": "santāpa pāpa tehi puruṣa pahiṁ sapanehuṁ nahiṁ āvata nikaṭa",
-    "english": "{0:Torments }{1:and sins }{6:never }{7:come }{8:near }{4:unto }{2:that }{3:person, }{5:even in a dream.}",
+    "english": "{0:Torments }{1:and sins }{6:never }{7:come }{8:near }{4:to }{2:that }{3:person, }{5:even in a dream.}",
     "words": [
       {
         "roman": "santāpa",
@@ -2088,7 +2088,7 @@ window.SONG_LINES = {
     "source": "भानु सो पढ़न हनुमान गए भानु मन अनुमानि सिसुकेलि कियो फेरफार सो",
     "sourceLanguage": "bra",
     "roman": "bhānu so paṛhana hanumāna gaye bhānu mana anumāni sisukeli kiyo pheraphāra so",
-    "english": "{3:Hanuman }{4:went }{2:to study }{0,1:from the Sun; }{5:the Sun, }{7:reckoning it }{8:child's play }{6:in his mind, }{9:made }{11:such an evasive }{10:turn,}",
+    "english": "{3:Hanuman }{4:went }{2:to learn }{0,1:from the Sun; }{5:the Sun, }{7:reckoning it }{8:child’s play }{6:in his mind, }{9:made }{11:such an evasive }{10:turn,}",
     "words": [
       {
         "roman": "bhānu",
@@ -2422,7 +2422,7 @@ window.SONG_LINES = {
     "source": "कौतुक बिलोकि लोकपाल हरि हर बिधि लोचननि चकाचौंधी चित्तनि खभार सो",
     "sourceLanguage": "bra",
     "roman": "kautuka biloki lokapāla hari hara bidhi locanani cakācaundhī cittani khabhāra so",
-    "english": "{1:Beholding }{0:the spectacle, }{2:the world-guardians, }{3:Hari, }{4:Hara, }{5:and Bidhi }{7:felt a dazzling glare }{6:in their eyes }{9,10:and a sort of commotion }{8:in their minds,}",
+    "english": "{1:Beholding }{0:the spectacle, }{2:the world-guardians, }{3:Hari, }{4:Hara, }{5:and Bidhi }{7:were dazzled }{6:in their eyes }{9,10:and stirred }{8:in their minds,}",
     "words": [
       {
         "roman": "kautuka",
@@ -7893,7 +7893,7 @@ window.SONG_LINES = {
     "source": "सब दिन रूरो परै पूरो जहाँ तहाँ ताही",
     "sourceLanguage": "bra",
     "roman": "saba dina rūro parai pūro jahā̃ tahā̃ tāhī",
-    "english": "{0:Every }{1:day }{2,3:turns out auspicious }{4:and fully complete }{5,6:everywhere }{7:for that very one,}",
+    "english": "{7:For that very one, }{0:every }{1:day }{2,3:is auspicious }{4:and fulfilling, }{5,6:wherever he goes,}",
     "words": [
       {
         "roman": "saba",
@@ -9138,7 +9138,7 @@ window.SONG_LINES = {
     "source": "लोक-बेद-बिधिके बिदूष हनुमान हौ ।",
     "sourceLanguage": "bra",
     "roman": "loka-beda-bidhike bidūṣa hanumāna hau ।",
-    "english": "{5:you are }{4:Hanuman, }{3:the learned knower }{0:of worldly }{2:ways }{1:and Vedic }{2:injunctions.}",
+    "english": "{5:you are }{4:Hanuman, }{3:well versed }{0:in worldly }{2:ways }{1:and Vedic }{2:injunctions.}",
     "words": [
       {
         "roman": "loka",
@@ -10218,7 +10218,7 @@ window.SONG_LINES = {
     "source": "ढारो बिगारो मैं काको कहा केहि कारन खीझत हौ तो तिहारो ॥",
     "sourceLanguage": "bra",
     "roman": "ḍhāro bigāro maĩ kāko kahā kehi kārana khījhata hau to tihāro ॥",
-    "english": "{4:What }{3:belonging to whom }{2:have I }{0:torn down }{1:or ruined, }{5:and for what }{6:reason }{7,8:are you angry }{9:at one who is indeed }{10:your own?}",
+    "english": "{3:Whose }{4:work }{2:have I }{0:torn down }{1:or ruined? }{5,6:Why }{7,8:are you angry }{9:with me, }{10:your own servant?}",
     "words": [
       {
         "roman": "ḍhāro",
@@ -10516,7 +10516,7 @@ window.SONG_LINES = {
     "source": "दोष सुनाये ते आगेहुं को हुसियार ह्वै हौं मन तौ हिय हारो",
     "sourceLanguage": "bra",
     "roman": "doṣa sunāye te āgehuṁ ko husiyāra hvai hauṁ mana tau hiya hāro",
-    "english": "{0:If my faults }{1,2:are pointed out, }{6,7:I will become }{5:alert }{3,4:for the future as well, }{9:though }{8:my mind }{10,11:has lost heart.}",
+    "english": "{0:If my faults }{1,2:are pointed out, }{6,7:I will be }{5:careful }{3,4:in future, }{9:though }{8:my mind }{10,11:has lost heart.}",
     "words": [
       {
         "roman": "doṣa",
@@ -12064,7 +12064,7 @@ window.SONG_LINES = {
     "source": "पाप ते सापतें ताप तिहूं ते सदा तुलसी कहं सो रखवारो",
     "sourceLanguage": "bra",
     "roman": "pāpa te sāpateṁ tāpa tihūṁ te sadā tulasī kahaṁ so rakhavāro",
-    "english": "{9:That very one }{6:is always }{10:the guardian }{7,8:for Tulsi }{1:from }{0:sin, }{2:from curses, }{4,5:and from the threefold }{3:torments.}",
+    "english": "{9:That very one }{6:always }{10:guards }{7,8:Tulsi }{1:from }{0:sin, }{2:from curses, }{4,5:and from the threefold }{3:torments.}",
     "words": [
       {
         "roman": "pāpa",
@@ -18552,7 +18552,7 @@ window.SONG_LINES = {
     "source": "सासति सहत दास कीजे पेखि परिहास चीरी को मरन खेल बालकनि को सो है॥",
     "sourceLanguage": "bra",
     "roman": "sāsati sahata dāsa kīje pekhi parihāsa cīrī ko marana khela bālakanī ko so hai.",
-    "english": "{2:Your servant }{1:endures }{0:torment }{4:while you watch }{3,5:and make sport; }{12,13:it is just like }{8:the death }{6,7:of a sparrow }{9:being sport }{10,11:to little boys.}",
+    "english": "{2:Your servant }{1:endures }{0:torment }{4:while you watch }{3,5:and make sport; }{12,13:it is like }{9:a game }{10,11:to little boys }{6,7:that costs a sparrow }{8:its life.}",
     "words": [
       {
         "roman": "sāsati",
@@ -24122,7 +24122,7 @@ window.SONG_LINES = {
     "source": "देव भूत पितर करम खल काल ग्रह मोहि पर दवरि दमान कसी दई है।",
     "sourceLanguage": "bra",
     "roman": "dev bhūt pitar karam khal kāl grah mohi par dawari damān kasī daī hai.",
-    "english": "{0:Gods, }{1:spirits, }{2:ancestors, }{3:deeds and their consequences, }{4:villains, }{5:Time, }{6:and planets }{9:have charged }{8:upon }{7:me }{11,12,13:and trained }{10:their cannons }{11:tight.}",
+    "english": "{0:Gods, }{1:spirits, }{2:ancestors, }{3:deeds and their consequences, }{4:villains, }{5:Time, }{6:and planets }{9:have charged }{8:upon }{7:me }{11,12,13:and aimed }{10:their cannons }{11:straight at me.}",
     "words": [
       {
         "roman": "dev",
@@ -25303,7 +25303,7 @@ window.SONG_LINES = {
     "source": "बालपने सुधि मन राम सनमुख भयो रामनाम लेत माँगी खात टूकटाक हौं।",
     "sourceLanguage": "bra",
     "roman": "bālpane sudhi man rām sanmukh bhayo rāmanām let mām̐gī khāt ṭūkṭāk hauṁ.",
-    "english": "{0:In childhood, }{1:the awareness }{2:of my mind }{5:turned }{4:toward }{3:Rama; }{8:taking }{6:Rama's }{7:name, }{12:I }{10:ate }{9:begged }{11:scraps.}",
+    "english": "{0:In childhood, }{1,2:my conscious mind }{5:turned }{4:toward }{3:Rama; }{8:uttering }{6:Rama’s }{7:name, }{12:I }{9:begged for }{11:scraps }{10:to eat.}",
     "words": [
       {
         "roman": "bālpane",

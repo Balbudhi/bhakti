@@ -582,7 +582,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nanda ke nanda, śrī ānandakanda, mohana brijacanda",
-    "english": "{2:Son }{0,1:of Nanda, }{3:Sri }{4:root of bliss, }{5:Mohan, }{6:moon of Braj,}",
+    "english": "{2:Son }{0,1:of Nanda, }{3:Śrī }{4:source of bliss, }{5:Mohana, }{6:moon of Braj,}",
     "words": [
       {
         "roman": "nanda",

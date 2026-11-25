@@ -1345,7 +1345,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sete parīkṣā hue nīti",
-    "english": "{0:All the more }{1:trials }{2:arise }{3:constantly.}",
+    "english": "{0:the more }{1:trials }{2:come }{3:each day.}",
     "words": [
       {
         "roman": "Sete",
@@ -1889,7 +1889,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru kāṭi prārabdha ṛṇa",
-    "english": "{0:The Guru, }{1:severing }{3:the debt }{2:of past deeds now bearing fruit,}",
+    "english": "{0:The Guru, }{1:clearing }{3:the debt }{2:of past deeds now bearing fruit,}",
     "words": [
       {
         "roman": "Guru",

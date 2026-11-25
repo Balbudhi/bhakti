@@ -394,7 +394,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yadi gayā maĩ yah dēh taj kē tō bhī dauṛū̃gā bhakt kē hit mē̃",
-    "english": "{0:Even if}{2: I}{1: depart}{5,6: having cast off}{3: this}{4: body}, {8:even }{7:then}{9: I will run}{12,13: for the welfare}{10,11: of the devotee.}",
+    "english": "{0:Even if}{2: I}{1: depart}{5,6: leaving}{3: this}{4: body behind}, {8:even }{7:then}{9: I will run}{12,13: to help}{10,11: my devotee.}",
     "words": [
       {
         "roman": "yadi",
@@ -823,7 +823,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaraṇ mērī āyā aur vyarth gayā dikhāō dikhāō jō aisā hai kōī",
-    "english": "{6:Show,}{7: show}{8,10: if there is}{11: anyone}{9: such}{2: who came}{1: to my}{0: refuge}{3: and}{5: went away}{4: in vain.}",
+    "english": "{6:Show me,}{7: show me}{8,10,11: anyone}{9: like this—}{2:who came}{1: to my}{0: refuge}{3: and}{5: went away}{4: empty-handed.}",
     "words": [
       {
         "roman": "śaraṇ",
@@ -979,7 +979,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mujh kō bhajē jō jis bhāvanā sē vaisā hī pahuñcū̃ maĩ pās usakē",
-    "english": "{3:Whoever}{2: worships}{0,1: me}{6: with }{4:whatever}{5: devotional feeling}{7,8:, in that very way}{10: I}{9: reach}{11,12: near to them.}",
+    "english": "{3:Whoever}{2: worships}{0,1: me}{6: with }{4:whatever}{5: feeling}{7,8:—in that very way}{10: I}{9: come}{11,12: to them.}",
     "words": [
       {
         "roman": "mujh",
@@ -1289,7 +1289,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yahā̃ milatī hai madad sabhī kō mā̃gē jō jō vahī milatā hai usakō",
-    "english": "{0:Here}{3: help}{2: is }{1:received}{4,5: by everyone;}{7,8: whatever}{6: one asks for,}{9: that very thing}{11: is }{10:received}{12: by them.}",
+    "english": "{0:Here}{4,5: everyone}{1,2: receives}{3: help;}{7,8: whatever}{6: they ask for}{9: is precisely what}{12: they}{10,11: receive.}",
     "words": [
       {
         "roman": "yahā̃",
@@ -1462,7 +1462,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mērā jō huā hai kāyā vācā man sē usakā ṛṇī maĩ sadā sarvadā hī",
-    "english": "{1:Whoever}{3: has }{2:become}{0: mine}{7: through }{4:body,}{5: speech,}{6: and mind,}{8: to them}{10: I}{9: am indebted}{11: always}{12: and forever}{13: indeed.}",
+    "english": "{1:Whoever}{3: has }{2:become}{0: mine}{7: in }{4:body,}{5: speech}{6: and mind,}{8: to them}{10: I}{9: am indebted}{11: always}{12: and forever}{13: indeed.}",
     "words": [
       {
         "roman": "mērā",

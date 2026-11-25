@@ -497,7 +497,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhala manda kichi dekhibe nāhiṁ",
-    "english": "{4:They will not }{3:discern }{2:anything }{0:of good }{1:and bad,}",
+    "english": "{4:They will not }{3:distinguish }{0:good }{1:from bad }{2:at all,}",
     "words": [
       {
         "roman": "Bhala",
@@ -562,7 +562,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāpa gantāghara sariba nāhiṁ",
-    "english": "{1:The storehouse }{0:of sin }{3:will not }{2:end.}",
+    "english": "{1:The storehouse }{0:of sin }{3:will not }{2:run empty.}",
     "words": [
       {
         "roman": "Pāpa",
@@ -692,7 +692,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāpa arjane bharibe ghara",
-    "english": "{1:Through the earning }{0:of sin, }{2:they will fill }{3:their house,}",
+    "english": "{2:They will fill }{3:their house }{1:with the proceeds }{0:of sin,}",
     "words": [
       {
         "roman": "Pāpa",

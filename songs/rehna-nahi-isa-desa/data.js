@@ -448,7 +448,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "būnda paṛē ḍhala jānā hai",
-    "english": "{0:Upon a drop }{1:falling, }{4:it is bound }{2,3:to flow away}",
+    "english": "{1:Let }{0:a drop of water }{1:fall, }and {4:it is bound }{2,3:to wash away}",
     "words": [
       {
         "roman": "būnda",
@@ -578,7 +578,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āga lagē jala jānā hai",
-    "english": "{0:Upon fire }{1:catching, }{4:it is bound }{2,3:to burn down}",
+    "english": "{1:Let it catch }{0:fire, }and {4:it is bound }{2,3:to burn down}",
     "words": [
       {
         "roman": "āga",

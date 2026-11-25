@@ -433,7 +433,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gūñjeṅge rāg bankar",
-    "english": "{0:We will resound, }{2:becoming a }{1:melodic mode,}",
+    "english": "{0:We will resound }{2:as a }{1:melody,}",
     "words": [
       {
         "roman": "gūñjeṅge",
@@ -486,7 +486,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vīṇā kī tār banke",
-    "english": "{3:becoming }{2:the string }{0,1:of the veena.}",
+    "english": "{3:as }{2:a string }{0,1:of the vīṇā.}",
     "words": [
       {
         "roman": "vīṇā",
@@ -592,7 +592,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hṛday meṁ pyār banke",
-    "english": "{3:becoming }{2:love }{0,1:within the heart.}",
+    "english": "{3:as }{2:love }{0,1:within the heart.}",
     "words": [
       {
         "roman": "hṛday",
@@ -722,7 +722,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svar banke uṭhā karnā",
-    "english": "{2,3:surge continually, }{1:becoming }{0:a musical note.}",
+    "english": "{2,3:rise again and again }{1:as }{0:a note.}",
     "words": [
       {
         "roman": "svar",
@@ -775,7 +775,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nāceṅge mor bankar",
-    "english": "{0:We will dance, }{2:becoming }{1:peacocks,}",
+    "english": "{0:We will dance }{2:as }{1:peacocks,}",
     "words": [
       {
         "roman": "nāceṅge",
@@ -881,7 +881,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghanaśyām chāye rahnā",
-    "english": "{0:O Ghanshyam, }{2:remain }{1:spread overhead,}",
+    "english": "{0:O Ghanaśyāma, }{1,2:spread out above us,}",
     "words": [
       {
         "roman": "ghanaśyām",
@@ -934,7 +934,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bankar ke megh kāre",
-    "english": "{0,1:having become }{3:dark }{2:clouds,}",
+    "english": "{0,1:as }{3:dark }{2:clouds,}",
     "words": [
       {
         "roman": "bankar",
@@ -993,7 +993,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "amṛt kī dhār bankar",
-    "english": "{3:becoming }{2:a stream }{1:of }{0:nectar,}",
+    "english": "{3:as }{2:a stream }{1:of }{0:nectar,}",
     "words": [
       {
         "roman": "amṛt",
@@ -1371,7 +1371,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tum soham śabd bankar",
-    "english": "{0:You, }{3:becoming }{2:the sacred utterance }{1:“I am That”,}",
+    "english": "{0:You, }{3:as }{2:the sacred utterance }{1:“I am That”,}",
     "words": [
       {
         "roman": "tum",
@@ -1430,7 +1430,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prāṇoṁ meṁ ramā karnā",
-    "english": "{2,3:permeate continually }{1:within our }{0:vital breaths.}",
+    "english": "{2,3:dwell always }{1:in our }{0:breath.}",
     "words": [
       {
         "roman": "prāṇoṁ",

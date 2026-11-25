@@ -579,7 +579,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kukrit pranāsankārī",
-    "english": "{1:who brings destruction }to {0:evil deeds!}",
+    "english": "{1:destroyer }of {0:evil deeds!}",
     "words": [
       {
         "roman": "Kukrit",

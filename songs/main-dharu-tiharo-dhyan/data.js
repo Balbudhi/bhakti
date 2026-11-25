@@ -216,7 +216,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kara-dhṛta-ghana-vādyā",
-    "english": "{1:holding }{2:solid }{3:rhythm instruments }{0:in her hands,}",
+    "english": "{1:holding }{2,3:solid percussion instruments }{0:in her hands,}",
     "words": [
       {
         "roman": "Kara",
@@ -334,7 +334,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sukavibhir-iyam-uktā",
-    "english": "{1:by }{0:noble }{1:poets }{3:is }{2:she }{3:declared,}",
+    "english": "{0:Noble }{1:poets }{3:call }{2:her}",
     "words": [
       {
         "roman": "Su",
@@ -381,7 +381,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhairavī bhairava-strī",
-    "english": "{0:as Bhairavī, }{1:the consort of Bhairava.}",
+    "english": "{0:Bhairavī, }{1:the consort of Bhairava.}",
     "words": [
       {
         "roman": "Bhairavī",
@@ -428,7 +428,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maĩ dharū̃ tihāro dhyān",
-    "english": "{0:I }{1:hold }{2:you }{3:in meditation,}",
+    "english": "{0:I }{1,3:meditate }{2:upon you,}",
     "words": [
       {
         "roman": "Maĩ",
@@ -493,7 +493,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhyān maĩ dharū̃ tihāro dhyān",
-    "english": "{0:Meditation—}{1:I }{2:hold }{3:you }{4:in meditation,}",
+    "english": "{0:Meditation—}{1:I }{2,4:meditate }{3:upon you,}",
     "words": [
       {
         "roman": "Dhyān",
@@ -896,7 +896,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ maĩ dharū̃ tihāro dhyān",
-    "english": "{0:Yes, }{1:I }{2:hold }{3:you }{4:in meditation,}",
+    "english": "{0:Yes, }{1:I }{2,4:meditate }{3:upon you,}",
     "words": [
       {
         "roman": "Hā̃",

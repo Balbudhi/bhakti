@@ -660,7 +660,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhakti bhāv se dhyāū̃ tohe",
-    "english": "{2:With }{0,1:devotional feeling }{3:I meditate upon }{4:you;}",
+    "english": "{0,1,2:With devotion }{3:I meditate upon }{4:you;}",
     "words": [
       {
         "roman": "bhakti",

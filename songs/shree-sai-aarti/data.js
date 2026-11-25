@@ -709,7 +709,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisake mana meṁ jaisā bhāva, use vaisā anubhava",
-    "english": "{3:Whatever }{4:devotional feeling }{0,2:is in anyone's }{1:mind, }{5:to that person }{6:comes corresponding }{7:direct experience;}",
+    "english": "{3:Whatever }{4:devotional feeling }{0,2:is in anyone’s }{1:heart, }{5:their }{7:experience }{6:will reflect it;}",
     "words": [
       {
         "roman": "jisake",
@@ -2978,7 +2978,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "upāsanādaivata sāyinātha stavairmayopāsaninā stutastvam | ramenmano me tava pādayugme bhṛṅgo yathā'bje makarandalubdhaḥ ||",
-    "english": "{1:O chosen deity }{0:of worship, }{2:O Sai Nath, }{7:you }{6:are praised }{3:through hymns of praise }{4:by me, }{5:Upasani; }{8:may }{10:my }{9:mind }{8:delight }{13:in }{11:your }{13:pair }{12:of feet, }{15:just as }{14:a black bee }{18:greedy }{17:for floral nectar }{8:delights }{16:in a lotus.}",
+    "english": "{1:O deity }{0:of my worship, }{2:O Sāīnātha, }{4:I, }{5:Upāsanī, }{6:praise }{7:you }{3:with hymns; }{8:may }{10:my }{9:mind }{8:delight }{13:in }{11:your }{13:two }{12:feet, }{15:just as }{14:a black bee }{18:greedy }{17:for floral nectar }{8:delights }{16:in a lotus.}",
     "words": [
       {
         "roman": "upāsanā",

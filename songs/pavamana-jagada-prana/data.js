@@ -504,7 +504,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yāma yāmake ninnārādhipudake",
-    "english": "{0:Watch} {1:after watch}, {3:to worship} {2:you}—",
+    "english": "{0,1:Hour after hour}, {3:to worship} {2:you}—",
     "words": [
       {
         "roman": "yāma",
@@ -614,7 +614,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ī manasige sukha stōmava tōruta",
-    "english": "{4:Showing} {1:to} {0:this} {1:heart} {3:an abundance of} {2:joy},",
+    "english": "{4:Bringing} {1:to} {0:this} {1:heart} {3:an abundance of} {2:joy},",
     "words": [
       {
         "roman": "ī",
@@ -722,7 +722,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vajra śarīra gambhīra mukuṭadhara",
-    "english": "{0,1:Thunderbolt-bodied}, {2:majestic}, {3:wearer of a crown},",
+    "english": "{0,1:With a body like a thunderbolt}, {2:majestic}, {3:crowned},",
     "words": [
       {
         "roman": "vajra",

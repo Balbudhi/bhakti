@@ -1090,7 +1090,7 @@ window.SONG_LINES = {
   "l015": {
     "source": "హొయలుమీర నడలుగల్గు సరసుని సదా కనుల జూచుచును",
     "roman": "hoyalumīra naḍalugalgu sarasuni sadā kanula jūcucunu",
-    "english": "{5:Beholding} {2:the charming Lord}, {1:whose gait} {0:overflows with grace}, {4:with their eyes} {3:always},",
+    "english": "{3:Always} {5:beholding} {4:with their eyes} {2:the charming Lord}, {1:whose gait} {0:overflows with grace},",
     "words": [
       {
         "roman": "hoyalumīra",
@@ -2310,7 +2310,7 @@ window.SONG_LINES = {
   "l027": {
     "source": "నిరవధి సుఖాత్ములై త్యాగరాజాప్తులైన వారెందరో మహానుభావులు",
     "roman": "niravadhi sukhātmulai tyāgarājāptulaina vārendarō mahānubhāvulu",
-    "english": "{6:Great souls}, {5:so many}, {1:blissful }{2:within} {0:without limit}, {4:dear }{3:to Tyāgarāja}!",
+    "english": "{5:So many} {6:great souls}, {2:inwardly} {1:blissful} {0:without limit}, {4:dear} {3:to Tyāgarāja}!",
     "words": [
       {
         "roman": "niravadhi",

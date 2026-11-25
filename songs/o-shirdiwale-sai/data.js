@@ -1195,7 +1195,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tujh par nāz hai",
-    "english": "{2,3:There is pride}{1: in }{0:you...}",
+    "english": "{0,1:In you }{2,3:they take pride...}",
     "words": [
       {
         "roman": "Tujh",
@@ -1254,7 +1254,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tujh par nāz hai",
-    "english": "{2,3:There is pride}{1: in }{0:you...}",
+    "english": "{0,1:In you }{2,3:they take pride...}",
     "words": [
       {
         "roman": "Tujh",

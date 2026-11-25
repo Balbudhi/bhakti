@@ -1809,7 +1809,7 @@ window.SONG_LINES = {
   "l017": {
     "source": "जराजन्मदुःखौघतातप्यमानं प्रभो पाहि आपन्नमामीशशम्भो",
     "roman": "jarājanmaduḥkhaughatātapyamānaṃ prabho pāhi āpannamāmīśaśambho",
-    "english": "{5:O Lord, }{6:protect }{8:me }{7:in distress, }{9:O sovereign }{10:Śambhu, }{4:burning under }{3:the flood }{2:of pain }{0:from old age }{1:and birth.}",
+    "english": "{5:O Lord, }{9:O sovereign }{10:Śambhu, }{6:protect }{8:me }{7:in distress, }{4:burning under }{3:the flood }{2:of pain }{0:from old age }{1:and birth.}",
     "words": [
       {
         "roman": "jarā",

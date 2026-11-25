@@ -221,7 +221,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ab tō thōṛī sī umra hai bāqī",
-    "english": "{0:Now }{1:indeed, }{2,3:only a little }{4:lifespan }{5,6:remains}",
+    "english": "{0,1:Now }{2,3:only a little }{4:of my life }{5,6:remains}",
     "words": [
       {
         "roman": "ab",
@@ -316,7 +316,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kahīm̐ ānē mēṁ dēr nā hō jāyē",
-    "english": "{0,4:Lest }{3,5,6:delay occur }{1,2:in your coming}",
+    "english": "{0,4:I fear }{1,2:you may come }{3,5,6:too late}",
     "words": [
       {
         "roman": "kahīm̐",
@@ -810,7 +810,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "zindagī sē ḍaratā thā maiṁ pahalē, maut kī ab parvāh nahīṁ hai",
-    "english": "{5:Earlier }{4:I }{3:was }{2:afraid }{1:of }{0:life; }{8:now }{9,10,11:there is no concern }{6,7:about death}",
+    "english": "{5:Once }{4:I }{2,3:feared }{0,1:life; }{8:now }{9,10,11:I no longer worry }{6,7:about death}",
     "words": [
       {
         "roman": "zindagī",
@@ -1327,7 +1327,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jisē āpakī śaraṇ mil jāyē",
-    "english": "{0:For whoever }{3,4:attains }{1:your }{2:refuge?}",
+    "english": "{0:for someone who }{3,4:finds }{1:your }{2:refuge?}",
     "words": [
       {
         "roman": "jisē",

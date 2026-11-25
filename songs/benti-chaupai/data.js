@@ -1231,7 +1231,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Cun cun satr hamārē mārīahi.",
-    "english": "{0:picking out }{1:one by one, }{4:please slay }{3:my }{2:enemies.}",
+    "english": "{4:Please slay }{3:my }{2:enemies, }{0,1:one by one.}",
     "words": [
       {
         "roman": "Cun",
@@ -1373,7 +1373,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maran kāl kā trās nivariyai.",
-    "english": "{4:please dispel }{3:the terror }{1,2:of the time }{0:of death.}",
+    "english": "{4:Please dispel }{3:the terror }{0,1,2:of death.}",
     "words": [
       {
         "roman": "Maran",
@@ -2325,7 +2325,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Namaskār hai tāhi hamārā.",
-    "english": "{3:my }{0:salutation }{1:is }{2:to That One.}",
+    "english": "{3:I }{0,1:bow }{2:to That One.}",
     "words": [
       {
         "roman": "Namaskār",
@@ -5123,7 +5123,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Utbhuj khān bahur rac dīnī.",
-    "english": "{2:And then }{3,4:created }{1:the category }{0:of earth-sprouting life.}",
+    "english": "{2:and then }{3,4:created }{1:the forms }{0:of life that sprout from the earth.}",
     "words": [
       {
         "roman": "Utbhuj",

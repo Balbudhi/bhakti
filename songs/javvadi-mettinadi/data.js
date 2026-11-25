@@ -110,7 +110,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "adi tana javvanamē janne paṭṭinadi",
-    "english": "{0:She} {4:has offered} {1:her own} {2:very youth} {3:in consecration}.",
+    "english": "{0:She} {4:has consecrated} {1:her own} {2:youth} {3:as an offering}.",
     "words": [
       {
         "roman": "adi",
@@ -204,7 +204,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "adi cekkuṭaddamula kānti nalarinadi",
-    "english": "{0:She} {4:has bloomed in} {3:the radiance} {1:of her }{2:mirror-like }{1:cheeks}.",
+    "english": "{0:She} {4:glows with} {3:the radiance} {1:of her }{2:mirror-like }{1:cheeks}.",
     "words": [
       {
         "roman": "adi",
@@ -298,7 +298,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "adi tana voddikalanē viraha molagiñcinadi",
-    "english": "{0:She} {4:has made} {3:longing in separation} {4:sprout} {2:through} {1:her own} {2:intimacies alone}.",
+    "english": "{2:Through} {1:her own} {2:intimacies alone}, {0:she} {4:has made} {3:the longing of separation} {4:sprout}.",
     "words": [
       {
         "roman": "adi",
@@ -392,7 +392,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "adi tana kemmōvi cirunavvu keralinadi",
-    "english": "{0:As for her}, {2:on} {1:her own} {2:red lip}, {3:a slight smile} {4:has spread}.",
+    "english": "{3:A slight smile} {4:has spread} {2:across} {0,1:her own} {2:red lips}.",
     "words": [
       {
         "roman": "adi",

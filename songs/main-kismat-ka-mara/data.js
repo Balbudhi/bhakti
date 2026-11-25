@@ -95,7 +95,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maĩ kismat kā mārā sāī̃ kaise tere darśan pāū̃",
-    "english": "{0:I,}{1,2,3: struck by fate,}{4: O Sai,}{5: how}{8: may I receive}{6,7: your sacred vision?}",
+    "english": "{0:I am}{1,2,3: beaten down by fate,}{4: O Sai;}{5: how}{8: may I receive}{6,7: the sight of you?}",
     "words": [
       {
         "roman": "maĩ",
@@ -416,7 +416,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dekhanā cāhū̃ terī sūrat par ā̃khõ se andhā hū̃",
-    "english": "{0,1:I wish to see}{2: your }{3:face,}{4: but}{7,8: I am blind}{5,6: in my eyes.}",
+    "english": "{0,1:I wish to see}{2: your }{3:face,}{4: but}{5,6: my eyes}{7,8: are blind.}",
     "words": [
       {
         "roman": "dekhanā",
@@ -737,7 +737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "de sakate to de do ā̃khẽ rūp terā maĩ dekh sakū̃",
-    "english": "{0,1:If you can give,}{2,3,4: then give}{5: eyes,}{8,9,10: that I may see}{7: your }{6:form.}",
+    "english": "{0,1:If you can,}{2,3,4: give me}{5: eyes,}{8,9,10: so I may see}{7: your }{6:form.}",
     "words": [
       {
         "roman": "de",
@@ -1130,7 +1130,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ās lie maĩ baiṭhā hū̃",
-    "english": "{1:Holding }{0:hope,}{2,3,4: I sit waiting.}",
+    "english": "{2,3,4:I sit waiting}{1: with }{0:hope.}",
     "words": [
       {
         "roman": "ās",
@@ -1225,7 +1225,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "de sakate to do varadān terī kathāē̃ sun pāū̃",
-    "english": "{0,1:If you can give,}{2,3: then grant}{4: a boon,}{7,8: that I may hear}{5: your }{6:stories.}",
+    "english": "{0,1:If you can,}{2,3: grant me}{4: the boon}{7,8: of hearing}{5: your }{6:stories.}",
     "words": [
       {
         "roman": "de",

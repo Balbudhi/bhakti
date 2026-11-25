@@ -311,7 +311,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kalalō nī nāmasmaraṇa maruva cakkani taṇḍri palukē baṅgāramāyenā",
-    "english": "{0:Even in dreams, }{3:I do not forget }{2:to remember }{1:your }{2:name, }{4:lovely }{5:Father; }{6:have your very words }{7:become gold?}",
+    "english": "{0:Even in dreams, }{3:I never forget }{2:to call }{1:your }{2:name, }{4:lovely }{5:Father; }{6:have your very words }{7:become gold?}",
     "words": [
       {
         "roman": "kalalō",
@@ -401,7 +401,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "iravuga isukalōna poralina yuḍuta bhaktiki",
-    "english": "{4:For the devotion }{3:of the squirrel }{2:that rolled }{0:fittingly }{1:in the sand,}",
+    "english": "{0:In fitting response }{4:to the devotion }{3:of the squirrel }{2:that rolled }{1:in the sand,}",
     "words": [
       {
         "roman": "iravuga",

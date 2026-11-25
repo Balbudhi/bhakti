@@ -388,7 +388,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhāva karata śūlapānī",
-    "english": "{2:The trident-bearer }{1:enacts }{0:dance-expressions}",
+    "english": "{2:The trident-bearer }{1:conveys }{0:feeling through his dance}",
     "words": [
       {
         "roman": "Bhāva",

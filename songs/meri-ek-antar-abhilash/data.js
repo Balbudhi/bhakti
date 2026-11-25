@@ -971,7 +971,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mujhē auran sō nahī̃ ās",
-    "english": "{0:I have }{3:no }{4:hope }{2:from }{1:others}",
+    "english": "{0:I place }{3:no }{4:hope }{2:in }{1:others}",
     "words": [
       {
         "roman": "Mujhē",

@@ -1256,7 +1256,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hāṭaru saudā sāri lo khusi mane jība phere",
-    "english": "{2:Having finished}{1: purchases}{0: from the marketplace,}{3: O,}{4: with a glad}{5: mind}{6: the soul}{7: returns.}",
+    "english": "{2:Having finished}{1: shopping}{0: at the marketplace,}{3: O,}{6: the soul}{7: returns}{4,5: with a glad heart.}",
     "words": [
       {
         "roman": "Hāṭaru",
@@ -1500,7 +1500,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Luṭibāku chhupi thāe lo, luṭibāku chhupi thāe lo, luṭibāku chhupi thāe",
-    "english": "{0:To plunder}{1,2: it lies hidden,}{3: O,}{4: to plunder}{5,6: it lies hidden,}{7: O,}{8: to plunder}{9,10: it lies hidden.}",
+    "english": "{1,2:It lies hidden}{0: to plunder,}{3: O,}{5,6: it lies hidden}{4: to plunder,}{7: O,}{9,10: it lies hidden}{8: to plunder.}",
     "words": [
       {
         "roman": "Luṭibāku",
@@ -1827,7 +1827,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāḷa hāta ṭhāri ḍāke lo, kāḷa hāta ṭhāri ḍāke lo, kāḷa hāta ṭhāri ḍāke",
-    "english": "{0:Time}{3: calls,}{2: beckoning}{1: with hand,}{4: O,}{5: Time}{8: calls,}{7: beckoning}{6: with hand,}{9: O,}{10: Time}{13: calls,}{12: beckoning}{11: with hand.}",
+    "english": "{0:Time}{3: calls,}{2: beckoning}{1: with its hand,}{4: O,}{5: Time}{8: calls,}{7: beckoning}{6: with its hand,}{9: O,}{10: Time}{13: calls,}{12: beckoning}{11: with its hand.}",
     "words": [
       {
         "roman": "Kāḷa",

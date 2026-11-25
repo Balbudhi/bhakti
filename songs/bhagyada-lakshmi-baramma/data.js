@@ -613,7 +613,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hejjeya mēlond hejjeyanikkuta gejjeya kālgaḷa dhvaniya tōruta",
-    "english": "{4:Placing }{2,3:step }{1:upon }{0:another, }{8:making heard }{7:the sound }{6:of your feet }{5:with ankle-bells,}",
+    "english": "{4:Taking }{0:one step }{1:after }{2,3:another, }{8:letting }{5:the ankle-bells }{6:on your feet }{7:ring,}",
     "words": [
       {
         "roman": "Hejjeya",
@@ -874,7 +874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kanaka vṛṣṭiya kareyuta bāre manakāmaneya siddhiya tōre",
-    "english": "{2:Showering }{1:a rain }{0:of gold, }{3:come; }{6:reveal }{5:the fulfillment }{4:of the heart's desire,}",
+    "english": "{3:Come, }{2:showering }{1:rain }{0:of gold; }{6:let us see }{4:the heart’s desire }{5:fulfilled,}",
     "words": [
       {
         "roman": "Kanaka",

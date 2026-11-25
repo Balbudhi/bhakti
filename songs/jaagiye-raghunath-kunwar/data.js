@@ -521,7 +521,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prāta bhānu pragaṭa bhayo rajanī ko timira gayo",
-    "english": "{0:At dawn }{1:the sun }{3:has become }{2:manifest, }{6:and the darkness }{4,5:of the night }{7:has departed.}",
+    "english": "{0:At dawn }{1:the sun }{2,3:has appeared, }{6:and the darkness }{4,5:of the night }{7:has departed.}",
     "words": [
       {
         "roman": "prāta",
@@ -623,7 +623,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhṛṅga karata gū̃ja gāna kamalana dala khole",
-    "english": "{0:The bees }{1:make }{2:a humming }{3:song, }{5:and the petals }{4:of the lotuses }{6:unfold.}",
+    "english": "{0:The bees }{1,2:hum }{3:their song, }{5:and the petals }{4:of the lotuses }{6:unfold.}",
     "words": [
       {
         "roman": "bhṛṅga",
@@ -725,7 +725,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "brahmādika dharata dhyāna sura nara muni karata gāna",
-    "english": "{0:Brahmā and the celestial beings }{1:maintain }{2:meditation; }{3:gods, }{4:mortals, }{5:and sages }{6:make }{7:songs of praise.}",
+    "english": "{0:Brahmā and the celestial beings }{1,2:meditate; }{3:gods, }{4:mortals, }{5:and sages }{6:sing }{7:praises.}",
     "words": [
       {
         "roman": "brahmādika",
@@ -827,7 +827,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāgana kī bera bhaī nayana palaka khole",
-    "english": "{2:The hour }{0,1:for waking }{3:has arrived; }{6:please open }{5:the eyelids }{4:of your eyes.}",
+    "english": "{2:The hour }{0,1:for waking }{3:has arrived; }{6:please open }{4,5:your eyes.}",
     "words": [
       {
         "roman": "jāgana",

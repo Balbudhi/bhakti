@@ -2582,7 +2582,7 @@ window.SONG_LINES = {
   "l047": {
     "source": "ਹ੍ਵੈਬੋ ਤ੍ਰਿਗੁਣ ਅਤੀਤ",
     "roman": "hvaibo triguṇ atīt",
-    "english": "{0:Become }{2:beyond }{1:the three qualities of nature.}",
+    "english": "{0,2:Go beyond }{1:the three qualities of nature.}",
     "words": [
       {
         "roman": "hvaibo",

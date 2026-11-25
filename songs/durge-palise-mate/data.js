@@ -418,7 +418,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nambide ninna pādāmbujayanna",
-    "english": "{0:I trust} {1:your} {3:lotus }{2:feet}. {4:My}…",
+    "english": "{0:I trust} {1:your} {3:lotus }{2:feet}. {4:Within my}…",
     "words": [
       {
         "roman": "nambide",
@@ -486,7 +486,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hṛdambaradalliha bimbana tōrisuyembe",
-    "english": "{0:heart’s }{1:sky}—{4:show me, }{5:I ask}, {3:the divine form} {2:within it}.",
+    "english": "{0:heart’s }{1:sky}, {4:show me, }{5:I ask}, {3:the divine form} {2:that dwells there}.",
     "words": [
       {
         "roman": "hṛd",
@@ -546,7 +546,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sunitambe jagadambe śubhaguṇa nikurumbe",
-    "english": "{0:Beautifully hipped one}, {1:Mother of the world}, {3:a cluster of} {2:auspicious qualities}.",
+    "english": "{0:You of lovely hips}, {1:Mother of the world}, {3:abounding in} {2:auspicious qualities}.",
     "words": [
       {
         "roman": "sunitambe",
@@ -986,7 +986,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "paratara guru gōpāla viṭṭhalana caraṇa kamaladalli sthiravāda bhakutiya",
-    "english": "{7:Devotion} {6:steadfast} {4,5:at the lotus feet} {3:of} {0:the supreme} {1,2,3:Guru Gopāla Viṭṭhala}…",
+    "english": "{6:Steadfast} {7:devotion} {4,5:at the lotus feet} {3:of} {0:the supreme} {1,2,3:Guru Gopāla Viṭṭhala}…",
     "words": [
       {
         "roman": "paratara",

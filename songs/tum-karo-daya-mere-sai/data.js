@@ -992,7 +992,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mukh te nimakh bulāī",
-    "english": "when {3:I call }{1:with }{0:my mouth }for {2:a moment.}",
+    "english": "when {0,1,3:I utter a call }for {2:a moment.}",
     "words": [
       {
         "roman": "mukh",
@@ -1382,7 +1382,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nānak tripat aghāī",
-    "english": "{0:Nānak, }one is {1:satisfied }and {2:filled to the full.}",
+    "english": "{0:Nānak, }one is {1:satisfied }and {2:utterly fulfilled.}",
     "words": [
       {
         "roman": "Nānak",

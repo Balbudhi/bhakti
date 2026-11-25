@@ -1258,7 +1258,7 @@ window.SONG_LINES = {
   "l20": {
     "source": "जटा लटा ना कबहूँ सँवारें दीसत महा भयंकर।",
     "roman": "jaṭā laṭā nā kabahūṃ saṃvāreṃ dīsat mahā bhayaṅkar",
-    "english": "{0:Matted locks}, {1:tresses}—he {2,3:never} {4:dresses them}. {5:He looks} {6:extremely} {7:terrifying}.",
+    "english": "{0:Matted locks}, {1:tresses}—he {2,3:never} {4:combs them}. {5:He looks} {6:extremely} {7:terrifying}.",
     "words": [
       {
         "roman": "jaṭā",

@@ -358,7 +358,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uraloṁ upakārāpuratā",
-    "english": "{0:I have remained}{1: solely for doing good.”}",
+    "english": "{0:I remain}{1: only to do good.”}",
     "words": [
       {
         "roman": "Uraloṁ",

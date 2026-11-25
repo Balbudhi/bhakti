@@ -2110,7 +2110,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "caṛhi trayodaśa pāhāce kali juhāra / tuma abatāra rūpa nṛsiṁhābatāra",
-    "english": "{0:Having climbed}{1: onto the thirteenth}{2: step,}{3,4: I offered salutations}{7: to the form}{5: of your}{6: descent,}{8: the Narasimha incarnation.}",
+    "english": "{0:Climbing}{1: onto the thirteenth}{2: step,}{3,4: I bowed}{5: to you}{6,7: in your incarnate form,}{8: Nṛsiṃha.}",
     "words": [
       {
         "roman": "caṛhi",
@@ -3116,7 +3116,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "uṇe'iśa pāhācare patitapābana / mana byākuḷa ati labhibāku darśana",
-    "english": "{0:On the nineteenth}{1: step}{2: is Patitapābana;}{3: my heart}{5: is exceedingly}{4: anxious}{6: to obtain}{7: a sacred vision of him.}",
+    "english": "{0:On the nineteenth}{1: step}{2: is Patitapābana;}{3: my heart}{4,5: yearns deeply}{6: to behold}{7: him.}",
     "words": [
       {
         "roman": "uṇe'iśa",

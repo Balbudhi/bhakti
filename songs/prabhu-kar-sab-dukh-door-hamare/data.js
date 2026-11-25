@@ -181,7 +181,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śaraṇa paṛe hama dāsa tumhāre",
-    "english": "{2:we,} {4:Your} {3:servants,} {1:have fallen into} {0:refuge.}",
+    "english": "{2:We,} {4:your} {3:servants,} {1:have sought} {0:refuge.}",
     "words": [
       {
         "roman": "śaraṇa",

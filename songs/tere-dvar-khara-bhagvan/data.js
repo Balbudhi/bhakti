@@ -314,7 +314,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "terā hogā baṛā ehasān ki jug-jug terī rahegī śān, bhagat bhar de re jholī",
-    "english": "{2:Great }{1:will be }{0:your }{3:favor, }{4:so that }{5:age after age }{6:your }{8:glory }{7:will endure; }{9:devotee, }{10,11:fill }{13:the alms bag, }{12:O}",
+    "english": "{0:Your }{3:kindness }{1:will be }{2:great, }{4:and }{6:your }{8:glory }{7:will endure }{5:age after age; }{12:O }{9:devotee, }{10,11:fill }{13:the alms bag}",
     "words": [
       {
         "roman": "terā",
@@ -707,7 +707,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhīkh māṅgane āyā tere ghar jagat kā pālanahārā re jagat kā pālanahārā",
-    "english": "{1:To beg }{0:for alms, }{3:to your }{4:house }{2:came }{7:the Sustainer }{5,6:of the world, }{8:O }{11:the Sustainer }{9,10:of the world}",
+    "english": "{7:The Sustainer }{5,6:of the world }{2:has come }{3:to your }{4:house }{1:to beg }{0:for alms, }{8:oh, }{11:the Sustainer }{9,10:of the world}",
     "words": [
       {
         "roman": "bhīkh",
@@ -1184,7 +1184,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "miṭ jāegā pal meṁ terā janam-janam kā pherā re janam-janam kā pherā",
-    "english": "{3:In an }{2:instant }{0,1:will be erased }{4:your }{7:cycle }{5,6:of birth after birth, }{8:O }{11:the cycle }{9,10:of birth after birth}",
+    "english": "{4:Your }{7:cycle }{5,6:of birth after birth }{0,1:will end }{3:in an }{2:instant, }{8:oh, }{11:the cycle }{9,10:of birth after birth}",
     "words": [
       {
         "roman": "miṭ",
@@ -1363,7 +1363,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū choṛ sakal abhimān amar kar le re tū apanā dān, bhagat bhar de re jholī",
-    "english": "{0:You }{1:renounce }{2:all }{3:pride; }{5,6:make }{4:immortal, }{7:O }{8:you, }{9:your own }{10:offering; }{11:devotee, }{12,13:fill }{15:the alms bag, }{14:O}",
+    "english": "{0:You, }{1:let go of }{2:all }{3:pride; }{5,6:make }{9:your }{10:offering }{4:immortal, }{7:oh }{8:you—}{14:O }{11:devotee, }{12,13:fill }{15:the alms bag}",
     "words": [
       {
         "roman": "tū",

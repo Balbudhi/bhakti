@@ -195,7 +195,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Miṭa gaī khaiñcātānī",
-    "english": "{2:the tug-of-war }{1:completely }{0:dissolved.}",
+    "english": "{2:the tug-of-war }{0,1:came to an end.}",
     "words": [
       {
         "roman": "Miṭa",
@@ -319,7 +319,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhyāna dhanī se lāyā",
-    "english": "{3:and fixed }{0:meditative attention }{2:upon }{1:the Master.}",
+    "english": "{3:and fixed }{0:his attention }{2:upon }{1:the Master.}",
     "words": [
       {
         "roman": "Dhyāna",
@@ -1010,7 +1010,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pūrā milā to",
-    "english": "{0:When the complete master }{1:was met, }{2:then—}",
+    "english": "{0:When the Perfect One }{1:was met, }{2:then—}",
     "words": [
       {
         "roman": "Pūrā",

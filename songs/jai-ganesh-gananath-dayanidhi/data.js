@@ -506,7 +506,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kara triśūla paraśu varadhārē",
-    "english": "{3:Bearing }{0:in hand }{1:trident, }{2:axe, }{3:and boons,}",
+    "english": "{0:With }{1:a trident }{2:and axe }{0:in hand, }{3:bearing boons,}",
     "words": [
       {
         "roman": "Kara",

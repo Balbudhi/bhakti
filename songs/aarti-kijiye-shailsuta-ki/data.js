@@ -888,7 +888,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Śiva ke hṛdayāsana kī rānī",
-    "english": "{4:Queen }{3:of }{2:the heart-throne }{0,1:of Shiva}",
+    "english": "{4:Queen }{3:of }{2:the throne in }{0,1:Śiva’s }{2:heart}",
     "words": [
       {
         "roman": "Śiva",
@@ -1113,7 +1113,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kī āratī kījai",
-    "english": "{1,2:Offer worship with lights}{0: of...}",
+    "english": "{1,2:Offer worship with lights}{0: to...}",
     "words": [
       {
         "roman": "Kī",

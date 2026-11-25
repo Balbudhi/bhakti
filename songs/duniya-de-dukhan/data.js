@@ -248,7 +248,7 @@ window.SONG_LINES = {
   },
   "refrain_b": {
     "roman": "Jad vī terī loṛ paī, tere kol āyā mā",
-    "english": "{0,1:Whenever }the {3:need }{2:for You }{4:arose, }{7:I came }{5,6:to You, }{8:Mother.}",
+    "english": "{0,1:Whenever }{2,3,4:I needed You, }{7:I came }{5,6:to You, }{8:Mother.}",
     "words": [
       {
         "roman": "Jad",
@@ -868,7 +868,7 @@ window.SONG_LINES = {
   },
   "v2c": {
     "roman": "Bhull chukk terā pair, sāḍe utte āyā mā",
-    "english": "So that {2:Your }{3:foot }{6:may come }{5:upon }{4:me }{0,1:by mistake, }{7:Mother.}",
+    "english": "So that {2,3:You }{6:may step }{5:upon }{4:me, }{0,1:even by accident, }{7:Mother.}",
     "words": [
       {
         "roman": "Bhull",

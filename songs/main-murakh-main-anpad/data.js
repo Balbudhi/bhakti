@@ -932,7 +932,7 @@ window.SONG_LINES = {
   },
   "v2f": {
     "roman": "Koī jatan to aisā karūṅ",
-    "english": "{2,4:…may I make }{0:some }{3:such }{1:effort. }",
+    "english": "{2,4:…may I find }{0:some }{1:way }{3:to do so. }",
     "words": [
       {
         "roman": "Koī",

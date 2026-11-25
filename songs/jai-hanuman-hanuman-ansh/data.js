@@ -278,7 +278,7 @@ window.SONG_LINES = {
   "l05": {
     "source": "दीन-दुखी के दुख-भंजन हो",
     "roman": "Dīn-dukhī ke dukh-bhañjan ho",
-    "english": "{3:You are }{2:the destroyer of sorrow }{1:for }{0:the needy, suffering person.}",
+    "english": "{3:You }{2:dispel the sorrows }{1:of }{0:the needy and suffering.}",
     "words": [
       {
         "roman": "Dīn-dukhī",
@@ -538,7 +538,7 @@ window.SONG_LINES = {
   "l10": {
     "source": "भक्ति से हो परिपूर्ण",
     "roman": "Bhakti se ho paripūrṇ",
-    "english": "{2:you are }{3:filled completely }{1:with }{0:devotion.}",
+    "english": "{2:you are }{3:filled }{1:with }{0:devotion.}",
     "words": [
       {
         "roman": "Bhakti",

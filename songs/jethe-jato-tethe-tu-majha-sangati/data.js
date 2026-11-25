@@ -309,7 +309,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bolo jātāṃ baraḷ karisī teṃ nīṭ",
-    "english": "{0,1:When I try to speak} {2:confusedly}, {3:you make} {4:it} {5:right};",
+    "english": "{0,1:When I try to speak} {2:and stumble over my words}, {3:you make} {4:them} {5:right};",
     "words": [
       {
         "roman": "bolo",
@@ -493,7 +493,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jhāle tujhe sukh antarbāhī",
-    "english": "{1:Your} {2:joy} {0:has arisen} {3:within and without}.",
+    "english": "{1:Your} {2:joy} {0:has filled me} {3:inside and out}.",
     "words": [
       {
         "roman": "jhāle",

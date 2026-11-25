@@ -214,7 +214,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man ke pāvan mandir mẽ prāṇõ ke thirakate spandan mẽ",
-    "english": "{4:In }{2:the sacred }{3:temple }{0,1:of the mind, }{9:in }{7:the dancing }{8:pulsation }{5,6:of the vital breaths,}",
+    "english": "{4:In }{2:the sacred }{3:temple }{0,1:of the mind, }{9:in }{7:the dancing }{8:pulse }{5,6:of life,}",
     "words": [
       {
         "roman": "man",

@@ -85,7 +85,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āratī gajavadana vināyaka kī",
-    "english": "{0:Worship with lights }{3:of }{1:the elephant-faced }{2:Vināyaka,}",
+    "english": "{0:Worship with lights }{3:for }{1:the elephant-faced }{2:Vināyaka,}",
     "words": [
       {
         "roman": "Āratī",
@@ -150,7 +150,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sura muni pūjita gaṇanāyaka kī",
-    "english": "{4:Of }{3:the lord of divine retinues, }{2:worshiped by }{0:gods }{1:and sages.}",
+    "english": "{4:For }{3:the lord of divine retinues, }{2:worshiped by }{0:gods }{1:and sages.}",
     "words": [
       {
         "roman": "Sura",
@@ -404,7 +404,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Duḥkha vināśaka sukhadāyaka kī",
-    "english": "{3:Of }{1:the destroyer }{0:of sorrow }{2:and bestower of joy.}",
+    "english": "{3:For }{1:the destroyer }{0:of sorrow }{2:and bestower of joy.}",
     "words": [
       {
         "roman": "Duḥkha",
@@ -617,7 +617,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Agha vana dahana amala avigata gati",
-    "english": "{2:Consuming fire for }{1:the forest of }{0:sins, }{3:stainless, }{4:of unfathomable }{5:state,}",
+    "english": "{2:Fire consuming }{1:the forest of }{0:sin, }{3:stainless, }{4:unfathomable }{5:in nature,}",
     "words": [
       {
         "roman": "Agha",
@@ -694,7 +694,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vidyā vinaya vibhava dāyaka kī",
-    "english": "{4:Of }{3:the bestower of }{0:knowledge, }{1:humility, }{2:and glory.}",
+    "english": "{4:For }{3:the bestower of }{0:knowledge, }{1:humility, }{2:and glory.}",
     "words": [
       {
         "roman": "Vidyā",
@@ -948,7 +948,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sura vandita saba vidhi lāyaka kī",
-    "english": "{5:Of the one }{1:revered by }{0:gods, }{4:worthy }{2:in every }{3:way.}",
+    "english": "{5:For the one }{1:revered by }{0:gods, }{4:worthy }{2:in every }{3:way.}",
     "words": [
       {
         "roman": "Sura",

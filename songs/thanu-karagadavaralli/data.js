@@ -34,7 +34,7 @@ window.SONG_META = {
 window.SONG_LINES = {
   "tanu": {
     "roman": "Tanu karagadavaralli majjanavanolleyayyā nīnu",
-    "english": "{2:Among those whose }{0:body }{1:has not melted, }{5:You }{4:will not accept }{3:ritual bathing.}",
+    "english": "{5:You }{4:will not accept }{3:ritual bathing }{2:from those whose }{0:body }{1:has not melted.}",
     "words": [
       {
         "roman": "Tanu",
@@ -94,7 +94,7 @@ window.SONG_LINES = {
   },
   "mana": {
     "roman": "Mana karagadavaralli puṣpavanolleyayyā nīnu",
-    "english": "{2:Among those whose }{0:mind }{1:has not melted, }{5:You }{4:will not accept }{3:flowers.}",
+    "english": "{5:You }{4:will not accept }{3:flowers }{2:from those whose }{0:mind }{1:has not melted.}",
     "words": [
       {
         "roman": "Mana",
@@ -154,7 +154,7 @@ window.SONG_LINES = {
   },
   "haduli": {
     "roman": "Haḍuligaralladavaralli gandhākṣateyanolleyayyā nīnu",
-    "english": "{1:Among those who are not }{0:tender-hearted, }{4:You }{3:will not accept }{2:sandal paste and consecrated rice.}",
+    "english": "{4:You }{3:will not accept }{2:sandal paste and consecrated rice }{1:from those who are not }{0:tender-hearted.}",
     "words": [
       {
         "roman": "Haḍuligar",
@@ -204,7 +204,7 @@ window.SONG_LINES = {
   },
   "arivu": {
     "roman": "Arivu kaṇtereyadavaralli āratiyanolleyayyā nīnu",
-    "english": "{2:Among those whose }{0:understanding's }{1:eye has not opened, }{5:You }{4:will not accept }{3:lamp-waving.}",
+    "english": "{5:You }{4:will not accept }{3:offerings of light }{2:from those whose }{1:eye }{0:of understanding }{1:has not opened.}",
     "words": [
       {
         "roman": "Arivu",
@@ -264,7 +264,7 @@ window.SONG_LINES = {
   },
   "bhava": {
     "roman": "Bhāvaśuddhavilladavaralli dhūpavanolleyayyā nīnu",
-    "english": "{2:Among those without }{1:purity }of {0:feeling, }{5:You }{4:will not accept }{3:incense.}",
+    "english": "{5:You }{4:will not accept }{3:incense }{2:from those without }{1:purity }of {0:feeling.}",
     "words": [
       {
         "roman": "Bhāva",
@@ -319,7 +319,7 @@ window.SONG_LINES = {
   },
   "parinami": {
     "roman": "Pariṇāmigalalladavaralli naivēdyavanolleyayyā nīnu",
-    "english": "{1:Among those who are not }{0:inwardly transformed, }{4:You }{3:will not accept }{2:the food offering.}",
+    "english": "{4:You }{3:will not accept }{2:food offerings }{1:from those who are not }{0:inwardly transformed.}",
     "words": [
       {
         "roman": "Pariṇāmigal",
@@ -369,7 +369,7 @@ window.SONG_LINES = {
   },
   "trikarana": {
     "roman": "Trikaraṇaśuddhavilladavaralli tāmbūlavanolleyayyā nīnu",
-    "english": "{2:Among those without }{1:purity }in {0:the three faculties, }{5:You }{4:will not accept }{3:the betel-leaf offering.}",
+    "english": "{5:You }{4:will not accept }{3:betel-leaf offerings }{2:from those without }{1:purity }in {0:the three faculties.}",
     "words": [
       {
         "roman": "Trikaraṇa",

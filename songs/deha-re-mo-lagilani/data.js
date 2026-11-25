@@ -362,7 +362,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mote tume rakṣā kara kṛpāsindhu sāī, kṛpāsindhu sāī",
-    "english": "{1:You }{2,3:protect }{0:me, }{4:O ocean of mercy }{5:Sai, }{6:ocean of mercy }{7:Sai}",
+    "english": "{1:You, }{4:ocean of mercy }{5:Sai, }{2,3:protect }{0:me—}{6:ocean of mercy }{7:Sai}",
     "words": [
       {
         "roman": "mote",
@@ -807,7 +807,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "smṛtira bālire kete pādacihna paṛichi",
-    "english": "{1:On the sand }{0:of memory }{2:so many }{3:footprints }{4:have fallen,}",
+    "english": "{2:So many }{3:footprints }{4:lie }{1:on the sand }{0:of memory,}",
     "words": [
       {
         "roman": "smṛtira",

@@ -435,7 +435,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mana kī bāteṁ jāne, vo haiṁ antaryāmī",
-    "english": "{3:He knows }{2:the thoughts }{0,1:of the heart, }{4:he }{5:is }{6:the inner indweller}",
+    "english": "{3:He knows }{2:the thoughts }{0,1:of the heart, }{4:he }{5:is }{6:the one who dwells within}",
     "words": [
       {
         "roman": "mana",

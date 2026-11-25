@@ -97,7 +97,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kete ḍākuchi re tote",
-    "english": "{0:How much }{1:I am calling }{3:to you, }{2:O,}",
+    "english": "{0:How earnestly }{1:I call }{3:to you}{2:,}",
     "words": [
       {
         "roman": "Kete",
@@ -504,7 +504,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jibu tu ajaṇā pathe re",
-    "english": "{1:you }{0:will go }{3:on an }{2:unknown }{3:path, }{4:O,}",
+    "english": "{1:you }{0:will go }{3:along an }{2:unknown }{3:path}{4:,}",
     "words": [
       {
         "roman": "Jibu",
@@ -693,7 +693,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhāṅgijiba dine tora",
-    "english": "{1:one day }{0:will collapse, }{2:your}",
+    "english": "{1:One day }{2:what is yours }{0:will collapse—}",
     "words": [
       {
         "roman": "Bhāṅgijiba",

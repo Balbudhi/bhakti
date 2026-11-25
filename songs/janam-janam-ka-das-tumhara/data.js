@@ -125,7 +125,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "is sansār mēṁ hī nahīṁ, tīnōṁ lōkōṁ mēṁ bhagvān śiv kī pūjā hōtī hai.",
-    "english": "{4:Not }{3:only }{2:in }{0:this }{1:world, }{7:in }{5:all three }{6:worlds }{11:worship }{10:of }{8:Lord }{9:Shiva }{12,13:takes place.}",
+    "english": "{8:Lord }{9:Shiva }{12,13:is }{10,11:worshipped }{4:not }{3:only }{2:in }{0:this }{1:world, but }{7:in }{5:all three }{6:worlds.}",
     "words": [
       {
         "roman": "is",

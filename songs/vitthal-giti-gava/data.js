@@ -646,7 +646,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lāgalī samādhī viṭṭhalnāme",
-    "english": "{1:Absorbed contemplation} {0:has arisen} {2:through Viṭṭhal’s name}.",
+    "english": "{2:Through Viṭṭhal’s name}, {0:I have entered} {1:deep absorption}.",
     "words": [
       {
         "roman": "lāgalī",

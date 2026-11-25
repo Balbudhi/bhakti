@@ -1373,7 +1373,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apne pāpõ par pachatāe jab bhī tū ro degā",
-    "english": "{4,5:Whenever}{6: you,}{3: repenting}{2: over}{0: your own}{1: sins,}{7,8: burst into tears,}",
+    "english": "{4,5:Whenever}{6: you}{7,8: burst into tears}{3: in repentance}{2: for}{0: your own}{1: sins,}",
     "words": [
       {
         "roman": "apne",
@@ -1492,7 +1492,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "apne pāpõ par pachatāe jab bhī tū ro degā",
-    "english": "{4,5:Whenever}{6: you,}{3: repenting}{2: over}{0: your own}{1: sins,}{7,8: burst into tears,}",
+    "english": "{4,5:Whenever}{6: you}{7,8: burst into tears}{3: in repentance}{2: for}{0: your own}{1: sins,}",
     "words": [
       {
         "roman": "apne",
@@ -1909,7 +1909,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phir ambe mā̃ kā darśan hogā, āhõ kā inām\nkyõ nahī̃ rījhegī merī mā̃, kyõ nahī̃ mānegī merī mā̃",
-    "english": "{0:Then}{4: the sacred vision}{3: of }{2:Mother}{1: Amba}{5: will take place,}{7: the }{8:reward}{6: for sighs;}{9: why}{12: will my}{13: Mother}{10: not}{11: be pleased,}{14: why}{17: will my}{18: Mother}{15: not}{16: relent?}",
+    "english": "{0:Then}{5: you will}{4: behold}{2: Mother}{1: Ambā}{3: herself,}{7,8: the reward}{6: for your sighs;}{9: why}{12: will my}{13: Mother}{10: not}{11: be pleased,}{14: why}{17: will my}{18: Mother}{15: not}{16: relent?}",
     "words": [
       {
         "roman": "phir",
@@ -2326,7 +2326,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aise rone se mā̃ mil jāe to jāno sastā",
-    "english": "If{3: Mother}{4,5: is attained}{2: through}{0: such}{1: weeping,}{6: then}{7: consider it}{8: a small price.}",
+    "english": "If{2: through}{0: such}{1: weeping}{4,5: you find}{3: Mother,}{6: then}{7: count it}{8: a small price.}",
     "words": [
       {
         "roman": "aise",
@@ -2445,7 +2445,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aise rone se mā̃ mil jāe to jāno sastā",
-    "english": "If{3: Mother}{4,5: is attained}{2: through}{0: such}{1: weeping,}{6: then}{7: consider it}{8: a small price.}",
+    "english": "If{2: through}{0: such}{1: weeping}{4,5: you find}{3: Mother,}{6: then}{7: count it}{8: a small price.}",
     "words": [
       {
         "roman": "aise",
@@ -2928,7 +2928,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rone se jag hãsatā hai par ro denā āsān nahī̃",
-    "english": "{2:The world}{3,4: laughs}{1: on account of}{0: weeping,}{5: but}{7: to }{6:weep}{9: is not}{8: easy.}",
+    "english": "{2:The world}{3,4: laughs}{1: at}{0: weeping,}{5: but}{7: to }{6:weep}{9: is not}{8: easy.}",
     "words": [
       {
         "roman": "rone",

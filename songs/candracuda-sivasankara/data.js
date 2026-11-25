@@ -1887,7 +1887,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karadalli vīṇeya gānava māḍuva",
-    "english": "{3:Making} {2:music} {1:of the vīṇā} {0:with your hand}…",
+    "english": "{3:Playing} {2:music} {1:on the vīṇā} {0:in your hand}…",
     "words": [
       {
         "roman": "karadalli",
@@ -1983,7 +1983,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karadalli vīṇeya gānava māḍuva uragabhūṣaṇa nīne",
-    "english": "{5:You alone}, {4:adorned with serpents}, {3:make} {2:music} {1:of the vīṇā} {0:with your hand}.",
+    "english": "{5:You alone}, {4:adorned with serpents}, {3:play} {2:music} {1:on the vīṇā} {0:in your hand}.",
     "words": [
       {
         "roman": "karadalli",
@@ -2403,7 +2403,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ramaṇa ninage namō namō namō namō",
-    "english": "{0:Beloved}, {1:to you} {2:homage}, {3:homage}. {4:homage}, {5:homage}.",
+    "english": "{0:Beloved}, {1:to you} {2:homage}, {3:homage}, {4:homage}, {5:homage}.",
     "words": [
       {
         "roman": "ramaṇa",

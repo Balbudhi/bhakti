@@ -408,7 +408,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Puḍhe cālī nāhī āvaḍīne",
-    "english": "{2:There is no }{1:going }{0:further, }{3:out of intense love.}",
+    "english": "{3:So deep is this love, }{2:there is no }{1:going }{0:further.}",
     "words": [
       {
         "roman": "Puḍhe",

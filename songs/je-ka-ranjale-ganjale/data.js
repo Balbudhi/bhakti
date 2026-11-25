@@ -251,7 +251,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mṛdu sabāhya navanīt",
-    "english": "{2:Fresh butter} {0:is soft} {1:within and without};",
+    "english": "{2:Fresh butter} {0:is soft} {1:throughout};",
     "words": [
       {
         "roman": "mṛdu",

@@ -750,7 +750,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "der ho na jāe cal der ho na jāe",
-    "english": "{2:Lest }{1,3:it be }{0:too late, }{4:come on, }{7:lest }{6,8:it be }{5:too late!}",
+    "english": "{2,1,3:Before it is }{0:too late, }{4:come on, }{7,6,8:before it is }{5:too late!}",
     "words": [
       {
         "roman": "der",
@@ -1095,7 +1095,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhūkhõ kī bhūkh ho pyāsõ kī pyās miṭtī hai",
-    "english": "{2:the hunger }{0,1:of the hungry }{3:or }{6:the thirst }{4,5:of the thirsty }{8:is }{7:quenched;}",
+    "english": "{2:The hunger }{0,1:of the hungry }{3:or }{6:the thirst }{4,5:of the thirsty }{7,8:is satisfied;}",
     "words": [
       {
         "roman": "bhūkhõ",
@@ -1309,7 +1309,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ās lagāe baiṭhe ki dīdār ho jāe",
-    "english": "{2:sitting }{0:with hope }{1:fixed, }{3:that }{4:a blessed vision }{5,6:may take place,}",
+    "english": "{2:we sit }{0,1:in hope }{3:that }{5,6:we may receive }{4:a blessed vision,}",
     "words": [
       {
         "roman": "ās",
@@ -1505,7 +1505,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "toṛ ke usko baṛh āge cal tū pyāre",
-    "english": "{0,1:breaking }{2:them, }{3:forge }{4:ahead }{5:and walk, }{6:you }{7:dear one!}",
+    "english": "{0,1:Break through }{2:them }{3,4:and press on, }{5,6:keep going, }{7:dear one!}",
     "words": [
       {
         "roman": "toṛ",
@@ -1844,7 +1844,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yah sāī̃ kā dar hai sabke bhāg khul jāe",
-    "english": "{0:This }{4:is }{1,2:Sai's }{3:threshold; }{5:everyone's }{6:destiny }{7,8:unlocks!}",
+    "english": "{0:This }{4:is }{1,2:Sai’s }{3:threshold; }{5:everyone’s }{6,7,8:fortunes open up!}",
     "words": [
       {
         "roman": "yah",

@@ -528,7 +528,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prem jñān bhakti kā sāth ho",
-    "english": "{5:May there be }{4:the companionship }{3:of }{0:love, }{1:wisdom, }{2:and devotion.}",
+    "english": "{5:May }{0:love, }{1:wisdom }{2:and devotion }{3,4:be my companions.}",
     "words": [
       {
         "roman": "Prem",

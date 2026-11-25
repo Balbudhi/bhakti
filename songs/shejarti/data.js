@@ -635,7 +635,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ bhūtabhaviṣyadbhāvavarjitāya namaḥ",
-    "english": "{0:Om, }{5:salutations }{4:to the one devoid }{1:of past }{2:and future }{3:states of becoming.}",
+    "english": "{0:Om, }{5:salutations }{4:to the one beyond }{1:past }{2:and future }{3:existence.}",
     "words": [
       {
         "roman": "oṃ",
@@ -2038,7 +2038,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ prītivardhanāya namaḥ",
-    "english": "{0:Om, }{3:salutations }{2:to the increaser }{1:of loving affection.}",
+    "english": "{0:Om, }{3:salutations }{2:to the one who deepens }{1:loving affection.}",
     "words": [
       {
         "roman": "oṃ",
@@ -3137,7 +3137,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ saṃśaya hṛdayadaurbalya pāpakarma vāsanākṣayakarāya namaḥ",
-    "english": "{0:Om, }{8:salutations }{7:to the cause }{6:of destruction of }{1:doubt, }{2:faintheartedness, }{3:sinful }{4:action, }{5:and latent impressions.}",
+    "english": "{0:Om, }{8:salutations }{7:to the one who }{6:destroys }{1:doubt, }{2:faintheartedness, }{3:sinful }{4:action }{5:and latent impressions.}",
     "words": [
       {
         "roman": "oṃ",
@@ -5861,7 +5861,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ satyatattvabodhakāya namaḥ",
-    "english": "{0:Om, }{4:salutations }{3:to the awakener }{1:to true }{2:reality.}",
+    "english": "{0:Om, }{4:salutations }{3:to the one who awakens us }{1:to true }{2:reality.}",
     "words": [
       {
         "roman": "oṃ",
@@ -6850,7 +6850,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "oṃ samarasasanmārgasthāpanāya namaḥ",
-    "english": "{0:Om, }{5:salutations }{4:to the establisher }{2:of the true }{3:path }{1:of harmonious oneness.}",
+    "english": "{0:Om, }{5:salutations }{4:to the one who establishes }{2:the true }{3:path }{1:of harmonious oneness.}",
     "words": [
       {
         "roman": "oṃ",

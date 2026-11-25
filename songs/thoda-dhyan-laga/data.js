@@ -1455,7 +1455,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "muniyoṁ ne ṛṣiyoṁ ne guru śiṣya mahimā kā",
-    "english": "{0,1:Sages} {2,3:and seers,} {4:of the master} {5:and disciple's} {6,7:glory,}",
+    "english": "{0,1:Sages} {2,3:and seers,} {4:of the master’s} {5:and disciple’s} {6,7:glory,}",
     "words": [
       {
         "roman": "muniyoṁ",

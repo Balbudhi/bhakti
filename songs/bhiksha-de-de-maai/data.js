@@ -347,7 +347,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tū de nā de phir bhī sāīṁ",
-    "english": "{0,1:Whether you give }{2,3:or do not give, }{4,5:even so, }{6:Sai}",
+    "english": "{0,1:Whether you give }{2,3:or not, }{6:Sai }{4,5:still}",
     "words": [
       {
         "roman": "tū",
@@ -857,7 +857,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ek iśārā ho jāye uskā",
-    "english": "{0:If a single }{1:sign }{4:of his }{2,3:occurs}",
+    "english": "{4:If he }{2,3:makes }{0:a single }{1:gesture},",
     "words": [
       {
         "roman": "ek",

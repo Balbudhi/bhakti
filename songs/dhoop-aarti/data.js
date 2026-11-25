@@ -626,7 +626,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jayā manīṅ jaisā bhāva tayā taisā anubhava",
-    "english": "{2:Whatever }{3:feeling }{0:is in one's }{1:mind, }{4:to them }{5:is such }{6:experience;}",
+    "english": "{2:As }{3:the feeling }{0:in each person’s }{1:heart, }{5:so }{4:is their }{6:experience;}",
     "words": [
       {
         "roman": "Jayā",
@@ -715,7 +715,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dāvisī dayāghanā aisī tujhī hī māva",
-    "english": "{0:You reveal, }{1:O cloud of compassion; }{2:such }{4:is this }{5:wondrous play }{3:of yours,}",
+    "english": "{0:you show this, }{1:O cloud of compassion; }{2:such }{4:is this }{5:wondrous play }{3:of yours,}",
     "words": [
       {
         "roman": "Dāvisī",
@@ -1400,7 +1400,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mājhā nijadravyaṭhevā tava caraṇarajasevā",
-    "english": "{0:My }{1:own }{3:treasure }{2:of wealth }is {7:service }{6:to the dust }{5:of }{4:your }{5:feet,}",
+    "english": "{7:Service }{6:to the dust }{5:of }{4:your }{5:feet is }{0:my }{1:own }{2,3:treasure,}",
     "words": [
       {
         "roman": "Mājhā",
@@ -4251,7 +4251,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "barā lādhalā janma hā mānavācā",
-    "english": "{0:Well }{3:was this }{4:human }{2:birth }{1:attained,}",
+    "english": "{0:How fortunate }{1:to have gained }{3:this }{4:human }{2:birth,}",
     "words": [
       {
         "roman": "barā",
@@ -4316,7 +4316,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "narā sārthakā sādhanībhūta sācā",
-    "english": "{3:Truly }{2:serving as the means }{1:for the fulfillment }{0:of a human being,}",
+    "english": "{2:a means }{1:of fulfillment }{0:for us, }{3:indeed,}",
     "words": [
       {
         "roman": "narā",
@@ -4530,7 +4530,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karāve āmhā dhanya cumboni gālā",
-    "english": "{0:Make }{1:us }{2:blessed, }{3:having kissed }{4:the cheek,}",
+    "english": "{3:Kiss }{1:our }{4:cheeks }{0:and make us }{2:blessed,}",
     "words": [
       {
         "roman": "karāve",
@@ -4737,7 +4737,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śukādīka jyāṁte samānatva detī",
-    "english": "{1:Unto whom }{0:Śuka and the great sages }{3:accord }{2:equality,}",
+    "english": "{1:whom }{0:Śuka and the great sages }{3:regard }{2:as their equal,}",
     "words": [
       {
         "roman": "śukādīka",
@@ -4802,7 +4802,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prayāgādi tīrthe padī namra hotā",
-    "english": "{0:Prayāga and other }{1:sacred pilgrimage waters }{4:become }{3:humble }{2:at whose feet,}",
+    "english": "{2:at whose feet }{0:Prayāga and other }{1:sacred pilgrimage waters }{3,4:bow,}",
     "words": [
       {
         "roman": "prayāgādi",
@@ -5009,7 +5009,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karī rāsakrīḍā save kṛṣṇanāthā",
-    "english": "{0:Engaged in }{1:the Rasa dance sport }{2:together with }{3:Lord Kṛṣṇa.}",
+    "english": "{0:They performed }{1:the rāsa dance }{2:with }{3:Lord Kṛṣṇa.}",
     "words": [
       {
         "roman": "karī",
@@ -5358,7 +5358,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "akṣayarūpa avatārā sarvahī vyāpaka tū",
-    "english": "{0:O imperishable form, }{1:O incarnation, }{4:you }{3:are all-pervading }{2:throughout all,}",
+    "english": "{0:O imperishable form, }{1:O incarnation, }{4:you }{3:pervade }{2:all,}",
     "words": [
       {
         "roman": "akṣayarūpa",
@@ -6240,7 +6240,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "akṣaya tyāñce sadanī lakṣmī vāsa karī",
-    "english": "{1:in their }{2:abode, }{3:Lakṣmī }{5:takes up }{0:imperishable }{4:residence.}",
+    "english": "{3:Lakṣmī }{4,5:dwells }{0:forever }{1:in their }{2:home.}",
     "words": [
       {
         "roman": "akṣaya",
@@ -6406,7 +6406,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "yāpari dhyāna tujhe gururāyā",
-    "english": "{0:In this manner, }{1:meditation }{2:on you, }{3:O King among Gurus,}",
+    "english": "{3:O King among Gurus, }{1:this meditative vision }{2:of you }{0:in such a form—}",
     "words": [
       {
         "roman": "yāpari",
@@ -6477,7 +6477,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dṛśya karī nayanā yā pūrṇānanda sukhe",
-    "english": "{1:make }{0:visible }{3:to these }{2:eyes }{5:in the joy of }{4:complete bliss;}",
+    "english": "{1:make it }{0:visible }{3:to these }{2:eyes, }{5:in the joy }{4:of perfect bliss;}",
     "words": [
       {
         "roman": "dṛśya",
@@ -6572,7 +6572,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hī kāyā lāviśī hariguṇa gāyā aisā yeī bā",
-    "english": "{2:you engage }{0:this }{1:body }{4:to sing }{3:Hari's praises—}{6:come }{5:thus, }{7:O dear father!}",
+    "english": "{2:you set }{0:this }{1:body }{4:singing }{3:Hari’s praises—}{6:come }{5:thus, }{7:O dear father!}",
     "words": [
       {
         "roman": "hī",
@@ -7772,7 +7772,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "anekāśrutātarkyalīlāvilāsaiḥ samāviṣkṛteśānabhāsvatprabhāvam | ahaṃbhāvahīnaṃ prasannātmabhāvaṃ",
-    "english": "{4:Through }{0:manifold, }{1:unheard-of, }{2:and inconceivable }{4:plays }{3:of divine sport, }{5:who has fully revealed }{7:the radiant }{8:majesty }{6:of the Supreme Lord, }{10:devoid }{9:of ego-sense, }{13:abiding in }{11:serene }{12:selfhood.}",
+    "english": "{5:Who fully reveals }{7:the radiant }{8:majesty }{6:of the Supreme Lord }{4:through }{0:many }{1:unheard-of }{2:and inconceivable }{3,4:divine plays; }{10:free }{9:of ego, }{13:and }{11:serene }{12:within,}",
     "words": [
       {
         "roman": "anek",
@@ -12905,7 +12905,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "padāruci ulhaso jananakardamī nā phaso",
-    "english": "{0:May relish for the feet }{1:well up; }{3:may I not }{4:be trapped }{2:in the mire of rebirth.}",
+    "english": "{0:May love for your feet }{1:well up; }{3:may I not }{4:be trapped }{2:in the mire of rebirth.}",
     "words": [
       {
         "roman": "padāruci",
@@ -12982,7 +12982,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na durgadhṛtīcā dhaso aśivabhāva māge khaso",
-    "english": "{1:May the fortress of fortitude }{0:not }{2:collapse; }{3:let inauspicious thoughts }{5:recede }{4:backward.}",
+    "english": "{1:May the fortress of fortitude }{0:not }{2:collapse; }{3:let harmful thoughts }{4,5:fall away.}",
     "words": [
       {
         "roman": "na",
@@ -13487,7 +13487,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "na datta guru sāī maja uparī yā janelā ruso",
-    "english": "{1:May Datta }{2:Guru }{3:Sāī }{0:not }{8:be displeased }{4:with me, }{5:upon }{6:this }{7:servant.}",
+    "english": "{1:May Datta }{2:Guru }{3:Sāī }{0:not }{8:be displeased }{4,5:with me, }{6:this }{7:servant.}",
     "words": [
       {
         "roman": "na",
@@ -14875,7 +14875,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "karacaraṇakṛtaṁ vākkāyajaṁ karmajaṁ vā śravaṇanayanajaṁ vā mānasaṁ vāparādham |",
-    "english": "{2:Done }{0:by the hands }{1:and feet, }{5:born }{3:of speech }{4:and body, }{8:or }{7:born }{6:of action, }{12:or }{11:born }{9:of the ears }{10:and eyes, }{13:mental, }{14:or }{15:any transgression—}",
+    "english": "{15:Whatever wrong I have done—}{2:whether }{0:with my hands }{1:or feet, }{5:through }{3:speech }{4:or body, }{8:or }{7:through }{6:my actions, }{12:or }{11:through }{9:hearing }{10:or sight, }{14:or }{13:in my mind—}",
     "words": [
       {
         "roman": "kara",
@@ -15060,7 +15060,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "vihitamavihitaṁ vā sarvametatkṣamasva jaya jaya karuṇābdhe śrīprabho sāīnātha ||",
-    "english": "{0:prescribed }{1:or unprescribed, }{2:or otherwise—}{5:forgive }{3:all }{4:this! }{6:Victory, }{7:victory, }{9:O ocean }{8:of compassion, }{10:O glorious }{11:Lord, }{12:O Sāīnātha!}",
+    "english": "{0:whether in prescribed acts }{2:or }{1:unprescribed ones—}{5:forgive }{3:all }{4:this! }{6:Victory, }{7:victory, }{9:O ocean }{8:of compassion, }{10:O glorious }{11:Lord, }{12:O Sāīnātha!}",
     "words": [
       {
         "roman": "vihitam",

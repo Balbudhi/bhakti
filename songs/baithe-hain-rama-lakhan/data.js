@@ -183,7 +183,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pañcavaṭī vara parana-kuṭī tara",
-    "english": "{3:Beneath }{1:an excellent }{2:leaf-hut }{0:in Panchavati,}",
+    "english": "{3:Under the roof of }{1:a lovely }{2:leaf-thatched hut }{0:in Pañcavaṭī,}",
     "words": [
       {
         "roman": "pañcavaṭī",
@@ -473,7 +473,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāye pālibe joga mañju mṛga",
-    "english": "{0:“If obtained, }{3:the charming }{4:deer }{2:is worthy }{1:to be reared;}",
+    "english": "{0:“If we catch it, }{3:this lovely }{4:deer }{2:would make }{1:a fine pet;}",
     "words": [
       {
         "roman": "pāye",

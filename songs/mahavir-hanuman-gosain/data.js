@@ -447,7 +447,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tumharī yāda bhalī",
-    "english": "{0:Your }{1:remembrance is }{2:blessed.}",
+    "english": "{1:Remembering }{0:you }{2:is a blessing.}",
     "words": [
       {
         "roman": "tumharī",
@@ -949,7 +949,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tumharī śaraṇa mahā sukhadāī",
-    "english": "{0:Your }{1:refuge is }{2:supremely }{3:bliss-bestowing,}",
+    "english": "{0:Your }{1:refuge }{3:brings }{2:the greatest }{3:joy,}",
     "words": [
       {
         "roman": "tumharī",

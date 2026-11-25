@@ -794,7 +794,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "māt-pitā tuma mērē, śaraṇa gahūṁ kisakī",
-    "english": "{1:You }{2:are my }{0:mother and father; }{5:whose }{3:refuge }{4:should I take?}",
+    "english": "{1:You }{2:are my }{0:mother and father; }{5:with whom }{4:should I seek }{3:refuge?}",
     "words": [
       {
         "roman": "māt-pitā",
@@ -865,7 +865,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "svāmī śaraṇa gahūṁ kisakī",
-    "english": "{0:O Master, }{3:whose }{1:refuge }{2:should I take?}",
+    "english": "{0:O Master, }{3:with whom }{2:should I seek }{1:refuge?}",
     "words": [
       {
         "roman": "svāmī",
@@ -1048,7 +1048,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma pūrana paramātmā, tuma antarayāmī",
-    "english": "{0:You are }{1:the all-complete }{2:Supreme Self, }{3:you are }{4:the inner ruler;}",
+    "english": "{0:You are }{1:the perfect }{2:Supreme Self, }{3:you are }{4:the inner ruler;}",
     "words": [
       {
         "roman": "tuma",

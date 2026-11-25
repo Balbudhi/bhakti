@@ -317,7 +317,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nā kannuṃgaluvalu bhavadīya mukhacaṃdra darśanaṃbapēkṣiṃcucunnavi",
-    "english": "{0:my} {1:eye-}{2:lilies} {7:await} {6:the sight} {3:of your} {4:face-}{5:moon}.",
+    "english": "{0:my} {1:eyes, like }{2:lilies,} {7:await} {6:the sight} {3:of your} {4:face, }{5:their moon}.",
     "words": [
       {
         "roman": "nā",
@@ -901,7 +901,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nēnu prakṛti saṃbaṃdhaṃbulaina aṃgaṃbulu dhariṃcina vāḍanu",
-    "english": "{0:I} {5:am one who} {4:wears} {3:limbs} {2:bound to} {1:material nature}.",
+    "english": "{0:I} {5:am one who} {4:has} {3:limbs} {2:bound to} {1:material nature}.",
     "words": [
       {
         "roman": "nēnu",

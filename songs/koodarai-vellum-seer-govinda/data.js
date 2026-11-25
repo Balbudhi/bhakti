@@ -142,7 +142,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kūḍārai vellum sīr gōvindā undaṉṉai",
-    "english": "{3:O }{2:glorious }{3:Govinda, }{1:you who conquer }{0:those who do not submit—}{4:of you yourself}",
+    "english": "{3:O }{2:glorious }{3:Govinda, }{1:you who conquer }{0:those who do not submit—}{4:it is of you}",
     "words": [
       {
         "roman": "Kūḍārai",
@@ -448,7 +448,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sūḍagamē tōḷ vaḷaiyē tōḍē sevippūvē",
-    "english": "{0:bracelets, }{1,2:armlets for the upper arm, }{3:ear-studs, }{4:ear-flowers,}",
+    "english": "{0:bracelets, }{1,2:armlets, }{3:ear-studs, }{4:flower-shaped earrings,}",
     "words": [
       {
         "roman": "Sūḍagamē",
@@ -748,7 +748,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kūḍi irundhu kuḷirndhēlōr embāvāy",
-    "english": "{0:together} {1:we will sit} {2:cooled and refreshed—heed this,} {3:O our maiden.}",
+    "english": "{0:together} {1:we will sit,} {2:cool and refreshed—heed this,} {3:O our maiden.}",
     "words": [
       {
         "roman": "Kūḍi",

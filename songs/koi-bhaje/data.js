@@ -439,7 +439,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rām kṛṣṇa jo jape nirantar, ho jāe uddhār",
-    "english": "{2:Whoever }{3:chants }{0:Rama }{1:and Krishna }{4:unceasingly, }{7:deliverance }{5,6:comes to pass}",
+    "english": "{2:Whoever }{3:chants }{0:Rāma }{1:and Kṛṣṇa }{4:unceasingly }{5,6,7:finds deliverance}",
     "words": [
       {
         "roman": "Rām",
@@ -724,7 +724,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Māt pitā bandhu sabake vo, jag ke pālanahār",
-    "english": "{0:Mother, }{1:father, }{2:and kin }{3:of everyone }{4:are they, }{7:sustainers }{5,6:of the world}",
+    "english": "{4:They are }{0:mother, }{1:father, }{2:and kin }{3:to everyone, }{7:sustainers }{5,6:of the world}",
     "words": [
       {
         "roman": "Māt",

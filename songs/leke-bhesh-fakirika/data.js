@@ -187,7 +187,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāī̃ pyārē sabasē nyārē",
-    "english": "{1:Beloved }{0:Sai, }{3:most singular }{2:of all!}",
+    "english": "{1:Beloved }{0:Sai, }{3:unlike }{2:any other!}",
     "words": [
       {
         "roman": "Sāī̃",
@@ -991,7 +991,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hātha pakaṛakara khānā khilātē",
-    "english": "{1:Holding them by }{0:the hand, }{3:he feeds them }{2:food;}",
+    "english": "{1:Taking them by }{0:the hand, }{3:he gives them }{2:food;}",
     "words": [
       {
         "roman": "Hātha",
@@ -1050,7 +1050,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mērē Sāī̃ haĩ dulārē",
-    "english": "{0:My }{1:Sai }{2:is }{3:tenderly cherished.}",
+    "english": "{0:My }{1:Sai }{2:is }{3:dearly loved.}",
     "words": [
       {
         "roman": "Mērē",

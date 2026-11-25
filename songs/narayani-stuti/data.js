@@ -4297,7 +4297,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "daṃṣṭrākarālavadane śiromālāvibhūṣaṇe |\ncāmuṇḍe muṇḍamathane nārāyaṇi namo'stu te ||",
-    "english": "{0:Fang-}{1:fierce} {2:of face,}{5: adorned} {4:with a garland} {3:of heads,}{6: Cāmuṇḍā,}{8: crusher of} {7:Muṇḍa—}{9:Nārāyaṇī,}{10: homage}{11: to you.}",
+    "english": "{2:With a face}{1: made terrible}{0: by fangs,}{5: adorned} {4:with a garland} {3:of heads,}{6: Cāmuṇḍā,}{8: crusher of} {7:Muṇḍa—}{9:Nārāyaṇī,}{10: homage}{11: to you.}",
     "words": [
       {
         "roman": "daṃṣṭrā",

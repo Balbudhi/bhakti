@@ -593,7 +593,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jībana mo byākula adhīra",
-    "english": "{1:my }{0:life }{2:is yearning }{3:and restless.}",
+    "english": "{1:my }{0:whole being }{2:yearns }{3:restlessly.}",
     "words": [
       {
         "roman": "Jībana",

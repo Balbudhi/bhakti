@@ -422,7 +422,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jana miḷi jāe",
-    "english": "{0:People }{1,2:are gained}",
+    "english": "{0:Companions }{1,2:are found}",
     "words": [
       {
         "roman": "jana",

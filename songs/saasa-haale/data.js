@@ -495,7 +495,7 @@ window.SONG_LINES = {
   "l08": {
     "source": "कूपै शोधे ताही प्रबोधे तो अमृत रस प्यावै।",
     "roman": "kūpai śodhe tāhī prabodhe to amṛt ras pyāvai",
-    "english": "One {1:searches} {0:in the well} and {3:awakens} {2:her}— {4:then} one {7:gives to drink} {5,6:the nectar of immortality}.",
+    "english": "One {1:searches} {0:in the well} and {3:awakens} {2:her}— {4:then} one {7:offers} {5,6:the nectar of immortality} {7:to drink}.",
     "words": [
       {
         "roman": "kūpai",
@@ -865,7 +865,7 @@ window.SONG_LINES = {
   "l12": {
     "source": "भीतर बड़ा उजाला भासे, एक मणिधर आगे",
     "roman": "bhītar baṛā ujālā bhāse ek maṇidhar āge",
-    "english": "{0:Inside}, {1:great} {2:light} {3:shines}. {4:A single} {5:jewel-bearing serpent} {6:in front}.",
+    "english": "{0:Inside}, {1:great} {2:light} {3:shines}. {4:A single} {5:jewel-bearing serpent} {6:stands before one}.",
     "words": [
       {
         "roman": "bhītar",
@@ -1365,7 +1365,7 @@ window.SONG_LINES = {
   "l17": {
     "source": "बाहर दृष्टि न जावै अवधू अंतर ही सब पावै",
     "roman": "bāhar dṛṣṭi na jāvai avadhū antar hī sab pāvai",
-    "english": "{1:The gaze} {2,3:does not go} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {5:within }{6:alone}.",
+    "english": "{1:The gaze} {2,3:does not go} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {6:only} {5:within}.",
     "words": [
       {
         "roman": "bāhar",

@@ -1272,7 +1272,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dhyātī Tujhko Dhyāẽ Niśidin Brahmā Viṣṇu Aur Maheśā",
-    "english": "{0:Meditating }{1:upon You, }{3:day and night }{4:Brahma, }{5:Vishnu, }{6,7:and Mahesh }{2:meditate.}",
+    "english": "{4:Brahma, }{5:Vishnu, }{6,7:and Mahesh }{0,2:meditate }{1:upon you }{3:day and night.}",
     "words": [
       {
         "roman": "Dhyātī",

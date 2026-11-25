@@ -721,7 +721,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "māulīcī",
-    "english": "{0:of the mother.}",
+    "english": "{0:for its mother.}",
     "words": [
       {
         "roman": "māulīcī",

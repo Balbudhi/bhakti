@@ -656,7 +656,7 @@ window.SONG_LINES = {
   "log_karenge_badnami": {
     "source": "लोग करेंगे बदनामी",
     "roman": "Log kareṁge badanāmī",
-    "english": "{0:People }{1:will bring }{2:disrepute.}",
+    "english": "{0:People }{1,2:will speak ill.}",
     "words": [
       {
         "roman": "log",

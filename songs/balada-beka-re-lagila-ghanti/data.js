@@ -364,7 +364,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jā' khete paśilā dharā paṛilā",
-    "english": "{0:Whosever }{1:field }{2:it entered, }{3,4:it was caught}",
+    "english": "{0:No matter whose }{1:field }{2:it entered, }{3,4:it was caught}",
     "words": [
       {
         "roman": "Jā'",

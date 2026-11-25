@@ -1126,7 +1126,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pūta kapūta sune haĩ para nā mātā sunī kumātā",
-    "english": "{2,3:We have heard of}{0: sons}{1: who are bad sons,}{4: but}{5: never}{6: of a mother}{7,8: who is a bad mother.}",
+    "english": "{2,3:We have heard of}{0: sons}{1: who go astray,}{4: but}{5,7: never of}{6: a mother}{8: who fails her child.}",
     "words": [
       {
         "roman": "pūta",

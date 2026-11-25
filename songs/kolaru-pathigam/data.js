@@ -662,7 +662,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "poṉpoti mattamālai puṉalcūṭi vanteṉ uḷamē pukunta ataṉāl",
-    "english": "{2:wearing}{1: a garland of datura flowers}{0: with gold within}{2: and the waters,}{3: He came}{5: and entered}{3: into my}{4: heart;}{6: therefore,}",
+    "english": "{2:wearing}{1: a garland of datura flowers}{0: with golden centers}{2: and the waters of Gaṅgā,}{3: He came}{5: and entered}{3: my}{4: heart;}{6: therefore,}",
     "words": [
       {
         "roman": "poṉpoti",

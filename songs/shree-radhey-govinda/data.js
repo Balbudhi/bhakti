@@ -946,7 +946,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vṛndāvana kī kuñja galina mēṁ sabakō nāca nacāyē",
-    "english": "{4:In }{2:the grove }{3:lanes }{0,1:of Vrindavan, }{7:he makes }{5:everyone }{6:dance!}",
+    "english": "{4:Along }{3:the lanes }{2:through the groves }{0,1:of Vrindavan, }{7:he makes }{5:everyone }{6:dance!}",
     "words": [
       {
         "roman": "Vṛndāvana",

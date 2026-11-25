@@ -989,7 +989,7 @@ window.SONG_LINES = {
   "l012": {
     "source": "आज शुभ अवसर माँ भगवती आप भक्तो की हाज़री स्वीकार करें।",
     "roman": "āj śubh avsar māṃ bhagvatī āp bhakto kī hāzrī svīkār kareṃ",
-    "english": "{0:Today}, {1,2:on this auspicious occasion}, {3,4:the blessed Mother Goddess} {10:may }{9:accept} {8:the attendance} {7:of }{5:you }{6:devotees}.",
+    "english": "{0:Today}, {1,2:on this auspicious occasion}, {10:may }{3,4:the blessed Mother Goddess} {9:accept} {5:your }{7,8:presence here}, {6:devotees}.",
     "words": [
       {
         "roman": "āj",
@@ -2539,7 +2539,7 @@ window.SONG_LINES = {
   "l032": {
     "source": "कट जाएँगे तेरे जन्मों के फेरे",
     "roman": "kaṭ jāeṃge tere janmoṃ ke phere",
-    "english": "{2:Your} {5:cycles} {3,4:of birth} {0,1:will be cut off}.",
+    "english": "{2:Your} {5:cycles} {3,4:of birth} {0,1:will end}.",
     "words": [
       {
         "roman": "kaṭ",

@@ -329,7 +329,7 @@ window.SONG_LINES = {
   },
   "refrain_a": {
     "roman": "Aisā pyār bahā de maiyā",
-    "english": "{2:Pour }{0:such }{1:love, }{3:O Mother.}",
+    "english": "{2:Let }{0:such }{1:love }{2:flow, }{3:O Mother.}",
     "words": [
       {
         "roman": "Aisā",
@@ -553,7 +553,7 @@ window.SONG_LINES = {
   },
   "v1a": {
     "roman": "Jag meṅ ākar jag ko maiyā, ab tak na pahchān sakā",
-    "english": "{2:Having come }{0,1:into the world, }{5:Mother, }{9:I have }{7:not }{6:yet }{9:been able to }{8:recognize }{4:the }{3:world.}",
+    "english": "{2:I have come }{0,1:into the world, }{5:Mother, }but {6:still }{7,9:cannot }{8:understand }{3,4:it.}",
     "words": [
       {
         "roman": "Jag",
@@ -669,7 +669,7 @@ window.SONG_LINES = {
   },
   "v1a_tail": {
     "roman": "Ab tak na pahchān sakā",
-    "english": "{3:I have }{1:not }{0:yet }{3:been able to }{2:recognize }it.",
+    "english": "{0:Still }{1,3:I cannot }{2:understand }it.",
     "words": [
       {
         "roman": "Ab tak",
@@ -795,7 +795,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Ye bhī na main jān sakā",
-    "english": "{1:Even }{0:this, }{3:I }{5:could }{2:not }{4:know.}",
+    "english": "{1:Even }{0:this }{3:I }{2,4,5:have not understood.}",
     "words": [
       {
         "roman": "Ye",

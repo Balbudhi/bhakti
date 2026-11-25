@@ -447,7 +447,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kelā paṇ hā cālavī mājhā",
-    "english": "{3:Sustain} {2:this} {1:pledge} {4:of mine} {0:that I have made}.",
+    "english": "{3:Help me keep} {2:this} {1:pledge} {4:of mine}, {0:which I have made}.",
     "words": [
       {
         "roman": "kelā",

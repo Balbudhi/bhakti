@@ -971,7 +971,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lōkada janarige nā karavoḍḍadante nī karuṇisu tāye rākēnduvadane",
-    "english": "{8:Mother}, {9:full-moon-}{10:faced one}, {6:you}, {7:show mercy}, {5:so that} {2:I} {4:need not stretch out }{3:my hand} {1:to people} {0:of the world}.",
+    "english": "{8:Mother}, {9,10:with a face like the full moon}, {6,7:show mercy}, {5:so that} {2:I} {4:need not stretch out }{3:my hand} {1:to people} {0:of the world}.",
     "words": [
       {
         "roman": "lōkada",
@@ -1278,7 +1278,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sindhuśayana sirivijayaviṭṭhalarēya endendige manadindagaḷade",
-    "english": "{0:Ocean-}{1:reclining} {2:Śrī Vijaya Viṭṭhalarāya}, {3:for ever} {5:without leaving }{4:my mind}…",
+    "english": "{2:Śrī Vijaya Viṭṭhalarāya}, {0,1:who reclines upon the ocean}, {3:for ever} {5:remaining }{4:in my mind}…",
     "words": [
       {
         "roman": "sindhu",

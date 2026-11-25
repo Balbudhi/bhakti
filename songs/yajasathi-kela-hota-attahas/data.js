@@ -326,7 +326,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kavatukā vāṭe jāliyā vecāce",
-    "english": "{0:Delight} {1:arises} {3:at the expenditure} {2:that was made};",
+    "english": "{0,1:I rejoice} {3:in all that} {2:was spent};",
     "words": [
       {
         "roman": "kavatukā",

@@ -1664,7 +1664,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mila jāyegā, mila jāyegā, parama sahārā mila jāyegā",
-    "english": "{0,1:It will be found, }{2,3:it will be found, }{4:supreme }{5:support }{6,7:will be found}",
+    "english": "{0,1:You will find it, }{2,3:you will find it, }{6,7:you will find }{4:supreme }{5:support}",
     "words": [
       {
         "roman": "mila",
@@ -1771,7 +1771,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sahaja kinārā mila jāyegā, parama sahārā mila jāyegā",
-    "english": "{1:The shore }{2,3:will be found }{0:with ease, }{4:supreme }{5:support }{6,7:will be found}",
+    "english": "{2,3:You will reach }{1:the shore }{0:with ease, }{6,7:you will find }{4:supreme }{5:support}",
     "words": [
       {
         "roman": "sahaja",

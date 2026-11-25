@@ -1417,7 +1417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maut ā ke faqīroṅ se tujhe kyā lenā, marne se pahle ye log marā karte haiṅ",
-    "english": "{0:O Death,}{2: having }{1:come,}{6: what}{5,7: business do you have}{4: with }{3:dervishes?}{9,10: Before}{8: dying,}{11: these }{12:people}{13,14,15: make a practice of dying.}",
+    "english": "{0:O Death,}{6: what}{5,7: business do you have}{1,2: coming}{4: to }{3:dervishes?}{11: These }{12:people}{13,14,15: die}{9,10: before}{8: they die.}",
     "words": [
       {
         "roman": "Maut",
@@ -1572,7 +1572,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gurāṅ ke śabad pyālā harī ras pī'ūṅgā",
-    "english": "{3:From the cup}{0,1: of the Guru's}{2: Word,}{6: I will drink} the {5:juice}{4: of Hari.}",
+    "english": "{3:From the cup}{0,1: of the Guru's}{2: Word,}{6: I will drink}{4: Hari’s}{5: nectar.}",
     "words": [
       {
         "roman": "Gurāṅ",
@@ -1606,7 +1606,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ras",
-        "gloss": "juice; savor, here the drink of Hari in the Word-cup metaphor",
+        "gloss": "nectar; the sweet drink of devotion to Hari, in the metaphor of the Guru’s Word as a cup",
         "concept_key": "rasa",
         "preserve_in_english": false
       },
@@ -2124,7 +2124,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vekho re bāwā dohāṅ gal phāṅsī",
-    "english": "{0:Look,}{1: O }{2:seeker,}{4: around the neck}{3: of both}{5: is a noose!}",
+    "english": "{0:Look,}{1: O }{2:seeker,}{3: both}{5: have a noose}{4: around their necks!}",
     "words": [
       {
         "roman": "Vekho",

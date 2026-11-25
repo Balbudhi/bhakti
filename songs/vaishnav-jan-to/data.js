@@ -215,7 +215,7 @@ window.SONG_LINES = {
   "l04": {
     "source": "મન અભિમાન ન આણે રે",
     "roman": "Man abhimān na āṇe re",
-    "english": "{2:does not }{3:bring }{1:pride }into {0:the mind}{4:.}",
+    "english": "{2:never }{3:lets }{1:pride }enter {0:the heart}{4:.}",
     "words": [
       {
         "roman": "Man",

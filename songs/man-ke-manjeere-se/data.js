@@ -191,7 +191,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "man mẽ khayāl leke sāī̃ ko pukār le",
-    "english": "{3:Holding }{2:contemplation }{0,1:in the mind, }{6,7:call upon }{4,5:Sai.}",
+    "english": "{0,1:In your heart, }{3:hold }{2:the thought of him }and {6,7:call upon }{4,5:Sāī.}",
     "words": [
       {
         "roman": "man",
@@ -637,7 +637,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bandhan kā prem dhāgā pār lagāe nā",
-    "english": "{2,3:The love-thread }{1:of }{0:bondage }{6:will not }{4,5:ferry you across,}",
+    "english": "{2,3:The thread of love }{0,1:that binds you }{6:will not }{4,5:ferry you across,}",
     "words": [
       {
         "roman": "bandhan",
@@ -744,7 +744,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvan kī rīt ko tū thoṛā sā sudhār le",
-    "english": "{4,7,8:Reform }{2,3:the way }{1:of }{0:life }{5,6:a little bit,}",
+    "english": "{4,7,8:Improve }{2,3:the way }{0,1:you live }{5,6:a little,}",
     "words": [
       {
         "roman": "jīvan",

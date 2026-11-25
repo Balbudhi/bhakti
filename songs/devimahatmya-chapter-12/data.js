@@ -1958,7 +1958,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "balipradāne pūjāyāmagnikārye mahotsave sarvaṃ mamaitaccaritam uccāryaṃ śrāvyameva ca",
-    "english": "{1:When}{0: offerings}{1: are given,}{2: in worship,}{4: in}{3: fire}{4: rites}{6: and at}{5: great}{6: festivals,}{9: this}{7: entire}{10: account of}{8: my}{10: deeds}{11: should be recited aloud}{13: and}{12: made heard.}",
+    "english": "{1:When}{0: offerings}{1: are given,}{2: in worship,}{4: in}{3: fire}{4: rites}{6: and at}{5: great}{6: festivals,}{9: this}{7: entire}{10: account of}{8: my}{10: deeds}{11: should be recited aloud}{13: and}{12: shared with listeners.}",
     "words": [
       {
         "roman": "bali",
@@ -4156,7 +4156,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrutaṃ harati pāpāni tathārogyaṃ prayacchati rakṣāṃ karoti bhūtebhyo janmanāṃ kīrtanaṃ mama",
-    "english": "{0,1,2:Heard, this account removes sins}{3,4: and grants health.}{9: Recounting }{10:my }{8:births}{5,6,7: gives protection from spirits.}",
+    "english": "{0:When heard, this account}{1: removes}{2: sins}{3,4: and grants health.}{9: Recounting }{10:my }{8:births}{5,6,7: gives protection from spirits.}",
     "words": [
       {
         "roman": "śrutaṃ",

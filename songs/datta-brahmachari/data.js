@@ -122,7 +122,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tribhuvanāt tujhī pherī dattā",
-    "english": "{1:Your} {2:round is} {0:through the three worlds}, {3:O Datta}.",
+    "english": "{1:You} {2:make your rounds} {0:through the three worlds}, {3:O Datta}.",
     "words": [
       {
         "roman": "tribhuvanāt",
@@ -174,7 +174,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tribhuvanāt tujhī pherī māṇikā",
-    "english": "{1:Your} {2:round is} {0:through the three worlds}, {3:O Māṇik}.",
+    "english": "{1:You} {2:make your rounds} {0:through the three worlds}, {3:O Māṇik}.",
     "words": [
       {
         "roman": "tribhuvanāt",
@@ -220,7 +220,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tribhuvanāt tujhī pherī",
-    "english": "{1:Your} {2:round is} {0:through the three worlds}.",
+    "english": "{1:You} {2:make your rounds} {0:through the three worlds}.",
     "words": [
       {
         "roman": "tribhuvanāt",
@@ -268,7 +268,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dattā tribhuvanāt tujhī pherī",
-    "english": "{0:O Datta}, {2:your} {3:round is} {1:through the three worlds}.",
+    "english": "{0:O Datta}, {2:you} {3:make your rounds} {1:through the three worlds}.",
     "words": [
       {
         "roman": "dattā",

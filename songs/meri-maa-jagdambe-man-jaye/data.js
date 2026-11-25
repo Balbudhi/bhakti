@@ -2059,7 +2059,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O rah ke mastī vic din-rāt sadā, dunīyā tõ kinārā pā laindā",
-    "english": "{0:He, }{1,2:remaining }{3,4,6:ever in ecstasy }{5:day and night, }{9,10,11:withdraws to the shore }{7,8:from the world.}",
+    "english": "{0:He }{1,2:remains }{3,4,6:ever in ecstasy }{5:day and night, }{9,10,11:turning away }{7,8:from the world.}",
     "words": [
       {
         "roman": "O",
@@ -2208,7 +2208,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O dunīyā tõ kinārā pā laindā, dunīyā tõ kinārā pā laindā",
-    "english": "{0:Oh, }{3,4,5:he withdraws to the shore }{1,2:from the world, }{8,9,10:withdraws to the shore }{6,7:from the world.}",
+    "english": "{0:Oh, }{3,4,5:he turns away }{1,2:from the world, }{8,9,10:turns away }{6,7:from the world.}",
     "words": [
       {
         "roman": "O",
@@ -3507,7 +3507,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Eh dil hai amānat Maiyā dī, thā̃-thā̃ te lagāyā nahī̃ jāndā",
-    "english": "{0:This }{1:heart }{2,4,5:is Mother's }{3:sacred trust; }{8,9,10:it cannot be attached }{6,7:at every place.}",
+    "english": "{0:This }{1:heart }{2,4,5:is Mother’s }{3:sacred trust; }{8,9,10:it cannot be given away }{6,7:wherever we please.}",
     "words": [
       {
         "roman": "Eh",
@@ -3614,7 +3614,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Thā̃-thā̃ te lagāyā nahī̃ jāndā,",
-    "english": "{3,4:It cannot be }{2:attached }{0,1:at every place, }",
+    "english": "{2,3,4:It cannot be given away }{0,1:wherever we please, }",
     "words": [
       {
         "roman": "Thā̃-thā̃",
@@ -5175,7 +5175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Is dunīyā nū asā̃ dil tõ bhulā ke, is dil vic mā̃ nū vasānā e",
-    "english": "{6,7:Having forgotten }{0,1,2:this world }{4,5:from the heart, }{3:we }{13,14:must enshrine }{11,12:Mother }{10:in }{8:this }{9:heart.}",
+    "english": "{3:We }{6,7:must put }{0,1,2:this world }{4,5:out of our hearts }and {13,14:enshrine }{11,12:Mother }{10:in }{8:this }{9:heart.}",
     "words": [
       {
         "roman": "Is",
@@ -5324,7 +5324,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ho is dil vic mā̃ nū vasānā e,",
-    "english": "{0:Oh, }{6,7:one must enshrine }{4,5:Mother }{3:in }{1:this }{2:heart, }",
+    "english": "{0:Oh, }{6,7:we must enshrine }{4,5:Mother }{3:in }{1:this }{2:heart, }",
     "words": [
       {
         "roman": "Ho",

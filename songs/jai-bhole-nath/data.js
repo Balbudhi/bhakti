@@ -702,7 +702,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mālā banake gale meṁ rahūṁ",
-    "english": "{1:Having become }{0:a garland, }{4:may I remain }{3:around }{2:the neck}",
+    "english": "{1:May I become }{0:a garland }{4:and remain }{3:around }{2:your neck}",
     "words": [
       {
         "roman": "mālā",
@@ -1336,7 +1336,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rom rom meṁ lipaṭ ke rahūṁ",
-    "english": "{3,4:Having clung }{2:to }{0,1:every single pore, }{5:may I remain}",
+    "english": "{5:May I stay }{3,4:clinging }{2:to }{0,1:every pore of your skin}",
     "words": [
       {
         "roman": "rom",
@@ -1602,7 +1602,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gaṅgā banake jaṭā meṁ rahūṁ",
-    "english": "{1:Having become }{0:the Ganga, }{4:may I dwell }{3:in }{2:the matted locks}",
+    "english": "{1:May I become }{0:Gaṅgā }{4:and dwell }{3:in }{2:your matted locks}",
     "words": [
       {
         "roman": "gaṅgā",
@@ -1815,7 +1815,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghuṅgharū banake pāyal meṁ rahūṁ",
-    "english": "{1:Having become }{0:an ankle-bell, }{4:may I remain }{3:on }{2:the anklet}",
+    "english": "{1:May I become }{0:a bell }{4:and remain }{3:on }{2:your anklet}",
     "words": [
       {
         "roman": "ghuṅgharū",
@@ -1886,7 +1886,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāl banakar tere saṅg rahūṁ",
-    "english": "{1:Having become }{0:the rhythm, }{4:may I remain }{2,3:with you}",
+    "english": "{1:May I become }{0:the rhythm }{4:and remain }{2,3:with you}",
     "words": [
       {
         "roman": "tāl",

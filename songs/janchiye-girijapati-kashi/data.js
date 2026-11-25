@@ -297,7 +297,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāciye girijāpati kāsī",
-    "english": "{0:Beseech }{1:Girijā’s protector-consort }{2:in Kashi,}",
+    "english": "{0:Beseech }{1:Girijā’s husband }{2:in Kashi,}",
     "words": [
       {
         "roman": "Jāciye",
@@ -415,7 +415,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sukha sampati mati sugati suhāī",
-    "english": "{0:Happiness, }{1:prosperity, }{2:intellect, }{4:and delightful }{3:favorable destiny—}",
+    "english": "{0:Happiness, }{1:prosperity, }{2:intellect, }{4:and a beautiful, }{3:blessed destiny—}",
     "words": [
       {
         "roman": "Sukha",
@@ -616,7 +616,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nirakhi nihāla nimiṣa mahum̐ kīnhe",
-    "english": "{0:having gazed upon them, }{4:He made them }{1:fulfilled }{3:within }{2:the blink of an eye.}",
+    "english": "{0:he looked upon them }{4:and brought them }{1:fulfillment }{3:in }{2:the blink of an eye.}",
     "words": [
       {
         "roman": "Nirakhi",

@@ -75,7 +75,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kete lagāichu tu nāṭa re",
-    "english": "{0:How much }{3:drama }{2:have you }{1:staged, }{4:O!}",
+    "english": "{0:What }{3:drama }{2:you }{1:have staged}{4:!}",
     "words": [
       {
         "roman": "Kete",
@@ -643,7 +643,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pāpa gantāghara kete tu bharibu",
-    "english": "{2:How much }{3:will you }{4:fill }{1:the storehouse }{0:of sin?}",
+    "english": "{2:How much more }{0:sin }{3:will you }{4:pack }{1:into your storehouse?}",
     "words": [
       {
         "roman": "Pāpa",
@@ -720,7 +720,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lobha rāga hiṁsā kete tu karibu",
-    "english": "{3:How much }{0:greed, }{1:anger, }{2:and malice }{4:will you }{5:practice?}",
+    "english": "{3:How long }{4:will you }{5:indulge in }{0:greed, }{1:anger, }{2:and malice?}",
     "words": [
       {
         "roman": "Lobha",
@@ -862,7 +862,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nā miḷiba mukti nā miḷiba yaśa",
-    "english": "{0:neither }{2:will liberation }{1:be attained, }{3:nor }{5:will renown }{4:be gained.}",
+    "english": "{1:you will attain }{0:neither }{2:liberation }{3:nor }{4:gain }{5:renown.}",
     "words": [
       {
         "roman": "Nā",
@@ -1164,7 +1164,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Piṇḍa chuṭibāra āgaru re bhāi",
-    "english": "{2:Before }{0:the body }{1:is released, }{3:O }{4:brother,}",
+    "english": "{2:Before }{0:your body }{1:falls away, }{3:O }{4:brother,}",
     "words": [
       {
         "roman": "Piṇḍa",
@@ -1306,7 +1306,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhāṅgibu tu narakara bāṭa re",
-    "english": "{1:you }{0:will break }{3:the road }{2:to hell, }{4:O!}",
+    "english": "{1:you }{0:will cut off }{3:the road }{2:to hell}{4:!}",
     "words": [
       {
         "roman": "Bhāṅgibu",

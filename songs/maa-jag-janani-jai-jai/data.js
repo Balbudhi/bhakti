@@ -2505,7 +2505,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū hī sneha sudhāmayī tū ati garala manā",
-    "english": "{0:You }{1:alone }{3:are filled with the nectar of }{2:love, }{4:you are }{5:intensely }{6,7:venom-minded.}",
+    "english": "{0:You }{1:alone }{3:are filled with the nectar of }{2:love; }{4:your }{7:heart }{5:is full }{6:of deadly venom.}",
     "words": [
       {
         "roman": "Tū",
@@ -2594,7 +2594,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiyā tū ati garala manā",
-    "english": "{0:O Mother, }{1:you are }{2:intensely }{3,4:venom-minded.}",
+    "english": "{0:O Mother, }{1:your }{4:heart }{2:is full }{3:of deadly venom.}",
     "words": [
       {
         "roman": "Maiyā",
@@ -3621,7 +3621,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nija svabhāvavaśa janani dayā dṛṣṭi kījai",
-    "english": "{0:By force of your own }{1:innate nature, }{2:O Mother, }{4,5:look upon us with }{3:mercy.}",
+    "english": "{2:O Mother, }{0:by your own }{1:nature, }{4,5:look upon us with }{3:mercy.}",
     "words": [
       {
         "roman": "Nija",

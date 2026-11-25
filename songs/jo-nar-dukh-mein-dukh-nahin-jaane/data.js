@@ -276,7 +276,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh sanehu aru bhai nahī jā kai",
-    "english": "{6:In }{5:whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
+    "english": "{5,6:One who }{4:has neither }{1:attachment }{0:to pleasure }{2:nor }{3:fear,}",
     "words": [
       {
         "roman": "sukh",
@@ -1092,7 +1092,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh sanehu ar bhai nahī jā kai",
-    "english": "{6:In }{5:whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
+    "english": "{5,6:One who }{4:has neither }{1:attachment }{0:to pleasure }{2:nor }{3:fear,}",
     "words": [
       {
         "roman": "sukh",
@@ -1788,7 +1788,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukha sanehu aru bhai nahī jā kai",
-    "english": "{6:In }{5:whom }{4:there is no }{1:attachment }{0:to pleasure }{2:or }{3:fear,}",
+    "english": "{5,6:One who }{4:has neither }{1:attachment }{0:to pleasure }{2:nor }{3:fear,}",
     "words": [
       {
         "roman": "sukha",

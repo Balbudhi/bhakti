@@ -67,7 +67,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kheḷa māṁḍīyelā vāḷavaṁṭī ghāī",
-    "english": "{0:A sacred play }{1:has been set up }{2:on the sands }{3:in swift rhythm,}",
+    "english": "{0:The play }{1:has begun }{2:on the sands }{3:in a flurry of excitement,}",
     "words": [
       {
         "roman": "kheḷa",

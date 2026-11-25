@@ -368,7 +368,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mo meṁ auguṇa sārā",
-    "english": "{1:In }{0:me }{3:are all }{2:faults}",
+    "english": "{0:I }{1,3:am full of }{2:faults}",
     "words": [
       {
         "roman": "Mo",
@@ -439,7 +439,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Maiṁ niguṇī kachu guṇa nahīṁ jānūṁ",
-    "english": "{0:I am }{1:virtueless; }{5:I know }{4:no }{3:virtue }{2:at all}",
+    "english": "{0:I am }{1:without virtue; }{5:I know }{4:no }{3:virtue }{2:at all}",
     "words": [
       {
         "roman": "Maiṁ",
@@ -504,7 +504,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tuma cho bakhasaṇahārā",
-    "english": "{0:You }{1:are }{2:the forgiver}",
+    "english": "{0:You }{1:are }{2:the one who forgives}",
     "words": [
       {
         "roman": "Tuma",

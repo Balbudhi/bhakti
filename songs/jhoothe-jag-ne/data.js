@@ -462,7 +462,7 @@ window.SONG_LINES = {
   },
   "v1c": {
     "roman": "Hanjū akhiyāṅ de rahe nahī ruk mā, māye merī bānh phaṛ lai",
-    "english": "{0:The tears}{1,2: of my eyes}{3: are }{4:not}{5: stopping,}{6: O Mother}{7: — O Mother,}{11: take }{10:hold}{8: of my}{9: arm.}",
+    "english": "{0:Tears }{1,2:from my eyes }{4:will not }{3,5:stop, }{6:O Mother}{7: — O Mother,}{11: take }{10:hold}{8: of my}{9: arm.}",
     "words": [
       {
         "roman": "Hanjū",
@@ -1292,7 +1292,7 @@ window.SONG_LINES = {
   },
   "v4c": {
     "roman": "Miṭā de jhanḍewālī janmāṅ dī bhukh mā, māye merī bānh phaṛ lai",
-    "english": "{0,1:Erase, }{2:O Jhandewali, }{5:the hunger }{4:of }{3:lifetimes, }{6:O Mother — }{7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
+    "english": "{0,1:Satisfy, }{2:O Jhandewali, }{5:the hunger }{4:of }{3:lifetimes, }{6:O Mother — }{7:O Mother, }{10,11:take hold of }{8:my }{9:arm.}",
     "words": [
       {
         "roman": "Miṭā",

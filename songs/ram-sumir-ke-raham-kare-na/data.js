@@ -1018,7 +1018,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Prema pyāra se sīñca le jīvana, ye avasara phira nā āe",
-    "english": "{3,4:Irrigate }{5:life }{2:with }{0:love }{1:and affection; }{6:this }{7:opportunity }{9,10:will not come }{8:again.}",
+    "english": "{3,4:Water }{5:your life }{2:with }{0:love }{1:and affection; }{6:this }{7:opportunity }{9,10:will not come }{8:again.}",
     "words": [
       {
         "roman": "Prema",
@@ -1612,7 +1612,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana kī kahī pe calane vāle, phira pīche pachatāegā",
-    "english": "{4,5:O you who walk }{3:according to }{1,2:the bidding of }{0:the mind, }{8:you will regret it }{6,7:afterwards.}",
+    "english": "{4,5:You who follow }{3:whatever }{0:your mind }{1,2:tells you }{8:will regret it }{6,7:afterwards.}",
     "words": [
       {
         "roman": "Mana",

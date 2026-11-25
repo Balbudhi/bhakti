@@ -323,7 +323,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ terī mandira kī maiṁ ghaṇṭī bana kara āūm̐, ho",
-    "english": "{0:O Sai, }{4:may I }{8:return }{7:having }{6:become }{5:the bell }{3:of }{1:Your }{2:temple, }{9:oh}",
+    "english": "{0:O Sāī, }{4:may I }{8:return }{6,7:as }{5:the bell }{3:of }{1:Your }{2:temple}, {9:oh}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -448,7 +448,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sāīṁ terī mandira kī maiṁ ghaṇṭī bana kara āūm̐",
-    "english": "{0:O Sai, }{4:may I }{8:return }{7:having }{6:become }{5:the bell }{3:of }{1:Your }{2:temple}",
+    "english": "{0:O Sāī, }{4:may I }{8:return }{6,7:as }{5:the bell }{3:of }{1:Your }{2:temple}",
     "words": [
       {
         "roman": "sāīṁ",
@@ -1576,7 +1576,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "utanī hī kama hai... ho...",
-    "english": "{1:Just }{0:that much }{2,3:it falls short... }{4:oh...}",
+    "english": "{0:Even that much }{1:still }{2,3:falls short... }{4:oh...}",
     "words": [
       {
         "roman": "utanī",
@@ -1671,7 +1671,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "utanī hī kama hai terī praśaṁsā jitanī karatā jāūm̐",
-    "english": "{6:However much }{7:I praise }{4:You, }{8:on and on, }{0:that much }{5:praise }{1:still }{2,3:falls short,}",
+    "english": "{6:However much }{7:I praise }{4:You, }{8:on and on, }{0:all that }{5:praise }{1:still }{2,3:falls short,}",
     "words": [
       {
         "roman": "utanī",
@@ -2253,7 +2253,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tere nāma kī hī mālā maiṁ haradama japatā jāūm̐",
-    "english": "{4:The rosary }{2:of }{0:Your }{1:Name }{3:alone }{5:may I }{8:go on }{7:chanting }{6:with every breath,}",
+    "english": "{5:May I }{8:go on }{7:reciting }{4:the rosary }{2:of }{0:Your }{1:Name }{3:alone }{6:with every breath,}",
     "words": [
       {
         "roman": "tere",
@@ -2372,7 +2372,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bābā terī mandira kī maiṁ ghaṇṭī bana kara āūm̐",
-    "english": "{0:O Baba, }{4:may I }{8:return }{7:having }{6:become }{5:the bell }{3:of }{1:Your }{2:temple}",
+    "english": "{0:O Bābā, }{4:may I }{8:return }{6,7:as }{5:the bell }{3:of }{1:Your }{2:temple}",
     "words": [
       {
         "roman": "bābā",

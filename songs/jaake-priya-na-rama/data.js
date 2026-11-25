@@ -73,7 +73,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāke priya na Rāma Vaidehī",
-    "english": "{0:To whom }{3:Rama }{4:and Vaidehi }{2:are not }{1:dear,}",
+    "english": "{0:Whoever }{1:holds }{2:no love for }{3:Rāma }{4:and Vaidehī,}",
     "words": [
       {
         "roman": "Jāke",
@@ -628,7 +628,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Añjana kahā ā̃khi jehi phūṭai",
-    "english": "{1:What use is }{0:an eye-salve }{3:by which }{2:the eye }{4:bursts?}",
+    "english": "{1:What use is }{0:an eye-salve }{3:that }{4:destroys }{2:the eye?}",
     "words": [
       {
         "roman": "Añjana",
@@ -693,7 +693,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bahutaka kahaũ kahā̃ laũ",
-    "english": "{2:How }{3:far }{1:can I speak }{0:at length?}",
+    "english": "{2,3:How much longer }{1:need I speak }{0:of this?}",
     "words": [
       {
         "roman": "Bahutaka",
@@ -764,7 +764,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tulasī so saba bhā̃ti parama hita",
-    "english": "{0:Tulsidas says: }{1:that person }{2:is in every }{3:way }{4:the supreme }{5:benefactor,}",
+    "english": "{0:Tulsīdās says: }{1:that person }{2:is in every }{3:way }{4:our greatest }{5:well-wisher,}",
     "words": [
       {
         "roman": "Tulasī",

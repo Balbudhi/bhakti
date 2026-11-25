@@ -139,7 +139,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tume bhaktara bhābagrāhī",
-    "english": "{0:You }are {2:the receiver of }{1:the devotee's }{2:inner devotion,}",
+    "english": "{0:You }{2:receive }{1:your devotee’s }{2:heartfelt love,}",
     "words": [
       {
         "roman": "Tume",
@@ -210,7 +210,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "He guru gobinda gosāī̃ tume bhaktara bhābagrāhī",
-    "english": "{0:O }{1:Guru }{2:Govinda }{3:Gosāī̃, }{4:You }are {6:the receiver of }{5:the devotee's }{6:inner devotion.}",
+    "english": "{0:O }{1:Guru }{2:Govinda }{3:Gosāī̃, }{4:You }{6:receive }{5:your devotee’s }{6:heartfelt love.}",
     "words": [
       {
         "roman": "He",

@@ -279,7 +279,7 @@ window.SONG_LINES = {
   "l007": {
     "source": "இமைப்பொழுதும் என் நெஞ்சில் நீங்காதான் தாள் வாழ்க",
     "roman": "imaippoḻutum eṉ neñcil nīṅkātāṉ tāḷ vāḻka",
-    "english": "{4:May the feet }{3:of the One who departs not }{1:from my }{2:heart, }{0:even for the blink of an eye, }{5:flourish!}",
+    "english": "{4:May the feet }{3:of the One who never leaves }{1:my }{2:heart, }{0:even for a blink, }{5:flourish!}",
     "words": [
       {
         "roman": "imaippoḻutum",
@@ -1337,7 +1337,7 @@ window.SONG_LINES = {
   "l027": {
     "source": "எண்ணுதற் கெட்டா எழிலார் கழலிறைஞ்சி",
     "roman": "eṇṇutaṟkeṭṭā eḻilār kaḻaliṟaiñci",
-    "english": "{2:having bowed before }{1:the beauty-filled }{2:ankleted feet, }{0:beyond the reach }{0:of thought,}",
+    "english": "{2:bowing before }{1:the beautiful }{2:ankleted feet }{0:beyond the reach of thought,}",
     "words": [
       {
         "roman": "eṇṇutaṟkeṭṭā",
@@ -2913,7 +2913,7 @@ window.SONG_LINES = {
   "l052": {
     "source": "சிறந்தடியார் சிந்தனையுள் தேனூறி நின்று",
     "roman": "ciṟantaṭiyār cintaṉaiyuḷ tēṉūṟi niṉṟu",
-    "english": "{2:welling as honey }{1:within the thoughts }{0:of noble devotees }{3:and abiding,}",
+    "english": "{3:abiding }{1:within the thoughts }{0:of noble devotees, }{2:welling up as honey,}",
     "words": [
       {
         "roman": "ciṟantaṭiyār",
@@ -3684,7 +3684,7 @@ window.SONG_LINES = {
   "l066": {
     "source": "தாயிற் சிறந்த தயாவான தத்துவனே",
     "roman": "tāyiṟ ciṟanta tayāvāṉa tattuvaṉē",
-    "english": "{3:O Embodiment of True Reality, }{2:possessing compassion }{1:surpassing }{0:a mother!}",
+    "english": "{3:O embodiment of true reality, }{2:whose compassion }{1:surpasses }{0:a mother’s!}",
     "words": [
       {
         "roman": "tāyiṟ",
@@ -3834,7 +3834,7 @@ window.SONG_LINES = {
   "l069": {
     "source": "பாசமாம் பற்றறுத்துப் பாரிக்கும் ஆரியனே",
     "roman": "pācamām paṟṟaṟuttup pārikkum āriyaṉē",
-    "english": "{3:O noble teacher}, {1:cutting the grasp} {0:of bondage} and {2:nurturing}!",
+    "english": "{3:O noble teacher}, {1:cutting} {0:the ties of bondage} and {2:nurturing us}!",
     "words": [
       {
         "roman": "pācamām",
@@ -3934,7 +3934,7 @@ window.SONG_LINES = {
   "l071": {
     "source": "பேராது நின்ற பெருங்கருணைப் பேராறே",
     "roman": "pērātu niṉṟa peruṅkaruṇaip pērāṟē",
-    "english": "{3:O mighty river }{2:of immense compassion, }{1:standing }{0:without departing!}",
+    "english": "{0,1:O ever-present }{3:mighty river }{2:of immense compassion!}",
     "words": [
       {
         "roman": "pērātu",
@@ -4860,7 +4860,7 @@ window.SONG_LINES = {
   "l089": {
     "source": "வேற்று விகார விடக்குடம்பின் உட்கிடப்ப",
     "roman": "vēṟṟu vikāra viṭakkuṭampiṉ uṭkiṭappa",
-    "english": "{3:To lie within} {2:the fleshy body}, {0:other than myself} and {1:subject to change},—",
+    "english": "{3:To lie within} {2:this body of flesh}, {0:other than myself} and {1:subject to change}—",
     "words": [
       {
         "roman": "vēṟṟu",
@@ -5070,7 +5070,7 @@ window.SONG_LINES = {
   "l093": {
     "source": "கள்ளப் புலக்குரம்பை கட்டழிக்க வல்லானே",
     "roman": "kaḷḷap pulakkurampaikaṭṭaḻikka vallāṉē",
-    "english": "{5:O mighty one capable }{4:of dismantling }{3:the structure }{0:of the deceitful }{1:sensory }{2:hut!}",
+    "english": "{5:O mighty one who can }{3,4:dismantle }{0:this deceitful }{2:hut }{1:of the senses!}",
     "words": [
       {
         "roman": "kaḷḷap",

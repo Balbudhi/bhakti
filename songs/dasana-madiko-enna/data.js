@@ -292,7 +292,7 @@ window.SONG_LINES = {
   "l006": {
     "source": "ಚರಣಸೇವೆ ಎನಗೆ ಕೊಡಿಸೊ",
     "roman": "caraṇasēve enage koḍiso",
-    "english": "{2:Grant} {1:me} {0:service at your feet}.",
+    "english": "{2:Let} {1:me} {0:serve at your feet}.",
     "words": [
       {
         "roman": "caraṇasēve",
@@ -502,7 +502,7 @@ window.SONG_LINES = {
   "l010": {
     "source": "ಕಡೆಗಣ್ಣಿಲೆ ಎನ್ನ ನೋಡಿ",
     "roman": "kaḍegaṇṇile enna nōḍi",
-    "english": "{2:Having looked at} {1:me} {0:with a sidelong glance}—",
+    "english": "{2:Will you look at} {1:me} {0:from the corner of your eye}—",
     "words": [
       {
         "roman": "kaḍegaṇṇile",
@@ -612,7 +612,7 @@ window.SONG_LINES = {
   "l012": {
     "source": "ಮೊರೆಹೊಕ್ಕವರ ಕಾಯ್ವ ಬಿರುದು",
     "roman": "morehokkavara kāyva birudu",
-    "english": "{2:Yours is the renown of} {1:protecting} {0:those who seek refuge}.",
+    "english": "{2:You are renowned for} {1:protecting} {0:those who seek refuge}.",
     "words": [
       {
         "roman": "morehokkavara",

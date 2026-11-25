@@ -129,7 +129,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Agatira gati Prabhu ati kṛpābanta",
-    "english": "{1:Refuge }{0:of the refuge-less, }{2:O Lord, }{3:exceedingly }{4:merciful,}",
+    "english": "{1:Refuge }{0:of those with nowhere to turn, }{2:O Lord, }{3:so }{4:merciful,}",
     "words": [
       {
         "roman": "Agatira",

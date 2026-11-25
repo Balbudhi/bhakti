@@ -482,7 +482,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhītar se man sāf kiyā nā bāhar mām̐je gagariyā",
-    "english": "{0,1:from within,}{5: you did not}{3,4: clean}{2: the mind,}{6: yet outside}{7: you scour}{8: the pitcher.}",
+    "english": "{5:You have not}{3,4: cleansed}{2: your mind}{0,1: within,}{6: yet on the outside}{7: you scour}{8: the pitcher.}",
     "words": [
       {
         "roman": "bhītar",
@@ -856,7 +856,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sukh pāne tū dar-dar bhaṭke janam huā dukhadāī",
-    "english": "{0,1:To find happiness,}{2: you}{4: wander}{3: from door to door,}{5: and life}{6: became}{7: full of sorrow.}",
+    "english": "{0,1:To find happiness,}{2: you}{4: wander}{3: from door to door,}{5: and your life}{6: has become}{7: full of sorrow.}",
     "words": [
       {
         "roman": "sukh",
@@ -1111,7 +1111,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śvāsom̐ kā anamol khazānā din-din luṭatā jāe",
-    "english": "{2:The priceless}{3: treasure}{1: of }{0:breaths}{4: day by day}{5,6: continues to be plundered;}",
+    "english": "{2:The priceless}{3: treasure}{1: of your }{0:breaths}{5,6: is being plundered}{4: day by day;}",
     "words": [
       {
         "roman": "śvāsom̐",
@@ -1218,7 +1218,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "motī lene āyā taṭ pe sīp se man bahalāe",
-    "english": "{2:You came}{3,4: to the shore}{0,1: to gather pearls,}{8: yet amuse}{7: the mind}{5,6: with shells.}",
+    "english": "{2:You came}{3,4: to the shore}{0,1: to gather pearls,}{8: yet content}{7: yourself}{5,6: with shells.}",
     "words": [
       {
         "roman": "motī",

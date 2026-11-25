@@ -489,7 +489,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "nemmadi śrīvēṃkaṭēśa nīcittamē kāka",
-    "english": "{0:With all my heart}, {1:Śrī Veṅkaṭeśa}—{3:without} {2:your will alone},",
+    "english": "{0:With all my heart}, {1:Śrī Veṅkaṭeśa}—{3:unless} {2:you will it},",
     "words": [
       {
         "roman": "nemmadi",

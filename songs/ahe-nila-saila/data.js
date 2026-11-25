@@ -348,7 +348,7 @@ window.SONG_LINES = {
   "l006": {
     "source": "ଘୋରବନେ ମୃଗୁଣୀକୁ ପଡ଼ିଥିଲା କଷଣ",
     "roman": "ghorabane mṛguṇīku paṛithilā kaṣaṇa",
-    "english": "{3:Distress} {2:had fallen} {1:upon the doe} {0:in the fearsome forest}.",
+    "english": "{1:The doe} {2:was caught} {3:in distress} {0:in the fearsome forest}.",
     "words": [
       {
         "roman": "ghorabane",

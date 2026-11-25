@@ -969,7 +969,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhoge bina hoya na hānā jī",
-    "english": "{1:Without }{0:being undergone, }{2:it }{3:cannot }{4:come to an end}{5:;}",
+    "english": "{2,4:It cannot end }{3,1:until }{0:we have lived through it}{5:;}",
     "words": [
       {
         "roman": "bhoge",

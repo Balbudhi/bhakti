@@ -1,5 +1,37 @@
 # Whole-library repair task
 
+## Owner-reopened English repair — 25 November 2026
+
+Outcome: correct awkward or wrong English throughout the current 386-reader library,
+including the reported butter and eyelid lines. Prior coverage and completion labels
+are not evidence against these defects. Read every song's English in context; trace
+corrections to source, word meanings and adjacent lines; retain imagery and agency.
+Preserve the two owner-protected English baselines and all recordings and timings.
+
+Current step: all 386 readers / 9,455 stored definitions have been read. The lead
+independently checked every final changed definition. Applied 787 English corrections
+across 221 readers and seven matching gloss repairs; both protected readers, source,
+Roman text, metadata, performance order, timing and audio are preserved. No paid
+assessment was used. Source-linked semantic amendments retain the original model and
+audio assessments and all prior feature reductions. The 81 stale subject decisions
+were contextually reinspected; no tags were added by this English pass.
+
+Verification: 45 of 46 release commands pass; only the six historical trim-record
+discrepancies remain. All 30,640 ready/deferred DOM-click seeks match the stored
+onsets across 15,320 occurrence buttons. Next: publish and compare the served
+website with the assembled files. The owner explicitly waived browser checks and
+requested publication; the locked Mac does not block file work or deployment.
+The six historical trim-record discrepancies remain, with audio unchanged.
+
+Four prior source questions were resolved; 36 exact source-dependent passages across
+27 readers remain open, including newly identified uncertainties. This is a full
+English reading and supported repair, not a certification that every interpretation
+is certain. Exact coverage, before/after corrections, source decisions and remaining
+questions: `data/translation-review-2026-11-25.json`.
+Actual callers: song reader, linked word popups, public lyric search and shuffle
+metadata. Mechanical checks do not establish translation quality.
+
+
 ## Owner-reopened Gurbāṇī review — 24 November 2026
 
 The owner rejected ledger-only assurance. Read all 27 currently grouped Gurbāṇī

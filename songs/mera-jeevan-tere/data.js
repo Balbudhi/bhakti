@@ -248,7 +248,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "aisī karanī kara calō kē hama haṁsē jaga rōē",
-    "english": "{2:Perform }{0:such }{1:deeds }{3:as you depart, }{4:that }{5:we }{6:laugh, }{7:the world }{8:weeps.}",
+    "english": "{2:Live }{0:with such }{1:deeds }{4:that, }{3:when we depart, }{5:we }{6:laugh }{7:and the world }{8:weeps.}",
     "words": [
       {
         "roman": "aisī",

@@ -163,7 +163,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sundaravēṇi sucaritrāṇi",
-    "english": "{0:beautifully braided}, {1:of good conduct}.",
+    "english": "{0:With beautifully braided hair}, {1:virtuous in conduct}.",
     "words": [
       {
         "roman": "sundaravēṇi",

@@ -340,7 +340,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tumko nisdin dhyāvat, tumko nisdin dhyāvat Hari Brahmā Śiv jī",
-    "english": "{0:Upon You} {1:day and night} {2:meditate,} {3:upon You} {4:day and night} {5:meditate} {6:Hari,} {7:Brahma,} {8,9:and revered Shiva,}",
+    "english": "{6:Hari,} {7:Brahmā,} {8,9:and revered Śiva} {2:meditate} {0:upon You} {1:day and night,} {5:meditate} {3:upon You} {4:day and night,}",
     "words": [
       {
         "roman": "Tumko",
@@ -915,7 +915,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Raktapuṣp gal mālā, raktapuṣp gal mālā kaṇṭhan par sāje",
-    "english": "{2:A garland} {0:of red flowers} {1:at the neck,} {5:a garland} {3:of red flowers} {4:at the neck} {8:sits gracefully} {6,7:upon Your throat.}",
+    "english": "{2:A garland} {0:of red flowers} {1:around Your neck,} {5:a garland} {3:of red flowers} {4:around Your neck,} {8:rests gracefully} {6,7:upon Your throat.}",
     "words": [
       {
         "roman": "Raktapuṣp",
@@ -2100,7 +2100,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āgam nigam bakhānī, āgam nigam bakhānī tum Śiv paṭrānī",
-    "english": "{0:By Agamas} {1:and Nigamas} {2:proclaimed,} {3:by Agamas} {4:and Nigamas} {5:proclaimed,} {6:You are} {7:Shiva's} {8:chief queen.}",
+    "english": "{0:The Tantric} {1:and Vedic scriptures} {2:proclaim it,} {3:the Tantric} {4:and Vedic scriptures} {5:proclaim it:} {6:You are} {7:Śiva’s} {8:chief queen.}",
     "words": [
       {
         "roman": "Āgam",
@@ -3383,7 +3383,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yā Ambe jī kī āratī, jo koī nar gāve",
-    "english": "{0:This} {4:arati} {3:of }{2:revered} {1:Mother Amba,} {5,6,7:whosoever} {8:sings,}",
+    "english": "{5,6,7:Whoever} {8:sings} {0:this} {4:hymn of worship} {3:to }{2:revered} {1:Mother Ambā,}",
     "words": [
       {
         "roman": "Yā",
@@ -3573,7 +3573,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahat Śivānanda Svāmī, kahat Śivānanda Svāmī sukh sampati pāve",
-    "english": "{0:Says} {2:Swami} {1:Shivananda,} {3:says} {5:Swami} {4:Shivananda,} {6:joy} {7:and wealth} {8:they obtain.}",
+    "english": "{2:Swāmī} {1:Śivānanda} {0:says,} {5:Swāmī} {4:Śivānanda} {3:says,} {8:they obtain} {6:joy} {7:and wealth.}",
     "words": [
       {
         "roman": "Kahat",

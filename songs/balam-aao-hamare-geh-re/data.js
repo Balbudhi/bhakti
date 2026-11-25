@@ -150,7 +150,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tum bin dukhiyā deh re",
-    "english": "{1:Without }{0:you, }the {3:body }{2:is suffering, }{4:beloved.}",
+    "english": "{1:Without }{0:you, }{3:my body }{2:aches, }{4:beloved.}",
     "words": [
       {
         "roman": "Tum",
@@ -354,7 +354,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dil se nahī̃ dil lagāyā",
-    "english": "{3:Heart }has {2:not }{4:been joined }{1:to }{0:heart—}",
+    "english": "{3:Our hearts }have {2:not }{4:joined }{1:with }{0:one another—}",
     "words": [
       {
         "roman": "Dil",
@@ -816,7 +816,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hai koī aisā par-upakārī",
-    "english": "{0:Is there }{1:anyone }{2:so }{3:helpful to others}",
+    "english": "{0:Is there }{1:anyone }{2:so }{3:kind}",
     "words": [
       {
         "roman": "Hai",
@@ -876,7 +876,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pivasõ kahai sunāy re",
-    "english": "{3:oh, }who would {1,2:tell }this {0:to the beloved?}",
+    "english": "{3:oh, }who would {1,2:carry this message }{0:to my beloved?}",
     "words": [
       {
         "roman": "Pivasõ",

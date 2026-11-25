@@ -145,7 +145,7 @@ window.SONG_LINES = {
     "source": "ଗୋଳାଗି ଲାଗେ ମୁଁ ଚରଣେ ତୁମରି ସାଇ ମୋତେ ରକ୍ଷା କର",
     "sourceLanguage": "",
     "roman": "Gōḷāgi lāgē muṃ caraṇē tumari sāi mōtē rakṣā kara",
-    "english": "{2:I }{1:fall }{0:prostrating }{4:at your very }{3:feet; }{5:O Sai, }{7,8:protect }{6:me.}",
+    "english": "{2:I }{1:fall }{0:prostrate }{4:at your very }{3:feet; }{5:O Sāī, }{7,8:protect }{6:me.}",
     "words": [
       {
         "roman": "Gōḷāgi",
@@ -383,7 +383,7 @@ window.SONG_LINES = {
     "source": "ସବୁ ଜନମର ପାପ କାଟ ତୁମେ ନିଅ ମୋର ସାଗର ପାର",
     "sourceLanguage": "",
     "roman": "Sabu janamara pāpa kāṭā tumē nia mōra sāgara pāra",
-    "english": "{3:Cut }{2:the sins }{0:of all }{1:births, }{4:you; }{5:take }{6:me }{8:across }{7:the ocean.}",
+    "english": "{4:You, }{3:cut away }{2:the sins }{0:of all }{1:my births; }{5:take }{6:me }{8:across }{7:the ocean.}",
     "words": [
       {
         "roman": "Sabu",
@@ -502,7 +502,7 @@ window.SONG_LINES = {
     "source": "ନ ହେଲେ ନାହିଁ ଫୁଲ ତୁମ ପାଦେ ତୁମ ପାଦେ ଧୂଳି ହୋଇ",
     "sourceLanguage": "",
     "roman": "Na hēlē nāhiṃ phula tuma pādē tuma pādē dhūḷi hōi",
-    "english": "{0,1,2:Never mind if not }{3:a flower }{4,5:at your feet; }{9:having become }{8:dust }{6,7:at your feet,}",
+    "english": "{0,1,2:If I cannot be }{3:a flower }{4,5:at your feet, no matter; }{9:as }{8:dust }{6,7:at your feet,}",
     "words": [
       {
         "roman": "Na",
@@ -835,7 +835,7 @@ window.SONG_LINES = {
     "source": "ତୁମ ଚରଣର ଧୂଳି ବୋଳି ହୋଇ ପବିତ୍ର ମୁଁ ହୋଇଯାଏ",
     "sourceLanguage": "",
     "roman": "Tuma caraṇara dhūḷi bōḷi hōi pabitra muṃ hōiyāē",
-    "english": "{3,4:having smeared }{2:the dust }{0,1:of your feet, }{6:I }{7:become }{5:purified.}",
+    "english": "{3,4:Smearing myself with }{2:the dust }{0,1:of your feet, }{6:I }{7:become }{5:pure.}",
     "words": [
       {
         "roman": "Tuma",
@@ -1489,7 +1489,7 @@ window.SONG_LINES = {
     "source": "ମୋ ବେଳକୁ କିଆଁ ଏତେ ଟାଣି ଓଟରା କଠୋର ପ୍ରାଣ ହୋଇଲ",
     "sourceLanguage": "",
     "roman": "Mō bēḷaku kiāṃ ētē ṭāṇi ōṭara kaṭhōra prāṇa hōila",
-    "english": "{0:At my }{1:turn, }{2:why }{3:such }{4,5:dragging of the feet? }{8:Have you become }{6,7:hard-hearted?}",
+    "english": "{2:Why }{4,5:drag your feet }{3:so much }{0,1:when it is my turn? }{8:Have you become }{6,7:hard-hearted?}",
     "words": [
       {
         "roman": "Mō",

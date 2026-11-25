@@ -132,7 +132,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Uljhan meṁ rahne vāle,",
-    "english": "{3:O you }{2:living }{1:in }{0:entanglement, }",
+    "english": "{3:O you }{2:living }{1:in }{0:confusion, }",
     "words": [
       {
         "roman": "Uljhan",
@@ -726,7 +726,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Melā calā-calī kā, śubh karm bīj bo jā",
-    "english": "{0:A fair }{2:of }{1:departure, }{6,7:sow }{5:the seeds }{3:of auspicious }{4:deeds}",
+    "english": "{0:This is a fair }{2:where }{1:everyone must leave; }{6,7:sow }{5:the seeds }{3:of good }{4:deeds}",
     "words": [
       {
         "roman": "Melā",
@@ -886,7 +886,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āge ko pag baṛhā le,",
-    "english": "{3,4:Advance }{2:your step }{0,1:forward, }",
+    "english": "{3,4:Take }{2:a step }{0,1:forward, }",
     "words": [
       {
         "roman": "Āge",
@@ -1171,7 +1171,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dṛg khol bol mū̃h se,",
-    "english": "{1:Open }{0:your eyes, }{2:speak }{3,4:from your mouth, }",
+    "english": "{1:Open }{0:your eyes }and {2:speak }{3,4:aloud, }",
     "words": [
       {
         "roman": "Dṛg",

@@ -232,7 +232,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kā bā na ghe",
-    "english": "{0:why}, {1:dear one}, does it {2:not} {3:take the name up}?",
+    "english": "{0:why}, {1:dear one}, does it {2:not} {3:take up your name}?",
     "words": [
       {
         "roman": "kā",

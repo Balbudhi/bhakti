@@ -932,7 +932,7 @@ window.SONG_LINES = {
   "l017": {
     "source": "संत बड़े परमारथी भेष धरें अवधूत",
     "roman": "sant baṛe paramārathī bheṣ dhareṃ avadhūt",
-    "english": "{0:Saints }are {1:greatly }{2:beneficent}, {4:assuming }{3:the guise }of {5:renunciant ascetics.}",
+    "english": "{0:Saints }are {1:deeply }{2:devoted to others’ welfare}, {4:wearing }{3:the garb }of {5:wandering ascetics.}",
     "words": [
       {
         "roman": "sant",

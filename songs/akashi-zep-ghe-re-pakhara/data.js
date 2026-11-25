@@ -272,7 +272,7 @@ window.SONG_LINES = {
     "source": "हा कुठवर वेड्या घेशी आसरा",
     "sourceLanguage": "mr",
     "roman": "hā kuṭhavara veḍyā gheśī āsarā",
-    "english": "{1:How long,}{2: O foolish one,}{3: will you take}{0: this}{4: shelter?}",
+    "english": "{1:How long,}{2: foolish one,}{3: will you seek}{4: shelter}{0: here?}",
     "words": [
       {
         "roman": "hā",
@@ -333,7 +333,7 @@ window.SONG_LINES = {
     "source": "घर कसले ही तर कारा",
     "sourceLanguage": "mr",
     "roman": "ghara kasale hī tara kārā",
-    "english": "{1:What kind of }{0:home is this? }{3:Rather, }{2:this }{4:is a prison!}",
+    "english": "{1:What sort of }{0:home is this? }{2:This }{3:is really }{4:a prison!}",
     "words": [
       {
         "roman": "ghara",
@@ -680,7 +680,7 @@ window.SONG_LINES = {
     "source": "जा ओलांडुनिया सरिता सागरा",
     "sourceLanguage": "mr",
     "roman": "jā olāṇḍuniyā saritā sāgarā",
-    "english": "{0:go,}{1: crossing over}{2: the rivers}{3: and oceans!}",
+    "english": "{0:go,}{1: cross}{2: the rivers}{3: and oceans!}",
     "words": [
       {
         "roman": "jā",
@@ -1080,7 +1080,7 @@ window.SONG_LINES = {
     "source": "हा योग जीवनी आला साजरा",
     "sourceLanguage": "mr",
     "roman": "hā yoga jīvanī ālā sājirā",
-    "english": "{0:this}{4: beautiful, auspicious}{1: occasion}{3: has arrived}{2: in life.}",
+    "english": "{0:This}{4: lovely}{1: moment}{3: has come}{2: into your life.}",
     "words": [
       {
         "roman": "hā",

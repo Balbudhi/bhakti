@@ -412,7 +412,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "rana jīti rāmarāu āe",
-    "english": "{1:Having conquered }{0:the battle, }{2:King Rama }{3:has arrived.}",
+    "english": "{1:Having won }{0:the battle, }{2:King Rāma }{3:has arrived.}",
     "words": [
       {
         "roman": "rana",
@@ -761,7 +761,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dharani dhenu mahideva sādhu saba ke saba soca nasāe",
-    "english": "{0:of the earth, }{1:the cows, }{2:the Brahmins, }{3:and the ascetics, }{4:all }{7:anxieties }{5,6:without exception }{8:he dispelled.}",
+    "english": "{8:He dispelled }{4:all }{7:the anxieties }{0:of the earth, }{1:the cows, }{2:the Brahmins, }{3:and the ascetics, }{5,6:without exception.}",
     "words": [
       {
         "roman": "dharani",
@@ -1204,7 +1204,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dehiṁ asīsa bhūmisura pramudita",
-    "english": "{3:Overjoyed, }{2:the earth-gods }{0:bestow }{1:blessings,}",
+    "english": "{3:Overjoyed, }{2:the Brahmins }{0:bestow }{1:blessings,}",
     "words": [
       {
         "roman": "dehiṁ",

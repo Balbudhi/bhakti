@@ -324,7 +324,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "phālanētra kapāla ruṃḍa maṇimālā dhṛta vakṣa",
-    "english": "{0:Forehead-eyed Lord}, {5:your chest} {4:bearing} {3:a bead-garland} {1:of skulls} {2:and heads},",
+    "english": "{0:Lord with an eye in your forehead}, {5:your chest} {4:bearing} {3:a bead-garland} {1:of skulls} {2:and heads},",
     "words": [
       {
         "roman": "phālanētra",
@@ -856,7 +856,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mṛtyuṃjaya ninnuttama padayuga bhṛtyanu sarvatra",
-    "english": "{0:Mṛtyuñjaya}, {4:everywhere} {3:I am the servant} {1:of your excellent} {2:pair of feet}.",
+    "english": "{0:Mṛtyuñjaya}, {4:wherever I am}, {3:I serve} {1:your blessed} {2:feet}.",
     "words": [
       {
         "roman": "mṛtyuṃjaya",

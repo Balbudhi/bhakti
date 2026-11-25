@@ -3504,7 +3504,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tumhīṁ to merī bigṛī saṁvāre",
-    "english": "{0:You alone }{1:indeed }{4:mend }{2:my }{3:ruined state,}",
+    "english": "{0:You alone }{1:indeed }{4:put }{2:my }{3:troubled affairs }{4:right,}",
     "words": [
       {
         "roman": "Tumhīṁ",
@@ -3581,7 +3581,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tumhīṁ to māṁ mere kāj saṁvāre",
-    "english": "{0:You alone }{1:indeed, }{2:Mother, }{5:fulfill }{3:my }{4:tasks,}",
+    "english": "{0:You alone }{1:indeed, }{2:Mother, }{5:accomplish }{3:my }{4:tasks,}",
     "words": [
       {
         "roman": "Tumhīṁ",

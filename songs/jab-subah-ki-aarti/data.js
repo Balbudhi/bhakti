@@ -2106,7 +2106,7 @@ window.SONG_LINES = {
     "source": "मैं क्या-क्या मांगने आया था बिन मांगे क्या-क्या पा बैठा",
     "sourceLanguage": "hi",
     "roman": "maiṁ kyā-kyā māṅgnē āyā thā bin māṅgē kyā-kyā pā baiṭhā",
-    "english": "{1:What all }{4:had }{0:I }{2,3:come to ask for, }and {5:without }{6:asking, }{7:what all }{8,9:did I end up receiving!}",
+    "english": "{1:So much }{4:had }{0:I }{2,3:come to ask for—}{7:and what riches }{8,9:I received }{5:without }{6:asking!}",
     "words": [
       {
         "roman": "maiṁ",
@@ -2237,7 +2237,7 @@ window.SONG_LINES = {
     "source": "बिन मांगे क्या-क्या पा बैठा",
     "sourceLanguage": "hi",
     "roman": "bin māṅgē kyā-kyā pā baiṭhā",
-    "english": "{0:Without }{1:asking, }{2:what all }{3,4:did I end up receiving!}",
+    "english": "{2:What riches }{3,4:I received }{0:without }{1:asking!}",
     "words": [
       {
         "roman": "bin",

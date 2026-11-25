@@ -211,7 +211,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tujhā visar na vhāvā",
-    "english": "{3:May} {1:forgetfulness} {0:of you} {2:never} {3:arise}.",
+    "english": "{3:May I} {2:never} {1:forget} {0:you}.",
     "words": [
       {
         "roman": "tujhā",

@@ -700,7 +700,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhava bhava bibhava parābhava kārini",
-    "english": "{4:Causer }{1:of the origin, }{2:prosperity, }{3:and dissolution }{0:of worldly existence,}",
+    "english": "{4:You bring about }{0:the world’s }{1:birth, }{2:prosperity }{3:and dissolution,}",
     "words": [
       {
         "roman": "Bhava",
@@ -765,7 +765,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bisva bimohani svabasa bihārini",
-    "english": "{1:Enchantress }{0:of the universe, }{3:reveling }{2:in self-sovereignty,}",
+    "english": "{1:Enchantress }{0:of the universe, }{3:playing }{2:by your own will,}",
     "words": [
       {
         "roman": "Bisva",

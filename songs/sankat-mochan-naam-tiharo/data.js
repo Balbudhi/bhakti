@@ -251,7 +251,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tāhi soṃ trāsa bhayo jaga ko yaha saṃkaṭa kāhu soṃ jāta na ṭāro ||",
-    "english": "{1:From }{0:that}, {2:dread }{3:arose }{4,5:to the world}; {6:this }{7:calamity }{10,11:could not }{12:be warded off }{9:by }{8:anyone.}",
+    "english": "{1:Because of }{0:that}, {2:dread }{3:filled }{4,5:the world}; {6:this }{7:calamity }{10,11:could not }{12:be warded off }{9:by }{8:anyone.}",
     "words": [
       {
         "roman": "tāhi",
@@ -1221,7 +1221,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jīvata nā bacihau hama so ju binā sudhi lāe ihā~ paga dhāro ||",
-    "english": "{1:“You will not }{2:survive }{0:}{3,4: at my hands} {5:if }{11:you return }{10:}{9: here }{6:without }{8:}{7: tidings.”}",
+    "english": "{5:“Whoever }{11:sets }{10:foot }{9:here }{6:without }{8:bringing }{7:news }{1:will not }{2:escape }{3,4:me }{0:alive.”}",
     "words": [
       {
         "roman": "jīvata",
@@ -1751,7 +1751,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "cāhata sīya asoka soṃ āgi su dai prabhu mudrikā soka nivāro |",
-    "english": "{1:When Sita }{0:was seeking }{4:fire }{3:from }{2:the Ashoka tree}, {5:thereupon }{6:giving }{7:the Lord's }{8:signet ring}, {10:you dispelled }{9:her sorrow.}",
+    "english": "{1:When Sītā }{0:sought }{4:fire }{3:from }{2:the aśoka tree}, {5:then }{6:you gave her }{7:the Lord’s }{8:signet ring} {10:and dispelled }{9:her sorrow.}",
     "words": [
       {
         "roman": "cāhata",
@@ -2037,7 +2037,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "lai gṛha baidya suṣena sameta tabai giri droṇa su bīra upāro ||",
-    "english": "{0:You brought }{2:the physician }{3:Sushena}{4:, }{1:house and all}; {5:then, }{8:}{9: mighty hero, }{10:uprooted }{6:Mount }{7:Drona.}",
+    "english": "{0:You brought }{2:the physician }{3:Suṣeṇa}, {1,4:house and all}; {5:then, }{8,9:mighty hero, }{10:you uprooted }{6:Mount }{7:Droṇa.}",
     "words": [
       {
         "roman": "lai",
@@ -2174,7 +2174,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āni sajīvana hātha daī taba lachimana ke tuma prāna ubāro |",
-    "english": "{0:Bringing }{1:the Sanjivani herb} and {3:placing it }{2:in the physician's hand}, {4:then }{7:you }{9:saved }{5,6:Lakshmana's }{8:life.}",
+    "english": "{0:You brought }{1:the life-restoring herb} and {3:placed it }{2:in the physician’s hand}; {4:then }{7:you }{9:saved }{5,6:Lakṣmaṇa’s }{8:life.}",
     "words": [
       {
         "roman": "āni",
@@ -2442,7 +2442,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śrīraghunātha sameta sabai dala moha bhayo yaha saṃkaṭa bhāro ||",
-    "english": "{1:Along with }{0:Lord Rama}, {2:the entire }{3:army }{5:fell into }{4:a swoon}; {6:this }{8:was a heavy }{7:crisis.}",
+    "english": "{1:Along with }{0:Lord Rāma}, {2:the entire }{3:army }{5:fell into }{4:a swoon}; {6:this }{8:was a grave }{7:crisis.}",
     "words": [
       {
         "roman": "śrīraghunātha",
@@ -2930,7 +2930,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jāe sahāya bhayo taba hī ahirāvana sainya sameta saṃhāro |",
-    "english": "{0:Arriving }there, {2:you became }{1:their aid }{3:at that }{4:very moment}, {8:and annihilated }{5:Ahiravana }{7:along with }{6:his army.}",
+    "english": "{0:You arrived }{2:and came }{1:to their aid }{3:at that }{4:very moment}, {8:destroying }{5:Ahirāvaṇa }{7:along with }{6:his army.}",
     "words": [
       {
         "roman": "jāe",

@@ -566,7 +566,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tum nā āōgē tō ham rūṭh jāēṅgē",
-    "english": "If {0:you }{1:do not }{2:come, }{3:then }{4:we }{5,6:will sulk in pique}",
+    "english": "If {0:you }{1:do not }{2:come, }{3:then }{4:we }{5,6:will sulk}",
     "words": [
       {
         "roman": "Tum",
@@ -910,7 +910,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamēṁ nā satā tū batā dē irādē",
-    "english": "{1:Do not }{2:torment }{0:us; }{3,4,5:tell }{6:your intentions}",
+    "english": "{1:Do not }{2:torment }{0:us; }{3,4,5:tell us }{6:what you intend}",
     "words": [
       {
         "roman": "Hamēṁ",
@@ -1005,7 +1005,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tū nā jānē kyā hamrā manuā rē",
-    "english": "{3:Do }{0:you }{1:not }{2:know }{4:our }{5:heart, }{6:O?}",
+    "english": "{3:Do }{0:you }{1:not }{2:know }{4:our }{5:heart}{6:?}",
     "words": [
       {
         "roman": "Tū",
@@ -1088,7 +1088,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hamārē jīvan kē saṅg chalō",
-    "english": "{4:Walk }{2,3:alongside }{0:our }{1:life}",
+    "english": "{4:Walk }{2,3:with us }{0:through our }{1:life}",
     "words": [
       {
         "roman": "Hamārē",
@@ -1171,7 +1171,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Rāt nā bītē rē din bhī dugnā",
-    "english": "{0:The night }{1:does not }{2:pass, }{3:O, }{4:and the day }{5:too }{6:is doubled}",
+    "english": "{0:The night }{1:does not }{2:pass}{3:; }{4:the day }{5:too }{6:feels twice as long}",
     "words": [
       {
         "roman": "Rāt",
@@ -1367,7 +1367,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Milnā nahīṁ thā tō kisnē kahā thā tumhēṁ",
-    "english": "If {2:you were }{1:not }{0:to meet, }{3:then }{4:who }{6:had }{5:told }{7:you}",
+    "english": "If {2:you were }{1:not }{0:going to meet us, }{3:then }{4:who }{5,6:told }{7:you}",
     "words": [
       {
         "roman": "Milnā",
@@ -1711,7 +1711,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pyār jatāē tū hamkō rulāē rē",
-    "english": "{2:You }{1:display }{0:love }and {3,4:make us weep, }{5:O}",
+    "english": "{2:You }{1:show }{0:love }and {3,4:make us weep}{5:!}",
     "words": [
       {
         "roman": "Pyār",
@@ -1800,7 +1800,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kabhī ā jāē kabhī chhup jāē rē",
-    "english": "{0:At one moment }{1,2:you appear, }{3:at another }{4,5:you hide, }{6:O}",
+    "english": "{0:One moment }{1,2:you appear, }{3:the next }{4,5:you hide}{6:!}",
     "words": [
       {
         "roman": "Kabhī",

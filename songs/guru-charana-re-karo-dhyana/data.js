@@ -550,7 +550,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru anukūḷa pachhuā pabana",
-    "english": "{0:the Guru}{1: is the favorable}{2: following}{3: wind.}",
+    "english": "{0:the Guru}{1: is the favorable}{2,3: wind at your back.}",
     "words": [
       {
         "roman": "Guru",
@@ -615,7 +615,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guru na miḷanti sabu janamare",
-    "english": "{0:A Guru}{1: is not}{2: attained}{3: in every}{4: birth;}",
+    "english": "{1:You do not}{2: find}{0: a Guru}{3: in every}{4: birth;}",
     "words": [
       {
         "roman": "Guru",
@@ -680,7 +680,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Miḷanti Śrīguru prabhuṅka kṛpāre",
-    "english": "{1:the revered Guru}{0: is attained}{2: through the Lord's}{3: grace.}",
+    "english": "{0:you find}{1: the revered Guru}{2: through the Lord’s}{3: grace.}",
     "words": [
       {
         "roman": "Miḷanti",

@@ -446,7 +446,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ṭhevūnī pāyī",
-    "english": "{0:Placing} {1:at your feet}…",
+    "english": "{0:I lay} {1:at your feet}…",
     "words": [
       {
         "roman": "ṭhevūnī",
@@ -496,7 +496,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhāv vāṭ pāhe agā karuṇākarā",
-    "english": "{0:my devotion}, {1,2:I watch for your coming}, {3:O} {4:source of compassion}!",
+    "english": "{0:my devotion}, {1,2:and watch for your coming}, {3:O} {4:source of compassion}!",
     "words": [
       {
         "roman": "bhāv",

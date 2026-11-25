@@ -403,7 +403,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "he bhakta vatsala he dīnanāthā",
-    "english": "{0:O }{2:tenderly affectionate }{1:to devotees, }{3:O }{4:Lord of the humble,}",
+    "english": "{0:O you }{2:who tenderly love }{1:your devotees, }{3:O }{4:Lord of the humble,}",
     "words": [
       {
         "roman": "he",
@@ -923,7 +923,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "he bhakta vatsala oṅkāra nāthā",
-    "english": "{0:O }{2:tenderly affectionate }{1:to devotees, }{4:Lord }{3:of Omkara,}",
+    "english": "{0:O you }{2:who tenderly love }{1:your devotees, }{4:Lord }{3:of Oṃ,}",
     "words": [
       {
         "roman": "he",

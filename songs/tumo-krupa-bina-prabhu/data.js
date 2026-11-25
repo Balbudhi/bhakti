@@ -175,7 +175,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tuma pāda chāṛi āu kā pāda dharibu",
-    "english": "{2:Leaving }{0:your }{1:feet, }{4:whose }{5:feet }{3:else }{6:shall we hold?}",
+    "english": "{2:Leaving }{0:your }{1:feet, }{4:whose }{5:feet }{6:shall we hold }{3:instead?}",
     "words": [
       {
         "roman": "tuma",

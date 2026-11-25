@@ -213,7 +213,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "He pāvan parameśvar mere man hī man śaramāū̃",
-    "english": "{0:O }{1:pure }{2:Supreme Lord, }{3:in my }{5:very }{4,6:mind }{7:I feel ashamed.}",
+    "english": "{0:O }{1:pure }{2:Supreme Lord, }{3:my }{4,5,6:heart }{7:is ashamed.}",
     "words": [
       {
         "roman": "He",
@@ -391,7 +391,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Tūne mujhko jag mẽ bhejā nirmal dekar kāyā",
-    "english": "{0:You }{4:sent }{1:me }{2,3:into the world, }{6:giving }{5:a spotless }{7:body.}",
+    "english": "{0:You }{4:sent }{1:me }{2,3:into the world, }{6:granting me }{5:a spotless }{7:body.}",
     "words": [
       {
         "roman": "Tūne",
@@ -819,7 +819,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nain mūndkar he parameśvar kabhī na tujhko dhyāyā",
-    "english": "{1:Closing my }{0:eyes, }{2:O }{3:Supreme Lord, }{4,5:I never }{7:meditated }{6:upon you.}",
+    "english": "{2:O }{3:Supreme Lord, }{4,5:I never }{1:closed my }{0:eyes }to {7:meditate }{6:upon you.}",
     "words": [
       {
         "roman": "Nain",
@@ -1051,7 +1051,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "In pairõ se chalkar tere mandir kabhī na āyā",
-    "english": "{3:Walking }{2:with }{0:these }{1:feet, }{6,7:I never }{8:came }{4:to your }{5:temple.}",
+    "english": "{6,7:I never }{3,8:walked }{4:to your }{5:temple }{2:on }{0:these }{1:feet.}",
     "words": [
       {
         "roman": "In",

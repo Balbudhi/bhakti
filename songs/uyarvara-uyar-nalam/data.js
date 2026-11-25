@@ -39,7 +39,7 @@ window.SONG_LINES = {
   "l001": {
     "source": "உயர்வு அற உயர் நலம் உடையவன் எவன்? அவன்",
     "roman": "uyarvu aṟa uyar nalam uṭaiyavaṉ evaṉ avaṉ",
-    "english": "{5:Who} {4:possesses} {2:lofty} {3:excellence} {0,1:with nothing higher}? {6:He}—",
+    "english": "{5:Who} {4:possesses} {2:the highest} {3:excellence}, {0,1:with none above it}? {6:He}—",
     "words": [
       {
         "roman": "uyarvu",
@@ -1599,7 +1599,7 @@ window.SONG_LINES = {
   "l023": {
     "source": "என்றும் ஓர் இயல்வினர் என நினைவு அரியவர்",
     "roman": "eṉṟum ōr iyalviṉar eṉa niṉaivu ariyavar",
-    "english": "{5:He cannot be confined} {4:in thought} {3:as} {2:having} {0:always} {1:one} mode—",
+    "english": "{5:He cannot be confined} {4:in thought} {3:to} {0:always} {2:having} {1:one} mode—",
     "words": [
       {
         "roman": "eṉṟum",

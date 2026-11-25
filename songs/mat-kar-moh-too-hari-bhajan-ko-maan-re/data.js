@@ -214,7 +214,7 @@ window.SONG_LINES = {
     "source": "नयन दिये दरसन करने को",
     "sourceLanguage": "hi",
     "roman": "nayana diye darasana karane ko",
-    "english": "{0:Eyes }{1:were given }{4:for }{2,3:sacred beholding.}",
+    "english": "{0:Eyes }{1:were given }{4:to }{2,3:behold the divine.}",
     "words": [
       {
         "roman": "nayana",

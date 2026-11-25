@@ -468,7 +468,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "hairān hai zamānā manzil bhī mil rahī hai",
-    "english": "{2:the world }{1:is }{0:astonished, }{3:and the destination }{4:too }{5,6,7:is being reached.}",
+    "english": "{2:The world }{1:is }{0:astonished: }{4:even }{3:the destination }{5,6,7:comes within reach.}",
     "words": [
       {
         "roman": "hairān",
@@ -1283,7 +1283,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kisī aur cīz kī ab parvāh hī nahīṁ hai",
-    "english": "{8:I have }{4:now }{5,7:no concern }{6:at all }{0:for any }{1:other }{2,3:thing.}",
+    "english": "{4:Now }{8:I have }{5,7:no concern }{6:at all }{0,2,3:for anything }{1:else.}",
     "words": [
       {
         "roman": "kisī",

@@ -294,7 +294,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koṭi koṭi prāṇa goṭiku ḍākaï",
-    "english": "{0,1:Crores upon crores of }{2:living souls }{4:call out }{3:to the One alone,}",
+    "english": "{0,1:Millions upon millions of }{2:living souls }{4:call out }{3:to the One alone,}",
     "words": [
       {
         "roman": "Koṭi",
@@ -754,7 +754,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bhābagrāhī se je kṣamāra mūrati",
-    "english": "{1:He }{0:is the receiver of devotional feeling, }{2:indeed }{4:the embodiment }{3:of forgiveness,}",
+    "english": "{1:He }{0:receives the heart’s devotion, }{2:truly }{4:the embodiment }{3:of forgiveness,}",
     "words": [
       {
         "roman": "Bhābagrāhī",

@@ -419,7 +419,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āvāgaman miṭ jāy mhārī helī re, cālo mhārā deś",
-    "english": "{0:Coming and going }{1,2:is erased, }{5:O }{3:my }{4:companion, }{6:let us go }{7:to my }{8:country.}",
+    "english": "{0:Coming and going }{1,2:ceases, }{5:O }{3:my }{4:companion; }{6:let us go }{7:to my }{8:country.}",
     "words": [
       {
         "roman": "Āvāgaman",
@@ -550,7 +550,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lyo to āvāgaman miṭ jāy mhārī helī re, cālo mhārā deś",
-    "english": "{0:Behold }{1:then, }{2:coming and going }{3,4:is erased, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+    "english": "{0:Behold }{1:then, }{2:coming and going }{3,4:ceases, }{7:O }{5:my }{6:companion; }{8:let us go }{9:to my }{10:country.}",
     "words": [
       {
         "roman": "Lyo",
@@ -1877,7 +1877,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nirguṇ kā bājār mẽ mhārī helī, hīrõ ko hove vyāpār",
-    "english": "{3:In }{2:the marketplace }{0,1:of the formless Divine, }{4:my }{5:companion, }{9:trade }{6,7:in diamonds }{8:takes place.}",
+    "english": "{3:In }{2:the marketplace }{0,1:of the formless Divine, }{4:my }{5:companion, }{6,7:diamonds }{8,9:are traded.}",
     "words": [
       {
         "roman": "Nirguṇ",
@@ -2014,7 +2014,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ nirguṇ kā bājār mẽ mhārī helī, hīrõ ko hove vyāpār",
-    "english": "{0:Yes, }{4:in }{3:the marketplace }{1,2:of the formless Divine, }{5:my }{6:companion, }{10:trade }{7,8:in diamonds }{9:takes place.}",
+    "english": "{0:Yes, }{4:in }{3:the marketplace }{1,2:of the formless Divine, }{5:my }{6:companion, }{7,8:diamonds }{9,10:are traded.}",
     "words": [
       {
         "roman": "Hā̃",

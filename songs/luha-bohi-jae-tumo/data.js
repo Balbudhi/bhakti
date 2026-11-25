@@ -338,7 +338,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "prāṇa pulakita huē tuma sāī nāmē",
-    "english": "{0:The life-breath}{1,2: is thrilled}{3: by your}{4: Sai}{5: name}",
+    "english": "{0:My spirit}{1,2: thrills}{3: at your}{5: name,}{4: Sāī}",
     "words": [
       {
         "roman": "prāṇa",
@@ -427,7 +427,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhakati yē byathā diē nathilī mū̃ jāṇi",
-    "english": "{1:That}{0: devotion}{3: gives}{2: pain,}{5: I}{4: did not}{6: know}",
+    "english": "{5:I}{4: did not}{6: know}{1: that}{0: devotion}{3: brings}{2: pain}",
     "words": [
       {
         "roman": "bhakati",
@@ -824,7 +824,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mō ātmārē nāhī̃ kintu tumari bilaya",
-    "english": "{3:But}{0,1: in my soul,}{2: there is no}{5: dissolution}{4: of you}",
+    "english": "{3:But}{0,1: within my soul,}{4: you}{2: never}{5: fade away}",
     "words": [
       {
         "roman": "mō",

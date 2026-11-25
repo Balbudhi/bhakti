@@ -99,7 +99,7 @@ window.SONG_LINES = {
   "refrain_2": {
     "source": "लगी ये कैसी लगा रहे हो",
     "roman": "Lagī ye kaisī lagā rahe ho",
-    "english": "{2:What kind of }{0:longing }{1:is this }{3:that You are causing to take hold?}",
+    "english": "{2:What }{0:longing }{3:are You stirring }{1:in me?}",
     "words": [
       {
         "roman": "Lagī",
@@ -502,7 +502,7 @@ window.SONG_LINES = {
   "verse_1_4": {
     "source": "तुम्ही को फिर क्यों तुम्ही तो मन में समा रहे हो",
     "roman": "Tumhī ko phir kyoṃ tumhī to man meṃ samā rahe ho",
-    "english": "{2:Why }{1:then }[does it call] {0:only to You, }when {3:You }{4:indeed }{6:pervade }{5:the heart?}",
+    "english": "{1:then }{2:why }{0:to You alone, }when {3:You }{4:yourself }{6:fill }{5:the heart?}",
     "words": [
       {
         "roman": "Tumhī ko",
@@ -784,7 +784,7 @@ window.SONG_LINES = {
   "verse_2_4": {
     "source": "तुम्ही को ढूँढूँ ये कैसी रीति चला रहे हो",
     "roman": "Tumhī ko ḍhūṇḍhūṃ ye kaisī rīti chalā rahe ho",
-    "english": "…{1:I search for }{0:You alone: }{3:what kind of }{4:practice }{2:is this }{5:You are setting in motion?}",
+    "english": "…{1:I search for }{0:You alone: }{3:what kind of }{4:way }{2:is this }{5:You have set me on?}",
     "words": [
       {
         "roman": "Tumhī ko",

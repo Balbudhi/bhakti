@@ -1027,7 +1027,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Din bhar rē jō nazar bhar dēkhē",
-    "english": "{0:All day }{1:long, }{2:O, }{3:whoever }{6:looks }{5:with a full }{4:gaze}",
+    "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content}",
     "words": [
       {
         "roman": "Din",
@@ -1182,7 +1182,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Din bhar rē jō nazar bhar dēkhē ajar amar vo niśānī ho jī vo niśānī ho jī",
-    "english": "{0:All day }{1:long, }{2:O, }{3:whoever }{6:looks }{5:with a full }{4:gaze—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:honored one, }{13:that }{14:sign, }{15:O }{16:honored one}",
+    "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:honored one, }{13:that }{14:sign, }{15:O }{16:honored one}",
     "words": [
       {
         "roman": "Din",

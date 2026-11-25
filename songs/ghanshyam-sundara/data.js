@@ -597,7 +597,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Akhila viśva ke bhakta tumhārā dhyāna sadā dharate",
-    "english": "{3:Devotees} {0,2:of the entire} {1:universe} {6:constantly} {5,7:fix their meditation} {4:upon you.}",
+    "english": "{3:Devotees} {0,2:throughout the} {1:universe} {6:constantly} {5,7:meditate} {4:upon you.}",
     "words": [
       {
         "roman": "Akhila",
@@ -710,7 +710,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mandira meṁ baja uṭhīṁ ghaṇṭiyāṁ, śaṅkha bhī ye kahate",
-    "english": "{0,1:In the temple,} {4:bells} {2,3:have burst into ringing,} {5:and conch shells} {6:also} {8:proclaim} {7:this:}",
+    "english": "{0,1:In the temple,} {4:bells} {2,3:have begun to ring,} {5:and conch shells} {6:too} {8:proclaim} {7:this:}",
     "words": [
       {
         "roman": "Mandira",
@@ -1095,7 +1095,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Madhura rasīlī muralī kī dhuna kī sudhā barasāo hama para",
-    "english": "{7:Shower} {9:upon }{8:us} {5,6:the nectar of} {0:the sweet,} {1:melodious} {2,3:flute's} {4:tune,}",
+    "english": "{7:Shower} {9:upon }{8:us} {5,6:the nectar of} {2,3:your flute’s} {0:sweet,} {1:lilting} {4:melody,}",
     "words": [
       {
         "roman": "Madhura",

@@ -956,7 +956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī kahtī hai ā̃suō̃ kī dhār, Bābā ā jāō ik bār",
-    "english": "{0:This very thing }{5:the stream }{4:of }{3:tears }{1,2:says: }{6:Baba, }{7,8:come }{9,10:once}",
+    "english": "{5:The stream }{4:of }{3:tears }{1,2:says }{0:only this: }{6:Baba, }{7,8:come }{9,10:once}",
     "words": [
       {
         "roman": "Yahī",

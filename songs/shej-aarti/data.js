@@ -873,7 +873,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kheḷoniyā kheḷa avaghā vistāra kelā",
-    "english": "{0:Having played }{1:the play, }{4:He brought about }{2:the entire }{3:expansion.}",
+    "english": "{0,1:Through his play, }{4:he brought about }{2:the entire }{3:expanse.}",
     "words": [
       {
         "roman": "Kheḷoniyā",
@@ -1595,7 +1595,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Pragaṭa guhya bōlē",
-    "english": "{0:He openly }{2:spoke }{1:the hidden secret,}",
+    "english": "{0:He openly }{2:revealed }{1:the secret,}",
     "words": [
       {
         "roman": "Pragaṭa",
@@ -2204,7 +2204,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Brahma Tukāsī ālē",
-    "english": "{0:The absolute reality }{2:came equal }{1:to Tukā.}",
+    "english": "{0:Absolute reality }{2:proved equal }{1:to Tukā.}",
     "words": [
       {
         "roman": "Brahma",
@@ -2874,7 +2874,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jhālē astatīla kaṣṭa atiśaya tumacē yā dēhālā hō",
-    "english": "{3:Immense }{2:toil }{0,1:must have come }{5:to this }{4,6:body of yours, }{7:O!}",
+    "english": "{5:This }{4,6:body of yours }{0,1:must have endured }{3:immense }{2:toil, }{7:O!}",
     "words": [
       {
         "roman": "Jhālē",
@@ -3343,7 +3343,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sōḍuni jāyā duḥkha vāṭatē Bābāñcyā caraṇāñśī hō",
-    "english": "{0:Leaving }{4:Bābā's }{5:feet }{1:to depart }{2,3:feels sorrowful, }{6:O!}",
+    "english": "{2,3:It pains me }{0,1:to leave }{4:Bābā’s }{5:feet, }{6:O!}",
     "words": [
       {
         "roman": "Sōḍuni",
@@ -3438,7 +3438,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sōḍuni jāyā duḥkha vāṭatē Sāīñcyā caraṇāñśī hō",
-    "english": "{0:Leaving }{4:Sāī's }{5:feet }{1:to depart }{2,3:feels sorrowful, }{6:O!}",
+    "english": "{2,3:It pains me }{0,1:to leave }{4:Sāī’s }{5:feet, }{6:O!}",
     "words": [
       {
         "roman": "Sōḍuni",
@@ -4299,7 +4299,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "tayāvarī supremācā śiḍakāvā didhalā",
-    "english": "{0:Upon it, }{2:a sprinkling }{1:of pure love }{3:was given.}",
+    "english": "{1:Pure love }{3:was }{2:sprinkled }{0:upon it.}",
     "words": [
       {
         "roman": "tayāvarī",
@@ -4382,7 +4382,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāyaghaḍyā ghātalyā suṁdara navavidhā bhaktī bābā navavidhā bhaktī",
-    "english": "{2:Beautiful }{0:foot-carpets }{3:of ninefold }{4:devotion }{1:were spread, }{5:O Baba, }{6:of ninefold }{7:devotion.}",
+    "english": "{2:Beautiful }{0:carpets }{3:of ninefold }{4:devotion }{1:were spread, }{5:O Baba, }{6:of ninefold }{7:devotion.}",
     "words": [
       {
         "roman": "pāyaghaḍyā",
@@ -5366,7 +5366,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "pāhe prasādācī vāṭa dyāve dhuvoniyā tāṭa",
-    "english": "{0,2:[I] await }{1:the consecrated food; }{4:having washed }{5:the dining plate, }{3:please give it.}",
+    "english": "{0,2:I await }{1:the consecrated food; }{4:having washed }{5:the dining plate, }{3:please give it.}",
     "words": [
       {
         "roman": "pāhe",
@@ -5449,7 +5449,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "śeṣa gheuni jāila tumace jhāliyā bhojana",
-    "english": "{1:Taking }{0:the remnants, }{2:[I] will depart }{3:once your }{5:meal }{4:is finished.}",
+    "english": "{1:Taking }{0:the remnants, }{2:I will depart }{3:once your }{5:meal }{4:is finished.}",
     "words": [
       {
         "roman": "śeṣa",

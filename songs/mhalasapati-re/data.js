@@ -455,7 +455,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "moḍoni vāsanā cūrṇa haridrā",
-    "english": "{0:Breaking} {1:desires} {2:into powder} {3:of turmeric},",
+    "english": "{0:Grinding} {1:desires} {2:into} {3:turmeric} {2:powder},",
     "words": [
       {
         "roman": "moḍoni",

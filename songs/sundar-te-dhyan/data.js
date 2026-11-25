@@ -279,7 +279,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āvaḍe nirantara",
-    "english": "{1:Ceaselessly} {0:dear,}",
+    "english": "{1:Forever} {0:dear to me,}",
     "words": [
       {
         "roman": "Āvaḍe",
@@ -326,7 +326,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āvaḍe nirantara teci rūpa",
-    "english": "{1:Ceaselessly} {0:dear} is {2:that very} {3:form,}",
+    "english": "{2:That very} {3:form} is {1:forever} {0:dear to me,}",
     "words": [
       {
         "roman": "Āvaḍe",
