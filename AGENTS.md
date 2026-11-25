@@ -94,8 +94,13 @@ Do not import Vedanta's full indexing engine, grammar cards or expositions.
 
 Use the subject procedure in `docs/ADD_A_SONG.md`. Search performed source, IAST,
 English and glosses; resolve names, compounds, regional forms, symbols and narrative
-relationships in context. Tags include evidenced named references, not only the
-central addressee. Record exact-source additions/removals in
+relationships in context. Tags identify devotional names, addressees, and meaningful
+participants in the performed devotion. A name used only to identify another deity
+as its child, parent or spouse does not justify a separate tag for that relative.
+Retain an independently invoked or substantively portrayed relative. A relational
+epithet can identify the central deity without tagging every name inside it.
+Gurbāṇī devotional names and meaningful liturgical participants remain eligible;
+apply the same contextual rule across traditions. Record exact-source additions/removals in
 `data/song_tag_overrides.json` and source-bound dismissed candidates in
 `data/subject-tag-review.json`. Tradition tags do not exclude deity-reference tags.
 Never infer a form from a generic symbol or a credit alone.

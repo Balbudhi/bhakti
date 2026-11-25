@@ -17,7 +17,14 @@ window.SONG_META = {
     "Viṣṇu",
     "Pārvatī",
     "Durgā",
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Brahmā",
+    "Indra",
+    "Vāyu",
+    "Yama",
+    "Varuṇa",
+    "Kubera",
+    "Agni"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=qN3ALz_7vKg",
   "searchAliases": [

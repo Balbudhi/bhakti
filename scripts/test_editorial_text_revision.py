@@ -202,5 +202,101 @@ class EditorialTextRevisionTests(unittest.TestCase):
         self.assertEqual((self.root/profiles.REVIEWS).read_bytes(),before)
         self.assertIn('concurrent owner change',source.read_text())
 
+    def test_retag_corrected_reader_preserves_text_and_original_assessment(self):
+        revised = self.prepare()
+        original = copy.deepcopy(self.record)
+        self.reader = copy.deepcopy(self.changed)
+        self.record = revised
+        song = subject_tests.SubjectMetadataRefreshTests.retag_fixture(self)
+        path = self.root / 'songs/example/data.js'
+        text_suffix = path.read_text().split('window.SONG_LINES')[1]
+        receipt = (self.root / profiles.TEXT_REPAIRS).read_bytes()
+        song.retag(['example'])
+        current = profiles.parse_javascript_sources({'example': path.read_text()})['example']
+        self.assertEqual(current['SONG_META']['subjectTags'], ['Guru', 'Kṛṣṇa'])
+        self.assertEqual(current['SONG_LINES'], self.reader['SONG_LINES'])
+        self.assertEqual(path.read_text().split('window.SONG_LINES')[1], text_suffix)
+        stored = profiles.read_json(self.root / profiles.REVIEWS)['profiles'][self.queue_id]
+        unchanged = copy.deepcopy(stored)
+        unchanged['semantic'].pop('editorialTextRevision')
+        unchanged['semantic'].pop('subjectTagRevision')
+        self.assertEqual(unchanged, original)
+        self.assertEqual((self.root / profiles.TEXT_REPAIRS).read_bytes(), receipt)
+        profiles.validate_public_profiles(self.root)
+        before = {p: p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
+        song.retag(['example'])
+        self.assertEqual({p: p.read_bytes() for p in before}, before)
+
+        # Reversing a reviewed addition returns to original tags, not original text.
+        self.registry['songs']['example'] = {'addTags': [], 'removeTags': ['Kṛṣṇa'],
+            'evidence': [{'operation': 'remove', 'tag': 'Kṛṣṇa', 'source': 'मन',
+                          'reason': 'Contextual incidental-reference exclusion'}]}
+        self.save('data/song_tag_overrides.json', self.registry)
+        song.retag(['example'])
+        current = profiles.parse_javascript_sources({'example': path.read_text()})['example']
+        self.assertEqual(current['SONG_META']['subjectTags'], ['Guru'])
+        self.assertEqual(current['SONG_LINES'], self.reader['SONG_LINES'])
+        stored = profiles.read_json(self.root / profiles.REVIEWS)['profiles'][self.queue_id]
+        self.assertNotIn('subjectTagRevision', stored['semantic'])
+        profiles.validate_public_profiles(self.root)
+
+    def test_retag_text_receipt_rejects_unreviewed_changes(self):
+        revised = self.prepare()
+        self.store(revised)
+        current = copy.deepcopy(self.changed)
+        current['SONG_META']['subjectTags'] = ['Guru', 'Kṛṣṇa']
+        for field, value in [('english', 'unreviewed'), ('source', 'तन')]:
+            bad = copy.deepcopy(current)
+            bad['SONG_LINES']['a'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                profiles.reviewed_retag_semantic(self.root, 'example', bad, revised,
+                                                 prior_tags=['Guru'])
+        self.evidence['lineEvidence']['a'] = 'Changed since approval'
+        self.save_receipt()
+        with self.assertRaises(ValueError):
+            profiles.reviewed_retag_semantic(self.root, 'example', current, revised,
+                                             prior_tags=['Guru'])
+
+    def test_retag_witness_uses_reviewed_corrected_source(self):
+        self.prepare()
+        self.changed['SONG_LINES']['a']['source'] = 'चित्त'
+        self.evidence = self.receipt()
+        self.save_receipt()
+        revised = self.revise()
+        self.store(revised)
+        self.registry['songs']['example']['evidence'][0]['source'] = 'चित्त'
+        self.save('data/song_tag_overrides.json', self.registry)
+        current = copy.deepcopy(self.changed)
+        current['SONG_META']['subjectTags'] = ['Guru', 'Kṛṣṇa']
+        amended = copy.deepcopy(revised)
+        amended['semantic'] = profiles.reviewed_retag_semantic(
+            self.root, 'example', current, revised, prior_tags=['Guru'])
+        self.assertEqual(self.project(amended, current)['semantic']['status'], 'accepted')
+        self.assertEqual(amended['semantic']['inputHash'], self.record['semantic']['inputHash'])
+        self.registry['songs']['example']['evidence'][0]['source'] = 'मन'
+        self.save('data/song_tag_overrides.json', self.registry)
+        with self.assertRaisesRegex(ValueError, 'evidence changed|not performed'):
+            profiles.reviewed_retag_semantic(self.root, 'example', current, revised,
+                                             prior_tags=['Guru'])
+
+    def test_retag_replaces_existing_combined_tag_amendment(self):
+        revised = self.prepare(tagged=True)
+        self.store(revised)
+        self.registry['songs']['example'] = {'addTags': ['Śiva'], 'removeTags': ['Kṛṣṇa'],
+            'evidence': [{'operation': op, 'tag': tag, 'source': 'मन',
+                          'reason': 'Revised contextual classification'}
+                         for op, tag in [('add', 'Śiva'), ('remove', 'Kṛṣṇa')]]}
+        self.save('data/song_tag_overrides.json', self.registry)
+        current = copy.deepcopy(self.changed)
+        current['SONG_META']['subjectTags'] = ['Guru', 'Śiva']
+        amended = copy.deepcopy(revised)
+        amended['semantic'] = profiles.reviewed_retag_semantic(
+            self.root, 'example', current, revised, prior_tags=['Guru'])
+        self.assertEqual(self.project(amended, current)['semantic']['status'], 'accepted')
+        self.assertEqual(amended['semantic']['subjectTagRevision']['priorTags'], ['Guru'])
+        self.assertEqual(amended['semantic']['editorialTextRevision']['evidenceHash'],
+                         revised['semantic']['editorialTextRevision']['evidenceHash'])
+        self.assertEqual(amended['audio'], revised['audio'])
+
 
 if __name__ == '__main__': unittest.main()

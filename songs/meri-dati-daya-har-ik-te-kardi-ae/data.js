@@ -20,7 +20,9 @@ window.SONG_META = {
     "Vaiṣṇo Devī",
     "Kālī",
     "Viṣṇu",
-    "Śiva"
+    "Śiva",
+    "Brahmā",
+    "Indra"
   ],
   "searchAliases": [
     "Meri Dati Daya Har Ik Te Kardi E",

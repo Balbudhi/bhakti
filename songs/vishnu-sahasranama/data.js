@@ -20,7 +20,9 @@ window.SONG_META = {
     "Guru",
     "Lakṣmī",
     "Rāma",
-    "Śakti"
+    "Śakti",
+    "Oṃ",
+    "Brahmā"
   ],
   "searchAliases": [
     "Visnu Sahasranama",

@@ -19,7 +19,9 @@ window.SONG_META = {
     "Pārvatī",
     "Lakṣmī",
     "Durgā",
-    "Hanumān"
+    "Hanumān",
+    "Brahmā",
+    "Nṛsiṃha"
   ],
   "searchAliases": [
     "Shakti",

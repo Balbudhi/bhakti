@@ -11,7 +11,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gaṇeśa",
-    "Śiva"
+    "Brahmā"
   ],
   "searchAliases": [
     "Ganesha",

@@ -20,7 +20,11 @@ window.SONG_META = {
     "Lakṣmī",
     "Śiva",
     "Viṭṭhala",
-    "Śakti"
+    "Śakti",
+    "Brahmā",
+    "Indra",
+    "Nṛsiṃha",
+    "Veṅkaṭeśa"
   ],
   "searchAliases": [
     "Vishnu",

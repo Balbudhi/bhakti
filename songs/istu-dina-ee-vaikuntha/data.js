@@ -6,7 +6,8 @@ window.SONG_META = {
   "subjectTags": [
     "Viṣṇu",
     "Kṛṣṇa",
-    "Śiva"
+    "Śiva",
+    "Brahmā"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=JdtBenxAEyI",
   "searchAliases": [

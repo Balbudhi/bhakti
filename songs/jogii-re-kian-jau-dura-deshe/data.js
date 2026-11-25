@@ -9,9 +9,7 @@ window.SONG_META = {
   "languages": [
     "Odia"
   ],
-  "subjectTags": [
-    "Guru"
-  ],
+  "subjectTags": [],
   "searchAliases": [
     "Satpathy Baba",
     "Chandra Bhanu Satpathy"

@@ -21,7 +21,8 @@ window.SONG_META = {
     "Guru",
     "Kṛṣṇa",
     "Viṭṭhala",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Dattātreya"
   ],
   "searchAliases": [
     "Sai Sai Bol",

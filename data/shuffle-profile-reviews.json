@@ -174,8 +174,8 @@
             "Lakṣmī"
           ],
           "originalInputHash": "37d04d81dc70cd14f5df94014b0546ef8b6c085c896a7441428d6f1e882eb83d",
-          "inputHash": "78eb1565f700870e3c1a46ac2b55fd608cc3712e4b105c393ce698ef22eaa579",
-          "evidenceHash": "5c34b2b465c5884dc1b559266f1baf7015c99221964a4eba388ee6c70a621e57"
+          "inputHash": "aa0c11b8d9fda10d7a0b4a027959b13061b8fbee6514ee954a27573d0ef8b0f2",
+          "evidenceHash": "cf583e1289befc19c9a92d272a6f6b47ad9aed30666ddb9f51e122d2968006b4"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -585,7 +585,7 @@
             }
           },
           "originalInputHash": "37d04d81dc70cd14f5df94014b0546ef8b6c085c896a7441428d6f1e882eb83d",
-          "inputHash": "3805a419fdd11050718a550ebf6f4e17acd146a135d8a63dab3e049ef8acae74",
+          "inputHash": "d34f61de1190e1ae22db2a2f8930972f0bac0ed599dc5d564edad3024d91967b",
           "baseFeaturesHash": "540b914eb54d236207b6676ea2eb00d38617c21260dc29297fb5e1fcab3177cb",
           "evidenceHash": "88c989f1814be3606c186dda9a40b1a6334224005c2a0c39090e7849ac7cf1b5"
         }
@@ -1740,9 +1740,18 @@
             }
           },
           "originalInputHash": "5b04fe683cfa5f06ff29a85c1f1d9f45cb3f52feaa8083dd6f9eb8c9f92f907e",
-          "inputHash": "609a70365eef5105dfa341f14b58d7c15ffc990e244bbc1af94376c92cef9e14",
+          "inputHash": "c6e8ed94e2fbaf603a8e7b4b35db611715f3dc0203e4bd8c9869091af29006a6",
           "baseFeaturesHash": "7dea648dd3db42e1fe1f7503ef259eb568930250e94de98e7d8c7b8842259a65",
           "evidenceHash": "28141b1758b3b5e0ee3c3fcd1d59cdcdb69f7aae57aa5b326653c915450e6af7"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Viṣṇu"
+          ],
+          "originalInputHash": "5b04fe683cfa5f06ff29a85c1f1d9f45cb3f52feaa8083dd6f9eb8c9f92f907e",
+          "inputHash": "9ebe0664d3e4ec83840253170c26ff46d54bf9225ca17e8bb3a35ee35d30771d",
+          "evidenceHash": "5f06b9f00aa0cef8297c9e3cea831cfc15a39906f174b89c0dbdd4e447f8bbf1"
         }
       }
     },
@@ -2391,8 +2400,8 @@
             "Śiva"
           ],
           "originalInputHash": "25d0851374c311cca2fc80db0705a48a56eefa9100f256d0f79c65d2bbbe8eb7",
-          "inputHash": "3af7f855c25072fe6de90b3816ab111eabc8c12e906f9167160ed9a078b965a0",
-          "evidenceHash": "2db85bcc6cdc252181b9599923bcd1eeda42c9a4093a660a039098e9c822ddbc"
+          "inputHash": "7593dce55adf28d9e7230f00cb7676ae06183316ce1721c8e80a3e8cc2533d56",
+          "evidenceHash": "4a20873fce1855dbce760b33e81c2f41f3a1ee87fefa9992e3a6c9eb30e17d3e"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -2506,7 +2515,7 @@
             }
           },
           "originalInputHash": "25d0851374c311cca2fc80db0705a48a56eefa9100f256d0f79c65d2bbbe8eb7",
-          "inputHash": "30a8d6ee8efbad3ac7c43ebec6eb1fb50fc53d9c35f3937f10fdfaf863276bf1",
+          "inputHash": "cc6c2462f169318dd5e6353cf0eeb535a6943848948f52f13ffb014e065a0d82",
           "baseFeaturesHash": "11c20619512f521c36f5665d87f2b44396a510b59b739ec9d4e3fa4fe82acb8c",
           "evidenceHash": "0a0e061e69f222008c4b0728d3369e5b4c69065755e3117135cc942191e74eb6"
         }
@@ -4192,8 +4201,8 @@
             "Śakti"
           ],
           "originalInputHash": "821b328cf2d793458accee606a9d1b301c8da2cc31554b5149fa36f6f41beb89",
-          "inputHash": "07a8d2071518824427f35be4fb84ebedd4179f7958d28158e60461b28f08fbc7",
-          "evidenceHash": "632cb68127c491d76d09404cccf0da986c6b2388c258b1be25670f60f53bdb64"
+          "inputHash": "64921c0478820ba60f4c3e544aa059bd3ed820c75763b717410f44458cb93b6c",
+          "evidenceHash": "a7859f48a9aa78fb766d1a01b8fead1afa250e23906ab1973b25d007e670ad2a"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -7525,7 +7534,7 @@
             }
           },
           "originalInputHash": "821b328cf2d793458accee606a9d1b301c8da2cc31554b5149fa36f6f41beb89",
-          "inputHash": "3ff8073c1081ea5565135ffc1222538a99d67ad72e60c45f35d0d895462824b8",
+          "inputHash": "551adaaa0e89be7757dc6ee1d15d27bfd183694aadd611073091716b59b476a6",
           "baseFeaturesHash": "a769e10d437b88d1735899e9c200a2416990745b3cd1dd122b330e628d494b7f",
           "evidenceHash": "882c99bad32ee60661d39a9e66a2b7fdde99a6c0febb3e37f8a8306ac29a6331"
         }
@@ -8991,9 +9000,18 @@
             }
           },
           "originalInputHash": "7389659a5d4b5958bcd3f410fb46880c8268a22f01887bceb40c73d82832f39c",
-          "inputHash": "f622c5ebdea5dbd5455e50b01110726ab88178d8df6484fbd3b0b4de709d7395",
+          "inputHash": "86a9ef704d7375cd3140707c689df0471b66ceeb1d1ab775f78cb901fde12b17",
           "baseFeaturesHash": "c4cb7631efc4e269e8181afee74b9c7a28de0b050fe99bb5ba2ee2e4d472ab16",
           "evidenceHash": "2bdc9e19a75ff1fa8fa78131356e7ad1d97cbf25a477111570b6271d6804cb36"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Gaṇeśa"
+          ],
+          "originalInputHash": "7389659a5d4b5958bcd3f410fb46880c8268a22f01887bceb40c73d82832f39c",
+          "inputHash": "d86f22e4354f6c0f8b68d500e33e3f86295f200fdb0b77d53d215d0fae9be097",
+          "evidenceHash": "7ce87d1780841c97b1057a0c916a35b1e4e35df69173f59def69c383904da0f4"
         }
       }
     },
@@ -9093,16 +9111,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Gaṇeśa"
-          ],
-          "originalInputHash": "36fa6ee26bafe2ade0c38bc1cc8931f98ea2905ff4e1913bff22f1aec7da2faa",
-          "inputHash": "4182848b195c1c01fe8c5130d665791aa5d4e01b67dcda9ca06b041323129653",
-          "evidenceHash": "b7a346e7ae20bb9302433bbf3e4f8db4a162f32e8bc867f5df52fa1824cd62a0"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
     },
     "4e0f2a07": {
@@ -9212,8 +9221,8 @@
             "Gaṇeśa"
           ],
           "originalInputHash": "0722d6bf54f88ce3dbd7cab6c8f0c90edd0e4a3551567440e7e320effc3f739e",
-          "inputHash": "f964e5f14c147be675af11412c53b7d6b864540cc2b71ecb256016128f20e14f",
-          "evidenceHash": "8b6d2962585004ced7283eef242c0e50ad56d62d93e7c393ceff1d385b4de5c9"
+          "inputHash": "fe7f17af1d93e06394c56540fa6007f5029c6e51129e1240549432a274a6da97",
+          "evidenceHash": "3279f5750c4a159ccbed133b4c93f3be4cfb71f3e11822adc3fd39a215b42b58"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -9445,7 +9454,7 @@
             }
           },
           "originalInputHash": "0722d6bf54f88ce3dbd7cab6c8f0c90edd0e4a3551567440e7e320effc3f739e",
-          "inputHash": "cc452264b152f35596997e612d7c2c6e295a4849353e7355c8f25f22f2120f72",
+          "inputHash": "0efd2cbe4ec3a62142e3869939a57c580d5b61b33447010517c3087cd9a374ca",
           "baseFeaturesHash": "cd09959b962b526534c2ea6827d77314ebd32eedf827c66751c14532c52e55bd",
           "evidenceHash": "7427279a9a431c49b6173a86e4954b8b8e2719111069ecefefdc512e6404896a"
         }
@@ -10247,8 +10256,8 @@
             "Śakti"
           ],
           "originalInputHash": "418c68d30960a5e195d4642a77642e705ffb98b632056ca7fb9a6311ff799e9e",
-          "inputHash": "0a0bd98e5e3d63b466481438e4bd69fd8ae825105e1f5c15a1bf6aee99c713e9",
-          "evidenceHash": "730e2e373ee0e6929849ca26346fa4780b46869edbe8b79678e0bcbae20ada2e"
+          "inputHash": "2fbdee7244781e5ade3d44cfbd4313d5cce8ffabb97115d33c17f02208952b53",
+          "evidenceHash": "65d9a293857004a83234f84410e17d3747c8fe2636efc5d8ed782da8e65ac8f6"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -10385,7 +10394,7 @@
             }
           },
           "originalInputHash": "418c68d30960a5e195d4642a77642e705ffb98b632056ca7fb9a6311ff799e9e",
-          "inputHash": "166824ab17204bfef4b1a29e2e591474ab843127da663c041c8feb106976ef10",
+          "inputHash": "f3b03d4710efa5f474c9a72e9fb3c33d8c610bbfbf1a7d2d0bdf73d8efc63910",
           "baseFeaturesHash": "4fd2b864f9a643dcb5a1d4b4d93882bd606e951594d3c459b4f1b81373501177",
           "evidenceHash": "cdced069588fca89b01f9fef2e6b09ffa886f6b80f75de974bd77ce3c619ad77"
         }
@@ -16236,8 +16245,8 @@
             "Śiva"
           ],
           "originalInputHash": "a5ed4c6e81084d8ae0f834f58254ae20a57e700b0dff39f8a0ad1c230f268912",
-          "inputHash": "872a266c70bdd33a271eae82926442a0ca514e02e0964f0866d0042d20e3c284",
-          "evidenceHash": "fe293f35cfab1cb07f8f150224aecff5e0d0794a4e7103c734585e528779b5a0"
+          "inputHash": "e57d83891b30c2cfc28b01e1a8fda21bd7c3b14e1f613bc478ee3c74d800a74c",
+          "evidenceHash": "822fec4d4bf8da4b471e5f2ab54113d85b2e9824a15dff11d79180a69a50320e"
         }
       }
     },
@@ -18961,7 +18970,18 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Kṛṣṇa",
+            "Viṣṇu",
+            "Śakti"
+          ],
+          "originalInputHash": "f17cb19d8e11908f2835f466f1fafa059cc65af0bb9046a1accecee0ede6b2d5",
+          "inputHash": "908f6c534e0f6b246c8a02fdc6c8da3a466e30cd3d21439a306be49fa4312999",
+          "evidenceHash": "4fdf4941b80d8bd1350ca9abca2ef94d09f9610b0249e3eb5a47fd186e331efb"
+        }
       },
       "audio": {
         "inputHash": "d9d5709ca0c5acb3119ee7329cd7602f161ed042c12c35ef3c9f8687edaea683",
@@ -19122,15 +19142,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Kṛṣṇa"
-          ],
-          "originalInputHash": "554514ff8cdddd736a5e9cdf49a2b6ddefb50b73386d14d54c2ce4a4f6b1f08b",
-          "inputHash": "92379d1d11f11eb99a73fe630a4a1436394af5a8aca0f5d7d8627772e395b555",
-          "evidenceHash": "22859ba5c16fb11c8cd4b9e6149a4b74098b005847a501d8288f7f12e656e6ca"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -19493,7 +19504,7 @@
             }
           },
           "originalInputHash": "554514ff8cdddd736a5e9cdf49a2b6ddefb50b73386d14d54c2ce4a4f6b1f08b",
-          "inputHash": "aef531c6d9552b1ffc5345f50876f1be30c23d941181cb76fd2ac059d773de5e",
+          "inputHash": "7d634fe097742fbea7a6eddeffef021aea1a65cddff1e976ff1f8c45055550c4",
           "baseFeaturesHash": "4effcce1198bec0137b70d4f91f88e8beb9e0c10f991e644cdef827816bc1a89",
           "evidenceHash": "046615465092d91c34421c100aa8b09807fa362157a6ad57a3536dfd280b382f"
         }
@@ -20156,7 +20167,14 @@
           "baseFeaturesHash": "1df1bee5c2b684f36b880f10beaf1cb7bcd2720455379151a714a869e5487eb6",
           "evidenceHash": "663c105006da27bbd4776414632273516dae56edc6658bf5e59128c8ce131c49"
         },
-        "editorialAdjustments": []
+        "editorialAdjustments": [],
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [],
+          "originalInputHash": "a2e155e123673053d685f5504266f5e270f816d522d802f65342b0b56f62eb68",
+          "inputHash": "8d2996e76052e6d3b4764d9fd2a75dcd9b19211edf69cfbf23636b90f59e4596",
+          "evidenceHash": "aaa7a25ce2dc1cabad48814d0af1dd4aba5e9f7c5a168e1dcf1e033bc47478c3"
+        }
       }
     },
     "583abf72": {
@@ -21582,8 +21600,8 @@
             "Rāma"
           ],
           "originalInputHash": "cdac1589026ab0264e99ed77aa62f82a3e7cd29b1275fea6b587aa620545c4f6",
-          "inputHash": "78281711c68c63ca6c67b30f93f842ab92f6370bb972bd7a984ddb285b31a4bc",
-          "evidenceHash": "26b111e823997abad47e41722d9cc3eb28f876a17fb32b8ff46516568b7d1e67"
+          "inputHash": "ee1dade8a99042c92d2c1089fade89a24ab241d32a50f644a7bdc6ac6480675a",
+          "evidenceHash": "4601b06508e3c7296935756b93425da102900445515c782858af3b6ba435fc94"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -22053,7 +22071,7 @@
             }
           },
           "originalInputHash": "cdac1589026ab0264e99ed77aa62f82a3e7cd29b1275fea6b587aa620545c4f6",
-          "inputHash": "f154ccf17ef957ece31da7988a62fa68a483867e5c38567ca052eec1d529cb10",
+          "inputHash": "f29be52cc54ab0a5f5306aec580b034851f6a1d6dd9add2892e241efbcaac7bb",
           "baseFeaturesHash": "cfa92c177af8ca0375c6d154d2292ce763f979979b8fdc44237f4257a0e653c1",
           "evidenceHash": "0c7e47377f2fdbead1a5ec6b47f1184250fa420e8d2a28fa21ce26617c728359"
         }
@@ -22758,8 +22776,8 @@
             "Guru"
           ],
           "originalInputHash": "2d922809d2f37461e1dcff42f9f696eb8b436b7e0f57aaa58a68370cb768fbb7",
-          "inputHash": "699c4c9cf427d1f42cea35f6634eec6679c903e1763f2a552139b35d07678a8a",
-          "evidenceHash": "8b3a2c7f099d47d52b51bf798d0fc1db0a50dd4a453f2188408235119c2dd8b7"
+          "inputHash": "e254a6b553ca591ddfae8cd2cc8942eeeb021ef3d8a9a15d57766326351ddd1e",
+          "evidenceHash": "faead752f4a486e2465c76a33b34ac931a23eceaaad93f8d4841a3561bd0a424"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -23016,7 +23034,7 @@
             }
           },
           "originalInputHash": "2d922809d2f37461e1dcff42f9f696eb8b436b7e0f57aaa58a68370cb768fbb7",
-          "inputHash": "b4d0eb8d6ea024dbadfa952aa8c8a6d922537fedc5a993c02d40e7f6acc376e8",
+          "inputHash": "59971c42038210d47af18e3f791285f03b999210f98e39b0a89c85e7388e0ced",
           "baseFeaturesHash": "37ab0c2167d05806b6b2a0852d5a0c2e7a011459c83545de8cc48883b39623df",
           "evidenceHash": "0f2137df233215fc74a236cbb300b575bfd0835bb2b35cfb76536e778d7d878e"
         }
@@ -23154,8 +23172,8 @@
             "Śakti"
           ],
           "originalInputHash": "b2f3452d2f85a086d7b0dcf94ae0d6a6b64e2ff936e562cd7a27bfcc95f5487a",
-          "inputHash": "5ac8978747020a671f39702e4d2ee6e53aaa2fae36973bc09a676e745a8f6e2d",
-          "evidenceHash": "b9a030d2382eb061ce2b6aa77a2ac1c8933cd6af4fb37755a557a87df1af6a26"
+          "inputHash": "11969d68cbf9e7ce7295d280ef0135a95c35a9e95815462cdf0f9a92c827a9b8",
+          "evidenceHash": "6e37b410b016571f89d813b83f0e1e77a0c62697cc6439d807397948b514a700"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -26856,7 +26874,7 @@
             }
           },
           "originalInputHash": "b2f3452d2f85a086d7b0dcf94ae0d6a6b64e2ff936e562cd7a27bfcc95f5487a",
-          "inputHash": "f64ebd5856a2988e117f494c157f94cf5ca81bec9fd607e0caed0d1ca6d83d9e",
+          "inputHash": "a76b5a564a63f089b7301c9a1a31b2449dad2f8a77e0ecca0cd77d4dfae5d77d",
           "baseFeaturesHash": "c49c9de1a0c2448ad133bc963d7c85896ed428959db6614c726580d2d2048372",
           "evidenceHash": "84cc94354bd4daf932246b2852153bd237c0b2bb2aa06fd7a330cc22d9e609ff"
         }
@@ -26951,8 +26969,8 @@
             "Guru"
           ],
           "originalInputHash": "b6eaf24f03619f1dfe254540857788de44c1b97794ce1ce358e684d03ab3d332",
-          "inputHash": "632add4091c038a04713b8898537af588d43ee69a0cd04790e5687605e49ca60",
-          "evidenceHash": "546c95b04251d5711e230fe9be5511ad8dac45419829b9c48d7d8b141bc3e02d"
+          "inputHash": "1d760e846c34e5a18ab94de8535b27cb7bc28e9d34f3c1b97d11e08faf5c5638",
+          "evidenceHash": "f5657f24540eca41df94aaa801f0404a11e1c81fe8d636c62847130463633cdd"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -36164,7 +36182,7 @@
             }
           },
           "originalInputHash": "b6eaf24f03619f1dfe254540857788de44c1b97794ce1ce358e684d03ab3d332",
-          "inputHash": "b43cafbe77f656f2613e9728e21a733484a0bb8b6912f7b56dab5614a04c1633",
+          "inputHash": "63ab06f4fb1049fa4813b566975dc5b8d6b8f7f6e0cbc5bcfd4e4a40fb3a8c76",
           "baseFeaturesHash": "0a0432d2121f6f4b865ea86e9fd0925e8a14ffb8371ed7b00324f33e7539c231",
           "evidenceHash": "b8c006ccce9175468e2152fe4ca85c125dc0f9e6910bea1d118bf64395e5c38b"
         }
@@ -36762,8 +36780,8 @@
             "Guru"
           ],
           "originalInputHash": "27b4e3632db228bf215f3c5c654cf319f99e1765e0b06ed38bd3286b69d3d136",
-          "inputHash": "628d91144ad3d53e73e781cfdcfe30ae7741659ddc522cf3b2dd44308c5ddec2",
-          "evidenceHash": "6ea8862d5eebac989c9e8b4ffe3be816878f340ca32ddd0b65fef25b108dd8b0"
+          "inputHash": "80bd145256164e667fa506a5963b6566779fd0953ff283c95164cbb2370e7c63",
+          "evidenceHash": "9aac49d643dfe2711845fa1e47e3a0c6a1b5f0d971a6bb8d675e792967b99218"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -36972,7 +36990,7 @@
             }
           },
           "originalInputHash": "27b4e3632db228bf215f3c5c654cf319f99e1765e0b06ed38bd3286b69d3d136",
-          "inputHash": "c351b3d48862db09985b4b32cd56b483f905fb860e6dcb17fd8f8cb89b4117fb",
+          "inputHash": "35882939fa1327b507f5b9aa55e26747beb6510f5ea642d4b0a247884e71b125",
           "baseFeaturesHash": "fad9552326cc19763c304a48d315dfb0b188cf910283a9dda7f95d85fc724d4d",
           "evidenceHash": "1baafe90f86e20b3df46d58a98eefdc5aa655237904df41260e5865dfb33bae5"
         }
@@ -40248,8 +40266,8 @@
             "Śiva"
           ],
           "originalInputHash": "aef219b07e5b04390b4cb368df9b6179a74d742dc0b1a022de2b7866cb331756",
-          "inputHash": "9c1b156a6bf9df0e56b40d511ce588a04ba07f055938710d86075ab23d6994e4",
-          "evidenceHash": "28bca34debabf70e258537d818839717c64e1116056bf3b9343b12d480fc036a"
+          "inputHash": "c7cfaa07220fe02bafb973b50961e33b02f024c626c6aafe932855e3a77dace4",
+          "evidenceHash": "8944bd838bca7430ffcefce52fa8bb3c292240ff9af29ca5ffad857effe218b0"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -40766,7 +40784,7 @@
             }
           },
           "originalInputHash": "aef219b07e5b04390b4cb368df9b6179a74d742dc0b1a022de2b7866cb331756",
-          "inputHash": "23b18c0d7d5b3e6f7e7e5fd4f73489e9ce0b54973d9d907f20b1b3d2109b99d6",
+          "inputHash": "90a0fbfeb256d78e7e0bf8ad607ec6b9719fbfad73ffbc8a56864efe84104eb6",
           "baseFeaturesHash": "9c4e96ce5df9bd7eecc0840a2b7ffc17216ca5532c61509d2a172ba60a788e6e",
           "evidenceHash": "b12bd8b971fe29af6ac560a19701e3055c915bb63f398e4a40fb16bfa6c58c5d"
         }
@@ -41779,8 +41797,8 @@
             "Guru"
           ],
           "originalInputHash": "409ac1552fe0160ef002df1d149882a1fedcdeef5f879a33785a393abd9f26cd",
-          "inputHash": "e2bcca9cd0dc7b95f033f0ba3e115bb945ea083d18ca4074583059305d075591",
-          "evidenceHash": "d65be206bf50fb40cdcfc3722621a7a0d33d9ea07ca4702002cd0e03c1b24d35"
+          "inputHash": "700886a8cc29fdc4a152d1f7938d90b9a41ef784a1501e1d45cfe6caa0cdc2ae",
+          "evidenceHash": "6a230820f92f5cce4e3f273ebdc5d6d4f1c8b423ad9143cdfeef4fdea8e43b33"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -44492,7 +44510,7 @@
             }
           },
           "originalInputHash": "409ac1552fe0160ef002df1d149882a1fedcdeef5f879a33785a393abd9f26cd",
-          "inputHash": "d7204c397b9b2c2a567898ae3521867d3746bf44ab7f96b03a8e7d4b23708e8b",
+          "inputHash": "61c58ca557dae5279b4b76f370127f899f79d18693ee50e03e96444b99bd21f6",
           "baseFeaturesHash": "a611803e2515b89961b33f08ad38992c713bc5b321218d8c9dda5f28ab999d90",
           "evidenceHash": "9134401542c914f7771af23bedfd3c432dc8f4269e72fe725bc41114e7192360"
         }
@@ -48229,8 +48247,8 @@
             "Śiva"
           ],
           "originalInputHash": "1ced82a857e58d55a68201d466dbd65a9bcfc8a8c36b4337d0bbc092a467fb59",
-          "inputHash": "4dc5315c561806d27db628639981f117ea284933d2f70469b4613767281ef66b",
-          "evidenceHash": "b3fa9681f66c0b30988b02d2a34c6420c81ae6a558a7383c4cabedc23462553f"
+          "inputHash": "69f2012be0f607ccb20a9dfdecd25c75a8a9b914a5742e8d26b0e0dc33915645",
+          "evidenceHash": "e005e031e7579e314a9a7b2e5dea31a1fb50d5565e20c87dc0bc2bfc305ed36e"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -48844,7 +48862,7 @@
             }
           },
           "originalInputHash": "1ced82a857e58d55a68201d466dbd65a9bcfc8a8c36b4337d0bbc092a467fb59",
-          "inputHash": "73360e985ede36976f765da02ee4f4230c475745807cde377fd0a96058ee2961",
+          "inputHash": "dd285135f3efa90bf54dfef695ddc7cf74b5eb0713d0cc925f67d6baa9bd141f",
           "baseFeaturesHash": "c01a7c271a765a07339ca41aedcb86630ee545bf5985048ecf56bdfed78fa7a7",
           "evidenceHash": "0c6120b1e11dfd3b14a7bc935f730f5fcd4b28897b21ec001c72f902a1277c34"
         }
@@ -51010,8 +51028,8 @@
             "Hanumān"
           ],
           "originalInputHash": "9f111ee95262e932b7be1919472566b8bbe5cb240dd82c6faebadb5dcfc58f98",
-          "inputHash": "66d21639d6de98d05089cc7d8f05eb18dfdcdd6692aa2f0abcab9cb7791c1616",
-          "evidenceHash": "5f9f84deca0ed33548d64072955cd737cc72dff99c0c3a50ff541e5269ed63b5"
+          "inputHash": "d556d95bc5a7e603b78e326b8d146fe863deef3e8d307af459ab59ea09cffd5c",
+          "evidenceHash": "7543ec655eabfd7065d26686849d40f6b0a13cc7034007f4f2db022d82beb5df"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -51207,7 +51225,7 @@
             }
           },
           "originalInputHash": "9f111ee95262e932b7be1919472566b8bbe5cb240dd82c6faebadb5dcfc58f98",
-          "inputHash": "44a0bc25d55c8096b63c57a7dd303d7b58e0fdb1f086e99182280e0e9c5dfda9",
+          "inputHash": "d5dd9b9776f38de63886b0cf96d88e75d4cde7805683eb23e22b1675395939b9",
           "baseFeaturesHash": "e50e922bf475e7b88e9df40379f5f165668ffdecfd6182f17b69c08de62acebc",
           "evidenceHash": "458476ce5f98c7be136add1d3ae39e4dd8c84bc03bf2fb864e5b2f27ffe8ac09"
         }
@@ -52356,8 +52374,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "5c8b7417e191ba5b73456ac234d49895a46d99abd35ccc26965c0eadde00c7cc",
-          "inputHash": "0f67e6efc073f2a166281cde9e745b31884dd9cb9255448925c77ba436bf9995",
-          "evidenceHash": "b7c7222b6241c359e79a67159a103da9502503d7b004032166f1c7d9489c221f"
+          "inputHash": "37d386b549ecbd4a5823aec5be71eaaa9765e040f0403929912f822b90977baa",
+          "evidenceHash": "581a45b3c7ae9e216ead16a7fc689c1858b76d7f2be592fcee723c6a16e5f4ac"
         }
       }
     },
@@ -54196,8 +54214,8 @@
             "Kṛṣṇa"
           ],
           "originalInputHash": "74513735cfe14f5e0c060583aaaa57609179d3ec118a6f7a1446169c4369b853",
-          "inputHash": "25c0ef589be8b8706d8cd361a65ff25cab1957280b1dceeb1929758e21999f25",
-          "evidenceHash": "381beb845044b4d86ebd0f65638869158695699d85721798a03beb9ca1ecb0f3"
+          "inputHash": "3dc26ae6b25b45ad6740de166d6cb5e702eeddd6cb92ccfb80613a09537d6869",
+          "evidenceHash": "87606340f15ca845b73e9934cc8780bde939fa09c0994389cef7ca9a2ef9854c"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -58277,7 +58295,7 @@
             }
           },
           "originalInputHash": "74513735cfe14f5e0c060583aaaa57609179d3ec118a6f7a1446169c4369b853",
-          "inputHash": "60d813243f797873eadf41a7e98c8621765bc131820484fc13049752792877ae",
+          "inputHash": "194f87637ec55ee6dd131e34efdf3970247650beed58ec17327abb4a459beccf",
           "baseFeaturesHash": "5ca055e327db98115edcc991a71aa778acb9a06259a8aa32e718d197d6159911",
           "evidenceHash": "4d8b15cfa3457edee6a67450b20af9b61b8e5c9642c72da81c1803124e99d448"
         }
@@ -63025,8 +63043,8 @@
             "Kṛṣṇa"
           ],
           "originalInputHash": "3c3992084ba262c18b6722be7a6d858d498478003a9c91c9574aaac00c7bc7ca",
-          "inputHash": "bea91c3f730c96ff12124d41b12ecab52ca57338aae581f2ebceabbafd3e977d",
-          "evidenceHash": "37ecbcc32ae13973570c1dcdb064c0264eed4c0991e620bc57ed644bbdf0d8ce"
+          "inputHash": "92ccae4ac55f24e7cc4224c1ca4eeca8d9f94352371838ed2bff003eff8b7da2",
+          "evidenceHash": "c06fe73e9ce86b04986a92899ba9f20db01b7e6ee500d37f96038fa8f81f57c6"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -64572,7 +64590,7 @@
             }
           },
           "originalInputHash": "3c3992084ba262c18b6722be7a6d858d498478003a9c91c9574aaac00c7bc7ca",
-          "inputHash": "c337f079f0353d2a51323595f01f6f234520fbced52535a4954e0f895a4478f5",
+          "inputHash": "7ea89d6d110742cea61245ec4408e6b45aac56eaf454f82f7a98a26c74869da5",
           "baseFeaturesHash": "efd31b5d3358a9d4af42172fc03fbecc0e9529a54dc78a7cf0d287d82e4134e3",
           "evidenceHash": "6a081bfe3d00d39e9dbb8139c1cdae9a66abaaf67a0d53d092ad9c68d0ef77da"
         }
@@ -64724,8 +64742,8 @@
             "Guru"
           ],
           "originalInputHash": "e9d1ceca06182ee2a0f0e3a9e3e735d763bb0942fd1dc757835eaccf0d09be81",
-          "inputHash": "1b3ec2d4922c357fb2dfaad0497b48fa9af63a88764859dea9d9775fbec79e3e",
-          "evidenceHash": "48ac3bd52dcd422e8dbae794e896989fb526ce447cf0fb50c54ffcd3a0623ee3"
+          "inputHash": "457a1500ef97f8f5c709369f02724739ee3db020bb57ca1eb4be8ba63ca5c28b",
+          "evidenceHash": "ba15bb954db787e8db318a2aca87df6beb92985df172693268351503ce179f58"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -67852,7 +67870,7 @@
             }
           },
           "originalInputHash": "e9d1ceca06182ee2a0f0e3a9e3e735d763bb0942fd1dc757835eaccf0d09be81",
-          "inputHash": "e773328b6fbb3b5c87bb605ab6c732e3febddff644f7d389f9892be62573855b",
+          "inputHash": "0b5060ce121703146749e8f016983ceaa22b6443bd1a7aec29b565a18064cb6a",
           "baseFeaturesHash": "7ec6cdc7857f18b53f0a6d0ede4e8baf9bf8d8cf6917caa10a816d8540332645",
           "evidenceHash": "119080bc1463f63d28e4a38dcb548f8974936d6d5980e3e78ab4ab71992ccbae"
         }
@@ -67991,8 +68009,8 @@
             "Kṛṣṇa"
           ],
           "originalInputHash": "55db1ec3df330b20bc1321b726c6b0d6f752ea2206d04c59c6297c13cf8cbece",
-          "inputHash": "c53a80e40a57c105270734d4440d5b810edd55fc19c6533331d66c0b14a128b8",
-          "evidenceHash": "0adcf80d71c20d96e8e80b91f8724e1c9afac3fbc3769d04ddd51eb9bc9ef033"
+          "inputHash": "c3bf19cdfcc0d130c5eba7359d61d3422653e34598bfaa695041ee254ce38552",
+          "evidenceHash": "2c7962fb8745af695c8d083e9164cef86ed9b19538d81bda81e1045558427892"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -74832,7 +74850,7 @@
             }
           },
           "originalInputHash": "55db1ec3df330b20bc1321b726c6b0d6f752ea2206d04c59c6297c13cf8cbece",
-          "inputHash": "9050979db2fd99c4eb4465b9465f87801a3bc76c1cc9586b7d2d1c505e39a6cc",
+          "inputHash": "05501f626f3b1f90730182477a482e05c9f032e658f3bb8c133161b8f1afe10f",
           "baseFeaturesHash": "60767dfbf1013289af48faa8517fe65e85156e24e346d86add351ac884dc57df",
           "evidenceHash": "cc5590120b7191e88acc16430a3e9b0b3705fbaa3d524ccec25ddf0174fb4788"
         }
@@ -74936,8 +74954,8 @@
             "Śakti"
           ],
           "originalInputHash": "2e9408cbc5607848348dad39caea77d2af474255b342b6af7a4d0d5c6a05890c",
-          "inputHash": "c09d9cfcaadbc9bf3126b680947bfb0ec6ef24baf50f5eee825f0424d4a2e13b",
-          "evidenceHash": "4520e3df457a1ac072dd928ff2727b581c9e26db37752c73675a2399742d3c96"
+          "inputHash": "0c984910343a036fd475d0301521e2b5a8b026a39a05d7c0a1e1c05d8c7ee707",
+          "evidenceHash": "43cfa44b0c2e6afa11c002ef42a9cd868dcc042e873cd2aee04c4abaeaa264bf"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -81275,7 +81293,7 @@
             }
           },
           "originalInputHash": "2e9408cbc5607848348dad39caea77d2af474255b342b6af7a4d0d5c6a05890c",
-          "inputHash": "559c51f7895e263de930199236cdf973286d1f19467b61c3c20dfab44d91ddb9",
+          "inputHash": "b11e2c8894c7c737ebafd125c19a45b3eb4b3c344faa30ac033405ded0ae673f",
           "baseFeaturesHash": "29bfdc3848dbe2647f97e08fa8e6ebcf3c7ef4c4e308bfa64fc8aa6f96cd1fd7",
           "evidenceHash": "376bf8fe8e98cde87b42b76dbe25a1a97e465bd3a7f6cb8b08f8a33fbcfa96b0"
         }
@@ -81770,8 +81788,8 @@
             "Śakti"
           ],
           "originalInputHash": "9f908b8dfb9494f55c2e6471d02b7372e6dbc515ec2f0288eb44384c478d217c",
-          "inputHash": "b1b8b577e7cddbf1761acaeba5e7eb341edaeb9ebb9b8ba9659b7cbf1fec5a13",
-          "evidenceHash": "bd2ca00a40d6a20481ff706d0aba136f887e8715c811d2091bc64c182e7526b0"
+          "inputHash": "e76d75daa00b23e25f54aafaee1df4db3afb32a26e4b2f2d58a3cea41995f045",
+          "evidenceHash": "fd8cb4535f12c3da5ebef0a5584e684150dadcef430b87bfadf56677da1e4c95"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -82266,7 +82284,7 @@
             }
           },
           "originalInputHash": "9f908b8dfb9494f55c2e6471d02b7372e6dbc515ec2f0288eb44384c478d217c",
-          "inputHash": "55fb2446757499878afcd60e100120b979e8005524405b56e14ad14736e71dfb",
+          "inputHash": "7b39a460e66357522cacc6a80d6cc94ed180e8d09031f7da796cc491df18eeec",
           "baseFeaturesHash": "866e6dca1bb3d4252ae0d502ea7bb95e6817984065c2a937162c67326fb32a6b",
           "evidenceHash": "8b73ba135e7d341da8b4c606ff20e2f72e463f1c04c7192bbd767a8b332f72b8"
         }
@@ -83027,8 +83045,8 @@
             "Śakti"
           ],
           "originalInputHash": "09ea08ab69457afa2e1410a4e1baa8331e143bdb8dacd6012903338f386ae0ae",
-          "inputHash": "9b65b52d3207cff84b0af8135ce528f5da73fce13e204aae28f942e6d6372b0b",
-          "evidenceHash": "700de5b4b788cf84553b069a8a690620ff5140fd78d0badc6357751f45c236c8"
+          "inputHash": "eddff64b779b0517e88004e56451c86cf0ac372ef036a967c54e7d238cdd7d1c",
+          "evidenceHash": "ca596a20554c502d64a44977b955546c22fae940e36a6ce34d2e5fce68d65e72"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -83094,7 +83112,7 @@
             }
           },
           "originalInputHash": "09ea08ab69457afa2e1410a4e1baa8331e143bdb8dacd6012903338f386ae0ae",
-          "inputHash": "993f28d8f5a955433c0806dd2000c12cfa1adb2275dd74cd73b01fd18fca1f11",
+          "inputHash": "70c98e63cfdd8450bc4a9a2bb8d084875a2fd3f5820a9d7219b33eda54f7cc5f",
           "baseFeaturesHash": "3dc3fd2a7b09f99720708947f712c9c445ade25155544a77b9c37a78834de896",
           "evidenceHash": "18c7a090f1c309eb293fd921995012721cdaec9ab7fa3b8730f2b0c9ff8b6525"
         }
@@ -83200,7 +83218,17 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Gaṇeśa",
+            "Śiva"
+          ],
+          "originalInputHash": "41f9427283a277e8c9ab398cad92b629017f256d4a79840fd2d1e6c6e7dd5300",
+          "inputHash": "efa43b6d672b4652410fc169af16f7da703c604d2c526b446dafa6ccb11a94a5",
+          "evidenceHash": "e9e39cfddedeaa1aae94aab6edd23bf715e73bb2a347421446bdd1211ad160f6"
+        }
       }
     },
     "d1ab933f": {
@@ -84002,16 +84030,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śiva"
-          ],
-          "originalInputHash": "4c1f993adc4cb275fdeaf99a1f7b4757e9bac01e53cce2e419c3b8a56f51d39a",
-          "inputHash": "a2965e671a8145799139c94cfa2f3dbe393ef3a9e549f131ea0eabc1067cd957",
-          "evidenceHash": "8b1a4265284c40e3d2f59e5a414c59445378b6bc36bc7e049f77e471af5e9ec3"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
     },
     "decf09b9": {
@@ -84376,15 +84395,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śiva"
-          ],
-          "originalInputHash": "1b4d083d20ed4a16577e7668881e8a676551e9e24e238b81ccfa60fd7f1eb9ce",
-          "inputHash": "c8c9c47153acbe3333aa63697996f07fa88672b7734ae85c3ef9007ae7fcb377",
-          "evidenceHash": "5e181569f0538a7fcdcbddb653a3761872fa963dc14900dd7baac86baa09e87b"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -84532,7 +84542,7 @@
             }
           },
           "originalInputHash": "1b4d083d20ed4a16577e7668881e8a676551e9e24e238b81ccfa60fd7f1eb9ce",
-          "inputHash": "a925fa2006099580b208608195530bd8ed0948c7a6c610e40687a186bb7da1a7",
+          "inputHash": "c704bf88c4321a1958aa4637ba7da73c26105ecd55f50063f544bea9571d3ece",
           "baseFeaturesHash": "37019a88f700579b22b79ddd153fac9d311c7430635db141e3b5e48b92c5809d",
           "evidenceHash": "ef52a5afcf15efa4ea763727c4f33b38fdaa14f5a5163aa00479116495d16f31"
         }
@@ -85147,9 +85157,18 @@
             }
           },
           "originalInputHash": "45ae6686448ed09e856decf53da3046df7fe2286d0518acf1098fc4745b24c72",
-          "inputHash": "342dc9e56da7a868d2f7c2081cb1e58e0497ebe3051407ebfcb4d47b82e59124",
+          "inputHash": "b4e89d952300b57ae00f702c317405e86448f07832808c3192053cefc5e42e60",
           "baseFeaturesHash": "463891c1f8577924b132e1e5c813fbb52128917a37421aa37443d187bcf35157",
           "evidenceHash": "02c3cf90e2e3f9906362fe69e239b640bacd7c7a402ccfeda08397a071ca4d6f"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Rāma"
+          ],
+          "originalInputHash": "45ae6686448ed09e856decf53da3046df7fe2286d0518acf1098fc4745b24c72",
+          "inputHash": "16ea4a981c0c1b3b205ae48856338beb77fa3ce2a6b3419fa148b3106d4a25c4",
+          "evidenceHash": "8509264584a8bb953eb312b04c0e87ae5577a3e264072471023969a2afc9ff72"
         }
       }
     },
@@ -89012,8 +89031,8 @@
             "Guru"
           ],
           "originalInputHash": "14f78a7d494e8be04395c46a17f26468214e89ce00e1a5de7176a1d1ed22402e",
-          "inputHash": "aea4b5002e6df2696a2ea46ece32d1dedac23ab007042d5eb6c17ba5aa4cb252",
-          "evidenceHash": "9be3033ca3b13fc191846a41ab432080ae5862b007be39b4b927d58270da0f4f"
+          "inputHash": "07b7bbb1090d747a4ebde7ee14379a87d0bc91453f73e1afe82a30c82066f6e1",
+          "evidenceHash": "d936984ae71e014bbfcd655f2a5c5dcd660cf138dae80939e31a578a6a6693a9"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -91023,7 +91042,7 @@
             }
           },
           "originalInputHash": "14f78a7d494e8be04395c46a17f26468214e89ce00e1a5de7176a1d1ed22402e",
-          "inputHash": "6d9fad62edea55dd7661f83b06388d0dca184d0500e2b077aea50807f4b334f7",
+          "inputHash": "c6498874b127f2f449ffefc07d6e54195125fb17f16b661a5ddb146c9c0c5939",
           "baseFeaturesHash": "b994cd1c1fc0da35d9480f1b99910e793bb30e106bccf08c54cfc16fde93a248",
           "evidenceHash": "c3386cab5f31b2dea0ce6715a04df67b9ee708924309a73e972b6e69bb7a8163"
         }
@@ -91135,18 +91154,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śirḍī Sāī",
-            "Rāma",
-            "Guru"
-          ],
-          "originalInputHash": "725132f4350f2e88a59eea3a750da23d0f25bc399bc7355996377dec74a1c75c",
-          "inputHash": "4a422400794694fd65abc5904eec6343c7aad67fba0d6695e38e16a027ad5ab2",
-          "evidenceHash": "b0478e71d5aca8c037141512ecf461ceb5f7e1b910a4cd443b015d30d586a33d"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       },
       "audio": {
         "inputHash": "9fc92790b68f8bf2f1bf187dd443fb8fb38d8ef9aed4a51d048c17b80005eaef",
@@ -91263,19 +91271,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śirḍī Sāī",
-            "Rāma",
-            "Viṣṇu",
-            "Guru"
-          ],
-          "originalInputHash": "1ec5e55f44eebd2e9ba81962e32fdb38fbe30b0747e11d56982b9c61aa81d8e2",
-          "inputHash": "a8794a8ed0a9e287c94d04506aaf74b933c3f12255b1a212613949e4d95bb608",
-          "evidenceHash": "a276fd0ffd345797b42c3ec964c0ad4ca415a5198d62f2a365c3272e6736e7fc"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       },
       "audio": {
         "inputHash": "4e5de247e489fab82311985b3dcd46959a572f521a0dd0f1f9b5c0d9f8d68009",
@@ -91406,8 +91402,8 @@
             "Guru"
           ],
           "originalInputHash": "da6cb543575a90f9a899d4f3ce5f39716a7e09438c60f928062b8216c9acee1b",
-          "inputHash": "7c8bc7b57064014b137458faa8cd03a0ea7e4716eabb0a7c8e67f404dfb53c1c",
-          "evidenceHash": "895d70d11e1c36e3c954e9695c7b5d5b1e5868e715e56887d8aeee2ae4c21fde"
+          "inputHash": "1ac051cf80398cec6da2764bfb09a9183fc68f943218df62142bac59a802d2a4",
+          "evidenceHash": "e31844dc5ca5c6641d044940c15ed75a97dd3cdf7252fa2c4888f1b4bbf7da76"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -94562,7 +94558,7 @@
             }
           },
           "originalInputHash": "da6cb543575a90f9a899d4f3ce5f39716a7e09438c60f928062b8216c9acee1b",
-          "inputHash": "df032615e0e052ecd896f4d0e2f697ebee7f3b1e7966d9aac80cd663a1aea771",
+          "inputHash": "db7f3bb0d371b3dafdbb34f425ad0c31e525b860a57f3695728970576a8b4023",
           "baseFeaturesHash": "911f9b22404091806976c2194ff5f9d44179933471696b153ce77b738cf2b97b",
           "evidenceHash": "7e7c8cb787c454d5ccdeb01fddb544769c6c2ccc1872bf18076d1f6247382a21"
         }
@@ -94728,8 +94724,8 @@
             "Śiva"
           ],
           "originalInputHash": "8a5138b5814d3812fb24139ed10c1922bd1e7726a1b6f45672ad127a0ff2d629",
-          "inputHash": "cace4a2fb9c2fe74c975649dfaf9b4cee14e6ba908e068452ce62068392c1807",
-          "evidenceHash": "504bd85268eb0aaef1ed5184c76c3cb5c1f52920351e5bbd2a13d1ce8f874e28"
+          "inputHash": "145f1a5a253b72965a48e07013edb1ff7d5d20cb09e75a14529592cfe044a119",
+          "evidenceHash": "ece78e2fa00c78650d687bc934f1b8c0df4e673db88291a5250e768f87b7d296"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -95423,7 +95419,7 @@
             }
           },
           "originalInputHash": "8a5138b5814d3812fb24139ed10c1922bd1e7726a1b6f45672ad127a0ff2d629",
-          "inputHash": "7d8cc1dce35971ba09c857bf25a4113479b866cc48bba8aa533c0103e2fb416e",
+          "inputHash": "83dedf55ef41ecac1dca1dd703cf9c1690bddbdbb2b78e8642b5b97c41f91925",
           "baseFeaturesHash": "2ca92d8b985e6ddcc357c5d05d0f189fa31eaa12c7da8a30aaf8170c3fdba2fe",
           "evidenceHash": "c55ce53b81173561154c324dc288882babbef5a6d32db7d503d91ff0db39b364"
         }
@@ -95537,7 +95533,17 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śiva",
+            "Viṣṇu"
+          ],
+          "originalInputHash": "dfdddab6dd5e9b83c89b3b0c4c2638166c484f0cd9ccbe3c5bd77d86df7e1e97",
+          "inputHash": "b2b6be31d4729e1661eeee2369d2eb8c81e4ce0ebf0814d67145067059fe6042",
+          "evidenceHash": "09a795c4ac8b3ae9dfca2b1e00b2e7c474963c88e6f447c5817cb9e0ca60bf0d"
+        }
       }
     },
     "a35f026d": {
@@ -95645,15 +95651,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Kārtikeya"
-          ],
-          "originalInputHash": "5b535583d2a036e900220f252075927819e7d35731c437fe4af3c11fe7865340",
-          "inputHash": "76cad5616c6804986ede3ac96aec70f73adc0f8adf934167c8755e4f7f1c3eab",
-          "evidenceHash": "d4c958677d7162c609a9e1715981151b71655b9f18cd600660be5c999d5eb800"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -96134,7 +96131,7 @@
             }
           },
           "originalInputHash": "5b535583d2a036e900220f252075927819e7d35731c437fe4af3c11fe7865340",
-          "inputHash": "18dc790da83315af890e5648865690440d6f9ffadaf7fcf3316a5484ed3323ef",
+          "inputHash": "65cefbe07508ae0529ed15d0c8980e14f9539e2624e4b96be8baf496b3f7637c",
           "baseFeaturesHash": "5f862e0e5aa33ecc59467cfa27c0ebe6a9e08e6770fa11d0d0d560bee3537f55",
           "evidenceHash": "333f08f5daa09d129ce0b8d3cb73820ea4da3bd783ee3c1baf78a70a76a214bc"
         }
@@ -96471,8 +96468,8 @@
             "Hanumān"
           ],
           "originalInputHash": "825e956eddff03565ac7ef50a5c84876e0347f8a1b3226a03edd28cb8893f8b9",
-          "inputHash": "117bbf230b4392f456d8445018ebff4a489c8a0d64978576c721afef3826a37e",
-          "evidenceHash": "b766448fc764587d90901a95d7b218ab712202d71f72b60aadd7a8695c7f72cf"
+          "inputHash": "4681db7088e2297526be00f98b5ed45830b4b437a4eb85f30653978bb4523b07",
+          "evidenceHash": "bf767c9f110c7b232c48ad87db8e3fab844e5754ab3a200cbd7efbdf3e47e3d6"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -96988,7 +96985,7 @@
             }
           },
           "originalInputHash": "825e956eddff03565ac7ef50a5c84876e0347f8a1b3226a03edd28cb8893f8b9",
-          "inputHash": "08cae975dc85e90ea5f787dc10a3812396d8617621ec36b68c5b30165cda594a",
+          "inputHash": "0700128b710d035c37da6110e3e79411f834c4ff6598fa40d0e366c2261c68f2",
           "baseFeaturesHash": "820e4b238fae54e36e23bb6d57f89b1fc9a9b3a239476df25784f0b02a720914",
           "evidenceHash": "297d2227b3ade516b7ecefbe73affafea7cdcc1b6677b538fe91d67690ed9ffd"
         }
@@ -97534,8 +97531,8 @@
             "Guru"
           ],
           "originalInputHash": "97020c52f5e0ccdeedddfa58ff7d3ccdbcadd1141da8bdd74a2e5b134d93875f",
-          "inputHash": "e1afb500e5211fd7b9c72514e94851cf6833d836f901bcb35698f655eee6a3cc",
-          "evidenceHash": "46f11758078fab8885d62f047294540623f0d698e31d11935f1c68e537c44b88"
+          "inputHash": "b979b0a52f964736ba3ac24ba9201db69ca1166ba8420f4fb50784616b05235c",
+          "evidenceHash": "407e16d79117e08304649c1bd05bd660c180ced90af67f12fa897e7a0fe7f6eb"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -98227,7 +98224,7 @@
             }
           },
           "originalInputHash": "97020c52f5e0ccdeedddfa58ff7d3ccdbcadd1141da8bdd74a2e5b134d93875f",
-          "inputHash": "08d413301d35532b510f19e7f48a8d38c8071114f845ba3549bfea610d36c8dd",
+          "inputHash": "f4c60daeafd6114517c6d469acb47763c840ee7f517bfb5ac202ee08fa0dd3ad",
           "baseFeaturesHash": "677d451aa7ba7885a6bb912642a51f422253a4dadb6c82a1815edaa252ba6bc3",
           "evidenceHash": "b6e6fcdb47102fc91ed1c167f1844ff7d6f93eef260327fdf7b16c99e0ba0c90"
         }
@@ -100419,9 +100416,18 @@
             }
           },
           "originalInputHash": "08666a302f1e82026221f3a3410f7d896df2c1798c2a886c4260d4b91df6e9a9",
-          "inputHash": "22ad8caaf6bc99a5c2b2cd32f8cdc886bb414faff457fee2c9899f36f0ff06b0",
+          "inputHash": "33654a5acfce63ae06043195e15e5c61f0448552340ca7d673e4732a694886c3",
           "baseFeaturesHash": "df3465ac67f9efae17cd65b53ca87e9d4c7dc683cb55b22dd655ac83bd5da076",
           "evidenceHash": "25e55497c7b788fe61e370284882b531976a556dd6d127dd58be7ea976a364c9"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Guru"
+          ],
+          "originalInputHash": "08666a302f1e82026221f3a3410f7d896df2c1798c2a886c4260d4b91df6e9a9",
+          "inputHash": "d6038058c130e670160fac89f904255c9f5692baaa544b1d2a3205218d645097",
+          "evidenceHash": "363e60dc50111feecad47a176b0d9c6d4664aeb9d7765cd8db0656b50902f709"
         }
       }
     },
@@ -101251,9 +101257,18 @@
             }
           },
           "originalInputHash": "62d1db939cfdeb53ba86d4b7f4737ee3d17546cb64847cbf312a6d98da88d027",
-          "inputHash": "76978f29301f655f46fdea66a5f74aa27d5859cada604f0ea0133cba865b78c2",
+          "inputHash": "48e41b39986597034be12ca9ac9f006b793a15474978e8ab6986af34d08f4aa1",
           "baseFeaturesHash": "a241a7c5d379378607611b5490f2fb377c070de5d4f15970fdc42b5380ec908a",
           "evidenceHash": "7c83ec3b66eb8e330726ff264729756fbff3af8146ea0c0a0efaa98af499edc4"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Guru"
+          ],
+          "originalInputHash": "62d1db939cfdeb53ba86d4b7f4737ee3d17546cb64847cbf312a6d98da88d027",
+          "inputHash": "00ad62f9fa2fd53be3ac4fed53e09360b88c3636b12a3c90e802c077f8b74284",
+          "evidenceHash": "9a2cda4540e07d1d2ff1c3da22499199e35fd45ea82535df0e10940a7bd92d2a"
         }
       }
     },
@@ -101489,9 +101504,18 @@
             }
           },
           "originalInputHash": "6e9f1724c14491d0cea06b8b130f41dba479d9ee3e5ec0c3fdaa15be56fa1151",
-          "inputHash": "c7f40da20b50667e8292d49b1318134a441df73083e9c2cab460e531e3202e36",
+          "inputHash": "2f264c52e7beacf23fefd75a7215619a17966206eec9460d1e986620760f2096",
           "baseFeaturesHash": "2301f2c680d4a01ca5975ecb1f31ddc2dbd1d23ecd079b57967054563e731dc8",
           "evidenceHash": "b413b14762a6148f1a890a464c1801de915d06b3db174c2efda3e555d8d9c542"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Guru"
+          ],
+          "originalInputHash": "6e9f1724c14491d0cea06b8b130f41dba479d9ee3e5ec0c3fdaa15be56fa1151",
+          "inputHash": "76b077fad2b8d59b2c5469086beadadb8a0c1505094ecdf665ac6f1e007d8963",
+          "evidenceHash": "44d167f3b1f79ab99220c664f60d79c5bed306aef82cd89bc067e400650c1c91"
         }
       }
     },
@@ -102686,16 +102710,6 @@
           "evidenceHash": "928c4a700dc6f7c78dcc8450fcf31642f79b4d5e910843c3973766c048af2b72"
         },
         "editorialAdjustments": [],
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Jagannātha",
-            "Viṣṇu"
-          ],
-          "originalInputHash": "30bc2448bcf01f7710c5c38518809481481af0b029f1cd028c55fdc2b12ad920",
-          "inputHash": "e25c06711460326eb63c9fa14e60a2164608739201cf3a1cd8a165234949803f",
-          "evidenceHash": "f2f6501cf22df493c0130166b2b55e0a481ea62cbced6fdfa9bfc2f1aa52034e"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -102845,7 +102859,7 @@
             }
           },
           "originalInputHash": "30bc2448bcf01f7710c5c38518809481481af0b029f1cd028c55fdc2b12ad920",
-          "inputHash": "ff52683adb5b64fe1b00c064fb906150b3c40d47b1616ca78ad66f007c10a56e",
+          "inputHash": "a9644e1e6cc932b46346f34c9047236b73e31578ae3bf28e05665a8e86cf693c",
           "baseFeaturesHash": "993c5befd56edb1be83300ff17cfd83715ee8fc074f02e580f12fe2a7f111403",
           "evidenceHash": "f6b3528da1e1f20d08c7cf33dafb4e5e56894a8c79a6b132ce5964659c2da55d"
         }
@@ -104310,8 +104324,8 @@
             "Nirguṇa"
           ],
           "originalInputHash": "49161a5cbc5cbf2f0da41fdfcae92b2bf1d37bab926ff2d3f1f0476d902fe2da",
-          "inputHash": "c48a25c745b779e17b3ea6703766324359c7cdf342005947feddd74a73295e79",
-          "evidenceHash": "0f32ba811eb1d011bf1ee4abde93bb4e2ebcf755ecda2a5218b308dd66a24c5e"
+          "inputHash": "bc2b6e19ef06e9ec3bb53cf309dfdcd593a947737a37b95ab777824432417946",
+          "evidenceHash": "565baff276d450367fd1bd2cca9534cfa065519efb951e96681e91f7f68069d3"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -104495,7 +104509,7 @@
             }
           },
           "originalInputHash": "49161a5cbc5cbf2f0da41fdfcae92b2bf1d37bab926ff2d3f1f0476d902fe2da",
-          "inputHash": "489104ef160a8ff951b2bb2af7efcf93706272966de9f1dcab2d49666dbc17f8",
+          "inputHash": "f9b700714dce07491b438e26eaf37f5b98aba87a8da14e0a78fdf73f6f3c4069",
           "baseFeaturesHash": "11c08382db981184135ee1af6d5450de5ba5655fd79b40b84fa2b3797c225785",
           "evidenceHash": "1f8d2b28c3aecd94f4e7e26ccfe6186643ce86a2dc768c3f166c5a63e1722526"
         }
@@ -104592,8 +104606,8 @@
             "Śakti"
           ],
           "originalInputHash": "803c2bef3c8a536f43d2ae871c96f5dfab02b2c5305934a0e1193f8febc9bf0a",
-          "inputHash": "8f03e7ee5769ce7bdabe63cf5969b511fa88e87879a8ea645c8cc9f5c16c6451",
-          "evidenceHash": "fd82931918a38a84794d35e4ec4ed11b61de4f26343b260d68de082d1c83c386"
+          "inputHash": "0961278bee7010f3f79fb008c2664cf5587bf510f3f25c89525213500ac373ad",
+          "evidenceHash": "c9ebe5bc51b6998bfdae89e339d509bf21271ff67f0818dea2184f622171044d"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -105457,7 +105471,7 @@
             }
           },
           "originalInputHash": "803c2bef3c8a536f43d2ae871c96f5dfab02b2c5305934a0e1193f8febc9bf0a",
-          "inputHash": "8f74a434320f062a247b1e83a2831126be7c943781ca2cc3f672e67062505d23",
+          "inputHash": "085ebe2121692bf0510846fd8909aee99718bd9cfc10c64f2ea6e46c33afa06e",
           "baseFeaturesHash": "5292b92a9d4662d4d83c51e1a210b079f5792fe932cae67a0406cfe50fcf8d0e",
           "evidenceHash": "02525cb02255c27bcf1fa325dd3be6feb4485d20ce942e1be9174448b0d7fe18"
         }
@@ -115391,9 +115405,19 @@
             }
           },
           "originalInputHash": "d6f9d0548535b8e017ab0ac8cb3c6bb665e31143c9284c7c390fb6e5731a3f22",
-          "inputHash": "a65b9541430fd04fc5f9f07d162dbffcb57a38ed96aefe0e6c9daeb7b20462e8",
+          "inputHash": "fa577c346976cd45a854071d173aa2eb5e59194fad816ef6da2bbcda90848435",
           "baseFeaturesHash": "68c02b4a4f2c1913b8f7b1cd5ad1a9c8a6327d100c03563ef213809efc76ea52",
           "evidenceHash": "3d0aa0d4cbeebc5d07c81208c97dedcf934e3e8b945e3aa643449991fba76c8b"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Gaṇeśa",
+            "Śiva"
+          ],
+          "originalInputHash": "d6f9d0548535b8e017ab0ac8cb3c6bb665e31143c9284c7c390fb6e5731a3f22",
+          "inputHash": "e740038ed766e7080e10d332ddd97d98cd4f265d2c980cf85e4e9b179d471288",
+          "evidenceHash": "2d3f579f77549cb1c20b1fd2697a4b4d17d6f21c2a76cd42186b16f4e23d26f0"
         }
       }
     },
@@ -115511,8 +115535,8 @@
             "Kālī"
           ],
           "originalInputHash": "ecd44815d1f768c746e7ea0f32c1f975701a501e2ce0b7c1183638aa6bbe8203",
-          "inputHash": "08cb58b1cfee2bb445e261a2f535b1cf5d8e6561a514b7b6bbff41752f07259f",
-          "evidenceHash": "195dd7e8c51540b1a482bf684ee18c046c4b57872cbd31b2b4fca2f11b819273"
+          "inputHash": "c276a84d0d393f2113040cf3bf388f4be0ef1bee96d2c688c5354c37947eb63c",
+          "evidenceHash": "77a81c72157ea2cbd3059cf5ece03423a8bb7a59d5be3474c704658b57adc20e"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -115625,7 +115649,7 @@
             }
           },
           "originalInputHash": "ecd44815d1f768c746e7ea0f32c1f975701a501e2ce0b7c1183638aa6bbe8203",
-          "inputHash": "3e668e39cb0d564296a30ad5bc4232cbe0dfed601d462e11dbcf4f3393cb5ee7",
+          "inputHash": "c44c57286d4cc929c3e75a2304e9666dca3ee3f7b19977751140d734bf33c92b",
           "baseFeaturesHash": "45b25e90134ab3fb1444ada45b219ff1b88399122cfcbb196d7e48e967fa7fb5",
           "evidenceHash": "40a3270979aa07e4b8853093f3e744fe53dedd5e91351f934b8455f4143556fe"
         }
@@ -115745,8 +115769,8 @@
             "Gaṇeśa"
           ],
           "originalInputHash": "d772e9b8971b46218653cafca7c46e4a15d733b161bb485f70a503c52a4f4e50",
-          "inputHash": "a02cbd1d04f86d9f3d879c32762dfe58a680a08081a2b4fcfe14adb210652f22",
-          "evidenceHash": "90b1e5f62de2553dbf6eb825a43dcc430621bdf1a38459f7dee39a032938a84a"
+          "inputHash": "ceaead88c070db85ae5b796f6252d20c64485b19ac895fdd5fcda0821084ce9a",
+          "evidenceHash": "dc385020f4ed51a02451edb4251bf66b9cf6b01c38890c94d9e87e1ff3196726"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -116238,7 +116262,7 @@
             }
           },
           "originalInputHash": "d772e9b8971b46218653cafca7c46e4a15d733b161bb485f70a503c52a4f4e50",
-          "inputHash": "3502e8b11bfce32a75b0a6d00ad1004bc87e995df929cdd6d2efeb92aa239fe8",
+          "inputHash": "a6b8ae904779df4a72ae44f5ba69a3147a5a80e5d789b5f1c98f0ec78c82aa67",
           "baseFeaturesHash": "848792496081a99e45e3dcee10c45e25f642d52f5ae12a4e5d0f2ce8da85cbe3",
           "evidenceHash": "2d57708f08be0e69bc3d7bc983c4cd4e09cc9000460747f811658ee2bdcf9066"
         }
@@ -120318,9 +120342,20 @@
             }
           },
           "originalInputHash": "61741f8ef010cf2036a1bfee4cb1ff2d4cd9c6b66fdbb08799586648a2a122d0",
-          "inputHash": "813896bb460fca8ce24dd78af72249e690034652e9aba6d2e3594e151df39585",
+          "inputHash": "98c6cee70ebb89f5049c910186131bd0f0edc8274c6c06279573f3694089c49d",
           "baseFeaturesHash": "d246c2af01270992a62490f0d21ab86ebaf740dcc1688d689a2f0ae04394af91",
           "evidenceHash": "a213d06eaae1363883ea671265e4ad7a49054953cd0dd0c8e2be8e65cbf01a2d"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śirḍī Sāī",
+            "Śiva",
+            "Guru"
+          ],
+          "originalInputHash": "61741f8ef010cf2036a1bfee4cb1ff2d4cd9c6b66fdbb08799586648a2a122d0",
+          "inputHash": "6792d0b2f95da5d4df6afd749b1ea28c6a51e5ae7e65410dfb4870b954e12c9b",
+          "evidenceHash": "036392ed55980cb6eed7d2af46d3b218b895e079335e31e23567183108ec2d7d"
         }
       }
     },
@@ -124438,8 +124473,8 @@
             "Gaṇeśa"
           ],
           "originalInputHash": "ba449e2c9871a428065ef4cdddce32c02abce57283a3794beff08a3403904e44",
-          "inputHash": "3f039538b939668fa3aeb5c77c902fd49049426883fcb863a525c7e905f90af7",
-          "evidenceHash": "22dc953b4ff4b0d83182437ad6ba4e7c25b7063861979df01eb92154e589dedf"
+          "inputHash": "bfe545433f487a5b6d2ec2c3cf557090b431dbeb7e598869d35d6159ea6261ea",
+          "evidenceHash": "9aa6a67974921dafcf5476a6e1a09108edabe1b6253f82627c58c0dbefc6e191"
         }
       }
     },
@@ -124545,8 +124580,8 @@
             "Gaṇeśa"
           ],
           "originalInputHash": "42fe4295bc96b9e2bebc4f65d95d312b1340b4c60ae76413fdba821e0c16cb2a",
-          "inputHash": "3886df3c10c83e6bd1f9192ef34bf8833c3b3bfae1d0cf7649480c846e5474e5",
-          "evidenceHash": "5714a816aa367941f537855939f844b711a1369977b7bbebe897dbd833bbfec0"
+          "inputHash": "86090d68b2ebab6084eb58c2e189a49561c55f5ee4a1325841c0b2d2b5079d17",
+          "evidenceHash": "4a553db639e163bac41441f5b455cab03e54f8f0dd8e0cbb1b4790fbd4cb276d"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -124817,7 +124852,7 @@
             }
           },
           "originalInputHash": "42fe4295bc96b9e2bebc4f65d95d312b1340b4c60ae76413fdba821e0c16cb2a",
-          "inputHash": "b9b68c60e9f9d3fbb01dd7d13d26ec50d73e2d988becdc569f24b0ac889f41e0",
+          "inputHash": "0eca6e49fca8b76335b51fa92db39b8e00b4ac9887ee876294a0754867abffaf",
           "baseFeaturesHash": "3dc3fd2a7b09f99720708947f712c9c445ade25155544a77b9c37a78834de896",
           "evidenceHash": "3a8d404cdea79ff1ff8917a6519d4c01cd827a8941f391f7e2cbb1515ff519c7"
         }
@@ -124925,8 +124960,8 @@
             "Gaṇeśa"
           ],
           "originalInputHash": "5f4cfc7831c22197b651b1077c42c9b15a4985bbd23396963ff940eddf364bfa",
-          "inputHash": "d4bef5923e830aad96bb9683cc9b2a7944b362a3a30c630378da95efb1eb560f",
-          "evidenceHash": "b5aced00d4a02ac756f2df90783aa4dff39831be9b613b6a1ecb46ba38480938"
+          "inputHash": "2ebcb5f6d9378ddd9273899f283036874714208bac1dedec3c745e002756cae4",
+          "evidenceHash": "57731c3ed1bc24bf05b21fbb9fae8b12a3e3b20cbf9c912395bcc9735b1f1f31"
         }
       }
     },
@@ -125020,7 +125055,16 @@
           "subjects": []
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Gaṇeśa"
+          ],
+          "originalInputHash": "a68341db7f8273f7da15e0cac93b81f807f9e9c9f0cb2375bdcee74b4d6071b3",
+          "inputHash": "da8867d990a0ba8236a1e5dc4f9b8062fd2beff18011223629f6b5636ee47fbf",
+          "evidenceHash": "6d0f60f8e4765852b7fbc934b64f3f3b17e255e92d4b09e745383a76a9177c68"
+        }
       }
     },
     "80ff729f": {
@@ -125432,8 +125476,8 @@
             "Guru"
           ],
           "originalInputHash": "c05a2dee308c7fdcbaf7fb4c9f3c282237fe4f2f69633c216b7d7b80436601fa",
-          "inputHash": "67db8b1936d7d9917ae3a0f63f9b0c330615ccb129a9df8abed50ca904bbcc5a",
-          "evidenceHash": "133a7f9f86efcd8e48d90de94750116687b972959fc846b0cdec97e6768efbbb"
+          "inputHash": "5ba7b5ee9902b5585b7ff3b55cfe2af72fa84be72eeabe5fde1fc070d157bef9",
+          "evidenceHash": "0cdeae0a546b0c646da444beb23b0951ee837904a83303bafe1d4032d24db31a"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -125771,7 +125815,7 @@
             }
           },
           "originalInputHash": "c05a2dee308c7fdcbaf7fb4c9f3c282237fe4f2f69633c216b7d7b80436601fa",
-          "inputHash": "e0ae18cd764f57a8c8001346c577a92c913e53acb6587a8f5c3e34503b70ba14",
+          "inputHash": "1be28741d4926f3052413ec4ee402bf31f04a595eec4c243d4d67dfebe0fb596",
           "baseFeaturesHash": "84a074d9fd1745e4ee1fe53431e8ee59e14ece3446af08c13e8bb2babec37330",
           "evidenceHash": "4099633f9164fa99465e5ffd6c3d6f757c89b5b633e2fc02329b9b564bb3180e"
         }
@@ -126160,16 +126204,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śiva",
-            "Rāma"
-          ],
-          "originalInputHash": "00c61ebb5239af3f32a3c33e2a1ca148ee6c53c840db3fb78005efb99e3f8c8e",
-          "inputHash": "26d4d38c1cbcd15c09b1417511e79edcbb0bfdaf13732e0350eb0e09179f16a5",
-          "evidenceHash": "deb0ac93691990bc3b60c00c51ba8c152ad6fd543a07bdc3dce1fd4b9f8e2dd8"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -126364,7 +126398,7 @@
             }
           },
           "originalInputHash": "00c61ebb5239af3f32a3c33e2a1ca148ee6c53c840db3fb78005efb99e3f8c8e",
-          "inputHash": "e49c34b2bcb6158409f759737969ea0fa2d62063159b55b813af26af937720a3",
+          "inputHash": "af77d032a0a32e4abe5662d8f1fd40643423bc82a9f1bc7a35c5c0e87b5fa99e",
           "baseFeaturesHash": "7fc329b69e3dfec660eef24117fc73ba44fd64555ade4832039c6a0e98300ab6",
           "evidenceHash": "db59ab72d04c00bd2c86be5e1c9903efddb937ed5fc741b8dcc93bc0ba96f46e"
         }
@@ -126483,18 +126517,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śiva",
-            "Rāma",
-            "Viṣṇu"
-          ],
-          "originalInputHash": "34ce5d3fdb33edd54161a0e34d34f13b520c550c7a86c41656f11331c03735d1",
-          "inputHash": "9f9b8ec0aa84498f9715978ba59f41aabb9c0e1593af887d8e4dc8a54b4718cb",
-          "evidenceHash": "b6cc3e3c31685549c7dc3dc44c2dd6c2a33b191a723703e31eecf5ebcd6af5cf"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
     },
     "6fd945f0": {
@@ -129458,8 +129481,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "b6aacfe81d2d881c209a7c8b95ce8f8f9217d41f1876d249d2282a643d917877",
-          "inputHash": "ef92348637d4bc28c36d44f99aafb884ee7ae36791f2ba35ba2e3cacbafb516a",
-          "evidenceHash": "fa092e2eb3d55ead6c19c00d7499e7728ca08b560f0442a5494c6e681c665363"
+          "inputHash": "395461878220d32cfc6bd92a3896f36e66a3b5013271836be9ff7474b70f79ce",
+          "evidenceHash": "cd50de349f21224598e0ddc4ea6e7730b36f41a89b817c5c53842c5732fa3939"
         }
       }
     },
@@ -129575,8 +129598,8 @@
             "Śiva"
           ],
           "originalInputHash": "e73e45077328e03cf4217c04d4713873f9228731a449072f576639d3584b9bfd",
-          "inputHash": "739f7d130a62b3a4f53dfdc60a1ba47c8a0bf065bf93ac5a1b510f2f904d3067",
-          "evidenceHash": "c85460f8d3c0aab39545105ffbd430a28572f678f0f7fc6bf9033e1106e5d6fb"
+          "inputHash": "09c2019304182870530b47fd649b6985a84856e610c57c06b58653c47765145a",
+          "evidenceHash": "b893310004c0d975e7eaa4e5925827ff7d660f669ce59d4098817c0711ebeac5"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -134840,7 +134863,7 @@
             }
           },
           "originalInputHash": "e73e45077328e03cf4217c04d4713873f9228731a449072f576639d3584b9bfd",
-          "inputHash": "c484baeef1af63f6eecd55661c9b5f237487f09f6717b514a819afa49a0571cf",
+          "inputHash": "28b01cf79ec8ce75dea6af4dda3bb73b880e83a5e532c3787cd62062fd635997",
           "baseFeaturesHash": "763e5dd1385a10e3e4685a28df7a9371a2c3d1afaed5bcc06aa38b644ed22557",
           "evidenceHash": "94de2bf9b7cc782bb19e680da3b7d68d1c99672f9397af027d0fdaac6da2e63b"
         }
@@ -134965,8 +134988,8 @@
             "Hanumān"
           ],
           "originalInputHash": "9b3b9386ca87c379d6eef46afd78ba08b77660d2e556e6464c4eef2bfac4ab40",
-          "inputHash": "72a3666f277d46082d5a15acc5e388b13d2a084762fbb3a8c5cc49c0352867a6",
-          "evidenceHash": "9d2f38e585a51f5d191be8b45e515fd9c33530d6a06f0914670bcb55aabd61dc"
+          "inputHash": "eaf3bc9b5956ace0e66e56425195f43b95c356443197806193b055abb3ad7621",
+          "evidenceHash": "8e9e53067f7ada80895f45e2c8b9d92e47d64a2969a119a3052b1d8009c7b4a8"
         }
       }
     },
@@ -136930,8 +136953,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "108c5f2273cc041f55d9bff5364d357b613c301d744cbab9ef1ab1993efd0806",
-          "inputHash": "bb148e1d3b97747f956bd25daa1ae00c479df6096a6d6bf3dc5da3a16b083825",
-          "evidenceHash": "f7d9dbb11d9bbdfdfd9159fad4fb6d85e96f1417948ccb5edc255462a419eca9"
+          "inputHash": "bc25b47076b77cd5170e3026cfb42dc6312e2862c80c514fb08ee9cffa57917e",
+          "evidenceHash": "0df9a87651c0a3faaccf5e688d5245be99248c3f3fa88ae3d0b4e3f2b55a07a3"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -137058,7 +137081,7 @@
             }
           },
           "originalInputHash": "108c5f2273cc041f55d9bff5364d357b613c301d744cbab9ef1ab1993efd0806",
-          "inputHash": "3b52743e971b1aad1e208baa7dc18ad94a7c249d2a36c7666986360a6ee5058e",
+          "inputHash": "bf08e5e3c7e9db4c71ecde9365347dd5e3fbb429e355bb8e666113308163b61f",
           "baseFeaturesHash": "9ad1f527a84c19ada8f1d75580a52f5e75eaa81817cbc55c61102e9ab9764a1b",
           "evidenceHash": "d6cc3c43b4bd0fe6815438f5750a4d05e164c403612ad084420d91a3d1a22ef6"
         }
@@ -137159,7 +137182,16 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Viṣṇu"
+          ],
+          "originalInputHash": "da60b8cfc5d6ed3636ae9aff2a47a55cfc99af2a347712d7fa0b568a83f46058",
+          "inputHash": "593d19e252bb2604db8878c5ea3b1afa1d96c627470b85d74f270c673cc3a036",
+          "evidenceHash": "1035d22e4eed212a22fe629c659130b347e755c29d804ee37c4296335c50d3d8"
+        }
       }
     },
     "555d9ea6": {
@@ -137385,8 +137417,8 @@
             "Rāma"
           ],
           "originalInputHash": "94f680e8440e0ab0f6d523787701f6ee517936cec34fb36e34ca3a4fb24731a9",
-          "inputHash": "cc40082b24d691df5ad2223af7e188ced89ff9bc60b8605cb6ee97115ce28484",
-          "evidenceHash": "e5fe734ae556f04fa70976a2c50e28814ad50360a0319a335838c7c396b91a45"
+          "inputHash": "f3d189fb8168f910b0aca7dad5f72933426153569363aa54a9ec94ea98e7d3ec",
+          "evidenceHash": "f1ccf1c916a9d825da1f884dabe98301cdd06c9cd797e817244ea313eb81a209"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -137543,7 +137575,7 @@
             }
           },
           "originalInputHash": "94f680e8440e0ab0f6d523787701f6ee517936cec34fb36e34ca3a4fb24731a9",
-          "inputHash": "0410090a0710bce034066158bcee4076f32daeff3baae9e37220666d345be133",
+          "inputHash": "dc1897555890597f829b324893bb35927530ca3c6266e2307233fa08ff8211bd",
           "baseFeaturesHash": "d955b118394ae641b703bd6b8ba90380ce581c63e444ca5ec016da3a021c0ad4",
           "evidenceHash": "2484cc0d39e9f854e5b36baf20b973a82f213d517d71f1ace69c16e7962d35bd"
         }
@@ -137785,16 +137817,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śiva"
-          ],
-          "originalInputHash": "057f4fda891a937d6b36d294375a01be29ffba1217ea41ed43a001f56e2fd846",
-          "inputHash": "f552ac40a4b9d8d28a457e7c46c4694e0f5f4d8a0b9b7f691576e24f0fecf935",
-          "evidenceHash": "a58de5ca9afbd9b1f2b19cb0b454c1c6c73e55f4647be5dc0a56acd769c05584"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       }
     },
     "7816b268": {
@@ -138449,8 +138472,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "c6744578038c25e18e128e5a4657298a3dd15ec1292151e83fbbcd5550160330",
-          "inputHash": "63414fbc7067b7e1be2784cb600f7b2974a8adfaec416b7fb1ab48c8c57ad993",
-          "evidenceHash": "406477c18ce1f945990907ed10995784bcac8f84b8d4e383dd60283292c7bff6"
+          "inputHash": "f4c1255d1f5c20dd52347bfafe6869659a49c0d922c55c68fee4465e7a90021e",
+          "evidenceHash": "362941b9eaca1561737d6a97f1eaa407569c2a77272fcbdae69b40eaf19193a2"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -138607,7 +138630,7 @@
             }
           },
           "originalInputHash": "c6744578038c25e18e128e5a4657298a3dd15ec1292151e83fbbcd5550160330",
-          "inputHash": "6a28d3f31cea27dcaef850849cf5272fca47c92700687242c3fef4c92107552e",
+          "inputHash": "5806180903d3dc5a1d01507dc8f1235bfb7937bf3d0965223288d0176f3af15f",
           "baseFeaturesHash": "7207b6df57db1ec97e5f12137fb06b64d39952c159eb4f54adae1a7c5a001911",
           "evidenceHash": "e359d9ad3b67dbf58e7ec295bb54b7925749c8c690f10b8a4f1f822a7ccfdfaf"
         }
@@ -139089,15 +139112,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Śiva"
-          ],
-          "originalInputHash": "4386cfddb059fc79924ea22789b89214d1444be8f23cc850e4e0b19a50f8d004",
-          "inputHash": "7f8d09896ea99ff45a47cacc30e8183fead9480ccce9905948d1e1617a7e3b15",
-          "evidenceHash": "a58de5ca9afbd9b1f2b19cb0b454c1c6c73e55f4647be5dc0a56acd769c05584"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -139223,7 +139237,7 @@
             }
           },
           "originalInputHash": "4386cfddb059fc79924ea22789b89214d1444be8f23cc850e4e0b19a50f8d004",
-          "inputHash": "282f42ee18550cc78c8ce14fbb5b809cb92f5a9610a4230a7125db4fa1fc5cfa",
+          "inputHash": "56d6de9f5ebc071d90c6ba8673f31ca99dfc472a86a64f0a825002c909d30117",
           "baseFeaturesHash": "cbf03b02bcad6f9359350d2347a6cd2ed9d91b5184ef705c876f2d520651900b",
           "evidenceHash": "2c2fe230267ee5b23c9d81f9ad15c3ddaf4414d6f9badac1524304b1592e8947"
         }
@@ -139349,8 +139363,8 @@
             "Śakti"
           ],
           "originalInputHash": "b39d06763b6644b8f902d1224067bc258f3b03d7af141e30b6bdf58872fe4d54",
-          "inputHash": "beecb00033eb9865a0824a9736e158433311b8be974141621cf0206330295076",
-          "evidenceHash": "518a0e12d08298c769d72fa0ea148e07f9d21c2cb2ebaeabf7418507207e60ef"
+          "inputHash": "98c4738d95ceb0cf9a888a637c47e86e2ec185ec4b04b77ef64ff762419dee9a",
+          "evidenceHash": "45ee485c4c6bf0b9124d757fa32a0ff6b4a2b9ce1cf58ca2ab804631b92285e7"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -140112,7 +140126,7 @@
             }
           },
           "originalInputHash": "b39d06763b6644b8f902d1224067bc258f3b03d7af141e30b6bdf58872fe4d54",
-          "inputHash": "24cff52ab5364e11da760f62f8f7507e6b02943960346b31fd5ccd1130af6ff8",
+          "inputHash": "84c22a4dea067cdc5cf712e414921977409a98be2dcec8ea3f207617cb7cac73",
           "baseFeaturesHash": "9fe76b0318e28a259c8938e04ca1de9c510b8c98d151af8a6230786cefd02595",
           "evidenceHash": "5b6d156b6cbd914c997b52e568b8c6a2994d19ffc47e2afb956e94e67baea928"
         }
@@ -140637,9 +140651,19 @@
             }
           },
           "originalInputHash": "82d79559c3ce2620ad46c9f8c69e01de1bb27549147de34e9f17c0317605f264",
-          "inputHash": "2965e271557bae6530d0a2bcdd99a3b39f43749291c45f03bba27565a06f38ea",
+          "inputHash": "f3d710c91675822c421c9dda0c4169fa8d4e4521c95b2cb6fe4d1c717927b6fe",
           "baseFeaturesHash": "045aa2b3b7308e286251797fb5cc452d2f00639047f549be736a234d75b9b7e2",
           "evidenceHash": "cc1c792c848e0a45e097e5661b693bd92eea58c3f9c0f696bcd3e0ccb84d2652"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śiva",
+            "Guru"
+          ],
+          "originalInputHash": "82d79559c3ce2620ad46c9f8c69e01de1bb27549147de34e9f17c0317605f264",
+          "inputHash": "ea29354b0f8f7b2433573ad2e19c636494c5e4f08d84dcb84dcf6f686ecacc95",
+          "evidenceHash": "68ad18811d956832b5be99b78a31fc853ea7d431a2d070cfd5350af094045a44"
         }
       },
       "audio": {
@@ -141134,8 +141158,8 @@
             "Guru"
           ],
           "originalInputHash": "d15e10a73c46e9eb2da8f02a9d8ef4159b773630e8c6bd5e1ef229d0af46d055",
-          "inputHash": "4e55c202a9b0764a1b814787f550c3a6a91e3275186c61a864c210fbc1d5d77b",
-          "evidenceHash": "37818c4056df119320b4ab38a58123533f7d8ccc7ca5c2003d94ae21eda88d47"
+          "inputHash": "ffa6d4b9115c59051f53bb8479d8ad27984e887dc27d91084090708b7a59302e",
+          "evidenceHash": "e3fe282351a8480d00635ffbb5517fc3f14b2af647ada28bf0148043faac508a"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -142083,7 +142107,7 @@
             }
           },
           "originalInputHash": "d15e10a73c46e9eb2da8f02a9d8ef4159b773630e8c6bd5e1ef229d0af46d055",
-          "inputHash": "7e79a05be16f3c0697e5f89d91a3cd08f8e8786dac5dbfc7f4f39f74b18eec62",
+          "inputHash": "a903bf71fc3af6c11bd503ed72cb2142f0f6ed88cd765296bb95e9632de3d34a",
           "baseFeaturesHash": "c289056201ba67c4b8a2e46fe588146c7b5269303cfd6eedbf490967e2f4c613",
           "evidenceHash": "9fae796b0d3505c06274687589834b66adfa0f1a277214c47475a8bffc833a6e"
         }
@@ -142750,9 +142774,19 @@
             }
           },
           "originalInputHash": "27f0923fd213a84c81c27a03aefec8f552ae6deaca747c54890938d3b539b738",
-          "inputHash": "da4bf73ca0ae9a8142a0ade0c8703102b970a57c403227e4430f116a88819e37",
+          "inputHash": "b41b473bf10b13ae9d887a9ec4ff807f7ff05040eb69adf9cfa0294f0bb48c7b",
           "baseFeaturesHash": "8887a9a15f4a9a02f15e1516efb37cd54db990b7712e5bd107666cc300dfa8c2",
           "evidenceHash": "962400d447ad5d8bcb8c719b2dee283656ff6a6a955f142e3a177bd665922a88"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Nirguṇa",
+            "Viṣṇu"
+          ],
+          "originalInputHash": "27f0923fd213a84c81c27a03aefec8f552ae6deaca747c54890938d3b539b738",
+          "inputHash": "557f680db105f11637e77225ae22cdfb11350ad2f101b88dd717170569d7119a",
+          "evidenceHash": "1196bbde5a64ab739c7bcaefc70af1a3022589cabb3ffc17721e8b403438b59c"
         }
       }
     },
@@ -142807,17 +142841,7 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Ayyappa",
-            "Guru"
-          ],
-          "originalInputHash": "3b11337e97b0e9f4becd06f4f42755558f8371d3def154e6947b5e2e62f8919e",
-          "inputHash": "dc053c7ccbb6b87bd54d9e01e9bff8d26b478994000eaca004f1cfbaf5503886",
-          "evidenceHash": "5e97f9d184513f231910698271c6405b4ba49c7576b02926bf6049ae9a7f8496"
-        }
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
       },
       "audio": {
         "inputHash": "0bae480f2954f5d9d83b180b989bbe7cd674156e9ce2c4486c3c8dab1a027295",
@@ -143364,8 +143388,8 @@
             "Guru"
           ],
           "originalInputHash": "ac8e8531b23793617c6faa5335fe4e5524d08cc7cd2a43b7588404d200c75cf5",
-          "inputHash": "6917ba1f69f98daa5eb288e7711cd439d71ddf3fbbb626330a38587c337397b0",
-          "evidenceHash": "fd305489420b92582b1c224d7c533d224da766a5e7f0e478af095a26e8a438cc"
+          "inputHash": "0cfaf4e0e208e621f48ad2496310dc5d42825604b87b0e306e221d24ab466a28",
+          "evidenceHash": "022d3e8523c49b552267a71f77cd4651ee3da8bdad34795fca3ff4dd5b7925ec"
         }
       },
       "audio": {
@@ -143837,8 +143861,8 @@
             "Gaṇeśa"
           ],
           "originalInputHash": "5aaf7d340a4c69cb10748f3f993c80f7e6269e3204c4c7b1b3bf823ee5b4eebd",
-          "inputHash": "02aa4d427f9155a6362f8805c7a70cc82efa64e67f657f0951a88f2c3e9c2ae4",
-          "evidenceHash": "b5f3a9cf3b6fbca7d9aaad70fab21b58dcecb0b81b7ef43156b74dfa6a8154b6"
+          "inputHash": "1cc93383bc3e7be3ed3bbc00f59af317be53ac2a40370a1845738b57fc60a0b3",
+          "evidenceHash": "48012e962dadfe3f4bb19e36ddd79c1f8e2a3f7615b66c8034094d5bc7d16c61"
         }
       }
     },
@@ -143950,8 +143974,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "e7b5f81e44fb710e456396a603ae4734c9f399979a45827866aef4639195eefb",
-          "inputHash": "acc0a2e7262a5e7441909b293410b5f046cced69307dcfffc8cf55439afa1da8",
-          "evidenceHash": "2c6bf65fc267c9b9d8b3a820b95c8bd40a5a8d45f402f30fc53b963b54d52df5"
+          "inputHash": "036146af1749d93eae12eda6b1640a7337c4f31026d1283fb56de5f79cd88a4e",
+          "evidenceHash": "c6614f12b79b9383d9d57fbb01e08c2459185af48b42fae6f4ed2a8a61cb4d1f"
         }
       }
     },
@@ -144074,8 +144098,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "8eace2c3605d2a17b21124ee13813e5ed8734b08fd44794b4b3642f681944eeb",
-          "inputHash": "68b92b516e7cff0da5c64f07f155e1330bbd4b7aecace528636b5459da5e13a0",
-          "evidenceHash": "101d3f16182448704b079e72ae636e02542a9975eface4e3406b87663d4f64fe"
+          "inputHash": "164d953b1f5fb75aa716fbd913d01dd9ca6fb838469a069553f7be94e9b21889",
+          "evidenceHash": "a2e75eeb1388c24bd3f13987a29542bc49fe5ffac10d9bdc89f617dc927ec9eb"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -144322,7 +144346,7 @@
             }
           },
           "originalInputHash": "8eace2c3605d2a17b21124ee13813e5ed8734b08fd44794b4b3642f681944eeb",
-          "inputHash": "fde250b54440915198ee0f1dd1fb4ef89eeef933f070d11d18cab697f393a6e3",
+          "inputHash": "47ce6811700ba3ab20beb9501e4cd07536189fc69e8380e5c1f464ab56fc77b2",
           "baseFeaturesHash": "d20b7e1681231859b7fbcc8eff3c8faac40b65b5eccba4ce2fe619ff085459e7",
           "evidenceHash": "a9e74fb37e95f2ef45d488576c4515b24cf86d6e35ee9dd9e486a5f170dc0553"
         }
@@ -145157,8 +145181,8 @@
             "Śiva"
           ],
           "originalInputHash": "0ec7dada560b6c196395c15d878e397493b948f2246c71f2eac1659f9df90531",
-          "inputHash": "54615d6db29983d6222e01d055e2d15daf956b1760ca02ae60931eb0a3810bc3",
-          "evidenceHash": "fb9c03e0eb89b8931290fc2257f3aa4158380f5db6246f98ccfc5966c2fe2b33"
+          "inputHash": "33e8d1b6de60cf88ae9fc488555ca7201bcba20186c50132093aa752334e11b3",
+          "evidenceHash": "b6e03447071af6ae720583e76542f1a95c051bf1a633636c5f6652780c071af9"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -145361,7 +145385,7 @@
             }
           },
           "originalInputHash": "0ec7dada560b6c196395c15d878e397493b948f2246c71f2eac1659f9df90531",
-          "inputHash": "e5862cb3cdb6a6b357545ee887adc242d2bc1c1420b499544e543de207d88427",
+          "inputHash": "3acd99e658b5f07306645375335cab856e69c1150a747624afe34c8d8804e5a4",
           "baseFeaturesHash": "cdf81e8fcc50acd8b96a6ac674e2152dc63a84f0f9c2bcb5626657d6713c3f70",
           "evidenceHash": "098b5f2898045ff43a22f957ede899540e9eeffd02827f9c7b47a9b1b092e575"
         }
@@ -146920,8 +146944,8 @@
             "Veṅkaṭeśa"
           ],
           "originalInputHash": "1708d0153bf6e0816064ab96599fb332643b75344f91646460802a54cc30a57e",
-          "inputHash": "da0546e9ad4561e06a9fcb755c00fb31c9c5fbf9ef4d8492c689ea4d9de93edb",
-          "evidenceHash": "f9ad275ed0a21ef6a5106006a8eb18c68a246694bc88f231cb902b3257573177"
+          "inputHash": "da617655cb23b3788eb3f8d1cfeae4d654c748be09f5c26bf1a79d5aeffd1f30",
+          "evidenceHash": "b3b7869906377f369a5a73ff4b3cbb5b522f66092027c019184c9806d4bc375b"
         }
       }
     },
@@ -147503,8 +147527,8 @@
             "Guru"
           ],
           "originalInputHash": "17dc5d2caeaf389b7a88f3c1f321f988dc7dbf0a0bd7f478ea4a15809bff5465",
-          "inputHash": "158e0245da4395c93f37bd76bb9c9ea64e381a9cdf1b7d3d0c08c85edfbe5087",
-          "evidenceHash": "d05478009b9df02f13f742bad172a3208bad782025c32f5f6c42d07109fdae82"
+          "inputHash": "4ed0e02f1fe8f175de7cd7cf802e27a273c75c7fd5c6ead1e9170ceb91589153",
+          "evidenceHash": "46446bad8b56dcf9603ef2896e8e5057e5ab7fa96edaa9f432876cfbf45b375d"
         }
       },
       "audio": {
@@ -148397,7 +148421,17 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Viṣṇu",
+            "Veṅkaṭeśa"
+          ],
+          "originalInputHash": "ce1c77e6195f6ef9831f4c21f3cdb530a27f91c600c13cad985df10c7256dd5e",
+          "inputHash": "057436e66afacea6496bb5cc8ff2182d8def268fd619ce755add0a0043e64ac8",
+          "evidenceHash": "b77a2b9a24a3fc07819382907d9ca194f8fec3594623ee035461a55c07816f71"
+        }
       }
     },
     "6818db7d": {
@@ -148508,8 +148542,8 @@
             "Nṛsiṃha"
           ],
           "originalInputHash": "486474d103a2d91586303efc0d88e93d0211a542a578d811f9f10174e270d0ad",
-          "inputHash": "e7933a69442d495f589651b82af5f7dff30b4ac70e30fea3d91dbffddfa389a0",
-          "evidenceHash": "00c79bd28b96f6d1fa0f828f41d4740749233e85a7d46dd3bcfa228b338cb479"
+          "inputHash": "14c981ed21192551dad617e25dede5dec1946895b476af5364e26e8cf0b271e2",
+          "evidenceHash": "6261ec8e3bb0407d3a390d8dd53fba1e11422c7ecca130bc2d933c20f5140785"
         }
       }
     },
@@ -148686,8 +148720,8 @@
             "Śakti"
           ],
           "originalInputHash": "c266dd3f1a149bd0c4cd1d45b1d1486ee49ab770a885fe5e60bb7fe0af521930",
-          "inputHash": "c4535c9ed609b75627e3748ed70a4408dc035ba79c223e4e943f69791a1e2b40",
-          "evidenceHash": "a347b3f2306e7215cb103dbaa909682cc10c0f011ea2e518d9e5e5f4505ed52d"
+          "inputHash": "e4578dc13bfde80fd37d22115090212afdbb0fffd3f9ed6754a79f2d62db118f",
+          "evidenceHash": "b211b25a7c857a6e8d94d254eaffb6b795ec8a639d521080311fa01039829ab0"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -148726,7 +148760,7 @@
             }
           },
           "originalInputHash": "c266dd3f1a149bd0c4cd1d45b1d1486ee49ab770a885fe5e60bb7fe0af521930",
-          "inputHash": "507fdb20a4e1a0d0e122a3cd2123cb45fd72a44a2a2b35c6d032f1f3586e5907",
+          "inputHash": "22130f1f4d605419912d659b5243c3f6ce0a523df1bdfb644da575ae97e62269",
           "baseFeaturesHash": "ee858ecab65f911dc215c3cb6042d55949815c53785c221686fdd6c58a061cc7",
           "evidenceHash": "ea952a21d1054ea31941d0be6872152290204eb0ef6e35129333be6075ac81ea"
         }
@@ -149114,8 +149148,8 @@
             "Kṛṣṇa"
           ],
           "originalInputHash": "1cdc87008d5b551d86658ef86e5a3a937588e3e99544e406a82b2b527e96a860",
-          "inputHash": "194a36d1d8fae502899adf2cf33e405c9f4c21e7d7d5702561c545199bb685d9",
-          "evidenceHash": "0da316f16cbd9c0ea4b773bd1b9faa8e333fb4767b58d19d7e23586aee58b6a7"
+          "inputHash": "bcb7ce8adaae36777c83428c3f1a50af7a01255d2c95455081fc36b16575bd5b",
+          "evidenceHash": "e5a3bfb4cf0612dd68037e122fb311b94945539db152cc493c418adbae88be71"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -149396,7 +149430,7 @@
             }
           },
           "originalInputHash": "1cdc87008d5b551d86658ef86e5a3a937588e3e99544e406a82b2b527e96a860",
-          "inputHash": "1ca03bd83480d9c8ad63d8428a4a9418b679c7e040fcf8fbb6065134aba3745d",
+          "inputHash": "cd4f8b30900cd8df4e98f3f18d60cf79c1751ad42631ff974c01cae9015dee70",
           "baseFeaturesHash": "f7409e95f6518c340adbd8768afbf19c09f1950feeb15c3bc8b055127e25cc47",
           "evidenceHash": "c4f90850c66ce56bc08f57065c21fd1728e846a90e1c1d3a91e2346fd8b4c700"
         }
@@ -149519,8 +149553,8 @@
             "Viṣṇu"
           ],
           "originalInputHash": "a73dbee99d453b9bfa380607828d67bf879213b5ddc5b773bae7be781d8ab259",
-          "inputHash": "c71776afe6e397317b5361ef2b2b09b4bfd0b8f484cb339f657eb0bd298cafc6",
-          "evidenceHash": "8f20d345eaaef7bf03fc20fe00c0db8d7cfaf203006cabbaa6bf24210c63fc96"
+          "inputHash": "ba61cabbab677bb1152e682212ea6fdae33703b8dae73e7b785f629e4ed9d9fb",
+          "evidenceHash": "cfe180a4c986a039763a95eddd4ee6c994934bcd2838c6543f0b5452f21162d4"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -149661,7 +149695,7 @@
             }
           },
           "originalInputHash": "a73dbee99d453b9bfa380607828d67bf879213b5ddc5b773bae7be781d8ab259",
-          "inputHash": "3a5863f6910b483a6a526705dee4305ee8b54f9416335741a1aa325650e84ccd",
+          "inputHash": "ec82086a69a3133f1d6da23c877ecbf619c54c49527e6f67226956145bd6f4bc",
           "baseFeaturesHash": "d7472b398a5058267c8c343ad6838bc2245b20eceed6a350466f85d25380cb76",
           "evidenceHash": "9c104cdab555b798a5864907eb51157c9418f73d8aa6bd321ac90858dc30f343"
         }
@@ -149775,8 +149809,8 @@
             "Narasimha"
           ],
           "originalInputHash": "1ecec63fe90c3cf62c582102468626e15977c6a7bea45e900df2ac20e80c44fb",
-          "inputHash": "204085e8ec857946e1d5b39b1e03281c60c7d6b317d99def0c5e498452edbb72",
-          "evidenceHash": "7174e4bf0786bbe5fa4205a8514b083d61d8edf0053d13a48af6204588d90639"
+          "inputHash": "c1289f9481dab7f60db472457518504eff33eb7ce29d12b84e5609edb72bbd3f",
+          "evidenceHash": "ba5749ead8d2b84c95d87a43f339717e6322fa432bed702d71c047e833d3d81b"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -149927,7 +149961,7 @@
             }
           },
           "originalInputHash": "1ecec63fe90c3cf62c582102468626e15977c6a7bea45e900df2ac20e80c44fb",
-          "inputHash": "f457f6eb3c20801fb3af140e9004506c6ce3d6f65803a2fa1a90cbc9a7581386",
+          "inputHash": "a90d1a9cead2d5a2f8f6f6df41349b91c6aef803aa711c8bf6323ebacb55aabd",
           "baseFeaturesHash": "ea43b4f93887f43a2ca94b2ae6e9a6b812bf1f3a64a496c7b74a41f01f1b504f",
           "evidenceHash": "bfe4a30ac5249ec0a159bd8fb591e6722d6f17ed7f781a1aa4427388137ab262"
         }
@@ -149996,8 +150030,8 @@
             "Śakti"
           ],
           "originalInputHash": "2da546c3228d35d93a70a30105d1286e65132510cbc3e0f961df749be78e2a3d",
-          "inputHash": "596a2608d22c9f854c6f2a162b33489bbd427bfc420e89cc952a9079da570b2e",
-          "evidenceHash": "a85bfea0cf110ea691d073c7efea884aed7cf1917ae81fecb73a68ff4192fd83"
+          "inputHash": "7f1f3ebcf73e8b288b74dc4e13236dc1c5a04b74625008b1af81404c5f817c3b",
+          "evidenceHash": "7cdb297f2b4950c56a2269d31f65673c3ef1e3cbb0ba8e1c64cd023c1452f7c4"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -150219,7 +150253,7 @@
             }
           },
           "originalInputHash": "2da546c3228d35d93a70a30105d1286e65132510cbc3e0f961df749be78e2a3d",
-          "inputHash": "e69c7ec5a90ff6891fa334bb9afe93fc2aa50acf2b99321af903618316fa239e",
+          "inputHash": "956193afa8f02b1379846bf216ecba728af884a64276850cbb3448128f481b98",
           "baseFeaturesHash": "0f2f9de02eafc1434be61da62cf9194dcc181ead1cf9d3722ac8cdcb47125ab1",
           "evidenceHash": "15b7c9d5501c1943367deb8de5dbbceffeee4d7dd2883b36f92eb30172e2c920"
         }
@@ -150667,8 +150701,8 @@
             "Guru"
           ],
           "originalInputHash": "fad8f8314381951fd9d70da951c141d488b22efafccf7138369111d424035f5d",
-          "inputHash": "6dc815e53415c3e6fc55d5a1d17138f6cf4b4b4e8d5c14515d794e77a467714d",
-          "evidenceHash": "4bb14b1bb73a6e754aadee75d6b203efeed0acb30a68c3bcc5dcb0d5065d0d42"
+          "inputHash": "09cca63f5a1b8f29407a03b126bba8bbea9b36f1c43910f5153e30d205ad3151",
+          "evidenceHash": "7464e20a170095d42181407fc14e8fe90eb31b2a2a006abe6b998823ebca9d19"
         }
       },
       "audio": {
@@ -150792,8 +150826,8 @@
             "Guru"
           ],
           "originalInputHash": "b9b21d7a9a893f6c6bf787afe46d12f9498961c9887ab832356230d838820c34",
-          "inputHash": "f953f5d64a1a1a8a4f93fc8dc2fc5e4baf238df0cd6a030a0732034ce19a948e",
-          "evidenceHash": "a62287877bf377b0158a7f01e6e6e72c5f8c4bfc20cf991eaf151b31dd5eaced"
+          "inputHash": "5a03fbcdcc0ab224e0c1ccfc1e3c14f949c8939d1b4bcc827be526ac897cac2d",
+          "evidenceHash": "1a9121ec3c40a7ec581620ea9b86ce2f409cdabbee04b8028c9f03333b7ecee5"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -151078,7 +151112,7 @@
             }
           },
           "originalInputHash": "b9b21d7a9a893f6c6bf787afe46d12f9498961c9887ab832356230d838820c34",
-          "inputHash": "a90a478b8d1724e3e9b85e8219fb3a5eae7d8d69ed71fac2c710bbb4a0b2242c",
+          "inputHash": "52c5ade65a33ca3211c6fcc1b117a55e3a1ab33a60d99c8c9e67d75a305311ca",
           "baseFeaturesHash": "b031212617c290c4c437cc92e07db10bb91d86db3a3f3890c248fcd475980bf5",
           "evidenceHash": "cc67c39d77ea5d5cb25c8c4f806c342d1ee80d7a8a81614871b4b9de618f6a50"
         }
@@ -151238,16 +151272,6 @@
         },
         "qualificationVersion": 1,
         "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
-        "subjectTagRevision": {
-          "version": 1,
-          "priorTags": [
-            "Viṣṇu",
-            "Veṅkaṭeśa"
-          ],
-          "originalInputHash": "2ab4c0bdea6f9068c2bd1988b4d77291b4f2b6f474175f0a49cf1f44c8e45042",
-          "inputHash": "10e52e78529d378d66ca3792c28a5167a21c9ad54daf763d9f7780991ad3a2b9",
-          "evidenceHash": "6f9112836c2bba0c1344501fcc3740e330bbcce298ac383ea506902dc3c1cf40"
-        },
         "editorialTextRevision": {
           "version": 1,
           "priorLines": {
@@ -151417,7 +151441,7 @@
             }
           },
           "originalInputHash": "2ab4c0bdea6f9068c2bd1988b4d77291b4f2b6f474175f0a49cf1f44c8e45042",
-          "inputHash": "3e580d98eb069942fb487172bb81c711632bdab53b2c264d2cbd447dbef757d6",
+          "inputHash": "8e36cbf5236027f107a1a370fce2153fe2abf08c8743d5f17599ff03facb4086",
           "baseFeaturesHash": "d235dfd4440cb12d2fa2771f700f417481c0a5d9ba748c5e3dc7fa4c915dde24",
           "evidenceHash": "6a1e15a5c7b92ab3727dc3595614b601c720d23c0c0d3511921e7a686c1dd181"
         }
@@ -153739,8 +153763,8 @@
             "Śakti"
           ],
           "originalInputHash": "ab18e7c77b89ab988f9b7075e948162dc896e38b5a45e5599b6aeecd53d88ab3",
-          "inputHash": "22b3999ff5308179371c083296d25dc1ce10d46f9596a34f27ce65a1b6857a4e",
-          "evidenceHash": "18ccde007b0cefef4c09f819f0c78975adbce3169b74376945440975114b4dcc"
+          "inputHash": "be601d4f3020b30ae4770626c00b64e24f13d0cc115a8b8b18aef14b83afae35",
+          "evidenceHash": "6a0579fce6ffdd864d75f592ab20a354b0f91a61dd78b167906f445ffbba1fba"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -153799,7 +153823,7 @@
             }
           },
           "originalInputHash": "ab18e7c77b89ab988f9b7075e948162dc896e38b5a45e5599b6aeecd53d88ab3",
-          "inputHash": "2af3ffec2b357fae7fc37412188e28393c9cc76b5ae9ac3d8250baad6bf51eac",
+          "inputHash": "066bab5296c24b612cd3961a8590435317c1fe298a8758348182bb08b8916f77",
           "baseFeaturesHash": "0873c887bc23a7368abe082d2da80cea0de25eecc82939855b712b6e2bbfb752",
           "evidenceHash": "5758e54199d97c8658e25b8f8c21158bf0e2c1494c37dfd4e3bc6fd10dc013ae"
         }
@@ -156771,8 +156795,8 @@
             "Vaiṣṇo Devī"
           ],
           "originalInputHash": "e743f2162c43a2649fc90990abf54e090c1782be9ade8fe9987d431a9419267f",
-          "inputHash": "0be05a12ad6af74b680f936c4766b4904f51b4c5c4674e492048034cddea8869",
-          "evidenceHash": "78b8ee9d91d9f711a954ef3ba18ebe95b135545e9c33d1e2c128644ce034457c"
+          "inputHash": "6f214bdd1d7daed911dda132636d35a6d19941eae3fb076cad9567ab2be41f6e",
+          "evidenceHash": "25260c49b5344a030daf0a17d75ee9273173da96a33f45d2c40537cd603c58db"
         }
       },
       "audio": {
@@ -156880,7 +156904,18 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śakti",
+            "Vaiṣṇo Devī",
+            "Durgā"
+          ],
+          "originalInputHash": "cb8dc2f32597459669072f96f8f1fa6e5ec17f5c9061bff6450c5a7668bfb705",
+          "inputHash": "06eb85968f709c854b3037ff670c4cc0f497e8bba6106b8be7f5fc8eae8800ec",
+          "evidenceHash": "9a219ca59726de60a682dcb0694bc9db02539bbd91525e80cab089edf773e655"
+        }
       },
       "audio": {
         "inputHash": "a176e17df44c6588bd25703c3524a06609b55bdb376d3ffab4b06b10248b6bab",
@@ -157813,8 +157848,8 @@
             "Sarasvatī"
           ],
           "originalInputHash": "cd03ed65e19595361d0788614f36a3283484f7520179e520c24dc761ea58b786",
-          "inputHash": "36cab7f1334a67f68bc91dae3d4378e11876d0813ac4b28ce981f8615d3bac46",
-          "evidenceHash": "81602930b654cb947c238e5331db78f0da3d8cfd323a706b302a92fcb436f028"
+          "inputHash": "c70f0ca4cd5e9ccc5a1b9dbe7b034dd84672c641ed8e419a68e4300056e2ddc7",
+          "evidenceHash": "3bee646eff9ed9cf6bf973d862b6130887aa627ab10c5274e0e5758dbc5aa89f"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -157977,7 +158012,7 @@
             }
           },
           "originalInputHash": "cd03ed65e19595361d0788614f36a3283484f7520179e520c24dc761ea58b786",
-          "inputHash": "cd06573ad757586fa9df381eb04d45712a671fa246afa90720e2e7cb02972f44",
+          "inputHash": "a0a79e4d42e7df85e50a6cd58c1e8e434de3fce0ca70ce164a3443d118560c52",
           "baseFeaturesHash": "92cedb2fcaf02b89277c06cf6f2bbaa86cfaaa973e702a72210cd097d8deff14",
           "evidenceHash": "5b7a38f85f17c7ea96121fc523d571593f858826aaf6599c7e198f9620672f44"
         }
@@ -158418,7 +158453,19 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śakti",
+            "Vaiṣṇo Devī",
+            "Durgā",
+            "Viṣṇu"
+          ],
+          "originalInputHash": "058d34adc6d8a6ec4a67d7341906a811eb47f5f3b01dfe075e3ef0520e78d9a8",
+          "inputHash": "66d75fd08a959631a5188f6b2693a43be61cc0ca02fa6804f1f6c01ec6901a9c",
+          "evidenceHash": "1078f4b848367bd284e457a3bed86e3ef8574f46997077527b34e88bfedb5cc8"
+        }
       },
       "audio": {
         "inputHash": "398c7eace620a3e5ca0b65a9843bd33e1bd87419937e5920efade16e21081634",
@@ -158636,7 +158683,20 @@
           ]
         },
         "qualificationVersion": 1,
-        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f"
+        "evidenceRevision": "59b374fd1bc34f53d7178d943e65b79d75442af4ff93a191ad724f8d79b0c77f",
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śakti",
+            "Vaiṣṇo Devī",
+            "Kālī",
+            "Viṣṇu",
+            "Śiva"
+          ],
+          "originalInputHash": "10923a89a3cca71b2af19773747617d0d0bd42803df53bae9753b8c82f199822",
+          "inputHash": "2b8a0ac0e0798f08d699d48152e289b77c549e12a34f4f7daaaf82db29021f36",
+          "evidenceHash": "6b535abdb9513a35b40acbba67bddd5816d7189b8de9dad31a923195dcb59c9c"
+        }
       },
       "audio": {
         "inputHash": "e81d7bc41ac3ada5ebfd1832094cec13c9449ecedb78f97cba97069ca3ad1045",
@@ -159691,8 +159751,8 @@
             "Vaiṣṇo Devī"
           ],
           "originalInputHash": "d7c26ca5e622fcd1942c951460c4a706c65eb6787cde81d9cc00ce088e924e2c",
-          "inputHash": "0883d3a71b4b877d17d73cdeac4399a9e1ee16ebbd2f5711c185f2b6bedfd91e",
-          "evidenceHash": "4f5e04ec15fe6a0c912a9a9d7d01c0e0c85c643229821d770734d6c9da289976"
+          "inputHash": "ada5ef8d8ef2fb4c13f2428f7e0ee01e66c1ac09d3cb678ff980b1d5078c53ad",
+          "evidenceHash": "041762a39f23794b7d9f0b0c1fc55d6a184baf56ee591660c484537288929c0c"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -160023,7 +160083,7 @@
             }
           },
           "originalInputHash": "d7c26ca5e622fcd1942c951460c4a706c65eb6787cde81d9cc00ce088e924e2c",
-          "inputHash": "4044e0e828bb0c613c0f42052eb4fbcdeeb24e32e759eae6386096901aa30728",
+          "inputHash": "488c913e04b32f664970d7404889eaa9e83127a78701e0ba5d7ce68193b02a8c",
           "baseFeaturesHash": "6e1ef4c07ceee8fd012ce3f9c766b5e7e271f59c5edb07f68f6b0548bd63c32e",
           "evidenceHash": "2cf139c17a4a0bfadfcbc041d3ec60f892e5126c675bf73483c1266f612b50f5"
         }
@@ -160242,8 +160302,8 @@
             "Vaiṣṇo Devī"
           ],
           "originalInputHash": "d023b2a6b782003ad12d946ef31a708a4b6623a55e6f8a620d9e9e6a3c149438",
-          "inputHash": "c26f67994372afefd17c05fd931c1fbdc2f7ae2990f66fd9543f24ebc8778c26",
-          "evidenceHash": "d205164fe5ad244731261d0a446280cf84063949b6e7bc9edd0d8fdb7e1e1540"
+          "inputHash": "d36f9a1d96ac1422b516e8427f713b543fbea5e02a548ab30727921dacc3b449",
+          "evidenceHash": "5c3d1c8bbafc3d1d1b606305b862319fe9ee44ef19d5af31b9ec3441f8db9c4d"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -160454,7 +160514,7 @@
             }
           },
           "originalInputHash": "d023b2a6b782003ad12d946ef31a708a4b6623a55e6f8a620d9e9e6a3c149438",
-          "inputHash": "2bc03b43a0a18a3972698782849407715ace6c8b0cdc8d3ba931db118810638a",
+          "inputHash": "96c545df10afeafc64653b0756259304621b138b0f19de46fc44775acc48b5b0",
           "baseFeaturesHash": "7b90ecc1f7c21d5da270643428d9671866ff9cbf14b03b575fc2c25be976981d",
           "evidenceHash": "71f5027aaddca6bfed2e52662f08a6e379cd9d9f678122498773f14b8a06e957"
         }
@@ -160582,8 +160642,8 @@
             "Śiva"
           ],
           "originalInputHash": "d6af68678a249d503be0e5fd7acf7a967c5d34a2f9d5d4408ce75b0662181116",
-          "inputHash": "b0b3676eb95272521ec02d6bcc4cb700039aa1ee42cef76ec5c3e903dea37d05",
-          "evidenceHash": "3bf4c1c9d7aa059f93f75ea9173327527792e14728ca698016e08bf5abf39efe"
+          "inputHash": "6f8939750f4fc6e2e1640a95078c3d99aceda16224c8eaa1873a5d1358f38300",
+          "evidenceHash": "73084475e70a1e803efbe3fdd7dbd8b7b10932093b62ff7e7f64f6e74e86385b"
         },
         "editorialTextRevision": {
           "version": 1,
@@ -161238,7 +161298,7 @@
             }
           },
           "originalInputHash": "d6af68678a249d503be0e5fd7acf7a967c5d34a2f9d5d4408ce75b0662181116",
-          "inputHash": "aedd894ab4c2011261734f3823de275ef59734d00d15f21ce6dea4841e8f5bc9",
+          "inputHash": "fc79ea299b21d81af959d05577aacb761d248d03eeecb894dfd7278b87023482",
           "baseFeaturesHash": "e4af4a5bf853f78ba760e77f554e87819359f99efad689d09277a7dc185beeac",
           "evidenceHash": "5efe573d36672f8f40e0c288ded2efb0eec91808ba6da94379001c07a1125eb5"
         }

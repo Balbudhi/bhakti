@@ -18,7 +18,9 @@ window.SONG_META = {
     "Viṣṇu",
     "Veṅkaṭeśa",
     "Lakṣmī",
-    "Śakti"
+    "Śakti",
+    "Brahmā",
+    "Indra"
   ],
   "searchAliases": [
     "I Padamē Kada",

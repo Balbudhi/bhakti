@@ -19,7 +19,10 @@ window.SONG_META = {
     "Śakti",
     "Śiva",
     "Viṣṇu",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Brahmā",
+    "Indra",
+    "Candra"
   ],
   "searchAliases": [
     "Shri Mahalakumi Dēviyē",

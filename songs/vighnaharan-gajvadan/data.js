@@ -10,8 +10,7 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Gaṇeśa",
-    "Śiva"
+    "Gaṇeśa"
   ],
   "searchAliases": [
     "Ganesha",

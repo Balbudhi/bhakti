@@ -85,14 +85,29 @@ move on: five minutes of searching per song, no more. Tags are subjects, not alb
 
 Read the whole performed text for names, inflections, compounds, regional spellings,
 kinship, attributes and narratives: Murāri/Banvārī, Nanda’s son, the mountain-lifter,
-Girijā’s husband with trident and drum. Tags include evidenced named references,
-not only the main addressee. Keep specific forms alongside their umbrella tags.
-Gurbāṇī/Nirguṇa may coexist with Kṛṣṇa, Viṣṇu or Śiva reference tags; this does not
-assert a different theology. A shared symbol, generic “Lord”, a poet/artist name,
-or a name appearing only in an explanatory gloss is not enough by itself.
+Girijā’s husband with trident and drum. Tags identify the devotion: invoked or praised
+names, addressees, and meaningful participants in its narrative or liturgical scene.
+Keep specific forms alongside their umbrella tags. Gurbāṇī/Nirguṇa may coexist with
+Kṛṣṇa, Viṣṇu or Śiva when those names participate in the devotion; this does not assert
+a different theology. The same contextual standard applies across traditions.
 
-The examples and detector aliases are not a closed list. An explicit Brahmā or
-Indra reference still needs its own tag, and Narhari needs the specific Nṛsiṃha
+A name used only to identify another deity's parent, child or spouse is incidental:
+“son of Śiva/Pārvatī” in a Gaṇeśa hymn does not add Śiva or Pārvatī; “Pārvatī's
+husband” can identify Śiva without adding Pārvatī. Check the entire song before
+removing a tag: an independent invocation or substantial portrayal elsewhere can
+justify it. Meaningful joint worship and devotional service relationships are not
+excluded merely because they involve relatives. Actual joint divine depictions
+(for example, the Goddess on the deity’s lap or the shared half-body form) qualify;
+a metaphor about being in a spouse’s heart alone does not. Oṃ qualifies when itself
+chanted, praised or meditated upon, not merely prefixed to another deity’s mantra.
+Passing comparisons, shared symbols,
+generic “Lord”, credits and glossary background do not independently justify tags.
+An established central form may be identified by its specific performed narrative
+or iconography without a literal name; uncertainty is not proof that its tag is wrong.
+
+The examples and detector aliases are not a closed list. Brahmā or Indra as meaningful
+participants (for example, the singing assembly in So Dar) merit tags; merely naming
+them is not enough. Narhari as a devotional name needs the specific Nṛsiṃha
 reference alongside Viṣṇu. Reuse an established canonical label where available;
 otherwise record the evidenced name in IAST. For a group review, record each
 song's named references and contextual exclusions, including songs needing no
@@ -106,6 +121,7 @@ python3 scripts/search_song_subjects.py --candidates --slug SLUG --json
 ```
 
 It searches source script, IAST, English and word meanings across performed lines.
+It is a lead generator, not a rule that every detected name must become a tag.
 Read each candidate with its neighbors and the whole poem. Record accepted contextual
 changes with an exact performed source witness and reason in
 `data/song_tag_overrides.json`; `build` applies the same registry as the older pipeline.

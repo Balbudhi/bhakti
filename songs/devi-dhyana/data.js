@@ -21,7 +21,7 @@ window.SONG_META = {
     "Lakṣmī",
     "Sarasvatī",
     "Viṣṇu",
-    "Pārvatī"
+    "Brahmā"
   ],
   "searchAliases": [
     "Shakti",

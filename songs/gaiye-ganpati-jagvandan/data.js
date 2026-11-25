@@ -13,9 +13,7 @@ window.SONG_META = {
     "Gaṇeśa",
     "Rāma",
     "Śakti",
-    "Sītā",
-    "Pārvatī",
-    "Śiva"
+    "Sītā"
   ],
   "searchAliases": [
     "Ganesha",

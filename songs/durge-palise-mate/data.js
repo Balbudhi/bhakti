@@ -23,7 +23,8 @@ window.SONG_META = {
     "Kṛṣṇa",
     "Viṣṇu",
     "Śiva",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Brahmā"
   ],
   "searchAliases": [
     "Durga",

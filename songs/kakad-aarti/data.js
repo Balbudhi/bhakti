@@ -18,11 +18,11 @@ window.SONG_META = {
     "Viṣṇu",
     "Jagannātha",
     "Guru",
-    "Sītā",
     "Lakṣmī",
-    "Śiva",
     "Viṭṭhala",
-    "Śakti"
+    "Śakti",
+    "Dattātreya",
+    "Kubera"
   ],
   "searchAliases": [
     "Morning Arati",

@@ -1,5 +1,46 @@
 # Whole-library repair task
 
+## Devotional subject tags and search confirmation — 25 November 2026
+
+Outcome: tags identify devotional names, addressees and meaningful participants in
+performed devotion. A parent/spouse name used only to identify another deity does
+not get its own tag. A relational epithet can still identify the actual addressee;
+independent invocation elsewhere justifies retaining the relative's tag. Apply the
+same contextual distinction across traditions, retaining meaningful Gurbāṇī names
+and the active singing assembly in So Dar. Preserve established central identities
+when the performed context supports them; absence of a literal name is not a removal rule.
+
+Current step: all 386 readers reviewed using the preceding complete readings.
+Applied 91 removals and 97 additions across 99 readers, with exact source witnesses
+and retained-secondary dispositions in `data/subject-tag-review-2026-11-25.json`.
+The lead inspected every final change. All non-tag reader data, original semantic/
+audio assessments and English correction receipts are unchanged. Existing uncertain
+central-form identities remain explicit. Publication is in progress.
+
+Verification: 45 of 46 release commands pass. The only failure is the same six
+historical trim-record discrepancies, byte-identical to the preceding release.
+All 30,640 ready/deferred DOM-click seeks match the stored onsets. Subject review
+has zero unresolved detector candidates, and all 386 shuffle profiles validate.
+
+Search verification: 37 focused tests pass; all 386 full current titles place an
+exact matching title first with the lyric index loaded. Parvati returns Pārvatī then
+Pārvatī Devī Mahāmāyāvinī. Fourteen current-catalogue queries meet the existing local
+warm-p95 target of 20 ms (observed maximum 17.46 ms after retagging). No search rewrite is justified.
+
+Required integration: retagging must compose with the existing reviewed English
+amendments. Reconstruct original assessed text/tags to verify its immutable hash;
+validate new tag evidence against the current corrected performed source. Preserve
+text receipts, original semantic features/reductions, audio, and unrelated metadata.
+Retag remains atomic and idempotent, including removal back to original tags;
+new unreviewed text or stale receipts must fail without publishing mixed state.
+The regression first reproduced the failure; all 31 focused amendment/retag tests
+now pass, including stale evidence, retained text, rollback and repeated retagging.
+The registry makes already-derived umbrella tags explicit before new additions,
+preserving the existing order when replayed from the original assessment.
+Catalogue rebuilt through song.py retag; run required checks, publish and compare
+served files. Existing browser waiver/audio-retention decisions apply.
+
+
 ## Owner-reopened English repair — 25 November 2026
 
 Outcome: correct awkward or wrong English throughout the current 386-reader library,

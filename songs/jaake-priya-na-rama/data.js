@@ -11,7 +11,6 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Rāma",
-    "Guru",
     "Sītā",
     "Kṛṣṇa",
     "Śakti"

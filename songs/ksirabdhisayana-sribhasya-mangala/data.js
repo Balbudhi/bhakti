@@ -17,9 +17,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Veṅkaṭeśa",
-    "Lakṣmī",
-    "Śakti"
+    "Veṅkaṭeśa"
   ],
   "searchAliases": [
     "Kshirabdhishayana — Shribhashya Mangala",

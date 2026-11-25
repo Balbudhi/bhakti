@@ -11,9 +11,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Jagannātha",
-    "Viṣṇu",
-    "Lakṣmī",
-    "Śakti"
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Jagannatha",

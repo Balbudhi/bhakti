@@ -10,9 +10,7 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śiva",
-    "Pārvatī",
-    "Śakti"
+    "Śiva"
   ],
   "searchAliases": [
     "He Shivshangkar He Karunakar",

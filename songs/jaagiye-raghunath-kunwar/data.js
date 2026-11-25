@@ -16,7 +16,9 @@ window.SONG_META = {
     "Awadhi"
   ],
   "subjectTags": [
-    "Rāma"
+    "Rāma",
+    "Sūrya",
+    "Brahmā"
   ],
   "searchAliases": [
     "Tulsidas",

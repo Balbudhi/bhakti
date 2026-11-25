@@ -18,7 +18,8 @@ window.SONG_META = {
     "Hanumān",
     "Narasimha",
     "Viṣṇu",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Brahmā"
   ],
   "searchAliases": [
     "Ghatikacaladi Ninta Shri Hanumanta",

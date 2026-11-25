@@ -11,7 +11,6 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Kṛṣṇa",
-    "Śiva",
     "Śakti",
     "Guru",
     "Rādhā"

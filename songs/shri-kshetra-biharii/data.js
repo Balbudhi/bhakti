@@ -13,9 +13,7 @@ window.SONG_META = {
     "Jagannātha",
     "Nirguṇa",
     "Kṛṣṇa",
-    "Viṣṇu",
-    "Lakṣmī",
-    "Śakti"
+    "Viṣṇu"
   ],
   "searchAliases": [
     "Jagannatha",

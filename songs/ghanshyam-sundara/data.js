@@ -10,9 +10,7 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Kṛṣṇa",
-    "Lakṣmī",
-    "Śakti"
+    "Kṛṣṇa"
   ],
   "searchAliases": [
     "Ghanashyama Sundara",

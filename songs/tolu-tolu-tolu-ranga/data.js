@@ -16,7 +16,6 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Kṛṣṇa",
-    "Guru",
     "Viṭṭhala"
   ],
   "searchAliases": [

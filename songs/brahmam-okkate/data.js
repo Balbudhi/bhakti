@@ -10,7 +10,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Nirguṇa",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Veṅkaṭeśa"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=3jkJDIDUlCM",
   "searchAliases": [

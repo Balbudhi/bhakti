@@ -12,8 +12,8 @@ window.SONG_META = {
   "subjectTags": [
     "Lakṣmī",
     "Śakti",
-    "Viṣṇu",
-    "Viṭṭhala"
+    "Oṃ",
+    "Sītā"
   ],
   "searchAliases": [
     "Bhagyada Laksmi Baramma",

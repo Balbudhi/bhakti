@@ -19,7 +19,7 @@
     },
     "bolo-lakshmi-maat-ki-jai": {
       "status": "screened",
-      "readerSha256": "4b7a721054df8b3f91ac3693b30d0ada606c3d80854f6bd514e89ad755649f21",
+      "readerSha256": "4c3555c3002c347cba403c14fe67f7790a48e7176ba3be4ac285fe7b3caab100",
       "definitionCount": 34,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -30,6 +30,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "4b7a721054df8b3f91ac3693b30d0ada606c3d80854f6bd514e89ad755649f21",
+        "readerSha256": "4c3555c3002c347cba403c14fe67f7790a48e7176ba3be4ac285fe7b3caab100",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jaya-jagdisha-hare": {
@@ -73,7 +80,7 @@
     },
     "sundar-te-dhyan": {
       "status": "screened",
-      "readerSha256": "32ac58667e82ceb97bed77b6fbe3bcdc1e6904c7a667c597a2a59c2b4876618b",
+      "readerSha256": "0459273484d1492b1d8c6f7442f4bb2197ed3c4a9378b87ab654c7b8918edfd7",
       "definitionCount": 12,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -82,6 +89,13 @@
         "readerSha256": "58d0e6b658b8ca6259ea4b5c98d95b645574f929e1969c54bab06d2ac099c08e",
         "definitionCount": 12,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "32ac58667e82ceb97bed77b6fbe3bcdc1e6904c7a667c597a2a59c2b4876618b",
+        "readerSha256": "0459273484d1492b1d8c6f7442f4bb2197ed3c4a9378b87ab654c7b8918edfd7",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "vrkshavalli-amha": {
@@ -112,7 +126,7 @@
     },
     "jai-mahakali-aarti": {
       "status": "screened",
-      "readerSha256": "2eb18562d86ee2f4b167966b697873d0005926f4232267e74d26667b99c00d01",
+      "readerSha256": "b850fe7b2d3f53cb55d70d6be1294711bccd264414cbb074805b5e83479bf60f",
       "definitionCount": 11,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -121,6 +135,13 @@
         "readerSha256": "0aed62436e6c609914eb17505b86df083a501e74a7a81c3139b0be6c23b7f700",
         "definitionCount": 11,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "2eb18562d86ee2f4b167966b697873d0005926f4232267e74d26667b99c00d01",
+        "readerSha256": "b850fe7b2d3f53cb55d70d6be1294711bccd264414cbb074805b5e83479bf60f",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "baso-mere-nainan-me-nandalal": {
@@ -203,7 +224,7 @@
     },
     "om-jai-gangadhar-aarti": {
       "status": "needs_source_review",
-      "readerSha256": "e0c492c6fa5b0ff72ba6315931bc387d03357546b67a3d4079ad3634c67020d9",
+      "readerSha256": "75b360c9cb8bf311477cadf3dc9a0143d23a2e8eae5b3fb26684b6c0d8495141",
       "definitionCount": 59,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -216,7 +237,14 @@
       "openDefinitions": [
         "verse-2-3"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "e0c492c6fa5b0ff72ba6315931bc387d03357546b67a3d4079ad3634c67020d9",
+        "readerSha256": "75b360c9cb8bf311477cadf3dc9a0143d23a2e8eae5b3fb26684b6c0d8495141",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "ghana-shyama-sundara": {
       "status": "screened",
@@ -285,7 +313,7 @@
     },
     "jai-ganesh-gananath-dayanidhi": {
       "status": "needs_source_review",
-      "readerSha256": "799cd92b7c71e381f59bc6b0d387428be3c049aefd1b713f83e456e97d525316",
+      "readerSha256": "28d644cae0d70117dc80b2157fa22ce32fb57c905524989a3a3f4fc89007796b",
       "definitionCount": 17,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -298,11 +326,18 @@
       "openDefinitions": [
         "verse-2-line-2"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "799cd92b7c71e381f59bc6b0d387428be3c049aefd1b713f83e456e97d525316",
+        "readerSha256": "28d644cae0d70117dc80b2157fa22ce32fb57c905524989a3a3f4fc89007796b",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "jai-shri-shankar-sut-ganesh": {
       "status": "needs_source_review",
-      "readerSha256": "5c7c10c86e88e6f31b0ea3ca43b59bc98a15a5d012e90de629ecb652dcbd2eaa",
+      "readerSha256": "97829fe9e576e6725c6be84d1fd6a4f0d56e209145a26420b577c57aecf89989",
       "definitionCount": 17,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -316,11 +351,18 @@
         "verse-2d",
         "verse-1"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "5c7c10c86e88e6f31b0ea3ca43b59bc98a15a5d012e90de629ecb652dcbd2eaa",
+        "readerSha256": "97829fe9e576e6725c6be84d1fd6a4f0d56e209145a26420b577c57aecf89989",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "ganapat-vighna-haran": {
       "status": "needs_source_review",
-      "readerSha256": "4e8713cfabeaf75c5d5ca23e41530e5225c751b6fb0377873e3db9de82352cc2",
+      "readerSha256": "8ba755132f8a4c2263c9c818f8ddd2d4b09cf1a88b2d459f77147f5e18971ee1",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -333,7 +375,14 @@
       "openDefinitions": [
         "ashta-siddha-nava-vidha-mushaka-vahana"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "4e8713cfabeaf75c5d5ca23e41530e5225c751b6fb0377873e3db9de82352cc2",
+        "readerSha256": "8ba755132f8a4c2263c9c818f8ddd2d4b09cf1a88b2d459f77147f5e18971ee1",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "main-dharu-tiharo-dhyan": {
       "status": "screened",
@@ -350,7 +399,7 @@
     },
     "jai-jai-jai-giriraj-kishori": {
       "status": "screened",
-      "readerSha256": "e0324d18a583052cff0072cb549c26b4d48c3cabfd7ecb14aec56c0881f969d0",
+      "readerSha256": "855f62d048e7ca3c14e86ed93d0ab3052d5bd3f44ce937af87dabd5c8f1b4486",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -359,6 +408,13 @@
         "readerSha256": "a5b8e914fc778d261447c3d5cdf98d5cb2de944fc0bdf7a5dafe8c2c9aceb3a8",
         "definitionCount": 13,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "e0324d18a583052cff0072cb549c26b4d48c3cabfd7ecb14aec56c0881f969d0",
+        "readerSha256": "855f62d048e7ca3c14e86ed93d0ab3052d5bd3f44ce937af87dabd5c8f1b4486",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "tero-chakar-kare-pukar": {
@@ -814,7 +870,7 @@
     },
     "jai-durge-durgati-pariharini": {
       "status": "screened",
-      "readerSha256": "cf1d3ebb88a5b88a190b063607d2fa3314ed9620baae6f9f4195033434b641b6",
+      "readerSha256": "31581a60640565daa8b51d858fc45834f9c38eb844318e62e62ff885b51095c6",
       "definitionCount": 14,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -823,6 +879,13 @@
         "readerSha256": "9400dd495a0882b3ed5162a0cf5e71efe944d0381c3cc8a7b0d11d7555393340",
         "definitionCount": 14,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "cf1d3ebb88a5b88a190b063607d2fa3314ed9620baae6f9f4195033434b641b6",
+        "readerSha256": "31581a60640565daa8b51d858fc45834f9c38eb844318e62e62ff885b51095c6",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "chalo-man-jayen-ghar-apne": {
@@ -970,7 +1033,7 @@
     },
     "kurai-ondrum-illai": {
       "status": "screened",
-      "readerSha256": "67ecbdb37b079dd2c08b62a9f8fe7e1f82a11812226b478d2cab3b8888aac07c",
+      "readerSha256": "d39143ba999bb6fba62de4363818215828cbc02ccce6ff4cbe2e1282012015d8",
       "definitionCount": 22,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -979,11 +1042,18 @@
         "readerSha256": "67ecbdb37b079dd2c08b62a9f8fe7e1f82a11812226b478d2cab3b8888aac07c",
         "definitionCount": 22,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "67ecbdb37b079dd2c08b62a9f8fe7e1f82a11812226b478d2cab3b8888aac07c",
+        "readerSha256": "d39143ba999bb6fba62de4363818215828cbc02ccce6ff4cbe2e1282012015d8",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "ghanshyam-sundara": {
       "status": "screened",
-      "readerSha256": "7bbc3cb87b3ccce7db81a451a8cb36bbbceb1bb43abda52dc3dbbfc87bb740e6",
+      "readerSha256": "eff285cdd60e9ff0a79d53071c2cd733c4bccdef15c99217a623d03b0a3b5ffa",
       "definitionCount": 20,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -992,6 +1062,13 @@
         "readerSha256": "3f4e25f7835ba6ca70a1fd1ccd4b9622b46d8dc0d7da8788d91b7b9cb11c36b6",
         "definitionCount": 20,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "7bbc3cb87b3ccce7db81a451a8cb36bbbceb1bb43abda52dc3dbbfc87bb740e6",
+        "readerSha256": "eff285cdd60e9ff0a79d53071c2cd733c4bccdef15c99217a623d03b0a3b5ffa",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "maili-chadar-odhe-ke": {
@@ -1009,7 +1086,7 @@
     },
     "samapti": {
       "status": "screened",
-      "readerSha256": "9e60c624d9cbd8fae28d8a3c1f443386ce2c9b2037782fd69fdbdd1348a02103",
+      "readerSha256": "b2e7b2b6c3bc133e42006cc02e7584c85c9e4cd466d546af058e2c02fddd6391",
       "definitionCount": 7,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1018,6 +1095,13 @@
         "readerSha256": "9e60c624d9cbd8fae28d8a3c1f443386ce2c9b2037782fd69fdbdd1348a02103",
         "definitionCount": 7,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "9e60c624d9cbd8fae28d8a3c1f443386ce2c9b2037782fd69fdbdd1348a02103",
+        "readerSha256": "b2e7b2b6c3bc133e42006cc02e7584c85c9e4cd466d546af058e2c02fddd6391",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "yeh-garv-bhara-mastak": {
@@ -1054,7 +1138,7 @@
     },
     "aarti-kijiye-hanuman-lala-ki": {
       "status": "screened",
-      "readerSha256": "621d0277d3861f0a3ddcdf84547abbccd877fd57f333e6731627a2324966e0fe",
+      "readerSha256": "66fb1a1bdf80994f72421851cc087e6e8603fbbb2001354d8f1425456ed722ef",
       "definitionCount": 19,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1063,6 +1147,13 @@
         "readerSha256": "eee1ca8b257ef857fef02cc1185f985e493d4b8cc1d1d803faf86ae2d7e47dab",
         "definitionCount": 19,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "621d0277d3861f0a3ddcdf84547abbccd877fd57f333e6731627a2324966e0fe",
+        "readerSha256": "66fb1a1bdf80994f72421851cc087e6e8603fbbb2001354d8f1425456ed722ef",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jo-kachu-sankat-hoye-hamaro": {
@@ -1119,7 +1210,7 @@
     },
     "hanuman-chalisa": {
       "status": "screened",
-      "readerSha256": "4140be8ddf9528796355383be230e4e739c0583febd82e574ec60626fcb78646",
+      "readerSha256": "10fc7bd2469044b383dd8b7a27e7daf53203b653d5f7749644bcf9134e498454",
       "definitionCount": 47,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1130,11 +1221,18 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "4140be8ddf9528796355383be230e4e739c0583febd82e574ec60626fcb78646",
+        "readerSha256": "10fc7bd2469044b383dd8b7a27e7daf53203b653d5f7749644bcf9134e498454",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "hanuman-bhajan-hariharan": {
       "status": "needs_source_review",
-      "readerSha256": "58c05bde1fb53ab4e56acf59c642f4df06a628377b44f66e0a44f08114f6c895",
+      "readerSha256": "6f749d0bec0885deb821275f616f26af7a1690f8cff7bef3238e5ffe0d697f31",
       "definitionCount": 231,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1149,11 +1247,18 @@
       "openDefinitions": [
         "line-038"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "58c05bde1fb53ab4e56acf59c642f4df06a628377b44f66e0a44f08114f6c895",
+        "readerSha256": "6f749d0bec0885deb821275f616f26af7a1690f8cff7bef3238e5ffe0d697f31",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "sampurna-sundarakanda": {
       "status": "screened",
-      "readerSha256": "a2644ff9e63054776cea81c066bb8f13ae0c878c071800227974ed0a9006bf33",
+      "readerSha256": "2891dee9829ed04f51e0f20554e13634dac9987e9c56a449f81a87938288a0df",
       "definitionCount": 541,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1164,6 +1269,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "a2644ff9e63054776cea81c066bb8f13ae0c878c071800227974ed0a9006bf33",
+        "readerSha256": "2891dee9829ed04f51e0f20554e13634dac9987e9c56a449f81a87938288a0df",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "mahavir-hanuman-gosain": {
@@ -1194,7 +1306,7 @@
     },
     "aarti-kunj-bihari-ki": {
       "status": "screened",
-      "readerSha256": "7a4a0333f493f5cc85fa7e513f406dda2680b98e68cee108c741f14c62ce284d",
+      "readerSha256": "55ed4d4d656ed625bb91b6331f88f918022c7ea12b54c2c9497bf9966bd82fd2",
       "definitionCount": 18,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1203,6 +1315,13 @@
         "readerSha256": "68fc26701bd582e90648a53784f4ddfa76909ac3c4b69fa089fda3c50486f70c",
         "definitionCount": 18,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "7a4a0333f493f5cc85fa7e513f406dda2680b98e68cee108c741f14c62ce284d",
+        "readerSha256": "55ed4d4d656ed625bb91b6331f88f918022c7ea12b54c2c9497bf9966bd82fd2",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "prabhu-ham-pe-kripa-karna": {
@@ -1315,7 +1434,7 @@
     },
     "maa-jag-janani-jai-jai": {
       "status": "screened",
-      "readerSha256": "1693d6eba365d16e471eb7bd4d50fccc1f0e79b37035fa63a0171468107fe974",
+      "readerSha256": "b5216fd87bd3ae29d2ea4a147c7725dc962e2beb529a9ce4e1df2fa6291f0ec3",
       "definitionCount": 43,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1326,6 +1445,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "1693d6eba365d16e471eb7bd4d50fccc1f0e79b37035fa63a0171468107fe974",
+        "readerSha256": "b5216fd87bd3ae29d2ea4a147c7725dc962e2beb529a9ce4e1df2fa6291f0ec3",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "namo-namo-vindhyeshwari": {
@@ -1349,7 +1475,7 @@
     },
     "durga-chalisa": {
       "status": "screened",
-      "readerSha256": "3da771ff046f416b29ccdd73c94468f373dc9a52b944e884a0250e7f48828819",
+      "readerSha256": "ef9345b24d5dc8422ac150473dc1495fe7ce0fdf40ed0a5851f44455ad7a545e",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1360,6 +1486,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "3da771ff046f416b29ccdd73c94468f373dc9a52b944e884a0250e7f48828819",
+        "readerSha256": "ef9345b24d5dc8422ac150473dc1495fe7ce0fdf40ed0a5851f44455ad7a545e",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "sawan-gagane-ghor-ghanaghata": {
@@ -1522,7 +1655,7 @@
     },
     "jai-ambe-gauri": {
       "status": "screened",
-      "readerSha256": "6df0c2055d1791c6d7515fe26c98922019021dd6d43459a9ace390423c76cb27",
+      "readerSha256": "04e0aca8c207030c41def74eb50a45a64fcf42218eacaaff44cc2a7eeaacf579",
       "definitionCount": 42,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1533,6 +1666,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "6df0c2055d1791c6d7515fe26c98922019021dd6d43459a9ace390423c76cb27",
+        "readerSha256": "04e0aca8c207030c41def74eb50a45a64fcf42218eacaaff44cc2a7eeaacf579",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jaun-tore-caran-kamala": {
@@ -1628,7 +1768,7 @@
     },
     "namaskar-mera": {
       "status": "needs_source_review",
-      "readerSha256": "3ecc79e78a8c7bc31d46d9527ad2ad39b71fddeabe88d8f0b1341cece55e952f",
+      "readerSha256": "d9aedfbbddd2c3527d61dc5ce126e082d3233938991a08e1e9e692f5cd7717e0",
       "definitionCount": 33,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1641,7 +1781,14 @@
       "openDefinitions": [
         "maya-machhindar"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "3ecc79e78a8c7bc31d46d9527ad2ad39b71fddeabe88d8f0b1341cece55e952f",
+        "readerSha256": "d9aedfbbddd2c3527d61dc5ce126e082d3233938991a08e1e9e692f5cd7717e0",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "neelkanth-mahadev-dayalu": {
       "status": "screened",
@@ -1723,7 +1870,7 @@
     },
     "jagadamb-jagadamb": {
       "status": "needs_source_review",
-      "readerSha256": "0d9badf9ef47b4fd5c6066ac9bed20a86b1c96069e7f4a670916c3201452d6ce",
+      "readerSha256": "6f3920206336ab979b9030f688c8c74a52cadad025c0e8b3fbd777ed5b69842c",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1736,7 +1883,14 @@
       "openDefinitions": [
         "sahasra-sira"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "0d9badf9ef47b4fd5c6066ac9bed20a86b1c96069e7f4a670916c3201452d6ce",
+        "readerSha256": "6f3920206336ab979b9030f688c8c74a52cadad025c0e8b3fbd777ed5b69842c",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "rama-rama-ratte-ratte": {
       "status": "screened",
@@ -1792,7 +1946,7 @@
     },
     "doi-kar-teka-hei-matha": {
       "status": "screened",
-      "readerSha256": "214ab481155e59b299d0eeff5861b6be3aeaf54d8385c9f737363b989bc6a5ba",
+      "readerSha256": "7644ff2fc200c928432a019798c39db0333b93a52901c1ef8ea45afb00411cb9",
       "definitionCount": 94,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1803,6 +1957,13 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "214ab481155e59b299d0eeff5861b6be3aeaf54d8385c9f737363b989bc6a5ba",
+        "readerSha256": "7644ff2fc200c928432a019798c39db0333b93a52901c1ef8ea45afb00411cb9",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "lalakari": {
@@ -1939,7 +2100,7 @@
     },
     "shej-aarti": {
       "status": "needs_source_review",
-      "readerSha256": "6953811b4031fcfea5ec782d85f1e1b85ad0b256b7b59c7fa6d7429bfe5b0ac9",
+      "readerSha256": "a7055598c8547c1d400e543ef283a4a282e5a602a49eca6dc5e62444fa29fe0e",
       "definitionCount": 82,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1955,11 +2116,18 @@
         "line-066",
         "line-078"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "6953811b4031fcfea5ec782d85f1e1b85ad0b256b7b59c7fa6d7429bfe5b0ac9",
+        "readerSha256": "a7055598c8547c1d400e543ef283a4a282e5a602a49eca6dc5e62444fa29fe0e",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "kakad-aarti": {
       "status": "needs_source_review",
-      "readerSha256": "4f81e8f2f86a48fa7d9bd1f5a5bbd16c595c81e20a933ac437a25d2c42931eaf",
+      "readerSha256": "d7a1d43c2dd9ed2c2e56f82d8f82b502a0361c721ee9132322e0e8965abbf3ff",
       "definitionCount": 249,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1974,11 +2142,18 @@
       "openDefinitions": [
         "line-114"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "4f81e8f2f86a48fa7d9bd1f5a5bbd16c595c81e20a933ac437a25d2c42931eaf",
+        "readerSha256": "d7a1d43c2dd9ed2c2e56f82d8f82b502a0361c721ee9132322e0e8965abbf3ff",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "madhyahna-aarti": {
       "status": "needs_source_review",
-      "readerSha256": "5b73694f8a72f551b219510e3b4f889f00cbb023631f033b39b253955121c703",
+      "readerSha256": "7a589706d33aec1defe2b13d94f316c998aeccbc28685b5e604a008926a72ad3",
       "definitionCount": 177,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -1994,11 +2169,18 @@
         "line-034",
         "line-045"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "5b73694f8a72f551b219510e3b4f889f00cbb023631f033b39b253955121c703",
+        "readerSha256": "7a589706d33aec1defe2b13d94f316c998aeccbc28685b5e604a008926a72ad3",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "dhoop-aarti": {
       "status": "screened",
-      "readerSha256": "189d40b320c5c7ff335ac583ed24a116e7e67d1bbc747743d3fabe487ffe52ff",
+      "readerSha256": "891f22f6e45faa1ef8c26a818e35a310f599f3a352a35b651f5181e7b46e8c26",
       "definitionCount": 164,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2007,6 +2189,13 @@
         "readerSha256": "581e60ed7cc6e83b3e39f23698c1d5dfdd521099b82cf6ba7f008aa4ac235f91",
         "definitionCount": 164,
         "reviewedAt": "2026-11-22"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "189d40b320c5c7ff335ac583ed24a116e7e67d1bbc747743d3fabe487ffe52ff",
+        "readerSha256": "891f22f6e45faa1ef8c26a818e35a310f599f3a352a35b651f5181e7b46e8c26",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "naiya-paar-karna": {
@@ -2024,7 +2213,7 @@
     },
     "bhagyada-lakshmi-baramma": {
       "status": "screened",
-      "readerSha256": "cf271cd165d00684166908caf08dada7601285bd8b823b1f5b0a1af03bea8a25",
+      "readerSha256": "3b806d8dc2f08c05fd15d4e14a38bb48eed011afe91f4fb26059c0dcc2a02d09",
       "definitionCount": 14,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2033,6 +2222,13 @@
         "readerSha256": "667f0da0fa76b111a6607b35fbb8f2d45c5250c236694c5abd5fdde617c6fa21",
         "definitionCount": 14,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "cf271cd165d00684166908caf08dada7601285bd8b823b1f5b0a1af03bea8a25",
+        "readerSha256": "3b806d8dc2f08c05fd15d4e14a38bb48eed011afe91f4fb26059c0dcc2a02d09",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "raat-dhal-gayee": {
@@ -2050,7 +2246,7 @@
     },
     "gaiye-ganpati-jagvandan": {
       "status": "screened",
-      "readerSha256": "c0bdb5f9b1e78965a0282986c3d747320b29f08277043f6ac6b32d90fb95a2ac",
+      "readerSha256": "a677b95ea040ba81d4e31288914124276a373c7e06df32e819b18ad0ee7ca28b",
       "definitionCount": 14,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2059,11 +2255,18 @@
         "readerSha256": "b2c4bb9ace3dc7f113a714313aea4e014eaf3a5999a77f485ca80d204c783b68",
         "definitionCount": 14,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "c0bdb5f9b1e78965a0282986c3d747320b29f08277043f6ac6b32d90fb95a2ac",
+        "readerSha256": "a677b95ea040ba81d4e31288914124276a373c7e06df32e819b18ad0ee7ca28b",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "vighnaharan-gajvadan": {
       "status": "screened",
-      "readerSha256": "e563b429b29fe2106fe89d3e6c9aea60601995f4f6596923b63b126c0223c31a",
+      "readerSha256": "f94730c5aeda3167cad0b1a08f783e523f41045b6fa2e440b876b00ccffae9b9",
       "definitionCount": 17,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2072,6 +2275,13 @@
         "readerSha256": "e563b429b29fe2106fe89d3e6c9aea60601995f4f6596923b63b126c0223c31a",
         "definitionCount": 17,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "e563b429b29fe2106fe89d3e6c9aea60601995f4f6596923b63b126c0223c31a",
+        "readerSha256": "f94730c5aeda3167cad0b1a08f783e523f41045b6fa2e440b876b00ccffae9b9",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "janani-main-na-jiyun-bin-rama": {
@@ -2102,7 +2312,7 @@
     },
     "jai-shiva-shankar-jai-gangadhar": {
       "status": "screened",
-      "readerSha256": "8b2c1b5c3a90483e40cf4597ad456417cecf1f88ef5e87ac1dcbfa3d606c961b",
+      "readerSha256": "b93348c0119488d2be485e555cf64fbb5d317f7b02fb7d3a74893ff458170cdd",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2111,6 +2321,13 @@
         "readerSha256": "b93348c0119488d2be485e555cf64fbb5d317f7b02fb7d3a74893ff458170cdd",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "8b2c1b5c3a90483e40cf4597ad456417cecf1f88ef5e87ac1dcbfa3d606c961b",
+        "readerSha256": "b93348c0119488d2be485e555cf64fbb5d317f7b02fb7d3a74893ff458170cdd",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "sheesh-gang-ardhang-parvati": {
@@ -2128,7 +2345,7 @@
     },
     "he-shivshankar-he-karunakar": {
       "status": "screened",
-      "readerSha256": "0be57ffb1b7f4dccb23cec8b507a9b4a5996d2a7eefdf68e89d62a21babeda2b",
+      "readerSha256": "35fc97410e65b23dae9729c220f4389bbe96a027b4a299dcaf4fb38b6baad247",
       "definitionCount": 24,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2137,6 +2354,13 @@
         "readerSha256": "bb39026ad6f8022a46b5a726b24dbd7a6b65a0372792ccc2c4944041fcf43d17",
         "definitionCount": 24,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "0be57ffb1b7f4dccb23cec8b507a9b4a5996d2a7eefdf68e89d62a21babeda2b",
+        "readerSha256": "35fc97410e65b23dae9729c220f4389bbe96a027b4a299dcaf4fb38b6baad247",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "mahadeva-vishambar": {
@@ -2154,7 +2378,7 @@
     },
     "jaagiye-raghunath-kunwar": {
       "status": "screened",
-      "readerSha256": "98177b6c47e7f072b85850e5b5d4ac0c6557e56013b9c14bbcfd5df547b3e808",
+      "readerSha256": "d9f6b3adfd66b3a7a5d6c1114090cb3cc76ee6c3f9c8ed525b82a4d74d95e8c3",
       "definitionCount": 12,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2163,6 +2387,13 @@
         "readerSha256": "0da27f1458cb405258a8ccc66f1cdaaec5a64e3a9e545d4c852dab82db602827",
         "definitionCount": 12,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "98177b6c47e7f072b85850e5b5d4ac0c6557e56013b9c14bbcfd5df547b3e808",
+        "readerSha256": "d9f6b3adfd66b3a7a5d6c1114090cb3cc76ee6c3f9c8ed525b82a4d74d95e8c3",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "shri-ramachandra-kripalu-bhajman": {
@@ -2317,7 +2548,7 @@
     },
     "vishnu-sahasranama": {
       "status": "screened",
-      "readerSha256": "3a205146619070568b113269f27acd1b454bc476858c1f0e24855a9d26b9479f",
+      "readerSha256": "6bde7bd8ab3d8362fdd4fff449f0e46fc6a74a69aa550a3e37d3a08a79ccb434",
       "definitionCount": 154,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2328,11 +2559,18 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "3a205146619070568b113269f27acd1b454bc476858c1f0e24855a9d26b9479f",
+        "readerSha256": "6bde7bd8ab3d8362fdd4fff449f0e46fc6a74a69aa550a3e37d3a08a79ccb434",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "patita-pavan-jai-raam": {
       "status": "screened",
-      "readerSha256": "c2e50864e02789c5dd024c347f20cf0309064f22673f2b23f15ff4281589e9ab",
+      "readerSha256": "4267af96493729d331b1837cd874069909d4f7465f266da77d8a3a56f2f5d9df",
       "definitionCount": 8,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2341,11 +2579,18 @@
         "readerSha256": "4267af96493729d331b1837cd874069909d4f7465f266da77d8a3a56f2f5d9df",
         "definitionCount": 8,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "c2e50864e02789c5dd024c347f20cf0309064f22673f2b23f15ff4281589e9ab",
+        "readerSha256": "4267af96493729d331b1837cd874069909d4f7465f266da77d8a3a56f2f5d9df",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "madhur-madhur-sai-naam": {
       "status": "screened",
-      "readerSha256": "7b59f22e8ab8103f0f20e4be3f7f28b34eed2c7edfd3660cb9fcd7067ee01f71",
+      "readerSha256": "c8e93b9b0d82ccc96e0929732482403cfc225b0a5eab053b552067dc263a3149",
       "definitionCount": 5,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2354,11 +2599,18 @@
         "readerSha256": "c8e93b9b0d82ccc96e0929732482403cfc225b0a5eab053b552067dc263a3149",
         "definitionCount": 5,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "7b59f22e8ab8103f0f20e4be3f7f28b34eed2c7edfd3660cb9fcd7067ee01f71",
+        "readerSha256": "c8e93b9b0d82ccc96e0929732482403cfc225b0a5eab053b552067dc263a3149",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "hanuman-bahuk": {
       "status": "screened",
-      "readerSha256": "144daa4e06303b4f47a8117a035e36c2f46c82a7f962ba48f3d7871d68973cd9",
+      "readerSha256": "b7761f3d56c201e4b26dcfa71cb9e8d711a67494f2a5623f87f40a20e208560e",
       "definitionCount": 203,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2369,11 +2621,18 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "144daa4e06303b4f47a8117a035e36c2f46c82a7f962ba48f3d7871d68973cd9",
+        "readerSha256": "b7761f3d56c201e4b26dcfa71cb9e8d711a67494f2a5623f87f40a20e208560e",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "om-namah-shivaya-damaru-paani-shool": {
       "status": "screened",
-      "readerSha256": "bd66fa070cdf31934df39e35ef432e7192c42e5b7fad1df0d7f30ae59e5686f6",
+      "readerSha256": "72c98fae12c10017ab18122851a8c4c23c1fd6296b1c5110298e49a91166e66c",
       "definitionCount": 17,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2382,11 +2641,18 @@
         "readerSha256": "92aded98a96b4b4cc027f378cd9c7687385f06d69287e90e22dad4be0ce9dabe",
         "definitionCount": 17,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "bd66fa070cdf31934df39e35ef432e7192c42e5b7fad1df0d7f30ae59e5686f6",
+        "readerSha256": "72c98fae12c10017ab18122851a8c4c23c1fd6296b1c5110298e49a91166e66c",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "shankar-ho": {
       "status": "screened",
-      "readerSha256": "3a0d6244731e1cfab884d78e0b91a1d6d555bacf587f7da8aa7d7ec6a7bf2ceb",
+      "readerSha256": "593c151b19e5334885cd0676a7e7b84640e2b4f6dc9b25b32838d6e374349dec",
       "definitionCount": 20,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2395,11 +2661,18 @@
         "readerSha256": "3a0d6244731e1cfab884d78e0b91a1d6d555bacf587f7da8aa7d7ec6a7bf2ceb",
         "definitionCount": 20,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "3a0d6244731e1cfab884d78e0b91a1d6d555bacf587f7da8aa7d7ec6a7bf2ceb",
+        "readerSha256": "593c151b19e5334885cd0676a7e7b84640e2b4f6dc9b25b32838d6e374349dec",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "pradnya-vivardhan-stotra": {
       "status": "screened",
-      "readerSha256": "3387592e5066838f839d463f4e548c2737bb3d2514f4ce86f1edbb7db78a8b05",
+      "readerSha256": "1c1902c233f98615cfd7a20a37074f6f86422aaf77b58d8ba33a30ee57c0e7ed",
       "definitionCount": 19,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2410,6 +2683,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "3387592e5066838f839d463f4e548c2737bb3d2514f4ce86f1edbb7db78a8b05",
+        "readerSha256": "1c1902c233f98615cfd7a20a37074f6f86422aaf77b58d8ba33a30ee57c0e7ed",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "mati-re-mati-re": {
@@ -2440,7 +2720,7 @@
     },
     "shejarti": {
       "status": "screened",
-      "readerSha256": "0e2037e9ad0a8aa206dbe0d73fd0e93bd9aab7cfb1644f14247312b7161c53ca",
+      "readerSha256": "3ada47d3d73f5150947e6d3fa45d9f9c304113fb8b6bfab76488e19874e44eb0",
       "definitionCount": 108,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2449,6 +2729,13 @@
         "readerSha256": "1599a07fc7c9e6aa0923a6806b664c7ea9ce666614bfaf0bfec5d4dbe3416172",
         "definitionCount": 108,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "0e2037e9ad0a8aa206dbe0d73fd0e93bd9aab7cfb1644f14247312b7161c53ca",
+        "readerSha256": "3ada47d3d73f5150947e6d3fa45d9f9c304113fb8b6bfab76488e19874e44eb0",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "geet-jaisa-main-hun-nirashrit": {
@@ -2479,7 +2766,7 @@
     },
     "shree-sai-aarti": {
       "status": "screened",
-      "readerSha256": "fc646b826adf060f9f32084a0bd1122db26e0c7f2545398eecc3996b43baa9f9",
+      "readerSha256": "f73522964dd551012bfe7c0d45fbdb4a961005df1a8bd36299ead9bc1c47b636",
       "definitionCount": 27,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2490,6 +2777,13 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "fc646b826adf060f9f32084a0bd1122db26e0c7f2545398eecc3996b43baa9f9",
+        "readerSha256": "f73522964dd551012bfe7c0d45fbdb4a961005df1a8bd36299ead9bc1c47b636",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "balada-beka-re-lagila-ghanti": {
@@ -2567,7 +2861,7 @@
     },
     "jogii-re-kian-jau-dura-deshe": {
       "status": "needs_source_review",
-      "readerSha256": "6857afc9aafead579e71da8fc057a64eec2b65c7c9fd182660cf2b940ccf22fb",
+      "readerSha256": "343d434d864dd4eb8eb747225f2be446ba98b4a2909221d0ede6627eac998d45",
       "definitionCount": 14,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2580,11 +2874,18 @@
       "openDefinitions": [
         "karama-sarile-tora-ei-jibanare"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "6857afc9aafead579e71da8fc057a64eec2b65c7c9fd182660cf2b940ccf22fb",
+        "readerSha256": "343d434d864dd4eb8eb747225f2be446ba98b4a2909221d0ede6627eac998d45",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "mati-re-mati-re-kete-dakuchi-re-tote": {
       "status": "needs_source_review",
-      "readerSha256": "6ea7c9a0f1a70562f63aba03136bfe0cc3ee16dde485660c3b8ecea7c5d1c82c",
+      "readerSha256": "db2fc89f3293e12c8cf031080da5995c2a3c05a548441737ddd1518aadeee221",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2597,11 +2898,18 @@
       "openDefinitions": [
         "kete-dakuchi-re-tote"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "6ea7c9a0f1a70562f63aba03136bfe0cc3ee16dde485660c3b8ecea7c5d1c82c",
+        "readerSha256": "db2fc89f3293e12c8cf031080da5995c2a3c05a548441737ddd1518aadeee221",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "shri-guru-prarthana": {
       "status": "screened",
-      "readerSha256": "e9f3bd9997c6fa4907948fa005fcce9fef293452d7308fe76b7894d3bb34323a",
+      "readerSha256": "4b3da204edb19fe1ba081b1e89fa3cac3a0e7d8b58ea814dc4167c704b00ee5c",
       "definitionCount": 26,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2610,6 +2918,13 @@
         "readerSha256": "a8938d0eb451bb757a76559a3878b320a31a5cc720040221735ac00efc34563e",
         "definitionCount": 26,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "e9f3bd9997c6fa4907948fa005fcce9fef293452d7308fe76b7894d3bb34323a",
+        "readerSha256": "4b3da204edb19fe1ba081b1e89fa3cac3a0e7d8b58ea814dc4167c704b00ee5c",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "bela-gadi-jae-kala-sari-jae": {
@@ -2640,7 +2955,7 @@
     },
     "e-barashe-aasi-achi": {
       "status": "screened",
-      "readerSha256": "8f4e0639a4a50493e65050d1eee245d6666b47c7c29ef05aa2fea7b67a66fc86",
+      "readerSha256": "9d802fe6f7b71d57e3a8fc78683c6818d8e2a88497deafd33a28ad04e47975dc",
       "definitionCount": 8,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2649,6 +2964,13 @@
         "readerSha256": "b8fc4f51bf3ce534e29c672e47c42c454ee326089b0c07802ffc0da0ef28c168",
         "definitionCount": 8,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "8f4e0639a4a50493e65050d1eee245d6666b47c7c29ef05aa2fea7b67a66fc86",
+        "readerSha256": "9d802fe6f7b71d57e3a8fc78683c6818d8e2a88497deafd33a28ad04e47975dc",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jagannath-jagannath": {
@@ -2692,7 +3014,7 @@
     },
     "shri-kshetra-biharii": {
       "status": "screened",
-      "readerSha256": "0777a2e3585429712ac18cbee929873d720a05e12c33dc1e6bf68712503f4754",
+      "readerSha256": "d276c70c196e6aff8a682ed761772d7834f0330e5c3749e4bfe70f567ef9dcfc",
       "definitionCount": 63,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2701,11 +3023,18 @@
         "readerSha256": "07a0b65857df99418f2aa868f65107ad6e8a14a2f47df46889310001bf59f74e",
         "definitionCount": 63,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "0777a2e3585429712ac18cbee929873d720a05e12c33dc1e6bf68712503f4754",
+        "readerSha256": "d276c70c196e6aff8a682ed761772d7834f0330e5c3749e4bfe70f567ef9dcfc",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "baishi-pahacha": {
       "status": "needs_source_review",
-      "readerSha256": "fdefab7c7846beffe0387c7582e29d0967a1996afd6345666dfd414caffb581d",
+      "readerSha256": "c37ece5dc5b699246245f2ca6dc199462fae4b04445e24fe8118dead6bf301cb",
       "definitionCount": 30,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2719,7 +3048,14 @@
         "line-pahacha-17-f",
         "line-pahacha-17-m"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "fdefab7c7846beffe0387c7582e29d0967a1996afd6345666dfd414caffb581d",
+        "readerSha256": "c37ece5dc5b699246245f2ca6dc199462fae4b04445e24fe8118dead6bf301cb",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "aao-aao-padharo-mere-guruwar": {
       "status": "screened",
@@ -3026,7 +3362,7 @@
     },
     "aarti-gajvadan-vinayak-ki": {
       "status": "screened",
-      "readerSha256": "dd4535f6327d562068523c8fc594e501a61dfd1fcad908ba4d3d2842fc88b44c",
+      "readerSha256": "43b19b1cda5026f478fe26846d1e8d43f1940ed6798266816fa6d88e5f09f790",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3035,11 +3371,18 @@
         "readerSha256": "26f642d7afad6f95b87fa793e4f4546a2ae0dd816e7725f1ca37e756032f17fa",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "dd4535f6327d562068523c8fc594e501a61dfd1fcad908ba4d3d2842fc88b44c",
+        "readerSha256": "43b19b1cda5026f478fe26846d1e8d43f1940ed6798266816fa6d88e5f09f790",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "parvati-devi-mahamayavini": {
       "status": "screened",
-      "readerSha256": "5cbb7b97260fe2cd39d0cfefeeaeae72355007180e697f1ed95b6bf9cdc21544",
+      "readerSha256": "aa899d015575cb011d0e8a1e828dbee3ef1ad975b92d17c47e1c4126fbe1414f",
       "definitionCount": 8,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3048,11 +3391,18 @@
         "readerSha256": "bc01fe906f3263c442b30b0a40671edadf9ca2bb5ed2644092b3edfe678f58bc",
         "definitionCount": 8,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "5cbb7b97260fe2cd39d0cfefeeaeae72355007180e697f1ed95b6bf9cdc21544",
+        "readerSha256": "aa899d015575cb011d0e8a1e828dbee3ef1ad975b92d17c47e1c4126fbe1414f",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "aarti-kijiye-shailsuta-ki": {
       "status": "screened",
-      "readerSha256": "70a2cb7862df26022766b6ddeab84f4ba434051952090525cf23b2ec5dd2cffc",
+      "readerSha256": "0227dca3bb3c9efdba3235915d473321d61943870f134912fbb2e658824e9a4f",
       "definitionCount": 19,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3061,6 +3411,13 @@
         "readerSha256": "ab8204324f39020548336b7b5195287dee1a0fd1a2fd852301431d602d548461",
         "definitionCount": 19,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "70a2cb7862df26022766b6ddeab84f4ba434051952090525cf23b2ec5dd2cffc",
+        "readerSha256": "0227dca3bb3c9efdba3235915d473321d61943870f134912fbb2e658824e9a4f",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "dekho-mand-mand": {
@@ -3195,7 +3552,7 @@
     },
     "sai-ki-palki": {
       "status": "screened",
-      "readerSha256": "57e9cb6718092833b5083ee172809c63905d53f7a3c0d4670f2a97c70e74625e",
+      "readerSha256": "1ba46d03954acfc463832c5b563a28ef56a71e34d8e7bcebeb4ee1d451ee9909",
       "definitionCount": 16,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3204,6 +3561,13 @@
         "readerSha256": "29fc08cafdfbfcd2ff6fab8a5614e2800e5f5f3e9ff75735f01faa1bacdac6ee",
         "definitionCount": 16,
         "reviewedAt": "2026-11-22"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "57e9cb6718092833b5083ee172809c63905d53f7a3c0d4670f2a97c70e74625e",
+        "readerSha256": "1ba46d03954acfc463832c5b563a28ef56a71e34d8e7bcebeb4ee1d451ee9909",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "kyun-nahin-manegi-meri-maa": {
@@ -3359,7 +3723,7 @@
     },
     "uttho-uttho": {
       "status": "screened",
-      "readerSha256": "b3521e694ff04563f2b149b9e14b4d1242283ddfc94381ae3b572f73af00b41b",
+      "readerSha256": "1dd636333358ea43cc11187bc77fb8466a2b43adff16a6858fad8e22969c2111",
       "definitionCount": 16,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3368,11 +3732,18 @@
         "readerSha256": "d3866aa0dd3ca148b36e30b3ca1aa7a4ca8b71fc5614d69969a515f3f67d5a3f",
         "definitionCount": 16,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "b3521e694ff04563f2b149b9e14b4d1242283ddfc94381ae3b572f73af00b41b",
+        "readerSha256": "1dd636333358ea43cc11187bc77fb8466a2b43adff16a6858fad8e22969c2111",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "ekdant-gajvadan": {
       "status": "screened",
-      "readerSha256": "be7935ac6c4006ca151ce891162e8992dc511301cf4e0a7eac3b8fb38b4a231e",
+      "readerSha256": "1ba333ac3365fc9b1eaab89b06c1ee930e7be135ca083f5b92b22e96bf39c37f",
       "definitionCount": 12,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3383,11 +3754,18 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "be7935ac6c4006ca151ce891162e8992dc511301cf4e0a7eac3b8fb38b4a231e",
+        "readerSha256": "1ba333ac3365fc9b1eaab89b06c1ee930e7be135ca083f5b92b22e96bf39c37f",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jayati-jayati-shri-ganesh": {
       "status": "screened",
-      "readerSha256": "d1cba5d9c95587a7008597ffd521030619d60b6664123f1efb0f335cf1982ad9",
+      "readerSha256": "63b294f2c67f3a115c0326a70244c4d45ef9180616e47ea07e6333b35fbf1293",
       "definitionCount": 16,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3396,11 +3774,18 @@
         "readerSha256": "a8c6ec42c0b1ce701aadbd3fbd76a65694c1848c0297146d9925754707b5732d",
         "definitionCount": 16,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "d1cba5d9c95587a7008597ffd521030619d60b6664123f1efb0f335cf1982ad9",
+        "readerSha256": "63b294f2c67f3a115c0326a70244c4d45ef9180616e47ea07e6333b35fbf1293",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "siddh-bhajo-omkar-avadho": {
       "status": "screened",
-      "readerSha256": "509c642b632fbc12e925023247b736cf878dd85f1b113cec4b5397d2975e3b0b",
+      "readerSha256": "a0e6069a5e68c04325e842c649b672fad84874ad1fc74eb1e793f4f4e9d304ce",
       "definitionCount": 20,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3411,6 +3796,13 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "509c642b632fbc12e925023247b736cf878dd85f1b113cec4b5397d2975e3b0b",
+        "readerSha256": "a0e6069a5e68c04325e842c649b672fad84874ad1fc74eb1e793f4f4e9d304ce",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "rama-ho-rama": {
@@ -3441,7 +3833,7 @@
     },
     "jaake-priya-na-rama": {
       "status": "screened",
-      "readerSha256": "73240d14b6454bdc9c2f360fe6335ebe014b4c6239f554961bf5c88c4e7e2a22",
+      "readerSha256": "f431ea172e59ce5c69694083c61cbcecab91b70368fbf7da97594e5f702e1627",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3450,6 +3842,13 @@
         "readerSha256": "f14d6035142a1e9ef69b5c986b70d887b384f604f30d65858c9b9f28cdd1292c",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "73240d14b6454bdc9c2f360fe6335ebe014b4c6239f554961bf5c88c4e7e2a22",
+        "readerSha256": "f431ea172e59ce5c69694083c61cbcecab91b70368fbf7da97594e5f702e1627",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "kahan-ke-pathik-kahan": {
@@ -3484,7 +3883,7 @@
     },
     "janchiye-girijapati-kashi": {
       "status": "screened",
-      "readerSha256": "eb36e5ac107085aefd614f01821afe84bd6836a0ecbe8d22a848c981a64fdb80",
+      "readerSha256": "0d47556f2f8da67662286e1e34cc40bc2b5b8f4e11b100d50cb7785f261e204b",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3493,11 +3892,18 @@
         "readerSha256": "04527e6212f12e32870b8e78f7b8ffe07fa2ff3a6629d023d4879146a0e6577d",
         "definitionCount": 13,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "eb36e5ac107085aefd614f01821afe84bd6836a0ecbe8d22a848c981a64fdb80",
+        "readerSha256": "0d47556f2f8da67662286e1e34cc40bc2b5b8f4e11b100d50cb7785f261e204b",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "shiva-shiva-hoi-prasanna": {
       "status": "screened",
-      "readerSha256": "833b7e8da916ed3addcebe6fcb54dae255fdba3ac474023ed3a4a4d00f773c2f",
+      "readerSha256": "79b9fae766a5a185a063681f4580d1f05bea1696a1fa222a227137e565e51802",
       "definitionCount": 16,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3506,6 +3912,13 @@
         "readerSha256": "79b9fae766a5a185a063681f4580d1f05bea1696a1fa222a227137e565e51802",
         "definitionCount": 16,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "833b7e8da916ed3addcebe6fcb54dae255fdba3ac474023ed3a4a4d00f773c2f",
+        "readerSha256": "79b9fae766a5a185a063681f4580d1f05bea1696a1fa222a227137e565e51802",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "kai-janmon-se-bula-rahi-hoon": {
@@ -3603,7 +4016,7 @@
     },
     "venkatachala-nilayam": {
       "status": "screened",
-      "readerSha256": "7b656195632cf6764787077566ba4f25d18d04e31a9e8232a95228327764db48",
+      "readerSha256": "da776eed9f3c8d7c36a1d4f77840edc27e5a4865069b2eabdbb1af75ba024228",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3612,11 +4025,18 @@
         "readerSha256": "82e36fd601dd52e47e4b8a64e1311598feab6f8538347869fc9093937b7c548a",
         "definitionCount": 13,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "7b656195632cf6764787077566ba4f25d18d04e31a9e8232a95228327764db48",
+        "readerSha256": "da776eed9f3c8d7c36a1d4f77840edc27e5a4865069b2eabdbb1af75ba024228",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "kolaru-pathigam": {
       "status": "needs_source_review",
-      "readerSha256": "c839a8652300e94fb730723a04a70ec9e4c0a1cb8401464477d0e5399766513e",
+      "readerSha256": "b6989ca2d408be517435791cc10a016b72efe839fe2d69459e736946348458b0",
       "definitionCount": 49,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3629,11 +4049,18 @@
       "openDefinitions": [
         "v7-l1"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "c839a8652300e94fb730723a04a70ec9e4c0a1cb8401464477d0e5399766513e",
+        "readerSha256": "b6989ca2d408be517435791cc10a016b72efe839fe2d69459e736946348458b0",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "siyavar-ramchandra-ki-jai": {
       "status": "screened",
-      "readerSha256": "0bed40f7774c08c4dd26152007b765e325f5bf5b69ab952b14ac808b038217a4",
+      "readerSha256": "6f3773a6d01b7b63bc84b03044ba0fdb1728329786d218776ef352760521e7b6",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3642,6 +4069,13 @@
         "readerSha256": "01801a41d5ff2ed83048945c6e3cc30cd072f783d9f1fc42ccdac61557252e17",
         "definitionCount": 13,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "0bed40f7774c08c4dd26152007b765e325f5bf5b69ab952b14ac808b038217a4",
+        "readerSha256": "6f3773a6d01b7b63bc84b03044ba0fdb1728329786d218776ef352760521e7b6",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "parvati-hanuman-ansh": {
@@ -3780,7 +4214,7 @@
     },
     "dasana-madiko-enna": {
       "status": "screened",
-      "readerSha256": "50ccedd90618d3997cf008632c8818f2f3ddd9e883e234b0ae13835056c9b64c",
+      "readerSha256": "98ab9ee9eaac3002c845e57e5734014b9b458b940e5290265a3e47c4a764256d",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3789,11 +4223,18 @@
         "readerSha256": "13275f35d8e280e298677949ecc76b8d48adf01e3ea3a04df31d447e3c9eae1a",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "50ccedd90618d3997cf008632c8818f2f3ddd9e883e234b0ae13835056c9b64c",
+        "readerSha256": "98ab9ee9eaac3002c845e57e5734014b9b458b940e5290265a3e47c4a764256d",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "nanati-baduku": {
       "status": "screened",
-      "readerSha256": "99702a3373c2c40bdd8c2c470848e8f7d216daac62beae93f8bb3e28f8d77546",
+      "readerSha256": "dcbe5730f088a09c03c87101a0cbee1141b6e851fa557e007874047d7daf8e06",
       "definitionCount": 11,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3802,6 +4243,13 @@
         "readerSha256": "99702a3373c2c40bdd8c2c470848e8f7d216daac62beae93f8bb3e28f8d77546",
         "definitionCount": 11,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "99702a3373c2c40bdd8c2c470848e8f7d216daac62beae93f8bb3e28f8d77546",
+        "readerSha256": "dcbe5730f088a09c03c87101a0cbee1141b6e851fa557e007874047d7daf8e06",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jagadoddharana": {
@@ -3819,7 +4267,7 @@
     },
     "endaro-mahanubhavulu": {
       "status": "screened",
-      "readerSha256": "1338e3b63e448a60d8fcdf4bd38568bbf5a56227d4fc44c6636c17e8c1003899",
+      "readerSha256": "e56fde68d03957639fc2285b7495f9da8f0d6e5da11330b36c1b3e012e2fc524",
       "definitionCount": 29,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3828,6 +4276,13 @@
         "readerSha256": "7027d8818aac6370ede962eae7bb46b33aa52abd0eb0b29dada3edbf3c1ebe51",
         "definitionCount": 29,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "1338e3b63e448a60d8fcdf4bd38568bbf5a56227d4fc44c6636c17e8c1003899",
+        "readerSha256": "e56fde68d03957639fc2285b7495f9da8f0d6e5da11330b36c1b3e012e2fc524",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "main-banjaran-ram-ki": {
@@ -3846,7 +4301,7 @@
     },
     "rudrashtakam-sharma-bandhu": {
       "status": "screened",
-      "readerSha256": "90dc05e4eccdebeb13cca9929dc53ca3529f8a2bd788e2a5137d4ff947ba9591",
+      "readerSha256": "d9c2aa17425c18c778d6b43b972a8184de42375f93c65536f21a78eca3d4673f",
       "definitionCount": 19,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3855,6 +4310,13 @@
         "readerSha256": "d9c2aa17425c18c778d6b43b972a8184de42375f93c65536f21a78eca3d4673f",
         "definitionCount": 19,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "90dc05e4eccdebeb13cca9929dc53ca3529f8a2bd788e2a5137d4ff947ba9591",
+        "readerSha256": "d9c2aa17425c18c778d6b43b972a8184de42375f93c65536f21a78eca3d4673f",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "piththa-pirai-soodi": {
@@ -3876,7 +4338,7 @@
     },
     "uyarvara-uyar-nalam": {
       "status": "screened",
-      "readerSha256": "7b7ea737f5e2841b82259afc67b805010618bec16b264806a70afbe129174132",
+      "readerSha256": "3377c7de8f5cc6c7fd58c03b1d2e2f217ef549c85f43aa2401b95249932ba066",
       "definitionCount": 49,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3885,6 +4347,13 @@
         "readerSha256": "0ebd6a33840db428c3529feb71d40ad16918fe246d3b675d4e6a93022366b63f",
         "definitionCount": 49,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "7b7ea737f5e2841b82259afc67b805010618bec16b264806a70afbe129174132",
+        "readerSha256": "3377c7de8f5cc6c7fd58c03b1d2e2f217ef549c85f43aa2401b95249932ba066",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "ayarpadi-maligaiyil": {
@@ -3902,7 +4371,7 @@
     },
     "rudrashtakam-rameshbhai-oza": {
       "status": "screened",
-      "readerSha256": "f5bf9ade9b86501fcdb08eba445f046e6d63e439ce0e8b5343754a2a578cd7e4",
+      "readerSha256": "8030d729a5f605a53e0ce579c6ad1cb5d00df6942a9ee0a7385476b6fa34a035",
       "definitionCount": 21,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3911,11 +4380,18 @@
         "readerSha256": "b395561afa8b556878a03848c0959240c4b7784ae3f6795a1c505209803027f7",
         "definitionCount": 21,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "f5bf9ade9b86501fcdb08eba445f046e6d63e439ce0e8b5343754a2a578cd7e4",
+        "readerSha256": "8030d729a5f605a53e0ce579c6ad1cb5d00df6942a9ee0a7385476b6fa34a035",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "shyamala-dandakam": {
       "status": "screened",
-      "readerSha256": "9369a15bed8290c0a647c9d2b3b04343713b6fc6e75c56e6a35a60c9772bdaa4",
+      "readerSha256": "f04f9592ec8c064d62491f65add98034e6f22f291f9f9a81ccde7249fe263231",
       "definitionCount": 116,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3926,11 +4402,18 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "9369a15bed8290c0a647c9d2b3b04343713b6fc6e75c56e6a35a60c9772bdaa4",
+        "readerSha256": "f04f9592ec8c064d62491f65add98034e6f22f291f9f9a81ccde7249fe263231",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "sivapuranam": {
       "status": "screened",
-      "readerSha256": "e17a47722061688b4d905f21d0380a5fc36c19f90690192e1fe37d9f86f4b9f9",
+      "readerSha256": "769ad058d3bc919cec5771fbfdf86b31b6bf941480532b13cf9d7d697a2b78e9",
       "definitionCount": 101,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3941,6 +4424,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "e17a47722061688b4d905f21d0380a5fc36c19f90690192e1fe37d9f86f4b9f9",
+        "readerSha256": "769ad058d3bc919cec5771fbfdf86b31b6bf941480532b13cf9d7d697a2b78e9",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "bajrang-baanka": {
@@ -3972,7 +4462,7 @@
     },
     "kanakadhara-stotram": {
       "status": "screened",
-      "readerSha256": "36af88b2899e3e87fd19f869f04351de6ebcfd0d30e460846df90fd8a9839a80",
+      "readerSha256": "a6d9198660cf2b876cbcf630cf6ca6ffb2718e48ec6ee1e9b48d7be4ca9488ab",
       "definitionCount": 80,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3983,6 +4473,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "36af88b2899e3e87fd19f869f04351de6ebcfd0d30e460846df90fd8a9839a80",
+        "readerSha256": "a6d9198660cf2b876cbcf630cf6ca6ffb2718e48ec6ee1e9b48d7be4ca9488ab",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "deh-shiva-bar-mohe-hai": {
@@ -4001,7 +4498,7 @@
     },
     "brahmam-okkate": {
       "status": "screened",
-      "readerSha256": "1282f06b667b95d34f7a1bb869328c4189bb28e7ba4d6676f2f541417a6064db",
+      "readerSha256": "dae712f27c9610c7258e62b07acad3770ed338ae703430cbf32113da83c2ab77",
       "definitionCount": 29,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4010,11 +4507,18 @@
         "readerSha256": "9a557aea33c2c5b270eb53d39dbcbe28aeb86d9888f6fafdf260a853b5e03790",
         "definitionCount": 29,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "1282f06b667b95d34f7a1bb869328c4189bb28e7ba4d6676f2f541417a6064db",
+        "readerSha256": "dae712f27c9610c7258e62b07acad3770ed338ae703430cbf32113da83c2ab77",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "harivarasanam": {
       "status": "screened",
-      "readerSha256": "4c3232bcf919b9697f07840beeed95bb506a90ff61c6b06ab29b109db2b25a0d",
+      "readerSha256": "8b24e1ae2047225ae31ab6f990a960d33064f21e852fcbe34b48fb54125ea62c",
       "definitionCount": 27,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4025,6 +4529,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "4c3232bcf919b9697f07840beeed95bb506a90ff61c6b06ab29b109db2b25a0d",
+        "readerSha256": "8b24e1ae2047225ae31ab6f990a960d33064f21e852fcbe34b48fb54125ea62c",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "meri-vinti-yahi-hai-maa": {
@@ -4055,7 +4566,7 @@
     },
     "sai-sai-bol-sai-sai-bol": {
       "status": "screened",
-      "readerSha256": "232d9c537be35540a980f2d2feaf822da72d309daab5c3961e935904259c94da",
+      "readerSha256": "05c44ea474aab75e24485cf0f4f22a371e007579e80e9cfc269c160edfc585fa",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4064,6 +4575,13 @@
         "readerSha256": "7b199d1d45e019702e82369270efc115b636bb3637c8a6b57bee404b7d7acd87",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "232d9c537be35540a980f2d2feaf822da72d309daab5c3961e935904259c94da",
+        "readerSha256": "05c44ea474aab75e24485cf0f4f22a371e007579e80e9cfc269c160edfc585fa",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "sumukh-pratham-he-svanam-gayak": {
@@ -4081,7 +4599,7 @@
     },
     "saranu-siddhi-vinayaka": {
       "status": "screened",
-      "readerSha256": "cfc81e14214427455f9159562439204fcf030ddfcd1ead83b9b03134b871abcd",
+      "readerSha256": "00786c3ec693ed2d57014b33b5ab7f421e78bc4cc6efd8fe270c2eba35e2eb85",
       "definitionCount": 12,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4090,11 +4608,18 @@
         "readerSha256": "956357a1d9fd78e52f85b6850b2cf9266106b3c10e3b2401d98a6492eefeb7ce",
         "definitionCount": 12,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "cfc81e14214427455f9159562439204fcf030ddfcd1ead83b9b03134b871abcd",
+        "readerSha256": "00786c3ec693ed2d57014b33b5ab7f421e78bc4cc6efd8fe270c2eba35e2eb85",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "istu-dina-ee-vaikuntha": {
       "status": "screened",
-      "readerSha256": "69068178634f040c0c0cee9ddca567452b195e012939351f8b8f4ea72e959fd0",
+      "readerSha256": "848f6c83b094abefd58be612d77056a03bd74dba70e129347bf7c35b3dc583ba",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4105,11 +4630,18 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "69068178634f040c0c0cee9ddca567452b195e012939351f8b8f4ea72e959fd0",
+        "readerSha256": "848f6c83b094abefd58be612d77056a03bd74dba70e129347bf7c35b3dc583ba",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "daari-yavudayya-vaikunthake": {
       "status": "screened",
-      "readerSha256": "4bbd2efd8fd94e5f9f130003511e2320d03ade8dfb7dcab55dcd0477002ce302",
+      "readerSha256": "a01141547f394e3d8ff99addbfb02be3f9a10d34c558e97f1d03d8b830c40437",
       "definitionCount": 13,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4118,6 +4650,13 @@
         "readerSha256": "0c21ba5931f1fbc272967f247afaccccd3425eee0ffbc9c19608d61deba71d22",
         "definitionCount": 13,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "4bbd2efd8fd94e5f9f130003511e2320d03ade8dfb7dcab55dcd0477002ce302",
+        "readerSha256": "a01141547f394e3d8ff99addbfb02be3f9a10d34c558e97f1d03d8b830c40437",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "biduvenenayya-hanuma": {
@@ -4162,7 +4701,7 @@
     },
     "candracuda-sivasankara": {
       "status": "screened",
-      "readerSha256": "8e5a0215467b765a9e190458ea923e85bcec3df084a7332dcea0f39e33090dc2",
+      "readerSha256": "e1b31532beda6793ca13da4634c1f16aeffab8a820c16e9322387454454e9cea",
       "definitionCount": 41,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4171,6 +4710,13 @@
         "readerSha256": "e9fbb3a24f5b564ecd7e6b95c583691232e5bd33aff22ef9a842d39cddfe9b94",
         "definitionCount": 41,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "8e5a0215467b765a9e190458ea923e85bcec3df084a7332dcea0f39e33090dc2",
+        "readerSha256": "e1b31532beda6793ca13da4634c1f16aeffab8a820c16e9322387454454e9cea",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "aao-bhakton-maa-ki-aaj-murat-saja-lo": {
@@ -4201,7 +4747,7 @@
     },
     "ee-padame-kada": {
       "status": "screened",
-      "readerSha256": "28439fffacc9cdafcd53c98a4fc2812dd2b3503a18a58396ea35c3eb53590bb8",
+      "readerSha256": "a453ea9b4cfddefc93ee23c09a7db085a7691316c5c7cfa3f96b8af9b5332c1d",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4210,6 +4756,13 @@
         "readerSha256": "8596fd45a76ecc478701da93f9d6e87260db4931083b0b2f5a0ea7e03a1205ae",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "28439fffacc9cdafcd53c98a4fc2812dd2b3503a18a58396ea35c3eb53590bb8",
+        "readerSha256": "a453ea9b4cfddefc93ee23c09a7db085a7691316c5c7cfa3f96b8af9b5332c1d",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "bhaktikoladi-vade": {
@@ -4271,7 +4824,7 @@
     },
     "jayagalu-agali": {
       "status": "screened",
-      "readerSha256": "604fc4e960db2f34ab2484adbef90f1b86a01fa4e7b867c58d5fc5416f9323fc",
+      "readerSha256": "5d09a4fff7c0469abf41a11b06ad96c8a524e62a5afdc679ded8b13ca82675ea",
       "definitionCount": 14,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4282,6 +4835,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_integrated"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "604fc4e960db2f34ab2484adbef90f1b86a01fa4e7b867c58d5fc5416f9323fc",
+        "readerSha256": "5d09a4fff7c0469abf41a11b06ad96c8a524e62a5afdc679ded8b13ca82675ea",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "pavamana-jagada-prana": {
@@ -4330,7 +4890,7 @@
     },
     "vinnapalu-vinavale": {
       "status": "screened",
-      "readerSha256": "ed3e574463f7512ad6682de1f54b4452973d0eee6c1031165887544177b32b31",
+      "readerSha256": "8a0db49358744ef6b4b6fcb04103371f0c5c99d5a76738c47e3b0e9065a8fa1b",
       "definitionCount": 9,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4339,11 +4899,18 @@
         "readerSha256": "ed3e574463f7512ad6682de1f54b4452973d0eee6c1031165887544177b32b31",
         "definitionCount": 9,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "ed3e574463f7512ad6682de1f54b4452973d0eee6c1031165887544177b32b31",
+        "readerSha256": "8a0db49358744ef6b4b6fcb04103371f0c5c99d5a76738c47e3b0e9065a8fa1b",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "nagumogamutodi-o-narakesari": {
       "status": "screened",
-      "readerSha256": "638a9e158ecdf9c40f8c6f839f8cd16c59a399eda2baf26d48f22634af303116",
+      "readerSha256": "a78b934c8edfe0a28f2f726d17f4d5c7b008e334115a9b96b39989f2aa4b5f6c",
       "definitionCount": 11,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4354,6 +4921,13 @@
         "reviewedAt": "2026-11-21",
         "resolutionRecord": "data/translation-source-resolution-2026-11-21.json",
         "resolutionDisposition": "finished_unchanged"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "638a9e158ecdf9c40f8c6f839f8cd16c59a399eda2baf26d48f22634af303116",
+        "readerSha256": "a78b934c8edfe0a28f2f726d17f4d5c7b008e334115a9b96b39989f2aa4b5f6c",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "modalondipe-ninage-gananatha": {
@@ -4371,7 +4945,7 @@
     },
     "saranembe-vani": {
       "status": "screened",
-      "readerSha256": "55cba6b1268a0109b0d5d217df46028289cbcc054a7668c1517167666856f64e",
+      "readerSha256": "c54cb5bc6afedd83ea9870b0fbdbea77b7863e84deabb592deb8432b48523d99",
       "definitionCount": 8,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4380,6 +4954,13 @@
         "readerSha256": "c82298cf77764b0511e75dbcf5af6c7a0fb6e401c800261fa626ff583c215154",
         "definitionCount": 8,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "55cba6b1268a0109b0d5d217df46028289cbcc054a7668c1517167666856f64e",
+        "readerSha256": "c54cb5bc6afedd83ea9870b0fbdbea77b7863e84deabb592deb8432b48523d99",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "sanjivana-giridhara": {
@@ -4410,7 +4991,7 @@
     },
     "barayya-ba-ba-bhakutara-priya": {
       "status": "screened",
-      "readerSha256": "1a41987324943cb9f3c2ba5377a186079ef74281a49a135fee4e8099cd1a9cdd",
+      "readerSha256": "c277f6f52f84ab3bd81237b97c6624412f2edb278ba69ce7954d6ec08a9d0d1b",
       "definitionCount": 21,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4419,11 +5000,18 @@
         "readerSha256": "b5808a456857d8144b5d4b4b6a1d0a66579dc4f09dbe89eea42092267c92e3f8",
         "definitionCount": 21,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "1a41987324943cb9f3c2ba5377a186079ef74281a49a135fee4e8099cd1a9cdd",
+        "readerSha256": "c277f6f52f84ab3bd81237b97c6624412f2edb278ba69ce7954d6ec08a9d0d1b",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "namah-parvatipati": {
       "status": "screened",
-      "readerSha256": "e42b137c3b37a874c4f34c3fa0f392b41d84e176c742f102bdb4a5de62b78492",
+      "readerSha256": "da6876be1df78dcdb754ea6a4ed682217e39f2157b0da43753586305a9786af2",
       "definitionCount": 17,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4432,11 +5020,18 @@
         "readerSha256": "89e1a9968d1a602138b38d3cdaf12ea3f4a3829bfe6fd9157acf025393738ef5",
         "definitionCount": 17,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "e42b137c3b37a874c4f34c3fa0f392b41d84e176c742f102bdb4a5de62b78492",
+        "readerSha256": "da6876be1df78dcdb754ea6a4ed682217e39f2157b0da43753586305a9786af2",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "ghatikachaladi-ninta-shri-hanumanta": {
       "status": "screened",
-      "readerSha256": "16c0db08b152d79210b40a43d9be11d41af431f6c6ea806f1e2f88d81c6658e9",
+      "readerSha256": "d11a59a749e9b9efabbb6ad165361fed2a7c29cb0fca36caf019ab58a6bec7c1",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4445,11 +5040,18 @@
         "readerSha256": "dc65b85c608755fae8c18d8e5aae238e59b697839d0d0128d93cf59bf9e30364",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "16c0db08b152d79210b40a43d9be11d41af431f6c6ea806f1e2f88d81c6658e9",
+        "readerSha256": "d11a59a749e9b9efabbb6ad165361fed2a7c29cb0fca36caf019ab58a6bec7c1",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "sri-mahalakumi-deviye": {
       "status": "screened",
-      "readerSha256": "1be7798ca99ef01b1dba90f0fecf59d62bb78d68940b170037172a444308f217",
+      "readerSha256": "ad6312e3d5b90733d8d3061548522a4c101de186d90272e8449adc9202ccf0a7",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4458,6 +5060,13 @@
         "readerSha256": "aea1b46f87e966d05d037243ae6eec9dea9c151df674f5f8fb958478b7308d55",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "1be7798ca99ef01b1dba90f0fecf59d62bb78d68940b170037172a444308f217",
+        "readerSha256": "ad6312e3d5b90733d8d3061548522a4c101de186d90272e8449adc9202ccf0a7",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "meruguvantidi-alamelumanga": {
@@ -4503,7 +5112,7 @@
     },
     "tolu-tolu-tolu-ranga": {
       "status": "screened",
-      "readerSha256": "24f087580a3d15f91a916a5b02af7e320447b3253faab5a92ca4d2ea4a380a79",
+      "readerSha256": "3da89e04494618e7c205351a02410a4f944c7f9487d9b9459445ebfae47e232d",
       "definitionCount": 19,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4512,11 +5121,18 @@
         "readerSha256": "b5f832766bb5a7f29a48f4ac0694129429074e43e4f97011710b4e45eacd6f26",
         "definitionCount": 19,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "24f087580a3d15f91a916a5b02af7e320447b3253faab5a92ca4d2ea4a380a79",
+        "readerSha256": "3da89e04494618e7c205351a02410a4f944c7f9487d9b9459445ebfae47e232d",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "durge-palise-mate": {
       "status": "screened",
-      "readerSha256": "51b59f3d406538eaef46f614b22e944b5888f08021589215f05e38e1ff13fa58",
+      "readerSha256": "54004cc82623a47688e78e2326c605674d878512f52a59db062ccb16a4bc85dc",
       "definitionCount": 18,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4525,11 +5141,18 @@
         "readerSha256": "8144e2d24f3f0d686dc91807771e0195caac1e01f57c4252052e2de01e5ad66f",
         "definitionCount": 18,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "51b59f3d406538eaef46f614b22e944b5888f08021589215f05e38e1ff13fa58",
+        "readerSha256": "54004cc82623a47688e78e2326c605674d878512f52a59db062ccb16a4bc85dc",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "ksirabdhisayana-sribhasya-mangala": {
       "status": "screened",
-      "readerSha256": "7777fd3b1555584312a0c61909d04de627ccd805dd30aa20a08190041bb09ae9",
+      "readerSha256": "e7d22c33f941a4700613f564f6716d4b0c2cd929d535043edbb9e4a2eb108eee",
       "definitionCount": 22,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4538,6 +5161,13 @@
         "readerSha256": "6c76e63f59b176e9bf4551ccb9a3abb1349ab06affdecc6133224570648cce31",
         "definitionCount": 22,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "7777fd3b1555584312a0c61909d04de627ccd805dd30aa20a08190041bb09ae9",
+        "readerSha256": "e7d22c33f941a4700613f564f6716d4b0c2cd929d535043edbb9e4a2eb108eee",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "hi-shivaa": {
@@ -4740,7 +5370,7 @@
     },
     "hechi-dan-dega-deva": {
       "status": "screened",
-      "readerSha256": "0a3db0a6189102c09ad576e047b9937c9735f2956ccfec9cf09156d07ec1db44",
+      "readerSha256": "a60ffa5813c582a7277b4e29960c736a50b7c04d4eb93e9425a1810291adef3c",
       "definitionCount": 10,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -4749,6 +5379,13 @@
         "readerSha256": "8b8bc4d2adc4b95c821a18b415b9bcf18f3e4cd1b58a0910ac13a7fb79a01fb9",
         "definitionCount": 10,
         "reviewedAt": "2026-11-21"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "0a3db0a6189102c09ad576e047b9937c9735f2956ccfec9cf09156d07ec1db44",
+        "readerSha256": "a60ffa5813c582a7277b4e29960c736a50b7c04d4eb93e9425a1810291adef3c",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "jethe-jato-tethe-tu-majha-sangati": {
@@ -4998,7 +5635,7 @@
     },
     "bhagavati-stotram": {
       "status": "screened",
-      "readerSha256": "d5f36156219d0a8a84a359decb731b99fd77c94d9f310ecf92d7bfb5ce4487ed",
+      "readerSha256": "0414291d608b549ac41a696ba72d56ba21ea9c2d3620bba6c4665eee2d4f9d65",
       "definitionCount": 21,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5008,11 +5645,18 @@
         "definitionCount": 21,
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "d5f36156219d0a8a84a359decb731b99fd77c94d9f310ecf92d7bfb5ce4487ed",
+        "readerSha256": "0414291d608b549ac41a696ba72d56ba21ea9c2d3620bba6c4665eee2d4f9d65",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "devi-dhyana": {
       "status": "screened",
-      "readerSha256": "8485fdc132dede857bc0870e7f148cdd3a5172fb21525208921747b93e862a67",
+      "readerSha256": "16dab2ed283d93e380a7a39cf1128f2f2213e7640fc11c140a4ad7d5b6942fde",
       "definitionCount": 6,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5022,6 +5666,13 @@
         "definitionCount": 6,
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "8485fdc132dede857bc0870e7f148cdd3a5172fb21525208921747b93e862a67",
+        "readerSha256": "16dab2ed283d93e380a7a39cf1128f2f2213e7640fc11c140a4ad7d5b6942fde",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "devi-kshama-prarthana": {
@@ -5040,7 +5691,7 @@
     },
     "devimahatmya-chapter-12": {
       "status": "screened",
-      "readerSha256": "63e84cba7ac75090e6256695a6e8fa1b1420df00e984c75aed0abeee5822340a",
+      "readerSha256": "0033aa5f2e03d3fe5c55701d5e83b3f76e12d2aacaff089053c6d6df479fd517",
       "definitionCount": 44,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5050,11 +5701,18 @@
         "definitionCount": 44,
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "63e84cba7ac75090e6256695a6e8fa1b1420df00e984c75aed0abeee5822340a",
+        "readerSha256": "0033aa5f2e03d3fe5c55701d5e83b3f76e12d2aacaff089053c6d6df479fd517",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "durga-apaduddharashtakam": {
       "status": "needs_source_review",
-      "readerSha256": "03d786a64e2ac2d631685c9576a71ccd976645f41affd8ab34d6fd0308893916",
+      "readerSha256": "feb461e541b491f52fe40095cf8116ec02804fab90694db4dadc225787951b77",
       "definitionCount": 30,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5068,7 +5726,14 @@
       "openDefinitions": [
         "nyamekakhilakrodhana-krodhanishtha"
       ],
-      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied."
+      "openReason": "See exact openQuestions in data/translation-review-2026-11-25.json. These passages remain unresolved; other supported corrections have been applied.",
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "03d786a64e2ac2d631685c9576a71ccd976645f41affd8ab34d6fd0308893916",
+        "readerSha256": "feb461e541b491f52fe40095cf8116ec02804fab90694db4dadc225787951b77",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      }
     },
     "hamari-hai-jagdambe-maat": {
       "status": "screened",
@@ -5100,7 +5765,7 @@
     },
     "jai-jai-durge-aad-bhavani": {
       "status": "screened",
-      "readerSha256": "29ffce5c850eaec3e2d26b4ed68b4b11a7a05526fccfc14dc296b2a7d7bb4db3",
+      "readerSha256": "8eb5227ba2038bb5aa472e6ac78962462c7528ba5ad4fdec3ff6e2057f84838a",
       "definitionCount": 52,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5110,6 +5775,13 @@
         "definitionCount": 52,
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "29ffce5c850eaec3e2d26b4ed68b4b11a7a05526fccfc14dc296b2a7d7bb4db3",
+        "readerSha256": "8eb5227ba2038bb5aa472e6ac78962462c7528ba5ad4fdec3ff6e2057f84838a",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "maa-ne-raunkan-lagaiyan-kamaal-ho-gaya": {
@@ -5156,7 +5828,7 @@
     },
     "meri-dati-daya-har-ik-te-kardi-ae": {
       "status": "screened",
-      "readerSha256": "ca7214440628e5faa577eeb132b11234230c5d22413107d18872756860a80e7b",
+      "readerSha256": "2f6587b06a3e0bc5d32df779f96daff773c6345e889b61c8adcb46de0fa8daaf",
       "definitionCount": 42,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5166,11 +5838,18 @@
         "definitionCount": 42,
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "ca7214440628e5faa577eeb132b11234230c5d22413107d18872756860a80e7b",
+        "readerSha256": "2f6587b06a3e0bc5d32df779f96daff773c6345e889b61c8adcb46de0fa8daaf",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "narayani-stuti": {
       "status": "screened",
-      "readerSha256": "ab5fffffa6bc5d468408d9624b0592234f13360da79c68acc8f978cdbe4c92b4",
+      "readerSha256": "f8f0b6ec878b402488aa63a26ce83c87fc3a33c31267f4b938c11ba0c377e932",
       "definitionCount": 60,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5180,6 +5859,13 @@
         "definitionCount": 60,
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "ab5fffffa6bc5d468408d9624b0592234f13360da79c68acc8f978cdbe4c92b4",
+        "readerSha256": "f8f0b6ec878b402488aa63a26ce83c87fc3a33c31267f4b938c11ba0c377e932",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     },
     "russiya-tu-sade-naal-kyon-meri-maaye": {
@@ -5254,7 +5940,7 @@
     },
     "devi-aparadha-kshamapana-stotram": {
       "status": "screened",
-      "readerSha256": "123a2051981d97f6e639869c731a196c133e025160e319fab1d9f7c46e3e9248",
+      "readerSha256": "48b76e45abaa38a1ac3d2c62266cc0160b41173b7037250645c9ee4487de6352",
       "definitionCount": 48,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5263,6 +5949,13 @@
         "readerSha256": "55a90fa21d6a17bbbab18a7c92b3a6d00147564bfb2a8d9f8484b614fcc64221",
         "definitionCount": 48,
         "reviewedAt": "2026-11-23"
+      },
+      "metadataRevision": {
+        "date": "2026-11-25",
+        "priorReaderSha256": "123a2051981d97f6e639869c731a196c133e025160e319fab1d9f7c46e3e9248",
+        "readerSha256": "48b76e45abaa38a1ac3d2c62266cc0160b41173b7037250645c9ee4487de6352",
+        "report": "data/subject-tag-review-2026-11-25.json",
+        "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
       }
     }
   },

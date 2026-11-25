@@ -13,8 +13,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śiva",
-    "Pārvatī",
-    "Śakti"
+    "Oṃ"
   ],
   "searchAliases": [
     "Om Namah Shivaya: Damaru Pani Shula Pani",

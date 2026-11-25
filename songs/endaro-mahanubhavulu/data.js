@@ -12,7 +12,8 @@ window.SONG_META = {
     "Rāma",
     "Śiva",
     "Hanumān",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Brahmā"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=hIQPVd9HeiM",
   "searchAliases": [

@@ -68,6 +68,11 @@
         "decision": "dismiss",
         "inputHash": "33bab29ac27e87505f4316f3a240c5031fafa1aac4c98c852223c14840cc6179",
         "reason": "The performed feminine Ramā/Rame name refers to Lakshmi or her consort relation; diacritic folding must not turn it into masculine Rāma."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "5bd673d6d672342de639be7e321f2bb56fa9f996b9643736b30a619bd8a69141",
+        "reason": "Girijā occurs only in Girijā ke pati to identify the arriving Śiva; she does not herself arrive or receive an appeal. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
       }
     },
     "duhkh-me-sumiran-sab-kare": {
@@ -89,6 +94,16 @@
         "decision": "dismiss",
         "inputHash": "c46f272567be79fe6f054cb8f0255b6e4b9144c3a9e01a9ef7cee5ee744ccc6a",
         "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "e4d4071b2a0db45362b6512caada7a3f38a00e7557104e2ddceabbf7833d2935",
+        "reason": "Śaṅkara is mentioned solely to identify Gaṇeśa as his son. The rest of the performed hymn praises Gaṇeśa and ends in a direct prayer for Rāma and Sītā; no separate Śiva devotion or narrative occurs."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "45183689e71850d1929271ecba7442840441a0946639fd1d396fb3919bb7ef8e",
+        "reason": "Bhavānī appears solely as the mother identifying Gaṇeśa. No independent goddess invocation elsewhere. Śakti remains warranted by the separately invoked Sītā."
       }
     },
     "ghatikachaladi-ninta-shri-hanumanta": {
@@ -131,6 +146,11 @@
         "decision": "dismiss",
         "inputHash": "50f0b8c513373686944bfb9ace3de0275d4623b368aa98035ac79e2f2177dc32",
         "reason": "The screened Vishnu name is explanatory theology in the gloss of Rama or his devotee, not an additional performed name or narrative; no automatic incarnation-parent expansion."
+      },
+      "Guru": {
+        "decision": "dismiss",
+        "inputHash": "24152d5b84bfa6f18c130d56fb96c4378683bb11ac0f88c25e4e96c19c28a910",
+        "reason": "Bali’s abandoned guru is mentioned only as one obstructing relationship in the list of renounced relatives, with no independent teaching, invocation, praise or devotional action. The full performed song’s later well-wisher is anonymous and not explicitly a guru, so it supplies no stronger teacher role."
       }
     },
     "jai-hanuman-hanuman-ansh": {
@@ -197,6 +217,16 @@
         "decision": "dismiss",
         "inputHash": "51f4133d6e7e7e71a6fed81cac1fa10f4f9495174fbb76b818d2d9544aed5c79",
         "reason": "The performed feminine Ramā/Rame name refers to Lakshmi or her consort relation; diacritic folding must not turn it into masculine Rāma."
+      },
+      "Guru": {
+        "decision": "dismiss",
+        "inputHash": "63539ac18d017e24f06be6e58feadc9a08f8de9c65cc9af33286c057799d8cca",
+        "reason": "The sole teacher of the three worlds is a relational identifier in the goddess’s epithet as his young consort. No spiritual teacher is independently invoked, heard, served, or depicted elsewhere in the performed hymn."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "2c7ba7805c02181ff3bb9f7362ec73e3adb8165e802fdcf286de3908e88b6269",
+        "reason": "The moon-crested lord is named only to identify the goddess as his beloved. The full hymn gives no separate Śiva action or invocation. Viṣṇu/Kṛṣṇa are retained for the extended glancing, love, joy and bodily scene rather than mere consort names."
       }
     },
     "koee-aan-milavai-mera-pritam-pyara": {
@@ -242,6 +272,16 @@
         "decision": "dismiss",
         "inputHash": "f70c7212d17f5d23c290c8776b877578c1bd5c838fffa1b6050fc32cee027d6b",
         "reason": "The performed forms are Alagiri Ranga and Purandara Vitthala; tag those actual forms and Vishnu context without adding Krishna solely from the Vitthala gloss."
+      },
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "7adf1f166167e7327da3b393d4061be4f31697801bc2e749c1f50968a7a773fc",
+        "reason": "The appeal throughout is to Lakṣmī. Veṅkaṭaramaṇa and Purandara Viṭṭhala identify whose queen she is; neither is separately invoked or an acting participant. Retain Lakṣmī and Śakti."
+      },
+      "Viṭṭhala": {
+        "decision": "dismiss",
+        "inputHash": "54c780298bdc47f0d482eadf4235f124cba73a41167748362f553447e62ec006",
+        "reason": "The appeal throughout is to Lakṣmī. Veṅkaṭaramaṇa and Purandara Viṭṭhala identify whose queen she is; neither is separately invoked or an acting participant. Retain Lakṣmī and Śakti."
       }
     },
     "bhetilagi-jiva": {
@@ -277,6 +317,11 @@
         "decision": "dismiss",
         "inputHash": "f09698a8948d2bfe78c21305dda11c7afb445dcd1bbb59bc4a7fa91a107e54c2",
         "reason": "Śyāme is feminine address to the dark Goddess in the verse, not male Śyāma/Krishna."
+      },
+      "Gaṇeśa": {
+        "decision": "dismiss",
+        "inputHash": "48e06bbf07755f7565ae1a797af4ea6bda778bf565b1f27067cd67dcce34f265",
+        "reason": "Lambodara occurs only to identify the addressed goddess as his mother; Gaṇeśa is not independently invoked or active. The Goddess remains central, and Śiva’s detailed transformation through marriage is a substantive narrative illustration, not a bare relative label."
       }
     },
     "devi-dhyana": {
@@ -289,6 +334,11 @@
         "decision": "dismiss",
         "inputHash": "2192c58b04126d6a9e85a2d2d932fb4e733cccfdab396d26620daf91ac54f102",
         "reason": "Śītāṃśu means the cool-rayed moon in this compound, not Sita."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "ad1d9e800552c18e65563e0b84ce7742913d8bfa55dbbdcc86af80dce42e55a5",
+        "reason": "Gaurī occurs only as the body from which Mahāsarasvatī arose, an origin/identity descriptor rather than independently worshipped Pārvatī. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
       }
     },
     "devimahatmya-chapter-12": {
@@ -310,6 +360,11 @@
         "decision": "dismiss",
         "inputHash": "2497fd4e33b1ed9a4dcf39391426b92303534487b5dac3634fc98dcd9dd18d45",
         "reason": "Trident and drum describe Dattatreya in the surrounding Datta aarti; these shared attributes do not alone make a separate Shiva reference."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "136756c044e9a4e6a58a33bf1d691b518e454cd07671f62dd1bba556d8af9b2a",
+        "reason": "Jānakī occurs only in Jānakīnāyaka, an epithet of the worshipped Rāma. She has no independent invocation or action anywhere in the performed sequence. Other goddess subjects have independent evidence, including Lakṣmī dwelling in devotees’ houses and the address to Sarasvatī."
       }
     },
     "endaro-mahanubhavulu": {
@@ -338,6 +393,16 @@
         "decision": "dismiss",
         "inputHash": "b7035c6f6014fbed1bd3282936c39e35da8a24696934d50a1b54722349966b2c",
         "reason": "Śrīdhara is applied to the explicitly invoked Krishna here. Retain Lakshmi relationship, but do not add Vishnu from a gloss listing alternative bearer identities."
+      },
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "40fab98f0ef16dc78859f3c3019daa8ad23c19d140afcf2b25cef95c9e4ce165",
+        "reason": "Śrīdhara identifies the central Kṛṣṇa as bearer of Śrī. The full performed song awakens Kṛṣṇa; Lakṣmī has no independent invocation or narrative role."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "f29f244211a54d47705834a30aa954f2566dd855553e548be427a363c509cae0",
+        "reason": "This umbrella arose solely from the incidental Śrī relationship in Śrīdhara. No goddess is separately invoked or portrayed in the rest of the performed song."
       }
     },
     "jab-karm-ka-khata-kholegi-maa": {
@@ -392,6 +457,16 @@
         "decision": "dismiss",
         "inputHash": "431f37c492141ee542b5536133abae2b606a767a990579fe322a7e44d35e4df5",
         "reason": "The speaker’s mind is compared to a peacock rejoicing in the cloud-colored Lord; this is a simile, not Krishna’s peacock feather."
+      },
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "9d6efd46fbca4e9365581fe6250cf1c410b00c05a2292b609bcddae8470a8662",
+        "reason": "Śrīnivāsa identifies the addressed Viṣṇu as Śrī’s abode; her name is confined to this relationship rather than independent goddess devotion. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "1de19f5cf229848353877618da9bd6a592d005a11853772a78dbef643e0abfb7",
+        "reason": "Śrīnivāsa identifies the addressed Viṣṇu as Śrī’s abode; her name is confined to this relationship rather than independent goddess devotion. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
       }
     },
     "ma-tumko-kaise-batalau": {
@@ -411,6 +486,16 @@
         "decision": "dismiss",
         "inputHash": "dd100aca191ed980385daf2fb849a44ea625da47338a94dface3c4f50beefbd4",
         "reason": "Sītā occurs only in the explanatory Rāma gloss; no performed Sītā reference is present in these hits."
+      },
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "2e72d40823b9709c81e2b08e6f40068e56b0fe7e03b54ff29417967be0c69383",
+        "reason": "Ramā occurs only as the consort in Ramāramaṇa, an epithet of Hari. The names actually invoked are Sāī, Rāma and Hari; Lakṣmī has no independent invocation or action."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "eb1effe6226feca8a887af2c93b00fa0c30b0247fce2d390e6d83a6ed87d99d1",
+        "reason": "Ramā occurs only as the consort in Ramāramaṇa, an epithet of Hari. The names actually invoked are Sāī, Rāma and Hari; Lakṣmī has no independent invocation or action."
       }
     },
     "madhyahna-aarti": {
@@ -418,6 +503,11 @@
         "decision": "dismiss",
         "inputHash": "caeddff8e06ef2fcce4dd85e8e756d278e2d585da5e436c94400cdafa31521f1",
         "reason": "The trident, drum and matted-hair description is addressed to Sai/Datta, explicitly the son of Anasūyā and Atri; it does not name Śiva separately."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "4d1b5a431c75fd424d34be4605caef9ac9fa11110387577b742a8e3de4e1f691",
+        "reason": "Jānakīnāyaka names the worshipped Rāmacandra as Jānakī’s husband; no independent Sītā subject occurs elsewhere in this complete performance. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
       }
     },
     "mahavir-hanuman-gosain": {
@@ -548,6 +638,11 @@
         "decision": "dismiss",
         "inputHash": "961041586b60f99b23ff5d3765c25a45fd03908c128ea822056e15b55cd389e4",
         "reason": "Nārāyaṇī names the Goddess; the glossary’s derivation from Nārāyaṇa is not a separately performed Viṣṇu reference."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "a3ad2f97cd2f8e64b5ed9141529fb02d3ae4e7cdeaf74c13d98d1931a7c4c1b0",
+        "reason": "Hara occurs only to identify the central goddess as his beloved. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
       }
     },
     "parvati-hanuman-ansh": {
@@ -562,6 +657,16 @@
         "decision": "dismiss",
         "inputHash": "236556739333928f7bb4998d591c29487781298b3e75b1e0d5afb87e879d0ac3",
         "reason": "Viṣṇu occurs only in the Rāma glossary description; Rāma alone does not add the parent-deity tag."
+      },
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "b11be3450163973728b559e4e4c72d4266cc4710717de3bf153f62e3f918095a",
+        "reason": "Jānakījīvana identifies Rāma as Jānakī’s life. Its repeated pickup is the same epithet; no separate Sītā invocation or action occurs in the complete song."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "fd62318b0632470ca284037e2ee5836b213a4397740161bb7b571af321251964",
+        "reason": "The only goddess reference is the consort in Jānakījīvana. Remove this inherited umbrella; the actual invocations are to Rāma and Sāī."
       }
     },
     "pavamana-jagada-prana": {
@@ -607,6 +712,26 @@
         "decision": "dismiss",
         "inputHash": "57a641ce37d7647c942480f248bf62036614165ad40ece78061f447c9e01e6a5",
         "reason": "Sārasvata describes attained eloquence and learning here; Sarasvatī is only the glossary derivation, not a separate named deity reference."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "9136e873dcf5f659c1a25804b225bb6fc3956fc1bfb66e3850a98015ead1c075",
+        "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
+      },
+      "Gaṇeśa": {
+        "decision": "dismiss",
+        "inputHash": "0e55af5980d22f8d1862b6fbc15407b9560e8b33f6c974a76859de9fc4657178",
+        "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "33cf3c7b0c4ebd2f2426d82eed4b9476dcbb0f3c889d0591edd87376338b1af3",
+        "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "b2bbe1be6e46844bfe1a113d96ca8709acc3c100c0bfd9197eefb1e490a17735",
+        "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
       }
     },
     "ram-sumir-ke-raham-kare-na": {
@@ -738,6 +863,16 @@
         "decision": "dismiss",
         "inputHash": "f72b029f0af6204bd383780a96634e1cf3ab476dfaab6618f872b7257d6c5e1d",
         "reason": "The performed name is Purandara Viṭṭhala; Kṛṣṇa is only a broad identification in the gloss."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "c5ec9b36730fe73d818e904113339d458fc587d506d89769e6f48df2ff9cf47e",
+        "reason": "Pārvatītanaya identifies Gaṇeśa through parentage. The truncated pickup śaraṇu pārvatī in l003 is completed as this compound in l004, not a separate Mother invocation. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "573d0b9537daf2c21a132274fd979581e67992d6b3c9f531034f9afacead8e29",
+        "reason": "Pārvatītanaya identifies Gaṇeśa through parentage. The truncated pickup śaraṇu pārvatī in l003 is completed as this compound in l004, not a separate Mother invocation. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
       }
     },
     "savale-sundar-rup-manohar": {
@@ -764,6 +899,11 @@
         "decision": "dismiss",
         "inputHash": "f55672d35bfe18aab31eee2d638f0efd291f28c33c601ecf29024d63b2449054",
         "reason": "Śeṣa means meal remnants here, not the cosmic serpent or Viṣṇu."
+      },
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "cecc3da827adb2917c682678b6915ac2ab923ab2262c4bfe9d3a1d047be2ce92",
+        "reason": "Rāghava floating stones (line-028–029) is explicitly compared with Tukārām’s preserved hymns (line-030–031). Elsewhere Rāma Janārdanī and Rāmeśvarī are human poet/devotee signatures, not invocations of Rāma. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
       }
     },
     "shiv-ka-naam-japo-sansari": {
@@ -778,6 +918,16 @@
         "decision": "dismiss",
         "inputHash": "56d9f6e3659d77052e2afd97faf97a90bc55963a6d0b0d50e15fa8824e98676e",
         "reason": "Sītā occurs only in the Rāma glossary background."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "4bb4ea2b422a494b845ece70322d48cabfa3bcd2b6ed29f4d58aa45c4a5b47e5",
+        "reason": "Girijā’s mind is the lake whose swan is the addressed Śiva: an affectionate spouse epithet, not separate praise or action by Girijā. Rāma and Hari remain independently named objects of the devotion being sought."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "1debb6033dcc5e6d07798816e4a15b9f6347f2f11542076ccfed95b7a4b67aec",
+        "reason": "Girijā’s mind is the lake whose swan is the addressed Śiva: an affectionate spouse epithet, not separate praise or action by Girijā. Rāma and Hari remain independently named objects of the devotion being sought."
       }
     },
     "shri-kshetra-biharii": {
@@ -785,6 +935,16 @@
         "decision": "dismiss",
         "inputHash": "b0f6441b76ac9fe712b987e3da70a6e3c73ed7d303b5310cf4305973d7a94912",
         "reason": "Ramāramaṇa means beloved of the goddess Ramā, not Rāma."
+      },
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "3d1462613d554c3e5a6df0a40595e85acbb7062fbbe66d6c8178d28b897ba8fa",
+        "reason": "Lakṣmīvallabha, Śrīpati and ocean-daughter beloved epithets identify Jagannātha’s consort relationship; she is not independently invoked or acting. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "3545741ace6bb4749330ebb0e88a6c8746fceea410c61ad22449028dfad94256",
+        "reason": "Lakṣmīvallabha, Śrīpati and ocean-daughter beloved epithets identify Jagannātha’s consort relationship; she is not independently invoked or acting. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
       }
     },
     "shri-ramachandra-kripalu-bhajman": {
@@ -910,6 +1070,11 @@
         "decision": "dismiss",
         "inputHash": "b551f1a9a68c9e19eb0a7e04909e9c88e85eff128c868d597539822ce3da8931",
         "reason": "Durga is the ordinary noun fortress/stronghold in these battlefield descriptions, not the goddess Durgā."
+      },
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "cc4c3759a2eb982f3f393fa76b0f12eee970a86a7cc66af175e1c1f3c3807cce",
+        "reason": "Kapikānha compares Hanumān destroying arm-pain with Kṛṣṇa killing Pūtanā; Kamsa/Pūtanā material in the surrounding passage is a pain-demon analogy, not independent Kṛṣṇa devotion. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
       }
     },
     "bhor-bhai-din-chadh-gaya": {
@@ -938,6 +1103,360 @@
         "decision": "dismiss",
         "inputHash": "00742602338ffec64afaf1c10f54f23994078bb32f963b9b33c23d90cb022cc3",
         "reason": "Lion-riding Mother is shared goddess iconography in these Vaiṣṇo/Chamunda songs; it does not independently establish a specific Durga name-reference."
+      }
+    },
+    "aarti-kijiye-hanuman-lala-ki": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "082c2da7b9694b76d5f9c50f4333181405b718c1b926f530799b209239fddde1",
+        "reason": "Vaikuṇṭha is the promised destination, not an invoked deity; the performed Raghunātha identity is Rāma and does not itself require a newly inferred Viṣṇu tag here. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "hanuman-chalisa": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "7ef3625b0ccc16becfadca35fad90b2bac7ba91cf4dc336875d19843a7198725",
+        "reason": "Gaurīśa identifies Śiva as the witness; Gaurī herself has no independent role. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      },
+      "Sarasvatī": {
+        "decision": "dismiss",
+        "inputHash": "6cae3a7ef40493f9ac7ec0963239abe3301222eda1c1d03cac55121b7f00c651",
+        "reason": "Śāradā appears in the 14–15 enumeration of exalted speakers unable fully to describe Hanumān’s glory; it is a comparison of expressive powers rather than a performed prayer to her or an acted narrative scene. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "jayagalu-agali": {
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "f2634cd82b632b10c4673f59caa60c63c2060931c41c3e6c24e7a5f83af71659",
+        "reason": "Jayādēvi only identifies the petitioned Lord as her consort. No goddess is independently invoked or active, so no goddess umbrella remains. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "67e725ef2ffb5ffde8f837476e377d8a4e6e030c1e0826a1101e2854c6e5bc44",
+        "reason": "Jayādēvi only identifies the petitioned Lord as her consort. No goddess is independently invoked or active, so no goddess umbrella remains. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "rudrashtakam-rameshbhai-oza": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "775e2deddd4dbc262be07107cd62f51b86ba429ac893641cb912d803785e76e7",
+        "reason": "Bhavānīpati identifies Śiva as husband of Bhavānī, as Umānātha does in l014. The goddess is not independently addressed or acting. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "a1f527d4fbe2df6451d6b6ca15c769fe6bb278529533d964b60eeb7d76451746",
+        "reason": "Bhavānīpati identifies Śiva as husband of Bhavānī, as Umānātha does in l014. The goddess is not independently addressed or acting. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "sai-ki-palki": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "695dc0b032eefe3187fd68c688f39700e104bd29b2ea3db2acb6323f49498d4f",
+        "reason": "Śiva’s wedding procession is a single comparison for the celebrating Sāī procession in Shirdi, rather than an independent Śiva narrative or devotional invocation. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "shree-sai-aarti": {
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "1ba4dd9a302c9b08d4134c130c2b6c673a328e76fb338ee259cb30efb82044ab",
+        "reason": "Mādhava is the poet-signature recipient of Sāī’s grace in this verse, as the word-map states; Śrīraṅga elsewhere supports Viṣṇu rather than a separate specifically Kṛṣṇa identification. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "siddh-bhajo-omkar-avadho": {
+      "Gaṇeśa": {
+        "decision": "dismiss",
+        "inputHash": "2f38682a90bbff9beffe628c326d2c053d81d8712723918f608c7f499bbef49a",
+        "reason": "Generic Siddha and Oṃkāra are the objects of yogic meditation; neither establishes Gaṇeśa and no distinctive Gaṇeśa name, narrative or identifying iconography occurs elsewhere. Whole-song review found no independent invocation, praise, appeal, or substantive narrative/liturgical role for this removed subject."
+      }
+    },
+    "jai-jai-jai-giriraj-kishori": {
+      "Gaṇeśa": {
+        "decision": "dismiss",
+        "inputHash": "bf8d22a574d5d8a76b88fdc085810b8048a66eb5fc07ce648f1679714e873d97",
+        "reason": "The elephant-faced son identifies Pārvatī as his mother. No independent Gaṇeśa invocation or role occurs anywhere else in the performed hymn."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "547b62a50f9ed5f1216a732134da4216719067d02e51487d6896c0fc5e33c81a",
+        "reason": "Maheśa’s face supplies the moon in the recurring image praising the goddess as its cakora bird. This richer consort comparison still gives Śiva no independent praise, invocation or devotional action anywhere in the performed hymn. Under the adopted boundary, comparison alone does not warrant a separate subject tag."
+      }
+    },
+    "kakad-aarti": {
+      "Sītā": {
+        "decision": "dismiss",
+        "inputHash": "0f0e5fc1dc5c5142df3059b56a761a858e375b76cb3f6d3705b30425b131ceaa",
+        "reason": "Jānakī occurs only in Jānakīnāyaka, identifying Rāma by his consort. All 249 stored definitions and the complete performed sequence were checked; no separate Sītā invocation or action occurs. The Śakti umbrella remains independently supported by Lakṣmī dwelling in devotees’ homes."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "6add8fc0f93c459e8bf0395ed6a72798b5117bd68b11b6ebe13f08418cdfcc99",
+        "reason": "Hara is named only in the comparison that the Guru surpasses Vidhi, Hari and Hara. Later trident/drum/serpent attributes belong to the explicitly invoked Datta/Sāī form and do not independently identify another Śiva subject. No direct Śiva invocation occurs elsewhere in the performed sequence."
+      }
+    },
+    "namah-parvatipati": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "a995c32b4fdd52a11ad1cd8cda2290cca6df7bb8b7fd87d5d41584941565bcc1",
+        "reason": "Pārvatīpati and Girijēśa identify Śiva as the goddess’s husband. Pārvatī has no independent invocation or action anywhere in the complete performed text."
+      },
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "55206fb63d973d755a9ae6194d1099832fee30eef365807957b9001bb9768053",
+        "reason": "Ramāramaṇa, Lakumīśa and Śrīśa identify the Viṣṇu who is the object of devotion. Lakṣmī herself is never independently invoked or an actor in the performed song."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "266b6d291b28b2f6d8d1464396cfa8ac14f136a38a42e010e0a721326ce3decc",
+        "reason": "No goddess has an independent devotional role: both Pārvatī and Lakṣmī occur only inside identifiers of their husbands. Remove the inherited umbrella with those incidental relative tags."
+      },
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "388ae318e5f01b645bf91f93689b4f1a899ca3cd1e7c166b97e18519fec149d9",
+        "reason": "Kṛṣṇa of Uḍupi appears only in the closing genealogical epithet identifying Śiva as his grandson and recipient of grace. Elsewhere the independently sought divine figure is Viṣṇu (Ramāramaṇa/Śrīśa), and Rāma is explicitly the object of Śiva’s worship. No separate Kṛṣṇa invocation or narrative occurs."
+      }
+    },
+    "tolu-tolu-tolu-ranga": {
+      "Guru": {
+        "decision": "dismiss",
+        "inputHash": "325717c75f6a3330a0bb4984ef77e09627d77732c1a37d3da56fb019e0400c2c",
+        "reason": "Sukhatīrtha occurs only in the closing identifier of Purandara Viṭṭhala as his master. The complete arm-waving lullaby narrates Kṛṣṇa’s acts; it neither addresses the teacher nor depicts teaching or a substantive guru episode."
+      }
+    },
+    "aarti-kunj-bihari-ki": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "b0e5c08e286e491cdfa1ce11f24e9e853a5a88863f4ca44e84d59802c0be4f04",
+        "reason": "Śiva occurs only as the place where Gaṅgā rests on his head in a description of her water. The song worships Kṛṣṇa and praises Rādhā; the incidental location does not make Śiva a subject."
+      }
+    },
+    "candracuda-sivasankara": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "3e538e660d5c95d75587911f4bf7423a6ed6a1a4fc2605a1a5f697cb234478a2",
+        "reason": "Pārvatī and Indirā/Lakṣmī occur only in beloved/husband epithets; Purandara Viṭṭhala only in the statement that Śiva is dear to him. None has an independent role. Retain Śiva, Rāma and Kṛṣṇa/Viṣṇu: Rāma’s name is praised and Gopāla in female guise actively enchants Śiva."
+      },
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "ccb216e6b942751b3b0283835667ca0bfb0e1ca5c67a0fb803dba9e994f2fac8",
+        "reason": "Pārvatī and Indirā/Lakṣmī occur only in beloved/husband epithets; Purandara Viṭṭhala only in the statement that Śiva is dear to him. None has an independent role. Retain Śiva, Rāma and Kṛṣṇa/Viṣṇu: Rāma’s name is praised and Gopāla in female guise actively enchants Śiva."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "cedd82757a0c961de1c1fefb4f21e231e8b56b8c2328fc1e11b25d41dbfd03c7",
+        "reason": "Pārvatī and Indirā/Lakṣmī occur only in beloved/husband epithets; Purandara Viṭṭhala only in the statement that Śiva is dear to him. None has an independent role. Retain Śiva, Rāma and Kṛṣṇa/Viṣṇu: Rāma’s name is praised and Gopāla in female guise actively enchants Śiva."
+      },
+      "Viṭṭhala": {
+        "decision": "dismiss",
+        "inputHash": "f649b7f22f6a9873de154f6bd25fd3b6e13abee3b4e947a0ba725fe598828068",
+        "reason": "Pārvatī and Indirā/Lakṣmī occur only in beloved/husband epithets; Purandara Viṭṭhala only in the statement that Śiva is dear to him. None has an independent role. Retain Śiva, Rāma and Kṛṣṇa/Viṣṇu: Rāma’s name is praised and Gopāla in female guise actively enchants Śiva."
+      }
+    },
+    "he-shivshankar-he-karunakar": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "790fd5f39565799d557dddb3f4e76ac4ae23f605c9bf6b12cfb0c9b9246a3cc3",
+        "reason": "Umāpati identifies the addressed Śiva as Umā’s husband; Umā has no separate devotional or narrative role. All appeals, music and dance belong to Śiva."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "8cd4a9afcb22cc674bd0c001e1eaa245ad738c32445149a04b36b2efa6f14f99",
+        "reason": "Umāpati identifies the addressed Śiva as Umā’s husband; Umā has no separate devotional or narrative role. All appeals, music and dance belong to Śiva."
+      }
+    },
+    "jayati-jayati-shri-ganesh": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "17afdbcd376adb428e34130be170f357f7eb549ee1788908475bbeb931ad34e8",
+        "reason": "Umā occurs only as Gaṇeśa’s mother in Umātanaya. Retain Gaṇeśa; retain Śiva conservatively because a separate performed salutation says Mahādeva, beyond the repeated father epithet."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "0f9f2ce0047078913ea08a0aa2f0e79715e929b619540d3f8f8514bae08a875c",
+        "reason": "Umā occurs only as Gaṇeśa’s mother in Umātanaya. Retain Gaṇeśa; retain Śiva conservatively because a separate performed salutation says Mahādeva, beyond the repeated father epithet."
+      }
+    },
+    "jogii-re-kian-jau-dura-deshe": {
+      "Guru": {
+        "decision": "dismiss",
+        "inputHash": "8708a379d68806ebbf8b53b72a6872fc94c21dfcebb02620d26c881f67259d1c",
+        "reason": "The song questions a wandering yogi about leaving home and facing death; the yogi remembers Alekha Nirañjana. A generic ascetic is not thereby a spiritual teacher, and no Guru or teaching relationship is performed."
+      }
+    },
+    "mati-re-mati-re-kete-dakuchi-re-tote": {
+      "Guru": {
+        "decision": "dismiss",
+        "inputHash": "3aa394c77294860f9dc8477c9694200c77f93baad3ea51b60549195e4675a92c",
+        "reason": "The performed poem addresses clay/the mortal person and reflects on bodily death and attachments. No Guru, teacher, teaching lineage or teacher-disciple relationship is named; the performer/tradition alone cannot supply this subject."
+      }
+    },
+    "om-namah-shivaya-damaru-paani-shool": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "e90853e4358fb81e33c03643658ea1ac25a7ea807da87385b478304091b47677",
+        "reason": "Girijākānta identifies Śiva as Girijā’s husband. The other śakti is predicated as Śiva’s power (Śiva is strength), not a separate Goddess invocation. No independent Pārvatī/Śakti role occurs."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "9b8b52f3903f7b14bc25a82a2df5fa48718c400fbc10e3028c0595866d667a5f",
+        "reason": "Girijākānta identifies Śiva as Girijā’s husband. The other śakti is predicated as Śiva’s power (Śiva is strength), not a separate Goddess invocation. No independent Pārvatī/Śakti role occurs."
+      }
+    },
+    "siyavar-ramchandra-ki-jai": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "4c8a6fc7bfdfd91951e502c05c4c37391692693c96425d872929b038dbf3d288",
+        "reason": "Umā occurs only in Umāpati, the directly hailed Mahādeva. Sītā is independently invoked in Sītārām, so Śakti remains; Umā has no stronger role elsewhere."
+      }
+    },
+    "uttho-uttho": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "42daef323a7b53c1f3579a264ec6d65e049b56781ad34f90a87ee78259e07031",
+        "reason": "Girijā and Śiva only identify Gaṇeśa as their son. Every act of remembrance and worship addresses Gaṇeśa; neither parent is separately invoked or active."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "cd6e43e8ae7498f709f0d79e02f8fe80399d64bf69ae9b9c097ccb35ce54ed16",
+        "reason": "Girijā and Śiva only identify Gaṇeśa as their son. Every act of remembrance and worship addresses Gaṇeśa; neither parent is separately invoked or active."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "a92aa3c4e44421ff50b233b08e33e96f2301786385609c0fb49d76c25bed7f4f",
+        "reason": "Girijā and Śiva only identify Gaṇeśa as their son. Every act of remembrance and worship addresses Gaṇeśa; neither parent is separately invoked or active."
+      }
+    },
+    "vighnaharan-gajvadan": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "0c0c4fa5cf0362f9ef29f29fb27a755068c83e1b1b10b01145fd46487b0e76e7",
+        "reason": "Śiva/Śaṅkara appears only as the father in Śivanandana/Śaṅkaranandana. All appeals address Gaṇeśa; no separate Śiva worship or action occurs."
+      }
+    },
+    "aarti-gajvadan-vinayak-ki": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "68aa0b65a83d9d5cd72ea0898286abc61d2db2030d8cdc2b0cb5f10abd622ead",
+        "reason": "Śiva appears in śiva-suta, identifying Gaṇeśa as his son; the father is not an independent subject. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "aarti-kijiye-shailsuta-ki": {
+      "Gaṇeśa": {
+        "decision": "dismiss",
+        "inputHash": "86092597df1a9b9f7df5b668f0f68bfac9bd168236fdd48ec0049db8fe4c5048",
+        "reason": "Gaṇapati occurs only as the son identifying the worshipped Mother. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "d606893c4ff55dd70d5ea66955cd9db3a521cd2298568012e7ca91793387bcd9",
+        "reason": "Queen of the throne in Śiva’s heart is a spouse-identifying epithet of the Mother, without independent Śiva devotion or action. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "daari-yavudayya-vaikunthake": {
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "3d013c56687f205048b8f51513bc401f2dbfa6635734236b628a53be5201ccc7",
+        "reason": "Śrīpati identifies the worshipped Nārāyaṇa as Śrī’s husband; no separate goddess devotion warrants Lakṣmī or her umbrella. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "dd4619518dd7daa42472f2281468f6f68f693bd57ff124cfa88cefd6bc5e23b0",
+        "reason": "Śrīpati identifies the worshipped Nārāyaṇa as Śrī’s husband; no separate goddess devotion warrants Lakṣmī or her umbrella. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "e-barashe-aasi-achi": {
+      "Lakṣmī": {
+        "decision": "dismiss",
+        "inputHash": "3db091b8d4319575f8a9f33b7e7dbfb9a48da9ba2ae4dba9cceebe165f2255aa",
+        "reason": "Kamaḷāra bara identifies Jagannātha as Kamalā’s consort; brother and sister accompany him, but Kamalā is only in the consort epithet. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "c3c73cf126bd3b777adc90dbd72d9c829aafeafe356e0b5c8f06b7c4ff887b2e",
+        "reason": "Kamaḷāra bara identifies Jagannātha as Kamalā’s consort; brother and sister accompany him, but Kamalā is only in the consort epithet. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "ekdant-gajvadan": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "b8de923545ef52c67dfa1b62aafe8cd0a4291d3dd5ba7c817de4a14f676d42e3",
+        "reason": "Śivasuta and Śaṅkarasuvana identify Gaṇeśa’s father only. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "074dc55fc4a01f02e6f6e234edafb9345f44c80f582971de1a87bd3d0e80ca63",
+        "reason": "Gaurīsuta identifies Gaṇeśa’s mother only; her umbrella has no independent goddess subject. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "80f8a0e001d2489e3d32380d74657bb35c9eba8775ae08cd7b6989de884d1e4d",
+        "reason": "Gaurīsuta identifies Gaṇeśa’s mother only; her umbrella has no independent goddess subject. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "harivarasanam": {
+      "Viṣṇu": {
+        "decision": "dismiss",
+        "inputHash": "ae5216ef31d2d3e50435cea5e8a396df0f1400def414778bdbb5a398b2d05a94",
+        "reason": "Hariharātmaja identifies Ayyappa by parentage; the prayer invokes Ayyappa, not Hari and Hara separately. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "6b75362ae56b7188832620a6b227fccac45c238dc36faa110f614980ebb53c0e",
+        "reason": "Hariharātmaja identifies Ayyappa by parentage; the prayer invokes Ayyappa, not Hari and Hara separately. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "jai-shiva-shankar-jai-gangadhar": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "c7f400bd50bf97c8e0372159ce7eda4935e4877015c3a50c755e6e879c774b08",
+        "reason": "Rāmeśvara is a Śiva-form epithet, not an independent Rāma invocation. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "jai-shri-shankar-sut-ganesh": {
+      "Śiva": {
+        "decision": "dismiss",
+        "inputHash": "f4c2e77d481362f60cfda5b9f56108e571552cbc622b111e4a5702d34397c361",
+        "reason": "Śaṅkarasuta names Gaṇeśa through his father only. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "b72e1f8c9c1899f6f615d0d83f01ad536bc0bcd34340432a6d7a57ac4bd7e2d6",
+        "reason": "Suta Girijā names Gaṇeśa through his mother only; no separate goddess subject remains. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "97c99bb7fec10a45a343d01c74d5a632e4072a8df3460d6f8201b90462f693e2",
+        "reason": "Suta Girijā names Gaṇeśa through his mother only; no separate goddess subject remains. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "janchiye-girijapati-kashi": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "ff3ce7dbc252e5dd6f70398f754d297bac4b205d32101b178d7b849314445758",
+        "reason": "Gaurīśvara and Girijāpati identify the addressed Śiva as the goddess’s husband; they do not invoke her independently. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "f5d2c3c8577f82a605134ae9fee2fc2beccbec4af52ba4f9a83303a550ff01cd",
+        "reason": "Gaurīśvara and Girijāpati identify the addressed Śiva as the goddess’s husband; they do not invoke her independently. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "rudrashtakam-sharma-bandhu": {
+      "Pārvatī": {
+        "decision": "dismiss",
+        "inputHash": "28609edd613edc2b80c01246e1ee1e569cc560648febb85246a5907b009927df",
+        "reason": "Bhavānīpati (and Umāpati elsewhere) identify the addressed Śiva by marriage, without an independent goddess role. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      },
+      "Śakti": {
+        "decision": "dismiss",
+        "inputHash": "358da77afe579d1c97306315f03f1c674a4c2365544386cc8a5bdd11a7d5360f",
+        "reason": "Bhavānīpati (and Umāpati elsewhere) identify the addressed Śiva by marriage, without an independent goddess role. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "saranembe-vani": {
+      "Viṭṭhala": {
+        "decision": "dismiss",
+        "inputHash": "67fc292f4a8e0ef5cc3ba160e57a84ffd8e47c2c591b8376e2c0ac38048d6c7e",
+        "reason": "Viṭṭhala occurs only as the relative in Sarasvatī’s elder-daughter-in-law epithet. Hari is independently sought at l006, retaining Viṣṇu but not this incidental specific-form tag. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
       }
     }
   }

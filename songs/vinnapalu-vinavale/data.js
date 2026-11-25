@@ -16,7 +16,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Viṣṇu",
-    "Veṅkaṭeśa"
+    "Veṅkaṭeśa",
+    "Brahmā",
+    "Lakṣmī",
+    "Śakti"
   ],
   "searchAliases": [
     "Vishnu",

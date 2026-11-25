@@ -13,7 +13,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gaṇeśa",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Candra"
   ],
   "searchAliases": [
     "Ganesha",

@@ -19,7 +19,8 @@ window.SONG_META = {
     "Śakti",
     "Vaiṣṇo Devī",
     "Durgā",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Brahmā"
   ],
   "searchAliases": [
     "Jai Jai Durge Ad Bhavani",

@@ -18,9 +18,10 @@ window.SONG_META = {
     "Guru",
     "Kṛṣṇa",
     "Śakti",
-    "Sītā",
     "Lakṣmī",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Dattātreya",
+    "Kubera"
   ],
   "searchAliases": [
     "Shirdi Sai",

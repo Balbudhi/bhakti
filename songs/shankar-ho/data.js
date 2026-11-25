@@ -11,7 +11,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śiva",
-    "Viṣṇu"
+    "Viṣṇu",
+    "Brahmā"
   ],
   "searchAliases": [
     "Shiva",

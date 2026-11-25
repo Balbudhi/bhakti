@@ -19,7 +19,8 @@ window.SONG_META = {
     "Vaiṣṇo Devī",
     "Lakṣmī",
     "Durgā",
-    "Kālī"
+    "Kālī",
+    "Brahmā"
   ],
   "searchAliases": [
     "Devimahatmyam — Adhyaya 12",

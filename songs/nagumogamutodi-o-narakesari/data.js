@@ -18,7 +18,8 @@ window.SONG_META = {
     "Viṣṇu",
     "Nṛsiṃha",
     "Lakṣmī",
-    "Śakti"
+    "Śakti",
+    "Brahmā"
   ],
   "searchAliases": [
     "Nagumogamutōdi Ō Narakēsari",

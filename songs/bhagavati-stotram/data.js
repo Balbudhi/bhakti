@@ -18,7 +18,11 @@ window.SONG_META = {
     "Śakti",
     "Vaiṣṇo Devī",
     "Viṣṇu",
-    "Śiva"
+    "Śiva",
+    "Brahmā",
+    "Indra",
+    "Kārtikeya",
+    "Sūrya"
   ],
   "searchAliases": [
     "Shribhagavatistotram",

@@ -5,9 +5,7 @@ window.SONG_META = {
   "composer": "C. Ashwath",
   "subjectTags": [
     "Viṣṇu",
-    "Lakṣmī",
-    "Viṭṭhala",
-    "Śakti"
+    "Viṭṭhala"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=uUQEXieL6iM",
   "searchAliases": [

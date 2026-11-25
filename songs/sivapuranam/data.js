@@ -10,7 +10,8 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śiva",
-    "Guru"
+    "Guru",
+    "Oṃ"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=B33RVckEmvQ",
   "searchAliases": [

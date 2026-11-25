@@ -20,7 +20,8 @@ window.SONG_META = {
     "Lakṣmī",
     "Śakti",
     "Pārvatī",
-    "Durgā"
+    "Durgā",
+    "Brahmā"
   ],
   "searchAliases": [
     "Kōlaṟu Patikam",

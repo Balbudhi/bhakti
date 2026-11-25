@@ -12,10 +12,10 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Śirḍī Sāī",
-    "Rāma",
     "Guru",
     "Kṛṣṇa",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Dattātreya"
   ],
   "searchAliases": [
     "Shirdi Sai",

@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Śakti",
     "Vaiṣṇo Devī",
-    "Durgā"
+    "Durgā",
+    "Indra"
   ],
   "searchAliases": [
     "Durga Apaduddharastakam",

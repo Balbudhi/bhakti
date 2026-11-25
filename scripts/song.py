@@ -529,7 +529,7 @@ def retag(slugs):
         if (prior_meta.get('subjectTags', []) != reader['SONG_META']['subjectTags']
                 or 'subjectTagRevision' in semantic):
             prior_tags = semantic.get('subjectTagRevision', {}).get('priorTags', prior_meta.get('subjectTags', []))
-            semantic['subjectTagRevision'] = profiles.reviewed_subject_tag_revision(
+            record['semantic'] = profiles.reviewed_retag_semantic(
                 ROOT, slug, reader, stored, prior_tags=prior_tags)
         media_hash = profiles.recording_sha256(ROOT, slug, reader)
         profiles.project_song_profile(queue_id, slug, reader, taxonomy, media_hash, record,

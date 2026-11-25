@@ -13,8 +13,7 @@ window.SONG_META = {
     "Śakti",
     "Durgā",
     "Śiva",
-    "Pārvatī",
-    "Gaṇeśa"
+    "Pārvatī"
   ],
   "searchAliases": [
     "Devi Aparadha Kshamapana Stotram",

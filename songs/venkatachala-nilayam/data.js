@@ -17,7 +17,9 @@ window.SONG_META = {
   "subjectTags": [
     "Viṣṇu",
     "Kṛṣṇa",
-    "Viṭṭhala"
+    "Viṭṭhala",
+    "Veṅkaṭeśa",
+    "Brahmā"
   ],
   "searchAliases": [
     "Vengkatacala Nilayam",

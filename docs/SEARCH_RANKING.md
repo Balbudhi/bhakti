@@ -94,3 +94,19 @@ No per-query API/model calls or new dependencies.
   Pages run `45361607541` passed the complete deployment checks. All 779 checked
   served files match the assembled release, including search code, index, every
   reader and entrypoint. Browser verification was waived by the owner.
+
+
+## Reconfirmation after subject-tag review, 25 November 2026
+
+The existing ranking implementation remains unchanged. All 386 current full titles
+return an exact matching title first with the generated lyric index loaded, including
+the updated tags. `Parvati` returns `Pārvatī`, then `Pārvatī Devī Mahāmāyāvinī`;
+typo and native-script queries retain their expected behavior. All 37 focused
+search/filter tests pass against the updated catalogue.
+
+The same 14-query local workload (one fresh context, then 25 warm runs per query)
+measured warm p95 of 2.16 ms for `Parvati`, 7.47 ms for `parvti`, and a maximum of
+17.46 ms for `take my hnad`, within the documented 20 ms target. Corresponding cold
+queries measured 22.37, 141.68 and 152.78 ms, including lazy setup for typo retrieval.
+These are local Node timings, not phone rendering measurements. No algorithm rewrite,
+new dependency, network search or model call was needed.

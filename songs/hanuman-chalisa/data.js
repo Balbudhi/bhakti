@@ -15,9 +15,7 @@ window.SONG_META = {
     "Viṣṇu",
     "Guru",
     "Sītā",
-    "Pārvatī",
     "Śiva",
-    "Sarasvatī",
     "Śakti"
   ],
   "searchAliases": [

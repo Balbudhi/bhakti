@@ -15,7 +15,8 @@ window.SONG_META = {
     "Lakṣmī",
     "Pārvatī",
     "Durgā",
-    "Śiva"
+    "Śiva",
+    "Brahmā"
   ],
   "searchAliases": [
     "Bolo Lakshmi Mat Ki Jay!",

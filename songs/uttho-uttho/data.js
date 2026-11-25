@@ -10,10 +10,7 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Śiva",
-    "Gaṇeśa",
-    "Pārvatī",
-    "Śakti"
+    "Gaṇeśa"
   ],
   "searchAliases": [
     "Shirdi Sai",

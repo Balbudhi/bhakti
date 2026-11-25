@@ -25,7 +25,12 @@ window.SONG_META = {
     "Lakṣmī",
     "Durgā",
     "Viṭṭhala",
-    "Pārvatī"
+    "Pārvatī",
+    "Dattātreya",
+    "Brahmā",
+    "Sūrya",
+    "Candra",
+    "Navagraha"
   ],
   "searchAliases": [
     "Shirdi Sai",

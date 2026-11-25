@@ -12,7 +12,9 @@ window.SONG_META = {
   "subjectTags": [
     "Śiva",
     "Śakti",
-    "Pārvatī"
+    "Pārvatī",
+    "Indra",
+    "Brahmā"
   ],
   "searchAliases": [
     "Shiva",

@@ -10,7 +10,8 @@ window.SONG_META = {
     "Braj"
   ],
   "subjectTags": [
-    "Gaṇeśa"
+    "Gaṇeśa",
+    "Brahmā"
   ],
   "searchAliases": [
     "Ganesha",

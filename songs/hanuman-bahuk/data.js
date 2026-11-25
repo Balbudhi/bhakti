@@ -19,7 +19,8 @@ window.SONG_META = {
     "Gaṇeśa",
     "Sītā",
     "Pārvatī",
-    "Kṛṣṇa"
+    "Brahmā",
+    "Indra"
   ],
   "searchAliases": [
     "Hanuman",

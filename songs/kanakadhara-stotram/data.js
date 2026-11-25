@@ -11,10 +11,8 @@ window.SONG_META = {
   "subjectTags": [
     "Lakṣmī",
     "Śakti",
-    "Guru",
     "Kṛṣṇa",
-    "Viṣṇu",
-    "Śiva"
+    "Viṣṇu"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=jLkDrPcfwY4",
   "searchAliases": [

@@ -14,7 +14,8 @@ window.SONG_META = {
     "Viṣṇu",
     "Śiva",
     "Durgā",
-    "Pārvatī"
+    "Pārvatī",
+    "Brahmā"
   ],
   "searchAliases": [
     "Jaya Durge Durgati Pariharini",

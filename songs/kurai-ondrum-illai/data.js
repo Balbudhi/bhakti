@@ -17,7 +17,8 @@ window.SONG_META = {
   "subjectTags": [
     "Kṛṣṇa",
     "Viṣṇu",
-    "Śakti"
+    "Śakti",
+    "Veṅkaṭeśa"
   ],
   "searchAliases": [
     "Kurai Onrum Illai",

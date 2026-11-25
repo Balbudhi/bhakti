@@ -138,7 +138,7 @@ def _number(value, label, minimum=None, maximum=None, nullable=False):
     return value
 
 
-def _subject_tag_revision(part, reader, taxonomy, *, root, slug):
+def _subject_tag_revision(part, reader, taxonomy, *, root, slug, evidence_reader=None):
     """Validate a public name-reference correction, not a new model assessment.
 
     The original model input and features stay authoritative for the semantic
@@ -174,8 +174,9 @@ def _subject_tag_revision(part, reader, taxonomy, *, root, slug):
         raise ValueError('subject tag revision reviewed registry record missing') from exc
     if digest(evidence) != revision['evidenceHash']:
         raise ValueError('subject tag revision evidence changed; review required')
+    source_reader = reader if evidence_reader is None else evidence_reader
     apply_reviewed_subject_tags(original_reader['SONG_META'], slug,
-        reader['SONG_LINES'], reader['SONG_SEQUENCE'], root=Path(root))
+        source_reader['SONG_LINES'], source_reader['SONG_SEQUENCE'], root=Path(root))
     if original_reader['SONG_META']['subjectTags'] != reader['SONG_META'].get('subjectTags', []):
         raise ValueError('subject tag revision includes unreviewed tag changes')
 
@@ -221,6 +222,54 @@ def reviewed_subject_tag_revision(root, slug, reader, record, *, prior_tags):
     part['subjectTagRevision'] = revision
     _subject_tag_revision(part, reader, taxonomy, root=root, slug=slug)
     return revision
+
+
+def reviewed_retag_semantic(root, slug, reader, record, *, prior_tags):
+    """Compose reviewed tags with a stored text amendment, preserving assessment.
+
+    The tag binding uses original assessed text; its source witnesses use the
+    corrected performed text. The text binding then covers the final reader.
+    No receipt or original model field is rewritten. Returning to original tags
+    removes the now-unnecessary tag binding, without undoing corrected English.
+    """
+    from tag_taxonomy import apply_reviewed_subject_tags
+    root = Path(root)
+    policy, reviews, taxonomy = _configuration(root)
+    queue_id = hashlib.blake2s(slug.encode(), digest_size=4).hexdigest()
+    if (not isinstance(record, dict) or record.get('slug') != slug
+            or record != reviews['profiles'].get(queue_id)):
+        raise ValueError('retag must retain the stored assessment record')
+    part = copy.deepcopy(record.get('semantic'))
+    if not isinstance(part, dict):
+        raise ValueError('retag requires the original semantic assessment')
+    restored = copy.deepcopy(reader)
+    text_revision = part.get('editorialTextRevision')
+    if text_revision is not None:
+        prior_lines = text_revision.get('priorLines')
+        if not isinstance(prior_lines, dict):
+            raise ValueError('text revision prior lines missing')
+        restored['SONG_LINES'].update(copy.deepcopy(prior_lines))
+        # All other receipt bindings remain intact and are checked below.
+        text_revision['inputHash'] = semantic_input_hash(reader, taxonomy)
+    original_meta = copy.deepcopy(reader['SONG_META'])
+    original_meta['subjectTags'] = copy.deepcopy(prior_tags)
+    apply_reviewed_subject_tags(original_meta, slug, reader['SONG_LINES'],
+                               reader['SONG_SEQUENCE'], root=root)
+    if original_meta.get('subjectTags', []) != reader['SONG_META'].get('subjectTags', []):
+        raise ValueError('retag includes unreviewed tag changes')
+    if prior_tags == reader['SONG_META'].get('subjectTags', []):
+        part.pop('subjectTagRevision', None)
+    else:
+        evidence = read_json(root / 'data/song_tag_overrides.json')['songs'][slug]
+        part['subjectTagRevision'] = {
+            'version': 1, 'priorTags': copy.deepcopy(prior_tags),
+            'originalInputHash': part.get('inputHash'),
+            'inputHash': semantic_input_hash(restored, taxonomy),
+            'evidenceHash': digest(evidence),
+        }
+    _qualified(part, 'semantic', reader, policy)
+    _semantic(part, reader, taxonomy, root=root, slug=slug)
+    return part
 
 
 def _text_repair_evidence(root, slug):
@@ -276,9 +325,10 @@ def _editorial_text_revision(part, reader, taxonomy, *, root, slug):
             or revision['baseFeaturesHash'] != digest(part.get('features'))):
         raise ValueError('text revision current input or original feature binding is stale')
     if 'subjectTagRevision' in part:
-        # The tag amendment remains the original receipt for the intermediate
-        # tag-only state; do not rewrite it as if it had assessed the new text.
-        _subject_tag_revision(part, restored, taxonomy, root=root, slug=slug)
+        # The tag binding covers original text with reviewed tags; the text
+        # binding covers the final reader. Tag witnesses use corrected source.
+        _subject_tag_revision(part, restored, taxonomy, root=root, slug=slug,
+                              evidence_reader=reader)
         from tag_taxonomy import apply_reviewed_subject_tags
         meta = copy.deepcopy(reader['SONG_META'])
         meta['subjectTags'] = copy.deepcopy(part['subjectTagRevision']['priorTags'])

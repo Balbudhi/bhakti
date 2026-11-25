@@ -17,9 +17,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Gaṇeśa",
-    "Śiva",
-    "Pārvatī",
-    "Śakti"
+    "Oṃ"
   ],
   "searchAliases": [
     "Ganesha",

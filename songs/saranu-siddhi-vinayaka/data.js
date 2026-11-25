@@ -5,10 +5,8 @@ window.SONG_META = {
   "composer": "",
   "subjectTags": [
     "Gaṇeśa",
-    "Pārvatī",
     "Viṣṇu",
-    "Viṭṭhala",
-    "Śakti"
+    "Viṭṭhala"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=RshpIz5Wa48",
   "searchAliases": [

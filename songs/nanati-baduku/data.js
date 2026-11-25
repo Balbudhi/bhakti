@@ -9,7 +9,8 @@ window.SONG_META = {
     "Telugu"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Veṅkaṭeśa"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=d-kkx7VEtVA",
   "searchAliases": [

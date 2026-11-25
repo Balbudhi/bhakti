@@ -12,7 +12,8 @@ window.SONG_META = {
     "Marathi"
   ],
   "subjectTags": [
-    "Viṣṇu"
+    "Viṣṇu",
+    "Viṭṭhala"
   ],
   "searchAliases": [
     "Tukaram · Anuradha Paudwal",

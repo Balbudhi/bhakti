@@ -10,7 +10,8 @@ window.SONG_META = {
     "Odia"
   ],
   "subjectTags": [
-    "Guru"
+    "Guru",
+    "Oṃ"
   ],
   "searchAliases": [
     "Satpathy Baba",

@@ -18,7 +18,8 @@ window.SONG_META = {
     "Śiva",
     "Hanumān",
     "Lakṣmī",
-    "Śakti"
+    "Śakti",
+    "Veṅkaṭeśa"
   ],
   "searchAliases": [
     "Shirdi Sai",

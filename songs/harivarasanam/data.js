@@ -10,9 +10,7 @@ window.SONG_META = {
   ],
   "subjectTags": [
     "Ayyappa",
-    "Guru",
-    "Viṣṇu",
-    "Śiva"
+    "Guru"
   ],
   "sourceUrl": "https://www.youtube.com/watch?v=Xk3zTq4TI90",
   "searchAliases": [
