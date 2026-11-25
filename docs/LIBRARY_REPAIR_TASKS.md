@@ -15,7 +15,8 @@ Applied 91 removals and 97 additions across 99 readers, with exact source witnes
 and retained-secondary dispositions in `data/subject-tag-review-2026-11-25.json`.
 The lead inspected every final change. All non-tag reader data, original semantic/
 audio assessments and English correction receipts are unchanged. Existing uncertain
-central-form identities remain explicit. Publication is in progress.
+central-form identities remain explicit. Tag content `5e4e65e4` was published by
+deployment commit `2e308f1c`; Pages run `45678508572` succeeded. All 779 checked served files match the assembled release.
 
 Verification: 45 of 46 release commands pass. The only failure is the same six
 historical trim-record discrepancies, byte-identical to the preceding release.
@@ -37,19 +38,21 @@ The regression first reproduced the failure; all 31 focused amendment/retag test
 now pass, including stale evidence, retained text, rollback and repeated retagging.
 The registry makes already-derived umbrella tags explicit before new additions,
 preserving the existing order when replayed from the original assessment.
-Catalogue rebuilt through song.py retag; run required checks, publish and compare
-served files. Existing browser waiver/audio-retention decisions apply.
+Catalogue rebuilt through song.py retag; required checks and served-file comparison
+completed. Existing browser waiver/audio-retention decisions apply.
 
 Deployment recovery: runs `45677225845` and `45677631695` passed every CI check
 but deploy-pages v4.0.5 reported no artifacts through its job-scoped Twirp client.
 The preceding REST visibility guard and independent run/name query both returned
 one live `github-pages` artifact. The last successful run used the same action SHA,
-so this is not a tag-release build regression. Pin the official v4.0.0 action
+so this was not a tag-release build regression. Pinned the official v4.0.0 action
 (`f33f41b675f0ab2dc5a6863c9a170fe83af3571e`) to use the already-verified REST
-run/name lookup. Preserve the same OIDC token, build SHA, environment, permissions,
-artifact count guard, deployment polling and output. Verify unchanged check-command
+run/name lookup. Preserved the same OIDC token, build SHA, environment, permissions,
+artifact count guard, deployment polling and output. Verified unchanged check-command
 selection and YAML structure, then the actual deployment and all served files.
-The pin can be upgraded after the upstream artifact-discovery path is verified.
+The pin passed independent review and unchanged YAML/check-command verification.
+Deployment run `45678508572` succeeded through the REST lookup and all 779 served
+files matched. The pin can be upgraded after the upstream discovery path is verified.
 
 
 

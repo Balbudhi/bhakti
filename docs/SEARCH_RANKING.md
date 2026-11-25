@@ -110,3 +110,7 @@ measured warm p95 of 2.16 ms for `Parvati`, 7.47 ms for `parvti`, and a maximum 
 queries measured 22.37, 141.68 and 152.78 ms, including lazy setup for typo retrieval.
 These are local Node timings, not phone rendering measurements. No algorithm rewrite,
 new dependency, network search or model call was needed.
+
+The tag release `5e4e65e4`, deployed by `2e308f1c`, passed Pages run `45678508572`; all 779 checked
+served files match the assembled release, including unchanged search code and the
+updated catalogue/index. The six known trim-record discrepancies remain unchanged.

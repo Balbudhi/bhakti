@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-11-25",
   "baselineCommit": "d3d61b8fdeb96f6a07dd3f8e6c20b654abde6e0e",
-  "scope": "Contextual subject relevance across all386 readers, reusing the immediately preceding complete source/English readings and inspecting all tag changes with exact performed witnesses. Independent worship, invocation, meaningful narrative/liturgical participation and actual joint divine depictions count. Parent/spouse identification alone, passing comparisons, generic symbols, credits and routine mantra prefixes do not. Established central identities remain where supported; recorded source uncertainties are not silently resolved. This tag review does not renew translation or listening certification.",
+  "scope": "Contextual subject relevance across all 386 readers, reusing the immediately preceding complete source/English readings and inspecting all tag changes with exact performed witnesses. Independent worship, invocation, meaningful narrative/liturgical participation and actual joint divine depictions count. Parent/spouse identification alone, passing comparisons, generic symbols, credits and routine mantra prefixes do not. Established central identities remain where supported; recorded source uncertainties are not silently resolved. This tag review does not renew translation or listening certification.",
   "readingEvidence": "data/translation-review-2026-11-25.json",
   "counts": {
     "readersReviewed": 386,
@@ -25989,7 +25989,7 @@
       }
     }
   ],
-  "releaseState": "Validated and prepared for publication; only six unchanged historical trim-record discrepancies remain. Existing owner authorization preserves recordings.",
+  "releaseState": "Published and verified. All 779 served files match the assembled release; only six unchanged historical trim-record discrepancies remain, with recordings preserved.",
   "validation": {
     "releaseCommands": 46,
     "passed": 45,
@@ -26361,5 +26361,20 @@
       "readyAndDeferredChecks": 30640
     },
     "browserCheck": "Owner waived browser checks; no native-device claim."
+  },
+  "deploymentRetry": {
+    "failedRuns": [
+      45677225845,
+      45677631695
+    ],
+    "reason": "deploy-pages reported zero artifacts after the preceding visibility check and independent API returned the uploaded github-pages artifact; fresh dispatch reproduced the same failure; official action pinned to the reviewed REST lookup release in 2e308f1c."
+  },
+  "publication": {
+    "commit": "2e308f1c597ce77b441cc39083bf5f9094976f49",
+    "pagesRun": 45678508572,
+    "pagesStatus": "success",
+    "servedFilesChecked": 779,
+    "servedFilesMatched": 779,
+    "site": "https://bhakti.eeshan.xyz"
   }
 }
