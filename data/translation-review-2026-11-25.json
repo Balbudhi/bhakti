@@ -33790,7 +33790,7 @@
           "currentReading": "Entering the well, where does she appear? The Ḍom woman comes forth."
         }
       ],
-      "releaseState": "validated_pending_publication",
+      "releaseState": "published_and_verified",
       "baselineCommit": "8a4c225de61f7bd92f2d885ed906ee0f2a8fee98",
       "validation": {
         "releaseChecks": 46,
@@ -33802,6 +33802,16 @@
         "seekVerification": "30,640 ready/deferred DOM-click seeks across 386 readers match stored onsets; no fresh acoustic verification.",
         "browser": "Existing owner waiver applies; no UI changes.",
         "paidCalls": 0
+      },
+      "publication": {
+        "verifiedAt": "2026-11-27T01:01:31.857091+00:00",
+        "commit": "cfc8322e053bdfd6db2a54cfc49ee2971a70a954",
+        "pagesRunId": 45919850633,
+        "pagesConclusion": "success",
+        "publicUrl": "https://bhakti.eeshan.xyz/songs/saasa-haale/",
+        "servedFilesChecked": 9,
+        "servedFilesMatched": 9,
+        "verificationScope": "Song data/page plus library entrypoint, loader, release map, catalogue, shuffle profiles, search index and service worker; byte hashes match assembled output."
       }
     }
   ]

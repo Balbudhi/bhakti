@@ -23,9 +23,10 @@ final wording polish, all eight affected checks pass. All 30,640 ready/deferred
 DOM-click seeks still match the stored onsets. Original profiles and all source,
 IAST, audio, timing and metadata are preserved.
 
-Current step: validated for publication; inspect the staged diff, publish and
-compare the served reader and generated search/catalogue/profile assets. Existing
-browser waiver applies. No paid assessment or fresh listening is claimed.
+Published as `cfc8322e`; Pages run `45919850633` succeeded. All nine checked
+served files match the assembled release: song reader/page and shared library,
+release-map, catalogue, shuffle, search and service-worker assets. Existing browser
+waiver applies. No paid assessment or fresh listening is claimed.
 
 
 ## Devotional subject tags and search confirmation — 25 November 2026
