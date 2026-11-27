@@ -36247,6 +36247,21 @@
       "glossEntries": 171,
       "grammarNotes": 2
     },
-    "releaseState": "Owner authorized publication on 2026-11-27 with unavailable browser checks and unchanged historical trim failures; deployment and live verification pending."
+    "releaseState": "published and live-byte-verified with owner-authorized verification limitations",
+    "publication": {
+      "commit": "bdb43051f1dc13806279176ecdd0f73f1f6eaaf7",
+      "pagesRun": 45971861810,
+      "date": "2026-11-27",
+      "result": "success",
+      "liveFilesChecked": 412,
+      "liveFilesMatched": 412,
+      "coverage": "386 generated song pages; 18 changed reader data files; home, robots, sitemap, service worker, release map, catalogue, shuffle profiles and lyric search index.",
+      "priorRun": {
+        "id": 45971328910,
+        "result": "All CI checks passed; deploy action failed while reading artifact metadata. Fresh run of unchanged commit succeeded."
+      },
+      "ownerAuthorization": "Ok publish; accepted unavailable browser checks and unchanged historical trim failures.",
+      "limits": "No fresh visual/device/acoustic verification or guarantee of search-engine inclusion; ten explicitly recorded source definitions remain uncertain."
+    }
   }
 }

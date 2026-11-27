@@ -46,12 +46,20 @@ stored onsets. The final assembled artifact contains 386 song links/readers and
 exercise static text, default editions, escaping, runtime replacement, library
 filters/search, route selection, queue behavior and preservation of the audio node.
 
-Current step: owner authorized publication with the stated verification limits
-(“Ok publish”, 27 November 2026). In-app browser control
-failed on creation, inventory and explicit browser binding with “native pipe closed
-before response”; desktop/390px visual and fresh acoustic checks are unavailable.
-Do not claim physical-phone behavior or search inclusion. The next step is scoped commit/push, successful Pages deployment and
-served-byte verification.
+Published as `bdb43051f1dc13806279176ecdd0f73f1f6eaaf7`; Pages run
+`45971861810` succeeded. All 412 checked live files match the local assembled
+release: all 386 prerendered song pages, all 18 changed reader data files, and
+eight root/catalogue/search/release assets. The first run `45971328910` passed
+all CI checks but failed on transient artifact-metadata visibility; a fresh run
+of the same commit deployed successfully without further code or content edits.
+
+Owner explicitly authorized publication (“Ok publish”, 27 November 2026) with
+the stated limits: in-app browser control failed on creation, inventory and
+explicit browser binding with “native pipe closed before response”; desktop/390px
+visual and fresh acoustic checks were unavailable. Historical trim discrepancies
+remain unchanged. Served-byte verification establishes publication identity, not
+physical-phone behavior, complete translation certainty or search inclusion.
+
 
 
 ## Sāṃsā Hāle translation follow-up — 26 November 2026
