@@ -354,7 +354,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dil se nahī̃ dil lagāyā",
-    "english": "{3:Our hearts }have {2:not }{4:joined }{1:with }{0:one another—}",
+    "english": "{3:Heart }has {2:not }{4:joined }{1:with }{0:heart—}",
     "words": [
       {
         "roman": "Dil",
@@ -504,7 +504,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ann na bhāvai nīnd na āvai",
-    "english": "{0:Food }{1:does not }{2:please; }{3:sleep }{4:does not }{5:come.}",
+    "english": "{0:Food }{1:does not }{2:appeal to me; }{3:sleep }{4:does not }{5:come.}",
     "words": [
       {
         "roman": "Ann",
@@ -520,7 +520,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhāvai",
-        "gloss": "pleases; appeals to taste",
+        "gloss": "appeals to; pleases (here, food has no appeal)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -666,7 +666,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kāmin ko hai bālam pyārā",
-    "english": "{1:To }{0:a woman, }{3:the beloved }{2:is }{4:dear,}",
+    "english": "{3:Her beloved }{2:is }{4:dear }{1:to }{0:a woman,}",
     "words": [
       {
         "roman": "Kāmin",
@@ -1026,7 +1026,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bin dekhe jīv jāy re",
-    "english": "{0:without }{1:seeing }you, {2:life }{3:departs, }{4:beloved.}",
+    "english": "{0:without }{1:seeing }you, {2:my life }{3:ebbs away, }{4:beloved.}",
     "words": [
       {
         "roman": "Bin",
@@ -1048,7 +1048,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jāy",
-        "gloss": "departs; goes; ebbs away",
+        "gloss": "ebbs away; departs; goes",
         "concept_key": "",
         "preserve_in_english": false
       },

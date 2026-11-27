@@ -224,7 +224,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gagan mē̃ āvāz ho rahī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī",
-    "english": "In the {0,1:sky, }{2:a sound }{3,4:is resounding, }{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle}",
+    "english": "{2:A sound }{3,4:rings }{0,1:in the sky—}{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle}",
     "words": [
       {
         "roman": "Gagan",
@@ -444,7 +444,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nād bindu sē pīchē jamāyā pānī pānī ho jī",
-    "english": "{2:From }{0:primal sound }and {1:seed-point, }{3:afterward }{5:water, }{6:water }{4:was condensed, }{7:O }{8:honored one}",
+    "english": "{2:From }{0:primal sound }and {1:seed-point, }{3:afterward }{5:water, }{6:water }{4:was condensed, }{7:O }{8:dear one}",
     "words": [
       {
         "roman": "Nād",
@@ -496,7 +496,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jī",
-        "gloss": "honored one [respectful particle]",
+        "gloss": "dear one; a respectful or affectionate form of address",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -593,7 +593,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sab ghaṭ pūran pūru rahyā hai alakh puruṣa nirbānī ho jī bānī ho jī",
-    "english": "{0:In every }{1:vessel, }{2:fully }{3,4:pervading }{5:is }{6:the imperceptible, }{7:Supreme Person, }{8:silent, }{9:O }{10:honored one, }{11:the Word, }{12:O }{13:honored one}",
+    "english": "{6:The imperceptible, }{8:silent }{7:Being }{5:is }{2:fully }{3,4:present }{0:in every }{1:vessel, }{9:O }{10:dear one, }{11:the word, }{12:O }{13:dear one.}",
     "words": [
       {
         "roman": "Sab",
@@ -639,7 +639,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "puruṣa",
-        "gloss": "Supreme Person; Primal Being",
+        "gloss": "Being; the divine presence that fills every vessel",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -657,7 +657,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jī",
-        "gloss": "honored one [respectful particle]",
+        "gloss": "dear one; a respectful or affectionate form of address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -675,7 +675,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jī",
-        "gloss": "honored one [respectful particle]",
+        "gloss": "dear one; a respectful or affectionate form of address",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1182,7 +1182,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Din bhar rē jō nazar bhar dēkhē ajar amar vo niśānī ho jī vo niśānī ho jī",
-    "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:honored one, }{13:that }{14:sign, }{15:O }{16:honored one}",
+    "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:dear one, }{13:that }{14:sign, }{15:O }{16:dear one}",
     "words": [
       {
         "roman": "Din",
@@ -1258,7 +1258,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jī",
-        "gloss": "honored one [respectful particle]",
+        "gloss": "dear one; a respectful or affectionate form of address",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1282,7 +1282,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jī",
-        "gloss": "honored one [respectful particle]",
+        "gloss": "dear one; a respectful or affectionate form of address",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1397,7 +1397,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Gagan mē̃ āvāz ho rahī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī jhīnī",
-    "english": "In the {0,1:sky, }{2:a sound }{3,4:is resounding, }{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle, }{12:subtle, }{13:subtle, }{14:subtle, }{15:subtle, }{16:subtle}",
+    "english": "{2:A sound }{3,4:rings }{0,1:in the sky—}{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle, }{12:subtle, }{13:subtle, }{14:subtle, }{15:subtle, }{16:subtle}",
     "words": [
       {
         "roman": "Gagan",

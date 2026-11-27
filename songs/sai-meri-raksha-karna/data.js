@@ -98,7 +98,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jāko rākhe sāiyāṁ māra sake nā koya",
-    "english": "{0:Whom }{2:the Master }{1:protects, }{5,6:no one }{4:can }{3:strike.}",
+    "english": "{0:Whom }{2:the Master }{1:protects, }{5,6:no one }{4:can }{3:kill.}",
     "words": [
       {
         "roman": "Jāko",
@@ -120,7 +120,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māra",
-        "gloss": "strike",
+        "gloss": "kill; slay",
         "concept_key": "",
         "preserve_in_english": false
       },

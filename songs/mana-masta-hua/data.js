@@ -76,7 +76,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āja badarā uṭhā prēma kā",
-    "english": "{0:Today }{1:the raincloud }{4:of }{3:love }{2:rose}",
+    "english": "{0:Today }{1:the raincloud }{4:of }{3:love }{2:has gathered.}",
     "words": [
       {
         "roman": "Āja",
@@ -183,7 +183,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Ē jī badarā uṭhā prēma kā rē hama para barasā hōya",
-    "english": "{0,1:O dear one, }{2:the raincloud }{5:of }{4:love }{3:rose; }{6:O, }{9,10:it rained }{8:upon }{7:us}",
+    "english": "{0,1:O dear one, }{2:the raincloud }{5:of }{4:love }{3:has gathered; }{6:O, }{9,10:it has rained }{8:upon }{7:us.}",
     "words": [
       {
         "roman": "Ē",
@@ -308,7 +308,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Harṣīlī hō gaī ātamā aura harī bharī banarāī",
-    "english": "{3:The soul }{1,2:became }{0:joyful, }{4:and }{7:the forest }{5,6:lush and green}",
+    "english": "{3:The soul }{1,2:grew }{0:joyful, }{4:and }{7:the forest }{5,6:lush and green.}",
     "words": [
       {
         "roman": "Harṣīlī",
@@ -403,17 +403,17 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Mana masta huā phira kyā bōlē",
-    "english": "{0:The mind }{2:became }{1:ecstatic; }{3:then }{4:what }{5:can it say?}",
+    "english": "{0:The heart }{2:has grown }{1:drunk—}{3:now }{4:what }{5:can it say?}",
     "words": [
       {
         "roman": "Mana",
-        "gloss": "mind; heart",
+        "gloss": "heart; mind, the inner seat of feeling and awareness",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "masta",
-        "gloss": "intoxicated; ecstatic; deeply absorbed",
+        "gloss": "drunk; intoxicated with the love evoked in the opening verse",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -551,11 +551,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Masta huā phira kyā bōlē",
-    "english": "{0,1:Having become ecstatic, }{2:then }{3:what }{4:can it say?}",
+    "english": "{0,1:Drunk now—}{2:then }{3:what }{4:can it say?}",
     "words": [
       {
         "roman": "Masta",
-        "gloss": "intoxicated; ecstatic; deeply absorbed",
+        "gloss": "drunk; intoxicated with love",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -841,7 +841,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hīrā pāyā bā̃ndha gaṭhariyā",
-    "english": "{0:The diamond }{1:found }{2:and tied }{3:in a bundle—}",
+    "english": "{0:A diamond }{1:found, }{2:tied up }{3:in a bundle—}",
     "words": [
       {
         "roman": "Hīrā",
@@ -965,7 +965,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Haṁsā nāhāvē mānasarōvara",
-    "english": "{0:The swan }{1:bathes }{2:in Manasarovar}",
+    "english": "{0:The swan }{1:bathes }{2:in Mānasarovara.}",
     "words": [
       {
         "roman": "Haṁsā",
@@ -981,7 +981,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mānasarōvara",
-        "gloss": "Lake Manasarovar; the lake in which the swan bathes",
+        "gloss": "Mānasarovara; the great Himalayan lake, contrasted here with small pools",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1166,7 +1166,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sāhiba mila gayā tila ōlē",
-    "english": "{0:The Master }{1,2:was found }{4:behind the veil of }{3:a sesame seed}",
+    "english": "{0:The Master }{1,2:was found }{4:behind the veil of }{3:a sesame seed.}",
     "words": [
       {
         "roman": "Sāhiba",

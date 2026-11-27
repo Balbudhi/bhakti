@@ -153,7 +153,7 @@ window.SONG_LINES = {
     "source": "हरि भजन को मान रे",
     "sourceLanguage": "hi",
     "roman": "hari bhajana ko māna re",
-    "english": "{3:Heed }{1,2:the worship }{0:of Hari}{4:!}",
+    "english": "{3:Value }{1,2:the worship }{0:of Hari}{4:!}",
     "words": [
       {
         "roman": "hari",
@@ -169,7 +169,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māna",
-        "gloss": "heed / accept / value [imperative 2sg]"
+        "gloss": "value; esteem; heed (imperative)"
       },
       {
         "roman": "re",
@@ -407,7 +407,7 @@ window.SONG_LINES = {
     "source": "हाथ दिये कर दान रे",
     "sourceLanguage": "hi",
     "roman": "hātha diye kara dāna re",
-    "english": "{0:Hands }{1:were given }{2:to practice }{3:charity}{4:!}",
+    "english": "{0:Hands }{1:were given }{2:to give }{3:in charity}{4:!}",
     "words": [
       {
         "roman": "hātha",
@@ -419,11 +419,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "kara",
-        "gloss": "do / give / perform [imperative / truncated purposive infinitive]"
+        "gloss": "give; perform (kar dan: give in charity)"
       },
       {
         "roman": "dāna",
-        "gloss": "charity / donation / almsgiving"
+        "gloss": "charitable giving; alms"
       },
       {
         "roman": "re",
@@ -632,7 +632,7 @@ window.SONG_LINES = {
     "source": "कंचन निपजत खान रे",
     "sourceLanguage": "hi",
     "roman": "kañcana nipajata khāna re",
-    "english": "{0:Gold }{1:arises }{2:from the mine}{3:!}",
+    "english": "{0:Gold }{1:comes }{2:from the mine}{3:!}",
     "words": [
       {
         "roman": "kañcana",
@@ -640,7 +640,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nipajata",
-        "gloss": "is produced / arises / is yielded [imperfective participle / habitual verb]"
+        "gloss": "comes forth; is produced; is yielded"
       },
       {
         "roman": "khāna",

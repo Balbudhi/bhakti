@@ -39,7 +39,7 @@ window.SONG_LINES = {
     "source": "बीत गये दिन भजन बिना रे",
     "sourceLanguage": "hi",
     "roman": "Bīt gaye din bhajan binā re",
-    "english": "{5:O friend, }{2:the days }{1:have }{0:passed }{4:without }{3:devotion.}",
+    "english": "{5:O friend, }{2:the days }{1:have }{0:passed }{4:without }{3:worship.}",
     "words": [
       {
         "roman": "Bīt",
@@ -55,7 +55,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhajan",
-        "gloss": "devotional singing / worship / adoration"
+        "gloss": "worship; devotional singing and adoration"
       },
       {
         "roman": "binā",
@@ -232,7 +232,7 @@ window.SONG_LINES = {
     "source": "लाहे कारन मूल गँवायो",
     "sourceLanguage": "hi",
     "roman": "Lāhe kāran mūl gavāyo",
-    "english": "{1:For the sake of }{0:profit, }{2:the principal }{3:was squandered;}",
+    "english": "{1:For the sake of }{0:profit, }{2:the capital }{3:was squandered;}",
     "words": [
       {
         "roman": "Lāhe",
@@ -244,7 +244,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mūl",
-        "gloss": "principal capital / foundation"
+        "gloss": "capital; the original sum invested (the poem’s image for life’s fundamental wealth)"
       },
       {
         "roman": "gavāyo",
@@ -496,11 +496,11 @@ window.SONG_LINES = {
     "source": "भजन बिना रे",
     "sourceLanguage": "hi",
     "roman": "Bhajan binā re",
-    "english": "{1:Without }{0:devotion}{2:, O friend...}",
+    "english": "{1:Without }{0:worship}{2:, O friend...}",
     "words": [
       {
         "roman": "Bhajan",
-        "gloss": "devotional singing / worship / adoration"
+        "gloss": "worship; devotional singing and adoration"
       },
       {
         "roman": "binā",

@@ -106,7 +106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "maiṁ mērā ghara jāḷiyā rē jōgiyā jiyō, dīyā palītā hātha",
-    "english": "{0:I }{3:burned }{1:my }{2:house, }{4:O }{6:noble }{5:ascetic, }{7:putting }{8:the torch }{9:in hand.}",
+    "english": "{0:I }{3:burned }{1:my }{2:house, }{4:O }{6:revered }{5:ascetic, }{7:putting }{8:the torch }{9:in hand.}",
     "words": [
       {
         "roman": "maiṁ",
@@ -146,7 +146,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -237,7 +237,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kōī jāḷō ghara āpaṇō rē jōgiyā jiyō, calō hamārē sātha",
-    "english": "{0:Whoever you are, }{1:burn }{3:your own }{2:house, }{4:O }{6:noble }{5:ascetic; }{7:walk }{9:with }{8:us.}",
+    "english": "{0:Whoever you are, }{1:burn }{3:your own }{2:house, }{4:O }{6:revered }{5:ascetic; }{7:walk }{9:with }{8:us.}",
     "words": [
       {
         "roman": "kōī",
@@ -277,7 +277,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -326,7 +326,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kai rāma rasa",
-    "english": "{0:Indeed, }{2:the juice }{1:of Rāma—}",
+    "english": "{0:Indeed, }{2:the nectar }{1:of Rāma—}",
     "words": [
       {
         "roman": "kai",
@@ -342,7 +342,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "juice; here, the sweetness of devotion pictured as a drink",
+        "gloss": "nectar; literally juice or essence, here the sweet drink of Rāma that makes the drinker deathless",
         "concept_key": "rasa",
         "preserve_in_english": false
       }
@@ -409,7 +409,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mīṭhō ghaṇō rē jōgiyā jiyō, pīyē amara hōya jāya",
-    "english": "{1:it is exceedingly }{0:sweet, }{2:O }{4:noble }{3:ascetic; }{5:whoever drinks it }{7,8:becomes }{6:immortal.}",
+    "english": "{1:it is exceedingly }{0:sweet, }{2:O }{4:revered }{3:ascetic; }{5:whoever drinks it }{7,8:becomes }{6:immortal.}",
     "words": [
       {
         "roman": "mīṭhō",
@@ -437,7 +437,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -540,7 +540,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ghara jāḷyō ghara ūbharē rē jōgiyā jiyō, ghara rākhō ghara jāya",
-    "english": "{0:If the house }{1:is burned, }{2:the home }{3:is saved, }{4:O }{6:noble }{5:ascetic; }{7:if the house }{8:is kept, }{9:the home }{10:is lost.}",
+    "english": "{0:If the house }{1:is burned, }{2:the home }{3:is saved, }{4:O }{6:revered }{5:ascetic; }{7:if the house }{8:is kept, }{9:the home }{10:is lost.}",
     "words": [
       {
         "roman": "ghara",
@@ -580,7 +580,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -683,7 +683,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "ēka acambhō maiṁ dēkhiyō rē jōgiyā jiyō, maḍhō kāla nē khāya",
-    "english": "{2:I }{3:saw }{0:a }{1:wonder, }{4:O }{6:noble }{5:ascetic: }{7:a dead body }{10:devours }{8,9:Death.}",
+    "english": "{2:I }{3:saw }{0:a }{1:wonder, }{4:O }{6:revered }{5:ascetic: }{7:a corpse }{10:devours }{8,9:Death.}",
     "words": [
       {
         "roman": "ēka",
@@ -723,7 +723,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -843,7 +843,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "āgē āgē dhāva jaḷē rē jōgiyā jiyō, pīchē hariyā hōya",
-    "english": "{0:Ahead, }{1:ever ahead, }{2:the wildfire }{3:burns, }{4:O }{6:noble }{5:ascetic; }{7:behind, }{9:it turns }{8:green.}",
+    "english": "{0:Ahead, }{1:ever ahead, }{2:the wildfire }{3:burns, }{4:O }{6:revered }{5:ascetic; }{7:behind, }{9:it turns }{8:green.}",
     "words": [
       {
         "roman": "āgē",
@@ -883,7 +883,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -974,7 +974,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "balihārī una rūkhaṛī rē jōgiyā jiyō, jaṛa kāṭō phala hōya",
-    "english": "{0:I offer myself }{1:to that }{2:little tree, }{3:O }{5:noble }{4:ascetic: }{6,7:cut its root, }{9:and it bears }{8:fruit.}",
+    "english": "{0:I offer myself }{1:to that }{2:little tree, }{3:O }{5:revered }{4:ascetic: }{6,7:cut its root, }{9:and it bears }{8:fruit.}",
     "words": [
       {
         "roman": "balihārī",
@@ -1008,7 +1008,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1105,7 +1105,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dhruva piyō prahlāda piyō rē jōgiyā jiyō, pīyē rahyō ravidāsa",
-    "english": "{0:Dhruva }{1:drank, }{2:Prahlāda }{3:drank, }{4:O }{6:noble }{5:ascetic, }{9:and Ravidās }{8:kept on }{7:drinking.}",
+    "english": "{0:Dhruva }{1:drank, }{2:Prahlāda }{3:drank, }{4:O }{6:revered }{5:ascetic, }{9:and Ravidās }{8:kept on }{7:drinking.}",
     "words": [
       {
         "roman": "dhruva",
@@ -1145,7 +1145,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1248,7 +1248,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "bhagata kabīra rasa pīyē rahyō rē jōgiyā jiyō, phēra pīvaṇa rī āsa",
-    "english": "{0:Devotee }{1:Kabīr }{3,4:kept drinking }{2:the juice, }{5:O }{7:noble }{6:ascetic, }{10,11:with longing }{9:to drink }{8:again.}",
+    "english": "{0:Devotee }{1:Kabīr }{3,4:kept drinking }{2:the nectar, }{5:O }{7:revered }{6:ascetic, }{10,11:with longing }{9:to drink }{8:again.}",
     "words": [
       {
         "roman": "bhagata",
@@ -1264,7 +1264,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "juice; here, the sweetness of devotion pictured as a drink",
+        "gloss": "nectar; literally juice or essence, here the sweet drink of Rāma that makes the drinker deathless",
         "concept_key": "rasa",
         "preserve_in_english": false
       },
@@ -1294,7 +1294,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jiyō,",
-        "gloss": "noble one; venerable soul",
+        "gloss": "revered one; an affectionate honorific in the address to the ascetic",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1349,7 +1349,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kai rāma rasa",
-    "english": "{0:Indeed, }{2:the juice }{1:of Rāma!}",
+    "english": "{0:Indeed, }{2:the nectar }{1:of Rāma!}",
     "words": [
       {
         "roman": "kai",
@@ -1365,7 +1365,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rasa",
-        "gloss": "juice; here, the sweetness of devotion pictured as a drink",
+        "gloss": "nectar; literally juice or essence, here the sweet drink of Rāma that makes the drinker deathless",
         "concept_key": "rasa",
         "preserve_in_english": false
       }

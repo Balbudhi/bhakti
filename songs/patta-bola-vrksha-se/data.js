@@ -417,7 +417,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī jagata kī rīta hai",
-    "english": "{0,4:this is the very}{3: way}{1,2: of the world:}",
+    "english": "{0,4:This is the very}{3: way}{1,2: of the world:}",
     "words": [
       {
         "roman": "Yahī",
@@ -547,7 +547,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sām̐sa sām̐sa mem̐ nāma le",
-    "english": "{2:With }{0,1:every single breath}{3,4: take the Name,}",
+    "english": "{2:With }{0,1:every breath,}{4: utter}{3: the Name,}",
     "words": [
       {
         "roman": "Sām̐sa",
@@ -569,13 +569,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nāma",
-        "gloss": "the Divine Name",
+        "gloss": "the divine Name",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "le",
-        "gloss": "take / utter",
+        "gloss": "utter; nāma lenā means to speak or repeat the divine Name",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -612,11 +612,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Bace sām̐sa nā koī",
-    "english": "{2:let not}{3: any }{1:breath}{0: escape;}",
+    "english": "{2,3:let no }{1:breath}{0: go by without it;}",
     "words": [
       {
         "roman": "Bace",
-        "gloss": "should remain / escape",
+        "gloss": "be left over; here, pass without uttering the Name",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -872,7 +872,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "burā nā miliyā koī",
-    "english": "{0,1,3:no evil person}{2: was found;}",
+    "english": "{2:I found }{1,3:no }{0:evil person;}",
     "words": [
       {
         "roman": "burā",
@@ -1049,7 +1049,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "mā̃gan maraṇ samān hai",
-    "english": "{0:Begging}{3: is}{1,2: equal to dying;}",
+    "english": "{0:Begging}{3: is}{2: like}{1: dying;}",
     "words": [
       {
         "roman": "mā̃gan",
@@ -1291,7 +1291,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sukh meṁ kare na koye",
-    "english": "{1:In}{0: happiness,}{3,4: no one}{2: remembers;}",
+    "english": "{1:In}{0: happiness,}{3,4: no one}{2: remembers God;}",
     "words": [
       {
         "roman": "Sukh",
@@ -1307,7 +1307,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kare",
-        "gloss": "does / performs",
+        "gloss": "does; here, performs the act of remembering God, carried over from sumiran in the paired line",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1362,7 +1362,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Dukh meṁ sumiran sab kare",
-    "english": "{1:in}{0: sorrow,}{3: everyone}{2,4: remembers.}",
+    "english": "{1:in}{0: sorrow,}{3: everyone}{2,4: remembers God.}",
     "words": [
       {
         "roman": "Dukh",
@@ -1378,7 +1378,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sumiran",
-        "gloss": "remembrance / chanting",
+        "gloss": "remembrance of God; devotional recollection",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1433,7 +1433,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Jo sukh meṁ sumiran kare",
-    "english": "{0:If one}{3,4: remembers}{2: in}{1: happiness,}",
+    "english": "{0:If one}{3,4: remembers God}{2: in}{1: happiness,}",
     "words": [
       {
         "roman": "Jo",
@@ -1455,7 +1455,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sumiran",
-        "gloss": "remembrance / chanting",
+        "gloss": "remembrance of God; devotional recollection",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1610,7 +1610,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Koyal kisko deye",
-    "english": "{1:To whom}{0: does the cuckoo}{2: give?}",
+    "english": "{1:To whom}{0: does the cuckoo}{2: give wealth?}",
     "words": [
       {
         "roman": "Koyal",
@@ -1626,7 +1626,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deye",
-        "gloss": "gives",
+        "gloss": "gives; wealth is carried over from the preceding question",
         "concept_key": "",
         "preserve_in_english": false
       }

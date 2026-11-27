@@ -54,10 +54,10 @@
     },
     "balam-aao-hamare-geh-re": {
       "status": "screened",
-      "readerSha256": "8dc556a11763bcaa2519f48281323ba2b586f743b0bd5676453cafc0f21c4223",
+      "readerSha256": "494cfd0948eab069496911470de4b2c928dad5e4a9354e215ce346cd54e2123b",
       "definitionCount": 14,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "4d8406a9fb4ad0333b93e190da392e7f6a7cfb34587530fbaa3e31b3c39ad616",
@@ -600,18 +600,22 @@
       "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "mera-man-lochai": {
-      "status": "screened",
-      "readerSha256": "c11be684bb09596f20546980deb7bae0cd1080ffb3d03942fba69a89dbc10a58",
+      "status": "needs_source_review",
+      "readerSha256": "b091a001ec61896ddb6a3545975a70193a32e10889412dd67953ece63e4977e6",
       "definitionCount": 48,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
         "definitionCount": 48,
         "reviewedAt": "2026-11-21"
       },
-      "directReviewRecord": "data/gurbani-review-2026-11-24.json"
+      "directReviewRecord": "data/gurbani-review-2026-11-24.json",
+      "openDefinitions": [
+        "line-036"
+      ],
+      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
     },
     "so-dar-keha-so-ghar-keha": {
       "status": "screened",
@@ -669,10 +673,10 @@
     },
     "beet-gaye-din-bhajan-bina-re": {
       "status": "screened",
-      "readerSha256": "3e737a9e2910f17e4a679a7e087d15ebd9f4b2ab8342543f1e59aadc4f8b3fba",
+      "readerSha256": "67009a3a12e17710bc0fe5bfdc5f9e6df19b158360ba215d5c242baca7ec4453",
       "definitionCount": 8,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "3e737a9e2910f17e4a679a7e087d15ebd9f4b2ab8342543f1e59aadc4f8b3fba",
@@ -681,17 +685,22 @@
       }
     },
     "kaya-nahin-teri-nahin-teri": {
-      "status": "screened",
-      "readerSha256": "33a0f1a80e85c94e52af0a6656652bb474fa034430f2985a18b2284d5f3da87f",
+      "status": "needs_source_review",
+      "readerSha256": "74ce02d2f25d4ac05703dedae1df50c8a96dd374659112cf967c28783b3a796c",
       "definitionCount": 18,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "6024ee189ab8f5eb97ec2ea99045d2db62efde459502d29ef061dbdfd708a4b2",
         "definitionCount": 18,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "openDefinitions": [
+        "v2-line1",
+        "v3-line2"
+      ],
+      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
     },
     "naam-japan-kyon-chhod-diya": {
       "status": "screened",
@@ -708,10 +717,10 @@
     },
     "sab-paise-ke-bhai": {
       "status": "screened",
-      "readerSha256": "50995c14fef1d65ecbb8f361422fbb45efc339734a89dccdcd26e7fc784ef06c",
+      "readerSha256": "b19d8301a7df0935c8e7d585db51892f309701452dbdf38cc02ce8d446e696c8",
       "definitionCount": 10,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "50995c14fef1d65ecbb8f361422fbb45efc339734a89dccdcd26e7fc784ef06c",
@@ -721,10 +730,10 @@
     },
     "sangat-santan-ki-karle": {
       "status": "screened",
-      "readerSha256": "092e4c8585d1eee76a48ae9ac11815dba843c46855e410d81e0474b82e24c524",
+      "readerSha256": "df18eb4ac2797c6a05de7d13349a4e826a3c1211a61d2e3888eefa287a2101a8",
       "definitionCount": 20,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "092e4c8585d1eee76a48ae9ac11815dba843c46855e410d81e0474b82e24c524",
@@ -734,10 +743,10 @@
     },
     "sun-sun-sadho-jee": {
       "status": "screened",
-      "readerSha256": "46aa566ba1d2d716e77cbf3f483b24eba4c111050c36c84017bdfe32e0b609bf",
+      "readerSha256": "537683b77d5fbd9c0007f72ededa312fa95f1160917bbb4a357cbdac1dcb3f8c",
       "definitionCount": 21,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "1e9a31aedb76c498ba89a07300045c5b71019b13189cdbdefb283ed63eb38867",
@@ -746,24 +755,30 @@
       }
     },
     "ye-tanu-mundna-be-mundna": {
-      "status": "screened",
-      "readerSha256": "9fcb4bc7624da5efc77a522f6a2e45c0bec6a0630f87e291e9a2f5ff2a3a9010",
+      "status": "needs_source_review",
+      "readerSha256": "bae1991011823b01e4232b9ea8a7a490fdcb25d937955f7b893a547b9c95f4ef",
       "definitionCount": 17,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "9fcb4bc7624da5efc77a522f6a2e45c0bec6a0630f87e291e9a2f5ff2a3a9010",
         "definitionCount": 17,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "openDefinitions": [
+        "refrain-1",
+        "v3-l2",
+        "v3-l3"
+      ],
+      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
     },
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
       "status": "screened",
-      "readerSha256": "e9360e5dd4324491c12c278e2dd97b83d120a17485430e887ca767863f2492cf",
+      "readerSha256": "54120e4ba5d445d2a82f8452dfd4f0773ae3892dfbf87374b4b0724fa8f77d4e",
       "definitionCount": 12,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "51248b53b59200e701435e3a2bee06ac33523a39647675b998859c01bce19449",
@@ -1562,10 +1577,10 @@
     },
     "kya-tan-majhata": {
       "status": "screened",
-      "readerSha256": "fd19f6552080f8569c36b99fdef676ffd00660f5f7623542a307ac9df22880c1",
+      "readerSha256": "e3cb3b6fb05595a653d50bb0de4affd211c8ff1442596a800b515a683ef1e901",
       "definitionCount": 12,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "fd19f6552080f8569c36b99fdef676ffd00660f5f7623542a307ac9df22880c1",
@@ -1574,11 +1589,11 @@
       }
     },
     "sunta-hai": {
-      "status": "screened",
-      "readerSha256": "5cad5654583ace3cfce46200355ee5f62903f9dac86a1d2e5390fb24d997cbc3",
+      "status": "needs_source_review",
+      "readerSha256": "42b8fdd13dbdfe0862f5828de765dd0d9608eff3265d0d91582ed9254a83ed6b",
       "definitionCount": 11,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "aaebf0d5836105b85bdbb0fd837f8a001c42f79bf224ef9ccc66fdc8c9fd2163",
@@ -1586,14 +1601,20 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
         "resolutionDisposition": "finished_integrated"
-      }
+      },
+      "openDefinitions": [
+        "sab-ghat-pooran",
+        "din-bhar-re-jo",
+        "din-bhar-re-jo-ajar-amar"
+      ],
+      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
     },
     "mana-masta-hua": {
       "status": "screened",
-      "readerSha256": "5bb3a716c703a2cc9c3d0da4e640dd449a7b340993df9edb7e54f40c8ce6eae0",
+      "readerSha256": "114edf9740f42a98a025a5712a837832b772cb70e2332381c9b80e0e6a612a5b",
       "definitionCount": 15,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "851eed910b4203772e34f35f2da5d9e1ad18f95d1016b3733efe08d790ab56c5",
@@ -1603,10 +1624,10 @@
     },
     "nirguna-galiya": {
       "status": "screened",
-      "readerSha256": "18fae4ac5998429aeb06494bfdde968a0397b148d1fed6432fd71b636d6a535e",
+      "readerSha256": "01fee3df4bb66b1ff14bc8f0531cf58d769b3fa96e9f42c25c1a6740ca343854",
       "definitionCount": 27,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "5d14282089c112c7f7f292defed6cfe6b184779c3fda05dca365330081c38e40",
@@ -1616,10 +1637,10 @@
     },
     "rama-rasa": {
       "status": "screened",
-      "readerSha256": "f0851fcabbe491fdb72d420b796e754e3b62c08296408827b71caad9c00c9603",
+      "readerSha256": "ad1efb9b0f570bd1e69dee03e4cba5479fff59c83ca5ab5e7aa78ead9c70910e",
       "definitionCount": 12,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "f0851fcabbe491fdb72d420b796e754e3b62c08296408827b71caad9c00c9603",
@@ -1741,24 +1762,28 @@
       }
     },
     "auga-na-jauga": {
-      "status": "screened",
-      "readerSha256": "939d27d18da963a4d28a86e58e8f87449f93ebfa98d46ec4665190a3ac287451",
+      "status": "needs_source_review",
+      "readerSha256": "55a2d683b7f3ffedb31ada2fb1060d65d77e7515af891b56eeaf14b787fc1494",
       "definitionCount": 23,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "045b962d4b9cd51383e1245364990109c1e5f92570942bb9ccf59b8afc31eed7",
         "definitionCount": 23,
         "reviewedAt": "2026-11-21"
-      }
+      },
+      "openDefinitions": [
+        "verse-dono-kasbi"
+      ],
+      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
     },
     "mera-jeevan-tere": {
       "status": "screened",
       "readerSha256": "d325d05cf914029ef499905ef527fb6f88461e3d1d2dcf2a824408e6e524555a",
       "definitionCount": 12,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "2c0ce54bd163a842cba8d3c62a0368309e1c3717b076bf6bcad4fb868a92fd4d",
@@ -2022,10 +2047,10 @@
     },
     "sai-meri-raksha-karna": {
       "status": "screened",
-      "readerSha256": "fba646fcf0af877b76048f072ecd2c32f19bc417fd6936238185860de8c7c42a",
+      "readerSha256": "924b7acf7c1a2f3d80240f27ca52922fd32b997bb872e065c0deea14907137dc",
       "definitionCount": 23,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "a6efc4e56ab2fe2ae9228d6c42f6122a63056832ee3c2ad57cee59492ce05d33",
@@ -3474,10 +3499,10 @@
     },
     "patta-bola-vrksha-se": {
       "status": "screened",
-      "readerSha256": "e1589fd2b0514882e5d82b2a76159b965ecd501b618838b71cb4ba366900d1f2",
+      "readerSha256": "175be9eac5001fa8141159c6be0244efba89b9e58c9e6bc95d79f2a7dcf7be44",
       "definitionCount": 29,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "e1589fd2b0514882e5d82b2a76159b965ecd501b618838b71cb4ba366900d1f2",
@@ -3489,8 +3514,8 @@
       "status": "screened",
       "readerSha256": "5d9b4e97db30c2e4a9ff1d5c7ae82a9e3d644950ba29b7922ff4166aa4b44eb6",
       "definitionCount": 11,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "2fbf12fef4622965016ac0b7640619698ea0726f4309c3d0ba05c1ab73895537",
@@ -3624,10 +3649,10 @@
     },
     "duhkh-me-sumiran-sab-kare": {
       "status": "screened",
-      "readerSha256": "0459e16c95b3801d79841590fc260b96b50d65ca7b22cd1d78ca6b7067e2f1e3",
+      "readerSha256": "c516d43e892ea7bffa3b5a7c02f6265c201e545d7b146b803a4b8f9f72be825b",
       "definitionCount": 15,
-      "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "screenedAt": "2026-11-27",
+      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
       "previousReview": {
         "status": "finished",
         "readerSha256": "693c2d1a77180934e6ab637ccda2127c3c645b52da7a63de0b6f49df7cd64ff2",

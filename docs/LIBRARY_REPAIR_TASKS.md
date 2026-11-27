@@ -1,5 +1,59 @@
 # Whole-library repair task
 
+## Kabīr wording, popup senses and search visibility — 27 November 2026
+
+Outcome: reread all 20 Kabīr-related readers (358 definitions; 2,224 word entries),
+including attributed couplets in two mixed Sāī readers. The owner confirmed this
+pass is limited to Kabīr and search visibility, not another whole-library audit.
+Improved 103 English definitions and 171 popup meanings across 18 readers; two
+readers were retained unchanged. Two grammar notes were aligned with the selected
+sense. Source scripts, IAST, word identities, metadata, performance order, media,
+timings and original model/audio assessments are preserved exactly.
+
+Nirguṇa Galiyā̃ now invites the listener to “our land”: Anjas records both my and
+our for mhārā; the shared invitation supports the owner's preferred sense. The
+intimate mhārī helī remains “my friend.” Āvāgaman becomes the cycle of birth and
+death in the main English, with literal coming-and-going in its popup. Anhad with
+maidān becomes the boundless plain, retaining unstruck-sound resonance in the
+popup. Other contextual repairs include thirst being quenched, the heart’s
+intoxication, uttering the Name, money as everyone’s brother and death’s threat
+as killing rather than merely striking. These are passage decisions, not global
+word replacements; Bālam Āvo retains my home in its individual wife-speaker’s voice.
+
+Ten inherited definitions across five readers remain marked needs_source_review:
+Kāyā Nahīṁ Terī (2), Ye Tanu Muṇḍnā (3), Suntā Hai (3), Āū̃gā Nā Jāū̃gā (1), and
+Merā Man Locai (1). Exact questions, per-line before/after changes, full reading
+coverage and contextual sources are in the dated songFollowUps and
+kabirFollowUp20261127 in data/translation-review-2026-11-25.json. The cumulative
+editorial receipts preserve the original assessed text and reread each semantic
+feature; two Hari-related subject dismissals were rechecked against current text.
+No new blanket finished marks or paid assessments were made.
+
+Search diagnosis: live pages return 200, allow crawling, and already have correct
+canonicals and a sitemap. Their initial HTML lacked catalogue song links and
+lyrics. Assembly now prerenders the actual library and song renderers into the
+isolated public artifact before integrity hashes are computed. Every public song
+is linked and each performed occurrence is present without JavaScript. No private
+review material is exposed. This removes a demonstrated crawlability weakness;
+actual search-engine indexing status/rank still needs Search Console evidence.
+
+Verification: 46 of 47 release commands pass after repairing the shuffle test’s
+minimal fixture to include the production renderer. The sole remaining failure
+is the same six historical trim-record discrepancies observed before this work;
+no trim files or media changed. All 30,640 ready/deferred DOM-click seeks match
+stored onsets. The final assembled artifact contains 386 song links/readers and
+15,320 performed occurrences, with all reader bytes matching source. Focused tests
+exercise static text, default editions, escaping, runtime replacement, library
+filters/search, route selection, queue behavior and preservation of the audio node.
+
+Current step: owner authorized publication with the stated verification limits
+(“Ok publish”, 27 November 2026). In-app browser control
+failed on creation, inventory and explicit browser binding with “native pipe closed
+before response”; desktop/390px visual and fresh acoustic checks are unavailable.
+Do not claim physical-phone behavior or search inclusion. The next step is scoped commit/push, successful Pages deployment and
+served-byte verification.
+
+
 ## Sāṃsā Hāle translation follow-up — 26 November 2026
 
 Outcome: revise the complete song after the owner identified awkward choices and

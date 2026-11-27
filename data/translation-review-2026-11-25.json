@@ -33813,6 +33813,2440 @@
         "servedFilesMatched": 9,
         "verificationScope": "Song data/page plus library entrypoint, loader, release map, catalogue, shuffle profiles, search index and service worker; byte hashes match assembled output."
       }
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "auga-na-jauga",
+      "readerSha256": "55a2d683b7f3ffedb31ada2fb1060d65d77e7515af891b56eeaf14b787fc1494",
+      "definitionCount": 23,
+      "wordEntryCount": 202,
+      "lineIdsRead": [
+        "spoken-intro",
+        "ghazal-1a",
+        "ghazal-1b",
+        "ghazal-1c",
+        "ghazal-2a",
+        "ghazal-2b",
+        "girah-fana-kaisi",
+        "girah-kabhi-us-ghar",
+        "farsi-line",
+        "refrain-main",
+        "girah-maut-aake",
+        "verse-guraan-ke-shabad",
+        "verse-marhiyan-goran",
+        "verse-lut-lay-choran",
+        "verse-maala-tasbeeh",
+        "verse-dono-kasbi",
+        "verse-makke-kashi",
+        "verse-dohan-gal-phaansi",
+        "verse-kahat-kabir",
+        "verse-hum-na-kisi-ke",
+        "verse-hum-jo-marenge",
+        "girah-bedam",
+        "girah-jiyana-kya-agyan"
+      ],
+      "changedDefinitions": 6,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "ghazal-1a",
+          "reason": "Make baqā intelligible in English while retaining its Sufi resonance in the popup; Rekhta gives permanence, continuance, immortality.",
+          "before": "{0,1:Neither is annihilation}{2: mine,}{3,4: nor is subsistence}{5: mine,}",
+          "after": "{0,1:Neither is annihilation}{2: mine,}{3,4: nor is enduring life}{5: mine,}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "subsistence; eternal permanence",
+              "after": "enduring life; continuance, opposed to fanā (passing away); in Sufi usage, abiding in God"
+            }
+          ]
+        },
+        {
+          "lineId": "girah-fana-kaisi",
+          "reason": "Make baqā intelligible in English while retaining its Sufi resonance in the popup; Rekhta gives permanence, continuance, immortality.",
+          "before": "{1:What}{0: annihilation,}{3: what}{2: subsistence,}{4: when}{8: we have become}{5,6: His}{7: intimates?}",
+          "after": "{1:What}{0: annihilation,}{3: what}{2: enduring life,}{4: when}{8: we have become}{5,6: His}{7: intimates?}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "subsistence; eternal permanence",
+              "after": "enduring life; continuance, opposed to fanā (passing away); in Sufi usage, abiding in God"
+            }
+          ]
+        },
+        {
+          "lineId": "farsi-line",
+          "reason": "Make baqā intelligible in English while retaining its Sufi resonance in the popup; Rekhta gives permanence, continuance, immortality.",
+          "before": "{1:Quddus}{2: the dervish}{0: spoke}{3: concerning}{4: annihilation}{5: and}{6: concerning}{7: subsistence:}{8,9: \"Of your own accord}{11: you were}{10: free,}{12: of your own accord}{13,14: you came into captivity.\"}",
+          "after": "{1:Quddus}{2: the dervish}{0: spoke}{3: concerning}{4: annihilation}{5: and}{6: concerning}{7: enduring life:}{8,9: \"Of your own accord}{11: you were}{10: free,}{12: of your own accord}{13,14: you came into captivity.\"}",
+          "glossChanges": [
+            {
+              "index": 7,
+              "before": "subsistence; eternal permanence",
+              "after": "enduring life; continuance, opposed to fanā (passing away); in Sufi usage, abiding in God"
+            }
+          ]
+        },
+        {
+          "lineId": "verse-hum-na-kisi-ke",
+          "reason": "Remove unsupported gloss claim that ham itself means the unconditioned self; retain we/our in the complete line.",
+          "before": "{0,3:We belong to}{1,2: no one,}{5: nor does}{6: anyone}{4: belong to us.}",
+          "after": "{0,3:We belong to}{1,2: no one,}{5: nor does}{6: anyone}{4: belong to us.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "we; I (first-person plural of majesty / unconditioned self)",
+              "after": "we; also used by an individual speaker for I"
+            }
+          ]
+        },
+        {
+          "lineId": "girah-bedam",
+          "reason": "Preserve the defiant contrast: death comes to others; remove unsupported eternal from the primary life gloss.",
+          "before": "{0,2:There will be }{1:others }{3:to whom }{4:death }{5:will come, }{6:Bedam; }{8:through }{7:the gaze of the Beloved, }{12,13:I }{10:have }{9:received }{11:life.}",
+          "after": "{0,2:It is }{1:others }{3:to whom }{4:death }{5:will come, }{6:Bedam; }{8:through }{7:the Beloved’s gaze, }{12,13:I }{10:have }{9:received }{11:life.}",
+          "glossChanges": [
+            {
+              "index": 11,
+              "before": "life (true eternal life)",
+              "after": "life; here, life received through the Beloved’s gaze"
+            }
+          ]
+        },
+        {
+          "lineId": "girah-jiyana-kya-agyan",
+          "reason": "Keep the poem’s paradox of life and death; death to ego is an interpretation, not the literal meaning of marnā.",
+          "before": "{0,1:Living}{3: is }{2:ignorance,}{4,5: dying}{6: is }{7:knowledge;}{16: know}{12: that}{11: release}{10: from}{8,9: both of these}{13,14,15: is liberation.}",
+          "after": "{0,1:Living}{3: is }{2:ignorance,}{4,5: dying}{6: is }{7:knowledge;}{16: know}{12: that}{11: release}{10: from}{8,9: both of these}{13,14,15: is liberation.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "living; life in the body (verbal noun)",
+              "after": "living; life"
+            },
+            {
+              "index": 2,
+              "before": "spiritual ignorance; nescience",
+              "after": "ignorance; lack of spiritual understanding"
+            },
+            {
+              "index": 4,
+              "before": "dying; death to ego (verbal noun)",
+              "after": "dying; death"
+            },
+            {
+              "index": 7,
+              "before": "spiritual knowledge; gnosis",
+              "after": "knowledge; spiritual understanding"
+            }
+          ]
+        }
+      ],
+      "openQuestions": [
+        {
+          "lineIds": [
+            "verse-dono-kasbi"
+          ],
+          "question": "Kasbī can designate a professional/artisan or carry stronger pejorative force. Tradesmen is regionally supported, but its exact intensity in this performance remains uncertain; no speculative replacement."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "balam-aao-hamare-geh-re",
+      "readerSha256": "494cfd0948eab069496911470de4b2c928dad5e4a9354e215ce346cd54e2123b",
+      "definitionCount": 14,
+      "wordEntryCount": 71,
+      "lineIdsRead": [
+        "balam-aavo-hamare-geh-re",
+        "tum-bin-dukhiya-deh-re",
+        "sab-koi-kahe-tumhri-nari",
+        "moko-lagat-laj-re",
+        "dil-se-nahi-dil-lagaya",
+        "tab-lag-kaisa-saneh-re",
+        "ann-na-bhave-nind-na-aave",
+        "grih-ban-dhare-na-dhir-re",
+        "kamin-ko-hai-balam-pyara",
+        "ho-jyo-pyase-ko-nir-re",
+        "hai-koi-aisa-par-upkari",
+        "pivso-kahe-sunay-re",
+        "ab-to-behal-kabir-bhayo-hai",
+        "bin-dekhe-jiv-jay-re"
+      ],
+      "changedDefinitions": 4,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "dil-se-nahi-dil-lagaya",
+          "reason": "Preserve both concrete repetitions of heart and give each source dil its own correct English target; previously the first dil linked to one another.",
+          "before": "{3:Our hearts }have {2:not }{4:joined }{1:with }{0:one another—}",
+          "after": "{3:Heart }has {2:not }{4:joined }{1:with }{0:heart—}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "ann-na-bhave-nind-na-aave",
+          "reason": "Make the food-and-sleeplessness parallel idiomatic without adding an inability to eat.",
+          "before": "{0:Food }{1:does not }{2:please; }{3:sleep }{4:does not }{5:come.}",
+          "after": "{0:Food }{1:does not }{2:appeal to me; }{3:sleep }{4:does not }{5:come.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "pleases; appeals to taste",
+              "after": "appeals to; pleases (here, food has no appeal)"
+            }
+          ]
+        },
+        {
+          "lineId": "kamin-ko-hai-balam-pyara",
+          "reason": "Remove word-order calque while preserving the woman-beloved/water-thirsty parallel.",
+          "before": "{1:To }{0:a woman, }{3:the beloved }{2:is }{4:dear,}",
+          "after": "{3:Her beloved }{2:is }{4:dear }{1:to }{0:a woman,}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "bin-dekhe-jiv-jay-re",
+          "reason": "The popup offers the vivid contextual phrase ebbs away; use it for the lament rather than formal life departs.",
+          "before": "{0:without }{1:seeing }you, {2:life }{3:departs, }{4:beloved.}",
+          "after": "{0:without }{1:seeing }you, {2:my life }{3:ebbs away, }{4:beloved.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "departs; goes; ebbs away",
+              "after": "ebbs away; departs; goes"
+            }
+          ]
+        }
+      ],
+      "openQuestions": [],
+      "retainedChoice": "Hamāre remains my in the singular wife-speaker’s invitation; our in Nirguṇa Galiyā̃ is a contextual decision, not a global substitution."
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "beet-gaye-din-bhajan-bina-re",
+      "readerSha256": "67009a3a12e17710bc0fe5bfdc5f9e6df19b158360ba215d5c242baca7ec4453",
+      "definitionCount": 8,
+      "wordEntryCount": 41,
+      "lineIdsRead": [
+        "refrain-beet-gaye",
+        "v1-bal-avastha",
+        "v1-jab-joban",
+        "v2-lahe-karan",
+        "v2-ajahun-na-gayi",
+        "v3-kahat-kabir",
+        "v3-par-utar-gaye",
+        "closing-bhajan-bina"
+      ],
+      "changedDefinitions": 3,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "refrain-beet-gaye",
+          "reason": "Render bhajan as the act of worship rather than a general inner disposition; primary gloss matches.",
+          "before": "{5:O friend, }{2:the days }{1:have }{0:passed }{4:without }{3:devotion.}",
+          "after": "{5:O friend, }{2:the days }{1:have }{0:passed }{4:without }{3:worship.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "devotional singing / worship / adoration",
+              "after": "worship; devotional singing and adoration"
+            }
+          ]
+        },
+        {
+          "lineId": "v2-lahe-karan",
+          "reason": "Capital makes the commercial profit-versus-original-investment image immediately intelligible.",
+          "before": "{1:For the sake of }{0:profit, }{2:the principal }{3:was squandered;}",
+          "after": "{1:For the sake of }{0:profit, }{2:the capital }{3:was squandered;}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "principal capital / foundation",
+              "after": "capital; the original sum invested (the poem’s image for life’s fundamental wealth)"
+            }
+          ]
+        },
+        {
+          "lineId": "closing-bhajan-bina",
+          "reason": "Keep the refrain coda identical in sense.",
+          "before": "{1:Without }{0:devotion}{2:, O friend...}",
+          "after": "{1:Without }{0:worship}{2:, O friend...}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "devotional singing / worship / adoration",
+              "after": "worship; devotional singing and adoration"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "duhkh-me-sumiran-sab-kare",
+      "readerSha256": "c516d43e892ea7bffa3b5a7c02f6265c201e545d7b146b803a4b8f9f72be825b",
+      "definitionCount": 15,
+      "wordEntryCount": 86,
+      "lineIdsRead": [
+        "dukh-mein-sumiran",
+        "sukh-mein-kare-na-koy",
+        "jo-sukh-mein-sumiran",
+        "to-dukh-kaahe-ko-hoy",
+        "sumiran-kar-le",
+        "teri-beeti-umar",
+        "koop-neer-bin",
+        "jaise-taruvar",
+        "taise-praani",
+        "deh-nain-bin",
+        "jaise-pandit",
+        "kaam-krodh-mad",
+        "kahai-nanak-shah",
+        "koi-nahi-jag-mein",
+        "sumiran-kar-le-part"
+      ],
+      "changedDefinitions": 5,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "dukh-mein-sumiran",
+          "reason": "Bare remembers omits the devotional sense of sumiran; use its contextual object without inventing a proper name in the doha.",
+          "before": "{1:In }{0:sorrow, }{3:everyone }{2,4:remembers,}",
+          "after": "{1:In }{0:sorrow, }{3:everyone }{2,4:remembers God,}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "remembrance; devotional contemplation",
+              "after": "remembrance of God; devotional recollection"
+            }
+          ]
+        },
+        {
+          "lineId": "jo-sukh-mein-sumiran",
+          "reason": "Retain the same devotional act across the conditional comparison.",
+          "before": "{0:If one }{3,4:remembers }{2:in }{1:joy,}",
+          "after": "{0:If one }{3,4:remembers God }{2:in }{1:joy,}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "remembrance; devotional contemplation",
+              "after": "remembrance of God; devotional recollection"
+            }
+          ]
+        },
+        {
+          "lineId": "sumiran-kar-le",
+          "reason": "Make the devotional object clear from the adjacent Hari-name line; heart naturally carries the inward exhortation.",
+          "before": "{0,1,2:Remember, }{3:O my }{4:mind,}",
+          "after": "{0,1,2:Remember Hari, }{3:O my }{4:heart,}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "remembrance; devotional contemplation",
+              "after": "remembrance of the divine; here Hari, named in the next line"
+            },
+            {
+              "index": 4,
+              "before": "O mind; O heart",
+              "after": "O heart; the inner mind addressed by the singer"
+            }
+          ]
+        },
+        {
+          "lineId": "kaam-krodh-mad",
+          "reason": "nivāro is active removal, already stronger in the popup than turn away from; give both imperatives their force.",
+          "before": "{4:Turn away from }{0:lust, }{1:anger, }{2:pride, }{3:and greed; }{5,6:leave them }{7:now, }{8,9:O saints.}",
+          "after": "{4:Drive out }{0:lust, }{1:anger, }{2:pride, }{3:and greed; }{5,6:cast them off }{7:now, }{8,9:O saints.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "ward off; dispel; eliminate",
+              "after": "drive out; dispel"
+            },
+            {
+              "index": 5,
+              "before": "having abandoned; having cast off",
+              "after": "cast off; abandon"
+            }
+          ]
+        },
+        {
+          "lineId": "sumiran-kar-le-part",
+          "reason": "Carry the refrain’s same contextual meaning into its short reprise.",
+          "before": "{0,1,2:Remember.}",
+          "after": "{0,1,2:Remember Hari.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "remembrance; devotional contemplation",
+              "after": "remembrance of the divine; here Hari, named in the refrain"
+            }
+          ]
+        }
+      ],
+      "openQuestions": [],
+      "identityLimit": "The existing question of canonical Gurbāṇī membership is unchanged by this English review."
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "kaya-nahin-teri-nahin-teri",
+      "readerSha256": "74ce02d2f25d4ac05703dedae1df50c8a96dd374659112cf967c28783b3a796c",
+      "definitionCount": 18,
+      "wordEntryCount": 72,
+      "lineIdsRead": [
+        "refrain-1",
+        "refrain-2",
+        "v1-line1",
+        "v1-line2",
+        "v1-line3",
+        "v1-line4",
+        "v2-line1",
+        "v2-line2",
+        "v2-line3",
+        "v2-line4",
+        "v3-line1",
+        "v3-line2",
+        "v3-line3",
+        "v4-line1",
+        "v4-line2",
+        "v4-line3",
+        "v4-line4",
+        "v4-line5"
+      ],
+      "changedDefinitions": 2,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "v2-line3",
+          "reason": "Repair stiff This indeed while retaining the fleeting-life image and emphatic to.",
+          "before": "{0:This }{1:indeed }{4,5:flies away }{3:in }{2:the blink of an eye}",
+          "after": "{0:It }{1:will surely }{4,5:fly away }{3:in }{2:the blink of an eye.}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "v3-line1",
+          "reason": "Paramani asserts the truth/trustworthiness of the saying; proven added an unsupported evidential claim.",
+          "before": "{0:Listen: }{2:I speak }{3:a proven }{1:truth.}",
+          "after": "{0:Listen: }{1:what }{2:I tell you }{3:is true.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "authentic / proven / authoritative / true [adj.]",
+              "after": "true; trustworthy"
+            }
+          ]
+        }
+      ],
+      "openQuestions": [
+        {
+          "lineIds": [
+            "v2-line1"
+          ],
+          "question": "Rang tarang milave: current color dissolving into a wave is possible but roles/collocation remain uncertain. TransLiteral repeats this source, without settling grammar. No speculative change."
+        },
+        {
+          "lineIds": [
+            "v3-line2"
+          ],
+          "question": "Vahan ki kya karta gumani: retained current question, but ki has no overt feminine head and source witness does not clarify whether vahan/van or another form is intended."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "kya-tan-majhata",
+      "readerSha256": "e3cb3b6fb05595a653d50bb0de4affd211c8ff1442596a800b515a683ef1e901",
+      "definitionCount": 12,
+      "wordEntryCount": 116,
+      "lineIdsRead": [
+        "refrain-kya-tan",
+        "v1-pavan-chale-1",
+        "v1-pavan-chale-2",
+        "v2-char-jana-1",
+        "v2-charo-taraf-1",
+        "v2-charo-taraf-2",
+        "v3-had-jale",
+        "v3-kanchan-jaise-1",
+        "v3-kanchan-jaise-2",
+        "v4-teen-dina-1",
+        "v4-janam-janam-1",
+        "v4-janam-janam-2"
+      ],
+      "changedDefinitions": 3,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "refrain-kya-tan",
+          "reason": "Polish is the already-recorded sense suited to bodily vanity; turn to dust is the natural English realization of merging with earth, retaining the material image.",
+          "before": "{0:Why }{2:do you scour }{1:the body, }{3:O friend? }{4:One }{5:day }{8,9:it must merge }{7:into }{6:the dust.}",
+          "after": "{0:Why }{2:polish }{1:the body, }{3:O friend? }{4:One }{5:day }{8,9:it will turn }{7:to }{6:dust.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "scouring / polishing / cleaning",
+              "after": "polish; scrub clean, with attention to the body’s outward appearance"
+            },
+            {
+              "index": 8,
+              "before": "mingle / merge",
+              "after": "mingle; become one with the earth"
+            }
+          ]
+        },
+        {
+          "lineId": "v3-kanchan-jaise-1",
+          "reason": "Preserve the gold comparison and completed burning without the redundant away completely.",
+          "before": "{2:The body }{1:like }{0:pure gold }{3,4:burned away completely, }{5:O.}",
+          "after": "{2:The body, }{1:like }{0:pure gold, }{3,4:has burned away, }{5:O.}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "v3-kanchan-jaise-2",
+          "reason": "Preserve the gold comparison and completed burning without the redundant away completely.",
+          "before": "{2:The body }{1:like }{0:pure gold }{3,4:burned away completely; }{6:no }{5:one }{7:comes }{8:near, }{10:no }{9:one }{11:comes }{12:near.}",
+          "after": "{2:The body, }{1:like }{0:pure gold, }{3,4:has burned away; }{6:no }{5:one }{7:comes }{8:near, }{10:no }{9:one }{11:comes }{12:near.}",
+          "glossChanges": []
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "mana-masta-hua",
+      "readerSha256": "114edf9740f42a98a025a5712a837832b772cb70e2332381c9b80e0e6a612a5b",
+      "definitionCount": 15,
+      "wordEntryCount": 83,
+      "lineIdsRead": [
+        "aaj-badra-utha",
+        "eji-badra-utha",
+        "harsheeli-ho-gayi",
+        "mann-mast-hua",
+        "kya-bole-phir-kya-bole",
+        "mast-hua-phir-kya-bole",
+        "halki-thi-jab",
+        "haan-halki-thi-jab",
+        "puri-bhari-phir-kya-tole",
+        "heera-paaya",
+        "baar-baar-vaa-ko",
+        "hansa-naahave",
+        "taal-talaiya-mein",
+        "kahat-kabir",
+        "sahib-mil-gaya"
+      ],
+      "changedDefinitions": 8,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "aaj-badra-utha",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:Today }{1:the raincloud }{4:of }{3:love }{2:rose}",
+          "after": "{0:Today }{1:the raincloud }{4:of }{3:love }{2:has gathered.}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "eji-badra-utha",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0,1:O dear one, }{2:the raincloud }{5:of }{4:love }{3:rose; }{6:O, }{9,10:it rained }{8:upon }{7:us}",
+          "after": "{0,1:O dear one, }{2:the raincloud }{5:of }{4:love }{3:has gathered; }{6:O, }{9,10:it has rained }{8:upon }{7:us.}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "harsheeli-ho-gayi",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{3:The soul }{1,2:became }{0:joyful, }{4:and }{7:the forest }{5,6:lush and green}",
+          "after": "{3:The soul }{1,2:grew }{0:joyful, }{4:and }{7:the forest }{5,6:lush and green.}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "mann-mast-hua",
+          "reason": "Select the emotional heart and literal intoxication senses already in the word map; the raincloud of love supplies their context.",
+          "before": "{0:The mind }{2:became }{1:ecstatic; }{3:then }{4:what }{5:can it say?}",
+          "after": "{0:The heart }{2:has grown }{1:drunk—}{3:now }{4:what }{5:can it say?}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "mind; heart",
+              "after": "heart; mind, the inner seat of feeling and awareness"
+            },
+            {
+              "index": 1,
+              "before": "intoxicated; ecstatic; deeply absorbed",
+              "after": "drunk; intoxicated with the love evoked in the opening verse"
+            }
+          ]
+        },
+        {
+          "lineId": "mast-hua-phir-kya-bole",
+          "reason": "Preserve the intoxication metaphor rather than flattening it to a psychological label.",
+          "before": "{0,1:Having become ecstatic, }{2:then }{3:what }{4:can it say?}",
+          "after": "{0,1:Drunk now—}{2:then }{3:what }{4:can it say?}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "intoxicated; ecstatic; deeply absorbed",
+              "after": "drunk; intoxicated with love"
+            }
+          ]
+        },
+        {
+          "lineId": "heera-paaya",
+          "reason": "The existing and tied makes an incomplete clause; preserve the terse found-and-bundled diamond image before Why open it again?",
+          "before": "{0:The diamond }{1:found }{2:and tied }{3:in a bundle—}",
+          "after": "{0:A diamond }{1:found, }{2:tied up }{3:in a bundle—}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "hansa-naahave",
+          "reason": "Use IAST for the historical place name while retaining the swan and the named lake.",
+          "before": "{0:The swan }{1:bathes }{2:in Manasarovar}",
+          "after": "{0:The swan }{1:bathes }{2:in Mānasarovara.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "Lake Manasarovar; the lake in which the swan bathes",
+              "after": "Mānasarovara; the great Himalayan lake, contrasted here with small pools"
+            }
+          ]
+        },
+        {
+          "lineId": "sahib-mil-gaya",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:The Master }{1,2:was found }{4:behind the veil of }{3:a sesame seed}",
+          "after": "{0:The Master }{1,2:was found }{4:behind the veil of }{3:a sesame seed.}",
+          "glossChanges": []
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "mat-kar-moh-too-hari-bhajan-ko-maan-re",
+      "readerSha256": "54120e4ba5d445d2a82f8452dfd4f0773ae3892dfbf87374b4b0724fa8f77d4e",
+      "definitionCount": 12,
+      "wordEntryCount": 51,
+      "lineIdsRead": [
+        "mat-kar-moh-tu",
+        "hari-bhajan-ko-maan-le",
+        "hari-bhajan-ko-maan-re",
+        "nayan-diye-darshan-karne-ko",
+        "shravan-diye-sun-gyan-re",
+        "vadan-diya-hari-gun-gaane-ko",
+        "haath-diye-kar-daan-re",
+        "kahat-kabir-suno-bhai-sadho",
+        "kabir-alap",
+        "suno-bhai-sadho-sadho",
+        "sadho-variations",
+        "kanchan-nipjat-khaan-re"
+      ],
+      "changedDefinitions": 3,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "hari-bhajan-ko-maan-re",
+          "reason": "Maan means esteem/value; Heed the worship is an unnatural collocation.",
+          "before": "{3:Heed }{1,2:the worship }{0:of Hari}{4:!}",
+          "after": "{3:Value }{1,2:the worship }{0:of Hari}{4:!}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "heed / accept / value [imperative 2sg]",
+              "after": "value; esteem; heed (imperative)"
+            }
+          ]
+        },
+        {
+          "lineId": "haath-diye-kar-daan-re",
+          "reason": "Give in charity preserves the concrete purpose of hands; practice charity was abstract.",
+          "before": "{0:Hands }{1:were given }{2:to practice }{3:charity}{4:!}",
+          "after": "{0:Hands }{1:were given }{2:to give }{3:in charity}{4:!}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "do / give / perform [imperative / truncated purposive infinitive]",
+              "after": "give; perform (kar dan: give in charity)"
+            },
+            {
+              "index": 3,
+              "before": "charity / donation / almsgiving",
+              "after": "charitable giving; alms"
+            }
+          ]
+        },
+        {
+          "lineId": "kanchan-nipjat-khaan-re",
+          "reason": "Comes from a mine is natural English for nipjat and keeps the concrete image.",
+          "before": "{0:Gold }{1:arises }{2:from the mine}{3:!}",
+          "after": "{0:Gold }{1:comes }{2:from the mine}{3:!}",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "is produced / arises / is yielded [imperfective participle / habitual verb]",
+              "after": "comes forth; is produced; is yielded"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "mera-jeevan-tere",
+      "readerSha256": "d325d05cf914029ef499905ef527fb6f88461e3d1d2dcf2a824408e6e524555a",
+      "definitionCount": 12,
+      "wordEntryCount": 144,
+      "lineIdsRead": [
+        "doha-1",
+        "doha-2",
+        "doha-3",
+        "doha-4",
+        "refrain-sai",
+        "refrain-baba",
+        "verse1-1",
+        "verse1-2",
+        "verse2-1",
+        "verse2-2",
+        "verse3-1",
+        "verse3-2"
+      ],
+      "changedDefinitions": 0,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [],
+      "openQuestions": [],
+      "scopeExclusion": "Modern Sāī stanzas read for context but left unchanged; the Kabīr-attributed introductory couplets are in scope."
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "mera-man-lochai",
+      "readerSha256": "b091a001ec61896ddb6a3545975a70193a32e10889412dd67953ece63e4977e6",
+      "definitionCount": 48,
+      "wordEntryCount": 252,
+      "lineIdsRead": [
+        "line-000",
+        "line-001",
+        "line-002",
+        "line-003",
+        "line-004",
+        "line-005",
+        "line-006",
+        "line-007",
+        "line-008",
+        "line-009",
+        "line-010",
+        "line-011",
+        "line-012",
+        "line-013",
+        "line-014",
+        "line-015",
+        "line-016",
+        "line-017",
+        "line-018",
+        "line-019",
+        "line-020",
+        "line-021",
+        "line-022",
+        "line-023",
+        "line-024",
+        "line-025",
+        "line-026",
+        "line-027",
+        "line-028",
+        "line-029",
+        "line-030",
+        "line-031",
+        "line-032",
+        "line-033",
+        "line-034",
+        "line-035",
+        "line-036",
+        "line-037",
+        "line-038",
+        "line-039",
+        "line-040",
+        "line-041",
+        "line-042",
+        "line-043",
+        "line-044",
+        "line-045",
+        "line-046",
+        "line-047"
+      ],
+      "changedDefinitions": 10,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "line-000",
+          "reason": "Promote the emotional heart sense already in the popup; use natural yearns to see while retaining darasana.",
+          "before": "{0:My }{1:mind }{2:yearns }{5:for }{4:the sight }{3:of the Guru.}",
+          "after": "{0:My }{1:heart }{2:yearns }{5:to }{4:see }{3:the Guru.}",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "mind; inner heart",
+              "after": "heart; the inner mind that yearns for the Guru"
+            }
+          ]
+        },
+        {
+          "lineId": "line-003",
+          "reason": "Use the contextual sense already in the popup, preserving the poem’s thirst image.",
+          "before": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
+          "after": "{0:Thirst }{1,2:is not quenched }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "descends; is quenched",
+              "after": "is quenched; literally, subsides"
+            }
+          ]
+        },
+        {
+          "lineId": "line-012",
+          "reason": "Promote the emotional heart sense already in the popup; use natural yearns to see while retaining darasana.",
+          "before": "{0:My }{1:mind }{2:yearns }{5:for }{4:the sight }{3:of the Guru.}",
+          "after": "{0:My }{1:heart }{2:yearns }{5:to }{4:see }{3:the Guru.}",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "mind; inner heart",
+              "after": "heart; the inner mind that yearns for the Guru"
+            }
+          ]
+        },
+        {
+          "lineId": "line-023",
+          "reason": "Read the repeated sight-and-longing phrase in natural English clause order; the heart sense matches its emotional context.",
+          "before": "{2:For }{1:the sight }{0:of the Guru, }{3:my }{4:mind }{5:yearns.}",
+          "after": "{3:My }{4:heart }{5:yearns }{2:to }{1:see }{0:the Guru.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "mind; inner heart",
+              "after": "heart; the inner mind that yearns for the Guru"
+            }
+          ]
+        },
+        {
+          "lineId": "line-024",
+          "reason": "Use the contextual sense already in the popup, preserving the poem’s thirst image.",
+          "before": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come,}",
+          "after": "{0:Thirst }{1,2:is not quenched }{3:and peace }{4,5:does not come,}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "subsides; is quenched",
+              "after": "is quenched; literally, subsides"
+            }
+          ]
+        },
+        {
+          "lineId": "line-028",
+          "reason": "Use the contextual sense already in the popup, preserving the poem’s thirst image.",
+          "before": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
+          "after": "{0:Thirst }{1,2:is not quenched }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "subsides; is quenched",
+              "after": "is quenched; literally, subsides"
+            }
+          ]
+        },
+        {
+          "lineId": "line-037",
+          "reason": "The adjacent love and yearning support heart rather than an abstract thinking mind.",
+          "before": "{0:The mind }{1,2:does not stay still,}",
+          "after": "{0:The heart }{1,2:does not stay still,}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "the mind; inner heart",
+              "after": "heart; the inward mind restless with longing"
+            }
+          ]
+        },
+        {
+          "lineId": "line-038",
+          "reason": "The adjacent love and yearning support heart rather than an abstract thinking mind.",
+          "before": "{0:The mind }{1,2:does not stay still; }{3:in so many }{4:ways }{5:it surges with longing.}",
+          "after": "{0:The heart }{1,2:does not stay still; }{3:in so many }{4:ways }{5:it surges with longing.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "the mind; inner heart",
+              "after": "heart; the inward mind restless with longing"
+            }
+          ]
+        },
+        {
+          "lineId": "line-039",
+          "reason": "Promote the popup’s expectant watching to the sentence; she is waiting for the beloved, not admiring a pathway.",
+          "before": "{2:The longing bride }{1:gazes upon }{0:the pathway,}",
+          "after": "{2:The longing bride }{1:watches }{0:the path,}",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "gazes at; watches expectantly",
+              "after": "watches expectantly; looks along"
+            }
+          ]
+        },
+        {
+          "lineId": "line-044",
+          "reason": "Replace unidiomatic without cease with a natural adverb without weakening repetition.",
+          "before": "{0:I think of that sight }{1:day after day, }{2:without cease.}",
+          "after": "{0:I think of that sight }{1:day after day, }{2:unceasingly.}",
+          "glossChanges": []
+        }
+      ],
+      "openQuestions": [
+        {
+          "lineIds": [
+            "line-036"
+          ],
+          "question": "Existing performed prema versus written pria variant needs a fresh recording check. Preserve the source and the earlier documented issue."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "nirguna-galiya",
+      "readerSha256": "01fee3df4bb66b1ff14bc8f0531cf58d769b3fa96e9f42c25c1a6740ca343854",
+      "definitionCount": 27,
+      "wordEntryCount": 265,
+      "lineIdsRead": [
+        "line-01",
+        "line-02",
+        "line-03",
+        "line-04",
+        "line-05",
+        "line-06",
+        "line-07",
+        "line-08",
+        "line-09",
+        "line-10",
+        "line-11",
+        "line-12",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-16",
+        "line-17",
+        "line-18",
+        "line-19",
+        "line-20",
+        "line-21",
+        "line-22",
+        "line-23",
+        "line-24",
+        "line-25",
+        "line-26",
+        "line-27"
+      ],
+      "changedDefinitions": 27,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "line-01",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{1:The lanes }{0:of the formless Divine }{2:are narrow, }{3:my }{4:companion, }{5:there }{7,8:one cannot }{6:climb.}",
+          "after": "{1:The lanes }{0:of the formless Divine }{2:are narrow, }{3:my }{4:friend—}{7,8:you cannot }{6:climb }{5:there.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 4,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-02",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{2:if one climbs }{1:there, }{3:then }{4:the Beloved }{5:is found, }{6:my }{7:companion.}",
+          "after": "{0:Yes, }{2:if you climb }{1:there, }{3:then }{5:you meet }{4:the beloved, }{6:my }{7:friend.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "Beloved; Lord",
+              "after": "beloved; the divine beloved addressed in the language of love"
+            },
+            {
+              "index": 6,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 7,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-03",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{1:If one climbs }{0:there, }{2:then }{3:the Beloved }{4:is found, }{5:my }{6:companion.}",
+          "after": "{1:If you climb }{0:there, }{2:then }{4:you meet }{3:the beloved, }{5:my }{6:friend.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "Beloved; Lord",
+              "after": "beloved; the divine beloved addressed in the language of love"
+            },
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-04",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss. Āvāgaman here denotes recurring birth and death; put that intelligible contextual sense in English and the literal coming-and-going in the popup.",
+          "before": "{0:Coming and going }{1,2:ceases, }{5:O }{3:my }{4:companion; }{6:let us go }{7:to my }{8:country.}",
+          "after": "{0:The cycle of birth and death }{1,2:ends, }{5:O }{3:my }{4:friend; }{6:let us go }{7:to our }{8:land.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "coming and going; transmigration",
+              "after": "the cycle of birth and death; literally, coming and going"
+            },
+            {
+              "index": 3,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 4,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 7,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 8,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-05",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss. Āvāgaman here denotes recurring birth and death; put that intelligible contextual sense in English and the literal coming-and-going in the popup.",
+          "before": "{0:Behold }{1:then, }{2:coming and going }{3,4:ceases, }{7:O }{5:my }{6:companion; }{8:let us go }{9:to my }{10:country.}",
+          "after": "{0:See, }{1:then, }{2:the cycle of birth and death }{3,4:ends, }{7:O }{5:my }{6:friend; }{8:let us go }{9:to our }{10:land.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "take; behold",
+              "after": "see; behold (an invitation to attend)"
+            },
+            {
+              "index": 2,
+              "before": "coming and going; transmigration",
+              "after": "the cycle of birth and death; literally, coming and going"
+            },
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 9,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 10,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-06",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Where }{1:does it rise, }{2:where }{3:does it set, }{4:my }{5:companion, }{6:where }{7:does light }{8:shine?}",
+          "after": "{0:Where }{1:does it rise, }{2:where }{3:does it set, }{4:my }{5:friend, }{6:where }{7:does light }{8:shine?}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 5,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-07",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{1:right here }{2:it rises, }{3:right here }{4:it sets, }{5:my }{6:companion.}",
+          "after": "{0:Yes, }{1:right here }{2:it rises, }{3:right here }{4:it sets, }{5:my }{6:friend.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-08",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Right here }{1:it rises, }{2:right here }{3:it sets, }{4:my }{5:companion.}",
+          "after": "{0:Right here }{1:it rises, }{2:right here }{3:it sets, }{4:my }{5:friend.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 5,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-09",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Right here }{1:light }{2:shines, }{5:O }{3:my }{4:companion, }{6:let us go }{7:to my }{8:country.}",
+          "after": "{0:Right here }{1:light }{2:shines, }{5:O }{3:my }{4:friend, }{6:let us go }{7:to our }{8:land.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 4,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 7,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 8,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-10",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Behold }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+          "after": "{0:See, }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:friend, }{8:let us go }{9:to our }{10:land.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "take; behold",
+              "after": "see; behold (an invitation to attend)"
+            },
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 9,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 10,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-11",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0,1:Where }{2:does it thunder, }{3:where }{4:does it rain, }{5:my }{6:companion, }{7:where }{8:does the withered }{9,11:turn }{10:green?}",
+          "after": "{0,1:Where }{2:does it thunder, }{3:where }{4:does it rain, }{5:my }{6:friend, }{7:where }{8:does the withered }{9,11:turn }{10:green?}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-12",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{1:right here }{2:it thunders, }{3:right here }{4:it rains, }{5:my }{6:companion.}",
+          "after": "{0:Yes, }{1:right here }{2:it thunders, }{3:right here }{4:it rains, }{5:my }{6:friend.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-13",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Right here }{1:it thunders, }{2:right here }{3:it rains, }{4:my }{5:companion.}",
+          "after": "{0:Right here }{1:it thunders, }{2:right here }{3:it rains, }{4:my }{5:friend.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 5,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-14",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Right here }{1:the withered }{2,4:turns }{3:green, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+          "after": "{0:Right here }{1:what was withered }{2,4:turns }{3:green, }{7:O }{5:my }{6:friend, }{8:let us go }{9:to our }{10:land.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 9,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 10,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-15",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Behold }{1:then, }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:companion, }{9:let us go }{10:to my }{11:country.}",
+          "after": "{0:See, }{1:then, }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:friend, }{9:let us go }{10:to our }{11:land.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "take; behold",
+              "after": "see; behold (an invitation to attend)"
+            },
+            {
+              "index": 6,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 7,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 10,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 11,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-16",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{3:In }{2:the marketplace }{0,1:of the formless Divine, }{4:my }{5:companion, }{6,7:diamonds }{8,9:are traded.}",
+          "after": "{3:In }{2:the marketplace }{0,1:of the formless Divine, }{4:my }{5:friend, }{6,7:diamonds }{8,9:are traded.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 5,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-17",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{4:in }{3:the marketplace }{1,2:of the formless Divine, }{5:my }{6:companion, }{7,8:diamonds }{9,10:are traded.}",
+          "after": "{0:Yes, }{4:in }{3:the marketplace }{1,2:of the formless Divine, }{5:my }{6:friend, }{7,8:diamonds }{9,10:are traded.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-18",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{2:a person }{1:with a spiritual teacher }{3:indeed }{4,5:makes the trade, }{6:my }{7:companion.}",
+          "after": "{0:Yes, }{2:a person }{1:with a spiritual teacher }{3:indeed }{4,5:makes the trade, }{6:my }{7:friend.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 7,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-19",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{1:A person }{0:with a spiritual teacher }{2:indeed }{3,4:makes the trade, }{5:my }{6:companion; }{8:but }{7:the one }{9:without a spiritual teacher }{11:loses }{10:their capital. }{14:O }{12:my }{13:companion, }{15:let us go }{16:to my }{17:country.}",
+          "after": "{1:A person }{0:with a spiritual teacher }{2:indeed }{3,4:makes the trade, }{5:my }{6:friend; }{8:but }{7:the one }{9:without a spiritual teacher }{11:loses }{10:their capital. }{14:O }{12:my }{13:friend, }{15:let us go }{16:to our }{17:land.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 10,
+              "before": "capital; principal / fundamental essence",
+              "after": "capital; the principal one risks in a trade"
+            },
+            {
+              "index": 12,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 13,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 16,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 17,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-20",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss. Anhad has both boundless and unstruck-sound senses (Hindwi; Lalas Rajasthani dictionary); plain supports the spatial sense, with the sonic resonance retained in the popup. Keep the bed as an intimate concrete image.",
+          "before": "{0,1:O, }{5:in }{4:the vast expanse }{2,3:of the unstruck sound, }{6:my }{7:companion, }{12:is the bed }{11:of }{8:my }{9,10:Lord.}",
+          "after": "{0,1:O, }{5:in }{2,3:the boundless }{4:plain, }{6:my }{7:friend, }{12:is the bed }{11:of }{8:our }{9,10:revered Master.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "unstruck sound; boundless / infinite",
+              "after": "boundless; also evokes the unstruck inner sound in Sant poetry"
+            },
+            {
+              "index": 4,
+              "before": "expanse; vast field",
+              "after": "plain; open expanse"
+            },
+            {
+              "index": 6,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 7,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 8,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 9,
+              "before": "Master; Lord",
+              "after": "Master; the divine beloved whose bed awaits in the boundless plain"
+            },
+            {
+              "index": 12,
+              "before": "bed; resting place",
+              "after": "bed; the intimate resting place of the beloved"
+            }
+          ],
+          "grammarNoteChange": {
+            "before": "'anhad' (< Skt. 'anāhata', unstruck vibration). Nominal sentence with omitted present copula 'hai'.",
+            "after": "Nominal sentence with an omitted present copula. Anhad can mean boundless or evoke unstruck inner sound; the adjoining maidān (plain) supports the spatial sense here."
+          }
+        },
+        {
+          "lineId": "line-21",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss. Anhad has both boundless and unstruck-sound senses (Hindwi; Lalas Rajasthani dictionary); plain supports the spatial sense, with the sonic resonance retained in the popup. Keep the bed as an intimate concrete image.",
+          "before": "{0:Yes, }{4:in }{3:the vast expanse }{1,2:of the unstruck sound, }{5:my }{6:companion, }{11:is the bed }{10:of }{7:my }{8,9:Lord.}",
+          "after": "{0:Yes, }{4:in }{1,2:the boundless }{3:plain, }{5:my }{6:friend, }{11:is the bed }{10:of }{7:our }{8,9:revered Master.}",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "unstruck sound; boundless / infinite",
+              "after": "boundless; also evokes the unstruck inner sound in Sant poetry"
+            },
+            {
+              "index": 3,
+              "before": "expanse; vast field",
+              "after": "plain; open expanse"
+            },
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 7,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 8,
+              "before": "Master; Lord",
+              "after": "Master; the divine beloved whose bed awaits in the boundless plain"
+            },
+            {
+              "index": 11,
+              "before": "bed; resting place",
+              "after": "bed; the intimate resting place of the beloved"
+            }
+          ],
+          "grammarNoteChange": {
+            "before": "Repetition with affirmative particle 'Hā̃'.",
+            "after": "Nominal sentence with an omitted present copula. Anhad can mean boundless or evoke unstruck inner sound; the adjoining maidān (plain) supports the spatial sense here."
+          }
+        },
+        {
+          "lineId": "line-22",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion.}",
+          "after": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:friend.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            }
+          ]
+        },
+        {
+          "lineId": "line-23",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion: }{7,8:one neither }{9:dies }{10:nor }{12:grows }{11:old, }{15:O }{13:my }{14:companion, }{16:let us go }{17:to my }{18:country.}",
+          "after": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:friend: }{7,8:one neither }{9:dies }{10:nor }{12:grows }{11:old, }{15:O }{13:my }{14:friend, }{16:let us go }{17:to our }{18:land.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 13,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 14,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 17,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 18,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-24",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Behold }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+          "after": "{0:See, }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:friend, }{8:let us go }{9:to our }{10:land.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "take; behold",
+              "after": "see; behold (an invitation to attend)"
+            },
+            {
+              "index": 5,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 6,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 9,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 10,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-25",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0,1:Truly }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:companion, }{9:let us go }{10,11:to the revered Guru's }{12:country.}",
+          "after": "{0,1:Truly }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:friend, }{9:let us go }{10,11:to the revered Guru's }{12:land.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "my",
+              "after": "my; addressing the speaker’s friend here"
+            },
+            {
+              "index": 7,
+              "before": "female companion; friend",
+              "after": "friend; a female companion addressed affectionately"
+            },
+            {
+              "index": 12,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-26",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Yes, }{1:let us go }{2:to my }{3:country.}",
+          "after": "{0:Yes, }{1:let us go }{2:to our }{3:land.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 3,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        },
+        {
+          "lineId": "line-27",
+          "reason": "Whole-song invitation: mhārā permits our/my (Anjas Rajasthani dictionary); select the owner-preferred shared land and Master, retaining my in the intimate address. Land/friend use the contextual senses; interpretive alternatives remain in the gloss.",
+          "before": "{0:Behold }{1:then, }{2:let us go }{3:to my }{4:country.}",
+          "after": "{0:See, }{1:then, }{2:let us go }{3:to our }{4:land.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "take; behold",
+              "after": "see; behold (an invitation to attend)"
+            },
+            {
+              "index": 3,
+              "before": "my",
+              "after": "our; also used for “my” in Rajasthani; here the shared land or Master"
+            },
+            {
+              "index": 4,
+              "before": "country; land",
+              "after": "land; homeland"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "patta-bola-vrksha-se",
+      "readerSha256": "175be9eac5001fa8141159c6be0244efba89b9e58c9e6bc95d79f2a7dcf7be44",
+      "definitionCount": 29,
+      "wordEntryCount": 122,
+      "lineIdsRead": [
+        "line-000",
+        "line-001",
+        "line-002",
+        "line-003",
+        "line-004",
+        "line-005",
+        "line-006",
+        "line-007",
+        "line-008",
+        "line-009",
+        "line-010",
+        "line-011",
+        "line-012",
+        "line-013",
+        "line-014",
+        "line-015",
+        "line-016",
+        "line-017",
+        "line-018",
+        "line-019",
+        "line-020",
+        "line-021",
+        "line-022",
+        "line-023",
+        "line-024",
+        "line-025",
+        "line-026",
+        "line-027",
+        "line-028"
+      ],
+      "changedDefinitions": 9,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "line-006",
+          "reason": "Capitalize a new sentence after the vocative opening without changing meaning.",
+          "before": "{0,4:this is the very}{3: way}{1,2: of the world:}",
+          "after": "{0,4:This is the very}{3: way}{1,2: of the world:}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "line-008",
+          "reason": "Replace take the Name with the actual idiomatic act; keep every-breath repetition.",
+          "before": "{2:With }{0,1:every single breath}{3,4: take the Name,}",
+          "after": "{2:With }{0,1:every breath,}{4: utter}{3: the Name,}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "the Divine Name",
+              "after": "the divine Name"
+            },
+            {
+              "index": 4,
+              "before": "take / utter",
+              "after": "utter; nāma lenā means to speak or repeat the divine Name"
+            }
+          ]
+        },
+        {
+          "lineId": "line-009",
+          "reason": "Connect the otherwise ambiguous escape to the preceding every-breath remembrance, not a prohibition on breathing.",
+          "before": "{2:let not}{3: any }{1:breath}{0: escape;}",
+          "after": "{2,3:let no }{1:breath}{0: go by without it;}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "should remain / escape",
+              "after": "be left over; here, pass without uttering the Name"
+            }
+          ]
+        },
+        {
+          "lineId": "line-013",
+          "reason": "Natural first-person continuation of I set out; no evil person found preserves the same experiencer.",
+          "before": "{0,1,3:no evil person}{2: was found;}",
+          "after": "{2:I found }{1,3:no }{0:evil person;}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "line-016",
+          "reason": "Natural equivalence while retaining the deliberately severe source comparison.",
+          "before": "{0:Begging}{3: is}{1,2: equal to dying;}",
+          "after": "{0:Begging}{3: is}{2: like}{1: dying;}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "line-020",
+          "reason": "Make the devotional sense of sumiran explicit throughout its contrast of happiness and sorrow.",
+          "before": "{1:In}{0: happiness,}{3,4: no one}{2: remembers;}",
+          "after": "{1:In}{0: happiness,}{3,4: no one}{2: remembers God;}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "does / performs",
+              "after": "does; here, performs the act of remembering God, carried over from sumiran in the paired line"
+            }
+          ]
+        },
+        {
+          "lineId": "line-021",
+          "reason": "Make the devotional sense of sumiran explicit throughout its contrast of happiness and sorrow.",
+          "before": "{1:in}{0: sorrow,}{3: everyone}{2,4: remembers.}",
+          "after": "{1:in}{0: sorrow,}{3: everyone}{2,4: remembers God.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "remembrance / chanting",
+              "after": "remembrance of God; devotional recollection"
+            }
+          ]
+        },
+        {
+          "lineId": "line-022",
+          "reason": "Make the devotional sense of sumiran explicit throughout its contrast of happiness and sorrow.",
+          "before": "{0:If one}{3,4: remembers}{2: in}{1: happiness,}",
+          "after": "{0:If one}{3,4: remembers God}{2: in}{1: happiness,}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "remembrance / chanting",
+              "after": "remembrance of God; devotional recollection"
+            }
+          ]
+        },
+        {
+          "lineId": "line-025",
+          "reason": "The crow/cuckoo pair asks about taking and giving wealth; restore its shared object in natural English.",
+          "before": "{1:To whom}{0: does the cuckoo}{2: give?}",
+          "after": "{1:To whom}{0: does the cuckoo}{2: give wealth?}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "gives",
+              "after": "gives; wealth is carried over from the preceding question"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "rama-rasa",
+      "readerSha256": "ad1efb9b0f570bd1e69dee03e4cba5479fff59c83ca5ab5e7aa78ead9c70910e",
+      "definitionCount": 12,
+      "wordEntryCount": 100,
+      "lineIdsRead": [
+        "line-1",
+        "line-2",
+        "refrain-1",
+        "refrain-2",
+        "line-3",
+        "line-4",
+        "line-vocal",
+        "line-5",
+        "line-6",
+        "line-7",
+        "line-8",
+        "line-closing"
+      ],
+      "changedDefinitions": 11,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "line-1",
+          "reason": "Honorific jiyō is rendered revered; retained the inherited torch-in-hand clause after rejecting an unsupported syntactic simplification.",
+          "before": "{0:I }{3:burned }{1:my }{2:house, }{4:O }{6:noble }{5:ascetic, }{7:putting }{8:the torch }{9:in hand.}",
+          "after": "{0:I }{3:burned }{1:my }{2:house, }{4:O }{6:revered }{5:ascetic, }{7:putting }{8:the torch }{9:in hand.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-2",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:Whoever you are, }{1:burn }{3:your own }{2:house, }{4:O }{6:noble }{5:ascetic; }{7:walk }{9:with }{8:us.}",
+          "after": "{0:Whoever you are, }{1:burn }{3:your own }{2:house, }{4:O }{6:revered }{5:ascetic; }{7:walk }{9:with }{8:us.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "refrain-1",
+          "reason": "Rasa is the sweet drink that the adjacent line explicitly says makes its drinker immortal. Nectar conveys that concrete contextual image; juice/essence stays as the literal gloss, without replacing it by an abstraction.",
+          "before": "{0:Indeed, }{2:the juice }{1:of Rāma—}",
+          "after": "{0:Indeed, }{2:the nectar }{1:of Rāma—}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "juice; here, the sweetness of devotion pictured as a drink",
+              "after": "nectar; literally juice or essence, here the sweet drink of Rāma that makes the drinker deathless"
+            }
+          ]
+        },
+        {
+          "lineId": "refrain-2",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{1:it is exceedingly }{0:sweet, }{2:O }{4:noble }{3:ascetic; }{5:whoever drinks it }{7,8:becomes }{6:immortal.}",
+          "after": "{1:it is exceedingly }{0:sweet, }{2:O }{4:revered }{3:ascetic; }{5:whoever drinks it }{7,8:becomes }{6:immortal.}",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-3",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:If the house }{1:is burned, }{2:the home }{3:is saved, }{4:O }{6:noble }{5:ascetic; }{7:if the house }{8:is kept, }{9:the home }{10:is lost.}",
+          "after": "{0:If the house }{1:is burned, }{2:the home }{3:is saved, }{4:O }{6:revered }{5:ascetic; }{7:if the house }{8:is kept, }{9:the home }{10:is lost.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-4",
+          "reason": "Corpse is the direct concrete sense of maḍhō, preserving the paradox of a corpse devouring Death.",
+          "before": "{2:I }{3:saw }{0:a }{1:wonder, }{4:O }{6:noble }{5:ascetic: }{7:a dead body }{10:devours }{8,9:Death.}",
+          "after": "{2:I }{3:saw }{0:a }{1:wonder, }{4:O }{6:revered }{5:ascetic: }{7:a corpse }{10:devours }{8,9:Death.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-5",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:Ahead, }{1:ever ahead, }{2:the wildfire }{3:burns, }{4:O }{6:noble }{5:ascetic; }{7:behind, }{9:it turns }{8:green.}",
+          "after": "{0:Ahead, }{1:ever ahead, }{2:the wildfire }{3:burns, }{4:O }{6:revered }{5:ascetic; }{7:behind, }{9:it turns }{8:green.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-6",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:I offer myself }{1:to that }{2:little tree, }{3:O }{5:noble }{4:ascetic: }{6,7:cut its root, }{9:and it bears }{8:fruit.}",
+          "after": "{0:I offer myself }{1:to that }{2:little tree, }{3:O }{5:revered }{4:ascetic: }{6,7:cut its root, }{9:and it bears }{8:fruit.}",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-7",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0:Dhruva }{1:drank, }{2:Prahlāda }{3:drank, }{4:O }{6:noble }{5:ascetic, }{9:and Ravidās }{8:kept on }{7:drinking.}",
+          "after": "{0:Dhruva }{1:drank, }{2:Prahlāda }{3:drank, }{4:O }{6:revered }{5:ascetic, }{9:and Ravidās }{8:kept on }{7:drinking.}",
+          "glossChanges": [
+            {
+              "index": 6,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-8",
+          "reason": "Rasa is the sweet drink that the adjacent line explicitly says makes its drinker immortal. Nectar conveys that concrete contextual image; juice/essence stays as the literal gloss, without replacing it by an abstraction.",
+          "before": "{0:Devotee }{1:Kabīr }{3,4:kept drinking }{2:the juice, }{5:O }{7:noble }{6:ascetic, }{10,11:with longing }{9:to drink }{8:again.}",
+          "after": "{0:Devotee }{1:Kabīr }{3,4:kept drinking }{2:the nectar, }{5:O }{7:revered }{6:ascetic, }{10,11:with longing }{9:to drink }{8:again.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "juice; here, the sweetness of devotion pictured as a drink",
+              "after": "nectar; literally juice or essence, here the sweet drink of Rāma that makes the drinker deathless"
+            },
+            {
+              "index": 7,
+              "before": "noble one; venerable soul",
+              "after": "revered one; an affectionate honorific in the address to the ascetic"
+            }
+          ]
+        },
+        {
+          "lineId": "line-closing",
+          "reason": "Rasa is the sweet drink that the adjacent line explicitly says makes its drinker immortal. Nectar conveys that concrete contextual image; juice/essence stays as the literal gloss, without replacing it by an abstraction.",
+          "before": "{0:Indeed, }{2:the juice }{1:of Rāma!}",
+          "after": "{0:Indeed, }{2:the nectar }{1:of Rāma!}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "juice; here, the sweetness of devotion pictured as a drink",
+              "after": "nectar; literally juice or essence, here the sweet drink of Rāma that makes the drinker deathless"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "rehna-nahi-isa-desa",
+      "readerSha256": "5d9b4e97db30c2e4a9ff1d5c7ae82a9e3d644950ba29b7922ff4166aa4b44eb6",
+      "definitionCount": 11,
+      "wordEntryCount": 54,
+      "lineIdsRead": [
+        "intro-instrumental",
+        "refrain-1",
+        "refrain-2",
+        "refrain-des-veerana",
+        "verse-1-line-1",
+        "verse-1-line-2",
+        "verse-2-line-1",
+        "verse-2-line-2",
+        "verse-3-line-1",
+        "verse-3-line-2",
+        "outro-instrumental"
+      ],
+      "changedDefinitions": 0,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "sab-paise-ke-bhai",
+      "readerSha256": "b19d8301a7df0935c8e7d585db51892f309701452dbdf38cc02ce8d446e696c8",
+      "definitionCount": 10,
+      "wordEntryCount": 48,
+      "lineIdsRead": [
+        "ref-1",
+        "ref-2",
+        "ref-3",
+        "v1-1",
+        "v1-2",
+        "v1-3",
+        "v1-4",
+        "v2-1",
+        "v2-2",
+        "v2-3"
+      ],
+      "changedDefinitions": 2,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "ref-1",
+          "reason": "Restore the pointed personification: they are brothers to money, followed by no companion of the heart.",
+          "before": "{0:All }{3:are brothers }{1,2:for money,}",
+          "after": "{0:Everyone }is {1,2:money’s }{3:brother,}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "of [masculine plural genitive postposition]",
+              "after": "of; belonging to (money is pictured as their brother)"
+            }
+          ]
+        },
+        {
+          "lineId": "ref-2",
+          "reason": "Carry the money-as-relative image into the repeated line.",
+          "before": "{0:O brother, }{1:all }{4:are brothers }{2,3:for money,}",
+          "after": "{0:O brother, }{1:everyone }is {2,3:money’s }{4:brother,}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "of [masculine plural genitive postposition]",
+              "after": "of; belonging to (money is pictured as their brother)"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "sai-meri-raksha-karna",
+      "readerSha256": "924b7acf7c1a2f3d80240f27ca52922fd32b997bb872e065c0deea14907137dc",
+      "definitionCount": 23,
+      "wordEntryCount": 151,
+      "lineIdsRead": [
+        "doha-1",
+        "doha-2",
+        "refrain-1",
+        "verse-1-line-1",
+        "verse-1-line-2",
+        "verse-1-line-3",
+        "verse-2-line-1",
+        "verse-2-line-2",
+        "verse-2-line-3",
+        "verse-3-line-1",
+        "verse-3-line-2",
+        "verse-3-line-3",
+        "verse-3-line-4",
+        "verse-4-line-1",
+        "verse-4-line-2",
+        "verse-4-line-3",
+        "verse-4-line-4",
+        "verse-5-line-1",
+        "verse-5-line-2",
+        "verse-5-line-3",
+        "verse-5-line-4",
+        "closing-1",
+        "closing-2"
+      ],
+      "changedDefinitions": 1,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "doha-1",
+          "reason": "In jāko rākhe ... māra sake the threat is killing; mere strike weakens the claim before the not-even-a-hair image.",
+          "before": "{0:Whom }{2:the Master }{1:protects, }{5,6:no one }{4:can }{3:strike.}",
+          "after": "{0:Whom }{2:the Master }{1:protects, }{5,6:no one }{4:can }{3:kill.}",
+          "glossChanges": [
+            {
+              "index": 3,
+              "before": "strike",
+              "after": "kill; slay"
+            }
+          ]
+        }
+      ],
+      "openQuestions": [],
+      "scopeExclusion": "Modern Sāī stanzas read for context but left unchanged; the Kabīr-attributed introductory couplets are in scope."
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "sangat-santan-ki-karle",
+      "readerSha256": "df18eb4ac2797c6a05de7d13349a4e826a3c1211a61d2e3888eefa287a2101a8",
+      "definitionCount": 20,
+      "wordEntryCount": 91,
+      "lineIdsRead": [
+        "aalap-intro",
+        "refrain-main",
+        "refrain-sub",
+        "verse1-line1",
+        "verse1-line2",
+        "verse1-line3",
+        "verse1-line4",
+        "verse2-line1",
+        "verse2-line2",
+        "verse2-line3",
+        "verse3-line1",
+        "verse3-line2",
+        "verse3-line3",
+        "verse3-line4",
+        "verse4-line1",
+        "verse4-line1-sub",
+        "verse4-line2",
+        "verse4-line2-taan",
+        "verse4-line3",
+        "verse4-line4"
+      ],
+      "changedDefinitions": 2,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "verse1-line2",
+          "reason": "Mortal is the contextual primary sense; living being is a stiff generic address after human body.",
+          "before": "{0:O living being, }{4,5:do }{3:something }{1,2:for its good.}",
+          "after": "{0:O mortal, }{4,5:do }{3:something }{1,2:for its good.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "O living being / O mortal",
+              "after": "O mortal; living being (the human listener addressed here)"
+            }
+          ]
+        },
+        {
+          "lineId": "verse3-line3",
+          "reason": "Keep the concrete cloth money-storage image in a compact phrase; fold is more precise than hem.",
+          "before": "{0,1:As long as }{4:there is money }{2,3:in the hem of your garment, }{5:brother,}",
+          "after": "{0,1:As long as }{4:there is money }{2,3:in your garment’s fold, }{5:brother,}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "hem of the garment / fold of cloth / pocket",
+              "after": "fold of a garment, used to hold money"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "sun-sun-sadho-jee",
+      "readerSha256": "537683b77d5fbd9c0007f72ededa312fa95f1160917bbb4a357cbdac1dcb3f8c",
+      "definitionCount": 21,
+      "wordEntryCount": 94,
+      "lineIdsRead": [
+        "refrain-1",
+        "refrain-2",
+        "refrain-3",
+        "refrain-4",
+        "refrain-raja-ram",
+        "refrain-raja-ram-end",
+        "verse1-1",
+        "verse1-2",
+        "verse1-bhukha-sai",
+        "verse1-3",
+        "verse1-4",
+        "verse1-5",
+        "verse2-1",
+        "verse2-2",
+        "verse2-3",
+        "verse2-4",
+        "verse3-1",
+        "verse3-2",
+        "verse3-4",
+        "verse3-5",
+        "outro-kaho-ji"
+      ],
+      "changedDefinitions": 3,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "refrain-raja-ram",
+          "reason": "Translate the ordinary royal title raja while preserving the genuine proper name Rama.",
+          "before": "{0,1,2:Chant Rājā Rāma—}{3,4:chant it!}",
+          "after": "{1,2:Chant }{0:King Rāma—}{3,4:chant it!}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "King Rāma / Sovereign Lord Rāma (compound noun); Rāma means “pleasing” or “delightful”",
+              "after": "King Rāma; raja means king or sovereign"
+            }
+          ]
+        },
+        {
+          "lineId": "refrain-raja-ram-end",
+          "reason": "Apply the same title/name distinction to its shorter repeated form.",
+          "before": "{0,1,2:Chant Rājā Rāma.}",
+          "after": "{1,2:Chant }{0:King Rāma.}",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "King Rāma / Sovereign Lord Rāma (compound noun); Rāma means “pleasing” or “delightful”",
+              "after": "King Rāma; raja means king or sovereign"
+            }
+          ]
+        },
+        {
+          "lineId": "verse3-4",
+          "reason": "Wardha Hindi dictionary gives bebas/shithil for latpat; contextual contrast is their inability to liberate, not literal tangling of objects.",
+          "before": "{0:Mystic charms }{1:and incantations }{3:become }{2:tangled.}",
+          "after": "{0:Charms }{1:and incantations }{3:prove }{2:powerless.}",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "entangled / confounded / futile (adjective/adverb)",
+              "after": "powerless; ineffectual here (latpat also means unsteady or disordered)"
+            }
+          ]
+        }
+      ],
+      "openQuestions": []
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "sunta-hai",
+      "readerSha256": "42b8fdd13dbdfe0862f5828de765dd0d9608eff3265d0d91582ed9254a83ed6b",
+      "definitionCount": 11,
+      "wordEntryCount": 112,
+      "lineIdsRead": [
+        "sunta-hai-guru-gyani",
+        "gagan-mein-aawaz",
+        "pahile-aaye",
+        "naad-bindu-se",
+        "sab-ghat-pooran",
+        "kahe-kabira-alap",
+        "kahe-kabir-suno-bhai",
+        "jaaye-agam-ki-baani-re",
+        "din-bhar-re-jo",
+        "din-bhar-re-jo-ajar-amar",
+        "gagan-mein-aawaz-outro"
+      ],
+      "changedDefinitions": 5,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "gagan-mein-aawaz",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "In the {0,1:sky, }{2:a sound }{3,4:is resounding, }{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle}",
+          "after": "{2:A sound }{3,4:rings }{0,1:in the sky—}{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle}",
+          "glossChanges": []
+        },
+        {
+          "lineId": "naad-bindu-se",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{2:From }{0:primal sound }and {1:seed-point, }{3:afterward }{5:water, }{6:water }{4:was condensed, }{7:O }{8:honored one}",
+          "after": "{2:From }{0:primal sound }and {1:seed-point, }{3:afterward }{5:water, }{6:water }{4:was condensed, }{7:O }{8:dear one}",
+          "glossChanges": [
+            {
+              "index": 8,
+              "before": "honored one [respectful particle]",
+              "after": "dear one; a respectful or affectionate form of address"
+            }
+          ]
+        },
+        {
+          "lineId": "sab-ghat-pooran",
+          "reason": "Reorder the clause into readable English while retaining every vessel and the imperceptible/silent divine Being. Do not convert an uncertain sung bānī fragment into a new theological Word claim.",
+          "before": "{0:In every }{1:vessel, }{2:fully }{3,4:pervading }{5:is }{6:the imperceptible, }{7:Supreme Person, }{8:silent, }{9:O }{10:honored one, }{11:the Word, }{12:O }{13:honored one}",
+          "after": "{6:The imperceptible, }{8:silent }{7:Being }{5:is }{2:fully }{3,4:present }{0:in every }{1:vessel, }{9:O }{10:dear one, }{11:the word, }{12:O }{13:dear one.}",
+          "glossChanges": [
+            {
+              "index": 7,
+              "before": "Supreme Person; Primal Being",
+              "after": "Being; the divine presence that fills every vessel"
+            },
+            {
+              "index": 10,
+              "before": "honored one [respectful particle]",
+              "after": "dear one; a respectful or affectionate form of address"
+            },
+            {
+              "index": 13,
+              "before": "honored one [respectful particle]",
+              "after": "dear one; a respectful or affectionate form of address"
+            }
+          ]
+        },
+        {
+          "lineId": "din-bhar-re-jo-ajar-amar",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:honored one, }{13:that }{14:sign, }{15:O }{16:honored one}",
+          "after": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:dear one, }{13:that }{14:sign, }{15:O }{16:dear one}",
+          "glossChanges": [
+            {
+              "index": 12,
+              "before": "honored one [respectful particle]",
+              "after": "dear one; a respectful or affectionate form of address"
+            },
+            {
+              "index": 16,
+              "before": "honored one [respectful particle]",
+              "after": "dear one; a respectful or affectionate form of address"
+            }
+          ]
+        },
+        {
+          "lineId": "gagan-mein-aawaz-outro",
+          "reason": "Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+          "before": "In the {0,1:sky, }{2:a sound }{3,4:is resounding, }{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle, }{12:subtle, }{13:subtle, }{14:subtle, }{15:subtle, }{16:subtle}",
+          "after": "{2:A sound }{3,4:rings }{0,1:in the sky—}{5:subtle, }{6:subtle, }{7:subtle, }{8:subtle, }{9:subtle, }{10:subtle, }{11:subtle, }{12:subtle, }{13:subtle, }{14:subtle, }{15:subtle, }{16:subtle}",
+          "glossChanges": []
+        }
+      ],
+      "openQuestions": [
+        {
+          "lineIds": [
+            "sab-ghat-pooran"
+          ],
+          "question": "The final bānī may repeat the end of nirbānī, rather than independently mean the word. Nirbānī also permits liberated or detached, not only silent. Check the exact recorded phrase before changing source/token identity or settling its final English.",
+          "source": "https://isha.sadhguru.org/en/blog/article/sunta-hai-by-kabir-sounds-of-ishas-latest"
+        },
+        {
+          "lineIds": [
+            "din-bhar-re-jo",
+            "din-bhar-re-jo-ajar-amar"
+          ],
+          "question": "The jo…vo clause and niśānī referent remain difficult. The existing sign reading is literal but does not establish whether the ageless/deathless describes the seer, the sign or its referent. Needs a reliable passage-level witness; do not treat current screening as resolution."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "ye-tanu-mundna-be-mundna",
+      "readerSha256": "bae1991011823b01e4232b9ea8a7a490fdcb25d937955f7b893a547b9c95f4ef",
+      "definitionCount": 17,
+      "wordEntryCount": 69,
+      "lineIdsRead": [
+        "refrain-1",
+        "refrain-2",
+        "v1-l1",
+        "v1-l2",
+        "v1-l3a",
+        "v1-l3b",
+        "v1-l4",
+        "v2-l1",
+        "v2-l2",
+        "v2-l3",
+        "v2-l4",
+        "v3-l1",
+        "v3-l1-improv",
+        "v3-l1-sādho",
+        "v3-l2",
+        "v3-l3",
+        "v3-l4"
+      ],
+      "changedDefinitions": 1,
+      "reviewMethod": "Complete source/IAST/gloss/English contextual reading; separate final English and fidelity inspection. Two disjoint editorial workers and lead integration review; lead-authored songs received a distinct self-review. No fresh listening or blanket completion claimed.",
+      "changes": [
+        {
+          "lineId": "v1-l3a",
+          "reason": "This standalone musical fragment precedes I will bury you; match the natural continuation of its longer ki variant.",
+          "before": "{2:Such }{0:a }{1:time }{3:will come}",
+          "after": "{0:A }{1:time }{3:will come }{2:when}",
+          "glossChanges": []
+        }
+      ],
+      "openQuestions": [
+        {
+          "lineIds": [
+            "refrain-1"
+          ],
+          "question": "Mundna/be mundna: shaven one is not securely established. The title and a lyric witness support mundana sounds but do not establish whether adjective, address or shaving infinitive. Must check recorded articulation and regional lexical source before replacement."
+        },
+        {
+          "lineIds": [
+            "v3-l2"
+          ],
+          "question": "Dena nahin kuch lena: existing Neither give nor take anything is an imperative imposed on an elliptical clause. External lyric witness differs (dena nahi tha lena). Recording/source review needed to settle negation and whether a statement of no transaction is intended."
+        },
+        {
+          "lineIds": [
+            "v3-l3"
+          ],
+          "question": "Utaro is normally causative ferry across, whereas current English has intransitive Cross. Could be sung utaro/utro or reflexive/elliptic use; no pronoun should be invented. Needs recorded-word check."
+        }
+      ]
     }
-  ]
+  ],
+  "kabirFollowUp20261127": {
+    "scope": "20 Kabīr-related readers, including Kabīr couplets in two Sāī readers; no full-library editorial claim.",
+    "songsRead": 20,
+    "definitionsRead": 358,
+    "wordsRead": 2224,
+    "changedSongs": 18,
+    "changedDefinitions": 105,
+    "openDefinitions": 10,
+    "sources": [
+      {
+        "url": "https://anjas.org/rajasthani-dictionary/mhaara-meaning",
+        "use": "Rajasthani mhārā allows my and our; shared invitation supports our here."
+      },
+      {
+        "url": "https://www.hindwi.org/hindi-dictionary/meaning-of-anhad",
+        "use": "Anhad permits unstruck and beyond limits; select boundless with plain, retain sonic sense in popup."
+      },
+      {
+        "url": "https://www.jainqq.org/booktext/Rajasthani_Hindi_Shabdakosh_Part_01/020590",
+        "use": "Lalas distinguishes anhad boundless from anhad-nad inner sound."
+      },
+      {
+        "url": "https://isha.sadhguru.org/en/blog/article/sunta-hai-by-kabir-sounds-of-ishas-latest",
+        "use": "Performer text comparison; uncertain sung fragments remain open."
+      },
+      {
+        "url": "https://www.hindisamay.com/contentDetail.aspx?id=3159&lang=hi&pageno=38",
+        "use": "Wardha dictionary latpat includes powerless; context of ineffective ritual."
+      },
+      {
+        "url": "https://rekhtadictionary.com/meaning-of-baqaa",
+        "use": "Continuance/permanence and Sufi abiding, retained in the popup behind enduring life."
+      }
+    ],
+    "sourceExclusions": [
+      "namaskar-mera praises Kabīr but is not his composition.",
+      "madhyahna-aarti mentions Kabīr’s weaver community in a popup, without a Kabīr composition."
+    ],
+    "verification": "46/47 release commands pass after the minimal shuffle fixture fix; only six pre-existing trim evidence discrepancies remain. Stored-onset DOM seeks pass; source/media/timing and original assessment invariants preserved. Final static artifact: 386 readers, 15320 occurrences. In-app browser unavailable after three recovery attempts; no fresh listening claimed.",
+    "counts": {
+      "readers": 20,
+      "english": 103,
+      "glossEntries": 171,
+      "grammarNotes": 2
+    },
+    "releaseState": "Owner authorized publication on 2026-11-27 with unavailable browser checks and unchanged historical trim failures; deployment and live verification pending."
+  }
 }

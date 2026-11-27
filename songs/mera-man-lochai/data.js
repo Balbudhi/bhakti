@@ -152,7 +152,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "merā manu locai gur darasana tāī ॥",
-    "english": "{0:My }{1:mind }{2:yearns }{5:for }{4:the sight }{3:of the Guru.}",
+    "english": "{0:My }{1:heart }{2:yearns }{5:to }{4:see }{3:the Guru.}",
     "words": [
       {
         "roman": "merā",
@@ -162,7 +162,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manu",
-        "gloss": "mind; inner heart",
+        "gloss": "heart; the inner mind that yearns for the Guru",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -386,7 +386,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "trikhā na utarai sānti na āvai binu darasana santa piāre jīu ॥",
-    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
+    "english": "{0:Thirst }{1,2:is not quenched }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
     "words": [
       {
         "roman": "trikhā",
@@ -402,7 +402,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "utarai",
-        "gloss": "descends; is quenched",
+        "gloss": "is quenched; literally, subsides",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1100,7 +1100,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "merā manu locai gur darasana tāī ॥",
-    "english": "{0:My }{1:mind }{2:yearns }{5:for }{4:the sight }{3:of the Guru.}",
+    "english": "{0:My }{1:heart }{2:yearns }{5:to }{4:see }{3:the Guru.}",
     "words": [
       {
         "roman": "merā",
@@ -1110,7 +1110,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manu",
-        "gloss": "mind; inner heart",
+        "gloss": "heart; the inner mind that yearns for the Guru",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1976,7 +1976,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gur darasana tāī merā manu locai",
-    "english": "{2:For }{1:the sight }{0:of the Guru, }{3:my }{4:mind }{5:yearns.}",
+    "english": "{3:My }{4:heart }{5:yearns }{2:to }{1:see }{0:the Guru.}",
     "words": [
       {
         "roman": "gur",
@@ -2004,7 +2004,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manu",
-        "gloss": "mind; inner heart",
+        "gloss": "heart; the inner mind that yearns for the Guru",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2060,7 +2060,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "trikhā na utarai sānti na āvai",
-    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come,}",
+    "english": "{0:Thirst }{1,2:is not quenched }{3:and peace }{4,5:does not come,}",
     "words": [
       {
         "roman": "trikhā",
@@ -2076,7 +2076,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "utarai",
-        "gloss": "subsides; is quenched",
+        "gloss": "is quenched; literally, subsides",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2366,7 +2366,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "trikhā na utarai sānti na āvai binu darasana santa piāre jīu",
-    "english": "{0:Thirst }{1,2:does not subside }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
+    "english": "{0:Thirst }{1,2:is not quenched }{3:and peace }{4,5:does not come }{6:without }{7:the sight }{9:of the beloved }{10:and revered }{8:Saint.}",
     "words": [
       {
         "roman": "trikhā",
@@ -2382,7 +2382,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "utarai",
-        "gloss": "subsides; is quenched",
+        "gloss": "is quenched; literally, subsides",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3074,11 +3074,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manu na rahai",
-    "english": "{0:The mind }{1,2:does not stay still,}",
+    "english": "{0:The heart }{1,2:does not stay still,}",
     "words": [
       {
         "roman": "manu",
-        "gloss": "the mind; inner heart",
+        "gloss": "heart; the inward mind restless with longing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3140,11 +3140,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "manu na rahai bahu bidhi umakāī",
-    "english": "{0:The mind }{1,2:does not stay still; }{3:in so many }{4:ways }{5:it surges with longing.}",
+    "english": "{0:The heart }{1,2:does not stay still; }{3:in so many }{4:ways }{5:it surges with longing.}",
     "words": [
       {
         "roman": "manu",
-        "gloss": "the mind; inner heart",
+        "gloss": "heart; the inward mind restless with longing",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3206,7 +3206,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "panthu nihārai kāmanī",
-    "english": "{2:The longing bride }{1:gazes upon }{0:the pathway,}",
+    "english": "{2:The longing bride }{1:watches }{0:the path,}",
     "words": [
       {
         "roman": "panthu",
@@ -3216,7 +3216,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nihārai",
-        "gloss": "gazes at; watches expectantly",
+        "gloss": "watches expectantly; looks along",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3518,7 +3518,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "citavau anadinu nīta",
-    "english": "{0:I think of that sight }{1:day after day, }{2:without cease.}",
+    "english": "{0:I think of that sight }{1:day after day, }{2:unceasingly.}",
     "words": [
       {
         "roman": "citavau",

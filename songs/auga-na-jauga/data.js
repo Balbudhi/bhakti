@@ -232,7 +232,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Na fanā merī na baqā merī",
-    "english": "{0,1:Neither is annihilation}{2: mine,}{3,4: nor is subsistence}{5: mine,}",
+    "english": "{0,1:Neither is annihilation}{2: mine,}{3,4: nor is enduring life}{5: mine,}",
     "words": [
       {
         "roman": "Na",
@@ -260,7 +260,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "baqā",
-        "gloss": "subsistence; eternal permanence",
+        "gloss": "enduring life; continuance, opposed to fanā (passing away); in Sufi usage, abiding in God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -791,7 +791,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Fanā kaisī baqā kaisī jab us ke āšnā ṭhahre",
-    "english": "{1:What}{0: annihilation,}{3: what}{2: subsistence,}{4: when}{8: we have become}{5,6: His}{7: intimates?}",
+    "english": "{1:What}{0: annihilation,}{3: what}{2: enduring life,}{4: when}{8: we have become}{5,6: His}{7: intimates?}",
     "words": [
       {
         "roman": "Fanā",
@@ -807,7 +807,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "baqā",
-        "gloss": "subsistence; eternal permanence",
+        "gloss": "enduring life; continuance, opposed to fanā (passing away); in Sufi usage, abiding in God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1101,7 +1101,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Guft Quddūs-e faqīr-e dar fanā o dar baqā, ḫud ba-ḫud āzād būdī ḫud giriftār āmadī",
-    "english": "{1:Quddus}{2: the dervish}{0: spoke}{3: concerning}{4: annihilation}{5: and}{6: concerning}{7: subsistence:}{8,9: \"Of your own accord}{11: you were}{10: free,}{12: of your own accord}{13,14: you came into captivity.\"}",
+    "english": "{1:Quddus}{2: the dervish}{0: spoke}{3: concerning}{4: annihilation}{5: and}{6: concerning}{7: enduring life:}{8,9: \"Of your own accord}{11: you were}{10: free,}{12: of your own accord}{13,14: you came into captivity.\"}",
     "words": [
       {
         "roman": "Guft",
@@ -1147,7 +1147,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "baqā,",
-        "gloss": "subsistence; eternal permanence",
+        "gloss": "enduring life; continuance, opposed to fanā (passing away); in Sufi usage, abiding in God",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2288,7 +2288,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Ham",
-        "gloss": "we; I (first-person plural of majesty / unconditioned self)",
+        "gloss": "we; also used by an individual speaker for I",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2540,7 +2540,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Woh aur hoṅge jinheṅ maut ā'egī Bedam, nigāh-e-yār se pā'ī hai zindagī maiṅ ne",
-    "english": "{0,2:There will be }{1:others }{3:to whom }{4:death }{5:will come, }{6:Bedam; }{8:through }{7:the gaze of the Beloved, }{12,13:I }{10:have }{9:received }{11:life.}",
+    "english": "{0,2:It is }{1:others }{3:to whom }{4:death }{5:will come, }{6:Bedam; }{8:through }{7:the Beloved’s gaze, }{12,13:I }{10:have }{9:received }{11:life.}",
     "words": [
       {
         "roman": "Woh",
@@ -2610,7 +2610,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "zindagī",
-        "gloss": "life (true eternal life)",
+        "gloss": "life; here, life received through the Beloved’s gaze",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2741,7 +2741,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Jīwnā",
-        "gloss": "living; life in the body (verbal noun)",
+        "gloss": "living; life",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2753,7 +2753,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "agyān",
-        "gloss": "spiritual ignorance; nescience",
+        "gloss": "ignorance; lack of spiritual understanding",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2765,7 +2765,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "marnā",
-        "gloss": "dying; death to ego (verbal noun)",
+        "gloss": "dying; death",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2783,7 +2783,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "gyān",
-        "gloss": "spiritual knowledge; gnosis",
+        "gloss": "knowledge; spiritual understanding",
         "concept_key": "",
         "preserve_in_english": false
       },

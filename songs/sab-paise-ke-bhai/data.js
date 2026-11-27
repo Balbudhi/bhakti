@@ -39,7 +39,7 @@ window.SONG_LINES = {
     "source": "सब पैसा के भाई",
     "sourceLanguage": "hi",
     "roman": "Sab paisā ke bhāī",
-    "english": "{0:All }{3:are brothers }{1,2:for money,}",
+    "english": "{0:Everyone }is {1,2:money’s }{3:brother,}",
     "words": [
       {
         "roman": "Sab",
@@ -51,7 +51,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ke",
-        "gloss": "of [masculine plural genitive postposition]"
+        "gloss": "of; belonging to (money is pictured as their brother)"
       },
       {
         "roman": "bhāī",
@@ -90,7 +90,7 @@ window.SONG_LINES = {
     "source": "भाई सब पैसा के भाई",
     "sourceLanguage": "hi",
     "roman": "Bhāī sab paisā ke bhāī",
-    "english": "{0:O brother, }{1:all }{4:are brothers }{2,3:for money,}",
+    "english": "{0:O brother, }{1:everyone }is {2,3:money’s }{4:brother,}",
     "words": [
       {
         "roman": "Bhāī",
@@ -106,7 +106,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ke",
-        "gloss": "of [masculine plural genitive postposition]"
+        "gloss": "of; belonging to (money is pictured as their brother)"
       },
       {
         "roman": "bhāī",

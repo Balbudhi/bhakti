@@ -85,7 +85,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dukh mẽ sumiran sab kare",
-    "english": "{1:In }{0:sorrow, }{3:everyone }{2,4:remembers,}",
+    "english": "{1:In }{0:sorrow, }{3:everyone }{2,4:remembers God,}",
     "words": [
       {
         "roman": "dukh",
@@ -101,7 +101,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sumiran",
-        "gloss": "remembrance; devotional contemplation",
+        "gloss": "remembrance of God; devotional recollection",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -227,7 +227,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "jo sukh mẽ sumiran kare",
-    "english": "{0:If one }{3,4:remembers }{2:in }{1:joy,}",
+    "english": "{0:If one }{3,4:remembers God }{2:in }{1:joy,}",
     "words": [
       {
         "roman": "jo",
@@ -249,7 +249,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "sumiran",
-        "gloss": "remembrance; devotional contemplation",
+        "gloss": "remembrance of God; devotional recollection",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -369,11 +369,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sumiran kar le mere manā",
-    "english": "{0,1,2:Remember, }{3:O my }{4:mind,}",
+    "english": "{0,1,2:Remember Hari, }{3:O my }{4:heart,}",
     "words": [
       {
         "roman": "sumiran",
-        "gloss": "remembrance; devotional contemplation",
+        "gloss": "remembrance of the divine; here Hari, named in the next line",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -397,7 +397,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "manā",
-        "gloss": "O mind; O heart",
+        "gloss": "O heart; the inner mind addressed by the singer",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -992,7 +992,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "kām krodh mad lobh nivāro chā̃ḍi de ab sant janā",
-    "english": "{4:Turn away from }{0:lust, }{1:anger, }{2:pride, }{3:and greed; }{5,6:leave them }{7:now, }{8,9:O saints.}",
+    "english": "{4:Drive out }{0:lust, }{1:anger, }{2:pride, }{3:and greed; }{5,6:cast them off }{7:now, }{8,9:O saints.}",
     "words": [
       {
         "roman": "kām",
@@ -1020,13 +1020,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "nivāro",
-        "gloss": "ward off; dispel; eliminate",
+        "gloss": "drive out; dispel",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "chā̃ḍi",
-        "gloss": "having abandoned; having cast off",
+        "gloss": "cast off; abandon",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1223,11 +1223,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "sumiran kar le",
-    "english": "{0,1,2:Remember.}",
+    "english": "{0,1,2:Remember Hari.}",
     "words": [
       {
         "roman": "sumiran",
-        "gloss": "remembrance; devotional contemplation",
+        "gloss": "remembrance of the divine; here Hari, named in the refrain",
         "concept_key": "",
         "preserve_in_english": false
       },

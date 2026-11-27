@@ -34,6 +34,7 @@ jobs:
           node scripts/test_library_filters.js
           node scripts/test_library_search.js
           node scripts/test_lyric_search.js
+          node scripts/test_static_search_html.js
           node scripts/test_search_ranking.js
           node scripts/test_queue_render.js
           node scripts/test_queue_drag_performance.js

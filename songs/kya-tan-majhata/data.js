@@ -106,7 +106,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kyā tan māñjhtā re ek din māṭī meñ mil jānā",
-    "english": "{0:Why }{2:do you scour }{1:the body, }{3:O friend? }{4:One }{5:day }{8,9:it must merge }{7:into }{6:the dust.}",
+    "english": "{0:Why }{2:polish }{1:the body, }{3:O friend? }{4:One }{5:day }{8,9:it will turn }{7:to }{6:dust.}",
     "words": [
       {
         "roman": "Kyā",
@@ -122,7 +122,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "māñjhtā",
-        "gloss": "scouring / polishing / cleaning",
+        "gloss": "polish; scrub clean, with attention to the body’s outward appearance",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -158,7 +158,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mil",
-        "gloss": "mingle / merge",
+        "gloss": "mingle; become one with the earth",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1011,7 +1011,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kañchan jaise kāyā jal gaī o",
-    "english": "{2:The body }{1:like }{0:pure gold }{3,4:burned away completely, }{5:O.}",
+    "english": "{2:The body, }{1:like }{0:pure gold, }{3,4:has burned away, }{5:O.}",
     "words": [
       {
         "roman": "Kañchan",
@@ -1136,7 +1136,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kañchan jaise kāyā jal gaī koī na āye pāsā, koī na āye pāsā",
-    "english": "{2:The body }{1:like }{0:pure gold }{3,4:burned away completely; }{6:no }{5:one }{7:comes }{8:near, }{10:no }{9:one }{11:comes }{12:near.}",
+    "english": "{2:The body, }{1:like }{0:pure gold, }{3,4:has burned away; }{6:no }{5:one }{7:comes }{8:near, }{10:no }{9:one }{11:comes }{12:near.}",
     "words": [
       {
         "roman": "Kañchan",

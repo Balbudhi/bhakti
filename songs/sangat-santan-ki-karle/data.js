@@ -276,11 +276,11 @@ window.SONG_LINES = {
     "source": "प्राणी इसका हित कछु कर ले",
     "sourceLanguage": "hi",
     "roman": "Prāṇī iskā hit kachu kar le",
-    "english": "{0:O living being, }{4,5:do }{3:something }{1,2:for its good.}",
+    "english": "{0:O mortal, }{4,5:do }{3:something }{1,2:for its good.}",
     "words": [
       {
         "roman": "Prāṇī",
-        "gloss": "O living being / O mortal",
+        "gloss": "O mortal; living being (the human listener addressed here)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -856,7 +856,7 @@ window.SONG_LINES = {
     "source": "जब लग पल्लो में पैसा भाई",
     "sourceLanguage": "hi",
     "roman": "Jab lag pallo mẽ paisā bhāī",
-    "english": "{0,1:As long as }{4:there is money }{2,3:in the hem of your garment, }{5:brother,}",
+    "english": "{0,1:As long as }{4:there is money }{2,3:in your garment’s fold, }{5:brother,}",
     "words": [
       {
         "roman": "Jab",
@@ -872,7 +872,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pallo",
-        "gloss": "hem of the garment / fold of cloth / pocket",
+        "gloss": "fold of a garment, used to hold money",
         "concept_key": "",
         "preserve_in_english": false
       },

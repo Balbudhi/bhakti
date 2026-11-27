@@ -10,6 +10,7 @@ import re
 from urllib.parse import urlsplit, urljoin
 from pathlib import Path
 import shutil
+import subprocess
 import tempfile
 import bhakti_shuffle_profiles as shuffle_profiles
 from build_search_index import build_search_index
@@ -187,6 +188,10 @@ def _assemble_locked(root: Path, songs: list[Path]) -> None:
                     or hashlib.sha256(copied.read_bytes()).hexdigest() != fingerprint):
                 raise RuntimeError('public assembly snapshot changed: ' + str(path.relative_to(root)))
         build_search_index(staged)
+        # Crawlers receive the public catalogue and performed text in the first
+        # response; use the live renderers before binding document integrity.
+        subprocess.run(['node', str(Path(__file__).with_name('prerender_public_site.js')),
+                        str(staged)], check=True, text=True)
         prepare_release(staged)
         destination = root / '_site'
         if destination.is_symlink():

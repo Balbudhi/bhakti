@@ -417,7 +417,7 @@ window.SONG_LINES = {
     "source": "ये तो पलक पीछे उड़ जावे",
     "sourceLanguage": "hi",
     "roman": "Ye to palak pīche uṛ jāve",
-    "english": "{0:This }{1:indeed }{4,5:flies away }{3:in }{2:the blink of an eye}",
+    "english": "{0:It }{1:will surely }{4,5:fly away }{3:in }{2:the blink of an eye.}",
     "words": [
       {
         "roman": "Ye",
@@ -549,7 +549,7 @@ window.SONG_LINES = {
     "source": "सुन बात कहूँ परमानी",
     "sourceLanguage": "hi",
     "roman": "Sun bāt kahūm̐ paramānī",
-    "english": "{0:Listen: }{2:I speak }{3:a proven }{1:truth.}",
+    "english": "{0:Listen: }{1:what }{2:I tell you }{3:is true.}",
     "words": [
       {
         "roman": "Sun",
@@ -565,7 +565,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "paramānī",
-        "gloss": "authentic / proven / authoritative / true [adj.]"
+        "gloss": "true; trustworthy"
       }
     ],
     "grammarNote": "'sun' is an imperative; 'kahūm̐' is a 1st person singular verb; 'paramānī' is a postnominal adjective modifying feminine noun 'bāt'.",

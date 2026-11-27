@@ -98,7 +98,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nirguṇ galiyā̃ sāṅkarī mhārī helī, vahā̃ caṛhyo nahī̃ jāy",
-    "english": "{1:The lanes }{0:of the formless Divine }{2:are narrow, }{3:my }{4:companion, }{5:there }{7,8:one cannot }{6:climb.}",
+    "english": "{1:The lanes }{0:of the formless Divine }{2:are narrow, }{3:my }{4:friend—}{7,8:you cannot }{6:climb }{5:there.}",
     "words": [
       {
         "roman": "Nirguṇ",
@@ -120,13 +120,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -211,7 +211,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ vahā̃ caṛhe to piyā mile mhārī helī",
-    "english": "{0:Yes, }{2:if one climbs }{1:there, }{3:then }{4:the Beloved }{5:is found, }{6:my }{7:companion.}",
+    "english": "{0:Yes, }{2:if you climb }{1:there, }{3:then }{5:you meet }{4:the beloved, }{6:my }{7:friend.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -239,7 +239,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "piyā",
-        "gloss": "Beloved; Lord",
+        "gloss": "beloved; the divine beloved addressed in the language of love",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -251,13 +251,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -312,7 +312,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Vahā̃ caṛhe to piyā mile mhārī helī",
-    "english": "{1:If one climbs }{0:there, }{2:then }{3:the Beloved }{4:is found, }{5:my }{6:companion.}",
+    "english": "{1:If you climb }{0:there, }{2:then }{4:you meet }{3:the beloved, }{5:my }{6:friend.}",
     "words": [
       {
         "roman": "Vahā̃",
@@ -334,7 +334,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "piyā",
-        "gloss": "Beloved; Lord",
+        "gloss": "beloved; the divine beloved addressed in the language of love",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -346,13 +346,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -419,11 +419,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Āvāgaman miṭ jāy mhārī helī re, cālo mhārā deś",
-    "english": "{0:Coming and going }{1,2:ceases, }{5:O }{3:my }{4:companion; }{6:let us go }{7:to my }{8:country.}",
+    "english": "{0:The cycle of birth and death }{1,2:ends, }{5:O }{3:my }{4:friend; }{6:let us go }{7:to our }{8:land.}",
     "words": [
       {
         "roman": "Āvāgaman",
-        "gloss": "coming and going; transmigration",
+        "gloss": "the cycle of birth and death; literally, coming and going",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -441,13 +441,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -465,13 +465,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -550,11 +550,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lyo to āvāgaman miṭ jāy mhārī helī re, cālo mhārā deś",
-    "english": "{0:Behold }{1:then, }{2:coming and going }{3,4:ceases, }{7:O }{5:my }{6:companion; }{8:let us go }{9:to my }{10:country.}",
+    "english": "{0:See, }{1:then, }{2:the cycle of birth and death }{3,4:ends, }{7:O }{5:my }{6:friend; }{8:let us go }{9:to our }{10:land.}",
     "words": [
       {
         "roman": "Lyo",
-        "gloss": "take; behold",
+        "gloss": "see; behold (an invitation to attend)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -566,7 +566,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "āvāgaman",
-        "gloss": "coming and going; transmigration",
+        "gloss": "the cycle of birth and death; literally, coming and going",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -584,13 +584,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -608,13 +608,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -681,7 +681,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahā̃ uge kahā̃ āsate mhārī helī, kahā̃ ujālā hoy",
-    "english": "{0:Where }{1:does it rise, }{2:where }{3:does it set, }{4:my }{5:companion, }{6:where }{7:does light }{8:shine?}",
+    "english": "{0:Where }{1:does it rise, }{2:where }{3:does it set, }{4:my }{5:friend, }{6:where }{7:does light }{8:shine?}",
     "words": [
       {
         "roman": "Kahā̃",
@@ -709,13 +709,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -788,7 +788,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ yahī̃ uge yahī̃ āsate mhārī helī",
-    "english": "{0:Yes, }{1:right here }{2:it rises, }{3:right here }{4:it sets, }{5:my }{6:companion.}",
+    "english": "{0:Yes, }{1:right here }{2:it rises, }{3:right here }{4:it sets, }{5:my }{6:friend.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -822,13 +822,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -877,7 +877,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī̃ uge yahī̃ āsate mhārī helī",
-    "english": "{0:Right here }{1:it rises, }{2:right here }{3:it sets, }{4:my }{5:companion.}",
+    "english": "{0:Right here }{1:it rises, }{2:right here }{3:it sets, }{4:my }{5:friend.}",
     "words": [
       {
         "roman": "Yahī̃",
@@ -905,13 +905,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -978,7 +978,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī̃ ujālā hoy mhārī helī re, cālo mhārā deś",
-    "english": "{0:Right here }{1:light }{2:shines, }{5:O }{3:my }{4:companion, }{6:let us go }{7:to my }{8:country.}",
+    "english": "{0:Right here }{1:light }{2:shines, }{5:O }{3:my }{4:friend, }{6:let us go }{7:to our }{8:land.}",
     "words": [
       {
         "roman": "Yahī̃",
@@ -1000,13 +1000,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1024,13 +1024,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1109,11 +1109,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lyo to yahī̃ ujālā hoy mhārī helī re, cālo mhārā deś",
-    "english": "{0:Behold }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+    "english": "{0:See, }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:friend, }{8:let us go }{9:to our }{10:land.}",
     "words": [
       {
         "roman": "Lyo",
-        "gloss": "take; behold",
+        "gloss": "see; behold (an invitation to attend)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1143,13 +1143,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1167,13 +1167,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1258,7 +1258,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Kahā̃ ko garje kahā̃ barasai mhārī helī, kahā̃ sūkhā kā hariyā hoy",
-    "english": "{0,1:Where }{2:does it thunder, }{3:where }{4:does it rain, }{5:my }{6:companion, }{7:where }{8:does the withered }{9,11:turn }{10:green?}",
+    "english": "{0,1:Where }{2:does it thunder, }{3:where }{4:does it rain, }{5:my }{6:friend, }{7:where }{8:does the withered }{9,11:turn }{10:green?}",
     "words": [
       {
         "roman": "Kahā̃",
@@ -1292,13 +1292,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1383,7 +1383,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ yahī̃ garje yahī̃ barasai mhārī helī",
-    "english": "{0:Yes, }{1:right here }{2:it thunders, }{3:right here }{4:it rains, }{5:my }{6:companion.}",
+    "english": "{0:Yes, }{1:right here }{2:it thunders, }{3:right here }{4:it rains, }{5:my }{6:friend.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -1417,13 +1417,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1472,7 +1472,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī̃ garje yahī̃ barasai mhārī helī",
-    "english": "{0:Right here }{1:it thunders, }{2:right here }{3:it rains, }{4:my }{5:companion.}",
+    "english": "{0:Right here }{1:it thunders, }{2:right here }{3:it rains, }{4:my }{5:friend.}",
     "words": [
       {
         "roman": "Yahī̃",
@@ -1500,13 +1500,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1585,7 +1585,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yahī̃ sūkhā kā hariyā hoy mhārī helī o, cālo mhārā deś",
-    "english": "{0:Right here }{1:the withered }{2,4:turns }{3:green, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+    "english": "{0:Right here }{1:what was withered }{2,4:turns }{3:green, }{7:O }{5:my }{6:friend, }{8:let us go }{9:to our }{10:land.}",
     "words": [
       {
         "roman": "Yahī̃",
@@ -1619,13 +1619,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1643,13 +1643,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1734,11 +1734,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lyo to lāgyā bhajan vālā bāṇ mhārī helī o, cālo mhārā deś",
-    "english": "{0:Behold }{1:then, }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:companion, }{9:let us go }{10:to my }{11:country.}",
+    "english": "{0:See, }{1:then, }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:friend, }{9:let us go }{10:to our }{11:land.}",
     "words": [
       {
         "roman": "Lyo",
-        "gloss": "take; behold",
+        "gloss": "see; behold (an invitation to attend)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1774,13 +1774,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1798,13 +1798,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -1877,7 +1877,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Nirguṇ kā bājār mẽ mhārī helī, hīrõ ko hove vyāpār",
-    "english": "{3:In }{2:the marketplace }{0,1:of the formless Divine, }{4:my }{5:companion, }{6,7:diamonds }{8,9:are traded.}",
+    "english": "{3:In }{2:the marketplace }{0,1:of the formless Divine, }{4:my }{5:friend, }{6,7:diamonds }{8,9:are traded.}",
     "words": [
       {
         "roman": "Nirguṇ",
@@ -1905,13 +1905,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2014,7 +2014,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ nirguṇ kā bājār mẽ mhārī helī, hīrõ ko hove vyāpār",
-    "english": "{0:Yes, }{4:in }{3:the marketplace }{1,2:of the formless Divine, }{5:my }{6:companion, }{7,8:diamonds }{9,10:are traded.}",
+    "english": "{0:Yes, }{4:in }{3:the marketplace }{1,2:of the formless Divine, }{5:my }{6:friend, }{7,8:diamonds }{9,10:are traded.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2048,13 +2048,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2139,7 +2139,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ sugurā mānav to saudo karai mhārī helī",
-    "english": "{0:Yes, }{2:a person }{1:with a spiritual teacher }{3:indeed }{4,5:makes the trade, }{6:my }{7:companion.}",
+    "english": "{0:Yes, }{2:a person }{1:with a spiritual teacher }{3:indeed }{4,5:makes the trade, }{6:my }{7:friend.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2179,13 +2179,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2306,7 +2306,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sugurā mānav to saudo karai mhārī helī, ī to nugurā mūl gam̐vāy mhārī helī o, cālo mhārā deś",
-    "english": "{1:A person }{0:with a spiritual teacher }{2:indeed }{3,4:makes the trade, }{5:my }{6:companion; }{8:but }{7:the one }{9:without a spiritual teacher }{11:loses }{10:their capital. }{14:O }{12:my }{13:companion, }{15:let us go }{16:to my }{17:country.}",
+    "english": "{1:A person }{0:with a spiritual teacher }{2:indeed }{3,4:makes the trade, }{5:my }{6:friend; }{8:but }{7:the one }{9:without a spiritual teacher }{11:loses }{10:their capital. }{14:O }{12:my }{13:friend, }{15:let us go }{16:to our }{17:land.}",
     "words": [
       {
         "roman": "Sugurā",
@@ -2340,13 +2340,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2370,7 +2370,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "mūl",
-        "gloss": "capital; principal / fundamental essence",
+        "gloss": "capital; the principal one risks in a trade",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2382,13 +2382,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2406,13 +2406,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2503,7 +2503,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "O ho anhad kā maidān mẽ mhārī helī, mhārā sāhib jī kī sej",
-    "english": "{0,1:O, }{5:in }{4:the vast expanse }{2,3:of the unstruck sound, }{6:my }{7:companion, }{12:is the bed }{11:of }{8:my }{9,10:Lord.}",
+    "english": "{0,1:O, }{5:in }{2,3:the boundless }{4:plain, }{6:my }{7:friend, }{12:is the bed }{11:of }{8:our }{9,10:revered Master.}",
     "words": [
       {
         "roman": "O",
@@ -2519,7 +2519,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anhad",
-        "gloss": "unstruck sound; boundless / infinite",
+        "gloss": "boundless; also evokes the unstruck inner sound in Sant poetry",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2531,7 +2531,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maidān",
-        "gloss": "expanse; vast field",
+        "gloss": "plain; open expanse",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2543,25 +2543,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāhib",
-        "gloss": "Master; Lord",
+        "gloss": "Master; the divine beloved whose bed awaits in the boundless plain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2579,12 +2579,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "sej",
-        "gloss": "bed; resting place",
+        "gloss": "bed; the intimate resting place of the beloved",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "'anhad' (< Skt. 'anāhata', unstruck vibration). Nominal sentence with omitted present copula 'hai'."
+    "grammarNote": "Nominal sentence with an omitted present copula. Anhad can mean boundless or evoke unstruck inner sound; the adjoining maidān (plain) supports the spatial sense here."
   },
   "line-21": {
     "source": "हाँ अनहद का मैदान में म्हारी हेली, म्हारा साहिब जी की सेज",
@@ -2664,7 +2664,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ anhad kā maidān mẽ mhārī helī, mhārā sāhib jī kī sej",
-    "english": "{0:Yes, }{4:in }{3:the vast expanse }{1,2:of the unstruck sound, }{5:my }{6:companion, }{11:is the bed }{10:of }{7:my }{8,9:Lord.}",
+    "english": "{0:Yes, }{4:in }{1,2:the boundless }{3:plain, }{5:my }{6:friend, }{11:is the bed }{10:of }{7:our }{8,9:revered Master.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2674,7 +2674,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "anhad",
-        "gloss": "unstruck sound; boundless / infinite",
+        "gloss": "boundless; also evokes the unstruck inner sound in Sant poetry",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2686,7 +2686,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maidān",
-        "gloss": "expanse; vast field",
+        "gloss": "plain; open expanse",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2698,25 +2698,25 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "sāhib",
-        "gloss": "Master; Lord",
+        "gloss": "Master; the divine beloved whose bed awaits in the boundless plain",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -2734,12 +2734,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "sej",
-        "gloss": "bed; resting place",
+        "gloss": "bed; the intimate resting place of the beloved",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Repetition with affirmative particle 'Hā̃'."
+    "grammarNote": "Nominal sentence with an omitted present copula. Anhad can mean boundless or evoke unstruck inner sound; the adjoining maidān (plain) supports the spatial sense here."
   },
   "line-22": {
     "source": "हाँ कहै कबीर धर्मदास से म्हारी हेली",
@@ -2789,7 +2789,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ kahai Kabīr Dharmadās se mhārī helī",
-    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion.}",
+    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:friend.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2823,13 +2823,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -2956,7 +2956,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ kahai Kabīr Dharmadās se mhārī helī, na to mare na būṛhā hoy mhārī helī o, cālo mhārā deś",
-    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:companion: }{7,8:one neither }{9:dies }{10:nor }{12:grows }{11:old, }{15:O }{13:my }{14:companion, }{16:let us go }{17:to my }{18:country.}",
+    "english": "{0:Yes, }{2:Kabīr }{1:says }{3,4:to Dharmadās, }{5:my }{6:friend: }{7,8:one neither }{9:dies }{10:nor }{12:grows }{11:old, }{15:O }{13:my }{14:friend, }{16:let us go }{17:to our }{18:land.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -2990,13 +2990,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī,",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3038,13 +3038,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3062,13 +3062,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3147,11 +3147,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lyo to yahī̃ ujālā hoy mhārī helī o, cālo mhārā deś",
-    "english": "{0:Behold }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:companion, }{8:let us go }{9:to my }{10:country.}",
+    "english": "{0:See, }{1:then, }{2:right here }{3:light }{4:shines, }{7:O }{5:my }{6:friend, }{8:let us go }{9:to our }{10:land.}",
     "words": [
       {
         "roman": "Lyo",
-        "gloss": "take; behold",
+        "gloss": "see; behold (an invitation to attend)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3181,13 +3181,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3205,13 +3205,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3302,7 +3302,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Yā to lāgyā bhajan vālā bāṇ mhārī helī o, cālo gurujī re deś",
-    "english": "{0,1:Truly }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:companion, }{9:let us go }{10,11:to the revered Guru's }{12:country.}",
+    "english": "{0,1:Truly }{5:the arrow }{3,4:of devotion }{2:has struck, }{8:O }{6:my }{7:friend, }{9:let us go }{10,11:to the revered Guru's }{12:land.}",
     "words": [
       {
         "roman": "Yā",
@@ -3342,13 +3342,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārī",
-        "gloss": "my",
+        "gloss": "my; addressing the speaker’s friend here",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "helī",
-        "gloss": "female companion; friend",
+        "gloss": "friend; a female companion addressed affectionately",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3378,7 +3378,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3415,7 +3415,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Hā̃ cālo mhārā deś",
-    "english": "{0:Yes, }{1:let us go }{2:to my }{3:country.}",
+    "english": "{0:Yes, }{1:let us go }{2:to our }{3:land.}",
     "words": [
       {
         "roman": "Hā̃",
@@ -3431,13 +3431,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }
@@ -3480,11 +3480,11 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Lyo to cālo mhārā deś",
-    "english": "{0:Behold }{1:then, }{2:let us go }{3:to my }{4:country.}",
+    "english": "{0:See, }{1:then, }{2:let us go }{3:to our }{4:land.}",
     "words": [
       {
         "roman": "Lyo",
-        "gloss": "take; behold",
+        "gloss": "see; behold (an invitation to attend)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -3502,13 +3502,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "mhārā",
-        "gloss": "my",
+        "gloss": "our; also used for “my” in Rajasthani; here the shared land or Master",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "deś",
-        "gloss": "country; land",
+        "gloss": "land; homeland",
         "concept_key": "",
         "preserve_in_english": false
       }

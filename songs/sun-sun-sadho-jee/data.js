@@ -285,11 +285,11 @@ window.SONG_LINES = {
     "source": "राजाराम कहो जी कहो जी",
     "sourceLanguage": "hi",
     "roman": "rājārāma kaho jī kaho jī",
-    "english": "{0,1,2:Chant Rājā Rāma—}{3,4:chant it!}",
+    "english": "{1,2:Chant }{0:King Rāma—}{3,4:chant it!}",
     "words": [
       {
         "roman": "rājārāma",
-        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun); Rāma means “pleasing” or “delightful”"
+        "gloss": "King Rāma; raja means king or sovereign"
       },
       {
         "roman": "kaho",
@@ -346,11 +346,11 @@ window.SONG_LINES = {
     "source": "राजाराम कहो जी",
     "sourceLanguage": "hi",
     "roman": "rājārāma kaho jī",
-    "english": "{0,1,2:Chant Rājā Rāma.}",
+    "english": "{1,2:Chant }{0:King Rāma.}",
     "words": [
       {
         "roman": "rājārāma",
-        "gloss": "King Rāma / Sovereign Lord Rāma (compound noun); Rāma means “pleasing” or “delightful”"
+        "gloss": "King Rāma; raja means king or sovereign"
       },
       {
         "roman": "kaho",
@@ -1069,7 +1069,7 @@ window.SONG_LINES = {
     "source": "जंतर मंतर लटपट होवे",
     "sourceLanguage": "hi",
     "roman": "jantara mantara laṭapaṭa hove",
-    "english": "{0:Mystic charms }{1:and incantations }{3:become }{2:tangled.}",
+    "english": "{0:Charms }{1:and incantations }{3:prove }{2:powerless.}",
     "words": [
       {
         "roman": "jantara",
@@ -1081,7 +1081,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "laṭapaṭa",
-        "gloss": "entangled / confounded / futile (adjective/adverb)"
+        "gloss": "powerless; ineffectual here (latpat also means unsteady or disordered)"
       },
       {
         "roman": "hove",

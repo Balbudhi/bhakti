@@ -312,7 +312,7 @@ window.SONG_LINES = {
     "source": "कोई बखत ऐसा आवेगा",
     "sourceLanguage": "hi",
     "roman": "Koī bakhat aisā āvegā",
-    "english": "{2:Such }{0:a }{1:time }{3:will come}",
+    "english": "{0:A }{1:time }{3:will come }{2:when}",
     "words": [
       {
         "roman": "Koī",

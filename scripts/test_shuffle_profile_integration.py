@@ -179,8 +179,10 @@ class PublicationProfileTests(unittest.TestCase):
         import assemble_public_site as assembly
         self.ready()
         (self.root / 'assets').mkdir()
-        (self.root / 'assets/library.js').write_bytes(
-            (Path(__file__).resolve().parents[1] / 'assets/library.js').read_bytes())
+        # Assembly now uses both production renderers to emit crawlable HTML.
+        for name in ('library.js', 'song.js'):
+            (self.root / 'assets' / name).write_bytes(
+                (Path(__file__).resolve().parents[1] / 'assets' / name).read_bytes())
         for name in assembly.PUBLIC_ROOT_FILES:
             (self.root / name).write_text('fixture')
 
@@ -234,6 +236,9 @@ class PublicationProfileTests(unittest.TestCase):
         self.assembly_ready()
         assembly.assemble_public_site(self.root)
         self.assertTrue((self.root / '_site/data/shuffle-profiles.js').is_file())
+        published_reader = (self.root / '_site/songs/sample-song/index.html').read_text()
+        self.assertIn('class="line-source"', published_reader)
+        self.assertIn('साईं', published_reader)
         self.assertFalse((self.root / '_site/data/shuffle-profile-reviews.json').exists())
         sentinel = self.root / '_site/retained'; sentinel.write_text('old valid site')
         path = self.song / 'data.js'
