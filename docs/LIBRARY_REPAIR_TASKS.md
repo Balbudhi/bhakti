@@ -1,5 +1,33 @@
 # Whole-library repair task
 
+## Sāṃsā Hāle translation follow-up — 26 November 2026
+
+Outcome: revise the complete song after the owner identified awkward choices and
+inadequately explained symbolism. Read all 25 source/word-map/English definitions;
+revise 23 English lines and contextual glosses across 24 definitions. Preserve
+source, IAST, tags, metadata, sequence, audio and timing. The ending retains seeing
+and uses “reigned in every direction”; breath remains both lock and key. Retain
+the swan, well, woman, jewel-bearing serpent, nectar and lion-on-hare imagery.
+
+The Ḍom popup gives the literal community reference and the probable inner-power
+reading, supported by related yogic poetry and the song’s awakening-serpent context.
+The exact first-clause syntax and symbolic identification remain open. Do not renew
+the earlier finished claim: this song now has an exact `needs_source_review` entry.
+The dated follow-up in `data/translation-review-2026-11-25.json` records sources,
+limits and changes; cumulative before/after evidence and four reread semantic
+feature dispositions remain in `data/translation-repair-reviews.json`.
+
+Verification: 45 of 46 release commands pass; the sole failure is the same six
+historical trim-record discrepancies, with byte-identical audit output. After the
+final wording polish, all eight affected checks pass. All 30,640 ready/deferred
+DOM-click seeks still match the stored onsets. Original profiles and all source,
+IAST, audio, timing and metadata are preserved.
+
+Current step: validated for publication; inspect the staged diff, publish and
+compare the served reader and generated search/catalogue/profile assets. Existing
+browser waiver applies. No paid assessment or fresh listening is claimed.
+
+
 ## Devotional subject tags and search confirmation — 25 November 2026
 
 Outcome: tags identify devotional names, addressees and meaningful participants in

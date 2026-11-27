@@ -35,7 +35,7 @@ window.SONG_LINES = {
   "l01": {
     "source": "साँसा हाले हाँसा चाले ऐसी डोरी हाथ।",
     "roman": "sāṃsā hāle hāṃsā cāle aisī ḍorī hāth",
-    "english": "{0:The breath} {1:stirs}; {2:the swan} {3:moves}. {4:Such a} {5:cord} {6:in the hand}.",
+    "english": "{0:The breath} {1:stirs}, {2:the swan} {3:moves}—{4:such is} {5:the cord} {6:held in the hand}.",
     "words": [
       {
         "roman": "sāṃsā",
@@ -47,7 +47,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "hāṃsā",
-        "gloss": "swan; paired here with the moving breath"
+        "gloss": "swan; here linked to the breath. In Nāth poetry, the swan can also evoke the living self and its breathing"
       },
       {
         "roman": "cāle",
@@ -59,7 +59,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍorī",
-        "gloss": "cord or string"
+        "gloss": "cord or string; breath and swan are pictured together as a cord held in the hand"
       },
       {
         "roman": "hāth",
@@ -115,11 +115,11 @@ window.SONG_LINES = {
   "l02": {
     "source": "कूप गहनता गंध बढ़ंता सो तो जाणे नाथ",
     "roman": "kūp gahantā gandh baṛhaṃtā so to jāṇe nāth",
-    "english": "{0,1:The well’s depth}, {2,3:the growing fragrance}— {7:the master} {5:indeed} {6:knows} {4:that}.",
+    "english": "{0,1:The well’s depths}, {2,3:the growing fragrance}—{4:these} {7:the master} {5:truly} {6:knows}.",
     "words": [
       {
         "roman": "kūp",
-        "gloss": "well; an inward yogic image associated with nectar"
+        "gloss": "well; the later search for nectar makes this an image of the inward practice"
       },
       {
         "roman": "gahantā",
@@ -205,11 +205,11 @@ window.SONG_LINES = {
   "l03": {
     "source": "पौन पानी बिन आग के आग लगावै",
     "roman": "paun pānī bin āg ke āg lagāvai",
-    "english": "{0,1:In wind and water}, {2,3,4:without fire}— {6:one who kindles} {5:fire}",
+    "english": "{6:Whoever kindles} {5:fire} {0,1:in wind and water}, {2,3,4:without fire},",
     "words": [
       {
         "roman": "paun",
-        "gloss": "wind; here the setting in which fire is kindled"
+        "gloss": "wind; paired with water as the setting for the paradoxical kindling of fire"
       },
       {
         "roman": "pānī",
@@ -315,11 +315,11 @@ window.SONG_LINES = {
   "l05": {
     "source": "अलख लखावै, जोग जगावै।",
     "roman": "alakh lakhāvai jog jagāvai",
-    "english": "{1:One who reveals} {0:the imperceptible} and {3:awakens} {2:yogic discipline}—",
+    "english": "{1:Whoever reveals} {0:the unseen} and {3:awakens} {2:the practice of yoga}—",
     "words": [
       {
         "roman": "alakh",
-        "gloss": "the imperceptible divine"
+        "gloss": "the unseen divine; what cannot ordinarily be perceived"
       },
       {
         "roman": "lakhāvai",
@@ -365,7 +365,7 @@ window.SONG_LINES = {
   "l06": {
     "source": "तो सो नाथ कहावै।",
     "roman": "to so nāth kahāvai",
-    "english": "{0:then} {1:that one} {3:is called} {2:a master}.",
+    "english": "{1:that one} {3:is} {0:then} {3:called} {2:a master}.",
     "words": [
       {
         "roman": "to",
@@ -415,7 +415,7 @@ window.SONG_LINES = {
   "l07": {
     "source": "कूप बिशांती कहाँ दिसंती डोमिन आगे आवै",
     "roman": "kūp biśāṃtī kahāṃ disaṃtī ḍomin āge āvai",
-    "english": "{1:Entering} {0:the well}, {2:where} {3:is she seen}? {4:A woman of the Ḍom community} {6:comes} {5:forward}.",
+    "english": "{1:Entering} {0:the well}, {2:where} {3:does she appear}? {4:The Ḍom woman} {6:comes} {5:forth}.",
     "words": [
       {
         "roman": "kūp",
@@ -423,7 +423,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "biśāṃtī",
-        "gloss": "entering"
+        "gloss": "entering; the precise syntax of this compressed phrase is uncertain"
       },
       {
         "roman": "kahāṃ",
@@ -435,7 +435,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "ḍomin",
-        "gloss": "a woman of the Ḍom community"
+        "gloss": "a woman of the Ḍom community; here probably a figure for kuṇḍalinī, the coiled inner power of yogic practice, later pictured as an awakening she-serpent"
       },
       {
         "roman": "āge",
@@ -495,11 +495,11 @@ window.SONG_LINES = {
   "l08": {
     "source": "कूपै शोधे ताही प्रबोधे तो अमृत रस प्यावै।",
     "roman": "kūpai śodhe tāhī prabodhe to amṛt ras pyāvai",
-    "english": "One {1:searches} {0:in the well} and {3:awakens} {2:her}— {4:then} one {7:offers} {5,6:the nectar of immortality} {7:to drink}.",
+    "english": "One {1:searches} {0:the well} and {3:awakens} {2:her}, {4:then} {7:offers} {5,6:the nectar of immortality} {7:to drink}.",
     "words": [
       {
         "roman": "kūpai",
-        "gloss": "in the well"
+        "gloss": "in the well; with searches, searches the well"
       },
       {
         "roman": "śodhe",
@@ -585,11 +585,11 @@ window.SONG_LINES = {
   "l09": {
     "source": "कूपै शोधे ताही प्रबोधे तो अमृत रस पावै।",
     "roman": "kūpai śodhe tāhī prabodhe to amṛt ras pāvai",
-    "english": "One {1:searches} {0:in the well} and {3:awakens} {2:her}— {4:then} one {7:obtains} {5,6:the nectar of immortality}.",
+    "english": "One {1:searches} {0:the well} and {3:awakens} {2:her}, {4:then} {7:receives} {5,6:the nectar of immortality}.",
     "words": [
       {
         "roman": "kūpai",
-        "gloss": "in the well"
+        "gloss": "in the well; with searches, searches the well"
       },
       {
         "roman": "śodhe",
@@ -617,7 +617,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "pāvai",
-        "gloss": "obtains"
+        "gloss": "receives or obtains; unlike pyāvai in the preceding line, gives to drink"
       }
     ],
     "sourceWords": [
@@ -675,7 +675,7 @@ window.SONG_LINES = {
   "l10": {
     "source": "गहन कोठरी बज्र किवाड़ा तामें लागा ताला",
     "roman": "gahan koṭhrī bajr kivāṛā tāmeṃ lāgā tālā",
-    "english": "{0:A deep} {1:chamber}, {2:an adamant} {3:door}— {4:on it} {6:a lock} {5:is fastened}.",
+    "english": "{0:A deep} {1:chamber}, {2:a diamond-hard} {3:door}, {6:a lock} {5:fastened} {4:upon it}.",
     "words": [
       {
         "roman": "gahan",
@@ -683,11 +683,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "koṭhrī",
-        "gloss": "chamber"
+        "gloss": "chamber; the locked inner chamber entered through the breath practice described below"
       },
       {
         "roman": "bajr",
-        "gloss": "adamant; diamond-hard"
+        "gloss": "hard as diamond; adamantine"
       },
       {
         "roman": "kivāṛā",
@@ -755,7 +755,7 @@ window.SONG_LINES = {
   "l11": {
     "source": "ताला खोलि के भीतर बैठे सो तो है गुरु आला",
     "roman": "tālā kholi ke bhītar baiṭhe so to hai guru ālā",
-    "english": "{0,1,2:Having opened the lock}, one {4:sits} {3:inside}. {5:That one} {6:indeed} {7:is} {9:an exalted} {8:teacher}.",
+    "english": "{0,1,2:Whoever opens the lock} and {4:sits} {3:within}—{5:that one} {7:is} {6:truly} {9:an exalted} {8:teacher}.",
     "words": [
       {
         "roman": "tālā",
@@ -865,7 +865,7 @@ window.SONG_LINES = {
   "l12": {
     "source": "भीतर बड़ा उजाला भासे, एक मणिधर आगे",
     "roman": "bhītar baṛā ujālā bhāse ek maṇidhar āge",
-    "english": "{0:Inside}, {1:great} {2:light} {3:shines}. {4:A single} {5:jewel-bearing serpent} {6:stands before one}.",
+    "english": "{0:Within}, {1:a great} {2:light} {3:shines}; {6:ahead} lies {4:a single} {5:jewel-bearing serpent}.",
     "words": [
       {
         "roman": "bhītar",
@@ -889,7 +889,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "maṇidhar",
-        "gloss": "jewel-bearing serpent"
+        "gloss": "jewel-bearing serpent; the luminous serpent within, followed by the awakening she-serpent"
       },
       {
         "roman": "āge",
@@ -945,7 +945,7 @@ window.SONG_LINES = {
   "l13": {
     "source": "देखि उजाला भीतर पैठे जब तो सर्पिणि जागे",
     "roman": "dekhi ujālā bhītar paiṭhe jab to sarpiṇi jāge",
-    "english": "{0:Seeing} {1:the light}, one {3:enters} {2:within}. {4:When} {5:indeed} {6:the she-serpent} {7:awakens},",
+    "english": "{0:Seeing} {1:the light}, one {3:enters} {2:within}. {4,5:When} {6:the she-serpent} {7:awakens},",
     "words": [
       {
         "roman": "dekhi",
@@ -969,11 +969,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "to",
-        "gloss": "indeed, emphasis"
+        "gloss": "emphasis accompanying when"
       },
       {
         "roman": "sarpiṇi",
-        "gloss": "she-serpent; her awakening here suggests inner yogic power"
+        "gloss": "female serpent; her awakening evokes kuṇḍalinī, the coiled inner power of yogic practice"
       },
       {
         "roman": "jāge",
@@ -1035,7 +1035,7 @@ window.SONG_LINES = {
   "l14": {
     "source": "कही न जावै कही न आवै पुनि अमृत रस पावै",
     "roman": "kahī na jāvai kahī na āvai puni amṛt ras pāvai",
-    "english": "one {1,2:does not go} {0:anywhere}, {4,5:does not come} {3:anywhere}. {6:Then} one {9:obtains} {7,8:the nectar of immortality}.",
+    "english": "one {1,2:neither goes} {4,5:nor comes} {0,3:anywhere}. {6:Then} one {9:receives} {7,8:the nectar of immortality}.",
     "words": [
       {
         "roman": "kahī",
@@ -1145,7 +1145,7 @@ window.SONG_LINES = {
   "l15": {
     "source": "ना सो खट्टा, ना सो मीठा, जो चाखै सो जाणै",
     "roman": "nā so khaṭṭā nā so mīṭhā jo cākhai so jāṇai",
-    "english": "{1:It} is {0:not} {2:sour}; {4:it} is {3:not} {5:sweet}. {6:Whoever} {7:tastes it}—{8:that person} {9:knows}.",
+    "english": "{1:It} is {0:not} {2:sour}; {4:it} is {3:not} {5:sweet}. {6,8:Whoever} {7:tastes it} {9:knows}.",
     "words": [
       {
         "roman": "nā",
@@ -1177,7 +1177,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "cākhai",
-        "gloss": "tastes"
+        "gloss": "tastes; direct experience of the nectar, whose taste is neither sour nor sweet"
       },
       {
         "roman": "so",
@@ -1255,7 +1255,7 @@ window.SONG_LINES = {
   "l16": {
     "source": "ना कही जावे ना कही आवै सो अंतर ही पावै",
     "roman": "nā kahī jāve nā kahī āvai so antar hī pāvai",
-    "english": "One {0,2:does not go} {1:anywhere}, {3,5:does not come} {4:anywhere}. {6:That person} {9:finds it} {8:only} {7:within}.",
+    "english": "One {0,2:neither goes} {3,5:nor comes} {1,4:anywhere}; {6:one} {9:finds it} {8:only} {7:within}.",
     "words": [
       {
         "roman": "nā",
@@ -1365,7 +1365,7 @@ window.SONG_LINES = {
   "l17": {
     "source": "बाहर दृष्टि न जावै अवधू अंतर ही सब पावै",
     "roman": "bāhar dṛṣṭi na jāvai avadhū antar hī sab pāvai",
-    "english": "{1:The gaze} {2,3:does not go} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {6:only} {5:within}.",
+    "english": "{1:The gaze} {2,3:does not turn} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {6:only} {5:within}.",
     "words": [
       {
         "roman": "bāhar",
@@ -1465,7 +1465,7 @@ window.SONG_LINES = {
   "l18": {
     "source": "गुरु ज्ञानी गुरु ध्यानी पावै अंतर ज्योत बतावै",
     "roman": "guru jñānī guru dhyānī pāvai antar jyot batāvai",
-    "english": "{0,1:The knowing teacher}, {2,3:the meditating teacher}, {4:finds it} and {7:shows} {5,6:the inner light}.",
+    "english": "{0,1:The teacher who knows}, {2,3:the teacher who meditates}, {4:attains it} and {7:reveals} {5,6:the inner light}.",
     "words": [
       {
         "roman": "guru",
@@ -1473,7 +1473,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "jñānī",
-        "gloss": "knowing; possessing knowledge"
+        "gloss": "one who knows; possessing spiritual knowledge"
       },
       {
         "roman": "guru",
@@ -1497,7 +1497,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "batāvai",
-        "gloss": "shows"
+        "gloss": "shows or reveals"
       }
     ],
     "sourceWords": [
@@ -1555,7 +1555,7 @@ window.SONG_LINES = {
   "l19": {
     "source": "ज्योति जगावै अंतर पावै कहाँ न आवै जावै",
     "roman": "jyoti jagāvai antar pāvai kahāṃ na āvai jāvai",
-    "english": "One {1:kindles} {0:the light}, {3:finds it} {2:within}. One {5,6,7:neither comes nor goes} {4:anywhere}.",
+    "english": "One {1:kindles} {0:the light} and {3:finds it} {2:within}, {5,6,7:neither coming nor going} {4:anywhere}.",
     "words": [
       {
         "roman": "jyoti",
@@ -1645,7 +1645,7 @@ window.SONG_LINES = {
   "l20": {
     "source": "श्वास का ताला, श्वास की चाबी, जो जागै सो खोलै",
     "roman": "śvās kā tālā śvās kī cābī jo jāgai so kholai",
-    "english": "{0,1,2:The lock of breath}, {3,4,5:the key of breath}. {6:Whoever} {7:awakens}—{8:that person} {9:opens it}.",
+    "english": "{0,1:Breath is} {2:the lock}; {3,4:breath is} {5:the key}. {6,8:Whoever} {7:awakens} {9:opens it}.",
     "words": [
       {
         "roman": "śvās",
@@ -1755,7 +1755,7 @@ window.SONG_LINES = {
   "l21": {
     "source": "भीतर बैठि के सब कुछ देखै ना बोलै ना डोलै",
     "roman": "bhītar baiṭhi ke sab kuch dekhai nā bolai nā ḍolai",
-    "english": "{1,2:Sitting} {0:inside}, one {5:sees} {3,4:everything}. One {6,7:does not speak}, {8,9:does not stir}.",
+    "english": "{1,2:Sitting} {0:within}, one {5:sees} {3,4:everything}, {6,7:neither speaking} {8,9:nor stirring}.",
     "words": [
       {
         "roman": "bhītar",
@@ -1869,7 +1869,7 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "śaśā",
-        "gloss": "hare"
+        "gloss": "hare; the small animal beneath the roaring lion in this deliberately strange image"
       },
       {
         "roman": "ūpar",
@@ -1925,7 +1925,7 @@ window.SONG_LINES = {
   "l23": {
     "source": "देखि के नाथ का नाद बाजो",
     "roman": "dekhi ke nāth kā nād bājo",
-    "english": "{0,1:At the sight}, {2,3:the master’s} {4:sound} {5:rang out}.",
+    "english": "{2:The master} {0,1:saw this}, and {3:his} {4:sound} {5:rang out}.",
     "words": [
       {
         "roman": "dekhi",
@@ -1945,7 +1945,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nād",
-        "gloss": "resonant sound; here the master’s sound that makes the lion flee"
+        "gloss": "resonant sound; the master’s sound fills every direction in the next line"
       },
       {
         "roman": "bājo",
@@ -1995,7 +1995,7 @@ window.SONG_LINES = {
   "l24": {
     "source": "नाद का शब्द चहुँ ओर राजो",
     "roman": "nād kā śabd cahuṃ or rājo",
-    "english": "{0,1,2:The sound’s voice} {5:held sway} {3,4:in every direction}.",
+    "english": "{0,1,2:Its resonance} {5:reigned} {3,4:in every direction}.",
     "words": [
       {
         "roman": "nād",
@@ -2007,7 +2007,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "śabd",
-        "gloss": "voice or sound"
+        "gloss": "sound or resonance; the ringing of the master’s nād"
       },
       {
         "roman": "cahuṃ",
@@ -2019,7 +2019,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "rājo",
-        "gloss": "reigned; held sway"
+        "gloss": "reigned; ruled or prevailed"
       }
     ],
     "sourceWords": [
@@ -2065,11 +2065,11 @@ window.SONG_LINES = {
   "l25": {
     "source": "देखि के सिंह तुरन्त भाजो",
     "roman": "dekhi ke siṃh turant bhājo",
-    "english": "{0,1:At the sight}, {2:the lion} {4:fled} {3:at once}.",
+    "english": "{0,1:Seeing this}, {2:the lion} {4:fled} {3:at once}.",
     "words": [
       {
         "roman": "dekhi",
-        "gloss": "seeing"
+        "gloss": "seeing; the visual verb is retained even as the scene describes resounding sound"
       },
       {
         "roman": "ke",

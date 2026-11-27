@@ -4185,11 +4185,11 @@
       }
     },
     "saasa-haale": {
-      "status": "screened",
-      "readerSha256": "3d5bc9af53c9b9d7d1d34ab8085a785a3120789091541c9131a197f18a88ba55",
+      "status": "needs_source_review",
+      "readerSha256": "2684c3b63ca27f2af5f6ebf6e0240c636ea129f0f0b97d4d29303440a19248fe",
       "definitionCount": 25,
       "screenedAt": "2026-11-25",
-      "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
+      "reviewScope": "Single-agent source/word-map reading followed by a separate English-only and fidelity self-review; no new audio transcription or independent reviewer claimed. All 25 definitions reread; exact open question retained.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "e913889be25d5aa202c4ef2997c21448de7445032d23c31d770fbdb697da678c",
@@ -4197,7 +4197,14 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
         "resolutionDisposition": "finished_unchanged"
-      }
+      },
+      "reviewedAt": "2026-11-26",
+      "openDefinitions": [
+        "l07"
+      ],
+      "openReason": "The literal entering/appearing wording and Ḍom woman are established in the label text, but no exact commentary on this verse was located. The first clause’s syntax and the woman’s precise symbolic identity remain uncertain. Retain the image and label the probable inner-power interpretation in the popup. Do not mark this passage finished.",
+      "resolutionRecord": "data/translation-review-2026-11-25.json",
+      "resolutionDisposition": "supported_repairs_applied_exact_source_question_open"
     },
     "ahe-nila-saila": {
       "status": "screened",

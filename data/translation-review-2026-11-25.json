@@ -33426,5 +33426,383 @@
     "servedFilesMatched": 779,
     "scope": "386 reader data files, 386 song entrypoints, library entrypoint and six shared runtime/catalogue/search/service-worker resources",
     "receipt": ".transcription/english-repair-20261125/live-verification.json"
-  }
+  },
+  "songFollowUps": [
+    {
+      "date": "2026-11-26",
+      "slug": "saasa-haale",
+      "readerSha256": "2684c3b63ca27f2af5f6ebf6e0240c636ea129f0f0b97d4d29303440a19248fe",
+      "definitionCount": 25,
+      "lineIdsRead": [
+        "l01",
+        "l02",
+        "l03",
+        "l04",
+        "l05",
+        "l06",
+        "l07",
+        "l08",
+        "l09",
+        "l10",
+        "l11",
+        "l12",
+        "l13",
+        "l14",
+        "l15",
+        "l16",
+        "l17",
+        "l18",
+        "l19",
+        "l20",
+        "l21",
+        "l22",
+        "l23",
+        "l24",
+        "l25"
+      ],
+      "changedDefinitions": 24,
+      "reviewMethod": "Single-agent source/word-map reading followed by a separate English-only and fidelity self-review; no new audio transcription or independent reviewer claimed.",
+      "disposition": "Revise the entire song’s English and contextual popups while preserving performed source, IAST, metadata, tags, sequence, timestamps, audio and original semantic assessment. See cumulative before/after lines and exact lineEvidence in translation-repair-reviews.json.",
+      "changes": [
+        {
+          "lineId": "l01",
+          "reason": "Complete the elliptical cord-in-hand clause in natural English; retain breath, swan and cord. Explain swan/breath resonance without replacing the bird by an abstraction.",
+          "before": "{0:The breath} {1:stirs}; {2:the swan} {3:moves}. {4:Such a} {5:cord} {6:in the hand}.",
+          "after": "{0:The breath} {1:stirs}, {2:the swan} {3:moves}—{4:such is} {5:the cord} {6:held in the hand}.",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "swan; paired here with the moving breath",
+              "after": "swan; here linked to the breath. In Nāth poetry, the swan can also evoke the living self and its breathing"
+            },
+            {
+              "index": 5,
+              "before": "cord or string",
+              "after": "cord or string; breath and swan are pictured together as a cord held in the hand"
+            }
+          ]
+        },
+        {
+          "lineId": "l02",
+          "reason": "Render the paired objects in flowing English and retain the master’s knowledge and emphatic to; no invented anatomy for the well.",
+          "before": "{0,1:The well’s depth}, {2,3:the growing fragrance}— {7:the master} {5:indeed} {6:knows} {4:that}.",
+          "after": "{0,1:The well’s depths}, {2,3:the growing fragrance}—{4:these} {7:the master} {5:truly} {6:knows}.",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "well; an inward yogic image associated with nectar",
+              "after": "well; the later search for nectar makes this an image of the inward practice"
+            }
+          ]
+        },
+        {
+          "lineId": "l03",
+          "reason": "Put the relative subject first, retaining both occurrences of fire and the paradox; preserve the existing contextual wind/water reading.",
+          "before": "{0,1:In wind and water}, {2,3,4:without fire}— {6:one who kindles} {5:fire}",
+          "after": "{6:Whoever kindles} {5:fire} {0,1:in wind and water}, {2,3,4:without fire},",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "wind; here the setting in which fire is kindled",
+              "after": "wind; paired with water as the setting for the paradoxical kindling of fire"
+            }
+          ]
+        },
+        {
+          "lineId": "l05",
+          "reason": "Render alakh as the unseen, with divine referent in the gloss; make jog intelligible as the practice of yoga.",
+          "before": "{1:One who reveals} {0:the imperceptible} and {3:awakens} {2:yogic discipline}—",
+          "after": "{1:Whoever reveals} {0:the unseen} and {3:awakens} {2:the practice of yoga}—",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "the imperceptible divine",
+              "after": "the unseen divine; what cannot ordinarily be perceived"
+            }
+          ]
+        },
+        {
+          "lineId": "l06",
+          "reason": "Keep the relative-correlative relation and then without the earlier fronted calque.",
+          "before": "{0:then} {1:that one} {3:is called} {2:a master}.",
+          "after": "{1:that one} {3:is} {0:then} {3:called} {2:a master}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l07",
+          "reason": "Preserve the female figure and entering/appearing wording. Explain ḍomin literally and distinguish the probable inner-power interpretation from an established gloss. Exact first-clause syntax remains open; no silent source emendation.",
+          "before": "{1:Entering} {0:the well}, {2:where} {3:is she seen}? {4:A woman of the Ḍom community} {6:comes} {5:forward}.",
+          "after": "{1:Entering} {0:the well}, {2:where} {3:does she appear}? {4:The Ḍom woman} {6:comes} {5:forth}.",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "entering",
+              "after": "entering; the precise syntax of this compressed phrase is uncertain"
+            },
+            {
+              "index": 4,
+              "before": "a woman of the Ḍom community",
+              "after": "a woman of the Ḍom community; here probably a figure for kuṇḍalinī, the coiled inner power of yogic practice, later pictured as an awakening she-serpent"
+            }
+          ]
+        },
+        {
+          "lineId": "l08",
+          "reason": "Use transitive English searches the well for kūpai śodhe; keep pyāvai gives to drink distinct from pāvai in the next line. Retain the existing indefinite agent rather than invent a new speaker.",
+          "before": "One {1:searches} {0:in the well} and {3:awakens} {2:her}— {4:then} one {7:offers} {5,6:the nectar of immortality} {7:to drink}.",
+          "after": "One {1:searches} {0:the well} and {3:awakens} {2:her}, {4:then} {7:offers} {5,6:the nectar of immortality} {7:to drink}.",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "in the well",
+              "after": "in the well; with searches, searches the well"
+            }
+          ]
+        },
+        {
+          "lineId": "l09",
+          "reason": "Keep the parallel syntax and the distinct noncausative receives, pāvai.",
+          "before": "One {1:searches} {0:in the well} and {3:awakens} {2:her}— {4:then} one {7:obtains} {5,6:the nectar of immortality}.",
+          "after": "One {1:searches} {0:the well} and {3:awakens} {2:her}, {4:then} {7:receives} {5,6:the nectar of immortality}.",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "in the well",
+              "after": "in the well; with searches, searches the well"
+            },
+            {
+              "index": 7,
+              "before": "obtains",
+              "after": "receives or obtains; unlike pyāvai in the preceding line, gives to drink"
+            }
+          ]
+        },
+        {
+          "lineId": "l10",
+          "reason": "Unpack bajr as diamond-hard instead of opaque adamant; preserve chamber, door and fastened lock.",
+          "before": "{0:A deep} {1:chamber}, {2:an adamant} {3:door}— {4:on it} {6:a lock} {5:is fastened}.",
+          "after": "{0:A deep} {1:chamber}, {2:a diamond-hard} {3:door}, {6:a lock} {5:fastened} {4:upon it}.",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "chamber",
+              "after": "chamber; the locked inner chamber entered through the breath practice described below"
+            },
+            {
+              "index": 2,
+              "before": "adamant; diamond-hard",
+              "after": "hard as diamond; adamantine"
+            }
+          ]
+        },
+        {
+          "lineId": "l11",
+          "reason": "Express the person characterized by opening and sitting inside as a natural relative construction; preserve exalted teacher.",
+          "before": "{0,1,2:Having opened the lock}, one {4:sits} {3:inside}. {5:That one} {6:indeed} {7:is} {9:an exalted} {8:teacher}.",
+          "after": "{0,1,2:Whoever opens the lock} and {4:sits} {3:within}—{5:that one} {7:is} {6:truly} {9:an exalted} {8:teacher}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l12",
+          "reason": "Preserve light, one serpent, jewel and its position ahead. English lies ahead expresses location, not an added action or supernatural identification.",
+          "before": "{0:Inside}, {1:great} {2:light} {3:shines}. {4:A single} {5:jewel-bearing serpent} {6:stands before one}.",
+          "after": "{0:Within}, {1:a great} {2:light} {3:shines}; {6:ahead} lies {4:a single} {5:jewel-bearing serpent}.",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "jewel-bearing serpent",
+              "after": "jewel-bearing serpent; the luminous serpent within, followed by the awakening she-serpent"
+            }
+          ]
+        },
+        {
+          "lineId": "l13",
+          "reason": "Preserve seeing, entering and the temporal awakening clause. Translate emphatic jab to together as when without stiff filler. The female-serpent/kuṇḍalinī parallel is independently attested in Gorakh Bānī; no imposed cakra location.",
+          "before": "{0:Seeing} {1:the light}, one {3:enters} {2:within}. {4:When} {5:indeed} {6:the she-serpent} {7:awakens},",
+          "after": "{0:Seeing} {1:the light}, one {3:enters} {2:within}. {4,5:When} {6:the she-serpent} {7:awakens},",
+          "glossChanges": [
+            {
+              "index": 5,
+              "before": "indeed, emphasis",
+              "after": "emphasis accompanying when"
+            },
+            {
+              "index": 6,
+              "before": "she-serpent; her awakening here suggests inner yogic power",
+              "after": "female serpent; her awakening evokes kuṇḍalinī, the coiled inner power of yogic practice"
+            }
+          ]
+        },
+        {
+          "lineId": "l14",
+          "reason": "Use neither/nor for repeated negative coming and going; preserve anywhere and subsequent receipt of nectar.",
+          "before": "one {1,2:does not go} {0:anywhere}, {4,5:does not come} {3:anywhere}. {6:Then} one {9:obtains} {7,8:the nectar of immortality}.",
+          "after": "one {1,2:neither goes} {4,5:nor comes} {0,3:anywhere}. {6:Then} one {9:receives} {7,8:the nectar of immortality}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l15",
+          "reason": "Preserve both negative tastes and the whoever/knows relation without the redundant that person; explain tasting as direct experience.",
+          "before": "{1:It} is {0:not} {2:sour}; {4:it} is {3:not} {5:sweet}. {6:Whoever} {7:tastes it}—{8:that person} {9:knows}.",
+          "after": "{1:It} is {0:not} {2:sour}; {4:it} is {3:not} {5:sweet}. {6,8:Whoever} {7:tastes it} {9:knows}.",
+          "glossChanges": [
+            {
+              "index": 7,
+              "before": "tastes",
+              "after": "tastes; direct experience of the nectar, whose taste is neither sour nor sweet"
+            }
+          ]
+        },
+        {
+          "lineId": "l16",
+          "reason": "Preserve negative motion and exclusive inward attainment in fluent coordinated English.",
+          "before": "One {0,2:does not go} {1:anywhere}, {3,5:does not come} {4:anywhere}. {6:That person} {9:finds it} {8:only} {7:within}.",
+          "after": "One {0,2:neither goes} {3,5:nor comes} {1,4:anywhere}; {6:one} {9:finds it} {8:only} {7:within}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l17",
+          "reason": "Use turn outward for the gaze while preserving descriptive negation, address and everything found only within.",
+          "before": "{1:The gaze} {2,3:does not go} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {6:only} {5:within}.",
+          "after": "{1:The gaze} {2,3:does not turn} {0:outward}. {4:O renunciant}, one {8:finds} {7:everything} {6:only} {5:within}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l18",
+          "reason": "2026-11-26 whole-song follow-up: Render the jñānī/dhyānī adjectives in parallel relative clauses, the teacher who knows / the teacher who meditates, preserving the repeated guru and the knowledge/meditation distinction without stiff English labels. Keep attainment and revealing the inner light.",
+          "before": "{0,1:The knowing teacher}, {2,3:the meditating teacher}, {4:finds it} and {7:shows} {5,6:the inner light}.",
+          "after": "{0,1:The teacher who knows}, {2,3:the teacher who meditates}, {4:attains it} and {7:reveals} {5,6:the inner light}.",
+          "glossChanges": [
+            {
+              "index": 1,
+              "before": "knowing; possessing knowledge",
+              "after": "one who knows; possessing spiritual knowledge"
+            },
+            {
+              "index": 7,
+              "before": "shows",
+              "after": "shows or reveals"
+            }
+          ]
+        },
+        {
+          "lineId": "l19",
+          "reason": "Connect kindling, inward finding and stillness without repeated indefinite subjects; preserve all actions.",
+          "before": "One {1:kindles} {0:the light}, {3:finds it} {2:within}. One {5,6,7:neither comes nor goes} {4:anywhere}.",
+          "after": "One {1:kindles} {0:the light} and {3:finds it} {2:within}, {5,6,7:neither coming nor going} {4:anywhere}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l20",
+          "reason": "Express the breath/lock and breath/key equations idiomatically while preserving the awakening person who opens it.",
+          "before": "{0,1,2:The lock of breath}, {3,4,5:the key of breath}. {6:Whoever} {7:awakens}—{8:that person} {9:opens it}.",
+          "after": "{0,1:Breath is} {2:the lock}; {3,4:breath is} {5:the key}. {6,8:Whoever} {7:awakens} {9:opens it}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l21",
+          "reason": "Connect inward sitting, all-seeing, speechlessness and stillness in one natural sentence.",
+          "before": "{1,2:Sitting} {0:inside}, one {5:sees} {3,4:everything}. One {6,7:does not speak}, {8,9:does not stir}.",
+          "after": "{1,2:Sitting} {0:within}, one {5:sees} {3,4:everything}, {6,7:neither speaking} {8,9:nor stirring}.",
+          "glossChanges": []
+        },
+        {
+          "lineId": "l22",
+          "reason": "Keep the lion-on-hare image exactly in English; the popup identifies the animal without inventing ego/self correspondences.",
+          "before": "{2:Sitting} {1:upon} {0:the hare}, {3:the lion} {4:roared}.",
+          "after": "{2:Sitting} {1:upon} {0:the hare}, {3:the lion} {4:roared}.",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "hare",
+              "after": "hare; the small animal beneath the roaring lion in this deliberately strange image"
+            }
+          ]
+        },
+        {
+          "lineId": "l23",
+          "reason": "Render dekhi ke as an active seeing clause, then let the sound ring out as in the source. The master is the contextual understood observer; avoid a dangling Seeing this that would make the sound itself see. Do not substitute hearing or an unattested horn.",
+          "before": "{0,1:At the sight}, {2,3:the master’s} {4:sound} {5:rang out}.",
+          "after": "{2:The master} {0,1:saw this}, and {3:his} {4:sound} {5:rang out}.",
+          "glossChanges": [
+            {
+              "index": 4,
+              "before": "resonant sound; here the master’s sound that makes the lion flee",
+              "after": "resonant sound; the master’s sound fills every direction in the next line"
+            }
+          ]
+        },
+        {
+          "lineId": "l24",
+          "reason": "Render nād kā śabd as its resonance to avoid sound’s voice; use the precise rājo reigned and preserve every direction.",
+          "before": "{0,1,2:The sound’s voice} {5:held sway} {3,4:in every direction}.",
+          "after": "{0,1,2:Its resonance} {5:reigned} {3,4:in every direction}.",
+          "glossChanges": [
+            {
+              "index": 2,
+              "before": "voice or sound",
+              "after": "sound or resonance; the ringing of the master’s nād"
+            },
+            {
+              "index": 5,
+              "before": "reigned; held sway",
+              "after": "reigned; ruled or prevailed"
+            }
+          ]
+        },
+        {
+          "lineId": "l25",
+          "reason": "Use Seeing this, the lion fled at once; preserve the visual verb rather than substitute hearing to rationalize the imagery.",
+          "before": "{0,1:At the sight}, {2:the lion} {4:fled} {3:at once}.",
+          "after": "{0,1:Seeing this}, {2:the lion} {4:fled} {3:at once}.",
+          "glossChanges": [
+            {
+              "index": 0,
+              "before": "seeing",
+              "after": "seeing; the visual verb is retained even as the scene describes resounding sound"
+            }
+          ]
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "source": "Times Music official release description for the recorded song",
+          "url": "https://www.youtube.com/watch?v=n2eztbm_vwg",
+          "use": "Performed-text witness; preserves well, Ḍom woman, female serpent, lion/hare, repeated visual dekhi ke and rājo. The existing recording-bound pyāvai/pāvai distinction is retained."
+        },
+        {
+          "source": "Gordan Djurdjevic and Shukdev Singh, Sayings of Gorakhnāth: Annotated Translation of the Gorakh Bānī (Oxford, 2019), p. 159, String of Breaths 7 and note; p. 193, Ornament of Wisdom 21 and note",
+          "url": "https://www.hathajoga.lt/sayings-of-gorakhnath-gordon-djurdjevic.pdf",
+          "use": "Attested female-serpent/kuṇḍalinī and haṃs/breath parallels; inspected the PDF pages. These are related passages, not a commentary establishing the exact meaning of this song’s Ḍom line. A different nearby snake denotes māyā, so no global serpent substitution is justified."
+        },
+        {
+          "source": "Himachal Pradesh University, M.A. Hindi Semester I, Course 2, p. 19, Siddha literature discussion",
+          "url": "https://www.hpuniv.ac.in/hpuniv/upload/uploadfiles/files/M_A_%20Hindi%20Ist%20Se_%20Course-2.pdf",
+          "use": "Related Kāṇhapā/Ḍominī/kuṇḍalinī interpretive parallel only; supports the explicitly probable popup interpretation, not certainty about the exact Gorakh verse."
+        }
+      ],
+      "openQuestions": [
+        {
+          "slug": "saasa-haale",
+          "lineId": "l07",
+          "reason": "The literal entering/appearing wording and Ḍom woman are established in the label text, but no exact commentary on this verse was located. The first clause’s syntax and the woman’s precise symbolic identity remain uncertain. Retain the image and label the probable inner-power interpretation in the popup. Do not mark this passage finished.",
+          "evidence": "कूप बिशांती कहाँ दिसंती डोमिन आगे आवै",
+          "currentReading": "Entering the well, where does she appear? The Ḍom woman comes forth."
+        }
+      ],
+      "releaseState": "validated_pending_publication",
+      "baselineCommit": "8a4c225de61f7bd92f2d885ed906ee0f2a8fee98",
+      "validation": {
+        "releaseChecks": 46,
+        "passed": 45,
+        "preExistingFailure": "audit_youtube_trims: the same six historical trim-record discrepancies; byte-identical audit output to the preceding release. No audio/timing changes.",
+        "finalWordingChecks": 8,
+        "finalWordingChecksPassed": 8,
+        "scopeVerification": "All source, IAST, word identities, metadata, tags, sequence, timestamps, media and original assessment records preserved; only this song’s English/glosses and associated review/release bindings change.",
+        "seekVerification": "30,640 ready/deferred DOM-click seeks across 386 readers match stored onsets; no fresh acoustic verification.",
+        "browser": "Existing owner waiver applies; no UI changes.",
+        "paidCalls": 0
+      }
+    }
+  ]
 }
