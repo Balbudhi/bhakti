@@ -169628,7 +169628,7 @@
     "auga-na-jauga": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Complete Kabīr-group source/word-map/English reading and final fidelity review on 2026-11-27. Contextual primary senses now agree with the English. Exact uncertain passages remain in the translation ledger; retained features were checked against the source witnesses below."
+        "reason": "Targeted source/grammar resolution of documented open definitions, with adjacent context and final English/gloss review. All original semantic feature witnesses reread; original assessments and prior reduction factors preserved. Unresolved source questions remain explicit."
       },
       "beforeLines": {
         "girah-maut-aake": {
@@ -170917,6 +170917,89 @@
             }
           ],
           "grammarNote": "A didactic doha comprising two definitional copular clauses followed by a relative-correlative structure: 'in donoṅ se čẖūṭnā jo [hai], muktī is ko jān' with imperative 'jān'."
+        },
+        "verse-dono-kasbi": {
+          "source": "ویکھو رے باوا دونوں ہیں کسبی",
+          "sourceLanguage": "",
+          "sourceWords": [
+            {
+              "text": "ویکھو",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "رے",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "باوا",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "دونوں",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ہیں",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "کسبی",
+              "wordIndices": [
+                5
+              ]
+            }
+          ],
+          "roman": "Vekho re bāwā donoṅ haiṅ kasbī",
+          "english": "{0:Look,}{1: O }{2:seeker,}{3: both}{4: are}{5: mere tradesmen!}",
+          "words": [
+            {
+              "roman": "Vekho",
+              "gloss": "look; behold (imperative plural)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "re",
+              "gloss": "O (vocative particle)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bāwā",
+              "gloss": "holy seeker; ascetic; elder",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "donoṅ",
+              "gloss": "both",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "haiṅ",
+              "gloss": "are (present plural copula)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kasbī",
+              "gloss": "professionals; mercenaries; tradesmen (performing devotion as a mere trade)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Subject 'donoṅ' linked to predicate noun/adjective 'kasbī' by plural copula 'haiṅ', introduced by vocative frame 'Vekho re bāwā'."
         }
       },
       "afterLines": {
@@ -172206,6 +172289,89 @@
             }
           ],
           "grammarNote": "A didactic doha comprising two definitional copular clauses followed by a relative-correlative structure: 'in donoṅ se čẖūṭnā jo [hai], muktī is ko jān' with imperative 'jān'."
+        },
+        "verse-dono-kasbi": {
+          "source": "ویکھو رے باوا دونوں ہیں کسبی",
+          "sourceLanguage": "",
+          "sourceWords": [
+            {
+              "text": "ویکھو",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "رے",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "باوا",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "دونوں",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ہیں",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "کسبی",
+              "wordIndices": [
+                5
+              ]
+            }
+          ],
+          "roman": "Vekho re bāwā donoṅ haiṅ kasbī",
+          "english": "{0:Look,}{1: O }{2:seeker,}{3: both}{4: are}{5: mere tradesmen!}",
+          "words": [
+            {
+              "roman": "Vekho",
+              "gloss": "look; behold (imperative plural)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "re",
+              "gloss": "O (vocative particle)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bāwā",
+              "gloss": "holy seeker; ascetic; elder",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "donoṅ",
+              "gloss": "both",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "haiṅ",
+              "gloss": "are (present plural copula)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kasbī",
+              "gloss": "people who ply a trade; here, those who make a trade of devotion",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Subject 'donoṅ' linked to predicate noun/adjective 'kasbī' by plural copula 'haiṅ', introduced by vocative frame 'Vekho re bāwā'."
         }
       },
       "lineEvidence": {
@@ -172217,7 +172383,8 @@
         "farsi-line": "2026-11-27: Make baqā intelligible in English while retaining its Sufi resonance in the popup; Rekhta gives permanence, continuance, immortality.",
         "verse-hum-na-kisi-ke": "2026-11-27: Remove unsupported gloss claim that ham itself means the unconditioned self; retain we/our in the complete line.",
         "girah-bedam": "2026-11-27: Preserve the defiant contrast: death comes to others; remove unsupported eternal from the primary life gloss.",
-        "girah-jiyana-kya-agyan": "2026-11-27: Keep the poem’s paradox of life and death; death to ego is an interpretation, not the literal meaning of marnā."
+        "girah-jiyana-kya-agyan": "2026-11-27: Keep the poem’s paradox of life and death; death to ego is an interpretation, not the literal meaning of marnā.",
+        "verse-dono-kasbi": " Targeted source resolution: Punjabi Arabi-Farsi Shabdshala (Boota Singh Brar/Jaj Singh), kasbi entry: professional, skilled worker, artisan. Read the mala/tasbih pair with the surrounding critique of ritual. Retain mere tradesmen; select its contextual popup, removing mercenaries as an interchangeable sense."
       },
       "featureDispositions": [
         {
@@ -172229,7 +172396,7 @@
             "verse-maala-tasbeeh",
             "verse-dono-kasbi"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: One person turns Hindu prayer beads, and another turns Muslim prayer beads, / Look, O seeker, both are mere tradesmen!"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: One person turns Hindu prayer beads, and another turns Muslim prayer beads, / Look, O seeker, both are mere tradesmen!"
         },
         {
           "facet": "themes",
@@ -172239,7 +172406,7 @@
           "sourceLineIds": [
             "verse-hum-na-kisi-ke"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: We belong to no one, nor does anyone belong to us."
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: We belong to no one, nor does anyone belong to us."
         },
         {
           "facet": "themes",
@@ -172249,7 +172416,7 @@
           "sourceLineIds": [
             "girah-jiyana-kya-agyan"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: Living is ignorance, dying is knowledge; know that release from both of these is liberation."
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Living is ignorance, dying is knowledge; know that release from both of these is liberation."
         }
       ]
     },
@@ -205477,7 +205644,7 @@
     "kaya-nahin-teri-nahin-teri": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Complete Kabīr-group source/word-map/English reading and final fidelity review on 2026-11-27. Contextual primary senses now agree with the English. Exact uncertain passages remain in the translation ledger; retained features were checked against the source witnesses below."
+        "reason": "Targeted source/grammar resolution of documented open definitions, with adjacent context and final English/gloss review. All original semantic feature witnesses reread; original assessments and prior reduction factors preserved. Unresolved source questions remain explicit."
       },
       "beforeLines": {
         "v3-line2": {
@@ -205659,6 +205826,78 @@
               "text": "परमानी",
               "wordIndices": [
                 3
+              ]
+            }
+          ]
+        },
+        "v2-line1": {
+          "source": "जैसा रंग तरंग मिलावे",
+          "sourceLanguage": "hi",
+          "roman": "Jaisā raṅg taraṅg milāve",
+          "english": "{0:As }{1:color }{3:dissolves }{2:into a wave,}",
+          "words": [
+            {
+              "roman": "Jaisā",
+              "gloss": "just as / like [comparative adverb/particle]"
+            },
+            {
+              "roman": "raṅg",
+              "gloss": "color / dye / visual form"
+            },
+            {
+              "roman": "taraṅg",
+              "gloss": "wave / ripple / water current"
+            },
+            {
+              "roman": "milāve",
+              "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
+            }
+          ],
+          "grammarNote": "Braj/Sant Bhasha verb form 'milāve' functioning as 3rd person singular present indicative. 'raṅg taraṅg' forms a rhyming alliterative compound/pair.",
+          "sourceWords": [
+            {
+              "text": "जैसा",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "रंग",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "तरंग",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "मिलावे",
+              "wordIndices": [
+                3
+              ]
+            }
+          ]
+        },
+        "v2-line2": {
+          "source": "मिलावे",
+          "sourceLanguage": "hi",
+          "roman": "Milāve",
+          "english": "{0:Dissolves...}",
+          "words": [
+            {
+              "roman": "Milāve",
+              "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
+            }
+          ],
+          "grammarNote": "Standalone verb token repeated for musical cadence.",
+          "sourceWords": [
+            {
+              "text": "मिलावे",
+              "wordIndices": [
+                0
               ]
             }
           ]
@@ -205847,12 +206086,86 @@
               ]
             }
           ]
+        },
+        "v2-line1": {
+          "source": "जैसा रंग तरंग मिलावे",
+          "sourceLanguage": "hi",
+          "roman": "Jaisā raṅg taraṅg milāve",
+          "english": "{0:As }{1:color }{3:is mixed }{2:into a wave,}",
+          "words": [
+            {
+              "roman": "Jaisā",
+              "gloss": "just as / like [comparative adverb/particle]"
+            },
+            {
+              "roman": "raṅg",
+              "gloss": "color; dye"
+            },
+            {
+              "roman": "taraṅg",
+              "gloss": "wave; ripple"
+            },
+            {
+              "roman": "milāve",
+              "gloss": "mixes; blends (transitive)"
+            }
+          ],
+          "grammarNote": "Milāve is a transitive form of milānā, to mix or bring together. Color is mixed into a wave; English uses a passive because the mixer is not named. The next line makes the image one of fleeting life.",
+          "sourceWords": [
+            {
+              "text": "जैसा",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "रंग",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "तरंग",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "मिलावे",
+              "wordIndices": [
+                3
+              ]
+            }
+          ]
+        },
+        "v2-line2": {
+          "source": "मिलावे",
+          "sourceLanguage": "hi",
+          "roman": "Milāve",
+          "english": "{0:Is mixed…}",
+          "words": [
+            {
+              "roman": "Milāve",
+              "gloss": "mixes; blends (transitive)"
+            }
+          ],
+          "grammarNote": "The transitive verb milāve repeats the preceding image; the English keeps the same passive construction.",
+          "sourceWords": [
+            {
+              "text": "मिलावे",
+              "wordIndices": [
+                0
+              ]
+            }
+          ]
         }
       },
       "lineEvidence": {
         "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image.",
         "v2-line3": "2026-11-27: Repair stiff This indeed while retaining the fleeting-life image and emphatic to.",
-        "v3-line1": "2026-11-27: Paramani asserts the truth/trustworthiness of the saying; proven added an unsupported evidential claim."
+        "v3-line1": "2026-11-27: Paramani asserts the truth/trustworthiness of the saying; proven added an unsupported evidential claim.",
+        "v2-line1": " Targeted source resolution: Milave is transitive mixing, not spontaneous dissolution. TransLiteral text, the Bhimsen-specific 2013 Hindi interpretation, and milana dictionary support color mixed into a wave. Keep the named color and wave, omitting no image.",
+        "v2-line2": " Targeted source resolution: The repeated milave retains the same mixing image and English construction as its preceding full line."
       },
       "featureDispositions": [
         {
@@ -205863,7 +206176,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: Do not cry, 'Mine, mine'"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Do not cry, 'Mine, mine'"
         },
         {
           "facet": "themes",
@@ -205874,7 +206187,7 @@
             "v4-line4",
             "v4-line5"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: Accept this teaching in your heart / The truth has been spoken and explained to you"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Accept this teaching in your heart / The truth has been spoken and explained to you"
         },
         {
           "facet": "themes",
@@ -205885,7 +206198,7 @@
             "refrain-1",
             "v2-line3"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: The body is not yours, not yours / It will surely fly away in the blink of an eye."
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: The body is not yours, not yours / It will surely fly away in the blink of an eye."
         }
       ]
     },
@@ -258137,7 +258450,7 @@
     "sunta-hai": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Complete Kabīr-group source/word-map/English reading and final fidelity review on 2026-11-27. Contextual primary senses now agree with the English. Exact uncertain passages remain in the translation ledger; retained features were checked against the source witnesses below."
+        "reason": "Targeted source/grammar resolution of documented open definitions, with adjacent context and final English/gloss review. All original semantic feature witnesses reread; original assessments and prior reduction factors preserved. Unresolved source questions remain explicit."
       },
       "beforeLines": {
         "din-bhar-re-jo": {
@@ -259168,7 +259481,7 @@
             }
           ],
           "roman": "Din bhar rē jō nazar bhar dēkhē",
-          "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content}",
+          "english": "{2:O, }{3:whoever }{6:gazes }{4,5:their fill }{0,1:all day long…}",
           "words": [
             {
               "roman": "Din",
@@ -259202,7 +259515,7 @@
             },
             {
               "roman": "bhar",
-              "gloss": "fully; completely",
+              "gloss": "to the full; nazar bhar: to one’s heart’s content",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259213,7 +259526,7 @@
               "preserve_in_english": false
             }
           ],
-          "grammarNote": "Relative clause marked by pronoun 'jō' with adverbial temporal phrase 'din bhar' and adverbial manner phrase 'nazar bhar' modifying 3rd person singular present/subjunctive verb 'dēkhē'."
+          "grammarNote": "Jō opens a relative clause, with din bhar, 'all day long', and nazar bhar, 'to the full', modifying dekhe. This pickup is repeated and completed in the following line."
         },
         "din-bhar-re-jo-ajar-amar": {
           "source": "दिन भर रे जो नज़र भर देखे अजर अमर वो निशानी हो जी वो निशानी हो जी",
@@ -259323,7 +259636,7 @@
             }
           ],
           "roman": "Din bhar rē jō nazar bhar dēkhē ajar amar vo niśānī ho jī vo niśānī ho jī",
-          "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:dear one, }{13:that }{14:sign, }{15:O }{16:dear one}",
+          "english": "{2:O, }{3:for whoever }{6:gazes }{4,5:their fill }{0,1:all day long—}{7:no aging, }{8:no dying: }{9:that is }{10:the sign, }{11:O }{12:dear one, }{13:that }{14:sign, }{15:O }{16:dear one.}",
           "words": [
             {
               "roman": "Din",
@@ -259357,7 +259670,7 @@
             },
             {
               "roman": "bhar",
-              "gloss": "fully; completely",
+              "gloss": "to the full; nazar bhar: to one’s heart’s content",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259369,13 +259682,13 @@
             },
             {
               "roman": "ajar",
-              "gloss": "unaging; undecaying",
+              "gloss": "unaging; free from aging or decay",
               "concept_key": "",
               "preserve_in_english": false
             },
             {
               "roman": "amar",
-              "gloss": "immortal; deathless",
+              "gloss": "deathless; free from dying",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259387,7 +259700,7 @@
             },
             {
               "roman": "niśānī",
-              "gloss": "sign; mark; token",
+              "gloss": "sign; mark of what is realized",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259411,7 +259724,7 @@
             },
             {
               "roman": "niśānī",
-              "gloss": "sign; mark; token",
+              "gloss": "sign; mark of what is realized",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259428,7 +259741,7 @@
               "preserve_in_english": false
             }
           ],
-          "grammarNote": "Correlative 'jō … vo': whoever looks with a full gaze, that sign is unaging and immortal. 'ajar amar' is the predicate of 'niśānī'. 'ho jī' is repeated as an honorific refrain."
+          "grammarNote": "The ending is elliptical: ajar amar names freedom from aging and death; vo niśānī points to this as the sign. The English preserves that ellipsis rather than assigning immortality to the sign itself."
         },
         "gagan-mein-aawaz": {
           "source": "गगन में आवाज़ हो रही झीनी झीनी झीनी झीनी झीनी झीनी झीनी",
@@ -259794,7 +260107,7 @@
             }
           ],
           "roman": "Sab ghaṭ pūran pūru rahyā hai alakh puruṣa nirbānī ho jī bānī ho jī",
-          "english": "{6:The imperceptible, }{8:silent }{7:Being }{5:is }{2:fully }{3,4:present }{0:in every }{1:vessel, }{9:O }{10:dear one, }{11:the word, }{12:O }{13:dear one.}",
+          "english": "{6:The imperceptible, }{8:wordless }{7:Being }{5:is }{2:fully }{3,4:present }{0:in every }{1:vessel, }{9:O }{10:dear one—}{11:wordless, }{12:O }{13:dear one.}",
           "words": [
             {
               "roman": "Sab",
@@ -259846,7 +260159,7 @@
             },
             {
               "roman": "nirbānī",
-              "gloss": "silent; liberated; beyond attribute",
+              "gloss": "wordless; beyond speech",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259864,7 +260177,7 @@
             },
             {
               "roman": "bānī",
-              "gloss": "speech; word; voice",
+              "gloss": "wordless: the sung ending of nirbānī repeated as a melodic echo",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -259881,7 +260194,7 @@
               "preserve_in_english": false
             }
           ],
-          "grammarNote": "Locative sense implied in uninflected noun 'sab ghaṭ' (Braj/Sant Bhasha syntax). 'pūru rahyā hai' is a compound stative verb phrase with masculine singular agreement with 'puruṣa'."
+          "grammarNote": "Locative sense is implied in sab ghaṭ, 'in every vessel'. Puruṣa is the subject of pūru rahyā hai. Nirbānī describes the Being as wordless; the later bānī repeats its final syllables."
         },
         "gagan-mein-aawaz-outro": {
           "source": "गगन में आवाज़ हो रही झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी",
@@ -260100,11 +260413,11 @@
         }
       },
       "lineEvidence": {
-        "din-bhar-re-jo": "Current whole-song reading: Improve natural English while preserving the source meaning and image.",
-        "din-bhar-re-jo-ajar-amar": "Current whole-song reading: Improve natural English while preserving the source meaning and image. 2026-11-27: Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
+        "din-bhar-re-jo": "Current whole-song reading: Improve natural English while preserving the source meaning and image. Targeted source resolution: Read pickup with full ending; nazar bhar is a full gaze. Preserve the relative clause and musical repetition.",
+        "din-bhar-re-jo-ajar-amar": "Current whole-song reading: Improve natural English while preserving the source meaning and image. 2026-11-27: Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing. Targeted source resolution: Linda Hess/Ajab Shahar and Sounds of Isha support deathlessness as the sign of realization. Preserve the elliptical conclusion without asserting that the sign itself is immortal.",
         "gagan-mein-aawaz": "2026-11-27: Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
         "naad-bindu-se": "2026-11-27: Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing.",
-        "sab-ghat-pooran": "2026-11-27: Reorder the clause into readable English while retaining every vessel and the imperceptible/silent divine Being. Do not convert an uncertain sung bānī fragment into a new theological Word claim.",
+        "sab-ghat-pooran": "2026-11-27: Reorder the clause into readable English while retaining every vessel and the imperceptible/silent divine Being. Do not convert an uncertain sung bānī fragment into a new theological Word claim. Targeted source resolution: Ajab Shahar song194, Linda Hess: wordless. Exact-file archived audio audit SH-VARIANT identifies bani as the melodic tail of nirbani; input payload/current audio hashes match. Repeat wordless, not independently the word.",
         "gagan-mein-aawaz-outro": "2026-11-27: Contextual English and primary word senses reread together; retain the concrete image and improve natural phrasing."
       },
       "featureDispositions": [
@@ -260116,7 +260429,7 @@
           "sourceLineIds": [
             "naad-bindu-se"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: From primal sound and seed-point, afterward water, water was condensed, O dear one"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: From primal sound and seed-point, afterward water, water was condensed, O dear one"
         },
         {
           "facet": "themes",
@@ -260126,7 +260439,7 @@
           "sourceLineIds": [
             "sab-ghat-pooran"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: The imperceptible, silent Being is fully present in every vessel, O dear one, the word, O dear one."
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: The imperceptible, wordless Being is fully present in every vessel, O dear one—wordless, O dear one."
         },
         {
           "facet": "themes",
@@ -260136,7 +260449,7 @@
           "sourceLineIds": [
             "jaaye-agam-ki-baani-re"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: The word of the unfathomable goes forth, O!"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: The word of the unfathomable goes forth, O!"
         },
         {
           "facet": "actions",
@@ -260147,7 +260460,7 @@
             "sunta-hai-guru-gyani",
             "gagan-mein-aawaz"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: The wise, wise, wise, wise, wise guru hears / A sound rings in the sky—subtle, subtle, subtle, subtle, subtle, subtle, subtle"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: The wise, wise, wise, wise, wise guru hears / A sound rings in the sky—subtle, subtle, subtle, subtle, subtle, subtle, subtle"
         },
         {
           "facet": "subjects",
@@ -260157,7 +260470,7 @@
           "sourceLineIds": [
             "sunta-hai-guru-gyani"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: The wise, wise, wise, wise, wise guru hears",
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: The wise, wise, wise, wise, wise guru hears",
           "role": "narrative_subject"
         }
       ]
@@ -273816,7 +274129,7 @@
     "ye-tanu-mundna-be-mundna": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Complete Kabīr-group source/word-map/English reading and final fidelity review on 2026-11-27. Contextual primary senses now agree with the English. Exact uncertain passages remain in the translation ledger; retained features were checked against the source witnesses below."
+        "reason": "Targeted source/grammar resolution of documented open definitions, with adjacent context and final English/gloss review. All original semantic feature witnesses reread; original assessments and prior reduction factors preserved. Unresolved source questions remain explicit."
       },
       "beforeLines": {
         "v1-l3a": {
@@ -273874,6 +274187,136 @@
               "text": "आवेगा",
               "wordIndices": [
                 3
+              ]
+            }
+          ]
+        },
+        "v3-l2": {
+          "source": "देना नहीं कुछ लेना",
+          "sourceLanguage": "hi",
+          "roman": "Denā nahīṁ kucha lenā",
+          "english": "{1:Neither }{0:give }{1:nor }{3:take }{2:anything;}",
+          "words": [
+            {
+              "roman": "Denā",
+              "gloss": "giving / to give",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nahīṁ",
+              "gloss": "not / no",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kucha",
+              "gloss": "anything / any",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "lenā",
+              "gloss": "taking / to take",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Pair of verbal nouns 'Denā' and 'lenā' surrounding negative particle 'nahīṁ' and indefinite pronoun 'kucha', forming an elliptical nominal clause of non-transaction.",
+          "sourceWords": [
+            {
+              "text": "देना",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "नहीं",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "कुछ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "लेना",
+              "wordIndices": [
+                3
+              ]
+            }
+          ]
+        },
+        "v3-l3": {
+          "source": "भाव भगत से पार उतारो",
+          "sourceLanguage": "hi",
+          "roman": "Bhāva bhagata se pāra utāro",
+          "english": "{3,4:Cross to the far shore }{2:through }{0:heartfelt }{1:devotion;}",
+          "words": [
+            {
+              "roman": "Bhāva",
+              "gloss": "devotional feeling / inner reverence",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bhagata",
+              "gloss": "devotion / worship",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "se",
+              "gloss": "through / by means of",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pāra",
+              "gloss": "across / to the other shore",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "utāro",
+              "gloss": "ferry across / carry over",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Compound noun phrase 'Bhāva bhagata' (tadbhava of bhāva bhakti) with instrumental postposition 'se'; 'pāra' functions as spatial complement to 2nd person plural imperative 'utāro'.",
+          "sourceWords": [
+            {
+              "text": "भाव",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "भगत",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "से",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "पार",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "उतारो",
+              "wordIndices": [
+                4
               ]
             }
           ]
@@ -273938,10 +274381,142 @@
               ]
             }
           ]
+        },
+        "v3-l2": {
+          "source": "देना नहीं कुछ लेना",
+          "sourceLanguage": "hi",
+          "roman": "Denā nahīṁ kucha lenā",
+          "english": "{1,2:Nothing }{0:to give, }{1,2:nothing }{3:to take;}",
+          "words": [
+            {
+              "roman": "Denā",
+              "gloss": "to give; giving",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nahīṁ",
+              "gloss": "not; the negation applies to giving and taking",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "kucha",
+              "gloss": "anything",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "lenā",
+              "gloss": "to take; taking",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Denā and lenā are paired infinitives in an elliptical statement: nothing to give or take. This is not a prohibition on giving. The line turns from worldly exchange to heartfelt devotion and repeating Rāma’s Name.",
+          "sourceWords": [
+            {
+              "text": "देना",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "नहीं",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "कुछ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "लेना",
+              "wordIndices": [
+                3
+              ]
+            }
+          ]
+        },
+        "v3-l3": {
+          "source": "भाव भगत से पार उतारो",
+          "sourceLanguage": "hi",
+          "roman": "Bhāva bhagata se pāra utāro",
+          "english": "{4:Carry }{3:across }{2:through }{0:heartfelt }{1:devotion;}",
+          "words": [
+            {
+              "roman": "Bhāva",
+              "gloss": "heartfelt feeling",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "bhagata",
+              "gloss": "devotion",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "se",
+              "gloss": "through; by means of",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pāra",
+              "gloss": "across; to the other shore",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "utāro",
+              "gloss": "carry across; ferry over (causative imperative)",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Bhāva bhagata is heartfelt devotion, with instrumental se. Utāro is the causative imperative: carry or ferry across, rather than the intransitive cross. No object is named in this line; the English preserves that omission.",
+          "sourceWords": [
+            {
+              "text": "भाव",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "भगत",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "से",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "पार",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "उतारो",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
         }
       },
       "lineEvidence": {
-        "v1-l3a": "2026-11-27: This standalone musical fragment precedes I will bury you; match the natural continuation of its longer ki variant."
+        "v1-l3a": "2026-11-27: This standalone musical fragment precedes I will bury you; match the natural continuation of its longer ki variant.",
+        "v3-l2": " Targeted source resolution: Dena/lena are infinitives in an elliptical statement, not an instruction to stop giving. Exact kuch versus tha remains an open acoustic question; no source token altered.",
+        "v3-l3": " Targeted source resolution: Stored transcript, lyric witnesses and two fresh unprompted Whisper instances agree utaro; dictionary para utarna confirms causative ferry/carry across. Preserve its omitted object, without inventing me, us or yourself."
       },
       "featureDispositions": [
         {
@@ -273952,7 +274527,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: in the end, it must mingle with the earth."
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: in the end, it must mingle with the earth."
         },
         {
           "facet": "themes",
@@ -273963,7 +274538,7 @@
             "v1-l4",
             "v2-l4"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: I will bury you.” / I will burn you.”"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: I will bury you.” / I will burn you.”"
         },
         {
           "facet": "themes",
@@ -273973,7 +274548,7 @@
           "sourceLineIds": [
             "v3-l3"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: Cross to the far shore through heartfelt devotion;"
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Carry across through heartfelt devotion;"
         },
         {
           "facet": "actions",
@@ -273983,7 +274558,7 @@
           "sourceLineIds": [
             "v3-l4"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: chant the Name of Rāma."
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: chant the Name of Rāma."
         },
         {
           "facet": "subjects",
@@ -273993,7 +274568,7 @@
           "sourceLineIds": [
             "v3-l4"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: chant the Name of Rāma.",
+          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: chant the Name of Rāma.",
           "role": "worship_focus"
         }
       ]

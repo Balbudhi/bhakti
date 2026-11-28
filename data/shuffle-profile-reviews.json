@@ -15432,12 +15432,84 @@
                   ]
                 }
               ]
+            },
+            "v2-line1": {
+              "source": "जैसा रंग तरंग मिलावे",
+              "sourceLanguage": "hi",
+              "roman": "Jaisā raṅg taraṅg milāve",
+              "english": "{0:As }{1:color }{3:dissolves }{2:into a wave,}",
+              "words": [
+                {
+                  "roman": "Jaisā",
+                  "gloss": "just as / like [comparative adverb/particle]"
+                },
+                {
+                  "roman": "raṅg",
+                  "gloss": "color / dye / visual form"
+                },
+                {
+                  "roman": "taraṅg",
+                  "gloss": "wave / ripple / water current"
+                },
+                {
+                  "roman": "milāve",
+                  "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
+                }
+              ],
+              "grammarNote": "Braj/Sant Bhasha verb form 'milāve' functioning as 3rd person singular present indicative. 'raṅg taraṅg' forms a rhyming alliterative compound/pair.",
+              "sourceWords": [
+                {
+                  "text": "जैसा",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "रंग",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "तरंग",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "मिलावे",
+                  "wordIndices": [
+                    3
+                  ]
+                }
+              ]
+            },
+            "v2-line2": {
+              "source": "मिलावे",
+              "sourceLanguage": "hi",
+              "roman": "Milāve",
+              "english": "{0:Dissolves...}",
+              "words": [
+                {
+                  "roman": "Milāve",
+                  "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
+                }
+              ],
+              "grammarNote": "Standalone verb token repeated for musical cadence.",
+              "sourceWords": [
+                {
+                  "text": "मिलावे",
+                  "wordIndices": [
+                    0
+                  ]
+                }
+              ]
             }
           },
           "originalInputHash": "783302b9a46d1a4119e7c9e0500a0c47c1ed086d644eeffff54987954b2ab595",
-          "inputHash": "8b7d09b415d82fce1a0fac496d00f648f4e5bf1e9972c22f3bffb3d6ca54b443",
+          "inputHash": "a1a78e1c12a5df1b560b436f9031008d50086a6340227187f7352c236cf36d5a",
           "baseFeaturesHash": "8ab94b1199f877822b8161e525c099c38b1079b792ba5f08b5f64d4173e46bfc",
-          "evidenceHash": "823e2e524771079129e7d41870b34b480ddccf0bd8d9613464141e3f9a6495af"
+          "evidenceHash": "87c1075131b042b15c099660df910d791c83426eb6a57e9c178043c09303f953"
         }
       }
     },
@@ -16526,12 +16598,142 @@
                   ]
                 }
               ]
+            },
+            "v3-l2": {
+              "source": "देना नहीं कुछ लेना",
+              "sourceLanguage": "hi",
+              "roman": "Denā nahīṁ kucha lenā",
+              "english": "{1:Neither }{0:give }{1:nor }{3:take }{2:anything;}",
+              "words": [
+                {
+                  "roman": "Denā",
+                  "gloss": "giving / to give",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "nahīṁ",
+                  "gloss": "not / no",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "kucha",
+                  "gloss": "anything / any",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "lenā",
+                  "gloss": "taking / to take",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "Pair of verbal nouns 'Denā' and 'lenā' surrounding negative particle 'nahīṁ' and indefinite pronoun 'kucha', forming an elliptical nominal clause of non-transaction.",
+              "sourceWords": [
+                {
+                  "text": "देना",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "नहीं",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "कुछ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "लेना",
+                  "wordIndices": [
+                    3
+                  ]
+                }
+              ]
+            },
+            "v3-l3": {
+              "source": "भाव भगत से पार उतारो",
+              "sourceLanguage": "hi",
+              "roman": "Bhāva bhagata se pāra utāro",
+              "english": "{3,4:Cross to the far shore }{2:through }{0:heartfelt }{1:devotion;}",
+              "words": [
+                {
+                  "roman": "Bhāva",
+                  "gloss": "devotional feeling / inner reverence",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "bhagata",
+                  "gloss": "devotion / worship",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "se",
+                  "gloss": "through / by means of",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "pāra",
+                  "gloss": "across / to the other shore",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "utāro",
+                  "gloss": "ferry across / carry over",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "Compound noun phrase 'Bhāva bhagata' (tadbhava of bhāva bhakti) with instrumental postposition 'se'; 'pāra' functions as spatial complement to 2nd person plural imperative 'utāro'.",
+              "sourceWords": [
+                {
+                  "text": "भाव",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "भगत",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "से",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "पार",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "उतारो",
+                  "wordIndices": [
+                    4
+                  ]
+                }
+              ]
             }
           },
           "originalInputHash": "45c98d3632cb5b7af6e7e804293781f0af97837df1d75c1b114328d11b4530f7",
-          "inputHash": "a71f565e0f82989f3caad6cee768dec77bfa06261508a1e5035a3cbaeb688eef",
+          "inputHash": "657cf6ba6c7d9750776f43a54d7e46cbafa10975a1f7cb12e91e448a77da2a4b",
           "baseFeaturesHash": "38049cc6c938de6c2ef795db2764c6c94e5c04bf4c2110894e6ae44e94392337",
-          "evidenceHash": "889df2f873769d0e95f11c228fedd8eb3d30cff337b9a592eeca80e567464dc1"
+          "evidenceHash": "75972b4cd931d53d886db2b62de0cb17c635e0ac9441c95b26984bef2066b69e"
         }
       }
     },
@@ -49320,9 +49522,9 @@
             }
           },
           "originalInputHash": "747cfbdc026f409dc6327036bb03e719756dc30ce86fa8bcc011d02b62ed741b",
-          "inputHash": "0b885a5ecdd7d08e39f7510012732b68ceeb793a76ce0d5921e2d23a393904df",
+          "inputHash": "08df4a85c419e160e4dbd1a2b4206c996bb77629ebc9587b67a587e6f00b0d26",
           "baseFeaturesHash": "65d1caf640c68a76c5023a2a0dd071de2ab76885021f930725270de96daf0cc9",
-          "evidenceHash": "100ed45813c4a837674c6598226339d2cf619e6426b9b773c26713831c1f5174"
+          "evidenceHash": "e32592253f985cd7bc2dbb0d68fbb03fd20ff1318072987162f037e43d8b9f54"
         }
       }
     },
@@ -59442,12 +59644,95 @@
                 }
               ],
               "grammarNote": "A didactic doha comprising two definitional copular clauses followed by a relative-correlative structure: 'in donoṅ se čẖūṭnā jo [hai], muktī is ko jān' with imperative 'jān'."
+            },
+            "verse-dono-kasbi": {
+              "source": "ویکھو رے باوا دونوں ہیں کسبی",
+              "sourceLanguage": "",
+              "sourceWords": [
+                {
+                  "text": "ویکھو",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "رے",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "باوا",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "دونوں",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "ہیں",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "کسبی",
+                  "wordIndices": [
+                    5
+                  ]
+                }
+              ],
+              "roman": "Vekho re bāwā donoṅ haiṅ kasbī",
+              "english": "{0:Look,}{1: O }{2:seeker,}{3: both}{4: are}{5: mere tradesmen!}",
+              "words": [
+                {
+                  "roman": "Vekho",
+                  "gloss": "look; behold (imperative plural)",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "re",
+                  "gloss": "O (vocative particle)",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "bāwā",
+                  "gloss": "holy seeker; ascetic; elder",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "donoṅ",
+                  "gloss": "both",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "haiṅ",
+                  "gloss": "are (present plural copula)",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "kasbī",
+                  "gloss": "professionals; mercenaries; tradesmen (performing devotion as a mere trade)",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "Subject 'donoṅ' linked to predicate noun/adjective 'kasbī' by plural copula 'haiṅ', introduced by vocative frame 'Vekho re bāwā'."
             }
           },
           "originalInputHash": "6f9d3a148d2f7aaa4c897d160377d3df6989846c3d0e61f1414da98cd75bacd7",
-          "inputHash": "16c6ef0df788af3f4fab5c7b8d33277e68ebe2a266a4e5bbd4c40a4234ec67ae",
+          "inputHash": "30664052b42adb063ed92d5272ad61ac4f418e9e6fb2d941525742b33f2212ce",
           "baseFeaturesHash": "d880def952212edaf0f1beefd441edf5ac5e39b2a5b83173e84f80d72ccb56e4",
-          "evidenceHash": "ce3245fedd5491bfc719e47b0baba748e477389164fdce4b7f3264fb5a6c6a17"
+          "evidenceHash": "f32e1e2185eafe19dddb7347c8b1f6a784ec504d7c9053a39c3d4359d845a095"
         }
       }
     },

@@ -593,7 +593,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Sab ghaṭ pūran pūru rahyā hai alakh puruṣa nirbānī ho jī bānī ho jī",
-    "english": "{6:The imperceptible, }{8:silent }{7:Being }{5:is }{2:fully }{3,4:present }{0:in every }{1:vessel, }{9:O }{10:dear one, }{11:the word, }{12:O }{13:dear one.}",
+    "english": "{6:The imperceptible, }{8:wordless }{7:Being }{5:is }{2:fully }{3,4:present }{0:in every }{1:vessel, }{9:O }{10:dear one—}{11:wordless, }{12:O }{13:dear one.}",
     "words": [
       {
         "roman": "Sab",
@@ -645,7 +645,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "nirbānī",
-        "gloss": "silent; liberated; beyond attribute",
+        "gloss": "wordless; beyond speech",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -663,7 +663,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bānī",
-        "gloss": "speech; word; voice",
+        "gloss": "wordless: the sung ending of nirbānī repeated as a melodic echo",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -680,7 +680,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Locative sense implied in uninflected noun 'sab ghaṭ' (Braj/Sant Bhasha syntax). 'pūru rahyā hai' is a compound stative verb phrase with masculine singular agreement with 'puruṣa'."
+    "grammarNote": "Locative sense is implied in sab ghaṭ, 'in every vessel'. Puruṣa is the subject of pūru rahyā hai. Nirbānī describes the Being as wordless; the later bānī repeats its final syllables."
   },
   "kahe-kabira-alap": {
     "source": "कहे कबीरा आ आ कबीरा आ आ",
@@ -1027,7 +1027,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Din bhar rē jō nazar bhar dēkhē",
-    "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content}",
+    "english": "{2:O, }{3:whoever }{6:gazes }{4,5:their fill }{0,1:all day long…}",
     "words": [
       {
         "roman": "Din",
@@ -1061,7 +1061,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhar",
-        "gloss": "fully; completely",
+        "gloss": "to the full; nazar bhar: to one’s heart’s content",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1072,7 +1072,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Relative clause marked by pronoun 'jō' with adverbial temporal phrase 'din bhar' and adverbial manner phrase 'nazar bhar' modifying 3rd person singular present/subjunctive verb 'dēkhē'."
+    "grammarNote": "Jō opens a relative clause, with din bhar, 'all day long', and nazar bhar, 'to the full', modifying dekhe. This pickup is repeated and completed in the following line."
   },
   "din-bhar-re-jo-ajar-amar": {
     "source": "दिन भर रे जो नज़र भर देखे अजर अमर वो निशानी हो जी वो निशानी हो जी",
@@ -1182,7 +1182,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "Din bhar rē jō nazar bhar dēkhē ajar amar vo niśānī ho jī vo niśānī ho jī",
-    "english": "{0,1:All day long, }{2:oh, }{3:whoever }{6:looks }{4,5:to their heart’s content—}{7:unaging, }{8:immortal }{9:is that }{10:sign, }{11:O }{12:dear one, }{13:that }{14:sign, }{15:O }{16:dear one}",
+    "english": "{2:O, }{3:for whoever }{6:gazes }{4,5:their fill }{0,1:all day long—}{7:no aging, }{8:no dying: }{9:that is }{10:the sign, }{11:O }{12:dear one, }{13:that }{14:sign, }{15:O }{16:dear one.}",
     "words": [
       {
         "roman": "Din",
@@ -1216,7 +1216,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "bhar",
-        "gloss": "fully; completely",
+        "gloss": "to the full; nazar bhar: to one’s heart’s content",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1228,13 +1228,13 @@ window.SONG_LINES = {
       },
       {
         "roman": "ajar",
-        "gloss": "unaging; undecaying",
+        "gloss": "unaging; free from aging or decay",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "amar",
-        "gloss": "immortal; deathless",
+        "gloss": "deathless; free from dying",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1246,7 +1246,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "niśānī",
-        "gloss": "sign; mark; token",
+        "gloss": "sign; mark of what is realized",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1270,7 +1270,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "niśānī",
-        "gloss": "sign; mark; token",
+        "gloss": "sign; mark of what is realized",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -1287,7 +1287,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Correlative 'jō … vo': whoever looks with a full gaze, that sign is unaging and immortal. 'ajar amar' is the predicate of 'niśānī'. 'ho jī' is repeated as an honorific refrain."
+    "grammarNote": "The ending is elliptical: ajar amar names freedom from aging and death; vo niśānī points to this as the sign. The English preserves that ellipsis rather than assigning immortality to the sign itself."
   },
   "gagan-mein-aawaz-outro": {
     "source": "गगन में आवाज़ हो रही झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी झीनी",

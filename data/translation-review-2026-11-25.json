@@ -36263,5 +36263,127 @@
       "ownerAuthorization": "Ok publish; accepted unavailable browser checks and unchanged historical trim failures.",
       "limits": "No fresh visual/device/acoustic verification or guarantee of search-engine inclusion; ten explicitly recorded source definitions remain uncertain."
     }
+  },
+  "passageResolutionFollowUp20261127": {
+    "scope": "Ten previously recorded open definitions; existing homepage/song pages only, no promotion or indexing submissions.",
+    "resolvedDefinitions": {
+      "auga-na-jauga": [
+        "verse-dono-kasbi"
+      ],
+      "sunta-hai": [
+        "sab-ghat-pooran",
+        "din-bhar-re-jo",
+        "din-bhar-re-jo-ajar-amar"
+      ],
+      "kaya-nahin-teri-nahin-teri": [
+        "v2-line1"
+      ],
+      "ye-tanu-mundna-be-mundna": [
+        "v3-l3"
+      ]
+    },
+    "resolvedCount": 6,
+    "remainingDefinitions": {
+      "kaya-nahin-teri-nahin-teri": {
+        "v3-line2": "Recorded vahan ki is supported by witnesses and local ASR; the genitive construction/referent remains unestablished."
+      },
+      "ye-tanu-mundna-be-mundna": {
+        "refrain-1": "Mundana/be-mundana exact grammatical sense remains unestablished; free ASR confirms sounds but not lexeme/function.",
+        "v3-l2": "Descriptive giving/taking grammar corrected; exact kuch versus tha sung before lena remains an acoustic question."
+      },
+      "mera-man-lochai": {
+        "line-036": "Canonical SGGS1206 and Sahib Singh support pria beloved; local unprompted ASR cannot distinguish the performed pria/prema. No silent replacement."
+      }
+    },
+    "remainingCount": 4,
+    "changes": {
+      "auga-na-jauga": {
+        "verse-dono-kasbi": "Punjabi Arabi-Farsi Shabdshala (Boota Singh Brar/Jaj Singh), kasbi entry: professional, skilled worker, artisan. Read the mala/tasbih pair with the surrounding critique of ritual. Retain mere tradesmen; select its contextual popup, removing mercenaries as an interchangeable sense."
+      },
+      "kaya-nahin-teri-nahin-teri": {
+        "v2-line1": "Milave is transitive mixing, not spontaneous dissolution. TransLiteral text, the Bhimsen-specific 2013 Hindi interpretation, and milana dictionary support color mixed into a wave. Keep the named color and wave, omitting no image.",
+        "v2-line2": "The repeated milave retains the same mixing image and English construction as its preceding full line."
+      },
+      "ye-tanu-mundna-be-mundna": {
+        "v3-l2": "Dena/lena are infinitives in an elliptical statement, not an instruction to stop giving. Exact kuch versus tha remains an open acoustic question; no source token altered.",
+        "v3-l3": "Stored transcript, lyric witnesses and two fresh unprompted Whisper instances agree utaro; dictionary para utarna confirms causative ferry/carry across. Preserve its omitted object, without inventing me, us or yourself."
+      },
+      "sunta-hai": {
+        "sab-ghat-pooran": "Ajab Shahar song194, Linda Hess: wordless. Exact-file archived audio audit SH-VARIANT identifies bani as the melodic tail of nirbani; input payload/current audio hashes match. Repeat wordless, not independently the word.",
+        "din-bhar-re-jo": "Read pickup with full ending; nazar bhar is a full gaze. Preserve the relative clause and musical repetition.",
+        "din-bhar-re-jo-ajar-amar": "Linda Hess/Ajab Shahar and Sounds of Isha support deathlessness as the sign of realization. Preserve the elliptical conclusion without asserting that the sign itself is immortal."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.punjabi-kavita.com/Punjabi-Di-Arabi-Farsi-Shabdshala.php",
+        "evidence": "Boota Singh Brar and Jaj Singh, entry ਕਸਬੀ: ਪੇਸ਼ਾਵਰ, ਰੋਜ਼ਗਾਰੀ, ਹੁਨਰਮੰਦ, ਦਸਤਕਾਰ; cross-reference ਦਸਤਕਾਰ: ਕਾਰੀਗਰ, ਕਸਬੀ."
+      },
+      {
+        "url": "https://www.aryasamaj.co.in/wp-content/uploads/2023/07/KalyanMargkaPathik.pdf",
+        "evidence": "Printed p66: koi phere mala ... tasbi / dekho re loko ye dono hi kasbi; sequence also criticizes pilgrimage as noose, shrines/graves as plunder."
+      },
+      {
+        "url": "https://ajabshahar.com/songs/details/194/Sunta-Hai-Guru-Gyaani&title=Sunta-Hai-Guru-Gyaani",
+        "authority": "Kabir Project / Ajab Shahar; translation explicitly credited to Linda Hess; Kumar Gandharva performance",
+        "evidence": "Same core source lines. Renders nirbānī wordless. Final English presents unaging/deathlessness as the sign after the all-day gaze, without saying that a token is immortal.",
+        "shortExcerpt": "here’s the sign: no death, no decay.",
+        "limit": "Different performer; used for interpretation, not performance order."
+      },
+      {
+        "url": "https://isha.sadhguru.org/en/blog/article/sunta-hai-by-kabir-sounds-of-ishas-latest",
+        "authority": "Exact performer Sounds of Isha official site",
+        "evidence": "Printed Hindi has alakh purush nirbani and din bhar re jo nazar bhar dekhe / ajar amar vo nishani. Its English describes realization of a non-ageing eternal principle.",
+        "limit": "Roman and Hindi witnesses differ in places and include stanzas absent in abridged audio. Not imported wholesale."
+      },
+      {
+        "url": "https://www.transliteral.org/pages/z70716090841/view",
+        "use": "Native-script Kaya witness independently agrees rang tarang milave and vhan-ki; no explanation of vhan-ki."
+      },
+      {
+        "url": "https://aapkaablog.blogspot.com/2013/08/blog-post_5.html",
+        "use": "Bhimsen-specific 2013 interpretation explains dye mixed in flowing water; supports ephemeral mixing image, not independent critical edition. Text has other variants so not used to overwrite recording."
+      },
+      {
+        "url": "https://rekhtadictionary.com/meaning-of-milaanaa",
+        "use": "Transitive mixing sense, rather than dissolve intransitively."
+      },
+      {
+        "url": "https://www.hindwi.org/hindi-dictionary/meaning-of-paar-utaarnaa",
+        "use": "Causative carry to other shore / rescue, opposed to intransitive utarna."
+      },
+      {
+        "url": "https://bhajansagar.blogspot.com/2012/04/yeh-tan-mundana-be-mundana-listen-to.html",
+        "use": "Roman witness agrees bhav bhagat se par utaro; differs dena nahi tha lena. Weak source, cannot settle refrain."
+      },
+      {
+        "url": "https://www.rekhta.org/urdudictionary?keyword=muu.ndnii&lang=hi",
+        "use": "Platts distinguishes infinitive mundna/be shaved and mūndnā/shave; does not support vocative shaven one for exact mundana form."
+      },
+      {
+        "url": "https://southasia.ucla.edu/culture/music/bhajans/",
+        "use": "UCLA title attribution to Kabir/Bhimsen/Shrinivas Khale, no exact translation of refrain."
+      },
+      {
+        "url": "https://www.hindwi.org/hindi-dictionary/meaning-of-mundna-1",
+        "use": "Exact mundna dictionary entry = be shaved, be fleeced. Does not establish vocative shaven one; does not select be-privative vs vocative."
+      },
+      {
+        "url": "https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1206&g=1&h=1&k=1&p=0&r=1&t=1",
+        "evidence": "Read complete page and relevant source line plus Sahib Singh commentary: ਪ੍ਰਿਅ ਮਨੋਹਰ ਪ੍ਰੀਤਿ = ਮਨ ਨੂੰ ਮੋਹ ਲੈਣ ਵਾਲੇ ਪਿਆਰੇ (ਹਰੀ) ਦੀ ਪ੍ਰੀਤ।"
+      },
+      {
+        "url": "https://www.gurbanitabs.com/shabads/4279",
+        "evidence": "Read complete shabad; repeats pria as beloved in following stanzas, including chita-vani and instant vision of the beloved."
+      }
+    ],
+    "audioEvidence": "Sunta exact-file archived audio request payload and current audio SHA verified; three Bhimsen excerpts and Mera excerpt checked with fresh free unprompted Whisper as corroboration only. No fresh human listening or unsupported source replacement.",
+    "releaseState": "ready to publish supported corrections; four source questions remain and capped audio review permission is pending",
+    "verification": {
+      "releaseChecksPassed": 46,
+      "releaseChecksTotal": 47,
+      "knownFailure": "Same six pre-existing trim receipt failures; no media/trim change.",
+      "browser": "Recovery in-app browser: desktop and 390px mobile text/popup inspection; all 111 line seek controls passed against stored onsets. No new acoustic onset claim."
+    }
   }
 }

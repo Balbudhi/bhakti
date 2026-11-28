@@ -866,34 +866,34 @@ window.SONG_LINES = {
     "source": "देना नहीं कुछ लेना",
     "sourceLanguage": "hi",
     "roman": "Denā nahīṁ kucha lenā",
-    "english": "{1:Neither }{0:give }{1:nor }{3:take }{2:anything;}",
+    "english": "{1,2:Nothing }{0:to give, }{1,2:nothing }{3:to take;}",
     "words": [
       {
         "roman": "Denā",
-        "gloss": "giving / to give",
+        "gloss": "to give; giving",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "nahīṁ",
-        "gloss": "not / no",
+        "gloss": "not; the negation applies to giving and taking",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "kucha",
-        "gloss": "anything / any",
+        "gloss": "anything",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "lenā",
-        "gloss": "taking / to take",
+        "gloss": "to take; taking",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Pair of verbal nouns 'Denā' and 'lenā' surrounding negative particle 'nahīṁ' and indefinite pronoun 'kucha', forming an elliptical nominal clause of non-transaction.",
+    "grammarNote": "Denā and lenā are paired infinitives in an elliptical statement: nothing to give or take. This is not a prohibition on giving. The line turns from worldly exchange to heartfelt devotion and repeating Rāma’s Name.",
     "sourceWords": [
       {
         "text": "देना",
@@ -925,40 +925,40 @@ window.SONG_LINES = {
     "source": "भाव भगत से पार उतारो",
     "sourceLanguage": "hi",
     "roman": "Bhāva bhagata se pāra utāro",
-    "english": "{3,4:Cross to the far shore }{2:through }{0:heartfelt }{1:devotion;}",
+    "english": "{4:Carry }{3:across }{2:through }{0:heartfelt }{1:devotion;}",
     "words": [
       {
         "roman": "Bhāva",
-        "gloss": "devotional feeling / inner reverence",
+        "gloss": "heartfelt feeling",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "bhagata",
-        "gloss": "devotion / worship",
+        "gloss": "devotion",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "se",
-        "gloss": "through / by means of",
+        "gloss": "through; by means of",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "pāra",
-        "gloss": "across / to the other shore",
+        "gloss": "across; to the other shore",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "utāro",
-        "gloss": "ferry across / carry over",
+        "gloss": "carry across; ferry over (causative imperative)",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Compound noun phrase 'Bhāva bhagata' (tadbhava of bhāva bhakti) with instrumental postposition 'se'; 'pāra' functions as spatial complement to 2nd person plural imperative 'utāro'.",
+    "grammarNote": "Bhāva bhagata is heartfelt devotion, with instrumental se. Utāro is the causative imperative: carry or ferry across, rather than the intransitive cross. No object is named in this line; the English preserves that omission.",
     "sourceWords": [
       {
         "text": "भाव",

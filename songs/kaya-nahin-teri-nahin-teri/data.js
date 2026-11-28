@@ -345,7 +345,7 @@ window.SONG_LINES = {
     "source": "जैसा रंग तरंग मिलावे",
     "sourceLanguage": "hi",
     "roman": "Jaisā raṅg taraṅg milāve",
-    "english": "{0:As }{1:color }{3:dissolves }{2:into a wave,}",
+    "english": "{0:As }{1:color }{3:is mixed }{2:into a wave,}",
     "words": [
       {
         "roman": "Jaisā",
@@ -353,18 +353,18 @@ window.SONG_LINES = {
       },
       {
         "roman": "raṅg",
-        "gloss": "color / dye / visual form"
+        "gloss": "color; dye"
       },
       {
         "roman": "taraṅg",
-        "gloss": "wave / ripple / water current"
+        "gloss": "wave; ripple"
       },
       {
         "roman": "milāve",
-        "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
+        "gloss": "mixes; blends (transitive)"
       }
     ],
-    "grammarNote": "Braj/Sant Bhasha verb form 'milāve' functioning as 3rd person singular present indicative. 'raṅg taraṅg' forms a rhyming alliterative compound/pair.",
+    "grammarNote": "Milāve is a transitive form of milānā, to mix or bring together. Color is mixed into a wave; English uses a passive because the mixer is not named. The next line makes the image one of fleeting life.",
     "sourceWords": [
       {
         "text": "जैसा",
@@ -396,14 +396,14 @@ window.SONG_LINES = {
     "source": "मिलावे",
     "sourceLanguage": "hi",
     "roman": "Milāve",
-    "english": "{0:Dissolves...}",
+    "english": "{0:Is mixed…}",
     "words": [
       {
         "roman": "Milāve",
-        "gloss": "mixes / blends / dissolves [3rd sg. present/subjunctive]"
+        "gloss": "mixes; blends (transitive)"
       }
     ],
-    "grammarNote": "Standalone verb token repeated for musical cadence.",
+    "grammarNote": "The transitive verb milāve repeats the preceding image; the English keeps the same passive construction.",
     "sourceWords": [
       {
         "text": "मिलावे",

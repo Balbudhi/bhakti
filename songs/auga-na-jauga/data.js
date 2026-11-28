@@ -1980,7 +1980,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kasbī",
-        "gloss": "professionals; mercenaries; tradesmen (performing devotion as a mere trade)",
+        "gloss": "people who ply a trade; here, those who make a trade of devotion",
         "concept_key": "",
         "preserve_in_english": false
       }

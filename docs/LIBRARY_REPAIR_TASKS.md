@@ -1,5 +1,35 @@
 # Whole-library repair task
 
+## Remaining Kabīr passage resolution — 27 November 2026
+
+Owner requested source-grounded resolution of the ten recorded open definitions
+and publication of supported corrections. Six questions are resolved editorially:
+kasbī occupational sense; color mixed into a wave; causative ferrying across;
+and the three Suntā Hai definitions (wordless echo and elliptical deathlessness
+as sign). Eight definitions across four readers change, including the repeated
+milāve fragment and a grammatical correction to descriptive giving/taking.
+Four exact source/interpretive questions remain: Kāyā v3-line2, Ye Tanu refrain-1
+and v3-l2, and Merā line-036. The latter's canonical pria is established but its
+performed pronunciation remains uncertain. Free ASR did not settle these. A
+capped $0.25 targeted audio-review request is pending; no paid calls were made.
+
+Current step: publish supported corrections and retain the four explicit open
+records. The exact evidence and dispositions are in passageResolutionFollowUp20261127
+in data/translation-review-2026-11-25.json. Source, IAST, token identities, media,
+metadata, sequence and timings remain unchanged. Original shuffle assessments
+remain intact, with reviewed editorial receipts and the paired catalogue.
+
+Verification: all 46 other release commands passed after contextual rechecking
+of the stale generic-Hari/Kṛṣṇa dismissal. The trim audit retains only the same
+six historical failures previously accepted by the owner. The recovery in-app
+browser worked: desktop and 390px mobile previews and corrected popups checked;
+all 111 line controls across the four changed readers seek within playback
+advance of their unchanged stored onset. This does not certify acoustic syllables.
+
+Public-service scope: only the existing homepage and song pages. Keep ordinary
+human and automated readability; do not add advertising, promotional content,
+ranking campaigns, special agent pages or indexing-submission work.
+
 ## Kabīr wording, popup senses and search visibility — 27 November 2026
 
 Outcome: reread all 20 Kabīr-related readers (358 definitions; 2,224 word entries),

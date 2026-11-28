@@ -604,7 +604,7 @@
       "readerSha256": "b091a001ec61896ddb6a3545975a70193a32e10889412dd67953ece63e4977e6",
       "definitionCount": 48,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
+      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
@@ -615,7 +615,7 @@
       "openDefinitions": [
         "line-036"
       ],
-      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
+      "openReason": "Canonical SGGS1206 and Sahib Singh support pria beloved; local unprompted ASR cannot distinguish the performed pria/prema. No silent replacement."
     },
     "so-dar-keha-so-ghar-keha": {
       "status": "screened",
@@ -686,10 +686,10 @@
     },
     "kaya-nahin-teri-nahin-teri": {
       "status": "needs_source_review",
-      "readerSha256": "74ce02d2f25d4ac05703dedae1df50c8a96dd374659112cf967c28783b3a796c",
+      "readerSha256": "f1adaf70328289ee43cddf0073af59426d1d70ece6be6212216bb8e780973cd8",
       "definitionCount": 18,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
+      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "6024ee189ab8f5eb97ec2ea99045d2db62efde459502d29ef061dbdfd708a4b2",
@@ -697,10 +697,9 @@
         "reviewedAt": "2026-11-21"
       },
       "openDefinitions": [
-        "v2-line1",
         "v3-line2"
       ],
-      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
+      "openReason": "Recorded vahan ki is supported by witnesses and local ASR; the genitive construction/referent remains unestablished."
     },
     "naam-japan-kyon-chhod-diya": {
       "status": "screened",
@@ -756,10 +755,10 @@
     },
     "ye-tanu-mundna-be-mundna": {
       "status": "needs_source_review",
-      "readerSha256": "bae1991011823b01e4232b9ea8a7a490fdcb25d937955f7b893a547b9c95f4ef",
+      "readerSha256": "f2b6495e00887cbcf944880507282b6b6f8ca41448a7028b0b8ab0ace6a165d2",
       "definitionCount": 17,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
+      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "9fcb4bc7624da5efc77a522f6a2e45c0bec6a0630f87e291e9a2f5ff2a3a9010",
@@ -768,10 +767,9 @@
       },
       "openDefinitions": [
         "refrain-1",
-        "v3-l2",
-        "v3-l3"
+        "v3-l2"
       ],
-      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
+      "openReason": "Mundana/be-mundana exact grammatical sense remains unestablished; free ASR confirms sounds but not lexeme/function. Descriptive giving/taking grammar corrected; exact kuch versus tha sung before lena remains an acoustic question."
     },
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
       "status": "screened",
@@ -1589,11 +1587,11 @@
       }
     },
     "sunta-hai": {
-      "status": "needs_source_review",
-      "readerSha256": "42b8fdd13dbdfe0862f5828de765dd0d9608eff3265d0d91582ed9254a83ed6b",
+      "status": "screened",
+      "readerSha256": "290e53a32b611514a57de7b6aba7ae5af6ac7e6f57c0658efbff5c6eca32576e",
       "definitionCount": 11,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
+      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "aaebf0d5836105b85bdbb0fd837f8a001c42f79bf224ef9ccc66fdc8c9fd2163",
@@ -1601,13 +1599,7 @@
         "reviewedAt": "2026-11-22",
         "resolutionRecord": "docs/research/translation-review-2026-11-22.md",
         "resolutionDisposition": "finished_integrated"
-      },
-      "openDefinitions": [
-        "sab-ghat-pooran",
-        "din-bhar-re-jo",
-        "din-bhar-re-jo-ajar-amar"
-      ],
-      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
+      }
     },
     "mana-masta-hua": {
       "status": "screened",
@@ -1762,21 +1754,17 @@
       }
     },
     "auga-na-jauga": {
-      "status": "needs_source_review",
-      "readerSha256": "55a2d683b7f3ffedb31ada2fb1060d65d77e7515af891b56eeaf14b787fc1494",
+      "status": "screened",
+      "readerSha256": "5f2b90f86e4472ce6f546059c0b2a7358f59e9fdc3e293a6e37e2ccffe6a33d4",
       "definitionCount": 23,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
+      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "045b962d4b9cd51383e1245364990109c1e5f92570942bb9ccf59b8afc31eed7",
         "definitionCount": 23,
         "reviewedAt": "2026-11-21"
-      },
-      "openDefinitions": [
-        "verse-dono-kasbi"
-      ],
-      "openReason": "See the 2026-11-27 songFollowUps in data/translation-review-2026-11-25.json. Uncertain inherited passages remain explicit; supported corrections elsewhere are applied."
+      }
     },
     "mera-jeevan-tere": {
       "status": "screened",
