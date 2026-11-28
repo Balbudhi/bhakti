@@ -36429,5 +36429,95 @@
       "http": "Live homepage/song HTML and robots return 200; song links and lyrics are in initial HTML. GitHub origin, no authentication challenge.",
       "limit": "A direct web search-tool open returned an internal inaccessible error despite successful HTTP retrieval. Agent-specific fetch/index limitations cannot be guaranteed away by site changes. No advertising, ranking campaigns, special agent pages or submissions added."
     }
+  },
+  "historicalLinguisticFollowUp20261127": {
+    "request": "Resolve the three remaining constructions using Prakriya primary sources and downstream linguistic evidence.",
+    "population": {
+      "kaya-nahin-teri-nahin-teri": [
+        "v3-line2"
+      ],
+      "ye-tanu-mundna-be-mundna": [
+        "refrain-1",
+        "v3-l2"
+      ]
+    },
+    "method": "Direct manifest-eligible primary/raw grammar readings, checked hashes, independent historical-language reviews, regional dictionaries, exact performance/context and two bounded audio discriminator calls. No interpreter, generated traces or dictionary-output-as-sentence-proof.",
+    "findings": {
+      "mundana": {
+        "Sanskrit": "Dhātupāṭha 01.0308 मुडिँ मार्जने, bhvādi ātmanepada; 01.0369 मुडिँ खण्डने, bhvādi parasmaipada. Dhātupradīpa raw XML entries173/214 (=§272/326) gives muṇḍate mukham, muṇḍanam and muṇḍati, muṇḍaḥ. Amarakośa separates action muṇḍana from shaven muṇḍa/muṇḍita.",
+        "downstream": "Hindi mundna is an infinitive to be shaved; Marathi mundanem to shave. No evidenced nominal development gives this exact sung form shaven one. Privative be and vocative be are both independently attested; the song also has be tu.",
+        "result": "Lexical shaving family established; exact refrain construction still unresolved. Neither shaven-person address nor shaven/unshaven contrast is certified."
+      },
+      "vahanKi": {
+        "Sanskrit": "Local DP08.0010 डुकृञ् करणे supplies kar-; DP01.1077 ष्ठा गतिनिवृत्तौ is relevant only to the tentative sthāne→thān locative history described by Platts.",
+        "downstream": "Platts gives vahā̃-kī belonging to that place; origin via wah+ā̃/hā̃/thān is explicitly tentative. Gumān is borrowed from Persian, not directly derived from Sanskrit mān/gam; gumānī is proud/proud person in checked Braj/Bhojpuri entries.",
+        "result": "Corrected the definite kī→have you linking defect to kī→of. Visible English unchanged. No evidence supplied an exact missing feminine head or identified the place/body referent."
+      },
+      "dena": {
+        "Sanskrit": "Local Amarakośa records ca as coordinator; Sanskrit ca cannot simply be inserted into a Hindi line.",
+        "downstream": "Molesworth Marathi च is emphatic and its pronunciation can be ts; nahīṃ-c is therefore a candidate. Genitive -cā lacks a nominal host here.",
+        "audio": "Second model hears separate cha with open final vowel, no clear k, and does not favor attached Marathi -ch. It suggests reduced kucha as inference, not audible certainty. Neither tha, kucha nor emphatic-c established.",
+        "result": "Contextual absence-of-giving/taking reading retained; sung token remains provisional."
+      }
+    },
+    "sourceWitnesses": [
+      {
+        "path": "/Users/eeshan/Dev/prakriya/sources/raw/panini/lexica/dhatupatha.json",
+        "loci": [
+          "01.0308",
+          "01.0369",
+          "01.1077",
+          "08.0010"
+        ]
+      },
+      {
+        "path": "/Users/eeshan/Dev/prakriya/sources/raw/etymology/dhatu_commentaries/dhatupradipa.xml",
+        "loci": [
+          "entry173/§272",
+          "entry214/§326"
+        ]
+      },
+      {
+        "path": "/Users/eeshan/Dev/prakriya/sources/primary/lexica/amarakosha/amarakosha_collated_vs_sanskrit_kosha_clean.txt",
+        "lines": [
+          623,
+          769
+        ]
+      },
+      {
+        "url": "https://www.transliteral.org/dictionary/च/word",
+        "use": "Molesworth emphasis and ts pronunciation; hypothesis only"
+      },
+      {
+        "url": "https://www.hindwi.org/hindi-dictionary/meaning-of-mundna-1",
+        "use": "Hindi infinitive"
+      },
+      {
+        "url": "https://www.rekhta.org/urdudictionary?keyword=gumaanii&lang=ur",
+        "use": "Platts Persian borrowing and adjective/person sense"
+      },
+      {
+        "url": "https://titus.uni-frankfurt.de/texte/etcs/ind/nind/hindi/kabir/kabirx1.htm",
+        "use": "Retrieved the28 indexed sakhi chapters; no exact disputed refrain or relevant gumani passage found. This is a limited subset, not the complete Granthavali."
+      }
+    ],
+    "sourceLimitations": "Local clean readings are research eligible, not critical editions or textual correction authority. Exact song syntax cannot be established from ancestry alone. No claims of complete book-corpus exhaustion.",
+    "independentReview": "Separate reviewers checked the three constructions. Kaya linking-only correction approved without promoting unresolved syntax to resolved.",
+    "paidAudio": {
+      "additionalCostUsd": 0.113668,
+      "cumulativeCostUsd": 0.1605685,
+      "authorizedTotalBudgetUsd": 2,
+      "calls": 2,
+      "model": "google/gemini-3.1-pro-preview",
+      "result": "No exact textual resolution; no further calls planned without new discriminating evidence."
+    },
+    "status": "Three questions remain explicitly open after this targeted historical pass; one definite word-link defect corrected.",
+    "verification": {
+      "releaseChecksPassed": 46,
+      "releaseChecksTotal": 47,
+      "exception": "Same six pre-existing trim receipt failures; owner previously accepted them.",
+      "browser": "In-app desktop1280 and390px mobile: kī highlights only of and shows genitive popup. No overflow. Target line seek428.64 matched stored onset; unchanged37-line timing population reuses previous UI verification.",
+      "invariants": "All visible English, source/IAST, media, sequence/timings and original assessments preserved. Only one line word-link/note changed."
+    }
   }
 }

@@ -600,7 +600,7 @@ window.SONG_LINES = {
     "source": "वहाँ की क्या करता गुमानी",
     "sourceLanguage": "hi",
     "roman": "Vahām̐ kī kyā karatā gumānī",
-    "english": "{0:There, }{2:what }{1:have you }{3:to boast of, }{4:proud one?}",
+    "english": "{0:There, }{2:what }{3:have you to boast }{1:of, }{4:proud one?}",
     "words": [
       {
         "roman": "Vahām̐",
@@ -623,7 +623,7 @@ window.SONG_LINES = {
         "gloss": "proud person / arrogant one [vocative noun]"
       }
     ],
-    "grammarNote": "The recording supports vahā̃ kī. The rebuke concerns pride, but the connection of kī is unclear; no missing noun is supplied.",
+    "grammarNote": "Vahā̃ kī is literally “of there”; the reference and full construction remain elliptical. The English follows the rebuke to the proud listener without identifying an unstated place or object.",
     "sourceWords": [
       {
         "text": "वहाँ",

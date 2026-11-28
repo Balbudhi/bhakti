@@ -683,10 +683,10 @@
     },
     "kaya-nahin-teri-nahin-teri": {
       "status": "needs_source_review",
-      "readerSha256": "f90994d41858eb929ee4fcf56832b9bd5b6aeedd571577d7ae54ada155d49880",
+      "readerSha256": "993e77a10bb6f827985bb76b6918fda85db288734bb2d9304f4e135fa2a324a9",
       "definitionCount": 18,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed.",
+      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed. Historical Prakriya/downstream lexical follow-up fixed only English word linking; open construction remains.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "6024ee189ab8f5eb97ec2ea99045d2db62efde459502d29ef061dbdfd708a4b2",

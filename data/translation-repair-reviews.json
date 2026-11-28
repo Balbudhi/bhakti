@@ -206053,7 +206053,7 @@
           "source": "वहाँ की क्या करता गुमानी",
           "sourceLanguage": "hi",
           "roman": "Vahām̐ kī kyā karatā gumānī",
-          "english": "{0:There, }{2:what }{1:have you }{3:to boast of, }{4:proud one?}",
+          "english": "{0:There, }{2:what }{3:have you to boast }{1:of, }{4:proud one?}",
           "words": [
             {
               "roman": "Vahām̐",
@@ -206076,7 +206076,7 @@
               "gloss": "proud person / arrogant one [vocative noun]"
             }
           ],
-          "grammarNote": "The recording supports vahā̃ kī. The rebuke concerns pride, but the connection of kī is unclear; no missing noun is supplied.",
+          "grammarNote": "Vahā̃ kī is literally “of there”; the reference and full construction remain elliptical. The English follows the rebuke to the proud listener without identifying an unstated place or object.",
           "sourceWords": [
             {
               "text": "वहाँ",
@@ -206306,7 +206306,7 @@
         }
       },
       "lineEvidence": {
-        "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image. Paid audio/source follow-up: Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection.",
+        "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image. Paid audio/source follow-up: Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection. Historical-language follow-up: kī is a genitive postposition, not the words have you. Relink it to English of, preserving the visible sentence and all source tokens. Platts supports vahā̃-kī of that place; referent and full elliptical syntax remain unresolved. Independently reviewed.",
         "v2-line3": "2026-11-27: Repair stiff This indeed while retaining the fleeting-life image and emphatic to.",
         "v3-line1": "2026-11-27: Paramani asserts the truth/trustworthiness of the saying; proven added an unsupported evidential claim.",
         "v2-line1": " Targeted source resolution: Milave is transitive mixing, not spontaneous dissolution. TransLiteral text, the Bhimsen-specific 2013 Hindi interpretation, and milana dictionary support color mixed into a wave. Keep the named color and wave, omitting no image.",
@@ -206321,7 +206321,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Do not cry, 'Mine, mine'"
+          "reason": "Historical follow-up: unchanged visible English; reread source witnesses supporting this retained feature: Do not cry, 'Mine, mine'"
         },
         {
           "facet": "themes",
@@ -206332,7 +206332,7 @@
             "v4-line4",
             "v4-line5"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Accept this teaching in your heart / The truth has been spoken and explained to you"
+          "reason": "Historical follow-up: unchanged visible English; reread source witnesses supporting this retained feature: Accept this teaching in your heart / The truth has been spoken and explained to you"
         },
         {
           "facet": "themes",
@@ -206343,7 +206343,7 @@
             "refrain-1",
             "v2-line3"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: The body is not yours, not yours / It will surely fly away in the blink of an eye."
+          "reason": "Historical follow-up: unchanged visible English; reread source witnesses supporting this retained feature: The body is not yours, not yours / It will surely fly away in the blink of an eye."
         }
       ]
     },

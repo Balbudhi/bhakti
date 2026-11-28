@@ -1,5 +1,27 @@
 # Whole-library repair task
 
+## Prakriya and historical-language follow-up — 27 November 2026
+
+The owner reopened the three unresolved constructions for direct Prakriya-source
+and downstream linguistic review. All three were investigated independently.
+The Dhātupāṭha, Dhātupradīpa and Amarakośa distinguish the shaving action from a
+shaven person; they do not establish the sung muṇḍanā as a vocative noun. Regional
+lexica and Platts establish kī as genitive and gumān as a Persian borrowing, but
+do not supply the missing connection in vahā̃ kī. Marathi emphatic -c was tested
+against the disputed denā line; another bounded audio model did not establish it.
+The 28 indexed TITUS sākhī chapters were checked as a limited comparison corpus.
+
+One confirmed defect is repaired: kī now links to English “of” rather than
+“have you.” Visible English, source/IAST, sequence and timings remain unchanged.
+The three source questions remain open; derivations are not being substituted
+for evidence of the sung sentence. The detailed report is
+historicalLinguisticFollowUp20261127 in data/translation-review-2026-11-25.json.
+The two additional audio calls cost US$0.113668; cumulative cost is US$0.1605685
+of the owner's US$2 allowance. The reviewed linkage fix passed 46/47 release
+checks, with only the same six accepted historical trim failures. In-app desktop
+and 390px mobile checks verified kī highlights only “of”; its 428.64-second seek
+also matched. All visible English and original media/timings remain unchanged.
+
 ## Remaining Kabīr passage resolution — 27 November 2026
 
 Owner requested source-grounded resolution of the ten recorded open definitions
