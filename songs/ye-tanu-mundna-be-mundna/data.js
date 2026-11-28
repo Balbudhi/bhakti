@@ -40,7 +40,7 @@ window.SONG_LINES = {
     "source": "ये तनु मुँडना बे मुँडना",
     "sourceLanguage": "hi",
     "roman": "Ye tanu muṇḍanā be muṇḍanā",
-    "english": "{0:This }{1:body, }{2:O shaven one—}{3,4:O shaven one—}",
+    "english": "{0:This }{1:body, }{2:shaven }{3,4:or unshaven—}",
     "words": [
       {
         "roman": "Ye",
@@ -56,24 +56,24 @@ window.SONG_LINES = {
       },
       {
         "roman": "muṇḍanā",
-        "gloss": "shaven one (provisional); the verb muṇḍanā means to be shaved",
+        "gloss": "shaven; a contextual rendering of being shaved",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "be",
-        "gloss": "O / hey",
+        "gloss": "without; read here with muṇḍanā as unshaven",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "muṇḍanā",
-        "gloss": "shaven one (provisional); repeated from earlier in the line",
+        "gloss": "being shaved; with be-, read as unshaven",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Dictionaries give muṇḍanā as “to be shaved.” Its use in this refrain is unclear; the English provisionally takes it as an address, “shaven one.” The next line says the body must return to earth.",
+    "grammarNote": "The English reads muṇḍanā be muṇḍanā as a contrast: shaven or unshaven. Muṇḍanā means being shaved; be- is taken here as without, rather than the address hey used elsewhere in the song. This is a contextual interpretation of the compressed refrain, not a settled grammatical reading. The next line completes the thought: the body must mingle with the earth.",
     "sourceWords": [
       {
         "text": "ये",

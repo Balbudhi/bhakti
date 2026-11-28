@@ -600,7 +600,7 @@ window.SONG_LINES = {
     "source": "वहाँ की क्या करता गुमानी",
     "sourceLanguage": "hi",
     "roman": "Vahām̐ kī kyā karatā gumānī",
-    "english": "{0:There, }{2:what }{3:have you to boast }{1:of, }{4:proud one?}",
+    "english": "{2:What }{3:do you boast }{1:of }{0:there, }{4:proud one?}",
     "words": [
       {
         "roman": "Vahām̐",
@@ -616,14 +616,14 @@ window.SONG_LINES = {
       },
       {
         "roman": "karatā",
-        "gloss": "do / make [masc. sg. imperfective participle]"
+        "gloss": "do / make; here, do you boast (present or habitual action, not have done)"
       },
       {
         "roman": "gumānī",
         "gloss": "proud person / arrogant one [vocative noun]"
       }
     ],
-    "grammarNote": "Vahā̃ kī is literally “of there”; the reference and full construction remain elliptical. The English follows the rebuke to the proud listener without identifying an unstated place or object.",
+    "grammarNote": "Karatā expresses doing, rendered here as the present action do you boast, not the completed action have you done. Vahā̃ kī is literally of there; its connection remains elliptical. The English retains the rebuke to the proud listener without supplying the body or a named place.",
     "sourceWords": [
       {
         "text": "वहाँ",

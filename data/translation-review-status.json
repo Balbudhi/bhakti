@@ -683,10 +683,10 @@
     },
     "kaya-nahin-teri-nahin-teri": {
       "status": "needs_source_review",
-      "readerSha256": "993e77a10bb6f827985bb76b6918fda85db288734bb2d9304f4e135fa2a324a9",
+      "readerSha256": "22b78870c380661ddb5131a405e5b16fcf5a3628ad4e7e7094cf52cc43d89656",
       "definitionCount": 18,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed. Historical Prakriya/downstream lexical follow-up fixed only English word linking; open construction remains.",
+      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed. Historical Prakriya/downstream lexical follow-up fixed only English word linking; open construction remains. Owner-directed wording follow-up 2026-11-28; source, IAST, timings and existing open questions preserved.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "6024ee189ab8f5eb97ec2ea99045d2db62efde459502d29ef061dbdfd708a4b2",
@@ -752,10 +752,10 @@
     },
     "ye-tanu-mundna-be-mundna": {
       "status": "needs_source_review",
-      "readerSha256": "8bcd1bc58d7660924950a187237e756eb18a8a87690b659cd79f08585a6519a0",
+      "readerSha256": "0c3bc04f849c1323d65afa9228240a39495362abd3dfe05f40eff16a50a360a7",
       "definitionCount": 17,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed.",
+      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed. Owner-directed wording follow-up 2026-11-28; source, IAST, timings and existing open questions preserved.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "9fcb4bc7624da5efc77a522f6a2e45c0bec6a0630f87e291e9a2f5ff2a3a9010",
@@ -766,7 +766,7 @@
         "refrain-1",
         "v3-l2"
       ],
-      "openReason": "Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis. Targeted audio and free Whisper do not support a confident kucha identification; printed tha also remains unconfirmed. Retain existing text provisionally and make the uncertainty visible in its linked gloss and note. Contextual giving/taking English is an interpretation, not a settled source reading."
+      "openReason": "The owner accepted shaven or unshaven as the contextual refrain reading; the precise construction remains unverified and is explained in the grammar note. The word before lenā remains provisional kucha; no new listening evidence or source change was supplied."
     },
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
       "status": "screened",

@@ -13832,4 +13832,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "1fd3c65d6edd63ebb7eb3c57cb6d56d97a8a6ba87c29a51cdbc5c3a1ddf75e4e";
+window.BHAKTI_SHUFFLE_REVISION = "8c51c0aec7934ff4ae35a0a0a69ac53f78e348ec917c114b78b74c18d071660e";

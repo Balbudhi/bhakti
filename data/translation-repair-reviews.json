@@ -205789,7 +205789,7 @@
     "kaya-nahin-teri-nahin-teri": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved."
+        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved. Owner-directed two-line wording follow-up on 2026-11-28; direct passage and word-map self-review, without new independent certification."
       },
       "beforeLines": {
         "v3-line2": {
@@ -206053,7 +206053,7 @@
           "source": "वहाँ की क्या करता गुमानी",
           "sourceLanguage": "hi",
           "roman": "Vahām̐ kī kyā karatā gumānī",
-          "english": "{0:There, }{2:what }{3:have you to boast }{1:of, }{4:proud one?}",
+          "english": "{2:What }{3:do you boast }{1:of }{0:there, }{4:proud one?}",
           "words": [
             {
               "roman": "Vahām̐",
@@ -206069,14 +206069,14 @@
             },
             {
               "roman": "karatā",
-              "gloss": "do / make [masc. sg. imperfective participle]"
+              "gloss": "do / make; here, do you boast (present or habitual action, not have done)"
             },
             {
               "roman": "gumānī",
               "gloss": "proud person / arrogant one [vocative noun]"
             }
           ],
-          "grammarNote": "Vahā̃ kī is literally “of there”; the reference and full construction remain elliptical. The English follows the rebuke to the proud listener without identifying an unstated place or object.",
+          "grammarNote": "Karatā expresses doing, rendered here as the present action do you boast, not the completed action have you done. Vahā̃ kī is literally of there; its connection remains elliptical. The English retains the rebuke to the proud listener without supplying the body or a named place.",
           "sourceWords": [
             {
               "text": "वहाँ",
@@ -206306,7 +206306,7 @@
         }
       },
       "lineEvidence": {
-        "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image. Paid audio/source follow-up: Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection. Historical-language follow-up: kī is a genitive postposition, not the words have you. Relink it to English of, preserving the visible sentence and all source tokens. Platts supports vahā̃-kī of that place; referent and full elliptical syntax remain unresolved. Independently reviewed.",
+        "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image. Paid audio/source follow-up: Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection. Historical-language follow-up: kī is a genitive postposition, not the words have you. Relink it to English of, preserving the visible sentence and all source tokens. Platts supports vahā̃-kī of that place; referent and full elliptical syntax remain unresolved. Independently reviewed. 2026-11-28: Owner requested an explicit action verb: do you boast renders present karatā; do not introduce past accomplishments or the body. The vahā̃ kī connection remains qualified.",
         "v2-line3": "2026-11-27: Repair stiff This indeed while retaining the fleeting-life image and emphatic to.",
         "v3-line1": "2026-11-27: Paramani asserts the truth/trustworthiness of the saying; proven added an unsupported evidential claim.",
         "v2-line1": " Targeted source resolution: Milave is transitive mixing, not spontaneous dissolution. TransLiteral text, the Bhimsen-specific 2013 Hindi interpretation, and milana dictionary support color mixed into a wave. Keep the named color and wave, omitting no image.",
@@ -206321,7 +206321,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Historical follow-up: unchanged visible English; reread source witnesses supporting this retained feature: Do not cry, 'Mine, mine'"
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: Do not cry, 'Mine, mine'"
         },
         {
           "facet": "themes",
@@ -206332,7 +206332,7 @@
             "v4-line4",
             "v4-line5"
           ],
-          "reason": "Historical follow-up: unchanged visible English; reread source witnesses supporting this retained feature: Accept this teaching in your heart / The truth has been spoken and explained to you"
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: Accept this teaching in your heart / The truth has been spoken and explained to you"
         },
         {
           "facet": "themes",
@@ -206343,7 +206343,7 @@
             "refrain-1",
             "v2-line3"
           ],
-          "reason": "Historical follow-up: unchanged visible English; reread source witnesses supporting this retained feature: The body is not yours, not yours / It will surely fly away in the blink of an eye."
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: The body is not yours, not yours / It will surely fly away in the blink of an eye."
         }
       ]
     },
@@ -274274,7 +274274,7 @@
     "ye-tanu-mundna-be-mundna": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved."
+        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved. Owner-directed two-line wording follow-up on 2026-11-28; direct passage and word-map self-review, without new independent certification."
       },
       "beforeLines": {
         "v1-l3a": {
@@ -274732,7 +274732,7 @@
           "source": "ये तनु मुँडना बे मुँडना",
           "sourceLanguage": "hi",
           "roman": "Ye tanu muṇḍanā be muṇḍanā",
-          "english": "{0:This }{1:body, }{2:O shaven one—}{3,4:O shaven one—}",
+          "english": "{0:This }{1:body, }{2:shaven }{3,4:or unshaven—}",
           "words": [
             {
               "roman": "Ye",
@@ -274748,24 +274748,24 @@
             },
             {
               "roman": "muṇḍanā",
-              "gloss": "shaven one (provisional); the verb muṇḍanā means to be shaved",
+              "gloss": "shaven; a contextual rendering of being shaved",
               "concept_key": "",
               "preserve_in_english": false
             },
             {
               "roman": "be",
-              "gloss": "O / hey",
+              "gloss": "without; read here with muṇḍanā as unshaven",
               "concept_key": "",
               "preserve_in_english": false
             },
             {
               "roman": "muṇḍanā",
-              "gloss": "shaven one (provisional); repeated from earlier in the line",
+              "gloss": "being shaved; with be-, read as unshaven",
               "concept_key": "",
               "preserve_in_english": false
             }
           ],
-          "grammarNote": "Dictionaries give muṇḍanā as “to be shaved.” Its use in this refrain is unclear; the English provisionally takes it as an address, “shaven one.” The next line says the body must return to earth.",
+          "grammarNote": "The English reads muṇḍanā be muṇḍanā as a contrast: shaven or unshaven. Muṇḍanā means being shaved; be- is taken here as without, rather than the address hey used elsewhere in the song. This is a contextual interpretation of the compressed refrain, not a settled grammatical reading. The next line completes the thought: the body must mingle with the earth.",
           "sourceWords": [
             {
               "text": "ये",
@@ -274804,7 +274804,7 @@
         "v1-l3a": "2026-11-27: This standalone musical fragment precedes I will bury you; match the natural continuation of its longer ki variant.",
         "v3-l2": " Targeted source resolution: Dena/lena are infinitives in an elliptical statement, not an instruction to stop giving. Exact kuch versus tha remains an open acoustic question; no source token altered. Paid audio/source follow-up: Targeted audio and free Whisper do not support a confident kucha identification; printed tha also remains unconfirmed. Retain existing text provisionally and make the uncertainty visible in its linked gloss and note. Contextual giving/taking English is an interpretation, not a settled source reading.",
         "v3-l3": " Targeted source resolution: Stored transcript, lyric witnesses and two fresh unprompted Whisper instances agree utaro; dictionary para utarna confirms causative ferry/carry across. Preserve its omitted object, without inventing me, us or yourself.",
-        "refrain-1": " Paid audio/source follow-up: Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis."
+        "refrain-1": " Paid audio/source follow-up: Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis. 2026-11-28: Owner accepted the stated best contextual reading, shaven or unshaven. Interpret be- as privative in this refrain only; retain vocative be in be tū elsewhere. Hindi shaving infinitive and both senses of be are evidenced; precise refrain grammar remains qualified, not certified. The next line retains the concrete return to earth."
       },
       "featureDispositions": [
         {
@@ -274815,7 +274815,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: in the end, it must mingle with the earth."
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: in the end, it must mingle with the earth."
         },
         {
           "facet": "themes",
@@ -274826,7 +274826,7 @@
             "v1-l4",
             "v2-l4"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: I will bury you.” / I will burn you.”"
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: I will bury you.” / I will burn you.”"
         },
         {
           "facet": "themes",
@@ -274836,7 +274836,7 @@
           "sourceLineIds": [
             "v3-l3"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Carry across through heartfelt devotion;"
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: Carry across through heartfelt devotion;"
         },
         {
           "facet": "actions",
@@ -274846,7 +274846,7 @@
           "sourceLineIds": [
             "v3-l4"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: chant the Name of Rāma."
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: chant the Name of Rāma."
         },
         {
           "facet": "subjects",
@@ -274856,7 +274856,7 @@
           "sourceLineIds": [
             "v3-l4"
           ],
-          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: chant the Name of Rāma.",
+          "reason": "Reread with the owner-approved wording; unchanged source passages still support this feature: chant the Name of Rāma.",
           "role": "worship_focus"
         }
       ]

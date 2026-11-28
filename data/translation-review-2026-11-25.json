@@ -36519,5 +36519,295 @@
       "browser": "In-app desktop1280 and390px mobile: kī highlights only of and shows genitive popup. No overflow. Target line seek428.64 matched stored onset; unchanged37-line timing population reuses previous UI verification.",
       "invariants": "All visible English, source/IAST, media, sequence/timings and original assessments preserved. Only one line word-link/note changed."
     }
+  },
+  "ownerWordingFollowUp20261128": {
+    "scope": "Two owner-authorized English/gloss/grammar revisions; no source, audio, timing or website-surface changes.",
+    "changes": {
+      "kaya-nahin-teri-nahin-teri": {
+        "lineId": "v3-line2",
+        "before": {
+          "source": "वहाँ की क्या करता गुमानी",
+          "sourceLanguage": "hi",
+          "roman": "Vahām̐ kī kyā karatā gumānī",
+          "english": "{0:There, }{2:what }{3:have you to boast }{1:of, }{4:proud one?}",
+          "words": [
+            {
+              "roman": "Vahām̐",
+              "gloss": "there; its referent is not explicit"
+            },
+            {
+              "roman": "kī",
+              "gloss": "of; the grammatical connection is uncertain"
+            },
+            {
+              "roman": "kyā",
+              "gloss": "what / why [interrogative particle]"
+            },
+            {
+              "roman": "karatā",
+              "gloss": "do / make [masc. sg. imperfective participle]"
+            },
+            {
+              "roman": "gumānī",
+              "gloss": "proud person / arrogant one [vocative noun]"
+            }
+          ],
+          "grammarNote": "Vahā̃ kī is literally “of there”; the reference and full construction remain elliptical. The English follows the rebuke to the proud listener without identifying an unstated place or object.",
+          "sourceWords": [
+            {
+              "text": "वहाँ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "की",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "क्या",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "करता",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "गुमानी",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
+        },
+        "after": {
+          "source": "वहाँ की क्या करता गुमानी",
+          "sourceLanguage": "hi",
+          "roman": "Vahām̐ kī kyā karatā gumānī",
+          "english": "{2:What }{3:do you boast }{1:of }{0:there, }{4:proud one?}",
+          "words": [
+            {
+              "roman": "Vahām̐",
+              "gloss": "there; its referent is not explicit"
+            },
+            {
+              "roman": "kī",
+              "gloss": "of; the grammatical connection is uncertain"
+            },
+            {
+              "roman": "kyā",
+              "gloss": "what / why [interrogative particle]"
+            },
+            {
+              "roman": "karatā",
+              "gloss": "do / make; here, do you boast (present or habitual action, not have done)"
+            },
+            {
+              "roman": "gumānī",
+              "gloss": "proud person / arrogant one [vocative noun]"
+            }
+          ],
+          "grammarNote": "Karatā expresses doing, rendered here as the present action do you boast, not the completed action have you done. Vahā̃ kī is literally of there; its connection remains elliptical. The English retains the rebuke to the proud listener without supplying the body or a named place.",
+          "sourceWords": [
+            {
+              "text": "वहाँ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "की",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "क्या",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "करता",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "गुमानी",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "ye-tanu-mundna-be-mundna": {
+        "lineId": "refrain-1",
+        "before": {
+          "source": "ये तनु मुँडना बे मुँडना",
+          "sourceLanguage": "hi",
+          "roman": "Ye tanu muṇḍanā be muṇḍanā",
+          "english": "{0:This }{1:body, }{2:O shaven one—}{3,4:O shaven one—}",
+          "words": [
+            {
+              "roman": "Ye",
+              "gloss": "this",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tanu",
+              "gloss": "body",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shaven one (provisional); the verb muṇḍanā means to be shaved",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "be",
+              "gloss": "O / hey",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shaven one (provisional); repeated from earlier in the line",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Dictionaries give muṇḍanā as “to be shaved.” Its use in this refrain is unclear; the English provisionally takes it as an address, “shaven one.” The next line says the body must return to earth.",
+          "sourceWords": [
+            {
+              "text": "ये",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "तनु",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "बे",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
+        },
+        "after": {
+          "source": "ये तनु मुँडना बे मुँडना",
+          "sourceLanguage": "hi",
+          "roman": "Ye tanu muṇḍanā be muṇḍanā",
+          "english": "{0:This }{1:body, }{2:shaven }{3,4:or unshaven—}",
+          "words": [
+            {
+              "roman": "Ye",
+              "gloss": "this",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tanu",
+              "gloss": "body",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shaven; a contextual rendering of being shaved",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "be",
+              "gloss": "without; read here with muṇḍanā as unshaven",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "being shaved; with be-, read as unshaven",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "The English reads muṇḍanā be muṇḍanā as a contrast: shaven or unshaven. Muṇḍanā means being shaved; be- is taken here as without, rather than the address hey used elsewhere in the song. This is a contextual interpretation of the compressed refrain, not a settled grammatical reading. The next line completes the thought: the body must mingle with the earth.",
+          "sourceWords": [
+            {
+              "text": "ये",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "तनु",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "बे",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "decision": "Present do you boast, not past have done; contextual shaven/unshaven contrast accepted by owner. Retain uncertainty notes and needs_source_review status; denā line unchanged pending listening.",
+    "review": "Direct self-review against full adjacent passages and existing source evidence; no new independent review or blanket completion.",
+    "additionalCostUsd": 0,
+    "verification": {
+      "releaseChecksPassed": 46,
+      "releaseChecksTotal": 47,
+      "unchangedFailure": "Six historical trim-record discrepancies in unrelated songs; no media or trim changes.",
+      "browser": "Codex in-app browser: desktop 1280px and mobile 390px; both changed word popups and English checked visually.",
+      "seekChecks": {
+        "count": 65,
+        "passed": 65,
+        "toleranceSeconds": 1,
+        "meaning": "Actual UI seek position compared with unchanged stored onset, allowing playback advance; no new acoustic verification."
+      }
+    }
   }
 }

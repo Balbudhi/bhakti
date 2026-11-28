@@ -1,5 +1,21 @@
 # Whole-library repair task
 
+## Owner-directed Kabīr wording — 28 November 2026
+
+Update Kāyā v3-line2 to “What do you boast of there, proud one?” so the
+present action remains explicit without adding past accomplishments or the body.
+Update Ye Tanu refrain-1 to “This body, shaven or unshaven—”; retain the
+following return-to-earth line and align popups with the selected contrast.
+The owner accepted this contextual reading, but the precise construction remains
+qualified in its note. Keep the word before lenā provisional pending listening.
+Source/IAST, media, all 65 occurrence timings, and the existing open-review
+statuses are preserved. Direct passage and word-map self-review; no new paid
+calls or independent certification. Release checks pass 46/47; only the same
+six previously accepted historical trim-record failures remain. In-app desktop
+and 390px mobile checks verified both word maps; all 65 controls seek within
+playback advance of unchanged stored onsets. These are seek checks, not a new
+acoustic audit. Publication follows this verified content review.
+
 ## Prakriya and historical-language follow-up — 27 November 2026
 
 The owner reopened the three unresolved constructions for direct Prakriya-source
