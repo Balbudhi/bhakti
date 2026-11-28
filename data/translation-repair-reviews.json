@@ -7790,7 +7790,7 @@
             }
           ],
           "roman": "dān dharm se moh hai ghaṭtā yah batlāne āye",
-          "english": "{2:Through }{0:charity }{1:and righteous conduct, }{3:attachment }{4,5:diminishes; }{8:he has come }{7:to teach }{6:this}",
+          "english": "{2:Through }{0:charity }{1:and righteous conduct, }{3:deluded attachment }{4,5:diminishes; }{8:he has come }{7:to teach }{6:this}",
           "words": [
             {
               "roman": "dān",
@@ -7812,7 +7812,7 @@
             },
             {
               "roman": "moh",
-              "gloss": "delusion; worldly attachment",
+              "gloss": "deluded attachment; infatuated clinging to worldly things, diminished here through charity and righteous conduct",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -8017,7 +8017,7 @@
         }
       },
       "lineEvidence": {
-        "verse-3-1": "In the teaching about charity diminishing attachment, dharma names ethical practice, not an untranslated proper name. Translate the contextual practice. The legacy preserve-in-English flag now agrees with the selected English sense; proper-name glosses explain their referent where applicable.",
+        "verse-3-1": "2026-11-28: Giving alms weakens possessive clinging; deluded attachment preserves both the giving context and moh’s impaired discernment without reducing it to neutral affection.",
         "verse-1-2": "Current whole-song reading: Remove redundant whether/even so while preserving the concession across the next line.",
         "verse-3-2": "Current whole-song reading: Replace a sign occurs with an ordinary English action; retain the subjunctive condition. Remove unnecessary of his own phrase."
       },
@@ -8027,7 +8027,7 @@
           "id": "theme.detachment",
           "disposition": "retain",
           "factor": 1,
-          "reason": "Charity and righteous conduct diminish worldly attachment. Rechecked against the complete current English and this repair; its cited evidence remains.",
+          "reason": "Charity and righteous conduct diminish deluded attachment; the passage still explicitly describes release from clinging.",
           "sourceLineIds": [
             "verse-3-1"
           ]
@@ -8075,7 +8075,16 @@
             "verse-1-1"
           ]
         }
-      ]
+      ],
+      "termReview20261128": {
+        "scope": "Targeted owner-reported terms and closely related occurrences; whole-song contextual reading. Distinct self-review; no fresh audio or exhaustive word-analysis audit.",
+        "changedLineIds": [
+          "verse-3-1"
+        ],
+        "sources": [
+          "https://www.rekhta.org/urdudictionary?keyword=moh&lang=hi&reftype=rweb"
+        ]
+      }
     },
     "biduvenenayya-hanuma": {
       "reviewer": {
@@ -122521,7 +122530,7 @@
             }
           ],
           "roman": "gāṅgeyastāmracūḍaśca brahmacārī śikhidhvajaḥ |",
-          "english": "{0:Son of Gaṅgā, }{1:rooster-crested, }{2:and }{3:celibate student, }{4:peacock-}{5:bannered;}",
+          "english": "{0:Son of Gaṅgā, }{1:rooster-crested, }{2:and }{3:Brahmacārī, }{4:peacock-}{5:bannered;}",
           "words": [
             {
               "roman": "gāṅgeyas",
@@ -122543,7 +122552,7 @@
             },
             {
               "roman": "brahmacārī",
-              "gloss": "celibate student; brahmacārī",
+              "gloss": "Kārtikeya as a practitioner of sacred discipline; brahmacārī commonly denotes a celibate student of sacred learning.",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -122756,7 +122765,7 @@
       "lineEvidence": {
         "viniyoga-2": "The ritual preface designates the hymn as a mantra; explain the technical term rather than leaving hymn-mantra opaque.",
         "verse-1a": "Beyond opacity, yogīśvara is yogin + īśvara, Lord of practitioners, as the existing gloss itself states. Current English Lord of yoga silently changes the governed plural people into an abstract practice.",
-        "verse-2a": "Translate the existing selected Brahman sense in the brahmacārī gloss rather than leaving the spiritual object opaque. Preserve chastity and seeking.",
+        "verse-2a": "2026-11-28: This is explicitly a list of Kārtikeya’s twenty-eight names. Retain Brahmacārī as the epithet and explain its discipline/student sense; do not reduce the divine title to an ordinary student biography or import Datta’s particular interpretation.",
         "verse-4a": "Gaṇas is an untranslated ordinary plural meaning attendant hosts within the Gaṇeśa epithet; preserve the brother relationship.",
         "verse-6a": "The existing primary mantra gloss is sacred formulas; use it in the English statement about the divine names."
       },
@@ -122820,7 +122829,17 @@
           ],
           "role": "worship_focus"
         }
-      ]
+      ],
+      "termReview20261128": {
+        "scope": "Targeted owner-reported terms and closely related occurrences; whole-song contextual reading. Distinct self-review; no fresh audio or exhaustive word-analysis audit.",
+        "changedLineIds": [
+          "verse-2a"
+        ],
+        "sources": [
+          "https://sahitya.manikprabhu.org/saatwar/guruwar.html",
+          "https://sanskrit.uohyd.ac.in/SKT/MW/182.html"
+        ]
+      }
     },
     "raat-dhal-gayee": {
       "reviewer": {
@@ -183105,6 +183124,58 @@
           ],
           "nameTable": false,
           "grammarNote": "Audited performed unit. Same reviewed contextual senses; actual vocative order, repetitions and source orthography preserved. No timing acceptance."
+        },
+        "l001": {
+          "source": "दत्ता ब्रह्मचारी रे ब्रह्मचारी",
+          "sourceLanguage": "mr",
+          "sourceWords": [
+            {
+              "text": "दत्ता",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ब्रह्मचारी",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "रे",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ब्रह्मचारी",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "roman": "dattā brahmacārī re brahmacārī",
+          "english": "{0:O Datta}, {1:celibate ascetic}, {2:O} {3:celibate ascetic}!",
+          "words": [
+            {
+              "roman": "dattā",
+              "gloss": "O Datta, the divine son of Atri; Datta means “given” or “granted”."
+            },
+            {
+              "roman": "brahmacārī",
+              "gloss": "celibate ascetic; one devoted to sacred discipline"
+            },
+            {
+              "roman": "re",
+              "gloss": "O; familiar direct address"
+            },
+            {
+              "roman": "brahmacārī",
+              "gloss": "celibate ascetic; one devoted to sacred discipline"
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Marathi devotional address. The omitted subject or possessor is supplied from the apostrophe to Datta; the named locations remain concrete places. Brahmacārī is rendered celibate ascetic. The institution additionally interprets it as one who dwells in Brahman; that traditional explanation does not license adding unsung superlatives."
         }
       },
       "afterLines": {
@@ -183305,13 +183376,66 @@
           ],
           "nameTable": false,
           "grammarNote": "Audited performed unit. Same reviewed contextual senses; actual vocative order, repetitions and source orthography preserved. No timing acceptance."
+        },
+        "l001": {
+          "source": "दत्ता ब्रह्मचारी रे ब्रह्मचारी",
+          "sourceLanguage": "mr",
+          "sourceWords": [
+            {
+              "text": "दत्ता",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ब्रह्मचारी",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "रे",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ब्रह्मचारी",
+              "wordIndices": [
+                3
+              ]
+            }
+          ],
+          "roman": "dattā brahmacārī re brahmacārī",
+          "english": "{0:O Datta}, {1:Brahmacārī}, {2:O} {3:Brahmacārī}!",
+          "words": [
+            {
+              "roman": "dattā",
+              "gloss": "O Datta, the divine son of Atri; Datta means “given” or “granted”."
+            },
+            {
+              "roman": "brahmacārī",
+              "gloss": "One whose life is in Brahman, the absolute reality; also a celibate disciple or ascetic devoted to sacred discipline."
+            },
+            {
+              "roman": "re",
+              "gloss": "O; familiar direct address"
+            },
+            {
+              "roman": "brahmacārī",
+              "gloss": "One whose life is in Brahman, the absolute reality; also a celibate disciple or ascetic devoted to sacred discipline."
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Marathi devotional address to Datta. Brahmacārī is retained because celibate ascetic narrows the title to a social discipline, while one who dwells in Brahman selects a devotional interpretation. The popup explains both. Brahman-dwelling is the institution’s spiritual interpretation, not an exclusive historical etymology."
         }
       },
       "lineEvidence": {
         "l002": "Current whole-song reading: Natural English for circuit through the worlds.",
         "l003": "Current whole-song reading: Same recurring line.",
         "l004": "Current whole-song reading: Same recurring line.",
-        "l005": "Current whole-song reading: Same recurring line."
+        "l005": "Current whole-song reading: Same recurring line.",
+        "l001": "2026-11-28: Owner-requested retention of the layered title, with the Brahman-dwelling and conventional celibate-disciple senses explained rather than treating the latter as exhaustive."
       },
       "featureDispositions": [
         {
@@ -183332,7 +183456,7 @@
           "id": "action.praise",
           "disposition": "retain",
           "factor": 1,
-          "reason": "Hails Datta, celibate ascetic and world-pervading son of Atri. Current wording repairs preserve this source-grounded meaning.",
+          "reason": "Hails Datta as Brahmacārī and the world-pervading son of Atri; retaining the layered epithet does not change the act of praise.",
           "sourceLineIds": [
             "l001",
             "l015"
@@ -183361,7 +183485,17 @@
           ],
           "role": "worship_focus"
         }
-      ]
+      ],
+      "termReview20261128": {
+        "scope": "Targeted owner-reported terms and closely related occurrences; whole-song contextual reading. Distinct self-review; no fresh audio or exhaustive word-analysis audit.",
+        "changedLineIds": [
+          "l001"
+        ],
+        "sources": [
+          "https://sahitya.manikprabhu.org/saatwar/guruwar.html",
+          "https://sanskrit.uohyd.ac.in/SKT/MW/182.html"
+        ]
+      }
     },
     "deh-javo-athava-raho": {
       "reviewer": {
@@ -203536,6 +203670,160 @@
               ]
             }
           ]
+        },
+        "ramakrishna-prabhu": {
+          "source": "रामकृष्ण प्रभु, इस युग के नायक",
+          "sourceLanguage": "hi",
+          "roman": "Rāmakṛṣṇa prabhu, isa yuga ke nāyaka",
+          "english": "{1:Lord }{0:Ramakrishna, }{5:leader }{4:of }{2:this }{3:age}",
+          "words": [
+            {
+              "roman": "Rāmakṛṣṇa",
+              "gloss": "Ramakrishna",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prabhu,",
+              "gloss": "Lord / Master,",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "isa",
+              "gloss": "this",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yuga",
+              "gloss": "era / age",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ke",
+              "gloss": "of",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nāyaka",
+              "gloss": "leader / protagonist / hero",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Vocative address (Rāmakṛṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka).",
+          "sourceWords": [
+            {
+              "text": "रामकृष्ण",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "प्रभु,",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "इस",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "युग",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "के",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "नायक",
+              "wordIndices": [
+                5
+              ]
+            }
+          ]
+        },
+        "ban-aaye-ab": {
+          "source": "बन आए अब चन्द्रमणि सुत",
+          "sourceLanguage": "hi",
+          "roman": "Bana āe aba Candramaṇi suta",
+          "english": "{2:Now }{1:You have come }{0:as }{3:Chandramani's }{4:son}",
+          "words": [
+            {
+              "roman": "Bana",
+              "gloss": "becoming / having become",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "āe",
+              "gloss": "have come / arrived",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "aba",
+              "gloss": "now",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "Candramaṇi",
+              "gloss": "Chandramani (proper name of Sri Ramakrishna's mother)",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "suta",
+              "gloss": "son",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Compound verb bana āe (bannā + ānā in perfective aspect). Candramaṇi suta functions as a predicate nominative / appositive role.",
+          "sourceWords": [
+            {
+              "text": "बन",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "आए",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "अब",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "चन्द्रमणि",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "सुत",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
         }
       },
       "afterLines": {
@@ -203704,11 +203992,167 @@
               ]
             }
           ]
+        },
+        "ramakrishna-prabhu": {
+          "source": "रामकृष्ण प्रभु, इस युग के नायक",
+          "sourceLanguage": "hi",
+          "roman": "Rāmakṛṣṇa prabhu, isa yuga ke nāyaka",
+          "english": "{1:Lord }{0:Rāmakṛṣṇa, }{5:leader }{4:of }{2:this }{3:age}",
+          "words": [
+            {
+              "roman": "Rāmakṛṣṇa",
+              "gloss": "Rāmakṛṣṇa Paramahaṃsa, the spiritual teacher and son of Candramaṇi; his name joins Rāma and Kṛṣṇa.",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prabhu,",
+              "gloss": "Lord / Master,",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "isa",
+              "gloss": "this",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "yuga",
+              "gloss": "era / age",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "ke",
+              "gloss": "of",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "nāyaka",
+              "gloss": "leader / protagonist / hero",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Vocative address (Rāmakṛṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka).",
+          "sourceWords": [
+            {
+              "text": "रामकृष्ण",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "प्रभु,",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "इस",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "युग",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "के",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "नायक",
+              "wordIndices": [
+                5
+              ]
+            }
+          ]
+        },
+        "ban-aaye-ab": {
+          "source": "बन आए अब चन्द्रमणि सुत",
+          "sourceLanguage": "hi",
+          "roman": "Bana āe aba Candramaṇi suta",
+          "english": "{2:Now }{1:You have come }{0:as }{3:Candramaṇi's }{4:son}",
+          "words": [
+            {
+              "roman": "Bana",
+              "gloss": "becoming / having become",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "āe",
+              "gloss": "have come / arrived",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "aba",
+              "gloss": "now",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "Candramaṇi",
+              "gloss": "Candramaṇi, mother of Rāmakṛṣṇa Paramahaṃsa",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "suta",
+              "gloss": "son",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Compound verb bana āe (bannā + ānā in perfective aspect). Candramaṇi suta functions as a predicate nominative / appositive role.",
+          "sourceWords": [
+            {
+              "text": "बन",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "आए",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "अब",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "चन्द्रमणि",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "सुत",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
         }
       },
       "lineEvidence": {
         "har-pal-hota": "Current whole-song reading: Replace nominalized change occurs with changes; retain temporal and locative relation. Root review removed the needless within it tail.",
-        "jad-chetan-ke": "Current whole-song reading: Restore subject-first English while preserving the deliberate philosophical paradox."
+        "jad-chetan-ke": "Current whole-song reading: Restore subject-first English while preserving the deliberate philosophical paradox.",
+        "ramakrishna-prabhu": "2026-11-28: Use reviewed IAST in the lyric and identify the requested full historical name in its popup. Paramahaṃsa is not added to the sung words.",
+        "ban-aaye-ab": "2026-11-28: Keep the named mother’s identity and use the IAST already evidenced by the source and Roman line; update the popup’s full identification of her son."
       },
       "featureDispositions": [
         {
@@ -203797,7 +204241,18 @@
           ],
           "role": "worship_focus"
         }
-      ]
+      ],
+      "termReview20261128": {
+        "scope": "Targeted owner-reported terms and closely related occurrences; whole-song contextual reading. Distinct self-review; no fresh audio or exhaustive word-analysis audit.",
+        "changedLineIds": [
+          "ramakrishna-prabhu",
+          "ban-aaye-ab"
+        ],
+        "sources": [
+          "https://belurmath.org/sri-ramakrishna/",
+          "https://media.belurmath.org/public-celebration-22-february-2026-programme-details-21345/"
+        ]
+      }
     },
     "kanakadhara-stotram": {
       "reviewer": {
@@ -215317,6 +215772,146 @@
               ]
             }
           ]
+        },
+        "v1a": {
+          "roman": "Yeh māyā moh kī nagrī sab",
+          "english": "{0:This }{5:whole }{4:realm }{3:of }{1:worldly enchantment }and {2:attachment…}",
+          "words": [
+            {
+              "roman": "Yeh",
+              "gloss": "this"
+            },
+            {
+              "roman": "māyā",
+              "gloss": "worldly appearance and its power to beguile; worldly enchantment"
+            },
+            {
+              "roman": "moh",
+              "gloss": "attachment, delusion"
+            },
+            {
+              "roman": "kī",
+              "gloss": "of"
+            },
+            {
+              "roman": "nagrī",
+              "gloss": "city, realm"
+            },
+            {
+              "roman": "sab",
+              "gloss": "all, entire"
+            }
+          ],
+          "source": "यह माया मोह की नगरी सब",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "यह",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "माया",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मोह",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "की",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "नगरी",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "सब",
+              "wordIndices": [
+                5
+              ]
+            }
+          ]
+        },
+        "v3e": {
+          "roman": "Moh māyā kā bhār bahut hai",
+          "english": "The {3:burden }{2:of }{0:attachment }and {1:worldly enchantment }{5:is }{4:great…}",
+          "words": [
+            {
+              "roman": "Moh",
+              "gloss": "attachment, delusion"
+            },
+            {
+              "roman": "māyā",
+              "gloss": "worldly appearance and its power to beguile; worldly enchantment"
+            },
+            {
+              "roman": "kā",
+              "gloss": "of"
+            },
+            {
+              "roman": "bhār",
+              "gloss": "burden, weight"
+            },
+            {
+              "roman": "bahut",
+              "gloss": "much, great"
+            },
+            {
+              "roman": "hai",
+              "gloss": "is"
+            }
+          ],
+          "source": "मोह माया का भार बहुत है",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "मोह",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "माया",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "का",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "भार",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "बहुत",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "है",
+              "wordIndices": [
+                5
+              ]
+            }
+          ]
         }
       },
       "afterLines": {
@@ -215379,10 +215974,152 @@
               ]
             }
           ]
+        },
+        "v1a": {
+          "roman": "Yeh māyā moh kī nagrī sab",
+          "english": "{0:This }{5:whole }{4:realm }{3:of }{1:worldly enchantment }and {2:deluded infatuation…}",
+          "words": [
+            {
+              "roman": "Yeh",
+              "gloss": "this"
+            },
+            {
+              "roman": "māyā",
+              "gloss": "worldly appearance and its power to beguile; worldly enchantment"
+            },
+            {
+              "roman": "moh",
+              "gloss": "deluded infatuation; worldly attachment that clouds discernment"
+            },
+            {
+              "roman": "kī",
+              "gloss": "of"
+            },
+            {
+              "roman": "nagrī",
+              "gloss": "city, realm"
+            },
+            {
+              "roman": "sab",
+              "gloss": "all, entire"
+            }
+          ],
+          "source": "यह माया मोह की नगरी सब",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "यह",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "माया",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मोह",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "की",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "नगरी",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "सब",
+              "wordIndices": [
+                5
+              ]
+            }
+          ]
+        },
+        "v3e": {
+          "roman": "Moh māyā kā bhār bahut hai",
+          "english": "The {3:burden }{2:of }{0:deluded infatuation }and {1:worldly enchantment }{5:is }{4:great…}",
+          "words": [
+            {
+              "roman": "Moh",
+              "gloss": "deluded infatuation; worldly attachment that clouds discernment"
+            },
+            {
+              "roman": "māyā",
+              "gloss": "worldly appearance and its power to beguile; worldly enchantment"
+            },
+            {
+              "roman": "kā",
+              "gloss": "of"
+            },
+            {
+              "roman": "bhār",
+              "gloss": "burden, weight"
+            },
+            {
+              "roman": "bahut",
+              "gloss": "much, great"
+            },
+            {
+              "roman": "hai",
+              "gloss": "is"
+            }
+          ],
+          "source": "मोह माया का भार बहुत है",
+          "sourceLanguage": "hi",
+          "sourceWords": [
+            {
+              "text": "मोह",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "माया",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "का",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "भार",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "बहुत",
+              "wordIndices": [
+                4
+              ]
+            },
+            {
+              "text": "है",
+              "wordIndices": [
+                5
+              ]
+            }
+          ]
         }
       },
       "lineEvidence": {
-        "v2f": "Current whole-song reading: Improve natural English while preserving the source meaning and image."
+        "v2f": "Current whole-song reading: Improve natural English while preserving the source meaning and image.",
+        "v1a": "2026-11-28: The whole stanza describes magic, shadow, transient life and entanglement that obstruct remembrance. Preserve moh’s deluded infatuation alongside the distinct māyā image of worldly enchantment.",
+        "v3e": "2026-11-28: The whole stanza describes magic, shadow, transient life and entanglement that obstruct remembrance. Preserve moh’s deluded infatuation alongside the distinct māyā image of worldly enchantment."
       },
       "featureDispositions": [
         {
@@ -215461,7 +216198,17 @@
           "reason": "Source passage retains this feature after the English repairs: …it is only my Sai.  / Dissolve into my breaths, O Sai. ",
           "role": "worship_focus"
         }
-      ]
+      ],
+      "termReview20261128": {
+        "scope": "Targeted owner-reported terms and closely related occurrences; whole-song contextual reading. Distinct self-review; no fresh audio or exhaustive word-analysis audit.",
+        "changedLineIds": [
+          "v1a",
+          "v3e"
+        ],
+        "sources": [
+          "https://www.rekhta.org/urdudictionary?keyword=moh&lang=hi&reftype=rweb"
+        ]
+      }
     },
     "man-ke-manjeere-se": {
       "reviewer": {
@@ -218874,6 +219621,57 @@
               ]
             }
           ]
+        },
+        "mat-kar-moh-tu": {
+          "source": "मत कर मोह तू",
+          "sourceLanguage": "hi",
+          "roman": "mata kara moha tū",
+          "english": "{0,3:Do not }{1:harbor }{2:worldly attachment.}",
+          "words": [
+            {
+              "roman": "mata",
+              "gloss": "do not [prohibitive particle]"
+            },
+            {
+              "roman": "kara",
+              "gloss": "do / make [imperative 2sg familiar]"
+            },
+            {
+              "roman": "moha",
+              "gloss": "delusion / worldly attachment / infatuation"
+            },
+            {
+              "roman": "tū",
+              "gloss": "you [2sg nominative pronoun]"
+            }
+          ],
+          "grammarNote": "Prohibitive particle 'mata' with informal imperative verb 'kara' and postposed subject pronoun 'tū'.",
+          "sourceWords": [
+            {
+              "text": "मत",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "कर",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मोह",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "तू",
+              "wordIndices": [
+                3
+              ]
+            }
+          ]
         }
       },
       "afterLines": {
@@ -219110,13 +219908,65 @@
               ]
             }
           ]
+        },
+        "mat-kar-moh-tu": {
+          "source": "मत कर मोह तू",
+          "sourceLanguage": "hi",
+          "roman": "mata kara moha tū",
+          "english": "{0,3:Do not }{1:harbor }{2:deluded infatuation.}",
+          "words": [
+            {
+              "roman": "mata",
+              "gloss": "do not [prohibitive particle]"
+            },
+            {
+              "roman": "kara",
+              "gloss": "do / make [imperative 2sg familiar]"
+            },
+            {
+              "roman": "moha",
+              "gloss": "deluded infatuation; the fascination that clouds discernment and binds one in worldly attachment"
+            },
+            {
+              "roman": "tū",
+              "gloss": "you [2sg nominative pronoun]"
+            }
+          ],
+          "grammarNote": "Prohibitive particle 'mata' with informal imperative verb 'kara' and postposed subject pronoun 'tū'.",
+          "sourceWords": [
+            {
+              "text": "मत",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "कर",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मोह",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "तू",
+              "wordIndices": [
+                3
+              ]
+            }
+          ]
         }
       },
       "lineEvidence": {
         "nayan-diye-darshan-karne-ko": "Current whole-song reading: Repair literal syntax or collocation while preserving the image and source sense.",
         "hari-bhajan-ko-maan-re": "2026-11-27: Maan means esteem/value; Heed the worship is an unnatural collocation.",
         "haath-diye-kar-daan-re": "2026-11-27: Give in charity preserves the concrete purpose of hands; practice charity was abstract.",
-        "kanchan-nipjat-khaan-re": "2026-11-27: Comes from a mine is natural English for nipjat and keeps the concrete image."
+        "kanchan-nipjat-khaan-re": "2026-11-27: Comes from a mine is natural English for nipjat and keeps the concrete image.",
+        "mat-kar-moh-tu": "2026-11-28: The prohibition contrasts moh with valuing Hari’s worship and the proper use of the senses. Deluded infatuation preserves the mental bewilderment as well as its binding effect; worldly attachment is explanatory, not the entire primary sense."
       },
       "featureDispositions": [
         {
@@ -219124,7 +219974,7 @@
           "id": "theme.detachment",
           "disposition": "retain",
           "factor": 1,
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: Do not harbor worldly attachment.",
+          "reason": "The prohibition of deluded infatuation rejects the fascination that binds the listener; the popup retains its worldly-attachment implication.",
           "sourceLineIds": [
             "mat-kar-moh-tu"
           ]
@@ -219160,7 +220010,16 @@
           ],
           "role": "worship_focus"
         }
-      ]
+      ],
+      "termReview20261128": {
+        "scope": "Targeted owner-reported terms and closely related occurrences; whole-song contextual reading. Distinct self-review; no fresh audio or exhaustive word-analysis audit.",
+        "changedLineIds": [
+          "mat-kar-moh-tu"
+        ],
+        "sources": [
+          "https://www.rekhta.org/urdudictionary?keyword=moh&lang=hi&reftype=rweb"
+        ]
+      }
     },
     "mera-aap-ki-krupa-se": {
       "reviewer": {

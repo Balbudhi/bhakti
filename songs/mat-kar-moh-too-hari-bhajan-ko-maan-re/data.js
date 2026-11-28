@@ -41,7 +41,7 @@ window.SONG_LINES = {
     "source": "मत कर मोह तू",
     "sourceLanguage": "hi",
     "roman": "mata kara moha tū",
-    "english": "{0,3:Do not }{1:harbor }{2:worldly attachment.}",
+    "english": "{0,3:Do not }{1:harbor }{2:deluded infatuation.}",
     "words": [
       {
         "roman": "mata",
@@ -53,7 +53,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "moha",
-        "gloss": "delusion / worldly attachment / infatuation"
+        "gloss": "deluded infatuation; the fascination that clouds discernment and binds one in worldly attachment"
       },
       {
         "roman": "tū",

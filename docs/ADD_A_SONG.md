@@ -60,6 +60,15 @@ Keep divine names (Hari, Rāma, Śyāma), not “Lord” for all of them. Roman 
 and o outside Dravidian languages. Never change the owner's English (`koi-hor-nahi`,
 `arunachala-akshara-mana-malai`).
 
+Do not narrow a layered term to its most familiar social meaning. In the Datta
+address retain **Brahmacārī**: its popup explains life in Brahman (the absolute
+reality) as well as the familiar celibate-disciple/ascetic sense. Keep the
+Brahman-dwelling explanation distinct from a claim about historical etymology.
+For *moh*, preserve the delusion or infatuation where the passage activates it;
+“worldly attachment” can explain the binding effect in the popup but must not
+silently erase that meaning from the English. Neither is a global substitution:
+choose each occurrence from its language and whole passage.
+
 ## 3. The credits
 
 Poet, singer, composer: look in this order and stop when one is settled.

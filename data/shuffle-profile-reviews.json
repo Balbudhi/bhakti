@@ -17217,12 +17217,63 @@
                   ]
                 }
               ]
+            },
+            "mat-kar-moh-tu": {
+              "source": "मत कर मोह तू",
+              "sourceLanguage": "hi",
+              "roman": "mata kara moha tū",
+              "english": "{0,3:Do not }{1:harbor }{2:worldly attachment.}",
+              "words": [
+                {
+                  "roman": "mata",
+                  "gloss": "do not [prohibitive particle]"
+                },
+                {
+                  "roman": "kara",
+                  "gloss": "do / make [imperative 2sg familiar]"
+                },
+                {
+                  "roman": "moha",
+                  "gloss": "delusion / worldly attachment / infatuation"
+                },
+                {
+                  "roman": "tū",
+                  "gloss": "you [2sg nominative pronoun]"
+                }
+              ],
+              "grammarNote": "Prohibitive particle 'mata' with informal imperative verb 'kara' and postposed subject pronoun 'tū'.",
+              "sourceWords": [
+                {
+                  "text": "मत",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "कर",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "मोह",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "तू",
+                  "wordIndices": [
+                    3
+                  ]
+                }
+              ]
             }
           },
           "originalInputHash": "6d07f37ffb80913f9777555befea6bf557d071055b0dbab1790901fec2fa505f",
-          "inputHash": "825bf069a632c4782547e36c7f62fb0f4a650e091c554e6be00f424d5432ccc7",
+          "inputHash": "c761f61460daee203282aa1c8ce78e80a8b61392204fac69c72ef65b479dfa62",
           "baseFeaturesHash": "bd3a469d9619aa3c269ff78504d1a4d06a1250246f446c808634eb11e5e4256d",
-          "evidenceHash": "f99410a0279b208339e2c5425fabc9339c633cf0a2bea71895ad9bd48f81f47d"
+          "evidenceHash": "08f5114e1883ffad50a5faeb46d732069ac529119963fc27e9590ef551322814"
         }
       }
     },
@@ -19988,12 +20039,152 @@
                   ]
                 }
               ]
+            },
+            "v1a": {
+              "roman": "Yeh māyā moh kī nagrī sab",
+              "english": "{0:This }{5:whole }{4:realm }{3:of }{1:worldly enchantment }and {2:attachment…}",
+              "words": [
+                {
+                  "roman": "Yeh",
+                  "gloss": "this"
+                },
+                {
+                  "roman": "māyā",
+                  "gloss": "worldly appearance and its power to beguile; worldly enchantment"
+                },
+                {
+                  "roman": "moh",
+                  "gloss": "attachment, delusion"
+                },
+                {
+                  "roman": "kī",
+                  "gloss": "of"
+                },
+                {
+                  "roman": "nagrī",
+                  "gloss": "city, realm"
+                },
+                {
+                  "roman": "sab",
+                  "gloss": "all, entire"
+                }
+              ],
+              "source": "यह माया मोह की नगरी सब",
+              "sourceLanguage": "hi",
+              "sourceWords": [
+                {
+                  "text": "यह",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "माया",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "मोह",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "की",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "नगरी",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "सब",
+                  "wordIndices": [
+                    5
+                  ]
+                }
+              ]
+            },
+            "v3e": {
+              "roman": "Moh māyā kā bhār bahut hai",
+              "english": "The {3:burden }{2:of }{0:attachment }and {1:worldly enchantment }{5:is }{4:great…}",
+              "words": [
+                {
+                  "roman": "Moh",
+                  "gloss": "attachment, delusion"
+                },
+                {
+                  "roman": "māyā",
+                  "gloss": "worldly appearance and its power to beguile; worldly enchantment"
+                },
+                {
+                  "roman": "kā",
+                  "gloss": "of"
+                },
+                {
+                  "roman": "bhār",
+                  "gloss": "burden, weight"
+                },
+                {
+                  "roman": "bahut",
+                  "gloss": "much, great"
+                },
+                {
+                  "roman": "hai",
+                  "gloss": "is"
+                }
+              ],
+              "source": "मोह माया का भार बहुत है",
+              "sourceLanguage": "hi",
+              "sourceWords": [
+                {
+                  "text": "मोह",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "माया",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "का",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "भार",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "बहुत",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "है",
+                  "wordIndices": [
+                    5
+                  ]
+                }
+              ]
             }
           },
           "originalInputHash": "b73d7c59ffea7e0a41db66e954f465835fb549dbb6626b0da0b5eec3744283a6",
-          "inputHash": "e101201f42238425c130587ae2117ea516bbec780857a02feee53ada51a78fd0",
+          "inputHash": "ef598a864920398335ad6dae42a7bbf6dbf1aa558ab43fe35043fc86783a4ae2",
           "baseFeaturesHash": "7c7f75bb09d386331e488fce57b0dc61ab9926351ba9aa87e0592dfd53226fae",
-          "evidenceHash": "1dcbfc3847a05acbd82f63eaaa3a6e201cd1cc679c4e7ec91878a010e6d399e6"
+          "evidenceHash": "367ca5c95dced7ecc671450b405e581b3329ac826d54ffe7f596e5cd364caf5f"
         }
       },
       "audio": {
@@ -71733,9 +71924,9 @@
             }
           },
           "originalInputHash": "7024c6804342ce56ad79030e56d1f93fed0da03950a01acdf593cd72641bb08e",
-          "inputHash": "838e0d3d87fd91e3fcc483b68a753b1de3cf07c60962727c1866b1c565ce3a17",
+          "inputHash": "3bf9912af1fa7bbc71465be27fcb473f01446a003454c6f8e2926947dafebd39",
           "baseFeaturesHash": "17112dc6823830aa94b5bce1d6dbc8ac9897a40e4aca44938c5d1bfcdcfd44fb",
-          "evidenceHash": "6311c2a022a1ca691feddaff9fcaaa668b1113a12fda6cbc4067e646297d8556"
+          "evidenceHash": "166367910f1eb523a68454e41f6fad0a38bca1ba13feb163699b5ffad594552b"
         }
       },
       "audio": {
@@ -105587,9 +105778,9 @@
             }
           },
           "originalInputHash": "5b535583d2a036e900220f252075927819e7d35731c437fe4af3c11fe7865340",
-          "inputHash": "65cefbe07508ae0529ed15d0c8980e14f9539e2624e4b96be8baf496b3f7637c",
+          "inputHash": "cd10cd736cb5802d415dbab31741d60eaed846089fca8cc8bb3f6ddbc918989d",
           "baseFeaturesHash": "5f862e0e5aa33ecc59467cfa27c0ebe6a9e08e6770fa11d0d0d560bee3537f55",
-          "evidenceHash": "333f08f5daa09d129ce0b8d3cb73820ea4da3bd783ee3c1baf78a70a76a214bc"
+          "evidenceHash": "e6505b6e6eddb05e66b85a77eb4a5db7b46e0896b7b0b98dcd89501e439fda50"
         }
       }
     },
@@ -128455,12 +128646,176 @@
                   ]
                 }
               ]
+            },
+            "ramakrishna-prabhu": {
+              "source": "रामकृष्ण प्रभु, इस युग के नायक",
+              "sourceLanguage": "hi",
+              "roman": "Rāmakṛṣṇa prabhu, isa yuga ke nāyaka",
+              "english": "{1:Lord }{0:Ramakrishna, }{5:leader }{4:of }{2:this }{3:age}",
+              "words": [
+                {
+                  "roman": "Rāmakṛṣṇa",
+                  "gloss": "Ramakrishna",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "prabhu,",
+                  "gloss": "Lord / Master,",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "isa",
+                  "gloss": "this",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "yuga",
+                  "gloss": "era / age",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "ke",
+                  "gloss": "of",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "nāyaka",
+                  "gloss": "leader / protagonist / hero",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "Vocative address (Rāmakṛṣṇa prabhu) followed by an appositive genitive phrase (isa yuga ke nāyaka).",
+              "sourceWords": [
+                {
+                  "text": "रामकृष्ण",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "प्रभु,",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "इस",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "युग",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "के",
+                  "wordIndices": [
+                    4
+                  ]
+                },
+                {
+                  "text": "नायक",
+                  "wordIndices": [
+                    5
+                  ]
+                }
+              ]
+            },
+            "ban-aaye-ab": {
+              "source": "बन आए अब चन्द्रमणि सुत",
+              "sourceLanguage": "hi",
+              "roman": "Bana āe aba Candramaṇi suta",
+              "english": "{2:Now }{1:You have come }{0:as }{3:Chandramani's }{4:son}",
+              "words": [
+                {
+                  "roman": "Bana",
+                  "gloss": "becoming / having become",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "āe",
+                  "gloss": "have come / arrived",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "aba",
+                  "gloss": "now",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "Candramaṇi",
+                  "gloss": "Chandramani (proper name of Sri Ramakrishna's mother)",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "suta",
+                  "gloss": "son",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "Compound verb bana āe (bannā + ānā in perfective aspect). Candramaṇi suta functions as a predicate nominative / appositive role.",
+              "sourceWords": [
+                {
+                  "text": "बन",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "आए",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "अब",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "चन्द्रमणि",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "सुत",
+                  "wordIndices": [
+                    4
+                  ]
+                }
+              ]
             }
           },
           "originalInputHash": "308d777459a0a990c76757ae6c5346ce5cab6c2cbf2f536ede5b4ec5cf03f3a0",
-          "inputHash": "b2911bcc218fe63c3ebedf1d0e9d46cd1b48c94b3d165d0c2f081b4cc24bc888",
+          "inputHash": "568fe60c5ca3742b569aefe8668d485c2bc265ae1eeabbdaf18a588ce9fe1158",
           "baseFeaturesHash": "bb9e9e47b640856899bbedf2df704a9886c118a8cd710cee80def0ccb95f5716",
-          "evidenceHash": "435b9ff63412ffc95c2526ace484af277adabd0baaad485870ce95a9eed427e4"
+          "evidenceHash": "ef9827ea53f43c964705d87e0609b71cd650b8f41a8bb6f430792ace2af10831"
+        },
+        "subjectTagRevision": {
+          "version": 1,
+          "priorTags": [
+            "Śrī Rāmakṛṣṇa",
+            "Guru"
+          ],
+          "originalInputHash": "308d777459a0a990c76757ae6c5346ce5cab6c2cbf2f536ede5b4ec5cf03f3a0",
+          "inputHash": "d8eb73fcf4c3dc99568e60819b71d65e30b9fe0c52b3c3f92fc11e93e054a7d9",
+          "evidenceHash": "655aec5ba4889283678e286dab6cb6a601f18789cb06e28464437d8e8fa3d731"
         }
       },
       "audio": {
@@ -164317,12 +164672,64 @@
               ],
               "nameTable": false,
               "grammarNote": "Audited performed unit. Same reviewed contextual senses; actual vocative order, repetitions and source orthography preserved. No timing acceptance."
+            },
+            "l001": {
+              "source": "दत्ता ब्रह्मचारी रे ब्रह्मचारी",
+              "sourceLanguage": "mr",
+              "sourceWords": [
+                {
+                  "text": "दत्ता",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ब्रह्मचारी",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "रे",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ब्रह्मचारी",
+                  "wordIndices": [
+                    3
+                  ]
+                }
+              ],
+              "roman": "dattā brahmacārī re brahmacārī",
+              "english": "{0:O Datta}, {1:celibate ascetic}, {2:O} {3:celibate ascetic}!",
+              "words": [
+                {
+                  "roman": "dattā",
+                  "gloss": "O Datta, the divine son of Atri; Datta means “given” or “granted”."
+                },
+                {
+                  "roman": "brahmacārī",
+                  "gloss": "celibate ascetic; one devoted to sacred discipline"
+                },
+                {
+                  "roman": "re",
+                  "gloss": "O; familiar direct address"
+                },
+                {
+                  "roman": "brahmacārī",
+                  "gloss": "celibate ascetic; one devoted to sacred discipline"
+                }
+              ],
+              "nameTable": false,
+              "grammarNote": "Marathi devotional address. The omitted subject or possessor is supplied from the apostrophe to Datta; the named locations remain concrete places. Brahmacārī is rendered celibate ascetic. The institution additionally interprets it as one who dwells in Brahman; that traditional explanation does not license adding unsung superlatives."
             }
           },
           "originalInputHash": "688a6ec3284b852e92d48de0a80b9ba14e7bdfe87a0a050a04e3e3bef5aab458",
-          "inputHash": "7024264258a0ae413d05d91a8e7179c8b09af3a16abf9058b565e48cee13decd",
+          "inputHash": "0f34862b81dcf6d47c544c9f566d90f69f9c35b9dddf0d40fe0b532db4acc8c2",
           "baseFeaturesHash": "75eda68c576761a7aab57528791582c8c022f5e4a9c193520fa8b56d576cb809",
-          "evidenceHash": "02159bc78ca49159f625b62d56249cf82626efa647e85b7d03bc799af747252d"
+          "evidenceHash": "4998933a55376d6b651f9ac49c5e440b6a55e545352524f39245feac15ae9211"
         }
       },
       "audio": {

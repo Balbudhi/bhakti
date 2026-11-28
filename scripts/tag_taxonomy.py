@@ -48,6 +48,8 @@ TAG_ALIASES: dict[str, tuple[str, ...]] = {
 }
 
 SUBJECT_TAG_ALIASES = {
+    "Śrī Rāmakṛṣṇa": "Rāmakṛṣṇa Paramahaṃsa",
+    "Rāmakṛṣṇa": "Rāmakṛṣṇa Paramahaṃsa",
     "Śrī Śāradā Devī": "Śāradā Devī",
     "Vaishno Devi": "Vaiṣṇo Devī",
     "Devī": "Śakti",
@@ -64,7 +66,7 @@ SUBJECT_TAG_ALIASES = {
 SUBJECT_TAG_PARENTS = {
     **dict.fromkeys(("Durgā", "Kālī", "Lakṣmī", "Sarasvatī", "Pārvatī", "Sītā",
                      "Vaiṣṇo Devī", "Madhumatī Śyāmalā", "Śyāmalā", "Rādhā"), ("Śakti",)),
-    **dict.fromkeys(("Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa", "Śrī Rāmakṛṣṇa"), ("Guru",)),
+    **dict.fromkeys(("Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa Paramahaṃsa"), ("Guru",)),
     "Śāradā Devī": ("Śakti", "Guru"),
 }
 

@@ -762,7 +762,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dān dharm se moh hai ghaṭtā yah batlāne āye",
-    "english": "{2:Through }{0:charity }{1:and righteous conduct, }{3:attachment }{4,5:diminishes; }{8:he has come }{7:to teach }{6:this}",
+    "english": "{2:Through }{0:charity }{1:and righteous conduct, }{3:deluded attachment }{4,5:diminishes; }{8:he has come }{7:to teach }{6:this}",
     "words": [
       {
         "roman": "dān",
@@ -784,7 +784,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "moh",
-        "gloss": "delusion; worldly attachment",
+        "gloss": "deluded attachment; infatuated clinging to worldly things, diminished here through charity and righteous conduct",
         "concept_key": "",
         "preserve_in_english": false
       },

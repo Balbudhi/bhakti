@@ -294,7 +294,7 @@
     "datta-brahmachari": {
       "Viṭṭhala": {
         "decision": "dismiss",
-        "inputHash": "b39e898c6e51b1dae1d20bc59479e63d744ce02cb5a84e8bb50e60ec35ec924f",
+        "inputHash": "fedce18ba145ee6187cd2c089d2709330cb3cc581d1627fa6ab7d9ff18011ead",
         "reason": "Pandharpur is one location of Dattatreya’s roaming; the sung action belongs to Datta, not a named Vitthala reference."
       }
     },
@@ -705,32 +705,32 @@
     "pradnya-vivardhan-stotra": {
       "Kṛṣṇa": {
         "decision": "dismiss",
-        "inputHash": "d2f13b07493e9fb113cd5543f1819f1c318c4e35912b998bd467221450dcb569",
+        "inputHash": "04e6ec0c7a187fad77fbdabcdf09997209d145bdc5f63350b8a76bde1d574d5f",
         "reason": "The peacock banner belongs to Skanda, the named deity praised; it does not identify Kṛṣṇa."
       },
       "Sarasvatī": {
         "decision": "dismiss",
-        "inputHash": "57a641ce37d7647c942480f248bf62036614165ad40ece78061f447c9e01e6a5",
+        "inputHash": "3fe7debb55f17c46a01a7192fea15d6d1023d5e5239936b85e3c97624dd149c2",
         "reason": "Sārasvata describes attained eloquence and learning here; Sarasvatī is only the glossary derivation, not a separate named deity reference."
       },
       "Śiva": {
         "decision": "dismiss",
-        "inputHash": "9136e873dcf5f659c1a25804b225bb6fc3956fc1bfb66e3850a98015ead1c075",
+        "inputHash": "186870a531b2eea0e5a1ee6be755edac8788fdd9108a64270134ce65697989c3",
         "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
       },
       "Gaṇeśa": {
         "decision": "dismiss",
-        "inputHash": "0e55af5980d22f8d1862b6fbc15407b9560e8b33f6c974a76859de9fc4657178",
+        "inputHash": "6d2f574a08702e5c8c243b015a1bfd7cfe7d149aefb837f691aa0bf2a29a2da6",
         "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
       },
       "Pārvatī": {
         "decision": "dismiss",
-        "inputHash": "33cf3c7b0c4ebd2f2426d82eed4b9476dcbb0f3c889d0591edd87376338b1af3",
+        "inputHash": "63ac5c251a5c015fff5e31b7071c7a41c0ae709cf04c92ef778ab79f6530ad9d",
         "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
       },
       "Śakti": {
         "decision": "dismiss",
-        "inputHash": "b2bbe1be6e46844bfe1a113d96ca8709acc3c100c0bfd9197eefb1e490a17735",
+        "inputHash": "a9e1357a709454acdd0b78564910f48c00621a59b19c45d260d88319a5896341",
         "reason": "This is Kārtikeya’s recitation of his own names. Śaṅkara is his father, Umā his mother and Gaṇādhiśa his brother; these relatives only identify Kārtikeya, without independent praise, invocation or action."
       }
     },
@@ -1457,6 +1457,18 @@
         "decision": "dismiss",
         "inputHash": "67fc292f4a8e0ef5cc3ba160e57a84ffd8e47c2c591b8376e2c0ac38048d6c7e",
         "reason": "Viṭṭhala occurs only as the relative in Sarasvatī’s elder-daughter-in-law epithet. Hari is independently sought at l006, retaining Viṣṇu but not this incidental specific-form tag. Whole-song check found no independent invocation, praise, appeal, or substantive action for this removed subject elsewhere."
+      }
+    },
+    "kaise-lagaun-tumse-main-preet": {
+      "Rāma": {
+        "decision": "dismiss",
+        "inputHash": "3b389b83a6c0d04b2bf2bd1f9ccf0946b17206f772b396a9870ef98b4463534f",
+        "reason": "The performed address is to Rāmakṛṣṇa Paramahaṃsa, identified also as Candramaṇi’s son. Rāma and Kṛṣṇa only explain his personal name in the popup; neither is independently invoked or portrayed in this song."
+      },
+      "Kṛṣṇa": {
+        "decision": "dismiss",
+        "inputHash": "0124a82f9b6ac37b52f171822b87dd055b812550668117968fb90d904540c41a",
+        "reason": "The performed address is to Rāmakṛṣṇa Paramahaṃsa, identified also as Candramaṇi’s son. Rāma and Kṛṣṇa only explain his personal name in the popup; neither is independently invoked or portrayed in this song."
       }
     }
   }

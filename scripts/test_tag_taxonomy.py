@@ -31,9 +31,16 @@ class TagTaxonomyTests(unittest.TestCase):
 
 
     def test_declared_teacher_identities_add_guru_without_merging_people(self) -> None:
-        for identity in ["Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa", "Śrī Rāmakṛṣṇa"]:
+        for identity in ["Śirḍī Sāī", "Dattātreya", "Rāmakṛṣṇa Paramahaṃsa"]:
             with self.subTest(identity=identity):
                 self.assertEqual(tags.normalize_subject_tags([identity]), [identity, "Guru"])
+
+    def test_ramakrishna_title_aliases_share_one_reviewed_identity(self) -> None:
+        values = ["Śrī Rāmakṛṣṇa", "Rāmakṛṣṇa", "Rāmakṛṣṇa Paramahaṃsa"]
+        expected = ["Rāmakṛṣṇa Paramahaṃsa", "Guru"]
+        self.assertEqual(tags.normalize_subject_tags(values), expected)
+        self.assertEqual(tags.normalize_subject_tags(expected), expected)
+        self.assertEqual(tags.merge_subject_tags([], [{"roman": "Rāmakṛṣṇa Paramahaṃsa"}]), [])
 
     def test_closure_applies_only_to_reviewed_explicit_names(self) -> None:
         self.assertEqual(tags.merge_subject_tags(["Sarasvatī"], [{"roman": "sarasvatī"}]),

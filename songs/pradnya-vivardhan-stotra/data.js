@@ -641,7 +641,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "gāṅgeyastāmracūḍaśca brahmacārī śikhidhvajaḥ |",
-    "english": "{0:Son of Gaṅgā, }{1:rooster-crested, }{2:and }{3:celibate student, }{4:peacock-}{5:bannered;}",
+    "english": "{0:Son of Gaṅgā, }{1:rooster-crested, }{2:and }{3:Brahmacārī, }{4:peacock-}{5:bannered;}",
     "words": [
       {
         "roman": "gāṅgeyas",
@@ -663,7 +663,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmacārī",
-        "gloss": "celibate student; brahmacārī",
+        "gloss": "Kārtikeya as a practitioner of sacred discipline; brahmacārī commonly denotes a celibate student of sacred learning.",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -770,7 +770,7 @@
     },
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
       "status": "screened",
-      "readerSha256": "54120e4ba5d445d2a82f8452dfd4f0773ae3892dfbf87374b4b0724fa8f77d4e",
+      "readerSha256": "b11de5974fd35248fc9721c12f0169d14f5baaaa801ebf2fbe910217ccf0c3d2",
       "definitionCount": 12,
       "screenedAt": "2026-11-27",
       "reviewScope": "Complete contextual reading of current source, IAST, English and word maps in the Kabīr group, followed by final fidelity/English inspection. Targeted source checks; no fresh listening or exhaustive lexical reconstruction. See dated songFollowUps in data/translation-review-2026-11-25.json",
@@ -779,6 +779,14 @@
         "readerSha256": "51248b53b59200e701435e3a2bee06ac33523a39647675b998859c01bce19449",
         "definitionCount": 12,
         "reviewedAt": "2026-11-21"
+      },
+      "termRevision20261128": {
+        "priorReaderSha256": "54120e4ba5d445d2a82f8452dfd4f0773ae3892dfbf87374b4b0724fa8f77d4e",
+        "readerSha256": "b11de5974fd35248fc9721c12f0169d14f5baaaa801ebf2fbe910217ccf0c3d2",
+        "changedLineIds": [
+          "mat-kar-moh-tu"
+        ],
+        "scope": "Targeted term/identity correction after whole-song contextual reading; preserves earlier review scope and unresolved questions. See data/translation-repair-reviews.json."
       }
     },
     "prabhu-kar-sab-dukh-door-hamare": {
@@ -965,7 +973,7 @@
     },
     "main-murakh-main-anpad": {
       "status": "screened",
-      "readerSha256": "70bb2f0039135f9eee67eb0a636af2143bb8a078681d3f5da0a622a89ac36b96",
+      "readerSha256": "c4455b2749fc5e8afd40750ca0a72e9bfd8833e1d3ddf05811b05e33768b5ad4",
       "definitionCount": 22,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -974,6 +982,15 @@
         "readerSha256": "a2f669cf6b67a5d16370128d3946c96db5fbcd1a2a2ead08c4257c9ee3f76954",
         "definitionCount": 22,
         "reviewedAt": "2026-11-21"
+      },
+      "termRevision20261128": {
+        "priorReaderSha256": "70bb2f0039135f9eee67eb0a636af2143bb8a078681d3f5da0a622a89ac36b96",
+        "readerSha256": "c4455b2749fc5e8afd40750ca0a72e9bfd8833e1d3ddf05811b05e33768b5ad4",
+        "changedLineIds": [
+          "v1a",
+          "v3e"
+        ],
+        "scope": "Targeted term/identity correction after whole-song contextual reading; preserves earlier review scope and unresolved questions. See data/translation-repair-reviews.json."
       }
     },
     "man-ke-manjeere-se": {
@@ -2071,7 +2088,7 @@
     },
     "bhiksha-de-de-maai": {
       "status": "screened",
-      "readerSha256": "2022b4614bea6f625bd3871be71a6ddb818151aa8cd0dec2860fc13babb60b6f",
+      "readerSha256": "00538cf7a554e80932b733f8c09cd432235d97e706558f617074e7bdb233bd78",
       "definitionCount": 14,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2080,6 +2097,14 @@
         "readerSha256": "ed22efe5a608a4211c1ecee9af68674e5dc3db73be1c96b7c14ef58cff94c17c",
         "definitionCount": 14,
         "reviewedAt": "2026-11-22"
+      },
+      "termRevision20261128": {
+        "priorReaderSha256": "2022b4614bea6f625bd3871be71a6ddb818151aa8cd0dec2860fc13babb60b6f",
+        "readerSha256": "00538cf7a554e80932b733f8c09cd432235d97e706558f617074e7bdb233bd78",
+        "changedLineIds": [
+          "verse-3-1"
+        ],
+        "scope": "Targeted term/identity correction after whole-song contextual reading; preserves earlier review scope and unresolved questions. See data/translation-repair-reviews.json."
       }
     },
     "leke-chalo-palkhi": {
@@ -2682,7 +2707,7 @@
     },
     "pradnya-vivardhan-stotra": {
       "status": "screened",
-      "readerSha256": "1c1902c233f98615cfd7a20a37074f6f86422aaf77b58d8ba33a30ee57c0e7ed",
+      "readerSha256": "dcabfb1da0f7f6e8efc96b9a4383b9b147a738d548d9b0949d9be4c33a6805f4",
       "definitionCount": 19,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -2700,6 +2725,14 @@
         "readerSha256": "1c1902c233f98615cfd7a20a37074f6f86422aaf77b58d8ba33a30ee57c0e7ed",
         "report": "data/subject-tag-review-2026-11-25.json",
         "scope": "Only subjectTags changed; all source, Roman text, English, word maps, performance sequence, audio and timings byte-preserved. Existing translation review scope, date and unresolved questions are unchanged."
+      },
+      "termRevision20261128": {
+        "priorReaderSha256": "1c1902c233f98615cfd7a20a37074f6f86422aaf77b58d8ba33a30ee57c0e7ed",
+        "readerSha256": "dcabfb1da0f7f6e8efc96b9a4383b9b147a738d548d9b0949d9be4c33a6805f4",
+        "changedLineIds": [
+          "verse-2a"
+        ],
+        "scope": "Targeted term/identity correction after whole-song contextual reading; preserves earlier review scope and unresolved questions. See data/translation-repair-reviews.json."
       }
     },
     "mati-re-mati-re": {
@@ -3510,7 +3543,7 @@
     },
     "kaise-lagaun-tumse-main-preet": {
       "status": "screened",
-      "readerSha256": "3f9e01b7decf98ae42b15f7a2191b4928efd8c448d756552b2985b4dbade10ac",
+      "readerSha256": "678d8d3b0428f2e6b15657fbded96b82849d35ea4f48a3e08edc894c494218be",
       "definitionCount": 16,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -3519,6 +3552,15 @@
         "readerSha256": "e3119a366294cd8791bde09e0d81e4a217d3d66528df7237a361a5ce8d05944e",
         "definitionCount": 16,
         "reviewedAt": "2026-11-21"
+      },
+      "termRevision20261128": {
+        "priorReaderSha256": "3f9e01b7decf98ae42b15f7a2191b4928efd8c448d756552b2985b4dbade10ac",
+        "readerSha256": "678d8d3b0428f2e6b15657fbded96b82849d35ea4f48a3e08edc894c494218be",
+        "changedLineIds": [
+          "ramakrishna-prabhu",
+          "ban-aaye-ab"
+        ],
+        "scope": "Targeted term/identity correction after whole-song contextual reading; preserves earlier review scope and unresolved questions. See data/translation-repair-reviews.json."
       }
     },
     "ma-tumko-kaise-batalau": {
@@ -5230,7 +5272,7 @@
     },
     "datta-brahmachari": {
       "status": "screened",
-      "readerSha256": "fec845d9599f49fb290c0fb2387ccc4d02758ff1605159664ee90ebc59c90654",
+      "readerSha256": "8ce106b4872ad7df96ba6fa1d00d3280463b2403d9f3a42fccd85c950d4592d5",
       "definitionCount": 15,
       "screenedAt": "2026-11-25",
       "reviewScope": "Complete contextual reading of all current English definitions with source, word maps and adjacent lines; independent lead review of every changed definition. Targeted source investigation; no claim of exhaustive independent lexical reconstruction or fresh listening. Protected English preserved.",
@@ -5239,6 +5281,14 @@
         "readerSha256": "f1de159de308db7fafc8de89ede5b8e43b6e64193d466d21a77e93d7f3fbf834",
         "definitionCount": 15,
         "reviewedAt": "2026-11-21"
+      },
+      "termRevision20261128": {
+        "priorReaderSha256": "fec845d9599f49fb290c0fb2387ccc4d02758ff1605159664ee90ebc59c90654",
+        "readerSha256": "8ce106b4872ad7df96ba6fa1d00d3280463b2403d9f3a42fccd85c950d4592d5",
+        "changedLineIds": [
+          "l001"
+        ],
+        "scope": "Targeted term/identity correction after whole-song contextual reading; preserves earlier review scope and unresolved questions. See data/translation-repair-reviews.json."
       }
     },
     "tirtha-vitthal-kshetra-vitthal": {

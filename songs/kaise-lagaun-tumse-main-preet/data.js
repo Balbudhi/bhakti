@@ -10,7 +10,7 @@ window.SONG_META = {
     "Hindi"
   ],
   "subjectTags": [
-    "Śrī Rāmakṛṣṇa",
+    "Rāmakṛṣṇa Paramahaṃsa",
     "Guru"
   ],
   "searchAliases": [
@@ -21,7 +21,9 @@ window.SONG_META = {
     "Surjoo Bhattacharya",
     "Kaise Lagavun Tumse Main Preet",
     "Sri Ramakrishna",
-    "Ramakrishna Bhajan"
+    "Ramakrishna Bhajan",
+    "Ramakrishna Paramahamsa",
+    "Ramakrishna Paramahansa"
   ],
   "audioSources": [
     {
@@ -185,11 +187,11 @@ window.SONG_LINES = {
     "source": "रामकृष्ण प्रभु, इस युग के नायक",
     "sourceLanguage": "hi",
     "roman": "Rāmakṛṣṇa prabhu, isa yuga ke nāyaka",
-    "english": "{1:Lord }{0:Ramakrishna, }{5:leader }{4:of }{2:this }{3:age}",
+    "english": "{1:Lord }{0:Rāmakṛṣṇa, }{5:leader }{4:of }{2:this }{3:age}",
     "words": [
       {
         "roman": "Rāmakṛṣṇa",
-        "gloss": "Ramakrishna",
+        "gloss": "Rāmakṛṣṇa Paramahaṃsa, the spiritual teacher and son of Candramaṇi; his name joins Rāma and Kṛṣṇa.",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -505,7 +507,7 @@ window.SONG_LINES = {
     "source": "बन आए अब चन्द्रमणि सुत",
     "sourceLanguage": "hi",
     "roman": "Bana āe aba Candramaṇi suta",
-    "english": "{2:Now }{1:You have come }{0:as }{3:Chandramani's }{4:son}",
+    "english": "{2:Now }{1:You have come }{0:as }{3:Candramaṇi's }{4:son}",
     "words": [
       {
         "roman": "Bana",
@@ -527,7 +529,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "Candramaṇi",
-        "gloss": "Chandramani (proper name of Sri Ramakrishna's mother)",
+        "gloss": "Candramaṇi, mother of Rāmakṛṣṇa Paramahaṃsa",
         "concept_key": "",
         "preserve_in_english": false
       },

@@ -70,7 +70,7 @@ window.SONG_LINES = {
       }
     ],
     "roman": "dattā brahmacārī re brahmacārī",
-    "english": "{0:O Datta}, {1:celibate ascetic}, {2:O} {3:celibate ascetic}!",
+    "english": "{0:O Datta}, {1:Brahmacārī}, {2:O} {3:Brahmacārī}!",
     "words": [
       {
         "roman": "dattā",
@@ -78,7 +78,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmacārī",
-        "gloss": "celibate ascetic; one devoted to sacred discipline"
+        "gloss": "One whose life is in Brahman, the absolute reality; also a celibate disciple or ascetic devoted to sacred discipline."
       },
       {
         "roman": "re",
@@ -86,11 +86,11 @@ window.SONG_LINES = {
       },
       {
         "roman": "brahmacārī",
-        "gloss": "celibate ascetic; one devoted to sacred discipline"
+        "gloss": "One whose life is in Brahman, the absolute reality; also a celibate disciple or ascetic devoted to sacred discipline."
       }
     ],
     "nameTable": false,
-    "grammarNote": "Marathi devotional address. The omitted subject or possessor is supplied from the apostrophe to Datta; the named locations remain concrete places. Brahmacārī is rendered celibate ascetic. The institution additionally interprets it as one who dwells in Brahman; that traditional explanation does not license adding unsung superlatives."
+    "grammarNote": "Marathi devotional address to Datta. Brahmacārī is retained because celibate ascetic narrows the title to a social discipline, while one who dwells in Brahman selects a devotional interpretation. The popup explains both. Brahman-dwelling is the institution’s spiritual interpretation, not an exclusive historical etymology."
   },
   "l002": {
     "source": "त्रिभुवनात तुझी फेरी दत्ता",

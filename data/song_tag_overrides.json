@@ -3886,6 +3886,7 @@
     },
     "kaise-lagaun-tumse-main-preet": {
       "addTags": [
+        "Rāmakṛṣṇa Paramahaṃsa",
         "Guru"
       ],
       "evidence": [
@@ -3894,6 +3895,12 @@
           "lineId": "ramakrishna-prabhu",
           "source": "रामकृष्ण प्रभु, इस युग के नायक",
           "reason": "Actual invocation of Ramakrishna as lord and leader of age; named spiritual teacher."
+        },
+        {
+          "tag": "Rāmakṛṣṇa Paramahaṃsa",
+          "lineId": "ramakrishna-prabhu",
+          "source": "रामकृष्ण प्रभु, इस युग के नायक",
+          "reason": "Owner-requested full subject name; the named teacher and Candramaṇi’s son in the performed text identify Rāmakṛṣṇa Paramahaṃsa. Historical-person identity confirmed by https://belurmath.org/sri-ramakrishna/ and https://media.belurmath.org/public-celebration-22-february-2026-programme-details-21345/."
         }
       ]
     },

@@ -11769,7 +11769,7 @@ window.BHAKTI_SONGS = [
       "Hindi"
     ],
     "subjectTags": [
-      "Śrī Rāmakṛṣṇa",
+      "Rāmakṛṣṇa Paramahaṃsa",
       "Guru"
     ],
     "searchAliases": [
@@ -11780,7 +11780,9 @@ window.BHAKTI_SONGS = [
       "Surjoo Bhattacharya",
       "Kaise Lagavun Tumse Main Preet",
       "Sri Ramakrishna",
-      "Ramakrishna Bhajan"
+      "Ramakrishna Bhajan",
+      "Ramakrishna Paramahamsa",
+      "Ramakrishna Paramahansa"
     ],
     "writer": "Swami Srikantananda",
     "singer": "Shurjo Bhattacharya",
@@ -13832,4 +13834,4 @@ window.BHAKTI_SONGS = [
     "queueNumber": 386
   }
 ];
-window.BHAKTI_SHUFFLE_REVISION = "8c51c0aec7934ff4ae35a0a0a69ac53f78e348ec917c114b78b74c18d071660e";
+window.BHAKTI_SHUFFLE_REVISION = "0e94ea8170bb8e50e276c88a96a07590d5cb38317be6cb2b1333670367e8447f";
