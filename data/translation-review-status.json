@@ -600,11 +600,11 @@
       "directReviewRecord": "data/gurbani-review-2026-11-24.json"
     },
     "mera-man-lochai": {
-      "status": "needs_source_review",
-      "readerSha256": "b091a001ec61896ddb6a3545975a70193a32e10889412dd67953ece63e4977e6",
+      "status": "screened",
+      "readerSha256": "6053d1635908367c1f224722b22cb767bc6dcd0668b00f18c2a2dac8c37775d1",
       "definitionCount": 48,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
+      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "14917a8b2896f2d06ac94c384bad52d53b9d30b08d2cf793cc6024c445537c81",
@@ -612,10 +612,7 @@
         "reviewedAt": "2026-11-21"
       },
       "directReviewRecord": "data/gurbani-review-2026-11-24.json",
-      "openDefinitions": [
-        "line-036"
-      ],
-      "openReason": "Canonical SGGS1206 and Sahib Singh support pria beloved; local unprompted ASR cannot distinguish the performed pria/prema. No silent replacement."
+      "openDefinitions": []
     },
     "so-dar-keha-so-ghar-keha": {
       "status": "screened",
@@ -686,10 +683,10 @@
     },
     "kaya-nahin-teri-nahin-teri": {
       "status": "needs_source_review",
-      "readerSha256": "f1adaf70328289ee43cddf0073af59426d1d70ece6be6212216bb8e780973cd8",
+      "readerSha256": "f90994d41858eb929ee4fcf56832b9bd5b6aeedd571577d7ae54ada155d49880",
       "definitionCount": 18,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
+      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "6024ee189ab8f5eb97ec2ea99045d2db62efde459502d29ef061dbdfd708a4b2",
@@ -699,7 +696,7 @@
       "openDefinitions": [
         "v3-line2"
       ],
-      "openReason": "Recorded vahan ki is supported by witnesses and local ASR; the genitive construction/referent remains unestablished."
+      "openReason": "Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection."
     },
     "naam-japan-kyon-chhod-diya": {
       "status": "screened",
@@ -755,10 +752,10 @@
     },
     "ye-tanu-mundna-be-mundna": {
       "status": "needs_source_review",
-      "readerSha256": "f2b6495e00887cbcf944880507282b6b6f8ca41448a7028b0b8ab0ace6a165d2",
+      "readerSha256": "8bcd1bc58d7660924950a187237e756eb18a8a87690b659cd79f08585a6519a0",
       "definitionCount": 17,
       "screenedAt": "2026-11-27",
-      "reviewScope": "Earlier whole-reader contextual screening retained, plus targeted source/grammar resolution of recorded open definitions. See passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json. Exact-file archived audio evidence reused where identified; free ASR corroboration is not direct listening.",
+      "reviewScope": "Earlier contextual screening retained; targeted source and paid audio follow-up recorded in passageResolutionFollowUp20261127. No blanket semantic certification or direct human listening claimed.",
       "previousReview": {
         "status": "finished",
         "readerSha256": "9fcb4bc7624da5efc77a522f6a2e45c0bec6a0630f87e291e9a2f5ff2a3a9010",
@@ -769,7 +766,7 @@
         "refrain-1",
         "v3-l2"
       ],
-      "openReason": "Mundana/be-mundana exact grammatical sense remains unestablished; free ASR confirms sounds but not lexeme/function. Descriptive giving/taking grammar corrected; exact kuch versus tha sung before lena remains an acoustic question."
+      "openReason": "Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis. Targeted audio and free Whisper do not support a confident kucha identification; printed tha also remains unconfirmed. Retain existing text provisionally and make the uncertainty visible in its linked gloss and note. Contextual giving/taking English is an interpretation, not a settled source reading."
     },
     "mat-kar-moh-too-hari-bhajan-ko-maan-re": {
       "status": "screened",

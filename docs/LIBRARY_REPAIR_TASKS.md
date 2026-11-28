@@ -3,32 +3,48 @@
 ## Remaining Kabīr passage resolution — 27 November 2026
 
 Owner requested source-grounded resolution of the ten recorded open definitions
-and publication of supported corrections. Six questions are resolved editorially:
+and publication of supported corrections. Seven questions are now resolved:
 kasbī occupational sense; color mixed into a wave; causative ferrying across;
-and the three Suntā Hai definitions (wordless echo and elliptical deathlessness
-as sign). Eight definitions across four readers change, including the repeated
-milāve fragment and a grammatical correction to descriptive giving/taking.
-Four exact source/interpretive questions remain: Kāyā v3-line2, Ye Tanu refrain-1
-and v3-l2, and Merā line-036. The latter's canonical pria is established but its
-performed pronunciation remains uncertain. Free ASR did not settle these. A
-capped $0.25 targeted audio-review request is pending; no paid calls were made.
+the three Suntā Hai definitions (wordless echo and elliptical deathlessness as
+sign); and Merā line-036, pria (beloved), established by canonical text,
+commentary and comparison with the same singer's two other pria occurrences.
+The first batch is live at commit 3653d888; Pages run 46092128496 succeeded,
+and all 16 checked live files matched the release artifact.
 
-Current step: publish supported corrections and retain the four explicit open
-records. The exact evidence and dispositions are in passageResolutionFollowUp20261127
-in data/translation-review-2026-11-25.json. Source, IAST, token identities, media,
-metadata, sequence and timings remain unchanged. Original shuffle assessments
-remain intact, with reviewed editorial receipts and the paired catalogue.
+Three questions remain: Kāyā v3-line2 (connection of vahā̃ kī), Ye Tanu
+refrain-1 (muṇḍanā construction), and v3-l2 (word before lenā). Paid audio
+corroborates or narrows the sounds but does not settle those meanings. Existing
+popups and notes now qualify provisional readings and remove unsupported mortal
+meanings and invented missing nouns. No confident replacement is fabricated.
+The owner approved US$2 total; seven bounded calls cost US$0.0469005, including
+two truncated responses. Five usable responses were reviewed with other sources.
+No more calls are needed for this evidence pass.
 
-Verification: all 46 other release commands passed after contextual rechecking
-of the stale generic-Hari/Kṛṣṇa dismissal. The trim audit retains only the same
-six historical failures previously accepted by the owner. The recovery in-app
-browser worked: desktop and 390px mobile previews and corrected popups checked;
-all 111 line controls across the four changed readers seek within playback
-advance of their unchanged stored onset. This does not certify acoustic syllables.
+Source review is complete for the available evidence. The final release contains
+the pria correction and three uncertainty qualifications. Detailed evidence is in
+passageResolutionFollowUp20261127 in data/translation-review-2026-11-25.json.
+Only Merā line-036 changes source/IAST/token identity. Metadata, media, sequence,
+timings and original shuffle assessments remain intact, with reviewed editorial
+receipts and the paired catalogue. This is a bounded review, not full certification.
+
+First-batch verification: all 46 other release commands passed after contextual
+rechecking of the stale generic-Hari/Kṛṣṇa dismissal. The trim audit retains only
+the same six historical failures previously accepted by the owner. The recovery
+in-app browser worked: desktop and 390px mobile previews and corrected popups
+checked; all 111 line controls across the four changed readers seek within
+playback advance of their unchanged stored onset. This does not certify acoustic
+syllables. Final-batch checks also passed 46/47, with only those same trim failures.
+The in-app browser verified the new pria text/popup at desktop and 390px width,
+the three qualified popups, and 88 unchanged Mera seek controls. The corrected
+line was retested against its 830.008-second stored onset.
 
 Public-service scope: only the existing homepage and song pages. Keep ordinary
 human and automated readability; do not add advertising, promotional content,
-ranking campaigns, special agent pages or indexing-submission work.
+ranking campaigns, special agent pages or indexing-submission work. Live initial
+HTML contains catalogue links and full lyrics; robots permits crawling. The web
+search tool's direct-open returned an internal access error despite successful
+ordinary HTTP retrieval. Individual agents' fetching/indexing remains outside
+the site's guarantee.
 
 ## Kabīr wording, popup senses and search visibility — 27 November 2026
 

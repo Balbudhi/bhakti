@@ -604,11 +604,11 @@ window.SONG_LINES = {
     "words": [
       {
         "roman": "Vahām̐",
-        "gloss": "there / of that realm [adverb]"
+        "gloss": "there; its referent is not explicit"
       },
       {
         "roman": "kī",
-        "gloss": "of [fem. sg. genitive postposition]"
+        "gloss": "of; the grammatical connection is uncertain"
       },
       {
         "roman": "kyā",
@@ -623,7 +623,7 @@ window.SONG_LINES = {
         "gloss": "proud person / arrogant one [vocative noun]"
       }
     ],
-    "grammarNote": "'gumānī' is used vocatively / as the agent descriptor; 'vahām̐ kī' has an implicit feminine noun head like 'bāt' or 'cintā'; copula 'hai' is elided after participle 'karatā'.",
+    "grammarNote": "The recording supports vahā̃ kī. The rebuke concerns pride, but the connection of kī is unclear; no missing noun is supplied.",
     "sourceWords": [
       {
         "text": "वहाँ",

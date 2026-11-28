@@ -162082,7 +162082,7 @@
     "mera-man-lochai": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Complete Kabīr-group source/word-map/English reading and final fidelity review on 2026-11-27. Contextual primary senses now agree with the English. Exact uncertain passages remain in the translation ledger; retained features were checked against the source witnesses below."
+        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved."
       },
       "beforeLines": {
         "line-040": {
@@ -163080,6 +163080,78 @@
           ],
           "nameTable": false,
           "grammarNote": "citavau is first-person: I think of or remember. The object, the longed-for sight, is carried over from the preceding line. anadinu and nīta reinforce the continuity of this longing."
+        },
+        "line-036": {
+          "source": "ਦਰਸਨ ਪਿਆਸ ਪ੍ਰੇਮ ਪ੍ਰੀਤਿ ਮਨੋਹਰ",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਦਰਸਨ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਪਿਆਸ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਪ੍ਰੇਮ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਪ੍ਰੀਤਿ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਮਨੋਹਰ",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "roman": "darasana piāsa prema prīti manohara",
+          "english": "{1:Thirst }{0:for the sight, }{2:love }{3:and affection }{4:for the heart-captivating Beloved—}",
+          "words": [
+            {
+              "roman": "darasana",
+              "gloss": "vision; sight",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "piāsa",
+              "gloss": "thirst; longing",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prema",
+              "gloss": "love; affection",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prīti",
+              "gloss": "affection; loving attachment",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "manohara",
+              "gloss": "heart-captivating; here, the beloved who captivates the heart",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "This cluster of longing, love and affection leads into the restless mind in the next line. The stored performed form prema is retained; the corresponding written passage has pria, beloved. That source difference remains an audio-review question, not a reason to silently change this lyric."
         }
       },
       "afterLines": {
@@ -164078,6 +164150,78 @@
           ],
           "nameTable": false,
           "grammarNote": "citavau is first-person: I think of or remember. The object, the longed-for sight, is carried over from the preceding line. anadinu and nīta reinforce the continuity of this longing."
+        },
+        "line-036": {
+          "source": "ਦਰਸਨ ਪਿਆਸ ਪ੍ਰਿਅ ਪ੍ਰੀਤਿ ਮਨੋਹਰ",
+          "sourceLanguage": "pa",
+          "sourceWords": [
+            {
+              "text": "ਦਰਸਨ",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "ਪਿਆਸ",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "ਪ੍ਰਿਅ",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "ਪ੍ਰੀਤਿ",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "ਮਨੋਹਰ",
+              "wordIndices": [
+                4
+              ]
+            }
+          ],
+          "roman": "darasana piāsa pria prīti manohara",
+          "english": "{1:Thirst }{0:to behold, }{3:love for }{4:the heart-captivating }{2:Beloved—}",
+          "words": [
+            {
+              "roman": "darasana",
+              "gloss": "vision; sight",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "piāsa",
+              "gloss": "thirst; longing",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "pria",
+              "gloss": "beloved; the divine one who captivates the heart",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "prīti",
+              "gloss": "love; here, love for the heart-captivating Beloved",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "manohara",
+              "gloss": "heart-captivating; qualifying pria, the Beloved",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "nameTable": false,
+          "grammarNote": "Pria and manohara identify the heart-captivating Beloved, the object of prīti (love); darasana piāsa is thirst to behold. This longing leads into the restless heart in the following line."
         }
       },
       "lineEvidence": {
@@ -164092,7 +164236,8 @@
         "line-037": "2026-11-27: The adjacent love and yearning support heart rather than an abstract thinking mind.",
         "line-038": "2026-11-27: The adjacent love and yearning support heart rather than an abstract thinking mind.",
         "line-039": "2026-11-27: Promote the popup’s expectant watching to the sentence; she is waiting for the beloved, not admiring a pathway.",
-        "line-044": "2026-11-27: Replace unidiomatic without cease with a natural adverb without weakening repetition."
+        "line-044": "2026-11-27: Replace unidiomatic without cease with a natural adverb without weakening repetition.",
+        "line-036": " Paid audio/source follow-up: SGGS ang1206 and Sahib Singh establish pria, beloved. Same singer independently sings canonical pria tudhu at398.623 and410.923 seconds; free ASR renders both pre-tudh, matching disputed pre-prit. Targeted combined audio comparison finds matching vowel realization and no final m. Correct source pre ma to pria, matching IAST, word map and chosen English. Read with adjacent restless-heart passage."
       },
       "featureDispositions": [
         {
@@ -164105,7 +164250,7 @@
             "line-015",
             "line-039"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: O my companion and friend, revered Murāri. / Now, when shall I meet with you, O beloved Bhagavān? / The longing bride watches the path,"
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: O my companion and friend, revered Murāri. / Now, when shall I meet with you, O beloved Bhagavān? / The longing bride watches the path,"
         },
         {
           "facet": "themes",
@@ -164120,7 +164265,7 @@
             "line-040",
             "line-043"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: My heart yearns to see the Guru. / Thirst is not quenched and peace does not come without the sight of the beloved and revered Saint. / If for a single moment we do not meet, then that moment becomes the dark age. / The longing bride watches the path, / With eyes brimming with tears, she draws deep sighs. / Thirsty for the sight day and night,"
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: My heart yearns to see the Guru. / Thirst is not quenched and peace does not come without the sight of the beloved and revered Saint. / If for a single moment we do not meet, then that moment becomes the dark age. / The longing bride watches the path, / With eyes brimming with tears, she draws deep sighs. / Thirsty for the sight day and night,"
         },
         {
           "facet": "themes",
@@ -164133,7 +164278,7 @@
             "line-045",
             "line-046"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: Good fortune awoke, and the Guru united me with the holy one. / I found the imperishable Lord within my home. / Throwing open the inner doors, the Guru has united me / O Nānak, with Hari, the beloved Friend."
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Good fortune awoke, and the Guru united me with the holy one. / I found the imperishable Lord within my home. / Throwing open the inner doors, the Guru has united me / O Nānak, with Hari, the beloved Friend."
         },
         {
           "facet": "themes",
@@ -164144,7 +164289,7 @@
             "line-021",
             "line-022"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: I shall serve you and never part, not for a moment or an instant, / Servant Nānak is your humble servant, O revered Lord."
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: I shall serve you and never part, not for a moment or an instant, / Servant Nānak is your humble servant, O revered Lord."
         },
         {
           "facet": "actions",
@@ -164156,7 +164301,7 @@
             "line-010",
             "line-029"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: I offer myself in sacrifice; I offer my very life. / I offer myself in sacrifice; I give myself wholly, / I offer myself in sacrifice; I offer my very life."
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: I offer myself in sacrifice; I offer my very life. / I offer myself in sacrifice; I give myself wholly, / I offer myself in sacrifice; I offer my very life."
         },
         {
           "facet": "subjects",
@@ -164169,7 +164314,7 @@
             "line-011",
             "line-017"
           ],
-          "reason": "Reread 2026-11-27; the source witness retains this feature after the contextual wording changes: My heart yearns to see the Guru. / For the sight of the Guru, the beloved and revered Saint. / To the Guru, my companion and friend, revered Murāri. / Without beholding the court of the revered Guru.",
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: My heart yearns to see the Guru. / For the sight of the Guru, the beloved and revered Saint. / To the Guru, my companion and friend, revered Murāri. / Without beholding the court of the revered Guru.",
           "role": "worship_focus"
         }
       ]
@@ -205644,7 +205789,7 @@
     "kaya-nahin-teri-nahin-teri": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Targeted source/grammar resolution of documented open definitions, with adjacent context and final English/gloss review. All original semantic feature witnesses reread; original assessments and prior reduction factors preserved. Unresolved source questions remain explicit."
+        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved."
       },
       "beforeLines": {
         "v3-line2": {
@@ -205912,11 +206057,11 @@
           "words": [
             {
               "roman": "Vahām̐",
-              "gloss": "there / of that realm [adverb]"
+              "gloss": "there; its referent is not explicit"
             },
             {
               "roman": "kī",
-              "gloss": "of [fem. sg. genitive postposition]"
+              "gloss": "of; the grammatical connection is uncertain"
             },
             {
               "roman": "kyā",
@@ -205931,7 +206076,7 @@
               "gloss": "proud person / arrogant one [vocative noun]"
             }
           ],
-          "grammarNote": "'gumānī' is used vocatively / as the agent descriptor; 'vahām̐ kī' has an implicit feminine noun head like 'bāt' or 'cintā'; copula 'hai' is elided after participle 'karatā'.",
+          "grammarNote": "The recording supports vahā̃ kī. The rebuke concerns pride, but the connection of kī is unclear; no missing noun is supplied.",
           "sourceWords": [
             {
               "text": "वहाँ",
@@ -206161,7 +206306,7 @@
         }
       },
       "lineEvidence": {
-        "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image.",
+        "v3-line2": "Current whole-song reading: Improve natural English while preserving the source meaning and image. Paid audio/source follow-up: Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection.",
         "v2-line3": "2026-11-27: Repair stiff This indeed while retaining the fleeting-life image and emphatic to.",
         "v3-line1": "2026-11-27: Paramani asserts the truth/trustworthiness of the saying; proven added an unsupported evidential claim.",
         "v2-line1": " Targeted source resolution: Milave is transitive mixing, not spontaneous dissolution. TransLiteral text, the Bhimsen-specific 2013 Hindi interpretation, and milana dictionary support color mixed into a wave. Keep the named color and wave, omitting no image.",
@@ -206176,7 +206321,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Do not cry, 'Mine, mine'"
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Do not cry, 'Mine, mine'"
         },
         {
           "facet": "themes",
@@ -206187,7 +206332,7 @@
             "v4-line4",
             "v4-line5"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Accept this teaching in your heart / The truth has been spoken and explained to you"
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Accept this teaching in your heart / The truth has been spoken and explained to you"
         },
         {
           "facet": "themes",
@@ -206198,7 +206343,7 @@
             "refrain-1",
             "v2-line3"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: The body is not yours, not yours / It will surely fly away in the blink of an eye."
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: The body is not yours, not yours / It will surely fly away in the blink of an eye."
         }
       ]
     },
@@ -274129,7 +274274,7 @@
     "ye-tanu-mundna-be-mundna": {
       "reviewer": {
         "kind": "assistant-source-review",
-        "reason": "Targeted source/grammar resolution of documented open definitions, with adjacent context and final English/gloss review. All original semantic feature witnesses reread; original assessments and prior reduction factors preserved. Unresolved source questions remain explicit."
+        "reason": "Targeted source and audio follow-up, independently checked against canonical text, dictionaries, adjacent context and same-singer comparison where applicable. Three uncertain constructions remain explicitly qualified; original feature witnesses reread and original assessments preserved."
       },
       "beforeLines": {
         "v1-l3a": {
@@ -274320,6 +274465,77 @@
               ]
             }
           ]
+        },
+        "refrain-1": {
+          "source": "ये तनु मुँडना बे मुँडना",
+          "sourceLanguage": "hi",
+          "roman": "Ye tanu muṇḍanā be muṇḍanā",
+          "english": "{0:This }{1:body, }{2:O shaven one—}{3,4:O shaven one—}",
+          "words": [
+            {
+              "roman": "Ye",
+              "gloss": "this",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tanu",
+              "gloss": "body",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shorn / mortal",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "be",
+              "gloss": "O / hey",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shorn one / mortal head",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Demonstrative determiner 'Ye' modifying noun 'tanu'; 'muṇḍanā' serves first as a descriptive predicate/epithet and second as a vocative noun.",
+          "sourceWords": [
+            {
+              "text": "ये",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "तनु",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "बे",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
         }
       },
       "afterLines": {
@@ -274402,7 +274618,7 @@
             },
             {
               "roman": "kucha",
-              "gloss": "anything",
+              "gloss": "anything (provisional reading; the sung word is unclear)",
               "concept_key": "",
               "preserve_in_english": false
             },
@@ -274413,7 +274629,7 @@
               "preserve_in_english": false
             }
           ],
-          "grammarNote": "Denā and lenā are paired infinitives in an elliptical statement: nothing to give or take. This is not a prohibition on giving. The line turns from worldly exchange to heartfelt devotion and repeating Rāma’s Name.",
+          "grammarNote": "Denā and lenā are paired infinitives. The English takes the clause as an absence of giving and taking, contrasted with heartfelt devotion in the next line. The word before lenā is unclear in the recording; kucha is provisional.",
           "sourceWords": [
             {
               "text": "देना",
@@ -274511,12 +274727,84 @@
               ]
             }
           ]
+        },
+        "refrain-1": {
+          "source": "ये तनु मुँडना बे मुँडना",
+          "sourceLanguage": "hi",
+          "roman": "Ye tanu muṇḍanā be muṇḍanā",
+          "english": "{0:This }{1:body, }{2:O shaven one—}{3,4:O shaven one—}",
+          "words": [
+            {
+              "roman": "Ye",
+              "gloss": "this",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "tanu",
+              "gloss": "body",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shaven one (provisional); the verb muṇḍanā means to be shaved",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "be",
+              "gloss": "O / hey",
+              "concept_key": "",
+              "preserve_in_english": false
+            },
+            {
+              "roman": "muṇḍanā",
+              "gloss": "shaven one (provisional); repeated from earlier in the line",
+              "concept_key": "",
+              "preserve_in_english": false
+            }
+          ],
+          "grammarNote": "Dictionaries give muṇḍanā as “to be shaved.” Its use in this refrain is unclear; the English provisionally takes it as an address, “shaven one.” The next line says the body must return to earth.",
+          "sourceWords": [
+            {
+              "text": "ये",
+              "wordIndices": [
+                0
+              ]
+            },
+            {
+              "text": "तनु",
+              "wordIndices": [
+                1
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                2
+              ]
+            },
+            {
+              "text": "बे",
+              "wordIndices": [
+                3
+              ]
+            },
+            {
+              "text": "मुँडना",
+              "wordIndices": [
+                4
+              ]
+            }
+          ]
         }
       },
       "lineEvidence": {
         "v1-l3a": "2026-11-27: This standalone musical fragment precedes I will bury you; match the natural continuation of its longer ki variant.",
-        "v3-l2": " Targeted source resolution: Dena/lena are infinitives in an elliptical statement, not an instruction to stop giving. Exact kuch versus tha remains an open acoustic question; no source token altered.",
-        "v3-l3": " Targeted source resolution: Stored transcript, lyric witnesses and two fresh unprompted Whisper instances agree utaro; dictionary para utarna confirms causative ferry/carry across. Preserve its omitted object, without inventing me, us or yourself."
+        "v3-l2": " Targeted source resolution: Dena/lena are infinitives in an elliptical statement, not an instruction to stop giving. Exact kuch versus tha remains an open acoustic question; no source token altered. Paid audio/source follow-up: Targeted audio and free Whisper do not support a confident kucha identification; printed tha also remains unconfirmed. Retain existing text provisionally and make the uncertainty visible in its linked gloss and note. Contextual giving/taking English is an interpretation, not a settled source reading.",
+        "v3-l3": " Targeted source resolution: Stored transcript, lyric witnesses and two fresh unprompted Whisper instances agree utaro; dictionary para utarna confirms causative ferry/carry across. Preserve its omitted object, without inventing me, us or yourself.",
+        "refrain-1": " Paid audio/source follow-up: Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis."
       },
       "featureDispositions": [
         {
@@ -274527,7 +274815,7 @@
           "sourceLineIds": [
             "refrain-2"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: in the end, it must mingle with the earth."
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: in the end, it must mingle with the earth."
         },
         {
           "facet": "themes",
@@ -274538,7 +274826,7 @@
             "v1-l4",
             "v2-l4"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: I will bury you.” / I will burn you.”"
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: I will bury you.” / I will burn you.”"
         },
         {
           "facet": "themes",
@@ -274548,7 +274836,7 @@
           "sourceLineIds": [
             "v3-l3"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: Carry across through heartfelt devotion;"
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: Carry across through heartfelt devotion;"
         },
         {
           "facet": "actions",
@@ -274558,7 +274846,7 @@
           "sourceLineIds": [
             "v3-l4"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: chant the Name of Rāma."
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: chant the Name of Rāma."
         },
         {
           "facet": "subjects",
@@ -274568,7 +274856,7 @@
           "sourceLineIds": [
             "v3-l4"
           ],
-          "reason": "Targeted follow-up: reread the cited source and current English; the existing feature remains supported: chant the Name of Rāma.",
+          "reason": "Reread after targeted audio follow-up; this existing feature remains supported by: chant the Name of Rāma.",
           "role": "worship_focus"
         }
       ]

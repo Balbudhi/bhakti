@@ -14370,12 +14370,84 @@
               ],
               "nameTable": false,
               "grammarNote": "citavau is first-person: I think of or remember. The object, the longed-for sight, is carried over from the preceding line. anadinu and nīta reinforce the continuity of this longing."
+            },
+            "line-036": {
+              "source": "ਦਰਸਨ ਪਿਆਸ ਪ੍ਰੇਮ ਪ੍ਰੀਤਿ ਮਨੋਹਰ",
+              "sourceLanguage": "pa",
+              "sourceWords": [
+                {
+                  "text": "ਦਰਸਨ",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "ਪਿਆਸ",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "ਪ੍ਰੇਮ",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "ਪ੍ਰੀਤਿ",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "ਮਨੋਹਰ",
+                  "wordIndices": [
+                    4
+                  ]
+                }
+              ],
+              "roman": "darasana piāsa prema prīti manohara",
+              "english": "{1:Thirst }{0:for the sight, }{2:love }{3:and affection }{4:for the heart-captivating Beloved—}",
+              "words": [
+                {
+                  "roman": "darasana",
+                  "gloss": "vision; sight",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "piāsa",
+                  "gloss": "thirst; longing",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "prema",
+                  "gloss": "love; affection",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "prīti",
+                  "gloss": "affection; loving attachment",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "manohara",
+                  "gloss": "heart-captivating; here, the beloved who captivates the heart",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "nameTable": false,
+              "grammarNote": "This cluster of longing, love and affection leads into the restless mind in the next line. The stored performed form prema is retained; the corresponding written passage has pria, beloved. That source difference remains an audio-review question, not a reason to silently change this lyric."
             }
           },
           "originalInputHash": "9a5b70b3a151e2e1ffcb3f81fcb4ee4315933302c4a4bab1a204d453f52b3432",
-          "inputHash": "f0a5a55e50517407f370cd763e1b5137d1123d2f387eca9fee504ab764fed6fd",
+          "inputHash": "ccef42e1d4c369298f5a6096a0e97f8b2dabed6c9c0272d06ea851640089440e",
           "baseFeaturesHash": "6323bb2d25f22c6d5cdf63bdd0040ace0a6a98ff3c7d3bff6a9b4f50cf8d2b7c",
-          "evidenceHash": "6a464aae4991c11ef8f574f655f85f32e873d94a20a41a26a801558ac490ccbc"
+          "evidenceHash": "5141a1c647d0883dac54701b402087b8714c4aded4979a9cac098748c1df1ecf"
         }
       }
     },
@@ -15507,9 +15579,9 @@
             }
           },
           "originalInputHash": "783302b9a46d1a4119e7c9e0500a0c47c1ed086d644eeffff54987954b2ab595",
-          "inputHash": "a1a78e1c12a5df1b560b436f9031008d50086a6340227187f7352c236cf36d5a",
+          "inputHash": "812e74fc4fbc7a8fa03a78aad8c1c8c0a727bda85529683835e10edd648acef4",
           "baseFeaturesHash": "8ab94b1199f877822b8161e525c099c38b1079b792ba5f08b5f64d4173e46bfc",
-          "evidenceHash": "87c1075131b042b15c099660df910d791c83426eb6a57e9c178043c09303f953"
+          "evidenceHash": "53127bb3b2c3de805262b67e45973700ce3f5875a07c11ec13bc9e4fcd7d43d8"
         }
       }
     },
@@ -16728,12 +16800,83 @@
                   ]
                 }
               ]
+            },
+            "refrain-1": {
+              "source": "ये तनु मुँडना बे मुँडना",
+              "sourceLanguage": "hi",
+              "roman": "Ye tanu muṇḍanā be muṇḍanā",
+              "english": "{0:This }{1:body, }{2:O shaven one—}{3,4:O shaven one—}",
+              "words": [
+                {
+                  "roman": "Ye",
+                  "gloss": "this",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "tanu",
+                  "gloss": "body",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "muṇḍanā",
+                  "gloss": "shorn / mortal",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "be",
+                  "gloss": "O / hey",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                },
+                {
+                  "roman": "muṇḍanā",
+                  "gloss": "shorn one / mortal head",
+                  "concept_key": "",
+                  "preserve_in_english": false
+                }
+              ],
+              "grammarNote": "Demonstrative determiner 'Ye' modifying noun 'tanu'; 'muṇḍanā' serves first as a descriptive predicate/epithet and second as a vocative noun.",
+              "sourceWords": [
+                {
+                  "text": "ये",
+                  "wordIndices": [
+                    0
+                  ]
+                },
+                {
+                  "text": "तनु",
+                  "wordIndices": [
+                    1
+                  ]
+                },
+                {
+                  "text": "मुँडना",
+                  "wordIndices": [
+                    2
+                  ]
+                },
+                {
+                  "text": "बे",
+                  "wordIndices": [
+                    3
+                  ]
+                },
+                {
+                  "text": "मुँडना",
+                  "wordIndices": [
+                    4
+                  ]
+                }
+              ]
             }
           },
           "originalInputHash": "45c98d3632cb5b7af6e7e804293781f0af97837df1d75c1b114328d11b4530f7",
-          "inputHash": "657cf6ba6c7d9750776f43a54d7e46cbafa10975a1f7cb12e91e448a77da2a4b",
+          "inputHash": "52ed5e7e2cfe2a3eb684c89b793867aa95457998063e3fd3631178f80b2de428",
           "baseFeaturesHash": "38049cc6c938de6c2ef795db2764c6c94e5c04bf4c2110894e6ae44e94392337",
-          "evidenceHash": "75972b4cd931d53d886db2b62de0cb17c635e0ac9441c95b26984bef2066b69e"
+          "evidenceHash": "60f765e3bc68f140a868e6df3adf974e6e62bfd6d824932f41899ebd7bfb3295"
         }
       }
     },

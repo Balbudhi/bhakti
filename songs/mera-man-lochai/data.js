@@ -2979,7 +2979,7 @@ window.SONG_LINES = {
     "grammarNote": "kahau is first-person speech, here in the question how can I tell; mohi is a first-person oblique form, not an inherently possessive pronoun. jīa bedanāī is the pain of the heart; English my follows the first-person context."
   },
   "line-036": {
-    "source": "ਦਰਸਨ ਪਿਆਸ ਪ੍ਰੇਮ ਪ੍ਰੀਤਿ ਮਨੋਹਰ",
+    "source": "ਦਰਸਨ ਪਿਆਸ ਪ੍ਰਿਅ ਪ੍ਰੀਤਿ ਮਨੋਹਰ",
     "sourceLanguage": "pa",
     "sourceWords": [
       {
@@ -2995,7 +2995,7 @@ window.SONG_LINES = {
         ]
       },
       {
-        "text": "ਪ੍ਰੇਮ",
+        "text": "ਪ੍ਰਿਅ",
         "wordIndices": [
           2
         ]
@@ -3013,8 +3013,8 @@ window.SONG_LINES = {
         ]
       }
     ],
-    "roman": "darasana piāsa prema prīti manohara",
-    "english": "{1:Thirst }{0:for the sight, }{2:love }{3:and affection }{4:for the heart-captivating Beloved—}",
+    "roman": "darasana piāsa pria prīti manohara",
+    "english": "{1:Thirst }{0:to behold, }{3:love for }{4:the heart-captivating }{2:Beloved—}",
     "words": [
       {
         "roman": "darasana",
@@ -3029,26 +3029,26 @@ window.SONG_LINES = {
         "preserve_in_english": false
       },
       {
-        "roman": "prema",
-        "gloss": "love; affection",
+        "roman": "pria",
+        "gloss": "beloved; the divine one who captivates the heart",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "prīti",
-        "gloss": "affection; loving attachment",
+        "gloss": "love; here, love for the heart-captivating Beloved",
         "concept_key": "",
         "preserve_in_english": false
       },
       {
         "roman": "manohara",
-        "gloss": "heart-captivating; here, the beloved who captivates the heart",
+        "gloss": "heart-captivating; qualifying pria, the Beloved",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
     "nameTable": false,
-    "grammarNote": "This cluster of longing, love and affection leads into the restless mind in the next line. The stored performed form prema is retained; the corresponding written passage has pria, beloved. That source difference remains an audio-review question, not a reason to silently change this lyric."
+    "grammarNote": "Pria and manohara identify the heart-captivating Beloved, the object of prīti (love); darasana piāsa is thirst to behold. This longing leads into the restless heart in the following line."
   },
   "line-037": {
     "source": "ਮਨੁ ਨ ਰਹੈ",

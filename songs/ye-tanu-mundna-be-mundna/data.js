@@ -56,7 +56,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "muṇḍanā",
-        "gloss": "shorn / mortal",
+        "gloss": "shaven one (provisional); the verb muṇḍanā means to be shaved",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -68,12 +68,12 @@ window.SONG_LINES = {
       },
       {
         "roman": "muṇḍanā",
-        "gloss": "shorn one / mortal head",
+        "gloss": "shaven one (provisional); repeated from earlier in the line",
         "concept_key": "",
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Demonstrative determiner 'Ye' modifying noun 'tanu'; 'muṇḍanā' serves first as a descriptive predicate/epithet and second as a vocative noun.",
+    "grammarNote": "Dictionaries give muṇḍanā as “to be shaved.” Its use in this refrain is unclear; the English provisionally takes it as an address, “shaven one.” The next line says the body must return to earth.",
     "sourceWords": [
       {
         "text": "ये",
@@ -882,7 +882,7 @@ window.SONG_LINES = {
       },
       {
         "roman": "kucha",
-        "gloss": "anything",
+        "gloss": "anything (provisional reading; the sung word is unclear)",
         "concept_key": "",
         "preserve_in_english": false
       },
@@ -893,7 +893,7 @@ window.SONG_LINES = {
         "preserve_in_english": false
       }
     ],
-    "grammarNote": "Denā and lenā are paired infinitives in an elliptical statement: nothing to give or take. This is not a prohibition on giving. The line turns from worldly exchange to heartfelt devotion and repeating Rāma’s Name.",
+    "grammarNote": "Denā and lenā are paired infinitives. The English takes the clause as an absence of giving and taking, contrasted with heartfelt devotion in the next line. The word before lenā is unclear in the recording; kucha is provisional.",
     "sourceWords": [
       {
         "text": "देना",

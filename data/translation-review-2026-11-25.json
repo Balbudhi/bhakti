@@ -36280,22 +36280,22 @@
       ],
       "ye-tanu-mundna-be-mundna": [
         "v3-l3"
+      ],
+      "mera-man-lochai": [
+        "line-036"
       ]
     },
-    "resolvedCount": 6,
+    "resolvedCount": 7,
     "remainingDefinitions": {
       "kaya-nahin-teri-nahin-teri": {
-        "v3-line2": "Recorded vahan ki is supported by witnesses and local ASR; the genitive construction/referent remains unestablished."
+        "v3-line2": "Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection."
       },
       "ye-tanu-mundna-be-mundna": {
-        "refrain-1": "Mundana/be-mundana exact grammatical sense remains unestablished; free ASR confirms sounds but not lexeme/function.",
-        "v3-l2": "Descriptive giving/taking grammar corrected; exact kuch versus tha sung before lena remains an acoustic question."
-      },
-      "mera-man-lochai": {
-        "line-036": "Canonical SGGS1206 and Sahib Singh support pria beloved; local unprompted ASR cannot distinguish the performed pria/prema. No silent replacement."
+        "refrain-1": "Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis.",
+        "v3-l2": "Targeted audio and free Whisper do not support a confident kucha identification; printed tha also remains unconfirmed. Retain existing text provisionally and make the uncertainty visible in its linked gloss and note. Contextual giving/taking English is an interpretation, not a settled source reading."
       }
     },
-    "remainingCount": 4,
+    "remainingCount": 3,
     "changes": {
       "auga-na-jauga": {
         "verse-dono-kasbi": "Punjabi Arabi-Farsi Shabdshala (Boota Singh Brar/Jaj Singh), kasbi entry: professional, skilled worker, artisan. Read the mala/tasbih pair with the surrounding critique of ritual. Retain mere tradesmen; select its contextual popup, removing mercenaries as an interchangeable sense."
@@ -36378,12 +36378,56 @@
       }
     ],
     "audioEvidence": "Sunta exact-file archived audio request payload and current audio SHA verified; three Bhimsen excerpts and Mera excerpt checked with fresh free unprompted Whisper as corroboration only. No fresh human listening or unsupported source replacement.",
-    "releaseState": "ready to publish supported corrections; four source questions remain and capped audio review permission is pending",
+    "releaseState": "Final source resolution and uncertainty qualifications passed scoped checks; published content and live verification are identified by the release commit/run.",
     "verification": {
       "releaseChecksPassed": 46,
       "releaseChecksTotal": 47,
       "knownFailure": "Same six pre-existing trim receipt failures; no media/trim change.",
-      "browser": "Recovery in-app browser: desktop and 390px mobile text/popup inspection; all 111 line seek controls passed against stored onsets. No new acoustic onset claim."
+      "browser": "Recovery in-app browser: desktop and 390px mobile text/popup inspection; all 111 line seek controls passed against stored onsets. No new acoustic onset claim.",
+      "finalBatch": {
+        "releaseChecksPassed": 46,
+        "releaseChecksTotal": 47,
+        "knownFailure": "Only the same six historical trim receipt failures previously accepted by owner; no media/trim change.",
+        "browser": "In-app browser desktop 1280 and mobile 390: corrected pria source/English and popup checked; three uncertainty popups checked. All 88 Mera line seeks matched stored onsets on unchanged timing data; final corrected line was additionally retested at 830.008 seconds. No acoustic onset certification.",
+        "publicArtifact": "Initial HTML retains song links and performed source, IAST and English. No extra page, promotion or private review material added."
+      }
+    },
+    "paidFollowUpChanges": {
+      "kaya-nahin-teri-nahin-teri": {
+        "v3-line2": "Fresh targeted audio corroborates vahan ki, not va ki. Its grammatical link remains uncertain; remove invented feminine head nouns and unsupported realm gloss. Keep the contextual rebuke and disclose the unresolved connection."
+      },
+      "ye-tanu-mundna-be-mundna": {
+        "refrain-1": "Dictionary confirms shaving verb but not mortal; remove mortal/mortal head glosses and mark shaven-one English as provisional. Audio supports mundana with ve-like particle, not the full grammatical analysis.",
+        "v3-l2": "Targeted audio and free Whisper do not support a confident kucha identification; printed tha also remains unconfirmed. Retain existing text provisionally and make the uncertainty visible in its linked gloss and note. Contextual giving/taking English is an interpretation, not a settled source reading."
+      },
+      "mera-man-lochai": {
+        "line-036": "SGGS ang 1206 and Sahib Singh establish pria, beloved. Same singer independently sings canonical pria tudhu at 398.623 and 410.923 seconds; free ASR renders both pre-tudh, matching disputed pre-prit. Targeted combined audio comparison finds matching vowel realization and no final m. Correct source prema to pria, matching IAST, word map and chosen English. Read with adjacent restless-heart passage."
+      }
+    },
+    "paidAudioReview": {
+      "authorizedBudgetUsd": 2,
+      "actualReportedCostUsd": 0.0469005,
+      "requests": 7,
+      "usableResponses": 5,
+      "truncatedResponses": 2,
+      "model": "google/gemini-3.7-flash",
+      "method": "Four short disputed excerpts, then same-singer comparison for pria and bounded dena retry. Truncations retained privately; explicit low reasoning and adequate output allowance completed the two follow-ups. No further calls needed.",
+      "limit": "Model audio observations are corroboration, not direct human listening or proof of uncertain grammar."
+    },
+    "paidAudioEvidence": {
+      "mera": "Same-singer comparison at 398.623/410.923 versus 830.008 seconds supports pria with no final m. Canonical SGGS 1206 and Sahib Singh agree.",
+      "bhimsen": "Vahan ki articulation supported; mundana/ve pronunciation clearer but grammar unresolved; dena word sounds cha/sa/tha rather than clearly kucha. Do not replace unclear words with invented certainty."
+    },
+    "firstRelease": {
+      "commit": "3653d8885ccb4af65fbd78974556cb608fd12b91",
+      "pagesRun": 46092128496,
+      "status": "success",
+      "liveFilesChecked": 16,
+      "liveFilesMatched": 16
+    },
+    "automatedReadabilityCheck": {
+      "http": "Live homepage/song HTML and robots return 200; song links and lyrics are in initial HTML. GitHub origin, no authentication challenge.",
+      "limit": "A direct web search-tool open returned an internal inaccessible error despite successful HTTP retrieval. Agent-specific fetch/index limitations cannot be guaranteed away by site changes. No advertising, ranking campaigns, special agent pages or submissions added."
     }
   }
 }
